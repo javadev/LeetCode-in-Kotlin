@@ -6,7 +6,7 @@ import org.junit.Test
 
 class SolutionTest {
     @Test
-    fun findMedianSortedArrays() {
+    fun longestPalindrome() {
         assertThat(Solution().longestPalindrome("babad"), equalTo("aba"))
     }
 }
