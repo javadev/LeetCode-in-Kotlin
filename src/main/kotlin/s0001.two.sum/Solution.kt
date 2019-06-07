@@ -7,12 +7,12 @@ class Solution {
         for (i in nums.indices) {
             val value = target - nums[i]
             if (!map.containsKey(value)) {
-                map.put(nums[i], i)
+                map[nums[i]] = i
                 continue
             }
             if (map.get(value) !== i) {
                 res[1] = i
-                res[0] = map.get(value)!!
+                res[0] = map[value]!!
                 break
             }
         }
