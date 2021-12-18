@@ -4,6 +4,7 @@
 
 plugins {
     kotlin("jvm") version "1.6.10"
+    jacoco
     `maven-publish`
 }
 
@@ -33,4 +34,11 @@ publishing {
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
+}
+
+tasks.jacocoTestReport {
+    reports {
+        html.isEnabled = true
+        xml.isEnabled = true
+    }
 }

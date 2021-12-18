@@ -28,4 +28,8 @@ jobs:
         key: ${{ runner.os }}-gradle
         restore-keys: ${{ runner.os }}-gradle
     - name: Build with Gradle
-      run: chmod +x gradlew && ./gradlew test
+      run: chmod +x gradlew && ./gradlew test jacocoTestReport
+    - uses: codecov/codecov-action@v1
+      with:
+        file: ./**/build/reports/jacoco/test/jacocoTestReport.xml
+        name: codecov
