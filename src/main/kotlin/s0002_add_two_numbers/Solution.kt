@@ -1,6 +1,6 @@
 package s0002_add_two_numbers
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`

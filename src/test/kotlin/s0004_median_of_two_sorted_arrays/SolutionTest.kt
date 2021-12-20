@@ -1,7 +1,7 @@
 package s0004_median_of_two_sorted_arrays
 
 import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.assertThat
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
 
 class SolutionTest {

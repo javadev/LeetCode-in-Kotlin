@@ -1,7 +1,7 @@
 package s0007_reverse_integer
 
 import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.assertThat
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
 
 class SolutionTest {

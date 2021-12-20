@@ -1,12 +1,12 @@
 package s0001_two_sum
 
 import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.assertThat
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
 
 class SolutionTest {
     @Test
     fun twoSum() {
-        assertThat(java.util.Arrays.toString(Solution().twoSum(intArrayOf(2, 7, 11, 15), 9)), equalTo("[0, 1]"))
+        assertThat(Solution().twoSum(intArrayOf(2, 7, 11, 15), 9), equalTo(intArrayOf(0, 1)))
     }
 }
