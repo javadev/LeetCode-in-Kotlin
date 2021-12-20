@@ -2,16 +2,16 @@ package s0012_integer_to_roman
 
 class Solution {
     fun intToRoman(num: Int): String? {
-        var num = num
+        var localNum = num
         val sb = StringBuilder()
         val m = 1000
         val c = 100
         val x = 10
         val i = 1
-        num = numerals(sb, num, m, ' ', ' ', 'M')
-        num = numerals(sb, num, c, 'M', 'D', 'C')
-        num = numerals(sb, num, x, 'C', 'L', 'X')
-        numerals(sb, num, i, 'X', 'V', 'I')
+        localNum = numerals(sb, localNum, m, ' ', ' ', 'M')
+        localNum = numerals(sb, localNum, c, 'M', 'D', 'C')
+        localNum = numerals(sb, localNum, x, 'C', 'L', 'X')
+        numerals(sb, localNum, i, 'X', 'V', 'I')
         return sb.toString()
     }
 
