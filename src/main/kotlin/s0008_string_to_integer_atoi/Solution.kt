@@ -2,10 +2,10 @@ package s0008_string_to_integer_atoi
 
 class Solution {
     fun myAtoi(str: String): Int {
-    if (str.trim({ it <= ' ' }).isEmpty())
+    if (str.trim { it <= ' ' }.isEmpty())
     return 0
-    var localStr = str.trim({ it <= ' ' })
-    var i = 0
+    var localStr = str.trim { it <= ' ' }
+        var i = 0
     var ans = 0
     var sign = 1
     val len = localStr.length

@@ -6,12 +6,12 @@ class Solution {
         var f = 0
         val charArray = IntArray(128)
         for (i in 0 until s.length) {
-            if (charArray[s[i].toInt()] == 0) {
+            if (charArray[s[i].code] == 0) {
                 longest = if (longest < (i + 1 - f)) (i + 1 - f) else longest
-                charArray[s[i].toInt()] += 1
+                charArray[s[i].code] += 1
             } else {
                 while (s[f] != s[i]) {
-                    charArray[s[f].toInt()] = 0
+                    charArray[s[f].code] = 0
                     f++
                 }
                 f++

@@ -10,8 +10,9 @@ class Solution {
             var j = 0
             while (j + i < n) {
                 ret.append(s[j + i])
-                if (i != 0 && i != numRows - 1 && j + cycleLen - i < n)
+                if (i != 0 && i != numRows - 1 && j + cycleLen - i < n) {
                     ret.append(s[j + cycleLen - i])
+                }
                 j += cycleLen
             }
         }

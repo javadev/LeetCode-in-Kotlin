@@ -10,7 +10,7 @@ class Solution {
                 map[nums[i]] = i
                 continue
             }
-            if (map[value] !== i) {
+            if (map[value] != i) {
                 res[1] = i
                 res[0] = map[value]!!
                 break

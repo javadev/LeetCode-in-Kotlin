@@ -14,10 +14,10 @@ class Solution {
                 q++
             }
         }
-        if (array.size % 2 == 0) {
-            return (array[array.size / 2] + array[(array.size / 2) - 1]).toDouble() / 2
+        return if (array.size % 2 == 0) {
+            (array[array.size / 2] + array[(array.size / 2) - 1]).toDouble() / 2
         } else {
-            return array[array.size / 2].toDouble()
+            array[array.size / 2].toDouble()
         }
     }
 }
