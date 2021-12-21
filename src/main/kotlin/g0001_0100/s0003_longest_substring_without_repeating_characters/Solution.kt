@@ -9,7 +9,7 @@ class Solution {
         var maxLen = 0
         var curLen = 0
         var start = 0
-        for (i in 0 until s.length) {
+        for (i in s.indices) {
             val cur = s[i]
             if (lastIndices[cur.code] < start) {
                 lastIndices[cur.code] = i

@@ -1,6 +1,6 @@
 package g0001_0100.s0001_two_sum
 
-import java.util.*
+import java.util.Arrays
 
 class Solution {
     fun twoSum(nums: IntArray?, target: Int): IntArray {
