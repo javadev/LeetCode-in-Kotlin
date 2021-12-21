@@ -37,14 +37,6 @@ tasks {
   jacocoTestReport {
     reports {
       xml.required.set(true)
-      html.required.set(false)
     }
   }
-}
-
-sonarqube {
-    properties {
-        property("sonar.inclusions", "*.java,*.kt")
-        property("sonar.java.binaries", "$projectDir/build/classes/kotlin")
-    }
 }
