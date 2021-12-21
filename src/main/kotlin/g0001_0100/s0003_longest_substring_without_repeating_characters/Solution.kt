@@ -2,21 +2,28 @@ package g0001_0100.s0003_longest_substring_without_repeating_characters
 
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
-        var longest = 0
-        var f = 0
-        val charArray = IntArray(128)
+        val lastIndices = IntArray(256)
+        for (i in 0..255) {
+            lastIndices[i] = -1
+        }
+        var maxLen = 0
+        var curLen = 0
+        var start = 0
         for (i in 0 until s.length) {
-            if (charArray[s[i].code] == 0) {
-                longest = if (longest < (i + 1 - f)) (i + 1 - f) else longest
-                charArray[s[i].code] += 1
+            val cur = s[i]
+            if (lastIndices[cur.code] < start) {
+                lastIndices[cur.code] = i
+                curLen++
             } else {
-                while (s[f] != s[i]) {
-                    charArray[s[f].code] = 0
-                    f++
-                }
-                f++
+                val lastIndex = lastIndices[cur.code]
+                start = lastIndex + 1
+                curLen = i - start + 1
+                lastIndices[cur.code] = i
+            }
+            if (curLen > maxLen) {
+                maxLen = curLen
             }
         }
-        return longest
+        return maxLen
     }
 }

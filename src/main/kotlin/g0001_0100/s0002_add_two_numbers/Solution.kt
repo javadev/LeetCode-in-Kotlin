@@ -1,12 +1,11 @@
 package g0001_0100.s0002_add_two_numbers
 
 /*
- * Example:
- * var li = ListNode(5)
- * var v = li.`val`
  * Definition for singly-linked list.
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
  * }
  */
 class Solution {
@@ -14,23 +13,15 @@ class Solution {
         val dummyHead = ListNode(0)
         var p = l1
         var q = l2
-        var curr = dummyHead
+        var curr: ListNode? = dummyHead
         var carry = 0
         while (p != null || q != null) {
-            val x = if ((p != null)) {
-                p.`val`
-            } else {
-                0
-            }
-            val y = if ((q != null)) {
-                q.`val`
-            } else {
-                0
-            }
+            val x = p?.`val` ?: 0
+            val y = q?.`val` ?: 0
             val sum = carry + x + y
             carry = sum / 10
-            curr.next = ListNode(sum % 10)
-            curr = curr.next!!
+            curr!!.next = ListNode(sum % 10)
+            curr = curr.next
             if (p != null) {
                 p = p.next
             }
@@ -39,7 +30,7 @@ class Solution {
             }
         }
         if (carry > 0) {
-            curr.next = ListNode(carry)
+            curr!!.next = ListNode(carry)
         }
         return dummyHead.next
     }

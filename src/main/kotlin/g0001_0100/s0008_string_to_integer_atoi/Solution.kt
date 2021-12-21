@@ -1,27 +1,41 @@
 package g0001_0100.s0008_string_to_integer_atoi
 
 class Solution {
-    fun myAtoi(str: String): Int {
-    if (str.trim { it <= ' ' }.isEmpty())
-    return 0
-    var localStr = str.trim { it <= ' ' }
+    fun myAtoi(str: String?): Int {
+        if (str == null || str.isEmpty()) {
+            return 0
+        }
         var i = 0
-    var ans = 0
-    var sign = 1
-    val len = localStr.length
-    if (localStr.get(i) == '-' || localStr.get(i) == '+')
-    sign = if (localStr.get(i++) == '+') 1 else -1
-    while (i < len)
-    {
-      val tmp = localStr.get(i) - '0'
-      if (tmp < 0 || tmp > 9)
-      break
-      if ((ans > Integer.MAX_VALUE / 10 || (ans == Integer.MAX_VALUE / 10 && Integer.MAX_VALUE % 10 < tmp)))
-      return if (sign == 1) Integer.MAX_VALUE else Integer.MIN_VALUE
-      else
-      ans = ans * 10 + tmp
-      ++i
-    }
-    return sign * ans
+        var negativeSign = false
+        val input = str.toCharArray()
+        while (i < input.size && input[i] == ' ') {
+            i++
+        }
+        if (i == input.size) {
+            return 0
+        } else if (input[i] == '+') {
+            i++
+        } else if (input[i] == '-') {
+            i++
+            negativeSign = true
+        }
+        var num = 0
+        while (i < input.size && input[i] <= '9' && input[i] >= '0') {
+            // current char
+            var tem = input[i] - '0'
+            tem = if (negativeSign) -tem else tem
+            // avoid invalid number like 038
+            if (num == 0 && tem == '0'.code) {
+                i++
+            } else if (num == Int.MIN_VALUE / 10 && tem <= -8 || num < Int.MIN_VALUE / 10) {
+                return Int.MIN_VALUE
+            } else if (num == Int.MAX_VALUE / 10 && tem >= 7 || num > Int.MAX_VALUE / 10) {
+                return Int.MAX_VALUE
+            } else {
+                num = num * 10 + tem
+                i++
+            }
+        }
+        return num
     }
 }

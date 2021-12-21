@@ -7,6 +7,6 @@ import org.junit.Test
 class SolutionTest {
     @Test
     fun longestPalindrome() {
-        assertThat(Solution().longestPalindrome("babad"), equalTo("aba"))
+        assertThat(Solution().longestPalindrome("babad"), equalTo("bab"))
     }
 }

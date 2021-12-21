@@ -2,20 +2,31 @@ package g0001_0100.s0006_zigzag_conversion
 
 class Solution {
     fun convert(s: String, numRows: Int): String {
-        if (numRows == 1) return s
-        val ret = StringBuilder()
-        val n = s.length
-        val cycleLen = 2 * numRows - 2
+        val sLen = s.length
+        if (numRows == 1) {
+            return s
+        }
+        val maxDist = numRows * 2 - 2
+        val buf = StringBuilder()
         for (i in 0 until numRows) {
-            var j = 0
-            while (j + i < n) {
-                ret.append(s[j + i])
-                if (i != 0 && i != numRows - 1 && j + cycleLen - i < n) {
-                    ret.append(s[j + cycleLen - i])
+            var index = i
+            if (i == 0 || i == numRows - 1) {
+                while (index < sLen) {
+                    buf.append(s[index])
+                    index += maxDist
                 }
-                j += cycleLen
+            } else {
+                while (index < sLen) {
+                    buf.append(s[index])
+                    index += maxDist - i * 2
+                    if (index >= sLen) {
+                        break
+                    }
+                    buf.append(s[index])
+                    index += i * 2
+                }
             }
         }
-        return ret.toString()
+        return buf.toString()
     }
 }
