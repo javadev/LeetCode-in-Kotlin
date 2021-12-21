@@ -34,6 +34,6 @@ tasks.withType<JavaCompile>() {
 
 tasks.jacocoTestReport {
     reports {
-        xml.required
+        xml.isEnabled = true
     }
 }
