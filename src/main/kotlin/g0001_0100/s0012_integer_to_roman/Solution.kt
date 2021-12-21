@@ -52,8 +52,6 @@ class Solution {
                 sb.append(cOne)
             }
             1 -> sb.append(cOne)
-            else -> {
-            }
         }
         return num - div * one
     }
