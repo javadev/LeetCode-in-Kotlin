@@ -38,3 +38,9 @@ tasks.jacocoTestReport {
         xml.isEnabled = true
     }
 }
+
+sonarqube {
+    properties {
+        property("sonar.java.binaries", "$projectDir/build/classes/kotlin")
+    }
+}
