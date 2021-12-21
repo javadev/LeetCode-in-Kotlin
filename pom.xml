@@ -99,7 +99,7 @@
                     <plugin>
                         <groupId>org.jetbrains.dokka</groupId>
                         <artifactId>dokka-maven-plugin</artifactId>
-                        <version>0.9.18</version>
+                        <version>1.6.0</version>
                         <executions>
                             <execution>
                                 <phase>prepare-package</phase>
@@ -110,16 +110,20 @@
                                 </goals>
                             </execution>
                         </executions>
-                        <configuration>
-                            <includes>
-                                <file>packages.md</file>
-                            </includes>
-                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
