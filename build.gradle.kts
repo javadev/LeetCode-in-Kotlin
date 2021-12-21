@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm") version "1.6.10"
     jacoco
-    org.sonarqube version "3.3"
+    id("org.sonarqube") version "3.3"
     `maven-publish`
 }
 
