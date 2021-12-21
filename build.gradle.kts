@@ -33,14 +33,18 @@ tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
 }
 
-tasks.jacocoTestReport {
+tasks {
+  jacocoTestReport {
     reports {
-        xml.isEnabled = true
+      xml.required.set(true)
+      html.required.set(false)
     }
+  }
 }
 
 sonarqube {
     properties {
+        property("sonar.inclusions", "*.java,*.kt")
         property("sonar.java.binaries", "$projectDir/build/classes/kotlin")
     }
 }
