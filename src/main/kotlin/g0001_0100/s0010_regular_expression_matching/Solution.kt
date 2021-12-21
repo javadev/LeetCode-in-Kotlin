@@ -6,7 +6,7 @@ class Solution {
         dp[text.length][pattern.length] = true
         for (i in text.length downTo 0) {
             for (j in pattern.length - 1 downTo 0) {
-                val firstMatch = i < text.length && ((pattern[j] == text[i] || pattern[j] == '.'))
+                val firstMatch = i < text.length && (pattern[j] == text[i] || pattern[j] == '.')
                 if (j + 1 < pattern.length && pattern[j + 1] == '*') {
                     dp[i][j] = dp[i][j + 2] || firstMatch && dp[i + 1][j]
                 } else {
