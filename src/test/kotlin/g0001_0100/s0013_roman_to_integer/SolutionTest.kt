@@ -2,7 +2,6 @@ package g0001_0100.s0013_roman_to_integer
 
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
-
 import org.junit.jupiter.api.Test
 
 class SolutionTest {
@@ -15,5 +14,4 @@ class SolutionTest {
         assertThat(solution.romanToInt("LVIII"), equalTo(58))
         assertThat(solution.romanToInt("MCMXCIV"), equalTo(1994))
     }
-
 }

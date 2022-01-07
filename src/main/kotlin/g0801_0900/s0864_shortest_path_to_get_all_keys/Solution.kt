@@ -1,6 +1,7 @@
 package g0801_0900.s0864_shortest_path_to_get_all_keys
 
-import java.util.*
+import java.util.LinkedList
+import java.util.Queue
 
 class Solution {
     private var m = 0
@@ -75,8 +76,8 @@ class Solution {
                     // use & to see if we have the key
                     // 0 means that the digit we are looking at is 0
                     // need a 1 at the digit spot which means there is a key there
-                    if (('A' > grid[nx][ny] || grid[nx][ny] > 'F' || nState and (1 shl grid[nx][ny] - 'A') != 0)
-                        && !visited[nx][ny][nState]
+                    if (('A' > grid[nx][ny] || grid[nx][ny] > 'F' || nState and (1 shl grid[nx][ny] - 'A') != 0) &&
+                        !visited[nx][ny][nState]
                     ) {
                         q.add(intArrayOf(nx, ny, nState))
                         visited[nx][ny][nState] = true
