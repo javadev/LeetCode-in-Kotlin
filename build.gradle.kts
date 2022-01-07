@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "1.6.10"
     jacoco
     id("org.sonarqube") version "3.3"
-    id("com.diffplug.spotless") version "5.6.1"
+    id("com.diffplug.spotless") version "6.1.0"
     `maven-publish`
 }
 
