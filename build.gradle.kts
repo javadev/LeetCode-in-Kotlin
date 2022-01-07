@@ -41,6 +41,7 @@ tasks.withType<JavaCompile>() {
 
 spotless {
     kotlin {
+        encoding("UTF-8")
         target("**/*.kt")
         ktlint("0.40.0")
         toggleOffOn()
