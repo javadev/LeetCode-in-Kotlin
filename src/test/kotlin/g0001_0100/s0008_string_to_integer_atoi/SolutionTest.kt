@@ -2,7 +2,7 @@ package g0001_0100.s0008_string_to_integer_atoi
 
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class SolutionTest {
     @Test
