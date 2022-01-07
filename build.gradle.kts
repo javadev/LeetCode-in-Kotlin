@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.6.10"
     jacoco
     id("org.sonarqube") version "3.3"
+    id("com.diffplug.spotless") version "6.1.2"
     `maven-publish`
 }
 
@@ -36,6 +37,17 @@ publishing {
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
+}
+
+spotless {
+    kotlin {
+        encoding("UTF-8")
+        target("**/*.kt")
+        ktlint("0.43.0")
+        toggleOffOn()
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
 }
 
 tasks {
