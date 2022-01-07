@@ -14,7 +14,6 @@ class Solution {
                 'C' -> x = getX(s, x, i, 100, 'D', 'M')
                 'D' -> x += 500
                 'M' -> x += 1000
-                else -> {}
             }
         }
         return x
