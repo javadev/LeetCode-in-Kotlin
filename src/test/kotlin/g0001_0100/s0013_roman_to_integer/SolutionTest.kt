@@ -3,7 +3,7 @@ package g0001_0100.s0013_roman_to_integer
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class SolutionTest {
     @Test

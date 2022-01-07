@@ -2,7 +2,7 @@ package g0001_0100.s0011_container_with_most_water
 
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class SolutionTest {
     @Test
