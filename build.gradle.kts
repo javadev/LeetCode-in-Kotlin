@@ -43,6 +43,8 @@ spotless {
     kotlin {
         target("**/*.kt")
         ktlint("0.40.0")
+        toggleOffOn()
+        endWithNewline()
     }
 }
 
