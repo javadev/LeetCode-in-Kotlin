@@ -7,6 +7,6 @@ import org.junit.jupiter.api.Test
 class SolutionTest {
     @Test
     fun isPalindrome() {
-        assertThat(Solution().maxArea(intArrayOf(1,8,6,2,5,4,8,3,7)), equalTo(49))
+        assertThat(Solution().maxArea(intArrayOf(1, 8, 6, 2, 5, 4, 8, 3, 7)), equalTo(49))
     }
 }
