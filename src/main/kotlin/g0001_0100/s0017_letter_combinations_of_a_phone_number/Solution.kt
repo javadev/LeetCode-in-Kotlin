@@ -2,7 +2,7 @@ package g0001_0100.s0017_letter_combinations_of_a_phone_number
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Backtracking
 
-internal class Solution {
+class Solution {
     fun letterCombinations(digits: String): List<String> {
         if (digits.isEmpty()) return ArrayList()
         val letters = arrayOf("", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
