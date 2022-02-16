@@ -2,39 +2,35 @@ package g0001_0100.s0017_letter_combinations_of_a_phone_number
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Backtracking
 
-class Solution {
+internal class Solution {
     fun letterCombinations(digits: String): List<String> {
-        if (digits.isEmpty()) {
-            return emptyList()
-        }
-        val words: MutableList<String> = ArrayList()
-        val word = CharArray(digits.length)
-        helper(digits, word, 0, words)
-        return words
+        if (digits.isEmpty()) return ArrayList()
+        val letters = arrayOf("", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
+        val ans: MutableList<String> = ArrayList()
+        val sb = StringBuilder()
+        findCombinations(0, digits, letters, sb, ans)
+        return ans
     }
 
-    private fun helper(digits: String, word: CharArray, cur: Int, words: MutableList<String>) {
-        if (cur == digits.length) {
-            words.add(String(word))
-        } else {
-            for (ch in charsForDigit(digits[cur])) {
-                word[cur] = ch
-                helper(digits, word, cur + 1, words)
+    private fun findCombinations(
+        start: Int,
+        nums: String,
+        letters: Array<String>,
+        curr: StringBuilder,
+        ans: MutableList<String>
+    ) {
+        if (curr.length == nums.length) {
+            ans.add(curr.toString())
+            return
+        }
+        for (i in start until nums.length) {
+            val n = Character.getNumericValue(nums[i])
+            for (j in 0 until letters[n].length) {
+                val ch = letters[n][j]
+                curr.append(ch)
+                findCombinations(i + 1, nums, letters, curr, ans)
+                curr.deleteCharAt(curr.length - 1)
             }
-        }
-    }
-
-    private fun charsForDigit(digit: Char): CharArray {
-        return when (digit) {
-            '2' -> charArrayOf('a', 'b', 'c')
-            '3' -> charArrayOf('d', 'e', 'f')
-            '4' -> charArrayOf('g', 'h', 'i')
-            '5' -> charArrayOf('j', 'k', 'l')
-            '6' -> charArrayOf('m', 'n', 'o')
-            '7' -> charArrayOf('p', 'q', 'r', 's')
-            '8' -> charArrayOf('t', 'u', 'v')
-            '9' -> charArrayOf('w', 'x', 'y', 'z')
-            else -> charArrayOf()
         }
     }
 }
