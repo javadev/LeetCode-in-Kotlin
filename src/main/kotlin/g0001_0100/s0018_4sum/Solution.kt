@@ -1,8 +1,8 @@
 package g0001_0100.s0018_4sum
 
-import java.util.Arrays
-
 // #Medium #Array #Sorting #Two_Pointers
+
+import java.util.Arrays
 
 class Solution {
     fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
