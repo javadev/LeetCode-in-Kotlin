@@ -52,5 +52,4 @@ spotless {
 
 tasks.koverXmlReport {
     isEnabled = true    
-    xmlReportFile.set(layout.buildDirectory.file("build/reports/jacoco/test/jacocoTestReport.xml"))
 }
