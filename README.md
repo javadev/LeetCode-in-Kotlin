@@ -14,37 +14,24 @@ Include the following in your `pom.xml` for Maven:
 ```xml
 
 <dependencies>
-
   <dependency>
-
     <groupId>com.github.javadev</groupId>
-
     <artifactId>leetcode-in-kotlin</artifactId>
-
     <version>1.1</version>
-
   </dependency>
-
   ...
-
 </dependencies>
-
 ```
 
 Gradle:
 
 ```groovy
-
 implementation 'com.github.javadev:leetcode-in-kotlin:1.1'
-
 ```
 
 #### Tips and Tricks
 
 * format code
-
     * `gradlew spotlessKotlinApply`
-
 * check formatting
-
     * `gradlew spotlessKotlinCheck`
