@@ -53,3 +53,9 @@ spotless {
 tasks.koverXmlReport {
     isEnabled = true    
 }
+
+sonarqube {
+    properties {
+        property("sonar.coverage.jacoco.xmlReportPaths", "${project.buildDir}/reports/kover/project-xml")
+    }
+}
