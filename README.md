@@ -35,7 +35,7 @@ Gradle:
 
 ```groovy
 
-implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
+implementation 'com.github.javadev:leetcode-in-kotlin:1.1'
 
 ```
 
