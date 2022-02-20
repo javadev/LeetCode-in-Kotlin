@@ -56,6 +56,6 @@ tasks.koverXmlReport {
 
 sonarqube {
     properties {
-        property("sonar.coverage.jacoco.xmlReportPaths", "${project.buildDir}/reports/kover/project-xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/kover/project-xml/report.xml")
     }
 }
