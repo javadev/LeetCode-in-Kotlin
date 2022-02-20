@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.6.10"
-    jacoco
+    id("org.jetbrains.kotlinx.kover") version "0.5.0"
     id("org.sonarqube") version "3.3"
     id("com.diffplug.spotless") version "6.1.2"
     `maven-publish`
@@ -50,10 +50,6 @@ spotless {
     }
 }
 
-tasks {
-  jacocoTestReport {
-    reports {
-      xml.required.set(true)
-    }
-  }
+tasks.koverXmlReport {
+    isEnabled = true    
 }
