@@ -6,3 +6,45 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Kotlin&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Kotlin)
 
 Kotlin Solution for LeetCode algorithm problems, continually updating.
+
+## Installation
+
+Include the following in your `pom.xml` for Maven:
+
+```xml
+
+<dependencies>
+
+  <dependency>
+
+    <groupId>com.github.javadev</groupId>
+
+    <artifactId>leetcode-in-kotlin</artifactId>
+
+    <version>1.1</version>
+
+  </dependency>
+
+  ...
+
+</dependencies>
+
+```
+
+Gradle:
+
+```groovy
+
+implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
+
+```
+
+#### Tips and Tricks
+
+* format code
+
+    * `gradlew spotlessKotlinApply`
+
+* check formatting
+
+    * `gradlew spotlessKotlinCheck`
