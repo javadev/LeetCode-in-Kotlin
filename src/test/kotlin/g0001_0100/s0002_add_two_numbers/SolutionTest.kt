@@ -1,5 +1,6 @@
 package g0001_0100.s0002_add_two_numbers
 
+import com_github_leetcode.ListNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
