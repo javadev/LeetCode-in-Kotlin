@@ -1,5 +1,8 @@
 package g0001_0100.s0001_two_sum
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
+// #Data_Structure_I_Day_2_Array #2022_03_22_Time_292_ms_(80.69%)_Space_41.6_MB_(60.71%)
+
 import java.util.Arrays
 
 class Solution {

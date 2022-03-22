@@ -1,5 +1,8 @@
 package g0001_0100.s0004_median_of_two_sorted_arrays
 
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
+// #2022_03_22_Time_276_ms_(91.12%)_Space_47_MB_(85.71%)
+
 import kotlin.collections.ArrayList
 
 class Solution {
