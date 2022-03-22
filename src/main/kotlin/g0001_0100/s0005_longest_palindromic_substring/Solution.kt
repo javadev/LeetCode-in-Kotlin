@@ -1,5 +1,9 @@
 package g0001_0100.s0005_longest_palindromic_substring
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
+// #Data_Structure_II_Day_9_String #Algorithm_II_Day_14_Dynamic_Programming
+// #Dynamic_Programming_I_Day_17 #2022_03_22_Time_359_ms_(69.08%)_Space_38.5_MB_(61.84%)
+
 class Solution {
     fun longestPalindrome(s: String): String {
         val newStr = CharArray(s.length * 2 + 1)

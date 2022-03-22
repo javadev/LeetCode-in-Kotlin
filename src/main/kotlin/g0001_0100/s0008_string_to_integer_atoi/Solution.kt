@@ -1,5 +1,7 @@
 package g0001_0100.s0008_string_to_integer_atoi
 
+// #Medium #Top_Interview_Questions #String #2022_03_22_Time_152_ms_(99.64%)_Space_35.2_MB_(97.83%)
+
 class Solution {
     fun myAtoi(str: String?): Int {
         if (str == null || str.isEmpty()) {

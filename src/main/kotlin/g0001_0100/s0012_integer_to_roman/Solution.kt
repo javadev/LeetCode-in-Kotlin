@@ -1,5 +1,7 @@
 package g0001_0100.s0012_integer_to_roman
 
+// #Medium #String #Hash_Table #Math #2022_02_17_Time_7_ms_(70.99%)_Space_44.8_MB_(31.56%)
+
 class Solution {
     fun intToRoman(num: Int): String? {
         var localNum = num

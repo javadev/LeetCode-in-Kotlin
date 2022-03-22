@@ -1,5 +1,7 @@
 package g0001_0100.s0010_regular_expression_matching
 
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming #Recursion
+
 class Solution {
     private lateinit var cache: Array<Array<Boolean?>>
 

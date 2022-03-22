@@ -1,8 +1,8 @@
 package g0001_0100.s0024_swap_nodes_in_pairs
 
-import com_github_leetcode.ListNode
-
 // #Medium #Linked_List #Recursion #2022_02_18_Time_0_ms_(100.00%)_Space_41.9_MB_(22.86%)
+
+import com_github_leetcode.ListNode
 
 class Solution {
     fun swapPairs(head: ListNode?): ListNode? {
