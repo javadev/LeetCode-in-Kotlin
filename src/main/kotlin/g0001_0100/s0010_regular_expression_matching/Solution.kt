@@ -1,31 +1,30 @@
 package g0001_0100.s0010_regular_expression_matching
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming #Recursion
-// #2022_03_22_Time_240_ms_(84.62%)_Space_34.6_MB_(97.44%)
 
 class Solution {
+    private lateinit var cache: Array<Array<Boolean?>>
+
     fun isMatch(s: String, p: String): Boolean {
-        val n = s.length
-        val m = p.length
-        return solve(n - 1, m - 1, s, p)
+        cache = Array(s.length + 1) { arrayOfNulls(p.length + 1) }
+        return isMatch(s, p, 0, 0)
     }
 
-    private fun solve(i: Int, j: Int, s: String, p: String): Boolean {
-        if (j < 0) return i < 0
-        if (i < 0) return p[j] == '*' && solve(i, j - 2, s, p)
-        // simple char matching
-        // if s char matchs with p char or it can be '.'
-        if (s[i] == p[j] || p[j] == '.') return solve(i - 1, j - 1, s, p)
-        return if (p[j] == '*') {
-            // if s char matches with p char or it can be '.'
-            if (s[i] == p[j - 1] || p[j - 1] == '.') solve(i - 1, j, s, p) || solve(i, j - 2, s, p) else solve(
-                i,
-                j - 2,
-                s,
-                p
-            )
-        } else {
-            false
+    private fun isMatch(s: String, p: String, i: Int, j: Int): Boolean {
+        if (j == p.length) {
+            return i == s.length
         }
+        val result: Boolean
+        if (cache[i][j] != null) {
+            return cache[i][j]!!
+        }
+        val firstMatch = i < s.length && (s[i] == p[j] || p[j] == '.')
+        result = if (j + 1 < p.length && p[j + 1] == '*') {
+            firstMatch && isMatch(s, p, i + 1, j) || isMatch(s, p, i, j + 2)
+        } else {
+            firstMatch && isMatch(s, p, i + 1, j + 1)
+        }
+        cache[i][j] = result
+        return result
     }
 }
