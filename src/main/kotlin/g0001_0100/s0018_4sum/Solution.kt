@@ -1,55 +1,55 @@
 package g0001_0100.s0018_4sum
 
-// #Medium #Array #Sorting #Two_Pointers
+// #Medium #Array #Sorting #Two_Pointers #2022_03_29_Time_467_ms_(81.25%)_Space_44.4_MB_(82.81%)
 
 import java.util.Arrays
 
 class Solution {
-    fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
-        val list: MutableList<List<Int>> = ArrayList()
+    fun fourSum(nums: IntArray, target: Int): List<List<Int?>?> {
+        var list: MutableList<List<Int?>?> = ArrayList()
+        var i: Int
+        var j: Int
+        var k: Int
+        var l: Int
         Arrays.sort(nums)
-        val n = nums.size
-        if (n == 0) {
-            return list
-        }
-        for (a in 0 until n - 3) {
-            if (a > 0 && nums[a] == nums[a - 1]) {
+        i = 0
+        while (i < nums.size - 3) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                i++
                 continue
             }
-            for (d in n - 1 downTo a + 2 + 1) {
-                if (d < n - 1 && nums[d] == nums[d + 1]) {
+            j = i + 1
+            while (j < nums.size - 2) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    j++
                     continue
                 }
-                var b = a + 1
-                var c = d - 1
-                val min = nums[a] + nums[d] + nums[b] + nums[b + 1]
-                if (min > target) {
-                    continue
-                }
-                val max = nums[a] + nums[d] + nums[c] + nums[c - 1]
-                if (max < target) {
-                    break
-                }
-                while (c > b) {
-                    val sum = nums[a] + nums[b] + nums[c] + nums[d]
-                    if (sum > target) {
-                        c--
-                    } else if (sum < target) {
-                        b++
+                k = j + 1
+                l = nums.size - 1
+                while (k < l) {
+                    val sum = nums[i] + nums[j] + nums[k] + nums[l]
+                    if (sum == target) {
+                        val l1 = ArrayList<Int?>()
+                        l1.add(nums[i])
+                        l1.add(nums[j])
+                        l1.add(nums[k])
+                        l1.add(nums[l])
+                        list.add(l1)
+                        l--
+                        if (k < l && nums[l] == nums[l + 1]) {
+                            l--
+                        }
+                    } else if (sum > target) {
+                        l--
                     } else {
-                        list.add(Arrays.asList(nums[a], nums[b], nums[c], nums[d]))
-                        while (c > b && nums[b] == nums[b + 1]) {
-                            b++
-                        }
-                        while (c > b && nums[c] == nums[c - 1]) {
-                            c--
-                        }
-                        b++
-                        c--
+                        k++
                     }
                 }
+                j++
             }
+            i++
         }
+        list = ArrayList(LinkedHashSet(list))
         return list
     }
 }

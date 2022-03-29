@@ -1,8 +1,8 @@
 package g0001_0100.s0014_longest_common_prefix
 
-// #Easy #Top_Interview_Questions #String
+// #Easy #Top_Interview_Questions #String #2022_03_29_Time_269_ms_(48.51%)_Space_34.8_MB_(98.92%)
 
-internal class Solution {
+class Solution {
     fun longestCommonPrefix(strs: Array<String>): String {
         if (strs.size < 1) {
             return ""
