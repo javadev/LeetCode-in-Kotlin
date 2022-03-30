@@ -25,7 +25,7 @@ tasks.test {
 }
 
 group = "com.github.javadev"
-version = "1.1-SNAPSHOT"
+version = "1.2-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
