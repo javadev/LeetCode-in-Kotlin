@@ -6,10 +6,19 @@ package g0001_0100.s0021_merge_two_sorted_lists
 
 import com_github_leetcode.ListNode
 
+/*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
-    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
-        var l1 = l1
-        var l2 = l2
+    fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
+        var l1 = list1
+        var l2 = list2
         var list: ListNode? = ListNode(-1)
         val head = list
         while (l1 != null || l2 != null) {
