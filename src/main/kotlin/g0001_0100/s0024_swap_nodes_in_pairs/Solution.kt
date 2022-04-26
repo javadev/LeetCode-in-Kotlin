@@ -14,8 +14,8 @@ class Solution {
         return reverse(head, len)
     }
 
-    private fun getLength(curr: ListNode): Int {
-        var curr: ListNode? = curr
+    private fun getLength(currLocal: ListNode): Int {
+        var curr: ListNode? = currLocal
         var cnt = 0
         while (curr != null) {
             cnt++
