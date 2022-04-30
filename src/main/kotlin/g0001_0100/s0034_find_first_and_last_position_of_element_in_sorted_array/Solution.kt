@@ -6,9 +6,7 @@ package g0001_0100.s0034_find_first_and_last_position_of_element_in_sorted_array
 
 class Solution constructor() {
     fun searchRange(nums: IntArray, target: Int): IntArray {
-        var l = 0
-        var r: Int = nums.size - 1
-        var ans = IntArray(2)
+        val ans = IntArray(2)
         ans[0] = helper(nums, target, false)
         ans[1] = helper(nums, target, true)
         return ans
