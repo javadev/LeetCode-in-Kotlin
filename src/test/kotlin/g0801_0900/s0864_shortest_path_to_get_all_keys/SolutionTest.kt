@@ -7,13 +7,22 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun shortestPathAllKeys() {
-        val solution = Solution()
         assertThat(
-            solution.shortestPathAllKeys(arrayOf("@.a.#", "###.#", "b.A.B")), equalTo(8)
+            Solution().shortestPathAllKeys(arrayOf("@.a.#", "###.#", "b.A.B")),
+            equalTo(8)
         )
+    }
+
+    @Test
+    fun shortestPathAllKeys2() {
         assertThat(
-            solution.shortestPathAllKeys(arrayOf("@..aA", "..B#.", "....b")), equalTo(6)
+            Solution().shortestPathAllKeys(arrayOf("@..aA", "..B#.", "....b")),
+            equalTo(6)
         )
-        assertThat(solution.shortestPathAllKeys(arrayOf("@Aa")), equalTo(-1))
+    }
+
+    @Test
+    fun shortestPathAllKeys3() {
+        assertThat(Solution().shortestPathAllKeys(arrayOf("@Aa")), equalTo(-1))
     }
 }

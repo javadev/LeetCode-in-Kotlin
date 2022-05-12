@@ -12,4 +12,12 @@ internal class SolutionTest {
             equalTo("fl")
         )
     }
+
+    @Test
+    fun longestCommonPrefix2() {
+        assertThat(
+            Solution().longestCommonPrefix(arrayOf("dog", "racecar", "car")),
+            equalTo("")
+        )
+    }
 }
