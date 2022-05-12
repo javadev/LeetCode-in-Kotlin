@@ -4,7 +4,7 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-class SolutionTest {
+internal class SolutionTest {
     @Test
     fun myAtoi() {
         assertThat(Solution().myAtoi("42"), equalTo(42))
