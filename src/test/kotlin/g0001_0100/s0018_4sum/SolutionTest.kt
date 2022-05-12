@@ -15,4 +15,14 @@ internal class SolutionTest {
             )
         )
     }
+
+    @Test
+    fun fourSum2() {
+        assertThat(
+            Solution().fourSum(intArrayOf(2, 2, 2, 2, 2), 8),
+            equalTo(
+                getLists(arrayOf(intArrayOf(2, 2, 2, 2)))
+            )
+        )
+    }
 }

@@ -13,4 +13,9 @@ internal class SolutionTest {
             equalTo(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()"))
         )
     }
+
+    @Test
+    fun generateParenthesis2() {
+        assertThat(Solution().generateParenthesis(1), equalTo(Arrays.asList("()")))
+    }
 }

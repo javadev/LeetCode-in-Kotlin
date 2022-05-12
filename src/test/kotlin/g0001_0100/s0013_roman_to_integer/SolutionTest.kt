@@ -4,14 +4,29 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-class SolutionTest {
+internal class SolutionTest {
     @Test
     fun romanToInt() {
-        val solution = Solution()
-        assertThat(solution.romanToInt("III"), equalTo(3))
-        assertThat(solution.romanToInt("IV"), equalTo(4))
-        assertThat(solution.romanToInt("IX"), equalTo(9))
-        assertThat(solution.romanToInt("LVIII"), equalTo(58))
-        assertThat(solution.romanToInt("MCMXCIV"), equalTo(1994))
+        assertThat(Solution().romanToInt("III"), equalTo(3))
+    }
+
+    @Test
+    fun romanToInt2() {
+        assertThat(Solution().romanToInt("IV"), equalTo(4))
+    }
+
+    @Test
+    fun romanToInt3() {
+        assertThat(Solution().romanToInt("IX"), equalTo(9))
+    }
+
+    @Test
+    fun romanToInt4() {
+        assertThat(Solution().romanToInt("LVIII"), equalTo(58))
+    }
+
+    @Test
+    fun romanToInt5() {
+        assertThat(Solution().romanToInt("MCMXCIV"), equalTo(1994))
     }
 }

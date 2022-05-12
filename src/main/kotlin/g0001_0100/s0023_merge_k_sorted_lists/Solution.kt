@@ -7,7 +7,7 @@ import com_github_leetcode.ListNode
 
 class Solution {
     fun mergeKLists(lists: Array<ListNode>): ListNode? {
-        return if (lists.size == 0) {
+        return if (lists.isEmpty()) {
             null
         } else mergeKLists(lists, 0, lists.size)
     }
@@ -23,9 +23,9 @@ class Solution {
         }
     }
 
-    private fun mergeTwoLists(left: ListNode?, right: ListNode?): ListNode? {
-        var left = left
-        var right = right
+    private fun mergeTwoLists(leftLocal: ListNode?, rightLocal: ListNode?): ListNode? {
+        var left = leftLocal
+        var right = rightLocal
         if (left == null) {
             return right
         }

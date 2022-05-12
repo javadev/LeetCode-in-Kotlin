@@ -7,11 +7,26 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun isValid() {
-        val solution = Solution()
-        assertThat(solution.isValid("()"), equalTo(true))
-        assertThat(solution.isValid("()[]{}"), equalTo(true))
-        assertThat(solution.isValid("(]"), equalTo(false))
-        assertThat(solution.isValid("([)]"), equalTo(false))
-        assertThat(solution.isValid("{[]}"), equalTo(true))
+        assertThat(Solution().isValid("()"), equalTo(true))
+    }
+
+    @Test
+    fun isValid2() {
+        assertThat(Solution().isValid("()[]{}"), equalTo(true))
+    }
+
+    @Test
+    fun isValid3() {
+        assertThat(Solution().isValid("(]"), equalTo(false))
+    }
+
+    @Test
+    fun isValid4() {
+        assertThat(Solution().isValid("([)]"), equalTo(false))
+    }
+
+    @Test
+    fun isValid5() {
+        assertThat(Solution().isValid("{[]}"), equalTo(true))
     }
 }
