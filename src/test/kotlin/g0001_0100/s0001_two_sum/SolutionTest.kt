@@ -19,4 +19,9 @@ internal class SolutionTest {
     fun twoSum3() {
         assertThat(Solution().twoSum(intArrayOf(3, 3), 6), equalTo(intArrayOf(0, 1)))
     }
+
+    @Test
+    fun twoSum4() {
+        assertThat(Solution().twoSum(intArrayOf(3, 3), 7), equalTo(intArrayOf(-1, -1)))
+    }
 }
