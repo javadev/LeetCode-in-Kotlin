@@ -27,7 +27,7 @@ class Solution {
             var tem = input[i] - '0'
             tem = if (negativeSign) -tem else tem
             // avoid invalid number like 038
-            if (num == 0 && tem == '0'.code) {
+            if (num == 0 && tem == '0'.toInt()) {
                 i++
             } else if (num == Int.MIN_VALUE / 10 && tem <= -8 || num < Int.MIN_VALUE / 10) {
                 return Int.MIN_VALUE
