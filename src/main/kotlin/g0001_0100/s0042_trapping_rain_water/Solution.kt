@@ -12,7 +12,6 @@ class Solution {
         var totalWater = 0
         var leftPtr = 0
         var rightPtr = size - 1
-
         while (leftPtr < rightPtr) {
             if (height[leftPtr] <= height[rightPtr]) {
                 if (maxLeft > height[leftPtr]) {
@@ -30,7 +29,6 @@ class Solution {
                 --rightPtr
             }
         }
-
         return totalWater
     }
 }

@@ -9,15 +9,13 @@ class Solution {
         var jumps = 0
         var minJump = 0
         var maxJump = 0
-
         while (maxJump < nums.lastIndex) {
             var nextJump = 0
-            for (i in minJump..maxJump) nextJump = maxOf(nextJump, i + nums[i])
+            for (i in minJump..maxJump) { nextJump = maxOf(nextJump, i + nums[i]) }
             minJump = maxJump + 1
             maxJump = nextJump
             jumps++
         }
-
         return jumps
     }
 }
