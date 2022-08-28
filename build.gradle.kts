@@ -15,8 +15,8 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:[5.8.2,)")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:[5.8.2,)")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:[5.9.0,)")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:[5.9.0,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
 }
 
@@ -25,7 +25,7 @@ tasks.test {
 }
 
 group = "com.github.javadev"
-version = "1.3-SNAPSHOT"
+version = "1.4-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
