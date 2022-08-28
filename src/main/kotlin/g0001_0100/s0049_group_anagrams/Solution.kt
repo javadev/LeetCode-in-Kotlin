@@ -9,9 +9,7 @@ class Solution {
         if (strs.isEmpty()) {
             return emptyList()
         }
-
         val hashMap = hashMapOf<String, MutableList<String>>()
-
         for (i in strs.indices) {
             val charArray = strs[i].toCharArray()
             charArray.sort()
