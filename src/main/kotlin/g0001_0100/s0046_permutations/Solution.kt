@@ -6,23 +6,18 @@ package g0001_0100.s0046_permutations
 
 class Solution {
     fun permute(nums: IntArray): List<List<Int>> {
-
         var result = mutableListOf<MutableList<Int>>()
-
         val subResult = mutableListOf<Int>()
         subResult.add(nums[0])
         result.add(subResult)
-
         for (i in 1 until nums.size) {
             result = insert(nums[i], result)
         }
-
         return result
     }
 
     private fun insert(n: Int, arr: MutableList<MutableList<Int>>): MutableList<MutableList<Int>> {
         val result = mutableListOf<MutableList<Int>>()
-
         arr.forEach { p ->
             for (i in 0..p.size) {
                 val subResult = mutableListOf<Int>()
@@ -31,7 +26,6 @@ class Solution {
                 result.add(subResult)
             }
         }
-
         return result
     }
 }
