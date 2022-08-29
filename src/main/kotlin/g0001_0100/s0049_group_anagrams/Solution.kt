@@ -15,7 +15,7 @@ class Solution {
             val temp = String(ch)
             hm.computeIfAbsent(
                 temp
-            ) { k: String? -> ArrayList() }
+            ) { _: String? -> ArrayList() }
             hm[temp]!!.add(s)
         }
         return ArrayList<List<String>>(hm.values)
