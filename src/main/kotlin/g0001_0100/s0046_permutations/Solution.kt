@@ -2,30 +2,37 @@ package g0001_0100.s0046_permutations
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Backtracking
 // #Algorithm_I_Day_11_Recursion_Backtracking #Level_2_Day_20_Brute_Force/Backtracking
-// #Udemy_Backtracking/Recursion #2022_08_28_Time_299_ms_(80.72%)_Space_39.8_MB_(85.67%)
+// #Udemy_Backtracking/Recursion #2022_08_29_Time_186_ms_(100.00%)_Space_36.9_MB_(98.90%)
 
 class Solution {
     fun permute(nums: IntArray): List<List<Int>> {
-        var result = mutableListOf<MutableList<Int>>()
-        val subResult = mutableListOf<Int>()
-        subResult.add(nums[0])
-        result.add(subResult)
-        for (i in 1 until nums.size) {
-            result = insert(nums[i], result)
+        if (nums.isEmpty()) {
+            return ArrayList()
         }
-        return result
+        val finalResult: MutableList<List<Int>> = ArrayList()
+        permuteRecur(nums, finalResult, ArrayList(), BooleanArray(nums.size))
+        return finalResult
     }
 
-    private fun insert(n: Int, arr: MutableList<MutableList<Int>>): MutableList<MutableList<Int>> {
-        val result = mutableListOf<MutableList<Int>>()
-        arr.forEach { p ->
-            for (i in 0..p.size) {
-                val subResult = mutableListOf<Int>()
-                subResult.addAll(p)
-                subResult.add(i, n)
-                result.add(subResult)
-            }
+    private fun permuteRecur(
+        nums: IntArray,
+        finalResult: MutableList<List<Int>>,
+        currResult: MutableList<Int>,
+        used: BooleanArray
+    ) {
+        if (currResult.size == nums.size) {
+            finalResult.add(ArrayList(currResult))
+            return
         }
-        return result
+        for (i in nums.indices) {
+            if (used[i]) {
+                continue
+            }
+            currResult.add(nums[i])
+            used[i] = true
+            permuteRecur(nums, finalResult, currResult, used)
+            used[i] = false
+            currResult.removeAt(currResult.size - 1)
+        }
     }
 }

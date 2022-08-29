@@ -7,7 +7,16 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun groupAnagrams() {
-        assertThat(Solution().groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat")), equalTo(arrayOf(arrayOf("eat", "tea", "ate").toList(), arrayOf("bat").toList(), arrayOf("tan", "nat").toList(),).toList()))
+        assertThat(
+            Solution().groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat")),
+            equalTo(
+                arrayOf(
+                    arrayOf("eat", "tea", "ate").toList(),
+                    arrayOf("bat").toList(),
+                    arrayOf("tan", "nat").toList(),
+                ).toList()
+            )
+        )
     }
 
     @Test

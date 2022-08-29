@@ -1,55 +1,48 @@
 package g0001_0100.s0051_n_queens
 
 // #Hard #Top_100_Liked_Questions #Array #Backtracking
-// #2022_08_28_Time_280_ms_(88.35%)_Space_41.3_MB_(81.55%)
+// #2022_08_29_Time_243_ms_(95.10%)_Space_39.7_MB_(91.18%)
+
+import java.util.Arrays
 
 class Solution {
     fun solveNQueens(n: Int): List<List<String>> {
-        val result = mutableListOf<List<String>>()
-        val board = Array(n) { CharArray(n) { '.' } }
-        // check only top rows and cols
-        fun isValid(row: Int, col: Int): Boolean {
-            for (i in 0 until row) {
-                if (board[i][col] == 'Q')
-                    return false
-            }
-            // top right
-            var (i, j) = row - 1 to col + 1
-            while (i >= 0 && j < n) {
-                if (board[i--][j++] == 'Q')
-                    return false
-            }
-            // top left
-            i = row - 1
-            j = col - 1
-            while (i >= 0 && j >= 0) {
-                if (board[i--][j--] == 'Q') {
-                    return false
-                }
-            }
-            return true
-        }
+        val pos = BooleanArray(n + 2 * n - 1 + 2 * n - 1)
+        val pos2 = IntArray(n)
+        val ans: MutableList<List<String>> = ArrayList()
+        helper(n, 0, pos, pos2, ans)
+        return ans
+    }
 
-        fun construct() {
-            val list = mutableListOf<String>()
-            for (row in board) list.add(String(row))
-            result.add(list)
+    private fun helper(n: Int, row: Int, pos: BooleanArray, pos2: IntArray, ans: MutableList<List<String>>) {
+        if (row == n) {
+            construct(n, pos2, ans)
+            return
         }
+        for (i in 0 until n) {
+            val index = n + 2 * n - 1 + n - 1 + i - row
+            if (pos[i] || pos[n + i + row] || pos[index]) {
+                continue
+            }
+            pos[i] = true
+            pos[n + i + row] = true
+            pos[index] = true
+            pos2[row] = i
+            helper(n, row + 1, pos, pos2, ans)
+            pos[i] = false
+            pos[n + i + row] = false
+            pos[index] = false
+        }
+    }
 
-        fun backtrack(row: Int) {
-            if (row == n) {
-                construct()
-                return
-            }
-            for (col in 0 until n) {
-                if (isValid(row, col)) {
-                    board[row][col] = 'Q'
-                    backtrack(row + 1)
-                    board[row][col] = '.'
-                }
-            }
+    private fun construct(n: Int, pos: IntArray, ans: MutableList<List<String>>) {
+        val sol: MutableList<String> = ArrayList()
+        for (r in 0 until n) {
+            val queenRow = CharArray(n)
+            Arrays.fill(queenRow, '.')
+            queenRow[pos[r]] = 'Q'
+            sol.add(String(queenRow))
         }
-        backtrack(0)
-        return result
+        ans.add(sol)
     }
 }
