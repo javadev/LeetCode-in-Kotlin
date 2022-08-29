@@ -5,8 +5,8 @@ package g0001_0100.s0046_permutations
 // #Udemy_Backtracking/Recursion #2022_08_29_Time_186_ms_(100.00%)_Space_36.9_MB_(98.90%)
 
 class Solution {
-    fun permute(nums: IntArray?): List<List<Int>> {
-        if (nums == null || nums.isEmpty()) {
+    fun permute(nums: IntArray): List<List<Int>> {
+        if (nums.isEmpty()) {
             return ArrayList()
         }
         val finalResult: MutableList<List<Int>> = ArrayList()
