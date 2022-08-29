@@ -7,7 +7,15 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun solveNQueens() {
-        assertThat(Solution().solveNQueens(4), equalTo(arrayOf(arrayOf(".Q..", "...Q", "Q...", "..Q.").toList(), arrayOf("..Q.", "Q...", "...Q", ".Q..").toList()).toList()))
+        assertThat(
+            Solution().solveNQueens(4),
+            equalTo(
+                arrayOf(
+                    arrayOf(".Q..", "...Q", "Q...", "..Q.").toList(),
+                    arrayOf("..Q.", "Q...", "...Q", ".Q..").toList()
+                ).toList()
+            )
+        )
     }
 
     @Test
