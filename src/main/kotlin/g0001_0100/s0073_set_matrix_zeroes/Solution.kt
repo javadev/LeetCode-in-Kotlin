@@ -1,0 +1,58 @@
+package g0001_0100.s0073_set_matrix_zeroes
+
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Matrix
+// #Udemy_2D_Arrays/Matrix #2022_08_31_Time_255_ms_(100.00%)_Space_45.7_MB_(91.72%)
+
+class Solution {
+    // Approach: Use first row and first column for storing whether in future
+    //           the entire row or column needs to be marked 0
+    fun setZeroes(matrix: Array<IntArray>) {
+        val m = matrix.size
+        val n: Int = matrix[0].size
+        var row0 = false
+        var col0 = false
+        // Check if 0th col needs to be market all 0s in future
+        for (ints in matrix) {
+            if (ints[0] == 0) {
+                col0 = true
+                break
+            }
+        }
+        // Check if 0th row needs to be market all 0s in future
+        for (i in 0 until n) {
+            if (matrix[0][i] == 0) {
+                row0 = true
+                break
+            }
+        }
+        // Store the signals in 0th row and column
+        for (i in 1 until m) {
+            for (j in 1 until n) {
+                if (matrix[i][j] == 0) {
+                    matrix[i][0] = 0
+                    matrix[0][j] = 0
+                }
+            }
+        }
+        // Mark 0 for all cells based on signal from 0th row and 0th column
+        for (i in 1 until m) {
+            for (j in 1 until n) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                    matrix[i][j] = 0
+                }
+            }
+        }
+        // Set 0th column
+        for (i in 0 until m) {
+            if (col0) {
+                matrix[i][0] = 0
+            }
+        }
+        // Set 0th row
+        for (i in 0 until n) {
+            if (row0) {
+                matrix[0][i] = 0
+            }
+        }
+    }
+}
