@@ -2,7 +2,7 @@ package com_github_leetcode
 
 object LinkedListUtils {
     fun contructLinkedList(nums: IntArray?): ListNode? {
-        if (nums == null || nums.size == 0) {
+        if (nums == null || nums.isEmpty()) {
             return null
         }
         val pre = ListNode(-1)
@@ -16,7 +16,7 @@ object LinkedListUtils {
     }
 
     fun createSinglyLinkedList(listValues: List<Int?>?): ListNode {
-        require(!(listValues == null || listValues.size == 0)) { "Please pass in a valid listValues to create a singly linked list." }
+        require(!(listValues == null || listValues.isEmpty())) { "Please pass in a valid listValues to create a singly linked list." }
         val head = ListNode(listValues[0]!!)
         var tmp: ListNode? = head
         for (i in 1 until listValues.size) {

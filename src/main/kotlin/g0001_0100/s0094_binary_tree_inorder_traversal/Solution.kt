@@ -16,7 +16,7 @@ class Solution {
         return answer
     }
 
-    fun inorderTraversal(root: TreeNode?, answer: MutableList<Int>) {
+    private fun inorderTraversal(root: TreeNode?, answer: MutableList<Int>) {
         if (root == null) {
             return
         }

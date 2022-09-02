@@ -9,7 +9,7 @@ class Solution {
     }
 
     private fun largestArea(a: IntArray?, start: Int, limit: Int): Int {
-        if (a == null || a.size == 0) {
+        if (a == null || a.isEmpty()) {
             return 0
         }
         if (start == limit) {

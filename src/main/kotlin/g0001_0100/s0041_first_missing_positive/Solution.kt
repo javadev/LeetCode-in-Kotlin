@@ -6,7 +6,7 @@ package g0001_0100.s0041_first_missing_positive
 class Solution {
     fun firstMissingPositive(nums: IntArray): Int {
         var noOne = true
-        for (i in 0..(nums.size - 1)) {
+        for (i in 0 until nums.size) {
             if (noOne && nums[i] == 1) {
                 noOne = false
             } else if (nums[i] <= 0) {
