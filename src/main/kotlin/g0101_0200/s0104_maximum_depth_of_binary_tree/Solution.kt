@@ -6,6 +6,7 @@ package g0101_0200.s0104_maximum_depth_of_binary_tree
 // #2022_09_02_Time_236_ms_(83.39%)_Space_36.2_MB_(88.26%)
 
 import com_github_leetcode.TreeNode
+import kotlin.math.max
 
 class Solution {
     fun maxDepth(root: TreeNode?): Int {
@@ -13,14 +14,11 @@ class Solution {
     }
 
     private fun findDepth(node: TreeNode?, currentDepth: Int): Int {
-        var currentDepth = currentDepth
+        var localCurrentDepth = currentDepth
         if (node == null) {
             return 0
         }
-        currentDepth++
-        return (
-            1 +
-                Math.max(findDepth(node.left, currentDepth), findDepth(node.right, currentDepth))
-            )
+        localCurrentDepth++
+        return 1 + max(findDepth(node.left, localCurrentDepth), findDepth(node.right, localCurrentDepth))
     }
 }
