@@ -11,26 +11,26 @@ import java.util.Queue
 
 class Solution {
     fun levelOrder(root: TreeNode?): List<List<Int>> {
-        var root: TreeNode? = root
+        var localRoot: TreeNode? = root
         val result: MutableList<List<Int>> = ArrayList()
-        if (root == null) {
+        if (localRoot == null) {
             return result
         }
         val queue: Queue<TreeNode> = LinkedList()
-        queue.add(root)
+        queue.add(localRoot)
         queue.add(null)
         var level: MutableList<Int> = ArrayList()
         while (!queue.isEmpty()) {
-            root = queue.remove()
-            while (!queue.isEmpty() && root != null) {
-                level.add(root.`val`)
-                if (root.left != null) {
-                    queue.add(root.left)
+            localRoot = queue.remove()
+            while (!queue.isEmpty() && localRoot != null) {
+                level.add(localRoot.`val`)
+                if (localRoot.left != null) {
+                    queue.add(localRoot.left)
                 }
-                if (root.right != null) {
-                    queue.add(root.right)
+                if (localRoot.right != null) {
+                    queue.add(localRoot.right)
                 }
-                root = queue.remove()
+                localRoot = queue.remove()
             }
             result.add(level)
             level = ArrayList()
