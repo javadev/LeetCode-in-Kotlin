@@ -15,7 +15,7 @@ object ArrayUtils {
         return expectedList
     }
 
-    fun getLists(expected: Array<Array<String>>): List<List<String>>? {
+    fun getLists(expected: Array<Array<String>>): List<List<String>> {
         val expectedList: MutableList<List<String>> = ArrayList()
         for (value in expected) {
             val expectedItem: MutableList<String> = ArrayList()

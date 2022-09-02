@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun sortColors() {
-        var array = intArrayOf(2, 0, 2, 1, 1, 0)
+        val array = intArrayOf(2, 0, 2, 1, 1, 0)
         Solution().sortColors(array)
-        var expected = intArrayOf(0, 0, 1, 1, 2, 2)
+        val expected = intArrayOf(0, 0, 1, 1, 2, 2)
         assertThat(array, equalTo(expected))
     }
 
     @Test
     fun sortColors2() {
-        var array = intArrayOf(2, 0, 1)
+        val array = intArrayOf(2, 0, 1)
         Solution().sortColors(array)
-        var expected = intArrayOf(0, 1, 2)
+        val expected = intArrayOf(0, 1, 2)
         assertThat(array, equalTo(expected))
     }
 }

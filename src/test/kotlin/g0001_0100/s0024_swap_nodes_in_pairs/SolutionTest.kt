@@ -5,12 +5,11 @@ import com_github_leetcode.ListNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
     fun swapPairs() {
-        val head = createSinglyLinkedList(Arrays.asList(1, 2, 3, 4))
+        val head = createSinglyLinkedList(listOf(1, 2, 3, 4))
         assertThat(Solution().swapPairs(head).toString(), equalTo("2, 1, 4, 3"))
     }
 

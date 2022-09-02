@@ -38,15 +38,17 @@ class TreeNode {
     companion object {
         fun create(treeValues: List<Int?>): TreeNode? {
             val root = if (treeValues.isEmpty()) null else TreeNode(treeValues[0]!!)
-            val queue: Queue<TreeNode> = LinkedList()
+            val queue: Queue<TreeNode?> = LinkedList()
             queue.offer(root)
             var i = 1
             while (i < treeValues.size) {
-                val curr: TreeNode = queue.poll()
-                curr.left = if (treeValues[i] == null) null else TreeNode(treeValues[i]!!)
-                queue.offer(curr.left)
-                if (++i < treeValues.size) {
-                    curr.right = if (treeValues[i] == null) null else TreeNode(treeValues[i]!!)
+                val curr = queue.poll()
+                if (treeValues[i] != null) {
+                    curr!!.left = TreeNode(treeValues[i]!!)
+                    queue.offer(curr.left)
+                }
+                if (++i < treeValues.size && treeValues[i] != null) {
+                    curr!!.right = TreeNode(treeValues[i]!!)
                     queue.offer(curr.right)
                 }
                 i++

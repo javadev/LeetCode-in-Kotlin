@@ -5,13 +5,12 @@ import com_github_leetcode.ListNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
     fun mergeTwoLists() {
-        val l1 = createSinglyLinkedList(Arrays.asList(1, 2, 4))
-        val l2 = createSinglyLinkedList(Arrays.asList(1, 3, 4))
+        val l1 = createSinglyLinkedList(listOf(1, 2, 4))
+        val l2 = createSinglyLinkedList(listOf(1, 3, 4))
         assertThat(Solution().mergeTwoLists(l1, l2).toString(), equalTo("1, 1, 2, 3, 4, 4"))
     }
 

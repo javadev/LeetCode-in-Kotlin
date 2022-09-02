@@ -4,7 +4,7 @@ package g0001_0100.s0008_string_to_integer_atoi
 
 class Solution {
     fun myAtoi(str: String?): Int {
-        if (str == null || str.isEmpty()) {
+        if (str.isNullOrEmpty()) {
             return 0
         }
         var i = 0

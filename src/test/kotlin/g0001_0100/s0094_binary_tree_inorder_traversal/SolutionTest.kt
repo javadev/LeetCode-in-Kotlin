@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun inorderTraversal() {
-        var tree = TreeNode(1)
+        val tree = TreeNode(1)
         tree.left = null
         tree.right = TreeNode(2)
         tree.right!!.left = TreeNode(3)
@@ -17,13 +17,13 @@ internal class SolutionTest {
 
     @Test
     fun inorderTraversal2() {
-        var tree = null
+        val tree = null
         assertThat(Solution().inorderTraversal(tree), equalTo(arrayListOf()))
     }
 
     @Test
     fun inorderTraversal3() {
-        var tree = TreeNode(1)
+        val tree = TreeNode(1)
         assertThat(Solution().inorderTraversal(tree), equalTo(arrayListOf(1)))
     }
 }

@@ -7,12 +7,11 @@ import java.util.Arrays
 class Solution {
     fun fourSum(nums: IntArray, target: Int): List<List<Int?>?> {
         var list: MutableList<List<Int?>?> = ArrayList()
-        var i: Int
         var j: Int
         var k: Int
         var l: Int
         Arrays.sort(nums)
-        i = 0
+        var i: Int = 0
         while (i < nums.size - 3) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 i++

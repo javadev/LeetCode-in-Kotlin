@@ -7,8 +7,8 @@ package g0001_0100.s0076_minimum_window_substring
 class Solution {
     fun minWindow(s: String, t: String): String {
         val map = IntArray(128)
-        for (i in 0 until t.length) {
-            map[t[i] - 'A']++
+        for (element in t) {
+            map[element - 'A']++
         }
         var count = t.length
         var begin = 0

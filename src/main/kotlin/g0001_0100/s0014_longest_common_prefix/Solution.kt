@@ -4,7 +4,7 @@ package g0001_0100.s0014_longest_common_prefix
 
 class Solution {
     fun longestCommonPrefix(strs: Array<String>): String {
-        if (strs.size < 1) {
+        if (strs.isEmpty()) {
             return ""
         }
         if (strs.size == 1) {

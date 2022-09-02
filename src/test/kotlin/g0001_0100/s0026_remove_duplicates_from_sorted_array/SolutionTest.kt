@@ -10,13 +10,13 @@ internal class SolutionTest {
     fun removeDuplicates() {
         val array = intArrayOf(1, 1, 2)
         val end = Solution().removeDuplicates(array)
-        assertThat(Arrays.toString(Arrays.copyOfRange(array, 0, end)), equalTo("[1, 2]"))
+        assertThat(Arrays.toString(array.copyOfRange(0, end)), equalTo("[1, 2]"))
     }
 
     @Test
     fun removeDuplicates2() {
         val array = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
         val end = Solution().removeDuplicates(array)
-        assertThat(Arrays.toString(Arrays.copyOfRange(array, 0, end)), equalTo("[0, 1, 2, 3, 4]"))
+        assertThat(Arrays.toString(array.copyOfRange(0, end)), equalTo("[0, 1, 2, 3, 4]"))
     }
 }
