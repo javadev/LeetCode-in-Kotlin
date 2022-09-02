@@ -14,4 +14,9 @@ internal class SolutionTest {
     fun largestRectangleArea2() {
         assertThat(Solution().largestRectangleArea(intArrayOf(2, 4)), equalTo(4))
     }
+
+    @Test
+    fun largestRectangleArea3() {
+        assertThat(Solution().largestRectangleArea(intArrayOf()), equalTo(0))
+    }
 }
