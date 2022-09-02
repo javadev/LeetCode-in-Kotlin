@@ -15,4 +15,14 @@ internal class SolutionTest {
     fun isSymmetric2() {
         assertThat(Solution().isSymmetric(TreeNode.create(listOf(1, 2, 2, null, 3, null, 3))), equalTo(false))
     }
+
+    @Test
+    fun isSymmetric3() {
+        assertThat(Solution().isSymmetric(null), equalTo(true))
+    }
+
+    @Test
+    fun isSymmetric4() {
+        assertThat(Solution().isSymmetric(TreeNode.create(listOf(1, 2, 2, 3, 4, 4, 5))), equalTo(false))
+    }
 }
