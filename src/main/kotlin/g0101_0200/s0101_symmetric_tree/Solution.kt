@@ -17,7 +17,7 @@ class Solution {
         if (leftNode == null || rightNode == null) {
             return leftNode == null && rightNode == null
         }
-        return if (leftNode.`val` !== rightNode.`val`) {
+        return if (leftNode.`val` != rightNode.`val`) {
             false
         } else helper(leftNode.left, rightNode.right) && helper(leftNode.right, rightNode.left)
     }
