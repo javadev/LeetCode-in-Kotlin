@@ -10,7 +10,7 @@ import java.util.HashMap
 class Solution {
     private var j = 0
     private val map: MutableMap<Int, Int> = HashMap()
-    operator fun get(key: Int): Int {
+    fun get(key: Int): Int {
         return map[key]!!
     }
 
