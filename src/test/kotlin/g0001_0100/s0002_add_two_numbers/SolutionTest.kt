@@ -1,6 +1,5 @@
 package g0001_0100.s0002_add_two_numbers
 
-import com_github_leetcode.LinkedListUtils
 import com_github_leetcode.LinkedListUtils.contructLinkedList
 import com_github_leetcode.ListNode
 import org.hamcrest.CoreMatchers.equalTo
