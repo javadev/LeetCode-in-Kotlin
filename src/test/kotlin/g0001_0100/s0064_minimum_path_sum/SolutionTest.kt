@@ -7,7 +7,10 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun minPathSum() {
-        assertThat(Solution().minPathSum(arrayOf(intArrayOf(1, 3, 1), intArrayOf(1, 5, 1), intArrayOf(4, 2, 1))), equalTo(7))
+        assertThat(
+            Solution().minPathSum(arrayOf(intArrayOf(1, 3, 1), intArrayOf(1, 5, 1), intArrayOf(4, 2, 1))),
+            equalTo(7)
+        )
     }
 
     @Test
