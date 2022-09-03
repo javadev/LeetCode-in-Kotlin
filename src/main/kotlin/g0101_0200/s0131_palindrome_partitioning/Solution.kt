@@ -12,7 +12,6 @@ class Solution {
             if (i > j) {
                 return true
             }
-
             return when (mem[i][j]) {
                 1 -> true
                 2 -> false
@@ -39,9 +38,7 @@ class Solution {
                 path.removeAt(path.size - 1)
             }
         }
-
         dfs(0, ArrayList())
-
         return res
     }
 }
