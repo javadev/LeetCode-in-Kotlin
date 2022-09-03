@@ -7,16 +7,22 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun exist() {
-        assertThat(Solution().exist(arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E')), "ABCCED"), equalTo(true))
+        val input =
+            arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E'))
+        assertThat(Solution().exist(input, "ABCCED"), equalTo(true))
     }
 
     @Test
     fun exist2() {
-        assertThat(Solution().exist(arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E')), "SEE"), equalTo(true))
+        val input =
+            arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E'))
+        assertThat(Solution().exist(input, "SEE"), equalTo(true))
     }
 
     @Test
     fun exist3() {
-        assertThat(Solution().exist(arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E')), "ABAB"), equalTo(false))
+        val input =
+            arrayOf(charArrayOf('A', 'B', 'C', 'E'), charArrayOf('S', 'F', 'C', 'S'), charArrayOf('A', 'D', 'E', 'E'))
+        assertThat(Solution().exist(input, "ABCB"), equalTo(false))
     }
 }

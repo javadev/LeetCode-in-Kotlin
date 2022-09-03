@@ -8,7 +8,10 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun levelOrder() {
-        assertThat(Solution().levelOrder(TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))), equalTo(listOf(listOf(3), listOf(9, 20), listOf(15, 7))))
+        assertThat(
+            Solution().levelOrder(TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))),
+            equalTo(listOf(listOf(3), listOf(9, 20), listOf(15, 7)))
+        )
     }
 
     @Test
