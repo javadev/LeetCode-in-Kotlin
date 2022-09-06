@@ -2,13 +2,9 @@ package g0101_0200.s0153_find_minimum_in_rotated_sorted_array
 
 // #Medium #Top_100_Liked_Questions #Array #Binary_Search #Algorithm_II_Day_2_Binary_Search
 // #Binary_Search_I_Day_12 #Udemy_Binary_Search
-// #2022_09_06_Time_240_ms_(75.30%)_Space_35.2_MB_(94.82%)
+// #2022_09_06_Time_287_ms_(40.24%)_Space_35.5_MB_(84.46%)
 
 class Solution {
-    /**
-     * My completely original solution on 10/23/2021.
-     * Again, using a pen and paper to visualize your thought process, to draw out all the possible cases helps a lot!
-     */
     fun findMin(nums: IntArray): Int {
         var left = 0
         var right = nums.size - 1
