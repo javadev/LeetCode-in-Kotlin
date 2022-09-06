@@ -1,6 +1,5 @@
-package g0101_0200.SolutionTest
+package g0101_0200.s0155_min_stack
 
-import g0101_0200.s0155_min_stack.MinStack
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
