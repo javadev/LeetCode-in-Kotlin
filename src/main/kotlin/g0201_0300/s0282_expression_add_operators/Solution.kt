@@ -1,6 +1,7 @@
 package g0201_0300.s0282_expression_add_operators
 
 // #Hard #String #Math #Backtracking #2022_07_06_Time_9_ms_(98.48%)_Space_45.3_MB_(73.71%)
+@Suppress("kotlin:S107")
 class Solution {
     fun addOperators(num: String, target: Int): List<String> {
         val res: MutableList<String> = ArrayList()

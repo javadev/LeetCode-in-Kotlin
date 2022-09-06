@@ -2,6 +2,7 @@ package g0201_0300.s0241_different_ways_to_add_parentheses
 
 // #Medium #String #Dynamic_Programming #Math #Recursion #Memoization
 // #2022_07_05_Time_3_ms_(70.81%)_Space_42.5_MB_(73.65%)
+@Suppress("kotlin:S108")
 class Solution {
     fun diffWaysToCompute(expression: String): List<Int> {
         return diffWaysToCompute(expression, HashMap())

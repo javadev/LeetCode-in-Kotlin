@@ -1,6 +1,7 @@
 package g0201_0300.s0223_rectangle_area
 
 // #Medium #Math #Geometry #2022_07_04_Time_4_ms_(65.35%)_Space_43.4_MB_(31.18%)
+@Suppress("kotlin:S107")
 class Solution {
     fun computeArea(ax1: Int, ay1: Int, ax2: Int, ay2: Int, bx1: Int, by1: Int, bx2: Int, by2: Int): Int {
         val left = Math.max(ax1, bx1).toLong()
