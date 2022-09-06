@@ -35,7 +35,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: 19107c464b65c0769768d4564dd1c9b0c2822edd
-      run: chmod +x gradlew && JAVA_OPTS="-Xms256m -Xmx1024m" && ./gradlew spotlessCheck test jacocoTestReport sonarqube -Dsonar.projectKey=javadev_LeetCode-in-Kotlin -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=javadev-github --warning-mode all --stacktrace
+      run: chmod +x gradlew && ./gradlew spotlessCheck test jacocoTestReport sonarqube -Dsonar.projectKey=javadev_LeetCode-in-Kotlin -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=javadev-github --warning-mode all --stacktrace
     - uses: codecov/codecov-action@v1
       with:
         file: ./**/build/reports/jacoco/test/jacocoTestReport.xml
