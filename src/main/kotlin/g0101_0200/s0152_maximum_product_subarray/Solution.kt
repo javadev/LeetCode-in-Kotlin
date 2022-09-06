@@ -2,7 +2,7 @@ package g0101_0200.s0152_maximum_product_subarray
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
 // #Dynamic_Programming_I_Day_6 #Level_2_Day_13_Dynamic_Programming #Udemy_Dynamic_Programming
-// #2022_09_06_Time_354_ms_(42.11%)_Space_38.3_MB_(90.00%)
+// #2022_09_06_Time_253_ms_(88.42%)_Space_42.1_MB_(44.74%)
 
 class Solution {
     fun maxProduct(nums: IntArray): Int {
