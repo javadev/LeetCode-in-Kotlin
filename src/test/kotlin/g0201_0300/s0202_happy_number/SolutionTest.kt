@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isHappy: Unit
-        get() {
-            assertThat(Solution().isHappy(19), equalTo(true))
-        }
+    @Test
+    fun isHappy() {
+        assertThat(Solution().isHappy(19), equalTo(true))
+    }
 
-    @get:Test
-    val isHappy2: Unit
-        get() {
-            assertThat(Solution().isHappy(2), equalTo(false))
-        }
+    @Test
+    fun isHappy2() {
+        assertThat(Solution().isHappy(2), equalTo(false))
+    }
 }

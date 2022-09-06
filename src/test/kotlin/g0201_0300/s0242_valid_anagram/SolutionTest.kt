@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isAnagram: Unit
-        get() {
-            assertThat(Solution().isAnagram("anagram", "nagaram"), equalTo(true))
-        }
+    @Test
+    fun isAnagram() {
+        assertThat(Solution().isAnagram("anagram", "nagaram"), equalTo(true))
+    }
 
-    @get:Test
-    val isAnagram2: Unit
-        get() {
-            assertThat(Solution().isAnagram("rat", "car"), equalTo(false))
-        }
+    @Test
+    fun isAnagram2() {
+        assertThat(Solution().isAnagram("rat", "car"), equalTo(false))
+    }
 }

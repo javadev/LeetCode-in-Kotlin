@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isIsomorphic: Unit
-        get() {
-            assertThat(Solution().isIsomorphic("egg", "add"), equalTo(true))
-        }
+    @Test
+    fun isIsomorphic() {
+        assertThat(Solution().isIsomorphic("egg", "add"), equalTo(true))
+    }
 
-    @get:Test
-    val isIsomorphic2: Unit
-        get() {
-            assertThat(Solution().isIsomorphic("foo", "bar"), equalTo(false))
-        }
+    @Test
+    fun isIsomorphic2() {
+        assertThat(Solution().isIsomorphic("foo", "bar"), equalTo(false))
+    }
 
-    @get:Test
-    val isIsomorphic3: Unit
-        get() {
-            assertThat(Solution().isIsomorphic("paper", "title"), equalTo(true))
-        }
+    @Test
+    fun isIsomorphic3() {
+        assertThat(Solution().isIsomorphic("paper", "title"), equalTo(true))
+    }
 }

@@ -5,27 +5,23 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val hint: Unit
-        get() {
-            assertThat(Solution().getHint("1807", "7810"), equalTo("1A3B"))
-        }
+    @Test
+    fun hint() {
+        assertThat(Solution().getHint("1807", "7810"), equalTo("1A3B"))
+    }
 
-    @get:Test
-    val hint2: Unit
-        get() {
-            assertThat(Solution().getHint("1123", "0111"), equalTo("1A1B"))
-        }
+    @Test
+    fun hint2() {
+        assertThat(Solution().getHint("1123", "0111"), equalTo("1A1B"))
+    }
 
-    @get:Test
-    val hint3: Unit
-        get() {
-            assertThat(Solution().getHint("1", "0"), equalTo("0A0B"))
-        }
+    @Test
+    fun hint3() {
+        assertThat(Solution().getHint("1", "0"), equalTo("0A0B"))
+    }
 
-    @get:Test
-    val hint4: Unit
-        get() {
-            assertThat(Solution().getHint("1", "1"), equalTo("1A0B"))
-        }
+    @Test
+    fun hint4() {
+        assertThat(Solution().getHint("1", "1"), equalTo("1A0B"))
+    }
 }

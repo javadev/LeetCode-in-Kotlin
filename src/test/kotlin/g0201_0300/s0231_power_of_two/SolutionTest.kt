@@ -5,33 +5,28 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isPowerOfTwo: Unit
-        get() {
-            assertThat(Solution().isPowerOfTwo(1), equalTo(true))
-        }
+    @Test
+    fun isPowerOfTwo() {
+        assertThat(Solution().isPowerOfTwo(1), equalTo(true))
+    }
 
-    @get:Test
-    val isPowerOfTwo2: Unit
-        get() {
-            assertThat(Solution().isPowerOfTwo(16), equalTo(true))
-        }
+    @Test
+    fun isPowerOfTwo2() {
+        assertThat(Solution().isPowerOfTwo(16), equalTo(true))
+    }
 
-    @get:Test
-    val isPowerOfTwo3: Unit
-        get() {
-            assertThat(Solution().isPowerOfTwo(3), equalTo(false))
-        }
+    @Test
+    fun isPowerOfTwo3() {
+        assertThat(Solution().isPowerOfTwo(3), equalTo(false))
+    }
 
-    @get:Test
-    val isPowerOfTwo4: Unit
-        get() {
-            assertThat(Solution().isPowerOfTwo(4), equalTo(true))
-        }
+    @Test
+    fun isPowerOfTwo4() {
+        assertThat(Solution().isPowerOfTwo(4), equalTo(true))
+    }
 
-    @get:Test
-    val isPowerOfTwo5: Unit
-        get() {
-            assertThat(Solution().isPowerOfTwo(5), equalTo(false))
-        }
+    @Test
+    fun isPowerOfTwo5() {
+        assertThat(Solution().isPowerOfTwo(5), equalTo(false))
+    }
 }

@@ -5,27 +5,23 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isUgly: Unit
-        get() {
-            assertThat(Solution().isUgly(6), equalTo(true))
-        }
+    @Test
+    fun isUgly() {
+        assertThat(Solution().isUgly(6), equalTo(true))
+    }
 
-    @get:Test
-    val isUgly2: Unit
-        get() {
-            assertThat(Solution().isUgly(8), equalTo(true))
-        }
+    @Test
+    fun isUgly2() {
+        assertThat(Solution().isUgly(8), equalTo(true))
+    }
 
-    @get:Test
-    val isUgly3: Unit
-        get() {
-            assertThat(Solution().isUgly(14), equalTo(false))
-        }
+    @Test
+    fun isUgly3() {
+        assertThat(Solution().isUgly(14), equalTo(false))
+    }
 
-    @get:Test
-    val isUgly4: Unit
-        get() {
-            assertThat(Solution().isUgly(1), equalTo(true))
-        }
+    @Test
+    fun isUgly4() {
+        assertThat(Solution().isUgly(1), equalTo(true))
+    }
 }
