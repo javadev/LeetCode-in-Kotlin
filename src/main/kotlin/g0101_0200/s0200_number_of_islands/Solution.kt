@@ -4,35 +4,32 @@ package g0101_0200.s0200_number_of_islands
 // #Breadth_First_Search #Matrix #Union_Find
 // #Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search
 // #Graph_Theory_I_Day_1_Matrix_Related_Problems #Level_1_Day_9_Graph/BFS/DFS #Udemy_Graph
-// #2022_09_08_Time_428_ms_(55.71%)_Space_59_MB_(51.71%)
+// #2022_09_09_Time_252_ms_(95.41%)_Space_52.4_MB_(86.52%)
 
 class Solution {
-    fun numIslands(grid: Array<CharArray>?): Int {
-        if (grid == null || grid.size == 0) {
-            return 0
-        }
-        var count = 0
-        val m = grid.size
-        val n: Int = grid[0].size
-        for (i in 0 until m) {
-            for (j in 0 until n) {
-                if (grid[i][j] == '1') {
-                    count++
-                    dfs(grid, i, j, m, n)
+    fun numIslands(grid: Array<CharArray>): Int {
+        var islands = 0
+        if (grid.isNotEmpty() && grid[0].isNotEmpty()) {
+            for (i in grid.indices) {
+                for (j in grid[0].indices) {
+                    if (grid[i][j] == '1') {
+                        dfs(grid, i, j)
+                        islands++
+                    }
                 }
             }
         }
-        return count
+        return islands
     }
 
-    fun dfs(grid: Array<CharArray>, i: Int, j: Int, m: Int, n: Int) {
-        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0') {
+    private fun dfs(grid: Array<CharArray>, x: Int, y: Int) {
+        if (x < 0 || grid.size <= x || y < 0 || grid[0].size <= y || grid[x][y] !== '1') {
             return
         }
-        grid[i][j] = '0'
-        dfs(grid, i + 1, j, m, n)
-        dfs(grid, i, j + 1, m, n)
-        dfs(grid, i - 1, j, m, n)
-        dfs(grid, i, j - 1, m, n)
+        grid[x][y] = 'x'
+        dfs(grid, x + 1, y)
+        dfs(grid, x - 1, y)
+        dfs(grid, x, y + 1)
+        dfs(grid, x, y - 1)
     }
 }
