@@ -2,42 +2,43 @@ package g0201_0300.s0207_course_schedule
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search
 // #Breadth_First_Search #Graph #Topological_Sort
-// #2022_09_08_Time_565_ms_(13.67%)_Space_50.5_MB_(57.38%)
+// #2022_09_09_Time_416_ms_(40.10%)_Space_48.5_MB_(75.40%)
 
 class Solution {
-    /**Kahn's algorithm for topological sorting */
     fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
-        val indegree = IntArray(numCourses)
-        for (prereq in prerequisites) {
-            indegree[prereq[0]]++
-        }
-        val zeroDegree: MutableSet<Int?> = HashSet()
+        val adj: Array<ArrayList<Int>?> = arrayOfNulls<ArrayList<Int>>(numCourses)
         for (i in 0 until numCourses) {
-            if (indegree[i] == 0) {
-                zeroDegree.add(i)
-            }
+            adj[i] = ArrayList()
         }
-        if (zeroDegree.isEmpty()) {
-            return false
+        for (pre in prerequisites) {
+            adj[pre[1]]?.add(pre[0])
         }
-        while (!zeroDegree.isEmpty()) {
-            val it: Iterator<Int?> = zeroDegree.iterator()
-            val course = it.next()
-            zeroDegree.remove(course)
-            for (prereq in prerequisites) {
-                if (prereq[1] == course) {
-                    indegree[prereq[0]]--
-                    if (indegree[prereq[0]] == 0) {
-                        zeroDegree.add(prereq[0])
-                    }
-                }
-            }
-        }
-        for (i in indegree) {
-            if (i != 0) {
+        val colors = IntArray(numCourses)
+        for (i in 0 until numCourses) {
+            if (colors[i] == WHITE && !adj[i]?.isEmpty()!! && hasCycle(adj, i, colors)) {
                 return false
             }
         }
         return true
+    }
+
+    private fun hasCycle(adj: Array<ArrayList<Int>?>, node: Int, colors: IntArray): Boolean {
+        colors[node] = GRAY
+        for (nei in adj[node]!!) {
+            if (colors[nei] == GRAY) {
+                return true
+            }
+            if (colors[nei] == WHITE && hasCycle(adj, nei, colors)) {
+                return true
+            }
+        }
+        colors[node] = BLACK
+        return false
+    }
+
+    companion object {
+        private const val WHITE = 0
+        private const val GRAY = 1
+        private const val BLACK = 2
     }
 }
