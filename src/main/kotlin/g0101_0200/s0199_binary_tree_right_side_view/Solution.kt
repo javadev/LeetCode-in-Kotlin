@@ -1,29 +1,35 @@
 package g0101_0200.s0199_binary_tree_right_side_view
 
-import com_github_leetcode.TreeNode
-
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 // #Data_Structure_II_Day_16_Tree #Level_2_Day_15_Tree
-// #2022_09_08_Time_179_ms_(97.61%)_Space_35.3_MB_(67.90%)
+// #2022_09_09_Time_194_ms_(92.89%)_Space_35.4_MB_(67.89%)
 
+import com_github_leetcode.TreeNode
+
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
-    /**
-     * credit: https://leetcode.com/problems/binary-tree-right-side-view/discuss/56012/My-simple-accepted-solution(JAVA)
-     */
     fun rightSideView(root: TreeNode?): List<Int> {
-        val result: MutableList<Int> = ArrayList()
-        rightView(root, result, 0)
-        return result
+        val list: MutableList<Int> = ArrayList()
+        recurse(root, 0, list)
+        return list
     }
 
-    fun rightView(curr: TreeNode?, result: MutableList<Int>, currDepth: Int) {
-        if (curr == null) {
-            return
+    private fun recurse(node: TreeNode?, level: Int, list: MutableList<Int>) {
+        if (node != null) {
+            if (list.size < level + 1) {
+                list.add(node.`val`)
+            }
+            recurse(node.right, level + 1, list)
+            recurse(node.left, level + 1, list)
         }
-        if (currDepth == result.size) {
-            result.add(curr.`val`)
-        }
-        rightView(curr.right, result, currDepth + 1)
-        rightView(curr.left, result, currDepth + 1)
     }
 }
