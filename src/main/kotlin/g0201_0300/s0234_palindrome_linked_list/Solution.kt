@@ -6,6 +6,15 @@ package g0201_0300.s0234_palindrome_linked_list
 
 import com_github_leetcode.ListNode
 
+/**
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
     fun isPalindrome(head: ListNode?): Boolean {
         var head = head
