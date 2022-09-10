@@ -1,4 +1,9 @@
 package g0201_0300.s0208_implement_trie_prefix_tree
+
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Design #Trie
+// #Level_2_Day_16_Design #Udemy_Trie_and_Heap
+// #2022_09_10_Time_689_ms_(61.00%)_Space_87.9_MB_(36.00%)
+
 class Trie {
     private val root: TrieNode
     private var startWith = false
