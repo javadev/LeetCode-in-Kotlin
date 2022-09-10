@@ -6,7 +6,7 @@ package g0201_0300.s0234_palindrome_linked_list
 
 import com_github_leetcode.ListNode
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`
