@@ -6,8 +6,8 @@ package g0201_0300.s0300_longest_increasing_subsequence
 // #2022_09_11_Time_318_ms_(82.28%)_Space_39.2_MB_(82.77%)
 
 class Solution {
-    fun lengthOfLIS(nums: IntArray?): Int {
-        if (nums == null || nums.size == 0) {
+    fun lengthOfLIS(nums: IntArray): Int {
+        if (nums.isEmpty()) {
             return 0
         }
         val dp = IntArray(nums.size + 1)
