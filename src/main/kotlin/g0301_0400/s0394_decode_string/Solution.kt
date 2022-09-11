@@ -5,6 +5,7 @@ package g0301_0400.s0394_decode_string
 
 class Solution {
     private var i = 0
+
     fun decodeString(s: String): String {
         var count = 0
         val sb = StringBuilder()
