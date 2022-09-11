@@ -4,6 +4,7 @@ package g0101_0200.s0189_rotate_array
 // #Algorithm_I_Day_2_Two_Pointers #Udemy_Arrays
 // #2022_09_08_Time_483_ms_(86.95%)_Space_71.9_MB_(50.13%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private fun reverse(nums: IntArray, l: Int, r: Int) {
         var l = l

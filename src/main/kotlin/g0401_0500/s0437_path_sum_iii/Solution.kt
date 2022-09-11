@@ -5,7 +5,7 @@ package g0401_0500.s0437_path_sum_iii
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
@@ -15,6 +15,7 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     private var count = 0
 

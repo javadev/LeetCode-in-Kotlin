@@ -15,12 +15,13 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun isPalindrome(head: ListNode?): Boolean {
         var head = head
         var len = 0
         var right = head
-        // Culculate the length
+        // Calculate the length
         while (right != null) {
             right = right.next
             len++

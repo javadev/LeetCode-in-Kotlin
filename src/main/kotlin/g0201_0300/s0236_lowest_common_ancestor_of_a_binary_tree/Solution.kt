@@ -11,7 +11,7 @@ class Solution {
         if (root == null) {
             return null
         }
-        if (root.`val` === p?.`val` || root.`val` === q?.`val`) {
+        if (root.`val` == p.`val` || root.`val` == q.`val`) {
             return root
         }
         val left: TreeNode? = lowestCommonAncestor(root.left, p, q)
@@ -19,8 +19,6 @@ class Solution {
         if (left != null && right != null) {
             return root
         }
-        return if (left != null) {
-            left
-        } else right
+        return left ?: right
     }
 }

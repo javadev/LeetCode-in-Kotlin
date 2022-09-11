@@ -5,7 +5,7 @@ package g0501_0600.s0543_diameter_of_binary_tree
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
