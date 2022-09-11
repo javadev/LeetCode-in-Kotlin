@@ -3,6 +3,7 @@ package g0101_0200.s0131_palindrome_partitioning
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Backtracking #2022_09_03_Time_820_ms_(87.27%)_Space_59.5_MB_(90.91%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun partition(s: String): List<List<String>> {
         val res = ArrayList<List<String>>()

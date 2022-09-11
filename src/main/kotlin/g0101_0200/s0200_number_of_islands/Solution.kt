@@ -23,7 +23,7 @@ class Solution {
     }
 
     private fun dfs(grid: Array<CharArray>, x: Int, y: Int) {
-        if (x < 0 || grid.size <= x || y < 0 || grid[0].size <= y || grid[x][y] !== '1') {
+        if (x < 0 || grid.size <= x || y < 0 || grid[0].size <= y || grid[x][y] != '1') {
             return
         }
         grid[x][y] = 'x'
