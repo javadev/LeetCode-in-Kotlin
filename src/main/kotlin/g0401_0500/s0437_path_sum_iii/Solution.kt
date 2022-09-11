@@ -17,6 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var count = 0
+
     fun pathSum(root: TreeNode?, targetSum: Int): Int {
         if (root == null) {
             return 0
