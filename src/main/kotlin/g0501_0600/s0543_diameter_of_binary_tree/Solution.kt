@@ -17,6 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var diameter = 0
+
     fun diameterOfBinaryTree(root: TreeNode?): Int {
         diameter = 0
         diameterOfBinaryTreeUtil(root)
