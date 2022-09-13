@@ -4,8 +4,8 @@ package g0901_1000.s0994_rotting_oranges
 // #Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search #Level_2_Day_10_Graph/BFS/DFS
 // #2022_09_13_Time_308_ms_(57.93%)_Space_41.8_MB_(26.83%)
 
-import java.util.Queue
 import java.util.LinkedList
+import java.util.Queue
 
 class Solution {
     fun orangesRotting(grid: Array<IntArray>): Int {

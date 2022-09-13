@@ -8,8 +8,9 @@ internal class SolutionTest {
     @Test
     fun orangesRotting() {
         assertThat(
-                Solution().orangesRotting(arrayOf(intArrayOf(2, 1, 1), intArrayOf(1, 1, 0), intArrayOf(0, 1, 1))),
-                equalTo(4))
+            Solution().orangesRotting(arrayOf(intArrayOf(2, 1, 1), intArrayOf(1, 1, 0), intArrayOf(0, 1, 1))),
+            equalTo(4)
+        )
     }
 
     @Test

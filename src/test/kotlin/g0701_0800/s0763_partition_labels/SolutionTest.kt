@@ -5,13 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.Arrays
 
-
 internal class SolutionTest {
     @Test
     fun partitionLabels() {
         assertThat(
-                Solution().partitionLabels("ababcbacadefegdehijhklij"),
-                equalTo(Arrays.asList(9, 7, 8)))
+            Solution().partitionLabels("ababcbacadefegdehijhklij"),
+            equalTo(Arrays.asList(9, 7, 8))
+        )
     }
 
     @Test
