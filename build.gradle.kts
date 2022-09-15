@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm") version "1.7.10"
     jacoco
-    id("org.sonarqube") version "3.3"
+    id("org.sonarqube") version "3.4.0.2513"
     id("com.diffplug.spotless") version "6.1.2"
     `maven-publish`
 }
@@ -22,6 +22,7 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    maxParallelForks = Runtime.getRuntime().availableProcessors()
 }
 
 group = "com.github.javadev"
