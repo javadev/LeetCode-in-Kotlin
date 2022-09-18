@@ -29,4 +29,9 @@ internal class SolutionTest {
         val listNode1 = ListNode(1)
         assertThat(Solution().hasCycle(listNode1), equalTo(false))
     }
+
+    @Test
+    fun hasCycle4() {
+        assertThat(Solution().hasCycle(null), equalTo(false))
+    }
 }
