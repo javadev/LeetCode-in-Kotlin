@@ -7,6 +7,7 @@ class Solution {
     private val rows = IntArray(9)
     private val cols = IntArray(9)
     private val boxes = IntArray(9)
+
     fun solveSudoku(board: Array<CharArray>) {
         for (r in 0..8) {
             for (c in 0..8) {
