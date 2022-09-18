@@ -7,6 +7,7 @@ class Solution {
     private var j1 = 0
     private val i1 = IntArray(9)
     private val b1 = IntArray(9)
+
     fun isValidSudoku(board: Array<CharArray>): Boolean {
         for (i in 0..8) {
             for (j in 0..8) {
