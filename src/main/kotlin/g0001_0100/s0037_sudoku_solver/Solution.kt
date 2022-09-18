@@ -37,7 +37,7 @@ class Solution {
             if (hasBit(rows[r], `val`) || hasBit(cols[c], `val`) || hasBit(boxes[boxPos], `val`)) {
                 continue
             }
-            board[r][c] = ('0'.toInt() + `val`).toChar()
+            board[r][c] = ('0' + `val`)
             // backup old values
             val oldRow = rows[r]
             val oldCol = cols[c]
