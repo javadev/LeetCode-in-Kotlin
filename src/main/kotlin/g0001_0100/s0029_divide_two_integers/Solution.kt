@@ -3,6 +3,7 @@ package g0001_0100.s0029_divide_two_integers
 // #Medium #Top_Interview_Questions #Math #Bit_Manipulation #Udemy_Bit_Manipulation
 // #2022_09_18_Time_281_ms_(31.67%)_Space_34.5_MB_(28.33%)
 
+@Suppress("INTEGER_OVERFLOW")
 class Solution {
     fun divide(dividend: Int, divisor: Int): Int {
         val isNegative = dividend > 0 && divisor < 0 || dividend < 0 && divisor > 0
