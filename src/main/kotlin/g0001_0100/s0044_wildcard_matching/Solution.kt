@@ -10,8 +10,9 @@ class Solution {
         var starIdx = -1
         var lastMatch = -1
         while (i < inputString.length) {
-            if (j < pattern.length
-                    && (inputString[i] == pattern[j] || pattern[j] == '?')) {
+            if (j < pattern.length &&
+                (inputString[i] == pattern[j] || pattern[j] == '?')
+            ) {
                 i++
                 j++
             } else if (j < pattern.length && pattern[j] == '*') {

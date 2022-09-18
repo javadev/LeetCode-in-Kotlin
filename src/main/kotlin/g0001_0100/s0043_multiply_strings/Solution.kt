@@ -14,7 +14,7 @@ class Solution {
     }
 
     private fun convertToStr(res: IntArray, i: Int): String {
-        var index = i;
+        var index = i
         val chars = StringBuffer()
         while (index < res.size) {
             chars.append(res[index].toString())
