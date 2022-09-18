@@ -3,8 +3,8 @@ package g0001_0100.s0027_remove_element
 // #Easy #Array #Two_Pointers #2022_09_18_Time_293_ms_(32.19%)_Space_35.7_MB_(26.76%)
 
 class Solution {
-    fun removeElement(nums: IntArray?, `val`: Int): Int {
-        if (nums == null || nums.size == 0) {
+    fun removeElement(nums: IntArray, `val`: Int): Int {
+        if (nums.size == 0) {
             return 0
         }
         val len = nums.size
