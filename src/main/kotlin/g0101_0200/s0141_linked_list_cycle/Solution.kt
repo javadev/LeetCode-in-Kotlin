@@ -2,23 +2,32 @@ package g0101_0200.s0141_linked_list_cycle
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Hash_Table #Two_Pointers #Linked_List
 // #Data_Structure_I_Day_7_Linked_List #Udemy_Linked_List
-// #2022_09_03_Time_425_ms_(10.15%)_Space_43.4_MB_(46.26%)
+// #2022_09_18_Time_223_ms_(91.85%)_Space_38.2_MB_(87.85%)
 
 import com_github_leetcode.ListNode
 
+/*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
     fun hasCycle(head: ListNode?): Boolean {
         if (head == null) {
             return false
         }
-        var fast = head.next
         var slow = head
-        while (fast?.next != null) {
-            if (fast == slow) {
+        var faster = head
+        while (slow?.next != null && faster?.next?.next != null) {
+            slow = slow.next
+            faster = faster.next?.next
+            if (slow == faster) {
                 return true
             }
-            fast = fast.next!!.next
-            slow = slow!!.next
         }
         return false
     }
