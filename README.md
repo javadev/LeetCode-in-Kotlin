@@ -1530,7 +1530,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.4'
 | 0041 |[First Missing Positive](src/main/kotlin/g0001_0100/s0041_first_missing_positive/Solution.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Udemy_Arrays | 345 | 100.00
 | 0040 |[Combination Sum II](src/main/kotlin/g0001_0100/s0040_combination_sum_ii/Solution.kt)| Medium | Array, Backtracking, Algorithm_II_Day_10_Recursion_Backtracking | 348 | 80.92
 | 0039 |[Combination Sum](src/main/kotlin/g0001_0100/s0039_combination_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Backtracking, Algorithm_II_Day_10_Recursion_Backtracking, Level_2_Day_20_Brute_Force/Backtracking, Udemy_Backtracking/Recursion | 317 | 86.85
-| 0038 |[Count and Say](src/main/kotlin/g0001_0100/s0038_count_and_say/Solution.kt)| |||
+| 0038 |[Count and Say](src/main/kotlin/g0001_0100/s0038_count_and_say/Solution.kt)| Medium | Top_Interview_Questions, String | 317 | 41.11
 | 0037 |[Sudoku Solver](src/main/kotlin/g0001_0100/s0037_sudoku_solver/Solution.kt)| Hard | Array, Matrix, Backtracking | 294 | 79.69
 | 0036 |[Valid Sudoku](src/main/kotlin/g0001_0100/s0036_valid_sudoku/Solution.kt)| Medium | Top_Interview_Questions, Array, Hash_Table, Matrix, Data_Structure_I_Day_5_Array | 346 | 65.03
 | 0035 |[Search Insert Position](src/main/kotlin/g0001_0100/s0035_search_insert_position/Solution.kt)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_2 | 267 | 50.32
