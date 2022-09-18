@@ -3,9 +3,10 @@ package g0001_0100.s0031_next_permutation
 // #Medium #Top_100_Liked_Questions #Array #Two_Pointers
 // #2022_09_16_Time_219_ms_(89.22%)_Space_38.3_MB_(53.92%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
-    fun nextPermutation(nums: IntArray?) {
-        if (nums == null || nums.size <= 1) {
+    fun nextPermutation(nums: IntArray) {
+        if (nums.size <= 1) {
             return
         }
         var i = nums.size - 2
