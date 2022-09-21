@@ -1,31 +1,32 @@
-49\. Group Anagrams
+50\. Pow(x, n)
 
 Medium
 
-Given an array of strings `strs`, group **the anagrams** together. You can return the answer in **any order**.
-
-An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Implement [pow(x, n)](http://www.cplusplus.com/reference/valarray/pow/), which calculates `x` raised to the power `n` (i.e., <code>x<sup>n</sup></code>).
 
 **Example 1:**
 
-**Input:** strs = ["eat","tea","tan","ate","nat","bat"]
+**Input:** x = 2.00000, n = 10
 
-**Output:** [["bat"],["nat","tan"],["ate","eat","tea"]]
+**Output:** 1024.00000
 
 **Example 2:**
 
-**Input:** strs = [""]
+**Input:** x = 2.10000, n = 3
 
-**Output:** [[""]]
+**Output:** 9.26100
 
 **Example 3:**
 
-**Input:** strs = ["a"]
+**Input:** x = 2.00000, n = -2
 
-**Output:** [["a"]]
+**Output:** 0.25000
+
+**Explanation:** 2<sup>\-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25
 
 **Constraints:**
 
-*   <code>1 <= strs.length <= 10<sup>4</sup></code>
-*   `0 <= strs[i].length <= 100`
-*   `strs[i]` consists of lowercase English letters.
+*   `-100.0 < x < 100.0`
+*   <code>-2<sup>31</sup> <= n <= 2<sup>31</sup>-1</code>
+*   `n` is an integer.
+*   <code>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></code>
