@@ -1,6 +1,6 @@
 package g0001_0100.s0008_string_to_integer_atoi
 
-// #Medium #Top_Interview_Questions #String #2022_03_22_Time_152_ms_(99.64%)_Space_35.2_MB_(97.83%)
+// #Medium #Top_Interview_Questions #String #2022_09_22_Time_196_ms_(96.46%)_Space_35.3_MB_(96.02%)
 
 class Solution {
     fun myAtoi(str: String?): Int {
