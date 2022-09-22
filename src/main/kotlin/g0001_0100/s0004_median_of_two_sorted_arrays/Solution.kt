@@ -1,7 +1,7 @@
 package g0001_0100.s0004_median_of_two_sorted_arrays
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
-// #2022_03_22_Time_276_ms_(91.12%)_Space_47_MB_(85.71%)
+// #2022_09_22_Time_355_ms_(83.48%)_Space_47.3_MB_(87.89%)
 
 import kotlin.collections.ArrayList
 
