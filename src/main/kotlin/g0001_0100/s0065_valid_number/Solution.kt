@@ -15,8 +15,9 @@ class Solution {
             if (c.toInt() >= 48 && c.toInt() <= 57) {
                 numberSeen = true
             } else if (c == '+' || c == '-') {
-                if (i == s.length - 1
-                        || i != 0 && s[i - 1] != 'e' && s[i - 1] != 'E') {
+                if (i == s.length - 1 ||
+                    i != 0 && s[i - 1] != 'e' && s[i - 1] != 'E'
+                ) {
                     return false
                 }
             } else if (c == '.') {

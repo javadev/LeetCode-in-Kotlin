@@ -30,24 +30,24 @@ internal class SolutionTest {
     @Test
     fun fullJustify3() {
         val input = arrayOf(
-                "Science",
-                "is",
-                "what",
-                "we",
-                "understand",
-                "well",
-                "enough",
-                "to",
-                "explain",
-                "to",
-                "a",
-                "computer.",
-                "Art",
-                "is",
-                "everything",
-                "else",
-                "we",
-                "do"
+            "Science",
+            "is",
+            "what",
+            "we",
+            "understand",
+            "well",
+            "enough",
+            "to",
+            "explain",
+            "to",
+            "a",
+            "computer.",
+            "Art",
+            "is",
+            "everything",
+            "else",
+            "we",
+            "do"
         )
         val actual = Solution().fullJustify(input, 20)
         val expected: MutableList<String> = ArrayList()
