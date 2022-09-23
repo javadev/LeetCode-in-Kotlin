@@ -22,7 +22,7 @@ class Solution {
             }
             // b is the bit corresponding to the digit we want
             b = b and b.inv() + 1
-            res[i] = ('1'.toInt() + Integer.bitCount(b - 1)).toChar()
+            res[i] = ('1'.code + Integer.bitCount(b - 1)).toChar()
             // Remove b from the set of available digits
             a = a and b.inv()
             k %= m
