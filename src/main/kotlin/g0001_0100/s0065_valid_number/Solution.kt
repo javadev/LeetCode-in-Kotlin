@@ -3,8 +3,8 @@ package g0001_0100.s0065_valid_number
 // #Hard #String #2022_09_23_Time_310_ms_(81.82%)_Space_35.5_MB_(87.88%)
 
 class Solution {
-    fun isNumber(s: String?): Boolean {
-        if (s == null || s.length == 0) {
+    fun isNumber(s: String): Boolean {
+        if (s.isEmpty()) {
             return false
         }
         var eSeen = false
