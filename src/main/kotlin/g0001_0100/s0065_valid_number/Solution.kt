@@ -12,7 +12,7 @@ class Solution {
         var decimalSeen = false
         for (i in 0 until s.length) {
             val c = s[i]
-            if (c.toInt() >= 48 && c.toInt() <= 57) {
+            if (c.code >= 48 && c.code <= 57) {
                 numberSeen = true
             } else if (c == '+' || c == '-') {
                 if (i == s.length - 1 ||
