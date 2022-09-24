@@ -1,7 +1,7 @@
 package g0001_0100.s0071_simplify_path
 
-import java.util.Deque
 import java.util.ArrayDeque
+import java.util.Deque
 
 class Solution {
     fun simplifyPath(path: String): String {
