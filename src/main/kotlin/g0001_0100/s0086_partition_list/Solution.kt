@@ -4,7 +4,7 @@ package g0001_0100.s0086_partition_list
 
 import com_github_leetcode.ListNode
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`
