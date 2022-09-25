@@ -12,7 +12,7 @@ class Solution {
          */
         val m = matrix.size
         var n = 0
-        if (m == 0 || matrix[0].length.also { n = it } == 0) {
+        if (m == 0 || matrix[0].size.also { n = it } == 0) {
             return 0
         }
         var i: Int
