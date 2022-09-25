@@ -5,7 +5,7 @@ package g0001_0100.s0082_remove_duplicates_from_sorted_list_ii
 
 import com_github_leetcode.ListNode
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`
