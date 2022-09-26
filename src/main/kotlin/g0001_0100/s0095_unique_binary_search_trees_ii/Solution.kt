@@ -39,13 +39,11 @@ class Solution {
     }
 
     private fun insert(dest: TreeNode?, n: TreeNode, from: TreeNode) {
-        if (dest != null) {
-            if (dest.`val` === from.`val`) {
-                val h: TreeNode? = dest.right
-                dest.right = n
-                n.left = h
-                return
-            }
+        if (dest != null && dest.`val` === from.`val`) {
+            val h: TreeNode? = dest.right
+            dest.right = n
+            n.left = h
+            return
         }
         if (dest != null) {
             insert(dest.right, n, from)
