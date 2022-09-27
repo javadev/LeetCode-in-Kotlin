@@ -5,7 +5,7 @@ package g0001_0100.s0100_same_tree
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
