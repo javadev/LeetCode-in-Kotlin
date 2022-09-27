@@ -19,6 +19,7 @@ class Solution {
     private var prev: TreeNode? = null
     private var first: TreeNode? = null
     private var second: TreeNode? = null
+
     fun recoverTree(root: TreeNode?) {
         evalSwappedNodes(root)
         val temp: Int = first!!.`val`
