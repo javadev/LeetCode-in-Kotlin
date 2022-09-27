@@ -6,6 +6,16 @@ package g0101_0200.s0101_symmetric_tree
 
 import com_github_leetcode.TreeNode
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun isSymmetric(root: TreeNode?): Boolean {
         return if (root == null) {

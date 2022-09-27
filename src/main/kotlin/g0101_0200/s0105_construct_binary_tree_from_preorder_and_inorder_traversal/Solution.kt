@@ -7,6 +7,16 @@ package g0101_0200.s0105_construct_binary_tree_from_preorder_and_inorder_travers
 import com_github_leetcode.TreeNode
 import java.util.HashMap
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     private var j = 0
     private val map: MutableMap<Int, Int> = HashMap()

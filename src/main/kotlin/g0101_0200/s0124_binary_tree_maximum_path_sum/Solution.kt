@@ -6,6 +6,16 @@ package g0101_0200.s0124_binary_tree_maximum_path_sum
 
 import com_github_leetcode.TreeNode
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     private var max = Int.MIN_VALUE
     private fun helper(root: TreeNode?): Int {

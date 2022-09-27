@@ -6,6 +6,16 @@ package g0201_0300.s0236_lowest_common_ancestor_of_a_binary_tree
 
 import com_github_leetcode.TreeNode
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun lowestCommonAncestor(root: TreeNode?, p: TreeNode, q: TreeNode): TreeNode? {
         if (root == null) {
