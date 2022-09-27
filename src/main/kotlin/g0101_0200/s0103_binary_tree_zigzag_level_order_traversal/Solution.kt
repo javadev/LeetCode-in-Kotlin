@@ -8,6 +8,16 @@ import com_github_leetcode.TreeNode
 import java.util.LinkedList
 import java.util.Queue
 
+/**
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun zigzagLevelOrder(root: TreeNode?): List<List<Int>> {
         val result: MutableList<List<Int>> = ArrayList()
