@@ -8,7 +8,7 @@ import com_github_leetcode.TreeNode
 import java.util.LinkedList
 import java.util.Queue
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
