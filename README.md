@@ -640,7 +640,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.4'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 355 | 13.54
+| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 193 | 92.16
 
 #### Day 17
 
@@ -1088,7 +1088,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.4'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0114 |[Flatten Binary Tree to Linked List](src/main/kotlin/g0101_0200/s0114_flatten_binary_tree_to_linked_list/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List | 191 | 93.10
-| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 355 | 13.54
+| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 193 | 92.16
 | 0024 |[Swap Nodes in Pairs](src/main/kotlin/g0001_0100/s0024_swap_nodes_in_pairs/Solution.kt)| Medium | Top_100_Liked_Questions, Linked_List, Recursion | 149 | 99.39
 | 0142 |[Linked List Cycle II](src/main/kotlin/g0101_0200/s0142_linked_list_cycle_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Hash_Table, Two_Pointers, Linked_List | 192 | 63.39
 | 0141 |[Linked List Cycle](src/main/kotlin/g0101_0200/s0141_linked_list_cycle/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Two_Pointers, Linked_List | 223 | 91.85
@@ -1542,7 +1542,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.4'
 | 0089 |[Gray Code](src/main/kotlin/g0001_0100/s0089_gray_code/Solution.kt)| Medium | Math, Bit_Manipulation, Backtracking | 273 | 100.00
 | 0088 |[Merge Sorted Array](src/main/kotlin/g0001_0100/s0088_merge_sorted_array/Solution.kt)| Easy | Top_Interview_Questions, Array, Sorting, Two_Pointers, Data_Structure_I_Day_2_Array | 311 | 33.40
 | 0087 |[Partition List](src/main/kotlin/g0001_0100/s0087_scramble_string/Solution.kt)| Hard | String, Dynamic_Programming | 366 | 85.00
-| 0086 |[Partition List](src/main/kotlin/g0001_0100/s0086_partition_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 331 | 5.88
+| 0086 |[Partition List](src/main/kotlin/g0001_0100/s0086_partition_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 172 | 94.00
 | 0085 |[Maximal Rectangle](src/main/kotlin/g0001_0100/s0085_maximal_rectangle/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix, Stack, Monotonic_Stack | 463 | 55.17
 | 0084 |[Largest Rectangle in Histogram](src/main/kotlin/g0001_0100/s0084_largest_rectangle_in_histogram/Solution.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Stack, Monotonic_Stack | 525 | 100.00
 | 0083 |[Remove Duplicates from Sorted List](src/main/kotlin/g0001_0100/s0083_remove_duplicates_from_sorted_list/Solution.kt)| Easy | Linked_List, Data_Structure_I_Day_8_Linked_List | 274 | 77.82
@@ -1567,7 +1567,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.4'
 | 0064 |[Minimum Path Sum](src/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16, Udemy_Dynamic_Programming | 222 | 95.70
 | 0063 |[Unique Paths II](src/main/kotlin/g0001_0100/s0063_unique_paths_ii/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_15 | 187 | 84.62
 | 0062 |[Unique Paths](src/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics, Algorithm_II_Day_13_Dynamic_Programming, Dynamic_Programming_I_Day_15, Level_1_Day_11_Dynamic_Programming | 209 | 49.18
-| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List, Programming_Skills_II_Day_16, Udemy_Linked_List | 355 | 13.54
+| 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List, Programming_Skills_II_Day_16, Udemy_Linked_List | 193 | 92.16
 | 0060 |[Permutation Sequence](src/main/kotlin/g0001_0100/s0060_permutation_sequence/Solution.kt)| Hard | Math, Recursion | 293 | 27.78
 | 0059 |[Spiral Matrix II](src/main/kotlin/g0001_0100/s0059_spiral_matrix_ii/Solution.kt)| Medium | Array, Matrix, Simulation, Data_Structure_II_Day_3_Array | 153 | 100.00
 | 0058 |[Length of Last Word](src/main/kotlin/g0001_0100/s0058_length_of_last_word/Solution.kt)| Easy | String, Programming_Skills_II_Day_6, Udemy_Arrays | 243 | 63.33
