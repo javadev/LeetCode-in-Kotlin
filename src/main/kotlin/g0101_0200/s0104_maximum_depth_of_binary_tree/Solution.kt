@@ -8,6 +8,16 @@ package g0101_0200.s0104_maximum_depth_of_binary_tree
 import com_github_leetcode.TreeNode
 import kotlin.math.max
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun maxDepth(root: TreeNode?): Int {
         return findDepth(root, 0)

@@ -1,10 +1,20 @@
 package g0101_0200.s0114_flatten_binary_tree_to_linked_list
 
 // #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree #Stack #Linked_List
-// #Udemy_Linked_List #2022_09_03_Time_305_ms_(26.30%)_Space_35.6_MB_(59.42%)
+// #Udemy_Linked_List #2022_09_27_Time_191_ms_(93.10%)_Space_35_MB_(97.70%)
 
 import com_github_leetcode.TreeNode
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun flatten(root: TreeNode?) {
         if (root != null) {

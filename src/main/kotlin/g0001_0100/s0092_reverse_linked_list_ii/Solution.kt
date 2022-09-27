@@ -13,6 +13,7 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun reverseBetween(head: ListNode?, left: Int, right: Int): ListNode? {
         var head = head

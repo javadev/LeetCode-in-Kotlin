@@ -39,7 +39,7 @@ class Solution {
     }
 
     private fun insert(dest: TreeNode?, n: TreeNode, from: TreeNode) {
-        if (dest != null && dest.`val` === from.`val`) {
+        if (dest != null && dest.`val` == from.`val`) {
             val h: TreeNode? = dest.right
             dest.right = n
             n.left = h
@@ -53,6 +53,6 @@ class Solution {
     private fun copy(n: TreeNode?): TreeNode? {
         return if (n == null) {
             null
-        } else TreeNode(n.`val`, copy(n.left), copy(n.right))
+        } else { TreeNode(n.`val`, copy(n.left), copy(n.right)) }
     }
 }

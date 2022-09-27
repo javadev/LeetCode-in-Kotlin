@@ -6,6 +6,16 @@ package g0001_0100.s0098_validate_binary_search_tree
 
 import com_github_leetcode.TreeNode
 
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun isValidBST(root: TreeNode?): Boolean {
         return solve(root, Long.MIN_VALUE, Long.MAX_VALUE)

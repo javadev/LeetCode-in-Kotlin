@@ -1,7 +1,7 @@
 package g0301_0400.s0394_decode_string
 
 // #Medium #Top_100_Liked_Questions #String #Stack #Recursion #Level_1_Day_14_Stack #Udemy_Strings
-// #2022_09_11_Time_268_ms_(23.13%)_Space_33.9_MB_(97.01%)
+// #2022_09_27_Time_224_ms_(64.86%)_Space_34.3_MB_(84.46%)
 
 class Solution {
     private var i = 0

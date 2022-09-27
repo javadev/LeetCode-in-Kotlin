@@ -2,7 +2,7 @@ package g0001_0100.s0091_decode_ways
 
 // #Medium #Top_Interview_Questions #String #Dynamic_Programming
 // #Algorithm_II_Day_15_Dynamic_Programming #Dynamic_Programming_I_Day_10
-// #2022_09_26_Time_327_ms_(17.68%)_Space_34.7_MB_(82.93%)
+// #2022_09_27_Time_237_ms_(76.88%)_Space_34.5_MB_(86.88%)
 
 class Solution {
     fun numDecodings(s: String): Int {

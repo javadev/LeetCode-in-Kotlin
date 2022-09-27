@@ -1,7 +1,7 @@
 package g0001_0100.s0059_spiral_matrix_ii
 
 // #Medium #Array #Matrix #Simulation #Data_Structure_II_Day_3_Array
-// #2022_09_22_Time_292_ms_(18.33%)_Space_34.7_MB_(71.67%)
+// #2022_09_27_Time_153_ms_(100.00%)_Space_34_MB_(98.15%)
 
 class Solution {
     fun generateMatrix(n: Int): Array<IntArray> {
