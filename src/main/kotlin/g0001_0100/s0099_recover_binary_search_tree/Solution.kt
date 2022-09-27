@@ -5,7 +5,7 @@ package g0001_0100.s0099_recover_binary_search_tree
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
@@ -19,6 +19,7 @@ class Solution {
     private var prev: TreeNode? = null
     private var first: TreeNode? = null
     private var second: TreeNode? = null
+
     fun recoverTree(root: TreeNode?) {
         evalSwappedNodes(root)
         val temp: Int = first!!.`val`
