@@ -1,6 +1,6 @@
 package g0001_0100.s0086_partition_list
 
-// #Medium #Two_Pointers #Linked_List #2022_09_25_Time_331_ms_(5.88%)_Space_35.6_MB_(35.29%)
+// #Medium #Two_Pointers #Linked_List #2022_09_27_Time_172_ms_(94.00%)_Space_35.1_MB_(76.00%)
 
 import com_github_leetcode.ListNode
 
