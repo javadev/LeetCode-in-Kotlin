@@ -3,6 +3,7 @@ package g0001_0100.s0050_powx_n
 // #Medium #Top_Interview_Questions #Math #Recursion #Udemy_Integers
 // #2022_09_27_Time_264_ms_(52.98%)_Space_34.9_MB_(76.82%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun myPow(x: Double, n: Int): Double {
         var x = x

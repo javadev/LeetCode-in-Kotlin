@@ -2,6 +2,7 @@ package g0001_0100.s0060_permutation_sequence
 
 // #Hard #Math #Recursion #2022_09_22_Time_293_ms_(27.78%)_Space_34.2_MB_(61.11%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun getPermutation(n: Int, k: Int): String {
         var k = k
