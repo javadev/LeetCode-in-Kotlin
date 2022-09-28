@@ -49,7 +49,7 @@ class Solution {
         // slow.next ->  mid = our "root"
         val root = TreeNode(slow!!.next!!.`val`)
         // Right sub tree from mid - end
-        root.right = sortedListToBST(slow!!.next!!.next)
+        root.right = sortedListToBST(slow.next!!.next)
         // Left sub tree from head - mid (chop slow.next)
         slow.next = null
         root.left = sortedListToBST(head)
