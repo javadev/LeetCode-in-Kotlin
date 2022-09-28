@@ -6,7 +6,7 @@ package g0101_0200.s0109_convert_sorted_list_to_binary_search_tree
 import com_github_leetcode.ListNode
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`
@@ -15,7 +15,7 @@ import com_github_leetcode.TreeNode
  *     var next: ListNode? = null
  * }
  */
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
