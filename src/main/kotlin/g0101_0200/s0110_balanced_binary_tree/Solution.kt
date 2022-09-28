@@ -5,7 +5,7 @@ package g0101_0200.s0110_balanced_binary_tree
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
