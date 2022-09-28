@@ -18,7 +18,7 @@ import com_github_leetcode.TreeNode
 class Solution {
     private fun trav(n: TreeNode?, m: TreeNode?): Boolean {
         return if (n != null && m != null) {
-            if (n.`val` !== m.`val`) {
+            if (n.`val` != m.`val`) {
                 false
             } else trav(n.left, m.left) && trav(n.right, m.right)
         } else {
