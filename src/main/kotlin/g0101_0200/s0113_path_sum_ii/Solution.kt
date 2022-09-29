@@ -15,6 +15,7 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun pathSum(root: TreeNode?, targetSum: Int): List<List<Int>> {
         val res: MutableList<List<Int>> = ArrayList()
