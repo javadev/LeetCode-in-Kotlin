@@ -17,6 +17,6 @@ internal class SolutionTest {
 
     @Test
     fun numDistinct3() {
-        assertThat(Solution().numDistinct("bag", "babgbag"), equalTo(2))
+        assertThat(Solution().numDistinct("bag", "babgbag"), equalTo(0))
     }
 }
