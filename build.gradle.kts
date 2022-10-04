@@ -28,7 +28,7 @@ tasks.test {
 group = "com.github.javadev"
 version = "1.5-SNAPSHOT"
 description = "leetcode-in-kotlin"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 publishing {
     publications.create<MavenPublication>("maven") {
