@@ -2,7 +2,7 @@ package g0001_0100.s0020_valid_parentheses
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #String #Stack
 // #Data_Structure_I_Day_9_Stack_Queue #Udemy_Strings
-// #2022_03_29_Time_196_ms_(71.08%)_Space_34.7_MB_(40.99%)
+// #2022_10_06_Time_226_ms_(72.53%)_Space_34.1_MB_(76.91%)
 
 import java.util.Stack
 
