@@ -25,4 +25,24 @@ internal class SolutionTest {
             )
         )
     }
+
+    @Test
+    fun fourSum3() {
+        assertThat(
+            Solution().fourSum(intArrayOf(2, 2, 2), 8),
+            equalTo(
+                listOf()
+            )
+        )
+    }
+
+    @Test
+    fun fourSum4() {
+        assertThat(
+            Solution().fourSum(intArrayOf(1000000000, 1000000000), 8),
+            equalTo(
+                listOf()
+            )
+        )
+    }
 }
