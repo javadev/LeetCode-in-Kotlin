@@ -43,7 +43,7 @@ tasks.withType<JavaCompile> {
 spotless {
     kotlin {
         encoding("UTF-8")
-        target("**/*.kt")
+        target("**/src/**/*.kt")
         ktlint("0.43.0").userData(mapOf(
                 "max_line_length" to "120"
                 ))

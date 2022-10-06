@@ -2,7 +2,7 @@ package g0001_0100.s0019_remove_nth_node_from_end_of_list
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Two_Pointers #Linked_List
 // #Algorithm_I_Day_5_Two_Pointers #Level_2_Day_3_Linked_List
-// #2022_03_29_Time_172_ms_(85.17%)_Space_35_MB_(74.14%)
+// #2022_10_06_Time_180_ms_(91.58%)_Space_34.9_MB_(69.39%)
 
 import com_github_leetcode.ListNode
 

@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution().fourSum(intArrayOf(1, 0, -1, 0, -2, 2), 0),
             equalTo(
-                getLists(arrayOf(intArrayOf(-2, -1, 1, 2), intArrayOf(-2, 0, 0, 2), intArrayOf(-1, 0, 0, 1)))
+                getLists(arrayOf(intArrayOf(1, 2, -2, -1), intArrayOf(0, 2, -2, 0), intArrayOf(0, 1, -1, 0)))
             )
         )
     }
@@ -22,6 +22,26 @@ internal class SolutionTest {
             Solution().fourSum(intArrayOf(2, 2, 2, 2, 2), 8),
             equalTo(
                 getLists(arrayOf(intArrayOf(2, 2, 2, 2)))
+            )
+        )
+    }
+
+    @Test
+    fun fourSum3() {
+        assertThat(
+            Solution().fourSum(intArrayOf(2, 2, 2), 8),
+            equalTo(
+                listOf()
+            )
+        )
+    }
+
+    @Test
+    fun fourSum4() {
+        assertThat(
+            Solution().fourSum(intArrayOf(1000000000, 1000000000), 8),
+            equalTo(
+                listOf()
             )
         )
     }

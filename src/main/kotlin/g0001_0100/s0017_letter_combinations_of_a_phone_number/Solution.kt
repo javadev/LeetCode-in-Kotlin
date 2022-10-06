@@ -2,7 +2,7 @@ package g0001_0100.s0017_letter_combinations_of_a_phone_number
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Backtracking
 // #Algorithm_II_Day_11_Recursion_Backtracking #Udemy_Backtracking/Recursion
-// #2022_03_29_Time_132_ms_(100.00%)_Space_35.3_MB_(96.41%)
+// #2022_10_06_Time_262_ms_(73.59%)_Space_35.7_MB_(90.50%)
 
 class Solution {
     fun letterCombinations(digits: String): List<String> {

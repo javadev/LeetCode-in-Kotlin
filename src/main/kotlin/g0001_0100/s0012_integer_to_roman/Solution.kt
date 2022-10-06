@@ -1,6 +1,6 @@
 package g0001_0100.s0012_integer_to_roman
 
-// #Medium #String #Hash_Table #Math #2022_03_29_Time_300_ms_(72.89%)_Space_43.3_MB_(41.90%)
+// #Medium #String #Hash_Table #Math #2022_10_06_Time_223_ms_(93.87%)_Space_36.3_MB_(93.07%)
 
 class Solution {
     fun intToRoman(num: Int): String? {
