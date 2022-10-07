@@ -2,7 +2,7 @@ package g0001_0100.s0096_unique_binary_search_trees
 
 // #Medium #Top_100_Liked_Questions #Dynamic_Programming #Math #Tree #Binary_Tree
 // #Binary_Search_Tree #Dynamic_Programming_I_Day_11
-// #2022_09_16_Time_237_ms_(26.76%)_Space_33_MB_(85.92%)
+// #2022_10_07_Time_147_ms_(88.52%)_Space_32.6_MB_(96.72%)
 
 class Solution {
     fun numTrees(n: Int): Int {
