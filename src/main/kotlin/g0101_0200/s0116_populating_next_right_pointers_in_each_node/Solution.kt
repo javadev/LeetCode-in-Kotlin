@@ -31,5 +31,3 @@ class Solution {
         return root
     }
 }
-
-
