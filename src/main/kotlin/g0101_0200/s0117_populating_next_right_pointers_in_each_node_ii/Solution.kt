@@ -6,7 +6,7 @@ package g0101_0200.s0117_populating_next_right_pointers_in_each_node_ii
 
 import com_github_leetcode.left_right.Node
 
-/**
+/*
  * Definition for a Node.
  * class Node(var `val`: Int) {
  *     var left: Node? = null
@@ -14,7 +14,6 @@ import com_github_leetcode.left_right.Node
  *     var next: Node? = null
  * }
  */
-
 class Solution {
     fun connect(root: Node?): Node? {
         if (root == null) {
