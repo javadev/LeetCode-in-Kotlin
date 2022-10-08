@@ -53,7 +53,7 @@ class Solution {
     private fun upperToLower(c: Char): Char {
         var c = c
         if (isUpper(c)) {
-            c = (c.toInt() + 32).toChar()
+            c += 32
         }
         return c
     }
