@@ -4,7 +4,7 @@ package g0101_0200.s0117_populating_next_right_pointers_in_each_node_ii
 // #Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search
 // #2022_10_08_Time_409_ms_(13.33%)_Space_43.4_MB_(13.33%)
 
-import com_github_leetcode.LeftRight.Node
+import com_github_leetcode.left_right.Node
 
 /**
  * Definition for a Node.

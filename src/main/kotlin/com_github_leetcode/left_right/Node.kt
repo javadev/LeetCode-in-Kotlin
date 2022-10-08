@@ -1,4 +1,4 @@
-package com_github_leetcode.LeftRight
+package com_github_leetcode.left_right
 
 class Node(var `val`: Int) {
     constructor(i: Int, node: Node?, node1: Node?, nothing: Node?) : this(i) {

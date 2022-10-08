@@ -1,6 +1,6 @@
 package g0101_0200.s0117_populating_next_right_pointers_in_each_node_ii
 
-import com_github_leetcode.LeftRight.Node
+import com_github_leetcode.left_right.Node
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test

@@ -4,7 +4,7 @@ package g0101_0200.s0116_populating_next_right_pointers_in_each_node
 // #Linked_List #Algorithm_I_Day_8_Breadth_First_Search_Depth_First_Search
 // #2022_10_08_Time_355_ms_(69.02%)_Space_45.6_MB_(25.54%)
 
-import com_github_leetcode.LeftRight.Node
+import com_github_leetcode.left_right.Node
 
 /**
  * Definition for a Node.
