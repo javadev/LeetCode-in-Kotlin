@@ -33,7 +33,7 @@ class Solution {
                     // construct the reverse graph from endWord
                     val reverseLadders = reverse.computeIfAbsent(
                         next
-                    ) { k: String? -> HashSet() }
+                    ) { _: String? -> HashSet() }
                     reverseLadders.add(word)
                     if (endWord == next) {
                         findEnd = true
