@@ -19,7 +19,7 @@ class Solution {
         var node = head
         while (node != null) {
             var prev = dummy
-            while (prev?.next != null && node.`val` > prev.next!!.`val`) {
+            while (prev?.next != null && node.`val` > prev.next.`val`) {
                 prev = prev.next!!
             }
             val temp = node.next
