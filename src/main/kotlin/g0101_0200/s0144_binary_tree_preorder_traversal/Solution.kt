@@ -16,7 +16,6 @@ import java.util.Stack
  *     var right: TreeNode? = null
  * }
  */
-
 class Solution {
     fun preorderTraversal(root: TreeNode?): List<Int> {
         val result: MutableList<Int> = ArrayList()
