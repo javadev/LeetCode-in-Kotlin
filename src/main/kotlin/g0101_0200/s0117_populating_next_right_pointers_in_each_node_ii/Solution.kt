@@ -26,8 +26,8 @@ class Solution {
         bfsQueue.offer(root)
         root.next = null
 
-        var temp: Node? = null
-        var prev: Node? = null
+        var temp: Node?
+        var prev: Node?
 
         while (!bfsQueue.isEmpty()) {
 

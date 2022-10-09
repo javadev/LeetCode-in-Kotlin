@@ -4,6 +4,7 @@ package g0101_0200.s0132_palindrome_partitioning_ii
 
 import java.util.Arrays
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun minCut(s: String): Int {
         val n = s.length
