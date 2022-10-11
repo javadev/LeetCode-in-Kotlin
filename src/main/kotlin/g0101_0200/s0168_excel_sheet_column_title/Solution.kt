@@ -4,18 +4,18 @@ package g0101_0200.s0168_excel_sheet_column_title
 
 class Solution {
     fun convertToTitle(n: Int): String {
-        var n = n
+        var num = n
         val sb = StringBuilder()
-        while (n != 0) {
-            var remainder = n % 26
+        while (num != 0) {
+            var remainder = num % 26
             if (remainder == 0) {
                 remainder += 26
             }
-            if (n >= remainder) {
-                n -= remainder
+            if (num >= remainder) {
+                num -= remainder
                 sb.append((remainder + 64).toChar())
             }
-            n /= 26
+            num /= 26
         }
         return sb.reverse().toString()
     }

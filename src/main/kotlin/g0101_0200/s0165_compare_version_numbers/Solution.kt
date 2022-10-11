@@ -13,7 +13,7 @@ class Solution {
             numA = if (c == '.') {
                 break
             } else {
-                numA * 10 + (c.toInt() - 48)
+                numA * 10 + (c.code - 48)
             }
             i++
         }
@@ -26,7 +26,7 @@ class Solution {
             numB = if (c == '.') {
                 break
             } else {
-                numB * 10 + (c.toInt() - 48)
+                numB * 10 + (c.code - 48)
             }
             j++
         }
