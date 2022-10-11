@@ -1,5 +1,8 @@
 package g0101_0200.s0164_maximum_gap
 
+// #Hard #Array #Sorting #Bucket_Sort #Radix_Sort
+// #2022_10_11_Time_991_ms_(68.00%)_Space_77.2_MB_(88.00%)
+
 import java.util.Arrays
 
 class Solution {
