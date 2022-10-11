@@ -1562,7 +1562,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0167 |[Two Sum II - Input Array Is Sorted](src/main/kotlin/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers, Algorithm_I_Day_3_Two_Pointers, Binary_Search_I_Day_7 | 403 | 68.74
 | 0166 |[Fraction to Recurring Decimal](src/main/kotlin/g0101_0200/s0166_fraction_to_recurring_decimal/Solution.kt)| Medium | Top_Interview_Questions, String, Hash_Table, Math | 147 | 90.91
 | 0165 |[Compare Version Numbers](src/main/kotlin/g0101_0200/s0165_compare_version_numbers/Solution.kt)| Medium | String, Two_Pointers | 144 | 100.00
-| 0164 |[Maximum Gap](src/main/kotlin/g0101_0200/s0164_maximum_gap/Solution.kt)| |||
+| 0164 |[Maximum Gap](src/main/kotlin/g0101_0200/s0164_maximum_gap/Solution.kt)| Hard | Array, Sorting, Bucket_Sort, Radix_Sort | 991 | 68.00
 | 0162 |[Find Peak Element](src/main/kotlin/g0101_0200/s0162_find_peak_element/Solution.kt)| Medium | Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_2_Binary_Search, Binary_Search_II_Day_12 | 297 | 53.85
 | 0160 |[Intersection of Two Linked Lists](src/main/kotlin/g0101_0200/s0160_intersection_of_two_linked_lists/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Two_Pointers, Linked_List, Data_Structure_II_Day_11_Linked_List, Udemy_Linked_List | 262 | 83.50
 | 0155 |[Min Stack](src/main/kotlin/g0101_0200/s0155_min_stack/MinStack.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design, Data_Structure_II_Day_14_Stack_Queue, Programming_Skills_II_Day_18, Level_2_Day_16_Design, Udemy_Design | 331 | 84.88
