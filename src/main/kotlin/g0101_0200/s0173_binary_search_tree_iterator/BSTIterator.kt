@@ -6,7 +6,7 @@ package g0101_0200.s0173_binary_search_tree_iterator
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
@@ -49,7 +49,7 @@ class BSTIterator(root: TreeNode?) {
     }
 }
 
-/**
+/*
  * Your BSTIterator object will be instantiated and called as such:
  * var obj = BSTIterator(root)
  * var param_1 = obj.next()
