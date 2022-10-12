@@ -1,30 +1,48 @@
-84\. Largest Rectangle in Histogram
+94\. Binary Tree Inorder Traversal
 
-Hard
+Easy
 
-Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return _the area of the largest rectangle in the histogram_.
+Given the `root` of a binary tree, return _the inorder traversal of its nodes' values_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
+![](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg)
 
-**Input:** heights = [2,1,5,6,2,3]
+**Input:** root = [1,null,2,3]
 
-**Output:** 10
-
-**Explanation:** The above is a histogram where width of each bar is 1. 
-
-The largest rectangle is shown in the red area, which has an area = 10 units.
+**Output:** [1,3,2] 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
+**Input:** root = []
 
-**Input:** heights = [2,4]
+**Output:** [] 
 
-**Output:** 4
+**Example 3:**
+
+**Input:** root = [1]
+
+**Output:** [1] 
+
+**Example 4:**
+
+![](https://assets.leetcode.com/uploads/2020/09/15/inorder_5.jpg)
+
+**Input:** root = [1,2]
+
+**Output:** [2,1] 
+
+**Example 5:**
+
+![](https://assets.leetcode.com/uploads/2020/09/15/inorder_4.jpg)
+
+**Input:** root = [1,null,2]
+
+**Output:** [1,2] 
 
 **Constraints:**
 
-*   <code>1 <= heights.length <= 10<sup>5</sup></code>
-*   <code>0 <= heights[i] <= 10<sup>4</sup></code>
+*   The number of nodes in the tree is in the range `[0, 100]`.
+*   `-100 <= Node.val <= 100`
+
+**Follow up:** Recursive solution is trivial, could you do it iteratively?

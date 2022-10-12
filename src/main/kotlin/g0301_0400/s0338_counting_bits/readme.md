@@ -1,34 +1,41 @@
-300\. Longest Increasing Subsequence
+338\. Counting Bits
 
-Medium
+Easy
 
-Given an integer array `nums`, return the length of the longest strictly increasing subsequence.
-
-A **subsequence** is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, `[3,6,2,7]` is a subsequence of the array `[0,3,1,6,2,2,7]`.
+Given an integer `n`, return _an array_ `ans` _of length_ `n + 1` _such that for each_ `i` (`0 <= i <= n`)_,_ `ans[i]` _is the **number of**_ `1`_**'s** in the binary representation of_ `i`.
 
 **Example 1:**
 
-**Input:** nums = [10,9,2,5,3,7,101,18]
+**Input:** n = 2
 
-**Output:** 4
+**Output:** [0,1,1]
 
-**Explanation:** The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+**Explanation:**
+
+    0 --> 0
+    1 --> 1
+    2 --> 10 
 
 **Example 2:**
 
-**Input:** nums = [0,1,0,3,2,3]
+**Input:** n = 5
 
-**Output:** 4
+**Output:** [0,1,1,2,1,2]
 
-**Example 3:**
+**Explanation:**
 
-**Input:** nums = [7,7,7,7,7,7,7]
-
-**Output:** 1
+    0 --> 0
+    1 --> 1
+    2 --> 10
+    3 --> 11
+    4 --> 100
+    5 --> 101 
 
 **Constraints:**
 
-*   `1 <= nums.length <= 2500`
-*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
+*   <code>0 <= n <= 10<sup>5</sup></code>
 
-**Follow up:** Can you come up with an algorithm that runs in `O(n log(n))` time complexity?
+**Follow up:**
+
+*   It is very easy to come up with a solution with a runtime of `O(n log n)`. Can you do it in linear time `O(n)` and possibly in a single pass?
+*   Can you do it without using any built-in function (i.e., like `__builtin_popcount` in C++)?
