@@ -636,11 +636,13 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
 
 #### Day 5 Union
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0175 |[Combine Two Tables](src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 473 | 54.97
 
 #### Day 6 Union
 
@@ -1561,6 +1563,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0199 |[Binary Tree Right Side View](src/main/kotlin/g0101_0200/s0199_binary_tree_right_side_view/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_16_Tree, Level_2_Day_15_Tree | 194 | 92.89
 | 0198 |[House Robber](src/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3, Level_2_Day_12_Dynamic_Programming, Udemy_Dynamic_Programming | 156 | 92.24
 | 0189 |[Rotate Array](src/main/kotlin/g0101_0200/s0189_rotate_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers, Algorithm_I_Day_2_Two_Pointers, Udemy_Arrays | 483 | 86.95
+| 0178 |[Rank Scores](src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 290 | 66.73
+| 0177 |[Nth Highest Salary](src/main/kotlin/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 342 | 71.87
+| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 225 | 73.10
+| 0175 |[Combine Two Tables](src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database, SQL_I_Day_5_Union | 473 | 54.97
 | 0174 |[Dungeon Game](src/main/kotlin/g0101_0200/s0174_dungeon_game/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix | 300 | 66.67
 | 0173 |[Binary Search Tree Iterator](src/main/kotlin/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.kt)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator, Data_Structure_II_Day_17_Tree, Programming_Skills_II_Day_16, Level_2_Day_9_Binary_Search_Tree | 563 | 46.91
 | 0172 |[Factorial Trailing Zeroes](src/main/kotlin/g0101_0200/s0172_factorial_trailing_zeroes/Solution.kt)| Medium | Top_Interview_Questions, Math, Udemy_Integers | 220 | 67.65
