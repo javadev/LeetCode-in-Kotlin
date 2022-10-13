@@ -668,6 +668,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 303 | 92.08
 
 ### Level 1
 
@@ -1563,6 +1564,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0199 |[Binary Tree Right Side View](src/main/kotlin/g0101_0200/s0199_binary_tree_right_side_view/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_16_Tree, Level_2_Day_15_Tree | 194 | 92.89
 | 0198 |[House Robber](src/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3, Level_2_Day_12_Dynamic_Programming, Udemy_Dynamic_Programming | 156 | 92.24
 | 0189 |[Rotate Array](src/main/kotlin/g0101_0200/s0189_rotate_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers, Algorithm_I_Day_2_Two_Pointers, Udemy_Arrays | 483 | 86.95
+| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_10_Where | 303 | 92.08
+| 0181 |[Employees Earning More Than Their Managers](src/main/kotlin/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql)| Easy | Database | 315 | 94.44
+| 0180 |[Consecutive Numbers](src/main/kotlin/g0101_0200/s0180_consecutive_numbers/script.sql)| Medium | Database | 550 | 48.44
+| 0179 |[Largest Number](src/main/kotlin/g0101_0200/s0179_largest_number/Solution.kt)| Medium | Top_Interview_Questions, String, Sorting, Greedy | 380 | 43.40
 | 0178 |[Rank Scores](src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 290 | 66.73
 | 0177 |[Nth Highest Salary](src/main/kotlin/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 342 | 71.87
 | 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 225 | 73.10
