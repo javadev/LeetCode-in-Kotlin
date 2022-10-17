@@ -14,17 +14,17 @@ class Solution {
         val chars = s.toCharArray()
         var buf = 0
         val map = IntArray(128)
-        map['A'.toInt()] = 0
-        map['C'.toInt()] = 1
-        map['G'.toInt()] = 2
-        map['T'.toInt()] = 3
+        map['A'.code] = 0
+        map['C'.code] = 1
+        map['G'.code] = 2
+        map['T'.code] = 3
         val ans: MutableList<String> = ArrayList(s.length / 2)
         for (i in 0..9) {
-            buf = (buf shl 2) + map[chars[i].toInt()]
+            buf = (buf shl 2) + map[chars[i].code]
         }
         seen[buf] = true
         for (i in 10 until chars.size) {
-            buf = (buf shl 2 and 0xFFFFF) + map[chars[i].toInt()]
+            buf = (buf shl 2 and 0xFFFFF) + map[chars[i].code]
             if (seen[buf]) {
                 if (!added[buf]) {
                     ans.add(String(chars, i - 9, 10))
