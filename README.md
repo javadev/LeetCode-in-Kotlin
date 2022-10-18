@@ -621,7 +621,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 376 | 98.73
+| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 712 | 33.67
 
 #### Day 2 Select and Order
 
@@ -637,7 +637,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
+| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 219 | 92.54
 
 #### Day 5 Union
 
@@ -669,7 +669,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 303 | 92.08
+| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 396 | 68.40
 
 ### Level 1
 
@@ -1568,16 +1568,16 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0198 |[House Robber](src/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3, Level_2_Day_12_Dynamic_Programming, Udemy_Dynamic_Programming | 156 | 92.24
 | 0189 |[Rotate Array](src/main/kotlin/g0101_0200/s0189_rotate_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers, Algorithm_I_Day_2_Two_Pointers, Udemy_Arrays | 483 | 86.95
 | 0187 |[Repeated DNA Sequences](src/main/kotlin/g0101_0200/s0187_repeated_dna_sequences/Solution.kt)| Medium | String, Hash_Table, Bit_Manipulation, Sliding_Window, Hash_Function, Rolling_Hash, Data_Structure_II_Day_9_String, Udemy_Strings | 319 | 79.03
-| 0185 |[Department Top Three Salaries](src/main/kotlin/g0101_0200/s0185_department_top_three_salaries/script.sql)| Hard | Database | 643 | 95.52
-| 0184 |[Department Highest Salary](src/main/kotlin/g0101_0200/s0184_department_highest_salary/script.sql)| Medium | Database | 590 | 73.49
-| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database, SQL_I_Day_1_Select | 376 | 98.73
-| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_10_Where | 303 | 92.08
-| 0181 |[Employees Earning More Than Their Managers](src/main/kotlin/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql)| Easy | Database | 315 | 94.44
-| 0180 |[Consecutive Numbers](src/main/kotlin/g0101_0200/s0180_consecutive_numbers/script.sql)| Medium | Database | 550 | 48.44
+| 0185 |[Department Top Three Salaries](src/main/kotlin/g0101_0200/s0185_department_top_three_salaries/script.sql)| Hard | Database | 757 | 87.06
+| 0184 |[Department Highest Salary](src/main/kotlin/g0101_0200/s0184_department_highest_salary/script.sql)| Medium | Database | 637 | 76.01
+| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database, SQL_I_Day_1_Select | 712 | 33.67
+| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_10_Where | 396 | 68.40
+| 0181 |[Employees Earning More Than Their Managers](src/main/kotlin/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql)| Easy | Database | 351 | 94.75
+| 0180 |[Consecutive Numbers](src/main/kotlin/g0101_0200/s0180_consecutive_numbers/script.sql)| Medium | Database | 695 | 38.05
 | 0179 |[Largest Number](src/main/kotlin/g0101_0200/s0179_largest_number/Solution.kt)| Medium | Top_Interview_Questions, String, Sorting, Greedy | 380 | 43.40
-| 0178 |[Rank Scores](src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 290 | 66.73
-| 0177 |[Nth Highest Salary](src/main/kotlin/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 342 | 71.87
-| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 225 | 73.10
+| 0178 |[Rank Scores](src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 292 | 85.14
+| 0177 |[Nth Highest Salary](src/main/kotlin/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 338 | 86.68
+| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 219 | 92.54
 | 0175 |[Combine Two Tables](src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database, SQL_I_Day_5_Union | 473 | 54.97
 | 0174 |[Dungeon Game](src/main/kotlin/g0101_0200/s0174_dungeon_game/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix | 300 | 66.67
 | 0173 |[Binary Search Tree Iterator](src/main/kotlin/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.kt)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator, Data_Structure_II_Day_17_Tree, Programming_Skills_II_Day_16, Level_2_Day_9_Binary_Search_Tree | 563 | 46.91
