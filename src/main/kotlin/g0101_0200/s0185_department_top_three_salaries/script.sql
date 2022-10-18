@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Hard #Database #2022_06_27_Time_643_ms_(95.52%)_Space_0B_(100.00%)
+# #Hard #Database #2022_10_18_Time_757_ms_(87.06%)_Space_0B_(100.00%)
 SELECT D.name AS Department,
        A.name AS Employee,
        A.salary AS Salary
