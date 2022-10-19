@@ -1,42 +1,32 @@
-189\. Rotate Array
+190\. Reverse Bits
 
-Medium
+Easy
 
-Given an array, rotate the array to the right by `k` steps, where `k` is non-negative.
+Reverse bits of a given 32 bits unsigned integer.
+
+**Note:**
+
+*   Note that in some languages, such as Java, there is no unsigned integer type. In this case, both input and output will be given as a signed integer type. They should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
+*   In Java, the compiler represents the signed integers using [2's complement notation](https://en.wikipedia.org/wiki/Two%27s_complement). Therefore, in **Example 2** above, the input represents the signed integer `-3` and the output represents the signed integer `-1073741825`.
 
 **Example 1:**
 
-**Input:** nums = [1,2,3,4,5,6,7], k = 3
+**Input:** n = 00000010100101000001111010011100
 
-**Output:** [5,6,7,1,2,3,4]
+**Output:** 964176192 (00111001011110000010100101000000)
 
-**Explanation:** 
-
-rotate 1 steps to the right: [7,1,2,3,4,5,6] 
-
-rotate 2 steps to the right: [6,7,1,2,3,4,5] 
-
-rotate 3 steps to the right: [5,6,7,1,2,3,4]
+**Explanation:** The input binary string **00000010100101000001111010011100** represents the unsigned integer 43261596, so return 964176192 which its binary representation is **00111001011110000010100101000000**. 
 
 **Example 2:**
 
-**Input:** nums = [-1,-100,3,99], k = 2
+**Input:** n = 11111111111111111111111111111101
 
-**Output:** [3,99,-1,-100]
+**Output:** 3221225471 (10111111111111111111111111111111)
 
-**Explanation:** 
-
-rotate 1 steps to the right: [99,-1,-100,3] 
-
-rotate 2 steps to the right: [3,99,-1,-100]
+**Explanation:** The input binary string **11111111111111111111111111111101** represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is **10111111111111111111111111111111**. 
 
 **Constraints:**
 
-*   <code>1 <= nums.length <= 10<sup>5</sup></code>
-*   <code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code>
-*   <code>0 <= k <= 10<sup>5</sup></code>
+*   The input must be a **binary string** of length `32`
 
-**Follow up:**
-
-*   Try to come up with as many solutions as you can. There are at least **three** different ways to solve this problem.
-*   Could you do it in-place with `O(1)` extra space?
+**Follow up:** If this function is called many times, how would you optimize it?
