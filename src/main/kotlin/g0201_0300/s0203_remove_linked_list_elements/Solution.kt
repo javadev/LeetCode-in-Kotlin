@@ -20,7 +20,6 @@ class Solution {
         sentinel.next = head
         var next = head
         var prev = sentinel
-
         while (next != null) {
             if (next.`val` == `val`) {
                 prev.next = next.next
@@ -29,7 +28,6 @@ class Solution {
             }
             next = next.next
         }
-
         return sentinel.next
     }
 }
