@@ -13,13 +13,14 @@ import java.sql.SQLException
 import java.util.stream.Collectors.joining
 import javax.sql.DataSource
 
-
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE Person(id INTEGER PRIMARY KEY, email VARCHAR); "
-            + "INSERT INTO Person(id, email) VALUES (1, 'john@example.com'); "
-            + "INSERT INTO Person(id, email) VALUES (2, 'bob@example.com'); "
-            + "INSERT INTO Person(id, email) VALUES (3, 'john@example.com'); "]
+    initialSqls = [
+        "CREATE TABLE Person(id INTEGER PRIMARY KEY, email VARCHAR); " +
+            "INSERT INTO Person(id, email) VALUES (1, 'john@example.com'); " +
+            "INSERT INTO Person(id, email) VALUES (2, 'bob@example.com'); " +
+            "INSERT INTO Person(id, email) VALUES (3, 'john@example.com'); "
+    ]
 )
 internal class MysqlTest {
     @Test
