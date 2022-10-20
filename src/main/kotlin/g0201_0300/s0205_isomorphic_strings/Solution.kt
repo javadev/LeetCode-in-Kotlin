@@ -10,13 +10,13 @@ class Solution {
         val tar = t.toCharArray()
         val n = str.size
         for (i in 0 until n) {
-            if (map[tar[i].toInt()] == 0) {
-                if (search(map, str[i].toInt(), tar[i].toInt()) != -1) {
+            if (map[tar[i].code] == 0) {
+                if (search(map, str[i].code, tar[i].code) != -1) {
                     return false
                 }
-                map[tar[i].toInt()] = str[i].toInt()
+                map[tar[i].code] = str[i].code
             } else {
-                if (map[tar[i].toInt()] != str[i].toInt()) {
+                if (map[tar[i].code] != str[i].code) {
                     return false
                 }
             }
