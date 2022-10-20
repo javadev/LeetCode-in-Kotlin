@@ -8,21 +8,17 @@ class Solution {
     fun findOrder(numCourses: Int, prerequisites: Array<IntArray>): IntArray {
         val indegrees = IntArray(numCourses) { 0 }
         val graph = buildGraph(numCourses, prerequisites, indegrees)
-
         val queue = ArrayDeque<Int>()
         for ((idx, indegree) in indegrees.withIndex()) {
             if (indegree == 0) {
                 queue.addLast(idx)
             }
         }
-
         val ans = IntArray(numCourses) { 0 }
         var idx = 0
-
         while (queue.isNotEmpty()) {
             val cur = queue.removeFirst()
             ans[idx++] = cur
-
             for (pre in graph[cur]) {
                 if (--indegrees[pre] == 0) {
                     queue.addLast(pre)
@@ -34,6 +30,7 @@ class Solution {
         }
         return ans
     }
+
     private fun buildGraph(
         numCourses: Int,
         prerequisites: Array<IntArray>,
