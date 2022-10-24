@@ -5,7 +5,7 @@ class Tree {
     var end: String? = null
     private var length = 0
     private fun addChild(c: Char): Tree? {
-        val i = c.toInt() - 'a'.toInt()
+        val i = c.code - 'a'.code
         if (children == null) {
             children = arrayOfNulls(26)
         }
@@ -17,7 +17,7 @@ class Tree {
     }
 
     fun getChild(c: Char): Tree? {
-        return if (children == null) null else children!![c.toInt() - 'a'.toInt()]
+        return if (children == null) null else children!![c.code - 'a'.code]
     }
 
     fun len(): Int {
@@ -45,7 +45,7 @@ class Tree {
                 root = root.getChild(c)
                 requireNotNull(root)
             }
-            toDelOn!!.children!![toDel.toInt() - 'a'.toInt()] = null
+            toDelOn!!.children!![toDel.code - 'a'.code] = null
             --toDelOn.length
             require(root!!.length == 0)
         }
