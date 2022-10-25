@@ -12,29 +12,22 @@ class Solution {
         if (blds.isEmpty()) {
             return ans
         }
-
         val totalBuildings = blds.size
         val buildings = Array<Building?>(totalBuildings * 2) { null }
-
         var idx = 0
         for (building in blds) {
             buildings[idx] = Building(building[0], building[2], true)
             buildings[idx + 1] = Building(building[1], building[2], false)
             idx += 2
         }
-
         buildings.sort()
-
         val skyline = TreeMap<Int, Int>()
         skyline[0] = 1
-
         var prevMaxHeight = 0
-
         for (building in buildings) {
             if (building == null) {
                 continue
             }
-
             val height = building.height
             if (building.isStart) {
                 skyline[height] = 1 + (skyline[height] ?: 0)
@@ -42,7 +35,6 @@ class Solution {
                 skyline[height] = (skyline[height] ?: 1) - 1
                 if (skyline[height] == 0) skyline.remove(height)
             }
-
             val xCoor = building.xCoor
             val curMaxHeight = skyline.lastKey()
             if (prevMaxHeight != curMaxHeight) {
@@ -50,7 +42,6 @@ class Solution {
                 prevMaxHeight = curMaxHeight
             }
         }
-
         return ans
     }
 
