@@ -18,9 +18,9 @@ class Solution {
             if (c != ' ') {
                 if (c >= '0' && c <= '9') {
                     num = if (num == 0) {
-                        c.toInt() - '0'.toInt()
+                        c.code - '0'.code
                     } else {
-                        num * 10 + c.toInt() - '0'.toInt()
+                        num * 10 + c.code - '0'.code
                     }
                 } else if (c == '+') {
                     prenum += num * if (isPlus) 1 else -1
