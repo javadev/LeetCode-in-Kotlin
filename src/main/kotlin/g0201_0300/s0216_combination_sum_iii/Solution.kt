@@ -9,8 +9,9 @@ class Solution {
         comb(a, k, n, 1, MutableList<Int>(0) { 0 })
         return a
     }
+
     fun comb(a: MutableList<MutableList<Int>>, k: Int, n: Int, index: Int, tmp: MutableList<Int>) {
-        if (n <0) {
+        if (n < 0) {
             return
         }
         if (tmp.size > k) {
