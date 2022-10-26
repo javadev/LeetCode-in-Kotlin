@@ -44,5 +44,17 @@ internal class SolutionTest {
             equalTo(2)
         )
     }
-//[6,2,8,0,4,7,9,null,null,3,5] 3 5 -> 4
+
+    @Test
+    fun lowestCommonAncestor4() {
+        assertThat(
+            Solution()
+                .lowestCommonAncestor(
+                    TreeNode.create(listOf(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5)),
+                    TreeNode(3),
+                    TreeNode(5)
+                )!!.`val`,
+            equalTo(4)
+        )
+    }
 }
