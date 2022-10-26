@@ -420,6 +420,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue | 258 | 70.86
 | 0217 |[Contains Duplicate](src/main/kotlin/g0201_0300/s0217_contains_duplicate/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 719 | 73.49
 
 #### Day 12 Class and Object
@@ -727,6 +728,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0098 |[Validate Binary Search Tree](src/main/kotlin/g0001_0100/s0098_validate_binary_search_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 330 | 41.38
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src/main/kotlin/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 404 | 75.59
 
 #### Day 9 Graph/BFS/DFS
 
@@ -878,6 +880,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue | 258 | 70.86
 | 0155 |[Min Stack](src/main/kotlin/g0101_0200/s0155_min_stack/MinStack.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design | 331 | 84.88
 | 0208 |[Implement Trie (Prefix Tree)](src/main/kotlin/g0201_0300/s0208_implement_trie_prefix_tree/Trie.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Design, Trie | 689 | 61.00
 
@@ -1143,6 +1146,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0020 |[Valid Parentheses](src/main/kotlin/g0001_0100/s0020_valid_parentheses/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack | 226 | 72.53
+| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue | 258 | 70.86
 
 #### Day 10 Tree
 
@@ -1177,6 +1181,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0098 |[Validate Binary Search Tree](src/main/kotlin/g0001_0100/s0098_validate_binary_search_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 330 | 41.38
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src/main/kotlin/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 404 | 75.59
 
 ### Data Structure II
 
@@ -1400,6 +1405,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0231 |[Power of Two](src/main/kotlin/g0201_0300/s0231_power_of_two/Solution.kt)| Easy | Math, Bit_Manipulation, Recursion | 161 | 86.81
 | 0191 |[Number of 1 Bits](src/main/kotlin/g0101_0200/s0191_number_of_1_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation | 237 | 68.44
 
 #### Day 14 Bit Manipulation
@@ -1580,7 +1586,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0239 |[Sliding Window Maximum](src/main/kotlin/g0201_0300/s0239_sliding_window_maximum/Solution.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue, Udemy_Arrays | 1059 | 86.14
 | 0238 |[Product of Array Except Self](src/main/kotlin/g0201_0300/s0238_product_of_array_except_self/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum, Data_Structure_II_Day_5_Array, Udemy_Arrays | 669 | 48.96
 | 0236 |[Lowest Common Ancestor of a Binary Tree](src/main/kotlin/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_18_Tree, Udemy_Tree_Stack_Queue | 386 | 45.21
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src/main/kotlin/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree | 404 | 75.59
 | 0234 |[Palindrome Linked List](src/main/kotlin/g0201_0300/s0234_palindrome_linked_list/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion, Level_2_Day_3_Linked_List, Udemy_Linked_List | 641 | 79.53
+| 0233 |[Number of Digit One](src/main/kotlin/g0201_0300/s0233_number_of_digit_one/Solution.kt)| Hard | Dynamic_Programming, Math, Recursion | 129 | 100.00
+| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue, Data_Structure_I_Day_9_Stack_Queue, Programming_Skills_I_Day_11_Containers_and_Libraries, Level_2_Day_16_Design | 258 | 70.86
+| 0231 |[Power of Two](src/main/kotlin/g0201_0300/s0231_power_of_two/Solution.kt)| Easy | Math, Bit_Manipulation, Recursion, Algorithm_I_Day_13_Bit_Manipulation | 161 | 86.81
 | 0230 |[Kth Smallest Element in a BST](src/main/kotlin/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_17_Tree, Level_2_Day_9_Binary_Search_Tree | 393 | 33.33
 | 0229 |[Majority Element II](src/main/kotlin/g0201_0300/s0229_majority_element_ii/Solution.kt)| Medium | Array, Hash_Table, Sorting, Counting | 408 | 71.21
 | 0228 |[Summary Ranges](src/main/kotlin/g0201_0300/s0228_summary_ranges/Solution.kt)| Easy | Array | 169 | 91.89
