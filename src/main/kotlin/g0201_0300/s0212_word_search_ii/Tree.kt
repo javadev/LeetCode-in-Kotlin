@@ -1,5 +1,6 @@
 package g0201_0300.s0212_word_search_ii
 
+@Suppress("NAME_SHADOWING")
 class Tree {
     private var children: Array<Tree?>? = null
     var end: String? = null
