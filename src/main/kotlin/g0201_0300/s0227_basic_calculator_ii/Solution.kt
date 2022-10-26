@@ -12,7 +12,7 @@ class Solution {
         for (i in 0 until s.length) {
             val c = s[i]
             if (Character.isDigit(c)) {
-                num = num * 10 + c.toInt() - '0'.toInt()
+                num = num * 10 + c.code - '0'.code
             }
             if (i == s.length - 1 || !Character.isDigit(c) && c != ' ') {
                 when (lastSign) {
@@ -30,8 +30,6 @@ class Solution {
                     '/' -> if (num != 0) {
                         tempSum /= num
                     }
-
-                    else -> {}
                 }
                 lastSign = c
                 num = 0
