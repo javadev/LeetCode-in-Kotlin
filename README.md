@@ -892,6 +892,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0227 |[Basic Calculator II](src/main/kotlin/g0201_0300/s0227_basic_calculator_ii/Solution.kt)| Medium | Top_Interview_Questions, String, Math, Stack | 383 | 62.50
 
 #### Day 19 Union Find
 
@@ -1581,7 +1582,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.5'
 | 0236 |[Lowest Common Ancestor of a Binary Tree](src/main/kotlin/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_18_Tree, Udemy_Tree_Stack_Queue | 386 | 45.21
 | 0234 |[Palindrome Linked List](src/main/kotlin/g0201_0300/s0234_palindrome_linked_list/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion, Level_2_Day_3_Linked_List, Udemy_Linked_List | 641 | 79.53
 | 0230 |[Kth Smallest Element in a BST](src/main/kotlin/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_17_Tree, Level_2_Day_9_Binary_Search_Tree | 393 | 33.33
+| 0229 |[Majority Element II](src/main/kotlin/g0201_0300/s0229_majority_element_ii/Solution.kt)| Medium | Array, Hash_Table, Sorting, Counting | 408 | 71.21
+| 0228 |[Summary Ranges](src/main/kotlin/g0201_0300/s0228_summary_ranges/Solution.kt)| Easy | Array | 169 | 91.89
+| 0227 |[Basic Calculator II](src/main/kotlin/g0201_0300/s0227_basic_calculator_ii/Solution.kt)| Medium | Top_Interview_Questions, String, Math, Stack, Level_2_Day_18_Stack | 383 | 62.50
 | 0226 |[Invert Binary Tree](src/main/kotlin/g0201_0300/s0226_invert_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_12_Tree, Level_2_Day_6_Tree, Udemy_Tree_Stack_Queue | 233 | 54.90
+| 0225 |[Implement Stack using Queues](src/main/kotlin/g0201_0300/s0225_implement_stack_using_queues/MyStack.kt)| Easy | Stack, Design, Queue | 248 | 73.44
 | 0224 |[Basic Calculator](src/main/kotlin/g0201_0300/s0224_basic_calculator/Solution.kt)| Hard | String, Math, Stack, Recursion | 294 | 93.33
 | 0223 |[Rectangle Area](src/main/kotlin/g0201_0300/s0223_rectangle_area/Solution.kt)| Medium | Math, Geometry | 291 | 66.67
 | 0222 |[Count Complete Tree Nodes](src/main/kotlin/g0201_0300/s0222_count_complete_tree_nodes/Solution.kt)| |||
