@@ -7,10 +7,12 @@ import java.util.LinkedList
 class MyStack {
     private var queuePair = Pair(LinkedList<Int>(), LinkedList<Int>())
     private var top: Int? = null
+
     fun push(x: Int) {
         queuePair.first.addLast(x)
         top = x
     }
+
     fun pop(): Int {
         if (isQueuesEmpty()) {
             throw Exception()
@@ -33,21 +35,25 @@ class MyStack {
         }
         return value
     }
+
     fun top(): Int {
         if (isQueuesEmpty()) {
             throw Exception()
         }
         return top!!
     }
+
     fun empty(): Boolean {
         return isQueuesEmpty()
     }
+
     private fun isQueuesEmpty(): Boolean {
         if (queuePair.first.isEmpty() && queuePair.second.isEmpty()) {
             return true
         }
         return false
     }
+
     private fun selectSourceAndDestinationQueues(queuePair: Pair<LinkedList<Int>, LinkedList<Int>>):
         Pair<LinkedList<Int>, LinkedList<Int>> {
         return if (queuePair.first.isNotEmpty()) {
@@ -58,7 +64,7 @@ class MyStack {
     }
 }
 
-/**
+/*
  * Your MyStack object will be instantiated and called as such:
  * var obj = MyStack()
  * obj.push(x)
