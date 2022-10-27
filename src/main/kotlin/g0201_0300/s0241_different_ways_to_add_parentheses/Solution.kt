@@ -16,7 +16,7 @@ class Solution {
         if (!hasOperatorInBetween(expression)) {
             newList.add(Integer.parseInt(expression))
         } else {
-            for ((index, i) in expression.withIndex()) {
+            for ((index, _) in expression.withIndex()) {
                 val operator = expression[index]
 
                 if (!Character.isDigit(operator)) {
@@ -41,7 +41,7 @@ class Solution {
     }
 
     private fun hasOperatorInBetween(expression: String): Boolean {
-        for ((index, i) in expression.withIndex()) {
+        for ((index, _) in expression.withIndex()) {
             when (expression[index]) {
                 '+' -> return true
                 '-' -> return true
