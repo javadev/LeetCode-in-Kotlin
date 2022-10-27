@@ -18,11 +18,9 @@ class Solution {
         } else {
             for ((index, _) in expression.withIndex()) {
                 val operator = expression[index]
-
                 if (!Character.isDigit(operator)) {
                     val leftExpression = diffWayToCompute(expression.substring(0, index), hashMap)
                     val rightExpression = diffWayToCompute(expression.substring(index + 1), hashMap)
-
                     for (l in leftExpression) {
                         for (r in rightExpression) {
                             when (operator) {
@@ -35,7 +33,6 @@ class Solution {
                 }
             }
         }
-
         hashMap[expression] = newList
         return newList
     }
