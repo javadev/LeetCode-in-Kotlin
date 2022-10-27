@@ -13,7 +13,6 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
-
 class Solution {
     fun deleteNode(node: ListNode?) {
         node ?: return
