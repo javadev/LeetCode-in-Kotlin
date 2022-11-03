@@ -227,6 +227,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0264 |[Ugly Number II](src/main/kotlin/g0201_0300/s0264_ugly_number_ii/Solution.kt)| Medium | Hash_Table, Dynamic_Programming, Math, Heap_Priority_Queue | 182 | 95.45
 | 0096 |[Unique Binary Search Trees](src/main/kotlin/g0001_0100/s0096_unique_binary_search_trees/Solution.kt)| Medium | Top_100_Liked_Questions, Dynamic_Programming, Math, Tree, Binary_Tree, Binary_Search_Tree | 147 | 88.52
 
 #### Day 12
@@ -866,6 +867,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0242 |[Valid Anagram](src/main/kotlin/g0201_0300/s0242_valid_anagram/Solution.kt)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 251 | 87.65
 | 0049 |[Group Anagrams](src/main/kotlin/g0001_0100/s0049_group_anagrams/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, String, Hash_Table, Sorting | 506 | 86.55
 | 0151 |[Reverse Words in a String](src/main/kotlin/g0101_0200/s0151_reverse_words_in_a_string/Solution.kt)| Medium | String, Two_Pointers | 206 | 98.90
+| 0273 |[Integer to English Words](src/main/kotlin/g0201_0300/s0273_integer_to_english_words/Solution.kt)| Hard | String, Math, Recursion | 273 | 82.93
 
 #### Udemy Binary Search
 
@@ -1585,6 +1587,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0295 |[Find Median from Data Stream](src/main/kotlin/g0201_0300/s0295_find_median_from_data_stream/MedianFinder.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Sorting, Two_Pointers, Design, Heap_Priority_Queue, Data_Stream | 2289 | 33.60
 | 0287 |[Find the Duplicate Number](src/main/kotlin/g0201_0300/s0287_find_the_duplicate_number/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Two_Pointers, Bit_Manipulation, Binary_Search_II_Day_5 | 656 | 66.21
 | 0283 |[Move Zeroes](src/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Two_Pointers, Algorithm_I_Day_3_Two_Pointers, Programming_Skills_I_Day_6_Array, Udemy_Arrays | 516 | 79.07
+| 0273 |[Integer to English Words](src/main/kotlin/g0201_0300/s0273_integer_to_english_words/Solution.kt)| Hard | String, Math, Recursion, Udemy_Strings | 273 | 82.93
+| 0268 |[Missing Number](src/main/kotlin/g0201_0300/s0268_missing_number/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Math, Sorting, Binary_Search, Bit_Manipulation | 380 | 83.49
+| 0264 |[Ugly Number II](src/main/kotlin/g0201_0300/s0264_ugly_number_ii/Solution.kt)| Medium | Hash_Table, Dynamic_Programming, Math, Heap_Priority_Queue, Dynamic_Programming_I_Day_11 | 182 | 95.45
+| 0263 |[Ugly Number](src/main/kotlin/g0201_0300/s0263_ugly_number/Solution.kt)| Easy | Math | 243 | 64.10
 | 0262 |[Trips and Users](src/main/kotlin/g0201_0300/s0262_trips_and_users/script.sql)| Hard | Database | 577 | 63.97
 | 0260 |[Single Number III](src/main/kotlin/g0201_0300/s0260_single_number_iii/Solution.kt)| Medium | Array, Bit_Manipulation | 222 | 100.00
 | 0258 |[Add Digits](src/main/kotlin/g0201_0300/s0258_add_digits/Solution.kt)| Easy | Math, Simulation, Number_Theory | 234 | 71.64
