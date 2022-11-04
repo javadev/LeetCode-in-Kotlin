@@ -25,7 +25,7 @@ class PeekingIterator(private val iterator: Iterator<Int>) : Iterator<Int> {
     override fun hasNext(): Boolean = peekedValue != null || iterator.hasNext()
 }
 
-/**
+/*
  * Your PeekingIterator object will be instantiated and called as such:
  * var obj = PeekingIterator(arr)
  * var param_1 = obj.next()
