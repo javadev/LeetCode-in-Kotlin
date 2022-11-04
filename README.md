@@ -94,6 +94,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0240 |[Search a 2D Matrix II](src/main/kotlin/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 460 | 66.08
+| 0275 |[H-Index II](src/main/kotlin/g0201_0300/s0275_h_index_ii/Solution.kt)| Medium | Array, Binary_Search | 398 | 81.82
 
 #### Day 9
 
@@ -291,6 +292,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0279 |[Perfect Squares](src/main/kotlin/g0201_0300/s0279_perfect_squares/Solution.kt)| Medium | Top_Interview_Questions, Dynamic_Programming, Math, Breadth_First_Search | 176 | 98.80
 
 ### Programming Skills I
 
@@ -655,6 +657,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0278 |[First Bad Version](src/main/kotlin/g0201_0300/s0278_first_bad_version/Solution.kt)| Easy | Binary_Search, Interactive | 349 | 76.86
 
 #### Day 8 Binary Search Tree
 
@@ -1266,6 +1269,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0278 |[First Bad Version](src/main/kotlin/g0201_0300/s0278_first_bad_version/Solution.kt)| Easy | Binary_Search, Interactive | 349 | 76.86
 | 0035 |[Search Insert Position](src/main/kotlin/g0001_0100/s0035_search_insert_position/Solution.kt)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 267 | 50.32
 
 #### Day 2 Two Pointers
@@ -1521,6 +1525,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0278 |[First Bad Version](src/main/kotlin/g0201_0300/s0278_first_bad_version/Solution.kt)| Easy | Binary_Search, Interactive | 349 | 76.86
 | 0034 |[Find First and Last Position of Element in Sorted Array](src/main/kotlin/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 228 | 83.38
 
 #### Day 6
@@ -1587,6 +1592,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0295 |[Find Median from Data Stream](src/main/kotlin/g0201_0300/s0295_find_median_from_data_stream/MedianFinder.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Sorting, Two_Pointers, Design, Heap_Priority_Queue, Data_Stream | 2289 | 33.60
 | 0287 |[Find the Duplicate Number](src/main/kotlin/g0201_0300/s0287_find_the_duplicate_number/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Two_Pointers, Bit_Manipulation, Binary_Search_II_Day_5 | 656 | 66.21
 | 0283 |[Move Zeroes](src/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Two_Pointers, Algorithm_I_Day_3_Two_Pointers, Programming_Skills_I_Day_6_Array, Udemy_Arrays | 516 | 79.07
+| 0279 |[Perfect Squares](src/main/kotlin/g0201_0300/s0279_perfect_squares/Solution.kt)| Medium | Top_Interview_Questions, Dynamic_Programming, Math, Breadth_First_Search, Dynamic_Programming_I_Day_21 | 176 | 98.80
+| 0278 |[First Bad Version](src/main/kotlin/g0201_0300/s0278_first_bad_version/Solution.kt)| Easy | Binary_Search, Interactive, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_5, Level_1_Day_7_Binary_Search | 349 | 76.86
+| 0275 |[H-Index II](src/main/kotlin/g0201_0300/s0275_h_index_ii/Solution.kt)| Medium | Array, Binary_Search, Binary_Search_II_Day_8 | 398 | 81.82
+| 0274 |[H-Index](src/main/kotlin/g0201_0300/s0274_h_index/Solution.kt)| Medium | Array, Sorting, Counting_Sort | 183 | 90.91
 | 0273 |[Integer to English Words](src/main/kotlin/g0201_0300/s0273_integer_to_english_words/Solution.kt)| Hard | String, Math, Recursion, Udemy_Strings | 273 | 82.93
 | 0268 |[Missing Number](src/main/kotlin/g0201_0300/s0268_missing_number/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Math, Sorting, Binary_Search, Bit_Manipulation | 380 | 83.49
 | 0264 |[Ugly Number II](src/main/kotlin/g0201_0300/s0264_ugly_number_ii/Solution.kt)| Medium | Hash_Table, Dynamic_Programming, Math, Heap_Priority_Queue, Dynamic_Programming_I_Day_11 | 182 | 95.45
