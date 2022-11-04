@@ -14,7 +14,7 @@ class Solution {
             val idx = citations.size - i
             total += counts[idx]
             if (total >= idx) {
-                 return idx
+                return idx
             }
         }
         return 0
