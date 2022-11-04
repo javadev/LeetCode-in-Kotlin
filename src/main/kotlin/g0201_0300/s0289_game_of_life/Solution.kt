@@ -19,10 +19,8 @@ class Solution {
                     if (com == 3) {
                         board[i][j] = -1
                     }
-                } else if (board[i][j] == 1) {
-                    if (com < 2 || com > 3) {
-                        board[i][j] = 2
-                    }
+                } else if (board[i][j] == 1 && (com < 2 || com > 3)) {
+                    board[i][j] = 2
                 }
             }
         }
