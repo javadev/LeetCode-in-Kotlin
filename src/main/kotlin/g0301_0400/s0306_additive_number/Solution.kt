@@ -30,7 +30,6 @@ class Solution {
                 if (backtrack(first.toLong(), second.toLong(), j)) return true
             }
         }
-
         return false
     }
 }
