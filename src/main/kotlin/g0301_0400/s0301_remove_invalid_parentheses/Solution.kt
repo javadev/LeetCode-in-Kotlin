@@ -3,6 +3,7 @@ package g0301_0400.s0301_remove_invalid_parentheses
 // #Hard #String #Breadth_First_Search #Backtracking
 // #2022_11_07_Time_312_ms_(100.00%)_Space_35.8_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun removeInvalidParentheses(s: String): List<String> {
         val res: MutableList<String> = ArrayList()
