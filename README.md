@@ -1600,7 +1600,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0312 |[Burst Balloons](src/main/kotlin/g0301_0400/s0312_burst_balloons/Solution.kt)| Hard | Array, Dynamic_Programming | 210 | 100.00
 | 0310 |[Minimum Height Trees](src/main/kotlin/g0301_0400/s0310_minimum_height_trees/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 521 | 97.56
 | 0309 |[Best Time to Buy and Sell Stock with Cooldown](src/main/kotlin/g0301_0400/s0309_best_time_to_buy_and_sell_stock_with_cooldown/Solution.kt)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_8 | 272 | 73.33
-| 0307 |[Range Sum Query - Mutable](src/main/kotlin/g0301_0400/s0307_range_sum_query_mutable/NumArray.kt)| Medium | Array, Design, Segment_Tree, Binary_Indexed_Tree | 1729 | 78.79
+| 0307 |[Range Sum Query - Mutable](src/main/kotlin/g0301_0400/s0307_range_sum_query_mutable/NumArray.kt)| Medium | Array, Design, Segment_Tree, Binary_Indexed_Tree | 1720 | 78.79
 | 0306 |[Additive Number](src/main/kotlin/g0301_0400/s0306_additive_number/Solution.kt)| Medium | String, Backtracking | 289 | 22.22
 | 0304 |[Range Sum Query 2D - Immutable](src/main/kotlin/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.kt)| Medium | Array, Matrix, Design, Prefix_Sum, Dynamic_Programming_I_Day_14, Programming_Skills_II_Day_13, Udemy_2D_Arrays/Matrix | 1373 | 85.71
 | 0303 |[Range Sum Query - Immutable](src/main/kotlin/g0301_0400/s0303_range_sum_query_immutable/NumArray.kt)| Easy | Array, Design, Prefix_Sum, Programming_Skills_I_Day_12_Class_and_Object | 472 | 63.64
