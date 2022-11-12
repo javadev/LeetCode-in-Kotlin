@@ -739,7 +739,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| |||
+| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| Medium | Top_Interview_Questions, Linked_List | 216 | 86.96
 | 0148 |[Sort List](src/main/kotlin/g0101_0200/s0148_sort_list/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Sorting, Two_Pointers, Linked_List, Divide_and_Conquer, Merge_Sort | 820 | 61.70
 
 #### Day 5 Greedy
@@ -941,7 +941,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0114 |[Flatten Binary Tree to Linked List](src/main/kotlin/g0101_0200/s0114_flatten_binary_tree_to_linked_list/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List | 191 | 93.10
-| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| |||
+| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| Medium | Top_Interview_Questions, Linked_List | 216 | 86.96
 | 0061 |[Rotate List](src/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 193 | 92.16
 | 0024 |[Swap Nodes in Pairs](src/main/kotlin/g0001_0100/s0024_swap_nodes_in_pairs/Solution.kt)| Medium | Top_100_Liked_Questions, Linked_List, Recursion | 149 | 99.39
 | 0142 |[Linked List Cycle II](src/main/kotlin/g0101_0200/s0142_linked_list_cycle_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Hash_Table, Two_Pointers, Linked_List | 192 | 63.39
@@ -1600,7 +1600,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0338 |[Counting Bits](src/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation | 186 | 99.26
 | 0330 |[Patching Array](src/main/kotlin/g0301_0400/s0330_patching_array/Solution.kt)| Hard | Array, Greedy | 201 | 100.00
 | 0329 |[Longest Increasing Path in a Matrix](src/main/kotlin/g0301_0400/s0329_longest_increasing_path_in_a_matrix/Solution.kt)| Hard | Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Memoization, Topological_Sort | 322 | 92.65
-| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| |||
+| 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| Medium | Top_Interview_Questions, Linked_List, Level_2_Day_4_Linked_List, Udemy_Linked_List | 216 | 86.96
 | 0327 |[Count of Range Sum](src/main/kotlin/g0301_0400/s0327_count_of_range_sum/Solution.kt)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 638 | 100.00
 | 0326 |[Wiggle Sort II](src/main/kotlin/g0301_0400/s0326_power_of_three/Solution.kt)| Easy | Top_Interview_Questions, Math, Recursion | 413 | 76.12
 | 0324 |[Wiggle Sort II](src/main/kotlin/g0301_0400/s0324_wiggle_sort_ii/Solution.kt)| Medium | Top_Interview_Questions, Array, Sorting, Divide_and_Conquer, Quickselect | 545 | 57.14
