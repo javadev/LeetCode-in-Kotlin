@@ -1,5 +1,8 @@
 package g0301_0400.s0328_odd_even_linked_list
 
+// #Medium #Top_Interview_Questions #Linked_List #Level_2_Day_4_Linked_List #Udemy_Linked_List
+// #2022_11_12_Time_216_ms_(86.96%)_Space_36.7_MB_(85.22%)
+
 import com_github_leetcode.ListNode
 
 /*
@@ -13,18 +16,26 @@ import com_github_leetcode.ListNode
  */
 class Solution {
     fun oddEvenList(head: ListNode?): ListNode? {
-        if (head != null) {
-            var odd = head
-            var even = head.next
-            val evenHead = even
-            while (even != null && even.next != null) {
-                odd!!.next = odd.next!!.next
-                even.next = even.next!!.next
-                odd = odd.next
-                even = even.next
+        val odd = ListNode(0)
+        val even = ListNode(0)
+        var oddPointer = odd
+        var evenPointer = even
+        var pointer = head
+        var count = 0
+        while (pointer != null) {
+            if (count % 2 == 0) {
+                oddPointer.next = pointer
+                oddPointer = oddPointer.next!!
+            } else {
+                evenPointer.next = pointer
+                evenPointer = evenPointer.next!!
             }
-            odd!!.next = evenHead
+            val next = pointer.next
+            pointer.next = null
+            pointer = next
+            count++
         }
-        return head
+        oddPointer.next = even.next
+        return odd.next
     }
 }
