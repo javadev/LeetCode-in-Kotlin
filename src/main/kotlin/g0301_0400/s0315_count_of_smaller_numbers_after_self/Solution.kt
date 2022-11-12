@@ -6,6 +6,7 @@ package g0301_0400.s0315_count_of_smaller_numbers_after_self
 
 import java.util.LinkedList
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun countSmaller(nums: IntArray): List<Int> {
         var minVal = 10001
