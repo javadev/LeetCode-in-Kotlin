@@ -16,10 +16,7 @@ class Solution {
             if (nums[i] > nums[big]) {
                 big = i
                 continue
-            } else if (medium != null && nums[i] > nums[medium!!] && nums[i] < nums[big]) {
-                medium = i
-                continue
-            } else if (medium == null && nums[i] < nums[big]) {
+            } else if ((medium != null && nums[i] > nums[medium!!] && nums[i] < nums[big]) || (medium == null && nums[i] < nums[big)) {
                 medium = i
                 continue
             } else if (medium != null && nums[i] < nums[medium]) {
