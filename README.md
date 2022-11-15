@@ -1166,6 +1166,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0334 |[Increasing Triplet Subsequence](src/main/kotlin/g0301_0400/s0334_increasing_triplet_subsequence/Solution.kt)| Medium | Top_Interview_Questions, Array, Greedy | 672 | 60.61
 | 0238 |[Product of Array Except Self](src/main/kotlin/g0201_0300/s0238_product_of_array_except_self/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum | 669 | 48.96
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum | 692 | 53.27
 
@@ -1598,6 +1599,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0378 |[Kth Smallest Element in a Sorted Matrix](src/main/kotlin/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 522 | 59.78
 | 0347 |[Top K Frequent Elements](src/main/kotlin/g0301_0400/s0347_top_k_frequent_elements/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Data_Structure_II_Day_20_Heap_Priority_Queue | 268 | 99.74
 | 0338 |[Counting Bits](src/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation | 186 | 99.26
+| 0335 |[Self Crossing](src/main/kotlin/g0301_0400/s0335_self_crossing/Solution.kt)| Hard | Array, Math, Geometry | 477 | 100.00
+| 0334 |[Increasing Triplet Subsequence](src/main/kotlin/g0301_0400/s0334_increasing_triplet_subsequence/Solution.kt)| Medium | Top_Interview_Questions, Array, Greedy, Data_Structure_II_Day_5_Array | 672 | 60.61
+| 0332 |[Reconstruct Itinerary](src/main/kotlin/g0301_0400/s0332_reconstruct_itinerary/Solution.kt)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 240 | 93.88
+| 0331 |[Verify Preorder Serialization of a Binary Tree](src/main/kotlin/g0301_0400/s0331_verify_preorder_serialization_of_a_binary_tree/Solution.kt)| Medium | String, Tree, Binary_Tree, Stack | 335 | 70.00
 | 0330 |[Patching Array](src/main/kotlin/g0301_0400/s0330_patching_array/Solution.kt)| Hard | Array, Greedy | 201 | 100.00
 | 0329 |[Longest Increasing Path in a Matrix](src/main/kotlin/g0301_0400/s0329_longest_increasing_path_in_a_matrix/Solution.kt)| Hard | Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Memoization, Topological_Sort | 322 | 92.65
 | 0328 |[Odd Even Linked List](src/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| Medium | Top_Interview_Questions, Linked_List, Level_2_Day_4_Linked_List, Udemy_Linked_List | 216 | 86.96
