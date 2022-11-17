@@ -2,7 +2,7 @@ package g0301_0400.s0336_palindrome_pairs
 
 // #Hard #Array #String #Hash_Table #Trie #2022_11_17_Time_2451_ms_(67.33%)_Space_303.4_MB_(41.58%)
 
-@Suppress("kotlin:S6218")
+@Suppress("kotlin:S6218", "NAME_SHADOWING")
 class Solution {
     fun palindromePairs(words: Array<String>): List<List<Int>> {
         val ans = mutableListOf<List<Int>>()
@@ -35,7 +35,6 @@ class Solution {
 
     private fun addWord(root: TrieNode, word: String, index: Int) {
         var cur: TrieNode? = root
-
         for (idx in word.indices.reversed()) {
             val idxCh = word[idx] - 'a'
             if (cur!!.children[idxCh] == null)
