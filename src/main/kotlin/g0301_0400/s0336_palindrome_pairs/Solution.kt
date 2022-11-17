@@ -54,7 +54,6 @@ class Solution {
 
             cur = cur.children[idxCh]
         }
-
         cur!!.panlinIndicies.add(index)
         cur.index = index
     }
