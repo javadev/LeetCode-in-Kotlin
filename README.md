@@ -545,6 +545,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0365 |[Water and Jug Problem](src/main/kotlin/g0301_0400/s0365_water_and_jug_problem/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search | 130 | 100.00
 
 #### Day 12 Breadth First Search
 
@@ -1532,6 +1533,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0367 |[Valid Perfect Square](src/main/kotlin/g0301_0400/s0367_valid_perfect_square/Solution.kt)| Easy | Math, Binary_Search | 137 | 94.55
 
 #### Day 4
 
@@ -1604,6 +1606,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
 | 0378 |[Kth Smallest Element in a Sorted Matrix](src/main/kotlin/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 522 | 59.78
+| 0368 |[Largest Divisible Subset](src/main/kotlin/g0301_0400/s0368_largest_divisible_subset/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Sorting | 412 | 73.33
+| 0367 |[Valid Perfect Square](src/main/kotlin/g0301_0400/s0367_valid_perfect_square/Solution.kt)| Easy | Math, Binary_Search, Binary_Search_I_Day_3 | 137 | 94.55
+| 0365 |[Water and Jug Problem](src/main/kotlin/g0301_0400/s0365_water_and_jug_problem/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 130 | 100.00
+| 0363 |[Max Sum of Rectangle No Larger Than K](src/main/kotlin/g0301_0400/s0363_max_sum_of_rectangle_no_larger_than_k/Solution.kt)| Hard | Array, Dynamic_Programming, Binary_Search, Matrix, Ordered_Set | 243 | 100.00
 | 0357 |[Count Numbers with Unique Digits](src/main/kotlin/g0301_0400/s0357_count_numbers_with_unique_digits/Solution.kt)| Medium | Dynamic_Programming, Math, Backtracking | 104 | 100.00
 | 0355 |[Design Twitter](src/main/kotlin/g0301_0400/s0355_design_twitter/Twitter.kt)| Medium | Hash_Table, Design, Heap_Priority_Queue, Linked_List | 288 | 68.75
 | 0354 |[Russian Doll Envelopes](src/main/kotlin/g0301_0400/s0354_russian_doll_envelopes/Solution.kt)| Hard | Array, Dynamic_Programming, Sorting, Binary_Search | 788 | 100.00
