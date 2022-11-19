@@ -4,8 +4,8 @@ package g0301_0400.s0363_max_sum_of_rectangle_no_larger_than_k
 // #2022_11_19_Time_243_ms_(100.00%)_Space_36.1_MB_(100.00%)
 
 class Solution {
-    fun maxSumSubmatrix(matrix: Array<IntArray>?, k: Int): Int {
-        if (matrix == null || matrix.size == 0 || matrix[0].size == 0) {
+    fun maxSumSubmatrix(matrix: Array<IntArray>, k: Int): Int {
+        if (matrix.size == 0 || matrix[0].size == 0) {
             return 0
         }
         val row = matrix.size
