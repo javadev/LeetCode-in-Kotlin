@@ -17,11 +17,9 @@ class Solution {
             count[i] = 1
             pre[i] = -1
             for (j in i - 1 downTo 0) {
-                if (nums[i] % nums[j] == 0) {
-                    if (1 + count[j] > count[i]) {
-                        count[i] = count[j] + 1
-                        pre[i] = j
-                    }
+                if (nums[i] % nums[j] == 0 && 1 + count[j] > count[i]) {
+                    count[i] = count[j] + 1
+                    pre[i] = j
                 }
             }
             if (count[i] > max) {
