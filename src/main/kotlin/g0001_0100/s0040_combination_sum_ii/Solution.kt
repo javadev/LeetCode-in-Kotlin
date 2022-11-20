@@ -3,14 +3,13 @@ package g0001_0100.s0040_combination_sum_ii
 // #Medium #Array #Backtracking #Algorithm_II_Day_10_Recursion_Backtracking
 // #2022_09_18_Time_348_ms_(80.92%)_Space_38_MB_(96.18%)
 
-import java.util.Arrays
 import java.util.LinkedList
 
 class Solution {
     fun combinationSum2(candidates: IntArray, target: Int): List<List<Int>> {
         val sums: MutableList<List<Int>> = ArrayList()
         // optimize
-        Arrays.sort(candidates)
+        candidates.sort()
         combinationSum(candidates, target, 0, sums, LinkedList())
         return sums
     }

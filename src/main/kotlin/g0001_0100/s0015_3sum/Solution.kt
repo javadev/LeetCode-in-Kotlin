@@ -4,12 +4,11 @@ package g0001_0100.s0015_3sum
 // #Data_Structure_II_Day_1_Array #Algorithm_II_Day_3_Two_Pointers #Udemy_Two_Pointers
 // #2022_10_06_Time_761_ms_(90.55%)_Space_77.7_MB_(83.71%)
 
-import java.util.Arrays
 import kotlin.collections.ArrayList
 
 class Solution {
     fun threeSum(nums: IntArray): List<List<Int>> {
-        Arrays.sort(nums)
+        nums.sort()
         val len = nums.size
         val result: MutableList<List<Int>> = ArrayList()
         var l: Int

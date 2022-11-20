@@ -4,13 +4,9 @@ package g0001_0100.s0056_merge_intervals
 // #Data_Structure_II_Day_2_Array #Level_2_Day_17_Interval #Udemy_2D_Arrays/Matrix
 // #2022_08_29_Time_323_ms_(99.68%)_Space_43_MB_(99.04%)
 
-import java.util.Arrays
-
 class Solution {
     fun merge(intervals: Array<IntArray>): Array<IntArray> {
-        Arrays.sort(
-            intervals
-        ) { a: IntArray, b: IntArray ->
+        intervals.sortWith { a: IntArray, b: IntArray ->
             Integer.compare(
                 a[0],
                 b[0]

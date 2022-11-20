@@ -5,13 +5,12 @@ package g0301_0400.s0347_top_k_frequent_elements
 // #Data_Structure_II_Day_20_Heap_Priority_Queue
 // #2022_09_11_Time_268_ms_(99.74%)_Space_42_MB_(87.93%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 import java.util.Queue
 
 class Solution {
     fun topKFrequent(nums: IntArray, k: Int): IntArray {
-        Arrays.sort(nums)
+        nums.sort()
         // Min heap of <number, frequency>
         val queue: Queue<IntArray> = PriorityQueue(k + 1) { a: IntArray, b: IntArray -> a[1] - b[1] }
         // Filter with min heap

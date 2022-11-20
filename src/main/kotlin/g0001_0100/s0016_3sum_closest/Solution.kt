@@ -3,8 +3,6 @@ package g0001_0100.s0016_3sum_closest
 // #Medium #Array #Sorting #Two_Pointers #Level_2_Day_14_Sliding_Window/Two_Pointer
 // #2022_10_06_Time_413_ms_(95.05%)_Space_45.8_MB_(90.11%)
 
-import java.util.Arrays
-
 class Solution {
     fun threeSumClosest(nums: IntArray?, target: Int): Int {
         if (nums == null || nums.size < 3) {
@@ -13,7 +11,7 @@ class Solution {
         if (nums.size == 3) {
             return nums[0] + nums[1] + nums[2]
         }
-        Arrays.sort(nums)
+        nums.sort()
         val n = nums.size
         var sum = nums[0] + nums[1] + nums[2]
         for (i in 0 until n - 2) {
