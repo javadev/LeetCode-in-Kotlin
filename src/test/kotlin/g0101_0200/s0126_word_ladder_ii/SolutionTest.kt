@@ -4,7 +4,6 @@ import com_github_leetcode.ArrayUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
@@ -14,7 +13,7 @@ internal class SolutionTest {
                 .findLadders(
                     "hit",
                     "cog",
-                    Arrays.asList("hot", "dot", "dog", "lot", "log", "cog")
+                    listOf("hot", "dot", "dog", "lot", "log", "cog")
                 ),
             equalTo(
                 ArrayUtils.getLists(
@@ -32,7 +31,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findLadders(
-                    "hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log")
+                    "hit", "cog", listOf("hot", "dot", "dog", "lot", "log")
                 ),
             equalTo(ArrayUtils.getLists(arrayOf<Array<String>>()))
         )

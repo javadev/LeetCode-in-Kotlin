@@ -4,7 +4,6 @@ import com_github_leetcode.TreeNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
@@ -12,7 +11,7 @@ internal class SolutionTest {
         val treeNode = TreeNode(1)
         treeNode.right = TreeNode(2)
         treeNode.right!!.left = TreeNode(3)
-        assertThat(Solution().postorderTraversal(treeNode), equalTo(Arrays.asList(3, 2, 1)))
+        assertThat(Solution().postorderTraversal(treeNode), equalTo(listOf(3, 2, 1)))
     }
 
     @Test

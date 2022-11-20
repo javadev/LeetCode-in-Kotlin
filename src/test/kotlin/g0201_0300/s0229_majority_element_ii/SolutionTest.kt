@@ -3,12 +3,11 @@ package g0201_0300.s0229_majority_element_ii
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
     fun majorityElement() {
-        assertThat(Solution().majorityElement(intArrayOf(3, 2, 3)), equalTo(Arrays.asList(3)))
+        assertThat(Solution().majorityElement(intArrayOf(3, 2, 3)), equalTo(listOf(3)))
     }
 
     @Test
@@ -21,6 +20,6 @@ internal class SolutionTest {
 
     @Test
     fun majorityElement3() {
-        assertThat(Solution().majorityElement(intArrayOf(1, 2)), equalTo(Arrays.asList(2, 1)))
+        assertThat(Solution().majorityElement(intArrayOf(1, 2)), equalTo(listOf(2, 1)))
     }
 }

@@ -5,13 +5,12 @@ import com_github_leetcode.TreeNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
     fun pathSum() {
         val root: TreeNode? = TreeNode.create(
-            Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1)
+            listOf(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1)
         )
         assertThat(
             Solution().pathSum(root, 22),
@@ -21,13 +20,13 @@ internal class SolutionTest {
 
     @Test
     fun pathSum2() {
-        val root: TreeNode? = TreeNode.create(Arrays.asList(1, 2, 3))
+        val root: TreeNode? = TreeNode.create(listOf(1, 2, 3))
         assertThat(Solution().pathSum(root, 5), equalTo(getLists(arrayOf<IntArray>())))
     }
 
     @Test
     fun pathSum3() {
-        val root: TreeNode? = TreeNode.create(Arrays.asList(1, 2))
+        val root: TreeNode? = TreeNode.create(listOf(1, 2))
         assertThat(Solution().pathSum(root, 0), equalTo(getLists(arrayOf<IntArray>())))
     }
 }

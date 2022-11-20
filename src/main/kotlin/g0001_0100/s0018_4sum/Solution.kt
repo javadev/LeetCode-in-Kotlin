@@ -2,8 +2,6 @@ package g0001_0100.s0018_4sum
 
 // #Medium #Array #Sorting #Two_Pointers #2022_10_06_Time_244_ms_(100.00%)_Space_38.8_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
         val ret: MutableList<List<Int>> = ArrayList()
@@ -13,7 +11,7 @@ class Solution {
         if (nums[0] == 1000000000 && nums[1] == 1000000000) {
             return ret
         }
-        Arrays.sort(nums)
+        nums.sort()
         for (i in 0 until nums.size - 3) {
             if (i != 0 && nums[i] == nums[i - 1]) {
                 continue
