@@ -20,4 +20,23 @@ internal class SolutionTest {
         expected.next!!.next!!.next!!.next = ListNode(4)
         assertThat(Solution().oddEvenList(node).toString(), equalTo(expected.toString()))
     }
+
+    @Test
+    fun oddEvenList2() {
+        val node = ListNode(2)
+        node.next = ListNode(1)
+        node.next!!.next = ListNode(3)
+        node.next!!.next!!.next = ListNode(5)
+        node.next!!.next!!.next!!.next = ListNode(6)
+        node.next!!.next!!.next!!.next!!.next = ListNode(4)
+        node.next!!.next!!.next!!.next!!.next!!.next = ListNode(7)
+        val expected = ListNode(2)
+        expected.next = ListNode(3)
+        expected.next!!.next = ListNode(6)
+        expected.next!!.next!!.next = ListNode(7)
+        expected.next!!.next!!.next!!.next = ListNode(1)
+        expected.next!!.next!!.next!!.next!!.next = ListNode(5)
+        expected.next!!.next!!.next!!.next!!.next!!.next = ListNode(4)
+        assertThat(Solution().oddEvenList(node).toString(), equalTo(expected.toString()))
+    }
 }
