@@ -3,7 +3,7 @@ package g0301_0400.s0374_guess_number_higher_or_lower
 // #Easy #Binary_Search #Interactive #Binary_Search_I_Day_1
 // #2022_11_22_Time_134_ms_(94.19%)_Space_32.6_MB_(98.60%)
 
-/**
+/*
  * The API guess is defined in the parent class.
  * @param num   your guess
  * @return -1 if num is higher than the picked number
