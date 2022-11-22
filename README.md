@@ -1029,6 +1029,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0191 |[Number of 1 Bits](src.save/main/kotlin/g0101_0200/s0191_number_of_1_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation | 237 | 68.44
 | 0190 |[Reverse Bits](src.save/main/kotlin/g0101_0200/s0190_reverse_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 198 | 81.82
 | 0338 |[Counting Bits](src/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 186 | 99.26
+| 0371 |[Sum of Two Integers](src/main/kotlin/g0301_0400/s0371_sum_of_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 129 | 95.45
 | 0029 |[Divide Two Integers](src.save/main/kotlin/g0001_0100/s0029_divide_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 281 | 31.67
 
 #### Udemy Design
@@ -1522,6 +1523,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0374 |[Guess Number Higher or Lower](src/main/kotlin/g0301_0400/s0374_guess_number_higher_or_lower/GuessGame.kt)| |||
 
 #### Day 2
 
@@ -1606,6 +1608,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
 | 0378 |[Kth Smallest Element in a Sorted Matrix](src/main/kotlin/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 522 | 59.78
+| 0374 |[Guess Number Higher or Lower](src/main/kotlin/g0301_0400/s0374_guess_number_higher_or_lower/GuessGame.kt)| |||
+| 0373 |[Find K Pairs with Smallest Sums](src/main/kotlin/g0301_0400/s0373_find_k_pairs_with_smallest_sums/Solution.kt)| Medium | Array, Heap_Priority_Queue | 1809 | 80.95
+| 0372 |[Super Pow](src/main/kotlin/g0301_0400/s0372_super_pow/Solution.kt)| Medium | Math, Divide_and_Conquer | 196 | 100.00
+| 0371 |[Sum of Two Integers](src/main/kotlin/g0301_0400/s0371_sum_of_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation, Udemy_Bit_Manipulation | 129 | 95.45
 | 0368 |[Largest Divisible Subset](src/main/kotlin/g0301_0400/s0368_largest_divisible_subset/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Sorting | 412 | 73.33
 | 0367 |[Valid Perfect Square](src/main/kotlin/g0301_0400/s0367_valid_perfect_square/Solution.kt)| Easy | Math, Binary_Search, Binary_Search_I_Day_3 | 137 | 94.55
 | 0365 |[Water and Jug Problem](src/main/kotlin/g0301_0400/s0365_water_and_jug_problem/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 130 | 100.00
