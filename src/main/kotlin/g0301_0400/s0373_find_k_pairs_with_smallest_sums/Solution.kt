@@ -1,9 +1,9 @@
 package g0301_0400.s0373_find_k_pairs_with_smallest_sums
 
+// #Medium #Array #Heap_Priority_Queue #2022_11_22_Time_1809_ms_(80.95%)_Space_119.1_MB_(66.67%)
+
 import java.util.PriorityQueue
 import kotlin.collections.ArrayList
-
-// #Medium #Array #Heap_Priority_Queue #2022_11_22_Time_1809_ms_(80.95%)_Space_119.1_MB_(66.67%)
 
 class Solution {
     private class Node(index: Int, num1: Int, num2: Int) {
