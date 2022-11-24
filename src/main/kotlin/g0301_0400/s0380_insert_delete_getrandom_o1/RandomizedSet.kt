@@ -3,16 +3,16 @@ package g0301_0400.s0380_insert_delete_getrandom_o1
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
 // #Programming_Skills_II_Day_20 #2022_11_22_Time_1326_ms_(68.23%)_Space_119.7_MB_(83.53%)
 
-import java.util.Random
+import java.security.SecureRandom
 
 class RandomizedSet {
-    private val rand: Random
+    private val rand: SecureRandom
     private val list: MutableList<Int>
     private val map: MutableMap<Int, Int>
 
     /* Initialize your data structure here. */
     init {
-        rand = Random()
+        rand = SecureRandom()
         list = ArrayList()
         map = HashMap()
     }
