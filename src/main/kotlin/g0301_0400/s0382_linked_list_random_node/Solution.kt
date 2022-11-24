@@ -1,7 +1,7 @@
 package g0301_0400.s0382_linked_list_random_node
 
 // #Medium #Math #Linked_List #Randomized #Reservoir_Sampling
-// #2022_11_24_Time_479_ms_(60.00%)_Space_53.4_MB_(40.00%)
+// #2022_11_24_Time_283_ms_(100.00%)_Space_38.6_MB_(100.00%)
 
 import com_github_leetcode.ListNode
 import java.util.Random
@@ -16,20 +16,29 @@ import java.util.Random
  * }
  */
 @Suppress("kotlin:S2245")
-class Solution(private val head: ListNode?) {
-    private val random = Random()
+class Solution(head: ListNode?) {
+    private val al: MutableList<Int>
+    private val rand: Random
+
+    init {
+        var head = head
+        al = ArrayList()
+        rand = Random()
+        while (head != null) {
+            al.add(head.`val`)
+            head = head.next
+        }
+    }
 
     fun getRandom(): Int {
-        var node = head
-        var count = 0
-        var res = 0
-        while (node != null) {
-            count++
-            if (random.nextInt(count) == 0)
-                res = node.`val`
-            node = node.next
-        }
-        return res
+        /*
+        Math.random() will generate a random number b/w 0 & 1.
+        then multiply it with the array size.
+        take only the integer part which is a random index.
+        return the element at that random index.
+         */
+        val ind = rand.nextInt(al.size)
+        return al[ind]
     }
 }
 
