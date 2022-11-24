@@ -1,18 +1,18 @@
 package g0301_0400.s0380_insert_delete_getrandom_o1
 
+import java.util.Random
+
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
 // #Programming_Skills_II_Day_20 #2022_11_22_Time_1326_ms_(68.23%)_Space_119.7_MB_(83.53%)
 
-import java.security.SecureRandom
-
 class RandomizedSet {
-    private val rand: SecureRandom
+    private val rand: Random
     private val list: MutableList<Int>
     private val map: MutableMap<Int, Int>
 
     /* Initialize your data structure here. */
     init {
-        rand = SecureRandom()
+        rand = Random()
         list = ArrayList()
         map = HashMap()
     }
@@ -48,7 +48,7 @@ class RandomizedSet {
     }
 }
 
-/**
+/*
  * Your RandomizedSet object will be instantiated and called as such:
  * var obj = RandomizedSet()
  * var param_1 = obj.insert(`val`)
