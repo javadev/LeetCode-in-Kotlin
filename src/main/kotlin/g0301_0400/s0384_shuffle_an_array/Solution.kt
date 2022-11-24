@@ -5,6 +5,7 @@ package g0301_0400.s0384_shuffle_an_array
 
 import java.util.Random
 
+@Suppress("kotlin:S2245")
 class Solution(private val nums: IntArray) {
     private val random: Random = Random()
 

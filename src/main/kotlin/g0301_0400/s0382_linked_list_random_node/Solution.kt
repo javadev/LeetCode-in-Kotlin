@@ -15,6 +15,7 @@ import java.util.Random
  *     var next: ListNode? = null
  * }
  */
+@Suppress("kotlin:S2245")
 class Solution(private val head: ListNode?) {
     private val random = Random()
 
