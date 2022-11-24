@@ -7,6 +7,7 @@ import java.util.Arrays
 
 class Solution {
     private lateinit var storage: IntArray
+
     fun combinationSum4(nums: IntArray, target: Int): Int {
         storage = IntArray(target + 1)
         Arrays.fill(storage, -1)
