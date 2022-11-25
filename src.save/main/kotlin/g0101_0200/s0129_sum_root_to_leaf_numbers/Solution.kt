@@ -1,7 +1,7 @@
 package g0101_0200.s0129_sum_root_to_leaf_numbers
 
 // #Medium #Depth_First_Search #Tree #Binary_Tree
-// #2022_10_08_Time_269_ms_(29.63%)_Space_33.9_MB_(90.74%)
+// #2022_11_25_Time_237_ms_(52.50%)_Space_34.1_MB_(55.00%)
 
 import com_github_leetcode.TreeNode
 
@@ -17,6 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var sum = 0
+
     fun sumNumbers(root: TreeNode): Int {
         recurseSum(root, 0)
         return sum

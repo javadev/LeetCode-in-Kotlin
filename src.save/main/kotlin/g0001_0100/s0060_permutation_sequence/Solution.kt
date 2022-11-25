@@ -1,6 +1,6 @@
 package g0001_0100.s0060_permutation_sequence
 
-// #Hard #Math #Recursion #2022_09_22_Time_293_ms_(27.78%)_Space_34.2_MB_(61.11%)
+// #Hard #Math #Recursion #2022_11_25_Time_146_ms_(100.00%)_Space_33.7_MB_(95.45%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {
