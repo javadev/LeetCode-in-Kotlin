@@ -1,6 +1,6 @@
 package g0301_0400.s0306_additive_number
 
-// #Medium #String #Backtracking #2022_11_07_Time_289_ms_(22.22%)_Space_35.8_MB_(5.56%)
+// #Medium #String #Backtracking #2022_11_25_Time_261_ms_(63.16%)_Space_35.9_MB_(5.26%)
 
 class Solution {
     fun isAdditiveNumber(num: String): Boolean {
