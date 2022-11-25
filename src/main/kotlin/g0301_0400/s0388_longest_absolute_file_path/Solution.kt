@@ -3,8 +3,8 @@ package g0301_0400.s0388_longest_absolute_file_path
 // #Medium #String #Depth_First_Search #Stack
 // #2022_11_24_Time_150_ms_(100.00%)_Space_33.6_MB_(100.00%)
 
-import java.util.Deque
 import java.util.ArrayDeque
+import java.util.Deque
 
 class Solution {
     fun lengthLongestPath(input: String): Int {
@@ -20,8 +20,8 @@ class Solution {
         while (i < input.length) {
             currLevel = nextLevel
             var currStrLen = 0
-            while (i < input.length
-                && (Character.isLetterOrDigit(input[i]) || period == input[i] || space == input[i])
+            while (i < input.length &&
+                (Character.isLetterOrDigit(input[i]) || period == input[i] || space == input[i])
             ) {
                 if (period == input[i]) {
                     isFile = true
