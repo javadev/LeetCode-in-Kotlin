@@ -343,6 +343,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 256 | 64.81
 
 #### Day 9 String
 
@@ -1031,6 +1032,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0191 |[Number of 1 Bits](src.save/main/kotlin/g0101_0200/s0191_number_of_1_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation | 237 | 68.44
+| 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 256 | 64.81
 | 0190 |[Reverse Bits](src.save/main/kotlin/g0101_0200/s0190_reverse_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 198 | 81.82
 | 0338 |[Counting Bits](src/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 186 | 99.26
 | 0371 |[Sum of Two Integers](src/main/kotlin/g0301_0400/s0371_sum_of_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 129 | 95.45
@@ -1614,6 +1616,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0437 |[Path Sum III](src/main/kotlin/g0401_0500/s0437_path_sum_iii/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 403 | 54.12
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
+| 0391 |[Perfect Rectangle](src/main/kotlin/g0301_0400/s0391_perfect_rectangle/Solution.kt)| Hard | Array, Line_Sweep | 897 | 100.00
+| 0390 |[Elimination Game](src/main/kotlin/g0301_0400/s0390_elimination_game/Solution.kt)| Medium | Math, Recursion | 319 | 55.56
+| 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation, Programming_Skills_I_Day_8_String, Udemy_Bit_Manipulation | 256 | 64.81
+| 0388 |[Longest Absolute File Path](src/main/kotlin/g0301_0400/s0388_longest_absolute_file_path/Solution.kt)| Medium | String, Depth_First_Search, Stack | 150 | 100.00
 | 0387 |[First Unique Character in a String](src/main/kotlin/g0301_0400/s0387_first_unique_character_in_a_string/Solution.kt)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue, Data_Structure_I_Day_6_String | 369 | 82.68
 | 0386 |[Lexicographical Numbers](src/main/kotlin/g0301_0400/s0386_lexicographical_numbers/Solution.kt)| Medium | Depth_First_Search, Trie | 463 | 83.33
 | 0385 |[Mini Parser](src/main/kotlin/g0301_0400/s0385_mini_parser/Solution.kt)| Medium | String, Depth_First_Search, Stack | 210 | 100.00
