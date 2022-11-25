@@ -2,6 +2,7 @@ package g0301_0400.s0372_super_pow
 
 // #Medium #Math #Divide_and_Conquer #2022_11_22_Time_196_ms_(100.00%)_Space_36.9_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun superPow(a: Int, b: IntArray): Int {
         val phi = phi(MOD)
