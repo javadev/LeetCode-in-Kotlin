@@ -1082,6 +1082,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0387 |[First Unique Character in a String](src/main/kotlin/g0301_0400/s0387_first_unique_character_in_a_string/Solution.kt)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue | 369 | 82.68
 | 0383 |[Ransom Note](src/main/kotlin/g0301_0400/s0383_ransom_note/Solution.kt)| Easy | String, Hash_Table, Counting | 333 | 79.58
 | 0242 |[Valid Anagram](src.save/main/kotlin/g0201_0300/s0242_valid_anagram/Solution.kt)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 251 | 87.65
 
@@ -1613,6 +1614,9 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0437 |[Path Sum III](src/main/kotlin/g0401_0500/s0437_path_sum_iii/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 403 | 54.12
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
+| 0387 |[First Unique Character in a String](src/main/kotlin/g0301_0400/s0387_first_unique_character_in_a_string/Solution.kt)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue, Data_Structure_I_Day_6_String | 369 | 82.68
+| 0386 |[Lexicographical Numbers](src/main/kotlin/g0301_0400/s0386_lexicographical_numbers/Solution.kt)| Medium | Depth_First_Search, Trie | 463 | 83.33
+| 0385 |[Mini Parser](src/main/kotlin/g0301_0400/s0385_mini_parser/Solution.kt)| Medium | String, Depth_First_Search, Stack | 210 | 100.00
 | 0384 |[Shuffle an Array](src/main/kotlin/g0301_0400/s0384_shuffle_an_array/Solution.kt)| Medium | Top_Interview_Questions, Array, Math, Randomized, Algorithm_II_Day_20_Others | 940 | 72.09
 | 0383 |[Ransom Note](src/main/kotlin/g0301_0400/s0383_ransom_note/Solution.kt)| Easy | String, Hash_Table, Counting, Data_Structure_I_Day_6_String | 333 | 79.58
 | 0382 |[Linked List Random Node](src/main/kotlin/g0301_0400/s0382_linked_list_random_node/Solution.kt)| Medium | Math, Linked_List, Randomized, Reservoir_Sampling | 283 | 100.00
