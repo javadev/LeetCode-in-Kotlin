@@ -15,7 +15,7 @@ import java.util.Random
  *     var next: ListNode? = null
  * }
  */
-@Suppress("kotlin:S2245")
+@Suppress("NAME_SHADOWING", "kotlin:S2245")
 class Solution(head: ListNode?) {
     private val al: MutableList<Int>
     private val rand: Random

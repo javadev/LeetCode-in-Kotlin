@@ -479,6 +479,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0155 |[Min Stack](src.save/main/kotlin/g0101_0200/s0155_min_stack/MinStack.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design | 331 | 84.88
+| 0341 |[Flatten Nested List Iterator](src/main/kotlin/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.kt)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator | 210 | 100.00
 
 #### Day 19
 
@@ -1528,7 +1529,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0374 |[Guess Number Higher or Lower](src/main/kotlin/g0301_0400/s0374_guess_number_higher_or_lower/Solution.kt)| Easy | Binary_Search, Interactive, Binary_Search_I_Day_1 | 134 | 94.19
+| 0374 |[Guess Number Higher or Lower](src/main/kotlin/g0301_0400/s0374_guess_number_higher_or_lower/Solution.kt)| Easy | Binary_Search, Interactive | 134 | 94.19
 
 #### Day 2
 
@@ -1640,6 +1641,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0344 |[Reverse String](src/main/kotlin/g0301_0400/s0344_reverse_string/Solution.kt)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion, Algorithm_I_Day_4_Two_Pointers, Udemy_Strings | 445 | 69.75
 | 0343 |[Integer Break](src/main/kotlin/g0301_0400/s0343_integer_break/Solution.kt)| Medium | Dynamic_Programming, Math, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_21 | 218 | 63.89
 | 0342 |[Power of Four](src/main/kotlin/g0301_0400/s0342_power_of_four/Solution.kt)| Easy | Math, Bit_Manipulation, Recursion | 150 | 92.11
+| 0341 |[Flatten Nested List Iterator](src/main/kotlin/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.kt)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator, Programming_Skills_II_Day_18 | 210 | 100.00
 | 0338 |[Counting Bits](src/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation | 186 | 99.26
 | 0337 |[House Robber III](src/main/kotlin/g0301_0400/s0337_house_robber_iii/Solution.kt)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree, Udemy_Tree_Stack_Queue | 282 | 84.62
 | 0336 |[Palindrome Pairs](src/main/kotlin/g0301_0400/s0336_palindrome_pairs/Solution.kt)| Hard | Array, String, Hash_Table, Trie | 2451 | 67.33
