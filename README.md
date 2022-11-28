@@ -282,6 +282,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0392 |[Is Subsequence](src/main/kotlin/g0301_0400/s0392_is_subsequence/Solution.kt)| Easy | String, Dynamic_Programming, Two_Pointers | 156 | 87.74
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 307 | 38.36
 | 0072 |[Edit Distance](src.save/main/kotlin/g0001_0100/s0072_edit_distance/Solution.kt)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 320 | 63.53
 
@@ -638,6 +639,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0205 |[Isomorphic Strings](src.save/main/kotlin/g0201_0300/s0205_isomorphic_strings/Solution.kt)| Easy | String, Hash_Table | 278 | 79.96
+| 0392 |[Is Subsequence](src/main/kotlin/g0301_0400/s0392_is_subsequence/Solution.kt)| Easy | String, Dynamic_Programming, Two_Pointers | 156 | 87.74
 
 #### Day 3 Linked List
 
@@ -916,6 +918,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0392 |[Is Subsequence](src/main/kotlin/g0301_0400/s0392_is_subsequence/Solution.kt)| Easy | String, Dynamic_Programming, Two_Pointers | 156 | 87.74
 | 0125 |[Valid Palindrome](src.save/main/kotlin/g0101_0200/s0125_valid_palindrome/Solution.kt)| Easy | Top_Interview_Questions, String, Two_Pointers | 353 | 52.06
 | 0026 |[Remove Duplicates from Sorted Array](src.save/main/kotlin/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.kt)| Easy | Top_Interview_Questions, Array, Two_Pointers | 361 | 77.19
 | 0042 |[Trapping Rain Water](src.save/main/kotlin/g0001_0100/s0042_trapping_rain_water/Solution.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Two_Pointers, Stack, Monotonic_Stack | 196 | 100.00
@@ -1615,7 +1618,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.6'
 | 0438 |[Find All Anagrams in a String](src/main/kotlin/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer | 561 | 54.68
 | 0437 |[Path Sum III](src/main/kotlin/g0401_0500/s0437_path_sum_iii/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 403 | 54.12
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
+| 0397 |[Integer Replacement](src/main/kotlin/g0301_0400/s0397_integer_replacement/Solution.kt)| Medium | Dynamic_Programming, Greedy, Bit_Manipulation, Memoization | 145 | 87.50
+| 0395 |[Longest Substring with At Least K Repeating Characters](src/main/kotlin/g0301_0400/s0395_longest_substring_with_at_least_k_repeating_characters/Solution.kt)| Medium | Top_Interview_Questions, String, Hash_Table, Sliding_Window, Divide_and_Conquer | 274 | 66.67
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
+| 0393 |[UTF-8 Validation](src/main/kotlin/g0301_0400/s0393_utf_8_validation/Solution.kt)| Medium | Array, Bit_Manipulation | 219 | 100.00
+| 0392 |[Is Subsequence](src/main/kotlin/g0301_0400/s0392_is_subsequence/Solution.kt)| Easy | String, Dynamic_Programming, Two_Pointers, Dynamic_Programming_I_Day_19, Level_1_Day_2_String, Udemy_Two_Pointers | 156 | 87.74
 | 0391 |[Perfect Rectangle](src/main/kotlin/g0301_0400/s0391_perfect_rectangle/Solution.kt)| Hard | Array, Line_Sweep | 897 | 100.00
 | 0390 |[Elimination Game](src/main/kotlin/g0301_0400/s0390_elimination_game/Solution.kt)| Medium | Math, Recursion | 319 | 55.56
 | 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation, Programming_Skills_I_Day_8_String, Udemy_Bit_Manipulation | 256 | 64.81
