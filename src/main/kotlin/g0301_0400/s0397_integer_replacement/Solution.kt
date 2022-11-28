@@ -8,7 +8,6 @@ import java.util.LinkedList
 class Solution {
     fun integerReplacement(n: Int): Int {
         if (n == 1) return 0
-
         val num = n.toLong()
         val queue = LinkedList<Long>()
         val seen = HashSet<Long>()
@@ -18,21 +17,15 @@ class Solution {
         } else {
             queue.offer(num + 1)
             seen.add(num + 1)
-
             queue.offer(num - 1)
             seen.add(num - 1)
         }
-
         var steps = 1
-
         while (queue.isNotEmpty()) {
             val size = queue.size
-
             for (sz in 0 until size) {
                 val cur = queue.poll()
-
                 if (cur == 1L) return steps
-
                 if (cur % 2 == 0L) {
                     val next = cur / 2
                     if (seen.add(next)) {
@@ -43,17 +36,14 @@ class Solution {
                     if (seen.add(next1)) {
                         queue.offer(next1)
                     }
-
                     val next2 = cur - 1
                     if (seen.add(next2)) {
                         queue.offer(next2)
                     }
                 }
             }
-
             ++steps
         }
-
         return steps
     }
 }
