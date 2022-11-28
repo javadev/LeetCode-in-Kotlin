@@ -14,12 +14,12 @@ class Solution {
         }
         val nums = IntArray(26)
         for (i in start until end) {
-            nums[s[i].toInt() - 'a'.toInt()]++
+            nums[s[i].code - 'a'.code]++
         }
         for (i in start until end) {
-            if (nums[s[i].toInt() - 'a'.toInt()] < k) {
+            if (nums[s[i].code - 'a'.code] < k) {
                 var j = i + 1
-                while (j < s.length && nums[s[j].toInt() - 'a'.toInt()] < k) {
+                while (j < s.length && nums[s[j].code - 'a'.code] < k) {
                     j++
                 }
                 return Math.max(helper(s, k, start, i), helper(s, k, j, end))
