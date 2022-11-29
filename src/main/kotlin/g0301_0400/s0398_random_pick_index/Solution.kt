@@ -5,6 +5,7 @@ package g0301_0400.s0398_random_pick_index
 
 import java.util.Random
 
+@Suppress("kotlin:S2245")
 class Solution(nums: IntArray) {
     // O(n) time | O(n) space
     private val map: MutableMap<Int, MutableList<Int>>
@@ -16,7 +17,7 @@ class Solution(nums: IntArray) {
         for (i in nums.indices) {
             map.computeIfAbsent(
                 nums[i]
-            ) { k: Int? -> ArrayList() }.add(i)
+            ) { ArrayList() }.add(i)
         }
     }
 
