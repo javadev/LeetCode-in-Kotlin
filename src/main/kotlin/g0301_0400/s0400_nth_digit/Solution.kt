@@ -2,6 +2,7 @@ package g0301_0400.s0400_nth_digit
 
 // #Medium #Math #Binary_Search #2022_11_29_Time_271_ms_(50.00%)_Space_33.7_MB_(50.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     /*
     * 1. find the length of the number where the nth digit is from
