@@ -1618,7 +1618,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 | 0438 |[Find All Anagrams in a String](src/main/kotlin/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer | 561 | 54.68
 | 0437 |[Path Sum III](src/main/kotlin/g0401_0500/s0437_path_sum_iii/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 403 | 54.12
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
+| 0400 |[Nth Digit](src/main/kotlin/g0301_0400/s0400_nth_digit/Solution.kt)| Medium | Math, Binary_Search | 271 | 50.00
+| 0399 |[Evaluate Division](src/main/kotlin/g0301_0400/s0399_evaluate_division/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Shortest_Path | 183 | 91.49
+| 0398 |[Random Pick Index](src/main/kotlin/g0301_0400/s0398_random_pick_index/Solution.kt)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 1091 | 75.00
 | 0397 |[Integer Replacement](src/main/kotlin/g0301_0400/s0397_integer_replacement/Solution.kt)| Medium | Dynamic_Programming, Greedy, Bit_Manipulation, Memoization | 145 | 87.50
+| 0396 |[Rotate Function](src/main/kotlin/g0301_0400/s0396_rotate_function/Solution.kt)| Medium | Array, Dynamic_Programming, Math | 562 | 87.50
 | 0395 |[Longest Substring with At Least K Repeating Characters](src/main/kotlin/g0301_0400/s0395_longest_substring_with_at_least_k_repeating_characters/Solution.kt)| Medium | Top_Interview_Questions, String, Hash_Table, Sliding_Window, Divide_and_Conquer | 274 | 66.67
 | 0394 |[Decode String](src/main/kotlin/g0301_0400/s0394_decode_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 224 | 64.86
 | 0393 |[UTF-8 Validation](src/main/kotlin/g0301_0400/s0393_utf_8_validation/Solution.kt)| Medium | Array, Bit_Manipulation | 219 | 100.00
