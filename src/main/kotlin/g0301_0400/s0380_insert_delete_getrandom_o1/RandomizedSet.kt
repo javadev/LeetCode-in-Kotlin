@@ -1,9 +1,9 @@
 package g0301_0400.s0380_insert_delete_getrandom_o1
 
-import java.util.Random
-
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
 // #Programming_Skills_II_Day_20 #2022_11_22_Time_1326_ms_(68.23%)_Space_119.7_MB_(83.53%)
+
+import java.util.Random
 
 @Suppress("kotlin:S2245")
 class RandomizedSet {
