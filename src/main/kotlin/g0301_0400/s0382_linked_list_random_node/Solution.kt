@@ -4,7 +4,7 @@ package g0301_0400.s0382_linked_list_random_node
 // #2022_11_24_Time_283_ms_(100.00%)_Space_38.6_MB_(100.00%)
 
 import com_github_leetcode.ListNode
-import java.util.Random
+import kotlin.random.Random
 
 /*
  * Example:
@@ -18,12 +18,10 @@ import java.util.Random
 @Suppress("NAME_SHADOWING", "kotlin:S2245")
 class Solution(head: ListNode?) {
     private val al: MutableList<Int>
-    private val rand: Random
 
     init {
         var head = head
         al = ArrayList()
-        rand = Random()
         while (head != null) {
             al.add(head.`val`)
             head = head.next
@@ -37,7 +35,7 @@ class Solution(head: ListNode?) {
         take only the integer part which is a random index.
         return the element at that random index.
          */
-        val ind = rand.nextInt(al.size)
+        val ind = Random.nextInt(al.size)
         return al[ind]
     }
 }

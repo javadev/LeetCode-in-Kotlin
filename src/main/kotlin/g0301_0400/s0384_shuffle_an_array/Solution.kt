@@ -3,12 +3,10 @@ package g0301_0400.s0384_shuffle_an_array
 // #Medium #Top_Interview_Questions #Array #Math #Randomized #Algorithm_II_Day_20_Others
 // #2022_11_24_Time_940_ms_(72.09%)_Space_81.5_MB_(51.16%)
 
-import java.util.Random
+import kotlin.random.Random
 
 @Suppress("kotlin:S2245")
 class Solution(private val nums: IntArray) {
-    private val random: Random = Random()
-
     // Resets the array to its original configuration and return it.
     fun reset(): IntArray {
         return nums
@@ -18,7 +16,7 @@ class Solution(private val nums: IntArray) {
     fun shuffle(): IntArray {
         val shuffled = nums.clone()
         for (i in nums.size - 1 downTo 1) {
-            val j: Int = random.nextInt(i + 1)
+            val j: Int = Random.nextInt(i + 1)
             swap(shuffled, i, j)
         }
         return shuffled

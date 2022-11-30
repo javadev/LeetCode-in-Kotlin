@@ -3,17 +3,15 @@ package g0301_0400.s0380_insert_delete_getrandom_o1
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
 // #Programming_Skills_II_Day_20 #2022_11_22_Time_1326_ms_(68.23%)_Space_119.7_MB_(83.53%)
 
-import java.util.Random
+import kotlin.random.Random
 
 @Suppress("kotlin:S2245")
 class RandomizedSet {
-    private val rand: Random
     private val list: MutableList<Int>
     private val map: MutableMap<Int, Int>
 
     /* Initialize your data structure here. */
     init {
-        rand = Random()
         list = ArrayList()
         map = HashMap()
     }
@@ -45,7 +43,7 @@ class RandomizedSet {
 
     /* Get a random element from the set. */
     fun getRandom(): Int {
-        return list[rand.nextInt(list.size)]
+        return list[Random.nextInt(list.size)]
     }
 }
 
