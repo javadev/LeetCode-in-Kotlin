@@ -22,7 +22,7 @@ internal class SolutionTest {
     @Test
     fun readBinaryWatch2() {
         assertThat(
-            Solution().readBinaryWatch(1),
+            Solution().readBinaryWatch(9),
             equalTo(
                 Arrays.asList()
             )
