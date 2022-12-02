@@ -3,6 +3,7 @@ package g0401_0500.s0402_remove_k_digits
 // #Medium #String #Greedy #Stack #Monotonic_Stack
 // #2022_12_01_Time_375_ms_(75.00%)_Space_42.8_MB_(66.67%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun removeKdigits(num: String, k: Int): String {
         var k = k
