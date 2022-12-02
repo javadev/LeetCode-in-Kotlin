@@ -4,6 +4,7 @@ package g0401_0500.s0401_binary_watch
 
 import java.util.ArrayList
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun readBinaryWatch(turnedOn: Int): List<String> {
         val times: MutableList<String> = ArrayList()
