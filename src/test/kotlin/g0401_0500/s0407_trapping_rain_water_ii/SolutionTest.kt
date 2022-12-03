@@ -36,5 +36,4 @@ internal class SolutionTest {
             equalTo(10)
         )
     }
-
 }

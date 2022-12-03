@@ -19,5 +19,4 @@ internal class SolutionTest {
     fun longestPalindrome3() {
         assertThat(Solution().longestPalindrome("bb"), equalTo(2))
     }
-
 }

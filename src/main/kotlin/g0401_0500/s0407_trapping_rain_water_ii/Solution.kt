@@ -68,8 +68,8 @@ class Solution {
     }
 
     private fun fill(height: Array<IntArray>, row: Int, col: Int, walls: PriorityQueue<Cell>, min: Int) {
-        if (row >= 0 && col >= 0 && row < height.size && col < height[0].size
-            && !visited1[row][col]
+        if (row >= 0 && col >= 0 && row < height.size && col < height[0].size &&
+            !visited1[row][col]
         ) {
             if (height[row][col] >= min) {
                 walls.add(Cell(row, col, height[row][col]))

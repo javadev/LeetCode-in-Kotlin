@@ -5,8 +5,8 @@ package g0401_0500.s0406_queue_reconstruction_by_height
 
 class Solution {
     fun reconstructQueue(people: Array<IntArray>): Array<IntArray> {
-        return people.sortedWith(compareBy({-it[0]}, {it[1]}))
-            .fold(mutableListOf<IntArray>()){output, p -> output.add(p[1],p);output}
+        return people.sortedWith(compareBy({ -it[0] }, { it[1] }))
+            .fold(mutableListOf<IntArray>()) { output, p -> output.add(p[1], p); output }
             .toTypedArray()
     }
 }
