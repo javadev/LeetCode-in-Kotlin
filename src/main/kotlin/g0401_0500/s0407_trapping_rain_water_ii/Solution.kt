@@ -11,21 +11,6 @@ class Solution {
         override operator fun compareTo(other: Cell?): Int {
             return value - other!!.value
         }
-
-        override fun equals(o: Any?): Boolean {
-            if (this === o) {
-                return true
-            }
-            if (o == null || javaClass != o.javaClass) {
-                return false
-            }
-            val cell = o as Cell
-            return row == cell.row && col == cell.col && value == cell.value
-        }
-
-        override fun hashCode(): Int {
-            return Objects.hash(row, col, value)
-        }
     }
 
     private var water = 0
