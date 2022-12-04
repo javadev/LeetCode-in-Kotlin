@@ -2,6 +2,7 @@ package g0401_0500.s0405_convert_a_number_to_hexadecimal
 
 // #Easy #Math #Bit_Manipulation #2022_12_03_Time_132_ms_(100.00%)_Space_33.6_MB_(90.32%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun toHex(num: Int): String {
         var num = num
