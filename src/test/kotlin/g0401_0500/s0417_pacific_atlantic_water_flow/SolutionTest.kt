@@ -26,18 +26,21 @@ internal class SolutionTest {
 
     @Test
     fun pacificAtlantic2() {
-        val matrix = arrayOf(intArrayOf(1,2,2,3,5), intArrayOf(3,2,3,4,4), intArrayOf(2,4,5,3,1), intArrayOf(6,7,1,4,5), intArrayOf(5,1,1,2,4))
+        val matrix = arrayOf(
+            intArrayOf(1, 2, 2, 3, 5), intArrayOf(3, 2, 3, 4, 4), intArrayOf(2, 4, 5, 3, 1),
+            intArrayOf(6, 7, 1, 4, 5), intArrayOf(5, 1, 1, 2, 4)
+        )
         assertThat(
             Solution().pacificAtlantic(matrix),
             equalTo(
                 ArrayUtils.getLists(
                     arrayOf(
-                        intArrayOf(0,4),
+                        intArrayOf(0, 4),
                         intArrayOf(1, 3),
                         intArrayOf(1, 4),
                         intArrayOf(2, 2),
-                        intArrayOf(3,0),
-                        intArrayOf(3,1),
+                        intArrayOf(3, 0),
+                        intArrayOf(3, 1),
                         intArrayOf(4, 0),
                     )
                 )

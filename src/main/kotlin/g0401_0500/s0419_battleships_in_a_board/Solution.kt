@@ -13,8 +13,8 @@ class Solution {
         val n = board[0].size
         for (i in 0 until m) {
             for (j in 0 until n) {
-                if (board[i][j] != '.' && (j <= 0 || board[i][j - 1] != 'X')
-                    && (i <= 0 || board[i - 1][j] != 'X')
+                if (board[i][j] != '.' && (j <= 0 || board[i][j - 1] != 'X') &&
+                    (i <= 0 || board[i - 1][j] != 'X')
                 ) {
                     count++
                 }
