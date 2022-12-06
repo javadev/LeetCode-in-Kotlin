@@ -407,6 +407,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0417 |[Pacific Atlantic Water Flow](src/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 319 | 100.00
 
 #### Day 5 Matrix Related Problems
 
@@ -682,6 +683,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 308 | 57.93
+| 0417 |[Pacific Atlantic Water Flow](src/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 319 | 100.00
 
 #### Day 11 Graph/BFS/DFS
 
@@ -892,6 +894,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 |-|-|-|-|-|-
 | 0200 |[Number of Islands](src.save/main/kotlin/g0101_0200/s0200_number_of_islands/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 252 | 95.41
 | 0133 |[Clone Graph](src.save/main/kotlin/g0101_0200/s0133_clone_graph/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Graph | 351 | 60.91
+| 0417 |[Pacific Atlantic Water Flow](src/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 319 | 100.00
 
 #### Udemy Dynamic Programming
 
@@ -1084,6 +1087,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0415 |[Add Strings](src/main/kotlin/g0401_0500/s0415_add_strings/Solution.kt)| Easy | String, Math, Simulation | 296 | 76.00
 | 0409 |[Longest Palindrome](src/main/kotlin/g0401_0500/s0409_longest_palindrome/Solution.kt)| Easy | String, Hash_Table, Greedy | 259 | 60.71
 
 #### Day 7 String
@@ -1623,7 +1627,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
 | 0438 |[Find All Anagrams in a String](src/main/kotlin/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer | 561 | 54.68
 | 0437 |[Path Sum III](src/main/kotlin/g0401_0500/s0437_path_sum_iii/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 403 | 54.12
+| 0420 |[Strong Password Checker](src/main/kotlin/g0401_0500/s0420_strong_password_checker/Solution.kt)| Hard | String, Greedy, Heap_Priority_Queue | 157 | 80.00
+| 0419 |[Battleships in a Board](src/main/kotlin/g0401_0500/s0419_battleships_in_a_board/Solution.kt)| Medium | Array, Depth_First_Search, Matrix | 273 | 76.92
+| 0417 |[Pacific Atlantic Water Flow](src/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 319 | 100.00
 | 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
+| 0415 |[Add Strings](src/main/kotlin/g0401_0500/s0415_add_strings/Solution.kt)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 296 | 76.00
 | 0414 |[Third Maximum Number](src/main/kotlin/g0401_0500/s0414_third_maximum_number/Solution.kt)| Easy | Array, Sorting | 317 | 73.00
 | 0413 |[Arithmetic Slices](src/main/kotlin/g0401_0500/s0413_arithmetic_slices/Solution.kt)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 156 | 100.00
 | 0412 |[Fizz Buzz](src/main/kotlin/g0401_0500/s0412_fizz_buzz/Solution.kt)| Easy | Top_Interview_Questions, String, Math, Simulation, Udemy_Integers | 307 | 71.81
