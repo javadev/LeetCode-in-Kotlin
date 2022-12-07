@@ -4,7 +4,6 @@ import com_github_leetcode.ArrayUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
@@ -37,7 +36,7 @@ internal class SolutionTest {
 
     @Test
     fun calcEquation3() {
-        val equations: List<List<String?>> = ArrayList(Arrays.asList(Arrays.asList("a", "b")))
+        val equations: List<List<String?>> = ArrayList(listOf(listOf("a", "b")))
         val values = doubleArrayOf(0.5)
         val queries: List<List<String?>> =
             ArrayUtils.getLists(arrayOf(arrayOf("a", "b"), arrayOf("b", "a"), arrayOf("a", "c"), arrayOf("x", "y")))

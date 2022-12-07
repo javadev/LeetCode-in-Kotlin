@@ -4,7 +4,6 @@ import com_github_leetcode.TreeNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
@@ -12,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sumOfLeftLeaves(
-                    TreeNode.create(Arrays.asList(3, 9, 20, null, null, 15, 7))!!
+                    TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))!!
                 ),
             equalTo(24)
         )
@@ -20,6 +19,6 @@ internal class SolutionTest {
 
     @Test
     fun sumOfLeftLeaves2() {
-        assertThat(Solution().sumOfLeftLeaves(TreeNode.create(Arrays.asList(1))!!), equalTo(0))
+        assertThat(Solution().sumOfLeftLeaves(TreeNode.create(listOf(1))!!), equalTo(0))
     }
 }
