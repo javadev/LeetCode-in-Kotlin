@@ -4,7 +4,7 @@ package g0101_0200.s0138_copy_list_with_random_pointer
 // #Programming_Skills_II_Day_14 #Udemy_Linked_List
 // #2022_09_03_Time_274_ms_(80.58%)_Space_40.5_MB_(58.99%)
 
-import com_github_leetcode.Node
+import com_github_leetcode.random.Node
 
 class Solution {
     fun copyRandomList(head: Node?): Node? {

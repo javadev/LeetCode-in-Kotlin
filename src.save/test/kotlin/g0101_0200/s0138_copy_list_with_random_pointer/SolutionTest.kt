@@ -1,6 +1,6 @@
 package g0101_0200.s0138_copy_list_with_random_pointer
 
-import com_github_leetcode.Node
+import com_github_leetcode.random.Node
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
