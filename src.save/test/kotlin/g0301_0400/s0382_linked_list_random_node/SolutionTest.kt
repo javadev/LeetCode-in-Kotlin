@@ -4,7 +4,6 @@ import com_github_leetcode.ListNode
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class SolutionTest {
     @Test
@@ -20,7 +19,7 @@ internal class SolutionTest {
         result.add(solution.getRandom())
         result.add(solution.getRandom())
         var contain = true
-        val expected: List<Int> = ArrayList(Arrays.asList(1, 2, 3))
+        val expected: List<Int> = ArrayList(listOf(1, 2, 3))
         for (i in result) {
             if (!expected.contains(i)) {
                 contain = false

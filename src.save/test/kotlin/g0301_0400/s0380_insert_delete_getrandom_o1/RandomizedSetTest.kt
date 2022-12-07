@@ -3,7 +3,6 @@ package g0301_0400.s0380_insert_delete_getrandom_o1
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class RandomizedSetTest {
     @Test
@@ -21,10 +20,11 @@ internal class RandomizedSetTest {
         result.add(randomizedSet.insert(2).toString() + "")
         result.add(randomizedSet.getRandom().toString() + "")
         val expected: List<String> = ArrayList(
-            Arrays.asList("null", "true", "false", "true", "1", "true", "false", "2")
+
+            listOf("null", "true", "false", "true", "1", "true", "false", "2")
         )
         val expected2: List<String> = ArrayList(
-            Arrays.asList("null", "true", "false", "true", "2", "true", "false", "2")
+            listOf("null", "true", "false", "true", "2", "true", "false", "2")
         )
         if (random == 1) {
             assertThat(result, equalTo(expected))

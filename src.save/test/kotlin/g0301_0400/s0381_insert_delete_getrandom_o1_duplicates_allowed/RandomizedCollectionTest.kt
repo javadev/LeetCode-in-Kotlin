@@ -3,7 +3,6 @@ package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 
 internal class RandomizedCollectionTest {
     @Test
@@ -21,7 +20,7 @@ internal class RandomizedCollectionTest {
         val random2 = randomizedCollection.getRandom()
         result.add(random2.toString() + "")
         val expected: List<String> = ArrayList(
-            Arrays.asList(
+            listOf(
                 "null",
                 "true",
                 "false",
