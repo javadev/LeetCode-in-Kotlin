@@ -1,5 +1,8 @@
 package g0401_0500.s0424_longest_repeating_character_replacement
 
+// #Medium #String #Hash_Table #Sliding_Window #Level_1_Day_12_Sliding_Window/Two_Pointer
+// #2022_12_08_Time_288_ms_(84.38%)_Space_38.2_MB_(65.18%)
+
 class Solution {
     fun characterReplacement(s: String, k: Int): Int {
         var left = 0
