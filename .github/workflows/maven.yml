@@ -75,5 +75,5 @@ jobs:
         java-version: '11'
         cache: 'gradle'
     - name: Build with Gradle
-      run: ./gradlew test --no-daemon
+      run: chmod +x gradlew && ./gradlew test --no-daemon
 
