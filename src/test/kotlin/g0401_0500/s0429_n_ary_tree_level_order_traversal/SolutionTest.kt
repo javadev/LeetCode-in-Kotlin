@@ -1,6 +1,6 @@
 package g0401_0500.s0429_n_ary_tree_level_order_traversal
 
-import com_github_leetcode.children.Node
+import com_github_leetcode.Node
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
