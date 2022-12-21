@@ -1,9 +1,9 @@
 package g0401_0500.s0430_flatten_a_multilevel_doubly_linked_list
 
-import com_github_leetcode.prev_next.Node
-
 // #Medium #Depth_First_Search #Linked_List #Doubly_Linked_List
 // #2022_12_12_Time_194_ms_(97.44%)_Space_35.5_MB_(87.18%)
+
+import com_github_leetcode.prev_next.Node
 
 /*
  * Definition for a Node.

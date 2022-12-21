@@ -115,7 +115,7 @@ class AllOne {
     }
 }
 
-/**
+/*
  * Your AllOne object will be instantiated and called as such:
  * var obj = AllOne()
  * obj.inc(key)

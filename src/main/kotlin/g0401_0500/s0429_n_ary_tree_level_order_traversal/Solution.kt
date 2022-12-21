@@ -1,5 +1,8 @@
 package g0401_0500.s0429_n_ary_tree_level_order_traversal
 
+// #Medium #Breadth_First_Search #Tree #Programming_Skills_II_Day_9
+// #2022_12_22_Time_278_ms_(75.00%)_Space_38.9_MB_(87.50%)
+
 import com_github_leetcode.children.Node
 
 /*
