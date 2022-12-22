@@ -318,7 +318,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0429 |[N-ary Tree Level Order Traversal](src/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| |||
+| 0429 |[N-ary Tree Level Order Traversal](src/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree | 278 | 75.00
 
 #### Day 10
 
@@ -1633,7 +1633,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 | 0433 |[Minimum Genetic Mutation](src/main/kotlin/g0401_0500/s0433_minimum_genetic_mutation/Solution.kt)| Medium | String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 204 | 82.08
 | 0432 |[All O\`one Data Structure](src/main/kotlin/g0401_0500/s0432_all_oone_data_structure/AllOne.kt)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 1200 | 100.00
 | 0430 |[Flatten a Multilevel Doubly Linked List](src/main/kotlin/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/Solution.kt)| Medium | Depth_First_Search, Linked_List, Doubly_Linked_List | 194 | 97.44
-| 0429 |[N-ary Tree Level Order Traversal](src/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| |||
+| 0429 |[N-ary Tree Level Order Traversal](src/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree, Programming_Skills_II_Day_9 | 278 | 75.00
 | 0427 |[Construct Quad Tree](src/main/kotlin/g0401_0500/s0427_construct_quad_tree/Solution.kt)| Medium | Array, Tree, Matrix, Divide_and_Conquer | 221 | 94.74
 | 0424 |[Longest Repeating Character Replacement](src/main/kotlin/g0401_0500/s0424_longest_repeating_character_replacement/Solution.kt)| Medium | String, Hash_Table, Sliding_Window, Level_1_Day_12_Sliding_Window/Two_Pointer | 288 | 84.38
 | 0423 |[Reconstruct Original Digits from English](src/main/kotlin/g0401_0500/s0423_reconstruct_original_digits_from_english/Solution.kt)| Medium | String, Hash_Table, Math | 349 | 100.00
