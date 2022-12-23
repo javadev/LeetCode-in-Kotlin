@@ -4,8 +4,8 @@ package g0401_0500.s0443_string_compression
 
 class Solution {
     /* This is breaking the rules, it's not in-place. */
-    fun compress(chars: CharArray?): Int {
-        if (chars == null || chars.size == 0) {
+    fun compress(chars: CharArray): Int {
+        if (chars.size == 0) {
             return 0
         }
         val sb = StringBuilder()
