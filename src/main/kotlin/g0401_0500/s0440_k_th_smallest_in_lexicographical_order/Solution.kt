@@ -2,6 +2,7 @@ package g0401_0500.s0440_k_th_smallest_in_lexicographical_order
 
 // #Hard #Trie #2022_12_22_Time_149_ms_(100.00%)_Space_32.5_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun findKthNumber(n: Int, k: Int): Int {
         var k = k
