@@ -17,7 +17,7 @@ class Solution {
             }
             indexes.computeIfAbsent(
                 arr[i].toLong()
-            ) { k: Long? -> ArrayList() }.add(i)
+            ) { _: Long? -> ArrayList() }.add(i)
         }
         return count
     }
