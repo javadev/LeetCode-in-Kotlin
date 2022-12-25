@@ -15,12 +15,12 @@ class Solution {
      * {0, 6}, {7, 8}, {0, 9}, then we shoot at 6, then at 8, this gives us the result of bursting all balloons.
      */
     fun findMinArrowShots(points: Array<IntArray>): Int {
-        points.sort { a: IntArray, b: IntArray ->
+        points.sort({ a: IntArray, b: IntArray ->
             Integer.compare(
                 a[1],
                 b[1]
             )
-        }
+        })
         var minArrows = 1
         var end = points[0][1].toLong()
         for (i in 1 until points.size) {
