@@ -18,26 +18,26 @@ class Solution {
     fun flatten(root: Node?): Node? {
         var currentNode = root
         while (currentNode != null) {
-            if (currentNode?.child != null) {
-                appendToParent(currentNode, currentNode?.next)
+            if (currentNode.child != null) {
+                appendToParent(currentNode, currentNode.next)
             }
-            currentNode = currentNode?.next
+            currentNode = currentNode.next
         }
         return root
     }
 
-    fun appendToParent(parent: Node, parentNext: Node?) {
+    private fun appendToParent(parent: Node, parentNext: Node?) {
         var currentNode = parent.child
         while (currentNode?.next != null) {
-            if (currentNode?.child != null) {
-                appendToParent(currentNode, currentNode?.next)
+            if (currentNode.child != null) {
+                appendToParent(currentNode, currentNode.next)
             }
-            currentNode = currentNode?.next
+            currentNode = currentNode.next
         }
-        parent?.next = parent?.child
-        parent?.child?.prev = parent
+        parent.next = parent.child
+        parent.child?.prev = parent
         currentNode?.next = parentNext
         parentNext?.prev = currentNode
-        parent?.child = null
+        parent.child = null
     }
 }
