@@ -1166,6 +1166,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 |-|-|-|-|-|-
 | 0199 |[Binary Tree Right Side View](src.save/main/kotlin/g0101_0200/s0199_binary_tree_right_side_view/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 194 | 92.89
 | 0113 |[Path Sum II](src.save/main/kotlin/g0101_0200/s0113_path_sum_ii/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree, Backtracking | 364 | 78.67
+| 0450 |[Delete Node in a BST](src/main/kotlin/g0401_0500/s0450_delete_node_in_a_bst/Solution.kt)| Medium | Tree, Binary_Tree, Binary_Search_Tree | 257 | 84.62
 
 #### Day 17 Tree
 
@@ -1197,6 +1198,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0451 |[Sort Characters By Frequency](src/main/kotlin/g0401_0500/s0451_sort_characters_by_frequency/Solution.kt)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort | 288 | 81.72
 
 ### Algorithm I
 
@@ -1635,6 +1637,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0453 |[Minimum Moves to Equal Array Elements](src/main/kotlin/g0401_0500/s0453_minimum_moves_to_equal_array_elements/Solution.kt)| Medium | Array, Math | 282 | 100.00
+| 0452 |[Minimum Number of Arrows to Burst Balloons](src/main/kotlin/g0401_0500/s0452_minimum_number_of_arrows_to_burst_balloons/Solution.kt)| Medium | Array, Sorting, Greedy | 934 | 100.00
+| 0451 |[Sort Characters By Frequency](src/main/kotlin/g0401_0500/s0451_sort_characters_by_frequency/Solution.kt)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort, Data_Structure_II_Day_21_Heap_Priority_Queue | 288 | 81.72
+| 0450 |[Delete Node in a BST](src/main/kotlin/g0401_0500/s0450_delete_node_in_a_bst/Solution.kt)| Medium | Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_16_Tree | 257 | 84.62
 | 0449 |[Serialize and Deserialize BST](src/main/kotlin/g0401_0500/s0449_serialize_and_deserialize_bst/Codec.kt)| Medium | String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Binary_Search_Tree | 233 | 100.00
 | 0448 |[Find All Numbers Disappeared in an Array](src/main/kotlin/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.kt)| Easy | Array, Hash_Table, Udemy_Arrays | 394 | 100.00
 | 0447 |[Number of Boomerangs](src/main/kotlin/g0401_0500/s0447_number_of_boomerangs/Solution.kt)| Medium | Array, Hash_Table, Math | 308 | 100.00
