@@ -2,6 +2,8 @@ package g0401_0500.s0452_minimum_number_of_arrows_to_burst_balloons
 
 // #Medium #Array #Sorting #Greedy #2022_12_25_Time_934_ms_(100.00%)_Space_87_MB_(100.00%)
 
+import java.util.Arrays
+
 class Solution {
     /*
      * I'm glad to have come up with this solution on my own on 10/13/2021:
@@ -15,12 +17,14 @@ class Solution {
      * {0, 6}, {7, 8}, {0, 9}, then we shoot at 6, then at 8, this gives us the result of bursting all balloons.
      */
     fun findMinArrowShots(points: Array<IntArray>): Int {
-        points.sort({ a: IntArray, b: IntArray ->
+        Arrays.sort(
+            points
+        ) { a: IntArray, b: IntArray ->
             Integer.compare(
                 a[1],
                 b[1]
             )
-        })
+        }
         var minArrows = 1
         var end = points[0][1].toLong()
         for (i in 1 until points.size) {
