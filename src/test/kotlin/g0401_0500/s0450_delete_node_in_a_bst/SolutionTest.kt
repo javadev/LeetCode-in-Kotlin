@@ -22,7 +22,6 @@ internal class SolutionTest {
 
     @Test
     fun deleteNode3() {
-        val input: TreeNode? = TreeNode.create(listOf(5, 3, 6, 2, 4, null, 7))
         assertThat(Solution().deleteNode(null, 0), equalTo(null))
     }
 }
