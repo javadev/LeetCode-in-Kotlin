@@ -5,7 +5,7 @@ package g0401_0500.s0455_assign_cookies
 class Solution {
     fun findContentChildren(g: IntArray, s: IntArray): Int {
         g.sort()
-        s.sorr()
+        s.sort()
         var result = 0
         var i = 0
         var j = 0
