@@ -19,7 +19,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-kotlin</artifactId>
-    <version>1.8</version>
+    <version>1.7</version>
   </dependency>
   ...
 </dependencies>
@@ -28,7 +28,7 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
+implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 ```
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0466 |[Count The Repetitions](src/main/kotlin/g0401_0500/s0466_count_the_repetitions/Solution.kt)| Hard | String, Dynamic_Programming | 147 | 100.00
+| 0464 |[Can I Win](src/main/kotlin/g0401_0500/s0464_can_i_win/Solution.kt)| Medium | Dynamic_Programming, Math, Bit_Manipulation, Bitmask, Memoization, Game_Theory | 213 | 100.00
+| 0463 |[Island Perimeter](src/main/kotlin/g0401_0500/s0463_island_perimeter/Solution.kt)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 381 | 98.04
+| 0462 |[Minimum Moves to Equal Array Elements II](src/main/kotlin/g0401_0500/s0462_minimum_moves_to_equal_array_elements_ii/Solution.kt)| Medium | Array, Math, Sorting | 210 | 100.00
 | 0461 |[Hamming Distance](src/main/kotlin/g0401_0500/s0461_hamming_distance/Solution.kt)| Easy | Bit_Manipulation, Udemy_Bit_Manipulation | 150 | 96.15
 | 0460 |[LFU Cache](src/main/kotlin/g0401_0500/s0460_lfu_cache/LFUCache.kt)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 1143 | 100.00
 | 0459 |[Repeated Substring Pattern](src/main/kotlin/g0401_0500/s0459_repeated_substring_pattern/Solution.kt)| Easy | String, String_Matching, Programming_Skills_II_Day_2 | 201 | 100.00
