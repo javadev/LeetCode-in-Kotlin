@@ -41,16 +41,16 @@ class Solution {
         }
         var ptr = root
         for (i in idx until cur.length) {
-            if (ptr!!.nxt[cur[i].toInt() - 'a'.toInt()] == null) {
+            if (ptr!!.nxt[cur[i].code - 'a'.code] == null) {
                 return false
             }
-            if (ptr.nxt[cur[i].toInt() - 'a'.toInt()]!!.endHere) {
+            if (ptr.nxt[cur[i].code - 'a'.code]!!.endHere) {
                 val ret = search(cur, i + 1, wordCnt + 1)
                 if (ret) {
                     return true
                 }
             }
-            ptr = ptr.nxt[cur[i].toInt() - 'a'.toInt()]
+            ptr = ptr.nxt[cur[i].code - 'a'.code]
         }
         return ptr!!.endHere && wordCnt >= 2
     }
