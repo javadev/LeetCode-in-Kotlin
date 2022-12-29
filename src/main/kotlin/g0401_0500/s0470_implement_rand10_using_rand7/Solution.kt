@@ -10,6 +10,7 @@ import java.util.Random
  * fun rand7(): Int {}
  * @return a random integer in the range 1 to 7
  */
+@Suppress("kotlin:S2245")
 class Solution {
     private val random: Random = Random()
     fun rand10(): Int {
