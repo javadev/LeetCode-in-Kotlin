@@ -24,10 +24,10 @@ class Solution {
                 ans.add(word)
             } else {
                 for (j in 0 until word.length) {
-                    if (ptr!!.nxt[word[j].toInt() - 'a'.toInt()] == null) {
-                        ptr.nxt[word[j].toInt() - 'a'.toInt()] = Trie()
+                    if (ptr!!.nxt[word[j].code - 'a'.code] == null) {
+                        ptr.nxt[word[j].code - 'a'.code] = Trie()
                     }
-                    ptr = ptr.nxt[word[j].toInt() - 'a'.toInt()]
+                    ptr = ptr.nxt[word[j].code - 'a'.code]
                 }
                 ptr!!.endHere = true
             }
