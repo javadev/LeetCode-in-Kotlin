@@ -1,5 +1,7 @@
 package g0401_0500.s0468_validate_ip_address
 
+// #Medium #String #2022_12_29_Time_192_ms_(62.50%)_Space_35.9_MB_(87.50%)
+
 class Solution {
     fun validIPAddress(ip: String): String {
         if (ip.length == 0) {
