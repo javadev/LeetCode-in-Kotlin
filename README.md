@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0472 |[Concatenated Words](src/main/kotlin/g0401_0500/s0472_concatenated_words/Solution.kt)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 484 | 100.00
+| 0470 |[Implement Rand10() Using Rand7()](src/main/kotlin/g0401_0500/s0470_implement_rand10_using_rand7/Solution.kt)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 220 | 100.00
+| 0468 |[Validate IP Address](src/main/kotlin/g0401_0500/s0468_validate_ip_address/Solution.kt)| |||
+| 0467 |[Unique Substrings in Wraparound String](src/main/kotlin/g0401_0500/s0467_unique_substrings_in_wraparound_string/Solution.kt)| Medium | String, Dynamic_Programming | 197 | 100.00
 | 0466 |[Count The Repetitions](src/main/kotlin/g0401_0500/s0466_count_the_repetitions/Solution.kt)| Hard | String, Dynamic_Programming | 147 | 100.00
 | 0464 |[Can I Win](src/main/kotlin/g0401_0500/s0464_can_i_win/Solution.kt)| Medium | Dynamic_Programming, Math, Bit_Manipulation, Bitmask, Memoization, Game_Theory | 213 | 100.00
 | 0463 |[Island Perimeter](src/main/kotlin/g0401_0500/s0463_island_perimeter/Solution.kt)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 381 | 98.04
