@@ -1642,7 +1642,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
 | 0472 |[Concatenated Words](src/main/kotlin/g0401_0500/s0472_concatenated_words/Solution.kt)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 484 | 100.00
 | 0470 |[Implement Rand10() Using Rand7()](src/main/kotlin/g0401_0500/s0470_implement_rand10_using_rand7/Solution.kt)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 220 | 100.00
-| 0468 |[Validate IP Address](src/main/kotlin/g0401_0500/s0468_validate_ip_address/Solution.kt)| |||
+| 0468 |[Validate IP Address](src/main/kotlin/g0401_0500/s0468_validate_ip_address/Solution.kt)| Medium | String | 192 | 62.50
 | 0467 |[Unique Substrings in Wraparound String](src/main/kotlin/g0401_0500/s0467_unique_substrings_in_wraparound_string/Solution.kt)| Medium | String, Dynamic_Programming | 197 | 100.00
 | 0466 |[Count The Repetitions](src/main/kotlin/g0401_0500/s0466_count_the_repetitions/Solution.kt)| Hard | String, Dynamic_Programming | 147 | 100.00
 | 0464 |[Can I Win](src/main/kotlin/g0401_0500/s0464_can_i_win/Solution.kt)| Medium | Dynamic_Programming, Math, Bit_Manipulation, Bitmask, Memoization, Game_Theory | 213 | 100.00
