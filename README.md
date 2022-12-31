@@ -19,7 +19,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-kotlin</artifactId>
-    <version>1.8</version>
+    <version>1.7</version>
   </dependency>
   ...
 </dependencies>
@@ -28,7 +28,7 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
+implementation 'com.github.javadev:leetcode-in-kotlin:1.7'
 ```
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0476 |[Number Complement](src/main/kotlin/g0401_0500/s0476_number_complement/Solution.kt)| Easy | Bit_Manipulation | 133 | 100.00
+| 0475 |[Heaters](src/main/kotlin/g0401_0500/s0475_heaters/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 356 | 87.50
+| 0474 |[Ones and Zeroes](src/main/kotlin/g0401_0500/s0474_ones_and_zeroes/Solution.kt)| Medium | Array, String, Dynamic_Programming | 204 | 100.00
+| 0473 |[Matchsticks to Square](src/main/kotlin/g0401_0500/s0473_matchsticks_to_square/Solution.kt)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 255 | 100.00
 | 0472 |[Concatenated Words](src/main/kotlin/g0401_0500/s0472_concatenated_words/Solution.kt)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 484 | 100.00
 | 0470 |[Implement Rand10() Using Rand7()](src/main/kotlin/g0401_0500/s0470_implement_rand10_using_rand7/Solution.kt)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 220 | 100.00
 | 0468 |[Validate IP Address](src/main/kotlin/g0401_0500/s0468_validate_ip_address/Solution.kt)| Medium | String | 192 | 62.50
