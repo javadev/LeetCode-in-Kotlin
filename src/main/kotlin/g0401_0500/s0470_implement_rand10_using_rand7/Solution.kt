@@ -14,9 +14,9 @@ import java.util.Random
 class Solution {
     private val random: Random = Random()
     fun rand10(): Int {
-        var r1 = 0
+        var r1
         do {
-            var r2 = 0
+            var r2
             do { r2 = rand7() } while (r2 == 7)
             if (r2 in 1..3) { r1 = rand7() } else { r1 = 7 + rand7() }
         } while (r1 > 10)
