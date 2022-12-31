@@ -3,8 +3,6 @@ package g0401_0500.s0473_matchsticks_to_square
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
 // #2022_12_31_Time_255_ms_(100.00%)_Space_33.9_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun makesquare(matchsticks: IntArray): Boolean {
         if (matchsticks.size < 4) {
@@ -17,7 +15,7 @@ class Solution {
         if (per % 4 != 0) {
             return false
         }
-        Arrays.sort(matchsticks)
+        matchsticks.sort()
         val side = per / 4
         val sides = intArrayOf(side, side, side, side)
         return help(matchsticks, matchsticks.size - 1, sides)
