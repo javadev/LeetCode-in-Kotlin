@@ -5,6 +5,7 @@ package g0401_0500.s0478_generate_random_point_in_a_circle
 
 import java.util.Random
 
+@Suppress("kotlin:S2245")
 class Solution(private val radius: Double, private val xCenter: Double, private val yCenter: Double) {
     private val random: Random = Random()
     fun randPoint(): DoubleArray {
