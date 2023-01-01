@@ -2,6 +2,7 @@ package g0401_0500.s0479_largest_palindrome_product
 
 // #Hard #Math #2023_01_01_Time_147_ms_(100.00%)_Space_32.8_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun largestPalindrome(n: Int): Int {
         val pow10 = Math.pow(10.0, n.toDouble()).toLong()
