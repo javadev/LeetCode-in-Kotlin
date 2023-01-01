@@ -6,8 +6,8 @@ package g0401_0500.s0480_sliding_window_median
 import java.util.TreeSet
 
 class Solution {
-    fun medianSlidingWindow(nums: IntArray?, k: Int): DoubleArray {
-        require(!(nums == null || k <= 0)) { "Input is invalid" }
+    fun medianSlidingWindow(nums: IntArray, k: Int): DoubleArray {
+        require(!(k <= 0)) { "Input is invalid" }
         val len = nums.size
         val result = DoubleArray(len - k + 1)
         if (k == 1) {
