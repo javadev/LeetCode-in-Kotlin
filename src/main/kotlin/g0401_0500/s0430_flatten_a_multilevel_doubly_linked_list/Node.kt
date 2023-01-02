@@ -1,4 +1,4 @@
-package com_github_leetcode.prev_next
+package g0401_0500.s0430_flatten_a_multilevel_doubly_linked_list
 
 class Node(var `val`: Int) {
     constructor(i: Int, node: Node?, node1: Node?, nothing: Node?) : this(i) {
