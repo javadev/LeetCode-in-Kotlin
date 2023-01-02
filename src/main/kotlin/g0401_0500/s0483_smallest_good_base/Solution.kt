@@ -28,7 +28,7 @@ class Solution {
             }
         }
         val end = ans[ans.size - 1]
-        return end.toString() + ""
+        return end.toString()
     }
 
     private fun poly(b: Long, n: Int): Long {
