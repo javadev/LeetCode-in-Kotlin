@@ -1,6 +1,5 @@
 package g0401_0500.s0430_flatten_a_multilevel_doubly_linked_list
 
-import com_github_leetcode.prev_next.Node
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
