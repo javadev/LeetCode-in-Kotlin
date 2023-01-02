@@ -566,7 +566,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 509 | 57.56
+| 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 204 | 98.82
 | 0152 |[Maximum Product Subarray](src/main/kotlin/g0101_0200/s0152_maximum_product_subarray/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 253 | 88.42
 
 #### Day 14 Sliding Window/Two Pointer
@@ -1693,7 +1693,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0420 |[Strong Password Checker](src/main/kotlin/g0401_0500/s0420_strong_password_checker/Solution.kt)| Hard | String, Greedy, Heap_Priority_Queue | 157 | 80.00
 | 0419 |[Battleships in a Board](src/main/kotlin/g0401_0500/s0419_battleships_in_a_board/Solution.kt)| Medium | Array, Depth_First_Search, Matrix | 273 | 76.92
 | 0417 |[Pacific Atlantic Water Flow](src/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 319 | 100.00
-| 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 509 | 57.56
+| 0416 |[Partition Equal Subset Sum](src/main/kotlin/g0401_0500/s0416_partition_equal_subset_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 204 | 98.82
 | 0415 |[Add Strings](src/main/kotlin/g0401_0500/s0415_add_strings/Solution.kt)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 296 | 76.00
 | 0414 |[Third Maximum Number](src/main/kotlin/g0401_0500/s0414_third_maximum_number/Solution.kt)| Easy | Array, Sorting | 317 | 73.00
 | 0413 |[Arithmetic Slices](src/main/kotlin/g0401_0500/s0413_arithmetic_slices/Solution.kt)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 156 | 100.00
