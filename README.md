@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0485 |[Max Consecutive Ones](src/main/kotlin/g0401_0500/s0485_max_consecutive_ones/Solution.kt)| Easy | Array | 272 | 88.46
+| 0483 |[Smallest Good Base](src/main/kotlin/g0401_0500/s0483_smallest_good_base/Solution.kt)| Hard | Math, Binary_Search | 164 | 100.00
+| 0482 |[License Key Formatting](src/main/kotlin/g0401_0500/s0482_license_key_formatting/Solution.kt)| Easy | String | 234 | 87.18
+| 0481 |[Magical String](src/main/kotlin/g0401_0500/s0481_magical_string/Solution.kt)| Medium | String, Two_Pointers | 124 | 100.00
 | 0480 |[Sliding Window Median](src/main/kotlin/g0401_0500/s0480_sliding_window_median/Solution.kt)| Hard | Array, Hash_Table, Heap_Priority_Queue, Sliding_Window | 409 | 100.00
 | 0479 |[Largest Palindrome Product](src/main/kotlin/g0401_0500/s0479_largest_palindrome_product/Solution.kt)| Hard | Math | 147 | 100.00
 | 0478 |[Generate Random Point in a Circle](src/main/kotlin/g0401_0500/s0478_generate_random_point_in_a_circle/Solution.kt)| Medium | Math, Geometry, Randomized, Rejection_Sampling | 862 | 100.00
