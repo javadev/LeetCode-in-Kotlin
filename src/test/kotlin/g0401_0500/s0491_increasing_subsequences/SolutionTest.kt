@@ -3,7 +3,6 @@ package g0401_0500.s0491_increasing_subsequences
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
-import java.util.Arrays
 import java.util.function.Consumer
 
 internal class SolutionTest {
