@@ -34,7 +34,7 @@ internal class SolutionTest {
 
     @Test
     fun findSubsequences2() {
-        val expected: List<List<Int>> = ArrayList(Arrays.asList(Arrays.asList(4, 4)))
+        val expected: List<List<Int>> = ArrayList(listOf(listOf(4, 4)))
         assertThat(Solution().findSubsequences(intArrayOf(4, 4, 3, 2, 1)), equalTo(expected))
     }
 }
