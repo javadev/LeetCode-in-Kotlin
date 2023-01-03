@@ -32,6 +32,10 @@ description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_11
 java.targetCompatibility = JavaVersion.VERSION_11
 
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+}
+
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
