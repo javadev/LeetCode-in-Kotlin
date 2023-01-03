@@ -30,7 +30,7 @@ group = "com.github.javadev"
 version = "1.8-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_11
-kotlin.targetCompatibility = JavaVersion.VERSION_11
+compileKotlin.targetCompatibility = JavaVersion.VERSION_11
 
 publishing {
     publications.create<MavenPublication>("maven") {
