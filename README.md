@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0492 |[Construct the Rectangle](src/main/kotlin/g0401_0500/s0492_construct_the_rectangle/Solution.kt)| Easy | Math | 202 | 88.89
+| 0491 |[Non-decreasing Subsequences](src/main/kotlin/g0401_0500/s0491_increasing_subsequences/Solution.kt)| Medium | Array, Hash_Table, Bit_Manipulation, Backtracking | 499 | 100.00
+| 0488 |[Zuma Game](src/main/kotlin/g0401_0500/s0488_zuma_game/Solution.kt)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 1727 | 100.00
+| 0486 |[Predict the Winner](src/main/kotlin/g0401_0500/s0486_predict_the_winner/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Recursion, Game_Theory | 158 | 84.62
 | 0485 |[Max Consecutive Ones](src/main/kotlin/g0401_0500/s0485_max_consecutive_ones/Solution.kt)| Easy | Array | 272 | 88.46
 | 0483 |[Smallest Good Base](src/main/kotlin/g0401_0500/s0483_smallest_good_base/Solution.kt)| Hard | Math, Binary_Search | 164 | 100.00
 | 0482 |[License Key Formatting](src/main/kotlin/g0401_0500/s0482_license_key_formatting/Solution.kt)| Easy | String | 234 | 87.18
