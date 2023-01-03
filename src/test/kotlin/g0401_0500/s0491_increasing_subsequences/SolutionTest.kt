@@ -10,15 +10,15 @@ internal class SolutionTest {
     @Test
     fun findSubsequences() {
         val expected: List<List<Int>> = ArrayList(
-            Arrays.asList(
-                Arrays.asList(4, 6),
-                Arrays.asList(4, 6, 7),
-                Arrays.asList(4, 6, 7, 7),
-                Arrays.asList(4, 7),
-                Arrays.asList(4, 7, 7),
-                Arrays.asList(6, 7),
-                Arrays.asList(6, 7, 7),
-                Arrays.asList(7, 7)
+            listOf(
+                listOf(4, 6),
+                listOf(4, 6, 7),
+                listOf(4, 6, 7, 7),
+                listOf(4, 7),
+                listOf(4, 7, 7),
+                listOf(6, 7),
+                listOf(6, 7, 7),
+                listOf(7, 7)
             )
         )
         val result = Solution().findSubsequences(intArrayOf(4, 6, 7, 7))
