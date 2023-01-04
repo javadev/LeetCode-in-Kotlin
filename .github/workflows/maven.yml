@@ -38,7 +38,7 @@ jobs:
       run: chmod +x gradlew && ./gradlew spotlessCheck test jacocoTestReport sonarqube -Dsonar.projectKey=javadev_LeetCode-in-Kotlin -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=javadev-github --no-daemon
     - uses: codecov/codecov-action@v2
       with:
-        file: ./**/build/reports/jacoco/test/jacocoTestReport.xml
+        file: build/reports/jacoco/test/jacocoTestReport.xml
         name: codecov
 
   build-windows:
