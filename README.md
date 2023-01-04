@@ -77,6 +77,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 171 | 100.00
 
 #### Day 6 Array
 
@@ -1639,7 +1640,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0497 |[Random Point in Non-overlapping Rectangles](src/main/kotlin/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/Solution.kt)| Medium | Math, Binary_Search, Prefix_Sum, Ordered_Set, Randomized, Reservoir_Sampling | 759 | 100.00
+| 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack, Programming_Skills_I_Day_5_Function | 171 | 100.00
+| 0495 |[Teemo Attacking](src/main/kotlin/g0401_0500/s0495_teemo_attacking/Solution.kt)| Easy | Array, Simulation | 283 | 100.00
 | 0494 |[Target Sum](src/main/kotlin/g0401_0500/s0494_target_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 308 | 89.61
+| 0493 |[Reverse Pairs](src/main/kotlin/g0401_0500/s0493_reverse_pairs/Solution.kt)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 887 | 66.67
 | 0492 |[Construct the Rectangle](src/main/kotlin/g0401_0500/s0492_construct_the_rectangle/Solution.kt)| Easy | Math | 202 | 88.89
 | 0491 |[Non-decreasing Subsequences](src/main/kotlin/g0401_0500/s0491_increasing_subsequences/Solution.kt)| Medium | Array, Hash_Table, Bit_Manipulation, Backtracking | 499 | 100.00
 | 0488 |[Zuma Game](src/main/kotlin/g0401_0500/s0488_zuma_game/Solution.kt)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 1727 | 100.00
