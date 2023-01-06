@@ -1640,6 +1640,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0502 |[IPO](src/main/kotlin/g0501_0600/s0502_ipo/Solution.kt)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 799 | 54.55
+| 0501 |[Find Mode in Binary Search Tree](src/main/kotlin/g0501_0600/s0501_find_mode_in_binary_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 235 | 86.67
+| 0500 |[Keyboard Row](src/main/kotlin/g0401_0500/s0500_keyboard_row/Solution.kt)| Easy | Array, String, Hash_Table | 170 | 85.19
+| 0498 |[Diagonal Traverse](src/main/kotlin/g0401_0500/s0498_diagonal_traverse/Solution.kt)| Medium | Array, Matrix, Simulation | 430 | 61.54
 | 0497 |[Random Point in Non-overlapping Rectangles](src/main/kotlin/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/Solution.kt)| Medium | Math, Binary_Search, Prefix_Sum, Ordered_Set, Randomized, Reservoir_Sampling | 759 | 100.00
 | 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack, Programming_Skills_I_Day_5_Function | 171 | 100.00
 | 0495 |[Teemo Attacking](src/main/kotlin/g0401_0500/s0495_teemo_attacking/Solution.kt)| Easy | Array, Simulation | 283 | 100.00
