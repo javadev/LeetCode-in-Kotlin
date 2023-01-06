@@ -17,7 +17,7 @@ class Solution {
     fun findWords(words: Array<String>): Array<String?> {
         val arr: MutableList<String> = ArrayList()
         for (word in words) {
-            val w = word.toLowerCase(Locale.getDefault())
+            val w = word.lowercase(Locale.getDefault())
             if (check("qwertyuiop", w) || check("asdfghjkl", w) || check("zxcvbnm", w)) {
                 arr.add(word)
             }
