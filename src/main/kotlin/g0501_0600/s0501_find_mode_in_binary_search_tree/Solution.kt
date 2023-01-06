@@ -1,5 +1,8 @@
 package g0501_0600.s0501_find_mode_in_binary_search_tree
 
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+// #2023_01_06_Time_235_ms_(86.67%)_Space_38.1_MB_(73.33%)
+
 import com_github_leetcode.TreeNode
 
 /*
