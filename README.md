@@ -185,6 +185,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0503 |[Next Greater Element II](src/main/kotlin/g0501_0600/s0503_next_greater_element_ii/Solution.kt)| Medium | Array, Stack, Monotonic_Stack | 331 | 92.68
 
 #### Day 11
 
@@ -1640,6 +1641,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0507 |[Perfect Number](src/main/kotlin/g0501_0600/s0507_perfect_number/Solution.kt)| Easy | Math | 172 | 81.82
+| 0506 |[Relative Ranks](src/main/kotlin/g0501_0600/s0506_relative_ranks/Solution.kt)| Easy | Array, Sorting, Heap_Priority_Queue | 257 | 77.14
+| 0504 |[Base 7](src/main/kotlin/g0501_0600/s0504_base_7/Solution.kt)| Easy | Math | 136 | 100.00
+| 0503 |[Next Greater Element II](src/main/kotlin/g0501_0600/s0503_next_greater_element_ii/Solution.kt)| Medium | Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_10 | 331 | 92.68
 | 0502 |[IPO](src/main/kotlin/g0501_0600/s0502_ipo/Solution.kt)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 799 | 54.55
 | 0501 |[Find Mode in Binary Search Tree](src/main/kotlin/g0501_0600/s0501_find_mode_in_binary_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 235 | 86.67
 | 0500 |[Keyboard Row](src/main/kotlin/g0401_0500/s0500_keyboard_row/Solution.kt)| Easy | Array, String, Hash_Table | 170 | 85.19
