@@ -23,7 +23,7 @@ class Solution {
         if (cache.isEmpty()) {
             return IntArray(0)
         }
-        val max = cache.maxBy { it.value }!!.value
+        val max = cache.maxBy { it.value }.value
         return cache.filter { it.value == max }.map { it.key }.toIntArray()
     }
 
