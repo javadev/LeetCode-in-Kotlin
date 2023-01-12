@@ -372,6 +372,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
 
 #### Day 9 Control of Flow
 
@@ -447,6 +448,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0509 |[Fibonacci Number](src/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 139 | 82.72
 | 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
 
 #### Day 11 Dynamic Programming
@@ -777,6 +779,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0152 |[Maximum Product Subarray](src.save/main/kotlin/g0101_0200/s0152_maximum_product_subarray/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 253 | 88.42
 | 0198 |[House Robber](src.save/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 156 | 92.24
 | 0213 |[House Robber II](src.save/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
+| 0509 |[Fibonacci Number](src/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 139 | 82.72
 | 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
 | 0064 |[Minimum Path Sum](src.save/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 222 | 95.70
 | 0300 |[Longest Increasing Subsequence](src.save/main/kotlin/g0201_0300/s0300_longest_increasing_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Binary_Search | 318 | 82.28
@@ -1494,6 +1497,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0509 |[Fibonacci Number](src/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 139 | 82.72
 
 #### Day 2
 
@@ -1641,6 +1645,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0513 |[Find Bottom Left Tree Value](src/main/kotlin/g0501_0600/s0513_find_bottom_left_tree_value/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 190 | 88.24
+| 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 790 | 45.04
+| 0509 |[Fibonacci Number](src/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization, Dynamic_Programming_I_Day_1, Level_1_Day_10_Dynamic_Programming, Udemy_Dynamic_Programming | 139 | 82.72
+| 0508 |[Most Frequent Subtree Sum](src/main/kotlin/g0501_0600/s0508_most_frequent_subtree_sum/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Tree, Binary_Tree | 246 | 80.00
 | 0507 |[Perfect Number](src/main/kotlin/g0501_0600/s0507_perfect_number/Solution.kt)| Easy | Math | 172 | 81.82
 | 0506 |[Relative Ranks](src/main/kotlin/g0501_0600/s0506_relative_ranks/Solution.kt)| Easy | Array, Sorting, Heap_Priority_Queue | 244 | 94.23
 | 0504 |[Base 7](src/main/kotlin/g0501_0600/s0504_base_7/Solution.kt)| Easy | Math | 136 | 100.00
