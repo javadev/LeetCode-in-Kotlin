@@ -5,6 +5,7 @@ package g0501_0600.s0519_random_flip_matrix
 
 import java.util.Random
 
+@Suppress("kotlin:S2245")
 class Solution(nRows: Int, private val cols: Int) {
     private val total: Int
     private val rand: Random = Random()
