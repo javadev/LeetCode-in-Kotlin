@@ -1647,6 +1647,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0525 |[Contiguous Array](src/main/kotlin/g0501_0600/s0525_contiguous_array/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum | 471 | 100.00
+| 0524 |[Longest Word in Dictionary through Deleting](src/main/kotlin/g0501_0600/s0524_longest_word_in_dictionary_through_deleting/Solution.kt)| Medium | Array, String, Sorting, Two_Pointers | 307 | 100.00
+| 0523 |[Continuous Subarray Sum](src/main/kotlin/g0501_0600/s0523_continuous_subarray_sum/Solution.kt)| Medium | Array, Hash_Table, Math, Prefix_Sum | 682 | 95.45
+| 0522 |[Longest Uncommon Subsequence II](src/main/kotlin/g0501_0600/s0522_longest_uncommon_subsequence_ii/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Two_Pointers | 163 | 100.00
 | 0521 |[Longest Uncommon Subsequence I](src/main/kotlin/g0501_0600/s0521_longest_uncommon_subsequence_i/Solution.kt)| Easy | String | 146 | 88.89
 | 0520 |[Detect Capital](src/main/kotlin/g0501_0600/s0520_detect_capital/Solution.kt)| Easy | String | 161 | 84.54
 | 0519 |[Random Flip Matrix](src/main/kotlin/g0501_0600/s0519_random_flip_matrix/Solution.kt)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 270 | 100.00
