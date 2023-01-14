@@ -5,10 +5,6 @@ package g0501_0600.s0524_longest_word_in_dictionary_through_deleting
 
 import java.util.ArrayDeque
 import java.util.Deque
-import kotlin.collections.HashMap
-import kotlin.collections.List
-import kotlin.collections.MutableMap
-import kotlin.collections.set
 
 class Solution {
     private class Pair(var word: String, var index: Int)
