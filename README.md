@@ -1455,6 +1455,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0154 |[Find Minimum in Rotated Sorted Array II](src.save/main/kotlin/g0101_0200/s0154_find_minimum_in_rotated_sorted_array_ii/Solution.kt)| Hard | Array, Binary_Search | 275 | 84.00
+| 0528 |[Random Pick with Weight](src/main/kotlin/g0501_0600/s0528_random_pick_with_weight/Solution.kt)| Medium | Math, Binary_Search, Prefix_Sum, Randomized | 393 | 91.38
 
 #### Day 14
 
@@ -1647,6 +1648,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
+| 0530 |[Minimum Absolute Difference in BST](src/main/kotlin/g0501_0600/s0530_minimum_absolute_difference_in_bst/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 209 | 86.96
+| 0529 |[Minesweeper](src/main/kotlin/g0501_0600/s0529_minesweeper/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 243 | 87.50
+| 0528 |[Random Pick with Weight](src/main/kotlin/g0501_0600/s0528_random_pick_with_weight/Solution.kt)| Medium | Math, Binary_Search, Prefix_Sum, Randomized, Binary_Search_II_Day_13 | 393 | 91.38
+| 0526 |[Beautiful Arrangement](src/main/kotlin/g0501_0600/s0526_beautiful_arrangement/Solution.kt)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 107 | 100.00
 | 0525 |[Contiguous Array](src/main/kotlin/g0501_0600/s0525_contiguous_array/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum | 471 | 100.00
 | 0524 |[Longest Word in Dictionary through Deleting](src/main/kotlin/g0501_0600/s0524_longest_word_in_dictionary_through_deleting/Solution.kt)| Medium | Array, String, Sorting, Two_Pointers | 307 | 100.00
 | 0523 |[Continuous Subarray Sum](src/main/kotlin/g0501_0600/s0523_continuous_subarray_sum/Solution.kt)| Medium | Array, Hash_Table, Math, Prefix_Sum | 682 | 95.45
