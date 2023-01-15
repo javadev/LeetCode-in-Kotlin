@@ -13,7 +13,7 @@ class Solution {
         if (board[row][col] == 'E') {
             val numOfMine = bfs(board, row, col)
             if (numOfMine != 0) {
-                board[row][col] = (numOfMine + '0'.toInt()).toChar()
+                board[row][col] = (numOfMine + '0'.code).toChar()
                 return
             } else {
                 board[row][col] = 'B'

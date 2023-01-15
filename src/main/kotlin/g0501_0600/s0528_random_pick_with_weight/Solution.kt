@@ -6,6 +6,7 @@ package g0501_0600.s0528_random_pick_with_weight
 import java.util.Random
 import java.util.TreeMap
 
+@Suppress("kotlin:S2245")
 class Solution(val w: IntArray) {
 
     var x: IntArray = IntArray(w.size) { 0 }
