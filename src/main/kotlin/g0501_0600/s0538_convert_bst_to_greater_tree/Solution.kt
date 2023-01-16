@@ -1,5 +1,8 @@
 package g0501_0600.s0538_convert_bst_to_greater_tree
 
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+// #2023_01_16_Time_252_ms_(77.78%)_Space_36_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 
 /*
