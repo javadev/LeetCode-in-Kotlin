@@ -5,7 +5,6 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.stream.IntStream
 
-
 internal class SolutionTest {
     @Test
     fun findMinDifference() {
