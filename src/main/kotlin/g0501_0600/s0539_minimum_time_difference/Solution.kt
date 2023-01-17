@@ -2,8 +2,6 @@ package g0501_0600.s0539_minimum_time_difference
 
 // #Medium #Array #String #Math #Sorting #2023_01_16_Time_183_ms_(100.00%)_Space_36_MB_(96.23%)
 
-import java.util.Arrays
-
 class Solution {
     fun findMinDifference(timePoints: List<String>): Int {
         return if (timePoints.size < 300) {
@@ -51,7 +49,7 @@ class Solution {
             val minutes = time.substring(3, 5).toInt()
             times[j++] = hours * 60 + minutes
         }
-        Arrays.sort(times)
+        times.sort()
         var min = 60 * 24
         for (i in 1..times.size) {
             min = if (i == times.size) {
