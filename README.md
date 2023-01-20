@@ -186,6 +186,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0503 |[Next Greater Element II](src/main/kotlin/g0501_0600/s0503_next_greater_element_ii/Solution.kt)| Medium | Array, Stack, Monotonic_Stack | 331 | 92.68
+| 0556 |[Next Greater Element III](src/main/kotlin/g0501_0600/s0556_next_greater_element_iii/Solution.kt)| Medium | String, Math, Two_Pointers | 137 | 80.00
 
 #### Day 11
 
@@ -1098,6 +1099,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0344 |[Reverse String](src.save/main/kotlin/g0301_0400/s0344_reverse_string/Solution.kt)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 445 | 69.75
+| 0557 |[Reverse Words in a String III](src/main/kotlin/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.kt)| Easy | String, Two_Pointers | 215 | 98.10
 
 #### Day 5 Two Pointers
 
@@ -1654,6 +1656,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
+| 0557 |[Reverse Words in a String III](src/main/kotlin/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.kt)| Easy | String, Two_Pointers, Algorithm_I_Day_4_Two_Pointers | 215 | 98.10
+| 0556 |[Next Greater Element III](src/main/kotlin/g0501_0600/s0556_next_greater_element_iii/Solution.kt)| Medium | String, Math, Two_Pointers, Programming_Skills_II_Day_10 | 137 | 80.00
+| 0554 |[Brick Wall](src/main/kotlin/g0501_0600/s0554_brick_wall/Solution.kt)| Medium | Array, Hash_Table | 307 | 100.00
+| 0553 |[Optimal Division](src/main/kotlin/g0501_0600/s0553_optimal_division/Solution.kt)| Medium | Array, Dynamic_Programming, Math | 154 | 100.00
 | 0552 |[Student Attendance Record II](src/main/kotlin/g0501_0600/s0552_student_attendance_record_ii/Solution.kt)| Hard | Dynamic_Programming | 151 | 100.00
 | 0551 |[Student Attendance Record I](src/main/kotlin/g0501_0600/s0551_student_attendance_record_i/Solution.kt)| Easy | String | 151 | 95.00
 | 0547 |[Number of Provinces](src/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_8_Standard_Traversal, Level_2_Day_19_Union_Find | 229 | 79.73
