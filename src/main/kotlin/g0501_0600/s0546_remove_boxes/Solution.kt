@@ -3,7 +3,8 @@ package g0501_0600.s0546_remove_boxes
 // #Hard #Array #Dynamic_Programming #Memoization
 // #2023_01_17_Time_283_ms_(100.00%)_Space_46.9_MB_(100.00%)
 
-internal class Solution {
+@Suppress("NAME_SHADOWING")
+class Solution {
     // dp for memoization
     lateinit var dp: Array<Array<IntArray>>
     fun removeBoxes(boxes: IntArray): Int {
@@ -30,12 +31,10 @@ internal class Solution {
             i++
             streak++
         }
-
         // memoization
         if (dp[i][j][streak] > 0) {
             return dp[i][j][streak]
         }
-
         // we calculate the ans here which is streak (length of similar elements) and move
         // forward to the remaining block through recursion
         var ans = (streak + 1) * (streak + 1) + get(boxes, i + 1, j, 0)
