@@ -40,13 +40,13 @@ class Solution {
         // Build result
         var ret = 0
         for (c in inp) {
-            val digit = c.toInt() - '0'.toInt()
+            val digit = c.code - '0'.code
             // Handle the case if ret > Integer.MAX_VALUE - This idea is borrowed from problem  8.
             // String to Integer (atoi)
             if (ret > Int.MAX_VALUE / 10 || ret == Int.MAX_VALUE / 10 && digit > Int.MAX_VALUE % 10) {
                 return -1
             }
-            ret = ret * 10 + (c.toInt() - '0'.toInt())
+            ret = ret * 10 + (c.code - '0'.code)
         }
         return ret
     }
