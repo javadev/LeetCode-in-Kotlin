@@ -3,6 +3,7 @@ package g0501_0600.s0556_next_greater_element_iii
 // #Medium #String #Math #Two_Pointers #Programming_Skills_II_Day_10
 // #2023_01_20_Time_137_ms_(80.00%)_Space_32.6_MB_(60.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     /*
     - What this problem wants is finding the next permutation of n

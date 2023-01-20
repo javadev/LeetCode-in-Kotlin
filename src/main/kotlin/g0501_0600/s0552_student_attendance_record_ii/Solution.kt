@@ -4,6 +4,7 @@ package g0501_0600.s0552_student_attendance_record_ii
 
 import java.util.Arrays
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun checkRecord(n: Int): Int {
         if (n == 0 || n == 1 || n == 2) {
