@@ -1,6 +1,6 @@
 package g0501_0600.s0558_logical_or_of_two_binary_grids_represented_as_quad_trees
 
-/**
+/*
  * Definition for a QuadTree node.
  * class Node(var `val`: Boolean, var isLeaf: Boolean) {
  *     var topLeft: Node? = null
