@@ -1655,7 +1655,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0563 |[Binary Tree Tilt](src/main/kotlin/g0501_0600/s0563_binary_tree_tilt/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 197 | 100.00
+| 0561 |[Array Partition](src/main/kotlin/g0501_0600/s0561_array_partition_i/Solution.kt)| Easy | Array, Sorting, Greedy, Counting_Sort | 337 | 90.48
 | 0560 |[Subarray Sum Equals K](src/main/kotlin/g0501_0600/s0560_subarray_sum_equals_k/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 692 | 53.27
+| 0559 |[Maximum Depth of N-ary Tree](src/main/kotlin/g0501_0600/s0559_maximum_depth_of_n_ary_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree | 196 | 100.00
+| 0558 |[Logical OR of Two Binary Grids Represented as Quad-Trees](src/main/kotlin/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/Solution.kt)| Medium | Tree, Divide_and_Conquer | 268 | 100.00
 | 0557 |[Reverse Words in a String III](src/main/kotlin/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.kt)| Easy | String, Two_Pointers, Algorithm_I_Day_4_Two_Pointers | 215 | 98.10
 | 0556 |[Next Greater Element III](src/main/kotlin/g0501_0600/s0556_next_greater_element_iii/Solution.kt)| Medium | String, Math, Two_Pointers, Programming_Skills_II_Day_10 | 137 | 80.00
 | 0554 |[Brick Wall](src/main/kotlin/g0501_0600/s0554_brick_wall/Solution.kt)| Medium | Array, Hash_Table | 307 | 100.00
