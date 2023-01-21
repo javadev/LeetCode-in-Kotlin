@@ -14,6 +14,7 @@ import com_github_leetcode.Node
 
 class Solution {
     private var max = 0
+
     fun maxDepth(root: Node?): Int {
         if (root == null) {
             return 0
