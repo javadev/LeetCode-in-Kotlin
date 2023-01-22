@@ -29,8 +29,8 @@ class Solution {
             tl!!.isLeaf &&
                 tr!!.isLeaf &&
                 bl!!.isLeaf &&
-                br!!.isLeaf && tl.`val` === tr.`val`
-            ) && tr.`val` === bl.`val` && br.`val` === bl.`val`
+                br!!.isLeaf && tl.`val` == tr.`val`
+            ) && tr.`val` == bl.`val` && br.`val` == bl.`val`
         ) {
             out.isLeaf = true
             out.`val` = tl.`val`
