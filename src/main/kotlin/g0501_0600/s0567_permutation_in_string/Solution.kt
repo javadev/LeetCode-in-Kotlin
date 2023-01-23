@@ -13,17 +13,17 @@ class Solution {
         val cntS1 = IntArray(26)
         val cntS2 = IntArray(26)
         for (i in 0 until n) {
-            cntS1[s1[i].toInt() - 'a'.toInt()]++
+            cntS1[s1[i].code - 'a'.code]++
         }
         for (i in 0 until n) {
-            cntS2[s2[i].toInt() - 'a'.toInt()]++
+            cntS2[s2[i].code - 'a'.code]++
         }
         if (check(cntS1, cntS2)) {
             return true
         }
         for (i in n until m) {
-            cntS2[s2[i - n].toInt() - 'a'.toInt()]--
-            cntS2[s2[i].toInt() - 'a'.toInt()]++
+            cntS2[s2[i - n].code - 'a'.code]--
+            cntS2[s2[i].code - 'a'.code]++
             if (check(cntS1, cntS2)) {
                 return true
             }
