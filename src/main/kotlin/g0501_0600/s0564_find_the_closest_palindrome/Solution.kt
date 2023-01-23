@@ -2,6 +2,7 @@ package g0501_0600.s0564_find_the_closest_palindrome
 
 // #Hard #String #Math #2023_01_21_Time_179_ms_(100.00%)_Space_33.7_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun nearestPalindromic(n: String): String {
         if (n.length == 1) {
