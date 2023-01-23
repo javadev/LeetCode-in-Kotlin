@@ -12,10 +12,10 @@ internal class SolutionTest {
         val node3 = Node(3)
         val node2 = Node(2)
         val node4 = Node(4)
-        root.neighbors = listOf<Any>(node3, node2, node4) as List<Node>
+        root.neighbors = listOf(node3, node2, node4)
         val node5 = Node(5)
         val node6 = Node(6)
-        node3.neighbors = listOf<Any>(node5, node6) as List<Node>
+        node3.neighbors = listOf(node5, node6)
         assertThat(Solution().maxDepth(root), equalTo(3))
     }
 }
