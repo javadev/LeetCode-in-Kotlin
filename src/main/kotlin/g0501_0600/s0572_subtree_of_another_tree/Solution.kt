@@ -24,7 +24,7 @@ class Solution {
         if (root == null || subRoot == null) {
             return false
         }
-        return if (root.`val` === subRoot.`val`) {
+        return if (root.`val` == subRoot.`val`) {
             isSubtreeFound(root.left, subRoot.left) && isSubtree(root.right, subRoot.right)
         } else {
             false
