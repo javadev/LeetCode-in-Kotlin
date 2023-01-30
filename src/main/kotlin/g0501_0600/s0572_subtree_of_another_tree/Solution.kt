@@ -1,10 +1,10 @@
 package g0501_0600.s0572_subtree_of_another_tree
 
-import com_github_leetcode.TreeNode
-
 // #Easy #Depth_First_Search #Tree #Binary_Tree #Hash_Function #String_Matching
 // #Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search
 // #2023_01_23_Time_214_ms_(92.39%)_Space_38.4_MB_(45.65%)
+
+import com_github_leetcode.TreeNode
 
 /*
  * Example:

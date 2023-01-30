@@ -1,11 +1,11 @@
 package g0501_0600.s0587_erect_the_fence
 
+// #Hard #Array #Math #Geometry #2023_01_30_Time_470_ms_(100.00%)_Space_54.7_MB_(100.00%)
+
 import kotlin.math.abs
 import kotlin.math.atan2
 import kotlin.math.pow
 import kotlin.math.sqrt
-
-// #Hard #Array #Math #Geometry #2023_01_30_Time_470_ms_(100.00%)_Space_54.7_MB_(100.00%)
 
 class Solution {
     private fun dist(p1: Pair<Int, Int>, p2: Pair<Int, Int>): Double {
