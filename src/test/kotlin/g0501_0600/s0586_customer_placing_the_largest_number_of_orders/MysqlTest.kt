@@ -13,14 +13,15 @@ import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
 
-
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE Orders(order_number INTEGER, customer_number INTEGER); "
-            + "INSERT INTO Orders(order_number, customer_number) VALUES (1, 1); "
-            + "INSERT INTO Orders(order_number, customer_number) VALUES (2, 2); "
-            + "INSERT INTO Orders(order_number, customer_number) VALUES (3, 3); "
-            + "INSERT INTO Orders(order_number, customer_number) VALUES (4, 3); "]
+    initialSqls = [
+        "CREATE TABLE Orders(order_number INTEGER, customer_number INTEGER); " +
+            "INSERT INTO Orders(order_number, customer_number) VALUES (1, 1); " +
+            "INSERT INTO Orders(order_number, customer_number) VALUES (2, 2); " +
+            "INSERT INTO Orders(order_number, customer_number) VALUES (3, 3); " +
+            "INSERT INTO Orders(order_number, customer_number) VALUES (4, 3); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -31,10 +32,10 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0501_0600/"
-                                    + "s0586_customer_placing"
-                                    + "_the_largest_number_of"
-                                    + "_orders/script.sql"
+                            "src/main/kotlin/g0501_0600/" +
+                                "s0586_customer_placing" +
+                                "_the_largest_number_of" +
+                                "_orders/script.sql"
                         )
                     )
                         .lines()

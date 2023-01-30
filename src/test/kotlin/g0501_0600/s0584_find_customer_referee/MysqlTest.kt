@@ -13,16 +13,17 @@ import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
 
-
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE Customer(id INTEGER PRIMARY KEY, name VARCHAR, referee_id INTEGER); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (1, 'Will', NULL); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (2, 'Jane', NULL); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (3, 'Alex', 2); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (4, 'Bill', NULL); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (5, 'Zack', 1); "
-            + "INSERT INTO Customer(id, name, referee_id) VALUES (6, 'Mark', 2); "]
+    initialSqls = [
+        "CREATE TABLE Customer(id INTEGER PRIMARY KEY, name VARCHAR, referee_id INTEGER); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (1, 'Will', NULL); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (2, 'Jane', NULL); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (3, 'Alex', 2); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (4, 'Bill', NULL); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (5, 'Zack', 1); " +
+            "INSERT INTO Customer(id, name, referee_id) VALUES (6, 'Mark', 2); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -33,8 +34,8 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0501_0600/"
-                                    + "s0584_find_customer_referee/script.sql"
+                            "src/main/kotlin/g0501_0600/" +
+                                "s0584_find_customer_referee/script.sql"
                         )
                     )
                         .lines()
