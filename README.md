@@ -336,6 +336,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0584 |[Find Customer Referee](src/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 779 | 43.48
 | 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 712 | 33.67
 
 #### Day 2 Select and Order
@@ -376,6 +377,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 768 | 44.85
 | 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
 
 #### Day 9 Control of Flow
@@ -1289,6 +1291,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 307 | 38.36
+| 0583 |[Delete Operation for Two Strings](src/main/kotlin/g0501_0600/s0583_delete_operation_for_two_strings/Solution.kt)| Medium | String, Dynamic_Programming | 197 | 100.00
 
 #### Day 18 Dynamic Programming
 
@@ -1659,6 +1662,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0587 |[Erect the Fence](src/main/kotlin/g0501_0600/s0587_erect_the_fence/Solution.kt)| Hard | Array, Math, Geometry | 470 | 100.00
+| 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 768 | 44.85
+| 0584 |[Find Customer Referee](src/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 779 | 43.48
+| 0583 |[Delete Operation for Two Strings](src/main/kotlin/g0501_0600/s0583_delete_operation_for_two_strings/Solution.kt)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 197 | 100.00
 | 0581 |[Shortest Unsorted Continuous Subarray](src/main/kotlin/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 246 | 100.00
 | 0576 |[Out of Boundary Paths](src/main/kotlin/g0501_0600/s0576_out_of_boundary_paths/Solution.kt)| Medium | Dynamic_Programming | 153 | 100.00
 | 0575 |[Distribute Candies](src/main/kotlin/g0501_0600/s0575_distribute_candies/Solution.kt)| Easy | Array, Hash_Table | 538 | 76.92
