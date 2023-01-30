@@ -1219,6 +1219,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0117 |[Populating Next Right Pointers in Each Node II](src/main/kotlin/g0101_0200/s0117_populating_next_right_pointers_in_each_node_ii/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 199 | 94.67
+| 0572 |[Subtree of Another Tree](src/main/kotlin/g0501_0600/s0572_subtree_of_another_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching | 214 | 92.39
 
 #### Day 8 Breadth First Search Depth First Search
 
@@ -1658,6 +1659,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.8'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0581 |[Shortest Unsorted Continuous Subarray](src/main/kotlin/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 246 | 100.00
+| 0576 |[Out of Boundary Paths](src/main/kotlin/g0501_0600/s0576_out_of_boundary_paths/Solution.kt)| Medium | Dynamic_Programming | 153 | 100.00
+| 0575 |[Distribute Candies](src/main/kotlin/g0501_0600/s0575_distribute_candies/Solution.kt)| Easy | Array, Hash_Table | 538 | 76.92
+| 0572 |[Subtree of Another Tree](src/main/kotlin/g0501_0600/s0572_subtree_of_another_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching, Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search | 214 | 92.39
 | 0567 |[Permutation in String](src/main/kotlin/g0501_0600/s0567_permutation_in_string/Solution.kt)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 169 | 100.00
 | 0566 |[Reshape the Matrix](src/main/kotlin/g0501_0600/s0566_reshape_the_matrix/Solution.kt)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 239 | 99.05
 | 0565 |[Array Nesting](src/main/kotlin/g0501_0600/s0565_array_nesting/Solution.kt)| Medium | Array, Depth_First_Search | 553 | 100.00
