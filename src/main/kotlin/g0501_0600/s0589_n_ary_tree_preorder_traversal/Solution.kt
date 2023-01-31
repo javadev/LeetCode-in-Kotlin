@@ -11,7 +11,6 @@ import com_github_leetcode.Node
  *     var children: List<Node?> = listOf()
  * }
  */
-
 class Solution {
     fun preorder(root: Node?): List<Int> {
         val res: MutableList<Int> = ArrayList()
