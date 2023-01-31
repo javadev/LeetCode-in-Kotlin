@@ -10,9 +10,9 @@ import com_github_leetcode.Node
  *     var children: List<Node?> = listOf()
  * }
  */
-
 class Solution {
     private var ans: ArrayList<Int>? = null
+
     fun postorder(root: Node?): List<Int> {
         ans = ArrayList()
         recursion(root)
