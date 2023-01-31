@@ -77,6 +77,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0589 |[N-ary Tree Preorder Traversal](src/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack | 233 | 84.02
 | 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 171 | 100.00
 
 #### Day 6 Array
@@ -429,6 +430,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0589 |[N-ary Tree Preorder Traversal](src/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack | 233 | 84.02
 | 0102 |[Binary Tree Level Order Traversal](src/main/kotlin/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 332 | 67.53
 
 #### Day 7 Binary Search
@@ -1662,6 +1664,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0592 |[Fraction Addition and Subtraction](src/main/kotlin/g0501_0600/s0592_fraction_addition_and_subtraction/Solution.kt)| Medium | String, Math, Simulation | 164 | 100.00
+| 0591 |[Tag Validator](src/main/kotlin/g0501_0600/s0591_tag_validator/Solution.kt)| Hard | String, Stack | 177 | 100.00
+| 0590 |[N-ary Tree Postorder Traversal](src/main/kotlin/g0501_0600/s0590_n_ary_tree_postorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack | 237 | 88.10
+| 0589 |[N-ary Tree Preorder Traversal](src/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function, Level_1_Day_6_Tree | 233 | 84.02
 | 0587 |[Erect the Fence](src/main/kotlin/g0501_0600/s0587_erect_the_fence/Solution.kt)| Hard | Array, Math, Geometry | 470 | 100.00
 | 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 768 | 44.85
 | 0584 |[Find Customer Referee](src/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 779 | 43.48
