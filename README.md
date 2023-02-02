@@ -1665,6 +1665,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0601 |[Human Traffic of Stadium](src/main/kotlin/g0601_0700/s0601_human_traffic_of_stadium/script.sql)| Hard | Database | 529 | 51.80
+| 0600 |[Non-negative Integers without Consecutive Ones](src/main/kotlin/g0501_0600/s0600_non_negative_integers_without_consecutive_ones/Solution.kt)| Hard | Dynamic_Programming | 142 | 100.00
+| 0599 |[Minimum Index Sum of Two Lists](src/main/kotlin/g0501_0600/s0599_minimum_index_sum_of_two_lists/Solution.kt)| Easy | Array, String, Hash_Table | 293 | 100.00
+| 0598 |[Range Addition II](src/main/kotlin/g0501_0600/s0598_range_addition_ii/Solution.kt)| Easy | Array, Math | 176 | 66.67
 | 0596 |[Classes More Than 5 Students](src/main/kotlin/g0501_0600/s0596_classes_more_than_5_students/script.sql)| Easy | Database | 484 | 50.92
 | 0595 |[Big Countries](src/main/kotlin/g0501_0600/s0595_big_countries/script.sql)| Easy | Database, SQL_I_Day_1_Select | 417 | 56.09
 | 0594 |[Longest Harmonious Subsequence](src/main/kotlin/g0501_0600/s0594_longest_harmonious_subsequence/Solution.kt)| Easy | Array, Hash_Table, Sorting | 331 | 100.00
