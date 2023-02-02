@@ -13,26 +13,27 @@ import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
 
-
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE Stadium(id INTEGER, visit_date DATE PRIMARY KEY, people INTEGER); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (1, '2017-01-01', 10); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (2, '2017-01-02', 109); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (3, '2017-01-03', 150); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (4, '2017-01-04', 99); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (5, '2017-01-05', 145); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (6, '2017-01-06', 1455); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (7, '2017-01-07', 199); "
-            + "INSERT INTO Stadium(id, visit_date, people)"
-            + " VALUES (8, '2017-01-09', 188); "]
+    initialSqls = [
+        "CREATE TABLE Stadium(id INTEGER, visit_date DATE PRIMARY KEY, people INTEGER); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (1, '2017-01-01', 10); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (2, '2017-01-02', 109); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (3, '2017-01-03', 150); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (4, '2017-01-04', 99); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (5, '2017-01-05', 145); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (6, '2017-01-06', 1455); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (7, '2017-01-07', 199); " +
+            "INSERT INTO Stadium(id, visit_date, people)" +
+            " VALUES (8, '2017-01-09', 188); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -43,10 +44,10 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0601_0700/"
-                                    + "s0601_human_traffic"
-                                    + "_of_stadium"
-                                    + "/script.sql"
+                            "src/main/kotlin/g0601_0700/" +
+                                "s0601_human_traffic" +
+                                "_of_stadium" +
+                                "/script.sql"
                         )
                     )
                         .lines()
