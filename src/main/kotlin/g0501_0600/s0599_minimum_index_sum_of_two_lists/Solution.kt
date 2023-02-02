@@ -3,9 +3,9 @@ package g0501_0600.s0599_minimum_index_sum_of_two_lists
 // #Easy #Array #String #Hash_Table #2023_02_02_Time_293_ms_(100.00%)_Space_37.3_MB_(89.66%)
 
 class Solution {
-    fun findRestaurant(list1: Array<String?>, list2: Array<String>): Array<String> {
+    fun findRestaurant(list1: Array<String>, list2: Array<String>): Array<String> {
         var min = 1000000
-        val hm: MutableMap<String?, Int> = HashMap()
+        val hm: MutableMap<String, Int> = HashMap()
         val result: MutableList<String> = ArrayList()
         fillMap(list1, hm)
         // find min value
@@ -27,7 +27,7 @@ class Solution {
         return result.toTypedArray()
     }
 
-    fun fillMap(a: Array<String?>, hm: MutableMap<String?, Int>) {
+    fun fillMap(a: Array<String>, hm: MutableMap<String, Int>) {
         for (i in a.indices) {
             hm[a[i]] = i
         }
