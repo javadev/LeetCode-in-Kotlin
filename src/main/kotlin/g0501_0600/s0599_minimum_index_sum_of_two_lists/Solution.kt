@@ -11,7 +11,7 @@ class Solution {
         // find min value
         for (i in list2.indices) {
             if (hm.containsKey(list2[i])) {
-                val value = hm[list2[i]]!! + i
+                val value = hm[list2[i]] + i
                 // a new min value was found
                 if (value < min) {
                     min = value
