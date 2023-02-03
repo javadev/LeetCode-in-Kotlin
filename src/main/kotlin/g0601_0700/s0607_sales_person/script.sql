@@ -1,0 +1,12 @@
+# Write your MySQL query statement below
+# #Easy #LeetCode_Curated_SQL_70 #Database #SQL_I_Day_6_Union
+# #2023_02_03_Time_2142_ms_(44.56%)_Space_0B_(100.00%)
+SELECT NAME
+FROM
+SALESPERSON
+WHERE SALES_ID NOT IN
+(
+SELECT O.SALES_ID FROM ORDERS AS O LEFT JOIN COMPANY C
+ON O.COM_ID = C.COM_ID
+WHERE C.NAME = 'RED'
+)
