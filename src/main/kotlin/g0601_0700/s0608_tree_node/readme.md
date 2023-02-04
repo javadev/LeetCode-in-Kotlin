@@ -24,7 +24,7 @@ Each node in the tree can be one of three types:
 
 Write an SQL query to report the type of each node in the tree.
 
-Return the result table **ordered** by `id` **in ascending order**.
+Return the result table in **any order**.
 
 The query result format is in the following example.
 
