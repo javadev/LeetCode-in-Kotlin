@@ -34,8 +34,7 @@ jobs:
     - name: Build with Gradle
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: 19107c464b65c0769768d4564dd1c9b0c2822edd
-      run: chmod +x gradlew && ./gradlew spotlessCheck test jacocoTestReport sonarqube -Dsonar.projectKey=javadev_LeetCode-in-Kotlin -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=javadev-github --no-daemon
+      run: chmod +x gradlew && ./gradlew spotlessCheck test
 
   build-windows:
     name: build-windows
