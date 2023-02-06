@@ -34,7 +34,7 @@ jobs:
     - name: Build with Gradle
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: chmod +x gradlew && ./gradlew spotlessCheck test
+      run: chmod +x gradlew && ./gradlew spotlessCheck test jacocoTestReport
 
   build-windows:
     name: build-windows
