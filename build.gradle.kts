@@ -59,10 +59,8 @@ spotless {
     }
 }
 
-tasks {
-  jacocoTestReport {
+tasks.jacocoTestReport {
     reports {
-      xml.required.set(true)
+        xml.isEnabled = true
     }
-  }
 }
