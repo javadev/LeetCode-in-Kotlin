@@ -281,7 +281,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 879 | 35.49
+| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 794 | 48.38
 | 0176 |[Second Highest Salary](src.save/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 219 | 92.54
 
 #### Day 5 Union
@@ -1058,6 +1058,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0617 |[Merge Two Binary Trees](src/main/kotlin/g0601_0700/s0617_merge_two_binary_trees/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 243 | 72.83
 | 0116 |[Populating Next Right Pointers in Each Node](src.save/main/kotlin/g0101_0200/s0116_populating_next_right_pointers_in_each_node/Solution.kt)| Medium | Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 355 | 69.02
 
 #### Day 9 Breadth First Search Depth First Search
@@ -1332,6 +1333,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0209 |[Minimum Size Subarray Sum](src.save/main/kotlin/g0201_0300/s0209_minimum_size_subarray_sum/Solution.kt)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 315 | 96.73
+| 0611 |[Valid Triangle Number](src/main/kotlin/g0601_0700/s0611_valid_triangle_number/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 203 | 100.00
 
 #### Day 2
 
@@ -1668,7 +1670,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
-| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database, SQL_I_Day_4_Union_and_Select | 879 | 35.49
+| 0620 |[Not Boring Movies](src/main/kotlin/g0601_0700/s0620_not_boring_movies/script.sql)| Easy | Database | 305 | 59.80
+| 0617 |[Merge Two Binary Trees](src/main/kotlin/g0601_0700/s0617_merge_two_binary_trees/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Algorithm_I_Day_8_Breadth_First_Search_Depth_First_Search | 243 | 72.83
+| 0611 |[Valid Triangle Number](src/main/kotlin/g0601_0700/s0611_valid_triangle_number/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers, Binary_Search_II_Day_1 | 203 | 100.00
+| 0609 |[Find Duplicate File in System](src/main/kotlin/g0601_0700/s0609_find_duplicate_file_in_system/Solution.kt)| Medium | Array, String, Hash_Table | 426 | 100.00
+| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database, SQL_I_Day_4_Union_and_Select | 794 | 48.38
 | 0607 |[Sales Person](src/main/kotlin/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_6_Union | 2142 | 44.56
 | 0606 |[Construct String from Binary Tree](src/main/kotlin/g0601_0700/s0606_construct_string_from_binary_tree/Solution.kt)| Easy | String, Depth_First_Search, Tree, Binary_Tree | 187 | 100.00
 | 0605 |[Can Place Flowers](src/main/kotlin/g0601_0700/s0605_can_place_flowers/Solution.kt)| Easy | Array, Greedy, Udemy_Arrays | 209 | 85.71
