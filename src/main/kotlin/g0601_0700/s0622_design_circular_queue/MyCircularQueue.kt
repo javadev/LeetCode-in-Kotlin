@@ -52,6 +52,7 @@ class MyCircularQueue(private val maxSize: Int) {
     fun isEmpty(): Boolean {
         return size == 0
     }
+
     fun isFull(): Boolean {
         return size == maxSize
     }
