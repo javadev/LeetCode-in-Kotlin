@@ -271,6 +271,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0627 |[Swap Salary](src/main/kotlin/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 400 | 51.04
 | 0196 |[Delete Duplicate Emails](src.save/main/kotlin/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 593 | 94.17
 
 #### Day 3 String Processing Functions
@@ -1672,6 +1673,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0630 |[Course Schedule III](src/main/kotlin/g0601_0700/s0630_course_schedule_iii/Solution.kt)| Hard | Array, Greedy, Heap_Priority_Queue | 536 | 100.00
+| 0629 |[K Inverse Pairs Array](src/main/kotlin/g0601_0700/s0629_k_inverse_pairs_array/Solution.kt)| Hard | Dynamic_Programming | 155 | 100.00
+| 0628 |[Maximum Product of Three Numbers](src/main/kotlin/g0601_0700/s0628_maximum_product_of_three_numbers/Solution.kt)| Easy | Array, Math, Sorting | 276 | 97.30
+| 0627 |[Swap Salary](src/main/kotlin/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database, SQL_I_Day_2_Select_and_Order | 400 | 51.04
 | 0626 |[Exchange Seats](src/main/kotlin/g0601_0700/s0626_exchange_seats/script.sql)| Medium | Database | 502 | 50.56
 | 0623 |[Add One Row to Tree](src/main/kotlin/g0601_0700/s0623_add_one_row_to_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 202 | 100.00
 | 0622 |[Design Circular Queue](src/main/kotlin/g0601_0700/s0622_design_circular_queue/MyCircularQueue.kt)| Medium | Array, Design, Linked_List, Queue, Programming_Skills_II_Day_20 | 234 | 92.68
