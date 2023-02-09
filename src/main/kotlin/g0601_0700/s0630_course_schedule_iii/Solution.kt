@@ -2,8 +2,8 @@ package g0601_0700.s0630_course_schedule_iii
 
 // #Hard #Array #Greedy #Heap_Priority_Queue #2023_02_09_Time_536_ms_(100.00%)_Space_58_MB_(100.00%)
 
-import java.util.PriorityQueue
 import java.util.Arrays
+import java.util.PriorityQueue
 
 class Solution {
     fun scheduleCourse(courses: Array<IntArray>): Int {

@@ -13,18 +13,20 @@ import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
 
-
 @EmbeddedDatabaseTest(
-    compatibilityMode = CompatibilityMode.MySQL, initialSqls = ["CREATE TABLE Salary(id INTEGER PRIMARY KEY, name"
-            + " VARCHAR, sex VARCHAR, salary INTEGER); "
-            + "INSERT INTO Salary(id, name, sex, salary)"
-            + " VALUES (1, 'A', 'm', 2500); "
-            + "INSERT INTO Salary(id, name, sex, salary)"
-            + " VALUES (2, 'B', 'f', 1500); "
-            + "INSERT INTO Salary(id, name, sex, salary)"
-            + " VALUES (3, 'C', 'm', 5500); "
-            + "INSERT INTO Salary(id, name, sex, salary)"
-            + " VALUES (4, 'D', 'f', 500); "]
+    compatibilityMode = CompatibilityMode.MySQL,
+    initialSqls = [
+        "CREATE TABLE Salary(id INTEGER PRIMARY KEY, name" +
+            " VARCHAR, sex VARCHAR, salary INTEGER); " +
+            "INSERT INTO Salary(id, name, sex, salary)" +
+            " VALUES (1, 'A', 'm', 2500); " +
+            "INSERT INTO Salary(id, name, sex, salary)" +
+            " VALUES (2, 'B', 'f', 1500); " +
+            "INSERT INTO Salary(id, name, sex, salary)" +
+            " VALUES (3, 'C', 'm', 5500); " +
+            "INSERT INTO Salary(id, name, sex, salary)" +
+            " VALUES (4, 'D', 'f', 500); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -35,8 +37,8 @@ internal class MysqlTest {
                 statement.executeUpdate(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0601_0700/"
-                                    + "s0627_swap_salary/script.sql"
+                            "src/main/kotlin/g0601_0700/" +
+                                "s0627_swap_salary/script.sql"
                         )
                     )
                         .lines()

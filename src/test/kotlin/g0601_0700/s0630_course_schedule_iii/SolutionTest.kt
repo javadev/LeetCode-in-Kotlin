@@ -32,5 +32,4 @@ internal class SolutionTest {
         )
         assertThat(Solution().scheduleCourse(input), equalTo(4))
     }
-
 }
