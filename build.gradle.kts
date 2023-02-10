@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "1.8.10"
     jacoco
     id("org.sonarqube")version "3.5.0.2730"
     id("com.diffplug.spotless") version "6.12.0"
@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10")
     testImplementation("org.junit.jupiter:junit-jupiter-api:[5.9.2,)")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:[5.9.2,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
