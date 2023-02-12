@@ -34,4 +34,9 @@ internal class SolutionTest {
     fun isSelfCrossing6() {
         assertThat(Solution().isSelfCrossing(intArrayOf(1, 1, 1)), equalTo(false))
     }
+
+    @Test
+    fun isSelfCrossing7() {
+        assertThat(Solution().isSelfCrossing(intArrayOf(1, 1, 2, 2, 1, 1)), equalTo(true))
+    }
 }
