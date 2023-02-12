@@ -1673,7 +1673,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0648 |[Replace Words](src/main/kotlin/g0601_0700/s0648_replace_words/Solution.kt)| Medium | Array, String, Hash_Table, Trie | 392 | 100.00
 | 0647 |[Palindromic Substrings](src/main/kotlin/g0601_0700/s0647_palindromic_substrings/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 266 | 67.83
+| 0646 |[Maximum Length of Pair Chain](src/main/kotlin/g0601_0700/s0646_maximum_length_of_pair_chain/Solution.kt)| Medium | Array, Dynamic_Programming, Sorting, Greedy | 249 | 100.00
+| 0645 |[Set Mismatch](src/main/kotlin/g0601_0700/s0645_set_mismatch/Solution.kt)| Easy | Array, Hash_Table, Sorting, Bit_Manipulation | 246 | 88.46
+| 0643 |[Maximum Average Subarray I](src/main/kotlin/g0601_0700/s0643_maximum_average_subarray_i/Solution.kt)| Easy | Array, Sliding_Window | 494 | 98.65
 | 0641 |[Design Circular Deque](src/main/kotlin/g0601_0700/s0641_design_circular_deque/MyCircularDeque.kt)| Medium | Array, Design, Linked_List, Queue | 232 | 100.00
 | 0640 |[Solve the Equation](src/main/kotlin/g0601_0700/s0640_solve_the_equation/Solution.kt)| Medium | String, Math, Simulation | 170 | 66.67
 | 0639 |[Decode Ways II](src/main/kotlin/g0601_0700/s0639_decode_ways_ii/Solution.kt)| Hard | String, Dynamic_Programming | 259 | 100.00
