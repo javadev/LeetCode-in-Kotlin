@@ -17,6 +17,6 @@ internal class SolutionTest {
 
     @Test
     fun findErrorNums3() {
-        assertThat(Solution().findErrorNums(intArrayOf(1, 2, 4, 4)), equalTo(intArrayOf(2, 3)))
+        assertThat(Solution().findErrorNums(intArrayOf(1, 2, 4, 4)), equalTo(intArrayOf(4, 3)))
     }
 }
