@@ -20,28 +20,24 @@ class Solution {
         var isWordCompleted = false
 
         fun containsKey(ch: Char): Boolean {
-            return links[ch.toInt() - 'a'.toInt()] != null
+            return links[ch.code - 'a'.code] != null
         }
 
         fun put(ch: Char, node: Node?) {
-            links[ch.toInt() - 'a'.toInt()] = node
+            links[ch.code - 'a'.code] = node
         }
 
         operator fun get(ch: Char): Node? {
-            return links[ch.toInt() - 'a'.toInt()]
+            return links[ch.code - 'a'.code]
         }
     }
 
     internal class Trie {
-        var root: Node
-
-        init {
-            root = Node()
-        }
+        var root: Node = Node()
 
         fun insert(word: String) {
             var node: Node? = root
-            for (i in 0 until word.length) {
+            for (i in word.indices) {
                 if (!node!!.containsKey(word[i])) {
                     node.put(word[i], Node())
                 }
@@ -53,7 +49,7 @@ class Solution {
         fun getRootForWord(word: String): String {
             var node: Node? = root
             val rootWord = StringBuilder()
-            for (i in 0 until word.length) {
+            for (i in word.indices) {
                 if (node!!.containsKey(word[i])) {
                     rootWord.append(word[i])
                     node = node[word[i]]
