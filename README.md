@@ -1675,6 +1675,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0669 |[Trim a Binary Search Tree](src/main/kotlin/g0601_0700/s0669_trim_a_binary_search_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 195 | 100.00
+| 0668 |[Kth Smallest Number in Multiplication Table](src/main/kotlin/g0601_0700/s0668_kth_smallest_number_in_multiplication_table/Solution.kt)| Hard | Math, Binary_Search | 151 | 100.00
+| 0667 |[Beautiful Arrangement II](src/main/kotlin/g0601_0700/s0667_beautiful_arrangement_ii/Solution.kt)| Medium | Array, Math | 175 | 100.00
+| 0665 |[Non-decreasing Array](src/main/kotlin/g0601_0700/s0665_non_decreasing_array/Solution.kt)| Medium | Array | 256 | 85.71
 | 0664 |[Strange Printer](src/main/kotlin/g0601_0700/s0664_strange_printer/Solution.kt)| Hard | String, Dynamic_Programming | 196 | 100.00
 | 0662 |[Maximum Width of Binary Tree](src/main/kotlin/g0601_0700/s0662_maximum_width_of_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 189 | 75.00
 | 0661 |[Image Smoother](src/main/kotlin/g0601_0700/s0661_image_smoother/Solution.kt)| Easy | Array, Matrix | 352 | 100.00
