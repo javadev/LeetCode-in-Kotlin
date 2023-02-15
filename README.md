@@ -1221,6 +1221,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0300 |[Longest Increasing Subsequence](src.save/main/kotlin/g0201_0300/s0300_longest_increasing_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Binary_Search | 318 | 82.28
+| 0673 |[Number of Longest Increasing Subsequence](src/main/kotlin/g0601_0700/s0673_number_of_longest_increasing_subsequence/Solution.kt)| Medium | Array, Dynamic_Programming, Segment_Tree, Binary_Indexed_Tree | 226 | 91.67
 
 #### Day 17 Dynamic Programming
 
@@ -1675,6 +1676,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0673 |[Number of Longest Increasing Subsequence](src/main/kotlin/g0601_0700/s0673_number_of_longest_increasing_subsequence/Solution.kt)| Medium | Array, Dynamic_Programming, Segment_Tree, Binary_Indexed_Tree, Algorithm_II_Day_16_Dynamic_Programming | 226 | 91.67
+| 0672 |[Bulb Switcher II](src/main/kotlin/g0601_0700/s0672_bulb_switcher_ii/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search, Bit_Manipulation | 131 | 100.00
+| 0671 |[Second Minimum Node In a Binary Tree](src/main/kotlin/g0601_0700/s0671_second_minimum_node_in_a_binary_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 128 | 100.00
+| 0670 |[Maximum Swap](src/main/kotlin/g0601_0700/s0670_maximum_swap/Solution.kt)| Medium | Math, Greedy | 143 | 100.00
 | 0669 |[Trim a Binary Search Tree](src/main/kotlin/g0601_0700/s0669_trim_a_binary_search_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 195 | 100.00
 | 0668 |[Kth Smallest Number in Multiplication Table](src/main/kotlin/g0601_0700/s0668_kth_smallest_number_in_multiplication_table/Solution.kt)| Hard | Math, Binary_Search | 151 | 100.00
 | 0667 |[Beautiful Arrangement II](src/main/kotlin/g0601_0700/s0667_beautiful_arrangement_ii/Solution.kt)| Medium | Array, Math | 175 | 100.00
