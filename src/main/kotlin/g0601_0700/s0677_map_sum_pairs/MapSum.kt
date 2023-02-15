@@ -13,10 +13,10 @@ class MapSum {
     fun insert(key: String, `val`: Int) {
         var curr: Node? = root
         for (c in key.toCharArray()) {
-            if (curr!!.child[c.toInt() - 'a'.toInt()] == null) {
-                curr.child[c.toInt() - 'a'.toInt()] = Node()
+            if (curr!!.child[c.code - 'a'.code] == null) {
+                curr.child[c.code - 'a'.code] = Node()
             }
-            curr = curr.child[c.toInt() - 'a'.toInt()]
+            curr = curr.child[c.code - 'a'.code]
         }
         curr!!.`val` = `val`
     }
@@ -34,10 +34,10 @@ class MapSum {
     fun sum(prefix: String): Int {
         var curr: Node? = root
         for (c in prefix.toCharArray()) {
-            if (curr!!.child[c.toInt() - 'a'.toInt()] == null) {
+            if (curr!!.child[c.code - 'a'.code] == null) {
                 return 0
             }
-            curr = curr.child[c.toInt() - 'a'.toInt()]
+            curr = curr.child[c.code - 'a'.code]
         }
         val sum = curr!!.`val`
         return sum + sumHelper(curr)
