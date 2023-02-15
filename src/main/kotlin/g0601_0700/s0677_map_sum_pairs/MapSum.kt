@@ -6,7 +6,6 @@ class MapSum {
     internal class Node {
         var `val`: Int = 0
         var child: Array<Node?> = arrayOfNulls(26)
-
     }
 
     private val root: Node = Node()

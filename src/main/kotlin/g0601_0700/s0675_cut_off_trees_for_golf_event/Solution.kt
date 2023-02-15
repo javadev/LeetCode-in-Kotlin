@@ -56,7 +56,8 @@ class Solution {
                     val nr = dir[0] + curr[0]
                     val nc = dir[1] + curr[1]
                     if (nr < 0 || nr == visited.size || nc < 0 || nc == visited[0].size ||
-                        visited[nr][nc] || forest[nr][nc] == 0) {
+                        visited[nr][nc] || forest[nr][nc] == 0
+                    ) {
                         continue
                     }
                     q.add(intArrayOf(nr, nc))
