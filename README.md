@@ -1676,6 +1676,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0677 |[Map Sum Pairs](src/main/kotlin/g0601_0700/s0677_map_sum_pairs/MapSum.kt)| Medium | String, Hash_Table, Design, Trie | 197 | 80.00
+| 0676 |[Implement Magic Dictionary](src/main/kotlin/g0601_0700/s0676_implement_magic_dictionary/MagicDictionary.kt)| Medium | String, Hash_Table, Design, Trie | 256 | 100.00
+| 0675 |[Cut Off Trees for Golf Event](src/main/kotlin/g0601_0700/s0675_cut_off_trees_for_golf_event/Solution.kt)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue | 777 | 100.00
+| 0674 |[Longest Continuous Increasing Subsequence](src/main/kotlin/g0601_0700/s0674_longest_continuous_increasing_subsequence/Solution.kt)| Easy | Array | 201 | 84.21
 | 0673 |[Number of Longest Increasing Subsequence](src/main/kotlin/g0601_0700/s0673_number_of_longest_increasing_subsequence/Solution.kt)| Medium | Array, Dynamic_Programming, Segment_Tree, Binary_Indexed_Tree, Algorithm_II_Day_16_Dynamic_Programming | 226 | 91.67
 | 0672 |[Bulb Switcher II](src/main/kotlin/g0601_0700/s0672_bulb_switcher_ii/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search, Bit_Manipulation | 131 | 100.00
 | 0671 |[Second Minimum Node In a Binary Tree](src/main/kotlin/g0601_0700/s0671_second_minimum_node_in_a_binary_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 128 | 100.00
