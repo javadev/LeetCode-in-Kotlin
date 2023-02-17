@@ -6,10 +6,10 @@ class Solution {
     fun repeatedStringMatch(a: String, b: String): Int {
         val existsChar = CharArray(127)
         for (chA in a.toCharArray()) {
-            existsChar[chA.toInt()] = 1.toChar()
+            existsChar[chA.code] = 1.toChar()
         }
         for (chB in b.toCharArray()) {
-            if (existsChar[chB.toInt()].toInt() < 1) {
+            if (existsChar[chB.code].code < 1) {
                 return -1
             }
         }

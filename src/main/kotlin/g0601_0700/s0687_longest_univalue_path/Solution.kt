@@ -42,7 +42,7 @@ class Solution {
             0
         }
         val longestPathLenPassingThroughRoot = left + right
-        res[0] = Math.max(res[0], longestPathLenPassingThroughRoot)
-        return Math.max(left, right)
+        res[0] = res[0].coerceAtLeast(longestPathLenPassingThroughRoot)
+        return left.coerceAtLeast(right)
     }
 }
