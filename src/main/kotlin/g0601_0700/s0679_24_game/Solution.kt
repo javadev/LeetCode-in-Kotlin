@@ -50,7 +50,7 @@ class Solution {
         return false
     }
 
-    fun judgePoint24(nums: IntArray?): Boolean {
+    fun judgePoint24(nums: IntArray): Boolean {
         val a = Arrays.stream(nums).asDoubleStream().toArray()
         return backtrack(a, a.size)
     }
