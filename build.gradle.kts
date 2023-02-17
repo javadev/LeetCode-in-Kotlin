@@ -61,6 +61,7 @@ spotless {
 
 tasks.jacocoTestReport {
     reports {
-        xml.isEnabled = true
+        xml.required.set(true)
+        html.required.set(false)
     }
 }
