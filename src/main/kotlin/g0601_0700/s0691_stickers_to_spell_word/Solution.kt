@@ -13,11 +13,11 @@ class Solution {
     fun minStickers(stickers: Array<String>, target: String): Int {
         counts = Array(stickers.size) { IntArray(26) }
         for (i in 0..25) {
-            map[('a'.toInt() + i).toChar()] = HashSet()
+            map[('a'.code + i).toChar()] = HashSet()
         }
         for (i in stickers.indices) {
             for (c in stickers[i].toCharArray()) {
-                counts[i][c.toInt() - 'a'.toInt()]++
+                counts[i][c.code - 'a'.code]++
                 map[c]!!.add(i)
             }
         }
@@ -55,8 +55,8 @@ class Solution {
                     continue
                 }
                 val c = target[i]
-                if (count[c.toInt() - 'a'.toInt()] > 0) {
-                    count[c.toInt() - 'a'.toInt()]--
+                if (count[c.code - 'a'.code] > 0) {
+                    count[c.code - 'a'.code]--
                     mask = mask or (1 shl i)
                 }
             }
