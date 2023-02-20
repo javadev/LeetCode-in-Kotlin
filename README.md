@@ -1676,6 +1676,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0691 |[Stickers to Spell Word](src/main/kotlin/g0601_0700/s0691_stickers_to_spell_word/Solution.kt)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 249 | 100.00
+| 0690 |[Employee Importance](src/main/kotlin/g0601_0700/s0690_employee_importance/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search | 255 | 100.00
+| 0689 |[Knight Probability in Chessboard](src/main/kotlin/g0601_0700/s0689_maximum_sum_of_3_non_overlapping_subarrays/Solution.kt)| Hard | Array, Dynamic_Programming | 248 | 100.00
+| 0688 |[Knight Probability in Chessboard](src/main/kotlin/g0601_0700/s0688_knight_probability_in_chessboard/Solution.kt)| Medium | Dynamic_Programming | 144 | 100.00
 | 0687 |[Longest Univalue Path](src/main/kotlin/g0601_0700/s0687_longest_univalue_path/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 303 | 100.00
 | 0686 |[Repeated String Match](src/main/kotlin/g0601_0700/s0686_repeated_string_match/Solution.kt)| Medium | String, String_Matching | 164 | 100.00
 | 0685 |[Redundant Connection II](src/main/kotlin/g0601_0700/s0685_redundant_connection_ii/Solution.kt)| Hard | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 176 | 100.00
