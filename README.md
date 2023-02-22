@@ -190,7 +190,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0695 |[Max Area of Island](src/main/kotlin/g0601_0700/s0695_max_area_of_island/Solution.kt)| |||
+| 0695 |[Max Area of Island](src/main/kotlin/g0601_0700/s0695_max_area_of_island/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 324 | 24.06
 
 #### Day 3 Matrix Related Problems
 
@@ -1059,7 +1059,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0695 |[Max Area of Island](src/main/kotlin/g0601_0700/s0695_max_area_of_island/Solution.kt)| |||
+| 0695 |[Max Area of Island](src/main/kotlin/g0601_0700/s0695_max_area_of_island/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 324 | 24.06
 
 #### Day 8 Breadth First Search Depth First Search
 
@@ -1685,7 +1685,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0692 |[Top K Frequent Words](src/main/kotlin/g0601_0700/s0692_top_k_frequent_words/Solution.kt)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Trie, Bucket_Sort, Level_1_Day_15_Heap | 239 | 81.10
 | 0691 |[Stickers to Spell Word](src/main/kotlin/g0601_0700/s0691_stickers_to_spell_word/Solution.kt)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 249 | 100.00
 | 0690 |[Employee Importance](src/main/kotlin/g0601_0700/s0690_employee_importance/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search | 255 | 100.00
-| 0689 |[Knight Probability in Chessboard](src/main/kotlin/g0601_0700/s0689_maximum_sum_of_3_non_overlapping_subarrays/Solution.kt)| Hard | Array, Dynamic_Programming | 248 | 100.00
+| 0689 |[Maximum Sum of 3 Non-Overlapping Subarrays](src/main/kotlin/g0601_0700/s0689_maximum_sum_of_3_non_overlapping_subarrays/Solution.kt)| Hard | Array, Dynamic_Programming | 248 | 100.00
 | 0688 |[Knight Probability in Chessboard](src/main/kotlin/g0601_0700/s0688_knight_probability_in_chessboard/Solution.kt)| Medium | Dynamic_Programming | 144 | 100.00
 | 0687 |[Longest Univalue Path](src/main/kotlin/g0601_0700/s0687_longest_univalue_path/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 303 | 100.00
 | 0686 |[Repeated String Match](src/main/kotlin/g0601_0700/s0686_repeated_string_match/Solution.kt)| Medium | String, String_Matching | 164 | 100.00
