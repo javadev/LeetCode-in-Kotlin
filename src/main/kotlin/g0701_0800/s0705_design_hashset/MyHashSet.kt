@@ -19,7 +19,6 @@ class MyHashSet {
     }
 }
 
-
 /*
  * Your MyHashSet object will be instantiated and called as such:
  * var obj = MyHashSet()
