@@ -6,8 +6,8 @@ package g0601_0700.s0698_partition_to_k_equal_sum_subsets
 import java.util.Arrays
 
 class Solution {
-    fun canPartitionKSubsets(nums: IntArray?, k: Int): Boolean {
-        if (nums == null || nums.isEmpty()) {
+    fun canPartitionKSubsets(nums: IntArray, k: Int): Boolean {
+        if (nums.isEmpty()) {
             return false
         }
         val n = nums.size
