@@ -23,13 +23,12 @@ class Solution {
         if (root == null) {
             return TreeNode(value)
         }
-
         when {
             root.value < value -> root.right = insertIntoBST(root.right, value)
             root.value > value -> root.left = insertIntoBST(root.left, value)
         }
-
         return root
     }
+
     private val TreeNode.value get() = `val`
 }
