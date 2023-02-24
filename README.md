@@ -170,6 +170,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0707 |[Design Linked List](src/main/kotlin/g0701_0800/s0707_design_linked_list/MyLinkedList.kt)| Medium | Design, Linked_List | 243 | 100.00
 
 #### Day 20
 
@@ -678,6 +679,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0138 |[Copy List with Random Pointer](src.save/main/kotlin/g0101_0200/s0138_copy_list_with_random_pointer/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Linked_List | 274 | 80.58
 | 0025 |[Reverse Nodes in k-Group](src.save/main/kotlin/g0001_0100/s0025_reverse_nodes_in_k_group/Solution.kt)| Hard | Top_100_Liked_Questions, Linked_List, Recursion | 194 | 87.72
 | 0146 |[LRU Cache](src.save/main/kotlin/g0101_0200/s0146_lru_cache/LRUCache.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Design, Linked_List, Doubly_Linked_List | 1116 | 97.93
+| 0707 |[Design Linked List](src/main/kotlin/g0701_0800/s0707_design_linked_list/MyLinkedList.kt)| Medium | Design, Linked_List | 243 | 100.00
 
 #### Udemy Tree Stack Queue
 
@@ -886,6 +888,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 |-|-|-|-|-|-
 | 0075 |[Sort Colors](src.save/main/kotlin/g0001_0100/s0075_sort_colors/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 198 | 85.66
 | 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 323 | 99.68
+| 0706 |[Design HashMap](src/main/kotlin/g0701_0800/s0706_design_hashmap/MyHashMap.kt)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function | 405 | 92.11
 
 #### Day 3 Array
 
@@ -957,6 +960,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0024 |[Swap Nodes in Pairs](src.save/main/kotlin/g0001_0100/s0024_swap_nodes_in_pairs/Solution.kt)| Medium | Top_100_Liked_Questions, Linked_List, Recursion | 149 | 99.39
+| 0707 |[Design Linked List](src/main/kotlin/g0701_0800/s0707_design_linked_list/MyLinkedList.kt)| Medium | Design, Linked_List | 243 | 100.00
 
 #### Day 13 Linked List
 
@@ -1656,6 +1660,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0709 |[To Lower Case](src/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String | 142 | 98.68
 
 #### Day 10 Linked List and Tree
 
@@ -1687,6 +1692,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0710 |[Random Pick with Blacklist](src/main/kotlin/g0701_0800/s0710_random_pick_with_blacklist/Solution.kt)| Hard | Hash_Table, Math, Sorting, Binary_Search, Randomized | 632 | 100.00
+| 0709 |[To Lower Case](src/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String, Programming_Skills_I_Day_9_String | 142 | 98.68
+| 0707 |[Design Linked List](src/main/kotlin/g0701_0800/s0707_design_linked_list/MyLinkedList.kt)| Medium | Design, Linked_List, Data_Structure_II_Day_12_Linked_List, Programming_Skills_II_Day_19, Udemy_Linked_List | 243 | 100.00
+| 0706 |[Design HashMap](src/main/kotlin/g0701_0800/s0706_design_hashmap/MyHashMap.kt)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function, Data_Structure_II_Day_2_Array | 405 | 92.11
 | 0705 |[Design HashSet](src/main/kotlin/g0701_0800/s0705_design_hashset/MyHashSet.kt)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function | 385 | 75.61
 | 0704 |[Binary Search](src/main/kotlin/g0701_0800/s0704_binary_search/Solution.kt)| Easy | Array, Binary_Search, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_1, Level_1_Day_7_Binary_Search, Udemy_Binary_Search | 261 | 77.91
 | 0703 |[Kth Largest Element in a Stream](src/main/kotlin/g0701_0800/s0703_kth_largest_element_in_a_stream/KthLargest.kt)| Easy | Tree, Binary_Tree, Design, Heap_Priority_Queue, Binary_Search_Tree, Data_Stream | 286 | 95.45
