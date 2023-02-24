@@ -5,6 +5,7 @@ package g0701_0800.s0710_random_pick_with_blacklist
 
 import java.util.Random
 
+@Suppress("kotlin:S2245")
 class Solution(n: Int, blacklist: IntArray) {
     private val map: MutableMap<Int, Int>
     private val r: Random
