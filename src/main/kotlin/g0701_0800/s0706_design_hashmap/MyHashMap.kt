@@ -3,11 +3,12 @@ package g0701_0800.s0706_design_hashmap
 // #Easy #Array #Hash_Table #Design #Linked_List #Hash_Function #Data_Structure_II_Day_2_Array
 // #2023_02_24_Time_405_ms_(92.11%)_Space_58.1_MB_(93.42%)
 
+@Suppress("NAME_SHADOWING")
 class MyHashMap {
-    private var arr: Array<ArrayList<*>?>? = null
+    private var arr: Array<MutableList<Entry>?>? = null
 
     init {
-        arr = arrayOfNulls<ArrayList<*>?>(1000)
+        arr = arrayOfNulls<MutableList<Entry>?>(1000)
     }
 
     fun put(key: Int, value: Int) {
@@ -20,7 +21,7 @@ class MyHashMap {
             list.add(e)
             arr!![bucket] = list
         } else {
-            val list: ArrayList<Entry>? = arr!![bucket] as ArrayList<Entry>?
+            val list: MutableList<Entry>? = arr!![bucket]
             val e = Entry()
             e.key = key
             e.value = value
@@ -61,17 +62,17 @@ class MyHashMap {
             return result
         }
 
-        override fun equals(obj: Any?): Boolean {
-            if (this === obj) {
+        override fun equals(other: Any?): Boolean {
+            if (this === other) {
                 return true
             }
-            if (obj == null) {
+            if (other == null) {
                 return false
             }
-            if (javaClass != obj.javaClass) {
+            if (javaClass != other.javaClass) {
                 return false
             }
-            val other = obj as Entry
+            val other = other as Entry
             return key == other.key
         }
     }
