@@ -3,11 +3,10 @@ package g0701_0800.s0719_find_k_th_smallest_pair_distance
 // #Hard #Array #Sorting #Binary_Search #Two_Pointers
 // #2023_02_27_Time_172_ms_(100.00%)_Space_37.2_MB_(100.00%)
 
-import java.util.Arrays
 
 class Solution {
     fun smallestDistancePair(nums: IntArray, k: Int): Int {
-        Arrays.sort(nums)
+        nums.sort()
         val length = nums.size
         val maxDiff = nums[length - 1] - nums[0]
         var start = 0
