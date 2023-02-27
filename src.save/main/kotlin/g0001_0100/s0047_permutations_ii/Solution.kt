@@ -5,6 +5,7 @@ package g0001_0100.s0047_permutations_ii
 
 class Solution {
     private var ans: MutableList<List<Int>>? = null
+
     fun permuteUnique(nums: IntArray): List<List<Int>> {
         ans = ArrayList()
         permute(nums, 0)
