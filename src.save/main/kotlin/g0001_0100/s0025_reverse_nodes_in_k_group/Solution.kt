@@ -5,6 +5,15 @@ package g0001_0100.s0025_reverse_nodes_in_k_group
 
 import com_github_leetcode.ListNode
 
+/*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
     fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
         if (head?.next == null || k == 1) {

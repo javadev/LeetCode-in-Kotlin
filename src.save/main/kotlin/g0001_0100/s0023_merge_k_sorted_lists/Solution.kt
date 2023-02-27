@@ -5,6 +5,15 @@ package g0001_0100.s0023_merge_k_sorted_lists
 
 import com_github_leetcode.ListNode
 
+/*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
     fun mergeKLists(lists: Array<ListNode>): ListNode? {
         return if (lists.isEmpty()) {
