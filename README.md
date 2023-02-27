@@ -1696,6 +1696,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0720 |[Longest Word in Dictionary](src/main/kotlin/g0701_0800/s0720_longest_word_in_dictionary/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Trie | 209 | 100.00
+| 0719 |[Find K-th Smallest Pair Distance](src/main/kotlin/g0701_0800/s0719_find_k_th_smallest_pair_distance/Solution.kt)| Hard | Array, Sorting, Binary_Search, Two_Pointers | 172 | 100.00
+| 0718 |[Maximum Length of Repeated Subarray](src/main/kotlin/g0701_0800/s0718_maximum_length_of_repeated_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Binary_Search, Sliding_Window, Hash_Function, Rolling_Hash | 270 | 91.43
+| 0717 |[1-bit and 2-bit Characters](src/main/kotlin/g0701_0800/s0717_1_bit_and_2_bit_characters/Solution.kt)| Easy | Array | 165 | 100.00
 | 0715 |[Range Module](src/main/kotlin/g0701_0800/s0715_range_module/RangeModule.kt)| Hard | Design, Ordered_Set, Segment_Tree | 638 | 58.33
 | 0714 |[Best Time to Buy and Sell Stock with Transaction Fee](src/main/kotlin/g0701_0800/s0714_best_time_to_buy_and_sell_stock_with_transaction_fee/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_8 | 417 | 90.91
 | 0713 |[Subarray Product Less Than K](src/main/kotlin/g0701_0800/s0713_subarray_product_less_than_k/Solution.kt)| Medium | Array, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Udemy_Arrays | 336 | 92.11
