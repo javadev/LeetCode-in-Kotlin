@@ -3,6 +3,7 @@ package g0701_0800.s0720_longest_word_in_dictionary
 // #Medium #Array #String #Hash_Table #Sorting #Trie
 // #2023_02_27_Time_209_ms_(100.00%)_Space_37_MB_(83.33%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private val root = Node()
     private var longestWord: String? = ""
