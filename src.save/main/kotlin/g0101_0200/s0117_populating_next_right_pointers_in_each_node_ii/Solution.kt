@@ -18,24 +18,16 @@ import java.util.Queue
  */
 class Solution {
     fun connect(root: Node?): Node? {
-
         if (root == null) return null
-
         val bfsQueue: Queue<Node> = LinkedList()
-
         bfsQueue.offer(root)
         root.next = null
-
         var temp: Node?
         var prev: Node?
-
         while (!bfsQueue.isEmpty()) {
-
             val size = bfsQueue.size
             prev = null
-
             for (j in 0 until size) {
-
                 temp = bfsQueue.poll()
                 if (prev != null) prev.next = temp
                 if (temp!!.left != null) bfsQueue.offer(temp.left)
@@ -43,7 +35,6 @@ class Solution {
                 prev = temp
             }
         }
-
         return root
     }
 }

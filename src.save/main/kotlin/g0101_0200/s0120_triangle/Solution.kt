@@ -7,8 +7,8 @@ package g0101_0200.s0120_triangle
 import java.util.Arrays
 
 class Solution {
-    fun minimumTotal(triangle: List<List<Int>>?): Int {
-        if (triangle == null || triangle.isEmpty()) {
+    fun minimumTotal(triangle: List<List<Int>>): Int {
+        if (triangle.isEmpty()) {
             return 0
         }
         val dp = Array(triangle.size) { IntArray(triangle[triangle.size - 1].size) }

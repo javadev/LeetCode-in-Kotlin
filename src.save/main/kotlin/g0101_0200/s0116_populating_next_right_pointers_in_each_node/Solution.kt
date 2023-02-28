@@ -14,7 +14,6 @@ import com_github_leetcode.left_right.Node
  *     var next: Node? = null
  * }
  */
-
 class Solution {
     fun connect(root: Node?): Node? {
         if (root == null) {

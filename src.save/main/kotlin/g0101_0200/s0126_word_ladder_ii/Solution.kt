@@ -8,8 +8,8 @@ import java.util.LinkedList
 import java.util.Queue
 
 class Solution {
-    fun findLadders(beginWord: String, endWord: String, wordList: List<String>?): List<List<String?>> {
-        val ans: MutableList<List<String?>> = ArrayList()
+    fun findLadders(beginWord: String, endWord: String, wordList: List<String>): List<List<String>> {
+        val ans: MutableList<List<String>> = ArrayList()
         // reverse graph start from endWord
         val reverse: MutableMap<String, MutableSet<String>> = HashMap()
         // remove the duplicate words
@@ -59,7 +59,7 @@ class Solution {
         if (!findEnd) {
             return ans
         }
-        val path: MutableSet<String?> = LinkedHashSet()
+        val path: MutableSet<String> = LinkedHashSet()
         path.add(endWord)
         // traverse reverse graph from endWord to beginWord
         findPath(endWord, beginWord, reverse, ans, path)
@@ -70,14 +70,14 @@ class Solution {
         endWord: String,
         beginWord: String,
         graph: Map<String, MutableSet<String>>,
-        ans: MutableList<List<String?>>,
-        path: MutableSet<String?>
+        ans: MutableList<List<String>>,
+        path: MutableSet<String>
     ) {
         val next = graph[endWord] ?: return
         for (word in next) {
             path.add(word)
             if (beginWord == word) {
-                val shortestPath: List<String?> = ArrayList(path)
+                val shortestPath: List<String> = ArrayList(path)
                 // reverse words in shortest path
                 Collections.reverse(shortestPath)
                 // add the shortest path to ans.
