@@ -16,12 +16,12 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun hasPathSum(root: TreeNode?, sum: Int): Boolean {
+    fun hasPathSum(root: TreeNode?, targetSum: Int): Boolean {
         if (root == null) {
             return false
         }
-        return if (sum == root.`val` && root.left == null && root.right == null) {
+        return if (targetSum == root.`val` && root.left == null && root.right == null) {
             true
-        } else hasPathSum(root.left, sum - root.`val`) || hasPathSum(root.right, sum - root.`val`)
+        } else hasPathSum(root.left, targetSum - root.`val`) || hasPathSum(root.right, targetSum - root.`val`)
     }
 }
