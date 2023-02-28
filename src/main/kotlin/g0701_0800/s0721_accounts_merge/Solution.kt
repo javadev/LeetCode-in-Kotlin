@@ -47,30 +47,30 @@ class Solution {
     }
 
     fun accountsMerge(accounts: List<List<String>>): List<List<String>> {
-        val ownersMap = mutableMapOf<String,Int>()
+        val ownersMap = mutableMapOf<String, Int>()
         val unionFind = UnionFind(accounts.size)
-        for(i in accounts.indices){
-            for(j in 1 until accounts[i].size){
+        for (i in accounts.indices) {
+            for (j in 1 until accounts[i].size) {
                 val mail = accounts[i][j]
-                if(!ownersMap.contains(mail)){
+                if (!ownersMap.contains(mail)) {
                     ownersMap[mail] = i
-                }else{
+                } else {
                     val previousAccount = ownersMap[mail]!!
-                    unionFind.union(previousAccount,i)
+                    unionFind.union(previousAccount, i)
                 }
             }
         }
-        val groupsMap = mutableMapOf<Int,TreeSet<String>>()
-        for(ind in accounts.indices){
+        val groupsMap = mutableMapOf<Int, TreeSet<String>>()
+        for (ind in accounts.indices) {
             val parent = unionFind.find(ind)
-            groupsMap.putIfAbsent(parent,TreeSet<String>())
-            groupsMap[parent]!!.addAll(accounts[ind].subList(1,accounts[ind].size))
+            groupsMap.putIfAbsent(parent, TreeSet<String>())
+            groupsMap[parent]!!.addAll(accounts[ind].subList(1, accounts[ind].size))
         }
         val res = mutableListOf<List<String>>()
-        groupsMap.forEach{ (key,value) ->
+        groupsMap.forEach { (key, value) ->
             val list = mutableListOf<String>()
             list.add(accounts[key][0])
-            for(mail in value){
+            for (mail in value) {
                 list.add(mail)
             }
             res.add(list)

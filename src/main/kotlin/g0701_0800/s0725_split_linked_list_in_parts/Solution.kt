@@ -14,6 +14,7 @@ import java.util.Objects
  *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun splitListToParts(head: ListNode?, k: Int): Array<ListNode?> {
         var head = head
