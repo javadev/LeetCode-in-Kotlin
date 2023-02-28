@@ -4,11 +4,10 @@ package g0101_0200.s0146_lru_cache
 // #Doubly_Linked_List #Udemy_Linked_List #2022_09_03_Time_1116_ms_(97.93%)_Space_139.6_MB_(97.51%)
 
 class LRUCache(capacity: Int) {
-
     private val nodeMap = HashMap<Int, Node>()
-    val head = Node()
+    private val head = Node()
     private val tail = Node()
-    var cacheCapacity = 0
+    private var cacheCapacity = 0
 
     init {
         head.next = tail
@@ -66,3 +65,10 @@ class LRUCache(capacity: Int) {
 
     data class Node(var key: Int = -1, var value: Int = -1, var next: Node? = null, var prev: Node? = null)
 }
+
+/*
+ * Your LRUCache object will be instantiated and called as such:
+ * var obj = LRUCache(capacity)
+ * var param_1 = obj.get(key)
+ * obj.put(key,value)
+ */
