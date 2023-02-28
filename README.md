@@ -331,6 +331,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0724 |[Find Pivot Index](src/main/kotlin/g0701_0800/s0724_find_pivot_index/Solution.kt)| Easy | Array, Prefix_Sum | 255 | 88.92
 
 #### Day 2 String
 
@@ -1696,6 +1697,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.9'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0725 |[Split Linked List in Parts](src/main/kotlin/g0701_0800/s0725_split_linked_list_in_parts/Solution.kt)| Medium | Linked_List | 162 | 95.00
+| 0724 |[Find Pivot Index](src/main/kotlin/g0701_0800/s0724_find_pivot_index/Solution.kt)| Easy | Array, Prefix_Sum, Level_1_Day_1_Prefix_Sum | 255 | 88.92
+| 0722 |[Remove Comments](src/main/kotlin/g0701_0800/s0722_remove_comments/Solution.kt)| Medium | Array, String | 164 | 100.00
+| 0721 |[Accounts Merge](src/main/kotlin/g0701_0800/s0721_accounts_merge/Solution.kt)| Medium | Array, String, Depth_First_Search, Breadth_First_Search, Union_Find | 364 | 100.00
 | 0720 |[Longest Word in Dictionary](src/main/kotlin/g0701_0800/s0720_longest_word_in_dictionary/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Trie | 209 | 100.00
 | 0719 |[Find K-th Smallest Pair Distance](src/main/kotlin/g0701_0800/s0719_find_k_th_smallest_pair_distance/Solution.kt)| Hard | Array, Sorting, Binary_Search, Two_Pointers | 172 | 100.00
 | 0718 |[Maximum Length of Repeated Subarray](src/main/kotlin/g0701_0800/s0718_maximum_length_of_repeated_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Binary_Search, Sliding_Window, Hash_Function, Rolling_Hash | 270 | 91.43
