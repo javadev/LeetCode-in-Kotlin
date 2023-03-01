@@ -62,8 +62,6 @@ class Solution {
                         current.total += it.toString()
                     }
                 }
-                else -> {
-                }
             }
         }
         if (multiply) {
