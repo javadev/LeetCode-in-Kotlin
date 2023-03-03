@@ -17,11 +17,11 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun lowestCommonAncestor(root: TreeNode?, p: TreeNode, q: TreeNode): TreeNode? {
+    fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
         if (root == null) {
             return null
         }
-        if (root.`val` == p.`val` || root.`val` == q.`val`) {
+        if (root.`val` == p?.`val` || root.`val` == q?.`val`) {
             return root
         }
         val left: TreeNode? = lowestCommonAncestor(root.left, p, q)
