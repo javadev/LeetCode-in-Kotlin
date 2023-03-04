@@ -1360,6 +1360,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 |-|-|-|-|-|-
 | 0198 |[House Robber](src.save/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 156 | 92.24
 | 0213 |[House Robber II](src.save/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
+| 0740 |[Delete and Earn](src/main/kotlin/g0701_0800/s0740_delete_and_earn/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 192 | 100.00
 
 #### Day 4
 
@@ -1701,7 +1702,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
+| 0741 |[Cherry Pickup](src/main/kotlin/g0701_0800/s0741_cherry_pickup/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix | 196 | 100.00
+| 0740 |[Delete and Earn](src/main/kotlin/g0701_0800/s0740_delete_and_earn/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming, Dynamic_Programming_I_Day_3 | 192 | 100.00
 | 0739 |[Daily Temperatures](src/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6 | 936 | 80.54
+| 0738 |[Monotone Increasing Digits](src/main/kotlin/g0701_0800/s0738_monotone_increasing_digits/Solution.kt)| Medium | Math, Greedy | 127 | 100.00
+| 0736 |[Parse Lisp Expression](src/main/kotlin/g0701_0800/s0736_parse_lisp_expression/Solution.kt)| Hard | String, Hash_Table, Stack, Recursion | 172 | 100.00
 | 0735 |[Asteroid Collision](src/main/kotlin/g0701_0800/s0735_asteroid_collision/Solution.kt)| Medium | Array, Stack, Level_2_Day_18_Stack | 243 | 100.00
 | 0733 |[Flood Fill](src/main/kotlin/g0701_0800/s0733_flood_fill/Solution.kt)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix, Algorithm_I_Day_7_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_1_Matrix_Related_Problems, Level_1_Day_9_Graph/BFS/DFS | 230 | 97.76
 | 0732 |[My Calendar III](src/main/kotlin/g0701_0800/s0732_my_calendar_iii/MyCalendarThree.kt)| Hard | Binary_Search, Design, Ordered_Set, Segment_Tree | 294 | 100.00
