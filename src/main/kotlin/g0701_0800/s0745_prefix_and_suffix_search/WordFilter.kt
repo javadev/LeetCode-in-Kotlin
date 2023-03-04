@@ -23,10 +23,10 @@ class WordFilter(words: Array<String>) {
     private fun insert(wd: String, weight: Int) {
         var node: TrieNode? = root
         for (ch in wd.toCharArray()) {
-            if (node!!.children[ch.toInt() - 'a'.toInt()] == null) {
-                node.children[ch.toInt() - 'a'.toInt()] = TrieNode()
+            if (node!!.children[ch.code - 'a'.code] == null) {
+                node.children[ch.code - 'a'.code] = TrieNode()
             }
-            node = node.children[ch.toInt() - 'a'.toInt()]
+            node = node.children[ch.code - 'a'.code]
             node!!.weight = weight
         }
     }
@@ -38,10 +38,10 @@ class WordFilter(words: Array<String>) {
     private fun startsWith(pref: String): Int {
         var node: TrieNode? = root
         for (ch in pref.toCharArray()) {
-            if (node!!.children[ch.toInt() - 'a'.toInt()] == null) {
+            if (node!!.children[ch.code - 'a'.code] == null) {
                 return -1
             }
-            node = node.children[ch.toInt() - 'a'.toInt()]
+            node = node.children[ch.code - 'a'.code]
         }
         return node!!.weight
     }
