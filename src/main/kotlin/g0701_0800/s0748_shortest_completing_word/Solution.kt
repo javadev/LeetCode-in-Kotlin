@@ -2,8 +2,6 @@ package g0701_0800.s0748_shortest_completing_word
 
 // #Easy #Array #String #Hash_Table #2023_03_06_Time_172_ms_(100.00%)_Space_36.3_MB_(70.00%)
 
-import java.util.Locale
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun shortestCompletingWord(licensePlate: String, words: Array<String>): String {
