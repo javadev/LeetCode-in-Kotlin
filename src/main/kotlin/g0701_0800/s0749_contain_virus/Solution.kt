@@ -3,6 +3,7 @@ package g0701_0800.s0749_contain_virus
 // #Hard #Array #Depth_First_Search #Breadth_First_Search #Matrix #Simulation
 // #2023_03_06_Time_201_ms_(100.00%)_Space_37.5_MB_(100.00%)
 
+@Suppress("kotlin:S107")
 class Solution {
     private var m = 0
     private var n = 0
