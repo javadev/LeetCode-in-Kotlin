@@ -4,11 +4,11 @@ package g0701_0800.s0748_shortest_completing_word
 
 import java.util.Locale
 
-@Suppress("NAME_SHADOWING", "kotlin:S1874")
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun shortestCompletingWord(licensePlate: String, words: Array<String>): String {
         var licensePlate = licensePlate
-        licensePlate = licensePlate.toLowerCase(Locale.getDefault())
+        licensePlate = licensePlate.lowercase()
         val a = IntArray(26)
         for (i in licensePlate.indices) {
             if (Character.isLetter(licensePlate[i])) {
