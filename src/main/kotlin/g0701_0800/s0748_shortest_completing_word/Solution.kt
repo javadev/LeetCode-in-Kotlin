@@ -4,7 +4,7 @@ package g0701_0800.s0748_shortest_completing_word
 
 import java.util.Locale
 
-@Suppress("NAME_SHADOWING")
+@Suppress("NAME_SHADOWING", "kotlin:S1874")
 class Solution {
     fun shortestCompletingWord(licensePlate: String, words: Array<String>): String {
         var licensePlate = licensePlate
