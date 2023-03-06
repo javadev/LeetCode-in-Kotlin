@@ -5,7 +5,6 @@ package g0301_0400.s0304_range_sum_query_2d_immutable
 // #2022_11_07_Time_1373_ms_(85.71%)_Space_129.1_MB_(75.00%)
 
 class NumMatrix(matrix: Array<IntArray>) {
-
     private val M = matrix.size
     private val N = if (M > 0) matrix[0].size else 0
 

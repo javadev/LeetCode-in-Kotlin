@@ -11,11 +11,11 @@ class Solution {
         } else gcd(n2, n1 % n2)
     }
 
-    fun canMeasureWater(jug1: Int, jug2: Int, target: Int): Boolean {
-        if (jug1 + jug2 < target) {
+    fun canMeasureWater(jug1Capacity: Int, jug2Capacity: Int, targetCapacity: Int): Boolean {
+        if (jug1Capacity + jug2Capacity < targetCapacity) {
             return false
         }
-        val gcd = gcd(jug1, jug2)
-        return target % gcd == 0
+        val gcd = gcd(jug1Capacity, jug2Capacity)
+        return targetCapacity % gcd == 0
     }
 }
