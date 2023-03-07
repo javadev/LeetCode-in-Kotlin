@@ -3,8 +3,6 @@ package g0001_0100.s0051_n_queens
 // #Hard #Top_100_Liked_Questions #Array #Backtracking
 // #2022_08_29_Time_243_ms_(95.10%)_Space_39.7_MB_(91.18%)
 
-import java.util.Arrays
-
 class Solution {
     fun solveNQueens(n: Int): List<List<String>> {
         val pos = BooleanArray(n + 2 * n - 1 + 2 * n - 1)
@@ -39,7 +37,7 @@ class Solution {
         val sol: MutableList<String> = ArrayList()
         for (r in 0 until n) {
             val queenRow = CharArray(n)
-            Arrays.fill(queenRow, '.')
+            queenRow.fill('.')
             queenRow[pos[r]] = 'Q'
             sol.add(String(queenRow))
         }

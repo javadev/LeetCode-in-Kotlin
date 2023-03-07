@@ -2,8 +2,6 @@ package g0501_0600.s0576_out_of_boundary_paths
 
 // #Medium #Dynamic_Programming #2023_01_23_Time_153_ms_(100.00%)_Space_34.7_MB_(80.00%)
 
-import java.util.Arrays
-
 class Solution {
     private val dRowCol = arrayOf(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
     private fun dfs(
@@ -43,7 +41,7 @@ class Solution {
         }
         for (c1 in cache) {
             for (c2 in c1) {
-                Arrays.fill(c2, -1)
+                c2.fill(-1)
             }
         }
         return dfs(m, n, maxMoves, startRow, startCol, cache)

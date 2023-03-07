@@ -5,13 +5,11 @@ package g0501_0600.s0542_01_matrix
 // #Graph_Theory_I_Day_5_Matrix_Related_Problems
 // #2023_01_17_Time_441_ms_(94.06%)_Space_54_MB_(78.22%)
 
-import java.util.Arrays
-
 class Solution {
     fun updateMatrix(mat: Array<IntArray>): Array<IntArray> {
         val dist = Array(mat.size) { IntArray(mat[0].size) }
         for (i in mat.indices) {
-            Arrays.fill(dist[i], Int.MAX_VALUE - 100000)
+            dist[i].fill(Int.MAX_VALUE - 100000)
         }
         for (i in mat.indices) {
             for (j in mat[0].indices) {

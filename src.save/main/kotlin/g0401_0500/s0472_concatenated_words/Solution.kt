@@ -3,20 +3,13 @@ package g0401_0500.s0472_concatenated_words
 // #Hard #Array #String #Dynamic_Programming #Depth_First_Search #Trie
 // #2022_12_29_Time_484_ms_(100.00%)_Space_48_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     private val ans: MutableList<String> = ArrayList()
     private var root: Trie? = null
     fun findAllConcatenatedWordsInADict(words: Array<String>): List<String> {
         root = Trie()
-        Arrays.sort(
-            words
-        ) { a: String, b: String ->
-            Integer.compare(
-                a.length,
-                b.length
-            )
+        words.sortWith { a: String, b: String ->
+            a.length.compareTo(b.length)
         }
         for (word in words) {
             var ptr = root

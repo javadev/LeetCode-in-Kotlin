@@ -3,8 +3,6 @@ package g0601_0700.s0698_partition_to_k_equal_sum_subsets
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Memoization
 // #2023_02_22_Time_191_ms_(100.00%)_Space_45.5_MB_(50.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun canPartitionKSubsets(nums: IntArray, k: Int): Boolean {
         if (nums.isEmpty()) {
@@ -21,7 +19,7 @@ class Solution {
         // sum of each subset = sum / k
         sum /= k
         val dp = IntArray(1 shl n)
-        Arrays.fill(dp, -1)
+        dp.fill(-1)
         dp[0] = 0
         for (i in 0 until (1 shl n)) {
             if (dp[i] == -1) {
