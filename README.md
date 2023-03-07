@@ -1624,7 +1624,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0429 |[N-ary Tree Level Order Traversal](src.save/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree | 278 | 75.00
+| 0429 |[N-ary Tree Level Order Traversal](src.save/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree | 248 | 75.86
 
 #### Day 10
 
@@ -1707,6 +1707,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
+| 0757 |[Set Intersection Size At Least Two](src/main/kotlin/g0701_0800/s0757_set_intersection_size_at_least_two/Solution.kt)| Hard | Array, Sorting, Greedy | 298 | 100.00
+| 0756 |[Pyramid Transition Matrix](src/main/kotlin/g0701_0800/s0756_pyramid_transition_matrix/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Bit_Manipulation | 268 | 100.00
+| 0754 |[Reach a Number](src/main/kotlin/g0701_0800/s0754_reach_a_number/Solution.kt)| Medium | Math, Binary_Search | 134 | 100.00
+| 0753 |[Cracking the Safe](src/main/kotlin/g0701_0800/s0753_cracking_the_safe/Solution.kt)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 147 | 100.00
 | 0752 |[Open the Lock](src/main/kotlin/g0701_0800/s0752_open_the_lock/Solution.kt)| Medium | Array, String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 310 | 100.00
 | 0749 |[Contain Virus](src/main/kotlin/g0701_0800/s0749_contain_virus/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Simulation | 201 | 100.00
 | 0748 |[Shortest Completing Word](src/main/kotlin/g0701_0800/s0748_shortest_completing_word/Solution.kt)| Easy | Array, String, Hash_Table | 172 | 100.00
@@ -1953,7 +1957,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 0433 |[Minimum Genetic Mutation](src.save/main/kotlin/g0401_0500/s0433_minimum_genetic_mutation/Solution.kt)| Medium | String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 204 | 82.08
 | 0432 |[All O\`one Data Structure](src.save/main/kotlin/g0401_0500/s0432_all_oone_data_structure/AllOne.kt)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 1200 | 100.00
 | 0430 |[Flatten a Multilevel Doubly Linked List](src.save/main/kotlin/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/Solution.kt)| Medium | Depth_First_Search, Linked_List, Doubly_Linked_List | 194 | 97.44
-| 0429 |[N-ary Tree Level Order Traversal](src.save/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree, Programming_Skills_II_Day_9 | 278 | 75.00
+| 0429 |[N-ary Tree Level Order Traversal](src.save/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree, Programming_Skills_II_Day_9 | 248 | 75.86
 | 0427 |[Construct Quad Tree](src.save/main/kotlin/g0401_0500/s0427_construct_quad_tree/Solution.kt)| Medium | Array, Tree, Matrix, Divide_and_Conquer | 221 | 94.74
 | 0424 |[Longest Repeating Character Replacement](src.save/main/kotlin/g0401_0500/s0424_longest_repeating_character_replacement/Solution.kt)| Medium | String, Hash_Table, Sliding_Window, Level_1_Day_12_Sliding_Window/Two_Pointer | 288 | 84.38
 | 0423 |[Reconstruct Original Digits from English](src.save/main/kotlin/g0401_0500/s0423_reconstruct_original_digits_from_english/Solution.kt)| Medium | String, Hash_Table, Math | 349 | 100.00
