@@ -2,11 +2,9 @@ package g0701_0800.s0757_set_intersection_size_at_least_two
 
 // #Hard #Array #Sorting #Greedy #2023_03_07_Time_298_ms_(100.00%)_Space_39.7_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun intersectionSizeTwo(intervals: Array<IntArray>): Int {
-        Arrays.sort(intervals) { a, b ->
+        intervals.sortWith { a, b ->
             if (a[1] == b[1]) {
                 b[0] - a[0]
             } else a[1] - b[1]
