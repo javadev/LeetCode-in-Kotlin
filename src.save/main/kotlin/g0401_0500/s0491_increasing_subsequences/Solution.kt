@@ -4,8 +4,8 @@ package g0401_0500.s0491_increasing_subsequences
 // #2023_01_03_Time_499_ms_(100.00%)_Space_50.1_MB_(100.00%)
 
 class Solution {
-    fun findSubsequences(nums: IntArray?): List<List<Int>> {
-        if (nums == null || nums.size == 1) {
+    fun findSubsequences(nums: IntArray): List<List<Int>> {
+        if (nums.size == 1) {
             return ArrayList()
         }
         val answer: MutableSet<List<Int>> = HashSet()
