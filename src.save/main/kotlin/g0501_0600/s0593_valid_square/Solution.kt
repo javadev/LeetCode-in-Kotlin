@@ -2,8 +2,6 @@ package g0501_0600.s0593_valid_square
 
 // #Medium #Math #Geometry #2023_02_01_Time_161_ms_(83.33%)_Space_35_MB_(66.67%)
 
-import java.util.Arrays
-
 class Solution {
     fun validSquare(p1: IntArray, p2: IntArray, p3: IntArray, p4: IntArray): Boolean {
         val distancesSquared = IntArray(6)
@@ -13,7 +11,7 @@ class Solution {
         distancesSquared[3] = getDistanceSquared(p2, p3)
         distancesSquared[4] = getDistanceSquared(p2, p4)
         distancesSquared[5] = getDistanceSquared(p3, p4)
-        Arrays.sort(distancesSquared)
+        distancesSquared.sort()
         if (distancesSquared[0] == 0) {
             return false
         }

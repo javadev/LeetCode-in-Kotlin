@@ -4,8 +4,6 @@ package g0101_0200.s0120_triangle
 // #Dynamic_Programming_I_Day_13 #Udemy_Dynamic_Programming
 // #2022_10_08_Time_194_ms_(97.87%)_Space_40_MB_(71.28%)
 
-import java.util.Arrays
-
 class Solution {
     fun minimumTotal(triangle: List<List<Int>>): Int {
         if (triangle.isEmpty()) {
@@ -13,7 +11,7 @@ class Solution {
         }
         val dp = Array(triangle.size) { IntArray(triangle[triangle.size - 1].size) }
         for (temp in dp) {
-            Arrays.fill(temp, -10001)
+            temp.fill(-10001)
         }
         return dfs(triangle, dp, 0, 0)
     }

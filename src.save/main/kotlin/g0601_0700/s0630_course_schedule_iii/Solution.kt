@@ -2,13 +2,12 @@ package g0601_0700.s0630_course_schedule_iii
 
 // #Hard #Array #Greedy #Heap_Priority_Queue #2023_02_09_Time_536_ms_(100.00%)_Space_58_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 class Solution {
     fun scheduleCourse(courses: Array<IntArray>): Int {
         // Sort the courses based on their deadline date.
-        Arrays.sort(courses) { a: IntArray, b: IntArray ->
+        courses.sortWith { a: IntArray, b: IntArray ->
             a[1] - b[1]
         }
         // Only the duration is stored. We don't care which course

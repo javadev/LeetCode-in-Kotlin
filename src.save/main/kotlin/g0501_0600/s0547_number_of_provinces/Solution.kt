@@ -5,12 +5,10 @@ package g0501_0600.s0547_number_of_provinces
 // #Graph_Theory_I_Day_8_Standard_Traversal #Level_2_Day_19_Union_Find
 // #2023_01_17_Time_229_ms_(79.73%)_Space_43_MB_(66.22%)
 
-import java.util.Arrays
-
 class Solution {
     fun findCircleNum(arr: Array<IntArray>): Int {
         val parent = IntArray(arr.size)
-        Arrays.fill(parent, -1)
+        parent.fill(-1)
         var ans = 0
         for (i in 0 until arr.size - 1) {
             for (j in i + 1 until arr[i].size) {
