@@ -3,8 +3,8 @@ package g0501_0600.s0520_detect_capital
 // #Easy #String #2023_01_13_Time_161_ms_(84.54%)_Space_33.9_MB_(92.99%)
 
 class Solution {
-    fun detectCapitalUse(word: String?): Boolean {
-        if (word == null || word.length == 0) {
+    fun detectCapitalUse(word: String): Boolean {
+        if (word.isEmpty()) {
             return false
         }
         var upper = 0

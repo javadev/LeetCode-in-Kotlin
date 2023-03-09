@@ -14,7 +14,6 @@ class Solution {
             }
         }
         var value = 0
-
         if (gapMap.size > 0) {
             value = gapMap.values.max()
         }

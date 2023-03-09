@@ -11,7 +11,6 @@ package g0501_0600.s0558_logical_or_of_two_binary_grids_represented_as_quad_tree
  *     var bottomRight: Node? = null
  * }
  */
-
 class Solution {
     fun intersect(quadTree1: Node?, quadTree2: Node?): Node? {
         if (quadTree1!!.isLeaf) {

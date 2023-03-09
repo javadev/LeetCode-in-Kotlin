@@ -18,6 +18,7 @@ import com_github_leetcode.TreeNode
 class Solution {
     private var ans = Int.MAX_VALUE
     private var prev = Int.MAX_VALUE
+
     fun getMinimumDifference(root: TreeNode?): Int {
         if (root == null) {
             return ans
