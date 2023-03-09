@@ -1706,6 +1706,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0769 |[Max Chunks To Make Sorted](src/main/kotlin/g0701_0800/s0769_max_chunks_to_make_sorted/Solution.kt)| Medium | Array, Sorting, Greedy, Stack, Monotonic_Stack | 136 | 90.00
+| 0768 |[Max Chunks To Make Sorted II](src/main/kotlin/g0701_0800/s0768_max_chunks_to_make_sorted_ii/Solution.kt)| Hard | Array, Sorting, Greedy, Stack, Monotonic_Stack | 202 | 100.00
+| 0767 |[Reorganize String](src/main/kotlin/g0701_0800/s0767_reorganize_string/Solution.kt)| Medium | String, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting | 148 | 100.00
+| 0766 |[Toeplitz Matrix](src/main/kotlin/g0701_0800/s0766_toeplitz_matrix/Solution.kt)| Easy | Array, Matrix | 174 | 100.00
 | 0765 |[Couples Holding Hands](src/main/kotlin/g0701_0800/s0765_couples_holding_hands/Solution.kt)| Hard | Depth_First_Search, Greedy, Breadth_First_Search, Graph, Union_Find | 131 | 100.00
 | 0764 |[Largest Plus Sign](src/main/kotlin/g0701_0800/s0764_largest_plus_sign/Solution.kt)| Medium | Array, Dynamic_Programming | 415 | 100.00
 | 0763 |[Partition Labels](src/main/kotlin/g0701_0800/s0763_partition_labels/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String | 235 | 84.75
