@@ -1708,7 +1708,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
 | 0775 |[Global and Local Inversions](src/main/kotlin/g0701_0800/s0775_global_and_local_inversions/Solution.kt)| Medium | Array, Math | 495 | 100.00
 | 0773 |[Sliding Puzzle](src/main/kotlin/g0701_0800/s0773_sliding_puzzle/Solution.kt)| Hard | Array, Breadth_First_Search, Matrix | 166 | 100.00
-| 0771 |[Jewels and Stones](src/main/kotlin/g0701_0800/s0771_jewels_and_stones/Solution.kt)| |||
+| 0771 |[Jewels and Stones](src/main/kotlin/g0701_0800/s0771_jewels_and_stones/Solution.kt)| Easy | String, Hash_Table | 143 | 99.08
 | 0770 |[Basic Calculator IV](src/main/kotlin/g0701_0800/s0770_basic_calculator_iv/Solution.kt)| Hard | String, Hash_Table, Math, Stack, Recursion | 222 | 100.00
 | 0769 |[Max Chunks To Make Sorted](src/main/kotlin/g0701_0800/s0769_max_chunks_to_make_sorted/Solution.kt)| Medium | Array, Sorting, Greedy, Stack, Monotonic_Stack | 136 | 90.00
 | 0768 |[Max Chunks To Make Sorted II](src/main/kotlin/g0701_0800/s0768_max_chunks_to_make_sorted_ii/Solution.kt)| Hard | Array, Sorting, Greedy, Stack, Monotonic_Stack | 202 | 100.00
