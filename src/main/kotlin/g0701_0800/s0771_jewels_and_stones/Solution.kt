@@ -12,7 +12,7 @@ class Solution {
             x[jewels[i].code - 65]++
         }
         for (i in 0 until len2) {
-            if (x[stones[i].toInt() - 65] == 1) {
+            if (x[stones[i].code - 65] == 1) {
                 count++
             }
         }
