@@ -1,5 +1,7 @@
 package g0701_0800.s0780_reaching_points
 
+// #Hard #Math #2023_03_11_Time_139_ms_(100.00%)_Space_32.9_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun reachingPoints(sx: Int, sy: Int, tx: Int, ty: Int): Boolean {
