@@ -5,6 +5,7 @@ package g0601_0700.s0684_redundant_connection
 
 class Solution {
     private lateinit var par: IntArray
+
     fun findRedundantConnection(edges: Array<IntArray>): IntArray {
         val ans = IntArray(2)
         val n = edges.size
