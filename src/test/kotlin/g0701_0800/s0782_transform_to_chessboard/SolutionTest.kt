@@ -77,4 +77,19 @@ internal class SolutionTest {
             equalTo(2)
         )
     }
+
+    @Test
+    fun movesToChessboard7() {
+        assertThat(
+            Solution()
+                .movesToChessboard(
+                    arrayOf(
+                        intArrayOf(1, 0, 0),
+                        intArrayOf(0, 1, 1),
+                        intArrayOf(1, 0, 0)
+                    )
+                ),
+            equalTo(1)
+        )
+    }
 }
