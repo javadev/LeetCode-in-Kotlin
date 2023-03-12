@@ -7,6 +7,7 @@ import java.util.Locale
 
 class Solution {
     private val ans: MutableList<String> = ArrayList()
+
     fun letterCasePermutation(s: String): List<String> {
         helper(s, 0, "")
         return ans
