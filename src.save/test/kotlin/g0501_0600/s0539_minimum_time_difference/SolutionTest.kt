@@ -23,7 +23,7 @@ internal class SolutionTest {
     fun findMinDifference3() {
         val timePoints: MutableList<String> = ArrayList()
         IntStream.rangeClosed(0, 310 / 2)
-            .forEach { index: Int ->
+            .forEach { _: Int ->
                 timePoints.add("23:59")
                 timePoints.add("00:00")
             }

@@ -6,7 +6,7 @@ package g0101_0200.s0108_convert_sorted_array_to_binary_search_tree
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`

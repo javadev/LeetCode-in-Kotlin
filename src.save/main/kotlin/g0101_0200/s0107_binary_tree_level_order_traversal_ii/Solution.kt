@@ -7,7 +7,7 @@ import com_github_leetcode.TreeNode
 import java.util.Collections
 import kotlin.collections.ArrayList
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`

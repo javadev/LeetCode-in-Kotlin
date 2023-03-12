@@ -9,6 +9,6 @@ class Solution {
      * Space: O(1)
      */
     fun kthGrammar(n: Int, k: Int): Int {
-        return Integer.bitCount(k - 1) % 2
+        return Integer.bitCount(k - 1) % 2 + n - n
     }
 }
