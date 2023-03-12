@@ -22,10 +22,10 @@ class Solution {
         } else {
             if (Character.isLowerCase(s[curr])) {
                 helper(s, curr + 1, temp + s[curr])
-                helper(s, curr + 1, temp + s.substring(curr, curr + 1).toUpperCase(Locale.getDefault()))
+                helper(s, curr + 1, temp + s.substring(curr, curr + 1).uppercase(Locale.getDefault()))
             } else {
                 helper(s, curr + 1, temp + s[curr])
-                helper(s, curr + 1, temp + s.substring(curr, curr + 1).toLowerCase(Locale.getDefault()))
+                helper(s, curr + 1, temp + s.substring(curr, curr + 1).lowercase(Locale.getDefault()))
             }
         }
     }
