@@ -5,7 +5,7 @@ package g0101_0200.s0106_construct_binary_tree_from_inorder_and_postorder_traver
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`

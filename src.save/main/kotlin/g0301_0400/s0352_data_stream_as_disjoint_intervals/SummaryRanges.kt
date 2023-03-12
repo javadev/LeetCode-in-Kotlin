@@ -58,7 +58,7 @@ class SummaryRanges {
     }
 }
 
-/**
+/*
  * Your SummaryRanges object will be instantiated and called as such:
  * var obj = SummaryRanges()
  * obj.addNum(value)
