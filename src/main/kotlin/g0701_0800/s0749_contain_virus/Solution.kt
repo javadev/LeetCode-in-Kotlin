@@ -8,6 +8,7 @@ class Solution {
     private var m = 0
     private var n = 0
     private val dirs = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
+
     fun containVirus(grid: Array<IntArray>): Int {
         m = grid.size
         n = grid[0].size

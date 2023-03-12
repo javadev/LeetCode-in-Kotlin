@@ -8,6 +8,7 @@ import java.util.Queue
 
 class Solution {
     private val dir = intArrayOf(-1, 0, 1, 0, -1)
+
     fun swimInWater(grid: Array<IntArray>): Int {
         var max = 0
         // find the maximum value in the matrix

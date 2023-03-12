@@ -4,8 +4,8 @@ package g0701_0800.s0724_find_pivot_index
 // #2023_02_28_Time_255_ms_(88.92%)_Space_38.7_MB_(93.26%)
 
 class Solution {
-    fun pivotIndex(nums: IntArray?): Int {
-        if (nums == null || nums.isEmpty()) {
+    fun pivotIndex(nums: IntArray): Int {
+        if (nums.isEmpty()) {
             return -1
         }
         val sums = IntArray(nums.size)

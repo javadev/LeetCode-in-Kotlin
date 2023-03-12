@@ -6,7 +6,7 @@ package g0701_0800.s0783_minimum_distance_between_bst_nodes
 import com_github_leetcode.TreeNode
 import kotlin.math.abs
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
