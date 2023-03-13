@@ -1,5 +1,7 @@
 package g0701_0800.s0790_domino_and_tromino_tiling
 
+// #Medium #Dynamic_Programming #2023_03_13_Time_116_ms_(100.00%)_Space_32.6_MB_(100.00%)
+
 class Solution {
     fun numTilings(n: Int): Int {
         val result = when (n) {
@@ -23,7 +25,6 @@ class Solution {
                 return dp[n].toInt() % 1000000007
             }
         }
-
         return result
     }
 }
