@@ -1,31 +1,30 @@
-790\. Domino and Tromino Tiling
+791\. Custom Sort String
 
 Medium
 
-You have two types of tiles: a `2 x 1` domino shape and a tromino shape. You may rotate these shapes.
+You are given two strings order and s. All the words of `order` are **unique** and were sorted in some custom order previously.
 
-![](https://assets.leetcode.com/uploads/2021/07/15/lc-domino.jpg)
+Permute the characters of `s` so that they match the order that `order` was sorted. More specifically, if a character `x` occurs before a character `y` in `order`, then `x` should occur before `y` in the permuted string.
 
-Given an integer n, return _the number of ways to tile an_ `2 x n` _board_. Since the answer may be very large, return it **modulo** <code>10<sup>9</sup> + 7</code>.
-
-In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
+Return _any permutation of_ `s` _that satisfies this property_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/15/lc-domino1.jpg)
+**Input:** order = "cba", s = "abcd"
 
-**Input:** n = 3
+**Output:** "cbad"
 
-**Output:** 5
-
-**Explanation:** The five different ways are show above.
+**Explanation:** "a", "b", "c" appear in order, so the order of "a", "b", "c" should be "c", "b", and "a". Since "d" does not appear in order, it can be at any position in the returned string. "dcba", "cdba", "cbda" are also valid outputs. 
 
 **Example 2:**
 
-**Input:** n = 1
+**Input:** order = "cbafg", s = "abcd"
 
-**Output:** 1
+**Output:** "cbad" 
 
 **Constraints:**
 
-*   `1 <= n <= 1000`
+*   `1 <= order.length <= 26`
+*   `1 <= s.length <= 200`
+*   `order` and `s` consist of lowercase English letters.
+*   All the characters of `order` are **unique**.
