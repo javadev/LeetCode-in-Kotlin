@@ -1708,6 +1708,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0792 |[Number of Matching Subsequences](src/main/kotlin/g0701_0800/s0792_number_of_matching_subsequences/Solution.kt)| Medium | String, Hash_Table, Sorting, Trie | 346 | 100.00
+| 0791 |[Domino and Tromino Tiling](src/main/kotlin/g0701_0800/s0791_custom_sort_string/Solution.kt)| Medium | String, Hash_Table, Sorting | 133 | 90.00
+| 0790 |[Domino and Tromino Tiling](src/main/kotlin/g0701_0800/s0790_domino_and_tromino_tiling/Solution.kt)| |||
+| 0789 |[Escape The Ghosts](src/main/kotlin/g0701_0800/s0789_escape_the_ghosts/Solution.kt)| Medium | Array, Math | 187 | 100.00
 | 0788 |[Rotated Digits](src/main/kotlin/g0701_0800/s0788_rotated_digits/Solution.kt)| Medium | Dynamic_Programming, Math | 137 | 80.00
 | 0787 |[Cheapest Flights Within K Stops](src/main/kotlin/g0701_0800/s0787_cheapest_flights_within_k_stops/Solution.kt)| Medium | Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Heap_Priority_Queue, Graph, Shortest_Path | 185 | 99.20
 | 0786 |[K-th Smallest Prime Fraction](src/main/kotlin/g0701_0800/s0786_k_th_smallest_prime_fraction/Solution.kt)| Medium | Array, Binary_Search, Heap_Priority_Queue | 165 | 100.00
