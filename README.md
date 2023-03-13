@@ -130,6 +130,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0785 |[Is Graph Bipartite?](src/main/kotlin/g0701_0800/s0785_is_graph_bipartite/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 215 | 82.35
 
 ### SQL I
 
@@ -1707,6 +1708,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0788 |[Rotated Digits](src/main/kotlin/g0701_0800/s0788_rotated_digits/Solution.kt)| Medium | Dynamic_Programming, Math | 137 | 80.00
+| 0787 |[Cheapest Flights Within K Stops](src/main/kotlin/g0701_0800/s0787_cheapest_flights_within_k_stops/Solution.kt)| Medium | Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Heap_Priority_Queue, Graph, Shortest_Path | 185 | 99.20
+| 0786 |[K-th Smallest Prime Fraction](src/main/kotlin/g0701_0800/s0786_k_th_smallest_prime_fraction/Solution.kt)| Medium | Array, Binary_Search, Heap_Priority_Queue | 165 | 100.00
+| 0785 |[Is Graph Bipartite?](src/main/kotlin/g0701_0800/s0785_is_graph_bipartite/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_14_Graph_Theory | 215 | 82.35
 | 0784 |[Letter Case Permutation](src/main/kotlin/g0701_0800/s0784_letter_case_permutation/Solution.kt)| Medium | String, Bit_Manipulation, Backtracking, Algorithm_I_Day_11_Recursion_Backtracking | 219 | 84.62
 | 0783 |[Minimum Distance Between BST Nodes](src/main/kotlin/g0701_0800/s0783_minimum_distance_between_bst_nodes/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 144 | 96.35
 | 0782 |[Transform to Chessboard](src/main/kotlin/g0701_0800/s0782_transform_to_chessboard/Solution.kt)| Hard | Array, Math, Matrix, Bit_Manipulation | 188 | 100.00
