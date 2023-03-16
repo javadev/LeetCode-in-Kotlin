@@ -3,15 +3,13 @@ package g0701_0800.s0787_cheapest_flights_within_k_stops
 // #Medium #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Heap_Priority_Queue
 // #Graph #Shortest_Path #2023_03_13_Time_185_ms_(99.20%)_Space_36.6_MB_(89.64%)
 
-import java.util.Arrays
-
 class Solution {
     fun findCheapestPrice(n: Int, flights: Array<IntArray>, src: Int, dst: Int, k: Int): Int {
         // k + 2 becase there are total of k(intermediate stops) + 1(src) + 1(dst)
         // dp[i][j] = cost to reach j using atmost i edges from src
         val dp = Array(k + 2) { IntArray(n) }
         for (row in dp) {
-            Arrays.fill(row, Int.MAX_VALUE)
+            row.fill(Int.MAX_VALUE)
         }
         // cost to reach src is always 0
         for (i in 0..k + 1) {
