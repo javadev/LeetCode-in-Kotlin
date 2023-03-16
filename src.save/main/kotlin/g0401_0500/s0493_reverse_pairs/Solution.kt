@@ -3,8 +3,6 @@ package g0401_0500.s0493_reverse_pairs
 // #Hard #Array #Binary_Search #Ordered_Set #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree
 // #Merge_Sort #2023_01_04_Time_887_ms_(66.67%)_Space_73.9_MB_(66.67%)
 
-import java.util.Arrays
-
 class Solution {
     fun reversePairs(nums: IntArray): Int {
         return mergeSort(nums, 0, nums.size - 1)
@@ -25,7 +23,7 @@ class Solution {
             }
             cnt += j - (mid + 1)
         }
-        Arrays.sort(nums, start, end + 1)
+        nums.sort(start, end + 1)
         return cnt
     }
 }
