@@ -3,18 +3,17 @@ package g0801_0900.s0805_split_array_with_same_average
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask
 // #2023_03_16_Time_142_ms_(100.00%)_Space_33.7_MB_(100.00%)
 
-import java.util.Arrays
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var nums: IntArray
     private lateinit var sums: IntArray
+
     fun splitArraySameAverage(nums: IntArray): Boolean {
         val len = nums.size
         if (len == 1) {
             return false
         }
-        Arrays.sort(nums)
+        nums.sort()
         sums = IntArray(len + 1)
         for (i in 0 until len) {
             sums[i + 1] = sums[i] + nums[i]
