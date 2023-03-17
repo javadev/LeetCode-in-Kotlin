@@ -1711,6 +1711,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0813 |[Largest Sum of Averages](src/main/kotlin/g0801_0900/s0813_largest_sum_of_averages/Solution.kt)| Medium | Array, Dynamic_Programming | 160 | 100.00
+| 0812 |[Largest Triangle Area](src/main/kotlin/g0801_0900/s0812_largest_triangle_area/Solution.kt)| Easy | Array, Math, Geometry | 156 | 71.43
+| 0811 |[Subdomain Visit Count](src/main/kotlin/g0801_0900/s0811_subdomain_visit_count/Solution.kt)| Medium | Array, String, Hash_Table, Counting | 220 | 100.00
+| 0810 |[Chalkboard XOR Game](src/main/kotlin/g0801_0900/s0810_chalkboard_xor_game/Solution.kt)| Hard | Array, Math, Bit_Manipulation, Game_Theory, Brainteaser | 172 | 100.00
 | 0809 |[Expressive Words](src/main/kotlin/g0801_0900/s0809_expressive_words/Solution.kt)| Medium | Array, String, Two_Pointers | 158 | 100.00
 | 0808 |[Soup Servings](src/main/kotlin/g0801_0900/s0808_soup_servings/Solution.kt)| Medium | Dynamic_Programming, Math, Probability_and_Statistics | 112 | 100.00
 | 0807 |[Max Increase to Keep City Skyline](src/main/kotlin/g0801_0900/s0807_max_increase_to_keep_city_skyline/Solution.kt)| Medium | Array, Greedy, Matrix | 158 | 100.00
