@@ -8,7 +8,7 @@ class Solution {
         var line = 0
         var i = 0
         while (i < s.length) {
-            count += widths[s[i].toInt() - 'a'.toInt()]
+            count += widths[s[i].code - 'a'.code]
             if (count == 100) {
                 line++
                 count = 0
