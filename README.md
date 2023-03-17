@@ -1711,6 +1711,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0809 |[Expressive Words](src/main/kotlin/g0801_0900/s0809_expressive_words/Solution.kt)| Medium | Array, String, Two_Pointers | 158 | 100.00
+| 0808 |[Soup Servings](src/main/kotlin/g0801_0900/s0808_soup_servings/Solution.kt)| Medium | Dynamic_Programming, Math, Probability_and_Statistics | 112 | 100.00
+| 0807 |[Max Increase to Keep City Skyline](src/main/kotlin/g0801_0900/s0807_max_increase_to_keep_city_skyline/Solution.kt)| Medium | Array, Greedy, Matrix | 158 | 100.00
+| 0806 |[Number of Lines To Write String](src/main/kotlin/g0801_0900/s0806_number_of_lines_to_write_string/Solution.kt)| Easy | Array, String | 134 | 100.00
 | 0805 |[Split Array With Same Average](src/main/kotlin/g0801_0900/s0805_split_array_with_same_average/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Bitmask | 142 | 100.00
 | 0804 |[Unique Morse Code Words](src/main/kotlin/g0801_0900/s0804_unique_morse_code_words/Solution.kt)| Easy | Array, String, Hash_Table | 158 | 80.00
 | 0803 |[Bricks Falling When Hit](src/main/kotlin/g0801_0900/s0803_bricks_falling_when_hit/Solution.kt)| Hard | Array, Matrix, Union_Find | 742 | 100.00
