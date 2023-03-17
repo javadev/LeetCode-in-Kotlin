@@ -17,13 +17,7 @@ class Solution {
     private fun check(s: String, w: String): Boolean {
         var i = 0
         var j = 0
-        /* Logic is to check whether character at same index of S and w are same
-          if same,
-           1. Find the consecutive number of occurrences of the char in S (say len1) and w ( say len2)
-           2. If len1 == len 2 , move to the next char in S and w
-           3. If  len1 >= 3 and len2 < len1, means we can make the char in w stretchy to match len1
-           4. else, return false, because it's not possible to stretch the char in w
-        */while (i < s.length && j < w.length) {
+        while (i < s.length && j < w.length) {
             val ch1 = s[i]
             val ch2 = w[j]
             val len1 = getLen(s, i)
