@@ -2,6 +2,7 @@ package g0801_0900.s0816_ambiguous_coordinates
 
 // #Medium #String #Backtracking #2023_03_22_Time_231_ms_(100.00%)_Space_36.2_MB_(100.00%)
 
+@Suppress("kotlin:S107")
 class Solution {
     fun ambiguousCoordinates(s: String): List<String> {
         val sc = s.toCharArray()
