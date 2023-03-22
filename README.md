@@ -379,6 +379,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0210 |[Course Schedule II](src.save/main/kotlin/g0201_0300/s0210_course_schedule_ii/Solution.kt)| Medium | Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 266 | 96.32
+| 0815 |[Bus Routes](src/main/kotlin/g0801_0900/s0815_bus_routes/Solution.kt)| Hard | Array, Hash_Table, Breadth_First_Search | 429 | 100.00
 
 #### Day 12 Dynamic Programming
 
@@ -1711,6 +1712,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0817 |[Linked List Components](src/main/kotlin/g0801_0900/s0817_linked_list_components/Solution.kt)| Medium | Hash_Table, Linked_List | 239 | 100.00
+| 0816 |[Ambiguous Coordinates](src/main/kotlin/g0801_0900/s0816_ambiguous_coordinates/Solution.kt)| Medium | String, Backtracking | 231 | 100.00
+| 0815 |[Bus Routes](src/main/kotlin/g0801_0900/s0815_bus_routes/Solution.kt)| Hard | Array, Hash_Table, Breadth_First_Search, Level_2_Day_11_Graph/BFS/DFS | 429 | 100.00
+| 0814 |[Binary Tree Pruning](src/main/kotlin/g0801_0900/s0814_binary_tree_pruning/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 127 | 100.00
 | 0813 |[Largest Sum of Averages](src/main/kotlin/g0801_0900/s0813_largest_sum_of_averages/Solution.kt)| Medium | Array, Dynamic_Programming | 160 | 100.00
 | 0812 |[Largest Triangle Area](src/main/kotlin/g0801_0900/s0812_largest_triangle_area/Solution.kt)| Easy | Array, Math, Geometry | 156 | 71.43
 | 0811 |[Subdomain Visit Count](src/main/kotlin/g0801_0900/s0811_subdomain_visit_count/Solution.kt)| Medium | Array, String, Hash_Table, Counting | 220 | 100.00
