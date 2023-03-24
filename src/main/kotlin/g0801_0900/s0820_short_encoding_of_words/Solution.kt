@@ -24,7 +24,7 @@ class Solution {
 
     fun minimumLengthEncoding(words: Array<String>): Int {
         var out = 0
-        words.sort { a: String, b: String -> b.length - a.length }
+        words.sortWith { a: String, b: String -> b.length - a.length }
         val node = Node()
         for (word in words) {
             if (insert(node, word)) {
