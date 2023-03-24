@@ -1712,6 +1712,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0821 |[Shortest Distance to a Character](src/main/kotlin/g0801_0900/s0821_shortest_distance_to_a_character/Solution.kt)| Easy | Array, String, Two_Pointers | 168 | 88.00
+| 0820 |[Short Encoding of Words](src/main/kotlin/g0801_0900/s0820_short_encoding_of_words/Solution.kt)| Medium | Array, String, Hash_Table, Trie | 231 | 100.00
+| 0819 |[Most Common Word](src/main/kotlin/g0801_0900/s0819_most_common_word/Solution.kt)| Easy | String, Hash_Table, Counting | 211 | 83.33
+| 0818 |[Race Car](src/main/kotlin/g0801_0900/s0818_race_car/Solution.kt)| Hard | Dynamic_Programming | 123 | 100.00
 | 0817 |[Linked List Components](src/main/kotlin/g0801_0900/s0817_linked_list_components/Solution.kt)| Medium | Hash_Table, Linked_List | 239 | 100.00
 | 0816 |[Ambiguous Coordinates](src/main/kotlin/g0801_0900/s0816_ambiguous_coordinates/Solution.kt)| Medium | String, Backtracking | 231 | 100.00
 | 0815 |[Bus Routes](src/main/kotlin/g0801_0900/s0815_bus_routes/Solution.kt)| Hard | Array, Hash_Table, Breadth_First_Search, Level_2_Day_11_Graph/BFS/DFS | 429 | 100.00
