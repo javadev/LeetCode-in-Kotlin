@@ -3,8 +3,6 @@ package g0801_0900.s0820_short_encoding_of_words
 // #Medium #Array #String #Hash_Table #Trie
 // #2023_03_24_Time_231_ms_(100.00%)_Space_41.2_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     private class Node {
         var nodes = arrayOfNulls<Node>(26)
@@ -26,7 +24,7 @@ class Solution {
 
     fun minimumLengthEncoding(words: Array<String>): Int {
         var out = 0
-        Arrays.sort(words) { a: String, b: String -> b.length - a.length }
+        words.sort { a: String, b: String -> b.length - a.length }
         val node = Node()
         for (word in words) {
             if (insert(node, word)) {
