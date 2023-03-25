@@ -1299,6 +1299,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0826 |[Most Profit Assigning Work](src/main/kotlin/g0801_0900/s0826_most_profit_assigning_work/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 366 | 100.00
 | 0436 |[Find Right Interval](src.save/main/kotlin/g0401_0500/s0436_find_right_interval/Solution.kt)| Medium | Array, Sorting, Binary_Search | 333 | 100.00
 
 #### Day 12
@@ -1712,6 +1713,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0829 |[Consecutive Numbers Sum](src/main/kotlin/g0801_0900/s0829_consecutive_numbers_sum/Solution.kt)| Hard | Math, Enumeration | 151 | 100.00
+| 0828 |[Count Unique Characters of All Substrings of a Given String](src/main/kotlin/g0801_0900/s0828_count_unique_characters_of_all_substrings_of_a_given_string/Solution.kt)| Hard | String, Hash_Table, Dynamic_Programming | 216 | 100.00
+| 0827 |[Making A Large Island](src/main/kotlin/g0801_0900/s0827_making_a_large_island/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 985 | 100.00
+| 0826 |[Most Profit Assigning Work](src/main/kotlin/g0801_0900/s0826_most_profit_assigning_work/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers, Binary_Search_II_Day_11 | 366 | 100.00
 | 0825 |[Friends Of Appropriate Ages](src/main/kotlin/g0801_0900/s0825_friends_of_appropriate_ages/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 278 | 100.00
 | 0824 |[Goat Latin](src/main/kotlin/g0801_0900/s0824_goat_latin/Solution.kt)| Easy | String | 146 | 100.00
 | 0823 |[Binary Trees With Factors](src/main/kotlin/g0801_0900/s0823_binary_trees_with_factors/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 298 | 100.00
