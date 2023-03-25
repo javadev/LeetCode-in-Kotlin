@@ -6,6 +6,7 @@ package g0801_0900.s0827_making_a_large_island
 class Solution {
     private lateinit var p: IntArray
     private lateinit var s: IntArray
+
     private fun makeSet(x: Int, y: Int, rl: Int) {
         val a = x * rl + y
         p[a] = a
