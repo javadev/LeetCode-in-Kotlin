@@ -1712,6 +1712,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0825 |[Friends Of Appropriate Ages](src/main/kotlin/g0801_0900/s0825_friends_of_appropriate_ages/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 278 | 100.00
+| 0824 |[Goat Latin](src/main/kotlin/g0801_0900/s0824_goat_latin/Solution.kt)| Easy | String | 146 | 100.00
+| 0823 |[Binary Trees With Factors](src/main/kotlin/g0801_0900/s0823_binary_trees_with_factors/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 298 | 100.00
+| 0822 |[Card Flipping Game](src/main/kotlin/g0801_0900/s0822_card_flipping_game/Solution.kt)| Medium | Array, Hash_Table | 186 | 100.00
 | 0821 |[Shortest Distance to a Character](src/main/kotlin/g0801_0900/s0821_shortest_distance_to_a_character/Solution.kt)| Easy | Array, String, Two_Pointers | 168 | 88.00
 | 0820 |[Short Encoding of Words](src/main/kotlin/g0801_0900/s0820_short_encoding_of_words/Solution.kt)| Medium | Array, String, Hash_Table, Trie | 231 | 100.00
 | 0819 |[Most Common Word](src/main/kotlin/g0801_0900/s0819_most_common_word/Solution.kt)| Easy | String, Hash_Table, Counting | 211 | 83.33
