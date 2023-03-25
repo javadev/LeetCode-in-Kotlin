@@ -3,8 +3,6 @@ package g0801_0900.s0828_count_unique_characters_of_all_substrings_of_a_given_st
 // #Hard #String #Hash_Table #Dynamic_Programming
 // #2023_03_25_Time_216_ms_(100.00%)_Space_37.1_MB_(50.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun uniqueLetterString(s: String): Int {
         // Store last index of a character.
@@ -12,8 +10,8 @@ class Solution {
         // Store last to last index of a character.
         // Eg. For ABA - lastCharIdx = 2, prevLastCharIdx = 0.
         val prevLastCharIdx = IntArray(26)
-        Arrays.fill(lastCharIdx, -1)
-        Arrays.fill(prevLastCharIdx, -1)
+        lastCharIdx.fill(-1)
+        prevLastCharIdx.fill(-1)
         val len = s.length
         val dp = IntArray(len)
         var account = 1

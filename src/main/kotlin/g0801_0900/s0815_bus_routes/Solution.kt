@@ -3,7 +3,6 @@ package g0801_0900.s0815_bus_routes
 // #Hard #Array #Hash_Table #Breadth_First_Search #Level_2_Day_11_Graph/BFS/DFS
 // #2023_03_22_Time_429_ms_(100.00%)_Space_55.8_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.LinkedList
 import java.util.Queue
 import kotlin.collections.ArrayList
@@ -53,14 +52,14 @@ class Solution {
         val len = routes.size
         val graph: Array<ArrayList<Int>?> = arrayOfNulls(len)
         for (i in 0 until len) {
-            Arrays.sort(routes[i])
+            routes[i].sort()
             graph[i] = ArrayList()
-            var id = Arrays.binarySearch(routes[i], source)
+            var id = routes[i].binarySearch(source)
             if (id >= 0) {
                 queue.offer(i)
                 taken[i] = true
             }
-            id = Arrays.binarySearch(routes[i], target)
+            id = routes[i].binarySearch(target)
             if (id >= 0) {
                 targetRoutes.add(i)
             }

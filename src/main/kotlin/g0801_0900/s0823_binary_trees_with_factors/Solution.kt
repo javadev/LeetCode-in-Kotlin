@@ -3,13 +3,11 @@ package g0801_0900.s0823_binary_trees_with_factors
 // #Medium #Array #Hash_Table #Dynamic_Programming
 // #2023_03_25_Time_298_ms_(100.00%)_Space_45.1_MB_(100.00%)dsecx
 
-import java.util.Arrays
-
 class Solution {
     private val dp: MutableMap<Int, Long> = HashMap()
     private val nums: MutableMap<Int, Int> = HashMap()
     fun numFactoredBinaryTrees(arr: IntArray): Int {
-        Arrays.sort(arr)
+        arr.sort()
         for (i in arr.indices) {
             nums[arr[i]] = i
         }
