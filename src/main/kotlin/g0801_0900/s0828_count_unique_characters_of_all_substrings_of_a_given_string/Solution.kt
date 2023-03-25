@@ -18,11 +18,11 @@ class Solution {
         val dp = IntArray(len)
         var account = 1
         dp[0] = 1
-        lastCharIdx[s[0].toInt() - 'A'.toInt()] = 0
-        prevLastCharIdx[s[0].toInt() - 'A'.toInt()] = 0
+        lastCharIdx[s[0].code - 'A'.code] = 0
+        prevLastCharIdx[s[0].code - 'A'.code] = 0
         for (i in 1 until len) {
             val ch = s[i]
-            val chIdx = ch.toInt() - 'A'.toInt()
+            val chIdx = ch.code - 'A'.code
             val lastSeenIdx = lastCharIdx[chIdx]
             val prevLastIdx = prevLastCharIdx[chIdx]
             dp[i] = dp[i - 1] + 1
