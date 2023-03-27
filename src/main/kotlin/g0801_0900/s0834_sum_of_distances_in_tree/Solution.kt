@@ -3,8 +3,6 @@ package g0801_0900.s0834_sum_of_distances_in_tree
 // #Hard #Dynamic_Programming #Depth_First_Search #Tree #Graph
 // #2023_03_27_Time_746_ms_(100.00%)_Space_65.9_MB_(100.00%)
 
-
-
 class Solution {
     private var n = 0
     private lateinit var count: IntArray
