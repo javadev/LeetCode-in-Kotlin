@@ -1713,6 +1713,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0833 |[Find And Replace in String](src/main/kotlin/g0801_0900/s0833_find_and_replace_in_string/Solution.kt)| Medium | Array, String, Sorting | 158 | 100.00
+| 0832 |[Flipping an Image](src/main/kotlin/g0801_0900/s0832_flipping_an_image/Solution.kt)| Easy | Array, Matrix, Two_Pointers, Simulation | 190 | 94.44
+| 0831 |[Masking Personal Information](src/main/kotlin/g0801_0900/s0831_masking_personal_information/Solution.kt)| Medium | String | 149 | 100.00
+| 0830 |[Positions of Large Groups](src/main/kotlin/g0801_0900/s0830_positions_of_large_groups/Solution.kt)| Easy | String | 221 | 100.00
 | 0829 |[Consecutive Numbers Sum](src/main/kotlin/g0801_0900/s0829_consecutive_numbers_sum/Solution.kt)| Hard | Math, Enumeration | 151 | 100.00
 | 0828 |[Count Unique Characters of All Substrings of a Given String](src/main/kotlin/g0801_0900/s0828_count_unique_characters_of_all_substrings_of_a_given_string/Solution.kt)| Hard | String, Hash_Table, Dynamic_Programming | 216 | 100.00
 | 0827 |[Making A Large Island](src/main/kotlin/g0801_0900/s0827_making_a_large_island/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 985 | 100.00
