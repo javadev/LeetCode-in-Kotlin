@@ -1713,6 +1713,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0837 |[New 21 Game](src/main/kotlin/g0801_0900/s0837_new_21_game/Solution.kt)| Medium | Dynamic_Programming, Math, Sliding_Window, Probability_and_Statistics | 144 | 75.00
+| 0836 |[Rectangle Overlap](src/main/kotlin/g0801_0900/s0836_rectangle_overlap/Solution.kt)| Easy | Math, Geometry | 121 | 100.00
+| 0835 |[Image Overlap](src/main/kotlin/g0801_0900/s0835_image_overlap/Solution.kt)| Medium | Array, Matrix | 163 | 100.00
+| 0834 |[Sum of Distances in Tree](src/main/kotlin/g0801_0900/s0834_sum_of_distances_in_tree/Solution.kt)| Hard | Dynamic_Programming, Depth_First_Search, Tree, Graph | 746 | 100.00
 | 0833 |[Find And Replace in String](src/main/kotlin/g0801_0900/s0833_find_and_replace_in_string/Solution.kt)| Medium | Array, String, Sorting | 158 | 100.00
 | 0832 |[Flipping an Image](src/main/kotlin/g0801_0900/s0832_flipping_an_image/Solution.kt)| Easy | Array, Matrix, Two_Pointers, Simulation | 190 | 94.44
 | 0831 |[Masking Personal Information](src/main/kotlin/g0801_0900/s0831_masking_personal_information/Solution.kt)| Medium | String | 149 | 100.00
