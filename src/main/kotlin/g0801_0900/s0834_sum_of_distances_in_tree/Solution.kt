@@ -8,6 +8,7 @@ class Solution {
     private lateinit var count: IntArray
     private lateinit var answer: IntArray
     private lateinit var graph: Array<MutableList<Int>?>
+
     private fun postorder(node: Int, parent: Int) {
         for (child in graph[node]!!) {
             if (child != parent) {
