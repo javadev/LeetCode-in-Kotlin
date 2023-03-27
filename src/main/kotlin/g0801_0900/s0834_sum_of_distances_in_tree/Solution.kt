@@ -3,7 +3,7 @@ package g0801_0900.s0834_sum_of_distances_in_tree
 // #Hard #Dynamic_Programming #Depth_First_Search #Tree #Graph
 // #2023_03_27_Time_746_ms_(100.00%)_Space_65.9_MB_(100.00%)
 
-import java.util.Arrays
+
 
 class Solution {
     private var n = 0
@@ -34,7 +34,7 @@ class Solution {
         count = IntArray(n)
         answer = IntArray(n)
         graph = arrayOfNulls(n)
-        Arrays.fill(count, 1)
+        count.fill(1)
         for (i in 0 until n) {
             graph[i] = ArrayList()
         }
