@@ -91,6 +91,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0797 |[All Paths From Source to Target](src/main/kotlin/g0701_0800/s0797_all_paths_from_source_to_target/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Backtracking | 232 | 100.00
+| 0841 |[Keys and Rooms](src/main/kotlin/g0801_0900/s0841_keys_and_rooms/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 189 | 69.23
 
 #### Day 8 Standard Traversal
 
@@ -891,6 +892,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0841 |[Keys and Rooms](src/main/kotlin/g0801_0900/s0841_keys_and_rooms/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 189 | 69.23
 
 #### Day 20 Heap Priority Queue
 
@@ -1713,6 +1715,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.10'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0841 |[Keys and Rooms](src/main/kotlin/g0801_0900/s0841_keys_and_rooms/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Data_Structure_II_Day_19_Graph, Graph_Theory_I_Day_7_Standard_Traversal | 189 | 69.23
+| 0840 |[Magic Squares In Grid](src/main/kotlin/g0801_0900/s0840_magic_squares_in_grid/Solution.kt)| Medium | Array, Math, Matrix | 149 | 100.00
+| 0839 |[Similar String Groups](src/main/kotlin/g0801_0900/s0839_similar_string_groups/Solution.kt)| Hard | Array, String, Depth_First_Search, Breadth_First_Search, Union_Find | 205 | 100.00
+| 0838 |[Push Dominoes](src/main/kotlin/g0801_0900/s0838_push_dominoes/Solution.kt)| Medium | String, Dynamic_Programming, Two_Pointers | 270 | 100.00
 | 0837 |[New 21 Game](src/main/kotlin/g0801_0900/s0837_new_21_game/Solution.kt)| Medium | Dynamic_Programming, Math, Sliding_Window, Probability_and_Statistics | 144 | 75.00
 | 0836 |[Rectangle Overlap](src/main/kotlin/g0801_0900/s0836_rectangle_overlap/Solution.kt)| Easy | Math, Geometry | 121 | 100.00
 | 0835 |[Image Overlap](src/main/kotlin/g0801_0900/s0835_image_overlap/Solution.kt)| Medium | Array, Matrix | 163 | 100.00
