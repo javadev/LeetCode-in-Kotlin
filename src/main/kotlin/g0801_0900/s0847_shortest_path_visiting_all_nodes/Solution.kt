@@ -7,7 +7,6 @@ package g0801_0900.s0847_shortest_path_visiting_all_nodes
 import java.util.LinkedList
 import java.util.Objects
 import java.util.Queue
-import kotlin.collections.indices
 
 class Solution {
     fun shortestPathLength(graph: Array<IntArray>): Int {
