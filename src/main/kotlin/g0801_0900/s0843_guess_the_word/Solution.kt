@@ -18,7 +18,8 @@ class Solution {
     }
 
     private var next = 0
-    fun findSecretWord(wordlist: Array<String?>, master: Master) {
+
+    fun findSecretWord(wordlist: Array<String>, master: Master) {
         val list = listOf(*wordlist)
         Collections.shuffle(list)
         val test = BooleanArray(wordlist.size)
