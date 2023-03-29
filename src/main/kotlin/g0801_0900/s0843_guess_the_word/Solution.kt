@@ -24,7 +24,7 @@ class Solution {
         Collections.shuffle(list)
         val test = BooleanArray(wordlist.size)
         while (true) {
-            val num = master.guess(list[next]!!)
+            val num = master.guess(list[next])
             if (num == 6) {
                 break
             }
