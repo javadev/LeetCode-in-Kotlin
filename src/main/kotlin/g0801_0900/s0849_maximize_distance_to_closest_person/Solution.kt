@@ -4,6 +4,7 @@ package g0801_0900.s0849_maximize_distance_to_closest_person
 
 class Solution {
     private var maxDist = 0
+
     fun maxDistToClosest(seats: IntArray): Int {
         for (i in seats.indices) {
             if (seats[i] == 0) {
