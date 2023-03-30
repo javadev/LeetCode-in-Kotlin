@@ -1,6 +1,6 @@
 # LeetCode-in-Kotlin
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-kotlin?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-kotlin/1.10)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-kotlin?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-kotlin/1.11)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg) ](https://github.com/javadev/leetcode-in-kotlin/blob/main/LICENSE)
 [![Java CI with Maven](https://github.com/javadev/LeetCode-in-Kotlin/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Kotlin/actions/workflows/maven.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Kotlin&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Kotlin)
@@ -1176,6 +1176,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0035 |[Search Insert Position](src/main/kotlin/g0001_0100/s0035_search_insert_position/Solution.kt)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 267 | 50.32
+| 0852 |[Peak Index in a Mountain Array](src/main/kotlin/g0801_0900/s0852_peak_index_in_a_mountain_array/Solution.kt)| Easy | Array, Binary_Search | 433 | 94.29
 
 #### Day 3
 
@@ -1718,6 +1719,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0853 |[Car Fleet](src/main/kotlin/g0801_0900/s0853_car_fleet/Solution.kt)| Medium | Array, Sorting, Stack, Monotonic_Stack | 757 | 85.29
+| 0852 |[Peak Index in a Mountain Array](src/main/kotlin/g0801_0900/s0852_peak_index_in_a_mountain_array/Solution.kt)| Easy | Array, Binary_Search, Binary_Search_I_Day_2 | 433 | 94.29
+| 0851 |[Loud and Rich](src/main/kotlin/g0801_0900/s0851_loud_and_rich/Solution.kt)| Medium | Array, Depth_First_Search, Graph, Topological_Sort | 347 | 100.00
+| 0850 |[Rectangle Area II](src/main/kotlin/g0801_0900/s0850_rectangle_area_ii/Solution.kt)| Hard | Array, Ordered_Set, Segment_Tree, Line_Sweep | 171 | 100.00
 | 0849 |[Maximize Distance to Closest Person](src/main/kotlin/g0801_0900/s0849_maximize_distance_to_closest_person/Solution.kt)| Medium | Array | 196 | 88.46
 | 0848 |[Shifting Letters](src/main/kotlin/g0801_0900/s0848_shifting_letters/Solution.kt)| Medium | Array, String | 537 | 93.75
 | 0847 |[Shortest Path Visiting All Nodes](src/main/kotlin/g0801_0900/s0847_shortest_path_visiting_all_nodes/Solution.kt)| Hard | Dynamic_Programming, Breadth_First_Search, Bit_Manipulation, Graph, Bitmask, Graph_Theory_I_Day_10_Standard_Traversal | 164 | 100.00
