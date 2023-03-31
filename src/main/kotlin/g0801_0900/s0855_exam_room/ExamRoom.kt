@@ -76,7 +76,7 @@ class ExamRoom() {
     }
 }
 
-/**
+/*
  * Your ExamRoom object will be instantiated and called as such:
  * var obj = ExamRoom(n)
  * var param_1 = obj.seat()
