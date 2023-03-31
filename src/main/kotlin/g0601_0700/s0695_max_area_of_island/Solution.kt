@@ -7,8 +7,8 @@ package g0601_0700.s0695_max_area_of_island
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun maxAreaOfIsland(grid: Array<IntArray>?): Int {
-        if (grid.isNullOrEmpty()) {
+    fun maxAreaOfIsland(grid: Array<IntArray>): Int {
+        if (grid.isEmpty()) {
             return 0
         }
         val m = grid.size
