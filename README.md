@@ -1719,6 +1719,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0857 |[Score of Parentheses](src/main/kotlin/g0801_0900/s0857_minimum_cost_to_hire_k_workers/Solution.kt)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 302 | 100.00
+| 0856 |[Score of Parentheses](src/main/kotlin/g0801_0900/s0856_score_of_parentheses/Solution.kt)| Medium | String, Stack | 129 | 84.62
+| 0855 |[Exam Room](src/main/kotlin/g0801_0900/s0855_exam_room/ExamRoom.kt)| Medium | Design, Ordered_Set | 644 | 83.33
+| 0854 |[K-Similar Strings](src/main/kotlin/g0801_0900/s0854_k_similar_strings/Solution.kt)| Hard | String, Breadth_First_Search | 136 | 100.00
 | 0853 |[Car Fleet](src/main/kotlin/g0801_0900/s0853_car_fleet/Solution.kt)| Medium | Array, Sorting, Stack, Monotonic_Stack | 757 | 85.29
 | 0852 |[Peak Index in a Mountain Array](src/main/kotlin/g0801_0900/s0852_peak_index_in_a_mountain_array/Solution.kt)| Easy | Array, Binary_Search, Binary_Search_I_Day_2 | 433 | 94.29
 | 0851 |[Loud and Rich](src/main/kotlin/g0801_0900/s0851_loud_and_rich/Solution.kt)| Medium | Array, Depth_First_Search, Graph, Topological_Sort | 347 | 100.00
