@@ -7,6 +7,7 @@ import kotlin.math.roundToInt
 
 internal class SolutionTest {
     var n = 100000
+
     @Test
     fun mincostToHireWorkers() {
         assertThat(
