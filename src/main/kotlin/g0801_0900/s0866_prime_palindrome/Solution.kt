@@ -4,6 +4,7 @@ package g0801_0900.s0866_prime_palindrome
 
 import kotlin.math.sqrt
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private fun isPrime(n: Int): Boolean {
         if (n % 2 == 0) {
