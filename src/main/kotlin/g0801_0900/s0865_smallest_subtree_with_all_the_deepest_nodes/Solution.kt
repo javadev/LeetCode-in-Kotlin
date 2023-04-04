@@ -19,6 +19,7 @@ class Solution {
     private var deepLevel = 0
     private var left: TreeNode? = null
     private var right: TreeNode? = null
+
     fun subtreeWithAllDeepest(root: TreeNode?): TreeNode? {
         if (root == null || root.left == null && root.right == null) {
             return root
