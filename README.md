@@ -1719,7 +1719,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0866 |[Prime Palindrome](src/main/kotlin/g0801_0900/s0866_prime_palindrome/Solution.kt)| Medium | Math | 143 | 100.00
+| 0865 |[Smallest Subtree with all the Deepest Nodes](src/main/kotlin/g0801_0900/s0865_smallest_subtree_with_all_the_deepest_nodes/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 147 | 100.00
 | 0864 |[Shortest Path to Get All Keys](src/main/kotlin/g0801_0900/s0864_shortest_path_to_get_all_keys/Solution.kt)| Hard | Breadth_First_Search, Bit_Manipulation | 176 | 100.00
+| 0863 |[All Nodes Distance K in Binary Tree](src/main/kotlin/g0801_0900/s0863_all_nodes_distance_k_in_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 147 | 95.83
+| 0862 |[Shortest Subarray with Sum at Least K](src/main/kotlin/g0801_0900/s0862_shortest_subarray_with_sum_at_least_k/Solution.kt)| Hard | Array, Binary_Search, Heap_Priority_Queue, Prefix_Sum, Sliding_Window, Queue, Monotonic_Queue | 563 | 84.62
 | 0861 |[Score After Flipping Matrix](src/main/kotlin/g0801_0900/s0861_score_after_flipping_matrix/Solution.kt)| Medium | Array, Greedy, Matrix, Bit_Manipulation | 135 | 71.43
 | 0860 |[Lemonade Change](src/main/kotlin/g0801_0900/s0860_lemonade_change/Solution.kt)| Easy | Array, Greedy, Programming_Skills_II_Day_17 | 413 | 86.96
 | 0859 |[Buddy Strings](src/main/kotlin/g0801_0900/s0859_buddy_strings/Solution.kt)| Easy | String, Hash_Table | 149 | 91.01
