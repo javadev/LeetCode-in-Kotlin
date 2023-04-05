@@ -27,7 +27,7 @@
         <url>https://github.com/javadev/LeetCode-in-Kotlin</url>
     </scm>
     <properties>
-        <kotlin.version>1.8.10</kotlin.version>
+        <kotlin.version>1.8.20</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <ciManagement>
