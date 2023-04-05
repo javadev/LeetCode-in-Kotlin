@@ -5,7 +5,7 @@ package g0801_0900.s0814_binary_tree_pruning
 
 import com_github_leetcode.TreeNode
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
