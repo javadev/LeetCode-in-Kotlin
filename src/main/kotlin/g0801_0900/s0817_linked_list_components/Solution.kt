@@ -4,7 +4,7 @@ package g0801_0900.s0817_linked_list_components
 
 import com_github_leetcode.ListNode
 
-/**
+/*
  * Example:
  * var li = ListNode(5)
  * var v = li.`val`
@@ -13,7 +13,6 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun numComponents(head: ListNode?, nums: IntArray): Int {
