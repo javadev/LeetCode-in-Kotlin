@@ -1719,6 +1719,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0874 |[Walking Robot Simulation](src/main/kotlin/g0801_0900/s0874_walking_robot_simulation/Solution.kt)| Medium | Array, Simulation | 274 | 100.00
+| 0873 |[Length of Longest Fibonacci Subsequence](src/main/kotlin/g0801_0900/s0873_length_of_longest_fibonacci_subsequence/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 341 | 90.00
+| 0872 |[Leaf-Similar Trees](src/main/kotlin/g0801_0900/s0872_leaf_similar_trees/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 140 | 100.00
+| 0871 |[Minimum Number of Refueling Stops](src/main/kotlin/g0801_0900/s0871_minimum_number_of_refueling_stops/Solution.kt)| Hard | Array, Dynamic_Programming, Greedy, Heap_Priority_Queue | 203 | 92.86
 | 0870 |[Advantage Shuffle](src/main/kotlin/g0801_0900/s0870_advantage_shuffle/Solution.kt)| Medium | Array, Sorting, Greedy | 698 | 100.00
 | 0869 |[Reordered Power of 2](src/main/kotlin/g0801_0900/s0869_reordered_power_of_2/Solution.kt)| Medium | Math, Sorting, Counting, Enumeration | 145 | 87.50
 | 0868 |[Binary Gap](src/main/kotlin/g0801_0900/s0868_binary_gap/Solution.kt)| Easy | Bit_Manipulation | 142 | 100.00
