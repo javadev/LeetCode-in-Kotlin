@@ -5,6 +5,9 @@ package g0801_0900.s0874_walking_robot_simulation
 class Solution {
     internal class Point(var row: Int, var column: Int) {
         override fun equals(other: Any?): Boolean {
+            if (other!!.javaClass != this.javaClass) {
+                return false
+            }
             val another = other as Point?
             return another!!.row == row && another.column == column
         }
