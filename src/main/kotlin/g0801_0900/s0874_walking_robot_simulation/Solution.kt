@@ -4,13 +4,13 @@ package g0801_0900.s0874_walking_robot_simulation
 
 class Solution {
     internal class Point(var row: Int, var column: Int) {
-        override fun equals(other: Any?): Boolean {
-            if (other!!.javaClass != this.javaClass) {
+         override fun equals(other: Any?): Boolean {
+            if (other !is Point) {
                 return false
             }
-            val another = other as Point?
-            return another!!.row == row && another.column == column
+            return other.row == row && other.column == column
         }
+
 
         override fun hashCode(): Int {
             return row * column * 31
