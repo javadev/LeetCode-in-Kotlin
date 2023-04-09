@@ -4,9 +4,8 @@ package g0801_0900.s0882_reachable_nodes_in_subdivided_graph
 // #2023_04_08_Time_434_ms_(100.00%)_Space_52_MB_(100.00%)
 
 import java.util.PriorityQueue
-import kotlin.collections.ArrayList
 
-internal class Solution {
+class Solution {
     fun reachableNodes(edges: Array<IntArray>, maxMoves: Int, n: Int): Int {
         val adList = getAdList(edges, n)
         val pQueue = PriorityQueue { a: IntArray, b: IntArray ->
