@@ -1724,6 +1724,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0882 |[Reachable Nodes In Subdivided Graph](src/main/kotlin/g0801_0900/s0882_reachable_nodes_in_subdivided_graph/Solution.kt)| Hard | Heap_Priority_Queue, Graph, Shortest_Path | 434 | 100.00
+| 0881 |[Boats to Save People](src/main/kotlin/g0801_0900/s0881_boats_to_save_people/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers | 370 | 96.07
+| 0880 |[Decoded String at Index](src/main/kotlin/g0801_0900/s0880_decoded_string_at_index/Solution.kt)| Medium | String, Stack | 134 | 100.00
+| 0879 |[Profitable Schemes](src/main/kotlin/g0801_0900/s0879_profitable_schemes/Solution.kt)| Hard | Array, Dynamic_Programming | 198 | 75.00
 | 0878 |[Nth Magical Number](src/main/kotlin/g0801_0900/s0878_nth_magical_number/Solution.kt)| Hard | Math, Binary_Search | 124 | 100.00
 | 0877 |[Stone Game](src/main/kotlin/g0801_0900/s0877_stone_game/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Game_Theory | 136 | 88.24
 | 0876 |[Middle of the Linked List](src/main/kotlin/g0801_0900/s0876_middle_of_the_linked_list/Solution.kt)| Easy | Two_Pointers, Linked_List, Algorithm_I_Day_5_Two_Pointers, Programming_Skills_I_Day_10_Linked_List_and_Tree, Level_1_Day_4_Linked_List, Udemy_Linked_List | 136 | 76.52
