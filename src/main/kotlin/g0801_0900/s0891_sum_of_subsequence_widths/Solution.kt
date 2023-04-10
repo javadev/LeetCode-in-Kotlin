@@ -2,8 +2,6 @@ package g0801_0900.s0891_sum_of_subsequence_widths
 
 // #Hard #Array #Math #Sorting #2023_04_10_Time_481_ms_(100.00%)_Space_48.5_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     // 1-6 (number of elements in between 1 and 6) = (6-1-1) = 4
     // length of sub seq 2 -> 4C0 3 -> 4C1 ; 4 -> 4c2 ; 5 -> 4C3  6 -> 4C4  4c0 + 4c1 + 4c2 + 4c3 +
@@ -31,7 +29,7 @@ class Solution {
     */
     fun sumSubseqWidths(nums: IntArray): Int {
         val mod = 1000000007
-        Arrays.sort(nums)
+        nums.sort()
         val l = nums.size
         val pow = LongArray(l)
         pow[0] = 1
