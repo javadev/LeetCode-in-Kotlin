@@ -1716,6 +1716,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0886 |[Possible Bipartition](src/main/kotlin/g0801_0900/s0886_possible_bipartition/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 397 | 100.00
 | 0785 |[Is Graph Bipartite?](src.save/main/kotlin/g0701_0800/s0785_is_graph_bipartite/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 215 | 82.35
 
 ## Algorithms
@@ -1724,6 +1725,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0886 |[Possible Bipartition](src/main/kotlin/g0801_0900/s0886_possible_bipartition/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_14_Graph_Theory | 397 | 100.00
+| 0885 |[Spiral Matrix III](src/main/kotlin/g0801_0900/s0885_spiral_matrix_iii/Solution.kt)| Medium | Array, Matrix, Simulation | 265 | 100.00
+| 0884 |[Uncommon Words from Two Sentences](src/main/kotlin/g0801_0900/s0884_uncommon_words_from_two_sentences/Solution.kt)| Easy | String, Hash_Table | 171 | 100.00
+| 0883 |[Projection Area of 3D Shapes](src/main/kotlin/g0801_0900/s0883_projection_area_of_3d_shapes/Solution.kt)| Easy | Array, Math, Matrix, Geometry | 173 | 100.00
 | 0882 |[Reachable Nodes In Subdivided Graph](src/main/kotlin/g0801_0900/s0882_reachable_nodes_in_subdivided_graph/Solution.kt)| Hard | Heap_Priority_Queue, Graph, Shortest_Path | 434 | 100.00
 | 0881 |[Boats to Save People](src/main/kotlin/g0801_0900/s0881_boats_to_save_people/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers | 370 | 96.07
 | 0880 |[Decoded String at Index](src/main/kotlin/g0801_0900/s0880_decoded_string_at_index/Solution.kt)| Medium | String, Stack | 134 | 100.00
