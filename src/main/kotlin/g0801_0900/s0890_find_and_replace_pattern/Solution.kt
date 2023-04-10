@@ -2,7 +2,6 @@ package g0801_0900.s0890_find_and_replace_pattern
 
 // #Medium #Array #String #Hash_Table #2023_04_10_Time_150_ms_(100.00%)_Space_35.9_MB_(11.11%)
 
-import java.util.Arrays
 import java.util.Collections
 
 class Solution {
@@ -14,7 +13,7 @@ class Solution {
         }
         for (word in words) {
             val check = CharArray(26)
-            Arrays.fill(check, '1')
+            check.fill('1')
             val ans: HashMap<Char, Char> = HashMap()
             for (j in word.indices) {
                 val pat = pattern[j]
