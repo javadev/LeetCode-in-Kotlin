@@ -2,13 +2,11 @@ package g0801_0900.s0890_find_and_replace_pattern
 
 // #Medium #Array #String #Hash_Table #2023_04_10_Time_150_ms_(100.00%)_Space_35.9_MB_(11.11%)
 
-import java.util.Collections
-
 class Solution {
     fun findAndReplacePattern(words: Array<String>, pattern: String): List<String> {
         val finalans: MutableList<String> = ArrayList()
         if (pattern.length == 1) {
-            Collections.addAll(finalans, *words)
+            finalans.addAll(words)
             return finalans
         }
         for (word in words) {
