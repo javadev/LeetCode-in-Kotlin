@@ -2,8 +2,6 @@ package g0801_0900.s0855_exam_room
 
 // #Medium #Design #Ordered_Set #2023_03_31_Time_644_ms_(83.33%)_Space_40.4_MB_(100.00%)
 
-import java.util.Objects
-
 class ExamRoom() {
     private class Node(var `val`: Int, map: MutableMap<Int?, Node>) {
         var pre: Node? = null
@@ -67,7 +65,7 @@ class ExamRoom() {
         }
         return if (right > max) {
             Node(n - 1, map).insert(tail.pre)
-        } else Node(maxAt, map).insert(Objects.requireNonNull(maxAtLeft))
+        } else Node(maxAt, map).insert(maxAtLeft)
     }
 
     fun leave(p: Int) {

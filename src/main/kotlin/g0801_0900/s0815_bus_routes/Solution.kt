@@ -5,9 +5,6 @@ package g0801_0900.s0815_bus_routes
 
 import java.util.LinkedList
 import java.util.Queue
-import kotlin.collections.ArrayList
-import kotlin.collections.HashSet
-import kotlin.collections.MutableSet
 
 class Solution {
     fun numBusesToDestination(routes: Array<IntArray>, source: Int, target: Int): Int {

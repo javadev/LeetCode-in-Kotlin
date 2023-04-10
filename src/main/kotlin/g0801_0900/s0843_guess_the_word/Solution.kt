@@ -3,8 +3,6 @@ package g0801_0900.s0843_guess_the_word
 // #Hard #Array #String #Math #Game_Theory #Interactive
 // #2023_03_29_Time_75_ms_(100.00%)_Space_31.5_MB_(100.00%)
 
-import java.util.Collections
-
 /*
  * // This is the Master's API interface.
  * // You should not implement it, or speculate about its implementation
@@ -20,8 +18,8 @@ class Solution {
     private var next = 0
 
     fun findSecretWord(wordlist: Array<String>, master: Master) {
-        val list = listOf(*wordlist)
-        Collections.shuffle(list)
+        val list = wordlist.copyOf()
+        list.shuffle()
         val test = BooleanArray(wordlist.size)
         while (true) {
             val num = master.guess(list[next])
@@ -32,7 +30,7 @@ class Solution {
         }
     }
 
-    private fun updateList(list: List<String?>, test: BooleanArray, num: Int) {
+    private fun updateList(list: Array<String>, test: BooleanArray, num: Int) {
         val index = next
         for (i in index + 1 until test.size) {
             if (test[i]) {
@@ -47,10 +45,10 @@ class Solution {
         }
     }
 
-    private fun getSame(word1: String?, word2: String?): Int {
+    private fun getSame(word1: String, word2: String): Int {
         var ret = 0
         for (i in 0..5) {
-            if (word1!![i] == word2!![i]) {
+            if (word1[i] == word2[i]) {
                 ret++
             }
         }

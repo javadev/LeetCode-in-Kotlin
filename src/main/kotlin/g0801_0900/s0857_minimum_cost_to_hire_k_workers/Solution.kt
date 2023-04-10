@@ -13,10 +13,8 @@ class Solution {
             workers[i] = Worker(wage[i], quality[i])
         }
         workers.sortBy { it!!.ratio() }
-        val maxHeap = PriorityQueue { a: Int?, b: Int? ->
-            Integer.compare(
-                b!!, a!!
-            )
+        val maxHeap = PriorityQueue { a: Int, b: Int ->
+            b.compareTo(a)
         }
         var sumQuality = 0
         var result = Double.MAX_VALUE
