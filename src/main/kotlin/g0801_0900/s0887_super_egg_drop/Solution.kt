@@ -10,10 +10,10 @@ class Solution {
         while (true) {
             var temp = dp[0]
             for (i in 1 until dp.size) {
-                val `val` = dp[i] + temp + 1
+                val localValue = dp[i] + temp + 1
                 temp = dp[i]
-                dp[i] = `val`
-                if (`val` >= n) {
+                dp[i] = localValue
+                if (localValue >= n) {
                     return counter
                 }
             }
