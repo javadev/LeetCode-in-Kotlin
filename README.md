@@ -1725,6 +1725,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0891 |[Sum of Subsequence Widths](src/main/kotlin/g0801_0900/s0891_sum_of_subsequence_widths/Solution.kt)| Hard | Array, Math, Sorting | 481 | 100.00
+| 0890 |[Find and Replace Pattern](src/main/kotlin/g0801_0900/s0890_find_and_replace_pattern/Solution.kt)| Medium | Array, String, Hash_Table | 150 | 100.00
+| 0889 |[Construct Binary Tree from Preorder and Postorder Traversal](src/main/kotlin/g0801_0900/s0889_construct_binary_tree_from_preorder_and_postorder_traversal/Solution.kt)| Medium | Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 168 | 100.00
+| 0888 |[Fair Candy Swap](src/main/kotlin/g0801_0900/s0888_fair_candy_swap/Solution.kt)| Easy | Array, Hash_Table, Sorting, Binary_Search | 318 | 100.00
+| 0887 |[Super Egg Drop](src/main/kotlin/g0801_0900/s0887_super_egg_drop/Solution.kt)| Hard | Dynamic_Programming, Math, Binary_Search | 119 | 100.00
 | 0886 |[Possible Bipartition](src/main/kotlin/g0801_0900/s0886_possible_bipartition/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_14_Graph_Theory | 397 | 100.00
 | 0885 |[Spiral Matrix III](src/main/kotlin/g0801_0900/s0885_spiral_matrix_iii/Solution.kt)| Medium | Array, Matrix, Simulation | 265 | 100.00
 | 0884 |[Uncommon Words from Two Sentences](src/main/kotlin/g0801_0900/s0884_uncommon_words_from_two_sentences/Solution.kt)| Easy | String, Hash_Table | 171 | 100.00
