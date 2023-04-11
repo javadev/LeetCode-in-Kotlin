@@ -1725,6 +1725,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0895 |[Maximum Frequency Stack](src/main/kotlin/g0801_0900/s0895_maximum_frequency_stack/FreqStack.kt)| Hard | Hash_Table, Stack, Design, Ordered_Set | 617 | 100.00
+| 0894 |[All Possible Full Binary Trees](src/main/kotlin/g0801_0900/s0894_all_possible_full_binary_trees/Solution.kt)| Medium | Dynamic_Programming, Tree, Binary_Tree, Recursion, Memoization | 257 | 100.00
+| 0893 |[Groups of Special-Equivalent Strings](src/main/kotlin/g0801_0900/s0893_groups_of_special_equivalent_strings/Solution.kt)| Medium | Array, String, Hash_Table | 141 | 100.00
+| 0892 |[Surface Area of 3D Shapes](src/main/kotlin/g0801_0900/s0892_surface_area_of_3d_shapes/Solution.kt)| Easy | Array, Math, Matrix, Geometry | 180 | 100.00
 | 0891 |[Sum of Subsequence Widths](src/main/kotlin/g0801_0900/s0891_sum_of_subsequence_widths/Solution.kt)| Hard | Array, Math, Sorting | 481 | 100.00
 | 0890 |[Find and Replace Pattern](src/main/kotlin/g0801_0900/s0890_find_and_replace_pattern/Solution.kt)| Medium | Array, String, Hash_Table | 150 | 100.00
 | 0889 |[Construct Binary Tree from Preorder and Postorder Traversal](src/main/kotlin/g0801_0900/s0889_construct_binary_tree_from_preorder_and_postorder_traversal/Solution.kt)| Medium | Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 168 | 100.00
