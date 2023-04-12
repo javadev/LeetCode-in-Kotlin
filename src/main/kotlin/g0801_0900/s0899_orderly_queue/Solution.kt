@@ -2,13 +2,11 @@ package g0801_0900.s0899_orderly_queue
 
 // #Hard #String #Math #Sorting #2023_04_12_Time_148_ms_(100.00%)_Space_35.6_MB_(66.67%)
 
-import java.util.Arrays
-
 class Solution {
     fun orderlyQueue(s: String, k: Int): String {
         if (k > 1) {
             val ans = s.toCharArray()
-            Arrays.sort(ans)
+            ans.sort()
             return String(ans)
         }
         var min = 'z'
