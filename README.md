@@ -1504,6 +1504,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0896 |[Monotonic Array](src/main/kotlin/g0801_0900/s0896_monotonic_array/Solution.kt)| Easy | Array | 576 | 90.91
 | 0028 |[Find the Index of the First Occurrence in a String](src.save/main/kotlin/g0001_0100/s0028_implement_strstr/Solution.kt)| Easy | Top_Interview_Questions, String, Two_Pointers, String_Matching | 257 | 32.35
 
 #### Day 2
@@ -1725,6 +1726,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0899 |[Orderly Queue](src/main/kotlin/g0801_0900/s0899_orderly_queue/Solution.kt)| Hard | String, Math, Sorting | 148 | 100.00
+| 0898 |[Bitwise ORs of Subarrays](src/main/kotlin/g0801_0900/s0898_bitwise_ors_of_subarrays/Solution.kt)| Medium | Array, Dynamic_Programming, Bit_Manipulation | 812 | 100.00
+| 0897 |[Increasing Order Search Tree](src/main/kotlin/g0801_0900/s0897_increasing_order_search_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Stack, Binary_Search_Tree | 128 | 85.71
+| 0896 |[Monotonic Array](src/main/kotlin/g0801_0900/s0896_monotonic_array/Solution.kt)| Easy | Array, Programming_Skills_II_Day_1 | 576 | 90.91
 | 0895 |[Maximum Frequency Stack](src/main/kotlin/g0801_0900/s0895_maximum_frequency_stack/FreqStack.kt)| Hard | Hash_Table, Stack, Design, Ordered_Set | 617 | 100.00
 | 0894 |[All Possible Full Binary Trees](src/main/kotlin/g0801_0900/s0894_all_possible_full_binary_trees/Solution.kt)| Medium | Dynamic_Programming, Tree, Binary_Tree, Recursion, Memoization | 257 | 100.00
 | 0893 |[Groups of Special-Equivalent Strings](src/main/kotlin/g0801_0900/s0893_groups_of_special_equivalent_strings/Solution.kt)| Medium | Array, String, Hash_Table | 141 | 100.00
