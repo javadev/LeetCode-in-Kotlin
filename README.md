@@ -1726,6 +1726,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0907 |[Sum of Subarray Minimums](src/main/kotlin/g0901_1000/s0907_sum_of_subarray_minimums/Solution.kt)| Medium | Array, Dynamic_Programming, Stack, Monotonic_Stack | 341 | 100.00
+| 0906 |[Super Palindromes](src/main/kotlin/g0901_1000/s0906_super_palindromes/Solution.kt)| Hard | Math, Enumeration | 153 | 100.00
+| 0905 |[Sort Array By Parity](src/main/kotlin/g0901_1000/s0905_sort_array_by_parity/Solution.kt)| Easy | Array, Sorting, Two_Pointers | 219 | 75.00
+| 0904 |[Fruit Into Baskets](src/main/kotlin/g0901_1000/s0904_fruit_into_baskets/Solution.kt)| Medium | Array, Hash_Table, Sliding_Window | 371 | 100.00
 | 0903 |[Valid Permutations for DI Sequence](src/main/kotlin/g0901_1000/s0903_valid_permutations_for_di_sequence/Solution.kt)| Hard | Dynamic_Programming | 140 | 100.00
 | 0902 |[Numbers At Most N Given Digit Set](src/main/kotlin/g0901_1000/s0902_numbers_at_most_n_given_digit_set/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Binary_Search | 138 | 100.00
 | 0901 |[Online Stock Span](src/main/kotlin/g0901_1000/s0901_online_stock_span/StockSpanner.kt)| Medium | Stack, Design, Monotonic_Stack, Data_Stream | 641 | 75.00
