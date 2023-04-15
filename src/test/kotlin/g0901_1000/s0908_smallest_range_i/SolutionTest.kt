@@ -19,5 +19,4 @@ internal class SolutionTest {
     fun smallestRangeI3() {
         assertThat(Solution().smallestRangeI(intArrayOf(1, 3, 6), 3), equalTo(0))
     }
-
 }

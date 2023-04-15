@@ -4,7 +4,7 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-internal class SolutionTest {
+internal class TopVotedCandidateTest {
     @Test
     fun topVotedCandidateTest() {
         val topVotedCandidate = TopVotedCandidate(intArrayOf(0, 1, 1, 0, 0, 1, 0), intArrayOf(0, 5, 10, 15, 20, 25, 30))
