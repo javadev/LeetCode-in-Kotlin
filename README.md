@@ -1273,6 +1273,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0911 |[Online Election](src/main/kotlin/g0901_1000/s0911_online_election/TopVotedCandidate.kt)| Medium | Array, Hash_Table, Binary_Search, Design | 766 | 83.33
 
 ### Dynamic Programming I
 
@@ -1583,6 +1584,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0304 |[Range Sum Query 2D - Immutable](src.save/main/kotlin/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.kt)| Medium | Array, Matrix, Design, Prefix_Sum | 1373 | 85.71
+| 0910 |[Smallest Range II](src/main/kotlin/g0901_1000/s0910_smallest_range_ii/Solution.kt)| Medium | Array, Math, Sorting, Greedy | 234 | 100.00
 
 #### Day 14
 
@@ -1726,6 +1728,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0911 |[Online Election](src/main/kotlin/g0901_1000/s0911_online_election/TopVotedCandidate.kt)| Medium | Array, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_20 | 766 | 83.33
+| 0910 |[Smallest Range II](src/main/kotlin/g0901_1000/s0910_smallest_range_ii/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Programming_Skills_II_Day_13 | 234 | 100.00
+| 0909 |[Snakes and Ladders](src/main/kotlin/g0901_1000/s0909_snakes_and_ladders/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 203 | 100.00
+| 0908 |[Smallest Range I](src/main/kotlin/g0901_1000/s0908_smallest_range_i/Solution.kt)| Easy | Array, Math | 202 | 87.50
 | 0907 |[Sum of Subarray Minimums](src/main/kotlin/g0901_1000/s0907_sum_of_subarray_minimums/Solution.kt)| Medium | Array, Dynamic_Programming, Stack, Monotonic_Stack | 341 | 100.00
 | 0906 |[Super Palindromes](src/main/kotlin/g0901_1000/s0906_super_palindromes/Solution.kt)| Hard | Math, Enumeration | 153 | 100.00
 | 0905 |[Sort Array By Parity](src/main/kotlin/g0901_1000/s0905_sort_array_by_parity/Solution.kt)| Easy | Array, Sorting, Two_Pointers | 219 | 75.00
