@@ -447,6 +447,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0912 |[Sort an Array](src/main/kotlin/g0901_1000/s0912_sort_an_array/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Merge_Sort, Bucket_Sort, Counting_Sort, Radix_Sort | 606 | 98.48
 
 #### Udemy 2D Arrays/Matrix
 
@@ -1728,6 +1729,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0915 |[Partition Array into Disjoint Intervals](src/main/kotlin/g0901_1000/s0915_partition_array_into_disjoint_intervals/Solution.kt)| Medium | Array | 510 | 76.92
+| 0914 |[X of a Kind in a Deck of Cards](src/main/kotlin/g0901_1000/s0914_x_of_a_kind_in_a_deck_of_cards/Solution.kt)| |||
+| 0913 |[Cat and Mouse](src/main/kotlin/g0901_1000/s0913_cat_and_mouse/Solution.kt)| Hard | Dynamic_Programming, Math, Graph, Memoization, Topological_Sort, Game_Theory | 211 | 100.00
+| 0912 |[Sort an Array](src/main/kotlin/g0901_1000/s0912_sort_an_array/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Merge_Sort, Bucket_Sort, Counting_Sort, Radix_Sort, Udemy_Sorting_Algorithms | 606 | 98.48
 | 0911 |[Online Election](src/main/kotlin/g0901_1000/s0911_online_election/TopVotedCandidate.kt)| Medium | Array, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_20 | 766 | 83.33
 | 0910 |[Smallest Range II](src/main/kotlin/g0901_1000/s0910_smallest_range_ii/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Programming_Skills_II_Day_13 | 234 | 100.00
 | 0909 |[Snakes and Ladders](src/main/kotlin/g0901_1000/s0909_snakes_and_ladders/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 203 | 100.00
