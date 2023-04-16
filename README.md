@@ -1311,6 +1311,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 662 | 82.48
+| 0918 |[Maximum Sum Circular Subarray](src/main/kotlin/g0901_1000/s0918_maximum_sum_circular_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Monotonic_Queue | 339 | 86.96
 
 #### Day 6
 
@@ -1729,6 +1730,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0919 |[Complete Binary Tree Inserter](src/main/kotlin/g0901_1000/s0919_complete_binary_tree_inserter/CBTInserter.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree, Design | 225 | 100.00
+| 0918 |[Maximum Sum Circular Subarray](src/main/kotlin/g0901_1000/s0918_maximum_sum_circular_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Monotonic_Queue, Dynamic_Programming_I_Day_5 | 339 | 86.96
+| 0917 |[Reverse Only Letters](src/main/kotlin/g0901_1000/s0917_reverse_only_letters/Solution.kt)| Easy | String, Two_Pointers | 126 | 100.00
+| 0916 |[Word Subsets](src/main/kotlin/g0901_1000/s0916_word_subsets/Solution.kt)| Medium | Array, String, Hash_Table | 397 | 88.89
 | 0915 |[Partition Array into Disjoint Intervals](src/main/kotlin/g0901_1000/s0915_partition_array_into_disjoint_intervals/Solution.kt)| Medium | Array | 510 | 76.92
 | 0914 |[X of a Kind in a Deck of Cards](src/main/kotlin/g0901_1000/s0914_x_of_a_kind_in_a_deck_of_cards/Solution.kt)| Easy | Array, Hash_Table, Math, Counting, Number_Theory | 238 | 70.00
 | 0913 |[Cat and Mouse](src/main/kotlin/g0901_1000/s0913_cat_and_mouse/Solution.kt)| Hard | Dynamic_Programming, Math, Graph, Memoization, Topological_Sort, Game_Theory | 211 | 100.00
