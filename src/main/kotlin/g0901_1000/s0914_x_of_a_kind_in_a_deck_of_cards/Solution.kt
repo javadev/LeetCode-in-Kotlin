@@ -1,5 +1,8 @@
 package g0901_1000.s0914_x_of_a_kind_in_a_deck_of_cards
 
+// #Easy #Array #Hash_Table #Math #Counting #Number_Theory
+// #2023_04_16_Time_238_ms_(70.00%)_Space_37.6_MB_(60.00%)
+
 class Solution {
     fun hasGroupsSizeX(deck: IntArray): Boolean {
         val map: HashMap<Int, Int> = HashMap()
