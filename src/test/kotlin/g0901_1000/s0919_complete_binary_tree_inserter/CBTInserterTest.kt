@@ -13,6 +13,6 @@ internal class CBTInserterTest {
         assertThat(cBTInserter.insert(3), equalTo(1))
         assertThat(cBTInserter.insert(4), equalTo(2))
         val expected: TreeNode? = TreeNode.create(listOf(1, 2, 3, 4))
-        assertThat(cBTInserter.get_root().toString(), equalTo(expected.toString()))
+        assertThat(cBTInserter.getRoot().toString(), equalTo(expected.toString()))
     }
 }

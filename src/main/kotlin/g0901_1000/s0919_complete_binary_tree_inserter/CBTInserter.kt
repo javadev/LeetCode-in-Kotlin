@@ -70,7 +70,7 @@ class CBTInserter(root: TreeNode?) {
     }
 
     // get_root()
-    fun get_root(): TreeNode {
+    fun getRoot(): TreeNode {
         return head
     }
 }
