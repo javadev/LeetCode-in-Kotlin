@@ -1730,6 +1730,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0923 |[3Sum With Multiplicity](src/main/kotlin/g0901_1000/s0923_3sum_with_multiplicity/Solution.kt)| Medium | Array, Hash_Table, Sorting, Two_Pointers, Counting | 190 | 100.00
+| 0922 |[Sort Array By Parity II](src/main/kotlin/g0901_1000/s0922_sort_array_by_parity_ii/Solution.kt)| Easy | Array, Sorting, Two_Pointers | 257 | 87.50
+| 0921 |[Minimum Add to Make Parentheses Valid](src/main/kotlin/g0901_1000/s0921_minimum_add_to_make_parentheses_valid/Solution.kt)| Medium | String, Greedy, Stack | 131 | 92.59
+| 0920 |[Number of Music Playlists](src/main/kotlin/g0901_1000/s0920_number_of_music_playlists/Solution.kt)| Hard | Dynamic_Programming, Math, Combinatorics | 136 | 100.00
 | 0919 |[Complete Binary Tree Inserter](src/main/kotlin/g0901_1000/s0919_complete_binary_tree_inserter/CBTInserter.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree, Design | 225 | 100.00
 | 0918 |[Maximum Sum Circular Subarray](src/main/kotlin/g0901_1000/s0918_maximum_sum_circular_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Monotonic_Queue, Dynamic_Programming_I_Day_5 | 339 | 86.96
 | 0917 |[Reverse Only Letters](src/main/kotlin/g0901_1000/s0917_reverse_only_letters/Solution.kt)| Easy | String, Two_Pointers | 126 | 100.00
