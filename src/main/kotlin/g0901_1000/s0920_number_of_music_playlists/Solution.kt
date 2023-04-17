@@ -3,13 +3,11 @@ package g0901_1000.s0920_number_of_music_playlists
 // #Hard #Dynamic_Programming #Math #Combinatorics
 // #2023_04_17_Time_136_ms_(100.00%)_Space_35.3_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun numMusicPlaylists(n: Int, l: Int, k: Int): Int {
         val dp = Array(l) { LongArray(n + 1) }
         for (i in 0 until l) {
-            Arrays.fill(dp[i], -1)
+            dp[i].fill(-1)
         }
         return helper(0, l, 0, n, k, dp).toInt()
     }
