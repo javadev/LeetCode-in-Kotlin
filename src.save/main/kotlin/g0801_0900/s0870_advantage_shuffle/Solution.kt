@@ -2,13 +2,12 @@ package g0801_0900.s0870_advantage_shuffle
 
 // #Medium #Array #Sorting #Greedy #2023_04_05_Time_698_ms_(100.00%)_Space_51.1_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 class Solution {
     fun advantageCount(nums1: IntArray, nums2: IntArray): IntArray {
         val n = nums1.size
-        Arrays.sort(nums1)
+        nums1.sort()
         val maxpq = PriorityQueue { pair1: IntArray, pair2: IntArray ->
             pair2[1] - pair1[1]
         }
