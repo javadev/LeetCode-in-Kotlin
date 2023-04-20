@@ -17,6 +17,8 @@ jobs:
       - run:
           name: "Build gradle"
           command: chmod +x gradlew && ./gradlew clean build
+      - store_test_results:
+          path: build/test-results/test
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
