@@ -1730,6 +1730,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.11'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0927 |[Three Equal Parts](src/main/kotlin/g0901_1000/s0927_three_equal_parts/Solution.kt)| Hard | Array, Math | 303 | 100.00
+| 0926 |[Flip String to Monotone Increasing](src/main/kotlin/g0901_1000/s0926_flip_string_to_monotone_increasing/Solution.kt)| Medium | String, Dynamic_Programming | 199 | 100.00
+| 0925 |[Long Pressed Name](src/main/kotlin/g0901_1000/s0925_long_pressed_name/Solution.kt)| Easy | String, Two_Pointers | 138 | 76.19
+| 0924 |[Minimize Malware Spread](src/main/kotlin/g0901_1000/s0924_minimize_malware_spread/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 791 | 100.00
 | 0923 |[3Sum With Multiplicity](src/main/kotlin/g0901_1000/s0923_3sum_with_multiplicity/Solution.kt)| Medium | Array, Hash_Table, Sorting, Two_Pointers, Counting | 190 | 100.00
 | 0922 |[Sort Array By Parity II](src/main/kotlin/g0901_1000/s0922_sort_array_by_parity_ii/Solution.kt)| Easy | Array, Sorting, Two_Pointers | 257 | 87.50
 | 0921 |[Minimum Add to Make Parentheses Valid](src/main/kotlin/g0901_1000/s0921_minimum_add_to_make_parentheses_valid/Solution.kt)| Medium | String, Greedy, Stack | 131 | 92.59
