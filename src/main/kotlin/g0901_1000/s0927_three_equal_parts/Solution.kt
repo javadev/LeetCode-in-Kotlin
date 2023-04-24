@@ -23,12 +23,10 @@ class Solution {
                 continue
             }
             totalOnes += arr[i]
-            if (totalOnes == 1) {
-                index1 = i
-            } else if (totalOnes == ones + 1) {
-                index2 = i
-            } else if (totalOnes == 2 * ones + 1) {
-                index3 = i
+            when (totalOnes) {
+                1 -> index1 = i
+                ones + 1 -> index2 = i
+                2 * ones + 1 -> index3 = i
             }
         }
         while (index3 < arr.size) {
