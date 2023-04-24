@@ -1,38 +1,17 @@
 package g0901_1000.s0925_long_pressed_name
 
-// #Easy #String #Two_Pointers #2023_04_17_Time_138_ms_(76.19%)_Space_33.4_MB_(100.00%)
+// #Easy #String #Two_Pointers #2023_04_24_Time_126_ms_(92.31%)_Space_33.6_MB_(84.62%)
 
 class Solution {
     fun isLongPressedName(name: String, typed: String): Boolean {
-        var i = 0
-        var j = 0
-        var prev = '$'
-        if (typed.length < name.length) {
-            return false
-        }
-        while (i < name.length && j < typed.length) {
-            while (j < typed.length && typed[j] != name[i]) {
-                if (typed[j] != prev) {
-                    return false
-                }
-                if (j == typed.length - 1) {
-                    return false
-                }
-                j++
-            }
-            prev = name[i]
-            i++
-            j++
-        }
-        if (i < name.length) {
-            return false
-        }
-        while (j < typed.length) {
-            if (typed[j] != prev) {
+        var right = 0
+        for (left in typed.indices) {
+            if (right < name.length && typed[left] == name[right]) {
+                right++
+            } else if (left == 0 || typed[left] != typed[left - 1]) {
                 return false
             }
-            j++
         }
-        return true
+        return right == name.length
     }
 }
