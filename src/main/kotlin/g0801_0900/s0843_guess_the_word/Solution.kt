@@ -11,7 +11,7 @@ package g0801_0900.s0843_guess_the_word
  * }
  */
 class Solution {
-    interface Master {
+    fun interface Master {
         fun guess(word: String): Int
     }
 

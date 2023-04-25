@@ -28,12 +28,12 @@ class Solution {
     }
 
     private fun treeSum(node: TreeNode?): Int {
-        if (node == null) {
-            return 0
+        return if (node == null) {
+            0
         } else {
             val sum = node.`val` + treeSum(node.left) + treeSum(node.right)
             cache[sum] = cache.getOrDefault(sum, 0) + 1
-            return sum
+            sum
         }
     }
 }

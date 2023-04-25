@@ -1,5 +1,6 @@
 ﻿package com_github_leetcode
 
+@Suppress("kotlin:S6512")
 class NestedInteger {
     private var list: MutableList<NestedInteger>? = null
     private var integer: Int? = null

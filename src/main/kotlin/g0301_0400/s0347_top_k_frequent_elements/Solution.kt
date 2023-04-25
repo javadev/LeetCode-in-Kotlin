@@ -8,6 +8,7 @@ package g0301_0400.s0347_top_k_frequent_elements
 import java.util.PriorityQueue
 import java.util.Queue
 
+@Suppress("kotlin:S6518")
 class Solution {
     fun topKFrequent(nums: IntArray, k: Int): IntArray {
         nums.sort()

@@ -3,6 +3,7 @@ package g0601_0700.s0641_design_circular_deque
 // #Medium #Array #Design #Linked_List #Queue
 // #2023_02_10_Time_232_ms_(100.00%)_Space_37.5_MB_(83.33%)
 
+@Suppress("kotlin:S6512")
 class MyCircularDeque(k: Int) {
     private val data: IntArray
     private var front: Int

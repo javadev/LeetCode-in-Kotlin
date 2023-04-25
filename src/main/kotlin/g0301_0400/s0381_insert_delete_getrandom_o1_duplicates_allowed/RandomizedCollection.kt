@@ -13,13 +13,13 @@ class RandomizedCollection() {
     fun insert(x: Int): Boolean {
         a2m.add(x)
         val pos = a2m.size - 1
-        if (x in m2a) {
+        return if (x in m2a) {
             m2a[x]!!.add(pos)
-            return false
+            false
         } else {
             m2a[x] = HashSet<Int>()
             m2a[x]!!.add(pos)
-            return true
+            true
         }
     }
 
