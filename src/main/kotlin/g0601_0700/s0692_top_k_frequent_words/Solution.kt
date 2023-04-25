@@ -16,10 +16,10 @@ class Solution {
         }
         val sortedset: SortedSet<Map.Entry<String, Int>> = TreeSet(
             java.util.Comparator { (key, value): Map.Entry<String, Int>, (key1, value1): Map.Entry<String, Int> ->
-                if (value != value1) {
-                    return@Comparator value1 - value
+                return@Comparator if (value != value1) {
+                    value1 - value
                 } else {
-                    return@Comparator key.compareTo(key1, ignoreCase = true)
+                    key.compareTo(key1, ignoreCase = true)
                 }
             }
         )
