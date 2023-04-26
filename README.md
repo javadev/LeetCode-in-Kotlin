@@ -1365,6 +1365,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0931 |[Minimum Falling Path Sum](src/main/kotlin/g0901_1000/s0931_minimum_falling_path_sum/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 201 | 84.21
 | 0120 |[Triangle](src/main/kotlin/g0101_0200/s0120_triangle/Solution.kt)| Medium | Array, Dynamic_Programming | 194 | 97.87
 
 #### Day 14
@@ -1730,6 +1731,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0931 |[Minimum Falling Path Sum](src/main/kotlin/g0901_1000/s0931_minimum_falling_path_sum/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_13 | 201 | 84.21
+| 0930 |[Binary Subarrays With Sum](src/main/kotlin/g0901_1000/s0930_binary_subarrays_with_sum/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum, Sliding_Window | 250 | 93.75
+| 0929 |[Unique Email Addresses](src/main/kotlin/g0901_1000/s0929_unique_email_addresses/Solution.kt)| Easy | Array, String, Hash_Table | 207 | 89.29
+| 0928 |[Minimize Malware Spread II](src/main/kotlin/g0901_1000/s0928_minimize_malware_spread_ii/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 716 | 100.00
 | 0927 |[Three Equal Parts](src/main/kotlin/g0901_1000/s0927_three_equal_parts/Solution.kt)| Hard | Array, Math | 303 | 100.00
 | 0926 |[Flip String to Monotone Increasing](src/main/kotlin/g0901_1000/s0926_flip_string_to_monotone_increasing/Solution.kt)| Medium | String, Dynamic_Programming | 199 | 100.00
 | 0925 |[Long Pressed Name](src/main/kotlin/g0901_1000/s0925_long_pressed_name/Solution.kt)| Easy | String, Two_Pointers | 126 | 92.31
