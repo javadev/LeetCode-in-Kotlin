@@ -1673,6 +1673,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0934 |[Shortest Bridge](src/main/kotlin/g0901_1000/s0934_shortest_bridge/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 301 | 80.95
 
 #### Day 7 Standard Traversal
 
@@ -1731,6 +1732,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0935 |[Knight Dialer](src/main/kotlin/g0901_1000/s0935_knight_dialer/Solution.kt)| Medium | Dynamic_Programming | 160 | 100.00
+| 0934 |[Shortest Bridge](src/main/kotlin/g0901_1000/s0934_shortest_bridge/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_6_Matrix_Related_Problems | 301 | 80.95
+| 0933 |[Number of Recent Calls](src/main/kotlin/g0901_1000/s0933_number_of_recent_calls/RecentCounter.kt)| Easy | Design, Queue, Data_Stream | 476 | 82.50
+| 0932 |[Beautiful Array](src/main/kotlin/g0901_1000/s0932_beautiful_array/Solution.kt)| Medium | Array, Math, Divide_and_Conquer | 145 | 100.00
 | 0931 |[Minimum Falling Path Sum](src/main/kotlin/g0901_1000/s0931_minimum_falling_path_sum/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_13 | 201 | 84.21
 | 0930 |[Binary Subarrays With Sum](src/main/kotlin/g0901_1000/s0930_binary_subarrays_with_sum/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum, Sliding_Window | 250 | 93.75
 | 0929 |[Unique Email Addresses](src/main/kotlin/g0901_1000/s0929_unique_email_addresses/Solution.kt)| Easy | Array, String, Hash_Table | 207 | 89.29
