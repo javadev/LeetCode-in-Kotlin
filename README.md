@@ -492,6 +492,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0103 |[Binary Tree Zigzag Level Order Traversal](src/main/kotlin/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.kt)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 316 | 34.25
 | 0108 |[Convert Sorted Array to Binary Search Tree](src/main/kotlin/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.kt)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 334 | 35.39
 | 0543 |[Diameter of Binary Tree](src/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree | 307 | 43.93
+| 0938 |[Range Sum of BST](src/main/kotlin/g0901_1000/s0938_range_sum_of_bst/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 356 | 55.36
 | 0100 |[Same Tree](src/main/kotlin/g0001_0100/s0100_same_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 208 | 72.24
 | 0226 |[Invert Binary Tree](src/main/kotlin/g0201_0300/s0226_invert_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 233 | 54.90
 | 0111 |[Minimum Depth of Binary Tree](src/main/kotlin/g0101_0200/s0111_minimum_depth_of_binary_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 525 | 90.51
@@ -1732,6 +1733,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0939 |[Minimum Area Rectangle](src/main/kotlin/g0901_1000/s0939_minimum_area_rectangle/Solution.kt)| Medium | Array, Hash_Table, Math, Sorting, Geometry | 461 | 100.00
+| 0938 |[Range Sum of BST](src/main/kotlin/g0901_1000/s0938_range_sum_of_bst/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Udemy_Tree_Stack_Queue | 356 | 55.36
+| 0937 |[Reorder Data in Log Files](src/main/kotlin/g0901_1000/s0937_reorder_data_in_log_files/Solution.kt)| Easy | Array, String, Sorting | 205 | 81.82
+| 0936 |[Stamping The Sequence](src/main/kotlin/g0901_1000/s0936_stamping_the_sequence/Solution.kt)| Hard | String, Greedy, Stack, Queue | 196 | 100.00
 | 0935 |[Knight Dialer](src/main/kotlin/g0901_1000/s0935_knight_dialer/Solution.kt)| Medium | Dynamic_Programming | 160 | 100.00
 | 0934 |[Shortest Bridge](src/main/kotlin/g0901_1000/s0934_shortest_bridge/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_6_Matrix_Related_Problems | 301 | 80.95
 | 0933 |[Number of Recent Calls](src/main/kotlin/g0901_1000/s0933_number_of_recent_calls/RecentCounter.kt)| Easy | Design, Queue, Data_Stream | 476 | 82.50
