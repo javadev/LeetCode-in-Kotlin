@@ -1733,6 +1733,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0943 |[Find the Shortest Superstring](src/main/kotlin/g0901_1000/s0943_find_the_shortest_superstring/Solution.kt)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Bitmask | 1290 | 100.00
+| 0942 |[DI String Match](src/main/kotlin/g0901_1000/s0942_di_string_match/Solution.kt)| Easy | Array, String, Math, Greedy, Two_Pointers | 202 | 80.00
+| 0941 |[Valid Mountain Array](src/main/kotlin/g0901_1000/s0941_valid_mountain_array/Solution.kt)| Easy | Array | 251 | 51.94
+| 0940 |[Distinct Subsequences II](src/main/kotlin/g0901_1000/s0940_distinct_subsequences_ii/Solution.kt)| Hard | String, Dynamic_Programming | 177 | 100.00
 | 0939 |[Minimum Area Rectangle](src/main/kotlin/g0901_1000/s0939_minimum_area_rectangle/Solution.kt)| Medium | Array, Hash_Table, Math, Sorting, Geometry | 461 | 100.00
 | 0938 |[Range Sum of BST](src/main/kotlin/g0901_1000/s0938_range_sum_of_bst/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Udemy_Tree_Stack_Queue | 356 | 55.36
 | 0937 |[Reorder Data in Log Files](src/main/kotlin/g0901_1000/s0937_reorder_data_in_log_files/Solution.kt)| Easy | Array, String, Sorting | 205 | 81.82
