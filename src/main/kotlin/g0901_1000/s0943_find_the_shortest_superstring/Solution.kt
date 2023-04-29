@@ -22,7 +22,9 @@ class Solution {
         l: Int
     ): String? {
         val key = "$startWord|$state"
-        if (state == 0) return startWord
+        if (state == 0) {
+            return startWord
+        }
         if (map[key] != null) {
             return map[key]
         }
@@ -44,9 +46,12 @@ class Solution {
     private fun mergeAndGet(word: String, result: String?): String {
         val l = word.length
         val t = result!!.length
-        if (result.contains(word)) return result
-        if (word.contains(result)) return word
-        val ans = ""
+        if (result.contains(word)) {
+            return result
+        }
+        if (word.contains(result)) {
+            return word
+        }
         var found = l
         for (k in 0 until l) {
             var i = k
