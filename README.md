@@ -355,6 +355,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0547 |[Number of Provinces](src/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 229 | 79.73
+| 0947 |[Most Stones Removed with Same Row or Column](src/main/kotlin/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.kt)| Medium | Depth_First_Search, Graph, Union_Find | 200 | 100.00
 
 #### Day 20 Brute Force/Backtracking
 
@@ -1733,6 +1734,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0947 |[Most Stones Removed with Same Row or Column](src/main/kotlin/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.kt)| Medium | Depth_First_Search, Graph, Union_Find, Level_2_Day_19_Union_Find | 200 | 100.00
+| 0946 |[Validate Stack Sequences](src/main/kotlin/g0901_1000/s0946_validate_stack_sequences/Solution.kt)| Medium | Array, Stack, Simulation | 180 | 74.91
+| 0945 |[Minimum Increment to Make Array Unique](src/main/kotlin/g0901_1000/s0945_minimum_increment_to_make_array_unique/Solution.kt)| Medium | Array, Sorting, Greedy, Counting | 427 | 100.00
+| 0944 |[Delete Columns to Make Sorted](src/main/kotlin/g0901_1000/s0944_delete_columns_to_make_sorted/Solution.kt)| Easy | Array, String | 221 | 75.00
 | 0943 |[Find the Shortest Superstring](src/main/kotlin/g0901_1000/s0943_find_the_shortest_superstring/Solution.kt)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Bitmask | 1290 | 100.00
 | 0942 |[DI String Match](src/main/kotlin/g0901_1000/s0942_di_string_match/Solution.kt)| Easy | Array, String, Math, Greedy, Two_Pointers | 202 | 80.00
 | 0941 |[Valid Mountain Array](src/main/kotlin/g0901_1000/s0941_valid_mountain_array/Solution.kt)| Easy | Array | 251 | 51.94
