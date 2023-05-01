@@ -34,7 +34,6 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ##
-* [SQL I](#sql-i)
 * [Level 1](#level-1)
 * [Level 2](#level-2)
 * [Udemy](#udemy)
@@ -48,71 +47,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 * [Programming Skills I](#programming-skills-i)
 * [Programming Skills II](#programming-skills-ii)
 * [Graph Theory I](#graph-theory-i)
-
-### SQL I
-
-#### Day 1 Select
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0595 |[Big Countries](src/main/kotlin/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 417 | 56.09
-| 0584 |[Find Customer Referee](src/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 779 | 43.48
-| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 712 | 33.67
-
-#### Day 2 Select and Order
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0627 |[Swap Salary](src/main/kotlin/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 400 | 51.04
-| 0196 |[Delete Duplicate Emails](src/main/kotlin/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 593 | 94.17
-
-#### Day 3 String Processing Functions
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-
-#### Day 4 Union and Select
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 794 | 48.38
-| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 219 | 92.54
-
-#### Day 5 Union
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0175 |[Combine Two Tables](src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 473 | 54.97
-
-#### Day 6 Union
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0197 |[Rising Temperature](src/main/kotlin/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 394 | 94.15
-| 0607 |[Sales Person](src/main/kotlin/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 2142 | 44.56
-
-#### Day 7 Function
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-
-#### Day 8 Function
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 768 | 44.85
-| 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
-
-#### Day 9 Control of Flow
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-
-#### Day 10 Where
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 396 | 68.40
+* [SQL I](#sql-i)
 
 ### Level 1
 
@@ -1728,12 +1663,81 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0886 |[Possible Bipartition](src/main/kotlin/g0801_0900/s0886_possible_bipartition/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 397 | 100.00
 | 0785 |[Is Graph Bipartite?](src/main/kotlin/g0701_0800/s0785_is_graph_bipartite/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 215 | 82.35
 
+### SQL I
+
+#### Day 1 Select
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0595 |[Big Countries](src/main/kotlin/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 417 | 56.09
+| 0584 |[Find Customer Referee](src/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 779 | 43.48
+| 0183 |[Customers Who Never Order](src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 712 | 33.67
+
+#### Day 2 Select and Order
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0627 |[Swap Salary](src/main/kotlin/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 400 | 51.04
+| 0196 |[Delete Duplicate Emails](src/main/kotlin/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 593 | 94.17
+
+#### Day 3 String Processing Functions
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+
+#### Day 4 Union and Select
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0608 |[Tree Node](src/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 794 | 48.38
+| 0176 |[Second Highest Salary](src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 219 | 92.54
+
+#### Day 5 Union
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0175 |[Combine Two Tables](src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 473 | 54.97
+
+#### Day 6 Union
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0197 |[Rising Temperature](src/main/kotlin/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 394 | 94.15
+| 0607 |[Sales Person](src/main/kotlin/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 2142 | 44.56
+
+#### Day 7 Function
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+
+#### Day 8 Function
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 768 | 44.85
+| 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
+
+#### Day 9 Control of Flow
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+
+#### Day 10 Where
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0182 |[Duplicate Emails](src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 396 | 68.40
+
 ## Algorithms
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0951 |[Flip Equivalent Binary Trees](src/main/kotlin/g0901_1000/s0951_flip_equivalent_binary_trees/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 150 | 100.00
+| 0950 |[Reveal Cards In Increasing Order](src/main/kotlin/g0901_1000/s0950_reveal_cards_in_increasing_order/Solution.kt)| Medium | Array, Sorting, Simulation, Queue | 176 | 100.00
+| 0949 |[Largest Time for Given Digits](src/main/kotlin/g0901_1000/s0949_largest_time_for_given_digits/Solution.kt)| Medium | String, Enumeration | 171 | 100.00
+| 0948 |[Bag of Tokens](src/main/kotlin/g0901_1000/s0948_bag_of_tokens/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers | 161 | 100.00
 | 0947 |[Most Stones Removed with Same Row or Column](src/main/kotlin/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.kt)| Medium | Depth_First_Search, Graph, Union_Find, Level_2_Day_19_Union_Find | 200 | 100.00
 | 0946 |[Validate Stack Sequences](src/main/kotlin/g0901_1000/s0946_validate_stack_sequences/Solution.kt)| Medium | Array, Stack, Simulation | 180 | 74.91
 | 0945 |[Minimum Increment to Make Array Unique](src/main/kotlin/g0901_1000/s0945_minimum_increment_to_make_array_unique/Solution.kt)| Medium | Array, Sorting, Greedy, Counting | 427 | 100.00
