@@ -1416,6 +1416,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0709 |[To Lower Case](src/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String | 142 | 98.68
+| 0953 |[Verifying an Alien Dictionary](src/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table | 137 | 100.00
 
 #### Day 10 Linked List and Tree
 
@@ -1734,6 +1735,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0955 |[Delete Columns to Make Sorted II](src/main/kotlin/g0901_1000/s0955_delete_columns_to_make_sorted_ii/Solution.kt)| Medium | Array, String, Greedy | 190 | 100.00
+| 0954 |[Array of Doubled Pairs](src/main/kotlin/g0901_1000/s0954_array_of_doubled_pairs/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy | 462 | 100.00
+| 0953 |[Verifying an Alien Dictionary](src/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table, Programming_Skills_I_Day_9_String | 137 | 100.00
+| 0952 |[Largest Component Size by Common Factor](src/main/kotlin/g0901_1000/s0952_largest_component_size_by_common_factor/Solution.kt)| Hard | Array, Math, Union_Find | 538 | 100.00
 | 0951 |[Flip Equivalent Binary Trees](src/main/kotlin/g0901_1000/s0951_flip_equivalent_binary_trees/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 150 | 100.00
 | 0950 |[Reveal Cards In Increasing Order](src/main/kotlin/g0901_1000/s0950_reveal_cards_in_increasing_order/Solution.kt)| Medium | Array, Sorting, Simulation, Queue | 176 | 100.00
 | 0949 |[Largest Time for Given Digits](src/main/kotlin/g0901_1000/s0949_largest_time_for_given_digits/Solution.kt)| Medium | String, Enumeration | 171 | 100.00
