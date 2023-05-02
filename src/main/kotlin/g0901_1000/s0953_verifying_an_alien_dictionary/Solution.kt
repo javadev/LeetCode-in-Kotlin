@@ -7,7 +7,7 @@ class Solution {
     fun isAlienSorted(words: Array<String>, order: String): Boolean {
         val map = IntArray(26)
         for (i in order.indices) {
-            map[order[i].toInt() - 'a'.toInt()] = i
+            map[order[i].code - 'a'.code] = i
         }
         for (i in 0 until words.size - 1) {
             if (!isSmaller(words[i], words[i + 1], map)) {
@@ -22,9 +22,9 @@ class Solution {
         val len2 = str2.length
         val minLength = len1.coerceAtMost(len2)
         for (i in 0 until minLength) {
-            if (map[str1[i].toInt() - 'a'.toInt()] > map[str2[i].toInt() - 'a'.toInt()]) {
+            if (map[str1[i].code - 'a'.code] > map[str2[i].code - 'a'.code]) {
                 return false
-            } else if (map[str1[i].toInt() - 'a'.toInt()] < map[str2[i].toInt() - 'a'.toInt()]) {
+            } else if (map[str1[i].code - 'a'.code] < map[str2[i].code - 'a'.code]) {
                 return true
             }
         }
