@@ -1735,6 +1735,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0959 |[Regions Cut By Slashes](src/main/kotlin/g0901_1000/s0959_regions_cut_by_slashes/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 180 | 100.00
+| 0958 |[Check Completeness of a Binary Tree](src/main/kotlin/g0901_1000/s0958_check_completeness_of_a_binary_tree/Solution.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree | 142 | 96.04
+| 0957 |[Prison Cells After N Days](src/main/kotlin/g0901_1000/s0957_prison_cells_after_n_days/Solution.kt)| Medium | Array, Hash_Table, Math, Bit_Manipulation | 172 | 100.00
+| 0956 |[Tallest Billboard](src/main/kotlin/g0901_1000/s0956_tallest_billboard/Solution.kt)| Hard | Array, Dynamic_Programming | 182 | 100.00
 | 0955 |[Delete Columns to Make Sorted II](src/main/kotlin/g0901_1000/s0955_delete_columns_to_make_sorted_ii/Solution.kt)| Medium | Array, String, Greedy | 190 | 100.00
 | 0954 |[Array of Doubled Pairs](src/main/kotlin/g0901_1000/s0954_array_of_doubled_pairs/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy | 462 | 100.00
 | 0953 |[Verifying an Alien Dictionary](src/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table, Programming_Skills_I_Day_9_String | 137 | 100.00
