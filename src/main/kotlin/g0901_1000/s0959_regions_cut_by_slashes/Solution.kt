@@ -3,6 +3,7 @@ package g0901_1000.s0959_regions_cut_by_slashes
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
 // #2023_05_03_Time_180_ms_(100.00%)_Space_37.2_MB_(50.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private var regions = 0
     private lateinit var parent: IntArray
