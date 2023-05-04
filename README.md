@@ -1735,6 +1735,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0963 |[Minimum Area Rectangle II](src/main/kotlin/g0901_1000/s0963_minimum_area_rectangle_ii/Solution.kt)| Medium | Array, Math, Geometry | 183 | 100.00
+| 0962 |[Maximum Width Ramp](src/main/kotlin/g0901_1000/s0962_maximum_width_ramp/Solution.kt)| Medium | Array, Stack, Monotonic_Stack | 324 | 100.00
+| 0961 |[N-Repeated Element in Size 2N Array](src/main/kotlin/g0901_1000/s0961_n_repeated_element_in_size_2n_array/Solution.kt)| Easy | Array, Hash_Table | 264 | 75.00
+| 0960 |[Delete Columns to Make Sorted III](src/main/kotlin/g0901_1000/s0960_delete_columns_to_make_sorted_iii/Solution.kt)| Hard | Array, String, Dynamic_Programming | 200 | 100.00
 | 0959 |[Regions Cut By Slashes](src/main/kotlin/g0901_1000/s0959_regions_cut_by_slashes/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 180 | 100.00
 | 0958 |[Check Completeness of a Binary Tree](src/main/kotlin/g0901_1000/s0958_check_completeness_of_a_binary_tree/Solution.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree | 142 | 96.04
 | 0957 |[Prison Cells After N Days](src/main/kotlin/g0901_1000/s0957_prison_cells_after_n_days/Solution.kt)| Medium | Array, Hash_Table, Math, Bit_Manipulation | 172 | 100.00
