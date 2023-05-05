@@ -2,10 +2,6 @@ package g0901_1000.s0966_vowel_spellchecker
 
 // #Medium #Array #String #Hash_Table #2023_05_05_Time_371_ms_(100.00%)_Space_77.8_MB_(50.00%)
 
-import java.util.Locale
-import kotlin.collections.HashMap
-import kotlin.collections.HashSet
-
 class Solution {
     private var matched: HashSet<String>? = null
     private var capitalizations: HashMap<String, String>? = null
@@ -26,7 +22,7 @@ class Solution {
         if (matched!!.contains(query)) {
             return query
         }
-        var word = query.lowercase(Locale.getDefault())
+        var word = query.lowercase()
         if (capitalizations!!.containsKey(word)) {
             return capitalizations!![word]
         }
@@ -43,7 +39,7 @@ class Solution {
         vowelErrors = HashMap()
         for (word in wordlist) {
             matched!!.add(word)
-            var s = word.lowercase(Locale.getDefault())
+            var s = word.lowercase()
             capitalizations!!.putIfAbsent(s, word)
             s = removeVowels(s)
             vowelErrors!!.putIfAbsent(s, word)
