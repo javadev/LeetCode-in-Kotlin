@@ -1735,6 +1735,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0967 |[Numbers With Same Consecutive Differences](src/main/kotlin/g0901_1000/s0967_numbers_with_same_consecutive_differences/Solution.kt)| Medium | Breadth_First_Search, Backtracking | 144 | 100.00
+| 0966 |[Vowel Spellchecker](src/main/kotlin/g0901_1000/s0966_vowel_spellchecker/Solution.kt)| Medium | Array, String, Hash_Table | 371 | 100.00
+| 0965 |[Univalued Binary Tree](src/main/kotlin/g0901_1000/s0965_univalued_binary_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 138 | 90.91
+| 0964 |[Least Operators to Express Number](src/main/kotlin/g0901_1000/s0964_least_operators_to_express_number/Solution.kt)| Hard | Dynamic_Programming, Math | 160 | 100.00
 | 0963 |[Minimum Area Rectangle II](src/main/kotlin/g0901_1000/s0963_minimum_area_rectangle_ii/Solution.kt)| Medium | Array, Math, Geometry | 183 | 100.00
 | 0962 |[Maximum Width Ramp](src/main/kotlin/g0901_1000/s0962_maximum_width_ramp/Solution.kt)| Medium | Array, Stack, Monotonic_Stack | 324 | 100.00
 | 0961 |[N-Repeated Element in Size 2N Array](src/main/kotlin/g0901_1000/s0961_n_repeated_element_in_size_2n_array/Solution.kt)| Easy | Array, Hash_Table | 264 | 75.00
