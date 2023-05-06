@@ -762,6 +762,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0451 |[Sort Characters By Frequency](src.save/main/kotlin/g0401_0500/s0451_sort_characters_by_frequency/Solution.kt)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort | 288 | 81.72
+| 0973 |[K Closest Points to Origin](src/main/kotlin/g0901_1000/s0973_k_closest_points_to_origin/Solution.kt)| Medium | Array, Math, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Geometry, Quickselect | 800 | 37.89
 
 ### Algorithm I
 
@@ -1494,6 +1495,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
+| 0973 |[K Closest Points to Origin](src/main/kotlin/g0901_1000/s0973_k_closest_points_to_origin/Solution.kt)| Medium | Array, Math, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Geometry, Quickselect | 800 | 37.89
 
 #### Day 9
 
@@ -1736,6 +1738,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0975 |[Odd Even Jump](src/main/kotlin/g0901_1000/s0975_odd_even_jump/Solution.kt)| Hard | Array, Dynamic_Programming, Stack, Ordered_Set, Monotonic_Stack | 326 | 100.00
+| 0974 |[Subarray Sums Divisible by K](src/main/kotlin/g0901_1000/s0974_subarray_sums_divisible_by_k/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum | 334 | 66.67
+| 0973 |[K Closest Points to Origin](src/main/kotlin/g0901_1000/s0973_k_closest_points_to_origin/Solution.kt)| Medium | Array, Math, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Geometry, Quickselect, Data_Structure_II_Day_21_Heap_Priority_Queue, Programming_Skills_II_Day_8 | 800 | 37.89
+| 0972 |[Equal Rational Numbers](src/main/kotlin/g0901_1000/s0972_equal_rational_numbers/Solution.kt)| Hard | String, Math | 130 | 100.00
 | 0971 |[Flip Binary Tree To Match Preorder Traversal](src/main/kotlin/g0901_1000/s0971_flip_binary_tree_to_match_preorder_traversal/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 173 | 66.67
 | 0970 |[Powerful Integers](src/main/kotlin/g0901_1000/s0970_powerful_integers/Solution.kt)| Medium | Hash_Table, Math | 136 | 100.00
 | 0969 |[Pancake Sorting](src/main/kotlin/g0901_1000/s0969_pancake_sorting/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers | 169 | 100.00
