@@ -6,8 +6,8 @@ import kotlin.math.abs
 import kotlin.math.pow
 
 class Solution {
-    fun isRationalEqual(S: String, T: String): Boolean {
-        return abs(valueOf(S) - valueOf(T)) < 1e-9
+    fun isRationalEqual(s: String, t: String): Boolean {
+        return abs(valueOf(s) - valueOf(t)) < 1e-9
     }
     private val ratios = doubleArrayOf(1.0, 1.0 / 9, 1.0 / 99, 1.0 / 999, 1.0 / 9999)
     private fun valueOf(s: String): Double {
