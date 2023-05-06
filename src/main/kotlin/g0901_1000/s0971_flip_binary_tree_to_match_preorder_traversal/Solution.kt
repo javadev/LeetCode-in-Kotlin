@@ -19,6 +19,7 @@ class Solution {
     private val list: MutableList<Int> = ArrayList()
     private var preIndex = 0
     private var isFlipPossible = true
+
     fun flipMatchVoyage(root: TreeNode?, voyage: IntArray): List<Int> {
         list.clear()
         preIndex = 0
