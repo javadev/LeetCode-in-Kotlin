@@ -440,6 +440,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0098 |[Validate Binary Search Tree](src.save/main/kotlin/g0001_0100/s0098_validate_binary_search_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 330 | 41.38
 | 0337 |[House Robber III](src.save/main/kotlin/g0301_0400/s0337_house_robber_iii/Solution.kt)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 282 | 84.62
 | 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/kotlin/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree | 386 | 45.21
+| 0968 |[Binary Tree Cameras](src/main/kotlin/g0901_1000/s0968_binary_tree_cameras/Solution.kt)| Hard | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 176 | 100.00
 
 #### Udemy Trie and Heap
 
@@ -1735,6 +1736,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0971 |[Flip Binary Tree To Match Preorder Traversal](src/main/kotlin/g0901_1000/s0971_flip_binary_tree_to_match_preorder_traversal/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 173 | 66.67
+| 0970 |[Powerful Integers](src/main/kotlin/g0901_1000/s0970_powerful_integers/Solution.kt)| Medium | Hash_Table, Math | 136 | 100.00
+| 0969 |[Pancake Sorting](src/main/kotlin/g0901_1000/s0969_pancake_sorting/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers | 169 | 100.00
+| 0968 |[Binary Tree Cameras](src/main/kotlin/g0901_1000/s0968_binary_tree_cameras/Solution.kt)| Hard | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree, Udemy_Tree_Stack_Queue | 176 | 100.00
 | 0967 |[Numbers With Same Consecutive Differences](src/main/kotlin/g0901_1000/s0967_numbers_with_same_consecutive_differences/Solution.kt)| Medium | Breadth_First_Search, Backtracking | 144 | 100.00
 | 0966 |[Vowel Spellchecker](src/main/kotlin/g0901_1000/s0966_vowel_spellchecker/Solution.kt)| Medium | Array, String, Hash_Table | 371 | 100.00
 | 0965 |[Univalued Binary Tree](src/main/kotlin/g0901_1000/s0965_univalued_binary_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 138 | 90.91
