@@ -3,16 +3,15 @@ package g0901_1000.s0975_odd_even_jump
 // #Hard #Array #Dynamic_Programming #Stack #Ordered_Set #Monotonic_Stack
 // #2023_05_06_Time_326_ms_(100.00%)_Space_78.1_MB_(14.29%)
 
-import java.util.Arrays
-
 class Solution {
     private lateinit var valToPos: IntArray
+
     fun oddEvenJumps(arr: IntArray): Int {
         val size = arr.size
         val odd = BooleanArray(size)
         val even = BooleanArray(size)
         valToPos = IntArray(100001)
-        Arrays.fill(valToPos, -1)
+        valToPos.fill(-1)
         valToPos[arr[size - 1]] = size - 1
         even[size - 1] = true
         odd[size - 1] = even[size - 1]
