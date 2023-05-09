@@ -16,7 +16,8 @@ class TimeMap {
         return map[key]?.floorEntry(timestamp)?.value ?: ""
     }
 }
-/**
+
+/*
  * Your TimeMap object will be instantiated and called as such:
  * var obj = TimeMap()
  * obj.set(key,value,timestamp)
