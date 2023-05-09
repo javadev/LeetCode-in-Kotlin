@@ -2,6 +2,7 @@ package g0901_1000.s0983_minimum_cost_for_tickets
 
 // #Medium #Array #Dynamic_Programming #2023_05_09_Time_147_ms_(92.80%)_Space_35.7_MB_(52.27%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun mincostTickets(days: IntArray, costs: IntArray): Int {
         val memo = IntArray(days.size + 1)
