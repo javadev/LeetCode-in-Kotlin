@@ -6,6 +6,7 @@ package g0901_1000.s0980_unique_paths_iii
 class Solution {
     private val row = intArrayOf(0, 0, 1, -1)
     private val col = intArrayOf(1, -1, 0, 0)
+
     private fun isSafe(grid: Array<IntArray>, rows: Int, cols: Int, i: Int, j: Int): Int {
         if (i < 0 || j < 0 || i >= rows || j >= cols || grid[i][j] == -1) {
             return 0
