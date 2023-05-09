@@ -20,7 +20,8 @@ class Solution {
                     }
                 }
             }
-            /* Return 1, as we covered all zeros in the path */return 1
+            /* Return 1, as we covered all zeros in the path */
+            return 1
         }
         /* mark as visited */
         grid[i][j] = -1
