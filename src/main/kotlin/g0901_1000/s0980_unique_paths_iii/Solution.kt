@@ -22,13 +22,15 @@ class Solution {
             }
             /* Return 1, as we covered all zeros in the path */return 1
         }
-        /* mark as visited */grid[i][j] = -1
+        /* mark as visited */
+        grid[i][j] = -1
         var result = 0
         for (k in 0..3) {
             /* travel in all four directions (up,down,right,left) */
             result += isSafe(grid, rows, cols, i + row[k], j + col[k])
         }
-        /* Mark unvisited again to backtrack */grid[i][j] = 0
+        /* Mark unvisited again to backtrack */
+        grid[i][j] = 0
         return result
     }
 
