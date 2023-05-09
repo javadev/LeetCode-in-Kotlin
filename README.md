@@ -1195,6 +1195,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0981 |[Time Based Key-Value Store](src/main/kotlin/g0901_1000/s0981_time_based_key_value_store/TimeMap.kt)| Medium | String, Hash_Table, Binary_Search, Design | 1555 | 10.00
 
 #### Day 17
 
@@ -1741,6 +1742,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0983 |[Minimum Cost For Tickets](src/main/kotlin/g0901_1000/s0983_minimum_cost_for_tickets/Solution.kt)| Medium | Array, Dynamic_Programming | 147 | 92.80
+| 0982 |[Triples with Bitwise AND Equal To Zero](src/main/kotlin/g0901_1000/s0982_triples_with_bitwise_and_equal_to_zero/Solution.kt)| Hard | Array, Hash_Table, Bit_Manipulation | 227 | 100.00
+| 0981 |[Time Based Key-Value Store](src/main/kotlin/g0901_1000/s0981_time_based_key_value_store/TimeMap.kt)| Medium | String, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_16 | 1555 | 10.00
+| 0980 |[Unique Paths III](src/main/kotlin/g0901_1000/s0980_unique_paths_iii/Solution.kt)| Hard | Array, Matrix, Bit_Manipulation, Backtracking | 134 | 100.00
 | 0979 |[Distribute Coins in Binary Tree](src/main/kotlin/g0901_1000/s0979_distribute_coins_in_binary_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 165 | 80.00
 | 0978 |[Longest Turbulent Subarray](src/main/kotlin/g0901_1000/s0978_longest_turbulent_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Sliding_Window | 395 | 40.00
 | 0977 |[Squares of a Sorted Array](src/main/kotlin/g0901_1000/s0977_squares_of_a_sorted_array/Solution.kt)| Easy | Array, Sorting, Two_Pointers, Algorithm_I_Day_2_Two_Pointers, Udemy_Two_Pointers | 375 | 18.43
