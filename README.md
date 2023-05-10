@@ -897,6 +897,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0844 |[Backspace String Compare](src.save/main/kotlin/g0801_0900/s0844_backspace_string_compare/Solution.kt)| Easy | String, Two_Pointers, Stack, Simulation | 126 | 98.31
+| 0986 |[Interval List Intersections](src/main/kotlin/g0901_1000/s0986_interval_list_intersections/Solution.kt)| Medium | Array, Two_Pointers | 318 | 60.98
 | 0011 |[Container With Most Water](src.save/main/kotlin/g0001_0100/s0011_container_with_most_water/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Greedy, Two_Pointers | 474 | 89.18
 
 #### Day 5 Sliding Window
@@ -1742,6 +1743,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0987 |[Vertical Order Traversal of a Binary Tree](src/main/kotlin/g0901_1000/s0987_vertical_order_traversal_of_a_binary_tree/Solution.kt)| Hard | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 189 | 66.67
+| 0986 |[Interval List Intersections](src/main/kotlin/g0901_1000/s0986_interval_list_intersections/Solution.kt)| Medium | Array, Two_Pointers, Algorithm_II_Day_4_Two_Pointers | 318 | 60.98
+| 0985 |[Sum of Even Numbers After Queries](src/main/kotlin/g0901_1000/s0985_sum_of_even_numbers_after_queries/Solution.kt)| Medium | Array, Simulation | 497 | 71.43
+| 0984 |[String Without AAA or BBB](src/main/kotlin/g0901_1000/s0984_string_without_aaa_or_bbb/Solution.kt)| Medium | String, Greedy | 132 | 66.67
 | 0983 |[Minimum Cost For Tickets](src/main/kotlin/g0901_1000/s0983_minimum_cost_for_tickets/Solution.kt)| Medium | Array, Dynamic_Programming | 147 | 92.80
 | 0982 |[Triples with Bitwise AND Equal To Zero](src/main/kotlin/g0901_1000/s0982_triples_with_bitwise_and_equal_to_zero/Solution.kt)| Hard | Array, Hash_Table, Bit_Manipulation | 227 | 100.00
 | 0981 |[Time Based Key-Value Store](src/main/kotlin/g0901_1000/s0981_time_based_key_value_store/TimeMap.kt)| Medium | String, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_16 | 1555 | 10.00
