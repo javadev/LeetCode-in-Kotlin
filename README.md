@@ -1481,6 +1481,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0067 |[Add Binary](src.save/main/kotlin/g0001_0100/s0067_add_binary/Solution.kt)| Easy | String, Math, Bit_Manipulation, Simulation | 327 | 32.67
+| 0989 |[Add to Array-Form of Integer](src/main/kotlin/g0901_1000/s0989_add_to_array_form_of_integer/Solution.kt)| Easy | Array, Math | 350 | 70.00
 
 #### Day 6
 
@@ -1743,6 +1744,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0991 |[Broken Calculator](src/main/kotlin/g0901_1000/s0991_broken_calculator/Solution.kt)| Medium | Math, Greedy | 127 | 100.00
+| 0990 |[Satisfiability of Equality Equations](src/main/kotlin/g0901_1000/s0990_satisfiability_of_equality_equations/Solution.kt)| Medium | Array, String, Graph, Union_Find | 163 | 100.00
+| 0989 |[Add to Array-Form of Integer](src/main/kotlin/g0901_1000/s0989_add_to_array_form_of_integer/Solution.kt)| Easy | Array, Math, Programming_Skills_II_Day_5 | 350 | 70.00
+| 0988 |[Smallest String Starting From Leaf](src/main/kotlin/g0901_1000/s0988_smallest_string_starting_from_leaf/Solution.kt)| Medium | String, Depth_First_Search, Tree, Binary_Tree | 180 | 100.00
 | 0987 |[Vertical Order Traversal of a Binary Tree](src/main/kotlin/g0901_1000/s0987_vertical_order_traversal_of_a_binary_tree/Solution.kt)| Hard | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 189 | 66.67
 | 0986 |[Interval List Intersections](src/main/kotlin/g0901_1000/s0986_interval_list_intersections/Solution.kt)| Medium | Array, Two_Pointers, Algorithm_II_Day_4_Two_Pointers | 318 | 60.98
 | 0985 |[Sum of Even Numbers After Queries](src/main/kotlin/g0901_1000/s0985_sum_of_even_numbers_after_queries/Solution.kt)| Medium | Array, Simulation | 497 | 71.43
