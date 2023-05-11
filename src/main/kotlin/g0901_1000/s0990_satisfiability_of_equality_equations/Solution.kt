@@ -27,8 +27,8 @@ class Solution {
         for (str in equations) {
             val oper = str.substring(1, 3)
             if (oper == "==") {
-                val px = find(map[str[0]]!!)
-                val py = find(map[str[3]]!!)
+                val px = find(map[str[0]])
+                val py = find(map[str[3]])
                 if (px != py) {
                     par[px] = py
                 }
@@ -37,8 +37,8 @@ class Solution {
         for (str in equations) {
             val oper = str.substring(1, 3)
             if (oper == "!=") {
-                val px = find(map[str[0]]!!)
-                val py = find(map[str[3]]!!)
+                val px = find(map[str[0]])
+                val py = find(map[str[3]])
                 if (px == py) {
                     return false
                 }
@@ -47,8 +47,8 @@ class Solution {
         return true
     }
 
-    private fun find(x: Int): Int {
-        if (par[x] == x) {
+    private fun find(x: Int?): Int {
+        if (par[x!!] == x) {
             return x
         }
         par[x] = find(par[x])
