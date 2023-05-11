@@ -25,7 +25,7 @@ class Solution {
         queue.add(root.left)
         queue.add(root.right)
         var seenNull = false
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val node: TreeNode? = queue.poll()
             if (node == null) {
                 seenNull = true

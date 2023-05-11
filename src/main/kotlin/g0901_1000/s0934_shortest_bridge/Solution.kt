@@ -30,7 +30,7 @@ class Solution {
             i++
         }
         var level = -1
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             var size: Int = q.size
             level++
             while (size-- > 0) {

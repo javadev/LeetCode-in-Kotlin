@@ -23,7 +23,7 @@ class Solution {
         }
         val state = "$ex,$target"
         if (map.containsKey(state)) {
-            return map[state]!!
+            return map.getValue(state)
         }
         var res = Int.MAX_VALUE
         val mod = (target % x).toInt()

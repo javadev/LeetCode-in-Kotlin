@@ -46,7 +46,7 @@ class Solution {
             q.offer(intArrayOf(0, i, CAT, MOUSE_WIN))
             q.offer(intArrayOf(i, i, CAT, CAT_WIN))
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val state = q.poll()
             val mouse = state[0]
             val cat = state[1]

@@ -21,7 +21,7 @@ class Solution {
         val `val`: Int = root!!.`val`
         val queue: LinkedList<TreeNode?> = LinkedList<TreeNode?>()
         queue.add(root)
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val node: TreeNode? = queue.poll()
             if (node!!.`val` != `val`) {
                 return false

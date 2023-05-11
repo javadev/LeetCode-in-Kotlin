@@ -26,7 +26,7 @@ class StockSpanner {
         if (stocks.size == 1) {
             return index - stocks.peek()
         }
-        while (stocks.size > 1 && map[stocks.peek()]!! <= price) {
+        while (stocks.size > 1 && map.getValue(stocks.peek()) <= price) {
             stocks.pop()
         }
         return index - stocks.peek()

@@ -28,7 +28,7 @@ class Solution {
         for (entry in map.iterator()) {
             val list: MutableList<Int> = ArrayList()
             ret.add(list)
-            while (!entry.value.isEmpty()) {
+            while (entry.value.isNotEmpty()) {
                 list.add(entry.value.poll().`val`)
             }
         }
@@ -42,7 +42,7 @@ class Solution {
         map.putIfAbsent(
             c, PriorityQueue { a: Node, b: Node -> if (a.row != b.row) a.row - b.row else a.`val` - b.`val` }
         )
-        map[c]!!.add(Node(r, cur.`val`))
+        map.getValue(c).add(Node(r, cur.`val`))
         helper(cur.left, map, r + 1, c - 1)
         helper(cur.right, map, r + 1, c + 1)
     }

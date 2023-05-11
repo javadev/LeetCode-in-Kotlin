@@ -30,7 +30,7 @@ class Solution {
         var count = 0
         val dx = intArrayOf(0, 0, 1, -1)
         val dy = intArrayOf(1, -1, 0, 0)
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size: Int = queue.size
             count += size
             for (i in 0 until size) {
@@ -45,7 +45,7 @@ class Solution {
                     queue.add(intArrayOf(x, y))
                 }
             }
-            if (!queue.isEmpty()) {
+            if (queue.isNotEmpty()) {
                 countCurrent++
             }
         }

@@ -10,7 +10,7 @@ class Solution {
         val stack: Deque<Char> = LinkedList()
         for (c in s.toCharArray()) {
             if (c == ')') {
-                if (!stack.isEmpty() && stack.peek() == '(') {
+                if (stack.isNotEmpty() && stack.peek() == '(') {
                     stack.pop()
                 } else {
                     stack.push(c)

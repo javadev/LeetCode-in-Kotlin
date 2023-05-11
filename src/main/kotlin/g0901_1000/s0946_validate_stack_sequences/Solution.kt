@@ -15,7 +15,7 @@ class Solution {
             if (pushed[i] == popped[j]) {
                 i++
                 j++
-            } else if (!stack.isEmpty() && stack.peek() == popped[j]) {
+            } else if (stack.isNotEmpty() && stack.peek() == popped[j]) {
                 stack.pop()
                 j++
             } else {
@@ -23,7 +23,7 @@ class Solution {
             }
         }
         while (j < len) {
-            if (!stack.isEmpty() && stack.peek() != popped[j++]) {
+            if (stack.isNotEmpty() && stack.peek() != popped[j++]) {
                 return false
             } else {
                 stack.pop()
