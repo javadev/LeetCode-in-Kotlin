@@ -30,7 +30,7 @@ class CBTInserter(root: TreeNode?) {
     private fun addToQueue() {
         val hlq: Queue<TreeNode> = LinkedList()
         hlq.add(head)
-        while (!hlq.isEmpty()) {
+        while (hlq.isNotEmpty()) {
             var size = hlq.size
             while (size-- > 0) {
                 val poll: TreeNode = hlq.poll()
@@ -59,7 +59,7 @@ class CBTInserter(root: TreeNode?) {
     }
 
     private fun deleteFullNode() {
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val peek: TreeNode = q.peek()
             if (peek.left != null && peek.right != null) {
                 q.poll()

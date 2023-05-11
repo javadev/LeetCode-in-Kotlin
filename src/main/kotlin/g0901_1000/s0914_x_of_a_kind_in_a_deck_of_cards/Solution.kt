@@ -8,13 +8,12 @@ class Solution {
         val map: HashMap<Int, Int> = HashMap()
         for (j in deck) {
             if (map.containsKey(j)) {
-                map[j] = map[j]!! + 1
+                map[j] = map.getValue(j) + 1
             } else {
                 map[j] = 1
             }
         }
-        var x = map[deck[0]]!!
-
+        var x = map.getValue(deck[0])
         for (entry in map.entries.iterator()) {
             x = gcd(x, entry.value)
         }

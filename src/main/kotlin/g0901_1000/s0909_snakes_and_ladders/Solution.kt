@@ -16,7 +16,7 @@ class Solution {
         queue.add(1)
         visited[0] = true
         var step = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val queueSize = queue.size
             for (i in 0 until queueSize) {
                 val previousLabel = queue.poll()

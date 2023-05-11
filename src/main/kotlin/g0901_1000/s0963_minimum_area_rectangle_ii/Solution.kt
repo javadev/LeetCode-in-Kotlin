@@ -6,11 +6,11 @@ import kotlin.math.abs
 
 class Solution {
     fun minAreaFreeRect(points: Array<IntArray>): Double {
-        val map: MutableMap<Int, MutableSet<Int>?> = HashMap()
+        val map: MutableMap<Int, MutableSet<Int>> = HashMap()
         var area: Double
         for (point in points) {
             map.putIfAbsent(point[0], HashSet())
-            map[point[0]]!!.add(point[1])
+            map.getValue(point[0]).add(point[1])
         }
         var minArea = Double.MAX_VALUE
         val n = points.size
@@ -33,7 +33,7 @@ class Solution {
                         continue
                     }
                     // 4th point exists
-                    if (map[x] != null && map[x]!!.contains(y)) {
+                    if (map[x] != null && map.getValue(x).contains(y)) {
                         minArea = area
                     }
                 }
