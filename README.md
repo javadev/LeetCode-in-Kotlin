@@ -1743,7 +1743,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 0996 |[Number of Squareful Arrays](src/main/kotlin/g0901_1000/s0996_number_of_squareful_arrays/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Backtracking, Bitmask | 139 | 100.00
+| 0995 |[Minimum Number of K Consecutive Bit Flips](src/main/kotlin/g0901_1000/s0995_minimum_number_of_k_consecutive_bit_flips/Solution.kt)| Hard | Array, Bit_Manipulation, Prefix_Sum, Sliding_Window | 480 | 100.00
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
+| 0993 |[Cousins in Binary Tree](src/main/kotlin/g0901_1000/s0993_cousins_in_binary_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 152 | 71.43
+| 0992 |[Subarrays with K Different Integers](src/main/kotlin/g0901_1000/s0992_subarrays_with_k_different_integers/Solution.kt)| Hard | Array, Hash_Table, Counting, Sliding_Window | 341 | 87.50
 | 0991 |[Broken Calculator](src/main/kotlin/g0901_1000/s0991_broken_calculator/Solution.kt)| Medium | Math, Greedy | 127 | 100.00
 | 0990 |[Satisfiability of Equality Equations](src/main/kotlin/g0901_1000/s0990_satisfiability_of_equality_equations/Solution.kt)| Medium | Array, String, Graph, Union_Find | 163 | 100.00
 | 0989 |[Add to Array-Form of Integer](src/main/kotlin/g0901_1000/s0989_add_to_array_form_of_integer/Solution.kt)| Easy | Array, Math, Programming_Skills_II_Day_5 | 350 | 70.00
