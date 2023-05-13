@@ -2,8 +2,6 @@ package g0901_1000.s1000_minimum_cost_to_merge_stones
 
 // #Hard #Array #Dynamic_Programming #2023_05_13_Time_152_ms_(75.00%)_Space_35.5_MB_(12.50%)
 
-import java.util.Arrays
-
 class Solution {
     private lateinit var memo: Array<IntArray>
     private lateinit var prefixSum: IntArray
@@ -14,7 +12,7 @@ class Solution {
         }
         memo = Array(n) { IntArray(n) }
         for (arr in memo) {
-            Arrays.fill(arr, -1)
+            arr.fill(-1)
         }
         prefixSum = IntArray(n + 1)
         for (i in 1 until n + 1) {
