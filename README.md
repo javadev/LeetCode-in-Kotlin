@@ -749,6 +749,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0997 |[Find the Town Judge](src/main/kotlin/g0901_1000/s0997_find_the_town_judge/Solution.kt)| Easy | Array, Hash_Table, Graph | 475 | 58.62
 | 0841 |[Keys and Rooms](src.save/main/kotlin/g0801_0900/s0841_keys_and_rooms/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 189 | 69.23
 
 #### Day 20 Heap Priority Queue
@@ -1665,6 +1666,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0997 |[Find the Town Judge](src/main/kotlin/g0901_1000/s0997_find_the_town_judge/Solution.kt)| Easy | Array, Hash_Table, Graph | 475 | 58.62
 
 #### Day 14 Graph Theory
 
@@ -1743,6 +1745,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1000 |[Minimum Cost to Merge Stones](src/main/kotlin/g0901_1000/s1000_minimum_cost_to_merge_stones/Solution.kt)| Hard | Array, Dynamic_Programming | 152 | 75.00
+| 0999 |[Available Captures for Rook](src/main/kotlin/g0901_1000/s0999_available_captures_for_rook/Solution.kt)| Easy | Array, Matrix, Simulation | 143 | 80.00
+| 0998 |[Maximum Binary Tree II](src/main/kotlin/g0901_1000/s0998_maximum_binary_tree_ii/Solution.kt)| Medium | Tree, Binary_Tree | 157 | 100.00
+| 0997 |[Find the Town Judge](src/main/kotlin/g0901_1000/s0997_find_the_town_judge/Solution.kt)| Easy | Array, Hash_Table, Graph, Data_Structure_II_Day_19_Graph, Graph_Theory_I_Day_13_Graph_Theory | 475 | 58.62
 | 0996 |[Number of Squareful Arrays](src/main/kotlin/g0901_1000/s0996_number_of_squareful_arrays/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Backtracking, Bitmask | 139 | 100.00
 | 0995 |[Minimum Number of K Consecutive Bit Flips](src/main/kotlin/g0901_1000/s0995_minimum_number_of_k_consecutive_bit_flips/Solution.kt)| Hard | Array, Bit_Manipulation, Prefix_Sum, Sliding_Window | 480 | 100.00
 | 0994 |[Rotting Oranges](src/main/kotlin/g0901_1000/s0994_rotting_oranges/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search, Level_2_Day_10_Graph/BFS/DFS | 308 | 57.93
