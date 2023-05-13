@@ -38,7 +38,7 @@ class Solution {
         var `val` = Int.MAX_VALUE
         var i = 0
         while (left + i + 1 <= right) {
-            `val` = Math.min(`val`, dp(left, left + i, k) + dp(left + i + 1, right, k))
+            `val` = `val`.coerceAtMost(dp(left, left + i, k) + dp(left + i + 1, right, k))
             i += k - 1
         }
         if ((right - left) % (k - 1) == 0) {
