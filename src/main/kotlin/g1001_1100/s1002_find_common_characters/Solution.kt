@@ -31,7 +31,7 @@ class Solution {
         for (i in c1c.indices) {
             var m = c1c[i].coerceAtMost(c2c[i])
             while (m > 0) {
-                sb.append(('a'.toInt() + i).toChar())
+                sb.append(('a'.code + i).toChar())
                 m--
             }
         }
@@ -41,7 +41,7 @@ class Solution {
     private fun countChars(str: String): IntArray {
         val result = IntArray(26)
         for (element in str) {
-            result[element.toInt() - 'a'.toInt()]++
+            result[element.code - 'a'.code]++
         }
         return result
     }

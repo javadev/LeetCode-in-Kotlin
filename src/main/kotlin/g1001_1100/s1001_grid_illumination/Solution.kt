@@ -60,7 +60,7 @@ class Solution {
     }
 
     private fun decr(map: MutableMap<Int, Int>, key: Int) {
-        val v = map[key]!!
+        val v = map.getOrDefault(key, 0)
         if (map[key] == 1) {
             map.remove(key)
         } else {
