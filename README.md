@@ -1746,7 +1746,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 1004 |[Max Consecutive Ones III](src/main/kotlin/g1001_1100/s1004_max_consecutive_ones_iii/Solution.kt)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 318 | 30.95
-| 1003 |[Check If Word Is Valid After Substitutions](src/main/kotlin/g1001_1100/s1003_check_if_word_is_valid_after_substitutions/Solution.kt)| |||
+| 1003 |[Check If Word Is Valid After Substitutions](src/main/kotlin/g1001_1100/s1003_check_if_word_is_valid_after_substitutions/Solution.kt)| Medium | String, Stack | 216 | 100.00
 | 1002 |[Find Common Characters](src/main/kotlin/g1001_1100/s1002_find_common_characters/Solution.kt)| Easy | Array, String, Hash_Table | 181 | 100.00
 | 1001 |[Grid Illumination](src/main/kotlin/g1001_1100/s1001_grid_illumination/Solution.kt)| Hard | Array, Hash_Table | 801 | 100.00
 | 1000 |[Minimum Cost to Merge Stones](src/main/kotlin/g0901_1000/s1000_minimum_cost_to_merge_stones/Solution.kt)| Hard | Array, Dynamic_Programming | 152 | 75.00
