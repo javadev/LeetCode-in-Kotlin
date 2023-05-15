@@ -7,7 +7,7 @@ import java.util.Arrays
 class Solution {
     fun largestSumAfterKNegations(nums: IntArray, k: Int): Int {
         var k = k
-        Arrays.sort(nums)
+        nums.sort()
         var minIndex = 0
         var i = 0
         while (i < nums.size && k > 0) {
