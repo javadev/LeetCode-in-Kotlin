@@ -4,6 +4,7 @@ package g1001_1100.s1005_maximize_sum_of_array_after_k_negations
 
 import java.util.Arrays
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun largestSumAfterKNegations(nums: IntArray, k: Int): Int {
         var k = k
