@@ -5,6 +5,7 @@ package g1001_1100.s1009_complement_of_base_10_integer
 
 import kotlin.math.pow
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun bitwiseComplement(n: Int): Int {
         var n = n
