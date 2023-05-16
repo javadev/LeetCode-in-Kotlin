@@ -499,6 +499,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0389 |[Find the Difference](src.save/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 256 | 64.81
 | 0190 |[Reverse Bits](src.save/main/kotlin/g0101_0200/s0190_reverse_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 198 | 81.82
 | 0461 |[Hamming Distance](src.save/main/kotlin/g0401_0500/s0461_hamming_distance/Solution.kt)| Easy | Bit_Manipulation | 150 | 96.15
+| 1009 |[Complement of Base 10 Integer](src/main/kotlin/g1001_1100/s1009_complement_of_base_10_integer/Solution.kt)| Easy | Bit_Manipulation | 126 | 72.73
 | 0338 |[Counting Bits](src.save/main/kotlin/g0301_0400/s0338_counting_bits/Solution.kt)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 186 | 99.26
 | 0371 |[Sum of Two Integers](src.save/main/kotlin/g0301_0400/s0371_sum_of_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 129 | 95.45
 | 0029 |[Divide Two Integers](src.save/main/kotlin/g0001_0100/s0029_divide_two_integers/Solution.kt)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 281 | 31.67
@@ -1747,6 +1748,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1012 |[Numbers With Repeated Digits](src/main/kotlin/g1001_1100/s1012_numbers_with_repeated_digits/Solution.kt)| Hard | Dynamic_Programming, Math | 123 | 100.00
+| 1011 |[Capacity To Ship Packages Within D Days](src/main/kotlin/g1001_1100/s1011_capacity_to_ship_packages_within_d_days/Solution.kt)| Medium | Array, Binary_Search | 325 | 66.67
+| 1010 |[Pairs of Songs With Total Durations Divisible by 60](src/main/kotlin/g1001_1100/s1010_pairs_of_songs_with_total_durations_divisible_by_60/Solution.kt)| Medium | Array, Hash_Table, Counting | 287 | 77.78
+| 1009 |[Complement of Base 10 Integer](src/main/kotlin/g1001_1100/s1009_complement_of_base_10_integer/Solution.kt)| Easy | Bit_Manipulation, Udemy_Bit_Manipulation | 126 | 72.73
 | 1008 |[Construct Binary Search Tree from Preorder Traversal](src/main/kotlin/g1001_1100/s1008_construct_binary_search_tree_from_preorder_traversal/Solution.kt)| Medium | Array, Tree, Binary_Tree, Stack, Monotonic_Stack, Binary_Search_Tree, Udemy_Tree_Stack_Queue | 145 | 100.00
 | 1007 |[Minimum Domino Rotations For Equal Row](src/main/kotlin/g1001_1100/s1007_minimum_domino_rotations_for_equal_row/Solution.kt)| Medium | Array, Greedy, Udemy_Arrays | 421 | 50.00
 | 1006 |[Clumsy Factorial](src/main/kotlin/g1001_1100/s1006_clumsy_factorial/Solution.kt)| Medium | Math, Stack, Simulation | 127 | 100.00
