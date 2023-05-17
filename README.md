@@ -1270,6 +1270,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1014 |[Best Sightseeing Pair](src/main/kotlin/g1001_1100/s1014_best_sightseeing_pair/Solution.kt)| Medium | Array, Dynamic_Programming | 336 | 66.67
 | 0121 |[Best Time to Buy and Sell Stock](src.save/main/kotlin/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 609 | 94.06
 | 0122 |[Best Time to Buy and Sell Stock II](src.save/main/kotlin/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.kt)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 197 | 95.10
 
@@ -1748,6 +1749,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1016 |[Binary String With Substrings Representing 1 To N](src/main/kotlin/g1001_1100/s1016_binary_string_with_substrings_representing_1_to_n/Solution.kt)| Medium | String | 134 | 75.00
+| 1015 |[Smallest Integer Divisible by K](src/main/kotlin/g1001_1100/s1015_smallest_integer_divisible_by_k/Solution.kt)| Medium | Hash_Table, Math | 123 | 100.00
+| 1014 |[Best Sightseeing Pair](src/main/kotlin/g1001_1100/s1014_best_sightseeing_pair/Solution.kt)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_7 | 336 | 66.67
+| 1013 |[Partition Array Into Three Parts With Equal Sum](src/main/kotlin/g1001_1100/s1013_partition_array_into_three_parts_with_equal_sum/Solution.kt)| Easy | Array, Greedy | 328 | 100.00
 | 1012 |[Numbers With Repeated Digits](src/main/kotlin/g1001_1100/s1012_numbers_with_repeated_digits/Solution.kt)| Hard | Dynamic_Programming, Math | 123 | 100.00
 | 1011 |[Capacity To Ship Packages Within D Days](src/main/kotlin/g1001_1100/s1011_capacity_to_ship_packages_within_d_days/Solution.kt)| Medium | Array, Binary_Search | 325 | 66.67
 | 1010 |[Pairs of Songs With Total Durations Divisible by 60](src/main/kotlin/g1001_1100/s1010_pairs_of_songs_with_total_durations_divisible_by_60/Solution.kt)| Medium | Array, Hash_Table, Counting | 287 | 77.78
