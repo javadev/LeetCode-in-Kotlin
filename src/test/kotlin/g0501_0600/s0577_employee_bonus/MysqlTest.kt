@@ -16,25 +16,25 @@ import javax.sql.DataSource
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
     initialSqls = [
-        "CREATE TABLE Employee(empId INTEGER PRIMARY KEY, name VARCHAR(512)"
-            + ", supervisor INTEGER, salary INTEGER); "
-            + "INSERT INTO Employee(empId, name"
-            + ", supervisor, salary)"
-            + " VALUES (3, 'Brad', NULL, 4000); "
-            + "INSERT INTO Employee(empId, name"
-            + ", supervisor, salary)"
-            + " VALUES (1, 'John', 3, 1000); "
-            + "INSERT INTO Employee(empId, name"
-            + ", supervisor, salary)"
-            + " VALUES (2, 'Dan', 3, 2000); "
-            + "INSERT INTO Employee(empId, name"
-            + ", supervisor, salary)"
-            + " VALUES (4, 'Thomas', 3, 4000); "
-            + "CREATE TABLE Bonus(empId INTEGER, bonus INTEGER); "
-            + "INSERT INTO Bonus(empId, bonus)"
-            + " VALUES (2, 500); "
-            + "INSERT INTO Bonus(empId, bonus)"
-            + " VALUES (4, 2000); "
+        "CREATE TABLE Employee(empId INTEGER PRIMARY KEY, name VARCHAR(512)" +
+            ", supervisor INTEGER, salary INTEGER); " +
+            "INSERT INTO Employee(empId, name" +
+            ", supervisor, salary)" +
+            " VALUES (3, 'Brad', NULL, 4000); " +
+            "INSERT INTO Employee(empId, name" +
+            ", supervisor, salary)" +
+            " VALUES (1, 'John', 3, 1000); " +
+            "INSERT INTO Employee(empId, name" +
+            ", supervisor, salary)" +
+            " VALUES (2, 'Dan', 3, 2000); " +
+            "INSERT INTO Employee(empId, name" +
+            ", supervisor, salary)" +
+            " VALUES (4, 'Thomas', 3, 4000); " +
+            "CREATE TABLE Bonus(empId INTEGER, bonus INTEGER); " +
+            "INSERT INTO Bonus(empId, bonus)" +
+            " VALUES (2, 500); " +
+            "INSERT INTO Bonus(empId, bonus)" +
+            " VALUES (4, 2000); "
     ]
 )
 internal class MysqlTest {
@@ -46,8 +46,8 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0501_0600/"
-                                + "s0577_employee_bonus/script.sql"
+                            "src/main/kotlin/g0501_0600/" +
+                                "s0577_employee_bonus/script.sql"
                         )
                     )
                         .lines()
