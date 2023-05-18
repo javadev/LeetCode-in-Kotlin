@@ -2133,12 +2133,15 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0589 |[N-ary Tree Preorder Traversal](src.save/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function, Level_1_Day_6_Tree | 233 | 84.02
 | 0587 |[Erect the Fence](src.save/main/kotlin/g0501_0600/s0587_erect_the_fence/Solution.kt)| Hard | Array, Math, Geometry | 470 | 100.00
 | 0586 |[Customer Placing the Largest Number of Orders](src.save/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 768 | 44.85
+| 0585 |[Investments in 2016](src/main/kotlin/g0501_0600/s0585_investments_in_2016/script.sql)| Medium | Database | 729 | 99.22
 | 0584 |[Find Customer Referee](src.save/main/kotlin/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 779 | 43.48
 | 0583 |[Delete Operation for Two Strings](src.save/main/kotlin/g0501_0600/s0583_delete_operation_for_two_strings/Solution.kt)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 197 | 100.00
 | 0581 |[Shortest Unsorted Continuous Subarray](src.save/main/kotlin/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.kt)| Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 246 | 100.00
+| 0577 |[Employee Bonus](src/main/kotlin/g0501_0600/s0577_employee_bonus/script.sql)| Easy | Database | 1473 | 95.83
 | 0576 |[Out of Boundary Paths](src.save/main/kotlin/g0501_0600/s0576_out_of_boundary_paths/Solution.kt)| Medium | Dynamic_Programming | 153 | 100.00
 | 0575 |[Distribute Candies](src.save/main/kotlin/g0501_0600/s0575_distribute_candies/Solution.kt)| Easy | Array, Hash_Table | 538 | 76.92
 | 0572 |[Subtree of Another Tree](src.save/main/kotlin/g0501_0600/s0572_subtree_of_another_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching, Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search | 214 | 92.39
+| 0570 |[Managers with at Least 5 Direct Reports](src/main/kotlin/g0501_0600/s0570_managers_with_at_least_5_direct_reports/script.sql)| Medium | Database | 454 | 90.82
 | 0567 |[Permutation in String](src.save/main/kotlin/g0501_0600/s0567_permutation_in_string/Solution.kt)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 169 | 100.00
 | 0566 |[Reshape the Matrix](src.save/main/kotlin/g0501_0600/s0566_reshape_the_matrix/Solution.kt)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 239 | 99.05
 | 0565 |[Array Nesting](src.save/main/kotlin/g0501_0600/s0565_array_nesting/Solution.kt)| Medium | Array, Depth_First_Search | 553 | 100.00
@@ -2154,6 +2157,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0553 |[Optimal Division](src.save/main/kotlin/g0501_0600/s0553_optimal_division/Solution.kt)| Medium | Array, Dynamic_Programming, Math | 154 | 100.00
 | 0552 |[Student Attendance Record II](src.save/main/kotlin/g0501_0600/s0552_student_attendance_record_ii/Solution.kt)| Hard | Dynamic_Programming | 151 | 100.00
 | 0551 |[Student Attendance Record I](src.save/main/kotlin/g0501_0600/s0551_student_attendance_record_i/Solution.kt)| Easy | String | 151 | 95.00
+| 0550 |[Game Play Analysis IV](src/main/kotlin/g0501_0600/s0550_game_play_analysis_iv/script.sql)| Medium | Database | 762 | 97.74
 | 0547 |[Number of Provinces](src.save/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_8_Standard_Traversal, Level_2_Day_19_Union_Find | 229 | 79.73
 | 0546 |[Remove Boxes](src.save/main/kotlin/g0501_0600/s0546_remove_boxes/Solution.kt)| Hard | Array, Dynamic_Programming, Memoization | 283 | 100.00
 | 0543 |[Diameter of Binary Tree](src.save/main/kotlin/g0501_0600/s0543_diameter_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 307 | 43.93
