@@ -16,20 +16,20 @@ import javax.sql.DataSource
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
     initialSqls = [
-        "CREATE TABLE Insurance(pid INTEGER, tiv_2015 DECIMAL,  tiv_2016 DECIMAL" +
-            ", lat DECIMAL, lon DECIMAL); " +
-            "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
-            ", lat, lon)" +
-            " VALUES (1, 10, 5, 10, 10); " +
-            "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
-            ", lat, lon)" +
-            " VALUES (2, 20, 20, 20, 20); " +
-            "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
-            ", lat, lon)" +
-            " VALUES (3, 10, 30, 20, 20); " +
-            "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
-            ", lat, lon)" +
-            " VALUES (4, 10, 40, 40, 40); "
+        "CREATE TABLE Insurance(pid INTEGER, tiv_2015 DECIMAL, tiv_2016 DECIMAL"
+            + ", lat DECIMAL, lon DECIMAL); "
+            + "INSERT INTO Insurance(pid, tiv_2015, tiv_2016"
+            + ", lat, lon)"
+            + " VALUES (1, 10, 5, 10, 10); "
+            + "INSERT INTO Insurance(pid, tiv_2015, tiv_2016"
+            + ", lat, lon)"
+            + " VALUES (2, 20, 20, 20, 20); "
+            + "INSERT INTO Insurance(pid, tiv_2015, tiv_2016"
+            + ", lat, lon)"
+            + " VALUES (3, 10, 30, 20, 20); "
+            + "INSERT INTO Insurance(pid, tiv_2015, tiv_2016"
+            + ", lat, lon)"
+            + " VALUES (4, 10, 40, 40, 40); "
     ]
 )
 internal class MysqlTest {
@@ -41,9 +41,9 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0501_0600/" +
-                                "s0585_investments_in_2016" +
-                                "/script.sql"
+                            "src/main/kotlin/g0501_0600/"
+                                + "s0585_investments_in_2016"
+                                + "/script.sql"
                         )
                     )
                         .lines()
