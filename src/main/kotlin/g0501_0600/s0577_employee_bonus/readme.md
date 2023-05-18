@@ -24,8 +24,8 @@ Table: `Bonus`
     +-------------+------+ 
     | Column Name | Type | 
     +-------------+------+ 
-    | empId | int | 
-    | bonus | int | 
+    | empId       | int  | 
+    | bonus       | int  | 
     +-------------+------+ 
 
 empId is the primary key column for this table. 
