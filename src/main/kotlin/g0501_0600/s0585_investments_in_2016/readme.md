@@ -58,4 +58,10 @@ The query result format is in the following example.
     | 45.00    | 
     +----------+
 
-**Explanation:** The first record in the table, like the last record, meets both of the two criteria. The tiv\_2015 value 10 is the same as the third and fourth records, and its location is unique. The second record does not meet any of the two criteria. Its tiv\_2015 is not like any other policyholders and its location is the same as the third record, which makes the third record fail, too. So, the result is the sum of tiv\_2016 of the first and last record, which is 45. 
+**Explanation:**
+
+The first record in the table, like the last record, meets both of the two criteria.
+The tiv\_2015 value 10 is the same as the third and fourth records, and its location is unique.
+
+The second record does not meet any of the two criteria. Its tiv\_2015 is not like any other policyholders and its location is the same as the third record, which makes the third record fail, too.
+So, the result is the sum of tiv\_2016 of the first and last record, which is 45. 

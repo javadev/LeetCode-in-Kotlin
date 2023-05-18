@@ -16,7 +16,7 @@ import javax.sql.DataSource
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
     initialSqls = [
-        "CREATE TABLE Insurance(pid INTEGER, tiv_2015 DECIMAL,  tiv_2016 DECIMAL" +
+        "CREATE TABLE Insurance(pid INTEGER, tiv_2015 DECIMAL, tiv_2016 DECIMAL" +
             ", lat DECIMAL, lon DECIMAL); " +
             "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
             ", lat, lon)" +

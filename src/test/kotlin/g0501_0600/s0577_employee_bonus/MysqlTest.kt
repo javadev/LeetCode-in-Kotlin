@@ -47,8 +47,7 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0501_0600/" +
-                                "s0577_employee_bonus" +
-                                "/script.sql"
+                                "s0577_employee_bonus/script.sql"
                         )
                     )
                         .lines()
