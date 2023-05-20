@@ -2112,13 +2112,16 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 0622 |[Design Circular Queue](src.save/main/kotlin/g0601_0700/s0622_design_circular_queue/MyCircularQueue.kt)| Medium | Array, Design, Linked_List, Queue, Programming_Skills_II_Day_20 | 234 | 92.68
 | 0621 |[Task Scheduler](src.save/main/kotlin/g0601_0700/s0621_task_scheduler/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting, Level_2_Day_5_Greedy | 266 | 98.36
 | 0620 |[Not Boring Movies](src.save/main/kotlin/g0601_0700/s0620_not_boring_movies/script.sql)| Easy | Database | 305 | 59.80
+| 0619 |[Biggest Single Number](src/main/kotlin/g0601_0700/s0619_biggest_single_number/script.sql)| Easy | Database | 656 | 90.69
 | 0617 |[Merge Two Binary Trees](src.save/main/kotlin/g0601_0700/s0617_merge_two_binary_trees/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Algorithm_I_Day_8_Breadth_First_Search_Depth_First_Search | 243 | 72.83
 | 0611 |[Valid Triangle Number](src.save/main/kotlin/g0601_0700/s0611_valid_triangle_number/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers, Binary_Search_II_Day_1 | 203 | 100.00
+| 0610 |[Triangle Judgement](src/main/kotlin/g0601_0700/s0610_triangle_judgement/script.sql)| Easy | Database | 464 | 72.35
 | 0609 |[Find Duplicate File in System](src.save/main/kotlin/g0601_0700/s0609_find_duplicate_file_in_system/Solution.kt)| Medium | Array, String, Hash_Table | 426 | 100.00
 | 0608 |[Tree Node](src.save/main/kotlin/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database, SQL_I_Day_4_Union_and_Select | 794 | 48.38
 | 0607 |[Sales Person](src.save/main/kotlin/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_6_Union | 2142 | 44.56
 | 0606 |[Construct String from Binary Tree](src.save/main/kotlin/g0601_0700/s0606_construct_string_from_binary_tree/Solution.kt)| Easy | String, Depth_First_Search, Tree, Binary_Tree | 187 | 100.00
 | 0605 |[Can Place Flowers](src.save/main/kotlin/g0601_0700/s0605_can_place_flowers/Solution.kt)| Easy | Array, Greedy, Udemy_Arrays | 209 | 85.71
+| 0602 |[Friend Requests II: Who Has the Most Friends](src/main/kotlin/g0601_0700/s0602_friend_requests_ii_who_has_the_most_friends/script.sql)| Medium | Database | 398 | 97.39
 | 0601 |[Human Traffic of Stadium](src.save/main/kotlin/g0601_0700/s0601_human_traffic_of_stadium/script.sql)| Hard | Database | 529 | 51.80
 | 0600 |[Non-negative Integers without Consecutive Ones](src.save/main/kotlin/g0501_0600/s0600_non_negative_integers_without_consecutive_ones/Solution.kt)| Hard | Dynamic_Programming | 142 | 100.00
 | 0599 |[Minimum Index Sum of Two Lists](src.save/main/kotlin/g0501_0600/s0599_minimum_index_sum_of_two_lists/Solution.kt)| Easy | Array, String, Hash_Table | 293 | 100.00
