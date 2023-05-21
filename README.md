@@ -1608,6 +1608,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1020 |[Number of Enclaves](src/main/kotlin/g1001_1100/s1020_number_of_enclaves/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 369 | 76.26
 
 #### Day 4 Matrix Related Problems
 
@@ -1749,6 +1750,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1020 |[Number of Enclaves](src/main/kotlin/g1001_1100/s1020_number_of_enclaves/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_3_Matrix_Related_Problems | 369 | 76.26
+| 1019 |[Next Greater Node In Linked List](src/main/kotlin/g1001_1100/s1019_next_greater_node_in_linked_list/Solution.kt)| Medium | Array, Stack, Linked_List, Monotonic_Stack | 472 | 75.00
+| 1018 |[Binary Prefix Divisible By 5](src/main/kotlin/g1001_1100/s1018_binary_prefix_divisible_by_5/Solution.kt)| Easy | Array | 297 | 100.00
+| 1017 |[Convert to Base -2](src/main/kotlin/g1001_1100/s1017_convert_to_base_2/Solution.kt)| Medium | Math | 138 | 100.00
 | 1016 |[Binary String With Substrings Representing 1 To N](src/main/kotlin/g1001_1100/s1016_binary_string_with_substrings_representing_1_to_n/Solution.kt)| Medium | String | 134 | 75.00
 | 1015 |[Smallest Integer Divisible by K](src/main/kotlin/g1001_1100/s1015_smallest_integer_divisible_by_k/Solution.kt)| Medium | Hash_Table, Math | 123 | 100.00
 | 1014 |[Best Sightseeing Pair](src/main/kotlin/g1001_1100/s1014_best_sightseeing_pair/Solution.kt)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_7 | 336 | 66.67
