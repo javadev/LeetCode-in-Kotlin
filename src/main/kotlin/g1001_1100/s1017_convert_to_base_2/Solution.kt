@@ -10,7 +10,7 @@ class Solution {
         var sum: Int
         var pos = 0
         while (pos < sb.length) {
-            sum = carry + sb[pos].toInt() - '0'.toInt()
+            sum = carry + sb[pos].code - '0'.code
             sb.setCharAt(pos, if (sum % 2 == 0) '0' else '1')
             carry = sum / 2
             if (pos % 2 == 1 && sb[pos] == '1') {
