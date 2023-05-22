@@ -1750,6 +1750,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1024 |[Video Stitching](src/main/kotlin/g1001_1100/s1024_video_stitching/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy | 141 | 100.00
+| 1023 |[Camelcase Matching](src/main/kotlin/g1001_1100/s1023_camelcase_matching/Solution.kt)| Medium | String, Two_Pointers, Trie, String_Matching | 149 | 60.00
+| 1022 |[Remove Outermost Parentheses](src/main/kotlin/g1001_1100/s1022_sum_of_root_to_leaf_binary_numbers/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 158 | 88.89
+| 1021 |[Remove Outermost Parentheses](src/main/kotlin/g1001_1100/s1021_remove_outermost_parentheses/Solution.kt)| Easy | String, Stack | 156 | 60.00
 | 1020 |[Number of Enclaves](src/main/kotlin/g1001_1100/s1020_number_of_enclaves/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_3_Matrix_Related_Problems | 369 | 76.26
 | 1019 |[Next Greater Node In Linked List](src/main/kotlin/g1001_1100/s1019_next_greater_node_in_linked_list/Solution.kt)| Medium | Array, Stack, Linked_List, Monotonic_Stack | 472 | 75.00
 | 1018 |[Binary Prefix Divisible By 5](src/main/kotlin/g1001_1100/s1018_binary_prefix_divisible_by_5/Solution.kt)| Easy | Array | 297 | 100.00
