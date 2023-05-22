@@ -2,14 +2,11 @@ package g0901_1000.s0994_rotting_oranges
 
 // #Medium #Array #Breadth_First_Search #Matrix
 // #Algorithm_I_Day_9_Breadth_First_Search_Depth_First_Search #Level_2_Day_10_Graph/BFS/DFS
-// #2022_09_13_Time_308_ms_(57.93%)_Space_41.8_MB_(26.83%)
-
-import java.util.LinkedList
-import java.util.Queue
+// #2023_05_22_Time_164_ms_(82.95%)_Space_36.2_MB_(49.61%)
 
 class Solution {
     fun orangesRotting(grid: Array<IntArray>): Int {
-        val queue: Queue<IntArray> = LinkedList()
+        val queue = ArrayDeque<IntArray>()
         val row = grid.size
         val col: Int = grid[0].size
         var countActive = 0
@@ -34,7 +31,7 @@ class Solution {
             val size: Int = queue.size
             count += size
             for (i in 0 until size) {
-                val arr: IntArray = queue.poll()
+                val arr: IntArray = queue.removeFirst()
                 for (j in 0..3) {
                     val x = arr[0] + dx[j]
                     val y = arr[1] + dy[j]
