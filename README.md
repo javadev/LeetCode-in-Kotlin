@@ -1750,6 +1750,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1028 |[Recover a Tree From Preorder Traversal](src/main/kotlin/g1001_1100/s1028_recover_a_tree_from_preorder_traversal/Solution.kt)| Hard | String, Depth_First_Search, Tree, Binary_Tree | 246 | 100.00
+| 1027 |[Longest Arithmetic Subsequence](src/main/kotlin/g1001_1100/s1027_longest_arithmetic_subsequence/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming, Binary_Search | 330 | 100.00
+| 1026 |[Maximum Difference Between Node and Ancestor](src/main/kotlin/g1001_1100/s1026_maximum_difference_between_node_and_ancestor/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 155 | 77.78
+| 1025 |[Divisor Game](src/main/kotlin/g1001_1100/s1025_divisor_game/Solution.kt)| Easy | Dynamic_Programming, Math, Game_Theory, Brainteaser | 114 | 93.33
 | 1024 |[Video Stitching](src/main/kotlin/g1001_1100/s1024_video_stitching/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy | 141 | 100.00
 | 1023 |[Camelcase Matching](src/main/kotlin/g1001_1100/s1023_camelcase_matching/Solution.kt)| Medium | String, Two_Pointers, Trie, String_Matching | 149 | 60.00
 | 1022 |[Sum of Root To Leaf Binary Numbers](src/main/kotlin/g1001_1100/s1022_sum_of_root_to_leaf_binary_numbers/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree | 158 | 88.89
