@@ -1750,7 +1750,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
-| 1032 |[Maximum Sum of Two Non-Overlapping Subarrays](src/main/kotlin/g1001_1100/s1032_stream_of_characters/StreamChecker.kt)| Hard | Array, String, Design, Trie, Data_Stream | 733 | 100.00
+| 1032 |[Stream of Characters](src/main/kotlin/g1001_1100/s1032_stream_of_characters/StreamChecker.kt)| Hard | Array, String, Design, Trie, Data_Stream | 733 | 100.00
 | 1031 |[Maximum Sum of Two Non-Overlapping Subarrays](src/main/kotlin/g1001_1100/s1031_maximum_sum_of_two_non_overlapping_subarrays/Solution.kt)| Medium | Array, Dynamic_Programming, Sliding_Window | 172 | 100.00
 | 1030 |[Matrix Cells in Distance Order](src/main/kotlin/g1001_1100/s1030_matrix_cells_in_distance_order/Solution.kt)| Easy | Array, Math, Sorting, Matrix, Geometry | 426 | 100.00
 | 1029 |[Two City Scheduling](src/main/kotlin/g1001_1100/s1029_two_city_scheduling/Solution.kt)| Medium | Array, Sorting, Greedy | 148 | 100.00
