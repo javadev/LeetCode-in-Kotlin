@@ -17,6 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var ptr = 0
+
     fun recoverFromPreorder(traversal: String): TreeNode? {
         return find(traversal, 0)
     }
