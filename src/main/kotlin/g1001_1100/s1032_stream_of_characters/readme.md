@@ -1,40 +1,42 @@
-1031\. Maximum Sum of Two Non-Overlapping Subarrays
+1032\. Stream of Characters
 
-Medium
+Hard
 
-Given an integer array `nums` and two integers `firstLen` and `secondLen`, return _the maximum sum of elements in two non-overlapping **subarrays** with lengths_ `firstLen` _and_ `secondLen`.
+Design an algorithm that accepts a stream of characters and checks if a suffix of these characters is a string of a given array of strings `words`.
 
-The array with length `firstLen` could occur before or after the array with length `secondLen`, but they have to be non-overlapping.
+For example, if `words = ["abc", "xyz"]` and the stream added the four characters (one by one) `'a'`, `'x'`, `'y'`, and `'z'`, your algorithm should detect that the suffix `"xyz"` of the characters `"axyz"` matches `"xyz"` from `words`.
 
-A **subarray** is a **contiguous** part of an array.
+Implement the `StreamChecker` class:
+
+*   `StreamChecker(String[] words)` Initializes the object with the strings array `words`.
+*   `boolean query(char letter)` Accepts a new character from the stream and returns `true` if any non-empty suffix from the stream forms a word that is in `words`.
 
 **Example 1:**
 
-**Input:** nums = [0,6,5,2,2,5,1,9,4], firstLen = 1, secondLen = 2
+**Input** ["StreamChecker", "query", "query", "query", "query", "query", "query", "query", "query", "query", "query", "query", "query"] [[["cd", "f", "kl"]], ["a"], ["b"], ["c"], ["d"], ["e"], ["f"], ["g"], ["h"], ["i"], ["j"], ["k"], ["l"]]
 
-**Output:** 20
+**Output:** [null, false, false, false, true, false, true, false, false, false, false, false, true]
 
-**Explanation:** One choice of subarrays is [9] with length 1, and [6,5] with length 2.
+**Explanation:** 
 
-**Example 2:**
-
-**Input:** nums = [3,8,1,3,2,1,8,9,0], firstLen = 3, secondLen = 2
-
-**Output:** 29
-
-**Explanation:** One choice of subarrays is [3,8,1] with length 3, and [8,9] with length 2.
-
-**Example 3:**
-
-**Input:** nums = [2,1,5,6,0,9,5,0,3,8], firstLen = 4, secondLen = 3
-
-**Output:** 31
-
-**Explanation:** One choice of subarrays is [5,6,0,9] with length 4, and [0,3,8] with length 3.
+    StreamChecker streamChecker = new StreamChecker(["cd", "f", "kl"]); 
+    streamChecker.query("a"); // return False 
+    streamChecker.query("b"); // return False 
+    streamChecker.query("c"); // return False 
+    streamChecker.query("d"); // return True, because 'cd' is in the wordlist 
+    streamChecker.query("e"); // return False 
+    streamChecker.query("f"); // return True, because 'f' is in the wordlist 
+    streamChecker.query("g"); // return False 
+    streamChecker.query("h"); // return False 
+    streamChecker.query("i"); // return False 
+    streamChecker.query("j"); // return False 
+    streamChecker.query("k"); // return False 
+    streamChecker.query("l"); // return True, because 'kl' is in the wordlist
 
 **Constraints:**
 
-*   `1 <= firstLen, secondLen <= 1000`
-*   `2 <= firstLen + secondLen <= 1000`
-*   `firstLen + secondLen <= nums.length <= 1000`
-*   `0 <= nums[i] <= 1000`
+*   `1 <= words.length <= 2000`
+*   `1 <= words[i].length <= 2000`
+*   `words[i]` consists of lowercase English letters.
+*   `letter` is a lowercase English letter.
+*   At most <code>4 * 10<sup>4</sup></code> calls will be made to query.
