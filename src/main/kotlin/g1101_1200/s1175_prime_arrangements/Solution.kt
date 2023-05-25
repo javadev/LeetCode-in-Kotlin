@@ -1,6 +1,6 @@
 package g1101_1200.s1175_prime_arrangements
 
-// #Easy #Math
+// #Easy #Math #2023_05_25_Time_129_ms_(50.00%)_Space_33.7_MB_(50.00%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

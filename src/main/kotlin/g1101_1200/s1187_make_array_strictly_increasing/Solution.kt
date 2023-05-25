@@ -1,6 +1,7 @@
 package g1101_1200.s1187_make_array_strictly_increasing
 
 // #Hard #Array #Dynamic_Programming #Binary_Search
+// #2023_05_25_Time_308_ms_(100.00%)_Space_41.1_MB_(100.00%)
 
 class Solution {
     fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {

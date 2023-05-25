@@ -1,54 +1,63 @@
 package g1101_1200.s1191_k_concatenation_maximum_sum
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_05_25_Time_389_ms_(100.00%)_Space_77.8_MB_(100.00%)
 
 class Solution {
-    private val mod: Long = 1000000007
+    private var mod = (1e9 + 7).toInt()
+
     fun kConcatenationMaxSum(arr: IntArray, k: Int): Int {
-        // int kadane = Kadane(arr);
-        // #1 when k 1 simply calculate kadanes
-        if (k == 1) {
-            return (kadane(arr) % mod).toInt()
+        var sum: Long = 0
+        for (i in arr.indices) {
+            sum += arr[i].toLong()
         }
-        // #2 else calculate the total sum and then check if sum is -Ve or +Ve
-        var totalSum: Long = 0
-        for (i in arr) {
-            totalSum += i.toLong()
-        }
-        // #3 when negative then calculate of arr 2 times only the answer is in there only
-        return if (totalSum < 0) {
-            // when -ve sum put a extra check here of max from 0
-            Math.max(kadaneTwo(arr) % mod, 0).toInt()
+        return if (sum <= 0 || k == 1) {
+            var cb: Long = 0
+            var ob: Long = 0
+            for (i in arr.indices) {
+                cb = if (arr[i] + cb > arr[i]) {
+                    arr[i] + cb
+                } else {
+                    arr[i].toLong()
+                }
+                if (ob < cb) {
+                    ob = cb
+                }
+            }
+            if (k == 1) {
+                return (ob % mod).toInt()
+            }
+            for (i in arr.indices) {
+                cb = if (arr[i] + cb > arr[i]) {
+                    arr[i] + cb
+                } else {
+                    arr[i].toLong()
+                }
+                if (ob < cb) {
+                    ob = cb
+                }
+            }
+            (ob % mod).toInt()
         } else {
-            // #4 when sum is positve then the ans is kadane of 2 + sum * (k-2);
-            // these two are used sUm*(k-2) ensures that all other are also included
-            ((kadaneTwo(arr) + (k - 2) * totalSum + mod) % mod).toInt()
-        }
-    }
-
-    private fun kadane(arr: IntArray): Long {
-        var max = arr[0].toLong()
-        var cur: Long = 0
-        for (n in arr) {
-            cur += n.toLong()
-            max = Math.max(max, cur)
-            if (cur < 0) {
-                cur = 0
+            var max1: Long = 0
+            var smax: Long = 0
+            for (i in arr.indices.reversed()) {
+                smax += arr[i].toLong()
+                if (smax > max1) {
+                    max1 = smax
+                }
             }
-        }
-        return max
-    }
-
-    private fun kadaneTwo(arr: IntArray): Long {
-        var max = arr[0].toLong()
-        var cur: Long = 0
-        for (i in 0 until arr.size * 2) {
-            cur += arr[i % arr.size].toLong()
-            max = Math.max(max, cur)
-            if (cur < 0) {
-                cur = 0
+            max1 %= mod.toLong()
+            var max2: Long = 0
+            smax = 0
+            for (i in arr.indices) {
+                smax += arr[i].toLong()
+                if (smax > max2) {
+                    max2 = smax
+                }
             }
+            max2 %= mod.toLong()
+            val ans = max1 + (k - 2) * sum + max2
+            (ans % mod).toInt()
         }
-        return max
     }
 }

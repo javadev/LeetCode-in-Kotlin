@@ -1,6 +1,7 @@
 package g1101_1200.s1172_dinner_plate_stacks
 
 // #Hard #Hash_Table #Stack #Design #Heap_Priority_Queue
+// #2023_05_25_Time_1160_ms_(50.00%)_Space_177.1_MB_(50.00%)
 
 import java.util.Stack
 import java.util.TreeSet

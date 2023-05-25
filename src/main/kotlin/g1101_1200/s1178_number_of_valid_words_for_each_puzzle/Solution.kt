@@ -1,6 +1,7 @@
 package g1101_1200.s1178_number_of_valid_words_for_each_puzzle
 
 // #Hard #Array #String #Hash_Table #Bit_Manipulation #Trie
+// #2023_05_25_Time_675_ms_(100.00%)_Space_121.2_MB_(100.00%)
 
 class Solution {
     fun findNumOfValidWords(words: Array<String>, puzzles: Array<String>): List<Int> {

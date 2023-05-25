@@ -1,6 +1,6 @@
 package g1101_1200.s1190_reverse_substrings_between_each_pair_of_parentheses
 
-// #Medium #String #Stack
+// #Medium #String #Stack #2023_05_25_Time_153_ms_(42.86%)_Space_35.7_MB_(57.14%)
 
 class Solution {
     fun reverseParentheses(s: String): String {

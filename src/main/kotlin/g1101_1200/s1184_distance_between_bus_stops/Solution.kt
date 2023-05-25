@@ -1,6 +1,6 @@
 package g1101_1200.s1184_distance_between_bus_stops
 
-// #Easy #Array
+// #Easy #Array #2023_05_25_Time_164_ms_(57.14%)_Space_37.4_MB_(57.14%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

@@ -1,6 +1,6 @@
 package g1101_1200.s1186_maximum_subarray_sum_with_one_deletion
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_05_25_Time_304_ms_(50.00%)_Space_58.9_MB_(50.00%)
 
 class Solution {
     fun maximumSum(arr: IntArray): Int {

@@ -1614,7 +1614,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | y I Day 4 | y I Day 4 Matrix Related Problems
+| 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | 362 | 81.25
 | 0417 |[Pacific Atlantic Water Flow](src.save/main/kotlin/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 319 | 100.00
 
 #### Day 5 Matrix Related Problems
@@ -1751,26 +1751,26 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 1200 |[Minimum Absolute Difference](src/main/kotlin/g1101_1200/s1200_minimum_absolute_difference/Solution.kt)| Easy | Array |  | 
+| 1200 |[Minimum Absolute Difference](src/main/kotlin/g1101_1200/s1200_minimum_absolute_difference/Solution.kt)| Easy | Array, Sorting | 507 | 75.00
 | 1195 |[Fizz Buzz Multithreaded](src/main/kotlin/g1101_1200/s1195_fizz_buzz_multithreaded/FizzBuzz.kt)| Medium ||  | 
-| 1192 |[Critical Connections in a Network](src/main/kotlin/g1101_1200/s1192_critical_connections_in_a_network/Solution.kt)| Hard | Depth_First_Search, Graph |  Component |  Component
-| 1191 |[K-Concatenation Maximum Sum](src/main/kotlin/g1101_1200/s1191_k_concatenation_maximum_sum/Solution.kt)| Medium | Array | gramming | gramming
-| 1190 |[Reverse Substrings Between Each Pair of Parentheses](src/main/kotlin/g1101_1200/s1190_reverse_substrings_between_each_pair_of_parentheses/Solution.kt)| Medium | String |  | 
-| 1189 |[Maximum Number of Balloons](src/main/kotlin/g1101_1200/s1189_maximum_number_of_balloons/Solution.kt)| Easy | String, Hash_Table |  | 
-| 1187 |[Make Array Strictly Increasing](src/main/kotlin/g1101_1200/s1187_make_array_strictly_increasing/Solution.kt)| Hard | Array, Dynamic_Programming | ch | ch
-| 1186 |[Maximum Subarray Sum with One Deletion](src/main/kotlin/g1101_1200/s1186_maximum_subarray_sum_with_one_deletion/Solution.kt)| Medium | Array | gramming | gramming
-| 1185 |[Day of the Week](src/main/kotlin/g1101_1200/s1185_day_of_the_week/Solution.kt)| Easy ||  | 
-| 1184 |[Distance Between Bus Stops](src/main/kotlin/g1101_1200/s1184_distance_between_bus_stops/Solution.kt)| Easy ||  | 
-| 1179 |[Reformat Department Table](src/main/kotlin/g1101_1200/s1179_reformat_department_table/script.sql)| Easy | Database | 493 | 64.80
-| 1178 |[Number of Valid Words for Each Puzzle](src/main/kotlin/g1101_1200/s1178_number_of_valid_words_for_each_puzzle/Solution.kt)| Hard | Array, String, Hash_Table, Bit_Manipulation |  | 
-| 1177 |[Can Make Palindrome from Substring](src/main/kotlin/g1101_1200/s1177_can_make_palindrome_from_substring/Solution.kt)| Medium | String, Hash_Table, Bit_Manipulation |  | 
-| 1175 |[Prime Arrangements](src/main/kotlin/g1101_1200/s1175_prime_arrangements/Solution.kt)| Easy ||  | 
-| 1172 |[Dinner Plate Stacks](src/main/kotlin/g1101_1200/s1172_dinner_plate_stacks/DinnerPlates.kt)| Hard | Hash_Table, Stack, Design | ty Queue | ty Queue
-| 1171 |[Remove Zero Sum Consecutive Nodes from Linked List](src/main/kotlin/g1101_1200/s1171_remove_zero_sum_consecutive_nodes_from_linked_list/Solution.kt)| Medium | Hash_Table |  | 
-| 1170 |[Compare Strings by Frequency of the Smallest Character](src/main/kotlin/g1101_1200/s1170_compare_strings_by_frequency_of_the_smallest_character/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | ch | ch
-| 1169 |[Invalid Transactions](src/main/kotlin/g1101_1200/s1169_invalid_transactions/Solution.kt)| Medium | Array, String, Hash_Table |  | 
-| 1163 |[Last Substring in Lexicographical Order](src/main/kotlin/g1101_1200/s1163_last_substring_in_lexicographical_order/Solution.kt)| Hard | String | s | s
-| 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | y I Day 4 | y I Day 4 Matrix Related Problems
+| 1192 |[Critical Connections in a Network](src/main/kotlin/g1101_1200/s1192_critical_connections_in_a_network/Solution.kt)| Hard | Depth_First_Search, Graph, Biconnected_Component | 1696 | 60.00
+| 1191 |[K-Concatenation Maximum Sum](src/main/kotlin/g1101_1200/s1191_k_concatenation_maximum_sum/Solution.kt)| Medium | Array, Dynamic_Programming | 389 | 100.00
+| 1190 |[Reverse Substrings Between Each Pair of Parentheses](src/main/kotlin/g1101_1200/s1190_reverse_substrings_between_each_pair_of_parentheses/Solution.kt)| Medium | String, Stack | 153 | 42.86
+| 1189 |[Maximum Number of Balloons](src/main/kotlin/g1101_1200/s1189_maximum_number_of_balloons/Solution.kt)| Easy | String, Hash_Table, Counting | 136 | 98.31
+| 1187 |[Make Array Strictly Increasing](src/main/kotlin/g1101_1200/s1187_make_array_strictly_increasing/Solution.kt)| Hard | Array, Dynamic_Programming, Binary_Search | 308 | 100.00
+| 1186 |[Maximum Subarray Sum with One Deletion](src/main/kotlin/g1101_1200/s1186_maximum_subarray_sum_with_one_deletion/Solution.kt)| Medium | Array, Dynamic_Programming | 304 | 50.00
+| 1185 |[Day of the Week](src/main/kotlin/g1101_1200/s1185_day_of_the_week/Solution.kt)| Easy | Math | 127 | 50.00
+| 1184 |[Distance Between Bus Stops](src/main/kotlin/g1101_1200/s1184_distance_between_bus_stops/Solution.kt)| Easy | Array | 164 | 57.14
+| 1179 |[Reformat Department Table](src/main/kotlin/g1101_1200/s1179_reformat_department_table/script.sql)| Easy | Database | 815 | 90.95
+| 1178 |[Number of Valid Words for Each Puzzle](src/main/kotlin/g1101_1200/s1178_number_of_valid_words_for_each_puzzle/Solution.kt)| Hard | Array, String, Hash_Table, Bit_Manipulation, Trie | 675 | 100.00
+| 1177 |[Can Make Palindrome from Substring](src/main/kotlin/g1101_1200/s1177_can_make_palindrome_from_substring/Solution.kt)| Medium | String, Hash_Table, Bit_Manipulation, Prefix_Sum | 937 | 100.00
+| 1175 |[Prime Arrangements](src/main/kotlin/g1101_1200/s1175_prime_arrangements/Solution.kt)| Easy | Math | 129 | 50.00
+| 1172 |[Dinner Plate Stacks](src/main/kotlin/g1101_1200/s1172_dinner_plate_stacks/DinnerPlates.kt)| Hard | Hash_Table, Stack, Design, Heap_Priority_Queue | 1160 | 50.00
+| 1171 |[Remove Zero Sum Consecutive Nodes from Linked List](src/main/kotlin/g1101_1200/s1171_remove_zero_sum_consecutive_nodes_from_linked_list/Solution.kt)| Medium | Hash_Table, Linked_List | 194 | 50.00
+| 1170 |[Compare Strings by Frequency of the Smallest Character](src/main/kotlin/g1101_1200/s1170_compare_strings_by_frequency_of_the_smallest_character/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Binary_Search | 221 | 50.00
+| 1169 |[Invalid Transactions](src/main/kotlin/g1101_1200/s1169_invalid_transactions/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 362 | 57.14
+| 1163 |[Last Substring in Lexicographical Order](src/main/kotlin/g1101_1200/s1163_last_substring_in_lexicographical_order/Solution.kt)| Hard | String, Two_Pointers | 254 | 100.00
+| 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems | 362 | 81.25
 | 1161 |[Maximum Level Sum of a Binary Tree](src/main/kotlin/g1101_1200/s1161_maximum_level_sum_of_a_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 445 | 87.50
 | 1160 |[Find Words That Can Be Formed by Characters](src/main/kotlin/g1101_1200/s1160_find_words_that_can_be_formed_by_characters/Solution.kt)| Easy | Array, String, Hash_Table | 288 | 72.22
 | 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database, SQL_I_Day_9_Control_of_Flow | 2470 | 44.76

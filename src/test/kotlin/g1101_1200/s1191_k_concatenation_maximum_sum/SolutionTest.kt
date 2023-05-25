@@ -22,6 +22,6 @@ internal class SolutionTest {
 
     @Test
     fun kConcatenationMaxSum4() {
-        MatcherAssert.assertThat(Solution().kConcatenationMaxSum(intArrayOf(-1, -2), 1), CoreMatchers.equalTo(-1))
+        MatcherAssert.assertThat(Solution().kConcatenationMaxSum(intArrayOf(-1, -2), 1), CoreMatchers.equalTo(0))
     }
 }

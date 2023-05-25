@@ -1,6 +1,7 @@
 package g1101_1200.s1192_critical_connections_in_a_network
 
 // #Hard #Depth_First_Search #Graph #Biconnected_Component
+// #2023_05_25_Time_1696_ms_(60.00%)_Space_237.1_MB_(40.00%)
 
 class Solution {
     fun criticalConnections(n: Int, connections: List<List<Int>>): List<List<Int>> {

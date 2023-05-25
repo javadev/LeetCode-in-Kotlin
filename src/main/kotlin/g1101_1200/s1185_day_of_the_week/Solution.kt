@@ -1,6 +1,6 @@
 package g1101_1200.s1185_day_of_the_week
 
-// #Easy #Math
+// #Easy #Math #2023_05_25_Time_127_ms_(50.00%)_Space_34.4_MB_(75.00%)
 
 class Solution {
     fun dayOfTheWeek(day: Int, month: Int, year: Int): String {
