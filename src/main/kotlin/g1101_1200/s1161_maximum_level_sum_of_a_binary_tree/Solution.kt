@@ -16,16 +16,16 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    private var sums: MutableList<Int>? = null
+    private var sums: MutableList<Int> = ArrayList()
 
     fun maxLevelSum(root: TreeNode?): Int {
         sums = ArrayList()
         find(root, 1)
         var ans = 1
         var maxv = Int.MIN_VALUE
-        for (i in (sums as ArrayList<Int>).indices) {
-            if ((sums as ArrayList<Int>).get(i) > maxv) {
-                maxv = (sums as ArrayList<Int>).get(i)
+        for (i in sums.indices) {
+            if (sums.get(i) > maxv) {
+                maxv = sums.get(i)
                 ans = i + 1
             }
         }
@@ -36,10 +36,10 @@ class Solution {
         if (root == null) {
             return
         }
-        if (sums!!.size < height) {
-            sums!!.add(root.`val`)
+        if (sums.size < height) {
+            sums.add(root.`val`)
         } else {
-            sums!![height - 1] = sums!![height - 1] + root.`val`
+            sums[height - 1] = sums[height - 1] + root.`val`
         }
         find(root.left, height + 1)
         find(root.right, height + 1)
