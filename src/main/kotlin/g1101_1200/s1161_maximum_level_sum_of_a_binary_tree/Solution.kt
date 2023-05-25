@@ -15,8 +15,9 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
-cass Solution {
+class Solution {
     private var sums: MutableList<Int>? = null
+
     fun maxLevelSum(root: TreeNode?): Int {
         sums = ArrayList()
         find(root, 1)

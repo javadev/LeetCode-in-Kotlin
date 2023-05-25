@@ -1,17 +1,16 @@
 package g1101_1200.s1171_remove_zero_sum_consecutive_nodes_from_linked_list
 
-// #Medium #Hash_Table #Linked_List
+// #Medium #Hash_Table #Linked_List #2023_05_25_Time_194_ms_(50.00%)_Space_40.5_MB_(50.00%)
 
 import com_github_leetcode.ListNode
 
 /*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
  * }
  */
 class Solution {

@@ -12,7 +12,7 @@ class MajorityChecker(arr: IntArray) {
         bitCount = Array(arr.size + 1) { IntArray(NUM_OF_BITS) }
         for (i in arr.indices) {
             var `val` = arr[i]
-            val indList = valToInd.computeIfAbsent(`val`) { k: Int? -> ArrayList() }
+            val indList = valToInd.computeIfAbsent(`val`) { _: Int? -> ArrayList() }
             indList.add(i)
             for (j in 0 until NUM_OF_BITS) {
                 bitCount[i + 1][j] = bitCount[i][j] + (`val` and 1)

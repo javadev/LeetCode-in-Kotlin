@@ -2,6 +2,7 @@ package g1101_1200.s1184_distance_between_bus_stops
 
 // #Easy #Array
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun distanceBetweenBusStops(distance: IntArray, start: Int, destination: Int): Int {
         var start = start

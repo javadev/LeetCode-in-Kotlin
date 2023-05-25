@@ -1,6 +1,7 @@
 package g1101_1200.s1170_compare_strings_by_frequency_of_the_smallest_character
 
 // #Medium #Array #String #Hash_Table #Sorting #Binary_Search
+// #2023_05_25_Time_221_ms_(50.00%)_Space_44_MB_(50.00%)
 
 class Solution {
     fun numSmallerByFrequency(queries: Array<String>, words: Array<String>): IntArray {

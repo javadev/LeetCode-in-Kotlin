@@ -1739,7 +1739,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 1039 | 77.70
+| 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 2470 | 44.76
 
 #### Day 10 Where
 
@@ -1771,13 +1771,13 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1169 |[Invalid Transactions](src/main/kotlin/g1101_1200/s1169_invalid_transactions/Solution.kt)| Medium | Array, String, Hash_Table |  | 
 | 1163 |[Last Substring in Lexicographical Order](src/main/kotlin/g1101_1200/s1163_last_substring_in_lexicographical_order/Solution.kt)| Hard | String | s | s
 | 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | y I Day 4 | y I Day 4 Matrix Related Problems
-| 1161 |[Maximum Level Sum of a Binary Tree](src/main/kotlin/g1101_1200/s1161_maximum_level_sum_of_a_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree |  | 
-| 1160 |[Find Words That Can Be Formed by Characters](src/main/kotlin/g1101_1200/s1160_find_words_that_can_be_formed_by_characters/Solution.kt)| Easy | Array, String |  | 
-| 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database, SQL_I_Day_9_Control_of_Flow | 1039 | 77.70
-| 1157 |[Online Majority Element In Subarray](src/main/kotlin/g1101_1200/s1157_online_majority_element_in_subarray/MajorityChecker.kt)| Hard | Array, Binary_Search, Design, Segment_Tree | xed Tree | xed Tree
-| 1156 |[Swap For Longest Repeated Character Substring](src/main/kotlin/g1101_1200/s1156_swap_for_longest_repeated_character_substring/Solution.kt)| Medium | String | dow | dow
-| 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium || gramming | gramming
-| 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String |  | 
+| 1161 |[Maximum Level Sum of a Binary Tree](src/main/kotlin/g1101_1200/s1161_maximum_level_sum_of_a_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 445 | 87.50
+| 1160 |[Find Words That Can Be Formed by Characters](src/main/kotlin/g1101_1200/s1160_find_words_that_can_be_formed_by_characters/Solution.kt)| Easy | Array, String, Hash_Table | 288 | 72.22
+| 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database, SQL_I_Day_9_Control_of_Flow | 2470 | 44.76
+| 1157 |[Online Majority Element In Subarray](src/main/kotlin/g1101_1200/s1157_online_majority_element_in_subarray/MajorityChecker.kt)| Hard | Array, Binary_Search, Design, Segment_Tree, Binary_Indexed_Tree | 953 | 100.00
+| 1156 |[Swap For Longest Repeated Character Substring](src/main/kotlin/g1101_1200/s1156_swap_for_longest_repeated_character_substring/Solution.kt)| Medium | String, Sliding_Window | 195 | 20.00
+| 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium | Dynamic_Programming | 158 | 80.95
+| 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String, Math | 317 | 70.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 1032 |[Stream of Characters](src/main/kotlin/g1001_1100/s1032_stream_of_characters/StreamChecker.kt)| Hard | Array, String, Design, Trie, Data_Stream | 733 | 100.00
 | 1031 |[Maximum Sum of Two Non-Overlapping Subarrays](src/main/kotlin/g1001_1100/s1031_maximum_sum_of_two_non_overlapping_subarrays/Solution.kt)| Medium | Array, Dynamic_Programming, Sliding_Window | 172 | 100.00

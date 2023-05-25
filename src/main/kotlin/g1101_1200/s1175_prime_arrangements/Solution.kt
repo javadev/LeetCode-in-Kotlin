@@ -2,6 +2,7 @@ package g1101_1200.s1175_prime_arrangements
 
 // #Easy #Math
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun numPrimeArrangements(n: Int): Int {
         var n = n
