@@ -1,6 +1,7 @@
 package g1101_1200.s1157_online_majority_element_in_subarray
 
 // #Hard #Array #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
+// #2023_05_25_Time_953_ms_(100.00%)_Space_139_MB_(100.00%)
 
 class MajorityChecker(arr: IntArray) {
     private val valToInd: MutableMap<Int, MutableList<Int>>
