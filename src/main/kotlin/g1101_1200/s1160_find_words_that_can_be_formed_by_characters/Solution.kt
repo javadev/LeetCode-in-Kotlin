@@ -21,8 +21,8 @@ class Solution {
     private fun canForm(word: String, map: Map<Char, Int>): Boolean {
         val tmp: MutableMap<Char, Int> = HashMap(map)
         for (c in word.toCharArray()) {
-            if (tmp.containsKey(c) && tmp[c]!! > 0) {
-                val count = tmp[c]!!
+            if (tmp.containsKey(c) && tmp.getValue(c) > 0) {
+                val count = tmp.getValue(c)
                 tmp[c] = count - 1
             } else {
                 return false

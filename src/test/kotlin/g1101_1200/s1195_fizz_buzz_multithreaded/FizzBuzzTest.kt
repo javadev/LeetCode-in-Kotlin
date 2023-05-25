@@ -34,7 +34,7 @@ internal class FizzBuzzTest {
             .start()
         Thread {
             try {
-                fizzBuzz.number { value: Int -> fizz[0]++ }
+                fizzBuzz.number { _: Int -> fizz[0]++ }
             } catch (e: InterruptedException) {
             }
         }
@@ -71,7 +71,7 @@ internal class FizzBuzzTest {
             .start()
         Thread {
             try {
-                fizzBuzz.number { value: Int -> fizz[0]++ }
+                fizzBuzz.number { _: Int -> fizz[0]++ }
             } catch (e: InterruptedException) {
             }
         }

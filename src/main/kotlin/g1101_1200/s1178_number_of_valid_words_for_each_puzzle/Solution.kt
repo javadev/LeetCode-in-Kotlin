@@ -10,7 +10,7 @@ class Solution {
         for (word in words) {
             val wordmask = createMask(word)
             if (map.containsKey(wordmask)) {
-                val oldfreq = map[wordmask]!!
+                val oldfreq = map.getValue(wordmask)
                 val newfreq = oldfreq + 1
                 map[wordmask] = newfreq
             } else {
@@ -27,7 +27,7 @@ class Solution {
                 val firstCharPresent = sub and first == first
                 val wordvalid = map.containsKey(sub)
                 if (firstCharPresent && wordvalid) {
-                    count += map[sub]!!
+                    count += map.getValue(sub)
                 }
                 sub = sub - 1 and puzzlemask
             }

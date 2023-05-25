@@ -23,14 +23,14 @@ class Solution {
         while (curr != null) {
             preSum += curr.`val`
             if (map.containsKey(preSum)) {
-                curr = map[preSum]!!.next
+                curr = map.getValue(preSum).next
                 var key = preSum + curr!!.`val`
                 while (key != preSum) {
                     map.remove(key)
                     curr = curr!!.next
                     key += curr!!.`val`
                 }
-                map[preSum]!!.next = curr!!.next
+                map.getValue(preSum).next = curr!!.next
             } else {
                 map[preSum] = curr
             }

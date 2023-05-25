@@ -30,7 +30,7 @@ class Solution {
             if (!map.containsKey(trans.name)) {
                 map[trans.name] = ArrayList()
             }
-            map[trans.name]!!.add(trans)
+            map.getValue(trans.name).add(trans)
         }
         for (s in input) {
             val trans = Transaction(s)
@@ -45,7 +45,7 @@ class Solution {
         if (transaction.amount > 1000) {
             return false
         }
-        for (s in map[transaction.name]!!) {
+        for (s in map.getValue(transaction.name)) {
             if (Math.abs(s.time - transaction.time) <= 60 && s.city != transaction.city) {
                 return false
             }

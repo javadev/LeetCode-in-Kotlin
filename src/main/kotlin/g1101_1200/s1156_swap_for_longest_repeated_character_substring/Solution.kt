@@ -25,7 +25,7 @@ class Solution {
         // length
         // we need total count to make sure whether a swap is possible!
         for (p in pairs) {
-            val totalCount = map[p.character]!!
+            val totalCount = map.getValue(p.character)
             max = if (totalCount > p.count) {
                 Math.max(max, p.count + 1)
             } else {
@@ -38,7 +38,7 @@ class Solution {
             if (pairs[j - 1].character == pairs[j + 1].character &&
                 pairs[j].count == 1
             ) {
-                val totalCount = map[pairs[j - 1].character]!!
+                val totalCount = map.getValue(pairs[j - 1].character)
                 val groupSum = pairs[j - 1].count + pairs[j + 1].count
                 max = if (totalCount > groupSum) {
                     Math.max(max, groupSum + 1)
