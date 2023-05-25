@@ -21,7 +21,7 @@ class Solution {
             }
         }
         var steps = 0
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val count = minSteps(forest, pq.poll())
             if (count == -1) {
                 return -1
@@ -42,7 +42,7 @@ class Solution {
         val q: Queue<IntArray> = LinkedList()
         q.add(intArrayOf(r, c))
         visited[r][c] = true
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val qSize = q.size
             for (i in 0 until qSize) {
                 val curr = q.poll()

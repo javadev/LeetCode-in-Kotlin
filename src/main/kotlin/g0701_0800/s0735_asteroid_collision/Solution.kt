@@ -13,14 +13,14 @@ class Solution {
             if (a > 0) {
                 stack.addLast(a)
             } else {
-                if (!stack.isEmpty() && stack.peekLast() > 0) {
+                if (stack.isNotEmpty() && stack.peekLast() > 0) {
                     if (stack.peekLast() == Math.abs(a)) {
                         stack.pollLast()
                     } else {
-                        while (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() < Math.abs(a)) {
+                        while (stack.isNotEmpty() && stack.peekLast() > 0 && stack.peekLast() < Math.abs(a)) {
                             stack.pollLast()
                         }
-                        if (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() == Math.abs(a)) {
+                        if (stack.isNotEmpty() && stack.peekLast() > 0 && stack.peekLast() == Math.abs(a)) {
                             stack.pollLast()
                         } else if (stack.isEmpty() || stack.peekLast() < 0) {
                             stack.addLast(a)

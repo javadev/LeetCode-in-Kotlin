@@ -167,14 +167,14 @@ internal class Solution {
                 }
                 ops.pop()
             } else if (a == '+' || a == '-' || a == '*') {
-                while (ops.size > 0 && getPriority(ops.peek()) >= getPriority(a)) {
+                while (ops.isNotEmpty() && getPriority(ops.peek()) >= getPriority(a)) {
                     numS.add(helper(numS, ops))
                 }
                 ops.add(a)
             }
             i++
         }
-        while (ops.size > 0) {
+        while (ops.isNotEmpty()) {
             numS.add(helper(numS, ops))
         }
         return numS.peek().evaluate(vars).toList()

@@ -33,7 +33,7 @@ class Solution {
         val q: Queue<Pair> = LinkedList()
         q.add(Pair(root, 0))
         var res = 1
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val qSize = q.size
             var lastIdx = 0
             var firstIdx = 0

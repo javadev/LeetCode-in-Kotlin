@@ -23,7 +23,7 @@ class Solution {
         val qu: Queue<String> = LinkedList()
         qu.add(strs[i])
         visited[i] = true
-        while (!qu.isEmpty()) {
+        while (qu.isNotEmpty()) {
             val s = qu.poll()
             for (j in strs.indices) {
                 if (visited[j]) {

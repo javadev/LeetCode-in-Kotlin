@@ -49,7 +49,7 @@ class Solution {
         // we start from top left corner
         que.add(intArrayOf(0, 0))
         visited[0][0] = true
-        while (!que.isEmpty()) {
+        while (que.isNotEmpty()) {
             // get current cell
             val cur = que.poll()
             val x = cur[0]

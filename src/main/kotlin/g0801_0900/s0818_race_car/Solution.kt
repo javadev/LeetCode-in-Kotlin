@@ -9,7 +9,7 @@ class Solution {
     fun racecar(target: Int): Int {
         val queue: Queue<IntArray> = LinkedList()
         queue.add(intArrayOf(0, 1, 0))
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val arr = queue.poll()
             if (arr[0] == target) {
                 return arr[2]

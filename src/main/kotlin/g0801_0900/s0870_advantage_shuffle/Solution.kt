@@ -17,7 +17,7 @@ class Solution {
         var left = 0
         var right = n - 1
         val res = IntArray(n)
-        while (!maxpq.isEmpty()) {
+        while (maxpq.isNotEmpty()) {
             val pair = maxpq.poll()
             val i = pair[0]
             val `val` = pair[1]

@@ -10,7 +10,7 @@ class Solution {
         val visited: MutableSet<Int> = HashSet()
         visited.add(0)
         val treeSet = TreeSet(rooms[0])
-        while (!treeSet.isEmpty()) {
+        while (treeSet.isNotEmpty()) {
             val key = treeSet.pollFirst()
             if (!visited.add(key)) {
                 continue

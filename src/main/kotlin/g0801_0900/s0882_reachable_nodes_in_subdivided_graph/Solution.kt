@@ -14,7 +14,7 @@ class Solution {
         val minDis = IntArray(n)
         var res = 0
         pQueue.add(intArrayOf(0, 0))
-        while (pQueue.size > 0) {
+        while (pQueue.isNotEmpty()) {
             val poll = pQueue.poll()
             val node = poll[0]
             val dist = poll[1]

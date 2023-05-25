@@ -20,7 +20,7 @@ class Solution {
         queue.add(intArrayOf(0, 0))
         visited.add(0)
         val numTarget = target.toInt()
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val node = queue.poll()
             val number = node[0]
             val dist = node[1]

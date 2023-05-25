@@ -17,14 +17,14 @@ class Solution {
         for (i in 0 until n) {
             sum += nums[i].toLong()
             // Keep dq in incrementing order
-            while (!dq.isEmpty() && sum <= dq.peekLast().value) dq.removeLast()
+            while (dq.isNotEmpty() && sum <= dq.peekLast().value) dq.removeLast()
             // Add current sum and index
             dq.add(Pair(i, sum))
             // Calculate your answer here
             if (sum >= k) ans = Math.min(ans, i + 1)
 
             // Check if Contraction is possible or not
-            while (!dq.isEmpty() && sum - dq.peekFirst().value >= k) {
+            while (dq.isNotEmpty() && sum - dq.peekFirst().value >= k) {
                 ans = ans.coerceAtMost(i - dq.peekFirst().index)
                 dq.removeFirst()
             }

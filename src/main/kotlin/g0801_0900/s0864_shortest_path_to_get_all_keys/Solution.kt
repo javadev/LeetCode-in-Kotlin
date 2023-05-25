@@ -47,7 +47,7 @@ class Solution {
         // set initial position and state to true
         visited[q.peek()[0]][q.peek()[1]][0] = true
         var steps = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             // use size to make sure everything is on one level
             var size = q.size
             while (--size >= 0) {

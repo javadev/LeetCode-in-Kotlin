@@ -22,7 +22,7 @@ class Solution {
         val spf: Queue<Int> = LinkedList()
         spf.add(k)
         visited[k] = true
-        while (!spf.isEmpty()) {
+        while (spf.isNotEmpty()) {
             val curr = spf.poll()
             visited[curr] = false
             for (i in 1..n) {

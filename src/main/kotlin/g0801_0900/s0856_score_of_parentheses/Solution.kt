@@ -21,7 +21,7 @@ class Solution {
             }
         }
         var score = 0
-        while (!stack.isEmpty()) {
+        while (stack.isNotEmpty()) {
             score += stack.pop()
         }
         return score

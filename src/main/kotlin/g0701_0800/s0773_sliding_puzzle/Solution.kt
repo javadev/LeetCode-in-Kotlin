@@ -26,7 +26,7 @@ class Solution {
         val q: Queue<Node> = LinkedList()
         q.add(Node(sb.toString(), 0, y, x))
         val dir = arrayOf(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val next = q.poll()
             val s = next.board
             if (!seen.contains(s)) {

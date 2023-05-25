@@ -19,7 +19,7 @@ class Solution {
             return -1
         }
         var bus = 1
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size = queue.size
             for (i in 0 until size) {
                 val route = queue.poll()

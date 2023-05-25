@@ -17,7 +17,7 @@ class Solution {
                 val top = stack.pop()
                 val executionTime = log.time - top.time + 1
                 result[top.id] += executionTime - top.waitingTime
-                if (!stack.isEmpty()) {
+                if (stack.isNotEmpty()) {
                     stack.peek().waitingTime += executionTime
                 }
             }

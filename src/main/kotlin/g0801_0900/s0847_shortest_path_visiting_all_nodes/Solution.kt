@@ -21,7 +21,7 @@ class Solution {
                 target + 1
             )
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val size = q.size
             for (i in 0 until size) {
                 val curr = q.poll()
