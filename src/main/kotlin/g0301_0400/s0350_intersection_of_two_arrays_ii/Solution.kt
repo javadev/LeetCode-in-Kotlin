@@ -14,7 +14,7 @@ class Solution {
         for (i in 0 until nums2.size) {
             if (a.getOrDefault(nums2[i], 0)> 0) {
                 s.add(nums2[i])
-                a[nums2[i]] = a[nums2[i]]!! - 1
+                a[nums2[i]] = a.getValue(nums2[i]) - 1
             }
         }
         return s.toIntArray()

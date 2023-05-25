@@ -18,7 +18,7 @@ class Solution {
             if (op.contains(t)) {
                 val b = stack.removeFirst().toInt()
                 val a = stack.removeFirst().toInt()
-                val c = op[t]!!.apply(a, b)
+                val c = op.getValue(t).apply(a, b)
                 stack.addFirst(c.toString())
             } else {
                 stack.addFirst(t)

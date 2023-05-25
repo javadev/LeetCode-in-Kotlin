@@ -19,10 +19,10 @@ class Solution {
             if (d.containsKey(m)) {
                 return true
             }
-            if (d.containsKey(m - 1) && Math.abs(nums[i] - d[m - 1]!!) < w) {
+            if (d.containsKey(m - 1) && Math.abs(nums[i] - d.getValue(m - 1)) < w) {
                 return true
             }
-            if (d.containsKey(m + 1) && Math.abs(nums[i] - d[m + 1]!!) < w) {
+            if (d.containsKey(m + 1) && Math.abs(nums[i] - d.getValue(m + 1)) < w) {
                 return true
             }
             d[m] = nums[i].toLong()

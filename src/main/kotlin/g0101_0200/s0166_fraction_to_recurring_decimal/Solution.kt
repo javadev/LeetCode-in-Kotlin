@@ -27,7 +27,7 @@ class Solution {
         val map: MutableMap<Long, Int> = HashMap()
         while (remainder != 0L) {
             if (map.containsKey(remainder)) {
-                sb.insert(map[remainder]!!, "(")
+                sb.insert(map.getValue(remainder), "(")
                 sb.append(")")
                 break
             }

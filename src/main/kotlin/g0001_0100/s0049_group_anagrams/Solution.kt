@@ -14,7 +14,7 @@ class Solution {
             hm.computeIfAbsent(
                 temp
             ) { _: String? -> ArrayList() }
-            hm[temp]!!.add(s)
+            hm.getValue(temp).add(s)
         }
         return ArrayList<List<String>>(hm.values)
     }

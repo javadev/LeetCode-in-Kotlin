@@ -20,8 +20,9 @@ import java.util.HashMap
 class Solution {
     private var j = 0
     private val map: MutableMap<Int, Int> = HashMap()
+
     fun get(key: Int): Int {
-        return map[key]!!
+        return map.getValue(key)
     }
 
     private fun answer(preorder: IntArray, inorder: IntArray, start: Int, end: Int): TreeNode? {

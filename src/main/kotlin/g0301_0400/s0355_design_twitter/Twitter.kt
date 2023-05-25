@@ -30,7 +30,7 @@ class Twitter {
     fun getNewsFeed(userId: Int): List<Int> {
         checkNewUser(userId)
         val res: MutableList<Int> = ArrayList()
-        val followers = twitterData[userId]!!
+        val followers = twitterData.getValue(userId)
         var t = head.next
         while (t != null && res.size < 10) {
             if (followers.contains(t.userId)) {
@@ -44,7 +44,7 @@ class Twitter {
     fun follow(followerId: Int, followeeId: Int) {
         checkNewUser(followeeId)
         checkNewUser(followerId)
-        twitterData[followerId]!!.add(followeeId)
+        twitterData.getValue(followerId).add(followeeId)
     }
 
     fun unfollow(followerId: Int, followeeId: Int) {
@@ -54,7 +54,7 @@ class Twitter {
             return
         }
         checkNewUser(followerId)
-        twitterData[followerId]!!.remove(followeeId)
+        twitterData.getValue(followerId).remove(followeeId)
     }
 
     fun checkNewUser(userId: Int) {
@@ -63,7 +63,7 @@ class Twitter {
         }
         twitterData[userId] = HashSet()
         // follow  yourself
-        twitterData[userId]!!.add(userId)
+        twitterData.getValue(userId).add(userId)
     }
 }
 

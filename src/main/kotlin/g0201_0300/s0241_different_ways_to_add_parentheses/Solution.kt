@@ -10,7 +10,7 @@ class Solution {
 
     private fun diffWayToCompute(expression: String, hashMap: HashMap<String, List<Int>>): List<Int> {
         if (hashMap.containsKey(expression)) {
-            return hashMap[expression]!!
+            return hashMap.getValue(expression)
         }
         val newList = arrayListOf<Int>()
         if (!hasOperatorInBetween(expression)) {
