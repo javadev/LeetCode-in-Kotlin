@@ -18,7 +18,7 @@ class Solution {
             return
         }
         if (n == 0 && tmp.size == k) {
-            a.add(tmp.map { it -> it }.toMutableList())
+            a.add(tmp.map { it }.toMutableList())
             return
         }
         for (i in index until 10) {

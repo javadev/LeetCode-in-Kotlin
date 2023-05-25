@@ -15,7 +15,7 @@ class Solution {
         var i = 0
         var j = 0
         while (j < nums.size) {
-            while (!dq.isEmpty() && dq.peekLast() < nums[j]) {
+            while (dq.isNotEmpty() && dq.peekLast() < nums[j]) {
                 dq.pollLast()
             }
             dq.addLast(nums[j])

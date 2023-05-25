@@ -17,7 +17,7 @@ class Solution {
         var lastNum = Integer.MIN_VALUE
         var length = 0
         var maxLength = 1
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val num = queue.poll()
             if (num == lastNum) {
                 continue

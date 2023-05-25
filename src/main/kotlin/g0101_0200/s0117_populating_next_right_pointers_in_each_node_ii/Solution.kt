@@ -24,7 +24,7 @@ class Solution {
         root.next = null
         var temp: Node?
         var prev: Node?
-        while (!bfsQueue.isEmpty()) {
+        while (bfsQueue.isNotEmpty()) {
             val size = bfsQueue.size
             prev = null
             for (j in 0 until size) {

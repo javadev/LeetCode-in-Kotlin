@@ -29,9 +29,9 @@ class Solution {
         q.add(null)
         var zig = true
         var level = LinkedList<Int>()
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             var node: TreeNode? = q.remove()
-            while (!q.isEmpty() && node != null) {
+            while (q.isNotEmpty() && node != null) {
                 if (zig) {
                     level.add(node.`val`)
                 } else {
@@ -48,7 +48,7 @@ class Solution {
             result.add(level)
             zig = !zig
             level = LinkedList()
-            if (!q.isEmpty()) {
+            if (q.isNotEmpty()) {
                 q.add(null)
             }
         }

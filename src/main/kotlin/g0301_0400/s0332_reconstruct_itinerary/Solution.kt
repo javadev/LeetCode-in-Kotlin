@@ -26,7 +26,7 @@ class Solution {
 
     private fun dfs(map: Map<String, PriorityQueue<String>>, src: String, ans: LinkedList<String>) {
         val temp = map[src]
-        while (temp != null && !temp.isEmpty()) {
+        while (!temp.isNullOrEmpty()) {
             val nbr = temp.remove()
             dfs(map, nbr, ans)
         }

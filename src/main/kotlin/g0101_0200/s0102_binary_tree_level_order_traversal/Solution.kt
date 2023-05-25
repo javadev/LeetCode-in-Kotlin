@@ -30,9 +30,9 @@ class Solution {
         queue.add(localRoot)
         queue.add(null)
         var level: MutableList<Int> = ArrayList()
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             localRoot = queue.remove()
-            while (!queue.isEmpty() && localRoot != null) {
+            while (queue.isNotEmpty() && localRoot != null) {
                 level.add(localRoot.`val`)
                 if (localRoot.left != null) {
                     queue.add(localRoot.left)
@@ -44,7 +44,7 @@ class Solution {
             }
             result.add(level)
             level = ArrayList()
-            if (!queue.isEmpty()) {
+            if (queue.isNotEmpty()) {
                 queue.add(null)
             }
         }

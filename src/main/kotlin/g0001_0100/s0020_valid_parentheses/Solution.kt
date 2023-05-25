@@ -13,11 +13,11 @@ class Solution {
             val c = element
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c)
-            } else if (c == ')' && !stack.isEmpty() && stack.peek() == '(') {
+            } else if (c == ')' && stack.isNotEmpty() && stack.peek() == '(') {
                 stack.pop()
-            } else if (c == '}' && !stack.isEmpty() && stack.peek() == '{') {
+            } else if (c == '}' && stack.isNotEmpty() && stack.peek() == '{') {
                 stack.pop()
-            } else if (c == ']' && !stack.isEmpty() && stack.peek() == '[') {
+            } else if (c == ']' && stack.isNotEmpty() && stack.peek() == '[') {
                 stack.pop()
             } else {
                 return false

@@ -6,7 +6,7 @@ package g0201_0300.s0282_expression_add_operators
 class Solution {
     fun addOperators(num: String, target: Int): List<String> {
         val res: MutableList<String> = ArrayList()
-        if (num.length == 0 || java.lang.Long.valueOf(num) > Int.MAX_VALUE) {
+        if (num.isEmpty() || java.lang.Long.valueOf(num) > Int.MAX_VALUE) {
             return res
         }
         val list = num.toCharArray()

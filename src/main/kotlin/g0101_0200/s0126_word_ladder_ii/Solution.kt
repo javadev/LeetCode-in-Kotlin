@@ -25,7 +25,7 @@ class Solution {
         // find endWord flag
         var findEnd = false
         // traverse current layer nodes
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val word = queue.remove()
             for (next in wordSet) {
                 // is ladder words

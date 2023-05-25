@@ -37,7 +37,7 @@ class Solution {
             visited1[r][cols - 1] = true
         }
         // end build wall
-        while (!walls.isEmpty()) {
+        while (walls.isNotEmpty()) {
             val min = walls.poll()
             visit(heightMap, min, walls)
         }

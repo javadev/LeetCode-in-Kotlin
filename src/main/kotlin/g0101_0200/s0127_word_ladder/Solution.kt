@@ -17,7 +17,7 @@ class Solution {
         val strLen = beginWord.length
         beginSet.add(beginWord)
         endSet.add(endWord)
-        while (!beginSet.isEmpty() && !endSet.isEmpty()) {
+        while (beginSet.isNotEmpty() && endSet.isNotEmpty()) {
             if (beginSet.size > endSet.size) {
                 val temp = beginSet
                 beginSet = endSet

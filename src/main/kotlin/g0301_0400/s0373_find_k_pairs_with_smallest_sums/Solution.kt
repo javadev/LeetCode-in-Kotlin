@@ -31,7 +31,7 @@ class Solution {
             }
         }
         var i = 1
-        while (i <= k && !queue.isEmpty()) {
+        while (i <= k && queue.isNotEmpty()) {
             val cur = queue.poll()
             res.add(cur.al)
             val next = cur.index

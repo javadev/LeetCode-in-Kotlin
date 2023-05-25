@@ -24,7 +24,7 @@ class Solution {
         }
         val stack: Stack<TreeNode> = Stack<TreeNode>()
         var current: TreeNode? = root
-        while (current != null || !stack.isEmpty()) {
+        while (current != null || stack.isNotEmpty()) {
             while (current != null) {
                 result.add(current.`val`)
                 stack.push(current.right)

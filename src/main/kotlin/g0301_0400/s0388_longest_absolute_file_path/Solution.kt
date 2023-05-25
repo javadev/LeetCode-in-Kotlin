@@ -45,17 +45,17 @@ class Solution {
             if (nextLevel < currLevel) {
                 var j = 0
                 if (isFile) {
-                    while (!stack.isEmpty() && j < currLevel - nextLevel) {
+                    while (stack.isNotEmpty() && j < currLevel - nextLevel) {
                         currDirLen -= stack.pop()
                         j++
                     }
                 } else {
-                    while (!stack.isEmpty() && j <= currLevel - nextLevel) {
+                    while (stack.isNotEmpty() && j <= currLevel - nextLevel) {
                         currDirLen -= stack.pop()
                         j++
                     }
                 }
-            } else if (nextLevel == currLevel && !isFile && !stack.isEmpty()) {
+            } else if (nextLevel == currLevel && !isFile && stack.isNotEmpty()) {
                 currDirLen -= stack.pop()
             }
             if (nextLevel == 0) {

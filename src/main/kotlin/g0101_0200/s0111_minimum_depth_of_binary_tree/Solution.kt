@@ -25,7 +25,7 @@ class Solution {
         val queue: Queue<TreeNode> = LinkedList()
         queue.add(root)
         var d = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size: Int = queue.size
             for (i in 0 until size) {
                 val current: TreeNode = queue.poll()

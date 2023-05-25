@@ -14,7 +14,7 @@ class Solution {
         var temp = strs[0]
         var i = 1
         var cur: String
-        while (temp.length > 0 && i < strs.size) {
+        while (temp.isNotEmpty() && i < strs.size) {
             if (temp.length > strs[i].length) {
                 temp = temp.substring(0, strs[i].length)
             }
