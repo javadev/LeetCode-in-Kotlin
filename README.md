@@ -1750,6 +1750,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1036 |[Escape a Large Maze](src/main/kotlin/g1001_1100/s1036_escape_a_large_maze/Solution.kt)| Hard | Array, Hash_Table, Depth_First_Search, Breadth_First_Search | 387 | 100.00
+| 1035 |[Uncrossed Lines](src/main/kotlin/g1001_1100/s1035_uncrossed_lines/Solution.kt)| Medium | Array, Dynamic_Programming | 162 | 93.33
+| 1034 |[Coloring A Border](src/main/kotlin/g1001_1100/s1034_coloring_a_border/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 332 | 100.00
+| 1033 |[Moving Stones Until Consecutive](src/main/kotlin/g1001_1100/s1033_moving_stones_until_consecutive/Solution.kt)| Medium | Math, Brainteaser | 139 | 100.00
 | 1032 |[Stream of Characters](src/main/kotlin/g1001_1100/s1032_stream_of_characters/StreamChecker.kt)| Hard | Array, String, Design, Trie, Data_Stream | 733 | 100.00
 | 1031 |[Maximum Sum of Two Non-Overlapping Subarrays](src/main/kotlin/g1001_1100/s1031_maximum_sum_of_two_non_overlapping_subarrays/Solution.kt)| Medium | Array, Dynamic_Programming, Sliding_Window | 172 | 100.00
 | 1030 |[Matrix Cells in Distance Order](src/main/kotlin/g1001_1100/s1030_matrix_cells_in_distance_order/Solution.kt)| Easy | Array, Math, Sorting, Matrix, Geometry | 426 | 100.00
