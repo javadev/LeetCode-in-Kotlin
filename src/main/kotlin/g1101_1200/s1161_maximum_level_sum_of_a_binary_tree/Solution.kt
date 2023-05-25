@@ -24,8 +24,8 @@ class Solution {
         var ans = 1
         var maxv = Int.MIN_VALUE
         for (i in sums.indices) {
-            if (sums.get(i) > maxv) {
-                maxv = sums.get(i)
+            if (sums[i] > maxv) {
+                maxv = sums[i]
                 ans = i + 1
             }
         }

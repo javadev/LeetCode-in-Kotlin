@@ -16,7 +16,7 @@ class DinnerPlates(private val stackCap: Int) {
     }
 
     fun push(`val`: Int) {
-        if (!leftIndex.isEmpty()) {
+        if (leftIndex.isNotEmpty()) {
             val i = leftIndex.first()
             stacks[i].push(`val`)
             if (stacks[i].size == stackCap) {
@@ -50,7 +50,7 @@ class DinnerPlates(private val stackCap: Int) {
     fun popAtStack(index: Int): Int {
         if (stacks.size - 1 >= index) {
             var `val` = -1
-            if (!stacks[index].isEmpty()) {
+            if (stacks[index].isNotEmpty()) {
                 `val` = stacks[index].pop()
             }
             if (stacks[index].isEmpty() && index == stacks.size - 1) {

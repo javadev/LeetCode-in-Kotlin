@@ -28,7 +28,7 @@ class Solution {
         val dir = intArrayOf(-1, 0, 1, 0, -1)
         var maxDistance = 0
         var level = 1
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val size = q.size
             for (i in 0 until size) {
                 val top = q.poll()
