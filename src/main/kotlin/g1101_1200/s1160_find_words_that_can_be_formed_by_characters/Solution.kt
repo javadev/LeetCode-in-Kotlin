@@ -1,6 +1,6 @@
 package g1101_1200.s1160_find_words_that_can_be_formed_by_characters
 
-// #Easy #Array #String #Hash_Table
+// #Easy #Array #String #Hash_Table #2023_05_25_Time_288_ms_(72.22%)_Space_75.8_MB_(33.33%)
 
 class Solution {
     fun countCharacters(words: Array<String>, chars: String): Int {
