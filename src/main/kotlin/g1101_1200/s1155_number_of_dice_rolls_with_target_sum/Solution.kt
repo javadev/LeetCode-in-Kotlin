@@ -1,6 +1,6 @@
 package g1101_1200.s1155_number_of_dice_rolls_with_target_sum
 
-// #Medium #Dynamic_Programming
+// #Medium #Dynamic_Programming #2023_05_25_Time_158_ms_(80.95%)_Space_37.7_MB_(23.81%)
 
 class Solution {
     private var memo: Array<IntArray> = arrayOf()
