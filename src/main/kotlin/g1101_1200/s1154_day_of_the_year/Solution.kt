@@ -1,6 +1,6 @@
 package g1101_1200.s1154_day_of_the_year
 
-// #Easy #String #Math
+// #Easy #String #Math #2023_05_25_Time_317_ms_(70.00%)_Space_59.3_MB_(20.00%)
 
 class Solution {
     fun dayOfYear(date: String): Int {
