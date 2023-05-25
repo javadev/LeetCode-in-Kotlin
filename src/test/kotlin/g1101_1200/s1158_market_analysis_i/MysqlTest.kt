@@ -1,7 +1,7 @@
 package g1101_1200.s1158_market_analysis_i
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -63,23 +63,23 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(1))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("2018-01-01"))
-                    MatcherAssert.assertThat(resultSet.getInt(3), CoreMatchers.equalTo(1))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(2))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("2018-02-09"))
-                    MatcherAssert.assertThat(resultSet.getInt(3), CoreMatchers.equalTo(2))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(3))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("2018-01-19"))
-                    MatcherAssert.assertThat(resultSet.getInt(3), CoreMatchers.equalTo(0))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(4))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("2018-05-21"))
-                    MatcherAssert.assertThat(resultSet.getInt(3), CoreMatchers.equalTo(0))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(1))
+                    assertThat(resultSet.getNString(2), equalTo("2018-01-01"))
+                    assertThat(resultSet.getInt(3), equalTo(1))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(2))
+                    assertThat(resultSet.getNString(2), equalTo("2018-02-09"))
+                    assertThat(resultSet.getInt(3), equalTo(2))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(3))
+                    assertThat(resultSet.getNString(2), equalTo("2018-01-19"))
+                    assertThat(resultSet.getInt(3), equalTo(0))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(4))
+                    assertThat(resultSet.getNString(2), equalTo("2018-05-21"))
+                    assertThat(resultSet.getInt(3), equalTo(0))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

@@ -1,7 +1,7 @@
 package g1101_1200.s1195_fizz_buzz_multithreaded
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.concurrent.TimeUnit
 
@@ -40,7 +40,7 @@ internal class FizzBuzzTest {
         }
             .start()
         TimeUnit.MILLISECONDS.sleep(800)
-        MatcherAssert.assertThat(fizz[0] > 0, CoreMatchers.equalTo(true))
+        assertThat(fizz[0] > 0, equalTo(true))
     }
 
     @Test
@@ -77,6 +77,6 @@ internal class FizzBuzzTest {
         }
             .start()
         TimeUnit.MILLISECONDS.sleep(600)
-        MatcherAssert.assertThat(fizz[0] >= 0, CoreMatchers.equalTo(true))
+        assertThat(fizz[0] >= 0, equalTo(true))
     }
 }
