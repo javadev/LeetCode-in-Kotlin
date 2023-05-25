@@ -28,7 +28,7 @@ class Solution {
     }
 
     private fun findDepth(n: Node?, d: Int) {
-        if (!n!!.neighbors.isEmpty()) {
+        if (n!!.neighbors.isNotEmpty()) {
             for (no in n.neighbors) {
                 findDepth(no, d + 1)
             }

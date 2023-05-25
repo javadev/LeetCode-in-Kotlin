@@ -34,7 +34,7 @@ class Solution {
         val queue: Queue<String> = LinkedList()
         queue.offer(start)
         var step = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             var curSize = queue.size
             while (curSize-- > 0) {
                 val cur = queue.poll()

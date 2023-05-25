@@ -25,7 +25,7 @@ class Solution {
         for (i in 0 until k) {
 
             // first fetch all tasks you can do with current capital and add those in profit max heap
-            while (!capitalMinHeap.isEmpty() && currentCapital >= capitalMinHeap.peek().capital) {
+            while (capitalMinHeap.isNotEmpty() && currentCapital >= capitalMinHeap.peek().capital) {
                 profitMaxHeap.add(capitalMinHeap.poll())
             }
 

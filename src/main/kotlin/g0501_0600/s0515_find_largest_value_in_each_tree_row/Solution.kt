@@ -23,7 +23,7 @@ class Solution {
         val queue: Queue<TreeNode?> = LinkedList()
         if (root != null) {
             queue.offer(root)
-            while (!queue.isEmpty()) {
+            while (queue.isNotEmpty()) {
                 var max = Int.MIN_VALUE
                 val size = queue.size
                 for (i in 0 until size) {

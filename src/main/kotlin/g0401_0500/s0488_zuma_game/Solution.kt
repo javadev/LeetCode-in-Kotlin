@@ -13,10 +13,10 @@ class Solution {
     }
 
     private fun findMinStepDp(board: String, hand: String, dp: MutableMap<String, MutableMap<String, Int?>?>): Int {
-        if (board.length == 0) {
+        if (board.isEmpty()) {
             return 0
         }
-        if (hand.length == 0) {
+        if (hand.isEmpty()) {
             return -1
         }
         if (dp[board] != null && dp[board]!![hand] != null) {

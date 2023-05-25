@@ -21,7 +21,7 @@ class Solution {
         }
         val queue: Queue<Node> = LinkedList<Node>()
         queue.offer(root)
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size: Int = queue.size
             val level: MutableList<Int> = ArrayList()
             for (i in 0 until size) {

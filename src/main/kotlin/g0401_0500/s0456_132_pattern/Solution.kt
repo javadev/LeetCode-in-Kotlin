@@ -20,7 +20,7 @@ class Solution {
             if (nums[i] < s3) {
                 return true
             } else {
-                while (!stack.isEmpty() && nums[i] > stack.peek()) {
+                while (stack.isNotEmpty() && nums[i] > stack.peek()) {
                     s3 = Math.max(s3, stack.pop())
                 }
             }

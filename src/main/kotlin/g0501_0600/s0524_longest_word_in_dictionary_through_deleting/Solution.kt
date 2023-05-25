@@ -22,7 +22,7 @@ class Solution {
         var maxLen = 0
         var res = ""
         for (i in 0 until s.length) {
-            if (!map[s[i]]!!.isEmpty()) {
+            if (map[s[i]]!!.isNotEmpty()) {
                 val deque = map[s[i]]!!
                 val size = deque.size
                 for (j in 0 until size) {

@@ -4,7 +4,7 @@ package g0401_0500.s0468_validate_ip_address
 
 class Solution {
     fun validIPAddress(ip: String): String {
-        if (ip.length == 0) {
+        if (ip.isEmpty()) {
             return NEITHER
         }
         val arr = ip.split("\\.".toRegex()).toTypedArray()
