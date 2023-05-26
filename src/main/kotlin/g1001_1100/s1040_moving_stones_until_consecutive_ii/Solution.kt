@@ -6,15 +6,15 @@ package g1001_1100.s1040_moving_stones_until_consecutive_ii
 import java.util.Arrays
 
 class Solution {
-    fun numMovesStonesII(A: IntArray): IntArray? {
-        Arrays.sort(A)
+    fun numMovesStonesII(a: IntArray): IntArray? {
+        Arrays.sort(a)
         var i = 0
-        val n = A.size
+        val n = a.size
         var low = n
-        val high = Math.max(A[n - 1] - n + 2 - A[1], A[n - 2] - A[0] - n + 2)
+        val high = (a[n - 1] - n + 2 - a[1]).coerceAtLeast(a[n - 2] - a[0] - n + 2)
         for (j in 0 until n) {
-            while (A[j] - A[i] >= n) ++i
-            low = if (j - i + 1 == n - 1 && A[j] - A[i] == n - 2) low.coerceAtMost(2)
+            while (a[j] - a[i] >= n) ++i
+            low = if (j - i + 1 == n - 1 && a[j] - a[i] == n - 2) low.coerceAtMost(2)
             else low.coerceAtMost(n - (j - i + 1))
         }
         return intArrayOf(low, high)
