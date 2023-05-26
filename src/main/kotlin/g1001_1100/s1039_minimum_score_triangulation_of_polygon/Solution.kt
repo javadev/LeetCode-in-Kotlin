@@ -9,7 +9,7 @@ class Solution() {
     fun minScoreTriangulation(values: IntArray): Int {
         val n = values.size
         for (row: IntArray? in dp) {
-            Arrays.fill(row!!, -1)
+            row!!.fill(-1)
         }
         return util(values, 1, n - 1)
     }
