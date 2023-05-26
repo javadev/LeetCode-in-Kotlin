@@ -3,11 +3,9 @@ package g1001_1100.s1040_moving_stones_until_consecutive_ii
 // #Medium #Array #Math #Sorting #Two_Pointers
 // #2023_05_26_Time_287_ms_(50.00%)_Space_50.2_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun numMovesStonesII(a: IntArray): IntArray? {
-        Arrays.sort(a)
+        a.sort()
         var i = 0
         val n = a.size
         var low = n
