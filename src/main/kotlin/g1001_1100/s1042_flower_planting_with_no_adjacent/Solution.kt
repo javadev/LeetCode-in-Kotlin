@@ -7,6 +7,7 @@ class Solution {
     private lateinit var graph: Array<ArrayList<Int>?>
     private lateinit var color: IntArray
     private lateinit var visited: BooleanArray
+
     fun gardenNoAdj(n: Int, paths: Array<IntArray>): IntArray {
         buildGraph(n, paths)
         color = IntArray(n)
