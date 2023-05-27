@@ -7,6 +7,7 @@ class Solution {
     private lateinit var hsh: LongArray
     private lateinit var pw: LongArray
     private val cnt: Array<MutableList<Int>?> = arrayOfNulls(26)
+
     fun longestDupSubstring(s: String): String {
         val n = s.length
         val base = 131
