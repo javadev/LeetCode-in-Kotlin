@@ -1779,6 +1779,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium | Dynamic_Programming | 158 | 80.95
 | 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String, Math | 317 | 70.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1044 |[Longest Duplicate Substring](src/main/kotlin/g1001_1100/s1044_longest_duplicate_substring/Solution.kt)| Hard | String, Binary_Search, Sliding_Window, Hash_Function, Rolling_Hash, Suffix_Array | 592 | 100.00
+| 1043 |[Partition Array for Maximum Sum](src/main/kotlin/g1001_1100/s1043_partition_array_for_maximum_sum/Solution.kt)| Medium | Array, Dynamic_Programming | 194 | 71.43
+| 1042 |[Flower Planting With No Adjacent](src/main/kotlin/g1001_1100/s1042_flower_planting_with_no_adjacent/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 396 | 85.71
+| 1041 |[Robot Bounded In Circle](src/main/kotlin/g1001_1100/s1041_robot_bounded_in_circle/Solution.kt)| Medium | String, Math, Simulation | 121 | 100.00
 | 1040 |[Moving Stones Until Consecutive II](src/main/kotlin/g1001_1100/s1040_moving_stones_until_consecutive_ii/Solution.kt)| Medium | Array, Math, Sorting, Two_Pointers | 287 | 50.00
 | 1039 |[Minimum Score Triangulation of Polygon](src/main/kotlin/g1001_1100/s1039_minimum_score_triangulation_of_polygon/Solution.kt)| Medium | Array, Dynamic_Programming | 147 | 100.00
 | 1038 |[Binary Search Tree to Greater Sum Tree](src/main/kotlin/g1001_1100/s1038_binary_search_tree_to_greater_sum_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 123 | 91.67
