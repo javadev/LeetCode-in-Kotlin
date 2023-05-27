@@ -17,9 +17,9 @@ class Solution {
         pw = LongArray(n + 1)
         pw[0] = 1
         for (j in 1..n) {
-            hsh[j] = (hsh[j - 1] * base + s[j - 1].toInt().toLong()) % MOD
+            hsh[j] = (hsh[j - 1] * base + s[j - 1].code.toLong()) % MOD
             pw[j] = pw[j - 1] * base % MOD
-            cnt[s[j - 1].toInt() - 'a'.toInt()]!!.add(j - 1)
+            cnt[s[j - 1].code - 'a'.code]!!.add(j - 1)
         }
         var ans = ""
         for (i in 0..25) {
