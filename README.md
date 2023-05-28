@@ -152,6 +152,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1046 |[Last Stone Weight](src/main/kotlin/g1001_1100/s1046_last_stone_weight/Solution.kt)| Easy | Array, Heap_Priority_Queue | 123 | 100.00
 | 0692 |[Top K Frequent Words](src/main/kotlin/g0601_0700/s0692_top_k_frequent_words/Solution.kt)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Trie, Bucket_Sort | 239 | 81.10
 
 ### Level 2
@@ -1779,6 +1780,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium | Dynamic_Programming | 158 | 80.95
 | 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String, Math | 317 | 70.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1048 |[Longest String Chain](src/main/kotlin/g1001_1100/s1048_longest_string_chain/Solution.kt)| Medium | Array, String, Hash_Table, Dynamic_Programming, Two_Pointers | 273 | 75.00
+| 1047 |[Remove All Adjacent Duplicates In String](src/main/kotlin/g1001_1100/s1047_remove_all_adjacent_duplicates_in_string/Solution.kt)| Easy | String, Stack | 228 | 94.52
+| 1046 |[Last Stone Weight](src/main/kotlin/g1001_1100/s1046_last_stone_weight/Solution.kt)| Easy | Array, Heap_Priority_Queue, Level_1_Day_15_Heap | 123 | 100.00
+| 1045 |[Customers Who Bought All Products](src/main/kotlin/g1001_1100/s1045_customers_who_bought_all_products/script.sql)| Medium | Database | 881 | 90.47
 | 1044 |[Longest Duplicate Substring](src/main/kotlin/g1001_1100/s1044_longest_duplicate_substring/Solution.kt)| Hard | String, Binary_Search, Sliding_Window, Hash_Function, Rolling_Hash, Suffix_Array | 592 | 100.00
 | 1043 |[Partition Array for Maximum Sum](src/main/kotlin/g1001_1100/s1043_partition_array_for_maximum_sum/Solution.kt)| Medium | Array, Dynamic_Programming | 194 | 71.43
 | 1042 |[Flower Planting With No Adjacent](src/main/kotlin/g1001_1100/s1042_flower_planting_with_no_adjacent/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 396 | 85.71
