@@ -11,7 +11,7 @@ class Solution {
         for (stone in stones) {
             heap.offer(stone)
         }
-        while (!heap.isEmpty()) {
+        while (heap.isNotEmpty()) {
             if (heap.size >= 2) {
                 val one = heap.poll()
                 val two = heap.poll()
