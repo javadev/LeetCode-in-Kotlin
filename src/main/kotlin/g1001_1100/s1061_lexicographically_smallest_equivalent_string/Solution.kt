@@ -5,6 +5,7 @@ package g1001_1100.s1061_lexicographically_smallest_equivalent_string
 @Suppress("NAME_SHADOWING")
 class Solution {
     lateinit var parent: IntArray
+
     fun smallestEquivalentString(s1: String, s2: String, baseStr: String): String? {
         parent = IntArray(26)
         val n = s1.length
