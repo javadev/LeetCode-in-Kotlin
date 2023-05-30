@@ -12,10 +12,10 @@ class Solution {
         map.forEach { kv -> pq.offer(kv.toPair()) }
         val result = IntArray(barcodes.size)
         var ind = 0
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val remainingBcs = mutableListOf<Pair<Int, Int>>()
             for (i in 0 until 2) {
-                if (!pq.isEmpty()) {
+                if (pq.isNotEmpty()) {
                     val max = pq.poll()
                     result[ind++] = max.first
                     if (max.second - 1 != 0) {
