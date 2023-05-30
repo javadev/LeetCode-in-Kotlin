@@ -1781,6 +1781,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium | Dynamic_Programming | 158 | 80.95
 | 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String, Math | 317 | 70.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1068 |[Product Sales Analysis I](src/main/kotlin/g1001_1100/s1068_product_sales_analysis_i/script.sql)| Easy | Database | 1897 | 79.88
+| 1061 |[Lexicographically Smallest Equivalent String](src/main/kotlin/g1001_1100/s1061_lexicographically_smallest_equivalent_string/Solution.kt)| Medium | String, Union_Find | 166 | 100.00
+| 1054 |[Distant Barcodes](src/main/kotlin/g1001_1100/s1054_distant_barcodes/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting | 622 | 75.00
+| 1053 |[Previous Permutation With One Swap](src/main/kotlin/g1001_1100/s1053_previous_permutation_with_one_swap/Solution.kt)| Medium | Array, Greedy | 338 | 25.00
 | 1052 |[Grumpy Bookstore Owner](src/main/kotlin/g1001_1100/s1052_grumpy_bookstore_owner/Solution.kt)| Medium | Array, Sliding_Window | 268 | 80.00
 | 1051 |[Height Checker](src/main/kotlin/g1001_1100/s1051_height_checker/Solution.kt)| Easy | Array, Sorting, Counting_Sort | 140 | 94.37
 | 1050 |[Actors and Directors Who Cooperated At Least Three Times](src/main/kotlin/g1001_1100/s1050_actors_and_directors_who_cooperated_at_least_three_times/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_10_Where | 629 | 81.02
