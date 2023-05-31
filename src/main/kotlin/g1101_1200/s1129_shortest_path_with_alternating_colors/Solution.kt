@@ -1,9 +1,10 @@
 package g1101_1200.s1129_shortest_path_with_alternating_colors
 
+// #Medium #Breadth_First_Search #Graph #Graph_Theory_I_Day_10_Standard_Traversal
+// #2023_05_31_Time_241_ms_(16.67%)_Space_49.4_MB_(33.33%)
+
 import java.util.LinkedList
 import java.util.Queue
-
-// #Medium #Breadth_First_Search #Graph #Graph_Theory_I_Day_10_Standard_Traversal
 
 @Suppress("NAME_SHADOWING")
 class Solution {
@@ -24,7 +25,7 @@ class Solution {
         } else {
             vis[0][0] = true
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             var size = q.size
             while (size-- > 0) {
                 val curr = q.poll()

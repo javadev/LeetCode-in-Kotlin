@@ -46,7 +46,7 @@ class Solution {
         }
         nodes.add(root)
         val forests: MutableList<TreeNode> = ArrayList()
-        while (!nodes.isEmpty()) {
+        while (nodes.isNotEmpty()) {
             var node = nodes.poll()
             node = deleteAndSplit(node)
             if (node != null) {

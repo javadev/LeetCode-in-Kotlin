@@ -1,6 +1,7 @@
 package g1101_1200.s1139_largest_1_bordered_square
 
 // #Medium #Array #Dynamic_Programming #Matrix
+// #2023_05_31_Time_224_ms_(100.00%)_Space_49.8_MB_(100.00%)
 
 class Solution {
     fun largest1BorderedSquare(grid: Array<IntArray>): Int {

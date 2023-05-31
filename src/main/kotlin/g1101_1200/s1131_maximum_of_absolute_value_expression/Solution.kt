@@ -1,6 +1,6 @@
 package g1101_1200.s1131_maximum_of_absolute_value_expression
 
-// #Medium #Array #Math
+// #Medium #Array #Math #2023_05_31_Time_333_ms_(100.00%)_Space_65.4_MB_(100.00%)
 
 class Solution {
     fun maxAbsValExpr(arr1: IntArray, arr2: IntArray): Int {

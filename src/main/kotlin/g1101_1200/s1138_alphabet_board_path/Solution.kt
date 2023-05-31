@@ -1,6 +1,6 @@
 package g1101_1200.s1138_alphabet_board_path
 
-// #Medium #String #Hash_Table
+// #Medium #String #Hash_Table #2023_05_31_Time_138_ms_(100.00%)_Space_34.8_MB_(100.00%)
 
 class Solution {
     fun alphabetBoardPath(target: String): String {

@@ -1,8 +1,8 @@
 package g1101_1200.s1117_building_h2o
 
-import java.util.concurrent.Semaphore
+// #Medium #Concurrency #2023_05_31_Time_20_ms_(45.16%)_Space_44.8_MB_(67.49%)
 
-// #Medium #Concurrency
+import java.util.concurrent.Semaphore
 
 class H2O {
     private val hSemaphore: Semaphore

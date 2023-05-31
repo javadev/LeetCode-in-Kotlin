@@ -1,6 +1,8 @@
 package g1101_1200.s1125_smallest_sufficient_team
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2023_05_31_Time_181_ms_(100.00%)_Space_35.8_MB_(100.00%)
+
 class Solution {
     private var ans: List<Int> = ArrayList()
     fun smallestSufficientTeam(skills: Array<String>, people: List<List<String>>): IntArray {
@@ -45,7 +47,7 @@ class Solution {
             }
             return
         }
-        if (!ans.isEmpty() && list.size >= ans.size) {
+        if (ans.isNotEmpty() && list.size >= ans.size) {
             return
         }
         var zero = 0

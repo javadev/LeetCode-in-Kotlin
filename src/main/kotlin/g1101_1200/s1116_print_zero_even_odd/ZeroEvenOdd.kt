@@ -1,9 +1,9 @@
 package g1101_1200.s1116_print_zero_even_odd
 
+// #Medium #Concurrency #2023_05_31_Time_7_ms_(39.21%)_Space_42.3_MB_(13.69%)
+
 import java.util.concurrent.Semaphore
 import java.util.function.IntConsumer
-
-// #Medium #Concurrency
 
 class ZeroEvenOdd(private val n: Int) {
     private val zeroSemaphore = Semaphore(1)

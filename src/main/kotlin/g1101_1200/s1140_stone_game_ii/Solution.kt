@@ -1,6 +1,7 @@
 package g1101_1200.s1140_stone_game_ii
 
 // #Medium #Array #Dynamic_Programming #Math #Game_Theory
+// #2023_05_31_Time_166_ms_(93.27%)_Space_41.4_MB_(39.42%)
 
 class Solution {
     private val dp = Array(105) { IntArray(105) }

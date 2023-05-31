@@ -1,8 +1,8 @@
 package g1101_1200.s1115_print_foobar_alternately
 
-import java.util.concurrent.Semaphore
+// #Medium #Concurrency #2023_05_31_Time_23_ms_(71.25%)_Space_43.4_MB_(7.06%)
 
-// #Medium #Concurrency
+import java.util.concurrent.Semaphore
 
 class FooBar(private val n: Int) {
     private val fooSemaphore: Semaphore

@@ -1,8 +1,10 @@
 package g1101_1200.s1146_snapshot_array
 
+// #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_18
+// #2023_05_31_Time_1064_ms_(57.14%)_Space_163_MB_(7.14%)
+
 import java.util.TreeMap
 
-// #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_18
 class SnapshotArray(length: Int) {
     private var snapId = -1
     private val indexToSnapMap: MutableMap<Int, TreeMap<Int, Int>>

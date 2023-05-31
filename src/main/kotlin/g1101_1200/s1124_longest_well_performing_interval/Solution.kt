@@ -1,6 +1,7 @@
 package g1101_1200.s1124_longest_well_performing_interval
 
 // #Medium #Array #Hash_Table #Stack #Prefix_Sum #Monotonic_Stack
+// #2023_05_31_Time_313_ms_(100.00%)_Space_57.1_MB_(100.00%)
 
 class Solution {
     fun longestWPI(hours: IntArray): Int {

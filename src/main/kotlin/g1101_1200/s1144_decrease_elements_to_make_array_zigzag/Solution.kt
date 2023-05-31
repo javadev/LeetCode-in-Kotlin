@@ -1,6 +1,7 @@
-package g1101_1200.s1144_decrease_elements_to_make_array_zigzag
+package g1101_1200.s1146_snapshot_array
 
-// #Medium #Array #Greedy
+// #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_18
+// #2023_05_31_Time_1064_ms_(57.14%)_Space_163_MB_(7.14%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

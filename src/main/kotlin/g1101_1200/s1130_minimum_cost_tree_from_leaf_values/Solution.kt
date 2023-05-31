@@ -1,9 +1,10 @@
 package g1101_1200.s1130_minimum_cost_tree_from_leaf_values
 
+// #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack
+// #2023_05_31_Time_145_ms_(66.67%)_Space_35_MB_(66.67%)
+
 import java.util.ArrayDeque
 import java.util.Deque
-
-// #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack
 
 class Solution {
     fun mctFromLeafValues(arr: IntArray): Int {

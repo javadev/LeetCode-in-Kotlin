@@ -1,6 +1,7 @@
 package g1101_1200.s1122_relative_sort_array
 
 // #Easy #Array #Hash_Table #Sorting #Counting_Sort
+// #2023_05_31_Time_183_ms_(90.00%)_Space_35.8_MB_(90.00%)
 
 class Solution {
     fun relativeSortArray(arr1: IntArray, arr2: IntArray): IntArray {

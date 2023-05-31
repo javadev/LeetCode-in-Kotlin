@@ -1,6 +1,6 @@
 package g1101_1200.s1128_number_of_equivalent_domino_pairs
 
-// #Easy #Array #Hash_Table #Counting
+// #Easy #Array #Hash_Table #Counting #2023_05_31_Time_289_ms_(80.00%)_Space_61.5_MB_(60.00%)
 
 class Solution {
     fun numEquivDominoPairs(dominoes: Array<IntArray>): Int {
