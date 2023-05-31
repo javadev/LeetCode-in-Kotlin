@@ -1789,7 +1789,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1147 |[Longest Chunked Palindrome Decomposition](src/main/kotlin/g1101_1200/s1147_longest_chunked_palindrome_decomposition/Solution.kt)| Hard | String, Dynamic_Programming, Greedy, Two_Pointers, Hash_Function, Rolling_Hash | 148 | 50.00
 | 1146 |[Snapshot Array](src/main/kotlin/g1101_1200/s1146_snapshot_array/SnapshotArray.kt)| Medium | Array, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_18 | 1064 | 57.14
 | 1145 |[Binary Tree Coloring Game](src/main/kotlin/g1101_1200/s1145_binary_tree_coloring_game/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 181 | 100.00
-| 1144 |[Decrease Elements To Make Array Zigzag](src/main/kotlin/g1101_1200/s1144_decrease_elements_to_make_array_zigzag/Solution.kt)| Medium | Array, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_18 | 1064 | 57.14
+| 1144 |[Decrease Elements To Make Array Zigzag](src/main/kotlin/g1101_1200/s1144_decrease_elements_to_make_array_zigzag/Solution.kt)| Medium | Array, Greedy | 144 | 100.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
 | 1141 |[User Activity for the Past 30 Days I](src/main/kotlin/g1101_1200/s1141_user_activity_for_the_past_30_days_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_7_Function | 790 | 87.11
 | 1140 |[Stone Game II](src/main/kotlin/g1101_1200/s1140_stone_game_ii/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Game_Theory | 166 | 93.27
