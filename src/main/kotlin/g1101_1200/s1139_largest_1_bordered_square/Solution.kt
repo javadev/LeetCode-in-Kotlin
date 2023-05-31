@@ -31,7 +31,9 @@ class Solution {
             for (j in 0 until col) {
                 val curLen = rightToLeft[i]!![j]
                 for (k in curLen downTo 1) {
-                    if (bottomToUp[i]!![j] >= k && rightToLeft[i + k - 1]!![j] >= k && bottomToUp[i]!![j + k - 1] >= k) {
+                    if (bottomToUp[i]!![j] >= k && rightToLeft[i + k - 1]!![j] >= k &&
+                        bottomToUp[i]!![j + k - 1] >= k
+                    ) {
                         if (k > res) {
                             res = k
                         }
