@@ -1,7 +1,7 @@
 package g1101_1200.s1148_article_views_i
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -51,11 +51,11 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(4))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(7))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(4))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(7))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

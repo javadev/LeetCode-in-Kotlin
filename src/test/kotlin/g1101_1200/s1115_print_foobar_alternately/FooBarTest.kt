@@ -1,7 +1,7 @@
 package g1101_1200.s1115_print_foobar_alternately
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.concurrent.TimeUnit
 
@@ -31,6 +31,6 @@ internal class FooBarTest {
         fooThread.join()
         barThread.join()
         TimeUnit.MILLISECONDS.sleep(100)
-        MatcherAssert.assertThat(fooBarData[0], CoreMatchers.equalTo(2))
+        assertThat(fooBarData[0], equalTo(2))
     }
 }

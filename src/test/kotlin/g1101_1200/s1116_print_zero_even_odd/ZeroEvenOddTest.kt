@@ -1,7 +1,7 @@
 package g1101_1200.s1116_print_zero_even_odd
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.concurrent.TimeUnit
 import java.util.function.IntConsumer
@@ -40,6 +40,6 @@ internal class ZeroEvenOddTest {
         secondThread.join()
         thirdThread.join()
         TimeUnit.MILLISECONDS.sleep(100)
-        MatcherAssert.assertThat(zeroEvenOddData[0], CoreMatchers.equalTo(10))
+        assertThat(zeroEvenOddData[0], equalTo(10))
     }
 }

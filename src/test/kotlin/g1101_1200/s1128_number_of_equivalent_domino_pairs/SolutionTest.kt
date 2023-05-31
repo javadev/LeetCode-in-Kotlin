@@ -1,13 +1,13 @@
 package g1101_1200.s1128_number_of_equivalent_domino_pairs
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun numEquivDominoPairs() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().numEquivDominoPairs(
                 arrayOf(
                     intArrayOf(1, 2),
@@ -16,13 +16,13 @@ internal class SolutionTest {
                     intArrayOf(5, 6)
                 )
             ),
-            CoreMatchers.equalTo(1)
+            equalTo(1)
         )
     }
 
     @Test
     fun numEquivDominoPairs2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .numEquivDominoPairs(
                     arrayOf(
@@ -33,7 +33,7 @@ internal class SolutionTest {
                         intArrayOf(2, 2)
                     )
                 ),
-            CoreMatchers.equalTo(3)
+            equalTo(3)
         )
     }
 }

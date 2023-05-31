@@ -1,7 +1,7 @@
 package g1101_1200.s1141_user_activity_for_the_past_30_days_i
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -59,13 +59,13 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getNString(1), CoreMatchers.equalTo("2019-07-20"))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(2))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getNString(1), CoreMatchers.equalTo("2019-07-21"))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(2))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getNString(1), equalTo("2019-07-20"))
+                    assertThat(resultSet.getInt(2), equalTo(2))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getNString(1), equalTo("2019-07-21"))
+                    assertThat(resultSet.getInt(2), equalTo(2))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

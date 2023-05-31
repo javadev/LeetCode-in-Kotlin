@@ -1,6 +1,6 @@
 package g1101_1200.s1117_building_h2o
 
-import org.hamcrest.MatcherAssert
+import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers
 import org.junit.jupiter.api.Test
 import java.util.concurrent.ArrayBlockingQueue
@@ -17,6 +17,6 @@ internal class H2OTest {
             executor.execute(H2O.OxygenRunnable(h2o))
             executor.execute(H2O.HydrogenRunnable(h2o))
         }
-        MatcherAssert.assertThat(true, Matchers.equalTo(true))
+        assertThat(true, Matchers.equalTo(true))
     }
 }

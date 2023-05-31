@@ -1,7 +1,7 @@
 package g1101_1200.s1114_print_in_order
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import java.util.concurrent.TimeUnit
 
@@ -15,6 +15,6 @@ internal class FooTest {
         Thread { foo.second { fooData[0]++ } }.start()
         Thread { foo.third { fooData[0]++ } }.start()
         TimeUnit.MILLISECONDS.sleep(800)
-        MatcherAssert.assertThat(fooData[0], CoreMatchers.equalTo(3))
+        assertThat(fooData[0], equalTo(3))
     }
 }
