@@ -1781,6 +1781,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.12'
 | 1155 |[Number of Dice Rolls With Target Sum](src/main/kotlin/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.kt)| Medium | Dynamic_Programming | 158 | 80.95
 | 1154 |[Day of the Year](src/main/kotlin/g1101_1200/s1154_day_of_the_year/Solution.kt)| Easy | String, Math | 317 | 70.00
 | 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming | 307 | 38.36
+| 1073 |[Adding Two Negabinary Numbers](src/main/kotlin/g1001_1100/s1073_adding_two_negabinary_numbers/Solution.kt)| Medium | Array, Math | 187 | 100.00
+| 1072 |[Flip Columns For Maximum Number of Equal Rows](src/main/kotlin/g1001_1100/s1072_flip_columns_for_maximum_number_of_equal_rows/Solution.kt)| Medium | Array, Hash_Table, Matrix | 536 | 100.00
+| 1071 |[Greatest Common Divisor of Strings](src/main/kotlin/g1001_1100/s1071_greatest_common_divisor_of_strings/Solution.kt)| Easy | String, Math | 150 | 80.68
+| 1070 |[Product Sales Analysis III](src/main/kotlin/g1001_1100/s1070_product_sales_analysis_iii/script.sql)| Medium | Database | 1561 | 95.47
 | 1068 |[Product Sales Analysis I](src/main/kotlin/g1001_1100/s1068_product_sales_analysis_i/script.sql)| Easy | Database | 1897 | 79.88
 | 1061 |[Lexicographically Smallest Equivalent String](src/main/kotlin/g1001_1100/s1061_lexicographically_smallest_equivalent_string/Solution.kt)| Medium | String, Union_Find | 166 | 100.00
 | 1054 |[Distant Barcodes](src/main/kotlin/g1001_1100/s1054_distant_barcodes/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting | 622 | 75.00
