@@ -15,30 +15,32 @@ import javax.sql.DataSource
 
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE activity(user_id INTEGER, session_id INTEGER"
-            + ", activity_date DATE, activity_type VARCHAR(512)); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (1, 1, ' 2019-07-20', 'open_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (1, 1, ' 2019-07-20', 'scroll_down'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (1, 1, ' 2019-07-20', 'end_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (2, 4, ' 2019-07-20', 'open_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (2, 4, ' 2019-07-21', 'send_message'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (2, 4, ' 2019-07-21', 'end_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (3, 2, ' 2019-07-21', 'open_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (3, 2, ' 2019-07-21', 'send_message'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (3, 2, ' 2019-07-21', 'end_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (4, 3, ' 2019-06-25', 'open_session'); "
-            + "INSERT INTO activity(user_id, session_id, activity_date, activity_type)"
-            + " VALUES (4, 3, ' 2019-06-25', 'end_session'); "]
+    initialSqls = [
+        "CREATE TABLE activity(user_id INTEGER, session_id INTEGER" +
+            ", activity_date DATE, activity_type VARCHAR(512)); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (1, 1, ' 2019-07-20', 'open_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (1, 1, ' 2019-07-20', 'scroll_down'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (1, 1, ' 2019-07-20', 'end_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (2, 4, ' 2019-07-20', 'open_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (2, 4, ' 2019-07-21', 'send_message'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (2, 4, ' 2019-07-21', 'end_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (3, 2, ' 2019-07-21', 'open_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (3, 2, ' 2019-07-21', 'send_message'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (3, 2, ' 2019-07-21', 'end_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (4, 3, ' 2019-06-25', 'open_session'); " +
+            "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
+            " VALUES (4, 3, ' 2019-06-25', 'end_session'); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -49,8 +51,8 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1101_1200/s1141_user_activity_"
-                                    + "for_the_past_30_days_i/script.sql"
+                            "src/main/kotlin/g1101_1200/s1141_user_activity_" +
+                                "for_the_past_30_days_i/script.sql"
                         )
                     )
                         .lines()

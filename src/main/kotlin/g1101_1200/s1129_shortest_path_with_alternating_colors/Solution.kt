@@ -1,7 +1,7 @@
 package g1101_1200.s1129_shortest_path_with_alternating_colors
 
-import java.util.Queue
 import java.util.LinkedList
+import java.util.Queue
 
 // #Medium #Breadth_First_Search #Graph #Graph_Theory_I_Day_10_Standard_Traversal
 

@@ -4,7 +4,7 @@ import com_github_leetcode.TreeNode
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
 import org.junit.jupiter.api.Test
-import java.util.*
+import java.util.Arrays
 
 internal class SolutionTest {
     @Test

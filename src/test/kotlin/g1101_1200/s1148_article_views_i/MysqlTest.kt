@@ -15,22 +15,24 @@ import javax.sql.DataSource
 
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE views(article_id INTEGER, author_id INTEGER"
-            + ", viewer_id INTEGER, view_date DATE); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (1, 3, 5, '2019-08-01'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (1, 3, 6, '2019-08-02'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (2, 7, 7, '2019-08-01'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (2, 7, 6, '2019-08-02'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (4, 7, 1, '2019-07-22'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (3, 4, 4, '2019-07-21'); "
-            + "INSERT INTO views(article_id, author_id, viewer_id, view_date)"
-            + " VALUES (3, 4, 4, '2019-07-21'); "]
+    initialSqls = [
+        "CREATE TABLE views(article_id INTEGER, author_id INTEGER" +
+            ", viewer_id INTEGER, view_date DATE); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (1, 3, 5, '2019-08-01'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (1, 3, 6, '2019-08-02'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (2, 7, 7, '2019-08-01'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (2, 7, 6, '2019-08-02'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (4, 7, 1, '2019-07-22'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (3, 4, 4, '2019-07-21'); " +
+            "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
+            " VALUES (3, 4, 4, '2019-07-21'); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -41,8 +43,8 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1101_1200/s1148"
-                                    + "_article_views_i/script.sql"
+                            "src/main/kotlin/g1101_1200/s1148" +
+                                "_article_views_i/script.sql"
                         )
                     )
                         .lines()
