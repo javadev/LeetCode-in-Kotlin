@@ -1,6 +1,6 @@
 package g1101_1200.s1105_filling_bookcase_shelves
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_05_31_Time_175_ms_(33.33%)_Space_39.8_MB_(33.33%)
 
 class Solution {
     fun minHeightShelves(books: Array<IntArray>, shelfWidth: Int): Int {

@@ -1,6 +1,7 @@
 package g1101_1200.s1147_longest_chunked_palindrome_decomposition
 
 // #Hard #String #Dynamic_Programming #Greedy #Two_Pointers #Hash_Function #Rolling_Hash
+// #2023_05_31_Time_148_ms_(50.00%)_Space_38.2_MB_(50.00%)
 
 class Solution {
     fun longestDecomposition(text: String): Int {

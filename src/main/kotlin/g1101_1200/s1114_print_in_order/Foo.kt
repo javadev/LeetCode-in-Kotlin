@@ -1,6 +1,6 @@
 package g1101_1200.s1114_print_in_order
 
-// #Easy #Concurrency
+// #Easy #Concurrency #2023_05_31_Time_13_ms_(30.13%)_Space_42_MB_(17.32%)
 
 class Foo {
     @Volatile

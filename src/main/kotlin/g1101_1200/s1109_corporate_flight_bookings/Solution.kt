@@ -1,6 +1,6 @@
 package g1101_1200.s1109_corporate_flight_bookings
 
-// #Medium #Array #Prefix_Sum
+// #Medium #Array #Prefix_Sum #2023_05_31_Time_719_ms_(100.00%)_Space_124.5_MB_(100.00%)
 
 class Solution {
     fun corpFlightBookings(bookings: Array<IntArray>, n: Int): IntArray {

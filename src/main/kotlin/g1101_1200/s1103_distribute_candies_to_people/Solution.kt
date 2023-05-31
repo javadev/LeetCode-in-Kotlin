@@ -1,6 +1,6 @@
 package g1101_1200.s1103_distribute_candies_to_people
 
-// #Easy #Math #Simulation
+// #Easy #Math #Simulation #2023_05_31_Time_129_ms_(100.00%)_Space_34.9_MB_(50.00%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

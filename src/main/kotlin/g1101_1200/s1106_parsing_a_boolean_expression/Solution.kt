@@ -1,9 +1,6 @@
 package g1101_1200.s1106_parsing_a_boolean_expression
 
-// #Hard #String #Stack #Recursion
-
-import java.util.logging.Level
-import java.util.logging.Logger
+// #Hard #String #Stack #Recursion #2023_05_31_Time_205_ms_(100.00%)_Space_49.5_MB_(50.00%)
 
 class Solution {
     private var source: String? = null
@@ -93,7 +90,6 @@ class Solution {
 
     private fun consume(ch: Char, message: String) {
         if (!match(ch)) {
-            Logger.getLogger(Solution::class.java.name).log(Level.SEVERE) { message }
             return
         }
         advance()
