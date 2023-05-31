@@ -27,12 +27,12 @@ class Solution {
     }
 
     private operator fun not(): Boolean {
-        consume('!', "Expect '!'")
+        consume('!')
         return !group()[0]
     }
 
     private fun or(): Boolean {
-        consume('|', "Expect '|'")
+        consume('|')
         var res = false
         for (e in group()) {
             res = res or e
@@ -41,7 +41,7 @@ class Solution {
     }
 
     private fun and(): Boolean {
-        consume('&', "Expect '&'")
+        consume('&')
         var res = true
         for (e in group()) {
             res = res and e
@@ -50,7 +50,7 @@ class Solution {
     }
 
     private fun group(): List<Boolean> {
-        consume('(', "Expect '('")
+        consume('(')
         val res: MutableList<Boolean> = ArrayList()
         while (!match(')')) {
             res.add(expr())
@@ -58,7 +58,7 @@ class Solution {
                 advance()
             }
         }
-        consume(')', "Expect ')'")
+        consume(')')
         return res
     }
 
@@ -88,7 +88,7 @@ class Solution {
         } else peek() == ch
     }
 
-    private fun consume(ch: Char, message: String) {
+    private fun consume(ch: Char) {
         if (!match(ch)) {
             return
         }
