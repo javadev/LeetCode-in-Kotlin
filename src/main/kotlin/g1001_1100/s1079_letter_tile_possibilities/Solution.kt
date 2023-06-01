@@ -2,14 +2,13 @@ package g1001_1100.s1079_letter_tile_possibilities
 
 // #Medium #String #Backtracking #2023_06_01_Time_144_ms_(100.00%)_Space_34.2_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     private var count = 0
+
     fun numTilePossibilities(tiles: String): Int {
         count = 0
         val chars = tiles.toCharArray()
-        Arrays.sort(chars)
+        chars.sort()
         val visited = BooleanArray(chars.size)
         dfs(chars, 0, visited)
         return count
