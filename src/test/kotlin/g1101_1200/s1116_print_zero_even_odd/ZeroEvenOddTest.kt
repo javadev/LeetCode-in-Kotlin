@@ -11,7 +11,7 @@ internal class ZeroEvenOddTest {
     @Throws(InterruptedException::class)
     fun zeroEvenOdd() {
         val zeroEvenOddData = intArrayOf(0)
-        val consumer = IntConsumer { data: Int -> zeroEvenOddData[0]++ }
+        val consumer = IntConsumer { _: Int -> zeroEvenOddData[0]++ }
         val n = 5
         val zeroEvenOdd = ZeroEvenOdd(n)
         val firstThread = Thread {
