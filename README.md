@@ -469,6 +469,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1091 |[Largest Values From Labels](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 305 | 98.28
 | 0130 |[Surrounded Regions](src.save/main/kotlin/g0101_0200/s0130_surrounded_regions/Solution.kt)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 355 | 84.42
 | 0797 |[All Paths From Source to Target](src.save/main/kotlin/g0701_0800/s0797_all_paths_from_source_to_target/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Backtracking | 232 | 100.00
 
@@ -1162,6 +1163,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1091 |[Largest Values From Labels](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 305 | 98.28
 | 0542 |[01 Matrix](src.save/main/kotlin/g0501_0600/s0542_01_matrix/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | 441 | 94.06
 
 #### Day 6 Matrix Related Problems
@@ -1817,6 +1819,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1105 |[Filling Bookcase Shelves](src/main/kotlin/g1101_1200/s1105_filling_bookcase_shelves/Solution.kt)| Medium | Array, Dynamic_Programming | 175 | 33.33
 | 1104 |[Path In Zigzag Labelled Binary Tree](src/main/kotlin/g1101_1200/s1104_path_in_zigzag_labelled_binary_tree/Solution.kt)| Medium | Math, Tree, Binary_Tree | 136 | 100.00
 | 1103 |[Distribute Candies to People](src/main/kotlin/g1101_1200/s1103_distribute_candies_to_people/Solution.kt)| Easy | Math, Simulation | 129 | 100.00
+| 1093 |[Statistics from a Large Sample](src/main/kotlin/g1001_1100/s1093_statistics_from_a_large_sample/Solution.kt)| Medium | Math, Two_Pointers, Probability_and_Statistics | 191 | 100.00
+| 1092 |[Shortest Common Supersequence](src/main/kotlin/g1001_1100/s1092_shortest_common_supersequence/Solution.kt)| Hard | String, Dynamic_Programming | 174 | 100.00
+| 1091 |[Largest Values From Labels](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_II_Day_8_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_5_Matrix_Related_Problems | 305 | 98.28
+| 1090 |[Largest Values From Labels](src/main/kotlin/g1001_1100/s1090_largest_values_from_labels/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Counting | 281 | 100.00
 | 1089 |[Duplicate Zeros](src/main/kotlin/g1001_1100/s1089_duplicate_zeros/Solution.kt)| Easy | Array, Two_Pointers | 185 | 93.60
 | 1084 |[Sales Analysis III](src/main/kotlin/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_10_Where | 1881 | 79.36
 | 1081 |[Smallest Subsequence of Distinct Characters](src/main/kotlin/g1001_1100/s1081_smallest_subsequence_of_distinct_characters/Solution.kt)| Medium | String, Greedy, Stack, Monotonic_Stack | 146 | 100.00
