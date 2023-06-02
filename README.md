@@ -1291,6 +1291,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 0182 |[Duplicate Emails](src.save/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 396 | 68.40
 | 1050 |[Actors and Directors Who Cooperated At Least Three Times](src/main/kotlin/g1001_1100/s1050_actors_and_directors_who_cooperated_at_least_three_times/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 629 | 81.02
+| 1084 |[Sales Analysis III](src/main/kotlin/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1881 | 79.36
 
 ### Level 1
 
@@ -1816,6 +1817,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1105 |[Filling Bookcase Shelves](src/main/kotlin/g1101_1200/s1105_filling_bookcase_shelves/Solution.kt)| Medium | Array, Dynamic_Programming | 175 | 33.33
 | 1104 |[Path In Zigzag Labelled Binary Tree](src/main/kotlin/g1101_1200/s1104_path_in_zigzag_labelled_binary_tree/Solution.kt)| Medium | Math, Tree, Binary_Tree | 136 | 100.00
 | 1103 |[Distribute Candies to People](src/main/kotlin/g1101_1200/s1103_distribute_candies_to_people/Solution.kt)| Easy | Math, Simulation | 129 | 100.00
+| 1089 |[Duplicate Zeros](src/main/kotlin/g1001_1100/s1089_duplicate_zeros/Solution.kt)| Easy | Array, Two_Pointers | 185 | 93.60
+| 1084 |[Sales Analysis III](src/main/kotlin/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_10_Where | 1881 | 79.36
+| 1081 |[Smallest Subsequence of Distinct Characters](src/main/kotlin/g1001_1100/s1081_smallest_subsequence_of_distinct_characters/Solution.kt)| Medium | String, Greedy, Stack, Monotonic_Stack | 146 | 100.00
+| 1080 |[Insufficient Nodes in Root to Leaf Paths](src/main/kotlin/g1001_1100/s1080_insufficient_nodes_in_root_to_leaf_paths/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 271 | 100.00
 | 1079 |[Letter Tile Possibilities](src/main/kotlin/g1001_1100/s1079_letter_tile_possibilities/Solution.kt)| Medium | String, Backtracking | 144 | 100.00
 | 1078 |[Occurrences After Bigram](src/main/kotlin/g1001_1100/s1078_occurrences_after_bigram/Solution.kt)| Easy | String | 151 | 88.24
 | 1075 |[Project Employees I](src/main/kotlin/g1001_1100/s1075_project_employees_i/script.sql)| Easy | Database | 1268 | 94.71
