@@ -21,7 +21,7 @@ class Solution {
         queue.offer(intArrayOf(0, 0))
         val visited = Array(m) { BooleanArray(n) }
         visited[0][0] = true
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size = queue.size
             for (i in 0 until size) {
                 val curr = queue.poll()

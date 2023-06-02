@@ -19,7 +19,7 @@ class Solution {
         }
         var ans = 0
         val labelAddedCount: HashMap<Int, Int> = HashMap()
-        while (!maxHeap.isEmpty() && numWanted > 0) {
+        while (maxHeap.isNotEmpty() && numWanted > 0) {
             val cur = maxHeap.poll()
             if (labelAddedCount.containsKey(cur.label) &&
                 labelAddedCount[cur.label]!! >= useLimit
