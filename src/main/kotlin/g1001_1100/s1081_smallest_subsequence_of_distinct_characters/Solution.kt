@@ -23,7 +23,7 @@ class Solution {
             if (exist[ch.code - 'a'.code]) {
                 continue
             }
-            while (!stk.isEmpty() && stk.peek() > ch && freq[stk.peek().code - 'a'.code] > 0) {
+            while (stk.isNotEmpty() && stk.peek() > ch && freq[stk.peek().code - 'a'.code] > 0) {
                 val rem = stk.pop()
                 exist[rem.code - 'a'.code] = false
             }
@@ -32,7 +32,7 @@ class Solution {
         }
         val ans = CharArray(stk.size)
         var index = 0
-        while (!stk.isEmpty()) {
+        while (stk.isNotEmpty()) {
             ans[index] = stk.pop()
             index++
         }
