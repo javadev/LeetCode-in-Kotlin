@@ -1,45 +1,41 @@
-1090\. Largest Values From Labels
+1091\. Shortest Path in Binary Matrix
 
 Medium
 
-There is a set of `n` items. You are given two integer arrays `values` and `labels` where the value and the label of the <code>i<sup>th</sup></code> element are `values[i]` and `labels[i]` respectively. You are also given two integers `numWanted` and `useLimit`.
+Given an `n x n` binary matrix `grid`, return _the length of the shortest **clear path** in the matrix_. If there is no clear path, return `-1`.
 
-Choose a subset `s` of the `n` elements such that:
+A **clear path** in a binary matrix is a path from the **top-left** cell (i.e., `(0, 0)`) to the **bottom-right** cell (i.e., `(n - 1, n - 1)`) such that:
 
-*   The size of the subset `s` is **less than or equal to** `numWanted`.
-*   There are **at most** `useLimit` items with the same label in `s`.
+*   All the visited cells of the path are `0`.
+*   All the adjacent cells of the path are **8-directionally** connected (i.e., they are different and they share an edge or a corner).
 
-The **score** of a subset is the sum of the values in the subset.
-
-Return _the maximum **score** of a subset_ `s`.
+The **length of a clear path** is the number of visited cells of this path.
 
 **Example 1:**
 
-**Input:** values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1
+![](https://assets.leetcode.com/uploads/2021/02/18/example1_1.png)
 
-**Output:** 9
+**Input:** grid = [[0,1],[1,0]]
 
-**Explanation:** The subset chosen is the first, third, and fifth items.
+**Output:** 2
 
 **Example 2:**
 
-**Input:** values = [5,4,3,2,1], labels = [1,3,3,3,2], numWanted = 3, useLimit = 2
+![](https://assets.leetcode.com/uploads/2021/02/18/example2_1.png)
 
-**Output:** 12
+**Input:** grid = [[0,0,0],[1,1,0],[1,1,0]]
 
-**Explanation:** The subset chosen is the first, second, and third items.
+**Output:** 4
 
 **Example 3:**
 
-**Input:** values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1
+**Input:** grid = [[1,0,0],[1,1,0],[1,1,0]]
 
-**Output:** 16
-
-**Explanation:** The subset chosen is the first and fourth items.
+**Output:** -1
 
 **Constraints:**
 
-*   `n == values.length == labels.length`
-*   <code>1 <= n <= 2 * 10<sup>4</sup></code>
-*   <code>0 <= values[i], labels[i] <= 2 * 10<sup>4</sup></code>
-*   `1 <= numWanted, useLimit <= n`
+*   `n == grid.length`
+*   `n == grid[i].length`
+*   `1 <= n <= 100`
+*   `grid[i][j] is 0 or 1`
