@@ -1,6 +1,8 @@
 package g1301_1400.s1314_matrix_block_sum
 
 // #Medium #Array #Matrix #Prefix_Sum #Dynamic_Programming_I_Day_14
+// #2023_06_05_Time_235_ms_(100.00%)_Space_39_MB_(50.00%)
+
 class Solution {
     fun matrixBlockSum(mat: Array<IntArray>, k: Int): Array<IntArray> {
         val rows = mat.size

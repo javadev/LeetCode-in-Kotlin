@@ -1,6 +1,7 @@
 package g1301_1400.s1312_minimum_insertion_steps_to_make_a_string_palindrome
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_05_Time_186_ms_(67.70%)_Space_37.6_MB_(26.09%)
+
 class Solution {
     private fun longestPalindrome(a: String, b: String, n: Int): Int {
         val dp = Array(n + 1) { IntArray(n + 1) }

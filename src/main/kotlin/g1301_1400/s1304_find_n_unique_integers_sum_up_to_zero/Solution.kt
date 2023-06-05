@@ -1,6 +1,7 @@
 package g1301_1400.s1304_find_n_unique_integers_sum_up_to_zero
 
-// #Easy #Array #Math
+// #Easy #Array #Math #2023_06_05_Time_142_ms_(100.00%)_Space_34.7_MB_(100.00%)
+
 class Solution {
     fun sumZero(n: Int): IntArray {
         val result = IntArray(n)

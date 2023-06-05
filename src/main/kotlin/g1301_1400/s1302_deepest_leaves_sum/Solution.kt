@@ -1,24 +1,21 @@
 package g1301_1400.s1302_deepest_leaves_sum
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2023_06_05_Time_325_ms_(67.39%)_Space_40.1_MB_(76.09%)
+
 import com_github_leetcode.TreeNode
 import java.util.LinkedList
 import java.util.Objects
 import java.util.Queue
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {

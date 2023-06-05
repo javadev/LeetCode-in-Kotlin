@@ -1,14 +1,16 @@
 package g1301_1400.s1311_get_watched_videos_by_your_friends
 
+// #Medium #Array #Hash_Table #Sorting #Breadth_First_Search
+// #2023_06_05_Time_372_ms_(100.00%)_Space_39_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.PriorityQueue
 import java.util.Queue
 
-// #Medium #Array #Hash_Table #Sorting #Breadth_First_Search
 class Solution {
     internal class VideoCount(var v: String, var count: Int) {
         override fun toString(): String {
-            return v + " " + count
+            return "$v $count"
         }
     }
 

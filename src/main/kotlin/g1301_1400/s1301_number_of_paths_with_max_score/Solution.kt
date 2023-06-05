@@ -1,6 +1,8 @@
 package g1301_1400.s1301_number_of_paths_with_max_score
 
 // #Hard #Array #Dynamic_Programming #Matrix
+// #2023_06_05_Time_178_ms_(100.00%)_Space_37.8_MB_(100.00%)
+
 class Solution {
     fun pathsWithMaxScore(board: List<String>): IntArray {
         val rows = board.size

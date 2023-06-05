@@ -2,6 +2,8 @@ package g1301_1400.s1306_jump_game_iii
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search
 // #Graph_Theory_I_Day_11_Breadth_First_Search #Udemy_Arrays
+// #2023_06_05_Time_291_ms_(100.00%)_Space_58.3_MB_(88.46%)
+
 class Solution {
     private lateinit var dp: BooleanArray
     private var found = false

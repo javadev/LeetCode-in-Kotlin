@@ -1,25 +1,22 @@
 package g1301_1400.s1305_all_elements_in_two_binary_search_trees
 
+// #Medium #Sorting #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+// #2023_06_05_Time_531_ms_(100.00%)_Space_41.3_MB_(88.89%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Sorting #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {
-    fun getAllElements(root1: TreeNode, root2: TreeNode): List<Int> {
+    fun getAllElements(root1: TreeNode?, root2: TreeNode?): List<Int> {
         val list1 = getAllNodes(root1)
         val list2 = getAllNodes(root2)
         val merged: MutableList<Int> = ArrayList()
@@ -29,7 +26,7 @@ class Solution {
         return merged
     }
 
-    private fun getAllNodes(root: TreeNode): List<Int> {
+    private fun getAllNodes(root: TreeNode?): List<Int> {
         val list: MutableList<Int> = ArrayList()
         return inorder(root, list)
     }

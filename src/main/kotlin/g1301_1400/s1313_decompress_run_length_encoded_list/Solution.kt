@@ -1,6 +1,7 @@
 package g1301_1400.s1313_decompress_run_length_encoded_list
 
-// #Easy #Array
+// #Easy #Array #2023_06_05_Time_196_ms_(100.00%)_Space_37.5_MB_(88.24%)
+
 class Solution {
     fun decompressRLElist(nums: IntArray): IntArray {
         var len = 0

@@ -1,6 +1,8 @@
 package g1301_1400.s1309_decrypt_string_from_alphabet_to_integer_mapping
 
 // #Easy #String #Programming_Skills_I_Day_9_String
+// #2023_06_05_Time_129_ms_(95.45%)_Space_34.8_MB_(63.64%)
+
 class Solution {
     fun freqAlphabets(s: String): String {
         val map: MutableMap<String, String> = HashMap()

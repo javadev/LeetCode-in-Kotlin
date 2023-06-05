@@ -1,6 +1,8 @@
 package g1301_1400.s1307_verbal_arithmetic_puzzle
 
 // #Hard #Array #String #Math #Backtracking
+// #2023_06_05_Time_164_ms_(100.00%)_Space_37.8_MB_(100.00%)
+
 class Solution {
     private lateinit var map: IntArray
     private lateinit var grid: Array<CharArray>
