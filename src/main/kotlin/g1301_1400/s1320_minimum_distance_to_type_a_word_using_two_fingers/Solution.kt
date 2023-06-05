@@ -1,6 +1,6 @@
 package g1301_1400.s1320_minimum_distance_to_type_a_word_using_two_fingers
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_05_Time_181_ms_(100.00%)_Space_37.7_MB_(100.00%)
 
 class Solution {
     private var word: String? = null

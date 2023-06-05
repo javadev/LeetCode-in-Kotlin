@@ -5,7 +5,7 @@ import java.util.stream.IntStream
 // #Easy #Math #Greedy
 class Solution {
     fun maximum69Number(num: Int): Int {
-        val chars = Integer.toString(num).toCharArray()
+        val chars = num.toString().toCharArray()
         IntStream.range(0, chars.size)
             .filter { i: Int -> chars[i] == '6' }
             .findFirst()

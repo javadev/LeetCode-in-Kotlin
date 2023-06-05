@@ -1,6 +1,8 @@
 package g1301_1400.s1316_distinct_echo_substrings
 
 // #Hard #String #Dynamic_Programming #Sliding_Window #Trie #Hash_Function #Rolling_Hash
+// #2023_06_05_Time_371_ms_(100.00%)_Space_58.4_MB_(20.00%)
+
 class Solution {
     fun distinctEchoSubstrings(text: String): Int {
         val n = text.length

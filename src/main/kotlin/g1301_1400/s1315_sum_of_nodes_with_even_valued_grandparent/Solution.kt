@@ -1,21 +1,18 @@
 package g1301_1400.s1315_sum_of_nodes_with_even_valued_grandparent
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2023_06_05_Time_257_ms_(82.35%)_Space_39.4_MB_(58.82%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {
