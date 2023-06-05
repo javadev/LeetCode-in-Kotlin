@@ -26,7 +26,7 @@ class Solution {
         return res
     }
 
-    private operator fun not(): Boolean {
+    private fun not(): Boolean {
         consume('!')
         return !group()[0]
     }
@@ -69,7 +69,7 @@ class Solution {
     }
 
     private val isAtEnd: Boolean
-        private get() = index >= source!!.length
+        get() = index >= source!!.length
 
     private fun advance() {
         if (isAtEnd) {
