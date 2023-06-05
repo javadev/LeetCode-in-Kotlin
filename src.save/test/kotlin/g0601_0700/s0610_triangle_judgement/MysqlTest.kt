@@ -16,15 +16,11 @@ import javax.sql.DataSource
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
     initialSqls = [
-        "CREATE TABLE RequestAccepted(requester_id INTEGER, accepter_id INTEGER, accept_date DATETIME); " +
-            "INSERT INTO RequestAccepted(requester_id, accepter_id, accept_date)" +
-            " VALUES (1, 2, '2016-06-03'); " +
-            "INSERT INTO RequestAccepted(requester_id, accepter_id, accept_date)" +
-            " VALUES (1, 3, '2016-06-08'); " +
-            "INSERT INTO RequestAccepted(requester_id, accepter_id, accept_date)" +
-            " VALUES (2, 3, '2016-06-08'); " +
-            "INSERT INTO RequestAccepted(requester_id, accepter_id, accept_date)" +
-            " VALUES (3, 4, '2016-06-09'); "
+        "CREATE TABLE Triangle(x INTEGER, y INTEGER, z INTEGER); " +
+            "INSERT INTO Triangle(x, y, z)" +
+            " VALUES (13, 15, 30); " +
+            "INSERT INTO Triangle(x, y, z)" +
+            " VALUES (10, 20, 15); "
     ]
 )
 internal class MysqlTest {
@@ -37,7 +33,7 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0601_0700/" +
-                                "s0602_friend_requests_ii_who_has_the_most_friends/script.sql"
+                                "s0610_triangle_judgement/script.sql"
                         )
                     )
                         .lines()
@@ -45,8 +41,15 @@ internal class MysqlTest {
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
-                    assertThat(resultSet.getInt(1), equalTo(3))
-                    assertThat(resultSet.getInt(2), equalTo(3))
+                    assertThat(resultSet.getInt(1), equalTo(13))
+                    assertThat(resultSet.getInt(2), equalTo(15))
+                    assertThat(resultSet.getInt(3), equalTo(30))
+                    assertThat(resultSet.getNString(4), equalTo("No"))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(10))
+                    assertThat(resultSet.getInt(2), equalTo(20))
+                    assertThat(resultSet.getInt(3), equalTo(15))
+                    assertThat(resultSet.getNString(4), equalTo("Yes"))
                     assertThat(resultSet.next(), equalTo(false))
                 }
             }
