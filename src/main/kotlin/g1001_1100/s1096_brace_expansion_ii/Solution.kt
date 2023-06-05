@@ -3,13 +3,11 @@ package g1001_1100.s1096_brace_expansion_ii
 // #Hard #String #Breadth_First_Search #Stack #Backtracking
 // #2023_06_05_Time_205_ms_(100.00%)_Space_37.8_MB_(100.00%)
 
-import java.util.Collections
-
 class Solution {
     fun braceExpansionII(expression: String): List<String> {
         val res = flatten(expression)
-        val sorted: List<String> = ArrayList(res)
-        Collections.sort(sorted)
+        val sorted: MutableList<String> = ArrayList(res)
+        sorted.sort()
         return sorted
     }
 
