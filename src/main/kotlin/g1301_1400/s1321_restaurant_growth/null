@@ -1,0 +1,9 @@
+package g1301_1400.s1321_restaurant_growth
+
+
+
+class Solution {
+    fun decode(value: String): String {
+        return value
+    }
+}

@@ -1,14 +1,14 @@
 package com_github_leetcode.neighbors
 
 import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class NodeTest {
     @Test
     fun create() {
         val node = com_github_leetcode.Node(1)
-        MatcherAssert.assertThat(node.`val`, equalTo(1))
+        assertThat(node.`val`, equalTo(1))
     }
 
     @Test
@@ -25,6 +25,6 @@ internal class NodeTest {
             5,
             listOf(node1and2and4, node2and1and3, node3and2and4, node4and1and3)
         )
-        MatcherAssert.assertThat(node.toString(), equalTo("[[2,4],[1,3],[2,4],[1,3]]"))
+        assertThat(node.toString(), equalTo("[[2,4],[1,3],[2,4],[1,3]]"))
     }
 }
