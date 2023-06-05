@@ -1779,6 +1779,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1171 |[Remove Zero Sum Consecutive Nodes from Linked List](src/main/kotlin/g1101_1200/s1171_remove_zero_sum_consecutive_nodes_from_linked_list/Solution.kt)| Medium | Hash_Table, Linked_List | 194 | 50.00
 | 1170 |[Compare Strings by Frequency of the Smallest Character](src/main/kotlin/g1101_1200/s1170_compare_strings_by_frequency_of_the_smallest_character/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Binary_Search | 221 | 50.00
 | 1169 |[Invalid Transactions](src/main/kotlin/g1101_1200/s1169_invalid_transactions/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 362 | 57.14
+| 1164 |[Product Price at a Given Date](src/main/kotlin/g1101_1200/s1164_product_price_at_a_given_date/script.sql)| Medium | Database | 774 | 91.86
 | 1163 |[Last Substring in Lexicographical Order](src/main/kotlin/g1101_1200/s1163_last_substring_in_lexicographical_order/Solution.kt)| Hard | String, Two_Pointers | 254 | 100.00
 | 1162 |[As Far from Land as Possible](src/main/kotlin/g1101_1200/s1162_as_far_from_land_as_possible/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems | 362 | 81.25
 | 1161 |[Maximum Level Sum of a Binary Tree](src/main/kotlin/g1101_1200/s1161_maximum_level_sum_of_a_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 445 | 87.50
@@ -1819,6 +1820,9 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1105 |[Filling Bookcase Shelves](src/main/kotlin/g1101_1200/s1105_filling_bookcase_shelves/Solution.kt)| Medium | Array, Dynamic_Programming | 175 | 33.33
 | 1104 |[Path In Zigzag Labelled Binary Tree](src/main/kotlin/g1101_1200/s1104_path_in_zigzag_labelled_binary_tree/Solution.kt)| Medium | Math, Tree, Binary_Tree | 136 | 100.00
 | 1103 |[Distribute Candies to People](src/main/kotlin/g1101_1200/s1103_distribute_candies_to_people/Solution.kt)| Easy | Math, Simulation | 129 | 100.00
+| 1096 |[Brace Expansion II](src/main/kotlin/g1001_1100/s1096_brace_expansion_ii/Solution.kt)| Hard | String, Breadth_First_Search, Stack, Backtracking | 205 | 100.00
+| 1095 |[Find in Mountain Array](src/main/kotlin/g1001_1100/s1095_find_in_mountain_array/Solution.kt)| Hard | Array, Binary_Search, Interactive | 173 | 100.00
+| 1094 |[Car Pooling](src/main/kotlin/g1001_1100/s1094_car_pooling/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue, Simulation, Prefix_Sum | 172 | 81.82
 | 1093 |[Statistics from a Large Sample](src/main/kotlin/g1001_1100/s1093_statistics_from_a_large_sample/Solution.kt)| Medium | Math, Two_Pointers, Probability_and_Statistics | 191 | 100.00
 | 1092 |[Shortest Common Supersequence](src/main/kotlin/g1001_1100/s1092_shortest_common_supersequence/Solution.kt)| Hard | String, Dynamic_Programming | 174 | 100.00
 | 1091 |[Shortest Path in Binary Matrix](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix, Algorithm_II_Day_8_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_5_Matrix_Related_Problems | 305 | 98.28
