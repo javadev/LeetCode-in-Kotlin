@@ -1,6 +1,7 @@
 package g1301_1400.s1335_minimum_difficulty_of_a_job_schedule
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_06_Time_154_ms_(100.00%)_Space_34.1_MB_(100.00%)
+
 class Solution {
     fun minDifficulty(jobDifficulty: IntArray, d: Int): Int {
         val totalJobs = jobDifficulty.size

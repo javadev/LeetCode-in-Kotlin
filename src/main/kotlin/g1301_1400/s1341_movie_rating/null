@@ -1,9 +1,0 @@
-package g1301_1400.s1341_movie_rating
-
-
-
-class Solution {
-    fun decode(value: String): String {
-        return value
-    }
-}

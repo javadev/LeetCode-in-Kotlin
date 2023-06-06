@@ -1,6 +1,8 @@
 package g1301_1400.s1349_maximum_students_taking_exam
 
 // #Hard #Array #Dynamic_Programming #Matrix #Bit_Manipulation #Bitmask
+// #2023_06_06_Time_173_ms_(100.00%)_Space_35.7_MB_(100.00%)
+
 class Solution {
     fun maxStudents(seats: Array<CharArray>): Int {
         val m = seats.size

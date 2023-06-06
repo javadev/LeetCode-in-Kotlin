@@ -1,6 +1,7 @@
 package g1301_1400.s1348_tweet_counts_per_frequency
 
 // #Medium #Hash_Table #Sorting #Binary_Search #Design #Ordered_Set
+// #2023_06_06_Time_701_ms_(100.00%)_Space_65_MB_(100.00%)
 
 class TweetCounts {
     private val store: MutableMap<String, MutableMap<Int, MutableMap<Int, MutableMap<Int, MutableList<Int>>>>>

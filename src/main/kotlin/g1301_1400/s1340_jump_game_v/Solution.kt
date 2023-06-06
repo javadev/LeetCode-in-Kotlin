@@ -1,36 +1,29 @@
 package g1301_1400.s1340_jump_game_v
 
 // #Hard #Array #Dynamic_Programming #Sorting
+// #2023_06_06_Time_208_ms_(100.00%)_Space_38_MB_(100.00%)
+
 class Solution {
     fun maxJumps(arr: IntArray, d: Int): Int {
         val n = arr.size
+        var res = 0
+        var top = 0
         val dp = IntArray(n)
-        var jumps = 0
-        for (i in 0 until n) {
-            jumps = Math.max(jumps, helper(arr, d, i, dp))
-        }
-        return jumps
-    }
-
-    private fun helper(arr: IntArray, d: Int, i: Int, dp: IntArray): Int {
-        var temp = 0
-        if (dp[i] != 0) {
-            return dp[i]
-        }
-        val l = Math.max(0, i - d)
-        val r = Math.min(i + d, arr.size - 1)
-        run {
-            var j = i - 1
-            while (j >= l && arr[i] > arr[j]) {
-                temp = Math.max(temp, helper(arr, d, j, dp))
-                j--
+        val stack = IntArray(n)
+        for (i in 0..n) {
+            while (top > 0 && (i == n || arr[stack[top - 1]] < arr[i])) {
+                val r = top - 1
+                var l = r - 1
+                while (l >= 0 && arr[stack[l]] == arr[stack[r]]) l--
+                for (j in l + 1..r) {
+                    if (l >= 0 && stack[j] - stack[l] <= d) dp[stack[l]] = Math.max(dp[stack[l]], 1 + dp[stack[j]])
+                    if (i < n && i - stack[j] <= d) dp[i] = Math.max(dp[i], 1 + dp[stack[j]])
+                }
+                top -= r - l
             }
+            stack[top++] = i
         }
-        var j = i + 1
-        while (j <= r && arr[i] > arr[j]) {
-            temp = Math.max(temp, helper(arr, d, j, dp))
-            j++
-        }
-        return 1 + temp
+        for (i in 0 until n) res = Math.max(res, dp[i])
+        return res + 1
     }
 }

@@ -1,6 +1,7 @@
 package g1301_1400.s1329_sort_the_matrix_diagonally
 
-// #Medium #Array #Sorting #Matrix
+// #Medium #Array #Sorting #Matrix #2023_06_06_Time_243_ms_(100.00%)_Space_40.1_MB_(80.00%)
+
 class Solution {
     fun diagonalSort(mat: Array<IntArray>): Array<IntArray> {
         val m = mat.size

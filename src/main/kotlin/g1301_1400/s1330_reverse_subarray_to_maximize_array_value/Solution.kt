@@ -1,6 +1,7 @@
 package g1301_1400.s1330_reverse_subarray_to_maximize_array_value
 
-// #Hard #Array #Math #Greedy
+// #Hard #Array #Math #Greedy #2023_06_06_Time_347_ms_(100.00%)_Space_43.1_MB_(100.00%)
+
 class Solution {
     private fun getAbsoluteDifference(a: Int, b: Int): Int {
         return Math.abs(a - b)

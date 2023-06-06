@@ -1,6 +1,7 @@
 package g1301_1400.s1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold
 
-// #Medium #Array #Sliding_Window
+// #Medium #Array #Sliding_Window #2023_06_06_Time_394_ms_(84.62%)_Space_49.4_MB_(92.31%)
+
 class Solution {
     fun numOfSubarrays(arr: IntArray, k: Int, threshold: Int): Int {
         var sum = 0

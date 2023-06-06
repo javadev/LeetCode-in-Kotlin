@@ -1,9 +1,11 @@
 package g1301_1400.s1345_jump_game_iv
 
+// #Hard #Array #Hash_Table #Breadth_First_Search
+// #2023_06_06_Time_599_ms_(100.00%)_Space_53.1_MB_(100.00%)
+
 import java.util.Deque
 import java.util.LinkedList
 
-// #Hard #Array #Hash_Table #Breadth_First_Search
 class Solution {
     fun minJumps(arr: IntArray): Int {
         if (arr.size == 1) {

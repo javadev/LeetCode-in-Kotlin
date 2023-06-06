@@ -1,6 +1,7 @@
 package g1301_1400.s1328_break_a_palindrome
 
-// #Medium #String #Greedy
+// #Medium #String #Greedy #2023_06_06_Time_137_ms_(81.82%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun breakPalindrome(palindrome: String): String {
         if (palindrome.length <= 1) {

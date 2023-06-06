@@ -1,8 +1,9 @@
 package g1301_1400.s1333_filter_restaurants_by_vegan_friendly_price_and_distance
 
-import java.util.stream.Collectors
+// #Medium #Array #Sorting #2023_06_06_Time_326_ms_(100.00%)_Space_52.7_MB_(100.00%)
 
-// #Medium #Array #Sorting
+import java.util.PriorityQueue
+
 class Solution {
     fun filterRestaurants(
         restaurants: Array<IntArray>,
@@ -10,18 +11,22 @@ class Solution {
         maxPrice: Int,
         maxDistance: Int
     ): List<Int> {
-        val list: MutableList<IntArray> = ArrayList()
-        for (restaurant in restaurants) {
-            if ((
-                veganFriendly == 1 && restaurant[2] == 1 ||
-                    veganFriendly == 0
-                ) && restaurant[3] <= maxPrice &&
-                restaurant[4] <= maxDistance
-            ) {
-                list.add(restaurant)
+        val pq = PriorityQueue { a: IntArray, b: IntArray -> if (a[1] == b[1]) b[0] - a[0] else b[1] - a[1] }
+        for (i in restaurants.indices) {
+            if (restaurants[i][3] <= maxPrice && restaurants[i][4] <= maxDistance) {
+                if (veganFriendly == 1) {
+                    if (restaurants[i][2] == 1) {
+                        pq.offer(intArrayOf(restaurants[i][0], restaurants[i][1]))
+                    }
+                } else {
+                    pq.offer(intArrayOf(restaurants[i][0], restaurants[i][1]))
+                }
             }
         }
-        list.sortWith { a: IntArray, b: IntArray -> if (b[1] - a[1] == 0) b[0] - a[0] else b[1] - a[1] }
-        return list.stream().map { restaurant: IntArray -> restaurant[0] }.collect(Collectors.toList())
+        val list: MutableList<Int> = ArrayList()
+        while (!pq.isEmpty()) {
+            list.add(pq.poll()[0])
+        }
+        return list
     }
 }

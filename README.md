@@ -255,6 +255,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 0532 |[K-diff Pairs in an Array](src.save/main/kotlin/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.kt)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 230 | 84.62
 | 0713 |[Subarray Product Less Than K](src.save/main/kotlin/g0701_0800/s0713_subarray_product_less_than_k/Solution.kt)| Medium | Array, Sliding_Window | 336 | 92.11
 | 1007 |[Minimum Domino Rotations For Equal Row](src/main/kotlin/g1001_1100/s1007_minimum_domino_rotations_for_equal_row/Solution.kt)| Medium | Array, Greedy | 421 | 50.00
+| 1306 |[Jump Game III](src/main/kotlin/g1301_1400/s1306_jump_game_iii/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search | 291 | 100.00
 | 0456 |[132 Pattern](src.save/main/kotlin/g0401_0500/s0456_132_pattern/Solution.kt)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack | 434 | 100.00
 | 0239 |[Sliding Window Maximum](src.save/main/kotlin/g0201_0300/s0239_sliding_window_maximum/Solution.kt)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 1059 | 86.14
 
@@ -979,6 +980,8 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1337 |[The K Weakest Rows in a Matrix](src/main/kotlin/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.kt)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 216 | 77.59
+| 1346 |[Check If N and Its Double Exist](src/main/kotlin/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.kt)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 175 | 70.83
 
 #### Day 10
 
@@ -1218,6 +1221,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1314 |[Matrix Block Sum](src/main/kotlin/g1301_1400/s1314_matrix_block_sum/Solution.kt)| Medium | Array, Matrix, Prefix_Sum | 235 | 100.00
 | 0304 |[Range Sum Query 2D - Immutable](src.save/main/kotlin/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.kt)| Medium | Array, Matrix, Design, Prefix_Sum | 1373 | 85.71
 
 #### Day 15
@@ -1326,6 +1330,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0709 |[To Lower Case](src.save/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String | 142 | 98.68
+| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/kotlin/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.kt)| Easy | String | 129 | 95.45
 | 0953 |[Verifying an Alien Dictionary](src.save/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table | 137 | 100.00
 
 #### Day 10 Linked List and Tree
@@ -1540,6 +1545,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0547 |[Number of Provinces](src.save/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 229 | 79.73
+| 1319 |[Number of Operations to Make Network Connected](src/main/kotlin/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 379 | 83.33
 
 #### Day 9 Standard Traversal
 
@@ -1558,6 +1564,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1306 |[Jump Game III](src/main/kotlin/g1301_1400/s1306_jump_game_iii/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search | 291 | 100.00
 | 0365 |[Water and Jug Problem](src.save/main/kotlin/g0301_0400/s0365_water_and_jug_problem/Solution.kt)| Medium | Math, Depth_First_Search, Breadth_First_Search | 130 | 100.00
 
 #### Day 12 Breadth First Search
@@ -1761,6 +1768,48 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1349 |[Maximum Students Taking Exam](src/main/kotlin/g1301_1400/s1349_maximum_students_taking_exam/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix, Bit_Manipulation, Bitmask | 173 | 100.00
+| 1348 |[Tweet Counts Per Frequency](src/main/kotlin/g1301_1400/s1348_tweet_counts_per_frequency/TweetCounts.kt)| Medium | Hash_Table, Sorting, Binary_Search, Design, Ordered_Set | 701 | 100.00
+| 1347 |[Minimum Number of Steps to Make Two Strings Anagram](src/main/kotlin/g1301_1400/s1347_minimum_number_of_steps_to_make_two_strings_anagram/Solution.kt)| Medium | String, Hash_Table, Counting | 271 | 23.08
+| 1346 |[Check If N and Its Double Exist](src/main/kotlin/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.kt)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers, Binary_Search_I_Day_9 | 175 | 70.83
+| 1345 |[Jump Game IV](src/main/kotlin/g1301_1400/s1345_jump_game_iv/Solution.kt)| Hard | Array, Hash_Table, Breadth_First_Search | 599 | 100.00
+| 1344 |[Angle Between Hands of a Clock](src/main/kotlin/g1301_1400/s1344_angle_between_hands_of_a_clock/Solution.kt)| Medium | Math | 118 | 83.33
+| 1343 |[Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](src/main/kotlin/g1301_1400/s1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold/Solution.kt)| Medium | Array, Sliding_Window | 394 | 84.62
+| 1342 |[Number of Steps to Reduce a Number to Zero](src/main/kotlin/g1301_1400/s1342_number_of_steps_to_reduce_a_number_to_zero/Solution.kt)| Easy | Math, Bit_Manipulation | 124 | 83.18
+| 1340 |[Jump Game V](src/main/kotlin/g1301_1400/s1340_jump_game_v/Solution.kt)| Hard | Array, Dynamic_Programming, Sorting | 208 | 100.00
+| 1339 |[Maximum Product of Splitted Binary Tree](src/main/kotlin/g1301_1400/s1339_maximum_product_of_splitted_binary_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 384 | 100.00
+| 1338 |[Reduce Array Size to The Half](src/main/kotlin/g1301_1400/s1338_reduce_array_size_to_the_half/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue | 579 | 71.43
+| 1337 |[The K Weakest Rows in a Matrix](src/main/kotlin/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.kt)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue, Binary_Search_I_Day_9 | 216 | 77.59
+| 1335 |[Minimum Difficulty of a Job Schedule](src/main/kotlin/g1301_1400/s1335_minimum_difficulty_of_a_job_schedule/Solution.kt)| Hard | Array, Dynamic_Programming | 154 | 100.00
+| 1334 |[Find the City With the Smallest Number of Neighbors at a Threshold Distance](src/main/kotlin/g1301_1400/s1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance/Solution.kt)| Medium | Dynamic_Programming, Graph, Shortest_Path | 223 | 88.89
+| 1333 |[Filter Restaurants by Vegan-Friendly, Price and Distance](src/main/kotlin/g1301_1400/s1333_filter_restaurants_by_vegan_friendly_price_and_distance/Solution.kt)| Medium | Array, Sorting | 326 | 100.00
+| 1332 |[Remove Palindromic Subsequences](src/main/kotlin/g1301_1400/s1332_remove_palindromic_subsequences/Solution.kt)| Easy | String, Two_Pointers | 122 | 83.33
+| 1331 |[Rank Transform of an Array](src/main/kotlin/g1301_1400/s1331_rank_transform_of_an_array/Solution.kt)| Easy | Array, Hash_Table, Sorting | 553 | 100.00
+| 1330 |[Reverse Subarray To Maximize Array Value](src/main/kotlin/g1301_1400/s1330_reverse_subarray_to_maximize_array_value/Solution.kt)| Hard | Array, Math, Greedy | 347 | 100.00
+| 1329 |[Sort the Matrix Diagonally](src/main/kotlin/g1301_1400/s1329_sort_the_matrix_diagonally/Solution.kt)| Medium | Array, Sorting, Matrix | 243 | 100.00
+| 1328 |[Break a Palindrome](src/main/kotlin/g1301_1400/s1328_break_a_palindrome/Solution.kt)| Medium | String, Greedy | 137 | 81.82
+| 1326 |[Minimum Number of Taps to Open to Water a Garden](src/main/kotlin/g1301_1400/s1326_minimum_number_of_taps_to_open_to_water_a_garden/Solution.kt)| Hard | Array, Dynamic_Programming, Greedy | 189 | 100.00
+| 1325 |[Delete Leaves With a Given Value](src/main/kotlin/g1301_1400/s1325_delete_leaves_with_a_given_value/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 185 | 100.00
+| 1324 |[Print Words Vertically](src/main/kotlin/g1301_1400/s1324_print_words_vertically/Solution.kt)| Medium | Array, String, Simulation | 149 | 66.67
+| 1323 |[Maximum 69 Number](src/main/kotlin/g1301_1400/s1323_maximum_69_number/Solution.kt)| Easy | Math, Greedy | 118 | 90.00
+| 1320 |[Minimum Distance to Type a Word Using Two Fingers](src/main/kotlin/g1301_1400/s1320_minimum_distance_to_type_a_word_using_two_fingers/Solution.kt)| Hard | String, Dynamic_Programming | 181 | 100.00
+| 1319 |[Number of Operations to Make Network Connected](src/main/kotlin/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_8_Standard_Traversal | 379 | 83.33
+| 1318 |[Minimum Flips to Make a OR b Equal to c](src/main/kotlin/g1301_1400/s1318_minimum_flips_to_make_a_or_b_equal_to_c/Solution.kt)| Medium | Bit_Manipulation | 123 | 88.89
+| 1317 |[Convert Integer to the Sum of Two No-Zero Integers](src/main/kotlin/g1301_1400/s1317_convert_integer_to_the_sum_of_two_no_zero_integers/Solution.kt)| Easy | Math | 146 | 100.00
+| 1316 |[Distinct Echo Substrings](src/main/kotlin/g1301_1400/s1316_distinct_echo_substrings/Solution.kt)| Hard | String, Dynamic_Programming, Sliding_Window, Trie, Hash_Function, Rolling_Hash | 371 | 100.00
+| 1315 |[Sum of Nodes with Even-Valued Grandparent](src/main/kotlin/g1301_1400/s1315_sum_of_nodes_with_even_valued_grandparent/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 257 | 82.35
+| 1314 |[Matrix Block Sum](src/main/kotlin/g1301_1400/s1314_matrix_block_sum/Solution.kt)| Medium | Array, Matrix, Prefix_Sum, Dynamic_Programming_I_Day_14 | 235 | 100.00
+| 1313 |[Decompress Run-Length Encoded List](src/main/kotlin/g1301_1400/s1313_decompress_run_length_encoded_list/Solution.kt)| Easy | Array | 196 | 100.00
+| 1312 |[Minimum Insertion Steps to Make a String Palindrome](src/main/kotlin/g1301_1400/s1312_minimum_insertion_steps_to_make_a_string_palindrome/Solution.kt)| Hard | String, Dynamic_Programming | 186 | 67.70
+| 1311 |[Get Watched Videos by Your Friends](src/main/kotlin/g1301_1400/s1311_get_watched_videos_by_your_friends/Solution.kt)| Medium | Array, Hash_Table, Sorting, Breadth_First_Search | 372 | 100.00
+| 1310 |[XOR Queries of a Subarray](src/main/kotlin/g1301_1400/s1310_xor_queries_of_a_subarray/Solution.kt)| Medium | Array, Bit_Manipulation, Prefix_Sum | 382 | 100.00
+| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/kotlin/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.kt)| Easy | String, Programming_Skills_I_Day_9_String | 129 | 95.45
+| 1307 |[Verbal Arithmetic Puzzle](src/main/kotlin/g1301_1400/s1307_verbal_arithmetic_puzzle/Solution.kt)| Hard | Array, String, Math, Backtracking | 164 | 100.00
+| 1306 |[Jump Game III](src/main/kotlin/g1301_1400/s1306_jump_game_iii/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search, Udemy_Arrays | 291 | 100.00
+| 1305 |[All Elements in Two Binary Search Trees](src/main/kotlin/g1301_1400/s1305_all_elements_in_two_binary_search_trees/Solution.kt)| Medium | Sorting, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 531 | 100.00
+| 1304 |[Find N Unique Integers Sum up to Zero](src/main/kotlin/g1301_1400/s1304_find_n_unique_integers_sum_up_to_zero/Solution.kt)| Easy | Array, Math | 142 | 100.00
+| 1302 |[Deepest Leaves Sum](src/main/kotlin/g1301_1400/s1302_deepest_leaves_sum/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 325 | 67.39
+| 1301 |[Number of Paths with Max Score](src/main/kotlin/g1301_1400/s1301_number_of_paths_with_max_score/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix | 178 | 100.00
 | 1200 |[Minimum Absolute Difference](src/main/kotlin/g1101_1200/s1200_minimum_absolute_difference/Solution.kt)| Easy | Array, Sorting | 507 | 75.00
 | 1195 |[Fizz Buzz Multithreaded](src/main/kotlin/g1101_1200/s1195_fizz_buzz_multithreaded/FizzBuzz.kt)| Medium | Concurrency | 6 | 87.26
 | 1192 |[Critical Connections in a Network](src/main/kotlin/g1101_1200/s1192_critical_connections_in_a_network/Solution.kt)| Hard | Depth_First_Search, Graph, Biconnected_Component | 1696 | 60.00

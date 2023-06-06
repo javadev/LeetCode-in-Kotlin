@@ -1,6 +1,7 @@
 package g1301_1400.s1324_print_words_vertically
 
-// #Medium #Array #String #Simulation
+// #Medium #Array #String #Simulation #2023_06_06_Time_149_ms_(66.67%)_Space_35.1_MB_(100.00%)
+
 class Solution {
     fun printVertically(s: String): List<String> {
         val words = s.split(" ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()

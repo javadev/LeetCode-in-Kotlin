@@ -1,6 +1,6 @@
 package g1301_1400.s1331_rank_transform_of_an_array
 
-// #Easy #Array #Hash_Table #Sorting
+// #Easy #Array #Hash_Table #Sorting #2023_06_06_Time_553_ms_(100.00%)_Space_56.3_MB_(54.55%)
 
 class Solution {
     fun arrayRankTransform(arr: IntArray): IntArray {

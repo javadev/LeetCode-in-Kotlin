@@ -1,6 +1,8 @@
 package g1301_1400.s1337_the_k_weakest_rows_in_a_matrix
 
 // #Easy #Array #Sorting #Binary_Search #Matrix #Heap_Priority_Queue #Binary_Search_I_Day_9
+// #2023_06_06_Time_216_ms_(77.59%)_Space_42.6_MB_(68.97%)
+
 class Solution {
     fun kWeakestRows(mat: Array<IntArray>, k: Int): IntArray {
         val result = IntArray(mat.size)

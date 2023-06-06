@@ -1,9 +1,0 @@
-package g1301_1400.s1327_list_the_products_ordered_in_a_period
-
-
-
-class Solution {
-    fun decode(value: String): String {
-        return value
-    }
-}

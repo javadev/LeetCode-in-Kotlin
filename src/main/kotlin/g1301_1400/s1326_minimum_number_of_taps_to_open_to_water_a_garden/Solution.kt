@@ -1,6 +1,8 @@
 package g1301_1400.s1326_minimum_number_of_taps_to_open_to_water_a_garden
 
 // #Hard #Array #Dynamic_Programming #Greedy
+// #2023_06_06_Time_189_ms_(100.00%)_Space_38.5_MB_(42.86%)
+
 class Solution {
     fun minTaps(n: Int, ranges: IntArray): Int {
         if (n == 0 || ranges.size == 0) {

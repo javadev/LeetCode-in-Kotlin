@@ -1,6 +1,8 @@
 package g1301_1400.s1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance
 
 // #Medium #Dynamic_Programming #Graph #Shortest_Path
+// #2023_06_06_Time_223_ms_(88.89%)_Space_37.5_MB_(77.78%)
+
 class Solution {
     fun findTheCity(n: Int, edges: Array<IntArray>, maxDist: Int): Int {
         val graph = Array(n) { IntArray(n) }
