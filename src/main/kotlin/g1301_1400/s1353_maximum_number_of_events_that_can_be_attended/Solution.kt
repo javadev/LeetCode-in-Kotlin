@@ -1,29 +1,30 @@
 package g1301_1400.s1353_maximum_number_of_events_that_can_be_attended
 
 // #Medium #Array #Greedy #Heap_Priority_Queue
+// #2023_06_06_Time_728_ms_(100.00%)_Space_103.1_MB_(80.00%)
+
+import java.util.Arrays
+import java.util.PriorityQueue
+
 class Solution {
     fun maxEvents(events: Array<IntArray>): Int {
-        events.sortWith(Comparator.comparingInt { e: IntArray -> e[1] })
-        val root = IntArray(events[events.size - 1][1] + 2)
-        for (i in 1 until root.size) {
-            root[i] = i
-        }
-        var res = 0
-        for (e in events) {
-            val nxtAvailable = find(root, e[0])
-            if (nxtAvailable <= e[1]) {
-                res++
-                root[nxtAvailable] = find(root, nxtAvailable + 1)
+        Arrays.sort(events) { a: IntArray, b: IntArray -> a[0] - b[0] }
+        var ans = 0
+        var i = 0
+        val pq = PriorityQueue<Int>()
+        for (day in 1..100000) {
+            while (i < events.size && events[i][0] == day) {
+                pq.add(events[i][1])
+                i++
+            }
+            while (pq.size > 0 && pq.peek() < day) {
+                pq.poll()
+            }
+            if (pq.size > 0 && pq.peek() >= day) {
+                pq.poll()
+                ans++
             }
         }
-        return res
-    }
-
-    private fun find(root: IntArray, i: Int): Int {
-        if (root[i] != i) {
-            root[i] = find(root, root[i])
-            return root[i]
-        }
-        return i
+        return ans
     }
 }
