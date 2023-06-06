@@ -1,9 +1,11 @@
 package g1301_1400.s1377_frog_position_after_t_seconds
 
+// #Hard #Depth_First_Search #Breadth_First_Search #Tree #Graph
+// #2023_06_06_Time_221_ms_(100.00%)_Space_43.8_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Depth_First_Search #Breadth_First_Search #Tree #Graph
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun frogPosition(n: Int, edges: Array<IntArray>, t: Int, target: Int): Double {

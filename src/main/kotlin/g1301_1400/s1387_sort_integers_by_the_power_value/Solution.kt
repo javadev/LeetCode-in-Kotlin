@@ -1,8 +1,10 @@
 package g1301_1400.s1387_sort_integers_by_the_power_value
 
+// #Medium #Dynamic_Programming #Sorting #Memoization
+// #2023_06_06_Time_370_ms_(100.00%)_Space_39.8_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Medium #Dynamic_Programming #Sorting #Memoization
 class Solution {
     private lateinit var cacheMap: MutableMap<Int, Int>
 
@@ -14,7 +16,7 @@ class Solution {
             arr[i][0] = lo + i
             arr[i][1] = getStepCount(lo + i)
         }
-        Arrays.sort(arr, Comparator.comparing { a: IntArray -> a[1] })
+        Arrays.sort(arr) { a: IntArray, b: IntArray -> a[1].compareTo(b[1]) }
         return arr[k - 1][0]
     }
 

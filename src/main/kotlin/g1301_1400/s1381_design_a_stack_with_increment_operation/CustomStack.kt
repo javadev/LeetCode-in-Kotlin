@@ -1,6 +1,7 @@
 package g1301_1400.s1381_design_a_stack_with_increment_operation
 
-// #Medium #Array #Stack #Design
+// #Medium #Array #Stack #Design #2023_06_06_Time_267_ms_(100.00%)_Space_45.4_MB_(100.00%)
+
 class CustomStack(private val maxSize: Int) {
     private var top = 0
     private val stack: IntArray
@@ -39,3 +40,10 @@ class CustomStack(private val maxSize: Int) {
         }
     }
 }
+/*
+ * Your CustomStack object will be instantiated and called as such:
+ * var obj = CustomStack(maxSize)
+ * obj.push(x)
+ * var param_2 = obj.pop()
+ * obj.increment(k,`val`)
+ */

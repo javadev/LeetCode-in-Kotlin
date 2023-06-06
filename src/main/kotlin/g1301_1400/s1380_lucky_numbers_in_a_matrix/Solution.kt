@@ -1,6 +1,7 @@
 package g1301_1400.s1380_lucky_numbers_in_a_matrix
 
-// #Easy #Array #Matrix
+// #Easy #Array #Matrix #2023_06_06_Time_223_ms_(89.29%)_Space_37.9_MB_(85.71%)
+
 class Solution {
     fun luckyNumbers(matrix: Array<IntArray>): List<Int> {
         val mini: MutableList<Int> = ArrayList()

@@ -1,21 +1,18 @@
 package g1301_1400.s1382_balance_a_binary_search_tree
 
+// #Medium #Depth_First_Search #Greedy #Tree #Binary_Tree #Binary_Search_Tree #Divide_and_Conquer
+// #2023_06_06_Time_369_ms_(85.71%)_Space_42.9_MB_(92.86%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Greedy #Tree #Binary_Tree #Binary_Search_Tree #Divide_and_Conquer
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {

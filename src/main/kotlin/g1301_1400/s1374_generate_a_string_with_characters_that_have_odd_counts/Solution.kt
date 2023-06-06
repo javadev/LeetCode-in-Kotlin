@@ -1,6 +1,8 @@
 package g1301_1400.s1374_generate_a_string_with_characters_that_have_odd_counts
 
-// #Easy #String
+// #Easy #String #2023_06_06_Time_130_ms_(100.00%)_Space_34_MB_(80.00%)
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun generateTheString(n: Int): String {
         var n = n

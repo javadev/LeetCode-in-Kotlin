@@ -1,9 +1,11 @@
 package g1301_1400.s1383_maximum_performance_of_a_team
 
+// #Hard #Array #Sorting #Greedy #Heap_Priority_Queue
+// #2023_06_06_Time_427_ms_(100.00%)_Space_50.2_MB_(100.00%)
+
 import java.util.Arrays
 import java.util.PriorityQueue
 
-// #Hard #Array #Sorting #Greedy #Heap_Priority_Queue
 class Solution {
     fun maxPerformance(n: Int, speed: IntArray, efficiency: IntArray, k: Int): Int {
         val engineers = Array(n) { IntArray(2) }

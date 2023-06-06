@@ -1,6 +1,8 @@
 package g1301_1400.s1388_pizza_with_3n_slices
 
 // #Hard #Array #Dynamic_Programming #Greedy #Heap_Priority_Queue
+// #2023_06_06_Time_170_ms_(100.00%)_Space_33.8_MB_(100.00%)
+
 class Solution {
     fun maxSizeSlices(slices: IntArray): Int {
         val n = slices.size

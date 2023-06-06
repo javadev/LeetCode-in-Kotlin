@@ -1,6 +1,7 @@
 package g1301_1400.s1390_four_divisors
 
-// #Medium #Array #Math
+// #Medium #Array #Math #2023_06_06_Time_255_ms_(100.00%)_Space_39.4_MB_(50.00%)
+
 class Solution {
     fun sumFourDivisors(nums: IntArray): Int {
         var sum = 0

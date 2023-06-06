@@ -1,6 +1,8 @@
 package g1301_1400.s1386_cinema_seat_allocation
 
 // #Medium #Array #Hash_Table #Greedy #Bit_Manipulation
+// #2023_06_06_Time_397_ms_(100.00%)_Space_51.2_MB_(66.67%)
+
 class Solution {
     fun maxNumberOfFamilies(n: Int, reservedSeats: Array<IntArray>): Int {
         val occupiedFamilySeats: MutableMap<Int, IntArray> = HashMap()

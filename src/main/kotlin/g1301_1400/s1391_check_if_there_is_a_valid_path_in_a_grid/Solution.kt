@@ -1,9 +1,11 @@
 package g1301_1400.s1391_check_if_there_is_a_valid_path_in_a_grid
 
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
+// #2023_06_06_Time_636_ms_(100.00%)_Space_64.1_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
 class Solution {
     private val dirs = arrayOf(
         arrayOf(intArrayOf(0, -1), intArrayOf(0, 1)),
