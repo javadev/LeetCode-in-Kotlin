@@ -24,7 +24,7 @@ class Solution {
         probabilities[0] = 1.0
         val queue: Queue<Int> = LinkedList()
         queue.offer(0)
-        while (!queue.isEmpty() && t-- > 0) {
+        while (queue.isNotEmpty() && t-- > 0) {
             for (i in queue.size downTo 1) {
                 val vertex = queue.poll()
                 var nextVerticesCount = 0

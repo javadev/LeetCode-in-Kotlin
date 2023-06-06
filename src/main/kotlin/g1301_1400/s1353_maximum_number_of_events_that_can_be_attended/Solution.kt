@@ -17,10 +17,10 @@ class Solution {
                 pq.add(events[i][1])
                 i++
             }
-            while (pq.size > 0 && pq.peek() < day) {
+            while (pq.isNotEmpty() && pq.peek() < day) {
                 pq.poll()
             }
-            if (pq.size > 0 && pq.peek() >= day) {
+            if (pq.isNotEmpty() && pq.peek() >= day) {
                 pq.poll()
                 ans++
             }

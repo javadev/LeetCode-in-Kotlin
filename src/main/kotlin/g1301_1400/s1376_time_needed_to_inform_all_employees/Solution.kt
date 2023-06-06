@@ -25,7 +25,7 @@ class Solution {
         var maxtime = 0
         val que: Queue<Pair> = ArrayDeque()
         que.add(Pair(head, informTime[head]))
-        while (!que.isEmpty()) {
+        while (que.isNotEmpty()) {
             val rem = que.remove()
             maxtime = Math.max(rem.time, maxtime)
             if (map.containsKey(rem.emp)) {

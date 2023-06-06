@@ -31,7 +31,7 @@ class Solution {
         val q: Queue<IntArray> = LinkedList()
         q.add(intArrayOf(0, 0))
         visited[0][0] = true
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val cur = q.poll()
             val x = cur[0]
             val y = cur[1]

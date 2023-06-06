@@ -33,7 +33,7 @@ class Solution {
             }
         }
         var tpLen = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val curNode = queue.poll()
             tpLen++
             val left = leftChild[curNode]

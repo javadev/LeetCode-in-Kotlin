@@ -22,7 +22,7 @@ class Solution {
             return 0
         }
         var cost = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             cost++
             val size = queue.size
             for (i in 0 until size) {
