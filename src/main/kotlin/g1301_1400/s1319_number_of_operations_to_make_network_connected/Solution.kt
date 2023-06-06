@@ -3,7 +3,6 @@ package g1301_1400.s1319_number_of_operations_to_make_network_connected
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
 // #Graph_Theory_I_Day_8_Standard_Traversal #2023_06_05_Time_379_ms_(83.33%)_Space_65_MB_(66.67%)
 
-@Suppress("NAME_SHADOWING", "kotlin:S6615", "UNUSED_CHANGED_VALUE")
 class Solution {
     private var disconnectedComputers = 0
     private lateinit var parent: IntArray
@@ -15,10 +14,7 @@ class Solution {
         }
         disconnectedComputers = totalNumberOfComputers
         rank = IntArray(totalNumberOfComputers)
-        parent = IntArray(totalNumberOfComputers) { intFromZero: Int ->
-            var intFromZero = intFromZero
-            intFromZero++
-        }
+        parent = IntArray(totalNumberOfComputers) { it }
         for (connection in connections) {
             unionFind(connection[0], connection[1])
         }
