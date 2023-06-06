@@ -15,6 +15,7 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun sumEvenGrandparent(root: TreeNode?): Int {
         return if (root == null) {

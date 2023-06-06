@@ -15,6 +15,7 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun removeLeafNodes(root: TreeNode?, target: Int): TreeNode? {
         var root = root
