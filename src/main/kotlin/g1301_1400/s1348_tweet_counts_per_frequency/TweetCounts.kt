@@ -17,7 +17,7 @@ class TweetCounts {
         val dstore = store.computeIfAbsent(tweetName) { _: String? -> HashMap() }
         val hstore = dstore.computeIfAbsent(d) { _: Int? -> HashMap() }
         val mstore = hstore.computeIfAbsent(h) { _: Int? -> HashMap() }
-        mstore.computeIfAbsent(m) { k: Int? -> ArrayList() }.add(time)
+        mstore.computeIfAbsent(m) { _: Int? -> ArrayList() }.add(time)
     }
 
     fun getTweetCountsPerFrequency(
