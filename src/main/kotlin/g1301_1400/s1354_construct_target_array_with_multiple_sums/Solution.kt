@@ -1,6 +1,7 @@
 package g1301_1400.s1354_construct_target_array_with_multiple_sums
 
-// #Hard #Array #Heap_Priority_Queue
+// #Hard #Array #Heap_Priority_Queue #2023_06_06_Time_289_ms_(100.00%)_Space_47.7_MB_(100.00%)
+
 class Solution {
     fun isPossible(target: IntArray): Boolean {
         var sum = target[0].toLong()

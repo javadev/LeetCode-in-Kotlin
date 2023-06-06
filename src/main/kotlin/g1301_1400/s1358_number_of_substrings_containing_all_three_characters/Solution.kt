@@ -1,6 +1,8 @@
 package g1301_1400.s1358_number_of_substrings_containing_all_three_characters
 
 // #Medium #String #Hash_Table #Sliding_Window
+// #2023_06_06_Time_196_ms_(100.00%)_Space_37.1_MB_(100.00%)
+
 class Solution {
     fun numberOfSubstrings(s: String): Int {
         val counts = IntArray(3)

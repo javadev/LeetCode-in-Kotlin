@@ -1,6 +1,7 @@
 package g1301_1400.s1370_increasing_decreasing_string
 
-// #Easy #String #Hash_Table #Counting
+// #Easy #String #Hash_Table #Counting #2023_06_06_Time_189_ms_(33.33%)_Space_36_MB_(33.33%)
+
 class Solution {
     fun sortString(s: String): String {
         val count = IntArray(26)

@@ -1,6 +1,8 @@
 package g1301_1400.s1371_find_the_longest_substring_containing_vowels_in_even_counts
 
 // #Medium #String #Hash_Table #Bit_Manipulation #Prefix_Sum
+// #2023_06_06_Time_317_ms_(100.00%)_Space_49.1_MB_(100.00%)
+
 class Solution {
     private var result: Int? = null
 

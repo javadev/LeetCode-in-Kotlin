@@ -1,33 +1,28 @@
 package g1301_1400.s1367_linked_list_in_binary_tree
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Linked_List
+// #Programming_Skills_II_Day_4 #2023_06_06_Time_237_ms_(92.86%)_Space_39.4_MB_(78.57%)
+
 import com_github_leetcode.ListNode
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Linked_List
-// #Programming_Skills_II_Day_4
 /*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
  * }
  */
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {

@@ -1,10 +1,12 @@
 package g1301_1400.s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid
 
+// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
+// #2023_06_06_Time_220_ms_(100.00%)_Space_37.6_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Objects
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
 class Solution {
     private val dir = arrayOf(
         intArrayOf(0, 0), intArrayOf(0, 1),

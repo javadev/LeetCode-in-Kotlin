@@ -1,6 +1,8 @@
 package g1301_1400.s1365_how_many_numbers_are_smaller_than_the_current_number
 
 // #Easy #Array #Hash_Table #Sorting #Counting
+// #2023_06_06_Time_193_ms_(93.33%)_Space_37.1_MB_(80.00%)
+
 class Solution {
     fun smallerNumbersThanCurrent(nums: IntArray): IntArray {
         val ans = IntArray(nums.size)

@@ -1,9 +1,11 @@
 package g1301_1400.s1361_validate_binary_tree_nodes
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Graph #Union_Find
+// #2023_06_06_Time_316_ms_(83.33%)_Space_39.5_MB_(83.33%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Graph #Union_Find
 class Solution {
     fun validateBinaryTreeNodes(n: Int, leftChild: IntArray, rightChild: IntArray): Boolean {
         val inDeg = IntArray(n)

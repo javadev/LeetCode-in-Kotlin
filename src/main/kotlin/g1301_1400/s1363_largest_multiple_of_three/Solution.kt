@@ -1,6 +1,8 @@
 package g1301_1400.s1363_largest_multiple_of_three
 
 // #Hard #Array #Dynamic_Programming #Greedy
+// #2023_06_06_Time_267_ms_(100.00%)_Space_39.5_MB_(100.00%)
+
 class Solution {
     fun largestMultipleOfThree(digits: IntArray): String {
         var sum = 0

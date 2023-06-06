@@ -1,6 +1,7 @@
 package g1301_1400.s1362_closest_divisors
 
-// #Medium #Math
+// #Medium #Math #2023_06_06_Time_167_ms_(100.00%)_Space_33.8_MB_(100.00%)
+
 class Solution {
     fun closestDivisors(num: Int): IntArray {
         val sqrt1 = Math.sqrt(num + 1.0).toInt()
