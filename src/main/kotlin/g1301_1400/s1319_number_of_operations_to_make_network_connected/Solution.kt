@@ -5,7 +5,7 @@ package g1301_1400.s1319_number_of_operations_to_make_network_connected
 
 import java.util.Arrays
 
-@Suppress("NAME_SHADOWING")
+@Suppress("NAME_SHADOWING", "kotlin:S6615")
 class Solution {
     private var disconnectedComputers = 0
     private lateinit var parent: IntArray

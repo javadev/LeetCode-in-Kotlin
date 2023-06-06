@@ -24,7 +24,7 @@ class Solution {
             }
         }
         val list: MutableList<Int> = ArrayList()
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             list.add(pq.poll()[0])
         }
         return list

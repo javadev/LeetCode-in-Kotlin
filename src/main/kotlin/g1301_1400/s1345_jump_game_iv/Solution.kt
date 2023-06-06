@@ -32,7 +32,7 @@ class Solution {
         myQueue.offerLast(0)
         val visited = BooleanArray(arr.size)
         visited[0] = true
-        while (!myQueue.isEmpty()) {
+        while (myQueue.isNotEmpty()) {
             val curCount = myQueue.size
             var j = 0
             while (j < curCount) {

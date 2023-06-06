@@ -23,7 +23,7 @@ class Solution {
         val queue: Queue<TreeNode?> = LinkedList()
         queue.offer(root)
         var sum = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val size = queue.size
             sum = 0
             for (i in 0 until size) {

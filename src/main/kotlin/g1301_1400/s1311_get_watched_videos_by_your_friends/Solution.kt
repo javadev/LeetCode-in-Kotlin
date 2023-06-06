@@ -25,7 +25,7 @@ class Solution {
         queue.add(id)
         visited[id] = true
         var currLevel = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             var size = queue.size
             while (size-- > 0) {
                 val node = queue.poll()
@@ -43,7 +43,7 @@ class Solution {
             }
         }
         val map: MutableMap<String, VideoCount> = HashMap()
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val f = queue.poll()
             val watchedVideo = watchedVideos[f]
             for (video in watchedVideo) {
@@ -59,7 +59,7 @@ class Solution {
             pq.add(value)
         }
         val res: MutableList<String> = ArrayList()
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             res.add(pq.poll().v)
         }
         return res
