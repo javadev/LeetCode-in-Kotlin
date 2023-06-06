@@ -5,28 +5,25 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isSolvable: Unit
-        get() {
-            assertThat(
-                Solution().isSolvable(arrayOf("SEND", "MORE"), "MONEY"), equalTo(true)
-            )
-        }
+    @Test
+    fun isSolvable() {
+        assertThat(
+            Solution().isSolvable(arrayOf("SEND", "MORE"), "MONEY"), equalTo(true)
+        )
+    }
 
-    @get:Test
-    val isSolvable2: Unit
-        get() {
-            assertThat(
-                Solution().isSolvable(arrayOf("SIX", "SEVEN", "SEVEN"), "TWENTY"),
-                equalTo(true)
-            )
-        }
+    @Test
+    fun isSolvable2() {
+        assertThat(
+            Solution().isSolvable(arrayOf("SIX", "SEVEN", "SEVEN"), "TWENTY"),
+            equalTo(true)
+        )
+    }
 
-    @get:Test
-    val isSolvable3: Unit
-        get() {
-            assertThat(
-                Solution().isSolvable(arrayOf("LEET", "CODE"), "POINT"), equalTo(false)
-            )
-        }
+    @Test
+    fun isSolvable3() {
+        assertThat(
+            Solution().isSolvable(arrayOf("LEET", "CODE"), "POINT"), equalTo(false)
+        )
+    }
 }

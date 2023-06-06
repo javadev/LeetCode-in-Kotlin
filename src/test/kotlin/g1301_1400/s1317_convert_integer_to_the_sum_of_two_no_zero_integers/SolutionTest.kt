@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val noZeroIntegers: Unit
-        get() {
-            assertThat(Solution().getNoZeroIntegers(2), equalTo(intArrayOf(1, 1)))
-        }
+    @Test
+    fun noZeroIntegers() {
+        assertThat(Solution().getNoZeroIntegers(2), equalTo(intArrayOf(1, 1)))
+    }
 
-    @get:Test
-    val noZeroIntegers2: Unit
-        get() {
-            assertThat(Solution().getNoZeroIntegers(11), equalTo(intArrayOf(2, 9)))
-        }
+    @Test
+    fun noZeroIntegers2() {
+        assertThat(Solution().getNoZeroIntegers(11), equalTo(intArrayOf(2, 9)))
+    }
 }
