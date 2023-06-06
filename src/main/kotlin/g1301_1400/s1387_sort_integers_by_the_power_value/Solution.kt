@@ -21,17 +21,16 @@ class Solution {
     }
 
     private fun getStepCount(`val`: Int): Int {
-        if (cacheMap!!.containsKey(`val`)) {
-            return cacheMap!![`val`]!!
+        if (cacheMap.containsKey(`val`)) {
+            return cacheMap[`val`]!!
         }
-        val step: Int
-        step = if (`val` % 2 == 0) {
+        val step: Int = if (`val` % 2 == 0) {
             // even
             1 + getStepCount(`val` / 2)
         } else {
             1 + getStepCount(3 * `val` + 1)
         }
-        cacheMap!![`val`] = step
+        cacheMap[`val`] = step
         return step
     }
 }

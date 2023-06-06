@@ -7,6 +7,7 @@ import java.util.LinkedList
 import java.util.Objects
 import java.util.Queue
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private val dir = arrayOf(
         intArrayOf(0, 0), intArrayOf(0, 1),

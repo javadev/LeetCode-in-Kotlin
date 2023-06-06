@@ -6,6 +6,7 @@ package g1301_1400.s1376_time_needed_to_inform_all_employees
 import java.util.ArrayDeque
 import java.util.Queue
 
+@Suppress("unused")
 class Solution {
     private class Pair(var emp: Int, var time: Int)
 

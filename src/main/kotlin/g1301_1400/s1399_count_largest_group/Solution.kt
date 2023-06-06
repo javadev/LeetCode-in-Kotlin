@@ -2,6 +2,7 @@ package g1301_1400.s1399_count_largest_group
 
 // #Easy #Hash_Table #Math #2023_06_06_Time_136_ms_(100.00%)_Space_32.9_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun countLargestGroup(n: Int): Int {
         var largest = 0
