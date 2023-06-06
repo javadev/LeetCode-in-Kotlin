@@ -1,6 +1,9 @@
 package g1301_1400.s1400_construct_k_palindrome_strings
 
 // #Medium #String #Hash_Table #Greedy #Counting
+// #2023_06_06_Time_204_ms_(90.00%)_Space_37.3_MB_(80.00%)
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun canConstruct(s: String, k: Int): Boolean {
         var k = k

@@ -1,6 +1,8 @@
 package g1301_1400.s1395_count_number_of_teams
 
 // #Medium #Array #Dynamic_Programming #Binary_Indexed_Tree
+// #2023_06_06_Time_192_ms_(100.00%)_Space_38.4_MB_(33.33%)
+
 class Solution {
     fun numTeams(rating: IntArray): Int {
         val cp = rating.clone()

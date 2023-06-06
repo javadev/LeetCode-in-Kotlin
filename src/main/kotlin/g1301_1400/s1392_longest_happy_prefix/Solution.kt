@@ -1,6 +1,8 @@
 package g1301_1400.s1392_longest_happy_prefix
 
 // #Hard #String #Hash_Function #String_Matching #Rolling_Hash
+// #2023_06_06_Time_291_ms_(50.00%)_Space_38.1_MB_(100.00%)
+
 class Solution {
     fun longestPrefix(s: String): String {
         val times = 2

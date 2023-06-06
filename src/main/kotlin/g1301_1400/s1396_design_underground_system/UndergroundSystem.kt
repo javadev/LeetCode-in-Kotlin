@@ -1,8 +1,9 @@
 package g1301_1400.s1396_design_underground_system
 
+// #Medium #String #Hash_Table #Design #2023_06_06_Time_703_ms_(99.29%)_Space_76.5_MB_(99.29%)
+
 import java.util.LinkedList
 
-// #Medium #String #Hash_Table #Design
 class UndergroundSystem {
     private class StationAndTime(var station: String, var time: Int)
 
@@ -37,3 +38,10 @@ class UndergroundSystem {
         return averageTimeMap["$startStation->$endStation"]!![0]
     }
 }
+/*
+ * Your UndergroundSystem object will be instantiated and called as such:
+ * var obj = UndergroundSystem()
+ * obj.checkIn(id,stationName,t)
+ * obj.checkOut(id,stationName,t)
+ * var param_3 = obj.getAverageTime(startStation,endStation)
+ */
