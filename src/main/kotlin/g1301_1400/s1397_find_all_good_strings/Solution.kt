@@ -3,7 +3,7 @@ package g1301_1400.s1397_find_all_good_strings
 // #Hard #String #Dynamic_Programming #String_Matching
 // #2023_06_06_Time_273_ms_(100.00%)_Space_36.3_MB_(100.00%)
 
-@Suppress("NAME_SHADOWING", "unused")
+@Suppress("NAME_SHADOWING", "UNUSED_PARAMETER")
 class Solution {
     private val mod = 1000000007
     private lateinit var next: IntArray
