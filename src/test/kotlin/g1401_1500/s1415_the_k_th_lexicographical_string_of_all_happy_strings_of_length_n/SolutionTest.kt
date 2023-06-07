@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val happyString: Unit
-        get() {
-            assertThat(Solution().getHappyString(1, 3), equalTo("c"))
-        }
+    @Test
+    fun happyString() {
+        assertThat(Solution().getHappyString(1, 3), equalTo("c"))
+    }
 
-    @get:Test
-    val happyString2: Unit
-        get() {
-            assertThat(Solution().getHappyString(1, 4), equalTo(""))
-        }
+    @Test
+    fun happyString2() {
+        assertThat(Solution().getHappyString(1, 4), equalTo(""))
+    }
 
-    @get:Test
-    val happyString3: Unit
-        get() {
-            assertThat(Solution().getHappyString(3, 9), equalTo("cab"))
-        }
+    @Test
+    fun happyString3() {
+        assertThat(Solution().getHappyString(3, 9), equalTo("cab"))
+    }
 }
