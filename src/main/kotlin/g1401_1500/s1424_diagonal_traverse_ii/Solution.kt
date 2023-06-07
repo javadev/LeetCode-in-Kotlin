@@ -24,7 +24,7 @@ class Solution {
                 }
             }
             pos++
-        } while (!queue.isEmpty() || pos < nums.size)
+        } while (queue.isNotEmpty() || pos < nums.size)
         return ans.stream().mapToInt { o: Int? -> o!! }.toArray()
     }
 }

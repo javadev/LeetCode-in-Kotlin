@@ -6,6 +6,7 @@ package g1401_1500.s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows
 import java.util.Objects
 import java.util.TreeSet
 
+@Suppress("kotlin:S6510")
 class Solution {
     fun kthSmallest(mat: Array<IntArray>, k: Int): Int {
         val treeSet = TreeSet(
@@ -33,7 +34,7 @@ class Solution {
         treeSet.add(entry)
         var count = 0
         while (count < k) {
-            val curr = treeSet.pollFirst()
+            val curr: IntArray = treeSet.pollFirst() as IntArray
             count++
             if (count == k) {
                 return Objects.requireNonNull(curr)[0]

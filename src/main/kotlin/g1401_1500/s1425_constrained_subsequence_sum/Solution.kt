@@ -12,14 +12,14 @@ class Solution {
         val mono = LinkedList<IntArray>()
         for (i in 0 until n) {
             var take = nums[i]
-            while (!mono.isEmpty() && i - mono.first[0] > k) {
+            while (mono.isNotEmpty() && i - mono.first[0] > k) {
                 mono.removeFirst()
             }
-            if (!mono.isEmpty()) {
+            if (mono.isNotEmpty()) {
                 val mx = Math.max(0, mono.first[1])
                 take += mx
             }
-            while (!mono.isEmpty() && take > mono.last[1]) {
+            while (mono.isNotEmpty() && take > mono.last[1]) {
                 mono.removeLast()
             }
             mono.add(intArrayOf(i, take))

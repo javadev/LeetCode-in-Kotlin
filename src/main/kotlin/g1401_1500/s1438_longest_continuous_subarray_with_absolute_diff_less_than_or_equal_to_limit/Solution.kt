@@ -12,11 +12,11 @@ class Solution {
         var best = 0
         var left = 0
         for (right in nums.indices) {
-            while (!maxQ.isEmpty() && nums[right] > nums[maxQ.peekLast()]) {
+            while (maxQ.isNotEmpty() && nums[right] > nums[maxQ.peekLast()]) {
                 maxQ.removeLast()
             }
             maxQ.offerLast(right)
-            while (!minQ.isEmpty() && nums[right] < nums[minQ.peekLast()]) {
+            while (minQ.isNotEmpty() && nums[right] < nums[minQ.peekLast()]) {
                 minQ.removeLast()
             }
             minQ.offerLast(right)

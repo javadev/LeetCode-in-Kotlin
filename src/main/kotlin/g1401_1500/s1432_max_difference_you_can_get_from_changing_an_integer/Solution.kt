@@ -18,7 +18,7 @@ class Solution {
         var max = 0
         var areDigitsUnique = true
         while (num != 0) {
-            if (!stack.isEmpty() && num % 10 != stack.peek()) {
+            if (stack.isNotEmpty() && num % 10 != stack.peek()) {
                 areDigitsUnique = false
             }
             stack.push(num % 10)
@@ -34,7 +34,7 @@ class Solution {
             // Handles no leading zeros/non zero constraints.
             yMin = 1
         }
-        while (!stack.isEmpty()) {
+        while (stack.isNotEmpty()) {
             min = min * 10 + if (stack.peek() == xMin) yMin else stack.peek()
             max = max * 10 + if (stack.peek() == xMax) yMax else stack.peek()
             stack.pop()
