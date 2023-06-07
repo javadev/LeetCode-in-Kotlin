@@ -15,8 +15,10 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     private var count = 0
+
     private fun traverse(root: TreeNode?, max: Int) {
         var max = max
         if (root == null) {
