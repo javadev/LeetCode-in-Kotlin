@@ -1,6 +1,7 @@
 package g1201_1300.s1252_cells_with_odd_values_in_a_matrix
 
-// #Easy #Array #Math #Simulation
+// #Easy #Array #Math #Simulation #2023_06_07_Time_134_ms_(100.00%)_Space_34_MB_(100.00%)
+
 class Solution {
     fun oddCells(n: Int, m: Int, indices: Array<IntArray>): Int {
         val matrix = Array(n) { IntArray(m) }

@@ -1,6 +1,8 @@
 package g1201_1300.s1255_maximum_score_words_formed_by_letters
 
 // #Hard #Array #String #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2023_06_07_Time_131_ms_(100.00%)_Space_34.4_MB_(66.67%)
+
 class Solution {
     private lateinit var score: IntArray
 

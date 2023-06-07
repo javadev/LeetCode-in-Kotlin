@@ -1,6 +1,7 @@
 package g1201_1300.s1253_reconstruct_a_2_row_binary_matrix
 
-// #Medium #Array #Greedy #Matrix
+// #Medium #Array #Greedy #Matrix #2023_06_07_Time_496_ms_(75.00%)_Space_54.5_MB_(25.00%)
+
 class Solution {
     fun reconstructMatrix(upper: Int, lower: Int, colsum: IntArray): List<MutableList<Int>> {
         val res: MutableList<MutableList<Int>> = ArrayList()
