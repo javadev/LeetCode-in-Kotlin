@@ -1,8 +1,10 @@
 package g1401_1500.s1418_display_table_of_food_orders_in_a_restaurant
 
+// #Medium #Array #String #Hash_Table #Sorting #Ordered_Set
+// #2023_06_07_Time_710_ms_(100.00%)_Space_67.4_MB_(100.00%)
+
 import java.util.TreeMap
 
-// #Medium #Array #String #Hash_Table #Sorting #Ordered_Set
 class Solution {
     fun displayTable(orders: List<List<String>>): List<List<String>> {
         val map = TreeMap<Int, MutableMap<String, Int>>()

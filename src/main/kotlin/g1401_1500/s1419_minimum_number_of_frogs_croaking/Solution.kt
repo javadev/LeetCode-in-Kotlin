@@ -1,6 +1,7 @@
 package g1401_1500.s1419_minimum_number_of_frogs_croaking
 
-// #Medium #String #Counting
+// #Medium #String #Counting #2023_06_07_Time_210_ms_(90.91%)_Space_37.5_MB_(90.91%)
+
 class Solution {
     fun minNumberOfFrogs(s: String): Int {
         var ans = 0

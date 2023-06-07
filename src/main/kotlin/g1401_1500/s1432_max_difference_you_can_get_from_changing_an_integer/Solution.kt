@@ -1,9 +1,10 @@
 package g1401_1500.s1432_max_difference_you_can_get_from_changing_an_integer
 
+// #Medium #Math #Greedy #2023_06_07_Time_147_ms_(100.00%)_Space_33_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Medium #Math #Greedy
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maxDiff(num: Int): Int {

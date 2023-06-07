@@ -1,6 +1,8 @@
 package g1401_1500.s1434_number_of_ways_to_wear_different_hats_to_each_other
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2023_06_07_Time_206_ms_(100.00%)_Space_34.4_MB_(100.00%)
+
 class Solution {
     fun numberWays(hats: List<List<Int>>): Int {
         val mod = 1000000007L

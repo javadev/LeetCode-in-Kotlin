@@ -1,6 +1,8 @@
 package g1401_1500.s1423_maximum_points_you_can_obtain_from_cards
 
 // #Medium #Array #Prefix_Sum #Sliding_Window
+// #2023_06_07_Time_349_ms_(78.57%)_Space_53.3_MB_(64.29%)
+
 class Solution {
     fun maxScore(cardPoints: IntArray, k: Int): Int {
         var currSum = 0

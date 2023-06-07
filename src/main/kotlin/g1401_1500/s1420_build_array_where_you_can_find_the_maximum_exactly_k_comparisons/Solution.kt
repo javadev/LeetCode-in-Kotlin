@@ -1,6 +1,7 @@
 package g1401_1500.s1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons
 
-// #Hard #Dynamic_Programming
+// #Hard #Dynamic_Programming #2023_06_07_Time_153_ms_(100.00%)_Space_36.8_MB_(100.00%)
+
 class Solution {
     fun numOfArrays(n: Int, m: Int, k: Int): Int {
         var ways = Array(m + 1) { LongArray(k + 1) }

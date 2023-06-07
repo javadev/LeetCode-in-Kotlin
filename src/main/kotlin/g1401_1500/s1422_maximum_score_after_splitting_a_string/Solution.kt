@@ -1,6 +1,7 @@
 package g1401_1500.s1422_maximum_score_after_splitting_a_string
 
-// #Easy #String
+// #Easy #String #2023_06_07_Time_145_ms_(100.00%)_Space_33.2_MB_(100.00%)
+
 class Solution {
     fun maxScore(s: String): Int {
         var zeroes = if (s[0] == '0') 1 else 0

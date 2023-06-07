@@ -1,6 +1,7 @@
 package g1401_1500.s1446_consecutive_characters
 
-// #Easy #String
+// #Easy #String #2023_06_07_Time_141_ms_(100.00%)_Space_35.5_MB_(73.33%)
+
 class Solution {
     fun maxPower(s: String): Int {
         var max = 0

@@ -1,6 +1,8 @@
 package g1401_1500.s1443_minimum_time_to_collect_all_apples_in_a_tree
 
 // #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree
+// #2023_06_07_Time_793_ms_(85.71%)_Space_104.6_MB_(57.14%)
+
 @Suppress("UNUSED_PARAMETER")
 class Solution {
     fun minTime(n: Int, edges: Array<IntArray>, hasApple: List<Boolean>): Int {
@@ -24,7 +26,7 @@ class Solution {
         visited: MutableSet<Int>
     ): Int {
         var steps = 0
-        for (child in graph.getOrDefault(node, emptyList<Int>())) {
+        for (child in graph.getOrDefault(node, mutableListOf())) {
             if (visited.contains(child)) {
                 continue
             } else {

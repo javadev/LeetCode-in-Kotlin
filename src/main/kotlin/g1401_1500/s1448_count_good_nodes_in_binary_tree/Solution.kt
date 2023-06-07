@@ -1,21 +1,18 @@
 package g1401_1500.s1448_count_good_nodes_in_binary_tree
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2023_06_07_Time_384_ms_(68.52%)_Space_50.5_MB_(68.52%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {

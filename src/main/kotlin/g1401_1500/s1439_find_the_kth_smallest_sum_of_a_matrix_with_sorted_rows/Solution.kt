@@ -1,9 +1,11 @@
 package g1401_1500.s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows
 
+// #Hard #Array #Binary_Search #Matrix #Heap_Priority_Queue
+// #2023_06_07_Time_225_ms_(100.00%)_Space_38.5_MB_(100.00%)
+
 import java.util.Objects
 import java.util.TreeSet
 
-// #Hard #Array #Binary_Search #Matrix #Heap_Priority_Queue
 class Solution {
     fun kthSmallest(mat: Array<IntArray>, k: Int): Int {
         val treeSet = TreeSet(

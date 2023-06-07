@@ -1655,6 +1655,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1393 |[Capital Gain/Loss](src/main/kotlin/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 990 | 47.36
+| 1407 |[Top Travellers](src/main/kotlin/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 2035 | 14.53
 | 1158 |[Market Analysis I](src/main/kotlin/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 2470 | 44.76
 
 #### Day 10 Where
@@ -1775,6 +1776,46 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1450 |[Number of Students Doing Homework at a Given Time](src/main/kotlin/g1401_1500/s1450_number_of_students_doing_homework_at_a_given_time/Solution.kt)| Easy | Array | 180 | 10.00
+| 1449 |[Form Largest Integer With Digits That Add up to Target](src/main/kotlin/g1401_1500/s1449_form_largest_integer_with_digits_that_add_up_to_target/Solution.kt)| Hard | Array, Dynamic_Programming | 201 | 100.00
+| 1448 |[Count Good Nodes in Binary Tree](src/main/kotlin/g1401_1500/s1448_count_good_nodes_in_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 384 | 68.52
+| 1447 |[Simplified Fractions](src/main/kotlin/g1401_1500/s1447_simplified_fractions/Solution.kt)| Medium | String, Math, Number_Theory | 338 | 100.00
+| 1446 |[Consecutive Characters](src/main/kotlin/g1401_1500/s1446_consecutive_characters/Solution.kt)| Easy | String | 141 | 100.00
+| 1444 |[Number of Ways of Cutting a Pizza](src/main/kotlin/g1401_1500/s1444_number_of_ways_of_cutting_a_pizza/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix, Memoization | 175 | 75.00
+| 1443 |[Minimum Time to Collect All Apples in a Tree](src/main/kotlin/g1401_1500/s1443_minimum_time_to_collect_all_apples_in_a_tree/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree | 793 | 85.71
+| 1442 |[Count Triplets That Can Form Two Arrays of Equal XOR](src/main/kotlin/g1401_1500/s1442_count_triplets_that_can_form_two_arrays_of_equal_xor/Solution.kt)| Medium | Array, Hash_Table, Math, Bit_Manipulation, Prefix_Sum | 145 | 100.00
+| 1441 |[Build an Array With Stack Operations](src/main/kotlin/g1401_1500/s1441_build_an_array_with_stack_operations/Solution.kt)| Easy | Array, Stack, Simulation | 160 | 100.00
+| 1439 |[Find the Kth Smallest Sum of a Matrix With Sorted Rows](src/main/kotlin/g1401_1500/s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows/Solution.kt)| Hard | Array, Binary_Search, Matrix, Heap_Priority_Queue | 225 | 100.00
+| 1438 |[Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](src/main/kotlin/g1401_1500/s1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit/Solution.kt)| Medium | Array, Heap_Priority_Queue, Sliding_Window, Ordered_Set, Queue, Monotonic_Queue | 479 | 75.00
+| 1437 |[Check If All 1's Are at Least Length K Places Away](src/main/kotlin/g1401_1500/s1437_check_if_all_1s_are_at_least_length_k_places_away/Solution.kt)| Easy | Array | 345 | 66.67
+| 1436 |[Destination City](src/main/kotlin/g1401_1500/s1436_destination_city/Solution.kt)| Easy | String, Hash_Table | 174 | 77.78
+| 1434 |[Number of Ways to Wear Different Hats to Each Other](src/main/kotlin/g1401_1500/s1434_number_of_ways_to_wear_different_hats_to_each_other/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 206 | 100.00
+| 1433 |[Check If a String Can Break Another String](src/main/kotlin/g1401_1500/s1433_check_if_a_string_can_break_another_string/Solution.kt)| Medium | String, Sorting, Greedy | 221 | 100.00
+| 1432 |[Max Difference You Can Get From Changing an Integer](src/main/kotlin/g1401_1500/s1432_max_difference_you_can_get_from_changing_an_integer/Solution.kt)| Medium | Math, Greedy | 147 | 100.00
+| 1431 |[Kids With the Greatest Number of Candies](src/main/kotlin/g1401_1500/s1431_kids_with_the_greatest_number_of_candies/Solution.kt)| Easy | Array | 152 | 99.61
+| 1425 |[Constrained Subsequence Sum](src/main/kotlin/g1401_1500/s1425_constrained_subsequence_sum/Solution.kt)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 649 | 33.33
+| 1424 |[Diagonal Traverse II](src/main/kotlin/g1401_1500/s1424_diagonal_traverse_ii/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue | 706 | 100.00
+| 1423 |[Maximum Points You Can Obtain from Cards](src/main/kotlin/g1401_1500/s1423_maximum_points_you_can_obtain_from_cards/Solution.kt)| Medium | Array, Prefix_Sum, Sliding_Window | 349 | 78.57
+| 1422 |[Maximum Score After Splitting a String](src/main/kotlin/g1401_1500/s1422_maximum_score_after_splitting_a_string/Solution.kt)| Easy | String | 145 | 100.00
+| 1420 |[Build Array Where You Can Find The Maximum Exactly K Comparisons](src/main/kotlin/g1401_1500/s1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons/Solution.kt)| Hard | Dynamic_Programming | 153 | 100.00
+| 1419 |[Minimum Number of Frogs Croaking](src/main/kotlin/g1401_1500/s1419_minimum_number_of_frogs_croaking/Solution.kt)| Medium | String, Counting | 210 | 90.91
+| 1418 |[Display Table of Food Orders in a Restaurant](src/main/kotlin/g1401_1500/s1418_display_table_of_food_orders_in_a_restaurant/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Ordered_Set | 710 | 100.00
+| 1417 |[Reformat The String](src/main/kotlin/g1401_1500/s1417_reformat_the_string/Solution.kt)| Easy | String | 174 | 100.00
+| 1416 |[Restore The Array](src/main/kotlin/g1401_1500/s1416_restore_the_array/Solution.kt)| Hard | String, Dynamic_Programming | 279 | 51.85
+| 1415 |[The k-th Lexicographical String of All Happy Strings of Length n](src/main/kotlin/g1401_1500/s1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n/Solution.kt)| Medium | String, Backtracking | 160 | 100.00
+| 1414 |[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](src/main/kotlin/g1401_1500/s1414_find_the_minimum_number_of_fibonacci_numbers_whose_sum_is_k/Solution.kt)| Medium | Greedy | 165 | 100.00
+| 1413 |[Minimum Value to Get Positive Step by Step Sum](src/main/kotlin/g1401_1500/s1413_minimum_value_to_get_positive_step_by_step_sum/Solution.kt)| Easy | Array, Prefix_Sum | 127 | 97.22
+| 1411 |[Number of Ways to Paint N × 3 Grid](src/main/kotlin/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/Solution.kt)| Hard | Dynamic_Programming | 201 | 100.00
+| 1410 |[HTML Entity Parser](src/main/kotlin/g1401_1500/s1410_html_entity_parser/Solution.kt)| Medium | String, Hash_Table | 334 | 100.00
+| 1409 |[Queries on a Permutation With Key](src/main/kotlin/g1401_1500/s1409_queries_on_a_permutation_with_key/Solution.kt)| Medium | Array, Simulation, Binary_Indexed_Tree | 209 | 100.00
+| 1408 |[String Matching in an Array](src/main/kotlin/g1401_1500/s1408_string_matching_in_an_array/Solution.kt)| Easy | String, String_Matching | 194 | 77.78
+| 1407 |[Top Travellers](src/main/kotlin/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_9_Control_of_Flow | 2035 | 14.53
+| 1406 |[Stone Game III](src/main/kotlin/g1401_1500/s1406_stone_game_iii/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Game_Theory | 699 | 90.70
+| 1405 |[Longest Happy String](src/main/kotlin/g1401_1500/s1405_longest_happy_string/Solution.kt)| Medium | String, Greedy, Heap_Priority_Queue | 119 | 100.00
+| 1404 |[Number of Steps to Reduce a Number in Binary Representation to One](src/main/kotlin/g1401_1500/s1404_number_of_steps_to_reduce_a_number_in_binary_representation_to_one/Solution.kt)| Medium | String, Bit_Manipulation | 144 | 100.00
+| 1403 |[Minimum Subsequence in Non-Increasing Order](src/main/kotlin/g1401_1500/s1403_minimum_subsequence_in_non_increasing_order/Solution.kt)| Easy | Array, Sorting, Greedy | 190 | 100.00
+| 1402 |[Reducing Dishes](src/main/kotlin/g1401_1500/s1402_reducing_dishes/Solution.kt)| Hard | Array, Dynamic_Programming, Sorting, Greedy | 151 | 100.00
+| 1401 |[Circle and Rectangle Overlapping](src/main/kotlin/g1401_1500/s1401_circle_and_rectangle_overlapping/Solution.kt)| Medium | Math, Geometry | 116 | 100.00
 | 1400 |[Construct K Palindrome Strings](src/main/kotlin/g1301_1400/s1400_construct_k_palindrome_strings/Solution.kt)| Medium | String, Hash_Table, Greedy, Counting | 204 | 90.00
 | 1399 |[Count Largest Group](src/main/kotlin/g1301_1400/s1399_count_largest_group/Solution.kt)| Easy | Hash_Table, Math | 136 | 100.00
 | 1397 |[Find All Good Strings](src/main/kotlin/g1301_1400/s1397_find_all_good_strings/Solution.kt)| Hard | String, Dynamic_Programming, String_Matching | 273 | 100.00

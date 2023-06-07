@@ -1,9 +1,11 @@
 package g1401_1500.s1444_number_of_ways_of_cutting_a_pizza
 
 // #Hard #Array #Dynamic_Programming #Matrix #Memoization
+// #2023_06_07_Time_175_ms_(75.00%)_Space_34.7_MB_(100.00%)
+
 class Solution {
-    fun ways(pizza: Array<String>?, k: Int): Int {
-        if (pizza == null || pizza.size == 0) {
+    fun ways(pizza: Array<String>, k: Int): Int {
+        if (pizza.isEmpty()) {
             return 0
         }
         val m = pizza.size

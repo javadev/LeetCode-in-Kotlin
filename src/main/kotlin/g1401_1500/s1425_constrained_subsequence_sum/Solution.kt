@@ -1,8 +1,10 @@
 package g1401_1500.s1425_constrained_subsequence_sum
 
+// #Hard #Array #Dynamic_Programming #Heap_Priority_Queue #Sliding_Window #Queue #Monotonic_Queue
+// #2023_06_07_Time_649_ms_(33.33%)_Space_51.4_MB_(100.00%)
+
 import java.util.LinkedList
 
-// #Hard #Array #Dynamic_Programming #Heap_Priority_Queue #Sliding_Window #Queue #Monotonic_Queue
 class Solution {
     fun constrainedSubsetSum(nums: IntArray, k: Int): Int {
         val n = nums.size

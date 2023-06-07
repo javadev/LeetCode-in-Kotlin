@@ -1,6 +1,7 @@
 package g1401_1500.s1447_simplified_fractions
 
-// #Medium #String #Math #Number_Theory
+// #Medium #String #Math #Number_Theory #2023_06_07_Time_338_ms_(100.00%)_Space_38_MB_(100.00%)
+
 class Solution {
     fun simplifiedFractions(n: Int): List<String> {
         val result: MutableList<String> = ArrayList()
