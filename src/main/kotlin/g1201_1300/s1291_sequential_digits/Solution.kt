@@ -12,7 +12,7 @@ class Solution {
         val result: MutableList<Int> = ArrayList()
         for (j in arr) {
             // 234    148         234        256
-            if (j >= low && j <= high) {
+            if (j in low..high) {
                 result.add(j)
             }
         }
