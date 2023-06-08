@@ -1,6 +1,6 @@
 package g1201_1300.s1295_find_numbers_with_even_number_of_digits
 
-// #Easy #Array
+// #Easy #Array #2023_06_08_Time_189_ms_(35.85%)_Space_37.7_MB_(55.66%)
 
 class Solution {
     fun findNumbers(nums: IntArray): Int {

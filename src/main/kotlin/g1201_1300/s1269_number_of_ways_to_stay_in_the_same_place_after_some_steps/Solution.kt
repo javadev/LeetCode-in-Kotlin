@@ -1,6 +1,7 @@
 package g1201_1300.s1269_number_of_ways_to_stay_in_the_same_place_after_some_steps
 
-// #Hard #Dynamic_Programming
+// #Hard #Dynamic_Programming #2023_06_08_Time_159_ms_(50.00%)_Space_37.1_MB_(50.00%)
+
 class Solution {
     private var n = 0
     private lateinit var dp: Array<IntArray>

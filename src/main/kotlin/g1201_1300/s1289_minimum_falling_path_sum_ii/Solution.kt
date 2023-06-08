@@ -1,6 +1,8 @@
 package g1201_1300.s1289_minimum_falling_path_sum_ii
 
 // #Hard #Array #Dynamic_Programming #Matrix
+// #2023_06_08_Time_234_ms_(100.00%)_Space_38.4_MB_(100.00%)
+
 class Solution {
     fun minFallingPathSum(grid: Array<IntArray>): Int {
         val n = grid[0].size

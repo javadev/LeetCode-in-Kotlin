@@ -1,6 +1,8 @@
 package g1201_1300.s1275_find_winner_on_a_tic_tac_toe_game
 
 // #Easy #Array #Hash_Table #Matrix #Simulation
+// #2023_06_08_Time_125_ms_(87.50%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun tictactoe(moves: Array<IntArray>): String {
         val board = Array(3) { arrayOfNulls<String>(3) }

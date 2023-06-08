@@ -1,6 +1,8 @@
 package g1201_1300.s1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold
 
 // #Medium #Array #Binary_Search #Matrix #Prefix_Sum #Binary_Search_II_Day_15
+// #2023_06_08_Time_376_ms_(100.00%)_Space_50.6_MB_(100.00%)
+
 class Solution {
     fun maxSideLength(mat: Array<IntArray>, threshold: Int): Int {
         val m = mat.size

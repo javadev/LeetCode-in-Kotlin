@@ -1,6 +1,8 @@
 package g1201_1300.s1277_count_square_submatrices_with_all_ones
 
 // #Medium #Array #Dynamic_Programming #Matrix
+// #2023_06_08_Time_381_ms_(75.00%)_Space_59.3_MB_(50.00%)
+
 class Solution {
     fun countSquares(matrix: Array<IntArray>): Int {
         var total = 0

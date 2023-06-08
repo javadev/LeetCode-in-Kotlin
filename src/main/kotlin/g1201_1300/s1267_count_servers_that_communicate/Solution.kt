@@ -1,6 +1,8 @@
 package g1201_1300.s1267_count_servers_that_communicate
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Counting #Union_Find
+// #2023_06_08_Time_295_ms_(100.00%)_Space_53.9_MB_(75.00%)
+
 class Solution {
     fun countServers(grid: Array<IntArray>): Int {
         val m = grid.size

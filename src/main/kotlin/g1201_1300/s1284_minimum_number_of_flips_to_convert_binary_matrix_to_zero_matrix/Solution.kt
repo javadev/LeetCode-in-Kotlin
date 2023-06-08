@@ -1,9 +1,11 @@
 package g1201_1300.s1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix
 
+// #Hard #Array #Breadth_First_Search #Matrix #Bit_Manipulation
+// #2023_06_08_Time_131_ms_(100.00%)_Space_34.3_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix #Bit_Manipulation
 class Solution {
     private lateinit var visited: MutableSet<Int>
 
@@ -53,7 +55,7 @@ class Solution {
         var count = 1
         q.add(mask)
         visited.add(mask)
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val qSize = q.size
             for (i in 0 until qSize) {
                 val currMask = q.poll()

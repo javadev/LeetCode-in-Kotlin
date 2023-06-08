@@ -1,11 +1,9 @@
 package g1201_1300.s1260_shift_2d_grid
 
-// #Easy #Array #Matrix #Simulation
+// #Easy #Array #Matrix #Simulation #2023_06_08_Time_302_ms_(100.00%)_Space_38.7_MB_(100.00%)
+
 class Solution {
-    fun shiftGrid(grid: Array<IntArray>?, k: Int): List<List<Int>> {
-        if (grid == null) {
-            return emptyList()
-        }
+    fun shiftGrid(grid: Array<IntArray>, k: Int): List<List<Int>> {
         val flat = IntArray(grid.size * grid[0].size)
         var index = 0
         for (ints in grid) {

@@ -1,9 +1,11 @@
 package g1201_1300.s1263_minimum_moves_to_move_a_box_to_their_target_location
 
+// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue
+// #2023_06_08_Time_183_ms_(100.00%)_Space_36.4_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue
 class Solution {
     private var n = 0
     private var m = 0
@@ -23,7 +25,7 @@ class Solution {
         // for 4 directions
         val visited = Array(n) { Array(m) { BooleanArray(4) } }
         var steps = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             var size = q.size
             while (size-- > 0) {
                 val cur = q.poll()
@@ -56,7 +58,7 @@ class Solution {
         visited[cur[2]][cur[3]] = true
         val q: Queue<IntArray> = LinkedList()
         q.offer(intArrayOf(cur[2], cur[3]))
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val playerLoc = q.poll()
             if (playerLoc[0] == targetPlayerLoc[0] && playerLoc[1] == targetPlayerLoc[1]) {
                 return true

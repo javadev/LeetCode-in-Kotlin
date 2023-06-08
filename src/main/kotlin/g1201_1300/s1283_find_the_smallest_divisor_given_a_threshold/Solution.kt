@@ -1,6 +1,8 @@
 package g1201_1300.s1283_find_the_smallest_divisor_given_a_threshold
 
 // #Medium #Array #Binary_Search #Binary_Search_II_Day_5
+// #2023_06_08_Time_255_ms_(100.00%)_Space_40.7_MB_(100.00%)
+
 class Solution {
     fun smallestDivisor(nums: IntArray, threshold: Int): Int {
         var l = 1

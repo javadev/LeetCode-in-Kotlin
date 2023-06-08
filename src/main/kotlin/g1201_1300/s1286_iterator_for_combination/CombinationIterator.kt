@@ -1,6 +1,8 @@
 package g1201_1300.s1286_iterator_for_combination
 
 // #Medium #String #Design #Backtracking #Iterator
+// #2023_06_08_Time_236_ms_(100.00%)_Space_40.5_MB_(100.00%)
+
 class CombinationIterator(characters: String, private val combinationLength: Int) {
     private val list: MutableList<String>
     private var index = 0
@@ -44,3 +46,9 @@ class CombinationIterator(characters: String, private val combinationLength: Int
         return index < list.size
     }
 }
+/*
+ * Your CombinationIterator object will be instantiated and called as such:
+ * var obj = CombinationIterator(characters, combinationLength)
+ * var param_1 = obj.next()
+ * var param_2 = obj.hasNext()
+ */

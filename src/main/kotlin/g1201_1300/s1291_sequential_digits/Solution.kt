@@ -1,6 +1,7 @@
 package g1201_1300.s1291_sequential_digits
 
-// #Medium #Enumeration #Udemy_Arrays
+// #Medium #Enumeration #Udemy_Arrays #2023_06_08_Time_114_ms_(100.00%)_Space_32.9_MB_(100.00%)
+
 class Solution {
     fun sequentialDigits(low: Int, high: Int): List<Int> {
         val arr = intArrayOf(

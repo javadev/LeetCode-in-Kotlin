@@ -1,6 +1,7 @@
 package g1201_1300.s1266_minimum_time_visiting_all_points
 
-// #Easy #Array #Math #Geometry
+// #Easy #Array #Math #Geometry #2023_06_08_Time_152_ms_(100.00%)_Space_36.4_MB_(66.67%)
+
 class Solution {
     fun minTimeToVisitAllPoints(points: Array<IntArray>): Int {
         var minTime = 0

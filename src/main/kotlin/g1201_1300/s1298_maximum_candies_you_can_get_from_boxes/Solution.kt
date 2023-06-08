@@ -1,9 +1,10 @@
 package g1201_1300.s1298_maximum_candies_you_can_get_from_boxes
 
+// #Hard #Array #Breadth_First_Search #2023_06_08_Time_442_ms_(80.00%)_Space_57.5_MB_(40.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search
 class Solution {
     fun maxCandies(
         status: IntArray,
@@ -18,7 +19,7 @@ class Solution {
             boxes.offer(box)
         }
         var unseen = 0
-        while (!boxes.isEmpty()) {
+        while (boxes.isNotEmpty()) {
             if (unseen == boxes.size) {
                 break
             }

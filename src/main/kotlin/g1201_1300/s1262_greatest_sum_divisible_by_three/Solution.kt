@@ -1,6 +1,8 @@
 package g1201_1300.s1262_greatest_sum_divisible_by_three
 
 // #Medium #Array #Dynamic_Programming #Greedy
+// #2023_06_08_Time_263_ms_(100.00%)_Space_39.9_MB_(33.33%)
+
 class Solution {
     fun maxSumDivThree(nums: IntArray): Int {
         var sum = 0

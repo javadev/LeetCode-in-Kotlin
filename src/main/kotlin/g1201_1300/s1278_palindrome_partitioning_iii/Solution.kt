@@ -1,6 +1,7 @@
 package g1201_1300.s1278_palindrome_partitioning_iii
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_08_Time_137_ms_(100.00%)_Space_35.4_MB_(50.00%)
+
 class Solution {
     fun palindromePartition(s: String, k: Int): Int {
         val n = s.length

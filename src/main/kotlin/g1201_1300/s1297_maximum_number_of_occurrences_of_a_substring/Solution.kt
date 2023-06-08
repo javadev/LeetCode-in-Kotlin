@@ -1,6 +1,8 @@
 package g1201_1300.s1297_maximum_number_of_occurrences_of_a_substring
 
 // #Medium #String #Hash_Table #Sliding_Window
+// #2023_06_08_Time_253_ms_(75.00%)_Space_38_MB_(100.00%)
+
 class Solution {
     fun maxFreq(s: String, max: Int, minSize: Int, maxSize: Int): Int {
         // the map of occurrences

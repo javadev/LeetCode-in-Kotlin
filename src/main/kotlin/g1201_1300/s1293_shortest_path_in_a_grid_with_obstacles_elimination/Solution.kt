@@ -1,9 +1,11 @@
 package g1201_1300.s1293_shortest_path_in_a_grid_with_obstacles_elimination
 
+// #Hard #Array #Breadth_First_Search #Matrix
+// #2023_06_08_Time_189_ms_(100.00%)_Space_36.6_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix
 class Solution {
     fun shortestPath(grid: Array<IntArray>, k: Int): Int {
         if (grid.size == 1 && grid[0].size == 1 && grid[0][0] == 0) {
@@ -25,7 +27,7 @@ class Solution {
         val que: Queue<IntArray> = LinkedList()
         que.add(intArrayOf(0, 0, 0))
         var level = 0
-        while (!que.isEmpty()) {
+        while (que.isNotEmpty()) {
             val size = que.size
             level++
             for (i in 0 until size) {
