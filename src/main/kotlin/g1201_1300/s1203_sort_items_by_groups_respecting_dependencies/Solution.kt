@@ -51,7 +51,7 @@ class Solution {
         }
         val res = IntArray(n)
         var resIndex = 0
-        while (!externalQueue.isEmpty()) {
+        while (externalQueue.isNotEmpty()) {
             val curGroup = externalQueue.poll()
             val internalQueue: Queue<Int> = LinkedList()
             if (indexGroupMap.containsKey(curGroup)) {
@@ -61,7 +61,7 @@ class Solution {
                     }
                 }
             }
-            while (!internalQueue.isEmpty()) {
+            while (internalQueue.isNotEmpty()) {
                 val curItem = internalQueue.poll()
                 res[resIndex] = curItem
                 resIndex++
