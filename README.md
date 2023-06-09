@@ -1127,6 +1127,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1201 |[Ugly Number III](src/main/kotlin/g1201_1300/s1201_ugly_number_iii/Solution.kt)| Medium | Math, Binary_Search, Number_Theory | 136 | 100.00
 | 0911 |[Online Election](src.save/main/kotlin/g0901_1000/s0911_online_election/TopVotedCandidate.kt)| Medium | Array, Hash_Table, Binary_Search, Design | 766 | 83.33
 
 ### Dynamic Programming I
@@ -1944,8 +1945,13 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1253 |[Reconstruct a 2-Row Binary Matrix](src/main/kotlin/g1201_1300/s1253_reconstruct_a_2_row_binary_matrix/Solution.kt)| Medium | Array, Greedy, Matrix | 496 | 75.00
 | 1252 |[Cells with Odd Values in a Matrix](src/main/kotlin/g1201_1300/s1252_cells_with_odd_values_in_a_matrix/Solution.kt)| Easy | Array, Math, Simulation | 134 | 100.00
 | 1250 |[Check If It Is a Good Array](src/main/kotlin/g1201_1300/s1250_check_if_it_is_a_good_array/Solution.kt)| Hard | Array, Math, Number_Theory | 334 | 100.00
+| 1206 |[Design Skiplist](src/main/kotlin/g1201_1300/s1206_design_skiplist/Skiplist.kt)| Hard | Design, Linked_List | 306 | 100.00
+| 1203 |[Sort Items by Groups Respecting Dependencies](src/main/kotlin/g1201_1300/s1203_sort_items_by_groups_respecting_dependencies/Solution.kt)| Hard | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 503 | 100.00
+| 1202 |[Smallest String With Swaps](src/main/kotlin/g1201_1300/s1202_smallest_string_with_swaps/Solution.kt)| Medium | String, Hash_Table, Depth_First_Search, Breadth_First_Search, Union_Find | 562 | 100.00
+| 1201 |[Ugly Number III](src/main/kotlin/g1201_1300/s1201_ugly_number_iii/Solution.kt)| Medium | Math, Binary_Search, Number_Theory, Binary_Search_II_Day_20 | 136 | 100.00
 | 1200 |[Minimum Absolute Difference](src/main/kotlin/g1101_1200/s1200_minimum_absolute_difference/Solution.kt)| Easy | Array, Sorting | 507 | 75.00
 | 1195 |[Fizz Buzz Multithreaded](src/main/kotlin/g1101_1200/s1195_fizz_buzz_multithreaded/FizzBuzz.kt)| Medium | Concurrency | 6 | 87.26
+| 1193 |[Monthly Transactions I](src/main/kotlin/g1101_1200/s1193_monthly_transactions_i/script.sql)| Medium | Database | 891 | 92.73
 | 1192 |[Critical Connections in a Network](src/main/kotlin/g1101_1200/s1192_critical_connections_in_a_network/Solution.kt)| Hard | Depth_First_Search, Graph, Biconnected_Component | 1696 | 60.00
 | 1191 |[K-Concatenation Maximum Sum](src/main/kotlin/g1101_1200/s1191_k_concatenation_maximum_sum/Solution.kt)| Medium | Array, Dynamic_Programming | 389 | 100.00
 | 1190 |[Reverse Substrings Between Each Pair of Parentheses](src/main/kotlin/g1101_1200/s1190_reverse_substrings_between_each_pair_of_parentheses/Solution.kt)| Medium | String, Stack | 153 | 42.86
@@ -1958,6 +1964,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1178 |[Number of Valid Words for Each Puzzle](src/main/kotlin/g1101_1200/s1178_number_of_valid_words_for_each_puzzle/Solution.kt)| Hard | Array, String, Hash_Table, Bit_Manipulation, Trie | 675 | 100.00
 | 1177 |[Can Make Palindrome from Substring](src/main/kotlin/g1101_1200/s1177_can_make_palindrome_from_substring/Solution.kt)| Medium | String, Hash_Table, Bit_Manipulation, Prefix_Sum | 937 | 100.00
 | 1175 |[Prime Arrangements](src/main/kotlin/g1101_1200/s1175_prime_arrangements/Solution.kt)| Easy | Math | 129 | 50.00
+| 1174 |[Immediate Food Delivery II](src/main/kotlin/g1101_1200/s1174_immediate_food_delivery_ii/script.sql)| Medium | Database | 981 | 97.51
 | 1172 |[Dinner Plate Stacks](src/main/kotlin/g1101_1200/s1172_dinner_plate_stacks/DinnerPlates.kt)| Hard | Hash_Table, Stack, Design, Heap_Priority_Queue | 1160 | 50.00
 | 1171 |[Remove Zero Sum Consecutive Nodes from Linked List](src/main/kotlin/g1101_1200/s1171_remove_zero_sum_consecutive_nodes_from_linked_list/Solution.kt)| Medium | Hash_Table, Linked_List | 194 | 50.00
 | 1170 |[Compare Strings by Frequency of the Smallest Character](src/main/kotlin/g1101_1200/s1170_compare_strings_by_frequency_of_the_smallest_character/Solution.kt)| Medium | Array, String, Hash_Table, Sorting, Binary_Search | 221 | 50.00
