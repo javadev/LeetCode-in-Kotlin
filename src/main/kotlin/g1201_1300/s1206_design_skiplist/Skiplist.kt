@@ -2,7 +2,7 @@ package g1201_1300.s1206_design_skiplist
 
 // #Hard #Design #Linked_List #2023_06_09_Time_306_ms_(100.00%)_Space_46.8_MB_(75.00%)
 
-@Suppress("NAME_SHADOWING")
+@Suppress("NAME_SHADOWING", "kotlin:S2245")
 class Skiplist @JvmOverloads constructor(size: Int = INIT_CAPACITY) {
     private val minBoundary: Int
     private val head: Node
