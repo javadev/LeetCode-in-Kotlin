@@ -1,6 +1,8 @@
 package g1201_1300.s1248_count_number_of_nice_subarrays
 
 // #Medium #Array #Hash_Table #Math #Sliding_Window
+// #2023_06_09_Time_431_ms_(93.33%)_Space_48.7_MB_(80.00%)
+
 class Solution {
     fun numberOfSubarrays(nums: IntArray, k: Int): Int {
         var oddLen = 0

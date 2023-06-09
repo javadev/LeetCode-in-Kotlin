@@ -1,6 +1,7 @@
 package g1201_1300.s1224_maximum_equal_frequency
 
-// #Hard #Array #Hash_Table
+// #Hard #Array #Hash_Table #2023_06_09_Time_330_ms_(100.00%)_Space_48.6_MB_(100.00%)
+
 class Solution {
     fun maxEqualFreq(nums: IntArray): Int {
         val count = IntArray(100001)

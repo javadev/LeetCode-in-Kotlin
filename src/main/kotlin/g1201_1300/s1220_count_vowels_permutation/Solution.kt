@@ -1,6 +1,7 @@
 package g1201_1300.s1220_count_vowels_permutation
 
-// #Hard #Dynamic_Programming
+// #Hard #Dynamic_Programming #2023_06_09_Time_129_ms_(100.00%)_Space_32.9_MB_(80.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun countVowelPermutation(n: Int): Int {

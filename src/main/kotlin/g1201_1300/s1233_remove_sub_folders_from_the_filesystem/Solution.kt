@@ -1,6 +1,7 @@
 package g1201_1300.s1233_remove_sub_folders_from_the_filesystem
 
-// #Medium #Array #String #Trie
+// #Medium #Array #String #Trie #2023_06_09_Time_459_ms_(40.00%)_Space_55.3_MB_(80.00%)
+
 class Solution {
     fun removeSubfolders(folder: Array<String>): List<String> {
         val paths: MutableSet<String> = HashSet()

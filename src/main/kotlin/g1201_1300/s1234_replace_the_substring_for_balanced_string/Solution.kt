@@ -1,6 +1,7 @@
 package g1201_1300.s1234_replace_the_substring_for_balanced_string
 
-// #Medium #String #Sliding_Window
+// #Medium #String #Sliding_Window #2023_06_09_Time_182_ms_(100.00%)_Space_37_MB_(87.50%)
+
 class Solution {
     fun balancedString(s: String): Int {
         val n = s.length

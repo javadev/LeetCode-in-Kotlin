@@ -1,10 +1,12 @@
 package g1201_1300.s1210_minimum_moves_to_reach_target_with_rotations
 
+// #Hard #Array #Breadth_First_Search #Matrix
+// #2023_06_09_Time_230_ms_(100.00%)_Space_44.8_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Objects
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix
 class Solution {
     fun minimumMoves(grid: Array<IntArray>): Int {
         val n = grid.size

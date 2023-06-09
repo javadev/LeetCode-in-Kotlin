@@ -1,6 +1,9 @@
 package g1201_1300.s1239_maximum_length_of_a_concatenated_string_with_unique_characters
 
 // #Medium #Array #String #Bit_Manipulation #Backtracking
+// #2023_06_09_Time_166_ms_(50.00%)_Space_37.5_MB_(50.00%)
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun maxLength(arr: List<String>): Int {
         return find(0, 0, arr)

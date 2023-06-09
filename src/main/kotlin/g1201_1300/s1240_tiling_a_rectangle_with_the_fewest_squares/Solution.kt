@@ -1,6 +1,7 @@
 package g1201_1300.s1240_tiling_a_rectangle_with_the_fewest_squares
 
-// #Hard #Dynamic_Programming #Backtracking
+// #Hard #Dynamic_Programming #Backtracking #2023_06_09_Time_134_ms_(75.00%)_Space_33.9_MB_(100.00%)
+
 class Solution {
     private var n = 0
     private var m = 0

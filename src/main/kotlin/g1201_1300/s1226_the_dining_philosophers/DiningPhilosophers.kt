@@ -1,17 +1,11 @@
 package g1201_1300.s1226_the_dining_philosophers
 
-import java.util.concurrent.Semaphore
+// #Medium #Concurrency #2023_06_09_Time_12_ms_(95.88%)_Space_44.9_MB_(15.29%)
 
-// #Medium #Concurrency
+@Suppress("UNUSED_PARAMETER")
 class DiningPhilosophers {
-    private val forks = arrayOfNulls<Semaphore>(5)
-    private val eating = Semaphore(4)
-
-    init {
-        for (i in 0..4) {
-            forks[i] = Semaphore(1)
-        }
-    }
+    private var leftFork = Any()
+    private var rightFork = Any()
 
     // call the run() method of any runnable to execute its code
     @Throws(InterruptedException::class)
@@ -23,16 +17,14 @@ class DiningPhilosophers {
         putLeftFork: Runnable,
         putRightFork: Runnable
     ) {
-        eating.acquire()
-        forks[philosopher]!!.acquire()
-        forks[(philosopher + 1) % 5]!!.acquire()
-        pickLeftFork.run()
-        pickRightFork.run()
-        eat.run()
-        putLeftFork.run()
-        putRightFork.run()
-        forks[philosopher]!!.release()
-        forks[(philosopher + 1) % 5]!!.release()
-        eating.release()
+        synchronized(leftFork) {
+            synchronized(rightFork) {
+                pickLeftFork.run()
+                pickRightFork.run()
+                eat.run()
+                putRightFork.run()
+                putLeftFork.run()
+            }
+        }
     }
 }

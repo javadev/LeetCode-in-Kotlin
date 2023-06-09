@@ -1,6 +1,7 @@
 package g1201_1300.s1247_minimum_swaps_to_make_strings_equal
 
-// #Medium #String #Math #Greedy
+// #Medium #String #Math #Greedy #2023_06_09_Time_134_ms_(66.67%)_Space_33.9_MB_(66.67%)
+
 class Solution {
     fun minimumSwap(s1: String, s2: String): Int {
         val len = s1.length

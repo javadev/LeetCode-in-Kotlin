@@ -1,6 +1,18 @@
 package g1201_1300.s1237_find_positive_integer_solution_for_a_given_equation
 
 // #Medium #Math #Binary_Search #Two_Pointers #Interactive
+// #2023_06_09_Time_176_ms_(36.36%)_Space_37.4_MB_(63.64%)
+
+/*
+ * // This is the custom function interface.
+ * // You should not implement it, or speculate about its implementation
+ * class CustomFunction {
+ *     // Returns f(x, y) for any given positive integers x and y.
+ *     // Note that f(x, y) is increasing with respect to both x and y.
+ *     // i.e. f(x, y) < f(x + 1, y), f(x, y) < f(x, y + 1)
+ *     fun f(x:Int, y:Int):Int {}
+ * };
+ */
 class Solution {
     // This is the custom function interface.
     // You should not implement it, or speculate about its implementation

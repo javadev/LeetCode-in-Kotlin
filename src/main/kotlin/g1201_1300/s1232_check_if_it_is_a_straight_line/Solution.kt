@@ -1,6 +1,8 @@
 package g1201_1300.s1232_check_if_it_is_a_straight_line
 
 // #Easy #Array #Math #Geometry #Programming_Skills_I_Day_5_Function
+// #2023_06_09_Time_152_ms_(95.38%)_Space_36.7_MB_(68.07%)
+
 class Solution {
     fun checkStraightLine(coordinates: Array<IntArray>): Boolean {
         val deltaX1 = coordinates[0][0] - coordinates[1][0]

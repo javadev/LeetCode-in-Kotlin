@@ -1,6 +1,7 @@
 package g1201_1300.s1219_path_with_maximum_gold
 
-// #Medium #Array #Matrix #Backtracking
+// #Medium #Array #Matrix #Backtracking #2023_06_09_Time_238_ms_(100.00%)_Space_34.3_MB_(100.00%)
+
 class Solution {
     private var maxGold = 0
     fun getMaximumGold(grid: Array<IntArray>): Int {

@@ -1,6 +1,7 @@
 package g1201_1300.s1223_dice_roll_simulation
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_09_Time_146_ms_(100.00%)_Space_33.8_MB_(100.00%)
+
 class Solution {
     fun dieSimulator(n: Int, rollMax: IntArray): Int {
         val all = Array(6) { LongArray(15 + 1) }

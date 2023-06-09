@@ -1,6 +1,7 @@
 package g1201_1300.s1222_queens_that_can_attack_the_king
 
-// #Medium #Array #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #2023_06_09_Time_189_ms_(50.00%)_Space_38.1_MB_(50.00%)
+
 class Solution {
     fun queensAttacktheKing(queens: Array<IntArray>, king: IntArray): List<List<Int>> {
         val result: MutableList<List<Int>> = ArrayList()
