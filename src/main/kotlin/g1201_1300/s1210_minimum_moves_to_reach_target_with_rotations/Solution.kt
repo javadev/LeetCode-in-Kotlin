@@ -15,7 +15,7 @@ class Solution {
         bq.offer(intArrayOf(0, 0, 1))
         visited[0][0] = visited[0][0] or 1
         var level = 0
-        while (!bq.isEmpty()) {
+        while (bq.isNotEmpty()) {
             val levelSize = bq.size
             for (l in 0 until levelSize) {
                 val cur = bq.poll()

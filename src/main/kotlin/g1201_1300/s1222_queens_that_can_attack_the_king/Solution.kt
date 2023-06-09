@@ -45,7 +45,6 @@ class Solution {
             "nw" -> dfs(queens, x - 1, y - 1, result, direction)
             "se" -> dfs(queens, x + 1, y + 1, result, direction)
             "sw" -> dfs(queens, x + 1, y - 1, result, direction)
-            else -> {}
         }
     }
 }
