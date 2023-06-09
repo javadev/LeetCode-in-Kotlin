@@ -7,5 +7,3 @@ FROM (
     FROM delivery
 ) subquery_alias
 WHERE subquery_alias.dnsrnk = 1;
-
-
