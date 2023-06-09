@@ -1,13 +1,13 @@
 package g1201_1300.s1203_sort_items_by_groups_respecting_dependencies
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun sortItems() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .sortItems(
                     8,
@@ -17,13 +17,13 @@ internal class SolutionTest {
                         listOf(3, 6), emptyList(), emptyList(), emptyList()
                     )
                 ),
-            CoreMatchers.equalTo(intArrayOf(6, 3, 4, 5, 2, 0, 7, 1))
+            equalTo(intArrayOf(6, 3, 4, 5, 2, 0, 7, 1))
         )
     }
 
     @Test
     fun sortItems2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .sortItems(
                     8,
@@ -39,7 +39,7 @@ internal class SolutionTest {
                         emptyList()
                     )
                 ),
-            CoreMatchers.equalTo(intArrayOf())
+            equalTo(intArrayOf())
         )
     }
 }

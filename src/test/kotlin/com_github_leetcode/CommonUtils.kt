@@ -2,7 +2,7 @@ package com_github_leetcode
 
 import java.util.Collections
 
-class CommonUtils {
+object CommonUtils {
     fun printArray(nums: IntArray) {
         for (i in nums) {
             print("$i, ")
