@@ -1969,7 +1969,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1218 |[Longest Arithmetic Subsequence of Given Difference](src/main/kotlin/g1201_1300/s1218_longest_arithmetic_subsequence_of_given_difference/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 420 | 100.00
 | 1217 |[Minimum Cost to Move Chips to The Same Position](src/main/kotlin/g1201_1300/s1217_minimum_cost_to_move_chips_to_the_same_position/Solution.kt)| Easy | Array, Math, Greedy | 119 | 100.00
 | 1210 |[Minimum Moves to Reach Target with Rotations](src/main/kotlin/g1201_1300/s1210_minimum_moves_to_reach_target_with_rotations/Solution.kt)| Hard | Array, Breadth_First_Search, Matrix | 230 | 100.00
+| 1209 |[Remove All Adjacent Duplicates in String II](src/main/kotlin/g1201_1300/s1209_remove_all_adjacent_duplicates_in_string_ii/Solution.kt)| Medium | String, Stack | 223 | 100.00
+| 1208 |[Get Equal Substrings Within Budget](src/main/kotlin/g1201_1300/s1208_get_equal_substrings_within_budget/Solution.kt)| Medium | String, Binary_Search, Prefix_Sum, Sliding_Window | 163 | 100.00
+| 1207 |[Unique Number of Occurrences](src/main/kotlin/g1201_1300/s1207_unique_number_of_occurrences/Solution.kt)| Easy | Array, Hash_Table | 151 | 83.00
 | 1206 |[Design Skiplist](src/main/kotlin/g1201_1300/s1206_design_skiplist/Skiplist.kt)| Hard | Design, Linked_List | 306 | 100.00
+| 1204 |[Last Person to Fit in the Bus](src/main/kotlin/g1201_1300/s1204_last_person_to_fit_in_the_bus/script.sql)| Medium | Database | 1476 | 82.95
 | 1203 |[Sort Items by Groups Respecting Dependencies](src/main/kotlin/g1201_1300/s1203_sort_items_by_groups_respecting_dependencies/Solution.kt)| Hard | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 503 | 100.00
 | 1202 |[Smallest String With Swaps](src/main/kotlin/g1201_1300/s1202_smallest_string_with_swaps/Solution.kt)| Medium | String, Hash_Table, Depth_First_Search, Breadth_First_Search, Union_Find | 562 | 100.00
 | 1201 |[Ugly Number III](src/main/kotlin/g1201_1300/s1201_ugly_number_iii/Solution.kt)| Medium | Math, Binary_Search, Number_Theory, Binary_Search_II_Day_20 | 136 | 100.00
