@@ -1930,6 +1930,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1283 |[Find the Smallest Divisor Given a Threshold](src/main/kotlin/g1201_1300/s1283_find_the_smallest_divisor_given_a_threshold/Solution.kt)| Medium | Array, Binary_Search, Binary_Search_II_Day_5 | 255 | 100.00
 | 1282 |[Group the People Given the Group Size They Belong To](src/main/kotlin/g1201_1300/s1282_group_the_people_given_the_group_size_they_belong_to/Solution.kt)| Medium | Array, Hash_Table | 267 | 100.00
 | 1281 |[Subtract the Product and Sum of Digits of an Integer](src/main/kotlin/g1201_1300/s1281_subtract_the_product_and_sum_of_digits_of_an_integer/Solution.kt)| Easy | Math, Programming_Skills_I_Day_2_Operator | 128 | 61.82
+| 1280 |[Students and Examinations](src/main/kotlin/g1201_1300/s1280_students_and_examinations/script.sql)| Easy | Database | 1552 | 85.96
 | 1278 |[Palindrome Partitioning III](src/main/kotlin/g1201_1300/s1278_palindrome_partitioning_iii/Solution.kt)| Hard | String, Dynamic_Programming | 137 | 100.00
 | 1277 |[Count Square Submatrices with All Ones](src/main/kotlin/g1201_1300/s1277_count_square_submatrices_with_all_ones/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 381 | 75.00
 | 1276 |[Number of Burgers with No Waste of Ingredients](src/main/kotlin/g1201_1300/s1276_number_of_burgers_with_no_waste_of_ingredients/Solution.kt)| Medium | Math | 190 | 50.00
@@ -1946,6 +1947,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1254 |[Number of Closed Islands](src/main/kotlin/g1201_1300/s1254_number_of_closed_islands/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_2_Matrix_Related_Problems | 177 | 89.47
 | 1253 |[Reconstruct a 2-Row Binary Matrix](src/main/kotlin/g1201_1300/s1253_reconstruct_a_2_row_binary_matrix/Solution.kt)| Medium | Array, Greedy, Matrix | 496 | 75.00
 | 1252 |[Cells with Odd Values in a Matrix](src/main/kotlin/g1201_1300/s1252_cells_with_odd_values_in_a_matrix/Solution.kt)| Easy | Array, Math, Simulation | 134 | 100.00
+| 1251 |[Average Selling Price](src/main/kotlin/g1201_1300/s1251_average_selling_price/script.sql)| Easy | Database | 1371 | 76.11
 | 1250 |[Check If It Is a Good Array](src/main/kotlin/g1201_1300/s1250_check_if_it_is_a_good_array/Solution.kt)| Hard | Array, Math, Number_Theory | 334 | 100.00
 | 1249 |[Minimum Remove to Make Valid Parentheses](src/main/kotlin/g1201_1300/s1249_minimum_remove_to_make_valid_parentheses/Solution.kt)| Medium | String, Stack, Data_Structure_II_Day_14_Stack_Queue | 218 | 100.00
 | 1248 |[Count Number of Nice Subarrays](src/main/kotlin/g1201_1300/s1248_count_number_of_nice_subarrays/Solution.kt)| Medium | Array, Hash_Table, Math, Sliding_Window | 431 | 93.33
@@ -1968,6 +1970,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1219 |[Path with Maximum Gold](src/main/kotlin/g1201_1300/s1219_path_with_maximum_gold/Solution.kt)| Medium | Array, Matrix, Backtracking | 238 | 100.00
 | 1218 |[Longest Arithmetic Subsequence of Given Difference](src/main/kotlin/g1201_1300/s1218_longest_arithmetic_subsequence_of_given_difference/Solution.kt)| Medium | Array, Hash_Table, Dynamic_Programming | 420 | 100.00
 | 1217 |[Minimum Cost to Move Chips to The Same Position](src/main/kotlin/g1201_1300/s1217_minimum_cost_to_move_chips_to_the_same_position/Solution.kt)| Easy | Array, Math, Greedy | 119 | 100.00
+| 1211 |[Queries Quality and Percentage](src/main/kotlin/g1201_1300/s1211_queries_quality_and_percentage/script.sql)| Easy | Database | 1176 | 80.10
 | 1210 |[Minimum Moves to Reach Target with Rotations](src/main/kotlin/g1201_1300/s1210_minimum_moves_to_reach_target_with_rotations/Solution.kt)| Hard | Array, Breadth_First_Search, Matrix | 230 | 100.00
 | 1209 |[Remove All Adjacent Duplicates in String II](src/main/kotlin/g1201_1300/s1209_remove_all_adjacent_duplicates_in_string_ii/Solution.kt)| Medium | String, Stack | 223 | 100.00
 | 1208 |[Get Equal Substrings Within Budget](src/main/kotlin/g1201_1300/s1208_get_equal_substrings_within_budget/Solution.kt)| Medium | String, Binary_Search, Prefix_Sum, Sliding_Window | 163 | 100.00
