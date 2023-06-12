@@ -966,6 +966,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0441 |[Arranging Coins](src.save/main/kotlin/g0401_0500/s0441_arranging_coins/Solution.kt)| Easy | Math, Binary_Search | 150 | 84.21
+| 1539 |[Kth Missing Positive Number](src/main/kotlin/g1501_1600/s1539_kth_missing_positive_number/Solution.kt)| Easy | Array, Binary_Search | 153 | 100.00
 
 #### Day 7
 
@@ -1094,6 +1095,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1508 |[Range Sum of Sorted Subarray Sums](src/main/kotlin/g1501_1600/s1508_range_sum_of_sorted_subarray_sums/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 378 | 66.67
 
 #### Day 15
 
@@ -1289,6 +1291,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1523 |[Count Odd Numbers in an Interval Range](src/main/kotlin/g1501_1600/s1523_count_odd_numbers_in_an_interval_range/Solution.kt)| Easy | Math | 114 | 97.22
 
 #### Day 2 Operator
 
@@ -1307,6 +1310,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1502 |[Can Make Arithmetic Progression From Sequence](src/main/kotlin/g1501_1600/s1502_can_make_arithmetic_progression_from_sequence/Solution.kt)| Easy | Array, Sorting | 156 | 94.82
 | 0202 |[Happy Number](src.save/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
 
 #### Day 5 Function
@@ -1625,6 +1629,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1527 |[Patients With a Condition](src/main/kotlin/g1501_1600/s1527_patients_with_a_condition/script.sql)| Easy | Database | 708 | 48.23
 
 #### Day 4 Union and Select
 
@@ -1786,6 +1791,44 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1550 |[Three Consecutive Odds](src/main/kotlin/g1501_1600/s1550_three_consecutive_odds/Solution.kt)| Easy | Array | 154 | 90.00
+| 1547 |[Minimum Cost to Cut a Stick](src/main/kotlin/g1501_1600/s1547_minimum_cost_to_cut_a_stick/Solution.kt)| Hard | Array, Dynamic_Programming | 187 | 92.00
+| 1546 |[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src/main/kotlin/g1501_1600/s1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target/Solution.kt)| Medium | Array, Hash_Table, Greedy, Prefix_Sum | 560 | 100.00
+| 1545 |[Find Kth Bit in Nth Binary String](src/main/kotlin/g1501_1600/s1545_find_kth_bit_in_nth_binary_string/Solution.kt)| Medium | String, Recursion | 141 | 100.00
+| 1544 |[Make The String Great](src/main/kotlin/g1501_1600/s1544_make_the_string_great/Solution.kt)| Easy | String, Stack | 164 | 92.16
+| 1542 |[Find Longest Awesome Substring](src/main/kotlin/g1501_1600/s1542_find_longest_awesome_substring/Solution.kt)| Hard | String, Hash_Table, Bit_Manipulation | 239 | 100.00
+| 1541 |[Minimum Insertions to Balance a Parentheses String](src/main/kotlin/g1501_1600/s1541_minimum_insertions_to_balance_a_parentheses_string/Solution.kt)| Medium | String, Greedy, Stack | 240 | 80.00
+| 1540 |[Can Convert String in K Moves](src/main/kotlin/g1501_1600/s1540_can_convert_string_in_k_moves/Solution.kt)| Medium | String, Hash_Table | 272 | 75.00
+| 1539 |[Kth Missing Positive Number](src/main/kotlin/g1501_1600/s1539_kth_missing_positive_number/Solution.kt)| Easy | Array, Binary_Search, Binary_Search_I_Day_6 | 153 | 100.00
+| 1537 |[Get the Maximum Score](src/main/kotlin/g1501_1600/s1537_get_the_maximum_score/Solution.kt)| Hard | Array, Dynamic_Programming, Greedy, Two_Pointers | 453 | 100.00
+| 1536 |[Minimum Swaps to Arrange a Binary Grid](src/main/kotlin/g1501_1600/s1536_minimum_swaps_to_arrange_a_binary_grid/Solution.kt)| Medium | Array, Greedy, Matrix | 336 | 100.00
+| 1535 |[Find the Winner of an Array Game](src/main/kotlin/g1501_1600/s1535_find_the_winner_of_an_array_game/Solution.kt)| Medium | Array, Simulation | 460 | 100.00
+| 1534 |[Count Good Triplets](src/main/kotlin/g1501_1600/s1534_count_good_triplets/Solution.kt)| Easy | Array, Enumeration | 175 | 66.67
+| 1531 |[String Compression II](src/main/kotlin/g1501_1600/s1531_string_compression_ii/Solution.kt)| Hard | String, Dynamic_Programming | 207 | 100.00
+| 1530 |[Number of Good Leaf Nodes Pairs](src/main/kotlin/g1501_1600/s1530_number_of_good_leaf_nodes_pairs/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 242 | 100.00
+| 1529 |[Minimum Suffix Flips](src/main/kotlin/g1501_1600/s1529_minimum_suffix_flips/Solution.kt)| Medium | String, Greedy | 200 | 100.00
+| 1528 |[Shuffle String](src/main/kotlin/g1501_1600/s1528_shuffle_string/Solution.kt)| Easy | Array, String | 180 | 89.23
+| 1527 |[Patients With a Condition](src/main/kotlin/g1501_1600/s1527_patients_with_a_condition/script.sql)| Easy | Database, SQL_I_Day_3_String_Processing_Functions | 708 | 48.23
+| 1526 |[Minimum Number of Increments on Subarrays to Form a Target Array](src/main/kotlin/g1501_1600/s1526_minimum_number_of_increments_on_subarrays_to_form_a_target_array/Solution.kt)| Hard | Array, Dynamic_Programming, Greedy, Stack, Monotonic_Stack | 466 | 100.00
+| 1525 |[Number of Good Ways to Split a String](src/main/kotlin/g1501_1600/s1525_number_of_good_ways_to_split_a_string/Solution.kt)| Medium | String, Dynamic_Programming, Bit_Manipulation | 238 | 100.00
+| 1524 |[Number of Sub-arrays With Odd Sum](src/main/kotlin/g1501_1600/s1524_number_of_sub_arrays_with_odd_sum/Solution.kt)| Medium | Array, Dynamic_Programming, Math, Prefix_Sum | 584 | 100.00
+| 1523 |[Count Odd Numbers in an Interval Range](src/main/kotlin/g1501_1600/s1523_count_odd_numbers_in_an_interval_range/Solution.kt)| Easy | Math, Programming_Skills_I_Day_1_Basic_Data_Type | 114 | 97.22
+| 1521 |[Find a Value of a Mysterious Function Closest to Target](src/main/kotlin/g1501_1600/s1521_find_a_value_of_a_mysterious_function_closest_to_target/Solution.kt)| Hard | Array, Binary_Search, Bit_Manipulation, Segment_Tree | 446 | 100.00
+| 1520 |[Maximum Number of Non-Overlapping Substrings](src/main/kotlin/g1501_1600/s1520_maximum_number_of_non_overlapping_substrings/Solution.kt)| Hard | String, Greedy | 333 | 100.00
+| 1519 |[Number of Nodes in the Sub-Tree With the Same Label](src/main/kotlin/g1501_1600/s1519_number_of_nodes_in_the_sub_tree_with_the_same_label/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Counting | 1130 | 87.50
+| 1518 |[Water Bottles](src/main/kotlin/g1501_1600/s1518_water_bottles/Solution.kt)| Easy | Math, Simulation | 116 | 100.00
+| 1515 |[Best Position for a Service Centre](src/main/kotlin/g1501_1600/s1515_best_position_for_a_service_centre/Solution.kt)| Hard | Math, Geometry, Randomized | 183 | 100.00
+| 1514 |[Path with Maximum Probability](src/main/kotlin/g1501_1600/s1514_path_with_maximum_probability/Solution.kt)| Medium | Heap_Priority_Queue, Graph, Shortest_Path | 681 | 100.00
+| 1513 |[Number of Substrings With Only 1s](src/main/kotlin/g1501_1600/s1513_number_of_substrings_with_only_1s/Solution.kt)| Medium | String, Math | 171 | 100.00
+| 1512 |[Number of Good Pairs](src/main/kotlin/g1501_1600/s1512_number_of_good_pairs/Solution.kt)| Easy | Array, Hash_Table, Math, Counting | 138 | 70.65
+| 1510 |[Stone Game IV](src/main/kotlin/g1501_1600/s1510_stone_game_iv/Solution.kt)| Hard | Dynamic_Programming, Math, Game_Theory | 137 | 100.00
+| 1509 |[Minimum Difference Between Largest and Smallest Value in Three Moves](src/main/kotlin/g1501_1600/s1509_minimum_difference_between_largest_and_smallest_value_in_three_moves/Solution.kt)| Medium | Array, Sorting, Greedy | 415 | 100.00
+| 1508 |[Range Sum of Sorted Subarray Sums](src/main/kotlin/g1501_1600/s1508_range_sum_of_sorted_subarray_sums/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers, Binary_Search_II_Day_14 | 378 | 66.67
+| 1507 |[Reformat Date](src/main/kotlin/g1501_1600/s1507_reformat_date/Solution.kt)| Easy | String | 147 | 100.00
+| 1505 |[Minimum Possible Integer After at Most K Adjacent Swaps On Digits](src/main/kotlin/g1501_1600/s1505_minimum_possible_integer_after_at_most_k_adjacent_swaps_on_digits/Solution.kt)| Hard | String, Greedy, Segment_Tree, Binary_Indexed_Tree | 226 | 100.00
+| 1504 |[Count Submatrices With All Ones](src/main/kotlin/g1501_1600/s1504_count_submatrices_with_all_ones/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix, Stack, Monotonic_Stack | 265 | 80.00
+| 1503 |[Last Moment Before All Ants Fall Out of a Plank](src/main/kotlin/g1501_1600/s1503_last_moment_before_all_ants_fall_out_of_a_plank/Solution.kt)| Medium | Array, Simulation, Brainteaser | 253 | 100.00
+| 1502 |[Can Make Arithmetic Progression From Sequence](src/main/kotlin/g1501_1600/s1502_can_make_arithmetic_progression_from_sequence/Solution.kt)| Easy | Array, Sorting, Programming_Skills_I_Day_4_Loop | 156 | 94.82
 | 1450 |[Number of Students Doing Homework at a Given Time](src/main/kotlin/g1401_1500/s1450_number_of_students_doing_homework_at_a_given_time/Solution.kt)| Easy | Array | 180 | 10.00
 | 1449 |[Form Largest Integer With Digits That Add up to Target](src/main/kotlin/g1401_1500/s1449_form_largest_integer_with_digits_that_add_up_to_target/Solution.kt)| Hard | Array, Dynamic_Programming | 201 | 100.00
 | 1448 |[Count Good Nodes in Binary Tree](src/main/kotlin/g1401_1500/s1448_count_good_nodes_in_binary_tree/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 384 | 68.52
