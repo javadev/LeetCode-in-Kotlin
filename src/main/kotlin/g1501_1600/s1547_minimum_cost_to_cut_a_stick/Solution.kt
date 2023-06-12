@@ -1,6 +1,7 @@
 package g1501_1600.s1547_minimum_cost_to_cut_a_stick
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_12_Time_187_ms_(92.00%)_Space_37.5_MB_(95.00%)
+
 class Solution {
     fun minCost(n: Int, cuts: IntArray): Int {
         cuts.sort()

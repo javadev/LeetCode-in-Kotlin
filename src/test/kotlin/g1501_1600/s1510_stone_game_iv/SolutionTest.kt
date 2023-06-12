@@ -1,22 +1,22 @@
 package g1501_1600.s1510_stone_game_iv
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun winnerSquareGame() {
-        MatcherAssert.assertThat(Solution().winnerSquareGame(1), CoreMatchers.equalTo(true))
+        assertThat(Solution().winnerSquareGame(1), equalTo(true))
     }
 
     @Test
     fun winnerSquareGame2() {
-        MatcherAssert.assertThat(Solution().winnerSquareGame(2), CoreMatchers.equalTo(false))
+        assertThat(Solution().winnerSquareGame(2), equalTo(false))
     }
 
     @Test
     fun winnerSquareGame3() {
-        MatcherAssert.assertThat(Solution().winnerSquareGame(4), CoreMatchers.equalTo(true))
+        assertThat(Solution().winnerSquareGame(4), equalTo(true))
     }
 }

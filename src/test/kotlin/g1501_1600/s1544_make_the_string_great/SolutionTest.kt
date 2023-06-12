@@ -1,22 +1,22 @@
 package g1501_1600.s1544_make_the_string_great
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun makeGood() {
-        MatcherAssert.assertThat(Solution().makeGood("leEeetcode"), CoreMatchers.equalTo("leetcode"))
+        assertThat(Solution().makeGood("leEeetcode"), equalTo("leetcode"))
     }
 
     @Test
     fun makeGood2() {
-        MatcherAssert.assertThat(Solution().makeGood("abBAcC"), CoreMatchers.equalTo(""))
+        assertThat(Solution().makeGood("abBAcC"), equalTo(""))
     }
 
     @Test
     fun makeGood3() {
-        MatcherAssert.assertThat(Solution().makeGood("s"), CoreMatchers.equalTo("s"))
+        assertThat(Solution().makeGood("s"), equalTo("s"))
     }
 }

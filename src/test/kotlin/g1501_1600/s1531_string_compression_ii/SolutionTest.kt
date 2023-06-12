@@ -1,28 +1,28 @@
 package g1501_1600.s1531_string_compression_ii
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @get:Test
     val lengthOfOptimalCompression: Unit
         get() {
-            MatcherAssert.assertThat(Solution().getLengthOfOptimalCompression("aaabcccd", 2), CoreMatchers.equalTo(4))
+            assertThat(Solution().getLengthOfOptimalCompression("aaabcccd", 2), equalTo(4))
         }
 
     @get:Test
     val lengthOfOptimalCompression2: Unit
         get() {
-            MatcherAssert.assertThat(Solution().getLengthOfOptimalCompression("aabbaa", 2), CoreMatchers.equalTo(2))
+            assertThat(Solution().getLengthOfOptimalCompression("aabbaa", 2), equalTo(2))
         }
 
     @get:Test
     val lengthOfOptimalCompression3: Unit
         get() {
-            MatcherAssert.assertThat(
+            assertThat(
                 Solution().getLengthOfOptimalCompression("aaaaaaaaaaa", 0),
-                CoreMatchers.equalTo(3)
+                equalTo(3)
             )
         }
 }

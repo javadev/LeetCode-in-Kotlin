@@ -1,6 +1,8 @@
 package g1501_1600.s1521_find_a_value_of_a_mysterious_function_closest_to_target
 
 // #Hard #Array #Binary_Search #Bit_Manipulation #Segment_Tree
+// #2023_06_12_Time_446_ms_(100.00%)_Space_50.7_MB_(100.00%)
+
 class Solution {
     fun closestToTarget(arr: IntArray, target: Int): Int {
         val prefix = IntArray(22)

@@ -1,6 +1,7 @@
 package g1501_1600.s1536_minimum_swaps_to_arrange_a_binary_grid
 
-// #Medium #Array #Greedy #Matrix
+// #Medium #Array #Greedy #Matrix #2023_06_12_Time_336_ms_(100.00%)_Space_54.8_MB_(100.00%)
+
 class Solution {
     fun minSwaps(grid: Array<IntArray>): Int {
         val len = grid.size

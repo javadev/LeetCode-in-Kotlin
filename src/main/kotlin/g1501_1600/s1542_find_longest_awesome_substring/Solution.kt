@@ -1,6 +1,8 @@
 package g1501_1600.s1542_find_longest_awesome_substring
 
 // #Hard #String #Hash_Table #Bit_Manipulation
+// #2023_06_12_Time_239_ms_(100.00%)_Space_38.3_MB_(100.00%)
+
 class Solution {
     fun longestAwesome(s: String): Int {
         val n = s.length

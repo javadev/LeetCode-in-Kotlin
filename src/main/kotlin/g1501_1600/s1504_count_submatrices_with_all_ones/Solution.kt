@@ -1,6 +1,8 @@
 package g1501_1600.s1504_count_submatrices_with_all_ones
 
 // #Medium #Array #Dynamic_Programming #Matrix #Stack #Monotonic_Stack
+// #2023_06_12_Time_265_ms_(80.00%)_Space_44.6_MB_(80.00%)
+
 class Solution {
     fun numSubmat(mat: Array<IntArray>): Int {
         val dp = Array(mat.size) { IntArray(mat[0].size) }

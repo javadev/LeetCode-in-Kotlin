@@ -1,8 +1,9 @@
 package g1501_1600.s1544_make_the_string_great
 
+// #Easy #String #Stack #2023_06_12_Time_164_ms_(92.16%)_Space_34.7_MB_(100.00%)
+
 import java.util.Stack
 
-// #Easy #String #Stack
 class Solution {
     fun makeGood(s: String): String {
         val stack = Stack<Char>()
@@ -24,7 +25,7 @@ class Solution {
             }
         }
         val sb = StringBuilder()
-        while (!stack.isEmpty()) {
+        while (stack.isNotEmpty()) {
             sb.append(stack.pop())
         }
         return sb.reverse().toString()

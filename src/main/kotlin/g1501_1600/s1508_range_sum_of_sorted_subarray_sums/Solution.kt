@@ -1,6 +1,8 @@
 package g1501_1600.s1508_range_sum_of_sorted_subarray_sums
 
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers #Binary_Search_II_Day_14
+// #2023_06_12_Time_378_ms_(66.67%)_Space_39.5_MB_(100.00%)
+
 class Solution {
     fun rangeSum(nums: IntArray, n: Int, left: Int, right: Int): Int {
         val len = n * (n + 1) / 2

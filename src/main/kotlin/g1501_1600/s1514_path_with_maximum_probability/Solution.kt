@@ -1,9 +1,11 @@
 package g1501_1600.s1514_path_with_maximum_probability
 
+// #Medium #Heap_Priority_Queue #Graph #Shortest_Path
+// #2023_06_12_Time_681_ms_(100.00%)_Space_67.5_MB_(62.50%)
+
 import java.util.ArrayDeque
 import java.util.Queue
 
-// #Medium #Heap_Priority_Queue #Graph #Shortest_Path
 class Solution {
     fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
         val nodeToNodesList: Array<MutableList<Int>?> = arrayOfNulls(n)

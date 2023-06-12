@@ -1,7 +1,7 @@
 package g1501_1600.s1527_patients_with_a_condition
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -47,15 +47,15 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(3))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("Bob"))
-                    MatcherAssert.assertThat(resultSet.getNString(3), CoreMatchers.equalTo("DIAB100 MYOP"))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(4))
-                    MatcherAssert.assertThat(resultSet.getNString(2), CoreMatchers.equalTo("George"))
-                    MatcherAssert.assertThat(resultSet.getNString(3), CoreMatchers.equalTo("ACNE DIAB100"))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(3))
+                    assertThat(resultSet.getNString(2), equalTo("Bob"))
+                    assertThat(resultSet.getNString(3), equalTo("DIAB100 MYOP"))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(4))
+                    assertThat(resultSet.getNString(2), equalTo("George"))
+                    assertThat(resultSet.getNString(3), equalTo("ACNE DIAB100"))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

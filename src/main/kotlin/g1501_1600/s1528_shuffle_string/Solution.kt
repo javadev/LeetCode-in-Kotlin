@@ -1,6 +1,7 @@
 package g1501_1600.s1528_shuffle_string
 
-// #Easy #Array #String
+// #Easy #Array #String #2023_06_12_Time_180_ms_(89.23%)_Space_36.5_MB_(81.54%)
+
 class Solution {
     fun restoreString(s: String, indices: IntArray): String {
         val c = CharArray(s.length)

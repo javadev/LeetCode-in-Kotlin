@@ -1,6 +1,9 @@
 package g1501_1600.s1505_minimum_possible_integer_after_at_most_k_adjacent_swaps_on_digits
 
 // #Hard #String #Greedy #Segment_Tree #Binary_Indexed_Tree
+// #2023_06_12_Time_226_ms_(100.00%)_Space_39.2_MB_(100.00%)
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun minInteger(num: String, k: Int): String {
         var k = k

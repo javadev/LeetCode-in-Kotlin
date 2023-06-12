@@ -1,6 +1,7 @@
 package g1501_1600.s1531_string_compression_ii
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_12_Time_207_ms_(100.00%)_Space_36.8_MB_(100.00%)
+
 class Solution {
     private val dp = Array(101) { IntArray(101) }
     private fun getLen(cnt: Int): Int {

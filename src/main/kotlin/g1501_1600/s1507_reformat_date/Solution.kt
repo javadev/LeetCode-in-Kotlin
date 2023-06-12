@@ -1,6 +1,7 @@
 package g1501_1600.s1507_reformat_date
 
-// #Easy #String
+// #Easy #String #2023_06_12_Time_147_ms_(100.00%)_Space_34_MB_(100.00%)
+
 class Solution {
     fun reformatDate(date: String): String {
         val sb = StringBuilder()

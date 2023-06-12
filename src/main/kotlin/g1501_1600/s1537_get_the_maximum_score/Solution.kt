@@ -1,6 +1,8 @@
 package g1501_1600.s1537_get_the_maximum_score
 
 // #Hard #Array #Dynamic_Programming #Greedy #Two_Pointers
+// #2023_06_12_Time_453_ms_(100.00%)_Space_51.4_MB_(100.00%)
+
 class Solution {
     fun maxSum(nums1: IntArray, nums2: IntArray): Int {
         val mod = 1000000007

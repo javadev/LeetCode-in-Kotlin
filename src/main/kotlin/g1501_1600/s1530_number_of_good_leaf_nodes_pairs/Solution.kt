@@ -1,8 +1,20 @@
 package g1501_1600.s1530_number_of_good_leaf_nodes_pairs
 
+// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #2023_06_12_Time_242_ms_(100.00%)_Space_39.1_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun countPairs(root: TreeNode?, distance: Int): Int {
         return if (distance < 2) {

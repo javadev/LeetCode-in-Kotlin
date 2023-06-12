@@ -1,6 +1,7 @@
 package g1501_1600.s1534_count_good_triplets
 
-// #Easy #Array #Enumeration
+// #Easy #Array #Enumeration #2023_06_12_Time_175_ms_(66.67%)_Space_33.7_MB_(100.00%)
+
 class Solution {
     fun countGoodTriplets(arr: IntArray, a: Int, b: Int, c: Int): Int {
         var count = 0

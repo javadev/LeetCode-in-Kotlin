@@ -1,6 +1,7 @@
 package g1501_1600.s1541_minimum_insertions_to_balance_a_parentheses_string
 
-// #Medium #String #Greedy #Stack
+// #Medium #String #Greedy #Stack #2023_06_12_Time_240_ms_(80.00%)_Space_37.6_MB_(60.00%)
+
 class Solution {
     fun minInsertions(s: String): Int {
         var conClosed = 0

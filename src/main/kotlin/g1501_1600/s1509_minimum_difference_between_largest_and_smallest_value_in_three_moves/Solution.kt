@@ -1,6 +1,7 @@
 package g1501_1600.s1509_minimum_difference_between_largest_and_smallest_value_in_three_moves
 
-// #Medium #Array #Sorting #Greedy
+// #Medium #Array #Sorting #Greedy #2023_06_12_Time_415_ms_(100.00%)_Space_54.6_MB_(71.43%)
+
 class Solution {
     fun minDifference(nums: IntArray): Int {
         nums.sort()

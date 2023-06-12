@@ -1,6 +1,8 @@
 package g1501_1600.s1524_number_of_sub_arrays_with_odd_sum
 
 // #Medium #Array #Dynamic_Programming #Math #Prefix_Sum
+// #2023_06_12_Time_584_ms_(100.00%)_Space_51.2_MB_(50.00%)
+
 class Solution {
     fun numOfSubarrays(arr: IntArray): Int {
         var number = if (arr[0] % 2 == 0) 0 else 1

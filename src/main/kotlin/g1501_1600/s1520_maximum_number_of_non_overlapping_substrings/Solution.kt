@@ -1,9 +1,10 @@
 package g1501_1600.s1520_maximum_number_of_non_overlapping_substrings
 
+// #Hard #String #Greedy #2023_06_12_Time_333_ms_(100.00%)_Space_40.9_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Hard #String #Greedy
 class Solution {
     fun maxNumOfSubstrings(s: String): List<String> {
         val lefts = IntArray(26)

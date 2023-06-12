@@ -1,6 +1,7 @@
 package g1501_1600.s1515_best_position_for_a_service_centre
 
-// #Hard #Math #Geometry #Randomized
+// #Hard #Math #Geometry #Randomized #2023_06_12_Time_183_ms_(100.00%)_Space_34.5_MB_(100.00%)
+
 class Solution {
     fun getMinDistSum(positions: Array<IntArray>): Double {
         var minX = Int.MAX_VALUE.toDouble()

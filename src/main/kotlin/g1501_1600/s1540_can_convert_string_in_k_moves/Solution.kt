@@ -1,6 +1,7 @@
 package g1501_1600.s1540_can_convert_string_in_k_moves
 
-// #Medium #String #Hash_Table
+// #Medium #String #Hash_Table #2023_06_12_Time_272_ms_(75.00%)_Space_38.2_MB_(100.00%)
+
 class Solution {
     fun canConvertString(s: String, t: String, k: Int): Boolean {
         val len1 = s.length

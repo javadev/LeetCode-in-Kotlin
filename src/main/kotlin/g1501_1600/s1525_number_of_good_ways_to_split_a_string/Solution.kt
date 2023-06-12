@@ -1,6 +1,8 @@
 package g1501_1600.s1525_number_of_good_ways_to_split_a_string
 
 // #Medium #String #Dynamic_Programming #Bit_Manipulation
+// #2023_06_12_Time_238_ms_(100.00%)_Space_37.2_MB_(100.00%)
+
 class Solution {
     fun numSplits(s: String): Int {
         val hs = HashSet<Char>()
