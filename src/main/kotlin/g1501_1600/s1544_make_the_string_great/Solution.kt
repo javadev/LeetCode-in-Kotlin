@@ -1,26 +1,25 @@
 package g1501_1600.s1544_make_the_string_great
 
-import java.util.*
+import java.util.Stack
 
 // #Easy #String #Stack
 class Solution {
     fun makeGood(s: String): String {
         val stack = Stack<Char>()
-        for (i in 0 until s.length) {
-            val c = s[i]
+        for (element in s) {
             if (stack.isEmpty()) {
-                stack.add(c)
+                stack.add(element)
             } else {
-                if (stack.peek().lowercaseChar() == c.lowercaseChar()) {
-                    if (Character.isLowerCase(stack.peek()) && Character.isUpperCase(c)) {
+                if (stack.peek().lowercaseChar() == element.lowercaseChar()) {
+                    if (Character.isLowerCase(stack.peek()) && Character.isUpperCase(element)) {
                         stack.pop()
-                    } else if (Character.isUpperCase(stack.peek()) && Character.isLowerCase(c)) {
+                    } else if (Character.isUpperCase(stack.peek()) && Character.isLowerCase(element)) {
                         stack.pop()
                     } else {
-                        stack.add(c)
+                        stack.add(element)
                     }
                 } else {
-                    stack.add(c)
+                    stack.add(element)
                 }
             }
         }

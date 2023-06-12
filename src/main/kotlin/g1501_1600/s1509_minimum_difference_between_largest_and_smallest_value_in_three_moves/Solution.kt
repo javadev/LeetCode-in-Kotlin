@@ -1,11 +1,9 @@
 package g1501_1600.s1509_minimum_difference_between_largest_and_smallest_value_in_three_moves
 
-import java.util.*
-
 // #Medium #Array #Sorting #Greedy
 class Solution {
     fun minDifference(nums: IntArray): Int {
-        Arrays.sort(nums)
+        nums.sort()
         val n = nums.size
         var res = Int.MAX_VALUE
         if (n < 4) {

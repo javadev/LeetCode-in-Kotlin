@@ -1,11 +1,9 @@
 package g1501_1600.s1547_minimum_cost_to_cut_a_stick
 
-import java.util.*
-
 // #Hard #Array #Dynamic_Programming
 class Solution {
     fun minCost(n: Int, cuts: IntArray): Int {
-        Arrays.sort(cuts)
+        cuts.sort()
         val m = cuts.size
         val dp = Array(m + 1) { IntArray(m + 1) }
         for (i in 1..m) {

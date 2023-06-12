@@ -1,13 +1,11 @@
 package g1501_1600.s1542_find_longest_awesome_substring
 
-import java.util.*
-
 // #Hard #String #Hash_Table #Bit_Manipulation
 class Solution {
     fun longestAwesome(s: String): Int {
         val n = s.length
         val idx = IntArray(Math.pow(2.0, 10.0).toInt())
-        Arrays.fill(idx, Int.MAX_VALUE)
+        idx.fill(Int.MAX_VALUE)
         idx[0] = -1
         var mask = 0
         var ans = 0

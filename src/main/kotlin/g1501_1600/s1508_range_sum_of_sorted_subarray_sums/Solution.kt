@@ -1,7 +1,5 @@
 package g1501_1600.s1508_range_sum_of_sorted_subarray_sums
 
-import java.util.*
-
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers #Binary_Search_II_Day_14
 class Solution {
     fun rangeSum(nums: IntArray, n: Int, left: Int, right: Int): Int {
@@ -17,7 +15,7 @@ class Solution {
             }
             prev = 0
         }
-        Arrays.sort(arr)
+        arr.sort()
         var result = 0
         val mod = 1000000007
         for (i in left - 1 until right) {

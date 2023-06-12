@@ -13,7 +13,7 @@ class Solution {
                 smallestRight = right[i]
             }
         }
-        if (left.size != 0 && right.size == 0) {
+        if (left.isNotEmpty() && right.isEmpty()) {
             return highestLeft
         }
         return if (right.size != 0 && left.size == 0) {

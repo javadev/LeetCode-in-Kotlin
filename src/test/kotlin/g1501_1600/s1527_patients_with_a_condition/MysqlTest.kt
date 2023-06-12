@@ -15,18 +15,20 @@ import javax.sql.DataSource
 
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqls = ["CREATE TABLE Patients(patient_id INTEGER PRIMARY KEY, patient_name"
-            + " VARCHAR, conditions VARCHAR); "
-            + "INSERT INTO Patients(patient_id, patient_name, conditions)"
-            + " VALUES (1, 'Daniel', 'YFEV COUGH'); "
-            + "INSERT INTO Patients(patient_id, patient_name, conditions)"
-            + " VALUES (2, 'Alice', ''); "
-            + "INSERT INTO Patients(patient_id, patient_name, conditions)"
-            + " VALUES (3, 'Bob', 'DIAB100 MYOP'); "
-            + "INSERT INTO Patients(patient_id, patient_name, conditions)"
-            + " VALUES (4, 'George', 'ACNE DIAB100'); "
-            + "INSERT INTO Patients(patient_id, patient_name, conditions)"
-            + " VALUES (5, 'Alain', 'DIAB201'); "]
+    initialSqls = [
+        "CREATE TABLE Patients(patient_id INTEGER PRIMARY KEY, patient_name" +
+            " VARCHAR, conditions VARCHAR); " +
+            "INSERT INTO Patients(patient_id, patient_name, conditions)" +
+            " VALUES (1, 'Daniel', 'YFEV COUGH'); " +
+            "INSERT INTO Patients(patient_id, patient_name, conditions)" +
+            " VALUES (2, 'Alice', ''); " +
+            "INSERT INTO Patients(patient_id, patient_name, conditions)" +
+            " VALUES (3, 'Bob', 'DIAB100 MYOP'); " +
+            "INSERT INTO Patients(patient_id, patient_name, conditions)" +
+            " VALUES (4, 'George', 'ACNE DIAB100'); " +
+            "INSERT INTO Patients(patient_id, patient_name, conditions)" +
+            " VALUES (5, 'Alain', 'DIAB201'); "
+    ]
 )
 internal class MysqlTest {
     @Test
@@ -37,8 +39,8 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/java/g1501_1600/s1527_patien"
-                                    + "ts_with_a_condition/script.sql"
+                            "src/main/kotlin/g1501_1600/s1527_patien" +
+                                "ts_with_a_condition/script.sql"
                         )
                     )
                         .lines()

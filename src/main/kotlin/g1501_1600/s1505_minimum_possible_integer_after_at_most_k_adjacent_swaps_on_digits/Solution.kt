@@ -1,7 +1,5 @@
 package g1501_1600.s1505_minimum_possible_integer_after_at_most_k_adjacent_swaps_on_digits
 
-import java.util.*
-
 // #Hard #String #Greedy #Segment_Tree #Binary_Indexed_Tree
 class Solution {
     fun minInteger(num: String, k: Int): String {
@@ -11,7 +9,7 @@ class Solution {
         val reduceMove = IntArray(10)
         var matchAmount = 0
         val chars = num.toCharArray()
-        Arrays.fill(digitPos, chars.size)
+        digitPos.fill(chars.size)
         for (i in chars.indices) {
             val cur = chars[i].code - '0'.code
             if (digitPos[cur] == chars.size) {
@@ -54,7 +52,7 @@ class Solution {
                 }
             }
         }
-        val start = Arrays.stream(digitPos).min().asInt
+        val start = digitPos.min()
         for (i in start until chars.size) {
             if (digitPos[chars[i].code - '0'.code] <= i) {
                 sb.append(chars[i])
