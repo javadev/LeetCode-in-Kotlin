@@ -29,7 +29,7 @@ class Solution {
         val queue: Queue<Int> = ArrayDeque()
         queue.add(start)
         visited[start] = true
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val u = queue.poll()
             visited[u] = false
             for (i in nodeToNodesList[u]?.indices!!) {

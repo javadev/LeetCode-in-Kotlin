@@ -5,24 +5,21 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val lengthOfOptimalCompression: Unit
-        get() {
-            assertThat(Solution().getLengthOfOptimalCompression("aaabcccd", 2), equalTo(4))
-        }
+    @Test
+    fun lengthOfOptimalCompression() {
+        assertThat(Solution().getLengthOfOptimalCompression("aaabcccd", 2), equalTo(4))
+    }
 
-    @get:Test
-    val lengthOfOptimalCompression2: Unit
-        get() {
-            assertThat(Solution().getLengthOfOptimalCompression("aabbaa", 2), equalTo(2))
-        }
+    @Test
+    fun lengthOfOptimalCompression2() {
+        assertThat(Solution().getLengthOfOptimalCompression("aabbaa", 2), equalTo(2))
+    }
 
-    @get:Test
-    val lengthOfOptimalCompression3: Unit
-        get() {
-            assertThat(
-                Solution().getLengthOfOptimalCompression("aaaaaaaaaaa", 0),
-                equalTo(3)
-            )
-        }
+    @Test
+    fun lengthOfOptimalCompression3() {
+        assertThat(
+            Solution().getLengthOfOptimalCompression("aaaaaaaaaaa", 0),
+            equalTo(3)
+        )
+    }
 }
