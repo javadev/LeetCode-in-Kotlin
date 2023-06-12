@@ -2,7 +2,7 @@ package g1501_1600.s1545_find_kth_bit_in_nth_binary_string
 
 // #Medium #String #Recursion #2023_06_12_Time_141_ms_(100.00%)_Space_33.2_MB_(100.00%)
 
-@Suppress("NAME_SHADOWING")
+@Suppress("NAME_SHADOWING", "UNUSED_PARAMETER")
 class Solution {
     fun findKthBit(n: Int, k: Int): Char {
         var k = k
