@@ -1,6 +1,8 @@
 package g1401_1500.s1498_number_of_subsequences_that_satisfy_the_given_sum_condition
 
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers #Binary_Search_II_Day_15
+// #2023_06_13_Time_487_ms_(97.89%)_Space_52.4_MB_(100.00%)
+
 class Solution {
     fun numSubseq(nums: IntArray, target: Int): Int {
         // sorted array will be used to perform binary search

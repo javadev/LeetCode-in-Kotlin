@@ -1,6 +1,8 @@
 package g1401_1500.s1499_max_value_of_equation
 
 // #Hard #Array #Heap_Priority_Queue #Sliding_Window #Queue #Monotonic_Queue
+// #2023_06_13_Time_708_ms_(100.00%)_Space_94.4_MB_(66.67%)
+
 class Solution {
     fun findMaxValueOfEquation(points: Array<IntArray>, k: Int): Int {
         var res = Int.MIN_VALUE

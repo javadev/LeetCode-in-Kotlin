@@ -1,6 +1,7 @@
 package g1401_1500.s1453_maximum_number_of_darts_inside_of_a_circular_dartboard
 
-// #Hard #Array #Math #Geometry
+// #Hard #Array #Math #Geometry #2023_06_13_Time_211_ms_(100.00%)_Space_37.3_MB_(100.00%)
+
 class Solution {
     private class Angle(var a: Double, var enter: Boolean) : Comparable<Angle> {
         override fun compareTo(other: Angle): Int {

@@ -1,21 +1,18 @@
 package g1401_1500.s1457_pseudo_palindromic_paths_in_a_binary_tree
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Bit_Manipulation
+// #2023_06_13_Time_583_ms_(50.00%)_Space_62.9_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Bit_Manipulation
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {
