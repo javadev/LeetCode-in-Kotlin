@@ -1,7 +1,7 @@
 package g1501_1600.s1581_customer_who_visited_but_did_not_make_any_transactions
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -56,16 +56,16 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(30))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(1))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(54))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(2))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getInt(1), CoreMatchers.equalTo(96))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(1))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(30))
+                    assertThat(resultSet.getInt(2), equalTo(1))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(54))
+                    assertThat(resultSet.getInt(2), equalTo(2))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getInt(1), equalTo(96))
+                    assertThat(resultSet.getInt(2), equalTo(1))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

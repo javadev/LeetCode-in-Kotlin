@@ -1,13 +1,13 @@
 package g1501_1600.s1559_detect_cycles_in_2d_grid
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun containsCycle() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .containsCycle(
                     arrayOf(
@@ -17,13 +17,13 @@ internal class SolutionTest {
                         charArrayOf('a', 'a', 'a', 'a')
                     )
                 ),
-            CoreMatchers.equalTo(true)
+            equalTo(true)
         )
     }
 
     @Test
     fun containsCycle2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .containsCycle(
                     arrayOf(
@@ -33,13 +33,13 @@ internal class SolutionTest {
                         charArrayOf('f', 'c', 'c', 'c')
                     )
                 ),
-            CoreMatchers.equalTo(true)
+            equalTo(true)
         )
     }
 
     @Test
     fun containsCycle3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .containsCycle(
                     arrayOf(
@@ -48,7 +48,7 @@ internal class SolutionTest {
                         charArrayOf('b', 'b', 'a')
                     )
                 ),
-            CoreMatchers.equalTo(false)
+            equalTo(false)
         )
     }
 }

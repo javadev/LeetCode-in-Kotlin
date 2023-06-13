@@ -1,7 +1,7 @@
 package g1501_1600.s1600_throne_inheritance
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class ThroneInheritanceTest {
@@ -22,9 +22,9 @@ internal class ThroneInheritanceTest {
         // order: king > andy > matthew > bob > alex > asha > catherine
         t.birth("bob", "asha")
         // return ["king", "andy", "matthew", "bob", "alex", "asha", "catherine"]
-        MatcherAssert.assertThat(
+        assertThat(
             t.inheritanceOrder,
-            CoreMatchers.equalTo(
+            equalTo(
                 mutableListOf(
                     "king", "andy", "matthew", "bob", "alex", "asha", "catherine"
                 )
@@ -34,9 +34,9 @@ internal class ThroneInheritanceTest {
         t.death("bob")
         // return ["king", "andy", "matthew", "alex", "asha", "catherine"]
         t.inheritanceOrder
-        MatcherAssert.assertThat(
+        assertThat(
             t.inheritanceOrder,
-            CoreMatchers.equalTo(mutableListOf("king", "andy", "matthew", "alex", "asha", "catherine"))
+            equalTo(mutableListOf("king", "andy", "matthew", "alex", "asha", "catherine"))
         )
     }
 }

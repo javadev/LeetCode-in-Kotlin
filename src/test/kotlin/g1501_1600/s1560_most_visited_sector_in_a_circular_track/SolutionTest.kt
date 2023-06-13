@@ -1,31 +1,31 @@
 package g1501_1600.s1560_most_visited_sector_in_a_circular_track
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun mostVisited() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().mostVisited(4, intArrayOf(1, 3, 1, 2)),
-            CoreMatchers.equalTo(mutableListOf(1, 2))
+            equalTo(mutableListOf(1, 2))
         )
     }
 
     @Test
     fun mostVisited2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().mostVisited(2, intArrayOf(2, 1, 2, 1, 2, 1, 2, 1, 2)),
-            CoreMatchers.equalTo(listOf(2))
+            equalTo(listOf(2))
         )
     }
 
     @Test
     fun mostVisited3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().mostVisited(7, intArrayOf(1, 3, 5, 7)),
-            CoreMatchers.equalTo(mutableListOf(1, 2, 3, 4, 5, 6, 7))
+            equalTo(mutableListOf(1, 2, 3, 4, 5, 6, 7))
         )
     }
 }

@@ -1,7 +1,7 @@
 package g1501_1600.s1587_bank_account_summary_ii
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -55,10 +55,10 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(true))
-                    MatcherAssert.assertThat(resultSet.getNString(1), CoreMatchers.equalTo("Alice"))
-                    MatcherAssert.assertThat(resultSet.getInt(2), CoreMatchers.equalTo(11000))
-                    MatcherAssert.assertThat(resultSet.next(), CoreMatchers.equalTo(false))
+                    assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getNString(1), equalTo("Alice"))
+                    assertThat(resultSet.getInt(2), equalTo(11000))
+                    assertThat(resultSet.next(), equalTo(false))
                 }
             }
         }

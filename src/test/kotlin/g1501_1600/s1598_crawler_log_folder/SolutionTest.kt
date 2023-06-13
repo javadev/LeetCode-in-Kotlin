@@ -1,32 +1,32 @@
 package g1501_1600.s1598_crawler_log_folder
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun minOperations() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().minOperations(arrayOf("d1/", "d2/", "../", "d21/", "./")),
-            CoreMatchers.equalTo(2)
+            equalTo(2)
         )
     }
 
     @Test
     fun minOperations2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .minOperations(arrayOf("d1/", "d2/", "./", "d3/", "../", "d31/")),
-            CoreMatchers.equalTo(3)
+            equalTo(3)
         )
     }
 
     @Test
     fun minOperations3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().minOperations(arrayOf("d1/", "../", "../", "../")),
-            CoreMatchers.equalTo(0)
+            equalTo(0)
         )
     }
 }
