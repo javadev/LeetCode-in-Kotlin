@@ -24,4 +24,3 @@ class Solution {
         return false
     }
 }
-
