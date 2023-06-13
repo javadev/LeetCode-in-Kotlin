@@ -43,7 +43,7 @@ class Solution {
             if (!mstSet[ind]) {
                 val cur: MutableSet<Int> = HashSet()
                 val p = path(f, t, w, -1, mst, g, cur)
-                if (p && !cur.isEmpty()) {
+                if (p && cur.isNotEmpty()) {
                     pce.addAll(cur)
                     pce.add(ind)
                 }

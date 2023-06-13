@@ -5,24 +5,21 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isPrefixOfWord: Unit
-        get() {
-            assertThat(Solution().isPrefixOfWord("i love eating burger", "burg"), equalTo(4))
-        }
+    @Test
+    fun isPrefixOfWord() {
+        assertThat(Solution().isPrefixOfWord("i love eating burger", "burg"), equalTo(4))
+    }
 
-    @get:Test
-    val isPrefixOfWord2: Unit
-        get() {
-            assertThat(
-                Solution().isPrefixOfWord("this problem is an easy problem", "pro"),
-                equalTo(2)
-            )
-        }
+    @Test
+    fun isPrefixOfWord2() {
+        assertThat(
+            Solution().isPrefixOfWord("this problem is an easy problem", "pro"),
+            equalTo(2)
+        )
+    }
 
-    @get:Test
-    val isPrefixOfWord3: Unit
-        get() {
-            assertThat(Solution().isPrefixOfWord("i am tired", "you"), equalTo(-1))
-        }
+    @Test
+    fun isPrefixOfWord3() {
+        assertThat(Solution().isPrefixOfWord("i am tired", "you"), equalTo(-1))
+    }
 }

@@ -23,7 +23,7 @@ class Solution {
                 q.add(i)
             }
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val j = q.poll()
             for (k in m.getOrDefault(j, ArrayList<Int>())) {
                 r[k][j] = true

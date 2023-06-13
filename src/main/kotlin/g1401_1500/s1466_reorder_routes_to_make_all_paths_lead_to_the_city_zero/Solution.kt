@@ -22,7 +22,7 @@ class Solution {
         }
         q.offer(0)
         vis[0] = true
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val node = q.poll()
             for (it in adj[node]) {
                 if (!vis[Math.abs(it)]) {

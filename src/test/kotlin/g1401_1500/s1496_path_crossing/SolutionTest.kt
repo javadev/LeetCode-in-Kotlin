@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isPathCrossing: Unit
-        get() {
-            assertThat(Solution().isPathCrossing("NES"), equalTo(false))
-        }
+    @Test
+    fun isPathCrossing() {
+        assertThat(Solution().isPathCrossing("NES"), equalTo(false))
+    }
 
-    @get:Test
-    val isPathCrossing2: Unit
-        get() {
-            assertThat(Solution().isPathCrossing("NESWW"), equalTo(true))
-        }
+    @Test
+    fun isPathCrossing2() {
+        assertThat(Solution().isPathCrossing("NESWW"), equalTo(true))
+    }
 }

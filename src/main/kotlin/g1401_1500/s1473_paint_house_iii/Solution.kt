@@ -22,7 +22,6 @@ class Solution {
         calculateMins(n, target)
         if (houses[house] > 0) costInPaintedHouse(house, houses, cost, target) else costNotPaintedHouse(
             house,
-            houses,
             cost,
             target
         )
@@ -43,7 +42,7 @@ class Solution {
         }
     }
 
-    private fun costNotPaintedHouse(house: Int, houses: IntArray, cost: Array<IntArray>, target: Int) {
+    private fun costNotPaintedHouse(house: Int, cost: Array<IntArray>, target: Int) {
         for (i in cost[house].indices) {
             val group = Math.min(target - 1, house)
             val newG = house == group
