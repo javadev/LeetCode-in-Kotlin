@@ -19,7 +19,7 @@ class Solution {
         }
         for (i in 0 until n) {
             val defaultServer = i % k
-            while (!busy.isEmpty() && busy.peek().busyTime <= arrival[i]) {
+            while (busy.isNotEmpty() && busy.peek().busyTime <= arrival[i]) {
                 val top = busy.poll()
                 available.add(top.id)
             }
