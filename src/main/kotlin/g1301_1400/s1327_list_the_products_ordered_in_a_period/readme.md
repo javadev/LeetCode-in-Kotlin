@@ -76,4 +76,10 @@ Orders table:
     | Leetcode Kit       | 100     | 
     +--------------------+---------+
 
-**Explanation:** Products with product_id = 1 is ordered in February a total of (60 + 70) = 130. Products with product_id = 2 is ordered in February a total of 80. Products with product_id = 3 is ordered in February a total of (2 + 3) = 5. Products with product_id = 4 was not ordered in February 2020. Products with product_id = 5 is ordered in February a total of (50 + 50) = 100. 
+**Explanation:**
+
+Products with product_id = 1 is ordered in February a total of (60 + 70) = 130. 
+
+Products with product_id = 2 is ordered in February a total of 80. Products with product_id = 3 is ordered in February a total of (2 + 3) = 5. 
+
+Products with product_id = 4 was not ordered in February 2020. Products with product_id = 5 is ordered in February a total of (50 + 50) = 100. 
