@@ -1,6 +1,8 @@
 package g1401_1500.s1472_design_browser_history
 
 // #Medium #Array #Stack #Design #Linked_List #Data_Stream #Doubly_Linked_List
+// #2023_06_13_Time_576_ms_(42.42%)_Space_69.1_MB_(54.55%)
+
 @Suppress("NAME_SHADOWING")
 class BrowserHistory(homepage: String) {
     internal class Node(var url: String) {
@@ -37,3 +39,10 @@ class BrowserHistory(homepage: String) {
         return curr!!.url
     }
 }
+/*
+ * Your BrowserHistory object will be instantiated and called as such:
+ * var obj = BrowserHistory(homepage)
+ * obj.visit(url)
+ * var param_2 = obj.back(steps)
+ * var param_3 = obj.forward(steps)
+ */

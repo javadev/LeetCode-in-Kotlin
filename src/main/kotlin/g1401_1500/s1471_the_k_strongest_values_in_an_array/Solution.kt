@@ -1,6 +1,7 @@
 package g1401_1500.s1471_the_k_strongest_values_in_an_array
 
-// #Medium #Array #Sorting #Two_Pointers
+// #Medium #Array #Sorting #Two_Pointers #2023_06_13_Time_780_ms_(100.00%)_Space_54.6_MB_(100.00%)
+
 class Solution {
     fun getStrongest(arr: IntArray, k: Int): IntArray {
         arr.sort()

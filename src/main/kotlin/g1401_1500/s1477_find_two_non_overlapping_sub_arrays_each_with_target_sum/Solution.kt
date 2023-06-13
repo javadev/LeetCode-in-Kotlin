@@ -1,6 +1,8 @@
 package g1401_1500.s1477_find_two_non_overlapping_sub_arrays_each_with_target_sum
 
 // #Medium #Array #Hash_Table #Dynamic_Programming #Binary_Search #Sliding_Window
+// #2023_06_13_Time_746_ms_(100.00%)_Space_50.7_MB_(100.00%)
+
 class Solution {
     fun minSumOfLengths(arr: IntArray, target: Int): Int {
         var l = 0

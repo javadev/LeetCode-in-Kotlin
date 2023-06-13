@@ -1,6 +1,7 @@
 package g1401_1500.s1475_final_prices_with_a_special_discount_in_a_shop
 
-// #Easy #Array #Stack #Monotonic_Stack
+// #Easy #Array #Stack #Monotonic_Stack #2023_06_13_Time_182_ms_(94.12%)_Space_37.2_MB_(41.18%)
+
 class Solution {
     fun finalPrices(prices: IntArray): IntArray {
         val result = IntArray(prices.size)

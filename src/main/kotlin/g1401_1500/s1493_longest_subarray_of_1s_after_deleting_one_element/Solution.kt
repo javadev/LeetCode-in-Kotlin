@@ -1,6 +1,8 @@
 package g1401_1500.s1493_longest_subarray_of_1s_after_deleting_one_element
 
 // #Medium #Dynamic_Programming #Math #Sliding_Window
+// #2023_06_13_Time_288_ms_(73.85%)_Space_46.3_MB_(70.77%)
+
 class Solution {
     fun longestSubarray(nums: IntArray): Int {
         var s = 0

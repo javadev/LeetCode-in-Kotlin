@@ -18,6 +18,7 @@ internal class SolutionTest {
                         intArrayOf(1, 10),
                         intArrayOf(5, 1)
                     ),
+                    5,
                     2,
                     3
                 ),
@@ -38,6 +39,7 @@ internal class SolutionTest {
                         intArrayOf(1, 10),
                         intArrayOf(5, 1)
                     ),
+                    5,
                     2,
                     3
                 ),
@@ -52,6 +54,7 @@ internal class SolutionTest {
                 .minCost(
                     intArrayOf(3, 1, 2, 3),
                     arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 1, 1), intArrayOf(1, 1, 1), intArrayOf(1, 1, 1)),
+                    4,
                     3,
                     3
                 ),

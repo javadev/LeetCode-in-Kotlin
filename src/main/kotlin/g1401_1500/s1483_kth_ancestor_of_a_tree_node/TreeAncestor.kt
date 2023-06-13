@@ -1,6 +1,8 @@
 package g1401_1500.s1483_kth_ancestor_of_a_tree_node
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Tree #Binary_Search #Design
+// #2023_06_13_Time_956_ms_(100.00%)_Space_113.8_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class TreeAncestor(n: Int, parent: IntArray) {
     private val steps: MutableList<Int>
@@ -47,3 +49,8 @@ class TreeAncestor(n: Int, parent: IntArray) {
         return node
     }
 }
+/*
+ * Your TreeAncestor object will be instantiated and called as such:
+ * var obj = TreeAncestor(n, parent)
+ * var param_1 = obj.getKthAncestor(node,k)
+ */

@@ -1,6 +1,7 @@
 package g1401_1500.s1470_shuffle_the_array
 
-// #Easy #Array
+// #Easy #Array #2023_06_13_Time_220_ms_(41.96%)_Space_37.6_MB_(82.52%)
+
 class Solution {
     fun shuffle(nums: IntArray, n: Int): IntArray {
         val result = IntArray(nums.size)

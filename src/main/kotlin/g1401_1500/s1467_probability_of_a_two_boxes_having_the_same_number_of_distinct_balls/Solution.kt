@@ -1,6 +1,8 @@
 package g1401_1500.s1467_probability_of_a_two_boxes_having_the_same_number_of_distinct_balls
 
 // #Hard #Dynamic_Programming #Math #Backtracking #Combinatorics #Probability_and_Statistics
+// #2023_06_13_Time_150_ms_(100.00%)_Space_34_MB_(100.00%)
+
 class Solution {
     fun getProbability(balls: IntArray): Double {
         val m = balls.size

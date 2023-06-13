@@ -1,8 +1,10 @@
 package g1401_1500.s1488_avoid_flood_in_the_city
 
+// #Medium #Array #Hash_Table #Greedy #Binary_Search #Heap_Priority_Queue #Binary_Search_II_Day_18
+// #2023_06_13_Time_823_ms_(66.67%)_Space_62.7_MB_(33.33%)
+
 import java.util.TreeSet
 
-// #Medium #Array #Hash_Table #Greedy #Binary_Search #Heap_Priority_Queue #Binary_Search_II_Day_18
 class Solution {
     fun avoidFlood(rains: IntArray): IntArray {
         val hm = HashMap<Int, Int>()
@@ -10,25 +12,25 @@ class Solution {
         val ans = IntArray(rains.size)
         var i = 0
         while (i < rains.size) {
-            val `val` = rains[i]
-            if (`val` != 0) {
-                if (hm.containsKey(`val`)) {
-                    val mapVal = hm[`val`]!!
+            val rain = rains[i]
+            if (rain != 0) {
+                if (hm.containsKey(rain)) {
+                    val mapVal = hm[rain]!!
                     if (tree.ceiling(mapVal) != null) {
-                        ans[tree.ceiling(mapVal)] = `val`
-                        hm[`val`] = i
+                        ans[tree.ceiling(mapVal)] = rain
+                        hm[rain] = i
                         tree.remove(tree.ceiling(mapVal))
                     } else {
                         return IntArray(0)
                     }
                 } else {
-                    hm[`val`] = i
+                    hm[rain] = i
                 }
                 ans[i] = -1
             } else {
                 tree.add(i)
             }
-            i = i + 1
+            i += 1
         }
         for (tr in tree) {
             ans[tr] = 1

@@ -1,9 +1,11 @@
 package g1401_1500.s1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree
 
+// #Hard #Sorting #Graph #Union_Find #Minimum_Spanning_Tree #Strongly_Connected_Component
+// #2023_06_13_Time_342_ms_(100.00%)_Space_39.1_MB_(100.00%)
+
 import java.util.Arrays
 import java.util.LinkedList
 
-// #Hard #Sorting #Graph #Union_Find #Minimum_Spanning_Tree #Strongly_Connected_Component
 class Solution {
     fun findCriticalAndPseudoCriticalEdges(n: Int, edges: Array<IntArray>): List<List<Int>> {
         // {w, ind}

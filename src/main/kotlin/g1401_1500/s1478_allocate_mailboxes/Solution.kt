@@ -1,6 +1,8 @@
 package g1401_1500.s1478_allocate_mailboxes
 
 // #Hard #Array #Dynamic_Programming #Math #Sorting
+// #2023_06_13_Time_226_ms_(100.00%)_Space_38_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minDistance(houses: IntArray, k: Int): Int {

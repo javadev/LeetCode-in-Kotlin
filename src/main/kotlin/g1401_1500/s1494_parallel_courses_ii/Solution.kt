@@ -1,6 +1,8 @@
 package g1401_1500.s1494_parallel_courses_ii
 
 // #Hard #Dynamic_Programming #Bit_Manipulation #Graph #Bitmask
+// #2023_06_13_Time_381_ms_(100.00%)_Space_37_MB_(100.00%)
+
 class Solution {
     fun minNumberOfSemesters(n: Int, relations: Array<IntArray>, k: Int): Int {
         val pres = IntArray(n)

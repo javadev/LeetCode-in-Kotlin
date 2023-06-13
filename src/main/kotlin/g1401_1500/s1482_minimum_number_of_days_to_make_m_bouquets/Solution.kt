@@ -1,48 +1,49 @@
 package g1401_1500.s1482_minimum_number_of_days_to_make_m_bouquets
 
 // #Medium #Array #Binary_Search #Binary_Search_II_Day_7
+// #2023_06_13_Time_538_ms_(50.00%)_Space_53_MB_(83.33%)
+
 class Solution {
     fun minDays(bloomDay: IntArray, m: Int, k: Int): Int {
-        val n = bloomDay.size
-        if (m * k > n) {
-            return -1
-        }
-        var left = 1
-        var right = 1
+        if (bloomDay.size < m.toLong() * k) return -1
+        var minDay = Int.MAX_VALUE
+        var maxDay = 0
         for (day in bloomDay) {
-            right = Math.max(right, day)
-        }
-        while (left < right) {
-            val guess = (left + right) / 2
-            val judgeResult = judge(bloomDay, m, k, guess)
-            if (!judgeResult) {
-                left = guess + 1
-            } else if (!judge(bloomDay, m, k, guess - 1)) {
-                return guess
-            } else {
-                right = guess
+            if (day > maxDay) {
+                maxDay = day
+            }
+            if (day < minDay) {
+                minDay = day
             }
         }
-        return left
+        var left = minDay
+        var right = maxDay
+        while (left < right) {
+            val mid = left + (right - left) / 2
+            if (canMake(bloomDay, m, k, mid)) {
+                // search in the left
+                right = mid
+            } else {
+                left = mid + 1
+            }
+        }
+        return right
     }
 
-    private fun judge(bloomDay: IntArray, m: Int, k: Int, guess: Int): Boolean {
+    private fun canMake(bloomDay: IntArray, m: Int, k: Int, day: Int): Boolean {
+        var count = 0
         var bouquets = 0
-        var cnt = 0
-        for (j in bloomDay) {
-            if (j <= guess) {
-                cnt++
-                if (cnt == k) {
-                    cnt = 0
-                    bouquets++
-                    if (bouquets >= m) {
-                        return true
-                    }
-                }
+        for (i in bloomDay.indices) {
+            if (bloomDay[i] > day) {
+                count = 0
             } else {
-                cnt = 0
+                count++
+                if (count == k) {
+                    bouquets++
+                    count = 0
+                }
             }
         }
-        return false
+        return bouquets >= m
     }
 }
