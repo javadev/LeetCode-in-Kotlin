@@ -5,6 +5,7 @@ package g1601_1700.s1601_maximum_number_of_achievable_transfer_requests
 
 class Solution {
     private var max = 0
+
     fun maximumRequests(n: Int, requests: Array<IntArray>): Int {
         helper(requests, 0, IntArray(n), 0)
         return max
