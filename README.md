@@ -1921,6 +1921,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1344 |[Angle Between Hands of a Clock](src/main/kotlin/g1301_1400/s1344_angle_between_hands_of_a_clock/Solution.kt)| Medium | Math | 118 | 83.33
 | 1343 |[Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](src/main/kotlin/g1301_1400/s1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold/Solution.kt)| Medium | Array, Sliding_Window | 394 | 84.62
 | 1342 |[Number of Steps to Reduce a Number to Zero](src/main/kotlin/g1301_1400/s1342_number_of_steps_to_reduce_a_number_to_zero/Solution.kt)| Easy | Math, Bit_Manipulation | 124 | 83.18
+| 1341 |[Movie Rating](src/main/kotlin/g1301_1400/s1341_movie_rating/script.sql)| Medium | Database | 2387 | 59.80
 | 1340 |[Jump Game V](src/main/kotlin/g1301_1400/s1340_jump_game_v/Solution.kt)| Hard | Array, Dynamic_Programming, Sorting | 208 | 100.00
 | 1339 |[Maximum Product of Splitted Binary Tree](src/main/kotlin/g1301_1400/s1339_maximum_product_of_splitted_binary_tree/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 384 | 100.00
 | 1338 |[Reduce Array Size to The Half](src/main/kotlin/g1301_1400/s1338_reduce_array_size_to_the_half/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue | 579 | 71.43
@@ -1933,10 +1934,12 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1330 |[Reverse Subarray To Maximize Array Value](src/main/kotlin/g1301_1400/s1330_reverse_subarray_to_maximize_array_value/Solution.kt)| Hard | Array, Math, Greedy | 347 | 100.00
 | 1329 |[Sort the Matrix Diagonally](src/main/kotlin/g1301_1400/s1329_sort_the_matrix_diagonally/Solution.kt)| Medium | Array, Sorting, Matrix | 243 | 100.00
 | 1328 |[Break a Palindrome](src/main/kotlin/g1301_1400/s1328_break_a_palindrome/Solution.kt)| Medium | String, Greedy | 137 | 81.82
+| 1327 |[List the Products Ordered in a Period](src/main/kotlin/g1301_1400/s1327_list_the_products_ordered_in_a_period/script.sql)| Easy | Database | 1324 | 61.30
 | 1326 |[Minimum Number of Taps to Open to Water a Garden](src/main/kotlin/g1301_1400/s1326_minimum_number_of_taps_to_open_to_water_a_garden/Solution.kt)| Hard | Array, Dynamic_Programming, Greedy | 189 | 100.00
 | 1325 |[Delete Leaves With a Given Value](src/main/kotlin/g1301_1400/s1325_delete_leaves_with_a_given_value/Solution.kt)| Medium | Depth_First_Search, Tree, Binary_Tree | 185 | 100.00
 | 1324 |[Print Words Vertically](src/main/kotlin/g1301_1400/s1324_print_words_vertically/Solution.kt)| Medium | Array, String, Simulation | 149 | 66.67
 | 1323 |[Maximum 69 Number](src/main/kotlin/g1301_1400/s1323_maximum_69_number/Solution.kt)| Easy | Math, Greedy | 118 | 90.00
+| 1321 |[Restaurant Growth](src/main/kotlin/g1301_1400/s1321_restaurant_growth/script.sql)| Medium | Database | 630 | 83.05
 | 1320 |[Minimum Distance to Type a Word Using Two Fingers](src/main/kotlin/g1301_1400/s1320_minimum_distance_to_type_a_word_using_two_fingers/Solution.kt)| Hard | String, Dynamic_Programming | 181 | 100.00
 | 1319 |[Number of Operations to Make Network Connected](src/main/kotlin/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_8_Standard_Traversal | 379 | 83.33
 | 1318 |[Minimum Flips to Make a OR b Equal to c](src/main/kotlin/g1301_1400/s1318_minimum_flips_to_make_a_or_b_equal_to_c/Solution.kt)| Medium | Bit_Manipulation | 123 | 88.89
