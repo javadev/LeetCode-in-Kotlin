@@ -15,8 +15,8 @@ class Solution {
             timeStamps.sort()
             var i = 0
             while (i + 2 < timeStamps.size) {
-                val first = timeStamps[i].split(":".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-                val third = timeStamps[i + 2].split(":".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                val first = timeStamps[i].split(":").dropLastWhile { it.isEmpty() }.toTypedArray()
+                val third = timeStamps[i + 2].split(":").dropLastWhile { it.isEmpty() }.toTypedArray()
                 val hourDiff = third[0].toInt() - first[0].toInt()
                 val minDiff = third[1].toInt() - first[1].toInt()
                 if (hourDiff == 0 || hourDiff == 1 && minDiff <= 0) {
