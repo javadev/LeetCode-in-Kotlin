@@ -23,7 +23,7 @@ import javax.sql.DataSource
             " VALUES (2, 'Frozen 2'); " +
             "INSERT INTO Movies(movie_id, title)" +
             " VALUES (3, 'Joker'); " +
-        "CREATE TABLE Users(user_id INTEGER, name VARCHAR); " +
+            "CREATE TABLE Users(user_id INTEGER, name VARCHAR); " +
             "INSERT INTO Users(user_id, name)" +
             " VALUES (1, 'Daniel'); " +
             "INSERT INTO Users(user_id, name)" +
@@ -32,7 +32,7 @@ import javax.sql.DataSource
             " VALUES (3, 'Maria'); " +
             "INSERT INTO Users(user_id, name)" +
             " VALUES (4, 'James'); " +
-        "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER, rating INTEGER, created_at DATE); " +
+            "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER, rating INTEGER, created_at DATE); " +
             "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)" +
             " VALUES (1, 1, 3, '2020-01-12'); " +
             "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)" +
@@ -63,7 +63,7 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1341_movie_rating" +
-                                    "/script.sql"
+                                "/script.sql"
                         )
                     )
                         .lines()

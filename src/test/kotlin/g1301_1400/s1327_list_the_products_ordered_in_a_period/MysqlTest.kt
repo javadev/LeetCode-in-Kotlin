@@ -27,7 +27,7 @@ import javax.sql.DataSource
             " VALUES (4, 'Lenovo', 'Laptop'); " +
             "INSERT INTO Products(product_id, product_name, product_category)" +
             " VALUES (5, 'Leetcode Kit', 'T-shirt'); " +
-        "CREATE TABLE Orders(product_id INTEGER, order_date DATE, unit INTEGER); " +
+            "CREATE TABLE Orders(product_id INTEGER, order_date DATE, unit INTEGER); " +
             "INSERT INTO Orders(product_id, order_date, unit)" +
             " VALUES (1, '2020-02-05', 60); " +
             "INSERT INTO Orders(product_id, order_date, unit)" +
@@ -64,7 +64,7 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1327_list_the_products_ordered_in_a_period" +
-                                    "/script.sql"
+                                "/script.sql"
                         )
                     )
                         .lines()

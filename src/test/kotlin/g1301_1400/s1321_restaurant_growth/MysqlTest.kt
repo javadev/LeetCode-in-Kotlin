@@ -40,7 +40,7 @@ import javax.sql.DataSource
             " VALUES (1, 'Jhon', '2019-01-10', 130); " +
             "INSERT INTO Customer(customer_id, name, visited_on, amount)" +
             " VALUES (3, 'Jaze', '2019-01-10', 150); "
-        ]
+    ]
 )
 internal class MysqlTest {
     @Test
