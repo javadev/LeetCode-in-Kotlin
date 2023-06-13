@@ -94,4 +94,8 @@ MovieRating table:
     | Frozen 2     | 
     +--------------+
 
-**Explanation:** Daniel and Monica have rated 3 movies ("Avengers", "Frozen 2" and "Joker") but Daniel is smaller lexicographically. Frozen 2 and Joker have a rating average of 3.5 in February but Frozen 2 is smaller lexicographically. 
+**Explanation:**
+
+Daniel and Monica have rated 3 movies ("Avengers", "Frozen 2" and "Joker") but Daniel is smaller lexicographically.
+
+Frozen 2 and Joker have a rating average of 3.5 in February but Frozen 2 is smaller lexicographically. 
