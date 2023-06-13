@@ -1,6 +1,7 @@
 package g1401_1500.s1472_design_browser_history
 
 // #Medium #Array #Stack #Design #Linked_List #Data_Stream #Doubly_Linked_List
+@Suppress("NAME_SHADOWING")
 class BrowserHistory(homepage: String) {
     internal class Node(var url: String) {
         var prev: Node? = null

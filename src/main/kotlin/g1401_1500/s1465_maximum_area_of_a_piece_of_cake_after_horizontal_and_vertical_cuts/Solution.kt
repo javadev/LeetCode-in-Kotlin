@@ -1,6 +1,7 @@
 package g1401_1500.s1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts
 
-// #Medium #Array #Sorting #Greedy
+// #Medium #Array #Sorting #Greedy #2023_06_13_Time_418_ms_(50.00%)_Space_55.5_MB_(50.00%)
+
 class Solution {
     fun maxArea(h: Int, w: Int, horizontalCuts: IntArray, verticalCuts: IntArray): Int {
         horizontalCuts.sort()

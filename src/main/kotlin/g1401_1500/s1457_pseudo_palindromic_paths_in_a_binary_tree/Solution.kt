@@ -26,21 +26,20 @@ class Solution {
         return ans
     }
 
-    private val isPalidrome: Int
-        private get() {
-            var c = 0
-            var s = 0
-            for (i in 0..9) {
-                s += arr[i]
-                if (arr[i] % 2 != 0) {
-                    c++
-                }
+    private fun isPalidrome(): Int {
+        var c = 0
+        var s = 0
+        for (i in 0..9) {
+            s += arr[i]
+            if (arr[i] % 2 != 0) {
+                c++
             }
-            if (s % 2 == 0) {
-                return if (c == 0) 1 else 0
-            }
-            return if (c <= 1) 1 else 0
         }
+        if (s % 2 == 0) {
+            return if (c == 0) 1 else 0
+        }
+        return if (c <= 1) 1 else 0
+    }
 
     private fun path(root: TreeNode?) {
         if (root == null) {
@@ -48,7 +47,7 @@ class Solution {
         }
         if (root.left == null && root.right == null) {
             arr[root.`val`]++
-            ans += isPalidrome
+            ans += isPalidrome()
             arr[root.`val`]--
             return
         }

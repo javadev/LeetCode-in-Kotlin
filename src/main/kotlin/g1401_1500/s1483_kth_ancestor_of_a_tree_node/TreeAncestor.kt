@@ -1,6 +1,7 @@
 package g1401_1500.s1483_kth_ancestor_of_a_tree_node
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Tree #Binary_Search #Design
+@Suppress("NAME_SHADOWING")
 class TreeAncestor(n: Int, parent: IntArray) {
     private val steps: MutableList<Int>
     private val stepMap: MutableMap<Int, IntArray>

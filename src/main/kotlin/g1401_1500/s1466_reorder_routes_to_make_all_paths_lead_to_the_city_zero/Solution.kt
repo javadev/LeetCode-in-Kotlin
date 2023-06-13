@@ -1,10 +1,12 @@
 package g1401_1500.s1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph
+// #Graph_Theory_I_Day_10_Standard_Traversal
+// #2023_06_13_Time_718_ms_(100.00%)_Space_61.9_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph
-// #Graph_Theory_I_Day_10_Standard_Traversal
 class Solution {
     fun minReorder(n: Int, connections: Array<IntArray>): Int {
         val q: Queue<Int> = LinkedList()

@@ -1,6 +1,7 @@
 package g1401_1500.s1481_least_number_of_unique_integers_after_k_removals
 
 // #Medium #Array #Hash_Table #Sorting #Greedy #Counting
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun findLeastNumOfUniqueInts(arr: IntArray, k: Int): Int {
         var k = k
