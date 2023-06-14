@@ -1,6 +1,8 @@
 package g1501_1600.s1593_split_a_string_into_the_max_number_of_unique_substrings
 
 // #Medium #String #Hash_Table #Backtracking
+// #2023_06_14_Time_161_ms_(100.00%)_Space_34.8_MB_(100.00%)
+
 class Solution {
     fun maxUniqueSplit(s: String): Int {
         var lo = 1

@@ -1,6 +1,8 @@
 package g1501_1600.s1572_matrix_diagonal_sum
 
 // #Easy #Array #Matrix #Programming_Skills_I_Day_7_Array #Udemy_2D_Arrays/Matrix
+// #2023_06_14_Time_221_ms_(67.61%)_Space_38.6_MB_(96.15%)
+
 class Solution {
     fun diagonalSum(mat: Array<IntArray>): Int {
         val m = mat.size

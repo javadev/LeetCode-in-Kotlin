@@ -1,6 +1,8 @@
 package g1501_1600.s1574_shortest_subarray_to_be_removed_to_make_array_sorted
 
 // #Medium #Array #Binary_Search #Two_Pointers #Stack #Monotonic_Stack #Binary_Search_II_Day_14
+// #2023_06_14_Time_477_ms_(50.00%)_Space_55.9_MB_(100.00%)
+
 class Solution {
     fun findLengthOfShortestSubarray(arr: IntArray): Int {
         var left = 0

@@ -1,6 +1,8 @@
 package g1501_1600.s1594_maximum_non_negative_product_in_a_matrix
 
 // #Medium #Array #Dynamic_Programming #Matrix
+// #2023_06_14_Time_224_ms_(100.00%)_Space_35_MB_(100.00%)
+
 class Solution {
     private class Tuple(var max: Long, var min: Long)
 

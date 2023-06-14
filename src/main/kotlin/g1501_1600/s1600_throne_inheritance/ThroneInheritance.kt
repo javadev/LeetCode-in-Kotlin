@@ -1,6 +1,8 @@
 package g1501_1600.s1600_throne_inheritance
 
 // #Medium #Hash_Table #Depth_First_Search #Tree #Design
+// #2023_06_14_Time_1847_ms_(100.00%)_Space_136.1_MB_(100.00%)
+
 class ThroneInheritance(private val king: String) {
     private val graph: HashMap<String, LinkedHashSet<String>>
     private val isDead: HashSet<String>
@@ -20,13 +22,12 @@ class ThroneInheritance(private val king: String) {
         isDead.add(name)
     }
 
-    val inheritanceOrder: List<String>
-        get() {
-            val inheritance: MutableList<String> = ArrayList()
-            val visited = HashSet<String>()
-            dfs(graph, king, inheritance, visited)
-            return inheritance
-        }
+    fun getInheritanceOrder(): List<String> {
+        val inheritance: MutableList<String> = ArrayList()
+        val visited = HashSet<String>()
+        dfs(graph, king, inheritance, visited)
+        return inheritance
+    }
 
     fun dfs(
         graph: Map<String, LinkedHashSet<String>>,
@@ -48,3 +49,10 @@ class ThroneInheritance(private val king: String) {
         }
     }
 }
+/*
+ * Your ThroneInheritance object will be instantiated and called as such:
+ * var obj = ThroneInheritance(kingName)
+ * obj.birth(parentName,childName)
+ * obj.death(name)
+ * var param_3 = obj.getInheritanceOrder()
+ */

@@ -1,6 +1,8 @@
 package g1501_1600.s1562_find_latest_group_of_size_m
 
 // #Medium #Array #Binary_Search #Simulation #Binary_Search_II_Day_19
+// #2023_06_14_Time_534_ms_(100.00%)_Space_52_MB_(100.00%)
+
 class Solution {
     fun findLatestStep(arr: IntArray, m: Int): Int {
         val lengthAtIndex = IntArray(arr.size + 2)

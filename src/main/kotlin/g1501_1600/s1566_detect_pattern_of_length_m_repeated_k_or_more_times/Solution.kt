@@ -1,6 +1,6 @@
 package g1501_1600.s1566_detect_pattern_of_length_m_repeated_k_or_more_times
 
-// #Easy #Array #Enumeration
+// #Easy #Array #Enumeration #2023_06_14_Time_168_ms_(33.33%)_Space_36.4_MB_(16.67%)
 
 class Solution {
     fun containsPattern(arr: IntArray, m: Int, k: Int): Boolean {

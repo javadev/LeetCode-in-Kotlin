@@ -1,6 +1,7 @@
 package g1501_1600.s1592_rearrange_spaces_between_words
 
-// #Easy #String
+// #Easy #String #2023_06_14_Time_182_ms_(75.00%)_Space_35.2_MB_(100.00%)
+
 class Solution {
     fun reorderSpaces(text: String): String {
         var spaceCount = 0

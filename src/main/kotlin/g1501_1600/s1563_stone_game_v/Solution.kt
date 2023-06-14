@@ -1,6 +1,8 @@
 package g1501_1600.s1563_stone_game_v
 
 // #Hard #Array #Dynamic_Programming #Math #Game_Theory
+// #2023_06_14_Time_371_ms_(100.00%)_Space_40.5_MB_(100.00%)
+
 class Solution {
     fun stoneGameV(stoneValue: IntArray): Int {
         val n = stoneValue.size

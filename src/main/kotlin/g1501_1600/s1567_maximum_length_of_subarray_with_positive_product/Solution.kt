@@ -1,6 +1,8 @@
 package g1501_1600.s1567_maximum_length_of_subarray_with_positive_product
 
 // #Medium #Array #Dynamic_Programming #Greedy #Dynamic_Programming_I_Day_6
+// #2023_06_14_Time_468_ms_(33.33%)_Space_51.6_MB_(83.33%)
+
 class Solution {
     fun getMaxLen(nums: IntArray): Int {
         var posLen = 0

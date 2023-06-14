@@ -1,6 +1,8 @@
 package g1501_1600.s1595_minimum_cost_to_connect_two_groups_of_points
 
 // #Hard #Array #Dynamic_Programming #Matrix #Bit_Manipulation #Bitmask
+// #2023_06_14_Time_278_ms_(100.00%)_Space_38.4_MB_(100.00%)
+
 class Solution {
     fun connectTwoGroups(cost: List<List<Int>>): Int {
         // size of set 1

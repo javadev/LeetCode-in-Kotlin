@@ -1,6 +1,7 @@
 package g1501_1600.s1573_number_of_ways_to_split_a_string
 
-// #Medium #String #Math
+// #Medium #String #Math #2023_06_14_Time_247_ms_(100.00%)_Space_37.7_MB_(100.00%)
+
 class Solution {
     fun numWays(s: String): Int {
         var totalOnesCount: Long = 0

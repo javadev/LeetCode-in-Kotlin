@@ -1,6 +1,8 @@
 package g1501_1600.s1568_minimum_number_of_days_to_disconnect_island
 
 // #Hard #Array #Depth_First_Search #Breadth_First_Search #Matrix #Strongly_Connected_Component
+// #2023_06_14_Time_210_ms_(100.00%)_Space_35.9_MB_(100.00%)
+
 class Solution {
     private val dirs = arrayOf(intArrayOf(0, 1), intArrayOf(0, -1), intArrayOf(1, 0), intArrayOf(-1, 0))
     fun minDays(grid: Array<IntArray>): Int {
