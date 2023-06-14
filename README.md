@@ -1033,6 +1033,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0875 |[Koko Eating Bananas](src.save/main/kotlin/g0801_0900/s0875_koko_eating_bananas/Solution.kt)| Medium | Array, Binary_Search | 267 | 93.85
+| 1552 |[Magnetic Force Between Two Balls](src/main/kotlin/g1501_1600/s1552_magnetic_force_between_two_balls/Solution.kt)| Medium | Array, Sorting, Binary_Search | 636 | 100.00
 
 #### Day 5
 
@@ -1804,6 +1805,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1604 |[Alert Using Same Key-Card Three or More Times in a One Hour Period](src/main/kotlin/g1601_1700/s1604_alert_using_same_key_card_three_or_more_times_in_a_one_hour_period/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 1063 | 20.00
 | 1603 |[Design Parking System](src/main/kotlin/g1601_1700/s1603_design_parking_system/ParkingSystem.kt)| Easy | Design, Simulation, Counting, Programming_Skills_I_Day_12_Class_and_Object | 376 | 31.83
 | 1601 |[Maximum Number of Achievable Transfer Requests](src/main/kotlin/g1601_1700/s1601_maximum_number_of_achievable_transfer_requests/Solution.kt)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 206 | 100.00
+| 1556 |[Thousand Separator](src/main/kotlin/g1501_1600/s1556_thousand_separator/Solution.kt)| Easy | String | 131 | 100.00
+| 1553 |[Minimum Number of Days to Eat N Oranges](src/main/kotlin/g1501_1600/s1553_minimum_number_of_days_to_eat_n_oranges/Solution.kt)| Hard | Dynamic_Programming, Memoization | 153 | 100.00
+| 1552 |[Magnetic Force Between Two Balls](src/main/kotlin/g1501_1600/s1552_magnetic_force_between_two_balls/Solution.kt)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_4 | 636 | 100.00
+| 1551 |[Minimum Operations to Make Array Equal](src/main/kotlin/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.kt)| Medium | Math | 119 | 100.00
 | 1550 |[Three Consecutive Odds](src/main/kotlin/g1501_1600/s1550_three_consecutive_odds/Solution.kt)| Easy | Array | 154 | 90.00
 | 1547 |[Minimum Cost to Cut a Stick](src/main/kotlin/g1501_1600/s1547_minimum_cost_to_cut_a_stick/Solution.kt)| Hard | Array, Dynamic_Programming | 187 | 92.00
 | 1546 |[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src/main/kotlin/g1501_1600/s1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target/Solution.kt)| Medium | Array, Hash_Table, Greedy, Prefix_Sum | 560 | 100.00
