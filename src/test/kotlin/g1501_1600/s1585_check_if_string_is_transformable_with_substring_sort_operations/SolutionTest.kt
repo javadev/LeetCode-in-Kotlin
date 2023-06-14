@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isTransformable: Unit
-        get() {
-            assertThat(Solution().isTransformable("84532", "34852"), equalTo(true))
-        }
+    @Test
+    fun isTransformable() {
+        assertThat(Solution().isTransformable("84532", "34852"), equalTo(true))
+    }
 
-    @get:Test
-    val isTransformable2: Unit
-        get() {
-            assertThat(Solution().isTransformable("34521", "23415"), equalTo(true))
-        }
+    @Test
+    fun isTransformable2() {
+        assertThat(Solution().isTransformable("34521", "23415"), equalTo(true))
+    }
 
-    @get:Test
-    val isTransformable3: Unit
-        get() {
-            assertThat(Solution().isTransformable("12345", "12435"), equalTo(false))
-        }
+    @Test
+    fun isTransformable3() {
+        assertThat(Solution().isTransformable("12345", "12435"), equalTo(false))
+    }
 }
