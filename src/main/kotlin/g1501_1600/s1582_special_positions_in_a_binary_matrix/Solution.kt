@@ -1,6 +1,7 @@
 package g1501_1600.s1582_special_positions_in_a_binary_matrix
 
-// #Easy #Array #Matrix
+// #Easy #Array #Matrix #2023_06_14_Time_212_ms_(60.00%)_Space_37.8_MB_(80.00%)
+
 class Solution {
     fun numSpecial(mat: Array<IntArray>): Int {
         var count = 0

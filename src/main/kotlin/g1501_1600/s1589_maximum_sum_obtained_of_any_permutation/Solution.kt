@@ -1,6 +1,8 @@
 package g1501_1600.s1589_maximum_sum_obtained_of_any_permutation
 
 // #Medium #Array #Sorting #Greedy #Prefix_Sum
+// #2023_06_14_Time_867_ms_(66.67%)_Space_81.6_MB_(66.67%)
+
 class Solution {
     fun maxSumRangeQuery(nums: IntArray, requests: Array<IntArray>): Int {
         nums.sort()

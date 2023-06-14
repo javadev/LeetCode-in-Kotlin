@@ -1,6 +1,8 @@
 package g1501_1600.s1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers
 
 // #Medium #Array #Hash_Table #Math #Two_Pointers
+// #2023_06_14_Time_209_ms_(100.00%)_Space_37.7_MB_(100.00%)
+
 class Solution {
     fun numTriplets(nums1: IntArray, nums2: IntArray): Int {
         nums1.sort()

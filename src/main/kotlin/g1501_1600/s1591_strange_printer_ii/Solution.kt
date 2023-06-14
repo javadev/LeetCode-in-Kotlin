@@ -1,6 +1,8 @@
 package g1501_1600.s1591_strange_printer_ii
 
 // #Hard #Array #Matrix #Graph #Topological_Sort
+// #2023_06_14_Time_321_ms_(100.00%)_Space_38.7_MB_(100.00%)
+
 class Solution {
     fun isPrintable(targetGrid: Array<IntArray>): Boolean {
         val colorBound = Array(61) { IntArray(4) }

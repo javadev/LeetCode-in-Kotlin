@@ -1,6 +1,7 @@
 package g1501_1600.s1585_check_if_string_is_transformable_with_substring_sort_operations
 
-// #Hard #String #Sorting #Greedy
+// #Hard #String #Sorting #Greedy #2023_06_14_Time_271_ms_(100.00%)_Space_38.8_MB_(100.00%)
+
 class Solution {
     fun isTransformable(s: String, t: String): Boolean {
         val n = s.length

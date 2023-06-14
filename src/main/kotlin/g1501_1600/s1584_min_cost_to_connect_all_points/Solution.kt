@@ -1,8 +1,10 @@
 package g1501_1600.s1584_min_cost_to_connect_all_points
 
+// #Medium #Array #Union_Find #Minimum_Spanning_Tree
+// #2023_06_14_Time_331_ms_(95.12%)_Space_44.5_MB_(95.12%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Union_Find #Minimum_Spanning_Tree
 class Solution {
     fun minCostConnectPoints(points: Array<IntArray>): Int {
         val v = points.size

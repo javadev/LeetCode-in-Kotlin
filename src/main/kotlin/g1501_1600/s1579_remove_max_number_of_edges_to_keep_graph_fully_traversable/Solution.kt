@@ -1,8 +1,9 @@
 package g1501_1600.s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable
 
+// #Hard #Graph #Union_Find #2023_06_14_Time_942_ms_(32.52%)_Space_92.5_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Hard #Graph #Union_Find
 class Solution {
     fun maxNumEdgesToRemove(n: Int, edges: Array<IntArray>): Int {
         Arrays.sort(edges) { a: IntArray, b: IntArray -> b[0] - a[0] }

@@ -1,6 +1,7 @@
 package g1501_1600.s1576_replace_all_s_to_avoid_consecutive_repeating_characters
 
-// #Easy #String
+// #Easy #String #2023_06_14_Time_180_ms_(37.50%)_Space_35.3_MB_(87.50%)
+
 class Solution {
     fun modifyString(s: String): String {
         val sb = StringBuilder()

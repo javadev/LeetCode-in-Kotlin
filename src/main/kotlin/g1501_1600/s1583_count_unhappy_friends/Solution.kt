@@ -1,6 +1,7 @@
 package g1501_1600.s1583_count_unhappy_friends
 
-// #Medium #Array #Simulation
+// #Medium #Array #Simulation #2023_06_14_Time_324_ms_(100.00%)_Space_60.5_MB_(100.00%)
+
 class Solution {
     fun unhappyFriends(n: Int, preferences: Array<IntArray>, pairs: Array<IntArray>): Int {
         var unhappyFriends = 0
