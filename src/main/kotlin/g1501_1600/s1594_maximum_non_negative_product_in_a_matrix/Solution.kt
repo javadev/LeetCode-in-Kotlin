@@ -37,9 +37,7 @@ class Solution {
                 val up2 = dp[i - 1][j]!!.min * grid[i]!![j]
                 val left1 = dp[i][j - 1]!!.max * grid[i]!![j]
                 val left2 = dp[i][j - 1]!!.min * grid[i]!![j]
-                // max(up1, up2, left1, left2)
                 dp[i][j]!!.max = Math.max(up1, Math.max(up2, Math.max(left1, left2)))
-                // min(up1, up2, left1, left2)
                 dp[i][j]!!.min = Math.min(up1, Math.min(up2, Math.min(left1, left2)))
             }
         }
