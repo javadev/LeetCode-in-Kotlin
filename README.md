@@ -292,6 +292,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 0074 |[Search a 2D Matrix](src.save/main/kotlin/g0001_0100/s0074_search_a_2d_matrix/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix | 290 | 40.17
 | 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
 | 0048 |[Rotate Image](src.save/main/kotlin/g0001_0100/s0048_rotate_image/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Matrix | 287 | 46.50
+| 1572 |[Matrix Diagonal Sum](src/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix | 221 | 67.61
 | 0073 |[Set Matrix Zeroes](src.save/main/kotlin/g0001_0100/s0073_set_matrix_zeroes/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Matrix | 255 | 100.00
 | 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 320 | 94.22
 
@@ -651,6 +652,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0997 |[Find the Town Judge](src.save/main/kotlin/g0901_1000/s0997_find_the_town_judge/Solution.kt)| Easy | Array, Hash_Table, Graph | 475 | 58.62
+| 1557 |[Minimum Number of Vertices to Reach All Nodes](src/main/kotlin/g1501_1600/s1557_minimum_number_of_vertices_to_reach_all_nodes/Solution.kt)| Medium | Graph | 792 | 99.29
 | 0841 |[Keys and Rooms](src.save/main/kotlin/g0801_0900/s0841_keys_and_rooms/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 189 | 69.23
 
 #### Day 20 Heap Priority Queue
@@ -1098,6 +1100,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1508 |[Range Sum of Sorted Subarray Sums](src/main/kotlin/g1501_1600/s1508_range_sum_of_sorted_subarray_sums/Solution.kt)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 378 | 66.67
+| 1574 |[Shortest Subarray to be Removed to Make Array Sorted](src/main/kotlin/g1501_1600/s1574_shortest_subarray_to_be_removed_to_make_array_sorted/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers, Stack, Monotonic_Stack | 477 | 50.00
 
 #### Day 15
 
@@ -1129,6 +1132,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1562 |[Find Latest Group of Size M](src/main/kotlin/g1501_1600/s1562_find_latest_group_of_size_m/Solution.kt)| Medium | Array, Binary_Search, Simulation | 534 | 100.00
 
 #### Day 20
 
@@ -1180,6 +1184,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0152 |[Maximum Product Subarray](src.save/main/kotlin/g0101_0200/s0152_maximum_product_subarray/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 253 | 88.42
+| 1567 |[Maximum Length of Subarray With Positive Product](src/main/kotlin/g1501_1600/s1567_maximum_length_of_subarray_with_positive_product/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy | 468 | 33.33
 
 #### Day 7
 
@@ -1330,12 +1335,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1588 |[Sum of All Odd Length Subarrays](src/main/kotlin/g1501_1600/s1588_sum_of_all_odd_length_subarrays/Solution.kt)| Easy | Array, Math, Prefix_Sum | 157 | 64.00
 | 0283 |[Move Zeroes](src.save/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Two_Pointers | 516 | 79.07
 
 #### Day 7 Array
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1572 |[Matrix Diagonal Sum](src/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix | 221 | 67.61
 | 0566 |[Reshape the Matrix](src.save/main/kotlin/g0501_0600/s0566_reshape_the_matrix/Solution.kt)| Easy | Array, Matrix, Simulation | 239 | 99.05
 
 #### Day 8 String
@@ -1607,6 +1614,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0997 |[Find the Town Judge](src.save/main/kotlin/g0901_1000/s0997_find_the_town_judge/Solution.kt)| Easy | Array, Hash_Table, Graph | 475 | 58.62
+| 1557 |[Minimum Number of Vertices to Reach All Nodes](src/main/kotlin/g1501_1600/s1557_minimum_number_of_vertices_to_reach_all_nodes/Solution.kt)| Medium | Graph | 792 | 99.29
 
 #### Day 14 Graph Theory
 
@@ -1651,6 +1659,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0175 |[Combine Two Tables](src.save/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 473 | 54.97
+| 1581 |[Customer Who Visited but Did Not Make Any Transactions](src/main/kotlin/g1501_1600/s1581_customer_who_visited_but_did_not_make_any_transactions/script.sql)| Easy | Database | 2771 | 54.68
 | 1148 |[Article Views I](src.save/main/kotlin/g1101_1200/s1148_article_views_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 806 | 54.41
 
 #### Day 6 Union
@@ -1687,6 +1696,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 0182 |[Duplicate Emails](src.save/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 396 | 68.40
 | 1050 |[Actors and Directors Who Cooperated At Least Three Times](src.save/main/kotlin/g1001_1100/s1050_actors_and_directors_who_cooperated_at_least_three_times/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 629 | 81.02
+| 1587 |[Bank Account Summary II](src/main/kotlin/g1501_1600/s1587_bank_account_summary_ii/script.sql)| Easy | Database | 1582 | 52.96
 | 1084 |[Sales Analysis III](src.save/main/kotlin/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1881 | 79.36
 
 ### Level 1
@@ -1805,10 +1815,46 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1604 |[Alert Using Same Key-Card Three or More Times in a One Hour Period](src/main/kotlin/g1601_1700/s1604_alert_using_same_key_card_three_or_more_times_in_a_one_hour_period/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 1063 | 20.00
 | 1603 |[Design Parking System](src/main/kotlin/g1601_1700/s1603_design_parking_system/ParkingSystem.kt)| Easy | Design, Simulation, Counting, Programming_Skills_I_Day_12_Class_and_Object | 376 | 31.83
 | 1601 |[Maximum Number of Achievable Transfer Requests](src/main/kotlin/g1601_1700/s1601_maximum_number_of_achievable_transfer_requests/Solution.kt)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 206 | 100.00
+| 1600 |[Throne Inheritance](src/main/kotlin/g1501_1600/s1600_throne_inheritance/ThroneInheritance.kt)| Medium | Hash_Table, Depth_First_Search, Tree, Design | 1847 | 100.00
+| 1599 |[Maximum Profit of Operating a Centennial Wheel](src/main/kotlin/g1501_1600/s1599_maximum_profit_of_operating_a_centennial_wheel/Solution.kt)| Medium | Array, Simulation | 593 | 100.00
+| 1598 |[Crawler Log Folder](src/main/kotlin/g1501_1600/s1598_crawler_log_folder/Solution.kt)| Easy | Array, String, Stack | 150 | 92.31
+| 1595 |[Minimum Cost to Connect Two Groups of Points](src/main/kotlin/g1501_1600/s1595_minimum_cost_to_connect_two_groups_of_points/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix, Bit_Manipulation, Bitmask | 278 | 100.00
+| 1594 |[Maximum Non Negative Product in a Matrix](src/main/kotlin/g1501_1600/s1594_maximum_non_negative_product_in_a_matrix/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 224 | 100.00
+| 1593 |[Split a String Into the Max Number of Unique Substrings](src/main/kotlin/g1501_1600/s1593_split_a_string_into_the_max_number_of_unique_substrings/Solution.kt)| Medium | String, Hash_Table, Backtracking | 161 | 100.00
+| 1592 |[Rearrange Spaces Between Words](src/main/kotlin/g1501_1600/s1592_rearrange_spaces_between_words/Solution.kt)| Easy | String | 182 | 75.00
+| 1591 |[Strange Printer II](src/main/kotlin/g1501_1600/s1591_strange_printer_ii/Solution.kt)| Hard | Array, Matrix, Graph, Topological_Sort | 321 | 100.00
+| 1590 |[Make Sum Divisible by P](src/main/kotlin/g1501_1600/s1590_make_sum_divisible_by_p/Solution.kt)| Medium | Array, Hash_Table, Prefix_Sum | 633 | 20.00
+| 1589 |[Maximum Sum Obtained of Any Permutation](src/main/kotlin/g1501_1600/s1589_maximum_sum_obtained_of_any_permutation/Solution.kt)| Medium | Array, Sorting, Greedy, Prefix_Sum | 867 | 66.67
+| 1588 |[Sum of All Odd Length Subarrays](src/main/kotlin/g1501_1600/s1588_sum_of_all_odd_length_subarrays/Solution.kt)| Easy | Array, Math, Prefix_Sum, Programming_Skills_I_Day_6_Array | 157 | 64.00
+| 1587 |[Bank Account Summary II](src/main/kotlin/g1501_1600/s1587_bank_account_summary_ii/script.sql)| Easy | Database, SQL_I_Day_10_Where | 1582 | 52.96
+| 1585 |[Check If String Is Transformable With Substring Sort Operations](src/main/kotlin/g1501_1600/s1585_check_if_string_is_transformable_with_substring_sort_operations/Solution.kt)| Hard | String, Sorting, Greedy | 271 | 100.00
+| 1584 |[Min Cost to Connect All Points](src/main/kotlin/g1501_1600/s1584_min_cost_to_connect_all_points/Solution.kt)| Medium | Array, Union_Find, Minimum_Spanning_Tree | 331 | 95.12
+| 1583 |[Count Unhappy Friends](src/main/kotlin/g1501_1600/s1583_count_unhappy_friends/Solution.kt)| Medium | Array, Simulation | 324 | 100.00
+| 1582 |[Special Positions in a Binary Matrix](src/main/kotlin/g1501_1600/s1582_special_positions_in_a_binary_matrix/Solution.kt)| Easy | Array, Matrix | 212 | 60.00
+| 1581 |[Customer Who Visited but Did Not Make Any Transactions](src/main/kotlin/g1501_1600/s1581_customer_who_visited_but_did_not_make_any_transactions/script.sql)| Easy | Database, SQL_I_Day_5_Union | 2771 | 54.68
+| 1579 |[Remove Max Number of Edges to Keep Graph Fully Traversable](src/main/kotlin/g1501_1600/s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable/Solution.kt)| Hard | Graph, Union_Find | 942 | 32.52
+| 1578 |[Minimum Time to Make Rope Colorful](src/main/kotlin/g1501_1600/s1578_minimum_time_to_make_rope_colorful/Solution.kt)| Medium | Array, String, Dynamic_Programming, Greedy | 577 | 100.00
+| 1577 |[Number of Ways Where Square of Number Is Equal to Product of Two Numbers](src/main/kotlin/g1501_1600/s1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers/Solution.kt)| Medium | Array, Hash_Table, Math, Two_Pointers | 209 | 100.00
+| 1576 |[Replace All ?'s to Avoid Consecutive Repeating Characters](src/main/kotlin/g1501_1600/s1576_replace_all_s_to_avoid_consecutive_repeating_characters/Solution.kt)| Easy | String | 180 | 37.50
+| 1575 |[Count All Possible Routes](src/main/kotlin/g1501_1600/s1575_count_all_possible_routes/Solution.kt)| Hard | Array, Dynamic_Programming, Memoization | 246 | 100.00
+| 1574 |[Shortest Subarray to be Removed to Make Array Sorted](src/main/kotlin/g1501_1600/s1574_shortest_subarray_to_be_removed_to_make_array_sorted/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers, Stack, Monotonic_Stack, Binary_Search_II_Day_14 | 477 | 50.00
+| 1573 |[Number of Ways to Split a String](src/main/kotlin/g1501_1600/s1573_number_of_ways_to_split_a_string/Solution.kt)| Medium | String, Math | 247 | 100.00
+| 1572 |[Matrix Diagonal Sum](src/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix, Programming_Skills_I_Day_7_Array, Udemy_2D_Arrays/Matrix | 221 | 67.61
+| 1569 |[Number of Ways to Reorder Array to Get Same BST](src/main/kotlin/g1501_1600/s1569_number_of_ways_to_reorder_array_to_get_same_bst/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Tree, Binary_Tree, Union_Find, Binary_Search_Tree, Divide_and_Conquer, Memoization, Combinatorics | 256 | 100.00
+| 1568 |[Minimum Number of Days to Disconnect Island](src/main/kotlin/g1501_1600/s1568_minimum_number_of_days_to_disconnect_island/Solution.kt)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Strongly_Connected_Component | 210 | 100.00
+| 1567 |[Maximum Length of Subarray With Positive Product](src/main/kotlin/g1501_1600/s1567_maximum_length_of_subarray_with_positive_product/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_6 | 468 | 33.33
+| 1566 |[Detect Pattern of Length M Repeated K or More Times](src/main/kotlin/g1501_1600/s1566_detect_pattern_of_length_m_repeated_k_or_more_times/Solution.kt)| Easy | Array, Enumeration | 168 | 33.33
+| 1563 |[Stone Game V](src/main/kotlin/g1501_1600/s1563_stone_game_v/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Game_Theory | 371 | 100.00
+| 1562 |[Find Latest Group of Size M](src/main/kotlin/g1501_1600/s1562_find_latest_group_of_size_m/Solution.kt)| Medium | Array, Binary_Search, Simulation, Binary_Search_II_Day_19 | 534 | 100.00
+| 1561 |[Maximum Number of Coins You Can Get](src/main/kotlin/g1501_1600/s1561_maximum_number_of_coins_you_can_get/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Game_Theory | 515 | 50.00
+| 1560 |[Most Visited Sector in a Circular Track](src/main/kotlin/g1501_1600/s1560_most_visited_sector_in_a_circular_track/Solution.kt)| Easy | Array, Simulation | 230 | 100.00
+| 1559 |[Detect Cycles in 2D Grid](src/main/kotlin/g1501_1600/s1559_detect_cycles_in_2d_grid/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 871 | 33.33
+| 1558 |[Minimum Numbers of Function Calls to Make Target Array](src/main/kotlin/g1501_1600/s1558_minimum_numbers_of_function_calls_to_make_target_array/Solution.kt)| Medium | Array, Greedy | 347 | 50.00
+| 1557 |[Minimum Number of Vertices to Reach All Nodes](src/main/kotlin/g1501_1600/s1557_minimum_number_of_vertices_to_reach_all_nodes/Solution.kt)| Medium | Graph, Data_Structure_II_Day_19_Graph, Graph_Theory_I_Day_13_Graph_Theory | 792 | 99.29
 | 1556 |[Thousand Separator](src/main/kotlin/g1501_1600/s1556_thousand_separator/Solution.kt)| Easy | String | 131 | 100.00
 | 1553 |[Minimum Number of Days to Eat N Oranges](src/main/kotlin/g1501_1600/s1553_minimum_number_of_days_to_eat_n_oranges/Solution.kt)| Hard | Dynamic_Programming, Memoization | 153 | 100.00
 | 1552 |[Magnetic Force Between Two Balls](src/main/kotlin/g1501_1600/s1552_magnetic_force_between_two_balls/Solution.kt)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_4 | 636 | 100.00
-| 1551 |[Minimum Operations to Make Array Equal](src/main/kotlin/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.kt)| Medium | Math | 119 | 100.00
+| 1551 |[Minimum Operations to Make Array Equal](src/main/kotlin/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.kt)| |||
 | 1550 |[Three Consecutive Odds](src/main/kotlin/g1501_1600/s1550_three_consecutive_odds/Solution.kt)| Easy | Array | 154 | 90.00
 | 1547 |[Minimum Cost to Cut a Stick](src/main/kotlin/g1501_1600/s1547_minimum_cost_to_cut_a_stick/Solution.kt)| Hard | Array, Dynamic_Programming | 187 | 92.00
 | 1546 |[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src/main/kotlin/g1501_1600/s1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target/Solution.kt)| Medium | Array, Hash_Table, Greedy, Prefix_Sum | 560 | 100.00
