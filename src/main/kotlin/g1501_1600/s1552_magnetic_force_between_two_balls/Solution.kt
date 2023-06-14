@@ -1,7 +1,5 @@
 package g1501_1600.s1552_magnetic_force_between_two_balls
 
-import java.util.Arrays
-
 // #Medium #Array #Sorting #Binary_Search #Binary_Search_II_Day_4
 // #2023_06_14_Time_636_ms_(100.00%)_Space_57.3_MB_(100.00%)
 
