@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
-    fun findSolution() {
+    fun findSolution {
         val customFunction: CustomFunction = object : CustomFunction {
             var index = 0
             override fun f(x: Int, y: Int): Int {

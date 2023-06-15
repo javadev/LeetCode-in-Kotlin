@@ -3,7 +3,7 @@ package g0601_0700.s0638_shopping_offers
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Memoization
 // #2023_02_10_Time_195_ms_(100.00%)_Space_35.1_MB_(100.00%)
 
-class Solution() {
+class Solution {
     fun shoppingOffers(
         price: List<Int>,
         special: List<List<Int>>,
