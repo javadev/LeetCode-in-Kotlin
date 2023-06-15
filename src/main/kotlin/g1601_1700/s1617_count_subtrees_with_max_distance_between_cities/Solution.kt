@@ -8,6 +8,7 @@ import kotlin.math.pow
 class Solution {
     private var ans = 0
     private var vis = 0
+
     fun countSubgraphsForEachDiameter(n: Int, edges: Array<IntArray>): IntArray {
         ans = 0
         vis = 0
