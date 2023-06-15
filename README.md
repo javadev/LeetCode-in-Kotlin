@@ -1854,7 +1854,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1556 |[Thousand Separator](src/main/kotlin/g1501_1600/s1556_thousand_separator/Solution.kt)| Easy | String | 131 | 100.00
 | 1553 |[Minimum Number of Days to Eat N Oranges](src/main/kotlin/g1501_1600/s1553_minimum_number_of_days_to_eat_n_oranges/Solution.kt)| Hard | Dynamic_Programming, Memoization | 153 | 100.00
 | 1552 |[Magnetic Force Between Two Balls](src/main/kotlin/g1501_1600/s1552_magnetic_force_between_two_balls/Solution.kt)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_4 | 636 | 100.00
-| 1551 |[Minimum Operations to Make Array Equal](src/main/kotlin/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.kt)| |||
+| 1551 |[Minimum Operations to Make Array Equal](src/main/kotlin/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.kt)| Medium | Math | 119 | 100.00
 | 1550 |[Three Consecutive Odds](src/main/kotlin/g1501_1600/s1550_three_consecutive_odds/Solution.kt)| Easy | Array | 154 | 90.00
 | 1547 |[Minimum Cost to Cut a Stick](src/main/kotlin/g1501_1600/s1547_minimum_cost_to_cut_a_stick/Solution.kt)| Hard | Array, Dynamic_Programming | 187 | 92.00
 | 1546 |[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src/main/kotlin/g1501_1600/s1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target/Solution.kt)| Medium | Array, Hash_Table, Greedy, Prefix_Sum | 560 | 100.00
