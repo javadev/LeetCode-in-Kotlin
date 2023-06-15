@@ -2007,7 +2007,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1415 |[The k-th Lexicographical String of All Happy Strings of Length n](src/main/kotlin/g1401_1500/s1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n/Solution.kt)| Medium | String, Backtracking | 160 | 100.00
 | 1414 |[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](src/main/kotlin/g1401_1500/s1414_find_the_minimum_number_of_fibonacci_numbers_whose_sum_is_k/Solution.kt)| Medium | Greedy | 165 | 100.00
 | 1413 |[Minimum Value to Get Positive Step by Step Sum](src/main/kotlin/g1401_1500/s1413_minimum_value_to_get_positive_step_by_step_sum/Solution.kt)| Easy | Array, Prefix_Sum | 127 | 97.22
-| 1411 |[Number of Ways to Paint N × 3 Grid](src/main/kotlin/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/Solution.kt)| Hard | Dynamic_Programming | 201 | 100.00
+| 1411 |[Number of Ways to Paint N Ã— 3 Grid](src/main/kotlin/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/Solution.kt)| Hard | Dynamic_Programming | 201 | 100.00
 | 1410 |[HTML Entity Parser](src/main/kotlin/g1401_1500/s1410_html_entity_parser/Solution.kt)| Medium | String, Hash_Table | 334 | 100.00
 | 1409 |[Queries on a Permutation With Key](src/main/kotlin/g1401_1500/s1409_queries_on_a_permutation_with_key/Solution.kt)| Medium | Array, Simulation, Binary_Indexed_Tree | 209 | 100.00
 | 1408 |[String Matching in an Array](src/main/kotlin/g1401_1500/s1408_string_matching_in_an_array/Solution.kt)| Easy | String, String_Matching | 194 | 77.78
