@@ -7,6 +7,7 @@ import com_github_leetcode.TreeNode
 
 class Solution {
     private val comp: MutableList<Int> = ArrayList()
+
     fun isEvenOddTree(root: TreeNode?): Boolean {
         return find(root, 0)
     }
