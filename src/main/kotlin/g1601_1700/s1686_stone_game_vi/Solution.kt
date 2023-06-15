@@ -26,7 +26,7 @@ class Solution {
         var turn = true
         var a = 0
         var b = 0
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             if (turn) {
                 a += pq.poll().a
             } else {

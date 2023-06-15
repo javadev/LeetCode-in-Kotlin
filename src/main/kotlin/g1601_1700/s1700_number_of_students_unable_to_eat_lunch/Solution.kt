@@ -14,7 +14,7 @@ class Solution {
             sandwichesQueue.add(sandwiches[i])
         }
         do {
-            if (!studentsQueue.isEmpty()) {
+            if (studentsQueue.isNotEmpty()) {
                 if (studentsQueue.peek() == sandwichesQueue.peek()) {
                     studentsQueue.poll()
                     sandwichesQueue.poll()
@@ -25,7 +25,7 @@ class Solution {
                     studentsQueue.add(studentsQueue.poll())
                 }
             }
-        } while (!studentsQueue.isEmpty())
+        } while (studentsQueue.isNotEmpty())
         return studentsQueue.size
     }
 }

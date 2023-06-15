@@ -13,7 +13,7 @@ class Solution {
         for (i in 1 until nums.size) {
             val max = deque.peek()[1]
             val next = intArrayOf(i, max + nums[i])
-            while (!deque.isEmpty() && deque.peekLast()[1] <= next[1]) {
+            while (deque.isNotEmpty() && deque.peekLast()[1] <= next[1]) {
                 // PURGE FROM THE END
                 deque.pollLast()
             }

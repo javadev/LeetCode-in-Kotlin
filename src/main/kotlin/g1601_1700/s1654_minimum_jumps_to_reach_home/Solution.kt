@@ -20,7 +20,7 @@ class Solution {
         val q: Queue<Pair> = LinkedList()
         q.add(Pair(0, false))
         v[0] = true
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val size = q.size
             for (i in 0 until size) {
                 val c = q.poll()
