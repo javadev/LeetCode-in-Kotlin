@@ -1,9 +1,9 @@
 package g1601_1700.s1611_minimum_one_bit_operations_to_make_integers_zero
 
-import java.util.LinkedList
-
 // #Hard #Dynamic_Programming #Bit_Manipulation #Memoization
 // #2023_06_15_Time_127_ms_(100.00%)_Space_32.8_MB_(100.00%)
+
+import java.util.LinkedList
 
 @Suppress("NAME_SHADOWING")
 class Solution {
