@@ -1,6 +1,7 @@
 package g1601_1700.s1652_defuse_the_bomb
 
-// #Easy #Array
+// #Easy #Array #2023_06_15_Time_160_ms_(100.00%)_Space_35.6_MB_(75.00%)
+
 class Solution {
     fun decrypt(code: IntArray, k: Int): IntArray {
         val result = IntArray(code.size)

@@ -1,6 +1,7 @@
 package g1601_1700.s1685_sum_of_absolute_differences_in_a_sorted_array
 
-// #Medium #Array #Math #Prefix_Sum
+// #Medium #Array #Math #Prefix_Sum #2023_06_15_Time_612_ms_(100.00%)_Space_55_MB_(100.00%)
+
 class Solution {
     fun getSumAbsoluteDifferences(nums: IntArray): IntArray {
         val len = nums.size

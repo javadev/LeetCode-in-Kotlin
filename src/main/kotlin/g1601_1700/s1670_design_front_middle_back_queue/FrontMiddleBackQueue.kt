@@ -1,6 +1,8 @@
 package g1601_1700.s1670_design_front_middle_back_queue
 
 // #Medium #Array #Design #Linked_List #Queue #Data_Stream
+// #2023_06_15_Time_267_ms_(100.00%)_Space_38.4_MB_(100.00%)
+
 class FrontMiddleBackQueue {
     private val queue = IntArray(1000)
     private var cur = -1
@@ -68,3 +70,13 @@ class FrontMiddleBackQueue {
         return result
     }
 }
+/*
+ * Your FrontMiddleBackQueue object will be instantiated and called as such:
+ * var obj = FrontMiddleBackQueue()
+ * obj.pushFront(`val`)
+ * obj.pushMiddle(`val`)
+ * obj.pushBack(`val`)
+ * var param_4 = obj.popFront()
+ * var param_5 = obj.popMiddle()
+ * var param_6 = obj.popBack()
+ */

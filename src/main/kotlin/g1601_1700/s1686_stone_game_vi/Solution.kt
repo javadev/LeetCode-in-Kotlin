@@ -1,8 +1,10 @@
 package g1601_1700.s1686_stone_game_vi
 
+// #Medium #Array #Math #Sorting #Greedy #Heap_Priority_Queue #Game_Theory
+// #2023_06_15_Time_702_ms_(100.00%)_Space_57.9_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Math #Sorting #Greedy #Heap_Priority_Queue #Game_Theory
 class Solution {
     private class Pair internal constructor(var a: Int, var b: Int) : Comparable<Pair> {
         var sum: Int
@@ -11,8 +13,8 @@ class Solution {
             sum = a + b
         }
 
-        override fun compareTo(p: Pair): Int {
-            return p.sum - sum
+        override fun compareTo(other: Pair): Int {
+            return other.sum - sum
         }
     }
 

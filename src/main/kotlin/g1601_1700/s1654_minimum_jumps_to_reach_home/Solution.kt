@@ -1,10 +1,12 @@
 package g1601_1700.s1654_minimum_jumps_to_reach_home
 
+// #Medium #Array #Dynamic_Programming #Breadth_First_Search
+// #Graph_Theory_I_Day_11_Breadth_First_Search
+// #2023_06_15_Time_192_ms_(100.00%)_Space_38.3_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Array #Dynamic_Programming #Breadth_First_Search
-// #Graph_Theory_I_Day_11_Breadth_First_Search
 class Solution {
     private class Pair(var i: Int, var backward: Boolean)
 

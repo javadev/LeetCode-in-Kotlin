@@ -1,6 +1,8 @@
 package g1601_1700.s1673_find_the_most_competitive_subsequence
 
 // #Medium #Array #Greedy #Stack #Monotonic_Stack
+// #2023_06_15_Time_741_ms_(100.00%)_Space_57_MB_(100.00%)
+
 class Solution {
     fun mostCompetitive(nums: IntArray, k: Int): IntArray {
         val r = IntArray(k)

@@ -1,16 +1,14 @@
 package g1601_1700.s1681_minimum_incompatibility
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2023_06_15_Time_162_ms_(100.00%)_Space_36_MB_(100.00%)
+
 class Solution {
-    private class Node internal constructor() {
-        var visited: BooleanArray
+    private class Node {
+        var visited: BooleanArray = BooleanArray(17)
         var size = 0
         var min = 20
         var max = 0
-
-        init {
-            visited = BooleanArray(17)
-        }
     }
 
     private lateinit var nodes: Array<Node?>

@@ -1,6 +1,7 @@
 package g1601_1700.s1674_minimum_moves_to_make_array_complementary
 
-// #Medium #Array #Hash_Table #Prefix_Sum
+// #Medium #Array #Hash_Table #Prefix_Sum #2023_06_15_Time_522_ms_(100.00%)_Space_50.1_MB_(100.00%)
+
 class Solution {
     fun minMoves(nums: IntArray, limit: Int): Int {
         val delta = IntArray(2 * limit + 2)

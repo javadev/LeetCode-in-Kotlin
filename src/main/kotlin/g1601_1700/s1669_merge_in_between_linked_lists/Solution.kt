@@ -1,18 +1,19 @@
 package g1601_1700.s1669_merge_in_between_linked_lists
 
+// #Medium #Linked_List #2023_06_15_Time_531_ms_(66.67%)_Space_43.3_MB_(66.67%)
+
 import com_github_leetcode.ListNode
 
-// #Medium #Linked_List
 /*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun mergeInBetween(list1: ListNode?, a: Int, b: Int, list2: ListNode?): ListNode? {
         var list2 = list2

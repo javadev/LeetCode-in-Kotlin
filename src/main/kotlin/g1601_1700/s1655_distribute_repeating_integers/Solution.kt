@@ -1,6 +1,8 @@
 package g1601_1700.s1655_distribute_repeating_integers
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2023_06_15_Time_445_ms_(100.00%)_Space_52.5_MB_(100.00%)
+
 class Solution {
     fun canDistribute(nums: IntArray, quantity: IntArray): Boolean {
         val counter = count(nums)

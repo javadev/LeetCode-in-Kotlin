@@ -1,6 +1,8 @@
 package g1601_1700.s1680_concatenation_of_consecutive_binary_numbers
 
 // #Medium #Math #Bit_Manipulation #Simulation
+// #2023_06_15_Time_175_ms_(100.00%)_Space_32.7_MB_(100.00%)
+
 class Solution {
     fun concatenatedBinary(n: Int): Int {
         // calculate the length of binary string

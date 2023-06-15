@@ -1,6 +1,8 @@
 package g1601_1700.s1659_maximize_grid_happiness
 
 // #Hard #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization
+// #2023_06_15_Time_181_ms_(100.00%)_Space_36.9_MB_(100.00%)
+
 class Solution {
     private var m = 0
     private var n = 0

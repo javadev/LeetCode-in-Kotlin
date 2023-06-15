@@ -1,6 +1,8 @@
 package g1601_1700.s1684_count_the_number_of_consistent_strings
 
 // #Easy #Array #String #Hash_Table #Bit_Manipulation
+// #2023_06_15_Time_234_ms_(100.00%)_Space_37.1_MB_(100.00%)
+
 class Solution {
     fun countConsistentStrings(allowed: String, words: Array<String>): Int {
         var alwd = 0

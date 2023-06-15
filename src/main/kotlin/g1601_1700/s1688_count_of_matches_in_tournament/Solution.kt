@@ -1,6 +1,8 @@
 package g1601_1700.s1688_count_of_matches_in_tournament
 
-// #Easy #Math #Simulation
+// #Easy #Math #Simulation #2023_06_15_Time_124_ms_(83.33%)_Space_32.8_MB_(75.00%)
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun numberOfMatches(n: Int): Int {
         var n = n

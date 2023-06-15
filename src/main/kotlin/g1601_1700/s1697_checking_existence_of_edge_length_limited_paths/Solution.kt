@@ -1,8 +1,10 @@
 package g1601_1700.s1697_checking_existence_of_edge_length_limited_paths
 
+// #Hard #Array #Sorting #Graph #Union_Find
+// #2023_06_15_Time_1411_ms_(72.90%)_Space_101.6_MB_(99.07%)
+
 import java.util.Arrays
 
-// #Hard #Array #Sorting #Graph #Union_Find
 class Solution {
     private class Dsu(n: Int) {
         private val parent: IntArray

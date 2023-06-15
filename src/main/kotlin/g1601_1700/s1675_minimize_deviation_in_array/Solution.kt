@@ -1,8 +1,10 @@
 package g1601_1700.s1675_minimize_deviation_in_array
 
+// #Hard #Array #Greedy #Heap_Priority_Queue #Ordered_Set
+// #2023_06_15_Time_769_ms_(100.00%)_Space_49.8_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Hard #Array #Greedy #Heap_Priority_Queue #Ordered_Set
 class Solution {
     fun minimumDeviation(nums: IntArray): Int {
         val pq = PriorityQueue { a: Int, b: Int -> b - a }

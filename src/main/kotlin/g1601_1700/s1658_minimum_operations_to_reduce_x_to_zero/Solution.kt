@@ -1,6 +1,8 @@
 package g1601_1700.s1658_minimum_operations_to_reduce_x_to_zero
 
 // #Medium #Array #Hash_Table #Binary_Search #Prefix_Sum #Sliding_Window
+// #2023_06_15_Time_532_ms_(50.00%)_Space_53_MB_(100.00%)
+
 class Solution {
     fun minOperations(nums: IntArray, x: Int): Int {
         var totalArraySum = 0

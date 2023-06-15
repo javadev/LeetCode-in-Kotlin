@@ -1,9 +1,0 @@
-package g1601_1700.s1661_average_time_of_process_per_machine
-
-
-
-class Solution {
-    fun decode(value: String): String {
-        return value
-    }
-}

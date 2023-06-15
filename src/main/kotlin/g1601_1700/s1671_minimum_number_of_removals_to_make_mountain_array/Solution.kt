@@ -1,6 +1,8 @@
 package g1601_1700.s1671_minimum_number_of_removals_to_make_mountain_array
 
 // #Hard #Array #Dynamic_Programming #Greedy #Binary_Search
+// #2023_06_15_Time_264_ms_(100.00%)_Space_38.4_MB_(100.00%)
+
 class Solution {
     fun minimumMountainRemovals(nums: IntArray): Int {
         val n = nums.size

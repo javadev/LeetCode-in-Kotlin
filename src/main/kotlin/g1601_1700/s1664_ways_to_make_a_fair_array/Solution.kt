@@ -1,6 +1,7 @@
 package g1601_1700.s1664_ways_to_make_a_fair_array
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_06_15_Time_475_ms_(100.00%)_Space_49.7_MB_(100.00%)
+
 class Solution {
     fun waysToMakeFair(nums: IntArray): Int {
         var res = 0

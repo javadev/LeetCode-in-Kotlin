@@ -1,9 +1,10 @@
 package g1601_1700.s1700_number_of_students_unable_to_eat_lunch
 
+// #Easy #Array #Stack #Simulation #Queue #2023_06_15_Time_143_ms_(100.00%)_Space_34.6_MB_(78.57%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Easy #Array #Stack #Simulation #Queue
 class Solution {
     fun countStudents(students: IntArray, sandwiches: IntArray): Int {
         val studentsQueue: Queue<Int> = LinkedList()

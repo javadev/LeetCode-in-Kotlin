@@ -1,6 +1,7 @@
 package g1601_1700.s1694_reformat_phone_number
 
-// #Easy #String
+// #Easy #String #2023_06_15_Time_142_ms_(100.00%)_Space_34.4_MB_(100.00%)
+
 class Solution {
     fun reformatNumber(number: String): String {
         val sb = StringBuilder()
