@@ -975,6 +975,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0167 |[Two Sum II - Input Array Is Sorted](src.save/main/kotlin/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers | 403 | 68.74
+| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/kotlin/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.kt)| Easy | Array, Sorting, Binary_Search | 147 | 81.82
 
 #### Day 8
 
@@ -1810,6 +1811,10 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1611 |[Minimum One Bit Operations to Make Integers Zero](src/main/kotlin/g1601_1700/s1611_minimum_one_bit_operations_to_make_integers_zero/Solution.kt)| Hard | Dynamic_Programming, Bit_Manipulation, Memoization | 127 | 100.00
+| 1610 |[Maximum Number of Visible Points](src/main/kotlin/g1601_1700/s1610_maximum_number_of_visible_points/Solution.kt)| Hard | Array, Math, Sorting, Sliding_Window, Geometry | 1343 | 100.00
+| 1609 |[Even Odd Tree](src/main/kotlin/g1601_1700/s1609_even_odd_tree/Solution.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree | 497 | 100.00
+| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/kotlin/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.kt)| Easy | Array, Sorting, Binary_Search, Binary_Search_I_Day_7 | 147 | 81.82
 | 1606 |[Find Servers That Handled Most Number of Requests](src/main/kotlin/g1601_1700/s1606_find_servers_that_handled_most_number_of_requests/Solution.kt)| Hard | Array, Greedy, Heap_Priority_Queue, Ordered_Set | 973 | 33.33
 | 1605 |[Find Valid Matrix Given Row and Column Sums](src/main/kotlin/g1601_1700/s1605_find_valid_matrix_given_row_and_column_sums/Solution.kt)| Medium | Array, Greedy, Matrix | 574 | 100.00
 | 1604 |[Alert Using Same Key-Card Three or More Times in a One Hour Period](src/main/kotlin/g1601_1700/s1604_alert_using_same_key_card_three_or_more_times_in_a_one_hour_period/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 1063 | 20.00
