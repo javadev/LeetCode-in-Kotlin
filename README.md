@@ -1881,6 +1881,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1520 |[Maximum Number of Non-Overlapping Substrings](src/main/kotlin/g1501_1600/s1520_maximum_number_of_non_overlapping_substrings/Solution.kt)| Hard | String, Greedy | 333 | 100.00
 | 1519 |[Number of Nodes in the Sub-Tree With the Same Label](src/main/kotlin/g1501_1600/s1519_number_of_nodes_in_the_sub_tree_with_the_same_label/Solution.kt)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Counting | 1130 | 87.50
 | 1518 |[Water Bottles](src/main/kotlin/g1501_1600/s1518_water_bottles/Solution.kt)| Easy | Math, Simulation | 116 | 100.00
+| 1517 |[Find Users With Valid E-Mails](src/main/kotlin/g1501_1600/s1517_find_users_with_valid_e_mails/script.sql)| Easy | Database | 1278 | 77.30
 | 1515 |[Best Position for a Service Centre](src/main/kotlin/g1501_1600/s1515_best_position_for_a_service_centre/Solution.kt)| Hard | Math, Geometry, Randomized | 183 | 100.00
 | 1514 |[Path with Maximum Probability](src/main/kotlin/g1501_1600/s1514_path_with_maximum_probability/Solution.kt)| Medium | Heap_Priority_Queue, Graph, Shortest_Path | 681 | 100.00
 | 1513 |[Number of Substrings With Only 1s](src/main/kotlin/g1501_1600/s1513_number_of_substrings_with_only_1s/Solution.kt)| Medium | String, Math | 171 | 100.00
@@ -1993,6 +1994,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1381 |[Design a Stack With Increment Operation](src/main/kotlin/g1301_1400/s1381_design_a_stack_with_increment_operation/CustomStack.kt)| Medium | Array, Stack, Design | 267 | 100.00
 | 1380 |[Lucky Numbers in a Matrix](src/main/kotlin/g1301_1400/s1380_lucky_numbers_in_a_matrix/Solution.kt)| Easy | Array, Matrix | 223 | 89.29
 | 1379 |[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](src/main/kotlin/g1301_1400/s1379_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 100.00
+| 1378 |[Replace Employee ID With The Unique Identifier](src/main/kotlin/g1301_1400/s1378_replace_employee_id_with_the_unique_identifier/script.sql)| Easy | Database | 2452 | 54.86
 | 1377 |[Frog Position After T Seconds](src/main/kotlin/g1301_1400/s1377_frog_position_after_t_seconds/Solution.kt)| Hard | Depth_First_Search, Breadth_First_Search, Tree, Graph | 221 | 100.00
 | 1376 |[Time Needed to Inform All Employees](src/main/kotlin/g1301_1400/s1376_time_needed_to_inform_all_employees/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Programming_Skills_II_Day_11, Graph_Theory_I_Day_9_Standard_Traversal | 915 | 37.62
 | 1375 |[Number of Times Binary String Is Prefix-Aligned](src/main/kotlin/g1301_1400/s1375_number_of_times_binary_string_is_prefix_aligned/Solution.kt)| Medium | Array | 327 | 100.00
