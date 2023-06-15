@@ -1,8 +1,7 @@
 package g1701_1800.s1707_maximum_xor_with_an_element_from_array
 
-import java.util.*
+// #Hard #Array #Bit_Manipulation #Trie #2023_06_15_Time_1295_ms_(100.00%)_Space_130.3_MB_(100.00%)
 
-// #Hard #Array #Bit_Manipulation #Trie
 class Solution {
     internal class QueryComparator : Comparator<IntArray> {
         override fun compare(a: IntArray, b: IntArray): Int {
@@ -16,7 +15,7 @@ class Solution {
     }
 
     fun maximizeXor(nums: IntArray, queries: Array<IntArray>): IntArray {
-        Arrays.sort(nums)
+        nums.sort()
         val len = queries.size
         val queryWithIndex = Array(len) { IntArray(3) }
         for (i in 0 until len) {
@@ -24,7 +23,7 @@ class Solution {
             queryWithIndex[i][1] = queries[i][1]
             queryWithIndex[i][2] = i
         }
-        Arrays.sort(queryWithIndex, QueryComparator())
+        queryWithIndex.sortWith(QueryComparator())
         var numId = 0
         val ans = IntArray(len)
         val root = Node()

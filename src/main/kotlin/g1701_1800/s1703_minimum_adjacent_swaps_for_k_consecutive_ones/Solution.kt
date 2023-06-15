@@ -1,6 +1,8 @@
 package g1701_1800.s1703_minimum_adjacent_swaps_for_k_consecutive_ones
 
 // #Hard #Array #Greedy #Prefix_Sum #Sliding_Window
+// #2023_06_15_Time_518_ms_(100.00%)_Space_52.2_MB_(100.00%)
+
 class Solution {
     fun minMoves(nums: IntArray, k: Int): Int {
         val len = nums.size

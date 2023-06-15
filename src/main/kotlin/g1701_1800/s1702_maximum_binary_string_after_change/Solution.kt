@@ -1,6 +1,7 @@
 package g1701_1800.s1702_maximum_binary_string_after_change
 
-// #Medium #String #Greedy
+// #Medium #String #Greedy #2023_06_15_Time_343_ms_(100.00%)_Space_42.6_MB_(100.00%)
+
 class Solution {
     fun maximumBinaryString(binary: String): String {
         val bs = binary.toCharArray()

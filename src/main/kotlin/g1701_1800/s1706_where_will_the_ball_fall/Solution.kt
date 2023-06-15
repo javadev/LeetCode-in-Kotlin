@@ -1,7 +1,8 @@
 package g1701_1800.s1706_where_will_the_ball_fall
 
 // #Medium #Array #Dynamic_Programming #Depth_First_Search #Matrix #Simulation
-// #Level_2_Day_1_Implementation/Simulation
+// #Level_2_Day_1_Implementation/Simulation #2023_06_15_Time_270_ms_(67.86%)_Space_45.6_MB_(82.14%)
+
 class Solution {
     fun findBall(grid: Array<IntArray>): IntArray {
         val m = grid.size
