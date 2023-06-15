@@ -1,24 +1,24 @@
 package g1601_1700.s1615_maximal_network_rank
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun maximalNetworkRank() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().maximalNetworkRank(
                 4,
                 arrayOf(intArrayOf(2, 1), intArrayOf(0, 3), intArrayOf(1, 2), intArrayOf(1, 3))
             ),
-            CoreMatchers.equalTo(4)
+            equalTo(4)
         )
     }
 
     @Test
     fun maximalNetworkRank2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .maximalNetworkRank(
                     8,
@@ -31,13 +31,13 @@ internal class SolutionTest {
                         intArrayOf(5, 7)
                     )
                 ),
-            CoreMatchers.equalTo(5)
+            equalTo(5)
         )
     }
 
     @Test
     fun maximalNetworkRank3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .maximalNetworkRank(
                     5,
@@ -50,7 +50,7 @@ internal class SolutionTest {
                         intArrayOf(2, 4)
                     )
                 ),
-            CoreMatchers.equalTo(5)
+            equalTo(5)
         )
     }
 }

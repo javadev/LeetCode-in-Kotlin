@@ -975,6 +975,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0167 |[Two Sum II - Input Array Is Sorted](src.save/main/kotlin/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers | 403 | 68.74
+| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/kotlin/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.kt)| Easy | Array, Sorting, Binary_Search | 147 | 81.82
 
 #### Day 8
 
@@ -1623,6 +1624,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1615 |[Maximal Network Rank](src/main/kotlin/g1601_1700/s1615_maximal_network_rank/Solution.kt)| Medium | Graph | 282 | 100.00
 | 0886 |[Possible Bipartition](src.save/main/kotlin/g0801_0900/s0886_possible_bipartition/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 397 | 100.00
 | 0785 |[Is Graph Bipartite?](src.save/main/kotlin/g0701_0800/s0785_is_graph_bipartite/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 215 | 82.35
 
@@ -1854,6 +1856,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1654 |[Minimum Jumps to Reach Home](src/main/kotlin/g1601_1700/s1654_minimum_jumps_to_reach_home/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 192 | 100.00
 | 1653 |[Minimum Deletions to Make String Balanced](src/main/kotlin/g1601_1700/s1653_minimum_deletions_to_make_string_balanced/Solution.kt)| Medium | String, Dynamic_Programming, Stack | 291 | 100.00
 | 1652 |[Defuse the Bomb](src/main/kotlin/g1601_1700/s1652_defuse_the_bomb/Solution.kt)| Easy | Array | 160 | 100.00
+| 1617 |[Count Subtrees With Max Distance Between Cities](src/main/kotlin/g1601_1700/s1617_count_subtrees_with_max_distance_between_cities/Solution.kt)| Hard | Dynamic_Programming, Tree, Bit_Manipulation, Bitmask, Enumeration | 297 | 100.00
+| 1616 |[Split Two Strings to Make Palindrome](src/main/kotlin/g1601_1700/s1616_split_two_strings_to_make_palindrome/Solution.kt)| Medium | String, Greedy, Two_Pointers | 277 | 100.00
+| 1615 |[Maximal Network Rank](src/main/kotlin/g1601_1700/s1615_maximal_network_rank/Solution.kt)| Medium | Graph, Graph_Theory_I_Day_14_Graph_Theory | 282 | 100.00
+| 1614 |[Maximum Nesting Depth of the Parentheses](src/main/kotlin/g1601_1700/s1614_maximum_nesting_depth_of_the_parentheses/Solution.kt)| Easy | String, Stack | 130 | 81.25
+| 1611 |[Minimum One Bit Operations to Make Integers Zero](src/main/kotlin/g1601_1700/s1611_minimum_one_bit_operations_to_make_integers_zero/Solution.kt)| Hard | Dynamic_Programming, Bit_Manipulation, Memoization | 127 | 100.00
+| 1610 |[Maximum Number of Visible Points](src/main/kotlin/g1601_1700/s1610_maximum_number_of_visible_points/Solution.kt)| Hard | Array, Math, Sorting, Sliding_Window, Geometry | 1343 | 100.00
+| 1609 |[Even Odd Tree](src/main/kotlin/g1601_1700/s1609_even_odd_tree/Solution.kt)| Medium | Breadth_First_Search, Tree, Binary_Tree | 497 | 100.00
+| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/kotlin/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.kt)| Easy | Array, Sorting, Binary_Search, Binary_Search_I_Day_7 | 147 | 81.82
 | 1606 |[Find Servers That Handled Most Number of Requests](src/main/kotlin/g1601_1700/s1606_find_servers_that_handled_most_number_of_requests/Solution.kt)| Hard | Array, Greedy, Heap_Priority_Queue, Ordered_Set | 973 | 33.33
 | 1605 |[Find Valid Matrix Given Row and Column Sums](src/main/kotlin/g1601_1700/s1605_find_valid_matrix_given_row_and_column_sums/Solution.kt)| Medium | Array, Greedy, Matrix | 574 | 100.00
 | 1604 |[Alert Using Same Key-Card Three or More Times in a One Hour Period](src/main/kotlin/g1601_1700/s1604_alert_using_same_key_card_three_or_more_times_in_a_one_hour_period/Solution.kt)| Medium | Array, String, Hash_Table, Sorting | 1063 | 20.00
@@ -2007,7 +2017,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1415 |[The k-th Lexicographical String of All Happy Strings of Length n](src/main/kotlin/g1401_1500/s1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n/Solution.kt)| Medium | String, Backtracking | 160 | 100.00
 | 1414 |[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](src/main/kotlin/g1401_1500/s1414_find_the_minimum_number_of_fibonacci_numbers_whose_sum_is_k/Solution.kt)| Medium | Greedy | 165 | 100.00
 | 1413 |[Minimum Value to Get Positive Step by Step Sum](src/main/kotlin/g1401_1500/s1413_minimum_value_to_get_positive_step_by_step_sum/Solution.kt)| Easy | Array, Prefix_Sum | 127 | 97.22
-| 1411 |[Number of Ways to Paint N Ã— 3 Grid](src/main/kotlin/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/Solution.kt)| Hard | Dynamic_Programming | 201 | 100.00
+| 1411 |[Number of Ways to Paint N × 3 Grid](src/main/kotlin/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/Solution.kt)| Hard | Dynamic_Programming | 201 | 100.00
 | 1410 |[HTML Entity Parser](src/main/kotlin/g1401_1500/s1410_html_entity_parser/Solution.kt)| Medium | String, Hash_Table | 334 | 100.00
 | 1409 |[Queries on a Permutation With Key](src/main/kotlin/g1401_1500/s1409_queries_on_a_permutation_with_key/Solution.kt)| Medium | Array, Simulation, Binary_Indexed_Tree | 209 | 100.00
 | 1408 |[String Matching in an Array](src/main/kotlin/g1401_1500/s1408_string_matching_in_an_array/Solution.kt)| Easy | String, String_Matching | 194 | 77.78
