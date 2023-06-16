@@ -5,6 +5,7 @@ package g1601_1700.s1625_lexicographically_smallest_string_after_applying_operat
 @Suppress("NAME_SHADOWING")
 class Solution {
     private var ans = "z"
+
     private fun dfs(s: String, a: Int, b: Int, set: HashSet<String>) {
         if (set.contains(s)) {
             return
