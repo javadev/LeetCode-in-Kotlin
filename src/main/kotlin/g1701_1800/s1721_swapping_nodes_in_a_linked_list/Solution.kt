@@ -13,9 +13,10 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun swapNodes(head: ListNode?, k: Int): ListNode? {
-        var k = k
+        var k: Int = k
         var beg: ListNode? = null
         var end: ListNode? = null
         var node = head
