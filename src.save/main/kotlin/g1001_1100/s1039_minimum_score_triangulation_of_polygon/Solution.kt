@@ -2,7 +2,7 @@ package g1001_1100.s1039_minimum_score_triangulation_of_polygon
 
 // #Medium #Array #Dynamic_Programming #2023_05_26_Time_147_ms_(100.00%)_Space_38.9_MB_(50.00%)
 
-class Solution() {
+class Solution {
     private val dp = Array(101) { IntArray(101) }
     fun minScoreTriangulation(values: IntArray): Int {
         val n = values.size

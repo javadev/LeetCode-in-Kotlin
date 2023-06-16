@@ -2,7 +2,7 @@ package g0001_0100.s0093_restore_ip_addresses
 
 // #Medium #String #Backtracking #2022_09_26_Time_304_ms_(73.33%)_Space_35.8_MB_(93.33%)
 
-class Solution() {
+class Solution {
     fun restoreIpAddresses(s: String): List<String> {
         val results: MutableList<String> = ArrayList()
         step(s, 0, IntArray(4), 0, results)

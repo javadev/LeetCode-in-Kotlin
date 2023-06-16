@@ -57,6 +57,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 0202 |[Happy Number](src.save/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
 | 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
+| 1706 |[Where Will the Ball Fall](src/main/kotlin/g1701_1800/s1706_where_will_the_ball_fall/Solution.kt)| Medium | Array, Dynamic_Programming, Depth_First_Search, Matrix, Simulation | 270 | 67.86
 
 #### Day 2 String
 
@@ -1074,6 +1075,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0222 |[Count Complete Tree Nodes](src.save/main/kotlin/g0201_0300/s0222_count_complete_tree_nodes/Solution.kt)| |||
+| 1712 |[Ways to Split Array Into Three Subarrays](src/main/kotlin/g1701_1800/s1712_ways_to_split_array_into_three_subarrays/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers, Prefix_Sum | 486 | 100.00
 
 #### Day 11
 
@@ -1681,6 +1683,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 1141 |[User Activity for the Past 30 Days I](src.save/main/kotlin/g1101_1200/s1141_user_activity_for_the_past_30_days_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 87.11
 | 1693 |[Daily Leads and Partners](src/main/kotlin/g1601_1700/s1693_daily_leads_and_partners/script.sql)| Easy | Database | 1115 | 52.84
+| 1729 |[Find Followers Count](src/main/kotlin/g1701_1800/s1729_find_followers_count/script.sql)| Easy | Database | 1228 | 38.04
 
 #### Day 8 Function
 
@@ -1688,6 +1691,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 0586 |[Customer Placing the Largest Number of Orders](src.save/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 768 | 44.85
 | 0511 |[Game Play Analysis I](src.save/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
+| 1741 |[Find Total Time Spent by Each Employee](src/main/kotlin/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 1101 | 51.40
 
 #### Day 9 Control of Flow
 
@@ -1817,6 +1821,46 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1750 |[Minimum Length of String After Deleting Similar Ends](src/main/kotlin/g1701_1800/s1750_minimum_length_of_string_after_deleting_similar_ends/Solution.kt)| Medium | String, Two_Pointers | 215 | 100.00
+| 1749 |[Maximum Absolute Sum of Any Subarray](src/main/kotlin/g1701_1800/s1749_maximum_absolute_sum_of_any_subarray/Solution.kt)| Medium | Array, Dynamic_Programming | 367 | 100.00
+| 1748 |[Sum of Unique Elements](src/main/kotlin/g1701_1800/s1748_sum_of_unique_elements/Solution.kt)| Easy | Array, Hash_Table, Counting | 143 | 82.35
+| 1745 |[Palindrome Partitioning IV](src/main/kotlin/g1701_1800/s1745_palindrome_partitioning_iv/Solution.kt)| Hard | String, Dynamic_Programming | 179 | 100.00
+| 1744 |[Can You Eat Your Favorite Candy on Your Favorite Day?](src/main/kotlin/g1701_1800/s1744_can_you_eat_your_favorite_candy_on_your_favorite_day/Solution.kt)| Medium | Array, Prefix_Sum | 809 | 100.00
+| 1743 |[Restore the Array From Adjacent Pairs](src/main/kotlin/g1701_1800/s1743_restore_the_array_from_adjacent_pairs/Solution.kt)| Medium | Array, Hash_Table | 1018 | 100.00
+| 1742 |[Maximum Number of Balls in a Box](src/main/kotlin/g1701_1800/s1742_maximum_number_of_balls_in_a_box/Solution.kt)| Easy | Hash_Table, Math, Counting | 125 | 100.00
+| 1741 |[Find Total Time Spent by Each Employee](src/main/kotlin/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database, SQL_I_Day_8_Function | 1101 | 51.40
+| 1739 |[Building Boxes](src/main/kotlin/g1701_1800/s1739_building_boxes/Solution.kt)| Hard | Math, Greedy, Binary_Search | 133 | 100.00
+| 1738 |[Find Kth Largest XOR Coordinate Value](src/main/kotlin/g1701_1800/s1738_find_kth_largest_xor_coordinate_value/Solution.kt)| Medium | Array, Matrix, Bit_Manipulation, Heap_Priority_Queue, Prefix_Sum, Divide_and_Conquer, Quickselect | 936 | 100.00
+| 1737 |[Change Minimum Characters to Satisfy One of Three Conditions](src/main/kotlin/g1701_1800/s1737_change_minimum_characters_to_satisfy_one_of_three_conditions/Solution.kt)| Medium | String, Hash_Table, Prefix_Sum, Counting | 240 | 100.00
+| 1736 |[Latest Time by Replacing Hidden Digits](src/main/kotlin/g1701_1800/s1736_latest_time_by_replacing_hidden_digits/Solution.kt)| Easy | String, Greedy | 161 | 100.00
+| 1735 |[Count Ways to Make Array With Product](src/main/kotlin/g1701_1800/s1735_count_ways_to_make_array_with_product/Solution.kt)| Hard | Array, Dynamic_Programming, Math | 394 | 100.00
+| 1734 |[Decode XORed Permutation](src/main/kotlin/g1701_1800/s1734_decode_xored_permutation/Solution.kt)| Medium | Array, Bit_Manipulation | 684 | 100.00
+| 1733 |[Minimum Number of People to Teach](src/main/kotlin/g1701_1800/s1733_minimum_number_of_people_to_teach/Solution.kt)| Medium | Array, Greedy | 580 | 100.00
+| 1732 |[Find the Highest Altitude](src/main/kotlin/g1701_1800/s1732_find_the_highest_altitude/Solution.kt)| Easy | Array, Prefix_Sum | 139 | 90.70
+| 1729 |[Find Followers Count](src/main/kotlin/g1701_1800/s1729_find_followers_count/script.sql)| Easy | Database, SQL_I_Day_7_Function | 1228 | 38.04
+| 1728 |[Cat and Mouse II](src/main/kotlin/g1701_1800/s1728_cat_and_mouse_ii/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Matrix, Graph, Memoization, Topological_Sort, Game_Theory | 193 | 100.00
+| 1727 |[Largest Submatrix With Rearrangements](src/main/kotlin/g1701_1800/s1727_largest_submatrix_with_rearrangements/Solution.kt)| Medium | Array, Sorting, Greedy, Matrix | 650 | 100.00
+| 1726 |[Tuple with Same Product](src/main/kotlin/g1701_1800/s1726_tuple_with_same_product/Solution.kt)| Medium | Array, Hash_Table | 762 | 100.00
+| 1725 |[Number Of Rectangles That Can Form The Largest Square](src/main/kotlin/g1701_1800/s1725_number_of_rectangles_that_can_form_the_largest_square/Solution.kt)| Easy | Array | 244 | 100.00
+| 1723 |[Find Minimum Time to Finish All Jobs](src/main/kotlin/g1701_1800/s1723_find_minimum_time_to_finish_all_jobs/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 167 | 100.00
+| 1722 |[Minimize Hamming Distance After Swap Operations](src/main/kotlin/g1701_1800/s1722_minimize_hamming_distance_after_swap_operations/Solution.kt)| Medium | Array, Depth_First_Search, Union_Find | 843 | 100.00
+| 1721 |[Swapping Nodes in a Linked List](src/main/kotlin/g1701_1800/s1721_swapping_nodes_in_a_linked_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 879 | 13.84
+| 1720 |[Decode XORed Array](src/main/kotlin/g1701_1800/s1720_decode_xored_array/Solution.kt)| Easy | Array, Bit_Manipulation | 304 | 95.00
+| 1719 |[Number Of Ways To Reconstruct A Tree](src/main/kotlin/g1701_1800/s1719_number_of_ways_to_reconstruct_a_tree/Solution.kt)| Hard | Tree, Graph, Topological_Sort | 1015 | 100.00
+| 1718 |[Construct the Lexicographically Largest Valid Sequence](src/main/kotlin/g1701_1800/s1718_construct_the_lexicographically_largest_valid_sequence/Solution.kt)| Medium | Array, Backtracking | 140 | 100.00
+| 1717 |[Maximum Score From Removing Substrings](src/main/kotlin/g1701_1800/s1717_maximum_score_from_removing_substrings/Solution.kt)| Medium | String, Greedy, Stack | 265 | 100.00
+| 1716 |[Calculate Money in Leetcode Bank](src/main/kotlin/g1701_1800/s1716_calculate_money_in_leetcode_bank/Solution.kt)| Easy | Math | 119 | 66.67
+| 1713 |[Minimum Operations to Make a Subsequence](src/main/kotlin/g1701_1800/s1713_minimum_operations_to_make_a_subsequence/Solution.kt)| Hard | Array, Hash_Table, Greedy, Binary_Search | 862 | 100.00
+| 1712 |[Ways to Split Array Into Three Subarrays](src/main/kotlin/g1701_1800/s1712_ways_to_split_array_into_three_subarrays/Solution.kt)| Medium | Array, Binary_Search, Two_Pointers, Prefix_Sum, Binary_Search_II_Day_10 | 486 | 100.00
+| 1711 |[Count Good Meals](src/main/kotlin/g1701_1800/s1711_count_good_meals/Solution.kt)| Medium | Array, Hash_Table | 549 | 100.00
+| 1710 |[Maximum Units on a Truck](src/main/kotlin/g1701_1800/s1710_maximum_units_on_a_truck/Solution.kt)| Easy | Array, Sorting, Greedy | 228 | 100.00
+| 1707 |[Maximum XOR With an Element From Array](src/main/kotlin/g1701_1800/s1707_maximum_xor_with_an_element_from_array/Solution.kt)| Hard | Array, Bit_Manipulation, Trie | 1295 | 100.00
+| 1706 |[Where Will the Ball Fall](src/main/kotlin/g1701_1800/s1706_where_will_the_ball_fall/Solution.kt)| Medium | Array, Dynamic_Programming, Depth_First_Search, Matrix, Simulation, Level_2_Day_1_Implementation/Simulation | 270 | 67.86
+| 1705 |[Maximum Number of Eaten Apples](src/main/kotlin/g1701_1800/s1705_maximum_number_of_eaten_apples/Solution.kt)| Medium | Array, Greedy, Heap_Priority_Queue | 428 | 100.00
+| 1704 |[Determine if String Halves Are Alike](src/main/kotlin/g1701_1800/s1704_determine_if_string_halves_are_alike/Solution.kt)| Easy | String, Counting | 162 | 83.33
+| 1703 |[Minimum Adjacent Swaps for K Consecutive Ones](src/main/kotlin/g1701_1800/s1703_minimum_adjacent_swaps_for_k_consecutive_ones/Solution.kt)| Hard | Array, Greedy, Prefix_Sum, Sliding_Window | 518 | 100.00
+| 1702 |[Maximum Binary String After Change](src/main/kotlin/g1701_1800/s1702_maximum_binary_string_after_change/Solution.kt)| Medium | String, Greedy | 343 | 100.00
+| 1701 |[Average Waiting Time](src/main/kotlin/g1701_1800/s1701_average_waiting_time/Solution.kt)| Medium | Array, Simulation | 654 | 100.00
 | 1700 |[Number of Students Unable to Eat Lunch](src/main/kotlin/g1601_1700/s1700_number_of_students_unable_to_eat_lunch/Solution.kt)| Easy | Array, Stack, Simulation, Queue | 143 | 100.00
 | 1697 |[Checking Existence of Edge Length Limited Paths](src/main/kotlin/g1601_1700/s1697_checking_existence_of_edge_length_limited_paths/Solution.kt)| Hard | Array, Sorting, Graph, Union_Find | 1411 | 72.90
 | 1696 |[Jump Game VI](src/main/kotlin/g1601_1700/s1696_jump_game_vi/Solution.kt)| Medium | Array, Dynamic_Programming, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 497 | 100.00
