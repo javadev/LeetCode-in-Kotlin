@@ -7,7 +7,7 @@ class Solution {
         val ab = HashMap<Int, Int>()
         for (i in nums.indices) {
             for (j in i + 1 until nums.size) {
-                ab[nums.get(i) * nums.get(j)] = ab.getOrDefault(nums.get(i) * nums.get(j), 0) + 1
+                ab[nums[i] * nums[j]] = ab.getOrDefault(nums[i] * nums[j], 0) + 1
             }
         }
         var count = 0

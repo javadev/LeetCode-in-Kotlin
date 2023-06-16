@@ -15,8 +15,8 @@ class Solution {
         }
         val listToTeach: MutableList<IntArray> = ArrayList()
         for (friend: IntArray in friendships) {
-            val userA: Int = friend.get(0)
-            val userB: Int = friend.get(1)
+            val userA: Int = friend[0]
+            val userB: Int = friend[1]
             var hasCommonLanguage = false
             for (language in 1..n) {
                 if (speak.get(userA).get(language) && speak.get(userB).get(language)) {
@@ -26,22 +26,22 @@ class Solution {
             }
             if (!hasCommonLanguage) {
                 for (language in 1..n) {
-                    if (!speak.get(userA).get(language)) {
-                        teach.get(userA)[language] = true
+                    if (!speak[userA][language]) {
+                        teach[userA][language] = true
                     }
-                    if (!speak.get(userB).get(language)) {
-                        teach.get(userB)[language] = true
+                    if (!speak[userB][language]) {
+                        teach[userB][language] = true
                     }
                 }
                 listToTeach.add(friend)
             }
         }
         var minLanguage: Int = Int.MAX_VALUE
-        var languageToTeach: Int = 0
+        var languageToTeach = 0
         for (language in 1..n) {
-            var count: Int = 0
+            var count = 0
             for (user in 1..m) {
-                if (teach.get(user).get(language)) {
+                if (teach[user][language]) {
                     count++
                 }
             }
@@ -52,12 +52,12 @@ class Solution {
         }
         val setToTeach: MutableSet<Int> = HashSet()
         for (friend: IntArray in listToTeach) {
-            val userA: Int = friend.get(0)
-            val userB: Int = friend.get(1)
-            if (!speak.get(userA).get(languageToTeach)) {
+            val userA: Int = friend[0]
+            val userB: Int = friend[1]
+            if (!speak[userA][languageToTeach]) {
                 setToTeach.add(userA)
             }
-            if (!speak.get(userB).get(languageToTeach)) {
+            if (!speak[userB][languageToTeach]) {
                 setToTeach.add(userB)
             }
         }

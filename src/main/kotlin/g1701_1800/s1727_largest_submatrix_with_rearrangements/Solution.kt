@@ -5,7 +5,7 @@ package g1701_1800.s1727_largest_submatrix_with_rearrangements
 class Solution {
     fun largestSubmatrix(matrix: Array<IntArray>): Int {
         val m: Int = matrix.size
-        val n: Int = matrix.get(0).size
+        val n: Int = matrix[0].size
         for (i in 1 until m) {
             for (j in 0 until n) {
                 if (matrix[i][j] != 0) {

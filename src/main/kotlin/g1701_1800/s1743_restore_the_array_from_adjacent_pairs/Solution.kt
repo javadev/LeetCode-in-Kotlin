@@ -8,12 +8,12 @@ class Solution {
             return IntArray(0)
         }
         if (adjacentPairs.size == 1) {
-            return adjacentPairs.get(0)
+            return adjacentPairs[0]
         }
         val graph: MutableMap<Int, MutableList<Int>> = HashMap()
         for (pair: IntArray in adjacentPairs) {
-            graph.computeIfAbsent(pair.get(0)) { _: Int? -> ArrayList() }.add(pair.get(1))
-            graph.computeIfAbsent(pair.get(1)) { _: Int? -> ArrayList() }.add(pair.get(0))
+            graph.computeIfAbsent(pair[0]) { _: Int? -> ArrayList() }.add(pair[1])
+            graph.computeIfAbsent(pair[1]) { _: Int? -> ArrayList() }.add(pair[0])
         }
         val res = IntArray(graph.size)
         for (entry: Map.Entry<Int, List<Int>> in graph.entries) {
@@ -22,10 +22,10 @@ class Solution {
                 break
             }
         }
-        res[1] = graph.get(res.get(0))!!.get(0)
+        res[1] = graph[res[0]]!![0]
         for (i in 2 until res.size) {
-            for (cur: Int in graph.get(res.get(i - 1))!!) {
-                if (cur != res.get(i - 2)) {
+            for (cur: Int in graph[res[i - 1]]!!) {
+                if (cur != res[i - 2]) {
                     res[i] = cur
                     break
                 }

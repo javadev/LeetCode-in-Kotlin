@@ -13,16 +13,16 @@ class Solution {
         primes = getPrimes(100)
         tri = getTri(10015, 15)
         for (i in 0 until len) {
-            res[i] = calculate(queries.get(i).get(0), queries.get(i).get(1))
+            res[i] = calculate(queries[i][0], queries[i][1])
         }
         return res
     }
 
     private fun getPrimes(limit: Int): List<Int> {
-        val notPrime: BooleanArray = BooleanArray(limit + 1)
+        val notPrime = BooleanArray(limit + 1)
         val res: MutableList<Int> = ArrayList()
         for (i in 2..limit) {
-            if (!notPrime.get(i)) {
+            if (!notPrime[i]) {
                 res.add(i)
                 var j: Int = i * i
                 while (j <= limit) {
@@ -35,11 +35,11 @@ class Solution {
     }
 
     private fun getTri(m: Int, n: Int): Array<LongArray> {
-        val res: Array<LongArray> = Array(m + 1, { LongArray(n + 1) })
+        val res: Array<LongArray> = Array(m + 1) { LongArray(n + 1) }
         for (i in 0..m) {
-            res.get(i)[0] = 1
+            res[i][0] = 1
             for (j in 1..Math.min(n, i)) {
-                res.get(i)[j] = (res.get(i - 1).get(j - 1) + res.get(i - 1).get(j)) % MOD
+                res[i][j] = (res[i - 1][j - 1] + res[i - 1][j]) % MOD
             }
         }
         return res
@@ -52,12 +52,12 @@ class Solution {
             if (prime > target) {
                 break
             }
-            var cnt: Int = 0
+            var cnt = 0
             while (target % prime == 0) {
                 cnt++
                 target /= prime
             }
-            res = (res * tri.get(cnt + n - 1).get(cnt)) % MOD
+            res = (res * tri[cnt + n - 1][cnt]) % MOD
         }
         return if (target > 1) (res * n % MOD).toInt() else res.toInt()
     }

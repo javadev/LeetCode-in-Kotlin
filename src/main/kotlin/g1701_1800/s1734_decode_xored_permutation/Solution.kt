@@ -8,15 +8,15 @@ class Solution {
         run {
             var i = 1
             while (i < encoded.size) {
-                decoded[0] = decoded.get(0) xor encoded.get(i)
-                decoded[0] = decoded.get(0) xor i
-                decoded[0] = decoded.get(0) xor (i + 1)
+                decoded[0] = decoded[0] xor encoded[i]
+                decoded[0] = decoded[0] xor i
+                decoded[0] = decoded[0] xor (i + 1)
                 i += 2
             }
         }
-        decoded[0] = decoded.get(0) xor decoded.size
+        decoded[0] = decoded[0] xor decoded.size
         for (i in 1 until decoded.size) {
-            decoded[i] = decoded.get(i - 1) xor encoded.get(i - 1)
+            decoded[i] = decoded[i - 1] xor encoded[i - 1]
         }
         return decoded
     }
