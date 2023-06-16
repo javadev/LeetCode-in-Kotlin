@@ -3,8 +3,8 @@ package g1601_1700.s1627_graph_connectivity_with_threshold
 // #Hard #Array #Math #Union_Find #2023_06_16_Time_703_ms_(100.00%)_Space_87.8_MB_(100.00%)
 
 class Solution {
-    fun areConnected(n: Int, threshold: Int, queries: Array<IntArray>?): List<Boolean> {
-        if (n < 1 || queries.isNullOrEmpty()) {
+    fun areConnected(n: Int, threshold: Int, queries: Array<IntArray>): List<Boolean> {
+        if (n < 1 || queries.isEmpty()) {
             return ArrayList()
         }
         var j: Int
