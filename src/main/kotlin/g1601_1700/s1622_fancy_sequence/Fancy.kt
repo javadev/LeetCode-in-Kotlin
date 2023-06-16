@@ -2,8 +2,6 @@ package g1601_1700.s1622_fancy_sequence
 
 // #Hard #Math #Design #Segment_Tree #2023_06_16_Time_1050_ms_(100.00%)_Space_113.1_MB_(100.00%)
 
-import java.util.Arrays
-
 class Fancy {
     private var values = IntArray(8)
     private var add: Long = 0
