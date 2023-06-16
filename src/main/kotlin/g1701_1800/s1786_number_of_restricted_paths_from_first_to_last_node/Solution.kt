@@ -21,7 +21,7 @@ class Solution {
         val vis = BooleanArray(n + 1)
         dtl = IntArray(n + 1)
         pq.add(Pair(n, 0))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val rem = pq.remove()
             if (vis[rem.v]) {
                 continue

@@ -17,7 +17,7 @@ class Solution {
                 }
             }
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val q1: Queue<IntArray> = LinkedList()
             for (cur in q) {
                 val x = cur[0]

@@ -13,7 +13,7 @@ class Solution {
             ans[i] = -1.0
             val presentCar = cars[i]
             val presentCarSpeed = presentCar[1]
-            while (!stack.isEmpty()) {
+            while (stack.isNotEmpty()) {
                 val previousCar = stack.peekLast()
                 val previousCarSpeed = cars[previousCar][1]
                 if (presentCarSpeed > previousCarSpeed &&

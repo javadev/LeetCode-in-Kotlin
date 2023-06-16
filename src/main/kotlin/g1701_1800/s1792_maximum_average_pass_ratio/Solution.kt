@@ -5,8 +5,6 @@ import java.util.PriorityQueue
 // #Medium #Array #Greedy #Heap_Priority_Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
-    // O(m*logn+n*logn)
-    // PriorityQueue
     fun maxAverageRatio(classes: Array<IntArray>, extraStudents: Int): Double {
         var extraStudents = extraStudents
         val heap = PriorityQueue { o1: DoubleArray, o2: DoubleArray -> java.lang.Double.compare(o2[0], o1[0]) }
@@ -23,7 +21,7 @@ class Solution {
             extraStudents--
         }
         var average = 0.0
-        while (!heap.isEmpty()) {
+        while (heap.isNotEmpty()) {
             val temp = heap.poll()
             average += temp[1] / temp[2]
         }

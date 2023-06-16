@@ -27,7 +27,7 @@ class AuthenticationManager(var inc: Int) {
     }
 
     private fun update(curTime: Int) {
-        while (!deque.isEmpty() && deque.peekFirst().time <= curTime) {
+        while (deque.isNotEmpty() && deque.peekFirst().time <= curTime) {
             val id = deque.peekFirst().id
             val time = deque.peekFirst().time
             if (expireMap.containsKey(id) && expireMap[id] == time) {

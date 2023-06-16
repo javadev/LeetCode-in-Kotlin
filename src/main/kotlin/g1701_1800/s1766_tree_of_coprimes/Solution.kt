@@ -1,6 +1,7 @@
 package g1701_1800.s1766_tree_of_coprimes
 
 // #Hard #Math #Depth_First_Search #Breadth_First_Search #Tree
+@Suppress("kotlin:S107")
 class Solution {
     private fun dfs(
         v2n: IntArray,
