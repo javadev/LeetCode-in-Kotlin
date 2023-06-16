@@ -43,12 +43,12 @@ class Solution {
             }
         }
         swap(array, j, right)
-        if (j == target) {
-            return j
+        return if (j == target) {
+            j
         } else if (j > target) {
-            return quickSelect(array, left, j - 1, target)
+            quickSelect(array, left, j - 1, target)
         } else {
-            return quickSelect(array, j + 1, right, target)
+            quickSelect(array, j + 1, right, target)
         }
     }
 
