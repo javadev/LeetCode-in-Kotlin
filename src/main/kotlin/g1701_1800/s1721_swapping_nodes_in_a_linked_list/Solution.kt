@@ -1,16 +1,16 @@
 package g1701_1800.s1721_swapping_nodes_in_a_linked_list
 
+// #Medium #Two_Pointers #Linked_List #2023_06_16_Time_879_ms_(13.84%)_Space_53.8_MB_(95.50%)
+
 import com_github_leetcode.ListNode
 
-// #Medium #Two_Pointers #Linked_List
 /*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
  * }
  */
 class Solution {

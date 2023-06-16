@@ -1,6 +1,7 @@
 package g1701_1800.s1726_tuple_with_same_product
 
-// #Medium #Array #Hash_Table
+// #Medium #Array #Hash_Table #2023_06_16_Time_762_ms_(100.00%)_Space_64.8_MB_(100.00%)
+
 class Solution {
     fun tupleSameProduct(nums: IntArray): Int {
         val ab = HashMap<Int, Int>()

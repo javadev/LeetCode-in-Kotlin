@@ -1,6 +1,7 @@
 package g1701_1800.s1739_building_boxes
 
-// #Hard #Math #Greedy #Binary_Search
+// #Hard #Math #Greedy #Binary_Search #2023_06_16_Time_133_ms_(100.00%)_Space_32.8_MB_(100.00%)
+
 class Solution {
     fun minimumBoxes(n: Int): Int {
         val k: Int = findLargestTetrahedralNotGreaterThan(n)

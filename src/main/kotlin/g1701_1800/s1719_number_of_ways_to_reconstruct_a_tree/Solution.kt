@@ -1,6 +1,7 @@
 package g1701_1800.s1719_number_of_ways_to_reconstruct_a_tree
 
-// #Hard #Tree #Graph #Topological_Sort
+// #Hard #Tree #Graph #Topological_Sort #2023_06_16_Time_1015_ms_(100.00%)_Space_102_MB_(100.00%)
+
 class Solution {
     fun checkWays(pairs: Array<IntArray>): Int {
         val adj = Array(501) { IntArray(501) }

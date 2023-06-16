@@ -1,10 +1,11 @@
 package g1701_1800.s1736_latest_time_by_replacing_hidden_digits
 
-// #Easy #String #Greedy
+// #Easy #String #Greedy #2023_06_16_Time_161_ms_(100.00%)_Space_35.5_MB_(100.00%)
+
 class Solution {
     fun maximumTime(time: String): String {
         val sb: StringBuilder = StringBuilder()
-        val strs: Array<String> = time.split(":".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()
+        val strs: Array<String> = time.split(":").dropLastWhile({ it.isEmpty() }).toTypedArray()
         val hour: String = strs.get(0)
         val min: String = strs.get(1)
         if (hour.get(0) == '?') {

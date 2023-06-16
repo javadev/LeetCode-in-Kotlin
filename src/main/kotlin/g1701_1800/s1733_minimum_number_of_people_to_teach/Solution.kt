@@ -1,11 +1,12 @@
 package g1701_1800.s1733_minimum_number_of_people_to_teach
 
-// #Medium #Array #Greedy
+// #Medium #Array #Greedy #2023_06_16_Time_580_ms_(100.00%)_Space_57.1_MB_(100.00%)
+
 class Solution {
     fun minimumTeachings(n: Int, languages: Array<IntArray>, friendships: Array<IntArray>): Int {
         val m: Int = languages.size
-        val speak: Array<BooleanArray> = Array(m + 1, { BooleanArray(n + 1) })
-        val teach: Array<BooleanArray> = Array(m + 1, { BooleanArray(n + 1) })
+        val speak: Array<BooleanArray> = Array(m + 1) { BooleanArray(n + 1) }
+        val teach: Array<BooleanArray> = Array(m + 1) { BooleanArray(n + 1) }
         for (user in 0 until m) {
             val userLanguages: IntArray = languages.get(user)
             for (userLanguage: Int in userLanguages) {
@@ -16,7 +17,7 @@ class Solution {
         for (friend: IntArray in friendships) {
             val userA: Int = friend.get(0)
             val userB: Int = friend.get(1)
-            var hasCommonLanguage: Boolean = false
+            var hasCommonLanguage = false
             for (language in 1..n) {
                 if (speak.get(userA).get(language) && speak.get(userB).get(language)) {
                     hasCommonLanguage = true

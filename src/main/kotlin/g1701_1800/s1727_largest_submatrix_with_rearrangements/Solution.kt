@@ -1,6 +1,7 @@
 package g1701_1800.s1727_largest_submatrix_with_rearrangements
 
-// #Medium #Array #Sorting #Greedy #Matrix
+// #Medium #Array #Sorting #Greedy #Matrix #2023_06_16_Time_650_ms_(100.00%)_Space_83.9_MB_(100.00%)
+
 class Solution {
     fun largestSubmatrix(matrix: Array<IntArray>): Int {
         val m: Int = matrix.size

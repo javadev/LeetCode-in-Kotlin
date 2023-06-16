@@ -1,6 +1,8 @@
 package g1701_1800.s1722_minimize_hamming_distance_after_swap_operations
 
 // #Medium #Array #Depth_First_Search #Union_Find
+// #2023_06_16_Time_843_ms_(100.00%)_Space_87.9_MB_(100.00%)
+
 class Solution {
     fun minimumHammingDistance(source: IntArray, target: IntArray, allowedSwaps: Array<IntArray>): Int {
         var i: Int

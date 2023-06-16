@@ -1,6 +1,7 @@
 package g1701_1800.s1735_count_ways_to_make_array_with_product
 
-// #Hard #Array #Dynamic_Programming #Math
+// #Hard #Array #Dynamic_Programming #Math #2023_06_16_Time_394_ms_(100.00%)_Space_50.6_MB_(100.00%)
+
 class Solution {
     private lateinit var tri: Array<LongArray>
     private var primes: List<Int>? = null

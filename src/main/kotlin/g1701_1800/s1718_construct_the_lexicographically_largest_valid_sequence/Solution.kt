@@ -1,6 +1,7 @@
 package g1701_1800.s1718_construct_the_lexicographically_largest_valid_sequence
 
-// #Medium #Array #Backtracking
+// #Medium #Array #Backtracking #2023_06_16_Time_140_ms_(100.00%)_Space_33.2_MB_(100.00%)
+
 class Solution {
     fun constructDistancedSequence(n: Int): IntArray {
         val result = IntArray(n * 2 - 1)

@@ -1,13 +1,14 @@
 package g1701_1800.s1728_cat_and_mouse_ii
 
 // #Hard #Array #Dynamic_Programming #Math #Matrix #Graph #Memoization #Topological_Sort
-// #Game_Theory
-@Suppress("NAME_SHADOWING")
+// #Game_Theory #2023_06_16_Time_193_ms_(100.00%)_Space_37.2_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private val graphs: Array<Array<List<Int>>> = arrayOf(arrayOf(), arrayOf())
     private var foodPos = 0
     private lateinit var memo: Array<Array<IntArray>>
+
     fun canMouseWin(grid: Array<String>, catJump: Int, mouseJump: Int): Boolean {
         val m = grid.size
         val n = grid[0].length

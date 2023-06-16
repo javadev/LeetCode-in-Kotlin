@@ -1,8 +1,11 @@
 package g1701_1800.s1723_find_minimum_time_to_finish_all_jobs
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2023_06_16_Time_167_ms_(100.00%)_Space_33.3_MB_(100.00%)
+
 class Solution {
     private var min = Int.MAX_VALUE
+
     fun minimumTimeRequired(jobs: IntArray, k: Int): Int {
         backtraking(jobs, jobs.size - 1, IntArray(k))
         return min
