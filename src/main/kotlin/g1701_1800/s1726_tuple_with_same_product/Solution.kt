@@ -1,6 +1,5 @@
 package g1701_1800.s1726_tuple_with_same_product
 
-
 // #Medium #Array #Hash_Table
 class Solution {
     fun tupleSameProduct(nums: IntArray): Int {

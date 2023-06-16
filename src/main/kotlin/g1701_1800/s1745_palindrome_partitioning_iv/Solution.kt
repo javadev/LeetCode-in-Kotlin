@@ -1,6 +1,7 @@
 package g1701_1800.s1745_palindrome_partitioning_iv
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_16_Time_179_ms_(100.00%)_Space_36.4_MB_(100.00%)
+
 class Solution {
     fun checkPartitioning(s: String): Boolean {
         val len: Int = s.length

@@ -8,13 +8,28 @@ internal class SolutionTest {
     @Test
     fun maximumUnits() {
         assertThat(
-                Solution().maximumUnits(arrayOf(intArrayOf(1, 3), intArrayOf(2, 2), intArrayOf(3, 1)), 4), equalTo(8))
+            Solution().maximumUnits(
+                arrayOf(
+                    intArrayOf(1, 3), intArrayOf(2, 2),
+                    intArrayOf(3, 1)
+                ),
+                4
+            ),
+            equalTo(8)
+        )
     }
 
     @Test
     fun maximumUnits2() {
         assertThat(
-                Solution().maximumUnits(arrayOf(intArrayOf(5, 10), intArrayOf(2, 5), intArrayOf(4, 7), intArrayOf(3, 9)), 10),
-                equalTo(91))
+            Solution().maximumUnits(
+                arrayOf(
+                    intArrayOf(5, 10), intArrayOf(2, 5),
+                    intArrayOf(4, 7), intArrayOf(3, 9)
+                ),
+                10
+            ),
+            equalTo(91)
+        )
     }
 }

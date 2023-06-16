@@ -1,11 +1,10 @@
 package g1701_1800.s1743_restore_the_array_from_adjacent_pairs
 
-import java.util.function.Function
+// #Medium #Array #Hash_Table #2023_06_16_Time_1018_ms_(100.00%)_Space_110.7_MB_(75.00%)
 
-// #Medium #Array #Hash_Table
 class Solution {
-    fun restoreArray(adjacentPairs: Array<IntArray>?): IntArray {
-        if (adjacentPairs == null || adjacentPairs.size == 0) {
+    fun restoreArray(adjacentPairs: Array<IntArray>): IntArray {
+        if (adjacentPairs.isEmpty()) {
             return IntArray(0)
         }
         if (adjacentPairs.size == 1) {
@@ -13,8 +12,8 @@ class Solution {
         }
         val graph: MutableMap<Int, MutableList<Int>> = HashMap()
         for (pair: IntArray in adjacentPairs) {
-            graph.computeIfAbsent(pair.get(0), Function<Int, MutableList<Int>>({ k: Int? -> ArrayList() })).add(pair.get(1))
-            graph.computeIfAbsent(pair.get(1), Function<Int, MutableList<Int>>({ k: Int? -> ArrayList() })).add(pair.get(0))
+            graph.computeIfAbsent(pair.get(0)) { k: Int? -> ArrayList() }.add(pair.get(1))
+            graph.computeIfAbsent(pair.get(1)) { k: Int? -> ArrayList() }.add(pair.get(0))
         }
         val res = IntArray(graph.size)
         for (entry: Map.Entry<Int, List<Int>> in graph.entries) {

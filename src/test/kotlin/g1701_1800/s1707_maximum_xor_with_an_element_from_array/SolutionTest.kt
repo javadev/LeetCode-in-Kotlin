@@ -8,16 +8,24 @@ internal class SolutionTest {
     @Test
     fun maximizeXor() {
         assertThat(
-                Solution()
-                        .maximizeXor(intArrayOf(0, 1, 2, 3, 4), arrayOf(intArrayOf(3, 1), intArrayOf(1, 3), intArrayOf(5, 6))),
-                equalTo(intArrayOf(3, 3, 7)))
+            Solution()
+                .maximizeXor(intArrayOf(0, 1, 2, 3, 4), arrayOf(intArrayOf(3, 1), intArrayOf(1, 3), intArrayOf(5, 6))),
+            equalTo(intArrayOf(3, 3, 7))
+        )
     }
 
     @Test
     fun maximizeXor2() {
         assertThat(
-                Solution()
-                        .maximizeXor(intArrayOf(5, 2, 4, 6, 6, 3), arrayOf(intArrayOf(12, 4), intArrayOf(8, 1), intArrayOf(6, 3))),
-                equalTo(intArrayOf(15, -1, 5)))
+            Solution()
+                .maximizeXor(
+                    intArrayOf(5, 2, 4, 6, 6, 3),
+                    arrayOf(
+                        intArrayOf(12, 4),
+                        intArrayOf(8, 1), intArrayOf(6, 3)
+                    )
+                ),
+            equalTo(intArrayOf(15, -1, 5))
+        )
     }
 }

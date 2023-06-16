@@ -13,15 +13,20 @@ import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
 
-@EmbeddedDatabaseTest(compatibilityMode = CompatibilityMode.MySQL, initialSqls = ["CREATE TABLE Followers(user_id INTEGER, follower_id INTEGER); "
-        + "INSERT INTO Followers(user_id, follower_id) "
-        + " VALUES (0, 1); "
-        + "INSERT INTO Followers(user_id, follower_id) "
-        + " VALUES (1, 0); "
-        + "INSERT INTO Followers(user_id, follower_id) "
-        + " VALUES (2, 0); "
-        + "INSERT INTO Followers(user_id, follower_id) "
-        + " VALUES (2, 1); "])
+@EmbeddedDatabaseTest(
+    compatibilityMode = CompatibilityMode.MySQL,
+    initialSqls = [
+        "CREATE TABLE Followers(user_id INTEGER, follower_id INTEGER); " +
+            "INSERT INTO Followers(user_id, follower_id) " +
+            " VALUES (0, 1); " +
+            "INSERT INTO Followers(user_id, follower_id) " +
+            " VALUES (1, 0); " +
+            "INSERT INTO Followers(user_id, follower_id) " +
+            " VALUES (2, 0); " +
+            "INSERT INTO Followers(user_id, follower_id) " +
+            " VALUES (2, 1); "
+    ]
+)
 internal class MysqlTest {
     @Test
     @Throws(SQLException::class, FileNotFoundException::class)
@@ -29,12 +34,16 @@ internal class MysqlTest {
         dataSource.connection.use { connection ->
             connection.createStatement().use { statement ->
                 statement.executeQuery(
-                        BufferedReader(
-                                FileReader("src/main/kotlin/g1701_1800/s1729_find_fol"
-                                        + "lowers_count/script.sql"))
-                                .lines()
-                                .collect(Collectors.joining("\n"))
-                                .replace("#.*?\\r?\\n".toRegex(), "")).use { resultSet ->
+                    BufferedReader(
+                        FileReader(
+                            "src/main/kotlin/g1701_1800/s1729_find_fol" +
+                                "lowers_count/script.sql"
+                        )
+                    )
+                        .lines()
+                        .collect(Collectors.joining("\n"))
+                        .replace("#.*?\\r?\\n".toRegex(), "")
+                ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(0))
                     assertThat(resultSet.getInt(2), equalTo(1))

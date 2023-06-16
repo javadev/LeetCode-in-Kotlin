@@ -1,8 +1,10 @@
 package g1701_1800.s1713_minimum_operations_to_make_a_subsequence
 
+// #Hard #Array #Hash_Table #Greedy #Binary_Search
+// #2023_06_16_Time_862_ms_(100.00%)_Space_67.3_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Hard #Array #Hash_Table #Greedy #Binary_Search
 class Solution {
     fun minOperations(target: IntArray, arr: IntArray): Int {
         val map: MutableMap<Int, Int> = HashMap()

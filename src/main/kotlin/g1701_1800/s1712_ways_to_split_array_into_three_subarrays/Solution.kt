@@ -1,6 +1,8 @@
 package g1701_1800.s1712_ways_to_split_array_into_three_subarrays
 
 // #Medium #Array #Binary_Search #Two_Pointers #Prefix_Sum #Binary_Search_II_Day_10
+// #2023_06_16_Time_486_ms_(100.00%)_Space_52.8_MB_(100.00%)
+
 class Solution {
     fun waysToSplit(nums: IntArray): Int {
         var sum = 0

@@ -13,6 +13,7 @@ internal class SolutionTest {
     @Test
     fun decode2() {
         assertThat(
-                Solution().decode(intArrayOf(6, 5, 4, 6)), equalTo(intArrayOf(2, 4, 1, 5, 3)))
+            Solution().decode(intArrayOf(6, 5, 4, 6)), equalTo(intArrayOf(2, 4, 1, 5, 3))
+        )
     }
 }

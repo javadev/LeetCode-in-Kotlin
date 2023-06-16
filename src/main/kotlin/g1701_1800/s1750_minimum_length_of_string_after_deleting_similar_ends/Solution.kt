@@ -1,6 +1,7 @@
 package g1701_1800.s1750_minimum_length_of_string_after_deleting_similar_ends
 
-// #Medium #String #Two_Pointers
+// #Medium #String #Two_Pointers #2023_06_16_Time_215_ms_(100.00%)_Space_37.4_MB_(100.00%)
+
 class Solution {
     fun minimumLength(s: String): Int {
         var i: Int = 0

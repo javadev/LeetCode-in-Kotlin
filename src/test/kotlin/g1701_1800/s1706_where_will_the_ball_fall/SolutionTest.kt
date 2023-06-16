@@ -8,9 +8,16 @@ internal class SolutionTest {
     @Test
     fun findBall() {
         assertThat(
-                Solution()
-                        .findBall(arrayOf(intArrayOf(1, 1, 1, -1, -1), intArrayOf(1, 1, 1, -1, -1), intArrayOf(-1, -1, -1, 1, 1), intArrayOf(1, 1, 1, 1, -1), intArrayOf(-1, -1, -1, -1, -1))),
-                equalTo(intArrayOf(1, -1, -1, -1, -1)))
+            Solution()
+                .findBall(
+                    arrayOf(
+                        intArrayOf(1, 1, 1, -1, -1), intArrayOf(1, 1, 1, -1, -1),
+                        intArrayOf(-1, -1, -1, 1, 1), intArrayOf(1, 1, 1, 1, -1),
+                        intArrayOf(-1, -1, -1, -1, -1)
+                    )
+                ),
+            equalTo(intArrayOf(1, -1, -1, -1, -1))
+        )
     }
 
     @Test
@@ -21,8 +28,14 @@ internal class SolutionTest {
     @Test
     fun findBall3() {
         assertThat(
-                Solution()
-                        .findBall(arrayOf(intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1), intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1))),
-                equalTo(intArrayOf(0, 1, 2, 3, 4, -1)))
+            Solution()
+                .findBall(
+                    arrayOf(
+                        intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1),
+                        intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1)
+                    )
+                ),
+            equalTo(intArrayOf(0, 1, 2, 3, 4, -1))
+        )
     }
 }

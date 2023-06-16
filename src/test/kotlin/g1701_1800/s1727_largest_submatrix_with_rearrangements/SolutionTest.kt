@@ -8,8 +8,9 @@ internal class SolutionTest {
     @Test
     fun largestSubmatrix() {
         assertThat(
-                Solution().largestSubmatrix(arrayOf(intArrayOf(0, 0, 1), intArrayOf(1, 1, 1), intArrayOf(1, 0, 1))),
-                equalTo(4))
+            Solution().largestSubmatrix(arrayOf(intArrayOf(0, 0, 1), intArrayOf(1, 1, 1), intArrayOf(1, 0, 1))),
+            equalTo(4)
+        )
     }
 
     @Test

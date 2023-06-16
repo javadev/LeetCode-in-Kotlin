@@ -13,7 +13,9 @@ class Solution {
         var c = 0
         for (i in start until end) {
             val ch = s[i]
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' ||
+                ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'
+            ) {
                 c++
             }
         }

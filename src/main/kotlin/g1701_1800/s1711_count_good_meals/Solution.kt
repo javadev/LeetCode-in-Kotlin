@@ -1,10 +1,11 @@
 package g1701_1800.s1711_count_good_meals
 
-// #Medium #Array #Hash_Table
+// #Medium #Array #Hash_Table #2023_06_16_Time_549_ms_(100.00%)_Space_53_MB_(100.00%)
+
 class Solution {
-    fun countPairs(d: IntArray): Int {
+    fun countPairs(deliciousness: IntArray): Int {
         val map = HashMap<Int, Int>()
-        for (k in d) {
+        for (k in deliciousness) {
             map[k] = map.getOrDefault(k, 0) + 1
         }
         var result: Long = 0

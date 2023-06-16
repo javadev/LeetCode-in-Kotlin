@@ -4,7 +4,6 @@ package g1701_1800.s1728_cat_and_mouse_ii
 // #Game_Theory
 @Suppress("NAME_SHADOWING")
 
-
 class Solution {
     private val graphs: Array<Array<List<Int>>> = arrayOf(arrayOf(), arrayOf())
     private var foodPos = 0
@@ -94,4 +93,3 @@ class Solution {
         private const val MOUSE_TURN = 0
     }
 }
-

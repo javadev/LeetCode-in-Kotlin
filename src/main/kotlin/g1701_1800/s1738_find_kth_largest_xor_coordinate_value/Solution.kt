@@ -11,10 +11,12 @@ class Solution {
         val array: IntArray = IntArray(rows * cols)
         for (r in 1..rows) {
             for (c in 1..cols) {
-                prefixXor.get(r)[c] = (matrix.get(r - 1).get(c - 1)
+                prefixXor.get(r)[c] = (
+                    matrix.get(r - 1).get(c - 1)
                         xor prefixXor.get(r - 1).get(c)
                         xor prefixXor.get(r).get(c - 1)
-                        xor prefixXor.get(r - 1).get(c - 1))
+                        xor prefixXor.get(r - 1).get(c - 1)
+                    )
                 array[t++] = prefixXor.get(r).get(c)
             }
         }

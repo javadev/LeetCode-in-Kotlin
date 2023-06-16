@@ -2,10 +2,11 @@ package g1701_1800.s1707_maximum_xor_with_an_element_from_array
 
 // #Hard #Array #Bit_Manipulation #Trie #2023_06_15_Time_1295_ms_(100.00%)_Space_130.3_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     internal class QueryComparator : Comparator<IntArray> {
         override fun compare(a: IntArray, b: IntArray): Int {
-            return Integer.compare(a[1], b[1])
+            return a[1].compareTo(b[1])
         }
     }
 

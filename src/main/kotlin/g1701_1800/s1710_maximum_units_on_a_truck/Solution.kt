@@ -1,8 +1,10 @@
 package g1701_1800.s1710_maximum_units_on_a_truck
 
-import java.util.*
+// #Easy #Array #Sorting #Greedy #2023_06_16_Time_228_ms_(100.00%)_Space_38.5_MB_(100.00%)
 
-// #Easy #Array #Sorting #Greedy
+import java.util.Arrays
+
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun maximumUnits(boxTypes: Array<IntArray>, truckSize: Int): Int {
         var truckSize = truckSize
