@@ -1,6 +1,7 @@
 package g1701_1800.s1754_largest_merge_of_two_strings
 
 // #Medium #String #Greedy #Two_Pointers
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun largestMerge(word1: String, word2: String): String {
         val a = word1.toCharArray()
