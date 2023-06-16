@@ -1856,6 +1856,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1654 |[Minimum Jumps to Reach Home](src/main/kotlin/g1601_1700/s1654_minimum_jumps_to_reach_home/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 192 | 100.00
 | 1653 |[Minimum Deletions to Make String Balanced](src/main/kotlin/g1601_1700/s1653_minimum_deletions_to_make_string_balanced/Solution.kt)| Medium | String, Dynamic_Programming, Stack | 291 | 100.00
 | 1652 |[Defuse the Bomb](src/main/kotlin/g1601_1700/s1652_defuse_the_bomb/Solution.kt)| Easy | Array | 160 | 100.00
+| 1627 |[Graph Connectivity With Threshold](src/main/kotlin/g1601_1700/s1627_graph_connectivity_with_threshold/Solution.kt)| Hard | Array, Math, Union_Find | 703 | 100.00
+| 1626 |[Best Team With No Conflicts](src/main/kotlin/g1601_1700/s1626_best_team_with_no_conflicts/Solution.kt)| Medium | Array, Dynamic_Programming, Sorting | 370 | 100.00
+| 1625 |[Lexicographically Smallest String After Applying Operations](src/main/kotlin/g1601_1700/s1625_lexicographically_smallest_string_after_applying_operations/Solution.kt)| Medium | String, Breadth_First_Search | 415 | 100.00
+| 1624 |[Largest Substring Between Two Equal Characters](src/main/kotlin/g1601_1700/s1624_largest_substring_between_two_equal_characters/Solution.kt)| Easy | String, Hash_Table | 132 | 100.00
+| 1622 |[Fancy Sequence](src/main/kotlin/g1601_1700/s1622_fancy_sequence/Fancy.kt)| Hard | Math, Design, Segment_Tree | 1050 | 100.00
+| 1621 |[Number of Sets of K Non-Overlapping Line Segments](src/main/kotlin/g1601_1700/s1621_number_of_sets_of_k_non_overlapping_line_segments/Solution.kt)| Medium | Dynamic_Programming, Math | 147 | 100.00
+| 1620 |[Coordinate With Maximum Network Quality](src/main/kotlin/g1601_1700/s1620_coordinate_with_maximum_network_quality/Solution.kt)| Medium | Array, Enumeration | 233 | 100.00
+| 1619 |[Mean of Array After Removing Some Elements](src/main/kotlin/g1601_1700/s1619_mean_of_array_after_removing_some_elements/Solution.kt)| Easy | Array, Sorting | 178 | 100.00
 | 1617 |[Count Subtrees With Max Distance Between Cities](src/main/kotlin/g1601_1700/s1617_count_subtrees_with_max_distance_between_cities/Solution.kt)| Hard | Dynamic_Programming, Tree, Bit_Manipulation, Bitmask, Enumeration | 297 | 100.00
 | 1616 |[Split Two Strings to Make Palindrome](src/main/kotlin/g1601_1700/s1616_split_two_strings_to_make_palindrome/Solution.kt)| Medium | String, Greedy, Two_Pointers | 277 | 100.00
 | 1615 |[Maximal Network Rank](src/main/kotlin/g1601_1700/s1615_maximal_network_rank/Solution.kt)| Medium | Graph, Graph_Theory_I_Day_14_Graph_Theory | 282 | 100.00
