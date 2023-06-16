@@ -14,7 +14,7 @@ class Fancy {
     fun append(`val`: Int) {
         val result = (`val` - add + MOD) * rMult % MOD
         if (size >= values.size) {
-            values = Arrays.copyOf(values, size + (size shl 1))
+            values = values.copyOf(size + (size shl 1))
         }
         values[size++] = result.toInt()
     }
