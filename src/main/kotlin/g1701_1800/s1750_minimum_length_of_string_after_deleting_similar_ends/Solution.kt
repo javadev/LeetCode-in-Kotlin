@@ -4,17 +4,17 @@ package g1701_1800.s1750_minimum_length_of_string_after_deleting_similar_ends
 
 class Solution {
     fun minimumLength(s: String): Int {
-        var i: Int = 0
+        var i = 0
         var j: Int = s.length - 1
-        if (s.get(i) == s.get(j)) {
-            while (i < j && s.get(i) == s.get(j)) {
-                val c: Char = s.get(i)
+        if (s[i] == s[j]) {
+            while (i < j && s[i] == s[j]) {
+                val c: Char = s[i]
                 i++
-                while (c == s.get(i) && i < j) {
+                while (c == s[i] && i < j) {
                     i++
                 }
                 j--
-                while (c == s.get(j) && i < j) {
+                while (c == s[j] && i < j) {
                     j--
                 }
             }

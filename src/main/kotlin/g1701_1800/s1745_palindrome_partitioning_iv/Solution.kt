@@ -12,13 +12,13 @@ class Solution {
             for (l: Int in intArrayOf(i - 1, i)) {
                 var r: Int = i
                 var localL = l
-                while ((localL >= 0) && (r < len) && (ch.get(localL) == ch.get(r))) {
-                    dp[r + 1] = dp.get(r + 1) or (dp.get(localL) shl 1)
+                while ((localL >= 0) && (r < len) && (ch[localL] == ch[r])) {
+                    dp[r + 1] = dp[r + 1] or (dp[localL] shl 1)
                     localL--
                     r++
                 }
             }
         }
-        return (dp.get(len) and 0x08) == 0x08
+        return (dp[len] and 0x08) == 0x08
     }
 }

@@ -17,8 +17,8 @@ class Solution {
                 currentSum++
             }
             countArray[currentSum]++
-            if (countArray.get(currentSum) > maxValue) {
-                maxValue = countArray.get(currentSum)
+            if (countArray[currentSum] > maxValue) {
+                maxValue = countArray[currentSum]
             }
         }
         return maxValue

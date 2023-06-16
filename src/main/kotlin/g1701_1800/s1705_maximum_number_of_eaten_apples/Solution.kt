@@ -10,14 +10,14 @@ class Solution {
         val minHeap = PriorityQueue { a: IntArray, b: IntArray -> a[0] - b[0] }
         var eatenApples = 0
         var i = 0
-        while (i < apples.size || !minHeap.isEmpty()) {
+        while (i < apples.size || minHeap.isNotEmpty()) {
             if (i < apples.size) {
                 minHeap.offer(intArrayOf(i + days[i], apples[i]))
             }
-            while (!minHeap.isEmpty() && (minHeap.peek()[0] <= i || minHeap.peek()[1] <= 0)) {
+            while (minHeap.isNotEmpty() && (minHeap.peek()[0] <= i || minHeap.peek()[1] <= 0)) {
                 minHeap.poll()
             }
-            if (!minHeap.isEmpty()) {
+            if (minHeap.isNotEmpty()) {
                 eatenApples++
                 minHeap.peek()[1]--
             }

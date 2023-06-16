@@ -8,9 +8,9 @@ class Solution {
         val speak: Array<BooleanArray> = Array(m + 1) { BooleanArray(n + 1) }
         val teach: Array<BooleanArray> = Array(m + 1) { BooleanArray(n + 1) }
         for (user in 0 until m) {
-            val userLanguages: IntArray = languages.get(user)
+            val userLanguages: IntArray = languages[user]
             for (userLanguage: Int in userLanguages) {
-                speak.get(user + 1)[userLanguage] = true
+                speak[user + 1][userLanguage] = true
             }
         }
         val listToTeach: MutableList<IntArray> = ArrayList()
@@ -19,7 +19,7 @@ class Solution {
             val userB: Int = friend[1]
             var hasCommonLanguage = false
             for (language in 1..n) {
-                if (speak.get(userA).get(language) && speak.get(userB).get(language)) {
+                if (speak[userA][language] && speak[userB][language]) {
                     hasCommonLanguage = true
                     break
                 }

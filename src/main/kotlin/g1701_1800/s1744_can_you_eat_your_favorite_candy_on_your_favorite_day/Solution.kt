@@ -7,13 +7,13 @@ class Solution {
         val result = BooleanArray(queries.size)
         val candiesComm = LongArray(candiesCount.size + 1)
         for (i in 1..candiesCount.size) {
-            candiesComm[i] = candiesComm.get(i - 1) + candiesCount.get(i - 1)
+            candiesComm[i] = candiesComm[i - 1] + candiesCount[i - 1]
         }
         for (i in queries.indices) {
-            val type: Int = queries.get(i).get(0)
-            val day: Long = queries.get(i).get(1).toLong()
-            val cap: Long = queries.get(i).get(2).toLong()
-            result[i] = ((day + 1) * cap > candiesComm.get(type)) && day < candiesComm.get(type + 1)
+            val type: Int = queries[i][0]
+            val day: Long = queries[i][1].toLong()
+            val cap: Long = queries[i][2].toLong()
+            result[i] = ((day + 1) * cap > candiesComm[type]) && day < candiesComm[type + 1]
         }
         return result
     }
