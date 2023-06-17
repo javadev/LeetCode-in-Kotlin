@@ -1450,6 +1450,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1630 |[Arithmetic Subarrays](src/main/kotlin/g1601_1700/s1630_arithmetic_subarrays/Solution.kt)| Medium | Array, Sorting | 264 | 100.00
 | 0429 |[N-ary Tree Level Order Traversal](src.save/main/kotlin/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.kt)| Medium | Breadth_First_Search, Tree | 248 | 75.86
 
 #### Day 10
@@ -1900,6 +1901,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1654 |[Minimum Jumps to Reach Home](src/main/kotlin/g1601_1700/s1654_minimum_jumps_to_reach_home/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 192 | 100.00
 | 1653 |[Minimum Deletions to Make String Balanced](src/main/kotlin/g1601_1700/s1653_minimum_deletions_to_make_string_balanced/Solution.kt)| Medium | String, Dynamic_Programming, Stack | 291 | 100.00
 | 1652 |[Defuse the Bomb](src/main/kotlin/g1601_1700/s1652_defuse_the_bomb/Solution.kt)| Easy | Array | 160 | 100.00
+| 1638 |[Count Substrings That Differ by One Character](src/main/kotlin/g1601_1700/s1638_count_substrings_that_differ_by_one_character/Solution.kt)| Medium | String, Hash_Table, Dynamic_Programming | 143 | 100.00
+| 1637 |[Widest Vertical Area Between Two Points Containing No Points](src/main/kotlin/g1601_1700/s1637_widest_vertical_area_between_two_points_containing_no_points/Solution.kt)| Medium | Array, Sorting | 616 | 100.00
+| 1636 |[Sort Array by Increasing Frequency](src/main/kotlin/g1601_1700/s1636_sort_array_by_increasing_frequency/Solution.kt)| Easy | Array, Hash_Table, Sorting | 222 | 95.65
+| 1633 |[Percentage of Users Attended a Contest](src/main/kotlin/g1601_1700/s1633_percentage_of_users_attended_a_contest/script.sql)| Easy | Database | 1556 | 93.74
+| 1632 |[Rank Transform of a Matrix](src/main/kotlin/g1601_1700/s1632_rank_transform_of_a_matrix/Solution.kt)| Hard | Array, Greedy, Matrix, Graph, Union_Find, Topological_Sort | 807 | 100.00
+| 1631 |[Path With Minimum Effort](src/main/kotlin/g1601_1700/s1631_path_with_minimum_effort/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Binary_Search, Matrix, Heap_Priority_Queue, Union_Find | 384 | 100.00
+| 1630 |[Arithmetic Subarrays](src/main/kotlin/g1601_1700/s1630_arithmetic_subarrays/Solution.kt)| Medium | Array, Sorting, Programming_Skills_II_Day_9 | 264 | 100.00
+| 1629 |[Slowest Key](src/main/kotlin/g1601_1700/s1629_slowest_key/Solution.kt)| Easy | Array, String | 200 | 75.00
 | 1627 |[Graph Connectivity With Threshold](src/main/kotlin/g1601_1700/s1627_graph_connectivity_with_threshold/Solution.kt)| Hard | Array, Math, Union_Find | 703 | 100.00
 | 1626 |[Best Team With No Conflicts](src/main/kotlin/g1601_1700/s1626_best_team_with_no_conflicts/Solution.kt)| Medium | Array, Dynamic_Programming, Sorting | 370 | 100.00
 | 1625 |[Lexicographically Smallest String After Applying Operations](src/main/kotlin/g1601_1700/s1625_lexicographically_smallest_string_after_applying_operations/Solution.kt)| Medium | String, Breadth_First_Search | 415 | 100.00
