@@ -22,7 +22,7 @@ class Solution {
         val dx = intArrayOf(-1, 0, 1, 0)
         val dy = intArrayOf(0, 1, 0, -1)
         var min = Int.MAX_VALUE
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val p = pq.remove()
             val row = p.row
             val col = p.col
