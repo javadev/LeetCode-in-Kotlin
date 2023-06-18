@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val maximumGenerated: Unit
-        get() {
-            assertThat(Solution().getMaximumGenerated(7), equalTo(3))
-        }
+    @Test
+    fun maximumGenerated() {
+        assertThat(Solution().getMaximumGenerated(7), equalTo(3))
+    }
 
-    @get:Test
-    val maximumGenerated2: Unit
-        get() {
-            assertThat(Solution().getMaximumGenerated(2), equalTo(1))
-        }
+    @Test
+    fun maximumGenerated2() {
+        assertThat(Solution().getMaximumGenerated(2), equalTo(1))
+    }
 
-    @get:Test
-    val maximumGenerated3: Unit
-        get() {
-            assertThat(Solution().getMaximumGenerated(3), equalTo(2))
-        }
+    @Test
+    fun maximumGenerated3() {
+        assertThat(Solution().getMaximumGenerated(3), equalTo(2))
+    }
 }
