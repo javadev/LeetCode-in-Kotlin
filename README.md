@@ -1137,6 +1137,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1562 |[Find Latest Group of Size M](src.save/main/kotlin/g1501_1600/s1562_find_latest_group_of_size_m/Solution.kt)| Medium | Array, Binary_Search, Simulation | 534 | 100.00
+| 1648 |[Sell Diminishing-Valued Colored Balls](src/main/kotlin/g1601_1700/s1648_sell_diminishing_valued_colored_balls/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Binary_Search, Heap_Priority_Queue | 509 | 100.00
 
 #### Day 20
 
@@ -1948,6 +1949,15 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1654 |[Minimum Jumps to Reach Home](src/main/kotlin/g1601_1700/s1654_minimum_jumps_to_reach_home/Solution.kt)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 192 | 100.00
 | 1653 |[Minimum Deletions to Make String Balanced](src/main/kotlin/g1601_1700/s1653_minimum_deletions_to_make_string_balanced/Solution.kt)| Medium | String, Dynamic_Programming, Stack | 291 | 100.00
 | 1652 |[Defuse the Bomb](src/main/kotlin/g1601_1700/s1652_defuse_the_bomb/Solution.kt)| Easy | Array | 160 | 100.00
+| 1649 |[Create Sorted Array through Instructions](src/main/kotlin/g1601_1700/s1649_create_sorted_array_through_instructions/Solution.kt)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 571 | 100.00
+| 1648 |[Sell Diminishing-Valued Colored Balls](src/main/kotlin/g1601_1700/s1648_sell_diminishing_valued_colored_balls/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Binary_Search, Heap_Priority_Queue, Binary_Search_II_Day_19 | 509 | 100.00
+| 1647 |[Minimum Deletions to Make Character Frequencies Unique](src/main/kotlin/g1601_1700/s1647_minimum_deletions_to_make_character_frequencies_unique/Solution.kt)| Medium | String, Sorting, Greedy | 252 | 100.00
+| 1646 |[Get Maximum in Generated Array](src/main/kotlin/g1601_1700/s1646_get_maximum_in_generated_array/Solution.kt)| Easy | Array, Dynamic_Programming, Simulation | 142 | 100.00
+| 1643 |[Kth Smallest Instructions](src/main/kotlin/g1601_1700/s1643_kth_smallest_instructions/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Combinatorics | 171 | 100.00
+| 1642 |[Furthest Building You Can Reach](src/main/kotlin/g1601_1700/s1642_furthest_building_you_can_reach/Solution.kt)| Medium | Array, Greedy, Heap_Priority_Queue | 457 | 71.43
+| 1641 |[Count Sorted Vowel Strings](src/main/kotlin/g1601_1700/s1641_count_sorted_vowel_strings/Solution.kt)| Medium | Dynamic_Programming | 141 | 42.86
+| 1640 |[Check Array Formation Through Concatenation](src/main/kotlin/g1601_1700/s1640_check_array_formation_through_concatenation/Solution.kt)| Easy | Array, Hash_Table | 154 | 100.00
+| 1639 |[Number of Ways to Form a Target String Given a Dictionary](src/main/kotlin/g1601_1700/s1639_number_of_ways_to_form_a_target_string_given_a_dictionary/Solution.kt)| Hard | Array, String, Dynamic_Programming | 408 | 100.00
 | 1638 |[Count Substrings That Differ by One Character](src/main/kotlin/g1601_1700/s1638_count_substrings_that_differ_by_one_character/Solution.kt)| Medium | String, Hash_Table, Dynamic_Programming | 143 | 100.00
 | 1637 |[Widest Vertical Area Between Two Points Containing No Points](src/main/kotlin/g1601_1700/s1637_widest_vertical_area_between_two_points_containing_no_points/Solution.kt)| Medium | Array, Sorting | 616 | 100.00
 | 1636 |[Sort Array by Increasing Frequency](src/main/kotlin/g1601_1700/s1636_sort_array_by_increasing_frequency/Solution.kt)| Easy | Array, Hash_Table, Sorting | 222 | 95.65
