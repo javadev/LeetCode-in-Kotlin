@@ -1840,6 +1840,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1792 |[Maximum Average Pass Ratio](src/main/kotlin/g1701_1800/s1792_maximum_average_pass_ratio/Solution.kt)| Medium | Array, Greedy, Heap_Priority_Queue | 1111 | 75.00
 | 1791 |[Find Center of Star Graph](src/main/kotlin/g1701_1800/s1791_find_center_of_star_graph/Solution.kt)| Easy | Graph | 476 | 91.67
 | 1790 |[Check if One String Swap Can Make Strings Equal](src/main/kotlin/g1701_1800/s1790_check_if_one_string_swap_can_make_strings_equal/Solution.kt)| Easy | String, Hash_Table, Counting, Programming_Skills_I_Day_4_Loop | 138 | 100.00
+| 1789 |[Primary Department for Each Employee](src/main/kotlin/g1701_1800/s1789_primary_department_for_each_employee/script.sql)| Easy | Database | 1033 | 77.87
 | 1787 |[Make the XOR of All Segments Equal to Zero](src/main/kotlin/g1701_1800/s1787_make_the_xor_of_all_segments_equal_to_zero/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation | 374 | 100.00
 | 1786 |[Number of Restricted Paths From First to Last Node](src/main/kotlin/g1701_1800/s1786_number_of_restricted_paths_from_first_to_last_node/Solution.kt)| Medium | Dynamic_Programming, Heap_Priority_Queue, Graph, Topological_Sort, Shortest_Path | 977 | 100.00
 | 1785 |[Minimum Elements to Add to Form a Given Sum](src/main/kotlin/g1701_1800/s1785_minimum_elements_to_add_to_form_a_given_sum/Solution.kt)| Medium | Array, Greedy | 595 | 100.00
@@ -1886,6 +1887,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1734 |[Decode XORed Permutation](src/main/kotlin/g1701_1800/s1734_decode_xored_permutation/Solution.kt)| Medium | Array, Bit_Manipulation | 684 | 100.00
 | 1733 |[Minimum Number of People to Teach](src/main/kotlin/g1701_1800/s1733_minimum_number_of_people_to_teach/Solution.kt)| Medium | Array, Greedy | 580 | 100.00
 | 1732 |[Find the Highest Altitude](src/main/kotlin/g1701_1800/s1732_find_the_highest_altitude/Solution.kt)| Easy | Array, Prefix_Sum | 139 | 90.70
+| 1731 |[The Number of Employees Which Report to Each Employee](src/main/kotlin/g1701_1800/s1731_the_number_of_employees_which_report_to_each_employee/script.sql)| Easy | Database | 1385 | 39.02
 | 1729 |[Find Followers Count](src/main/kotlin/g1701_1800/s1729_find_followers_count/script.sql)| Easy | Database, SQL_I_Day_7_Function | 1228 | 38.04
 | 1728 |[Cat and Mouse II](src/main/kotlin/g1701_1800/s1728_cat_and_mouse_ii/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Matrix, Graph, Memoization, Topological_Sort, Game_Theory | 193 | 100.00
 | 1727 |[Largest Submatrix With Rearrangements](src/main/kotlin/g1701_1800/s1727_largest_submatrix_with_rearrangements/Solution.kt)| Medium | Array, Sorting, Greedy, Matrix | 650 | 100.00
@@ -1924,6 +1926,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1686 |[Stone Game VI](src/main/kotlin/g1601_1700/s1686_stone_game_vi/Solution.kt)| Medium | Array, Math, Sorting, Greedy, Heap_Priority_Queue, Game_Theory | 702 | 100.00
 | 1685 |[Sum of Absolute Differences in a Sorted Array](src/main/kotlin/g1601_1700/s1685_sum_of_absolute_differences_in_a_sorted_array/Solution.kt)| Medium | Array, Math, Prefix_Sum | 612 | 100.00
 | 1684 |[Count the Number of Consistent Strings](src/main/kotlin/g1601_1700/s1684_count_the_number_of_consistent_strings/Solution.kt)| Easy | Array, String, Hash_Table, Bit_Manipulation | 234 | 100.00
+| 1683 |[Invalid Tweets](src/main/kotlin/g1601_1700/s1683_invalid_tweets/script.sql)| Easy | Database | 1263 | 53.93
 | 1681 |[Minimum Incompatibility](src/main/kotlin/g1601_1700/s1681_minimum_incompatibility/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 162 | 100.00
 | 1680 |[Concatenation of Consecutive Binary Numbers](src/main/kotlin/g1601_1700/s1680_concatenation_of_consecutive_binary_numbers/Solution.kt)| Medium | Math, Bit_Manipulation, Simulation | 175 | 100.00
 | 1679 |[Max Number of K-Sum Pairs](src/main/kotlin/g1601_1700/s1679_max_number_of_k_sum_pairs/Solution.kt)| Medium | Array, Hash_Table, Sorting, Two_Pointers | 468 | 92.86
@@ -1941,6 +1944,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1664 |[Ways to Make a Fair Array](src/main/kotlin/g1601_1700/s1664_ways_to_make_a_fair_array/Solution.kt)| Medium | Array, Dynamic_Programming | 475 | 100.00
 | 1663 |[Smallest String With A Given Numeric Value](src/main/kotlin/g1601_1700/s1663_smallest_string_with_a_given_numeric_value/Solution.kt)| Medium | String, Greedy | 202 | 100.00
 | 1662 |[Check If Two String Arrays are Equivalent](src/main/kotlin/g1601_1700/s1662_check_if_two_string_arrays_are_equivalent/Solution.kt)| Easy | Array, String | 144 | 86.84
+| 1661 |[Average Time of Process per Machine](src/main/kotlin/g1601_1700/s1661_average_time_of_process_per_machine/script.sql)| Easy | Database | 429 | 71.35
 | 1659 |[Maximize Grid Happiness](src/main/kotlin/g1601_1700/s1659_maximize_grid_happiness/Solution.kt)| Hard | Dynamic_Programming, Bit_Manipulation, Bitmask, Memoization | 181 | 100.00
 | 1658 |[Minimum Operations to Reduce X to Zero](src/main/kotlin/g1601_1700/s1658_minimum_operations_to_reduce_x_to_zero/Solution.kt)| Medium | Array, Hash_Table, Binary_Search, Prefix_Sum, Sliding_Window | 532 | 50.00
 | 1657 |[Determine if Two Strings Are Close](src/main/kotlin/g1601_1700/s1657_determine_if_two_strings_are_close/Solution.kt)| Medium | String, Hash_Table, Sorting | 287 | 100.00
