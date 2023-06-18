@@ -22,7 +22,7 @@ class Solution {
         while (i < heights.size - 1) {
             val diff = heights[i + 1] - heights[i]
             if (diff > 0) {
-                if (!minHeap.isEmpty() && minHeap.peek() < diff) {
+                if (minHeap.isNotEmpty() && minHeap.peek() < diff) {
                     bricks -= minHeap.poll()
                     minHeap.offer(diff)
                 } else {
