@@ -1,6 +1,7 @@
 package g1701_1800.s1771_maximize_palindrome_length_from_subsequences
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_18_Time_248_ms_(100.00%)_Space_69.7_MB_(100.00%)
+
 class Solution {
     fun longestPalindrome(word1: String, word2: String): Int {
         val len1 = word1.length

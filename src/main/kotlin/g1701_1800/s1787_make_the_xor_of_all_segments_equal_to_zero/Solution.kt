@@ -1,6 +1,8 @@
 package g1701_1800.s1787_make_the_xor_of_all_segments_equal_to_zero
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation
+// #2023_06_18_Time_374_ms_(100.00%)_Space_52_MB_(100.00%)
+
 class Solution {
     fun minChanges(nums: IntArray, k: Int): Int {
         val n = nums.size

@@ -1,6 +1,8 @@
 package g1701_1800.s1755_closest_subsequence_sum
 
 // #Hard #Array #Dynamic_Programming #Two_Pointers #Bit_Manipulation #Bitmask
+// #2023_06_18_Time_620_ms_(100.00%)_Space_43.5_MB_(100.00%)
+
 class Solution {
     private var idx = 0
     private var sum = 0

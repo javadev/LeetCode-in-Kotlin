@@ -1,6 +1,7 @@
 package g1701_1800.s1754_largest_merge_of_two_strings
 
-// #Medium #String #Greedy #Two_Pointers
+// #Medium #String #Greedy #Two_Pointers #2023_06_18_Time_217_ms_(100.00%)_Space_37.3_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun largestMerge(word1: String, word2: String): String {

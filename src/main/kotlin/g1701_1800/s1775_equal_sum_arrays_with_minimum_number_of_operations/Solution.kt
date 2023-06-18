@@ -1,6 +1,8 @@
 package g1701_1800.s1775_equal_sum_arrays_with_minimum_number_of_operations
 
 // #Medium #Array #Hash_Table #Greedy #Counting
+// #2023_06_18_Time_529_ms_(100.00%)_Space_52.7_MB_(100.00%)
+
 class Solution {
     fun minOperations(nums1: IntArray, nums2: IntArray): Int {
         val longer = if (nums1.size > nums2.size) nums1 else nums2

@@ -1,6 +1,8 @@
 package g1701_1800.s1768_merge_strings_alternately
 
 // #Easy #String #Two_Pointers #Programming_Skills_I_Day_8_String
+// #2023_06_18_Time_138_ms_(93.81%)_Space_33.8_MB_(97.56%)
+
 class Solution {
     fun mergeAlternately(word1: String, word2: String): String {
         val size1 = word1.length

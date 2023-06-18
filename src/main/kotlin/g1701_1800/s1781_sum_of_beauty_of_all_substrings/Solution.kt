@@ -1,10 +1,11 @@
 package g1701_1800.s1781_sum_of_beauty_of_all_substrings
 
-// #Medium #String #Hash_Table #Counting
+// #Medium #String #Hash_Table #Counting #2023_06_18_Time_172_ms_(100.00%)_Space_36.7_MB_(100.00%)
+
 class Solution {
     fun beautySum(s: String): Int {
         var beauty = 0
-        for (i in 0 until s.length) {
+        for (i in s.indices) {
             val numCountOfFreq = IntArray(s.length + 1 - i)
             val charFreq = IntArray(26)
             charFreq[s[i].code - 'a'.code] = 1

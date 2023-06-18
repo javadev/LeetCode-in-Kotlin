@@ -1,6 +1,8 @@
 package g1701_1800.s1799_maximize_score_after_n_operations
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Backtracking #Bitmask #Number_Theory
+// #2023_06_18_Time_347_ms_(73.17%)_Space_36.4_MB_(81.30%)
+
 class Solution {
     fun maxScore(nums: IntArray): Int {
         val n = nums.size

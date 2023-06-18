@@ -1,6 +1,7 @@
 package g1701_1800.s1798_maximum_number_of_consecutive_values_you_can_make
 
-// #Medium #Array #Greedy
+// #Medium #Array #Greedy #2023_06_18_Time_414_ms_(100.00%)_Space_49.1_MB_(100.00%)
+
 class Solution {
     fun getMaximumConsecutive(coins: IntArray): Int {
         val count = IntArray(40001)

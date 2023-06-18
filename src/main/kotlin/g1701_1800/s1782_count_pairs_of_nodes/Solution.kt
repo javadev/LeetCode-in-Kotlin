@@ -1,6 +1,8 @@
 package g1701_1800.s1782_count_pairs_of_nodes
 
 // #Hard #Binary_Search #Two_Pointers #Graph
+// #2023_06_18_Time_1441_ms_(100.00%)_Space_116_MB_(100.00%)
+
 class Solution {
     fun countPairs(n: Int, edges: Array<IntArray>, queries: IntArray): IntArray {
         val edgeCount: MutableMap<Int, Int> = HashMap()

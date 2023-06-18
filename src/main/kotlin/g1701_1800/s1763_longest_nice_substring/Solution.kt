@@ -1,6 +1,8 @@
 package g1701_1800.s1763_longest_nice_substring
 
 // #Easy #String #Hash_Table #Bit_Manipulation #Sliding_Window
+// #2023_06_18_Time_158_ms_(91.67%)_Space_36.1_MB_(91.67%)
+
 class Solution {
     fun longestNiceSubstring(s: String): String {
         val index = isNotNiceString(s)

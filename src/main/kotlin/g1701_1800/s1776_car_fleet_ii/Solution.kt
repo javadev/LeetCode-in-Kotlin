@@ -1,9 +1,11 @@
 package g1701_1800.s1776_car_fleet_ii
 
+// #Hard #Array #Math #Stack #Heap_Priority_Queue #Monotonic_Stack
+// #2023_06_18_Time_2049_ms_(100.00%)_Space_96.3_MB_(100.00%)
+
 import java.util.Deque
 import java.util.LinkedList
 
-// #Hard #Array #Math #Stack #Heap_Priority_Queue #Monotonic_Stack
 class Solution {
     fun getCollisionTimes(cars: Array<IntArray>): DoubleArray {
         val stack: Deque<Int> = LinkedList()

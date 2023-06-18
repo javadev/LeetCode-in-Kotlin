@@ -1,6 +1,7 @@
 package g1701_1800.s1759_count_number_of_homogenous_substrings
 
-// #Medium #String #Math
+// #Medium #String #Math #2023_06_18_Time_230_ms_(100.00%)_Space_37.8_MB_(100.00%)
+
 class Solution {
     fun countHomogenous(s: String): Int {
         var total = 0

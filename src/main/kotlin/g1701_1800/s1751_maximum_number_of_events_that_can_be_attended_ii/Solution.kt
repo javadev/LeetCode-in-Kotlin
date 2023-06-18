@@ -1,13 +1,15 @@
 package g1701_1800.s1751_maximum_number_of_events_that_can_be_attended_ii
 
+// #Hard #Array #Dynamic_Programming #Binary_Search
+// #2023_06_18_Time_608_ms_(100.00%)_Space_104.6_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Hard #Array #Dynamic_Programming #Binary_Search
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maxValue(events: Array<IntArray>, k: Int): Int {
         if (k == 1) {
-            val value = Arrays.stream(events).max(Comparator.comparingInt { e: IntArray -> e[2] })
+            val value = Arrays.stream(events).max({ a: IntArray, b: IntArray -> a[2].compareTo(b[2]) })
             return if (value.isPresent) {
                 value.get()[2]
             } else {
@@ -15,7 +17,7 @@ class Solution {
             }
         }
         val n = events.size
-        Arrays.sort(events, Comparator.comparingInt { a: IntArray -> a[0] })
+        Arrays.sort(events, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
         val memo = Array(n) { IntArray(k + 1) }
         return dfs(events, 0, k, memo)
     }

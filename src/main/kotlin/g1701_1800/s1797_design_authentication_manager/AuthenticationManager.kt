@@ -1,23 +1,25 @@
 package g1701_1800.s1797_design_authentication_manager
 
+// #Medium #Hash_Table #Design #Programming_Skills_II_Day_19
+// #2023_06_18_Time_334_ms_(100.00%)_Space_46.2_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Medium #Hash_Table #Design #Programming_Skills_II_Day_19
-class AuthenticationManager(var inc: Int) {
+class AuthenticationManager(var timeToLive: Int) {
     private var expireMap: MutableMap<String, Int> = HashMap()
     private var deque: Deque<Item> = ArrayDeque()
 
     fun generate(tokenId: String, currentTime: Int) {
-        expireMap[tokenId] = currentTime + inc
-        deque.offerLast(Item(tokenId, currentTime + inc))
+        expireMap[tokenId] = currentTime + timeToLive
+        deque.offerLast(Item(tokenId, currentTime + timeToLive))
     }
 
     fun renew(tokenId: String, currentTime: Int) {
         update(currentTime)
         if (expireMap.containsKey(tokenId)) {
-            deque.offerLast(Item(tokenId, currentTime + inc))
-            expireMap[tokenId] = currentTime + inc
+            deque.offerLast(Item(tokenId, currentTime + timeToLive))
+            expireMap[tokenId] = currentTime + timeToLive
         }
     }
 
@@ -40,3 +42,10 @@ class AuthenticationManager(var inc: Int) {
 
     private class Item(var id: String, var time: Int)
 }
+/*
+ * Your AuthenticationManager object will be instantiated and called as such:
+ * var obj = AuthenticationManager(timeToLive)
+ * obj.generate(tokenId,currentTime)
+ * obj.renew(tokenId,currentTime)
+ * var param_3 = obj.countUnexpiredTokens(currentTime)
+ */

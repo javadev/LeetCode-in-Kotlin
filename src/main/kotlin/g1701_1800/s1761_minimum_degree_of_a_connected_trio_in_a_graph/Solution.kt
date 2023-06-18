@@ -1,6 +1,7 @@
 package g1701_1800.s1761_minimum_degree_of_a_connected_trio_in_a_graph
 
-// #Hard #Graph
+// #Hard #Graph #2023_06_18_Time_590_ms_(50.00%)_Space_80_MB_(100.00%)
+
 class Solution {
     fun minTrioDegree(n: Int, edges: Array<IntArray>): Int {
         val degrees = IntArray(n + 1)

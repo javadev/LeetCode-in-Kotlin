@@ -1,6 +1,8 @@
 package g1701_1800.s1793_maximum_score_of_a_good_subarray
 
 // #Hard #Array #Binary_Search #Two_Pointers #Stack #Monotonic_Stack
+// #2023_06_18_Time_568_ms_(100.00%)_Space_50.7_MB_(100.00%)
+
 class Solution {
     fun maximumScore(nums: IntArray, k: Int): Int {
         var i = k

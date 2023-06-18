@@ -1,8 +1,10 @@
 package g1701_1800.s1786_number_of_restricted_paths_from_first_to_last_node
 
+// #Medium #Dynamic_Programming #Heap_Priority_Queue #Graph #Topological_Sort #Shortest_Path
+// #2023_06_18_Time_977_ms_(100.00%)_Space_75.1_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Dynamic_Programming #Heap_Priority_Queue #Graph #Topological_Sort #Shortest_Path
 class Solution {
     private class Pair(var v: Int, var cwt: Int) : Comparable<Pair> {
         override fun compareTo(other: Pair): Int {

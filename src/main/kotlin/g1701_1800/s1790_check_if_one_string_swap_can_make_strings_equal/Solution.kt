@@ -1,6 +1,8 @@
 package g1701_1800.s1790_check_if_one_string_swap_can_make_strings_equal
 
 // #Easy #String #Hash_Table #Counting #Programming_Skills_I_Day_4_Loop
+// #2023_06_18_Time_138_ms_(100.00%)_Space_33.3_MB_(100.00%)
+
 class Solution {
     fun areAlmostEqual(s1: String, s2: String): Boolean {
         var i1 = -1

@@ -1,8 +1,10 @@
 package g1701_1800.s1792_maximum_average_pass_ratio
 
+// #Medium #Array #Greedy #Heap_Priority_Queue
+// #2023_06_18_Time_1111_ms_(75.00%)_Space_92.1_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Greedy #Heap_Priority_Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maxAverageRatio(classes: Array<IntArray>, extraStudents: Int): Double {

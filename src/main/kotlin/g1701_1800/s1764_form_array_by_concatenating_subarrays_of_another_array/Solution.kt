@@ -1,6 +1,7 @@
 package g1701_1800.s1764_form_array_by_concatenating_subarrays_of_another_array
 
-// #Medium #Array #Greedy #String_Matching
+// #Medium #Array #Greedy #String_Matching #2023_06_18_Time_206_ms_(100.00%)_Space_38.6_MB_(100.00%)
+
 class Solution {
     fun canChoose(groups: Array<IntArray>, nums: IntArray): Boolean {
         var prev = 0

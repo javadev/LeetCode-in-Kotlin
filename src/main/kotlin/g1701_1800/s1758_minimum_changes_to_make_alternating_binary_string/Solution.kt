@@ -1,6 +1,7 @@
 package g1701_1800.s1758_minimum_changes_to_make_alternating_binary_string
 
-// #Easy #String
+// #Easy #String #2023_06_18_Time_153_ms_(100.00%)_Space_36.6_MB_(87.50%)
+
 class Solution {
     fun minOperations(s: String): Int {
         return Math.min(countFlips(s, '0'), countFlips(s, '1'))

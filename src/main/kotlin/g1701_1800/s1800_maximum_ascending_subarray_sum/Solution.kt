@@ -1,6 +1,7 @@
 package g1701_1800.s1800_maximum_ascending_subarray_sum
 
-// #Easy #Array
+// #Easy #Array #2023_06_18_Time_139_ms_(100.00%)_Space_34.2_MB_(83.33%)
+
 class Solution {
     fun maxAscendingSum(nums: IntArray): Int {
         var maxSum = nums[0]
