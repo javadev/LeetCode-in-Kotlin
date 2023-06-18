@@ -3,6 +3,7 @@ package g1601_1700.s1643_kth_smallest_instructions
 // #Hard #Array #Dynamic_Programming #Math #Combinatorics
 // #2023_06_18_Time_171_ms_(100.00%)_Space_34.8_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun kthSmallestPath(destination: IntArray, k: Int): String {
         var k = k

@@ -3,6 +3,7 @@ package g1601_1700.s1649_create_sorted_array_through_instructions
 // #Hard #Array #Binary_Search #Ordered_Set #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree
 // #Merge_Sort #2023_06_18_Time_571_ms_(100.00%)_Space_49.7_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun createSortedArray(instructions: IntArray): Int {
         var maxValue = 0
