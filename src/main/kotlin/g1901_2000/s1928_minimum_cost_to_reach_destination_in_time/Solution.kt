@@ -36,8 +36,8 @@ class Solution {
     private class Graph {
         private val edges: MutableMap<Int, MutableList<Edge>> = HashMap()
         fun addEdge(src: Int, dst: Int, weight: Int) {
-            edges.computeIfAbsent(src) { k: Int? -> ArrayList() }.add(Edge(dst, weight))
-            edges.computeIfAbsent(dst) { k: Int? -> ArrayList() }.add(Edge(src, weight))
+            edges.computeIfAbsent(src) { _: Int? -> ArrayList() }.add(Edge(dst, weight))
+            edges.computeIfAbsent(dst) { _: Int? -> ArrayList() }.add(Edge(src, weight))
         }
 
         fun getEdges(node: Int): List<Edge> {

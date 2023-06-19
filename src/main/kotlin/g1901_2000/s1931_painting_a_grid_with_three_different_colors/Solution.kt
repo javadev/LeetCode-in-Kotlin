@@ -1,6 +1,7 @@
 package g1901_2000.s1931_painting_a_grid_with_three_different_colors
 
 // #Hard #Dynamic_Programming
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun colorTheGrid(m: Int, n: Int): Int {
         if (m == 1) {

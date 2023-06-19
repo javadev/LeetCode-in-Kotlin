@@ -3,6 +3,7 @@ package g1901_2000.s1912_design_movie_rental_system
 import java.util.TreeSet
 
 // #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
+@Suppress("UNUSED_PARAMETER")
 class MovieRentingSystem(n: Int, entries: Array<IntArray>) {
     private class Point(var movie: Int, var shop: Int, var price: Int)
 

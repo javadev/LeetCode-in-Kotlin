@@ -16,7 +16,7 @@ class Solution {
         }
         rootFolder.calculateHash()
         for ((_, foldersWithSameHash) in duplicates as HashMap<String, ArrayList<Folder>>) {
-            if (foldersWithSameHash != null && foldersWithSameHash.size > 1) {
+            if (foldersWithSameHash.size > 1) {
                 for (folder in foldersWithSameHash) {
                     folder.parent?.subFolders?.remove(folder.name)
                 }
@@ -59,7 +59,7 @@ class Solution {
             }
             folderHash = builder.toString()
             if (folderHash.length > 0) {
-                val duplicateFolders = duplicates!!.computeIfAbsent(folderHash) { k: String? -> ArrayList() }
+                val duplicateFolders = duplicates!!.computeIfAbsent(folderHash) { _: String? -> ArrayList() }
                 duplicateFolders.add(this)
             }
         }
