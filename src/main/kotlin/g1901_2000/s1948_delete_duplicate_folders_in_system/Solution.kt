@@ -58,7 +58,7 @@ class Solution {
                 }
             }
             folderHash = builder.toString()
-            if (folderHash.length > 0) {
+            if (folderHash.isNotEmpty()) {
                 val duplicateFolders = duplicates!!.computeIfAbsent(folderHash) { _: String? -> ArrayList() }
                 duplicateFolders.add(this)
             }
