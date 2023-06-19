@@ -1,6 +1,7 @@
 package g1901_2000.s1909_remove_one_element_to_make_the_array_strictly_increasing
 
-// #Easy #Array
+// #Easy #Array #2023_06_19_Time_176_ms_(50.00%)_Space_36.3_MB_(50.00%)
+
 class Solution {
     fun canBeIncreasing(nums: IntArray): Boolean {
         var removed = false

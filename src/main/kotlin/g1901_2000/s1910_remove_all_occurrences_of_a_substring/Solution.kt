@@ -1,6 +1,7 @@
 package g1901_2000.s1910_remove_all_occurrences_of_a_substring
 
-// #Medium #String
+// #Medium #String #2023_06_19_Time_177_ms_(100.00%)_Space_36_MB_(100.00%)
+
 class Solution {
     fun removeOccurrences(s: String, part: String): String {
         val sb = StringBuilder()

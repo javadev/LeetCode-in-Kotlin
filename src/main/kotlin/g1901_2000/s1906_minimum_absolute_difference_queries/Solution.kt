@@ -1,10 +1,11 @@
 package g1901_2000.s1906_minimum_absolute_difference_queries
 
+// #Medium #Array #Hash_Table #2023_06_19_Time_1069_ms_(50.00%)_Space_98.7_MB_(100.00%)
+
 import java.util.BitSet
 
-// #Medium #Array #Hash_Table
 class Solution {
-    private class SegmentTree internal constructor(nums: IntArray, len: Int) {
+    private class SegmentTree(nums: IntArray, len: Int) {
         class Node {
             var bits: BitSet? = null
             var minDiff = 0

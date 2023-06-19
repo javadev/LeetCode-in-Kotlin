@@ -1,6 +1,7 @@
 package g1901_2000.s1904_the_number_of_full_rounds_you_have_played
 
-// #Medium #String #Math
+// #Medium #String #Math #2023_06_19_Time_149_ms_(100.00%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun numberOfRounds(loginTime: String, logoutTime: String): Int {
         var loginSerializeTime = serializeTime(loginTime)
