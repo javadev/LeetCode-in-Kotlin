@@ -1124,6 +1124,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1802 |[Maximum Value at a Given Index in a Bounded Array](src/main/kotlin/g1801_1900/s1802_maximum_value_at_a_given_index_in_a_bounded_array/Solution.kt)| Medium | Greedy, Binary_Search | 118 | 100.00
 
 #### Day 18
 
@@ -1830,6 +1831,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1812 |[Determine Color of a Chessboard Square](src/main/kotlin/g1801_1900/s1812_determine_color_of_a_chessboard_square/Solution.kt)| Easy | String, Math | 127 | 92.86
+| 1808 |[Maximize Number of Nice Divisors](src/main/kotlin/g1801_1900/s1808_maximize_number_of_nice_divisors/Solution.kt)| Hard | Math, Recursion | 135 | 100.00
+| 1807 |[Evaluate the Bracket Pairs of a String](src/main/kotlin/g1801_1900/s1807_evaluate_the_bracket_pairs_of_a_string/Solution.kt)| Medium | Array, String, Hash_Table | 689 | 100.00
+| 1806 |[Minimum Number of Operations to Reinitialize a Permutation](src/main/kotlin/g1801_1900/s1806_minimum_number_of_operations_to_reinitialize_a_permutation/Solution.kt)| Medium | Array, Math, Simulation | 117 | 100.00
+| 1805 |[Number of Different Integers in a String](src/main/kotlin/g1801_1900/s1805_number_of_different_integers_in_a_string/Solution.kt)| Easy | String, Hash_Table | 162 | 100.00
+| 1803 |[Count Pairs With XOR in a Range](src/main/kotlin/g1801_1900/s1803_count_pairs_with_xor_in_a_range/Solution.kt)| Hard | Array, Bit_Manipulation, Trie | 427 | 100.00
+| 1802 |[Maximum Value at a Given Index in a Bounded Array](src/main/kotlin/g1801_1900/s1802_maximum_value_at_a_given_index_in_a_bounded_array/Solution.kt)| Medium | Greedy, Binary_Search, Binary_Search_II_Day_17 | 118 | 100.00
+| 1801 |[Number of Orders in the Backlog](src/main/kotlin/g1801_1900/s1801_number_of_orders_in_the_backlog/Solution.kt)| Medium | Array, Heap_Priority_Queue, Simulation | 668 | 100.00
 | 1800 |[Maximum Ascending Subarray Sum](src.save/main/kotlin/g1701_1800/s1800_maximum_ascending_subarray_sum/Solution.kt)| Easy | Array | 139 | 100.00
 | 1799 |[Maximize Score After N Operations](src.save/main/kotlin/g1701_1800/s1799_maximize_score_after_n_operations/Solution.kt)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Backtracking, Bitmask, Number_Theory | 347 | 73.17
 | 1798 |[Maximum Number of Consecutive Values You Can Make](src.save/main/kotlin/g1701_1800/s1798_maximum_number_of_consecutive_values_you_can_make/Solution.kt)| Medium | Array, Greedy | 414 | 100.00
