@@ -18,7 +18,7 @@ class Solution {
             var amount = order[1]
             val type = order[2]
             if (type == 0) {
-                while (!sell.isEmpty() && sell.peek().price <= price && amount > 0) {
+                while (sell.isNotEmpty() && sell.peek().price <= price && amount > 0) {
                     val ord = sell.peek()
                     val toRemove = amount.coerceAtMost(ord.qty)
                     ord.qty -= toRemove
@@ -31,7 +31,7 @@ class Solution {
                     buy.add(Order(price, amount))
                 }
             } else {
-                while (!buy.isEmpty() && buy.peek().price >= price && amount > 0) {
+                while (buy.isNotEmpty() && buy.peek().price >= price && amount > 0) {
                     val ord = buy.peek()
                     val toRemove = amount.coerceAtMost(ord.qty)
                     ord.qty -= toRemove
