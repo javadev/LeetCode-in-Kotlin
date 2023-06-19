@@ -14,7 +14,7 @@ class Solution {
         val visited = Array(m) { BooleanArray(n) }
         visited[entrance[0]][entrance[1]] = true
         var shortestSteps = m * n
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val curr = queue.poll()
             for (i in 0 until directions.size - 1) {
                 val nextX = curr[0] + directions[i]

@@ -10,12 +10,12 @@ class MovieRentingSystem(n: Int, entries: Array<IntArray>) {
     private val unrentedMovies = HashMap<Int, TreeSet<Point>>()
     private val shopMovieToPrice = HashMap<String, Int>()
     private val comparator = Comparator { o1: Point, o2: Point ->
-        if (o1.price != o2.price) {
-            return@Comparator Integer.compare(o1.price, o2.price)
+        return@Comparator if (o1.price != o2.price) {
+            Integer.compare(o1.price, o2.price)
         } else if (o1.shop != o2.shop) {
-            return@Comparator Integer.compare(o1.shop, o2.shop)
+            Integer.compare(o1.shop, o2.shop)
         } else {
-            return@Comparator Integer.compare(o1.movie, o2.movie)
+            Integer.compare(o1.movie, o2.movie)
         }
     }
     private val rented = TreeSet(comparator)

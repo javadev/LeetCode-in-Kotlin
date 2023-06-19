@@ -14,7 +14,7 @@ class Solution {
             graph.addEdge(edge[0], edge[1], edge[2])
         }
         pq.offer(Tuple(0, passingFees[0], 0))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val curr = pq.poll()
             if (curr.time <= maxTime && curr.time < minTime[curr.node]) {
                 minTime[curr.node] = curr.time

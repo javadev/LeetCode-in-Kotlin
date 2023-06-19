@@ -44,7 +44,7 @@ class Solution {
     private fun bfs(root: TreeNode) {
         val q: Queue<TreeNode?> = ArrayDeque()
         q.offer(root)
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val size = q.size
             for (i in 0 until size) {
                 val parent = q.poll()
