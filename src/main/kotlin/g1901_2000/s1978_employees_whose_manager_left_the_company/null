@@ -1,9 +1,0 @@
-package g1901_2000.s1978_employees_whose_manager_left_the_company
-
-
-
-class Solution {
-    fun decode(value: String): String {
-        return value
-    }
-}
