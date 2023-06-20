@@ -3,6 +3,7 @@ package g1901_2000.s1923_longest_common_subpath
 // #Hard #Array #Binary_Search #Hash_Function #Rolling_Hash #Suffix_Array
 // #2023_06_20_Time_1142_ms_(100.00%)_Space_71.9_MB_(100.00%)
 
+@Suppress("UNUSED_PARAMETER")
 class Solution {
     private lateinit var pow: LongArray
 
