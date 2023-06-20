@@ -22,8 +22,8 @@ class Solution {
             graph[road[1]]?.add(longArrayOf(road[0].toLong(), road[2].toLong()))
         }
         pq.add(longArrayOf(0, 0))
-        if (!pq.isEmpty()) {
-            while (!pq.isEmpty()) {
+        if (pq.isNotEmpty()) {
+            while (pq.isNotEmpty()) {
                 val ele = pq.remove()
                 val dis = ele[1]
                 val node = ele[0]

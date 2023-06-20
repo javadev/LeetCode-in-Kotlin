@@ -52,7 +52,7 @@ class LockingTree(parent: IntArray) {
         val v = IntArray(a.size)
         que.add(num)
         v[num] = 1
-        while (!que.isEmpty()) {
+        while (que.isNotEmpty()) {
             val t = que[0]
             que.removeAt(0)
             val p: List<Int> = map.getOrDefault(t, ArrayList())
