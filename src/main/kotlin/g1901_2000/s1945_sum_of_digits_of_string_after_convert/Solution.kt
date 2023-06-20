@@ -2,6 +2,7 @@ package g1901_2000.s1945_sum_of_digits_of_string_after_convert
 
 // #Easy #String #Simulation #2023_06_20_Time_146_ms_(75.00%)_Space_33.9_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun getLucky(s: String, k: Int): Int {
         var k = k
