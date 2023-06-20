@@ -617,6 +617,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 |-|-|-|-|-|-
 | 0155 |[Min Stack](src.save/main/kotlin/g0101_0200/s0155_min_stack/MinStack.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design | 331 | 84.88
 | 1249 |[Minimum Remove to Make Valid Parentheses](src.save/main/kotlin/g1201_1300/s1249_minimum_remove_to_make_valid_parentheses/Solution.kt)| Medium | String, Stack | 218 | 100.00
+| 1823 |[Find the Winner of the Circular Game](src/main/kotlin/g1801_1900/s1823_find_the_winner_of_the_circular_game/Solution.kt)| Medium | Array, Math, Simulation, Recursion, Queue | 119 | 87.50
 
 #### Day 15 Tree
 
@@ -1057,6 +1058,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1482 |[Minimum Number of Days to Make m Bouquets](src.save/main/kotlin/g1401_1500/s1482_minimum_number_of_days_to_make_m_bouquets/Solution.kt)| Medium | Array, Binary_Search | 538 | 50.00
+| 1818 |[Minimum Absolute Sum Difference](src/main/kotlin/g1801_1900/s1818_minimum_absolute_sum_difference/Solution.kt)| Medium | Array, Sorting, Binary_Search, Ordered_Set | 447 | 100.00
 
 #### Day 8
 
@@ -1327,6 +1329,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1822 |[Sign of the Product of an Array](src/main/kotlin/g1801_1900/s1822_sign_of_the_product_of_an_array/Solution.kt)| Easy | Array, Math | 170 | 92.51
 | 1502 |[Can Make Arithmetic Progression From Sequence](src.save/main/kotlin/g1501_1600/s1502_can_make_arithmetic_progression_from_sequence/Solution.kt)| Easy | Array, Sorting | 156 | 94.82
 | 0202 |[Happy Number](src.save/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
 | 1790 |[Check if One String Swap Can Make Strings Equal](src.save/main/kotlin/g1701_1800/s1790_check_if_one_string_swap_can_make_strings_equal/Solution.kt)| Easy | String, Hash_Table, Counting | 138 | 100.00
@@ -1831,6 +1834,16 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1824 |[Minimum Sideway Jumps](src/main/kotlin/g1801_1900/s1824_minimum_sideway_jumps/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy | 726 | 100.00
+| 1823 |[Find the Winner of the Circular Game](src/main/kotlin/g1801_1900/s1823_find_the_winner_of_the_circular_game/Solution.kt)| Medium | Array, Math, Simulation, Recursion, Queue, Data_Structure_II_Day_14_Stack_Queue | 119 | 87.50
+| 1822 |[Sign of the Product of an Array](src/main/kotlin/g1801_1900/s1822_sign_of_the_product_of_an_array/Solution.kt)| Easy | Array, Math, Programming_Skills_I_Day_4_Loop | 170 | 92.51
+| 1819 |[Number of Different Subsequences GCDs](src/main/kotlin/g1801_1900/s1819_number_of_different_subsequences_gcds/Solution.kt)| Hard | Array, Math, Counting, Number_Theory | 624 | 100.00
+| 1818 |[Minimum Absolute Sum Difference](src/main/kotlin/g1801_1900/s1818_minimum_absolute_sum_difference/Solution.kt)| Medium | Array, Sorting, Binary_Search, Ordered_Set, Binary_Search_II_Day_7 | 447 | 100.00
+| 1817 |[Finding the Users Active Minutes](src/main/kotlin/g1801_1900/s1817_finding_the_users_active_minutes/Solution.kt)| Medium | Array, Hash_Table | 652 | 100.00
+| 1816 |[Truncate Sentence](src/main/kotlin/g1801_1900/s1816_truncate_sentence/Solution.kt)| Easy | Array, String | 147 | 94.74
+| 1815 |[Maximum Number of Groups Getting Fresh Donuts](src/main/kotlin/g1801_1900/s1815_maximum_number_of_groups_getting_fresh_donuts/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask, Memoization | 1073 | 100.00
+| 1814 |[Count Nice Pairs in an Array](src/main/kotlin/g1801_1900/s1814_count_nice_pairs_in_an_array/Solution.kt)| Medium | Array, Hash_Table, Math, Counting | 520 | 100.00
+| 1813 |[Sentence Similarity III](src/main/kotlin/g1801_1900/s1813_sentence_similarity_iii/Solution.kt)| Medium | Array, String, Two_Pointers | 162 | 100.00
 | 1812 |[Determine Color of a Chessboard Square](src/main/kotlin/g1801_1900/s1812_determine_color_of_a_chessboard_square/Solution.kt)| Easy | String, Math | 127 | 92.86
 | 1808 |[Maximize Number of Nice Divisors](src/main/kotlin/g1801_1900/s1808_maximize_number_of_nice_divisors/Solution.kt)| Hard | Math, Recursion | 135 | 100.00
 | 1807 |[Evaluate the Bracket Pairs of a String](src/main/kotlin/g1801_1900/s1807_evaluate_the_bracket_pairs_of_a_string/Solution.kt)| Medium | Array, String, Hash_Table | 689 | 100.00
