@@ -1,6 +1,7 @@
 package g1901_2000.s1931_painting_a_grid_with_three_different_colors
 
-// #Hard #Dynamic_Programming
+// #Hard #Dynamic_Programming #2023_06_20_Time_135_ms_(100.00%)_Space_33.1_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun colorTheGrid(m: Int, n: Int): Int {

@@ -1,6 +1,8 @@
 package g1901_2000.s1915_number_of_wonderful_substrings
 
 // #Medium #String #Hash_Table #Bit_Manipulation #Prefix_Sum
+// #2023_06_20_Time_267_ms_(100.00%)_Space_37.9_MB_(100.00%)
+
 class Solution {
     fun wonderfulSubstrings(word: String): Long {
         val count = IntArray(1024)

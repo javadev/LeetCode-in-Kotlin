@@ -1,6 +1,7 @@
 package g1901_2000.s1944_number_of_visible_people_in_a_queue
 
-// #Hard #Array #Stack #Monotonic_Stack
+// #Hard #Array #Stack #Monotonic_Stack #2023_06_20_Time_605_ms_(90.00%)_Space_56.4_MB_(70.00%)
+
 class Solution {
     fun canSeePersonsCount(heights: IntArray): IntArray {
         val size = heights.size

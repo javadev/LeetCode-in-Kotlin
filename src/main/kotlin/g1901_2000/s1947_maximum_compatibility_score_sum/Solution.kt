@@ -1,6 +1,8 @@
 package g1901_2000.s1947_maximum_compatibility_score_sum
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2023_06_20_Time_179_ms_(100.00%)_Space_37.5_MB_(100.00%)
+
 class Solution {
     private lateinit var dp: Array<IntArray>
     private var m = 0

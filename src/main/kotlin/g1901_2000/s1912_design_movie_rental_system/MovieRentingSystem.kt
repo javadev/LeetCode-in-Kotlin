@@ -1,8 +1,10 @@
 package g1901_2000.s1912_design_movie_rental_system
 
+// #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
+// #2023_06_20_Time_3005_ms_(100.00%)_Space_206.6_MB_(100.00%)
+
 import java.util.TreeSet
 
-// #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
 @Suppress("UNUSED_PARAMETER")
 class MovieRentingSystem(n: Int, entries: Array<IntArray>) {
     private class Point(var movie: Int, var shop: Int, var price: Int)
@@ -65,3 +67,11 @@ class MovieRentingSystem(n: Int, entries: Array<IntArray>) {
         return ans
     }
 }
+/*
+ * Your MovieRentingSystem object will be instantiated and called as such:
+ * var obj = MovieRentingSystem(n, entries)
+ * var param_1 = obj.search(movie)
+ * obj.rent(shop,movie)
+ * obj.drop(shop,movie)
+ * var param_4 = obj.report()
+ */

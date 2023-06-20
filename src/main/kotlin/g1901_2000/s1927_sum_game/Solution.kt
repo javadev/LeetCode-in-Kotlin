@@ -1,6 +1,7 @@
 package g1901_2000.s1927_sum_game
 
-// #Medium #Math #Greedy #Game_Theory
+// #Medium #Math #Greedy #Game_Theory #2023_06_20_Time_211_ms_(100.00%)_Space_37.7_MB_(100.00%)
+
 class Solution {
     fun sumGame(num: String): Boolean {
         var count = 0

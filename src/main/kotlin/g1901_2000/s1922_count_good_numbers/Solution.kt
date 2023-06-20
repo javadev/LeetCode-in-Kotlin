@@ -1,6 +1,7 @@
 package g1901_2000.s1922_count_good_numbers
 
-// #Medium #Math #Recursion
+// #Medium #Math #Recursion #2023_06_20_Time_135_ms_(100.00%)_Space_32.7_MB_(100.00%)
+
 class Solution {
     fun countGoodNumbers(n: Long): Int {
         val mod = 1000000007L

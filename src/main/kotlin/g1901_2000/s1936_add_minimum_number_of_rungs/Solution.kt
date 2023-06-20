@@ -1,6 +1,7 @@
 package g1901_2000.s1936_add_minimum_number_of_rungs
 
-// #Medium #Array #Greedy
+// #Medium #Array #Greedy #2023_06_20_Time_405_ms_(100.00%)_Space_50.7_MB_(100.00%)
+
 class Solution {
     fun addRungs(rungs: IntArray, dist: Int): Int {
         var addons = 0

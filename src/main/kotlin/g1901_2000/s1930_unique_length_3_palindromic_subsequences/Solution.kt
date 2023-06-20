@@ -1,6 +1,7 @@
 package g1901_2000.s1930_unique_length_3_palindromic_subsequences
 
-// #Medium #String #Hash_Table #Prefix_Sum
+// #Medium #String #Hash_Table #Prefix_Sum #2023_06_20_Time_273_ms_(100.00%)_Space_39.3_MB_(91.67%)
+
 class Solution {
     fun countPalindromicSubsequence(s: String): Int {
         val last = IntArray(26)

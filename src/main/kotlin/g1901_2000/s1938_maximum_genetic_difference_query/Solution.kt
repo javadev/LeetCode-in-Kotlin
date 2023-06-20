@@ -1,6 +1,7 @@
 package g1901_2000.s1938_maximum_genetic_difference_query
 
-// #Hard #Array #Bit_Manipulation #Trie
+// #Hard #Array #Bit_Manipulation #Trie #2023_06_20_Time_855_ms_(100.00%)_Space_84.4_MB_(100.00%)
+
 class Solution {
     fun maxGeneticDifference(parents: IntArray, queries: Array<IntArray>): IntArray {
         val n = parents.size

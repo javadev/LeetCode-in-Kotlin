@@ -1,6 +1,7 @@
 package g1901_2000.s1946_largest_number_after_mutating_substring
 
-// #Medium #Array #String #Greedy
+// #Medium #Array #String #Greedy #2023_06_20_Time_346_ms_(100.00%)_Space_39.4_MB_(100.00%)
+
 class Solution {
     fun maximumNumber(num: String, change: IntArray): String {
         val n = num.length

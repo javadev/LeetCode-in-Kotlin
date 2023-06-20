@@ -1,15 +1,17 @@
 package g1901_2000.s1916_count_ways_to_build_rooms_in_an_ant_colony
 
+// #Hard #Dynamic_Programming #Math #Tree #Graph #Topological_Sort #Combinatorics
+// #2023_06_20_Time_2564_ms_(100.00%)_Space_94.2_MB_(100.00%)
+
 import java.math.BigInteger
 
-// #Hard #Dynamic_Programming #Math #Tree #Graph #Topological_Sort #Combinatorics
 class Solution {
     private lateinit var graph: Array<MutableList<Int>?>
     private lateinit var fact: LongArray
 
     fun waysToBuildRooms(prevRoom: IntArray): Int {
         val n = prevRoom.size
-        graph = Array(n) { _: Int -> ArrayList() }
+        graph = Array(n) { mutableListOf<Int>() }
         fact = LongArray(prevRoom.size + 10)
         fact[1] = 1
         fact[0] = fact[1]

@@ -1,6 +1,8 @@
 package g1901_2000.s1948_delete_duplicate_folders_in_system
 
 // #Hard #Array #String #Hash_Table #Trie #Hash_Function
+// #2023_06_20_Time_1420_ms_(100.00%)_Space_80.6_MB_(100.00%)
+
 class Solution {
     private var duplicates: MutableMap<String, ArrayList<Folder>>? = null
     private var foldersWithRemovedNames: MutableList<List<String>>? = null

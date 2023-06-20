@@ -1,6 +1,7 @@
 package g1901_2000.s1914_cyclically_rotating_a_grid
 
-// #Medium #Array #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #2023_06_20_Time_282_ms_(100.00%)_Space_39.6_MB_(100.00%)
+
 class Solution {
     fun rotateGrid(grid: Array<IntArray>, k: Int): Array<IntArray> {
         rotateInternal(grid, 0, grid[0].size - 1, 0, grid.size - 1, k)

@@ -1,6 +1,7 @@
 package g1901_2000.s1943_describe_the_painting
 
-// #Medium #Array #Prefix_Sum
+// #Medium #Array #Prefix_Sum #2023_06_20_Time_951_ms_(100.00%)_Space_63.9_MB_(100.00%)
+
 class Solution {
     fun splitPainting(segments: Array<IntArray>): List<List<Long>> {
         val result: MutableList<List<Long>> = ArrayList()

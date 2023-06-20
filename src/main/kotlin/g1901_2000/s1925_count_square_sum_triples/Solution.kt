@@ -1,6 +1,7 @@
 package g1901_2000.s1925_count_square_sum_triples
 
-// #Easy #Math #Enumeration
+// #Easy #Math #Enumeration #2023_06_20_Time_161_ms_(40.00%)_Space_33.4_MB_(80.00%)
+
 class Solution {
     fun countTriples(n: Int): Int {
         var count = 0

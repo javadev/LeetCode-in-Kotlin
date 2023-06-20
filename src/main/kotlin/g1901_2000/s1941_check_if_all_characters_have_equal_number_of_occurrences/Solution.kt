@@ -1,6 +1,7 @@
 package g1901_2000.s1941_check_if_all_characters_have_equal_number_of_occurrences
 
-// #Easy #String #Hash_Table #Counting
+// #Easy #String #Hash_Table #Counting #2023_06_20_Time_167_ms_(78.57%)_Space_34.7_MB_(100.00%)
+
 class Solution {
     fun areOccurrencesEqual(s: String): Boolean {
         val counter = IntArray(26)

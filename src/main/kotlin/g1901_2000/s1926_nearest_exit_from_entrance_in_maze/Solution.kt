@@ -1,9 +1,11 @@
 package g1901_2000.s1926_nearest_exit_from_entrance_in_maze
 
+// #Medium #Array #Breadth_First_Search #Matrix #Graph_Theory_I_Day_6_Matrix_Related_Problems
+// #2023_06_20_Time_351_ms_(94.44%)_Space_45.4_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Array #Breadth_First_Search #Matrix #Graph_Theory_I_Day_6_Matrix_Related_Problems
 class Solution {
     fun nearestExit(maze: Array<CharArray>, entrance: IntArray): Int {
         val m = maze.size

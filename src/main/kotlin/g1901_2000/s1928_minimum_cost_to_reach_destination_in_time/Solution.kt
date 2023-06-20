@@ -1,8 +1,9 @@
 package g1901_2000.s1928_minimum_cost_to_reach_destination_in_time
 
+// #Hard #Dynamic_Programming #Graph #2023_06_20_Time_414_ms_(100.00%)_Space_53.3_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Hard #Dynamic_Programming #Graph
 class Solution {
     fun minCost(maxTime: Int, edges: Array<IntArray>, passingFees: IntArray): Int {
         val pq = PriorityQueue { a: Tuple, b: Tuple -> if (a.cost == b.cost) a.time - b.time else a.cost - b.cost }
