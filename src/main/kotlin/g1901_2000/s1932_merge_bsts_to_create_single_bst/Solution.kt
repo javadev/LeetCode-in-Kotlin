@@ -44,14 +44,17 @@ class Solution {
             }
         }
         for (tree in trees) if (count[tree.`val`] == 1) {
-            return if (isValidBST(tree, null, null, valToNode)
-                && valToNode.size <= 1) tree else null
+            return if (isValidBST(tree, null, null, valToNode) &&
+                valToNode.size <= 1
+            ) tree else null
         }
         return null
     }
 
     fun isValidBST(
-        tree: TreeNode?, minNode: TreeNode?, maxNode: TreeNode?,
+        tree: TreeNode?,
+        minNode: TreeNode?,
+        maxNode: TreeNode?,
         valToNode: MutableMap<Int, TreeNode>
     ): Boolean {
         if (tree == null) return true
@@ -64,6 +67,6 @@ class Solution {
             valToNode.remove(`val`)
         }
         return isValidBST(tree.left, minNode, tree, valToNode) &&
-                isValidBST(tree.right, tree, maxNode, valToNode)
+            isValidBST(tree.right, tree, maxNode, valToNode)
     }
 }
