@@ -3,12 +3,12 @@ package g1901_2000.s1968_array_with_elements_not_equal_to_average_of_neighbors
 import java.util.Random
 
 // #Medium #Array #Sorting #Greedy
+@Suppress("kotlin:S2245")
 class Solution {
     fun rearrangeArray(nums: IntArray): IntArray {
         val random = Random()
         while (true) {
-            var i: Int
-            i = 1
+            var i = 1
             while (i < nums.size - 1) {
                 if (2 * nums[i] == nums[i - 1] + nums[i + 1]) {
                     break
