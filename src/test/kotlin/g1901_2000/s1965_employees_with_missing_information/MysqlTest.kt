@@ -41,7 +41,7 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/java/g1901_2000/s1965_employees_" +
+                            "src/main/kotlin/g1901_2000/s1965_employees_" +
                                 "with_missing_information/script.sql"
                         )
                     )
