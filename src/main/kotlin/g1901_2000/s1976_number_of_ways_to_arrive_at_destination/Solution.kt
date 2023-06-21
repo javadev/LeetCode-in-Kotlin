@@ -1,13 +1,15 @@
 package g1901_2000.s1976_number_of_ways_to_arrive_at_destination
 
+// #Medium #Dynamic_Programming #Graph #Topological_Sort #Shortest_Path
+// #2023_06_21_Time_282_ms_(100.00%)_Space_46.8_MB_(100.00%)
+
 import java.util.PriorityQueue
 import java.util.Queue
 
-// #Medium #Dynamic_Programming #Graph #Topological_Sort #Shortest_Path
 class Solution {
     private fun dijkstra(roads: Array<IntArray>, n: Int): Int {
         val mod = 1e9.toInt() + 7L
-        val pq: Queue<LongArray> = PriorityQueue(Comparator.comparingLong { l: LongArray -> l[1] })
+        val pq: Queue<LongArray> = PriorityQueue({ l1: LongArray, l2: LongArray -> l1[1].compareTo(l2[1]) })
         val ways = LongArray(n)
         val dist = LongArray(n)
         dist.fill(1e18.toLong())

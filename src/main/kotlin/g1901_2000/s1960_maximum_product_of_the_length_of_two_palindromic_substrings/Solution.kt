@@ -1,6 +1,8 @@
 package g1901_2000.s1960_maximum_product_of_the_length_of_two_palindromic_substrings
 
 // #Hard #String #Hash_Function #Rolling_Hash
+// #2023_06_21_Time_247_ms_(100.00%)_Space_37.5_MB_(100.00%)
+
 class Solution {
     fun maxProduct(s: String): Long {
         val n = s.length

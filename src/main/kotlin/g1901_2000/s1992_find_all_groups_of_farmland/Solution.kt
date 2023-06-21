@@ -1,10 +1,12 @@
 package g1901_2000.s1992_find_all_groups_of_farmland
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix
+// #2023_06_21_Time_768_ms_(100.00%)_Space_63.4_MB_(100.00%)
+
 class Solution {
     private val res: MutableList<IntArray> = ArrayList()
-    fun findFarmland(land: Array<IntArray>?): Array<IntArray> {
-        if (land == null || land.size == 0) {
+    fun findFarmland(land: Array<IntArray>): Array<IntArray> {
+        if (land.isEmpty()) {
             return arrayOf()
         }
         val m = land.size

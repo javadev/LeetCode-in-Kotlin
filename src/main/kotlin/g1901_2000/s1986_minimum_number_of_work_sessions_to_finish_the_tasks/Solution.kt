@@ -1,6 +1,8 @@
 package g1901_2000.s1986_minimum_number_of_work_sessions_to_finish_the_tasks
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2023_06_21_Time_153_ms_(100.00%)_Space_35.6_MB_(100.00%)
+
 class Solution {
     fun minSessions(tasks: IntArray, sessionTime: Int): Int {
         val len = tasks.size

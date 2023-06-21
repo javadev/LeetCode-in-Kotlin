@@ -1,6 +1,7 @@
 package g1901_2000.s1984_minimum_difference_between_highest_and_lowest_of_k_scores
 
-// #Easy #Array #Sorting #Sliding_Window
+// #Easy #Array #Sorting #Sliding_Window #2023_06_21_Time_227_ms_(83.33%)_Space_39.2_MB_(91.67%)
+
 class Solution {
     fun minimumDifference(nums: IntArray, k: Int): Int {
         nums.sort()

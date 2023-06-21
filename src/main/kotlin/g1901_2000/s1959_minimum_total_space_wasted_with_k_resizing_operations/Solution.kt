@@ -1,6 +1,7 @@
 package g1901_2000.s1959_minimum_total_space_wasted_with_k_resizing_operations
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_06_21_Time_225_ms_(100.00%)_Space_36.1_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minSpaceWastedKResizing(arr: IntArray, k: Int): Int {

@@ -1,6 +1,7 @@
 package g1901_2000.s1969_minimum_non_zero_product_of_the_array_elements
 
-// #Medium #Math #Greedy #Recursion
+// #Medium #Math #Greedy #Recursion #2023_06_21_Time_131_ms_(100.00%)_Space_32.1_MB_(100.00%)
+
 class Solution {
     fun minNonZeroProduct(p: Int): Int {
         val m = (1e9 + 7).toInt()

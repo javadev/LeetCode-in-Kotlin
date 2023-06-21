@@ -1,6 +1,7 @@
 package g1901_2000.s1987_number_of_unique_good_subsequences
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_06_21_Time_248_ms_(100.00%)_Space_37.5_MB_(100.00%)
+
 class Solution {
     fun numberOfUniqueGoodSubsequences(binary: String): Int {
         var addZero = false

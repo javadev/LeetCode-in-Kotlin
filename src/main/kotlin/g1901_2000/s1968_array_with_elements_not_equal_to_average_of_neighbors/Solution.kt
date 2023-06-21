@@ -1,8 +1,9 @@
 package g1901_2000.s1968_array_with_elements_not_equal_to_average_of_neighbors
 
+// #Medium #Array #Sorting #Greedy #2023_06_21_Time_973_ms_(83.33%)_Space_69_MB_(100.00%)
+
 import java.util.Random
 
-// #Medium #Array #Sorting #Greedy
 @Suppress("kotlin:S2245")
 class Solution {
     fun rearrangeArray(nums: IntArray): IntArray {

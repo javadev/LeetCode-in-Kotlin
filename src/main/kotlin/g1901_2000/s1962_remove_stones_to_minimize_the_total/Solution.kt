@@ -1,9 +1,10 @@
 package g1901_2000.s1962_remove_stones_to_minimize_the_total
 
+// #Medium #Array #Heap_Priority_Queue #2023_06_21_Time_888_ms_(68.42%)_Space_50.7_MB_(94.74%)
+
 import java.util.Collections
 import java.util.PriorityQueue
 
-// #Medium #Array #Heap_Priority_Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minStoneSum(piles: IntArray, k: Int): Int {

@@ -1,6 +1,8 @@
 package g1901_2000.s1964_find_the_longest_valid_obstacle_course_at_each_position
 
 // #Hard #Array #Binary_Search #Binary_Indexed_Tree
+// #2023_06_21_Time_846_ms_(40.00%)_Space_52.5_MB_(99.09%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun longestObstacleCourseAtEachPosition(obstacles: IntArray): IntArray {

@@ -1,8 +1,9 @@
 package g1901_2000.s1980_find_unique_binary_string
 
-// #Medium #Array #String #Backtracking
+// #Medium #Array #String #Backtracking #2023_06_21_Time_186_ms_(50.00%)_Space_37.5_MB_(66.67%)
+
 class Solution {
-    fun findDifferentBinaryString(nums: Array<String>): String? {
+    fun findDifferentBinaryString(nums: Array<String>): String {
         val set: Set<String> = HashSet(listOf(*nums))
         val len = nums[0].length
         val sb = StringBuilder()
@@ -26,6 +27,6 @@ class Solution {
                 return binary
             }
         }
-        return null
+        return ""
     }
 }

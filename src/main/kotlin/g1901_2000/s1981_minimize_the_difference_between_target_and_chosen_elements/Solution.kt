@@ -1,6 +1,8 @@
 package g1901_2000.s1981_minimize_the_difference_between_target_and_chosen_elements
 
 // #Medium #Array #Dynamic_Programming #Matrix
+// #2023_06_21_Time_588_ms_(100.00%)_Space_44.8_MB_(100.00%)
+
 class Solution {
     fun minimizeTheDifference(mat: Array<IntArray>, target: Int): Int {
         val m = mat.size

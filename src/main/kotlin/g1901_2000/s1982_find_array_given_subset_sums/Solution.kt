@@ -1,6 +1,7 @@
 package g1901_2000.s1982_find_array_given_subset_sums
 
-// #Hard #Array #Divide_and_Conquer
+// #Hard #Array #Divide_and_Conquer #2023_06_21_Time_640_ms_(100.00%)_Space_51_MB_(100.00%)
+
 class Solution {
     fun recoverArray(n: Int, sums: IntArray): IntArray {
         sums.sort()

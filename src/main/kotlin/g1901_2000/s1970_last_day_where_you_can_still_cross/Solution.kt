@@ -1,6 +1,8 @@
 package g1901_2000.s1970_last_day_where_you_can_still_cross
 
 // #Hard #Array #Depth_First_Search #Breadth_First_Search #Binary_Search #Matrix #Union_Find
+// #2023_06_21_Time_703_ms_(100.00%)_Space_65.6_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>): Int {

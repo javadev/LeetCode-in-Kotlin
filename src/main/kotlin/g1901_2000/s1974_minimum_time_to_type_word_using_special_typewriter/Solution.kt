@@ -1,6 +1,7 @@
 package g1901_2000.s1974_minimum_time_to_type_word_using_special_typewriter
 
-// #Easy #String #Greedy
+// #Easy #String #Greedy #2023_06_21_Time_139_ms_(71.43%)_Space_33.7_MB_(85.71%)
+
 class Solution {
     fun minTimeToType(word: String): Int {
         var min = 0
