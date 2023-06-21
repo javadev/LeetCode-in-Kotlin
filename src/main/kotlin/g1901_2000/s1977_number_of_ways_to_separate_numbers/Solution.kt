@@ -32,8 +32,10 @@ class Solution {
                     count = (pref[i - 1][i - 1] - pref[prevStart][i - 1] + mod) % mod
                     if (compare(prevStart, i, len, dp, num)) {
                         val cnt =
-                            (if (prevStart == 0) pref[prevStart][i - 1] else
-                                pref[prevStart][i - 1] - pref[prevStart - 1][i - 1] + mod) % mod
+                            (
+                                if (prevStart == 0) pref[prevStart][i - 1] else
+                                    pref[prevStart][i - 1] - pref[prevStart - 1][i - 1] + mod
+                                ) % mod
                         count = (count + cnt + mod) % mod
                     }
                 }
