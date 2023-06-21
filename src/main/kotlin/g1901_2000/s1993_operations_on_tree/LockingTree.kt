@@ -1,8 +1,10 @@
 package g1901_2000.s1993_operations_on_tree
 
+// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Design
+// #2023_06_21_Time_1117_ms_(100.00%)_Space_67.9_MB_(100.00%)
+
 import java.util.LinkedList
 
-// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Design
 class LockingTree(parent: IntArray) {
     private val a: Array<IntArray>
     private val map = HashMap<Int, MutableList<Int>>()

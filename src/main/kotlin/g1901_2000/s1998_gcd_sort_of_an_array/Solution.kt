@@ -1,6 +1,7 @@
 package g1901_2000.s1998_gcd_sort_of_an_array
 
-// #Hard #Array #Math #Sorting #Union_Find
+// #Hard #Array #Math #Sorting #Union_Find #2023_06_21_Time_437_ms_(100.00%)_Space_45.4_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun gcdSort(nums: IntArray): Boolean {

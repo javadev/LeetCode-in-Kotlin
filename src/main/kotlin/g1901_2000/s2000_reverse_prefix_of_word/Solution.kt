@@ -1,6 +1,7 @@
 package g1901_2000.s2000_reverse_prefix_of_word
 
-// #Easy #String #Two_Pointers
+// #Easy #String #Two_Pointers #2023_06_21_Time_164_ms_(31.25%)_Space_35.2_MB_(65.63%)
+
 class Solution {
     fun reversePrefix(word: String, ch: Char): String {
         var i = 0

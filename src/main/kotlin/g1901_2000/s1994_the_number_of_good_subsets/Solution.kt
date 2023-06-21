@@ -1,6 +1,8 @@
 package g1901_2000.s1994_the_number_of_good_subsets
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask
+// #2023_06_21_Time_737_ms_(100.00%)_Space_54.2_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private fun add(a: Long, b: Long): Long {

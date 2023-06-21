@@ -1,6 +1,7 @@
 package g1901_2000.s1958_check_if_move_is_legal
 
-// #Medium #Array #Matrix #Enumeration
+// #Medium #Array #Matrix #Enumeration #2023_06_21_Time_169_ms_(100.00%)_Space_35.6_MB_(100.00%)
+
 class Solution {
     fun checkMove(board: Array<CharArray>, rMove: Int, cMove: Int, color: Char): Boolean {
         val opposite = if (color == 'W') 'B' else if (color == 'B') 'W' else ' '

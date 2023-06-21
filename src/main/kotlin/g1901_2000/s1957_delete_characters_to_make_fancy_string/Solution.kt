@@ -1,6 +1,7 @@
 package g1901_2000.s1957_delete_characters_to_make_fancy_string
 
-// #Easy #String
+// #Easy #String #2023_06_21_Time_377_ms_(50.00%)_Space_42.9_MB_(87.50%)
+
 class Solution {
     fun makeFancyString(s: String): String {
         val ans = StringBuilder()

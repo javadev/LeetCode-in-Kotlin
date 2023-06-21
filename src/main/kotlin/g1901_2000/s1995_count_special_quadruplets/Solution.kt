@@ -1,6 +1,7 @@
 package g1901_2000.s1995_count_special_quadruplets
 
-// #Easy #Array #Enumeration
+// #Easy #Array #Enumeration #2023_06_21_Time_146_ms_(100.00%)_Space_34.3_MB_(50.00%)
+
 class Solution {
     fun countQuadruplets(nums: IntArray): Int {
         var count = 0

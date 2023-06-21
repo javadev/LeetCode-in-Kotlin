@@ -1,6 +1,7 @@
 package g1901_2000.s1954_minimum_garden_perimeter_to_collect_enough_apples
 
-// #Medium #Math #Binary_Search
+// #Medium #Math #Binary_Search #2023_06_21_Time_132_ms_(100.00%)_Space_33_MB_(100.00%)
+
 class Solution {
     fun minimumPerimeter(neededApples: Long): Long {
         var l: Long = 1
