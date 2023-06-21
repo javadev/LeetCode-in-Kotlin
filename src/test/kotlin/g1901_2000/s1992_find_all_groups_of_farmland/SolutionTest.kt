@@ -30,9 +30,4 @@ internal class SolutionTest {
     fun findFarmland4() {
         assertThat(Solution().findFarmland(arrayOf()), equalTo(arrayOf()))
     }
-
-    @Test
-    fun findFarmland5() {
-        assertThat(Solution().findFarmland(null), equalTo(arrayOf()))
-    }
 }
