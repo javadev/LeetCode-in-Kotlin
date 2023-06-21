@@ -15,10 +15,10 @@ class Solution {
         tasks.sortWith(compareBy { a: IntArray -> a[0] })
         val minHeap = PriorityQueue(
             Comparator { a: IntArray, b: IntArray ->
-                if (a[1] == b[1]) {
-                    return@Comparator a[2] - b[2]
+                return@Comparator if (a[1] == b[1]) {
+                    a[2] - b[2]
                 } else {
-                    return@Comparator a[1] - b[1]
+                    a[1] - b[1]
                 }
             }
         )
@@ -26,11 +26,11 @@ class Solution {
         val taskOrderResult = IntArray(n)
         var i = 0
         var index = 0
-        while (!minHeap.isEmpty() || i < n) {
+        while (minHeap.isNotEmpty() || i < n) {
             while (i < n && time >= tasks[i][0]) {
                 minHeap.add(tasks[i++])
             }
-            if (!minHeap.isEmpty()) {
+            if (minHeap.isNotEmpty()) {
                 val task = minHeap.remove()
                 taskOrderResult[index++] = task[2]
                 time += task[1]

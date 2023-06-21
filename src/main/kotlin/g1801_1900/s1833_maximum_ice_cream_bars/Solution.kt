@@ -4,7 +4,6 @@ package g1801_1900.s1833_maximum_ice_cream_bars
 
 class Solution {
     fun maxIceCream(costs: IntArray, coins: Int): Int {
-        val n = costs.size
         val arr = IntArray(100001)
         for (cost in costs) arr[cost]++
         var (result, money) = Pair(0, coins)
