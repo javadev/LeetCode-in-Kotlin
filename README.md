@@ -1874,6 +1874,16 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1904 |[The Number of Full Rounds You Have Played](src/main/kotlin/g1901_2000/s1904_the_number_of_full_rounds_you_have_played/Solution.kt)| Medium | String, Math | 149 | 100.00
 | 1903 |[Largest Odd Number in String](src/main/kotlin/g1901_2000/s1903_largest_odd_number_in_string/Solution.kt)| Easy | String, Math, Greedy | 256 | 75.00
 | 1901 |[Find a Peak Element II](src/main/kotlin/g1901_2000/s1901_find_a_peak_element_ii/Solution.kt)| Medium | Array, Binary_Search, Matrix, Divide_and_Conquer, Binary_Search_II_Day_17 | 726 | 100.00
+| 1837 |[Sum of Digits in Base K](src/main/kotlin/g1801_1900/s1837_sum_of_digits_in_base_k/Solution.kt)| Easy | Math | 120 | 100.00
+| 1835 |[Find XOR Sum of All Pairs Bitwise AND](src/main/kotlin/g1801_1900/s1835_find_xor_sum_of_all_pairs_bitwise_and/Solution.kt)| Hard | Array, Math, Bit_Manipulation | 604 | 100.00
+| 1834 |[Single-Threaded CPU](src/main/kotlin/g1801_1900/s1834_single_threaded_cpu/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue | 1050 | 100.00
+| 1833 |[Maximum Ice Cream Bars](src/main/kotlin/g1801_1900/s1833_maximum_ice_cream_bars/Solution.kt)| Medium | Array, Sorting, Greedy | 439 | 100.00
+| 1832 |[Check if the Sentence Is Pangram](src/main/kotlin/g1801_1900/s1832_check_if_the_sentence_is_pangram/Solution.kt)| Easy | String, Hash_Table | 127 | 98.00
+| 1830 |[Minimum Number of Operations to Make String Sorted](src/main/kotlin/g1801_1900/s1830_minimum_number_of_operations_to_make_string_sorted/Solution.kt)| Hard | String, Math, Combinatorics | 226 | 100.00
+| 1829 |[Maximum XOR for Each Query](src/main/kotlin/g1801_1900/s1829_maximum_xor_for_each_query/Solution.kt)| Medium | Array, Bit_Manipulation, Prefix_Sum | 680 | 100.00
+| 1828 |[Queries on Number of Points Inside a Circle](src/main/kotlin/g1801_1900/s1828_queries_on_number_of_points_inside_a_circle/Solution.kt)| Medium | Array, Math, Geometry | 284 | 100.00
+| 1827 |[Minimum Operations to Make the Array Increasing](src/main/kotlin/g1801_1900/s1827_minimum_operations_to_make_the_array_increasing/Solution.kt)| Easy | Array, Greedy | 208 | 100.00
+| 1825 |[Finding MK Average](src/main/kotlin/g1801_1900/s1825_finding_mk_average/MKAverage.kt)| Hard | Design, Heap_Priority_Queue, Ordered_Set, Queue | 1101 | 100.00
 | 1824 |[Minimum Sideway Jumps](src/main/kotlin/g1801_1900/s1824_minimum_sideway_jumps/Solution.kt)| Medium | Array, Dynamic_Programming, Greedy | 726 | 100.00
 | 1823 |[Find the Winner of the Circular Game](src/main/kotlin/g1801_1900/s1823_find_the_winner_of_the_circular_game/Solution.kt)| Medium | Array, Math, Simulation, Recursion, Queue, Data_Structure_II_Day_14_Stack_Queue | 119 | 87.50
 | 1822 |[Sign of the Product of an Array](src/main/kotlin/g1801_1900/s1822_sign_of_the_product_of_an_array/Solution.kt)| Easy | Array, Math, Programming_Skills_I_Day_4_Loop | 170 | 92.51
