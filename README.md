@@ -1071,6 +1071,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1838 |[Frequency of the Most Frequent Element](src/main/kotlin/g1801_1900/s1838_frequency_of_the_most_frequent_element/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Prefix_Sum, Sliding_Window | 564 | 88.89
 | 0540 |[Single Element in a Sorted Array](src.save/main/kotlin/g0501_0600/s0540_single_element_in_a_sorted_array/Solution.kt)| Medium | Array, Binary_Search | 274 | 86.67
 
 #### Day 10
@@ -1516,6 +1517,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1845 |[Seat Reservation Manager](src/main/kotlin/g1801_1900/s1845_seat_reservation_manager/SeatManager.kt)| Medium | Design, Heap_Priority_Queue | 834 | 100.00
 | 0860 |[Lemonade Change](src.save/main/kotlin/g0801_0900/s0860_lemonade_change/Solution.kt)| Easy | Array, Greedy | 413 | 86.96
 
 #### Day 18
@@ -1914,6 +1916,16 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1904 |[The Number of Full Rounds You Have Played](src/main/kotlin/g1901_2000/s1904_the_number_of_full_rounds_you_have_played/Solution.kt)| Medium | String, Math | 149 | 100.00
 | 1903 |[Largest Odd Number in String](src/main/kotlin/g1901_2000/s1903_largest_odd_number_in_string/Solution.kt)| Easy | String, Math, Greedy | 256 | 75.00
 | 1901 |[Find a Peak Element II](src/main/kotlin/g1901_2000/s1901_find_a_peak_element_ii/Solution.kt)| Medium | Array, Binary_Search, Matrix, Divide_and_Conquer, Binary_Search_II_Day_17 | 726 | 100.00
+| 1850 |[Minimum Adjacent Swaps to Reach the Kth Smallest Number](src/main/kotlin/g1801_1900/s1850_minimum_adjacent_swaps_to_reach_the_kth_smallest_number/Solution.kt)| Medium | String, Greedy, Two_Pointers | 193 | 100.00
+| 1849 |[Splitting a String Into Descending Consecutive Values](src/main/kotlin/g1801_1900/s1849_splitting_a_string_into_descending_consecutive_values/Solution.kt)| Medium | String, Backtracking | 136 | 100.00
+| 1848 |[Minimum Distance to the Target Element](src/main/kotlin/g1801_1900/s1848_minimum_distance_to_the_target_element/Solution.kt)| Easy | Array | 172 | 80.00
+| 1847 |[Closest Room](src/main/kotlin/g1801_1900/s1847_closest_room/Solution.kt)| Hard | Array, Sorting, Binary_Search | 1179 | 100.00
+| 1846 |[Maximum Element After Decreasing and Rearranging](src/main/kotlin/g1801_1900/s1846_maximum_element_after_decreasing_and_rearranging/Solution.kt)| Medium | Array, Sorting, Greedy | 412 | 100.00
+| 1845 |[Seat Reservation Manager](src/main/kotlin/g1801_1900/s1845_seat_reservation_manager/SeatManager.kt)| Medium | Design, Heap_Priority_Queue, Programming_Skills_II_Day_17 | 834 | 100.00
+| 1844 |[Replace All Digits with Characters](src/main/kotlin/g1801_1900/s1844_replace_all_digits_with_characters/Solution.kt)| Easy | String | 137 | 100.00
+| 1840 |[Maximum Building Height](src/main/kotlin/g1801_1900/s1840_maximum_building_height/Solution.kt)| Hard | Array, Math | 1210 | 100.00
+| 1839 |[Longest Substring Of All Vowels in Order](src/main/kotlin/g1801_1900/s1839_longest_substring_of_all_vowels_in_order/Solution.kt)| Medium | String, Sliding_Window | 290 | 80.00
+| 1838 |[Frequency of the Most Frequent Element](src/main/kotlin/g1801_1900/s1838_frequency_of_the_most_frequent_element/Solution.kt)| Medium | Array, Sorting, Greedy, Binary_Search, Prefix_Sum, Sliding_Window, Binary_Search_II_Day_9 | 564 | 88.89
 | 1837 |[Sum of Digits in Base K](src/main/kotlin/g1801_1900/s1837_sum_of_digits_in_base_k/Solution.kt)| Easy | Math | 120 | 100.00
 | 1835 |[Find XOR Sum of All Pairs Bitwise AND](src/main/kotlin/g1801_1900/s1835_find_xor_sum_of_all_pairs_bitwise_and/Solution.kt)| Hard | Array, Math, Bit_Manipulation | 604 | 100.00
 | 1834 |[Single-Threaded CPU](src/main/kotlin/g1801_1900/s1834_single_threaded_cpu/Solution.kt)| Medium | Array, Sorting, Heap_Priority_Queue | 1050 | 100.00
