@@ -1898,6 +1898,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1937 |[Maximum Number of Points with Cost](src/main/kotlin/g1901_2000/s1937_maximum_number_of_points_with_cost/Solution.kt)| Medium | Array, Dynamic_Programming | 886 | 100.00
 | 1936 |[Add Minimum Number of Rungs](src/main/kotlin/g1901_2000/s1936_add_minimum_number_of_rungs/Solution.kt)| Medium | Array, Greedy | 405 | 100.00
 | 1935 |[Maximum Number of Words You Can Type](src/main/kotlin/g1901_2000/s1935_maximum_number_of_words_you_can_type/Solution.kt)| Easy | String, Hash_Table | 178 | 37.50
+| 1934 |[Confirmation Rate](src/main/kotlin/g1901_2000/s1934_confirmation_rate/script.sql)| Medium | Database | 1602 | 35.78
 | 1932 |[Merge BSTs to Create Single BST](src/main/kotlin/g1901_2000/s1932_merge_bsts_to_create_single_bst/Solution.kt)| Hard | Hash_Table, Depth_First_Search, Tree, Binary_Search, Binary_Tree | 1146 | 100.00
 | 1931 |[Painting a Grid With Three Different Colors](src/main/kotlin/g1901_2000/s1931_painting_a_grid_with_three_different_colors/Solution.kt)| Hard | Dynamic_Programming | 135 | 100.00
 | 1930 |[Unique Length-3 Palindromic Subsequences](src/main/kotlin/g1901_2000/s1930_unique_length_3_palindromic_subsequences/Solution.kt)| Medium | String, Hash_Table, Prefix_Sum | 273 | 100.00
@@ -1918,6 +1919,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1911 |[Maximum Alternating Subsequence Sum](src/main/kotlin/g1901_2000/s1911_maximum_alternating_subsequence_sum/Solution.kt)| Medium | Array, Dynamic_Programming | 531 | 100.00
 | 1910 |[Remove All Occurrences of a Substring](src/main/kotlin/g1901_2000/s1910_remove_all_occurrences_of_a_substring/Solution.kt)| Medium | String | 177 | 100.00
 | 1909 |[Remove One Element to Make the Array Strictly Increasing](src/main/kotlin/g1901_2000/s1909_remove_one_element_to_make_the_array_strictly_increasing/Solution.kt)| Easy | Array | 176 | 50.00
+| 1907 |[Count Salary Categories](src/main/kotlin/g1901_2000/s1907_count_salary_categories/script.sql)| Medium | Database | 2358 | 73.89
 | 1906 |[Minimum Absolute Difference Queries](src/main/kotlin/g1901_2000/s1906_minimum_absolute_difference_queries/Solution.kt)| Medium | Array, Hash_Table | 1069 | 50.00
 | 1905 |[Count Sub Islands](src/main/kotlin/g1901_2000/s1905_count_sub_islands/Solution.kt)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_3_Matrix_Related_Problems | 866 | 100.00
 | 1904 |[The Number of Full Rounds You Have Played](src/main/kotlin/g1901_2000/s1904_the_number_of_full_rounds_you_have_played/Solution.kt)| Medium | String, Math | 149 | 100.00
