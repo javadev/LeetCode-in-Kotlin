@@ -1,22 +1,22 @@
 package g2001_2100.s2027_minimum_moves_to_convert_string
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun minimumMoves() {
-        MatcherAssert.assertThat(Solution().minimumMoves("XXX"), CoreMatchers.equalTo(1))
+        assertThat(Solution().minimumMoves("XXX"), equalTo(1))
     }
 
     @Test
     fun minimumMoves2() {
-        MatcherAssert.assertThat(Solution().minimumMoves("XXOX"), CoreMatchers.equalTo(2))
+        assertThat(Solution().minimumMoves("XXOX"), equalTo(2))
     }
 
     @Test
     fun minimumMoves3() {
-        MatcherAssert.assertThat(Solution().minimumMoves("OOOO"), CoreMatchers.equalTo(0))
+        assertThat(Solution().minimumMoves("OOOO"), equalTo(0))
     }
 }

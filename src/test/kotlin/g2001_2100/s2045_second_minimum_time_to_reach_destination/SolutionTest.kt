@@ -1,13 +1,13 @@
 package g2001_2100.s2045_second_minimum_time_to_reach_destination
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun secondMinimum() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .secondMinimum(
                     5,
@@ -15,12 +15,12 @@ internal class SolutionTest {
                     3,
                     5
                 ),
-            CoreMatchers.equalTo(13)
+            equalTo(13)
         )
     }
 
     @Test
     fun secondMinimum2() {
-        MatcherAssert.assertThat(Solution().secondMinimum(2, arrayOf(intArrayOf(1, 2)), 3, 2), CoreMatchers.equalTo(11))
+        assertThat(Solution().secondMinimum(2, arrayOf(intArrayOf(1, 2)), 3, 2), equalTo(11))
     }
 }

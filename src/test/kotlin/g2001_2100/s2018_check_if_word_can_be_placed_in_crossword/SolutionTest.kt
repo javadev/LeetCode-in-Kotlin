@@ -1,43 +1,43 @@
 package g2001_2100.s2018_check_if_word_can_be_placed_in_crossword
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun placeWordInCrossword() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf('#', ' ', '#'), charArrayOf(' ', ' ', '#'), charArrayOf('#', 'c', ' ')),
                     "abc"
                 ),
-            CoreMatchers.equalTo(true)
+            equalTo(true)
         )
     }
 
     @Test
     fun placeWordInCrossword2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf(' ', '#', 'a'), charArrayOf(' ', '#', 'c'), charArrayOf(' ', '#', 'a')),
                     "ac"
                 ),
-            CoreMatchers.equalTo(false)
+            equalTo(false)
         )
     }
 
     @Test
     fun placeWordInCrossword3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf('#', ' ', '#'), charArrayOf(' ', ' ', '#'), charArrayOf('#', ' ', 'c')),
                     "ca"
                 ),
-            CoreMatchers.equalTo(true)
+            equalTo(true)
         )
     }
 }
