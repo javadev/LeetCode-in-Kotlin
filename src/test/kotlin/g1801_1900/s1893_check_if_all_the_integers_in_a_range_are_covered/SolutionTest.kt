@@ -5,21 +5,19 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isCovered: Unit
-        get() {
-            assertThat(
-                Solution().isCovered(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4), intArrayOf(5, 6)), 2, 5),
-                equalTo(true)
-            )
-        }
+    @Test
+    fun isCovered() {
+        assertThat(
+            Solution().isCovered(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4), intArrayOf(5, 6)), 2, 5),
+            equalTo(true)
+        )
+    }
 
-    @get:Test
-    val isCovered2: Unit
-        get() {
-            assertThat(
-                Solution().isCovered(arrayOf(intArrayOf(1, 10), intArrayOf(10, 20)), 21, 21),
-                equalTo(false)
-            )
-        }
+    @Test
+    fun isCovered2() {
+        assertThat(
+            Solution().isCovered(arrayOf(intArrayOf(1, 10), intArrayOf(10, 20)), 21, 21),
+            equalTo(false)
+        )
+    }
 }

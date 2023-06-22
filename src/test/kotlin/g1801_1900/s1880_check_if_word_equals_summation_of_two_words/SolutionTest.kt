@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isSumEqual: Unit
-        get() {
-            assertThat(Solution().isSumEqual("acb", "cba", "cdb"), equalTo(true))
-        }
+    @Test
+    fun isSumEqual() {
+        assertThat(Solution().isSumEqual("acb", "cba", "cdb"), equalTo(true))
+    }
 
-    @get:Test
-    val isSumEqual2: Unit
-        get() {
-            assertThat(Solution().isSumEqual("aaa", "a", "aab"), equalTo(false))
-        }
+    @Test
+    fun isSumEqual2() {
+        assertThat(Solution().isSumEqual("aaa", "a", "aab"), equalTo(false))
+    }
 
-    @get:Test
-    val isSumEqual3: Unit
-        get() {
-            assertThat(Solution().isSumEqual("aaa", "a", "aaaa"), equalTo(true))
-        }
+    @Test
+    fun isSumEqual3() {
+        assertThat(Solution().isSumEqual("aaa", "a", "aaaa"), equalTo(true))
+    }
 }
