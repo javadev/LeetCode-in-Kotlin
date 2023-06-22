@@ -10,4 +10,3 @@ select
     Confirmations c
   on c.user_id = s.user_id
   group by 1
-  
