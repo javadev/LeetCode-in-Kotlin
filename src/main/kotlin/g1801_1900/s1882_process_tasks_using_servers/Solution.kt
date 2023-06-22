@@ -1,8 +1,9 @@
 package g1801_1900.s1882_process_tasks_using_servers
 
+// #Medium #Array #Heap_Priority_Queue #2023_06_22_Time_1085_ms_(100.00%)_Space_80.7_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Heap_Priority_Queue
 class Solution {
     fun assignTasks(servers: IntArray, tasks: IntArray): IntArray {
         val serverq =

@@ -1,6 +1,8 @@
 package g1801_1900.s1879_minimum_xor_sum_of_two_arrays
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2023_06_22_Time_173_ms_(100.00%)_Space_36.9_MB_(100.00%)
+
 class Solution {
     fun minimumXORSum(nums1: IntArray, nums2: IntArray): Int {
         val l = nums1.size

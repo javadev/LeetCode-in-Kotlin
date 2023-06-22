@@ -1,6 +1,8 @@
 package g1801_1900.s1898_maximum_number_of_removable_characters
 
 // #Medium #Array #String #Binary_Search #Binary_Search_II_Day_6
+// #2023_06_22_Time_636_ms_(100.00%)_Space_54.4_MB_(33.33%)
+
 class Solution {
     fun maximumRemovals(s: String, p: String, removable: IntArray): Int {
         if (s.isEmpty()) {

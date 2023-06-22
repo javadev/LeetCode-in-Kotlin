@@ -1,6 +1,7 @@
 package g1801_1900.s1888_minimum_number_of_flips_to_make_the_binary_string_alternating
 
-// #Medium #String #Greedy
+// #Medium #String #Greedy #2023_06_22_Time_259_ms_(87.50%)_Space_40_MB_(100.00%)
+
 class Solution {
     fun minFlips(s: String): Int {
         val n = s.length

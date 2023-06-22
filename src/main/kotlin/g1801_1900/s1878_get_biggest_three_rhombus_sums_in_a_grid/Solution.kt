@@ -1,8 +1,10 @@
 package g1801_1900.s1878_get_biggest_three_rhombus_sums_in_a_grid
 
+// #Medium #Array #Math #Sorting #Matrix #Heap_Priority_Queue #Prefix_Sum
+// #2023_06_22_Time_326_ms_(100.00%)_Space_43.8_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Math #Sorting #Matrix #Heap_Priority_Queue #Prefix_Sum
 class Solution {
     fun getBiggestThree(grid: Array<IntArray>): IntArray {
         val capicity = 3

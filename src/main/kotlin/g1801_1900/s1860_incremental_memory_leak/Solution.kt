@@ -1,6 +1,7 @@
 package g1801_1900.s1860_incremental_memory_leak
 
-// #Medium #Simulation
+// #Medium #Simulation #2023_06_22_Time_161_ms_(100.00%)_Space_33.6_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun memLeak(memory1: Int, memory2: Int): IntArray {

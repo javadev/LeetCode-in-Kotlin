@@ -1,6 +1,7 @@
 package g1801_1900.s1869_longer_contiguous_segments_of_ones_than_zeros
 
-// #Easy #String
+// #Easy #String #2023_06_22_Time_118_ms_(100.00%)_Space_33.7_MB_(100.00%)
+
 class Solution {
     fun checkZeroOnes(s: String): Boolean {
         var zeroes = 0

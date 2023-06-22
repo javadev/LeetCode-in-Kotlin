@@ -1,6 +1,7 @@
 package g1801_1900.s1861_rotating_the_box
 
-// #Medium #Array #Matrix #Two_Pointers
+// #Medium #Array #Matrix #Two_Pointers #2023_06_22_Time_882_ms_(60.00%)_Space_73.6_MB_(80.00%)
+
 class Solution {
     fun rotateTheBox(box: Array<CharArray>): Array<CharArray> {
         val n = box.size

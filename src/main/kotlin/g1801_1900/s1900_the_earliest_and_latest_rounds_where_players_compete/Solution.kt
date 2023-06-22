@@ -1,6 +1,7 @@
 package g1801_1900.s1900_the_earliest_and_latest_rounds_where_players_compete
 
-// #Hard #Dynamic_Programming #Memoization
+// #Hard #Dynamic_Programming #Memoization #2023_06_22_Time_142_ms_(100.00%)_Space_33.6_MB_(100.00%)
+
 class Solution {
     fun earliestAndLatest(n: Int, firstPlayer: Int, secondPlayer: Int): IntArray {
         var p1 = Math.min(firstPlayer, secondPlayer)

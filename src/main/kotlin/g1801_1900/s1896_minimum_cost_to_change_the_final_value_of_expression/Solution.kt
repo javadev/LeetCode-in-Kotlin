@@ -1,10 +1,13 @@
 package g1801_1900.s1896_minimum_cost_to_change_the_final_value_of_expression
 
 // #Hard #String #Dynamic_Programming #Math #Stack
+// #2023_06_22_Time_252_ms_(100.00%)_Space_41.3_MB_(100.00%)
+
 class Solution {
     private class Result(var `val`: Int, var minFlips: Int)
 
     private var cur = 0
+
     fun minOperationsToFlip(expression: String): Int {
         cur = 0
         return term(expression).minFlips

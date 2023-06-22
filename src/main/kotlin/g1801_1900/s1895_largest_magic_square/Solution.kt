@@ -1,6 +1,7 @@
 package g1801_1900.s1895_largest_magic_square
 
-// #Medium #Array #Matrix #Prefix_Sum
+// #Medium #Array #Matrix #Prefix_Sum #2023_06_22_Time_202_ms_(100.00%)_Space_36.7_MB_(100.00%)
+
 class Solution {
     fun largestMagicSquare(grid: Array<IntArray>): Int {
         val m = grid.size

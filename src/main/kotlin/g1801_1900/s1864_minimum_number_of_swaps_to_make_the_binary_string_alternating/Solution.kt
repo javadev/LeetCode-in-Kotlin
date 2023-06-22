@@ -1,6 +1,7 @@
 package g1801_1900.s1864_minimum_number_of_swaps_to_make_the_binary_string_alternating
 
-// #Medium #String #Greedy
+// #Medium #String #Greedy #2023_06_22_Time_140_ms_(100.00%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun minSwaps(s: String): Int {
         val count = Array(2) { IntArray(2) }

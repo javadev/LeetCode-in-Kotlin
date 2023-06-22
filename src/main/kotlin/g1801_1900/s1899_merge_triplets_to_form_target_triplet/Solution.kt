@@ -1,6 +1,7 @@
 package g1801_1900.s1899_merge_triplets_to_form_target_triplet
 
-// #Medium #Array #Greedy
+// #Medium #Array #Greedy #2023_06_22_Time_954_ms_(71.43%)_Space_126_MB_(100.00%)
+
 class Solution {
     fun mergeTriplets(triplets: Array<IntArray>, target: IntArray): Boolean {
         var one = false

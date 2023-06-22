@@ -1,6 +1,7 @@
 package g1801_1900.s1884_egg_drop_with_2_eggs_and_n_floors
 
-// #Medium #Dynamic_Programming #Math
+// #Medium #Dynamic_Programming #Math #2023_06_22_Time_130_ms_(100.00%)_Space_33.2_MB_(100.00%)
+
 class Solution {
     fun twoEggDrop(n: Int): Int {
         // given x steps, the maximum floors I can test with two eggs

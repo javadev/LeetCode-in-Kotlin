@@ -1,6 +1,7 @@
 package g1801_1900.s1865_finding_pairs_with_a_certain_sum
 
-// #Medium #Array #Hash_Table #Design
+// #Medium #Array #Hash_Table #Design #2023_06_22_Time_1050_ms_(100.00%)_Space_93.9_MB_(50.00%)
+
 class FindSumPairs(private val nums1: IntArray, private val nums2: IntArray) {
     private val numFreq: MutableMap<Int, Int> = HashMap()
 
@@ -24,3 +25,9 @@ class FindSumPairs(private val nums1: IntArray, private val nums2: IntArray) {
         return res
     }
 }
+/*
+ * Your FindSumPairs object will be instantiated and called as such:
+ * var obj = FindSumPairs(nums1, nums2)
+ * obj.add(index,`val`)
+ * var param_2 = obj.count(tot)
+ */

@@ -1,6 +1,8 @@
 package g1801_1900.s1870_minimum_speed_to_arrive_on_time
 
 // #Medium #Array #Binary_Search #Binary_Search_II_Day_6
+// #2023_06_22_Time_628_ms_(50.00%)_Space_51.5_MB_(100.00%)
+
 class Solution {
     fun minSpeedOnTime(dist: IntArray, hour: Double): Int {
         val n = dist.size

@@ -1,6 +1,8 @@
 package g1801_1900.s1889_minimum_space_wasted_from_packaging
 
 // #Hard #Array #Sorting #Binary_Search #Prefix_Sum
+// #2023_06_22_Time_910_ms_(100.00%)_Space_67.5_MB_(100.00%)
+
 class Solution {
     fun minWastedSpace(packages: IntArray, boxes: Array<IntArray>): Int {
         val numPackages = packages.size

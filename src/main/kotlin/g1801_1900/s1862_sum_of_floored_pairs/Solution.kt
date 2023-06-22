@@ -1,6 +1,8 @@
 package g1801_1900.s1862_sum_of_floored_pairs
 
 // #Hard #Array #Math #Binary_Search #Prefix_Sum
+// #2023_06_22_Time_710_ms_(100.00%)_Space_54.1_MB_(100.00%)
+
 class Solution {
     fun sumOfFlooredPairs(nums: IntArray): Int {
         val mod: Long = 1000000007

@@ -1,6 +1,7 @@
 package g1801_1900.s1880_check_if_word_equals_summation_of_two_words
 
-// #Easy #String
+// #Easy #String #2023_06_22_Time_139_ms_(80.00%)_Space_33.7_MB_(80.00%)
+
 class Solution {
     fun isSumEqual(firstWord: String, secondWord: String, targetWord: String): Boolean {
         val sb = StringBuilder()

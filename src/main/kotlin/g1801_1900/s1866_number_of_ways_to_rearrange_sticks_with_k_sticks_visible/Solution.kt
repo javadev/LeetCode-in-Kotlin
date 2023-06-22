@@ -1,6 +1,8 @@
 package g1801_1900.s1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible
 
 // #Hard #Dynamic_Programming #Math #Combinatorics
+// #2023_06_22_Time_188_ms_(100.00%)_Space_37_MB_(100.00%)
+
 class Solution {
     fun rearrangeSticks(n: Int, k: Int): Int {
         if (k > n || k < 1) {

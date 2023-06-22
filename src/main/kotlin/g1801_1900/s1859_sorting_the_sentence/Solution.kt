@@ -1,8 +1,9 @@
 package g1801_1900.s1859_sorting_the_sentence
 
+// #Easy #String #Sorting #2023_06_22_Time_155_ms_(89.29%)_Space_35.8_MB_(96.43%)
+
 import java.util.TreeMap
 
-// #Easy #String #Sorting
 class Solution {
     fun sortSentence(s: String): String {
         val words = s.split(" ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()

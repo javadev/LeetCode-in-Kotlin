@@ -1,6 +1,8 @@
 package g1801_1900.s1856_maximum_subarray_min_product
 
 // #Medium #Array #Stack #Prefix_Sum #Monotonic_Stack
+// #2023_06_22_Time_517_ms_(66.67%)_Space_57.4_MB_(66.67%)
+
 class Solution {
     fun maxSumMinProduct(nums: IntArray): Int {
         val n = nums.size

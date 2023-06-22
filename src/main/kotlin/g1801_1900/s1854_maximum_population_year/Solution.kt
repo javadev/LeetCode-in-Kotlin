@@ -1,6 +1,7 @@
 package g1801_1900.s1854_maximum_population_year
 
-// #Easy #Array #Counting
+// #Easy #Array #Counting #2023_06_22_Time_148_ms_(90.00%)_Space_34.5_MB_(90.00%)
+
 class Solution {
     fun maximumPopulation(logs: Array<IntArray>): Int {
         val arr = IntArray(101)

@@ -1,6 +1,7 @@
 package g1801_1900.s1883_minimum_skips_to_arrive_at_meeting_on_time
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_22_Time_278_ms_(100.00%)_Space_44.2_MB_(100.00%)
+
 class Solution {
     fun minSkips(dist: IntArray, speed: Int, hoursBefore: Int): Int {
         val len = dist.size

@@ -1,9 +1,11 @@
 package g1801_1900.s1872_stone_game_viii
 
 // #Hard #Array #Dynamic_Programming #Math #Prefix_Sum #Game_Theory
+// #2023_06_22_Time_569_ms_(100.00%)_Space_55.3_MB_(100.00%)
+
 class Solution {
-    fun stoneGameVIII(stones: IntArray?): Int {
-        if (stones == null || stones.size <= 1) {
+    fun stoneGameVIII(stones: IntArray): Int {
+        if (stones.size <= 1) {
             return 0
         }
         val n = stones.size
