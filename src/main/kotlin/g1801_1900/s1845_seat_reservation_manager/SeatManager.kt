@@ -6,6 +6,7 @@ package g1801_1900.s1845_seat_reservation_manager
 import java.util.PriorityQueue
 import java.util.Queue
 
+@Suppress("UNUSED_PARAMETER")
 class SeatManager(n: Int) {
     private val seats: Queue<Int>
     private var smallest: Int
