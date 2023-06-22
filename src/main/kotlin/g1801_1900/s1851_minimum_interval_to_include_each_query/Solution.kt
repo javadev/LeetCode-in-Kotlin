@@ -23,7 +23,7 @@ class Solution {
                 minHeap.add(intervals[j])
                 j++
             }
-            while (!minHeap.isEmpty() && minHeap.peek()[1] < queryVal) {
+            while (minHeap.isNotEmpty() && minHeap.peek()[1] < queryVal) {
                 minHeap.remove()
             }
             result[queryIndex] = if (minHeap.isEmpty()) -1 else minHeap.peek()[1] - minHeap.peek()[0] + 1

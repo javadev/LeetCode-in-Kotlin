@@ -2,8 +2,8 @@ package g1801_1900.s1898_maximum_number_of_removable_characters
 
 // #Medium #Array #String #Binary_Search #Binary_Search_II_Day_6
 class Solution {
-    fun maximumRemovals(s: String?, p: String, removable: IntArray): Int {
-        if (s == null || s.length == 0) {
+    fun maximumRemovals(s: String, p: String, removable: IntArray): Int {
+        if (s.isEmpty()) {
             return 0
         }
         // binary search for the k which need to be removed

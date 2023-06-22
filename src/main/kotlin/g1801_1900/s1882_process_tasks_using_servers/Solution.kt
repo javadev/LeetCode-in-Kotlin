@@ -15,13 +15,13 @@ class Solution {
         val res = IntArray(tasks.size)
         for (i in tasks.indices) {
             time = Math.max(time, i)
-            while (!activetaskq.isEmpty() && activetaskq.peek()[1] <= i) {
+            while (activetaskq.isNotEmpty() && activetaskq.peek()[1] <= i) {
                 val task = activetaskq.poll()
                 serverq.offer(task[0])
             }
             if (serverq.isEmpty()) {
                 val toptask = activetaskq.peek()
-                while (!activetaskq.isEmpty() && activetaskq.peek()[1] == toptask[1]) {
+                while (activetaskq.isNotEmpty() && activetaskq.peek()[1] == toptask[1]) {
                     val task = activetaskq.poll()
                     serverq.offer(task[0])
                 }
