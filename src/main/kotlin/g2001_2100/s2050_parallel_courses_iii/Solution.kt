@@ -25,7 +25,7 @@ class Solution {
                 requiredTime[i] = time[i]
             }
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val vertex = q.poll()
             val edges: List<Int> = adj[vertex]
             for (e in edges) {

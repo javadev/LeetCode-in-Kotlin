@@ -23,7 +23,7 @@ class Solution {
             )
         }
         pq.add(intArrayOf(0, 0))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val a = pq.poll()
             val node = a[0]
             for (nn in adj[node]) {

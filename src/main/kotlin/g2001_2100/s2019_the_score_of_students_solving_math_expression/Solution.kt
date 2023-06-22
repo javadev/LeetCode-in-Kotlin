@@ -25,7 +25,7 @@ class Solution {
         }
         var res = 0
         var ret = 0
-        while (!st.isEmpty()) {
+        while (st.isNotEmpty()) {
             res += st.pop()
         }
         val wrong = opts(0, n - 1, s)
