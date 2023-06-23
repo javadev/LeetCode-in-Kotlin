@@ -18,7 +18,7 @@ class Solution {
                 q.offer(i)
             }
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val i = q.poll()
             val j = fav[i]
             visit[i] = true

@@ -2,19 +2,19 @@ package g2101_2200.s2116_check_if_a_parentheses_string_can_be_valid
 
 // #Medium #String #Greedy #Stack
 class Solution {
-    fun canBeValid(s: String?, locked: String?): Boolean {
-        if (s == null || s.isEmpty()) {
+    fun canBeValid(s: String, locked: String): Boolean {
+        if (s.isEmpty()) {
             return true
         }
         if (s.length and 1 > 0) {
             return false
         }
-        if (locked == null || locked.isEmpty()) {
+        if (locked.isEmpty()) {
             return true
         }
         var numOfLockedClose = 0
         var numOfLockedOpen = 0
-        for (i in 0 until s.length) {
+        for (i in s.indices) {
             val countOfChars = i + 1
             if (s[i] == ')' && locked[i] == '1') {
                 numOfLockedClose++

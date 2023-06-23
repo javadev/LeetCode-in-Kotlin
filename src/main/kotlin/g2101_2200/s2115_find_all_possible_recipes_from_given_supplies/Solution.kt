@@ -35,7 +35,7 @@ class Solution {
             }
         }
         val res: MutableList<String> = ArrayList()
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val recipe = q.remove()
             res.add(recipe)
             if (adj.containsKey(recipe)) {

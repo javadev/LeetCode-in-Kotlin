@@ -25,7 +25,7 @@ class Solution {
         }
         grid[start[0]][start[1]] = -1
         var distance = 0
-        while (!bfs.isEmpty()) {
+        while (bfs.isNotEmpty()) {
             var size = bfs.size
             distance++
             while (size-- > 0) {
@@ -64,7 +64,7 @@ class Solution {
             distDiff
         }
         val ans: MutableList<List<Int>> = LinkedList()
-        while (k-- > 0 && !items.isEmpty()) {
+        while (k-- > 0 && items.isNotEmpty()) {
             val item = items.poll()
             ans.add(listOf(item.row, item.col))
         }
