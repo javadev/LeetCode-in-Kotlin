@@ -21,10 +21,10 @@ class SORTracker {
         )
         tSet2 = TreeSet(
             Comparator { a: Location?, b: Location? ->
-                if (a!!.score != b!!.score) {
-                    return@Comparator b.score - a.score
+                return@Comparator if (a!!.score != b!!.score) {
+                    b.score - a.score
                 } else {
-                    return@Comparator a.name.compareTo(b.name)
+                    a.name.compareTo(b.name)
                 }
             }
         )
