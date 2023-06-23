@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isSameAfterReversals: Unit
-        get() {
-            assertThat(Solution().isSameAfterReversals(526), equalTo(true))
-        }
+    @Test
+    fun isSameAfterReversals() {
+        assertThat(Solution().isSameAfterReversals(526), equalTo(true))
+    }
 
-    @get:Test
-    val isSameAfterReversals2: Unit
-        get() {
-            assertThat(Solution().isSameAfterReversals(1800), equalTo(false))
-        }
+    @Test
+    fun isSameAfterReversals2() {
+        assertThat(Solution().isSameAfterReversals(1800), equalTo(false))
+    }
 
-    @get:Test
-    val isSameAfterReversals3: Unit
-        get() {
-            assertThat(Solution().isSameAfterReversals(0), equalTo(true))
-        }
+    @Test
+    fun isSameAfterReversals3() {
+        assertThat(Solution().isSameAfterReversals(0), equalTo(true))
+    }
 }

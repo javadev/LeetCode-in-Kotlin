@@ -5,21 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val descentPeriods: Unit
-        get() {
-            assertThat(Solution().getDescentPeriods(intArrayOf(3, 2, 1, 4)), equalTo(7L))
-        }
+    @Test
+    fun descentPeriods() {
+        assertThat(Solution().getDescentPeriods(intArrayOf(3, 2, 1, 4)), equalTo(7L))
+    }
 
-    @get:Test
-    val descentPeriods2: Unit
-        get() {
-            assertThat(Solution().getDescentPeriods(intArrayOf(8, 6, 7, 7)), equalTo(4L))
-        }
+    @Test
+    fun descentPeriods2() {
+        assertThat(Solution().getDescentPeriods(intArrayOf(8, 6, 7, 7)), equalTo(4L))
+    }
 
-    @get:Test
-    val descentPeriods3: Unit
-        get() {
-            assertThat(Solution().getDescentPeriods(intArrayOf(1)), equalTo(1L))
-        }
+    @Test
+    fun descentPeriods3() {
+        assertThat(Solution().getDescentPeriods(intArrayOf(1)), equalTo(1L))
+    }
 }
