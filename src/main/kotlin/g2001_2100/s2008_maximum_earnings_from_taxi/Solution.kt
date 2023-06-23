@@ -26,13 +26,13 @@ class Solution {
             val start = rides[i][0]
             val end = rides[i][1]
             val profit = end - start + java.lang.Long.valueOf(rides[i][2].toLong())
-            while (!myQueue.isEmpty() && start >= myQueue.peek()[0]) {
+            while (myQueue.isNotEmpty() && start >= myQueue.peek()[0]) {
                 max = max.coerceAtLeast(myQueue.peek()[1])
                 myQueue.poll()
             }
             myQueue.offer(longArrayOf(end.toLong(), profit + max))
         }
-        while (!myQueue.isEmpty()) {
+        while (myQueue.isNotEmpty()) {
             max = max.coerceAtLeast(myQueue.poll()[1])
         }
         return max
