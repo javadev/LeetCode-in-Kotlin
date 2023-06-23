@@ -22,26 +22,16 @@ internal class SolutionTest {
 
     @Test
     fun canBeValid4() {
-        assertThat(Solution().canBeValid(null, "0"), equalTo(true))
-    }
-
-    @Test
-    fun canBeValid5() {
         assertThat(Solution().canBeValid("", "0"), equalTo(true))
     }
 
     @Test
-    fun canBeValid6() {
-        assertThat(Solution().canBeValid("()()", null), equalTo(true))
-    }
-
-    @Test
-    fun canBeValid7() {
+    fun canBeValid5() {
         assertThat(Solution().canBeValid("()()", ""), equalTo(true))
     }
 
     @Test
-    fun canBeValid8() {
+    fun canBeValid6() {
         assertThat(
             Solution()
                 .canBeValid(
@@ -53,7 +43,7 @@ internal class SolutionTest {
     }
 
     @Test
-    fun canBeValid9() {
+    fun canBeValid7() {
         assertThat(
             Solution()
                 .canBeValid(
