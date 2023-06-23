@@ -1,6 +1,8 @@
 package g2001_2100.s2049_count_nodes_with_the_highest_score
 
 // #Medium #Array #Depth_First_Search #Tree #Binary_Tree
+// #2023_06_23_Time_483_ms_(100.00%)_Space_55_MB_(100.00%)
+
 class Solution {
     internal class Node {
         var left: Node? = null

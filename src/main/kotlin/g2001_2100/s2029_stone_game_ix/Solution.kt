@@ -1,6 +1,8 @@
 package g2001_2100.s2029_stone_game_ix
 
 // #Medium #Array #Math #Greedy #Counting #Game_Theory
+// #2023_06_23_Time_574_ms_(100.00%)_Space_53.4_MB_(100.00%)
+
 class Solution {
     fun stoneGameIX(stones: IntArray): Boolean {
         var zero = 0

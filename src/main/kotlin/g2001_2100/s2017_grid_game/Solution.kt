@@ -1,6 +1,7 @@
 package g2001_2100.s2017_grid_game
 
-// #Medium #Array #Matrix #Prefix_Sum
+// #Medium #Array #Matrix #Prefix_Sum #2023_06_23_Time_578_ms_(87.50%)_Space_56.7_MB_(100.00%)
+
 class Solution {
     fun gridGame(grid: Array<IntArray>): Long {
         val n = grid[0].size

@@ -1,9 +1,11 @@
 package g2001_2100.s2050_parallel_courses_iii
 
+// #Hard #Dynamic_Programming #Graph #Topological_Sort
+// #2023_06_23_Time_974_ms_(100.00%)_Space_84.4_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Queue
 
-// #Hard #Dynamic_Programming #Graph #Topological_Sort
 class Solution {
     fun minimumTime(n: Int, relations: Array<IntArray>, time: IntArray): Int {
         val v = time.size

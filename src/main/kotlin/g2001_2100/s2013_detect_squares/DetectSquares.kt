@@ -1,6 +1,8 @@
 package g2001_2100.s2013_detect_squares
 
 // #Medium #Array #Hash_Table #Design #Counting
+// #2023_06_23_Time_511_ms_(100.00%)_Space_61.4_MB_(80.00%)
+
 class DetectSquares {
     private val map: MutableMap<Int, IntArray>
 
@@ -42,3 +44,9 @@ class DetectSquares {
         private const val MUL = 1002
     }
 }
+/*
+ * Your DetectSquares object will be instantiated and called as such:
+ * var obj = DetectSquares()
+ * obj.add(point)
+ * var param_2 = obj.count(point)
+ */

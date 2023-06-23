@@ -1,6 +1,7 @@
 package g2001_2100.s2016_maximum_difference_between_increasing_elements
 
-// #Easy #Array
+// #Easy #Array #2023_06_23_Time_140_ms_(100.00%)_Space_35_MB_(100.00%)
+
 class Solution {
     fun maximumDifference(nums: IntArray): Int {
         var mini = nums[0]

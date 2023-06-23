@@ -1,6 +1,8 @@
 package g2001_2100.s2048_next_greater_numerically_balanced_number
 
 // #Medium #Math #Backtracking #Enumeration
+// #2023_06_23_Time_138_ms_(100.00%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun nextBeautifulNumber(n: Int): Int {
         val arr = intArrayOf(0, 1, 2, 3, 4, 5, 6)

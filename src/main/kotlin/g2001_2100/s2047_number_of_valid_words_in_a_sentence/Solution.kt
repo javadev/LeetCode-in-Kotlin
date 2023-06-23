@@ -1,6 +1,7 @@
 package g2001_2100.s2047_number_of_valid_words_in_a_sentence
 
-// #Easy #String
+// #Easy #String #2023_06_23_Time_202_ms_(100.00%)_Space_38.3_MB_(100.00%)
+
 class Solution {
     fun countValidWords(sentence: String): Int {
         val tokens = sentence.split("\\s+".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()

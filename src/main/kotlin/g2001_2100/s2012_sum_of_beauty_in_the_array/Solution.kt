@@ -1,6 +1,7 @@
 package g2001_2100.s2012_sum_of_beauty_in_the_array
 
-// #Medium #Array
+// #Medium #Array #2023_06_23_Time_511_ms_(100.00%)_Space_56.5_MB_(50.00%)
+
 class Solution {
     fun sumOfBeauties(nums: IntArray): Int {
         val maxArr = IntArray(nums.size)

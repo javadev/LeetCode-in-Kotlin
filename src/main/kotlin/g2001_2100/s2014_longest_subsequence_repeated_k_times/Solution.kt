@@ -1,6 +1,8 @@
 package g2001_2100.s2014_longest_subsequence_repeated_k_times
 
 // #Hard #String #Greedy #Backtracking #Counting #Enumeration
+// #2023_06_23_Time_333_ms_(100.00%)_Space_39_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun longestSubsequenceRepeatedK(s: String, k: Int): String {

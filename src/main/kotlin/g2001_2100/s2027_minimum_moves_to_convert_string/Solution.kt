@@ -1,6 +1,7 @@
 package g2001_2100.s2027_minimum_moves_to_convert_string
 
-// #Easy #String #Greedy
+// #Easy #String #Greedy #2023_06_23_Time_142_ms_(100.00%)_Space_34.1_MB_(100.00%)
+
 class Solution {
     fun minimumMoves(s: String): Int {
         var r = 0

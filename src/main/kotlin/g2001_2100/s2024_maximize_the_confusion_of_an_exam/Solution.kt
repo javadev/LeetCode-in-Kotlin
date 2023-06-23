@@ -1,6 +1,8 @@
 package g2001_2100.s2024_maximize_the_confusion_of_an_exam
 
 // #Medium #String #Binary_Search #Prefix_Sum #Sliding_Window
+// #2023_06_23_Time_223_ms_(83.33%)_Space_37_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maxConsecutiveAnswers(answerKey: String, k: Int): Int {

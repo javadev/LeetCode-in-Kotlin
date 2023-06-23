@@ -1,6 +1,7 @@
 package g2001_2100.s2018_check_if_word_can_be_placed_in_crossword
 
-// #Medium #Array #Matrix #Enumeration
+// #Medium #Array #Matrix #Enumeration #2023_06_23_Time_698_ms_(100.00%)_Space_90.1_MB_(66.67%)
+
 class Solution {
     fun placeWordInCrossword(board: Array<CharArray>, word: String): Boolean {
         val m = board.size

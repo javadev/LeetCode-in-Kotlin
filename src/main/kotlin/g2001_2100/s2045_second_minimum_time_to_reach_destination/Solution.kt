@@ -1,9 +1,11 @@
 package g2001_2100.s2045_second_minimum_time_to_reach_destination
 
+// #Hard #Breadth_First_Search #Graph #Shortest_Path
+// #2023_06_23_Time_862_ms_(100.00%)_Space_57.2_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Breadth_First_Search #Graph #Shortest_Path
 class Solution {
     fun secondMinimum(n: Int, edges: Array<IntArray>, time: Int, change: Int): Int {
         val adj: Array<MutableList<Int>?> = arrayOfNulls(n)

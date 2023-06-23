@@ -1,6 +1,8 @@
 package g2001_2100.s2025_maximum_number_of_ways_to_partition_an_array
 
 // #Hard #Array #Hash_Table #Prefix_Sum #Counting #Enumeration
+// #2023_06_23_Time_1163_ms_(100.00%)_Space_76_MB_(100.00%)
+
 class Solution {
     fun waysToPartition(nums: IntArray, k: Int): Int {
         val n = nums.size

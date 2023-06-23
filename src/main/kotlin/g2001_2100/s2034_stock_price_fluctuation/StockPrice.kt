@@ -1,8 +1,10 @@
 package g2001_2100.s2034_stock_price_fluctuation
 
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set #Data_Stream
+// #2023_06_23_Time_985_ms_(100.00%)_Space_91.2_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set #Data_Stream
 class StockPrice {
     private class Record(var time: Int, var price: Int)
 
@@ -48,3 +50,11 @@ class StockPrice {
         }
     }
 }
+/*
+ * Your StockPrice object will be instantiated and called as such:
+ * var obj = StockPrice()
+ * obj.update(timestamp,price)
+ * var param_2 = obj.current()
+ * var param_3 = obj.maximum()
+ * var param_4 = obj.minimum()
+ */

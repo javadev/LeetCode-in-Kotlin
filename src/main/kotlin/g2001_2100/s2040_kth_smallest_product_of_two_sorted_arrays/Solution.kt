@@ -1,6 +1,7 @@
 package g2001_2100.s2040_kth_smallest_product_of_two_sorted_arrays
 
-// #Hard #Array #Binary_Search
+// #Hard #Array #Binary_Search #2023_06_23_Time_1001_ms_(100.00%)_Space_51.9_MB_(100.00%)
+
 class Solution {
     fun kthSmallestProduct(nums1: IntArray, nums2: IntArray, k: Long): Long {
         val n = nums2.size

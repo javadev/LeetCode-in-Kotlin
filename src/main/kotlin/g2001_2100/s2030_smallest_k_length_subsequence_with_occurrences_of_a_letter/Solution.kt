@@ -1,6 +1,8 @@
 package g2001_2100.s2030_smallest_k_length_subsequence_with_occurrences_of_a_letter
 
 // #Hard #String #Greedy #Stack #Monotonic_Stack
+// #2023_06_23_Time_501_ms_(100.00%)_Space_39.1_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun smallestSubsequence(s: String, k: Int, letter: Char, repetition: Int): String {

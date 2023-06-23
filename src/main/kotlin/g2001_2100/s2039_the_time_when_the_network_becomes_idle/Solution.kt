@@ -1,8 +1,10 @@
 package g2001_2100.s2039_the_time_when_the_network_becomes_idle
 
+// #Medium #Array #Breadth_First_Search #Graph
+// #2023_06_23_Time_1197_ms_(100.00%)_Space_104.9_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Breadth_First_Search #Graph
 class Solution {
     fun networkBecomesIdle(edges: Array<IntArray>, pat: IntArray): Int {
         val n = pat.size

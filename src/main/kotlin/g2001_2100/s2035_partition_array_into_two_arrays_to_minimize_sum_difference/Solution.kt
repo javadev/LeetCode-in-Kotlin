@@ -1,7 +1,8 @@
 package g2001_2100.s2035_partition_array_into_two_arrays_to_minimize_sum_difference
 
 // #Hard #Array #Dynamic_Programming #Binary_Search #Two_Pointers #Bit_Manipulation #Ordered_Set
-// #Bitmask
+// #Bitmask #2023_06_23_Time_1318_ms_(100.00%)_Space_53.2_MB_(100.00%)
+
 class Solution {
     fun minimumDifference(nums: IntArray): Int {
         if (nums.isEmpty()) {

@@ -1,8 +1,10 @@
 package g2001_2100.s2019_the_score_of_students_solving_math_expression
 
+// #Hard #Array #String #Dynamic_Programming #Math #Stack #Memoization
+// #2023_06_23_Time_1497_ms_(100.00%)_Space_48.2_MB_(100.00%)
+
 import java.util.ArrayDeque
 
-// #Hard #Array #String #Dynamic_Programming #Math #Stack #Memoization
 class Solution {
     private lateinit var dp: Array<Array<HashSet<Int>?>>
 

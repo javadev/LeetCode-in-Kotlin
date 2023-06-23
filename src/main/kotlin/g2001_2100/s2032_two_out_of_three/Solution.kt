@@ -1,6 +1,7 @@
 package g2001_2100.s2032_two_out_of_three
 
-// #Easy #Array #Hash_Table
+// #Easy #Array #Hash_Table #2023_06_23_Time_251_ms_(83.33%)_Space_38_MB_(100.00%)
+
 class Solution {
     fun twoOutOfThree(nums1: IntArray, nums2: IntArray, nums3: IntArray): List<Int> {
         val ans: MutableSet<Int> = HashSet()
