@@ -26,7 +26,7 @@ class Solution {
                 visited[i] = true
             }
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val curr = q.poll()
             val next = favorite[curr]
             indegree[next]--
