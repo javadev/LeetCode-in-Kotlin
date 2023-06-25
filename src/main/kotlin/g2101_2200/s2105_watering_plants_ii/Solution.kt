@@ -1,6 +1,7 @@
 package g2101_2200.s2105_watering_plants_ii
 
-// #Medium #Array #Two_Pointers #Simulation
+// #Medium #Array #Two_Pointers #Simulation #2023_06_25_Time_531_ms_(50.00%)_Space_57.7_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minimumRefill(plants: IntArray, capacityA: Int, capacityB: Int): Int {

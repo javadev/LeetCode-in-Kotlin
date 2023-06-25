@@ -1,6 +1,8 @@
 package g2101_2200.s2106_maximum_fruits_harvested_after_at_most_k_steps
 
 // #Hard #Array #Binary_Search #Prefix_Sum #Sliding_Window
+// #2023_06_25_Time_816_ms_(100.00%)_Space_107.6_MB_(100.00%)
+
 class Solution {
     fun maxTotalFruits(fruits: Array<IntArray>, startPos: Int, k: Int): Int {
         var res = 0

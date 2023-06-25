@@ -1,6 +1,8 @@
 package g2101_2200.s2135_count_words_obtained_after_adding_a_letter
 
 // #Medium #Array #String #Hash_Table #Sorting #Bit_Manipulation
+// #2023_06_25_Time_556_ms_(100.00%)_Space_70.5_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var set: MutableSet<Int>

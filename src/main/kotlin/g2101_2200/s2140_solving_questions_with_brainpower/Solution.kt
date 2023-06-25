@@ -1,6 +1,7 @@
 package g2101_2200.s2140_solving_questions_with_brainpower
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_06_25_Time_753_ms_(66.97%)_Space_108.6_MB_(99.09%)
+
 class Solution {
     fun mostPoints(questions: Array<IntArray>): Long {
         val n = questions.size

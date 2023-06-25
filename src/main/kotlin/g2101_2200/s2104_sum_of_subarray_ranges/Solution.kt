@@ -1,9 +1,10 @@
 package g2101_2200.s2104_sum_of_subarray_ranges
 
+// #Medium #Array #Stack #Monotonic_Stack #2023_06_25_Time_212_ms_(100.00%)_Space_38_MB_(30.77%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Medium #Array #Stack #Monotonic_Stack
 class Solution {
     fun subArrayRanges(nums: IntArray): Long {
         val n = nums.size

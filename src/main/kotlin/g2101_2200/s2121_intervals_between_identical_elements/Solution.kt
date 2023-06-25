@@ -1,6 +1,7 @@
 package g2101_2200.s2121_intervals_between_identical_elements
 
-// #Medium #Array #Hash_Table #Prefix_Sum
+// #Medium #Array #Hash_Table #Prefix_Sum #2023_06_25_Time_1022_ms_(100.00%)_Space_70.9_MB_(100.00%)
+
 class Solution {
     fun getDistances(arr: IntArray): LongArray {
         val n = arr.size

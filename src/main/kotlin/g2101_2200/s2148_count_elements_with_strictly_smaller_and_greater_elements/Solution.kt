@@ -1,6 +1,7 @@
 package g2101_2200.s2148_count_elements_with_strictly_smaller_and_greater_elements
 
-// #Easy #Array #Sorting
+// #Easy #Array #Sorting #2023_06_25_Time_148_ms_(83.33%)_Space_34.6_MB_(83.33%)
+
 class Solution {
     fun countElements(nums: IntArray): Int {
         var min = nums[0]

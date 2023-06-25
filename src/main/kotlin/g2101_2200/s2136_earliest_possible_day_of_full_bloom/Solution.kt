@@ -1,9 +1,10 @@
 package g2101_2200.s2136_earliest_possible_day_of_full_bloom
 
+// #Hard #Array #Sorting #Greedy #2023_06_25_Time_968_ms_(100.00%)_Space_57.2_MB_(100.00%)
+
 import java.util.Arrays
 import java.util.Collections
 
-// #Hard #Array #Sorting #Greedy
 class Solution {
     fun earliestFullBloom(plantTime: IntArray, growTime: IntArray): Int {
         val n = plantTime.size

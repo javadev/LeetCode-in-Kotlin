@@ -1,6 +1,7 @@
 package g2101_2200.s2149_rearrange_array_elements_by_sign
 
-// #Medium #Array #Two_Pointers #Simulation
+// #Medium #Array #Two_Pointers #Simulation #2023_06_25_Time_873_ms_(42.86%)_Space_67.9_MB_(100.00%)
+
 class Solution {
     fun rearrangeArray(nums: IntArray): IntArray {
         val negatives = IntArray(nums.size / 2)

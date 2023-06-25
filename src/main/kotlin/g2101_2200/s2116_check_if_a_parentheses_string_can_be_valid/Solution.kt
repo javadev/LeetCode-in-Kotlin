@@ -1,6 +1,7 @@
 package g2101_2200.s2116_check_if_a_parentheses_string_can_be_valid
 
-// #Medium #String #Greedy #Stack
+// #Medium #String #Greedy #Stack #2023_06_25_Time_315_ms_(42.86%)_Space_38.9_MB_(100.00%)
+
 class Solution {
     fun canBeValid(s: String, locked: String): Boolean {
         if (s.isEmpty()) {

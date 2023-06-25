@@ -1,6 +1,7 @@
 package g2101_2200.s2108_find_first_palindromic_string_in_the_array
 
-// #Easy #Array #String #Two_Pointers
+// #Easy #Array #String #Two_Pointers #2023_06_25_Time_242_ms_(100.00%)_Space_37.8_MB_(90.00%)
+
 class Solution {
     fun firstPalindrome(words: Array<String>): String {
         for (word in words) {

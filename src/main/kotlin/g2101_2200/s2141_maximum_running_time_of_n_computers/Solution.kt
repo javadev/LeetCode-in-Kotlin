@@ -1,32 +1,29 @@
 package g2101_2200.s2141_maximum_running_time_of_n_computers
 
 // #Hard #Array #Sorting #Greedy #Binary_Search
-class Solution {
-    private fun isPossibeToRun(n: Int, batteries: IntArray, avgTime: Long): Boolean {
-        var duration: Long = 0
-        for (ele in batteries) {
-            duration += Math.min(ele.toLong(), avgTime)
-        }
-        return avgTime * n <= duration
-    }
 
+class Solution {
     fun maxRunTime(n: Int, batteries: IntArray): Long {
-        var startTime: Long = 0
-        var sum: Long = 0
-        var ans: Long = 0
-        for (ele in batteries) {
-            sum += ele
-        }
-        var endTime = sum
-        while (startTime <= endTime) {
-            val avgTime = (startTime + endTime) / 2
-            if (isPossibeToRun(n, batteries, avgTime)) {
-                ans = avgTime
-                startTime = avgTime + 1
+        var sumbatt: Long = 0
+        for (x in batteries) sumbatt += x.toLong()
+        var l: Long = 0
+        var r = sumbatt / n
+        var res = Long.MIN_VALUE
+        while (l <= r) {
+            val mid = (l + r) / 2
+            if (isPossible(mid, n, batteries)) {
+                res = mid
+                l = mid + 1
             } else {
-                endTime = avgTime - 1
+                r = mid - 1
             }
         }
-        return ans
+        return res
+    }
+
+    private fun isPossible(mid: Long, n: Int, b: IntArray): Boolean {
+        var sum: Long = 0
+        for (x in b) sum += Math.min(x.toLong(), mid)
+        return n * mid <= sum
     }
 }

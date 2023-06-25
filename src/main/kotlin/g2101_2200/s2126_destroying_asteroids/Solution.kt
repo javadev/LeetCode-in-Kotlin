@@ -1,6 +1,7 @@
 package g2101_2200.s2126_destroying_asteroids
 
-// #Medium #Array #Sorting #Greedy
+// #Medium #Array #Sorting #Greedy #2023_06_25_Time_560_ms_(100.00%)_Space_51.8_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun asteroidsDestroyed(mass: Int, asteroids: IntArray): Boolean {

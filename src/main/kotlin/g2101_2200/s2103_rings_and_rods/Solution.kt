@@ -1,6 +1,7 @@
 package g2101_2200.s2103_rings_and_rods
 
-// #Easy #String #Hash_Table
+// #Easy #String #Hash_Table #2023_06_25_Time_131_ms_(89.47%)_Space_33.9_MB_(100.00%)
+
 class Solution {
     fun countPoints(rings: String): Int {
         val redHashMap: MutableMap<Int, Int> = HashMap()

@@ -1,6 +1,7 @@
 package g2101_2200.s2111_minimum_operations_to_make_the_array_k_increasing
 
-// #Hard #Array #Binary_Search
+// #Hard #Array #Binary_Search #2023_06_25_Time_558_ms_(100.00%)_Space_50.7_MB_(100.00%)
+
 class Solution {
     fun kIncreasing(a: IntArray, k: Int): Int {
         val n = a.size

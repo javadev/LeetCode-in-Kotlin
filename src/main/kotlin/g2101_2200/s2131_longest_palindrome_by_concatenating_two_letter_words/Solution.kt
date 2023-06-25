@@ -1,6 +1,8 @@
 package g2101_2200.s2131_longest_palindrome_by_concatenating_two_letter_words
 
 // #Medium #Array #String #Hash_Table #Greedy #Counting #Level_2_Day_5_Greedy
+// #2023_06_25_Time_607_ms_(90.00%)_Space_55.2_MB_(100.00%)
+
 class Solution {
     fun longestPalindrome(words: Array<String>): Int {
         val counter: MutableMap<String, Int> = HashMap()

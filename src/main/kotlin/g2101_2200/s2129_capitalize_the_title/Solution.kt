@@ -1,6 +1,7 @@
 package g2101_2200.s2129_capitalize_the_title
 
-// #Easy #String
+// #Easy #String #2023_06_25_Time_140_ms_(100.00%)_Space_34.7_MB_(100.00%)
+
 class Solution {
     fun capitalizeTitle(title: String): String {
         val sb = StringBuilder()

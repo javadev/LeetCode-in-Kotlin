@@ -1,6 +1,7 @@
 package g2101_2200.s2117_abbreviating_the_product_of_a_range
 
-// #Hard #Math
+// #Hard #Math #2023_06_25_Time_232_ms_(100.00%)_Space_35.5_MB_(100.00%)
+
 class Solution {
     fun abbreviateProduct(left: Int, right: Int): String {
         val threshold0 = 100000000000000L

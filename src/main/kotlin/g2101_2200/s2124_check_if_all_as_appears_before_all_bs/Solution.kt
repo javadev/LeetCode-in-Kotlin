@@ -1,6 +1,7 @@
 package g2101_2200.s2124_check_if_all_as_appears_before_all_bs
 
-// #Easy #String
+// #Easy #String #2023_06_25_Time_136_ms_(87.50%)_Space_34.1_MB_(100.00%)
+
 class Solution {
     fun checkString(s: String): Boolean {
         var aEndIndex = -1

@@ -1,6 +1,7 @@
 package g2101_2200.s2120_execution_of_all_suffix_instructions_staying_in_a_grid
 
-// #Medium #String #Simulation
+// #Medium #String #Simulation #2023_06_25_Time_215_ms_(100.00%)_Space_37.2_MB_(100.00%)
+
 class Solution {
     fun executeInstructions(n: Int, startPos: IntArray, s: String): IntArray {
         val answer = IntArray(s.length)

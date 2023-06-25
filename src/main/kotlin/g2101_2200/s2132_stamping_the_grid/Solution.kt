@@ -1,6 +1,8 @@
 package g2101_2200.s2132_stamping_the_grid
 
 // #Hard #Array #Greedy #Matrix #Prefix_Sum
+// #2023_06_25_Time_1158_ms_(100.00%)_Space_103.6_MB_(100.00%)
+
 class Solution {
     private fun canPaved(grid: Array<IntArray>, `is`: Int, js: Int, ie: Int, je: Int): Boolean {
         for (i in `is`..ie) {

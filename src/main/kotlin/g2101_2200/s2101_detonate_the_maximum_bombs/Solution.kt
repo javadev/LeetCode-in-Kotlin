@@ -1,6 +1,8 @@
 package g2101_2200.s2101_detonate_the_maximum_bombs
 
 // #Medium #Array #Math #Depth_First_Search #Breadth_First_Search #Graph #Geometry
+// #2023_06_25_Time_262_ms_(98.96%)_Space_40.7_MB_(78.76%)
+
 class Solution {
     fun maximumDetonation(bombs: Array<IntArray>): Int {
         val n = bombs.size

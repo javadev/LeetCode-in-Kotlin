@@ -1,6 +1,8 @@
 package g2101_2200.s2122_recover_the_original_array
 
 // #Hard #Array #Hash_Table #Sorting #Enumeration
+// #2023_06_25_Time_299_ms_(100.00%)_Space_40.1_MB_(100.00%)
+
 class Solution {
     private lateinit var res: IntArray
 

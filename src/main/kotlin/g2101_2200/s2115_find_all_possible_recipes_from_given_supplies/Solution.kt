@@ -1,9 +1,11 @@
 package g2101_2200.s2115_find_all_possible_recipes_from_given_supplies
 
+// #Medium #Array #String #Hash_Table #Graph #Topological_Sort
+// #2023_06_25_Time_514_ms_(100.00%)_Space_50.1_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Array #String #Hash_Table #Graph #Topological_Sort
 class Solution {
     fun findAllRecipes(
         recipes: Array<String>,

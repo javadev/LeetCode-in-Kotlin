@@ -1,72 +1,55 @@
 package g2101_2200.s2146_k_highest_ranked_items_within_a_price_range
 
-import java.util.LinkedList
-import java.util.Queue
-
 // #Medium #Array #Sorting #Breadth_First_Search #Matrix #Heap_Priority_Queue
-@Suppress("NAME_SHADOWING")
-class Solution {
-    internal class Item(var row: Int, var col: Int, var dist: Int, var price: Int)
+// #2023_06_25_Time_1373_ms_(100.00%)_Space_78_MB_(100.00%)
 
-    fun highestRankedKItems(
-        grid: Array<IntArray>,
-        pricing: IntArray,
-        start: IntArray,
-        k: Int
-    ): List<List<Int>> {
-        var k = k
-        val n = grid.size
-        val m = grid[0].size
-        val bfs: Queue<IntArray> = LinkedList()
-        val items = LinkedList<Item>()
-        bfs.add(start)
-        if (grid[start[0]][start[1]] >= pricing[0] && grid[start[0]][start[1]] <= pricing[1]) {
-            items.add(Item(start[0], start[1], 0, grid[start[0]][start[1]]))
-        }
-        grid[start[0]][start[1]] = -1
-        var distance = 0
-        while (bfs.isNotEmpty()) {
-            var size = bfs.size
-            distance++
-            while (size-- > 0) {
-                val loc = bfs.poll()
-                val dirX = intArrayOf(0, 1, -1, 0)
-                val dirY = intArrayOf(-1, 0, 0, 1)
-                for (i in 0..3) {
-                    val newX = loc[0] + dirX[i]
-                    val newY = loc[1] + dirY[i]
-                    if (newX < 0 || newX >= n || newY < 0 || newY >= m ||
-                        grid[newX][newY] == -1 || grid[newX][newY] == 0
-                    ) {
-                        continue
+import java.util.ArrayDeque
+import java.util.Collections
+import java.util.Deque
+
+class Solution {
+    fun highestRankedKItems(grid: Array<IntArray>, pricing: IntArray, start: IntArray, k: Int): List<List<Int>> {
+        val m = grid.size
+        val n = grid[0].size
+        val row = start[0]
+        val col = start[1]
+        val low = pricing[0]
+        val high = pricing[1]
+        val items: MutableList<IntArray> = ArrayList()
+        if (grid[row][col] in low..high) items.add(intArrayOf(0, grid[row][col], row, col))
+        grid[row][col] = 0
+        val q: Deque<IntArray> = ArrayDeque()
+        q.offer(intArrayOf(row, col, 0))
+        val dirs = intArrayOf(-1, 0, 1, 0, -1)
+        while (q.isNotEmpty()) {
+            val p = q.poll()
+            val i = p[0]
+            val j = p[1]
+            val d = p[2]
+            for (l in 0..3) {
+                val x = i + dirs[l]
+                val y = j + dirs[l + 1]
+                if (x in 0 until m && y >= 0 && y < n && grid[x][y] > 0) {
+                    if (grid[x][y] in low..high) {
+                        items.add(intArrayOf(d + 1, grid[x][y], x, y))
                     }
-                    if (grid[newX][newY] >= pricing[0] && grid[newX][newY] <= pricing[1]) {
-                        items.add(Item(newX, newY, distance, grid[newX][newY]))
-                    }
-                    grid[newX][newY] = -1
-                    bfs.add(intArrayOf(newX, newY))
+                    grid[x][y] = 0
+                    q.offer(intArrayOf(x, y, d + 1))
                 }
             }
         }
-        items.sortWith { a: Item, b: Item ->
-            val distDiff = a.dist - b.dist
-            if (distDiff == 0) {
-                val priceDiff = a.price - b.price
-                if (priceDiff == 0) {
-                    val rowDiff = a.row - b.row
-                    if (rowDiff == 0) {
-                        return@sortWith a.col - b.col
-                    }
-                    return@sortWith rowDiff
-                }
-                return@sortWith priceDiff
-            }
-            distDiff
+        Collections.sort(items) { a: IntArray, b: IntArray ->
+            if (a[0] != b[0]) return@sort a[0] - b[0]
+            if (a[1] != b[1]) return@sort a[1] - b[1]
+            if (a[2] != b[2]) return@sort a[2] - b[2]
+            a[3] - b[3]
         }
-        val ans: MutableList<List<Int>> = LinkedList()
-        while (k-- > 0 && items.isNotEmpty()) {
-            val item = items.poll()
-            ans.add(listOf(item.row, item.col))
+        val ans: MutableList<List<Int>> = ArrayList()
+        var i = 0
+        while (i < items.size && i < k) {
+            val p = items[i]
+            ans.add(listOf(p[2], p[3]))
+            ++i
         }
         return ans
     }

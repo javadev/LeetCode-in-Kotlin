@@ -1,8 +1,18 @@
 package g2101_2200.s2130_maximum_twin_sum_of_a_linked_list
 
+// #Medium #Two_Pointers #Stack #Linked_List #2023_06_25_Time_534_ms_(16.77%)_Space_61.9_MB_(96.84%)
+
 import com_github_leetcode.ListNode
 
-// #Medium #Two_Pointers #Stack #Linked_List
+/*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class Solution {
     fun pairSum(head: ListNode?): Int {
         if (head == null) {
