@@ -24,7 +24,7 @@ class Solution {
         //  so will not add the root to avoid duplicacy and call reduction .
         for (i in 0 until n) {
             val visited = BooleanArray(n)
-            val childList: List<Int> = adjList.get(i)
+            val childList: List<Int> = adjList[i]
             for (child in childList) {
                 if (!visited[child]) {
                     dfs(i, child, visited)

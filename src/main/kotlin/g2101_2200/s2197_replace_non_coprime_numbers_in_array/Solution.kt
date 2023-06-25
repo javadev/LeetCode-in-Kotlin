@@ -12,7 +12,7 @@ class Solution {
             val gcd = gcd(first, second)
             if (gcd > 1) {
                 val lcm = first.toLong() * second.toLong() / gcd
-                if (!res.isEmpty()) {
+                if (res.isNotEmpty()) {
                     res.removeAt(res.size - 1)
                 }
                 res.add(lcm.toInt())
