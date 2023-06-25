@@ -1,7 +1,7 @@
 package g2101_2200.s2166_design_bitset
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class BitsetTest {
@@ -26,8 +26,8 @@ internal class BitsetTest {
         // the value at idx = 0 is updated to 0, so bitset = "01010".
         bs.unfix(0)
         // return 2, as there are 2 bits with value 1.
-        MatcherAssert.assertThat(bs.count(), CoreMatchers.equalTo(2))
+        assertThat(bs.count(), equalTo(2))
         // return "01010", which is the composition of bitset.
-        MatcherAssert.assertThat(bs.toString(), CoreMatchers.equalTo("01010"))
+        assertThat(bs.toString(), equalTo("01010"))
     }
 }

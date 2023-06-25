@@ -1,23 +1,23 @@
 package g2101_2200.s2157_groups_of_strings
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun groupStrings() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().groupStrings(arrayOf("a", "b", "ab", "cde")),
-            CoreMatchers.equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3))
         )
     }
 
     @Test
     fun groupStrings2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().groupStrings(arrayOf("a", "ab", "abc")),
-            CoreMatchers.equalTo(intArrayOf(1, 3))
+            equalTo(intArrayOf(1, 3))
         )
     }
 }

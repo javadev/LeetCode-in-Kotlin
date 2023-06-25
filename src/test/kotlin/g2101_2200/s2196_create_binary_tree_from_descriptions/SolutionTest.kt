@@ -1,13 +1,13 @@
 package g2101_2200.s2196_create_binary_tree_from_descriptions
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun createBinaryTree() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .createBinaryTree(
                     arrayOf(
@@ -19,17 +19,17 @@ internal class SolutionTest {
                     )
                 )
                 .toString(),
-            CoreMatchers.equalTo("50,20,15,17,80,19,null")
+            equalTo("50,20,15,17,80,19,null")
         )
     }
 
     @Test
     fun createBinaryTree2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .createBinaryTree(arrayOf(intArrayOf(1, 2, 1), intArrayOf(2, 3, 0), intArrayOf(3, 4, 1)))
                 .toString(),
-            CoreMatchers.equalTo("1,2,null,3,4,null,null")
+            equalTo("1,2,null,3,4,null,null")
         )
     }
 }

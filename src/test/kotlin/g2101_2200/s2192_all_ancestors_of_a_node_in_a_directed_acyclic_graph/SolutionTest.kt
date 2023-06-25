@@ -1,8 +1,8 @@
 package g2101_2200.s2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph
 
 import com_github_leetcode.ArrayUtils.getLists
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
@@ -29,9 +29,9 @@ internal class SolutionTest {
             intArrayOf(0, 1, 2, 3, 4),
             intArrayOf(0, 1, 2, 3)
         )
-        MatcherAssert.assertThat<List<List<Int>>>(
+        assertThat(
             Solution().getAncestors(8, edges),
-            CoreMatchers.equalTo(getLists(expected))
+            equalTo(getLists(expected))
         )
     }
 
@@ -59,9 +59,9 @@ internal class SolutionTest {
             intArrayOf(),
             intArrayOf()
         )
-        MatcherAssert.assertThat<List<List<Int>>>(
+        assertThat(
             Solution().getAncestors(8, edges),
-            CoreMatchers.equalTo(getLists(expected))
+            equalTo(getLists(expected))
         )
     }
 }
