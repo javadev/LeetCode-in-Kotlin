@@ -1847,6 +1847,13 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2009 |[Minimum Number of Operations to Make Array Continuous](src/main/kotlin/g2001_2100/s2009_minimum_number_of_operations_to_make_array_continuous/Solution.kt)| Hard | Array, Binary_Search | 603 | 100.00
+| 2008 |[Maximum Earnings From Taxi](src/main/kotlin/g2001_2100/s2008_maximum_earnings_from_taxi/Solution.kt)| Medium | Array, Dynamic_Programming, Sorting, Binary_Search | 1008 | 100.00
+| 2007 |[Find Original Array From Doubled Array](src/main/kotlin/g2001_2100/s2007_find_original_array_from_doubled_array/Solution.kt)| Medium | Array, Hash_Table, Sorting, Greedy | 753 | 100.00
+| 2006 |[Count Number of Pairs With Absolute Difference K](src/main/kotlin/g2001_2100/s2006_count_number_of_pairs_with_absolute_difference_k/Solution.kt)| Easy | Array, Hash_Table, Counting | 186 | 100.00
+| 2003 |[Smallest Missing Genetic Value in Each Subtree](src/main/kotlin/g2001_2100/s2003_smallest_missing_genetic_value_in_each_subtree/Solution.kt)| Hard | Dynamic_Programming, Depth_First_Search, Tree, Union_Find | 984 | 100.00
+| 2002 |[Maximum Product of the Length of Two Palindromic Subsequences](src/main/kotlin/g2001_2100/s2002_maximum_product_of_the_length_of_two_palindromic_subsequences/Solution.kt)| Medium | String, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 389 | 100.00
+| 2001 |[Number of Pairs of Interchangeable Rectangles](src/main/kotlin/g2001_2100/s2001_number_of_pairs_of_interchangeable_rectangles/Solution.kt)| Medium | Array, Hash_Table, Math, Counting, Number_Theory | 797 | 100.00
 | 2000 |[Reverse Prefix of Word](src/main/kotlin/g1901_2000/s2000_reverse_prefix_of_word/Solution.kt)| Easy | String, Two_Pointers | 164 | 31.25
 | 1998 |[GCD Sort of an Array](src/main/kotlin/g1901_2000/s1998_gcd_sort_of_an_array/Solution.kt)| Hard | Array, Math, Sorting, Union_Find | 437 | 100.00
 | 1997 |[First Day Where You Have Been in All the Rooms](src/main/kotlin/g1901_2000/s1997_first_day_where_you_have_been_in_all_the_rooms/Solution.kt)| Medium | Array, Dynamic_Programming | 572 | 100.00
@@ -1864,6 +1871,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 1981 |[Minimize the Difference Between Target and Chosen Elements](src/main/kotlin/g1901_2000/s1981_minimize_the_difference_between_target_and_chosen_elements/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 588 | 100.00
 | 1980 |[Find Unique Binary String](src/main/kotlin/g1901_2000/s1980_find_unique_binary_string/Solution.kt)| Medium | Array, String, Backtracking | 186 | 50.00
 | 1979 |[Find Greatest Common Divisor of Array](src/main/kotlin/g1901_2000/s1979_find_greatest_common_divisor_of_array/Solution.kt)| Easy | Array, Math, Number_Theory | 172 | 100.00
+| 1978 |[Employees Whose Manager Left the Company](src/main/kotlin/g1901_2000/s1978_employees_whose_manager_left_the_company/script.sql)| Easy | Database | 686 | 64.74
 | 1977 |[Number of Ways to Separate Numbers](src/main/kotlin/g1901_2000/s1977_number_of_ways_to_separate_numbers/Solution.kt)| Hard | String, Dynamic_Programming, Suffix_Array | 199 | 100.00
 | 1976 |[Number of Ways to Arrive at Destination](src/main/kotlin/g1901_2000/s1976_number_of_ways_to_arrive_at_destination/Solution.kt)| Medium | Dynamic_Programming, Graph, Topological_Sort, Shortest_Path | 282 | 100.00
 | 1975 |[Maximum Matrix Sum](src/main/kotlin/g1901_2000/s1975_maximum_matrix_sum/Solution.kt)| Medium | Array, Greedy, Matrix | 535 | 100.00
