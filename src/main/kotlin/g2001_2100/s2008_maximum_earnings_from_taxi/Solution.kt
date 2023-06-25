@@ -6,6 +6,7 @@ package g2001_2100.s2008_maximum_earnings_from_taxi
 import java.util.Arrays
 import java.util.PriorityQueue
 
+@Suppress("UNUSED_PARAMETER")
 class Solution {
     fun maxTaxiEarnings(n: Int, rides: Array<IntArray>): Long {
         // Sort based on start time
