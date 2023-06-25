@@ -92,7 +92,7 @@ class Solution {
             dfs(i1 + 1, i2 + 1, diff)
             return true
         } else {
-            if (!indexNums1.isEmpty()) {
+            if (indexNums1.isNotEmpty()) {
                 for (num1Item in indexNums1) {
                     dfs(num1Item[0] + 1, i2, diff + num1Item[1])
                 }

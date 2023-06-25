@@ -34,7 +34,6 @@ class Solution {
                 "rook" -> dirIndex = 0
                 "queen" -> dirIndex = 1
                 "bishop" -> dirIndex = 2
-                else -> {}
             }
             for (d in dirs[dirIndex]) {
                 var r = positions[i][0]
