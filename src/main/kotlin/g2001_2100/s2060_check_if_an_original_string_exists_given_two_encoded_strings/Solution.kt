@@ -6,8 +6,8 @@ class Solution {
     private var stringMatched = false
     private var s1: String? = null
     private var s2: String? = null
-
     private lateinit var memo: Array<Array<Array<Boolean?>>>
+
     fun possiblyEquals(s1: String, s2: String): Boolean {
         this.s1 = s1
         this.s2 = s2
