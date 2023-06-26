@@ -1,8 +1,10 @@
 package g2101_2200.s2163_minimum_difference_in_sums_after_removal_of_elements
 
+// #Hard #Array #Dynamic_Programming #Heap_Priority_Queue
+// #2023_06_26_Time_854_ms_(100.00%)_Space_79.2_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Hard #Array #Dynamic_Programming #Heap_Priority_Queue
 class Solution {
     fun minimumDifference(nums: IntArray): Long {
         val n = nums.size / 3

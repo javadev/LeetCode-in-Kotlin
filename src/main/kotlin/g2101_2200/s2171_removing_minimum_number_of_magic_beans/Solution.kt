@@ -1,6 +1,7 @@
 package g2101_2200.s2171_removing_minimum_number_of_magic_beans
 
-// #Medium #Array #Sorting #Prefix_Sum
+// #Medium #Array #Sorting #Prefix_Sum #2023_06_26_Time_728_ms_(100.00%)_Space_55.9_MB_(100.00%)
+
 class Solution {
     fun minimumRemoval(beans: IntArray): Long {
         beans.sort()

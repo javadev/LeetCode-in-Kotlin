@@ -1,6 +1,8 @@
 package g2101_2200.s2172_maximum_and_sum_of_array
 
 // #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2023_06_26_Time_165_ms_(100.00%)_Space_34.8_MB_(100.00%)
+
 class Solution {
     fun maximumANDSum(nums: IntArray, numSlots: Int): Int {
         val mask = Math.pow(3.0, numSlots.toDouble()).toInt() - 1

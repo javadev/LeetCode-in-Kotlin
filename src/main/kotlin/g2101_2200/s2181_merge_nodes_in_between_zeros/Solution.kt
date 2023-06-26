@@ -1,16 +1,16 @@
 package g2101_2200.s2181_merge_nodes_in_between_zeros
 
+// #Medium #Simulation #Linked_List #2023_06_26_Time_980_ms_(25.00%)_Space_69.1_MB_(100.00%)
+
 import com_github_leetcode.ListNode
 
-// #Medium #Simulation #Linked_List
 /*
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
  * }
  */
 class Solution {

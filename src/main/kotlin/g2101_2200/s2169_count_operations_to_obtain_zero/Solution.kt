@@ -1,6 +1,7 @@
 package g2101_2200.s2169_count_operations_to_obtain_zero
 
-// #Easy #Math #Simulation
+// #Easy #Math #Simulation #2023_06_26_Time_127_ms_(77.78%)_Space_33.1_MB_(88.89%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun countOperations(num1: Int, num2: Int): Int {

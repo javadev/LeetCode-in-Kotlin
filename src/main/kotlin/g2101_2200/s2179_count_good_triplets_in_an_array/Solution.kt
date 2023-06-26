@@ -1,7 +1,8 @@
 package g2101_2200.s2179_count_good_triplets_in_an_array
 
 // #Hard #Array #Binary_Search #Ordered_Set #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree
-// #Merge_Sort
+// #Merge_Sort #2023_06_26_Time_563_ms_(100.00%)_Space_62.1_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun goodTriplets(nums1: IntArray, nums2: IntArray): Long {

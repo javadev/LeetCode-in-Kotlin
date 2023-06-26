@@ -1,6 +1,8 @@
 package g2101_2200.s2182_construct_string_with_repeat_limit
 
 // #Medium #String #Greedy #Heap_Priority_Queue #Counting
+// #2023_06_26_Time_311_ms_(100.00%)_Space_39_MB_(100.00%)
+
 class Solution {
     fun repeatLimitedString(s: String, repeatLimit: Int): String {
         val result = CharArray(s.length)

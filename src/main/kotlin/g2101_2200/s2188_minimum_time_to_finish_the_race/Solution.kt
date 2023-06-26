@@ -1,6 +1,7 @@
 package g2101_2200.s2188_minimum_time_to_finish_the_race
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_26_Time_1220_ms_(100.00%)_Space_117_MB_(100.00%)
+
 class Solution {
     fun minimumFinishTime(tires: Array<IntArray>, changeTime: Int, numLaps: Int): Int {
         var minf = Int.MAX_VALUE

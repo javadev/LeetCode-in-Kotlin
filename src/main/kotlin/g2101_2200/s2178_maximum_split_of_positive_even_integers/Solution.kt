@@ -1,6 +1,7 @@
 package g2101_2200.s2178_maximum_split_of_positive_even_integers
 
-// #Medium #Math #Greedy
+// #Medium #Math #Greedy #2023_06_26_Time_486_ms_(55.56%)_Space_48_MB_(100.00%)
+
 class Solution {
     fun maximumEvenSplit(finalSum: Long): List<Long> {
         var curr: Long = 2
@@ -11,7 +12,7 @@ class Solution {
         }
         while (remainingSum >= curr) {
             result.add(curr)
-            remainingSum = remainingSum - curr
+            remainingSum -= curr
             curr += 2
         }
         /*

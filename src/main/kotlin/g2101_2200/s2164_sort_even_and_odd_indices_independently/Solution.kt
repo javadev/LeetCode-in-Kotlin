@@ -1,6 +1,7 @@
 package g2101_2200.s2164_sort_even_and_odd_indices_independently
 
-// #Easy #Array #Sorting
+// #Easy #Array #Sorting #2023_06_26_Time_200_ms_(100.00%)_Space_38.1_MB_(100.00%)
+
 class Solution {
     fun sortEvenOdd(nums: IntArray): IntArray {
         val odd = IntArray(nums.size / 2)

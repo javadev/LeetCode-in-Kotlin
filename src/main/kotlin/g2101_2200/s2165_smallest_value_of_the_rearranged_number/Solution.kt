@@ -1,6 +1,7 @@
 package g2101_2200.s2165_smallest_value_of_the_rearranged_number
 
-// #Medium #Math #Sorting
+// #Medium #Math #Sorting #2023_06_26_Time_129_ms_(100.00%)_Space_33.3_MB_(100.00%)
+
 class Solution {
     fun smallestNumber(num: Long): Long {
         val count = IntArray(10)

@@ -1,6 +1,7 @@
 package g2101_2200.s2187_minimum_time_to_complete_trips
 
-// #Medium #Array #Binary_Search
+// #Medium #Array #Binary_Search #2023_06_26_Time_660_ms_(90.91%)_Space_51.5_MB_(100.00%)
+
 class Solution {
     fun minimumTime(time: IntArray, totalTrips: Int): Long {
         return bs(0, Long.MAX_VALUE, time, totalTrips.toLong())
