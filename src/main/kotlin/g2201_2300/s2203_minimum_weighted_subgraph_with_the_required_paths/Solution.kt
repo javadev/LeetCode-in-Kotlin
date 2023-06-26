@@ -22,7 +22,7 @@ class Solution {
         weight[0][src1] = 0
         queue.offer(Node(1, src2, 0))
         weight[1][src2] = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val curr = queue.poll()
             if (curr.vertex == dest && curr.index == 2) {
                 return curr.weight

@@ -27,7 +27,7 @@ class Solution {
             }
         }
         // traversal from leafs to root
-        while (!st.isEmpty()) {
+        while (st.isNotEmpty()) {
             // fetch current node
             val i = st.pollLast()
             // if we in root - ignore it

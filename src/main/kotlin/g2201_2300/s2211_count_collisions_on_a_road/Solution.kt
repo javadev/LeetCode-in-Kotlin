@@ -18,12 +18,12 @@ class Solution {
                 stack.push(direction[i])
             } else {
                 if (direction[i] == 'S' && prevc == 'R') {
-                    if (!stack.isEmpty()) {
+                    if (stack.isNotEmpty()) {
                         stack.pop()
                     }
                     collision += 1
                     direction[i] = 'S'
-                    while (!stack.isEmpty()) {
+                    while (stack.isNotEmpty()) {
                         collision++
                         stack.pop()
                     }
@@ -32,7 +32,7 @@ class Solution {
                     stack.pop()
                     collision += 2
                     direction[i] = 'S'
-                    while (!stack.isEmpty()) {
+                    while (stack.isNotEmpty()) {
                         collision++
                         stack.pop()
                     }

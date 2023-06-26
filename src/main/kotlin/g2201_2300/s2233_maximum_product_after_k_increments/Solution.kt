@@ -16,7 +16,7 @@ class Solution {
         }
         var ans: Long = 1
         val mod = 1000000007
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             ans = ans * pq.poll() % mod
         }
         return ans.toInt()
