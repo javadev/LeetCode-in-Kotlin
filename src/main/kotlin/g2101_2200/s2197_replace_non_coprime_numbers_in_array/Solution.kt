@@ -1,6 +1,8 @@
 package g2101_2200.s2197_replace_non_coprime_numbers_in_array
 
 // #Hard #Array #Math #Stack #Number_Theory
+// #2023_06_26_Time_917_ms_(100.00%)_Space_66.3_MB_(100.00%)
+
 class Solution {
     fun replaceNonCoprimes(nums: IntArray): List<Int> {
         val res = ArrayList<Int>()

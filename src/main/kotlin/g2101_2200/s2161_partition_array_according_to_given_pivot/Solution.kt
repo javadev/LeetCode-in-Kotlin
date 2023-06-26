@@ -1,6 +1,7 @@
 package g2101_2200.s2161_partition_array_according_to_given_pivot
 
-// #Medium #Array #Two_Pointers #Simulation
+// #Medium #Array #Two_Pointers #Simulation #2023_06_26_Time_859_ms_(46.15%)_Space_60_MB_(61.54%)
+
 class Solution {
     fun pivotArray(nums: IntArray, pivot: Int): IntArray {
         val ans = IntArray(nums.size)

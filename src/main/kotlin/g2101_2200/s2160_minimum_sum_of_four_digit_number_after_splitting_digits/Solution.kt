@@ -1,6 +1,7 @@
 package g2101_2200.s2160_minimum_sum_of_four_digit_number_after_splitting_digits
 
-// #Easy #Math #Sorting #Greedy
+// #Easy #Math #Sorting #Greedy #2023_06_26_Time_133_ms_(88.24%)_Space_34.5_MB_(88.24%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minimumSum(num: Int): Int {

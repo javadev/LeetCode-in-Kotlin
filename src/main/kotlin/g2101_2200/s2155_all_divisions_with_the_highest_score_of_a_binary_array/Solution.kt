@@ -1,6 +1,7 @@
 package g2101_2200.s2155_all_divisions_with_the_highest_score_of_a_binary_array
 
-// #Medium #Array
+// #Medium #Array #2023_06_26_Time_1171_ms_(100.00%)_Space_56.5_MB_(100.00%)
+
 class Solution {
     fun maxScoreIndices(nums: IntArray): List<Int> {
         var curone = 0

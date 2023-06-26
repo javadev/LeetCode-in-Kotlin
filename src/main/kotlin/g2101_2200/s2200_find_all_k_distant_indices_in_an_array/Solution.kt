@@ -1,6 +1,7 @@
 package g2101_2200.s2200_find_all_k_distant_indices_in_an_array
 
-// #Easy #Array
+// #Easy #Array #2023_06_26_Time_200_ms_(100.00%)_Space_37.9_MB_(100.00%)
+
 class Solution {
     fun findKDistantIndices(nums: IntArray, key: Int, k: Int): List<Int> {
         val ans: MutableList<Int> = ArrayList()

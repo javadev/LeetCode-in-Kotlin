@@ -1,6 +1,8 @@
 package g2101_2200.s2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort
+// #2023_06_26_Time_841_ms_(100.00%)_Space_84.4_MB_(100.00%)
+
 class Solution {
     private lateinit var adjList: MutableList<MutableList<Int>>
     private lateinit var result: MutableList<MutableList<Int>>

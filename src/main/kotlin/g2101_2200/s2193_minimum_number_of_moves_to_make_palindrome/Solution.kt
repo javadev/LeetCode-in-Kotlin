@@ -1,6 +1,8 @@
 package g2101_2200.s2193_minimum_number_of_moves_to_make_palindrome
 
 // #Hard #String #Greedy #Two_Pointers #Binary_Indexed_Tree
+// #2023_06_26_Time_176_ms_(100.00%)_Space_35.2_MB_(100.00%)
+
 class Solution {
     fun minMovesToMakePalindrome(s: String): Int {
         var l = 0

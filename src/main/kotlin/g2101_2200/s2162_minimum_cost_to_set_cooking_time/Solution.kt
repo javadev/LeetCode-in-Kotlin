@@ -1,6 +1,7 @@
 package g2101_2200.s2162_minimum_cost_to_set_cooking_time
 
-// #Medium #Math #Enumeration
+// #Medium #Math #Enumeration #2023_06_26_Time_134_ms_(100.00%)_Space_32.8_MB_(100.00%)
+
 class Solution {
     fun minCostSetTime(startAt: Int, moveCost: Int, pushCost: Int, targetSeconds: Int): Int {
         val mins = targetSeconds / 60

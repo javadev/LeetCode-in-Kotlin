@@ -1,6 +1,9 @@
 package g2101_2200.s2191_sort_the_jumbled_numbers
 
-// #Medium #Array #Sorting
+// #Medium #Array #Sorting #2023_06_26_Time_821_ms_(100.00%)_Space_52.8_MB_(100.00%)
+
+import java.util.Collections
+
 class Solution {
     @Suppress("NAME_SHADOWING")
     private class RealNum(mapping: IntArray, orig: Int, index: Int) {
@@ -33,10 +36,10 @@ class Solution {
             val realNum = RealNum(mapping, num, i)
             realNums.add(realNum)
         }
-        realNums.sortWith { a: RealNum, b: RealNum ->
+        Collections.sort(realNums) { a: RealNum, b: RealNum ->
             val retval = a.real - b.real
             if (retval != 0) {
-                return@sortWith retval
+                return@sort retval
             }
             a.index - b.index
         }

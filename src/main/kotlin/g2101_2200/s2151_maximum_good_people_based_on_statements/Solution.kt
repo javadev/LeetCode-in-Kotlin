@@ -1,6 +1,8 @@
 package g2101_2200.s2151_maximum_good_people_based_on_statements
 
 // #Hard #Array #Bit_Manipulation #Backtracking #Enumeration
+// #2023_06_26_Time_308_ms_(100.00%)_Space_46.3_MB_(100.00%)
+
 class Solution {
     fun maximumGood(statements: Array<IntArray>): Int {
         val known = IntArray(statements.size)

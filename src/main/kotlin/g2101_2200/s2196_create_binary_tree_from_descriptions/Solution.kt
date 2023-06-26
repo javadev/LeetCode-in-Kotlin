@@ -1,21 +1,18 @@
 package g2101_2200.s2196_create_binary_tree_from_descriptions
 
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2023_06_26_Time_933_ms_(100.00%)_Space_58.3_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 /*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
  * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
 class Solution {
