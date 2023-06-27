@@ -1848,6 +1848,46 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2250 |[Count Number of Rectangles Containing Each Point](src/main/kotlin/g2201_2300/s2250_count_number_of_rectangles_containing_each_point/Solution.kt)| Medium | Array, Sorting, Binary_Search, Binary_Indexed_Tree | 967 | 100.00
+| 2249 |[Count Lattice Points Inside a Circle](src/main/kotlin/g2201_2300/s2249_count_lattice_points_inside_a_circle/Solution.kt)| Medium | Array, Hash_Table, Math, Enumeration, Geometry | 204 | 100.00
+| 2248 |[Intersection of Multiple Arrays](src/main/kotlin/g2201_2300/s2248_intersection_of_multiple_arrays/Solution.kt)| Easy | Array, Hash_Table, Counting | 197 | 100.00
+| 2246 |[Longest Path With Different Adjacent Characters](src/main/kotlin/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.kt)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 828 | 100.00
+| 2245 |[Maximum Trailing Zeros in a Cornered Path](src/main/kotlin/g2201_2300/s2245_maximum_trailing_zeros_in_a_cornered_path/Solution.kt)| Medium | Array, Matrix, Prefix_Sum | 888 | 100.00
+| 2244 |[Minimum Rounds to Complete All Tasks](src/main/kotlin/g2201_2300/s2244_minimum_rounds_to_complete_all_tasks/Solution.kt)| Medium | Array, Hash_Table, Greedy, Counting | 584 | 73.68
+| 2243 |[Calculate Digit Sum of a String](src/main/kotlin/g2201_2300/s2243_calculate_digit_sum_of_a_string/Solution.kt)| Easy | String, Simulation | 141 | 100.00
+| 2242 |[Maximum Score of a Node Sequence](src/main/kotlin/g2201_2300/s2242_maximum_score_of_a_node_sequence/Solution.kt)| Hard | Array, Sorting, Graph, Enumeration | 844 | 100.00
+| 2241 |[Design an ATM Machine](src/main/kotlin/g2201_2300/s2241_design_an_atm_machine/ATM.kt)| Medium | Array, Greedy, Design | 764 | 100.00
+| 2240 |[Number of Ways to Buy Pens and Pencils](src/main/kotlin/g2201_2300/s2240_number_of_ways_to_buy_pens_and_pencils/Solution.kt)| Medium | Math, Enumeration | 143 | 100.00
+| 2239 |[Find Closest Number to Zero](src/main/kotlin/g2201_2300/s2239_find_closest_number_to_zero/Solution.kt)| Easy | Array | 245 | 66.67
+| 2236 |[Root Equals Sum of Children](src/main/kotlin/g2201_2300/s2236_root_equals_sum_of_children/Solution.kt)| Easy | Tree, Binary_Tree | 141 | 86.73
+| 2235 |[Add Two Integers](src/main/kotlin/g2201_2300/s2235_add_two_integers/Solution.kt)| Easy | Math | 131 | 65.81
+| 2234 |[Maximum Total Beauty of the Gardens](src/main/kotlin/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.kt)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 699 | 100.00
+| 2233 |[Maximum Product After K Increments](src/main/kotlin/g2201_2300/s2233_maximum_product_after_k_increments/Solution.kt)| Medium | Array, Greedy, Heap_Priority_Queue | 766 | 100.00
+| 2232 |[Minimize Result by Adding Parentheses to Expression](src/main/kotlin/g2201_2300/s2232_minimize_result_by_adding_parentheses_to_expression/Solution.kt)| Medium | String, Enumeration | 191 | 100.00
+| 2231 |[Largest Number After Digit Swaps by Parity](src/main/kotlin/g2201_2300/s2231_largest_number_after_digit_swaps_by_parity/Solution.kt)| Easy | Sorting, Heap_Priority_Queue | 124 | 100.00
+| 2227 |[Encrypt and Decrypt Strings](src/main/kotlin/g2201_2300/s2227_encrypt_and_decrypt_strings/Encrypter.kt)| Hard | Array, String, Hash_Table, Design, Trie | 483 | 75.00
+| 2226 |[Maximum Candies Allocated to K Children](src/main/kotlin/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.kt)| Medium | Array, Binary_Search | 544 | 66.67
+| 2225 |[Find Players With Zero or One Losses](src/main/kotlin/g2201_2300/s2225_find_players_with_zero_or_one_losses/Solution.kt)| Medium | Array, Hash_Table, Sorting, Counting | 1323 | 65.79
+| 2224 |[Minimum Number of Operations to Convert Time](src/main/kotlin/g2201_2300/s2224_minimum_number_of_operations_to_convert_time/Solution.kt)| Easy | String, Greedy | 155 | 66.67
+| 2223 |[Sum of Scores of Built Strings](src/main/kotlin/g2201_2300/s2223_sum_of_scores_of_built_strings/Solution.kt)| Hard | String, Binary_Search, Hash_Function, String_Matching, Rolling_Hash, Suffix_Array | 264 | 100.00
+| 2222 |[Number of Ways to Select Buildings](src/main/kotlin/g2201_2300/s2222_number_of_ways_to_select_buildings/Solution.kt)| Medium | String, Dynamic_Programming, Prefix_Sum | 261 | 100.00
+| 2221 |[Find Triangular Sum of an Array](src/main/kotlin/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.kt)| Medium | Array, Math, Simulation, Combinatorics | 257 | 100.00
+| 2220 |[Minimum Bit Flips to Convert Number](src/main/kotlin/g2201_2300/s2220_minimum_bit_flips_to_convert_number/Solution.kt)| Easy | Bit_Manipulation | 131 | 70.59
+| 2218 |[Maximum Value of K Coins From Piles](src/main/kotlin/g2201_2300/s2218_maximum_value_of_k_coins_from_piles/Solution.kt)| Hard | Array, Dynamic_Programming, Prefix_Sum | 313 | 100.00
+| 2217 |[Find Palindrome With Fixed Length](src/main/kotlin/g2201_2300/s2217_find_palindrome_with_fixed_length/Solution.kt)| Medium | Array, Math | 541 | 100.00
+| 2216 |[Minimum Deletions to Make Array Beautiful](src/main/kotlin/g2201_2300/s2216_minimum_deletions_to_make_array_beautiful/Solution.kt)| Medium | Array, Greedy, Stack | 567 | 66.67
+| 2215 |[Find the Difference of Two Arrays](src/main/kotlin/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.kt)| Easy | Array, Hash_Table | 352 | 98.63
+| 2213 |[Longest Substring of One Repeating Character](src/main/kotlin/g2201_2300/s2213_longest_substring_of_one_repeating_character/Solution.kt)| Hard | Array, String, Ordered_Set, Segment_Tree | 879 | 100.00
+| 2212 |[Maximum Points in an Archery Competition](src/main/kotlin/g2201_2300/s2212_maximum_points_in_an_archery_competition/Solution.kt)| Medium | Array, Bit_Manipulation, Recursion, Enumeration | 210 | 100.00
+| 2211 |[Count Collisions on a Road](src/main/kotlin/g2201_2300/s2211_count_collisions_on_a_road/Solution.kt)| Medium | String, Stack | 325 | 100.00
+| 2210 |[Count Hills and Valleys in an Array](src/main/kotlin/g2201_2300/s2210_count_hills_and_valleys_in_an_array/Solution.kt)| Easy | Array | 153 | 80.00
+| 2209 |[Minimum White Tiles After Covering With Carpets](src/main/kotlin/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/Solution.kt)| Hard | String, Dynamic_Programming, Prefix_Sum | 373 | 100.00
+| 2208 |[Minimum Operations to Halve Array Sum](src/main/kotlin/g2201_2300/s2208_minimum_operations_to_halve_array_sum/Solution.kt)| Medium | Array, Greedy, Heap_Priority_Queue | 628 | 33.33
+| 2207 |[Maximize Number of Subsequences in a String](src/main/kotlin/g2201_2300/s2207_maximize_number_of_subsequences_in_a_string/Solution.kt)| Medium | String, Greedy, Prefix_Sum | 295 | 100.00
+| 2206 |[Divide Array Into Equal Pairs](src/main/kotlin/g2201_2300/s2206_divide_array_into_equal_pairs/Solution.kt)| Easy | Array, Hash_Table, Bit_Manipulation, Counting | 221 | 71.43
+| 2203 |[Minimum Weighted Subgraph With the Required Paths](src/main/kotlin/g2201_2300/s2203_minimum_weighted_subgraph_with_the_required_paths/Solution.kt)| Hard | Graph, Shortest_Path | 1126 | 100.00
+| 2202 |[Maximize the Topmost Element After K Moves](src/main/kotlin/g2201_2300/s2202_maximize_the_topmost_element_after_k_moves/Solution.kt)| Medium | Array, Greedy | 491 | 50.00
+| 2201 |[Count Artifacts That Can Be Extracted](src/main/kotlin/g2201_2300/s2201_count_artifacts_that_can_be_extracted/Solution.kt)| Medium | Array, Hash_Table, Simulation | 1011 | 100.00
 | 2200 |[Find All K-Distant Indices in an Array](src/main/kotlin/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.kt)| Easy | Array | 200 | 100.00
 | 2197 |[Replace Non-Coprime Numbers in Array](src/main/kotlin/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.kt)| Hard | Array, Math, Stack, Number_Theory | 917 | 100.00
 | 2196 |[Create Binary Tree From Descriptions](src/main/kotlin/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.kt)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 933 | 100.00
