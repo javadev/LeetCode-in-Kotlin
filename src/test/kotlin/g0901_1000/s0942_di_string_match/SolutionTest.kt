@@ -9,7 +9,7 @@ internal class SolutionTest {
     @Test
     fun diStringMatch() {
         assertThat(
-            CommonUtils().compareArray(
+            CommonUtils.compareArray(
                 Solution().diStringMatch("IDID"), intArrayOf(0, 4, 1, 3, 2)
             ),
             equalTo(true)
