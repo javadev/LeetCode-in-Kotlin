@@ -26,4 +26,14 @@ internal class SolutionTest {
             equalTo(-1)
         )
     }
+
+    @Test
+    fun mountainArrayGet() {
+        assertThat(MountainArray().get(0), equalTo(0))
+    }
+
+    @Test
+    fun mountainArrayLength() {
+        assertThat(MountainArray().length(), equalTo(0))
+    }
 }

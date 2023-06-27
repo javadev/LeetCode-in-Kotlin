@@ -9,7 +9,7 @@ internal class SolutionTest {
     @Test
     fun movesToStamp() {
         assertThat(
-            CommonUtils().compareArray(
+            CommonUtils.compareArray(
                 Solution().movesToStamp("abc", "ababc"), intArrayOf(0, 2)
             ),
             equalTo(true)
@@ -19,7 +19,7 @@ internal class SolutionTest {
     @Test
     fun movesToStamp2() {
         assertThat(
-            CommonUtils().compareArray(
+            CommonUtils.compareArray(
                 Solution().movesToStamp("abca", "aabcaca"), intArrayOf(3, 0, 1)
             ),
             equalTo(true)
