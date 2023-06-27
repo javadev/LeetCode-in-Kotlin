@@ -1848,6 +1848,44 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2200 |[Find All K-Distant Indices in an Array](src/main/kotlin/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.kt)| Easy | Array | 200 | 100.00
+| 2197 |[Replace Non-Coprime Numbers in Array](src/main/kotlin/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.kt)| Hard | Array, Math, Stack, Number_Theory | 917 | 100.00
+| 2196 |[Create Binary Tree From Descriptions](src/main/kotlin/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.kt)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 933 | 100.00
+| 2195 |[Append K Integers With Minimal Sum](src/main/kotlin/g2101_2200/s2195_append_k_integers_with_minimal_sum/Solution.kt)| Medium | Array, Math, Sorting, Greedy | 542 | 100.00
+| 2194 |[Cells in a Range on an Excel Sheet](src/main/kotlin/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/Solution.kt)| Easy | String | 176 | 100.00
+| 2193 |[Minimum Number of Moves to Make Palindrome](src/main/kotlin/g2101_2200/s2193_minimum_number_of_moves_to_make_palindrome/Solution.kt)| Hard | String, Greedy, Two_Pointers, Binary_Indexed_Tree | 176 | 100.00
+| 2192 |[All Ancestors of a Node in a Directed Acyclic Graph](src/main/kotlin/g2101_2200/s2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 841 | 100.00
+| 2191 |[Sort the Jumbled Numbers](src/main/kotlin/g2101_2200/s2191_sort_the_jumbled_numbers/Solution.kt)| Medium | Array, Sorting | 821 | 100.00
+| 2190 |[Most Frequent Number Following Key In an Array](src/main/kotlin/g2101_2200/s2190_most_frequent_number_following_key_in_an_array/Solution.kt)| Easy | Array, Hash_Table, Counting | 188 | 100.00
+| 2188 |[Minimum Time to Finish the Race](src/main/kotlin/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.kt)| Hard | Array, Dynamic_Programming | 1220 | 100.00
+| 2187 |[Minimum Time to Complete Trips](src/main/kotlin/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.kt)| Medium | Array, Binary_Search | 660 | 90.91
+| 2186 |[Minimum Number of Steps to Make Two Strings Anagram II](src/main/kotlin/g2101_2200/s2186_minimum_number_of_steps_to_make_two_strings_anagram_ii/Solution.kt)| Medium | String, Hash_Table, Counting | 304 | 100.00
+| 2185 |[Counting Words With a Given Prefix](src/main/kotlin/g2101_2200/s2185_counting_words_with_a_given_prefix/Solution.kt)| Easy | Array, String | 172 | 100.00
+| 2183 |[Count Array Pairs Divisible by K](src/main/kotlin/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.kt)| Hard | Array, Math, Number_Theory | 756 | 100.00
+| 2182 |[Construct String With Repeat Limit](src/main/kotlin/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.kt)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 311 | 100.00
+| 2181 |[Merge Nodes in Between Zeros](src/main/kotlin/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.kt)| Medium | Simulation, Linked_List | 980 | 25.00
+| 2180 |[Count Integers With Even Digit Sum](src/main/kotlin/g2101_2200/s2180_count_integers_with_even_digit_sum/Solution.kt)| Easy | Math, Simulation | 126 | 100.00
+| 2179 |[Count Good Triplets in an Array](src/main/kotlin/g2101_2200/s2179_count_good_triplets_in_an_array/Solution.kt)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 563 | 100.00
+| 2178 |[Maximum Split of Positive Even Integers](src/main/kotlin/g2101_2200/s2178_maximum_split_of_positive_even_integers/Solution.kt)| Medium | Math, Greedy | 486 | 55.56
+| 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src/main/kotlin/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.kt)| Medium | Math, Simulation | 160 | 100.00
+| 2176 |[Count Equal and Divisible Pairs in an Array](src/main/kotlin/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.kt)| Easy | Array | 179 | 69.23
+| 2172 |[Maximum AND Sum of Array](src/main/kotlin/g2101_2200/s2172_maximum_and_sum_of_array/Solution.kt)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 165 | 100.00
+| 2171 |[Removing Minimum Number of Magic Beans](src/main/kotlin/g2101_2200/s2171_removing_minimum_number_of_magic_beans/Solution.kt)| Medium | Array, Sorting, Prefix_Sum | 728 | 100.00
+| 2170 |[Minimum Operations to Make the Array Alternating](src/main/kotlin/g2101_2200/s2170_minimum_operations_to_make_the_array_alternating/Solution.kt)| Medium | Array, Hash_Table, Greedy, Counting | 531 | 100.00
+| 2169 |[Count Operations to Obtain Zero](src/main/kotlin/g2101_2200/s2169_count_operations_to_obtain_zero/Solution.kt)| Easy | Math, Simulation | 127 | 77.78
+| 2167 |[Minimum Time to Remove All Cars Containing Illegal Goods](src/main/kotlin/g2101_2200/s2167_minimum_time_to_remove_all_cars_containing_illegal_goods/Solution.kt)| Hard | String, Dynamic_Programming | 312 | 100.00
+| 2166 |[Design Bitset](src/main/kotlin/g2101_2200/s2166_design_bitset/Bitset.kt)| Medium | Array, Hash_Table, Design | 1036 | 100.00
+| 2165 |[Smallest Value of the Rearranged Number](src/main/kotlin/g2101_2200/s2165_smallest_value_of_the_rearranged_number/Solution.kt)| Medium | Math, Sorting | 129 | 100.00
+| 2164 |[Sort Even and Odd Indices Independently](src/main/kotlin/g2101_2200/s2164_sort_even_and_odd_indices_independently/Solution.kt)| Easy | Array, Sorting | 200 | 100.00
+| 2163 |[Minimum Difference in Sums After Removal of Elements](src/main/kotlin/g2101_2200/s2163_minimum_difference_in_sums_after_removal_of_elements/Solution.kt)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue | 854 | 100.00
+| 2162 |[Minimum Cost to Set Cooking Time](src/main/kotlin/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.kt)| Medium | Math, Enumeration | 134 | 100.00
+| 2161 |[Partition Array According to Given Pivot](src/main/kotlin/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.kt)| Medium | Array, Two_Pointers, Simulation | 859 | 46.15
+| 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src/main/kotlin/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.kt)| Easy | Math, Sorting, Greedy | 133 | 88.24
+| 2157 |[Groups of Strings](src/main/kotlin/g2101_2200/s2157_groups_of_strings/Solution.kt)| Hard | String, Bit_Manipulation, Union_Find | 930 | 100.00
+| 2156 |[Find Substring With Given Hash Value](src/main/kotlin/g2101_2200/s2156_find_substring_with_given_hash_value/Solution.kt)| Hard | String, Sliding_Window, Hash_Function, Rolling_Hash | 248 | 100.00
+| 2155 |[All Divisions With the Highest Score of a Binary Array](src/main/kotlin/g2101_2200/s2155_all_divisions_with_the_highest_score_of_a_binary_array/Solution.kt)| Medium | Array | 1171 | 100.00
+| 2154 |[Keep Multiplying Found Values by Two](src/main/kotlin/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.kt)| Easy | Array, Hash_Table, Sorting, Simulation | 183 | 85.71
+| 2151 |[Maximum Good People Based on Statements](src/main/kotlin/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.kt)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 308 | 100.00
 | 2150 |[Find All Lonely Numbers in the Array](src/main/kotlin/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.kt)| Medium | Array, Hash_Table, Counting | 1045 | 50.00
 | 2149 |[Rearrange Array Elements by Sign](src/main/kotlin/g2101_2200/s2149_rearrange_array_elements_by_sign/Solution.kt)| Medium | Array, Two_Pointers, Simulation | 873 | 42.86
 | 2148 |[Count Elements With Strictly Smaller and Greater Elements](src/main/kotlin/g2101_2200/s2148_count_elements_with_strictly_smaller_and_greater_elements/Solution.kt)| Easy | Array, Sorting | 148 | 83.33
@@ -1889,6 +1927,36 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.13'
 | 2103 |[Rings and Rods](src/main/kotlin/g2101_2200/s2103_rings_and_rods/Solution.kt)| Easy | String, Hash_Table | 131 | 89.47
 | 2102 |[Sequentially Ordinal Rank Tracker](src/main/kotlin/g2101_2200/s2102_sequentially_ordinal_rank_tracker/SORTracker.kt)| Hard | Design, Heap_Priority_Queue, Ordered_Set, Data_Stream | 1208 | 100.00
 | 2101 |[Detonate the Maximum Bombs](src/main/kotlin/g2101_2200/s2101_detonate_the_maximum_bombs/Solution.kt)| Medium | Array, Math, Depth_First_Search, Breadth_First_Search, Graph, Geometry | 262 | 98.96
+| 2090 |[K Radius Subarray Averages](src/main/kotlin/g2001_2100/s2090_k_radius_subarray_averages/Solution.kt)| Medium | Array, Sliding_Window | 874 | 85.63
+| 2089 |[Find Target Indices After Sorting Array](src/main/kotlin/g2001_2100/s2089_find_target_indices_after_sorting_array/Solution.kt)| Easy | Array, Sorting, Binary_Search | 180 | 90.48
+| 2088 |[Count Fertile Pyramids in a Land](src/main/kotlin/g2001_2100/s2088_count_fertile_pyramids_in_a_land/Solution.kt)| Hard | Array, Dynamic_Programming, Matrix | 489 | 100.00
+| 2087 |[Minimum Cost Homecoming of a Robot in a Grid](src/main/kotlin/g2001_2100/s2087_minimum_cost_homecoming_of_a_robot_in_a_grid/Solution.kt)| Medium | Array, Greedy, Matrix | 672 | 100.00
+| 2086 |[Minimum Number of Buckets Required to Collect Rainwater from Houses](src/main/kotlin/g2001_2100/s2086_minimum_number_of_food_buckets_to_feed_the_hamsters/Solution.kt)| Medium | String, Dynamic_Programming, Greedy | 208 | 100.00
+| 2085 |[Count Common Words With One Occurrence](src/main/kotlin/g2001_2100/s2085_count_common_words_with_one_occurrence/Solution.kt)| Easy | Array, String, Hash_Table, Counting | 192 | 100.00
+| 2081 |[Sum of k-Mirror Numbers](src/main/kotlin/g2001_2100/s2081_sum_of_k_mirror_numbers/Solution.kt)| Hard | Math, Enumeration | 455 | 100.00
+| 2080 |[Range Frequency Queries](src/main/kotlin/g2001_2100/s2080_range_frequency_queries/RangeFreqQuery.kt)| Medium | Array, Hash_Table, Binary_Search, Design, Segment_Tree | 1102 | 100.00
+| 2079 |[Watering Plants](src/main/kotlin/g2001_2100/s2079_watering_plants/Solution.kt)| Medium | Array | 157 | 100.00
+| 2078 |[Two Furthest Houses With Different Colors](src/main/kotlin/g2001_2100/s2078_two_furthest_houses_with_different_colors/Solution.kt)| Easy | Array, Greedy | 131 | 100.00
+| 2076 |[Process Restricted Friend Requests](src/main/kotlin/g2001_2100/s2076_process_restricted_friend_requests/Solution.kt)| Hard | Graph, Union_Find | 355 | 100.00
+| 2075 |[Decode the Slanted Ciphertext](src/main/kotlin/g2001_2100/s2075_decode_the_slanted_ciphertext/Solution.kt)| Medium | String, Simulation | 418 | 100.00
+| 2074 |[Reverse Nodes in Even Length Groups](src/main/kotlin/g2001_2100/s2074_reverse_nodes_in_even_length_groups/Solution.kt)| Medium | Linked_List | 1197 | 50.00
+| 2073 |[Time Needed to Buy Tickets](src/main/kotlin/g2001_2100/s2073_time_needed_to_buy_tickets/Solution.kt)| Easy | Array, Simulation, Queue | 145 | 100.00
+| 2071 |[Maximum Number of Tasks You Can Assign](src/main/kotlin/g2001_2100/s2071_maximum_number_of_tasks_you_can_assign/Solution.kt)| Hard | Array, Sorting, Greedy, Binary_Search, Queue, Monotonic_Queue | 747 | 100.00
+| 2070 |[Most Beautiful Item for Each Query](src/main/kotlin/g2001_2100/s2070_most_beautiful_item_for_each_query/Solution.kt)| Medium | Array, Sorting, Binary_Search | 747 | 100.00
+| 2069 |[Walking Robot Simulation II](src/main/kotlin/g2001_2100/s2069_walking_robot_simulation_ii/Robot.kt)| Medium | Design, Simulation | 636 | 100.00
+| 2068 |[Check Whether Two Strings are Almost Equivalent](src/main/kotlin/g2001_2100/s2068_check_whether_two_strings_are_almost_equivalent/Solution.kt)| Easy | String, Hash_Table, Counting | 131 | 100.00
+| 2065 |[Maximum Path Quality of a Graph](src/main/kotlin/g2001_2100/s2065_maximum_path_quality_of_a_graph/Solution.kt)| Hard | Array, Graph, Backtracking | 429 | 100.00
+| 2064 |[Minimized Maximum of Products Distributed to Any Store](src/main/kotlin/g2001_2100/s2064_minimized_maximum_of_products_distributed_to_any_store/Solution.kt)| Medium | Array, Binary_Search | 609 | 100.00
+| 2063 |[Vowels of All Substrings](src/main/kotlin/g2001_2100/s2063_vowels_of_all_substrings/Solution.kt)| Medium | String, Dynamic_Programming, Math, Combinatorics | 206 | 100.00
+| 2062 |[Count Vowel Substrings of a String](src/main/kotlin/g2001_2100/s2062_count_vowel_substrings_of_a_string/Solution.kt)| Easy | String, Hash_Table | 216 | 60.00
+| 2060 |[Check if an Original String Exists Given Two Encoded Strings](src/main/kotlin/g2001_2100/s2060_check_if_an_original_string_exists_given_two_encoded_strings/Solution.kt)| Hard | String, Dynamic_Programming | 1219 | 100.00
+| 2059 |[Minimum Operations to Convert Number](src/main/kotlin/g2001_2100/s2059_minimum_operations_to_convert_number/Solution.kt)| Medium | Array, Breadth_First_Search | 285 | 66.67
+| 2058 |[Find the Minimum and Maximum Number of Nodes Between Critical Points](src/main/kotlin/g2001_2100/s2058_find_the_minimum_and_maximum_number_of_nodes_between_critical_points/Solution.kt)| Medium | Linked_List | 602 | 50.00
+| 2057 |[Smallest Index With Equal Value](src/main/kotlin/g2001_2100/s2057_smallest_index_with_equal_value/Solution.kt)| Easy | Array | 178 | 100.00
+| 2056 |[Number of Valid Move Combinations On Chessboard](src/main/kotlin/g2001_2100/s2056_number_of_valid_move_combinations_on_chessboard/Solution.kt)| Hard | Array, String, Simulation, Backtracking | 600 | 100.00
+| 2055 |[Plates Between Candles](src/main/kotlin/g2001_2100/s2055_plates_between_candles/Solution.kt)| Medium | Array, String, Binary_Search, Prefix_Sum | 831 | 100.00
+| 2054 |[Two Best Non-Overlapping Events](src/main/kotlin/g2001_2100/s2054_two_best_non_overlapping_events/Solution.kt)| Medium | Array, Dynamic_Programming, Sorting, Binary_Search, Heap_Priority_Queue | 851 | 100.00
+| 2053 |[Kth Distinct String in an Array](src/main/kotlin/g2001_2100/s2053_kth_distinct_string_in_an_array/Solution.kt)| Easy | Array, String, Hash_Table, Counting | 181 | 90.00
 | 2050 |[Parallel Courses III](src/main/kotlin/g2001_2100/s2050_parallel_courses_iii/Solution.kt)| Hard | Dynamic_Programming, Graph, Topological_Sort | 974 | 100.00
 | 2049 |[Count Nodes With the Highest Score](src/main/kotlin/g2001_2100/s2049_count_nodes_with_the_highest_score/Solution.kt)| Medium | Array, Depth_First_Search, Tree, Binary_Tree | 483 | 100.00
 | 2048 |[Next Greater Numerically Balanced Number](src/main/kotlin/g2001_2100/s2048_next_greater_numerically_balanced_number/Solution.kt)| Medium | Math, Backtracking, Enumeration | 138 | 100.00
