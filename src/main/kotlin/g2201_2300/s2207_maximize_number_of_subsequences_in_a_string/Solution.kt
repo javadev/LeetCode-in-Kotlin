@@ -1,6 +1,7 @@
 package g2201_2300.s2207_maximize_number_of_subsequences_in_a_string
 
-// #Medium #String #Greedy #Prefix_Sum
+// #Medium #String #Greedy #Prefix_Sum #2023_06_27_Time_295_ms_(100.00%)_Space_38.9_MB_(100.00%)
+
 class Solution {
     fun maximumSubsequenceCount(text: String, pattern: String): Long {
         val first = pattern[0]

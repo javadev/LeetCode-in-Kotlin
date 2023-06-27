@@ -1,6 +1,8 @@
 package g2201_2300.s2222_number_of_ways_to_select_buildings
 
 // #Medium #String #Dynamic_Programming #Prefix_Sum
+// #2023_06_27_Time_261_ms_(100.00%)_Space_38.8_MB_(100.00%)
+
 class Solution {
     fun numberOfWays(s: String): Long {
         var z: Long = 0

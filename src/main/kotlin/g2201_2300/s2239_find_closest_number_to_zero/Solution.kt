@@ -1,6 +1,7 @@
 package g2201_2300.s2239_find_closest_number_to_zero
 
-// #Easy #Array
+// #Easy #Array #2023_06_27_Time_245_ms_(66.67%)_Space_37.8_MB_(100.00%)
+
 class Solution {
     fun findClosestNumber(nums: IntArray): Int {
         var mini = Int.MAX_VALUE

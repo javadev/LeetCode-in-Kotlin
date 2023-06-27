@@ -1,6 +1,7 @@
 package g2201_2300.s2243_calculate_digit_sum_of_a_string
 
-// #Easy #String #Simulation
+// #Easy #String #Simulation #2023_06_27_Time_141_ms_(100.00%)_Space_33.5_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun digitSum(s: String, k: Int): String {

@@ -1,6 +1,8 @@
 package g2201_2300.s2249_count_lattice_points_inside_a_circle
 
 // #Medium #Array #Hash_Table #Math #Enumeration #Geometry
+// #2023_06_27_Time_204_ms_(100.00%)_Space_34.3_MB_(100.00%)
+
 class Solution {
     fun countLatticePoints(circles: Array<IntArray>): Int {
         var xMin = 200

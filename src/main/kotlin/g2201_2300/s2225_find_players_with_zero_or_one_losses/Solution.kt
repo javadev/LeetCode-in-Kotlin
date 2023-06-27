@@ -1,6 +1,8 @@
 package g2201_2300.s2225_find_players_with_zero_or_one_losses
 
 // #Medium #Array #Hash_Table #Sorting #Counting
+// #2023_06_27_Time_1323_ms_(65.79%)_Space_85.1_MB_(100.00%)
+
 class Solution {
     fun findWinners(matches: Array<IntArray>): List<List<Int>> {
         val map: MutableMap<Int, Int> = HashMap()

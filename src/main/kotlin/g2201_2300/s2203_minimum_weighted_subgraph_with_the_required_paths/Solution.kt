@@ -1,9 +1,10 @@
 package g2201_2300.s2203_minimum_weighted_subgraph_with_the_required_paths
 
+// #Hard #Graph #Shortest_Path #2023_06_27_Time_1126_ms_(100.00%)_Space_127.2_MB_(100.00%)
+
 import java.util.PriorityQueue
 import java.util.Queue
 
-// #Hard #Graph #Shortest_Path
 class Solution {
     fun minimumWeight(n: Int, edges: Array<IntArray>, src1: Int, src2: Int, dest: Int): Long {
         val graph: Array<MutableList<IntArray>?> = arrayOfNulls(n)
@@ -17,7 +18,7 @@ class Solution {
         for (e in edges) {
             graph[e[0]]?.add(intArrayOf(e[1], e[2]))
         }
-        val queue: Queue<Node> = PriorityQueue(Comparator.comparingLong { node: Node -> node.weight })
+        val queue: Queue<Node> = PriorityQueue({ node1: Node, node2: Node -> node1.weight.compareTo(node2.weight) })
         queue.offer(Node(0, src1, 0))
         weight[0][src1] = 0
         queue.offer(Node(1, src2, 0))

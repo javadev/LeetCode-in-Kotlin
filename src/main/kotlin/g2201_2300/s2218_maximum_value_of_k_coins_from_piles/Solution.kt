@@ -1,6 +1,8 @@
 package g2201_2300.s2218_maximum_value_of_k_coins_from_piles
 
 // #Hard #Array #Dynamic_Programming #Prefix_Sum
+// #2023_06_27_Time_313_ms_(100.00%)_Space_42.3_MB_(100.00%)
+
 class Solution {
     fun maxValueOfCoins(piles: List<List<Int>>, k: Int): Int {
         var dp = IntArray(k + 1)

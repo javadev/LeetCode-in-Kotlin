@@ -1,6 +1,7 @@
 package g2201_2300.s2217_find_palindrome_with_fixed_length
 
-// #Medium #Array #Math
+// #Medium #Array #Math #2023_06_27_Time_541_ms_(100.00%)_Space_52.8_MB_(100.00%)
+
 class Solution {
     fun kthPalindrome(queries: IntArray, intLength: Int): LongArray {
         val minHalf = Math.pow(10.0, ((intLength - 1) / 2).toDouble()).toLong()

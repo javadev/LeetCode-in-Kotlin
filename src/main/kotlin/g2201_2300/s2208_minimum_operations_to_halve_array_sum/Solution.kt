@@ -1,9 +1,10 @@
 package g2201_2300.s2208_minimum_operations_to_halve_array_sum
 
+// #Medium #Array #Greedy #Heap_Priority_Queue #2023_06_27_Time_628_ms_(33.33%)_Space_57_MB_(50.00%)
+
 import java.util.Collections
 import java.util.PriorityQueue
 
-// #Medium #Array #Greedy #Heap_Priority_Queue
 class Solution {
     fun halveArray(nums: IntArray): Int {
         val queue = PriorityQueue(nums.size, Collections.reverseOrder<Double>())

@@ -1,6 +1,8 @@
 package g2201_2300.s2242_maximum_score_of_a_node_sequence
 
 // #Hard #Array #Sorting #Graph #Enumeration
+// #2023_06_27_Time_844_ms_(100.00%)_Space_72.5_MB_(100.00%)
+
 class Solution {
     fun maximumScore(scores: IntArray, edges: Array<IntArray>): Int {
         // store only top 3 nodes (having highest scores)

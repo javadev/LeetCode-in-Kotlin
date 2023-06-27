@@ -1,6 +1,7 @@
 package g2201_2300.s2220_minimum_bit_flips_to_convert_number
 
-// #Easy #Bit_Manipulation
+// #Easy #Bit_Manipulation #2023_06_27_Time_131_ms_(70.59%)_Space_33.2_MB_(70.59%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private fun decToBinary(n: Int): Int {

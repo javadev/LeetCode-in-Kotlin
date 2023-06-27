@@ -1,6 +1,7 @@
 package g2201_2300.s2216_minimum_deletions_to_make_array_beautiful
 
-// #Medium #Array #Greedy #Stack
+// #Medium #Array #Greedy #Stack #2023_06_27_Time_567_ms_(66.67%)_Space_55.4_MB_(100.00%)
+
 class Solution {
     fun minDeletion(nums: IntArray): Int {
         var offset = 0

@@ -1,6 +1,7 @@
 package g2201_2300.s2215_find_the_difference_of_two_arrays
 
-// #Easy #Array #Hash_Table
+// #Easy #Array #Hash_Table #2023_06_27_Time_352_ms_(98.63%)_Space_41.4_MB_(98.63%)
+
 class Solution {
     fun findDifference(nums1: IntArray, nums2: IntArray): List<List<Int>> {
         val set1 = createSet(nums1)

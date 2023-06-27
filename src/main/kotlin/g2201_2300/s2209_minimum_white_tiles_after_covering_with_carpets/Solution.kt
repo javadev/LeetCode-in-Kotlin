@@ -1,6 +1,8 @@
 package g2201_2300.s2209_minimum_white_tiles_after_covering_with_carpets
 
 // #Hard #String #Dynamic_Programming #Prefix_Sum
+// #2023_06_27_Time_373_ms_(100.00%)_Space_40_MB_(100.00%)
+
 class Solution {
     fun minimumWhiteTiles(floor: String, numCarpets: Int, carpetLen: Int): Int {
         val len = floor.length

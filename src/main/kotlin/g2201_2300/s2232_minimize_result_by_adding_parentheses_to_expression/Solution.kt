@@ -1,6 +1,7 @@
 package g2201_2300.s2232_minimize_result_by_adding_parentheses_to_expression
 
-// #Medium #String #Enumeration
+// #Medium #String #Enumeration #2023_06_27_Time_191_ms_(100.00%)_Space_34.4_MB_(100.00%)
+
 class Solution {
     // Variables for final solution, to avoid create combination Strings
     private var currentLeft = 0

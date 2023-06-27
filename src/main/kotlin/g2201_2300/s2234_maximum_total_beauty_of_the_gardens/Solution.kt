@@ -1,6 +1,8 @@
 package g2201_2300.s2234_maximum_total_beauty_of_the_gardens
 
 // #Hard #Array #Sorting #Greedy #Binary_Search #Two_Pointers
+// #2023_06_27_Time_699_ms_(100.00%)_Space_50.9_MB_(100.00%)
+
 class Solution {
     fun maximumBeauty(flowers: IntArray, newFlowers: Long, target: Int, full: Int, partial: Int): Long {
         val n = flowers.size

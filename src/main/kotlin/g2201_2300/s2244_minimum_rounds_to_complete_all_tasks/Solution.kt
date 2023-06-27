@@ -1,6 +1,8 @@
 package g2201_2300.s2244_minimum_rounds_to_complete_all_tasks
 
 // #Medium #Array #Hash_Table #Greedy #Counting
+// #2023_06_27_Time_584_ms_(73.68%)_Space_59.3_MB_(84.21%)
+
 class Solution {
     fun minimumRounds(tasks: IntArray): Int {
         tasks.sort()

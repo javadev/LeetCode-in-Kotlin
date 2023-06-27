@@ -1,6 +1,8 @@
 package g2201_2300.s2212_maximum_points_in_an_archery_competition
 
 // #Medium #Array #Bit_Manipulation #Recursion #Enumeration
+// #2023_06_27_Time_210_ms_(100.00%)_Space_34.4_MB_(100.00%)
+
 class Solution {
     private val ans = IntArray(12)
     private val ans1 = IntArray(12)

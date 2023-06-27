@@ -1,6 +1,7 @@
 package g2201_2300.s2226_maximum_candies_allocated_to_k_children
 
-// #Medium #Array #Binary_Search
+// #Medium #Array #Binary_Search #2023_06_27_Time_544_ms_(66.67%)_Space_56.7_MB_(66.67%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maximumCandies(candies: IntArray, k: Long): Int {

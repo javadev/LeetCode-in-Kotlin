@@ -1,6 +1,8 @@
 package g2201_2300.s2223_sum_of_scores_of_built_strings
 
 // #Hard #String #Binary_Search #Hash_Function #String_Matching #Rolling_Hash #Suffix_Array
+// #2023_06_27_Time_264_ms_(100.00%)_Space_37.8_MB_(100.00%)
+
 class Solution {
     fun sumScores(s: String): Long {
         val n = s.length

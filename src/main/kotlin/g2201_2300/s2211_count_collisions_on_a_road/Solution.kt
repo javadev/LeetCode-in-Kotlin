@@ -1,9 +1,10 @@
 package g2201_2300.s2211_count_collisions_on_a_road
 
+// #Medium #String #Stack #2023_06_27_Time_325_ms_(100.00%)_Space_38.5_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Medium #String #Stack
 class Solution {
     fun countCollisions(directions: String?): Int {
         if (directions == null || directions.length == 1) {

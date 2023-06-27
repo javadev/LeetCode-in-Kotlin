@@ -1,6 +1,8 @@
 package g2201_2300.s2201_count_artifacts_that_can_be_extracted
 
 // #Medium #Array #Hash_Table #Simulation
+// #2023_06_27_Time_1011_ms_(100.00%)_Space_108.8_MB_(100.00%)
+
 class Solution {
     fun digArtifacts(n: Int, artifacts: Array<IntArray>, dig: Array<IntArray>): Int {
         val ar = Array(n) { IntArray(n) }

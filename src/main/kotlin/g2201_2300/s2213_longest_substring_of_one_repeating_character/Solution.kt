@@ -1,6 +1,8 @@
 package g2201_2300.s2213_longest_substring_of_one_repeating_character
 
 // #Hard #Array #String #Ordered_Set #Segment_Tree
+// #2023_06_27_Time_879_ms_(100.00%)_Space_64.8_MB_(100.00%)
+
 class Solution {
     internal class TreeNode(var start: Int, var end: Int) {
         var leftChar = 0.toChar()

@@ -1,6 +1,7 @@
 package g2201_2300.s2202_maximize_the_topmost_element_after_k_moves
 
-// #Medium #Array #Greedy
+// #Medium #Array #Greedy #2023_06_27_Time_491_ms_(50.00%)_Space_58_MB_(100.00%)
+
 class Solution {
     fun maximumTop(nums: IntArray, k: Int): Int {
         var max = -1

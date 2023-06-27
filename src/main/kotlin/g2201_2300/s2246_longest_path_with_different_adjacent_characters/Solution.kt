@@ -1,8 +1,10 @@
 package g2201_2300.s2246_longest_path_with_different_adjacent_characters
 
+// #Hard #Array #String #Depth_First_Search #Tree #Graph #Topological_Sort
+// #2023_06_27_Time_828_ms_(100.00%)_Space_53.3_MB_(100.00%)
+
 import java.util.LinkedList
 
-// #Hard #Array #String #Depth_First_Search #Tree #Graph #Topological_Sort
 class Solution {
     fun longestPath(parent: IntArray, s: String): Int {
         // for first max length

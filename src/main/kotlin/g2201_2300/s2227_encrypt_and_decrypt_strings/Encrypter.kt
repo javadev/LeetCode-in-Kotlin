@@ -1,6 +1,8 @@
 package g2201_2300.s2227_encrypt_and_decrypt_strings
 
 // #Hard #Array #String #Hash_Table #Design #Trie
+// #2023_06_27_Time_483_ms_(75.00%)_Space_54.4_MB_(100.00%)
+
 class Encrypter(keys: CharArray, values: Array<String>, dictionary: Array<String>) {
     private val eMap: MutableMap<Char, String>
     private val dMap: MutableMap<String, Int>
@@ -31,3 +33,9 @@ class Encrypter(keys: CharArray, values: Array<String>, dictionary: Array<String
         return dMap.getOrDefault(word2, 0)
     }
 }
+/*
+ * Your Encrypter object will be instantiated and called as such:
+ * var obj = Encrypter(keys, values, dictionary)
+ * var param_1 = obj.encrypt(word1)
+ * var param_2 = obj.decrypt(word2)
+ */

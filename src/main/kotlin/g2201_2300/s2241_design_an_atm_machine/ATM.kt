@@ -1,14 +1,10 @@
 package g2201_2300.s2241_design_an_atm_machine
 
-// #Medium #Array #Greedy #Design
-class ATM {
-    private val nominals: IntArray
-    private val counts: LongArray
+// #Medium #Array #Greedy #Design #2023_06_27_Time_764_ms_(100.00%)_Space_71.5_MB_(85.71%)
 
-    init {
-        nominals = intArrayOf(20, 50, 100, 200, 500)
-        counts = LongArray(5)
-    }
+class ATM {
+    private val nominals: IntArray = intArrayOf(20, 50, 100, 200, 500)
+    private val counts: LongArray = LongArray(5)
 
     fun deposit(banknotesCount: IntArray) {
         for (i in 0..4) {
@@ -39,3 +35,9 @@ class ATM {
         return delivery
     }
 }
+/*
+ * Your ATM object will be instantiated and called as such:
+ * var obj = ATM()
+ * obj.deposit(banknotesCount)
+ * var param_2 = obj.withdraw(amount)
+ */

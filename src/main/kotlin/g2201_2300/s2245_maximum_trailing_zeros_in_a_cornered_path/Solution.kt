@@ -1,6 +1,7 @@
 package g2201_2300.s2245_maximum_trailing_zeros_in_a_cornered_path
 
-// #Medium #Array #Matrix #Prefix_Sum
+// #Medium #Array #Matrix #Prefix_Sum #2023_06_27_Time_888_ms_(100.00%)_Space_79.6_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun maxTrailingZeros(grid: Array<IntArray>): Int {

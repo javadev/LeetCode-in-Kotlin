@@ -1,10 +1,12 @@
 package g2201_2300.s2250_count_number_of_rectangles_containing_each_point
 
+// #Medium #Array #Sorting #Binary_Search #Binary_Indexed_Tree
+// #2023_06_27_Time_967_ms_(100.00%)_Space_85.4_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Medium #Array #Sorting #Binary_Search #Binary_Indexed_Tree
 class Solution {
-    fun countRectangles(rectangles: Array<IntArray?>, points: Array<IntArray>): IntArray {
+    fun countRectangles(rectangles: Array<IntArray>, points: Array<IntArray>): IntArray {
         val n = rectangles.size
         val q = points.size
         val es = arrayOfNulls<IntArray>(n + q)
