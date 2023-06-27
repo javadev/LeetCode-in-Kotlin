@@ -2,13 +2,11 @@ package g2001_2100.s2090_k_radius_subarray_averages
 
 // #Medium #Array #Sliding_Window #2023_06_27_Time_874_ms_(85.63%)_Space_54.7_MB_(40.94%)
 
-import java.util.Arrays
-
 class Solution {
     fun getAverages(nums: IntArray, k: Int): IntArray {
         // initialize result array with -1
         val res = IntArray(nums.size)
-        Arrays.fill(res, -1)
+        res.fill(-1)
         if (nums.size <= k * 2) {
             // return if not enough elements
             return res
