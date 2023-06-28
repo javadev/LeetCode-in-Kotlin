@@ -1,14 +1,16 @@
 package g2201_2300.s2251_number_of_flowers_in_full_bloom
 
+// #Hard #Array #Hash_Table #Sorting #Binary_Search #Prefix_Sum #Ordered_Set
+// #2023_06_28_Time_973_ms_(100.00%)_Space_88.6_MB_(100.00%)
+
 import java.util.Arrays
 import java.util.PriorityQueue
 
-// #Hard #Array #Hash_Table #Sorting #Binary_Search #Prefix_Sum #Ordered_Set
 class Solution {
     fun fullBloomFlowers(flowers: Array<IntArray>, persons: IntArray): IntArray {
         Arrays.sort(flowers, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
         val ans = IntArray(persons.size)
-        val pq = PriorityQueue(Comparator.comparingInt { a: Pair -> a.j })
+        val pq = PriorityQueue({ a: Pair, b: Pair -> a.j.compareTo(b.j) })
         var j = 0
         val t = Array(persons.size) { IntArray(2) }
         for (i in persons.indices) {
@@ -41,5 +43,5 @@ class Solution {
         return ans
     }
 
-    private class Pair internal constructor(var i: Int, var j: Int)
+    private class Pair(var i: Int, var j: Int)
 }

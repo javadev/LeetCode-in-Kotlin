@@ -1,10 +1,12 @@
 package g2201_2300.s2286_booking_concert_tickets_in_groups
 
+// #Hard #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
+// #2023_06_28_Time_1292_ms_(100.00%)_Space_98.3_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Arrays
 import java.util.Deque
 
-// #Hard #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
 @Suppress("NAME_SHADOWING")
 class BookMyShow(n: Int, private val m: Int) {
     private val n: Int
@@ -149,3 +151,9 @@ class BookMyShow(n: Int, private val m: Int) {
         }
     }
 }
+/*
+ * Your BookMyShow object will be instantiated and called as such:
+ * var obj = BookMyShow(n, m)
+ * var param_1 = obj.gather(k,maxRow)
+ * var param_2 = obj.scatter(k,maxRow)
+ */

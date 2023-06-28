@@ -1,6 +1,7 @@
 package g2201_2300.s2272_substring_with_largest_variance
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_06_28_Time_338_ms_(100.00%)_Space_36.8_MB_(100.00%)
+
 class Solution {
     fun largestVariance(s: String): Int {
         val freq = IntArray(26)

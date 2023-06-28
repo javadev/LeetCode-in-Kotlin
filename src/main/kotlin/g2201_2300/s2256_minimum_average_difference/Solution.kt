@@ -1,6 +1,7 @@
 package g2201_2300.s2256_minimum_average_difference
 
-// #Medium #Array #Prefix_Sum
+// #Medium #Array #Prefix_Sum #2023_06_28_Time_527_ms_(100.00%)_Space_52.1_MB_(100.00%)
+
 class Solution {
     fun minimumAverageDifference(nums: IntArray): Int {
         var numsSum: Long = 0

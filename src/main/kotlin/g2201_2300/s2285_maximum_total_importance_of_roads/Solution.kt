@@ -1,6 +1,8 @@
 package g2201_2300.s2285_maximum_total_importance_of_roads
 
 // #Medium #Sorting #Greedy #Heap_Priority_Queue #Graph
+// #2023_06_28_Time_947_ms_(100.00%)_Space_82.6_MB_(100.00%)
+
 class Solution {
     fun maximumImportance(n: Int, roads: Array<IntArray>): Long {
         val degree = IntArray(n)

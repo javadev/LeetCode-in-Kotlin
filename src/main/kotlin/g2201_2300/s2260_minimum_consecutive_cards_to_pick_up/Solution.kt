@@ -1,6 +1,7 @@
 package g2201_2300.s2260_minimum_consecutive_cards_to_pick_up
 
-// #Medium #Array #Hash_Table #Sliding_Window
+// #Medium #Array #Hash_Table #Sliding_Window #2023_06_28_Time_646_ms_(33.33%)_Space_55_MB_(83.33%)
+
 class Solution {
     fun minimumCardPickup(cards: IntArray): Int {
         var mindiff = Int.MAX_VALUE

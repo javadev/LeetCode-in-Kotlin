@@ -1,6 +1,7 @@
 package g2201_2300.s2264_largest_3_same_digit_number_in_string
 
-// #Easy #String
+// #Easy #String #2023_06_28_Time_145_ms_(100.00%)_Space_36.4_MB_(33.33%)
+
 class Solution {
     fun largestGoodInteger(num: String): String {
         var maxi = "000"

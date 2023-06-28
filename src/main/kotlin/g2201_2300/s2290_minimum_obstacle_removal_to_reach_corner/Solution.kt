@@ -1,9 +1,11 @@
 package g2201_2300.s2290_minimum_obstacle_removal_to_reach_corner
 
+// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
+// #2023_06_28_Time_765_ms_(100.00%)_Space_66.1_MB_(100.00%)
+
 import java.util.PriorityQueue
 import java.util.Queue
 
-// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
 class Solution {
     fun minimumObstacles(grid: Array<IntArray>): Int {
         val n = grid.size
@@ -35,5 +37,5 @@ class Solution {
         return -1
     }
 
-    private class State internal constructor(var r: Int, var c: Int, var removed: Int)
+    private class State(var r: Int, var c: Int, var removed: Int)
 }

@@ -1,8 +1,10 @@
 package g2201_2300.s2271_maximum_white_tiles_covered_by_a_carpet
 
+// #Medium #Array #Sorting #Greedy #Binary_Search #Prefix_Sum
+// #2023_06_28_Time_692_ms_(100.00%)_Space_66.2_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Medium #Array #Sorting #Greedy #Binary_Search #Prefix_Sum
 class Solution {
     fun maximumWhiteTiles(tiles: Array<IntArray>, carpetLength: Int): Int {
         Arrays.sort(tiles, { x: IntArray, y: IntArray -> x[0].compareTo(y[0]) })

@@ -1,6 +1,7 @@
 package g2201_2300.s2299_strong_password_checker_ii
 
-// #Easy #String
+// #Easy #String #2023_06_28_Time_139_ms_(100.00%)_Space_34.8_MB_(100.00%)
+
 class Solution {
     fun strongPasswordCheckerII(password: String): Boolean {
         if (password.length < 8) {

@@ -1,8 +1,20 @@
 package g2201_2300.s2265_count_nodes_equal_to_average_of_subtree
 
+// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #2023_06_28_Time_174_ms_(100.00%)_Space_36.4_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     private var ans = 0
     fun averageOfSubtree(root: TreeNode?): Int {

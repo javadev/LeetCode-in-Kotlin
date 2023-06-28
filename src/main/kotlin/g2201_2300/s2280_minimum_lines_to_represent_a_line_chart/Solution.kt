@@ -1,8 +1,10 @@
 package g2201_2300.s2280_minimum_lines_to_represent_a_line_chart
 
+// #Medium #Array #Math #Sorting #Geometry #Number_Theory
+// #2023_06_28_Time_765_ms_(100.00%)_Space_98.8_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Medium #Array #Math #Sorting #Geometry #Number_Theory
 class Solution {
     fun minimumLines(stockPrices: Array<IntArray>): Int {
         if (stockPrices.size == 1) {

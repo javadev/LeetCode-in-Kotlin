@@ -1,6 +1,8 @@
 package g2201_2300.s2266_count_number_of_texts
 
 // #Medium #String #Hash_Table #Dynamic_Programming #Math
+// #2023_06_28_Time_216_ms_(100.00%)_Space_38.2_MB_(100.00%)
+
 class Solution {
     fun countTexts(pressedKeys: String): Int {
         val len = pressedKeys.length

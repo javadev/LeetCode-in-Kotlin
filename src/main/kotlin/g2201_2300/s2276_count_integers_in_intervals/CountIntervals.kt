@@ -1,8 +1,10 @@
 package g2201_2300.s2276_count_integers_in_intervals
 
+// #Hard #Design #Ordered_Set #Segment_Tree
+// #2023_06_28_Time_1256_ms_(100.00%)_Space_104.7_MB_(100.00%)
+
 import java.util.TreeMap
 
-// #Hard #Design #Ordered_Set #Segment_Tree
 class CountIntervals {
     private val map: TreeMap<Int, Int> = TreeMap()
     private var count: Int
@@ -32,3 +34,9 @@ class CountIntervals {
         return count
     }
 }
+/*
+ * Your CountIntervals object will be instantiated and called as such:
+ * var obj = CountIntervals()
+ * obj.add(left,right)
+ * var param_2 = obj.count()
+ */

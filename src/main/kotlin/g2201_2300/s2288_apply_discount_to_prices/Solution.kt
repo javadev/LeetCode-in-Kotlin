@@ -1,9 +1,10 @@
 package g2201_2300.s2288_apply_discount_to_prices
 
-// #Medium #String
+// #Medium #String #2023_06_28_Time_465_ms_(100.00%)_Space_46_MB_(100.00%)
+
 class Solution {
     fun discountPrices(sentence: String, discount: Int): String {
-        val words = sentence.split(" ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+        val words = sentence.split(" ").dropLastWhile { it.isEmpty() }.toTypedArray()
         val sb = StringBuilder()
         for (word in words) {
             sb.append(applyDiscount(word, discount))

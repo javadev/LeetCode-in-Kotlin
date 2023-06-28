@@ -1,6 +1,7 @@
 package g2201_2300.s2269_find_the_k_beauty_of_a_number
 
-// #Easy #String #Math #Sliding_Window
+// #Easy #String #Math #Sliding_Window #2023_06_28_Time_123_ms_(100.00%)_Space_33.1_MB_(83.33%)
+
 class Solution {
     fun divisorSubstrings(num: Int, k: Int): Int {
         var i = 0

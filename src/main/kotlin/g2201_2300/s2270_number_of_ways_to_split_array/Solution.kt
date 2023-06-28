@@ -1,6 +1,7 @@
 package g2201_2300.s2270_number_of_ways_to_split_array
 
-// #Medium #Array #Prefix_Sum
+// #Medium #Array #Prefix_Sum #2023_06_28_Time_627_ms_(36.36%)_Space_59.4_MB_(90.91%)
+
 class Solution {
     fun waysToSplitArray(nums: IntArray): Int {
         var leftSum: Long = 0

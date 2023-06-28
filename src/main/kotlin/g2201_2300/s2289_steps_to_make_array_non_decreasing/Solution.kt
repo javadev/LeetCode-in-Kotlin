@@ -1,6 +1,8 @@
 package g2201_2300.s2289_steps_to_make_array_non_decreasing
 
 // #Medium #Array #Stack #Linked_List #Monotonic_Stack
+// #2023_06_28_Time_509_ms_(50.00%)_Space_54.3_MB_(100.00%)
+
 class Solution {
     fun totalSteps(nums: IntArray): Int {
         var max = 0

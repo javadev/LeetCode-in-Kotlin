@@ -1,9 +1,11 @@
 package g2201_2300.s2281_sum_of_total_strength_of_wizards
 
+// #Hard #Array #Stack #Prefix_Sum #Monotonic_Stack
+// #2023_06_28_Time_673_ms_(100.00%)_Space_58.2_MB_(100.00%)
+
 import java.util.Deque
 import java.util.LinkedList
 
-// #Hard #Array #Stack #Prefix_Sum #Monotonic_Stack
 class Solution {
     fun totalStrength(nums: IntArray): Int {
         val n = nums.size

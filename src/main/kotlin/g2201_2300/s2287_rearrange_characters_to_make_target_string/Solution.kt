@@ -1,6 +1,7 @@
 package g2201_2300.s2287_rearrange_characters_to_make_target_string
 
-// #Easy #String #Hash_Table #Counting
+// #Easy #String #Hash_Table #Counting #2023_06_28_Time_122_ms_(100.00%)_Space_33.3_MB_(100.00%)
+
 class Solution {
     fun rearrangeCharacters(s: String, target: String): Int {
         return getMaxCopies(target, getCharCount(s), getCharCount(target))

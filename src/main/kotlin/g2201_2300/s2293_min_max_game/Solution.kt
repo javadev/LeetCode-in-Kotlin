@@ -1,6 +1,7 @@
 package g2201_2300.s2293_min_max_game
 
-// #Easy #Array #Simulation
+// #Easy #Array #Simulation #2023_06_28_Time_183_ms_(100.00%)_Space_37.5_MB_(100.00%)
+
 class Solution {
     fun minMaxGame(nums: IntArray): Int {
         val n = nums.size

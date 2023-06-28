@@ -1,10 +1,11 @@
 package g2201_2300.s2273_find_resultant_array_after_removing_anagrams
 
-// #Easy #Array #String #Hash_Table #Sorting
+// #Easy #Array #String #Hash_Table #Sorting #2023_06_28_Time_200_ms_(93.75%)_Space_37.3_MB_(87.50%)
+
 class Solution {
-    fun removeAnagrams(words: Array<String>?): List<String> {
+    fun removeAnagrams(words: Array<String>): List<String> {
         val result: MutableList<String> = ArrayList()
-        if (words == null || words.size == 0) {
+        if (words.isEmpty()) {
             return result
         }
         var uniqueWordIdx = 0

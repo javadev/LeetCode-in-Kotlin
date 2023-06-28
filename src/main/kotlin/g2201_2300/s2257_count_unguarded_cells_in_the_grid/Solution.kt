@@ -1,6 +1,7 @@
 package g2201_2300.s2257_count_unguarded_cells_in_the_grid
 
-// #Medium #Array #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #2023_06_28_Time_901_ms_(100.00%)_Space_76.1_MB_(100.00%)
+
 class Solution {
     fun countUnguarded(m: Int, n: Int, guards: Array<IntArray>, walls: Array<IntArray>): Int {
         val matrix = Array(m) { CharArray(n) }
