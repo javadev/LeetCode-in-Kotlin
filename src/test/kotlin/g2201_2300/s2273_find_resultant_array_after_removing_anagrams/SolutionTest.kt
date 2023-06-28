@@ -27,9 +27,4 @@ internal class SolutionTest {
             Solution().removeAnagrams(arrayOf()), equalTo(emptyList<Any>())
         )
     }
-
-    @Test
-    fun removeAnagrams4() {
-        assertThat(Solution().removeAnagrams(null), equalTo(emptyList<Any>()))
-    }
 }
