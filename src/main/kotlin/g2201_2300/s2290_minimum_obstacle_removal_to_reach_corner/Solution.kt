@@ -15,7 +15,7 @@ class Solution {
         q.add(State(0, 0, 0))
         val visited = Array(n) { BooleanArray(m) }
         visited[0][0] = true
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val state = q.poll()
             if (state.r == n - 1 && state.c == m - 1) {
                 return state.removed

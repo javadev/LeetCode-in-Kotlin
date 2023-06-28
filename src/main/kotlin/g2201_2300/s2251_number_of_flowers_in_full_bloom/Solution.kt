@@ -19,7 +19,7 @@ class Solution {
         }
         Arrays.sort(t, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
         for (ints in t) {
-            while (!pq.isEmpty()) {
+            while (pq.isNotEmpty()) {
                 if (pq.peek().j < ints[0]) {
                     pq.poll()
                 } else {

@@ -22,7 +22,7 @@ class Solution {
                 }
             }
         }
-        while (!bfs.isEmpty()) {
+        while (bfs.isNotEmpty()) {
             val rm = bfs.removeFirst()
             val x = rm / m
             val y = rm % m
@@ -49,7 +49,7 @@ class Solution {
         bfs.add(0)
         val isVis = Array(n) { BooleanArray(m) }
         isVis[0][0] = true
-        while (!bfs.isEmpty()) {
+        while (bfs.isNotEmpty()) {
             var size = bfs.size
             while (size-- > 0) {
                 val rm = bfs.removeFirst()

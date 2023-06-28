@@ -116,7 +116,7 @@ class BookMyShow(n: Int, private val m: Int) {
             }
         }
         // update max and total
-        while (!deque.isEmpty()) {
+        while (deque.isNotEmpty()) {
             var v = deque.pollFirst()
             max[v] = Math.max(max[v * 2 + 1], max[v * 2 + 2])
             total[v] = total[v * 2 + 1] + total[v * 2 + 2]

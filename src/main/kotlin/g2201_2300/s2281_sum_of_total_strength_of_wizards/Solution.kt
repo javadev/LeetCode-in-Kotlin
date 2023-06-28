@@ -6,6 +6,7 @@ package g2201_2300.s2281_sum_of_total_strength_of_wizards
 import java.util.Deque
 import java.util.LinkedList
 
+@Suppress("kotlin:S107")
 class Solution {
     fun totalStrength(nums: IntArray): Int {
         val n = nums.size
@@ -32,7 +33,7 @@ class Solution {
         var res: Long = 0
         val dq: Deque<Int> = LinkedList()
         for (i in 0 until n) {
-            while (!dq.isEmpty() && nums[dq.peekLast()] >= nums[i]) {
+            while (dq.isNotEmpty() && nums[dq.peekLast()] >= nums[i]) {
                 val cur = dq.pollLast()
                 val prev = if (dq.isEmpty()) -1 else dq.peekLast()
                 res = (
@@ -49,7 +50,7 @@ class Solution {
             }
             dq.add(i)
         }
-        while (!dq.isEmpty()) {
+        while (dq.isNotEmpty()) {
             val cur = dq.pollLast()
             val prev = if (dq.isEmpty()) -1 else dq.peekLast()
             res = (
