@@ -3,6 +3,7 @@ package g2201_2300.s2267_check_if_there_is_a_valid_parentheses_string_path
 // #Hard #Array #Dynamic_Programming #Matrix
 // #2023_06_28_Time_408_ms_(100.00%)_Space_59.1_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var grid: Array<CharArray>
     private var m = 0

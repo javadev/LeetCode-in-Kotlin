@@ -2,6 +2,7 @@ package g2201_2300.s2259_remove_digit_from_number_to_maximize_result
 
 // #Easy #String #Greedy #Enumeration #2023_06_28_Time_137_ms_(100.00%)_Space_33.9_MB_(50.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun removeDigit(number: String, digit: Char): String {
         var number = number

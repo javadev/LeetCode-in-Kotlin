@@ -5,6 +5,7 @@ package g2201_2300.s2276_count_integers_in_intervals
 
 import java.util.TreeMap
 
+@Suppress("NAME_SHADOWING")
 class CountIntervals {
     private val map: TreeMap<Int, Int> = TreeMap()
     private var count: Int
