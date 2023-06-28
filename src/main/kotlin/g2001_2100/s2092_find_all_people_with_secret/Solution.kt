@@ -5,6 +5,7 @@ package g2001_2100.s2092_find_all_people_with_secret
 
 import java.util.Arrays
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun findAllPeople(n: Int, meetings: Array<IntArray>, firstPerson: Int): List<Int> {
         Arrays.sort(meetings) { a: IntArray, b: IntArray -> a[2] - b[2] }
