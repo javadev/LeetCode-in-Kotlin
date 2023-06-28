@@ -20,7 +20,7 @@ class Solution {
         }
         t.sortWith(compareBy { a: IntArray -> a[0] })
         for (ints in t) {
-            while (!pq.isEmpty()) {
+            while (pq.isNotEmpty()) {
                 if (pq.peek().j < ints[0]) {
                     pq.poll()
                 } else {

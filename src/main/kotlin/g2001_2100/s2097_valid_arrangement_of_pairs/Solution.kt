@@ -38,7 +38,7 @@ class Solution {
     private fun getRes(k: Int, adList: HashMap<Int, Queue<Int>>, res: Array<IntArray>, idx: Int): Int {
         var idx = idx
         val edges = adList[k] ?: return idx
-        while (!edges.isEmpty()) {
+        while (edges.isNotEmpty()) {
             val edge = edges.poll()
             idx = getRes(edge, adList, res, idx)
             res[idx--] = intArrayOf(k, edge)

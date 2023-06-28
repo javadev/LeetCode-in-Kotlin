@@ -24,7 +24,7 @@ class Solution {
         // Set to keep index
         val index: MutableSet<Int> = HashSet()
         // At the index in the set since index are unique
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val top = q.poll()
             index.add(top[1])
         }
