@@ -3,6 +3,7 @@ package g2201_2300.s2258_escape_the_spreading_fire
 // #Hard #Array #Breadth_First_Search #Binary_Search #Matrix
 // #2023_06_28_Time_304_ms_(100.00%)_Space_38.5_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private fun setFire(grid: Array<IntArray>, dir: Array<IntArray>): Array<IntArray> {
         val n = grid.size
