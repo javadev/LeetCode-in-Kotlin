@@ -1,8 +1,8 @@
 package g2201_2300.s2286_booking_concert_tickets_in_groups
 
+import java.util.ArrayDeque
 import java.util.Arrays
 import java.util.Deque
-import java.util.ArrayDeque
 
 // #Hard #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
 @Suppress("NAME_SHADOWING")
