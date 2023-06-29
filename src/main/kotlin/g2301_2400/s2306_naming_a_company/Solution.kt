@@ -14,12 +14,12 @@ class Solution {
         var res = 0L
         for (i in m.indices) {
             val b1 = m[i]
-            if (b1.size == 0) {
+            if (b1.isEmpty()) {
                 continue
             }
             for (y in i + 1 until m.size) {
                 val b2 = m[y]
-                if (b2.size == 0) {
+                if (b2.isEmpty()) {
                     continue
                 }
                 res += compare(b1, b2)
