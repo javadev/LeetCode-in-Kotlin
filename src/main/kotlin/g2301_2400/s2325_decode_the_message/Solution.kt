@@ -10,7 +10,7 @@ class Solution {
         var itr = 0
         var c = 'a'
         while (c <= 'z') {
-            alphabet[c.toInt() - 'a'.toInt()] = c
+            alphabet[c.code - 'a'.code] = c
             ++c
         }
         for (i in key.indices) {

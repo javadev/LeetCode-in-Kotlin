@@ -15,6 +15,7 @@ import com_github_leetcode.ListNode
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     private enum class Direction {
         RIGHT, DOWN, LEFT, UP
@@ -66,15 +67,6 @@ class Solution {
                 }
 
                 Direction.UP -> {
-                    --i
-                    if (i == a) {
-                        --b
-                        ++d
-                        direction = Direction.RIGHT
-                    }
-                }
-
-                else -> {
                     --i
                     if (i == a) {
                         --b
