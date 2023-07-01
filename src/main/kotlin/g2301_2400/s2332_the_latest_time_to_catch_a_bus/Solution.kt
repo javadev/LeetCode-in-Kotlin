@@ -30,8 +30,7 @@ class Solution {
                 b++
             }
         }
-        var start = 0
-        start = if (c == capacity) {
+        var start: Int = if (c == capacity) {
             // capcity is full in last bus, find time last passenger might have boarded
             passengers[p - 1].coerceAtMost(buses[blen - 1])
         } else {

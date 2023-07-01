@@ -22,7 +22,7 @@ class Solution {
                 maxheap.offer(i)
             }
         }
-        while (!maxheap.isEmpty()) {
+        while (maxheap.isNotEmpty()) {
             val cur = maxheap.poll()
             if (dead.higher(cur)!! - dead.lower(cur)!! - 1 < min[cur]) {
                 // widest open range < minimum required length, this index is also bad.
