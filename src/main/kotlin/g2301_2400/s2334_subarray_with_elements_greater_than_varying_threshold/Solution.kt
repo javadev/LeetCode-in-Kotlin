@@ -3,8 +3,8 @@ package g2301_2400.s2334_subarray_with_elements_greater_than_varying_threshold
 // #Hard #Array #Stack #Union_Find #Monotonic_Stack
 // #2023_07_01_Time_889_ms_(100.00%)_Space_60.1_MB_(100.00%)
 
-import java.util.TreeSet
 import java.util.PriorityQueue
+import java.util.TreeSet
 
 class Solution {
     fun validSubarraySize(nums: IntArray, threshold: Int): Int {

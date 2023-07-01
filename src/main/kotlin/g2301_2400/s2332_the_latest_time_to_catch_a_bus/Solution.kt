@@ -3,8 +3,6 @@ package g2301_2400.s2332_the_latest_time_to_catch_a_bus
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers
 // #2023_07_01_Time_522_ms_(75.00%)_Space_61.7_MB_(62.50%)
 
-import java.util.Arrays
-
 class Solution {
     fun latestTimeCatchTheBus(buses: IntArray, passengers: IntArray, capacity: Int): Int {
         // sort arrays and move in arrays from left to right and find capacity in last bus
