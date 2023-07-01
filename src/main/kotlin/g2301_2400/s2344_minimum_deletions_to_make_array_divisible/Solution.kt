@@ -1,6 +1,8 @@
 package g2301_2400.s2344_minimum_deletions_to_make_array_divisible
 
 // #Hard #Array #Math #Sorting #Heap_Priority_Queue #Number_Theory
+// #2023_07_01_Time_542_ms_(100.00%)_Space_62.8_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun minOperations(nums: IntArray, numsDivide: IntArray): Int {

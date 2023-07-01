@@ -1,8 +1,10 @@
 package g2301_2400.s2349_design_a_number_container_system
 
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
+// #2023_07_01_Time_1011_ms_(100.00%)_Space_129_MB_(100.00%)
+
 import java.util.TreeSet
 
-// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
 class NumberContainers {
     private val indices: MutableMap<Int, TreeSet<Int>> = HashMap()
     private val vals: MutableMap<Int, Int> = HashMap()
@@ -24,3 +26,9 @@ class NumberContainers {
         } else -1
     }
 }
+/*
+ * Your NumberContainers object will be instantiated and called as such:
+ * var obj = NumberContainers()
+ * obj.change(index,number)
+ * var param_2 = obj.find(number)
+ */

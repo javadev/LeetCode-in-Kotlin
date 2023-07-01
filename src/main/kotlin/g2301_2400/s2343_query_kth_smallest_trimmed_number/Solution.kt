@@ -1,6 +1,8 @@
 package g2301_2400.s2343_query_kth_smallest_trimmed_number
 
 // #Medium #Array #String #Sorting #Heap_Priority_Queue #Divide_and_Conquer #Quickselect #Radix_Sort
+// #2023_07_01_Time_382_ms_(100.00%)_Space_38.7_MB_(100.00%)
+
 class Solution {
     fun smallestTrimmedNumbers(nums: Array<String>, queries: Array<IntArray>): IntArray {
         val numberOfDigits = nums[0].length

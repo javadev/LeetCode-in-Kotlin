@@ -1,6 +1,7 @@
 package g2301_2400.s2347_best_poker_hand
 
-// #Easy #Array #Hash_Table #Counting
+// #Easy #Array #Hash_Table #Counting #2023_07_01_Time_146_ms_(33.33%)_Space_34_MB_(66.67%)
+
 class Solution {
     fun bestHand(ranks: IntArray, suits: CharArray): String {
         val map = HashMap<Char, Int>()

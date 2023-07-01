@@ -1,8 +1,9 @@
 package g2301_2400.s2350_shortest_impossible_sequence_of_rolls
 
+// #Hard #Array #Hash_Table #Greedy #2023_07_01_Time_495_ms_(100.00%)_Space_51.4_MB_(100.00%)
+
 import java.util.BitSet
 
-// #Hard #Array #Hash_Table #Greedy
 class Solution {
     fun shortestSequence(rolls: IntArray, k: Int): Int {
         val bitSet = BitSet(k + 1)
