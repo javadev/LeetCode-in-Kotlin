@@ -18,7 +18,7 @@ class Solution {
             }
         }
         nums.sort()
-        val pq = PriorityQueue<Pair<Long, Int>> { a: Pair<Long, Int>, b: Pair<Long, Int> ->
+        val pq = PriorityQueue { a: Pair<Long, Int>, b: Pair<Long, Int> ->
             b.key.compareTo(a.key)
         }
         pq.offer(Pair(sum, 0))
