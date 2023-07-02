@@ -63,7 +63,7 @@ class Solution {
             }
         }
         // Third, start the topo sort
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val node = queue.poll()
             val list: List<Int> = graph[node - 1]
             for (i in list) {
