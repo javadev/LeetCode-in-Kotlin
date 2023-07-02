@@ -1,0 +1,9 @@
+package g2301_2400.s2356_number_of_unique_subjects_taught_by_each_teacher
+
+
+
+class Solution {
+    fun decode(value: String): String {
+        return value
+    }
+}

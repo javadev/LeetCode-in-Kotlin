@@ -1,0 +1,12 @@
+package g2301_2400.s2356_number_of_unique_subjects_taught_by_each_teacher
+
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
+import org.junit.jupiter.api.Test
+
+internal class SolutionTest {
+    @Test
+    fun test() {
+        assertThat(Solution().decode(""), equalTo(""))
+    }
+}
