@@ -24,7 +24,7 @@ class Solution {
             visited[node] = true
         }
         var ans = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val vertex = q.poll()
             ans++
             for (neighbour in graph[vertex]!!) {
