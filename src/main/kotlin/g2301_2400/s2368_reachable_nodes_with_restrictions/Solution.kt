@@ -1,9 +1,11 @@
 package g2301_2400.s2368_reachable_nodes_with_restrictions
 
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Graph
+// #2023_07_02_Time_1199_ms_(76.92%)_Space_111.6_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Queue
 
-// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Graph
 class Solution {
     fun reachableNodes(n: Int, edges: Array<IntArray>, restricted: IntArray): Int {
         val graph: Array<MutableList<Int>?> = arrayOfNulls(n)

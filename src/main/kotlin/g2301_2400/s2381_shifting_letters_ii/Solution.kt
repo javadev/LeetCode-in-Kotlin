@@ -1,6 +1,7 @@
 package g2301_2400.s2381_shifting_letters_ii
 
-// #Medium #Array #String #Prefix_Sum
+// #Medium #Array #String #Prefix_Sum #2023_07_02_Time_669_ms_(100.00%)_Space_70_MB_(100.00%)
+
 class Solution {
     fun shiftingLetters(s: String, shifts: Array<IntArray>): String {
         val diff = IntArray(s.length + 1)

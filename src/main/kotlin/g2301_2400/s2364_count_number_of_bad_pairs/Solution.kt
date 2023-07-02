@@ -1,6 +1,7 @@
 package g2301_2400.s2364_count_number_of_bad_pairs
 
-// #Medium #Array #Hash_Table
+// #Medium #Array #Hash_Table #2023_07_02_Time_590_ms_(100.00%)_Space_54.8_MB_(100.00%)
+
 class Solution {
     fun countBadPairs(nums: IntArray): Long {
         val seen = HashMap<Int, Int>()

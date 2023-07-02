@@ -1,15 +1,17 @@
 package g2301_2400.s2392_build_a_matrix_with_conditions
 
+// #Hard #Array #Matrix #Graph #Topological_Sort
+// #2023_07_02_Time_706_ms_(100.00%)_Space_65.8_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Array #Matrix #Graph #Topological_Sort
 class Solution {
     // Using topological sort to solve this problem
-    fun buildMatrix(k: Int, rowC: Array<IntArray>, colC: Array<IntArray>): Array<IntArray> {
+    fun buildMatrix(k: Int, rowConditions: Array<IntArray>, colConditions: Array<IntArray>): Array<IntArray> {
         // First, get the topo-sorted of row and col
-        val row = toposort(k, rowC)
-        val col = toposort(k, colC)
+        val row = toposort(k, rowConditions)
+        val col = toposort(k, colConditions)
         // base case: when the length of row or col is less than k, return empty.
         // That is: there is a loop in established graph
         if (row.size < k || col.size < k) {

@@ -1,6 +1,7 @@
 package g2301_2400.s2369_check_if_there_is_a_valid_partition_for_the_array
 
-// #Medium #Array #Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #2023_07_02_Time_533_ms_(100.00%)_Space_51.4_MB_(100.00%)
+
 class Solution {
     fun validPartition(nums: IntArray): Boolean {
         val canPartition = BooleanArray(nums.size + 1)

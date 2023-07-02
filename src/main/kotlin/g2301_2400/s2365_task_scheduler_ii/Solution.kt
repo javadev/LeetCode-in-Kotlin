@@ -1,6 +1,7 @@
 package g2301_2400.s2365_task_scheduler_ii
 
-// #Medium #Array #Hash_Table #Simulation
+// #Medium #Array #Hash_Table #Simulation #2023_07_02_Time_595_ms_(100.00%)_Space_57.7_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun taskSchedulerII(tasks: IntArray, space: Int): Long {

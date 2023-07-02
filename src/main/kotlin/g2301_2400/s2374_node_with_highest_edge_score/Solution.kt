@@ -1,23 +1,16 @@
 package g2301_2400.s2374_node_with_highest_edge_score
 
-// #Medium #Hash_Table #Graph
+// #Medium #Hash_Table #Graph #2023_07_02_Time_673_ms_(100.00%)_Space_66.7_MB_(100.00%)
+
 class Solution {
     fun edgeScore(edges: IntArray): Int {
-        val n = edges.size
-        val score = IntArray(n)
-        var maxScore = 0
-        var node = 0
-        for (i in 0 until n) {
-            score[edges[i]] += i
-            if (score[edges[i]] >= maxScore) {
-                node = if (score[edges[i]] == maxScore) {
-                    Math.min(node, edges[i])
-                } else {
-                    edges[i]
-                }
-                maxScore = score[edges[i]]
-            }
+        val a = LongArray(edges.size)
+        var max = 0
+        for (i in edges.indices) {
+            a[edges[i]] += i.toLong()
+            if (a[edges[i]] > a[max]) max = edges[i]
+            else if (a[edges[i]] == a[max] && edges[i] < max) max = edges[i]
         }
-        return node
+        return max
     }
 }

@@ -1,8 +1,10 @@
 package g2301_2400.s2386_find_the_k_sum_of_an_array
 
+// #Hard #Array #Sorting #Heap_Priority_Queue
+// #2023_07_02_Time_675_ms_(100.00%)_Space_56_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Hard #Array #Sorting #Heap_Priority_Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun kSum(nums: IntArray, k: Int): Long {

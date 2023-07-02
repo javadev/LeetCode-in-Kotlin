@@ -1,6 +1,8 @@
 package g2301_2400.s2397_maximum_rows_covered_by_columns
 
 // #Medium #Array #Matrix #Bit_Manipulation #Backtracking #Enumeration
+// #2023_07_02_Time_154_ms_(100.00%)_Space_32.3_MB_(100.00%)
+
 class Solution {
     private var ans = 0
     fun maximumRows(matrix: Array<IntArray>, numSelect: Int): Int {

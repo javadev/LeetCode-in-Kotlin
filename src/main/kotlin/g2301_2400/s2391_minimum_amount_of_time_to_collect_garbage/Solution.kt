@@ -1,6 +1,7 @@
 package g2301_2400.s2391_minimum_amount_of_time_to_collect_garbage
 
-// #Medium #Array #String #Prefix_Sum
+// #Medium #Array #String #Prefix_Sum #2023_07_02_Time_537_ms_(100.00%)_Space_58.8_MB_(100.00%)
+
 class Solution {
     fun garbageCollection(garbage: Array<String>, travel: IntArray): Int {
         var cTime = 0

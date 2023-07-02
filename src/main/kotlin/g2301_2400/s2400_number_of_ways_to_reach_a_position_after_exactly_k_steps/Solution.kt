@@ -1,8 +1,11 @@
 package g2301_2400.s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps
 
 // #Medium #Dynamic_Programming #Math #Combinatorics
+// #2023_07_02_Time_126_ms_(100.00%)_Space_32.5_MB_(100.00%)
+
 class Solution {
     private val mod = 1000000007
+
     fun numberOfWays(startPos: Int, endPos: Int, k: Int): Int {
         if (Math.abs(endPos - startPos) > k) {
             return 0

@@ -1,6 +1,7 @@
 package g2301_2400.s2366_minimum_replacements_to_sort_the_array
 
-// #Hard #Array #Math #Greedy
+// #Hard #Array #Math #Greedy #2023_07_02_Time_433_ms_(100.00%)_Space_57.9_MB_(100.00%)
+
 class Solution {
     fun minimumReplacement(nums: IntArray): Long {
         var limit = nums[nums.size - 1]

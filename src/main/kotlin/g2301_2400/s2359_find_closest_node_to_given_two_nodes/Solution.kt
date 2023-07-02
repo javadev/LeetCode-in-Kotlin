@@ -1,6 +1,7 @@
 package g2301_2400.s2359_find_closest_node_to_given_two_nodes
 
-// #Medium #Depth_First_Search #Graph
+// #Medium #Depth_First_Search #Graph #2023_07_02_Time_552_ms_(40.00%)_Space_58.1_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun closestMeetingNode(edges: IntArray, node1: Int, node2: Int): Int {

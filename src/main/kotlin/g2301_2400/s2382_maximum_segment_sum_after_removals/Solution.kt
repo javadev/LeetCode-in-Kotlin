@@ -1,6 +1,8 @@
 package g2301_2400.s2382_maximum_segment_sum_after_removals
 
 // #Hard #Array #Prefix_Sum #Union_Find #Ordered_Set
+// #2023_07_02_Time_857_ms_(50.00%)_Space_60_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private class UF(n: Int) {

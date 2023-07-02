@@ -1,6 +1,7 @@
 package g2301_2400.s2399_check_distances_between_same_letters
 
-// #Easy #Array #String #Hash_Table
+// #Easy #Array #String #Hash_Table #2023_07_02_Time_173_ms_(66.67%)_Space_34.7_MB_(100.00%)
+
 class Solution {
     fun checkDistances(s: String, distance: IntArray): Boolean {
         val seenFirstIndexYet = BooleanArray(26)

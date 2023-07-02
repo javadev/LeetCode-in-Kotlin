@@ -1,12 +1,12 @@
 package g2301_2400.s2384_largest_palindromic_number
 
-// #Medium #String #Hash_Table #Greedy
+// #Medium #String #Hash_Table #Greedy #2023_07_02_Time_252_ms_(100.00%)_Space_38.1_MB_(80.00%)
+
 class Solution {
     fun largestPalindromic(num: String): String {
         val count = IntArray(10)
         var center = -1
         val first = StringBuilder()
-        val second: StringBuilder
         for (c in num.toCharArray()) {
             count[c.code - '0'.code]++
         }
@@ -24,7 +24,7 @@ class Solution {
                 c++
             }
         }
-        second = StringBuilder(first.toString())
+        val second: StringBuilder = StringBuilder(first.toString())
         if (center != -1) {
             first.append(center)
         }

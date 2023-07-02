@@ -1,6 +1,7 @@
 package g2301_2400.s2396_strictly_palindromic_number
 
-// #Medium #Math #Two_Pointers #Brainteaser
+// #Medium #Math #Two_Pointers #Brainteaser #2023_07_02_Time_130_ms_(58.06%)_Space_32.8_MB_(74.19%)
+
 class Solution {
     fun isStrictlyPalindromic(n: Int): Boolean {
         for (i in 2..n - 2) {

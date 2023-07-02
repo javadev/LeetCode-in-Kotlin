@@ -1,6 +1,8 @@
 package g2301_2400.s2370_longest_ideal_subsequence
 
 // #Medium #String #Hash_Table #Dynamic_Programming
+// #2023_07_02_Time_255_ms_(100.00%)_Space_37.6_MB_(100.00%)
+
 class Solution {
     fun longestIdealString(s: String, k: Int): Int {
         var ans = 1

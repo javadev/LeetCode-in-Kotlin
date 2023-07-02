@@ -1,6 +1,7 @@
 package g2301_2400.s2390_removing_stars_from_a_string
 
-// #Medium #String #Stack #Simulation
+// #Medium #String #Stack #Simulation #2023_07_02_Time_337_ms_(62.92%)_Space_39.3_MB_(88.76%)
+
 class Solution {
     fun removeStars(s: String): String {
         val sb = StringBuilder()

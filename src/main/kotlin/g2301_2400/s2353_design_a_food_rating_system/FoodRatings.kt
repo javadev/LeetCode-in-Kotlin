@@ -1,8 +1,10 @@
 package g2301_2400.s2353_design_a_food_rating_system
 
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
+// #2023_07_02_Time_1204_ms_(100.00%)_Space_93.8_MB_(66.67%)
+
 import java.util.TreeSet
 
-// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
 class FoodRatings(foods: Array<String>, cuisines: Array<String>, ratings: IntArray) {
     private val cus = HashMap<String, TreeSet<Food?>>()
     private val foodHashMap = HashMap<String, Food>()
@@ -43,3 +45,9 @@ class FoodRatings(foods: Array<String>, cuisines: Array<String>, ratings: IntArr
 
     private class Food internal constructor(val foodItem: String, var rating: Int, val cus: String)
 }
+/*
+ * Your FoodRatings object will be instantiated and called as such:
+ * var obj = FoodRatings(foods, cuisines, ratings)
+ * obj.changeRating(food,newRating)
+ * var param_2 = obj.highestRated(cuisine)
+ */

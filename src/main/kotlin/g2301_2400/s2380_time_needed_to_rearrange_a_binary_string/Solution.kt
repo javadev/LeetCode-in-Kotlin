@@ -1,6 +1,8 @@
 package g2301_2400.s2380_time_needed_to_rearrange_a_binary_string
 
 // #Medium #String #Dynamic_Programming #Simulation
+// #2023_07_02_Time_149_ms_(100.00%)_Space_34.2_MB_(100.00%)
+
 class Solution {
     fun secondsToRemoveOccurrences(s: String): Int {
         var lastOne = -1

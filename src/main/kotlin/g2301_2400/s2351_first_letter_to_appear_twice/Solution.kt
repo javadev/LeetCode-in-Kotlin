@@ -1,6 +1,7 @@
 package g2301_2400.s2351_first_letter_to_appear_twice
 
-// #Easy #String #Hash_Table #Counting
+// #Easy #String #Hash_Table #Counting #2023_07_02_Time_122_ms_(100.00%)_Space_33.4_MB_(100.00%)
+
 class Solution {
     fun repeatedCharacter(s: String): Char {
         val n = s.length

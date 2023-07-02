@@ -1,6 +1,7 @@
 package g2301_2400.s2376_count_special_integers
 
-// #Hard #Dynamic_Programming #Math
+// #Hard #Dynamic_Programming #Math #2023_07_02_Time_125_ms_(100.00%)_Space_32.8_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var cntMap: IntArray

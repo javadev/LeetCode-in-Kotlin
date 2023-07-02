@@ -1,6 +1,8 @@
 package g2301_2400.s2398_maximum_number_of_robots_within_budget
 
 // #Hard #Array #Binary_Search #Heap_Priority_Queue #Prefix_Sum #Sliding_Window #Queue
+// #2023_07_02_Time_507_ms_(100.00%)_Space_48.9_MB_(100.00%)
+
 class Solution {
     // use sliding window to track the largest in a way that the sliding window only grows.
     //   then the maximum size is the size of the sliding window at the end.

@@ -1,6 +1,8 @@
 package g2301_2400.s2360_longest_cycle_in_a_graph
 
 // #Hard #Depth_First_Search #Graph #Topological_Sort
+// #2023_07_02_Time_517_ms_(80.00%)_Space_59.3_MB_(100.00%)
+
 class Solution {
     fun longestCycle(edges: IntArray): Int {
         val n = edges.size
