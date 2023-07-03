@@ -1,7 +1,7 @@
 package g0001_0100.s0029_divide_two_integers
 
 // #Medium #Top_Interview_Questions #Math #Bit_Manipulation #Udemy_Bit_Manipulation
-// #2022_09_18_Time_281_ms_(31.67%)_Space_34.5_MB_(28.33%)
+// #2023_07_03_Time_144_ms_(82.50%)_Space_33.4_MB_(100.00%)
 
 @Suppress("INTEGER_OVERFLOW")
 class Solution {

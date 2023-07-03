@@ -1,10 +1,10 @@
 package g0001_0100.s0008_string_to_integer_atoi
 
-// #Medium #Top_Interview_Questions #String #2022_09_22_Time_196_ms_(96.46%)_Space_35.3_MB_(96.02%)
+// #Medium #Top_Interview_Questions #String #2023_07_03_Time_172_ms_(82.90%)_Space_34.9_MB_(88.08%)
 
 class Solution {
-    fun myAtoi(str: String?): Int {
-        if (str.isNullOrEmpty()) {
+    fun myAtoi(str: String): Int {
+        if (str.isEmpty()) {
             return 0
         }
         var i = 0

@@ -2,7 +2,7 @@ package g0001_0100.s0001_two_sum
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
 // #Data_Structure_I_Day_2_Array #Level_1_Day_13_Hashmap #Udemy_Arrays
-// #2022_07_14_Time_234_ms_(92.75%)_Space_37.5_MB_(93.77%)
+// #2023_07_03_Time_202_ms_(91.18%)_Space_38.1_MB_(76.07%)
 
 class Solution {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
