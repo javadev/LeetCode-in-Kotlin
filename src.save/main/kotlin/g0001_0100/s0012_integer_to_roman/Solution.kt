@@ -1,9 +1,9 @@
 package g0001_0100.s0012_integer_to_roman
 
-// #Medium #String #Hash_Table #Math #2022_10_06_Time_223_ms_(93.87%)_Space_36.3_MB_(93.07%)
+// #Medium #String #Hash_Table #Math #2023_07_03_Time_180_ms_(98.25%)_Space_37_MB_(82.89%)
 
 class Solution {
-    fun intToRoman(num: Int): String? {
+    fun intToRoman(num: Int): String {
         var localNum = num
         val sb = StringBuilder()
         val m = 1000

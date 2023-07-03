@@ -1,6 +1,6 @@
 package g0001_0100.s0027_remove_element
 
-// #Easy #Array #Two_Pointers #2022_09_18_Time_293_ms_(32.19%)_Space_35.7_MB_(26.76%)
+// #Easy #Array #Two_Pointers #2023_07_03_Time_162_ms_(76.44%)_Space_34.8_MB_(70.69%)
 
 class Solution {
     fun removeElement(nums: IntArray, `val`: Int): Int {

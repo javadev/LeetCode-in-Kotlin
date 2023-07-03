@@ -1,6 +1,7 @@
 package g0001_0100.s0030_substring_with_concatenation_of_all_words
 
-// #Hard #String #Hash_Table #Sliding_Window #2022_09_18_Time_441_ms_(85.84%)_Space_42.9_MB_(88.25%)
+// #Hard #String #Hash_Table #Sliding_Window
+// #2023_07_03_Time_182_ms_(100.00%)_Space_37.9_MB_(100.00%)
 
 class Solution {
     fun findSubstring(s: String, words: Array<String>): List<Int> {

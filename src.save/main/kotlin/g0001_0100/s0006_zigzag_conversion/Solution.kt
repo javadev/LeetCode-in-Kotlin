@@ -1,6 +1,6 @@
 package g0001_0100.s0006_zigzag_conversion
 
-// #Medium #String #2022_09_22_Time_366_ms_(80.62%)_Space_41.6_MB_(75.43%)
+// #Medium #String #2023_07_03_Time_200_ms_(97.79%)_Space_37.3_MB_(91.71%)
 
 class Solution {
     fun convert(s: String, numRows: Int): String {

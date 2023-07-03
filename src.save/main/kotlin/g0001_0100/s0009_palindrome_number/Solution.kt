@@ -1,6 +1,6 @@
 package g0001_0100.s0009_palindrome_number
 
-// #Easy #Math #Udemy_Integers #2022_09_22_Time_238_ms_(96.24%)_Space_35_MB_(98.02%)
+// #Easy #Math #Udemy_Integers #2023_07_03_Time_217_ms_(95.34%)_Space_36.1_MB_(98.21%)
 
 class Solution {
     fun isPalindrome(x: Int): Boolean {

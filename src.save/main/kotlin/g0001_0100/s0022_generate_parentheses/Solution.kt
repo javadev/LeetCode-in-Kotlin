@@ -2,7 +2,7 @@ package g0001_0100.s0022_generate_parentheses
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Backtracking #Algorithm_II_Day_11_Recursion_Backtracking #Udemy_Backtracking/Recursion
-// #2022_03_29_Time_210_ms_(78.51%)_Space_37.3_MB_(76.72%)
+// #2023_07_03_Time_161_ms_(85.45%)_Space_37.3_MB_(66.18%)
 
 class Solution {
     fun generateParenthesis(n: Int): List<String> {

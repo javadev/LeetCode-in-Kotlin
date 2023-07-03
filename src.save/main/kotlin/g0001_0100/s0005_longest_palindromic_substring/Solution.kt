@@ -3,7 +3,7 @@ package g0001_0100.s0005_longest_palindromic_substring
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Data_Structure_II_Day_9_String #Algorithm_II_Day_14_Dynamic_Programming
 // #Dynamic_Programming_I_Day_17 #Udemy_Strings
-// #2022_09_22_Time_323_ms_(75.48%)_Space_37.1_MB_(69.96%)
+// #2023_07_03_Time_162_ms_(99.00%)_Space_36.6_MB_(79.10%)
 
 class Solution {
     fun longestPalindrome(s: String): String {
