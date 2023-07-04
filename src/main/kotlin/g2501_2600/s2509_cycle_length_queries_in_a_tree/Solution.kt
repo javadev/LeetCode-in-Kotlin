@@ -1,6 +1,7 @@
 package g2501_2600.s2509_cycle_length_queries_in_a_tree
 
-// #Hard #Tree #Binary_Tree
+// #Hard #Tree #Binary_Tree #2023_07_04_Time_825_ms_(75.00%)_Space_102.8_MB_(100.00%)
+
 @Suppress("UNUSED_PARAMETER")
 class Solution {
     fun cycleLengthQueries(n: Int, queries: Array<IntArray>): IntArray {

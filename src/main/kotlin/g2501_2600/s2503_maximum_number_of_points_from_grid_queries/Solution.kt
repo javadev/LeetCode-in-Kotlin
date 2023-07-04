@@ -1,30 +1,33 @@
 package g2501_2600.s2503_maximum_number_of_points_from_grid_queries
 
+// #Hard #Array #Sorting #Breadth_First_Search #Heap_Priority_Queue #Union_Find
+// #2023_07_04_Time_581_ms_(100.00%)_Space_62.6_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Arrays
 import java.util.PriorityQueue
 import java.util.Queue
 
-// #Hard #Array #Sorting #Breadth_First_Search #Heap_Priority_Queue #Union_Find
 class Solution {
     private val dirs = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))
-    fun maxPoints(grid: Array<IntArray>, q: IntArray): IntArray {
+
+    fun maxPoints(grid: Array<IntArray>, queries: IntArray): IntArray {
         val r = grid.size
         val c = grid[0].size
-        val res = IntArray(q.size)
-        val index = arrayOfNulls<Int>(q.size)
-        for (i in q.indices) {
+        val res = IntArray(queries.size)
+        val index = arrayOfNulls<Int>(queries.size)
+        for (i in queries.indices) {
             index[i] = i
         }
-        Arrays.sort(index, Comparator.comparingInt { o: Int? -> q[o!!] })
+        Arrays.sort(index, { o: Int?, m: Int? -> queries[o!!].compareTo(queries[m!!]) })
         val q1: Queue<IntArray> = ArrayDeque()
-        val q2 = PriorityQueue(Comparator.comparingInt { a: IntArray -> a[2] })
+        val q2 = PriorityQueue({ a: IntArray, b: IntArray -> a[2].compareTo(b[2]) })
         q2.offer(intArrayOf(0, 0, grid[0][0]))
         val visited = Array(r) { BooleanArray(c) }
         var count = 0
         visited[0][0] = true
-        for (i in q.indices) {
-            val currLimit = q[index[i]!!]
+        for (i in queries.indices) {
+            val currLimit = queries[index[i]!!]
             while (q2.isNotEmpty() && q2.peek()[2] < currLimit) {
                 q1.offer(q2.poll())
             }

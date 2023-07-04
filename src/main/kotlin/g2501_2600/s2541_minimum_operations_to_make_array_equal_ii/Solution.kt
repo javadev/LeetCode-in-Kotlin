@@ -1,6 +1,7 @@
 package g2501_2600.s2541_minimum_operations_to_make_array_equal_ii
 
-// #Medium #Array #Math #Greedy
+// #Medium #Array #Math #Greedy #2023_07_04_Time_521_ms_(100.00%)_Space_58.3_MB_(100.00%)
+
 class Solution {
     fun minOperations(nums1: IntArray, nums2: IntArray, k: Int): Long {
         val n = nums1.size

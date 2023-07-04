@@ -1,6 +1,7 @@
 package g2501_2600.s2523_closest_prime_numbers_in_range
 
-// #Medium #Math #Number_Theory
+// #Medium #Math #Number_Theory #2023_07_04_Time_136_ms_(100.00%)_Space_33.7_MB_(100.00%)
+
 class Solution {
     fun closestPrimes(left: Int, right: Int): IntArray {
         var diff = -1

@@ -1,6 +1,8 @@
 package g2501_2600.s2528_maximize_the_minimum_powered_city
 
 // #Hard #Array #Greedy #Binary_Search #Prefix_Sum #Sliding_Window #Queue
+// #2023_07_04_Time_496_ms_(100.00%)_Space_57_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private fun canIBeTheMinimum(power: LongArray, minimum: Long, k: Int, r: Int): Boolean {

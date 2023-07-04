@@ -1,6 +1,7 @@
 package g2501_2600.s2515_shortest_distance_to_target_string_in_a_circular_array
 
-// #Easy #Array #String
+// #Easy #Array #String #2023_07_04_Time_209_ms_(100.00%)_Space_37.5_MB_(100.00%)
+
 class Solution {
     fun closetTarget(words: Array<String>, target: String, startIndex: Int): Int {
         val n = words.size

@@ -1,6 +1,7 @@
 package g2501_2600.s2535_difference_between_element_sum_and_digit_sum_of_an_array
 
-// #Easy #Array #Math
+// #Easy #Array #Math #2023_07_04_Time_231_ms_(66.67%)_Space_37.7_MB_(88.89%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private fun getsum(n: Int): Int {

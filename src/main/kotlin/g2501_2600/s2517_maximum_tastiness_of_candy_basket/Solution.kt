@@ -1,6 +1,7 @@
 package g2501_2600.s2517_maximum_tastiness_of_candy_basket
 
-// #Medium #Array #Sorting #Binary_Search
+// #Medium #Array #Sorting #Binary_Search #2023_07_04_Time_547_ms_(33.33%)_Space_52.1_MB_(100.00%)
+
 class Solution {
     fun maximumTastiness(price: IntArray, k: Int): Int {
         price.sort()

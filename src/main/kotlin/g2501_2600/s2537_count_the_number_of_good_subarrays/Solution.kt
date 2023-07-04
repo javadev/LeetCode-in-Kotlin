@@ -1,6 +1,8 @@
 package g2501_2600.s2537_count_the_number_of_good_subarrays
 
 // #Medium #Array #Hash_Table #Sliding_Window
+// #2023_07_04_Time_553_ms_(100.00%)_Space_58.3_MB_(100.00%)
+
 class Solution {
     fun countGood(nums: IntArray, k: Int): Long {
         if (nums.size < 2) {

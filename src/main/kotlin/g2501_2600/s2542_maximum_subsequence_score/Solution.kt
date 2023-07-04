@@ -1,9 +1,11 @@
 package g2501_2600.s2542_maximum_subsequence_score
 
+// #Medium #Array #Sorting #Greedy #Heap_(Priority_Queue)
+// #2023_07_04_Time_780_ms_(81.97%)_Space_56.7_MB_(99.45%)
+
 import java.util.Arrays
 import java.util.PriorityQueue
 
-// #Medium #Array #Sorting #Greedy #Heap_(Priority_Queue)
 class Solution {
     private class PairInfo(var val1: Int, var val2: Int)
 

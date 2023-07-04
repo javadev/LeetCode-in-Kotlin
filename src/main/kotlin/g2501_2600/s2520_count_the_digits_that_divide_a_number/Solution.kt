@@ -1,6 +1,7 @@
 package g2501_2600.s2520_count_the_digits_that_divide_a_number
 
-// #Easy #Math
+// #Easy #Math #2023_07_04_Time_121_ms_(80.95%)_Space_32.9_MB_(80.95%)
+
 class Solution {
     fun countDigits(num: Int): Int {
         var a = num

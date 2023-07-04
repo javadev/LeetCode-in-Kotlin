@@ -1,6 +1,7 @@
 package g2501_2600.s2531_make_number_of_distinct_characters_equal
 
-// #Medium #String #Hash_Table #Counting
+// #Medium #String #Hash_Table #Counting #2023_07_04_Time_287_ms_(100.00%)_Space_40.5_MB_(100.00%)
+
 class Solution {
     fun isItPossible(word1: String, word2: String): Boolean {
         val count1 = count(word1)

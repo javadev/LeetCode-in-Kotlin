@@ -1,6 +1,7 @@
 package g2501_2600.s2506_count_pairs_of_similar_strings
 
-// #Easy #Array #String #Hash_Table
+// #Easy #Array #String #Hash_Table #2023_07_04_Time_208_ms_(100.00%)_Space_37.4_MB_(100.00%)
+
 class Solution {
     fun similarPairs(words: Array<String>): Int {
         val len = words.size

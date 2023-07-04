@@ -1,6 +1,8 @@
 package g2501_2600.s2514_count_anagrams
 
 // #Hard #String #Hash_Table #Math #Counting #Combinatorics
+// #2023_07_04_Time_236_ms_(100.00%)_Space_38.6_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun countAnagrams(s: String): Int {

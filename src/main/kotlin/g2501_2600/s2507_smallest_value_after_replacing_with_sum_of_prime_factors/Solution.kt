@@ -1,9 +1,11 @@
 package g2501_2600.s2507_smallest_value_after_replacing_with_sum_of_prime_factors
 
-// #Medium #Math #Number_Theory
+// #Medium #Math #Number_Theory #2023_07_04_Time_149_ms_(100.00%)_Space_33.2_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private val memo: MutableMap<Int, Int> = HashMap()
+
     fun smallestValue(n: Int): Int {
         var n = n
         while (get(n) != n) {

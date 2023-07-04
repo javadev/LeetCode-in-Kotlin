@@ -1,9 +1,10 @@
 package g2501_2600.s2521_distinct_prime_factors_of_product_of_array
 
 // #Medium #Array #Hash_Table #Math #Number_Theory
+// #2023_07_04_Time_229_ms_(100.00%)_Space_37.9_MB_(100.00%)
 
 @Suppress("NAME_SHADOWING")
-internal class Solution {
+class Solution {
     fun distinctPrimeFactors(nums: IntArray): Int {
         val hasprime = BooleanArray(primes.size)
         val nr = BooleanArray(1001)

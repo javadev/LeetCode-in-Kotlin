@@ -1,8 +1,10 @@
 package g2501_2600.s2532_time_to_cross_a_bridge
 
+// #Hard #Array #Heap_Priority_Queue #Simulation
+// #2023_07_04_Time_420_ms_(100.00%)_Space_47.1_MB_(50.00%)
+
 import java.util.PriorityQueue
 
-// #Hard #Array #Heap_Priority_Queue #Simulation
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun findCrossingTime(n: Int, k: Int, time: Array<IntArray>): Int {
@@ -10,8 +12,8 @@ class Solution {
         var n = n
         val leftBridgePQ = PriorityQueue { a: IntArray, b: IntArray -> if (a[1] == b[1]) b[0] - a[0] else b[1] - a[1] }
         val rightBridgePQ = PriorityQueue { a: IntArray, b: IntArray -> if (a[1] == b[1]) b[0] - a[0] else b[1] - a[1] }
-        val leftWHPQ = PriorityQueue(Comparator.comparingInt { a: IntArray -> a[1] })
-        val rightWHPQ = PriorityQueue(Comparator.comparingInt { a: IntArray -> a[1] })
+        val leftWHPQ = PriorityQueue { a: IntArray, b: IntArray -> a[1].compareTo(b[1]) }
+        val rightWHPQ = PriorityQueue { a: IntArray, b: IntArray -> a[1].compareTo(b[1]) }
         for (i in 0 until k) {
             val efficiency = time[i][0] + time[i][2]
             leftBridgePQ.offer(intArrayOf(i, efficiency))

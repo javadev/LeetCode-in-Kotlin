@@ -1,6 +1,7 @@
 package g2501_2600.s2508_add_edges_to_make_degrees_of_all_nodes_even
 
-// #Hard #Hash_Table #Graph
+// #Hard #Hash_Table #Graph #2023_07_04_Time_1045_ms_(100.00%)_Space_128.6_MB_(100.00%)
+
 class Solution {
     fun isPossible(n: Int, edges: List<List<Int>>): Boolean {
         val g: Array<ArrayList<Int>?> = arrayOfNulls(n + 1)

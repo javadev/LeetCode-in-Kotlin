@@ -1,6 +1,7 @@
 package g2501_2600.s2529_maximum_count_of_positive_integer_and_negative_integer
 
-// #Easy #Array #Binary_Search #Counting
+// #Easy #Array #Binary_Search #Counting #2023_07_04_Time_215_ms_(83.33%)_Space_38.1_MB_(66.67%)
+
 class Solution {
     fun maximumCount(nums: IntArray): Int {
         var plus = 0

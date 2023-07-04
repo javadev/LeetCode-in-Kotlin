@@ -1,8 +1,10 @@
 package g2501_2600.s2512_reward_top_k_students
 
+// #Medium #Array #String #Hash_Table #Sorting #Heap_Priority_Queue
+// #2023_07_04_Time_691_ms_(100.00%)_Space_53.3_MB_(100.00%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #String #Hash_Table #Sorting #Heap_Priority_Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun topStudents(

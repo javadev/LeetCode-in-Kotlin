@@ -1,6 +1,8 @@
 package g2501_2600.s2502_design_memory_allocator
 
 // #Medium #Array #Hash_Table #Design #Simulation
+// #2023_07_04_Time_284_ms_(100.00%)_Space_45.8_MB_(100.00%)
+
 class Allocator(n: Int) {
     var root: Node
 
@@ -59,3 +61,9 @@ class Allocator(n: Int) {
         var next: Node? = null
     }
 }
+/*
+ * Your Allocator object will be instantiated and called as such:
+ * var obj = Allocator(n)
+ * var param_1 = obj.allocate(size,mID)
+ * var param_2 = obj.free(mID)
+ */

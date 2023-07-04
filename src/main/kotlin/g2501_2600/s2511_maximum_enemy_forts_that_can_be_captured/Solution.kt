@@ -1,6 +1,7 @@
 package g2501_2600.s2511_maximum_enemy_forts_that_can_be_captured
 
-// #Easy #Array #Two_Pointers
+// #Easy #Array #Two_Pointers #2023_07_04_Time_142_ms_(100.00%)_Space_34.3_MB_(50.00%)
+
 class Solution {
     fun captureForts(forts: IntArray): Int {
         var maxCapture = 0

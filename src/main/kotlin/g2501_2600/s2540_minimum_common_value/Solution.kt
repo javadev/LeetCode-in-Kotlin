@@ -1,6 +1,8 @@
 package g2501_2600.s2540_minimum_common_value
 
 // #Easy #Array #Hash_Table #Binary_Search #Two_Pointers
+// #2023_07_04_Time_412_ms_(100.00%)_Space_58.4_MB_(88.89%)
+
 class Solution {
     fun getCommon(nums1: IntArray, nums2: IntArray): Int {
         var i = 0

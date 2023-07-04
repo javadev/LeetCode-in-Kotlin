@@ -1,6 +1,8 @@
 package g2501_2600.s2522_partition_string_into_substrings_with_values_at_most_k
 
 // #Medium #String #Dynamic_Programming #Greedy
+// #2023_07_04_Time_174_ms_(100.00%)_Space_37.6_MB_(100.00%)
+
 class Solution {
     fun minimumPartition(s: String, k: Int): Int {
         if (k == 9) {

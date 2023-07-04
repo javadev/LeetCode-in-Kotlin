@@ -1,6 +1,7 @@
 package g2501_2600.s2536_increment_submatrices_by_one
 
-// #Medium #Array #Matrix #Prefix_Sum
+// #Medium #Array #Matrix #Prefix_Sum #2023_07_04_Time_827_ms_(100.00%)_Space_58.1_MB_(100.00%)
+
 class Solution {
     fun rangeAddQueries(n: Int, queries: Array<IntArray>): Array<IntArray> {
         val g = Array(n) { IntArray(n) }

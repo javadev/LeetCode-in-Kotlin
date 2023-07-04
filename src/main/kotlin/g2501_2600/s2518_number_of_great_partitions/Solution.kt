@@ -1,6 +1,7 @@
 package g2501_2600.s2518_number_of_great_partitions
 
-// #Hard #Array #Dynamic_Programming
+// #Hard #Array #Dynamic_Programming #2023_07_04_Time_164_ms_(100.00%)_Space_34.4_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun countPartitions(nums: IntArray, k: Int): Int {

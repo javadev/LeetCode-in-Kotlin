@@ -1,6 +1,8 @@
 package g2501_2600.s2538_difference_between_maximum_and_minimum_price_sum
 
 // #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree
+// #2023_07_04_Time_1054_ms_(100.00%)_Space_106.6_MB_(100.00%)
+
 class Solution {
     private lateinit var tree: Array<ArrayList<Int>?>
     private lateinit var price: IntArray

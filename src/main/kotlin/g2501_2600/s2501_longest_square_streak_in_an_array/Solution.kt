@@ -1,6 +1,8 @@
 package g2501_2600.s2501_longest_square_streak_in_an_array
 
 // #Medium #Array #Hash_Table #Dynamic_Programming #Sorting #Binary_Search
+// #2023_07_04_Time_585_ms_(100.00%)_Space_56.7_MB_(100.00%)
+
 class Solution {
     fun longestSquareStreak(nums: IntArray): Int {
         var result = -1

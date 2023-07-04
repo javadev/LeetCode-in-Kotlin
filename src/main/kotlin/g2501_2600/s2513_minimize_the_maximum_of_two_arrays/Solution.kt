@@ -1,6 +1,8 @@
 package g2501_2600.s2513_minimize_the_maximum_of_two_arrays
 
 // #Medium #Math #Binary_Search #Number_Theory
+// #2023_07_04_Time_135_ms_(100.00%)_Space_32.9_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     private fun gcd(a: Int, b: Int): Int {
