@@ -1,6 +1,7 @@
 package g2501_2600.s2518_number_of_great_partitions
 
 // #Hard #Array #Dynamic_Programming
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun countPartitions(nums: IntArray, k: Int): Int {
         // edge cases
