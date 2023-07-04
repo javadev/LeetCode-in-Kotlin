@@ -13,26 +13,26 @@ class Solution {
         val leftWHPQ = PriorityQueue(Comparator.comparingInt { a: IntArray -> a[1] })
         val rightWHPQ = PriorityQueue(Comparator.comparingInt { a: IntArray -> a[1] })
         for (i in 0 until k) {
-            val effciency = time[i][0] + time[i][2]
-            leftBridgePQ.offer(intArrayOf(i, effciency))
+            val efficiency = time[i][0] + time[i][2]
+            leftBridgePQ.offer(intArrayOf(i, efficiency))
         }
         var duration = 0
-        while (n > 0 || !rightBridgePQ.isEmpty() || !rightWHPQ.isEmpty()) {
-            while (!leftWHPQ.isEmpty() && leftWHPQ.peek()[1] <= duration) {
+        while (n > 0 || rightBridgePQ.isNotEmpty() || rightWHPQ.isNotEmpty()) {
+            while (leftWHPQ.isNotEmpty() && leftWHPQ.peek()[1] <= duration) {
                 val id = leftWHPQ.poll()[0]
                 val e = time[id][0] + time[id][2]
                 leftBridgePQ.offer(intArrayOf(id, e))
             }
-            while (!rightWHPQ.isEmpty() && rightWHPQ.peek()[1] <= duration) {
+            while (rightWHPQ.isNotEmpty() && rightWHPQ.peek()[1] <= duration) {
                 val id = rightWHPQ.poll()[0]
                 val e = time[id][0] + time[id][2]
                 rightBridgePQ.offer(intArrayOf(id, e))
             }
-            if (!rightBridgePQ.isEmpty()) {
+            if (rightBridgePQ.isNotEmpty()) {
                 val id = rightBridgePQ.poll()[0]
                 duration += time[id][2]
                 leftWHPQ.offer(intArrayOf(id, duration + time[id][3]))
-            } else if (!leftBridgePQ.isEmpty() && n > 0) {
+            } else if (leftBridgePQ.isNotEmpty() && n > 0) {
                 val id = leftBridgePQ.poll()[0]
                 duration += time[id][0]
                 rightWHPQ.offer(intArrayOf(id, duration + time[id][1]))
@@ -40,11 +40,11 @@ class Solution {
             } else {
                 // update duration
                 var left = Int.MAX_VALUE
-                if (!leftWHPQ.isEmpty() && n > 0) {
+                if (leftWHPQ.isNotEmpty() && n > 0) {
                     left = leftWHPQ.peek()[1]
                 }
                 var right = Int.MAX_VALUE
-                if (!rightWHPQ.isEmpty()) {
+                if (rightWHPQ.isNotEmpty()) {
                     right = rightWHPQ.peek()[1]
                 }
                 duration = Math.min(left, right)

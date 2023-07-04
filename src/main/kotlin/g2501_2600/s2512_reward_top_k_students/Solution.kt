@@ -33,7 +33,7 @@ class Solution {
             pq.offer(Student(studentId[i], sum))
         }
         val result: MutableList<Int> = ArrayList()
-        while (!pq.isEmpty() && k-- > 0) {
+        while (pq.isNotEmpty() && k-- > 0) {
             result.add(pq.poll().id)
         }
         return result

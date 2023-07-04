@@ -25,10 +25,10 @@ class Solution {
         visited[0][0] = true
         for (i in q.indices) {
             val currLimit = q[index[i]!!]
-            while (!q2.isEmpty() && q2.peek()[2] < currLimit) {
+            while (q2.isNotEmpty() && q2.peek()[2] < currLimit) {
                 q1.offer(q2.poll())
             }
-            while (!q1.isEmpty()) {
+            while (q1.isNotEmpty()) {
                 val curr = q1.poll()
                 count++
                 for (dir in dirs) {
