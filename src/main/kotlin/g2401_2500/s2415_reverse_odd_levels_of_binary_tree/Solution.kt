@@ -38,7 +38,7 @@ class Solution {
         val q: Queue<TreeNode?> = LinkedList()
         q.add(root)
         var level = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val size = q.size
             val res: MutableList<Int> = ArrayList()
             for (i in 0 until size) {
