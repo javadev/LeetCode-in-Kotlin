@@ -99,7 +99,7 @@ object CommonUtils {
         return ans
     }
 
-    fun convertLeetCodeRegularRectangleArrayInputIntoJavaArray(input: String): Array<IntArray>? {
+    fun convertLeetCodeRegularRectangleArrayInputIntoJavaArray(input: String): Array<IntArray> {
         /*
          * LeetCode 2-d array input usually comes like this: it's a REGULAR rectangle
          * [[448,931],[234,889],[214,962],[576,746]]
