@@ -1,6 +1,8 @@
 package g2401_2500.s2499_minimum_total_cost_to_make_arrays_unequal
 
 // #Hard #Array #Hash_Table #Greedy #Counting
+// #2023_07_04_Time_628_ms_(100.00%)_Space_63.2_MB_(100.00%)
+
 class Solution {
     fun minimumTotalCost(nums1: IntArray, nums2: IntArray): Long {
         val n = nums1.size

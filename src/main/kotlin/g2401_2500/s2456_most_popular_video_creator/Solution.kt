@@ -1,6 +1,8 @@
 package g2401_2500.s2456_most_popular_video_creator
 
 // #Medium #Array #String #Hash_Table #Sorting #Heap_Priority_Queue
+// #2023_07_04_Time_1162_ms_(100.00%)_Space_101.5_MB_(100.00%)
+
 class Solution {
     fun mostPopularCreator(creators: Array<String>, ids: Array<String>, views: IntArray): List<List<String>> {
         val totalViews = HashMap<String, Long>()

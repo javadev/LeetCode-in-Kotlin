@@ -1,9 +1,11 @@
 package g2401_2500.s2454_next_greater_element_iv
 
+// #Hard #Array #Sorting #Binary_Search #Stack #Heap_Priority_Queue #Monotonic_Stack
+// #2023_07_04_Time_749_ms_(100.00%)_Space_52.9_MB_(100.00%)
+
 import java.util.ArrayDeque
 import java.util.Deque
 
-// #Hard #Array #Sorting #Binary_Search #Stack #Heap_Priority_Queue #Monotonic_Stack
 class Solution {
     fun secondGreaterElement(nums: IntArray): IntArray {
         val res = IntArray(nums.size)

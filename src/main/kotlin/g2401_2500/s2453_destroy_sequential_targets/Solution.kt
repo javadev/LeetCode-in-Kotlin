@@ -1,6 +1,7 @@
 package g2401_2500.s2453_destroy_sequential_targets
 
-// #Medium #Array #Hash_Table #Counting
+// #Medium #Array #Hash_Table #Counting #2023_07_04_Time_681_ms_(100.00%)_Space_62_MB_(100.00%)
+
 class Solution {
     fun destroyTargets(nums: IntArray, space: Int): Int {
         val map = HashMap<Int, Int>()

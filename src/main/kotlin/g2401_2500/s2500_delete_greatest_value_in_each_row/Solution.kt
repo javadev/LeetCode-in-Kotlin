@@ -1,6 +1,7 @@
 package g2401_2500.s2500_delete_greatest_value_in_each_row
 
-// #Easy #Array #Sorting #Matrix
+// #Easy #Array #Sorting #Matrix #2023_07_04_Time_204_ms_(80.00%)_Space_43.1_MB_(33.33%)
+
 class Solution {
     fun deleteGreatestValue(grid: Array<IntArray>): Int {
         var sum = 0
