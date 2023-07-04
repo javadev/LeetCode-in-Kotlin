@@ -3,7 +3,7 @@ package g2401_2500.s2468_split_message_based_on_limit
 // #Hard #String #Binary_Search
 class Solution {
     fun splitMessage(message: String, limit: Int): Array<String?> {
-        var total = 0
+        var total: Int
         var running = 0
         var count: Int
         var totalReq: Int

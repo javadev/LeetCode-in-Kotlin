@@ -20,7 +20,7 @@ class Solution {
             for (i in n / 2 + 1 until n) {
                 rightMinHeap.add(costs[i])
             }
-            while (!leftMinHeap.isEmpty() && !rightMinHeap.isEmpty() && k > 0) {
+            while (leftMinHeap.isNotEmpty() && rightMinHeap.isNotEmpty() && k > 0) {
                 res += if (leftMinHeap.peek() <= rightMinHeap.peek()) {
                     leftMinHeap.poll().toLong()
                 } else {
@@ -37,7 +37,7 @@ class Solution {
             for (i in n - candidates until n) {
                 rightMinHeap.add(costs[i])
             }
-            while (!leftMinHeap.isEmpty() && !rightMinHeap.isEmpty() && k > 0) {
+            while (leftMinHeap.isNotEmpty() && rightMinHeap.isNotEmpty() && k > 0) {
                 if (leftMinHeap.peek() <= rightMinHeap.peek()) {
                     res += leftMinHeap.poll().toLong()
                     if (left <= right) {

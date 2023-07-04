@@ -24,7 +24,7 @@ class Solution {
     ) {
         if (nodeValues[toNode] > 0 && graphNodeIdToNodeValues[fromNode].size < maxNumberOfEdges) {
             graphNodeIdToNodeValues[fromNode].add(nodeValues[toNode])
-        } else if (!graphNodeIdToNodeValues[fromNode].isEmpty() &&
+        } else if (graphNodeIdToNodeValues[fromNode].isNotEmpty() &&
             graphNodeIdToNodeValues[fromNode].peek() < nodeValues[toNode]
         ) {
             graphNodeIdToNodeValues[fromNode].poll()

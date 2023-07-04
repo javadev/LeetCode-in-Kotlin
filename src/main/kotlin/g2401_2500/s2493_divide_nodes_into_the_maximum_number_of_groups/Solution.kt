@@ -43,7 +43,7 @@ class Solution {
         val group = IntArray(n + 1)
         q.add(start)
         group[start] = 1
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val node = q.remove()
             for (adjN in adj[node]) {
                 if (group[adjN] == 0) {

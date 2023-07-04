@@ -17,7 +17,7 @@ class Solution {
         if (root.right != null) {
             q.add(root.right)
         }
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             var size = q.size
             val al: MutableList<Int> = ArrayList()
             while (size-- > 0) {
