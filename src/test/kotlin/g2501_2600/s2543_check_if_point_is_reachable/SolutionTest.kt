@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isReachable: Unit
-        get() {
-            assertThat(Solution().isReachable(6, 9), equalTo(false))
-        }
+    @Test
+    fun isReachable() {
+        assertThat(Solution().isReachable(6, 9), equalTo(false))
+    }
 
-    @get:Test
-    val isReachable2: Unit
-        get() {
-            assertThat(Solution().isReachable(4, 7), equalTo(true))
-        }
+    @Test
+    fun isReachable2() {
+        assertThat(Solution().isReachable(4, 7), equalTo(true))
+    }
 }

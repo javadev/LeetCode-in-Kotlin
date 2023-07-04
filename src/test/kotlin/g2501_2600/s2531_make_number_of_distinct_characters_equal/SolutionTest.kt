@@ -5,15 +5,13 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isItPossible: Unit
-        get() {
-            assertThat(Solution().isItPossible("ac", "b"), equalTo(false))
-        }
+    @Test
+    fun isItPossible() {
+        assertThat(Solution().isItPossible("ac", "b"), equalTo(false))
+    }
 
-    @get:Test
-    val isItPossible2: Unit
-        get() {
-            assertThat(Solution().isItPossible("abcc", "aab"), equalTo(true))
-        }
+    @Test
+    fun isItPossible2() {
+        assertThat(Solution().isItPossible("abcc", "aab"), equalTo(true))
+    }
 }
