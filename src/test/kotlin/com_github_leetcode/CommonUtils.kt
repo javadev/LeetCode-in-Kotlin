@@ -133,7 +133,7 @@ object CommonUtils {
         return output
     }
 
-    fun convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(input: String): Array<IntArray?>? {
+    fun convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(input: String): Array<IntArray> {
         /*
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * [[448,931,123,345],[889],[214,962],[576,746,897]]
@@ -183,7 +183,7 @@ object CommonUtils {
                 }
             }
         }
-        return output
+        return output.filterNotNull().toTypedArray()
     }
 
     fun convertLeetCode2DStringArrayInputIntoJavaArray(input: String): MutableList<MutableList<String?>> {
