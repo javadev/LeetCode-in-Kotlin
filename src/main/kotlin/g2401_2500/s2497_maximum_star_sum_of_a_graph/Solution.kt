@@ -7,6 +7,7 @@ import java.util.PriorityQueue
 
 class Solution {
     private lateinit var graphNodeIdToNodeValues: Array<PriorityQueue<Int>?>
+
     fun maxStarSum(nodeValues: IntArray, edges: Array<IntArray>, maxNumberOfEdges: Int): Int {
         val totalNodes = nodeValues.size
         graphNodeIdToNodeValues = arrayOfNulls(totalNodes)
@@ -28,7 +29,7 @@ class Solution {
     ) {
         if (nodeValues[toNode] > 0 && graphNodeIdToNodeValues[fromNode]!!.size < maxNumberOfEdges) {
             graphNodeIdToNodeValues[fromNode]!!.add(nodeValues[toNode])
-        } else if (!graphNodeIdToNodeValues[fromNode]!!.isEmpty() &&
+        } else if (graphNodeIdToNodeValues[fromNode]!!.isNotEmpty() &&
             graphNodeIdToNodeValues[fromNode]!!.peek() < nodeValues[toNode]
         ) {
             graphNodeIdToNodeValues[fromNode]!!.poll()
