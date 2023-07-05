@@ -6,6 +6,7 @@ package g2401_2500.s2426_number_of_pairs_satisfying_inequality
 @Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var cnt: LongArray
+
     private fun find(x: Int, n: Int): Long {
         var x = x
         var res: Long = 0
