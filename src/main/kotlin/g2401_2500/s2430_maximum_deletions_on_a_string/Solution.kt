@@ -9,6 +9,7 @@ class Solution {
     private lateinit var hash: IntArray
     private lateinit var pows: IntArray
     private var visited: HashMap<Int, Int>? = null
+
     fun deleteString(s: String): Int {
         this.s = s
         if (isBad) {
