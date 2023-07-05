@@ -1,6 +1,7 @@
 package g2401_2500.s2483_minimum_penalty_for_a_shop
 
-// #Medium #String #Prefix_Sum
+// #Medium #String #Prefix_Sum #2023_07_05_Time_210_ms_(66.67%)_Space_38.1_MB_(66.67%)
+
 class Solution {
     fun bestClosingTime(customers: String): Int {
         val yes = IntArray(customers.length + 1)

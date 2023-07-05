@@ -1,6 +1,7 @@
 package g2401_2500.s2490_circular_sentence
 
-// #Easy #String
+// #Easy #String #2023_07_05_Time_152_ms_(100.00%)_Space_35_MB_(85.71%)
+
 class Solution {
     fun isCircularSentence(sentence: String): Boolean {
         val letters = sentence.toCharArray()

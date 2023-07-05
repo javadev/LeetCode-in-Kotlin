@@ -1,6 +1,7 @@
 package g2401_2500.s2460_apply_operations_to_an_array
 
-// #Easy #Array #Simulation
+// #Easy #Array #Simulation #2023_07_05_Time_165_ms_(100.00%)_Space_37.1_MB_(77.78%)
+
 class Solution {
     fun applyOperations(nums: IntArray): IntArray {
         for (i in 0 until nums.size - 1) {

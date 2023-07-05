@@ -1,6 +1,8 @@
 package g2401_2500.s2461_maximum_sum_of_distinct_subarrays_with_length_k
 
 // #Medium #Array #Hash_Table #Sliding_Window
+// #2023_07_05_Time_638_ms_(62.50%)_Space_59.5_MB_(62.50%)
+
 class Solution {
     fun maximumSubarraySum(nums: IntArray, k: Int): Long {
         val seen: MutableSet<Int> = HashSet()

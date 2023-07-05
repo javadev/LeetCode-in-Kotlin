@@ -1,6 +1,7 @@
 package g2401_2500.s2468_split_message_based_on_limit
 
-// #Hard #String #Binary_Search
+// #Hard #String #Binary_Search #2023_07_05_Time_427_ms_(100.00%)_Space_49.3_MB_(100.00%)
+
 class Solution {
     fun splitMessage(message: String, limit: Int): Array<String?> {
         var total: Int

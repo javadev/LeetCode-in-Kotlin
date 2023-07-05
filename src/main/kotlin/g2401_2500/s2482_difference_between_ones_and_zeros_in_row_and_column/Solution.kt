@@ -1,6 +1,7 @@
 package g2401_2500.s2482_difference_between_ones_and_zeros_in_row_and_column
 
-// #Medium #Array #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #2023_07_05_Time_1061_ms_(100.00%)_Space_78.4_MB_(100.00%)
+
 class Solution {
     fun onesMinusZeros(grid: Array<IntArray>): Array<IntArray> {
         val rowOne = IntArray(grid.size)

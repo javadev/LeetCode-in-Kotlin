@@ -1,8 +1,10 @@
 package g2401_2500.s2462_total_cost_to_hire_k_workers
 
+// #Medium #Array #Two_Pointers #Heap_Priority_Queue #Simulation
+// #2023_07_05_Time_588_ms_(81.43%)_Space_61.5_MB_(41.43%)
+
 import java.util.PriorityQueue
 
-// #Medium #Array #Two_Pointers #Heap_Priority_Queue #Simulation
 class Solution {
     fun totalCost(costs: IntArray, k: Int, candidates: Int): Long {
         // Hint: Maintain two minheaps, one for the left end and one for the right end

@@ -1,6 +1,7 @@
 package g2401_2500.s2466_count_ways_to_build_good_strings
 
-// #Medium #Dynamic_Programming
+// #Medium #Dynamic_Programming #2023_07_05_Time_150_ms_(75.00%)_Space_35.1_MB_(100.00%)
+
 class Solution {
     fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {
         val dp = IntArray(high + 1)

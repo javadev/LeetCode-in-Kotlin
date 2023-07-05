@@ -1,6 +1,7 @@
 package g2401_2500.s2478_number_of_beautiful_partitions
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_07_05_Time_230_ms_(100.00%)_Space_38.1_MB_(100.00%)
+
 class Solution {
     fun beautifulPartitions(s: String, k: Int, l: Int): Int {
         val cs = s.toCharArray()

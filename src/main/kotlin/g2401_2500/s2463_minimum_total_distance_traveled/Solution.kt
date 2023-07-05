@@ -1,8 +1,10 @@
 package g2401_2500.s2463_minimum_total_distance_traveled
 
+// #Hard #Array #Dynamic_Programming #Sorting
+// #2023_07_05_Time_153_ms_(100.00%)_Space_37_MB_(100.00%)
+
 import java.util.Arrays
 
-// #Hard #Array #Dynamic_Programming #Sorting
 class Solution {
     fun minimumTotalDistance(robot: List<Int>, f: Array<IntArray>): Long {
         // sort factories :

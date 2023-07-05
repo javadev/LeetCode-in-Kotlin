@@ -1,8 +1,10 @@
 package g2401_2500.s2477_minimum_fuel_cost_to_report_to_the_capital
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Graph
+// #2023_07_05_Time_969_ms_(100.00%)_Space_106_MB_(100.00%)
 class Solution {
     private var ans = 0L
+
     fun minimumFuelCost(roads: Array<IntArray>, seats: Int): Long {
         val adj = ArrayList<ArrayList<Int>>()
         val n = roads.size + 1

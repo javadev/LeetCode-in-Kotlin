@@ -1,9 +1,21 @@
 package g2401_2500.s2471_minimum_number_of_operations_to_sort_a_binary_tree_by_level
 
+// #Medium #Breadth_First_Search #Tree #Binary_Tree
+// #2023_07_05_Time_789_ms_(100.00%)_Space_63.6_MB_(100.00%)
+
 import com_github_leetcode.TreeNode
 import java.util.ArrayDeque
 
-// #Medium #Breadth_First_Search #Tree #Binary_Tree
+/*
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
 class Solution {
     fun minimumOperations(root: TreeNode): Int {
         val q = ArrayDeque<TreeNode?>()

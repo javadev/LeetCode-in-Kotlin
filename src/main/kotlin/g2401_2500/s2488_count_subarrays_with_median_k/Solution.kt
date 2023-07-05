@@ -1,6 +1,7 @@
 package g2401_2500.s2488_count_subarrays_with_median_k
 
-// #Hard #Array #Hash_Table #Prefix_Sum
+// #Hard #Array #Hash_Table #Prefix_Sum #2023_07_05_Time_464_ms_(100.00%)_Space_51.1_MB_(100.00%)
+
 class Solution {
     fun countSubarrays(nums: IntArray, k: Int): Int {
         var idx: Int

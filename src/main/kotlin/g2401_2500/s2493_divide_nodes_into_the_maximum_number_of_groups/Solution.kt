@@ -1,9 +1,11 @@
 package g2401_2500.s2493_divide_nodes_into_the_maximum_number_of_groups
 
+// #Hard #Breadth_First_Search #Graph #Union_Find
+// #2023_07_05_Time_862_ms_(100.00%)_Space_58.1_MB_(100.00%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Hard #Breadth_First_Search #Graph #Union_Find
 class Solution {
     fun magnificentSets(n: Int, edges: Array<IntArray>): Int {
         val adj: MutableList<MutableList<Int>> = ArrayList()

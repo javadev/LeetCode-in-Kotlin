@@ -1,8 +1,10 @@
 package g2401_2500.s2458_height_of_binary_tree_after_subtree_removal_queries
 
+// #Hard #Array #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2023_07_05_Time_951_ms_(80.00%)_Space_118.6_MB_(80.00%)
+
 import com_github_leetcode.TreeNode
 
-// #Hard #Array #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 class Solution {
     fun treeQueries(root: TreeNode?, queries: IntArray): IntArray {
         val levels: MutableMap<Int, IntArray> = HashMap()

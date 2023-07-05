@@ -1,6 +1,7 @@
 package g2401_2500.s2472_maximum_number_of_non_overlapping_palindrome_substrings
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2023_07_05_Time_183_ms_(100.00%)_Space_37_MB_(100.00%)
+
 class Solution {
     fun maxPalindromes(s: String, k: Int): Int {
         val dp = IntArray(s.length)
