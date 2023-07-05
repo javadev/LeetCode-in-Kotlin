@@ -1,7 +1,7 @@
 package g0001_0100.s0032_longest_valid_parentheses
 
 // #Hard #Top_100_Liked_Questions #String #Dynamic_Programming #Stack
-// #2022_09_16_Time_215_ms_(95.71%)_Space_35.1_MB_(100.00%)
+// #2023_07_05_Time_161_ms_(82.14%)_Space_36.3_MB_(91.07%)
 
 class Solution {
     fun longestValidParentheses(s: String): Int {
