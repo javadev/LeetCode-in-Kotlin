@@ -1,6 +1,8 @@
 package g2401_2500.s2438_range_product_queries_of_powers
 
 // #Medium #Array #Bit_Manipulation #Prefix_Sum
+// #2023_07_05_Time_1115_ms_(100.00%)_Space_94.9_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun productQueries(n: Int, queries: Array<IntArray>): IntArray {

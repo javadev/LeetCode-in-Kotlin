@@ -1,6 +1,10 @@
 package g2401_2500.s2448_minimum_cost_to_make_array_equal
 
 // #Hard #Array #Sorting #Binary_Search #Prefix_Sum
+// #2023_07_05_Time_387_ms_(80.40%)_Space_50.7_MB_(80.41%)
+
+import java.util.Collections
+
 class Solution {
     private class Pair(var e: Int, var c: Int)
 
@@ -11,7 +15,7 @@ class Solution {
             al.add(Pair(nums[i], cost[i]))
             sum += cost[i].toLong()
         }
-        al.sortWith(Comparator.comparingInt { a: Pair -> a.e })
+        Collections.sort(al) { a: Pair, b: Pair -> a.e.compareTo(b.e) }
         var ans: Long = 0
         val mid = (sum + 1) / 2
         var s2: Long = 0

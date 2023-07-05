@@ -1,6 +1,7 @@
 package g2401_2500.s2442_count_number_of_distinct_integers_after_reverse_operations
 
-// #Medium #Array #Hash_Table #Math
+// #Medium #Array #Hash_Table #Math #2023_07_05_Time_652_ms_(83.33%)_Space_53_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun countDistinctIntegers(nums: IntArray): Int {

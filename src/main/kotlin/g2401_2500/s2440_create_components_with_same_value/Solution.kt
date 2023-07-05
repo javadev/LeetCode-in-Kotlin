@@ -1,13 +1,15 @@
 package g2401_2500.s2440_create_components_with_same_value
 
 // #Hard #Array #Math #Depth_First_Search #Tree #Enumeration
+// #2023_07_05_Time_751_ms_(100.00%)_Space_60.1_MB_(100.00%)
+
 class Solution {
     private lateinit var nums: IntArray
 
     fun componentValue(nums: IntArray, edges: Array<IntArray>): Int {
         val n = nums.size
         this.nums = nums
-        val graph: Array<MutableList<Int>> = Array(n) { ArrayList() }
+        val graph: Array<MutableList<Int>> = Array(n) { ArrayList<Int>() }
         for (e in edges) {
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])

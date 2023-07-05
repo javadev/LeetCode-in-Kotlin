@@ -1,6 +1,7 @@
 package g2401_2500.s2437_number_of_valid_clock_times
 
-// #Easy #String #Enumeration
+// #Easy #String #Enumeration #2023_07_05_Time_134_ms_(28.57%)_Space_33.5_MB_(71.43%)
+
 class Solution {
     fun countTime(time: String): Int {
         val counts = intArrayOf(3, 10, 0, 6, 10)

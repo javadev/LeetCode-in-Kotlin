@@ -1,6 +1,7 @@
 package g2401_2500.s2446_determine_if_two_events_have_conflict
 
-// #Easy #Array #String
+// #Easy #Array #String #2023_07_05_Time_140_ms_(87.50%)_Space_33.5_MB_(100.00%)
+
 class Solution {
     fun haveConflict(event1: Array<String>, event2: Array<String>): Boolean {
         val aStart = getTimeSerial(event1[0])

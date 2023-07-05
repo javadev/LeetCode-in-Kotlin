@@ -1,6 +1,7 @@
 package g2401_2500.s2449_minimum_number_of_operations_to_make_arrays_similar
 
-// #Hard #Array #Sorting #Greedy
+// #Hard #Array #Sorting #Greedy #2023_07_05_Time_791_ms_(100.00%)_Space_61.9_MB_(100.00%)
+
 class Solution {
     fun makeSimilar(nums: IntArray, target: IntArray): Long {
         val evenNums = ArrayList<Int>()
