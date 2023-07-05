@@ -1,21 +1,21 @@
 package g0001_0100.s0044_wildcard_matching
 
 // #Hard #Top_Interview_Questions #String #Dynamic_Programming #Greedy #Recursion
-// #Udemy_Dynamic_Programming #2022_09_18_Time_401_ms_(86.11%)_Space_40.1_MB_(91.67%)
+// #Udemy_Dynamic_Programming #2023_07_05_Time_220_ms_(84.85%)_Space_37.8_MB_(90.91%)
 
 class Solution {
-    fun isMatch(inputString: String, pattern: String): Boolean {
+    fun isMatch(s: String, p: String): Boolean {
         var i = 0
         var j = 0
         var starIdx = -1
         var lastMatch = -1
-        while (i < inputString.length) {
-            if (j < pattern.length &&
-                (inputString[i] == pattern[j] || pattern[j] == '?')
+        while (i < s.length) {
+            if (j < p.length &&
+                (s[i] == p[j] || p[j] == '?')
             ) {
                 i++
                 j++
-            } else if (j < pattern.length && pattern[j] == '*') {
+            } else if (j < p.length && p[j] == '*') {
                 starIdx = j
                 lastMatch = i
                 j++
@@ -34,10 +34,10 @@ class Solution {
             }
         }
         var isMatch = true
-        while (j < pattern.length && pattern[j] == '*') {
+        while (j < p.length && p[j] == '*') {
             j++
         }
-        if (i != inputString.length || j != pattern.length) {
+        if (i != s.length || j != p.length) {
             isMatch = false
         }
         return isMatch

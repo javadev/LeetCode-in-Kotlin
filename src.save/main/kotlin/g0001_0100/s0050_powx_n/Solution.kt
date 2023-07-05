@@ -1,7 +1,7 @@
 package g0001_0100.s0050_powx_n
 
 // #Medium #Top_Interview_Questions #Math #Recursion #Udemy_Integers
-// #2022_09_27_Time_264_ms_(52.98%)_Space_34.9_MB_(76.82%)
+// #2023_07_05_Time_172_ms_(38.68%)_Space_34.8_MB_(66.04%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

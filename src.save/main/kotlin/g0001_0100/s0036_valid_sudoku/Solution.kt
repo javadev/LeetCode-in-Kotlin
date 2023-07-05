@@ -1,7 +1,7 @@
 package g0001_0100.s0036_valid_sudoku
 
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix #Data_Structure_I_Day_5_Array
-// #2022_09_18_Time_346_ms_(65.03%)_Space_45_MB_(70.91%)
+// #2023_07_05_Time_181_ms_(95.15%)_Space_40_MB_(62.78%)
 
 class Solution {
     private var j1 = 0

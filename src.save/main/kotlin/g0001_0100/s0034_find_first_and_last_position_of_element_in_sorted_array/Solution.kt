@@ -2,7 +2,7 @@ package g0001_0100.s0034_find_first_and_last_position_of_element_in_sorted_array
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search
 // #Algorithm_II_Day_1_Binary_Search #Binary_Search_I_Day_5
-// #2022_04_30_Time_228_ms_(83.38%)_Space_39.6_MB_(85.97%)
+// #2023_07_05_Time_174_ms_(100.00%)_Space_37.8_MB_(71.70%)
 
 class Solution constructor() {
     fun searchRange(nums: IntArray, target: Int): IntArray {

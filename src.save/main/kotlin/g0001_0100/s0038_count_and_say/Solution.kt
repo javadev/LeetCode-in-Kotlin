@@ -1,6 +1,6 @@
 package g0001_0100.s0038_count_and_say
 
-// #Medium #Top_Interview_Questions #String #2022_09_18_Time_317_ms_(41.11%)_Space_35.3_MB_(85.56%)
+// #Medium #Top_Interview_Questions #String #2023_07_05_Time_135_ms_(100.00%)_Space_34.4_MB_(98.31%)
 
 class Solution {
     fun countAndSay(n: Int): String {

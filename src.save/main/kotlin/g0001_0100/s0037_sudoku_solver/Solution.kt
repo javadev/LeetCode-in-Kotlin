@@ -1,6 +1,6 @@
 package g0001_0100.s0037_sudoku_solver
 
-// #Hard #Array #Matrix #Backtracking #2022_09_18_Time_294_ms_(79.69%)_Space_34.8_MB_(93.75%)
+// #Hard #Array #Matrix #Backtracking #2023_07_05_Time_148_ms_(100.00%)_Space_34.3_MB_(96.30%)
 
 class Solution {
     private val emptyCells: MutableList<IntArray> = ArrayList()
