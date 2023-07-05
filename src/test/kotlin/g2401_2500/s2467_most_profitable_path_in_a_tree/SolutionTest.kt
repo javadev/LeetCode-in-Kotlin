@@ -13,7 +13,7 @@ internal class SolutionTest {
                     arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(3, 4)),
                     3, intArrayOf(-2, 4, 2, -4, 6)
                 ),
-            equalTo(2)
+            equalTo(6)
         )
     }
 
