@@ -14,6 +14,7 @@ import com_github_leetcode.ListNode
  *     var next: ListNode? = null
  * }
  */
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun removeNodes(head: ListNode?): ListNode? {
         var head = head
