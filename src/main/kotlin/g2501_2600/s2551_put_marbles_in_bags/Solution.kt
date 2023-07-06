@@ -25,7 +25,7 @@ class Solution {
             if (max.size == k) max.poll()
         }
         var res: Long = 0
-        while (!max.isEmpty()) {
+        while (max.isNotEmpty()) {
             res += min.poll() - max.poll()!!
         }
         return res
