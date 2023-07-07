@@ -8,9 +8,6 @@ import kotlin.math.sqrt
 
 class Solution {
     fun pickGifts(gifts: IntArray, k: Int): Long {
-        // val queue = PriorityQueue<Int>(Collections.reverseOrder())
-        // val queue = PriorityQueue<Int>(compareByDescending { it })
-        // val queue = PriorityQueue<Int>(compareBy { -it })
         val queue = PriorityQueue<Int> { a, b -> b - a }
         for (gift in gifts) queue.add(gift)
         var result = 0L
