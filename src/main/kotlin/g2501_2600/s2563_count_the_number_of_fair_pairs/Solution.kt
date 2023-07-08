@@ -3,11 +3,9 @@ package g2501_2600.s2563_count_the_number_of_fair_pairs
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers
 // #2023_07_08_Time_553_ms_(100.00%)_Space_58.9_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun countFairPairs(nums: IntArray, lower: Int, upper: Int): Long {
-        Arrays.sort(nums)
+        nums.sort()
         return smaller(nums, upper) - smaller(nums, lower - 1)
     }
 
