@@ -7,6 +7,6 @@ class Solution {
         nums.sort()
         return (0 until 3).map {
             nums[nums.size - 3 + it] - nums[it]
-        }.min()!!
+        }.min()
     }
 }
