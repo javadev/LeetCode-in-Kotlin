@@ -7,7 +7,6 @@ class Solution {
         var p1 = 0
         var p2 = 0
         val result = mutableListOf<IntArray>()
-
         while (p1 < nums1.size) {
             if (p2 == nums2.size || nums1[p1][0] < nums2[p2][0]) {
                 result.add(intArrayOf(nums1[p1][0], nums1[p1][1]))
@@ -21,13 +20,11 @@ class Solution {
                 p2++
             }
         }
-
         // Merge leftovers from nums2
         while (p2 < nums2.size) {
             result.add(intArrayOf(nums2[p2][0], nums2[p2][1]))
             p2++
         }
-
         return result.toTypedArray()
     }
 }
