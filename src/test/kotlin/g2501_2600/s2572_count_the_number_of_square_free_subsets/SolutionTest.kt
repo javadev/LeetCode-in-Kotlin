@@ -20,4 +20,12 @@ internal class SolutionTest {
             equalTo(1)
         )
     }
+
+    @Test
+    fun squareFreeSubsets3() {
+        assertThat(
+            Solution().squareFreeSubsets(intArrayOf(26, 6, 4, 27, 6, 18)),
+            equalTo(3)
+        )
+    }
 }
