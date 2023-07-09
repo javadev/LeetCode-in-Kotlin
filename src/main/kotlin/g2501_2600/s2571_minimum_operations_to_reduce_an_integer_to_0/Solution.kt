@@ -3,7 +3,8 @@ package g2501_2600.s2571_minimum_operations_to_reduce_an_integer_to_0
 // #Medium #Dynamic_Programming #Greedy #Bit_Manipulation
 // #2023_07_09_Time_131_ms_(100.00%)_Space_32.5_MB_(100.00%)
 
-internal class Solution {
+@Suppress("NAME_SHADOWING")
+class Solution {
     fun minOperations(n: Int): Int {
         var n = n
         var count = 0
