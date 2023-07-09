@@ -6,7 +6,7 @@ package g0701_0800.s0770_basic_calculator_iv
 import java.util.Collections
 import java.util.Stack
 
-internal class Solution {
+class Solution {
     internal inner class Node {
         var mem: MutableMap<List<String>, Int> = HashMap()
         fun update(cur: List<String>, cnt: Int) {

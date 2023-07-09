@@ -15,7 +15,7 @@ import com_github_leetcode.TreeNode
  *     var right: TreeNode? = null
  * }
  */
-internal class Solution {
+class Solution {
     fun rangeSumBST(root: TreeNode?, low: Int, high: Int): Int {
         var ans = 0
         if (root == null) return 0
