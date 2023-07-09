@@ -14,15 +14,12 @@ class Solution {
 
     fun squareFreeSubsets(nums: IntArray): Int {
         val mod: Long = 1_000_000_007
-
         // Get the frequency map
         val freqMap = nums.toTypedArray().groupingBy { it }.eachCount()
-
         var dp = mutableMapOf<Int, Long>()
         for (v in nonPrimes) {
             if (v !in freqMap) continue
             val howmany = freqMap[v]!!
-
             val prev = HashMap(dp)
             dp[v] = (dp[v] ?: 0) + howmany
             for ((product, quantity) in prev)
@@ -40,7 +37,6 @@ class Solution {
         }
         // Getting all possible subsets without `1`
         var res = dp.values.sum() % mod
-
         // Find the permutations of `1`
         val possible = (1..(freqMap[1] ?: 0)).fold(1L) { sum, _ -> (sum shl 1) % mod }
         res = (res * possible + possible + mod - 1) % mod
