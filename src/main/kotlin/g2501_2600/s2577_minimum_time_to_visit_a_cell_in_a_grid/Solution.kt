@@ -17,7 +17,7 @@ class Solution {
             val dist: MutableMap<String, Int> = HashMap()
             pq.offer(intArrayOf(0, 0, 0))
             dist.put("0,0", 0)
-            while (!pq.isEmpty()) {
+            while (pq.isNotEmpty()) {
                 val curr = pq.poll()
                 val x = curr[0]
                 val i = curr[1]
