@@ -1,6 +1,6 @@
 package g0001_0100.s0093_restore_ip_addresses
 
-// #Medium #String #Backtracking #2022_09_26_Time_304_ms_(73.33%)_Space_35.8_MB_(93.33%)
+// #Medium #String #Backtracking #2023_07_10_Time_152_ms_(100.00%)_Space_34.7_MB_(100.00%)
 
 class Solution {
     fun restoreIpAddresses(s: String): List<String> {
