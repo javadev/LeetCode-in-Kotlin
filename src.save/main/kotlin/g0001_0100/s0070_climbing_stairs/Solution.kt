@@ -3,7 +3,7 @@ package g0001_0100.s0070_climbing_stairs
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math #Memoization
 // #Algorithm_I_Day_12_Dynamic_Programming #Dynamic_Programming_I_Day_2
 // #Level_1_Day_10_Dynamic_Programming #Udemy_Dynamic_Programming
-// #2022_08_30_Time_127_ms_(97.06%)_Space_32.7_MB_(97.70%)
+// #2023_07_10_Time_124_ms_(71.98%)_Space_33.2_MB_(48.60%)
 
 class Solution {
     fun climbStairs(n: Int): Int {

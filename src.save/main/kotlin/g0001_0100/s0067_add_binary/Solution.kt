@@ -1,7 +1,7 @@
 package g0001_0100.s0067_add_binary
 
 // #Easy #String #Math #Bit_Manipulation #Simulation #Programming_Skills_II_Day_5
-// #2022_09_23_Time_327_ms_(32.67%)_Space_36_MB_(75.91%)
+// #2023_07_10_Time_164_ms_(90.60%)_Space_34.4_MB_(99.25%)
 
 class Solution {
     fun addBinary(a: String, b: String): String {

@@ -1,13 +1,13 @@
 package g0001_0100.s0058_length_of_last_word
 
 // #Easy #String #Programming_Skills_II_Day_6 #Udemy_Arrays
-// #2022_09_21_Time_243_ms_(63.33%)_Space_35.7_MB_(73.11%)
+// #2023_07_10_Time_135_ms_(93.67%)_Space_34.3_MB_(94.69%)
 
 class Solution {
-    fun lengthOfLastWord(str: String): Int {
+    fun lengthOfLastWord(s: String): Int {
         var len = 0
-        for (i in str.length - 1 downTo 0) {
-            val ch = str[i]
+        for (i in s.length - 1 downTo 0) {
+            val ch = s[i]
             if (ch == ' ' && len > 0) {
                 break
             } else if (ch != ' ') {
