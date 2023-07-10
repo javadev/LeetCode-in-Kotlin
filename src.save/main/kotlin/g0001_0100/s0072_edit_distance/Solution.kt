@@ -2,14 +2,14 @@ package g0001_0100.s0072_edit_distance
 
 // #Hard #Top_100_Liked_Questions #String #Dynamic_Programming
 // #Algorithm_II_Day_18_Dynamic_Programming #Dynamic_Programming_I_Day_19
-// #Udemy_Dynamic_Programming #2022_08_30_Time_320_ms_(63.53%)_Space_37.2_MB_(83.53%)
+// #Udemy_Dynamic_Programming #2023_07_10_Time_182_ms_(92.16%)_Space_36.2_MB_(98.04%)
 
 class Solution {
-    fun minDistance(w1: String, w2: String): Int {
-        val n1 = w1.length
-        val n2 = w2.length
+    fun minDistance(word1: String, word2: String): Int {
+        val n1 = word1.length
+        val n2 = word2.length
         if (n2 > n1) {
-            return minDistance(w2, w1)
+            return minDistance(word2, word1)
         }
         val dp = IntArray(n2 + 1)
         for (j in 0..n2) {
@@ -20,7 +20,7 @@ class Solution {
             dp[0] = i
             for (j in 1..n2) {
                 val tmp = dp[j]
-                dp[j] = if (w1[i - 1] != w2[j - 1]) 1 + Math.min(pre, Math.min(dp[j], dp[j - 1])) else pre
+                dp[j] = if (word1[i - 1] != word2[j - 1]) 1 + Math.min(pre, Math.min(dp[j], dp[j - 1])) else pre
                 pre = tmp
             }
         }

@@ -1,7 +1,7 @@
 package g0001_0100.s0089_gray_code
 
 // #Medium #Math #Bit_Manipulation #Backtracking
-// #2022_09_27_Time_273_ms_(100.00%)_Space_44.1_MB_(97.14%)
+// #2023_07_10_Time_271_ms_(69.23%)_Space_45.8_MB_(30.77%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {
