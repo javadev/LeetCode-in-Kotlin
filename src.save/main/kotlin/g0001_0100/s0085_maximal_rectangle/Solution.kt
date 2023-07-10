@@ -1,7 +1,7 @@
 package g0001_0100.s0085_maximal_rectangle
 
 // #Hard #Array #Dynamic_Programming #Matrix #Stack #Monotonic_Stack
-// #2022_09_25_Time_463_ms_(55.17%)_Space_58.5_MB_(62.07%)
+// #2023_07_10_Time_209_ms_(100.00%)_Space_37.9_MB_(100.00%)
 
 class Solution {
     fun maximalRectangle(matrix: Array<CharArray>): Int {

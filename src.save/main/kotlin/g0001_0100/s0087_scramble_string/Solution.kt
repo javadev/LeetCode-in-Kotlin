@@ -1,6 +1,6 @@
 package g0001_0100.s0087_scramble_string
 
-// #Hard #String #Dynamic_Programming #2022_09_25_Time_366_ms_(85.00%)_Space_36.2_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #2023_07_10_Time_174_ms_(87.50%)_Space_36.5_MB_(50.00%)
 
 class Solution {
     fun isScramble(s1: String, s2: String): Boolean {
