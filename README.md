@@ -94,14 +94,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | 0283 |[Move Zeroes](src.save/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Two_Pointers | 516 | 79.07
 | 0001 |[Two Sum](src.save/main/kotlin/g0001_0100/s0001_two_sum/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 202 | 91.18
 | 0217 |[Contains Duplicate](src.save/main/kotlin/g0201_0300/s0217_contains_duplicate/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 719 | 73.49
-| 0058 |[Length of Last Word](src.save/main/kotlin/g0001_0100/s0058_length_of_last_word/Solution.kt)| Easy | String | 243 | 63.33
+| 0058 |[Length of Last Word](src.save/main/kotlin/g0001_0100/s0058_length_of_last_word/Solution.kt)| Easy | String | 135 | 93.67
 | 0605 |[Can Place Flowers](src.save/main/kotlin/g0601_0700/s0605_can_place_flowers/Solution.kt)| Easy | Array, Greedy | 209 | 85.71
 | 0122 |[Best Time to Buy and Sell Stock II](src.save/main/kotlin/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.kt)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 197 | 95.10
 | 0080 |[Remove Duplicates from Sorted Array II](src.save/main/kotlin/g0001_0100/s0080_remove_duplicates_from_sorted_array_ii/Solution.kt)| Medium | Array, Two_Pointers | 357 | 44.78
 | 0189 |[Rotate Array](src.save/main/kotlin/g0101_0200/s0189_rotate_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers | 483 | 86.95
-| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 670 | 66.67
+| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 332 | 89.35
 | 0075 |[Sort Colors](src.save/main/kotlin/g0001_0100/s0075_sort_colors/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 198 | 85.66
-| 0066 |[Plus One](src.save/main/kotlin/g0001_0100/s0066_plus_one/Solution.kt)| Easy | Top_Interview_Questions, Array, Math | 303 | 35.18
+| 0066 |[Plus One](src.save/main/kotlin/g0001_0100/s0066_plus_one/Solution.kt)| Easy | Top_Interview_Questions, Array, Math | 148 | 98.75
 | 0238 |[Product of Array Except Self](src.save/main/kotlin/g0201_0300/s0238_product_of_array_except_self/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum | 669 | 48.96
 | 1291 |[Sequential Digits](src.save/main/kotlin/g1201_1300/s1291_sequential_digits/Solution.kt)| Medium | Enumeration | 114 | 100.00
 | 0448 |[Find All Numbers Disappeared in an Array](src.save/main/kotlin/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.kt)| Easy | Array, Hash_Table | 394 | 100.00
@@ -130,7 +130,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 662 | 82.48
+| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 510 | 78.81
 | 0169 |[Majority Element](src.save/main/kotlin/g0101_0200/s0169_majority_element/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Counting, Divide_and_Conquer | 460 | 51.25
 
 #### Udemy Sorting Algorithms
@@ -145,11 +145,11 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 |-|-|-|-|-|-
 | 0304 |[Range Sum Query 2D - Immutable](src.save/main/kotlin/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.kt)| Medium | Array, Matrix, Design, Prefix_Sum | 1373 | 85.71
 | 0074 |[Search a 2D Matrix](src.save/main/kotlin/g0001_0100/s0074_search_a_2d_matrix/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix | 290 | 40.17
-| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
+| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 132 | 95.12
 | 0048 |[Rotate Image](src.save/main/kotlin/g0001_0100/s0048_rotate_image/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Matrix | 160 | 90.11
 | 1572 |[Matrix Diagonal Sum](src.save/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix | 221 | 67.61
 | 0073 |[Set Matrix Zeroes](src.save/main/kotlin/g0001_0100/s0073_set_matrix_zeroes/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Matrix | 255 | 100.00
-| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 320 | 94.22
+| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 334 | 80.67
 
 #### Udemy Linked List
 
@@ -158,7 +158,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | 0114 |[Flatten Binary Tree to Linked List](src.save/main/kotlin/g0101_0200/s0114_flatten_binary_tree_to_linked_list/Solution.kt)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List | 191 | 93.10
 | 0445 |[Add Two Numbers II](src.save/main/kotlin/g0401_0500/s0445_add_two_numbers_ii/Solution.kt)| Medium | Math, Stack, Linked_List | 240 | 82.61
 | 0328 |[Odd Even Linked List](src.save/main/kotlin/g0301_0400/s0328_odd_even_linked_list/Solution.kt)| Medium | Top_Interview_Questions, Linked_List | 216 | 86.96
-| 0061 |[Rotate List](src.save/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 193 | 92.16
+| 0061 |[Rotate List](src.save/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 160 | 92.22
 | 0024 |[Swap Nodes in Pairs](src.save/main/kotlin/g0001_0100/s0024_swap_nodes_in_pairs/Solution.kt)| Medium | Top_100_Liked_Questions, Linked_List, Recursion | 149 | 44.20
 | 0876 |[Middle of the Linked List](src.save/main/kotlin/g0801_0900/s0876_middle_of_the_linked_list/Solution.kt)| Easy | Two_Pointers, Linked_List | 136 | 76.52
 | 0142 |[Linked List Cycle II](src.save/main/kotlin/g0101_0200/s0142_linked_list_cycle_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Hash_Table, Two_Pointers, Linked_List | 192 | 63.39
@@ -225,8 +225,8 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | 0198 |[House Robber](src.save/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 156 | 92.24
 | 0213 |[House Robber II](src.save/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
 | 0509 |[Fibonacci Number](src.save/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 139 | 82.72
-| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
-| 0064 |[Minimum Path Sum](src.save/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 222 | 95.70
+| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 124 | 71.98
+| 0064 |[Minimum Path Sum](src.save/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 164 | 100.00
 | 0300 |[Longest Increasing Subsequence](src.save/main/kotlin/g0201_0300/s0300_longest_increasing_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Binary_Search | 318 | 82.28
 | 1143 |[Longest Common Subsequence](src.save/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 307 | 38.36
 | 0072 |[Edit Distance](src.save/main/kotlin/g0001_0100/s0072_edit_distance/Solution.kt)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 320 | 63.53
@@ -270,7 +270,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0217 |[Contains Duplicate](src.save/main/kotlin/g0201_0300/s0217_contains_duplicate/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 719 | 73.49
-| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 662 | 82.48
+| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 510 | 78.81
 
 #### Day 2 Array
 
@@ -383,7 +383,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0075 |[Sort Colors](src.save/main/kotlin/g0001_0100/s0075_sort_colors/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 198 | 85.66
-| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 320 | 94.22
+| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 334 | 80.67
 | 0706 |[Design HashMap](src.save/main/kotlin/g0701_0800/s0706_design_hashmap/MyHashMap.kt)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function | 405 | 92.11
 
 #### Day 3 Array
@@ -392,7 +392,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 |-|-|-|-|-|-
 | 0119 |[Pascal's Triangle II](src.save/main/kotlin/g0101_0200/s0119_pascals_triangle_ii/Solution.kt)| Easy | Array, Dynamic_Programming | 157 | 97.27
 | 0048 |[Rotate Image](src.save/main/kotlin/g0001_0100/s0048_rotate_image/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Matrix | 160 | 90.11
-| 0059 |[Spiral Matrix II](src.save/main/kotlin/g0001_0100/s0059_spiral_matrix_ii/Solution.kt)| Medium | Array, Matrix, Simulation | 153 | 100.00
+| 0059 |[Spiral Matrix II](src.save/main/kotlin/g0001_0100/s0059_spiral_matrix_ii/Solution.kt)| Medium | Array, Matrix, Simulation | 153 | 41.70
 
 #### Day 4 Array
 
@@ -610,7 +610,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
+| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 124 | 71.98
 | 0198 |[House Robber](src.save/main/kotlin/g0101_0200/s0198_house_robber/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 156 | 92.24
 | 0120 |[Triangle](src.save/main/kotlin/g0101_0200/s0120_triangle/Solution.kt)| Medium | Array, Dynamic_Programming | 194 | 97.87
 
@@ -718,14 +718,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0213 |[House Robber II](src.save/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
-| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 670 | 66.67
+| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 332 | 89.35
 
 #### Day 13 Dynamic Programming
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0045 |[Jump Game II](src.save/main/kotlin/g0001_0100/s0045_jump_game_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy | 208 | 93.37
-| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 209 | 49.18
+| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 118 | 94.65
 
 #### Day 14 Dynamic Programming
 
@@ -809,7 +809,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0069 |[Sqrt(x)](src.save/main/kotlin/g0001_0100/s0069_sqrtx/Solution.kt)| Easy | Top_Interview_Questions, Math, Binary_Search | 153 | 95.75
+| 0069 |[Sqrt(x)](src.save/main/kotlin/g0001_0100/s0069_sqrtx/Solution.kt)| Easy | Top_Interview_Questions, Math, Binary_Search | 140 | 94.72
 | 0744 |[Find Smallest Letter Greater Than Target](src.save/main/kotlin/g0701_0800/s0744_find_smallest_letter_greater_than_target/Solution.kt)| Easy | Array, Binary_Search | 162 | 100.00
 
 #### Day 5
@@ -1022,7 +1022,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
+| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 124 | 71.98
 | 0746 |[Min Cost Climbing Stairs](src.save/main/kotlin/g0701_0800/s0746_min_cost_climbing_stairs/Solution.kt)| Easy | Array, Dynamic_Programming | 171 | 96.76
 
 #### Day 3
@@ -1037,14 +1037,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 670 | 66.67
+| 0055 |[Jump Game](src.save/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 332 | 89.35
 | 0045 |[Jump Game II](src.save/main/kotlin/g0001_0100/s0045_jump_game_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy | 208 | 93.37
 
 #### Day 5
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 662 | 82.48
+| 0053 |[Maximum Subarray](src.save/main/kotlin/g0001_0100/s0053_maximum_subarray/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 510 | 78.81
 | 0918 |[Maximum Sum Circular Subarray](src.save/main/kotlin/g0901_1000/s0918_maximum_sum_circular_subarray/Solution.kt)| Medium | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Monotonic_Queue | 339 | 86.96
 
 #### Day 6
@@ -1115,14 +1115,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 209 | 49.18
-| 0063 |[Unique Paths II](src.save/main/kotlin/g0001_0100/s0063_unique_paths_ii/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 187 | 84.62
+| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 118 | 94.65
+| 0063 |[Unique Paths II](src.save/main/kotlin/g0001_0100/s0063_unique_paths_ii/Solution.kt)| Medium | Array, Dynamic_Programming, Matrix | 151 | 81.94
 
 #### Day 16
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0064 |[Minimum Path Sum](src.save/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 222 | 95.70
+| 0064 |[Minimum Path Sum](src.save/main/kotlin/g0001_0100/s0064_minimum_path_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 164 | 100.00
 | 0221 |[Maximal Square](src.save/main/kotlin/g0201_0300/s0221_maximal_square/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 614 | 44.00
 
 #### Day 17
@@ -1279,7 +1279,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0150 |[Evaluate Reverse Polish Notation](src.save/main/kotlin/g0101_0200/s0150_evaluate_reverse_polish_notation/Solution.kt)| Medium | Top_Interview_Questions, Array, Math, Stack | 233 | 88.82
-| 0066 |[Plus One](src.save/main/kotlin/g0001_0100/s0066_plus_one/Solution.kt)| Easy | Top_Interview_Questions, Array, Math | 303 | 35.18
+| 0066 |[Plus One](src.save/main/kotlin/g0001_0100/s0066_plus_one/Solution.kt)| Easy | Top_Interview_Questions, Array, Math | 148 | 98.75
 
 #### Day 4
 
@@ -1292,7 +1292,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0067 |[Add Binary](src.save/main/kotlin/g0001_0100/s0067_add_binary/Solution.kt)| Easy | String, Math, Bit_Manipulation, Simulation | 327 | 32.67
+| 0067 |[Add Binary](src.save/main/kotlin/g0001_0100/s0067_add_binary/Solution.kt)| Easy | String, Math, Bit_Manipulation, Simulation | 164 | 90.60
 | 0989 |[Add to Array-Form of Integer](src.save/main/kotlin/g0901_1000/s0989_add_to_array_form_of_integer/Solution.kt)| Easy | Array, Math | 350 | 70.00
 
 #### Day 6
@@ -1300,7 +1300,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0739 |[Daily Temperatures](src.save/main/kotlin/g0701_0800/s0739_daily_temperatures/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack | 936 | 80.54
-| 0058 |[Length of Last Word](src.save/main/kotlin/g0001_0100/s0058_length_of_last_word/Solution.kt)| Easy | String | 243 | 63.33
+| 0058 |[Length of Last Word](src.save/main/kotlin/g0001_0100/s0058_length_of_last_word/Solution.kt)| Easy | String | 135 | 93.67
 
 #### Day 7
 
@@ -1313,7 +1313,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
+| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 132 | 95.12
 | 0973 |[K Closest Points to Origin](src.save/main/kotlin/g0901_1000/s0973_k_closest_points_to_origin/Solution.kt)| Medium | Array, Math, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Geometry, Quickselect | 800 | 37.89
 
 #### Day 9
@@ -1369,7 +1369,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0061 |[Rotate List](src.save/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 193 | 92.16
+| 0061 |[Rotate List](src.save/main/kotlin/g0001_0100/s0061_rotate_list/Solution.kt)| Medium | Two_Pointers, Linked_List | 160 | 92.22
 | 0173 |[Binary Search Tree Iterator](src.save/main/kotlin/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.kt)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 563 | 46.91
 
 #### Day 17
@@ -1660,14 +1660,14 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0509 |[Fibonacci Number](src.save/main/kotlin/g0501_0600/s0509_fibonacci_number/Solution.kt)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 139 | 82.72
-| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 127 | 97.06
+| 0070 |[Climbing Stairs](src.save/main/kotlin/g0001_0100/s0070_climbing_stairs/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization | 124 | 71.98
 
 #### Day 11 Dynamic Programming
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0746 |[Min Cost Climbing Stairs](src.save/main/kotlin/g0701_0800/s0746_min_cost_climbing_stairs/Solution.kt)| Easy | Array, Dynamic_Programming | 171 | 96.76
-| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 209 | 49.18
+| 0062 |[Unique Paths](src.save/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 118 | 94.65
 
 #### Day 12 Sliding Window/Two Pointer
 
@@ -1704,7 +1704,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0202 |[Happy Number](src.save/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
-| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 224 | 62.50
+| 0054 |[Spiral Matrix](src.save/main/kotlin/g0001_0100/s0054_spiral_matrix/Solution.kt)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 132 | 95.12
 | 1706 |[Where Will the Ball Fall](src.save/main/kotlin/g1701_1800/s1706_where_will_the_ball_fall/Solution.kt)| Medium | Array, Dynamic_Programming, Depth_First_Search, Matrix, Simulation | 270 | 67.86
 
 #### Day 2 String
@@ -1820,8 +1820,8 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.14'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0057 |[Insert Interval](src.save/main/kotlin/g0001_0100/s0057_insert_interval/Solution.kt)| Medium | Array | 257 | 99.52
-| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 320 | 94.22
+| 0057 |[Insert Interval](src.save/main/kotlin/g0001_0100/s0057_insert_interval/Solution.kt)| Medium | Array | 249 | 75.63
+| 0056 |[Merge Intervals](src.save/main/kotlin/g0001_0100/s0056_merge_intervals/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 334 | 80.67
 
 #### Day 18 Stack
 
