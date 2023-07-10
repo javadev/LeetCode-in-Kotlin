@@ -1,7 +1,7 @@
 package g0001_0100.s0051_n_queens
 
 // #Hard #Top_100_Liked_Questions #Array #Backtracking
-// #2022_08_29_Time_243_ms_(95.10%)_Space_39.7_MB_(91.18%)
+// #2023_07_10_Time_192_ms_(90.74%)_Space_37.8_MB_(88.89%)
 
 class Solution {
     fun solveNQueens(n: Int): List<List<String>> {

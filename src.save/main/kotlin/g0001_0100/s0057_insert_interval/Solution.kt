@@ -1,6 +1,6 @@
 package g0001_0100.s0057_insert_interval
 
-// #Medium #Array #Level_2_Day_17_Interval #2022_09_21_Time_257_ms_(99.52%)_Space_37.1_MB_(99.52%)
+// #Medium #Array #Level_2_Day_17_Interval #2023_07_10_Time_249_ms_(75.63%)_Space_40.4_MB_(60.87%)
 
 class Solution {
     fun insert(intervals: Array<IntArray>, newInterval: IntArray): Array<IntArray> {

@@ -2,7 +2,7 @@ package g0001_0100.s0054_spiral_matrix
 
 // #Medium #Top_Interview_Questions #Array #Matrix #Simulation #Programming_Skills_II_Day_8
 // #Level_2_Day_1_Implementation/Simulation #Udemy_2D_Arrays/Matrix
-// #2022_08_29_Time_224_ms_(62.50%)_Space_34.4_MB_(63.36%)
+// #2023_07_10_Time_132_ms_(95.12%)_Space_33.5_MB_(93.17%)
 
 class Solution {
     fun spiralOrder(matrix: Array<IntArray>): List<Int> {

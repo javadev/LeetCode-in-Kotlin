@@ -2,7 +2,7 @@ package g0001_0100.s0053_maximum_subarray
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
 // #Divide_and_Conquer #Data_Structure_I_Day_1_Array #Dynamic_Programming_I_Day_5
-// #Udemy_Famous_Algorithm #2022_08_29_Time_662_ms_(82.48%)_Space_97.8_MB_(24.28%)
+// #Udemy_Famous_Algorithm #2023_07_10_Time_510_ms_(78.81%)_Space_54.7_MB_(69.00%)
 
 class Solution {
     fun maxSubArray(nums: IntArray): Int {
