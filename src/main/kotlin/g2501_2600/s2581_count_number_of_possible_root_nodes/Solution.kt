@@ -13,6 +13,7 @@ class Solution {
     private lateinit var graph: Array<MutableList<Int>?>
     private lateinit var guess: Array<HashSet<Int>?>
     private var ans = 0
+
     fun rootCount(edges: Array<IntArray>, guesses: Array<IntArray>, k: Int): Int {
         val n = edges.size + 1
         graph = arrayOfNulls(n)
