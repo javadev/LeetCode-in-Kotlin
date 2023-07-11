@@ -13,7 +13,7 @@ class Solution {
         val heap: Queue<Long> = PriorityQueue()
         val levels: Queue<TreeNode?> = LinkedList()
         levels.offer(root)
-        while (!levels.isEmpty()) {
+        while (levels.isNotEmpty()) {
             var sum: Long = 0
             val size: Int = levels.size
             for (i in 0 until size) {
