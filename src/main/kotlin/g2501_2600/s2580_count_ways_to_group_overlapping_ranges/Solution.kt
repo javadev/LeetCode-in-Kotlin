@@ -8,7 +8,7 @@ import java.util.Arrays
 class Solution {
     fun countWays(ranges: Array<IntArray>): Int {
         var cnt = 1
-        Arrays.sort(ranges) { a, b -> if (a[0] !== b[0]) a[0] - b[0] else a[1] - b[1] }
+        Arrays.sort(ranges) { a, b -> if (a[0] != b[0]) a[0] - b[0] else a[1] - b[1] }
         var curr = ranges[0]
         for (i in 1 until ranges.size) {
             if (ranges[i][1] < curr[0] || ranges[i][0] > curr[1]) {
