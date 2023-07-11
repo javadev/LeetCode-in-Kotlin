@@ -1,7 +1,7 @@
 package g0101_0200.s0109_convert_sorted_list_to_binary_search_tree
 
 // #Medium #Tree #Binary_Tree #Linked_List #Binary_Search_Tree #Divide_and_Conquer
-// #2022_09_28_Time_376_ms_(59.26%)_Space_43.3_MB_(66.67%)
+// #2023_07_11_Time_191_ms_(100.00%)_Space_39.5_MB_(61.54%)
 
 import com_github_leetcode.ListNode
 import com_github_leetcode.TreeNode

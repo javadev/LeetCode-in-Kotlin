@@ -1,7 +1,7 @@
 package g0101_0200.s0107_binary_tree_level_order_traversal_ii
 
 // #Medium #Breadth_First_Search #Tree #Binary_Tree
-// #2022_10_07_Time_204_ms_(98.04%)_Space_35.7_MB_(96.08%)
+// #2023_07_11_Time_187_ms_(87.50%)_Space_36.6_MB_(100.00%)
 
 import com_github_leetcode.TreeNode
 import java.util.Collections
@@ -19,6 +19,7 @@ import kotlin.collections.ArrayList
  */
 class Solution {
     private val order: MutableList<MutableList<Int>> = ArrayList()
+
     fun levelOrderBottom(root: TreeNode?): List<MutableList<Int>> {
         getOrder(root, 0)
         Collections.reverse(order)
