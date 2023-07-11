@@ -5,7 +5,6 @@ package g2501_2600.s2581_count_number_of_possible_root_nodes
 
 import java.util.ArrayList
 import java.util.HashSet
-import kotlin.collections.MutableList
 
 @Suppress("NAME_SHADOWING")
 class Solution {
