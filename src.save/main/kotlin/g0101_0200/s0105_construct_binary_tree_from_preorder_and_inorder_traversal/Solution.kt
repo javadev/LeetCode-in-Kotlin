@@ -2,10 +2,9 @@ package g0101_0200.s0105_construct_binary_tree_from_preorder_and_inorder_travers
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Tree #Binary_Tree
 // #Divide_and_Conquer #Data_Structure_II_Day_15_Tree
-// #2022_09_03_Time_370_ms_(58.31%)_Space_37.6_MB_(93.81%)
+// #2023_07_11_Time_183_ms_(95.45%)_Space_36.9_MB_(82.73%)
 
 import com_github_leetcode.TreeNode
-import java.util.HashMap
 
 /*
  * Example:
