@@ -3,9 +3,6 @@ package g2501_2600.s2584_split_the_array_to_make_coprime_products
 // #Hard #Array #Hash_Table #Math #Number_Theory
 // #2023_07_11_Time_341_ms_(100.00%)_Space_45.6_MB_(100.00%)
 
-import java.util.ArrayList
-import java.util.HashMap
-
 class Solution {
     private fun fillDivideArray() {
         for (i in 1 until divideTo.size) {
