@@ -11,8 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution().kthLargestLevelSum(
                 TreeNode.create(
-                    kotlin.collections
-                        .listOf(5, 8, 9, 2, 1, 3, 7, 4, 6)
+                    listOf(5, 8, 9, 2, 1, 3, 7, 4, 6)
                 ),
                 2
             ),
@@ -25,8 +24,7 @@ internal class SolutionTest {
         assertThat(
             Solution().kthLargestLevelSum(
                 TreeNode.create(
-                    kotlin.collections
-                        .listOf(1, 2, null, 3)
+                    listOf(1, 2, null, 3)
                 ),
                 1
             ),
