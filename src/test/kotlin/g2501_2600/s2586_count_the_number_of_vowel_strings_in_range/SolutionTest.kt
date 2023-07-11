@@ -12,6 +12,6 @@ internal class SolutionTest {
 
     @Test
     fun vowelStrings2() {
-        assertThat(Solution().vowelStrings(arrayOf("hey", "aeo", "mu", "ooo", "artro"), 1, 4), equalTo(2))
+        assertThat(Solution().vowelStrings(arrayOf("hey", "aeo", "mu", "ooo", "artro"), 1, 4), equalTo(3))
     }
 }
