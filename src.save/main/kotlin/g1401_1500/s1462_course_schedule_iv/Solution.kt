@@ -1,9 +1,11 @@
 package g1401_1500.s1462_course_schedule_iv
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort
+// #2023_07_12_Time_512_ms_(100.00%)_Space_56.4_MB_(92.31%)
+
 import java.util.LinkedList
 import java.util.Queue
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort
 class Solution {
     fun checkIfPrerequisite(
         numCourses: Int,

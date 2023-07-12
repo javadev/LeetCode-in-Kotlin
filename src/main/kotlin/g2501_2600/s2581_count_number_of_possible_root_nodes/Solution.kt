@@ -1,6 +1,6 @@
 package g2501_2600.s2581_count_number_of_possible_root_nodes
 
-// #Hard #Hash_Table #Dynamic_Programming #Tree #Depth_First_Search
+// #Hard #Hash_Table #Dynamic_Programming #Depth_First_Search #Tree
 // #2023_07_11_Time_1352_ms_(100.00%)_Space_138.7_MB_(100.00%)
 
 import java.util.ArrayList

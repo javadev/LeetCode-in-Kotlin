@@ -1,6 +1,6 @@
 package g2501_2600.s2556_disconnect_path_in_a_binary_matrix_by_at_most_one_flip
 
-// #Medium #Array #Dynamic_Programming #Matrix #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Matrix
 // #2023_07_06_Time_571_ms_(100.00%)_Space_68_MB_(100.00%)
 
 class Solution {
