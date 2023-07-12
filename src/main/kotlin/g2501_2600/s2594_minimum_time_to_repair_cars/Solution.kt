@@ -1,5 +1,7 @@
 package g2501_2600.s2594_minimum_time_to_repair_cars
 
+// #Medium #Array #Binary_Search #2023_07_12_Time_416_ms_(100.00%)_Space_56.8_MB_(100.00%)
+
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun repairCars(ranks: IntArray, cars: Int): Long {
