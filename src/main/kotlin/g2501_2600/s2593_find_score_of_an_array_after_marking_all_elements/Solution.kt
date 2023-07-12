@@ -16,7 +16,7 @@ class Solution {
         for (i in nums.indices) {
             pq.offer(intArrayOf(nums[i], i))
         }
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val it = pq.poll()
             if (!vis[it[1]]) {
                 vis[it[1]] = true
