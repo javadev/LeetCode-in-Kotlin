@@ -1,5 +1,8 @@
 package g2501_2600.s2598_smallest_missing_non_negative_integer_after_operations
 
+// #Medium #Array #Hash_Table #Math #Greedy
+// #2023_07_12_Time_594_ms_(100.00%)_Space_65.8_MB_(100.00%)
+
 class Solution {
     fun findSmallestInteger(nums: IntArray, value: Int): Int {
         val n = nums.size
