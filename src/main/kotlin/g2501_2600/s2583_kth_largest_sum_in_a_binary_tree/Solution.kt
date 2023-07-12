@@ -1,6 +1,6 @@
 package g2501_2600.s2583_kth_largest_sum_in_a_binary_tree
 
-// #Medium #Tree #Binary_Search #Breadth_First_Search
+// #Medium #Breadth_First_Search #Tree #Binary_Search
 // #2023_07_11_Time_557_ms_(83.33%)_Space_62.6_MB_(66.67%)
 
 import com_github_leetcode.TreeNode

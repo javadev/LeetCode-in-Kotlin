@@ -1,6 +1,6 @@
 package g2501_2600.s2596_check_knight_tour_configuration
 
-// #Medium #Array #Matrix #Simulation #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Simulation
 // #2023_07_12_Time_179_ms_(100.00%)_Space_39.1_MB_(100.00%)
 
 class Solution {

@@ -1,9 +1,9 @@
 package g1801_1900.s1847_closest_room
 
+// #Hard #Array #Sorting #Binary_Search #2023_06_22_Time_1179_ms_(100.00%)_Space_92.1_MB_(100.00%)
+
 import java.util.Arrays
 import java.util.TreeSet
-
-// #Hard #Array #Sorting #Binary_Search #2023_06_22_Time_1179_ms_(100.00%)_Space_92.1_MB_(100.00%)
 
 class Solution {
     fun closestRoom(rooms: Array<IntArray>, queries: Array<IntArray>): IntArray {
