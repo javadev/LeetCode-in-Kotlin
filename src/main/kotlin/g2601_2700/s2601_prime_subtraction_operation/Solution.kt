@@ -3,8 +3,6 @@ package g2601_2700.s2601_prime_subtraction_operation
 // #Medium #Array #Math #Greedy #Binary_Search #Number_Theory
 // #2023_07_13_Time_233_ms_(100.00%)_Space_38.4_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     private fun primesUntil(n: Int): IntArray {
         if (n < 2) return intArrayOf()
@@ -26,7 +24,7 @@ class Solution {
             }
             i += 2
         }
-        return Arrays.copyOf(primes, added)
+        return primes.copyOf(added)
     }
 
     fun primeSubOperation(nums: IntArray): Boolean {
