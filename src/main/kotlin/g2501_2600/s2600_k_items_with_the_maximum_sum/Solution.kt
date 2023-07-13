@@ -8,13 +8,10 @@ class Solution {
         if (k <= numOnes) {
             return k
         }
-
         if (k <= numOnes + numZeros) {
             return numOnes
         }
-
         val remainingSum = k - (numOnes + numZeros)
-
         return numOnes - remainingSum
     }
 }
