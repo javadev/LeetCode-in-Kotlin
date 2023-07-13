@@ -3,8 +3,6 @@ package g2601_2700.s2603_collect_coins_in_a_tree
 // #Hard #Array #Tree #Graph #Topological_Sort
 // #2023_07_13_Time_986_ms_(100.00%)_Space_67.7_MB_(100.00%)
 
-import java.util.ArrayList
-
 class Solution {
     private lateinit var coins: IntArray
     private var n = 0
