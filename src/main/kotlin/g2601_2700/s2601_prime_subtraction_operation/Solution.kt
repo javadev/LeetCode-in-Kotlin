@@ -35,7 +35,7 @@ class Solution {
         val primes = primesUntil(max)
         var prev = 0
         for (n in nums) {
-            val pos = Arrays.binarySearch(primes, n - prev - 1)
+            val pos = primes.binarySearch(n - prev - 1)
             if (pos == -1 && n <= prev) return false
             prev = n - if (pos == -1) 0 else if (pos < 0) primes[-pos - 2] else primes[pos]
         }
