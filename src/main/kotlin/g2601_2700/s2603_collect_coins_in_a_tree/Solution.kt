@@ -9,6 +9,7 @@ class Solution {
     private lateinit var graph: Array<ArrayList<Int>?>
     private var sum = 0
     private var ret = 0
+
     fun collectTheCoins(coins: IntArray, edges: Array<IntArray>): Int {
         n = coins.size
         this.coins = coins
@@ -37,11 +38,9 @@ class Solution {
                 s += r
             }
         }
-
         if (pre != -1 && sum - s - coins[node] - coins[pre] > 0) {
             cnt++
         }
-
         if (cnt >= 2) {
             ret++
         }
