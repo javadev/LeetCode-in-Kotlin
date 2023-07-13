@@ -2,8 +2,6 @@ package g2601_2700.s2605_form_smallest_number_from_two_digit_arrays
 
 // #Easy #Array #Hash_Table #Enumeration #2023_07_13_Time_161_ms_(100.00%)_Space_34.7_MB_(100.00%)
 
-import java.util.HashSet
-
 class Solution {
     fun minNumber(nums1: IntArray, nums2: IntArray): Int {
         val set = HashSet<Int>()
