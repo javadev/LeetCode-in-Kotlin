@@ -26,7 +26,7 @@ class Solution {
             sum += coin
         }
         dfs(0, -1)
-        return Math.max(2 * (ret - 1), 0)
+        return (2 * (ret - 1)).coerceAtLeast(0)
     }
 
     private fun dfs(node: Int, pre: Int): Int {
@@ -39,11 +39,11 @@ class Solution {
                 s += r
             }
         }
-        if (pre != -1) {
-            if (sum - s - coins[node] - coins[pre] > 0) {
-                cnt++
-            }
+
+        if (pre != -1 && sum - s - coins[node] - coins[pre] > 0) {
+            cnt++
         }
+
         if (cnt >= 2) {
             ret++
         }
