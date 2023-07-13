@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun kItemsWithMaximumSum() {
-        assertThat(Solution().kItemsWithMaximumSum(3, 2, 0, 2), equalTo(2))
+        assertThat(Solution().kItemsWithMaximumSum(3, 2, 2), equalTo(2))
     }
 
     @Test
     fun kItemsWithMaximumSum2() {
-        assertThat(Solution().kItemsWithMaximumSum(3, 2, 0, 4), equalTo(3))
+        assertThat(Solution().kItemsWithMaximumSum(3, 2, 4), equalTo(3))
     }
 }
