@@ -29,7 +29,7 @@ class Solution {
         val distance = IntArray(adj.size)
         distance.fill(-1)
         distance[node] = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val arr: IntArray = queue.poll()
             val topNode = arr[0]
             val from = arr[1]
