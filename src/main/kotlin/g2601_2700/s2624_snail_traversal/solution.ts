@@ -6,7 +6,7 @@ declare global {
   }
 }
 
-Array.prototype.snail = function(rowsCount: number, colsCount: number): number[][] {
+Array.prototype.snail = function(rowsCount: number, colsCount: number): number[][] { //NOSONAR
     if(rowsCount*colsCount !== this.length) return [];
     let res: number[][] = [];
     for(let i=0; i<this.length; i++) {
