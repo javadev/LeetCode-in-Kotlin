@@ -7,7 +7,7 @@ class TimeLimitedCache {
     }
 
     set(key: number, value: number, duration: number): boolean {
-        var existed:boolean = this.keyMap.has(key);
+        let existed:boolean = this.keyMap.has(key);
         if(existed) clearTimeout(this.keyMap.get(key).clearRef);
 
         this.keyMap.set(key,{
