@@ -6,7 +6,7 @@ declare global {
     }
 }
 
-Array.prototype.last = function <T>(): T | -1 {
+Array.prototype.last = function <T>(): T | -1 { //NOSONAR
   return this.length ? this.at(-1) : -1;
 };
 
