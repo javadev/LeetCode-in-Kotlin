@@ -40,7 +40,7 @@ function memoize(fn: Fn): Fn {
             }
         }
 
-        var value = fn.apply(null, args);
+        let value = fn.apply(null, args);
 
         currentCache.set(args[args.length - 1], value);
         return value;

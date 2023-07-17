@@ -3,7 +3,7 @@
 type F = (...p: any[]) => any
 
 function debounce(fn: F, t: number): F {
-    var ref = null;
+    let ref = null;
     return function(...args) {
         if(ref !== null) {
             clearTimeout(ref)
