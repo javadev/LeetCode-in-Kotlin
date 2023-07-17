@@ -1,40 +1,39 @@
 // #Medium #2023_07_16_Time_59_ms_(86.77%)_Space_42.4_MB_(94.28%)
 
 class TimeLimitedCache {
-    private keyMap:Map<number,any>;
+    private keyMap: Map<number, any>
     constructor() {
-        this.keyMap = new Map<number,any>();
+        this.keyMap = new Map<number, any>()
     }
 
     set(key: number, value: number, duration: number): boolean {
-        let existed:boolean = this.keyMap.has(key);
-        if(existed) clearTimeout(this.keyMap.get(key).clearRef);
+        let existed: boolean = this.keyMap.has(key)
+        if (existed) clearTimeout(this.keyMap.get(key).clearRef)
 
-        this.keyMap.set(key,{
+        this.keyMap.set(key, {
             value,
-            clearRef:setTimeout(()=>{
-                this.keyMap.delete(key);
-            },duration)
-        });
-        return existed;
+            clearRef: setTimeout(() => {
+                this.keyMap.delete(key)
+            }, duration),
+        })
+        return existed
     }
 
     get(key: number): number {
-        return this.keyMap.has(key) ? this.keyMap.get(key).value : -1;
+        return this.keyMap.has(key) ? this.keyMap.get(key).value : -1
     }
 
-	count(): number {
-        return this.keyMap.size;
+    count(): number {
+        return this.keyMap.size
     }
 }
 
 /**
- * let callCount = 0;
- * const memoizedFn = memoize(function (a, b) {
- *	 callCount += 1;
- *   return a + b;
- * })
- * memoizedFn(2, 3) // 5
- * memoizedFn(2, 3) // 5
- * console.log(callCount) // 1
+ * Your TimeLimitedCache object will be instantiated and called as such:
+ * var obj = new TimeLimitedCache()
+ * obj.set(1, 42, 1000); // false
+ * obj.get(1) // 42
+ * obj.count() // 1
  */
+
+export { TimeLimitedCache }
