@@ -1,5 +1,8 @@
 package g2601_2700.s2642_design_graph_with_shortest_path_calculator
 
+// #Hard #Design #Heap_Priority_Queue #Graph #Shortest_Path
+// #2023_07_18_Time_789_ms_(100.00%)_Space_69.8_MB_(25.00%)
+
 import java.util.PriorityQueue
 
 class Graph(n: Int, edges: Array<IntArray>) {
