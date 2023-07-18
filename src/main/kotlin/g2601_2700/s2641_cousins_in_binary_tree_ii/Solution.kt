@@ -17,6 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var horizontalSum: MutableList<Int?>? = null
+
     private fun traverse(root: TreeNode?, depth: Int) {
         if (root == null) {
             return
