@@ -5,6 +5,7 @@ package g0901_1000.s0947_most_stones_removed_with_same_row_or_column
 
 class Solution {
     private val roots = IntArray(20002)
+
     fun removeStones(stones: Array<IntArray>): Int {
         for (stone in stones) {
             init(stone[0] + 1, roots)
