@@ -1,7 +1,5 @@
 package g2601_2700.s2642_design_graph_with_shortest_path_calculator
 
-import java.util.ArrayList
-import java.util.HashMap
 import java.util.PriorityQueue
 
 class Graph(n: Int, edges: Array<IntArray>) {
@@ -22,16 +20,12 @@ class Graph(n: Int, edges: Array<IntArray>) {
     fun shortestPath(node1: Int, node2: Int): Int {
         val minHeap = PriorityQueue<Pair<Int, Int>> { a, b -> a.second - b.second }
         val distance = IntArray(adj.size) { Integer.MAX_VALUE }
-
         minHeap.add(node1 to 0)
         distance[node1] = 0
-
         while (minHeap.isNotEmpty()) {
             val (node, cost) = minHeap.poll()
-
             if (node == node2) return cost
             if (cost > distance[node]) continue
-
             adj[node]?.let {
                 for ((next, nextCost) in adj[node]!!) {
                     if (cost + nextCost < distance[next]) {
@@ -41,7 +35,6 @@ class Graph(n: Int, edges: Array<IntArray>) {
                 }
             }
         }
-
         return -1
     }
 }
