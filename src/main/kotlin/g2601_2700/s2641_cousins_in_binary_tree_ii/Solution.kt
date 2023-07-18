@@ -4,9 +4,8 @@ package g2601_2700.s2641_cousins_in_binary_tree_ii
 // #2023_07_18_Time_922_ms_(90.91%)_Space_67.3_MB_(36.36%)
 
 import com_github_leetcode.TreeNode
-import java.util.ArrayList
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
