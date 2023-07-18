@@ -7,14 +7,12 @@ class Solution {
         var max = Integer.MIN_VALUE
         var sum = 0L
         val res = LongArray(nums.size)
-
         for (i in 0 until nums.size) {
             val curr = nums[i]
             max = maxOf(max, curr)
             sum += max + curr
             res[i] = sum
         }
-
         return res
     }
 }
