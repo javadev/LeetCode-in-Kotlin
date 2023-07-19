@@ -5,12 +5,11 @@ function* fibGenerator(): Generator<number, any, number> {
     let second = 1;
     let value = 0;
     let count = 0;
-    while(true){
-        if(count <= 1){
+    while (true){
+        if (count <= 1){
             count++;
             yield value++;
-        }
-        else{
+        } else {
             value = first + second;
             first = second;
             second = value;
