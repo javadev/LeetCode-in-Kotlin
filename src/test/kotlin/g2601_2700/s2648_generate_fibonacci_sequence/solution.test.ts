@@ -3,10 +3,10 @@ import { fibGenerator } from 'src/main/kotlin/g2601_2700/s2648_generate_fibonacc
 import { expect, test } from 'vitest'
 
 test('fibGenerator', () => {
-    const counter = fibGenerator()
-    expect(counter.next().value).toEqual(0)
-    expect(counter.next().value).toEqual(1)
-    expect(counter.next().value).toEqual(1)
-    expect(counter.next().value).toEqual(2)
-    expect(counter.next().value).toEqual(3)
+    const gen = fibGenerator()
+    expect(gen.next().value).toEqual(0)
+    expect(gen.next().value).toEqual(1)
+    expect(gen.next().value).toEqual(1)
+    expect(gen.next().value).toEqual(2)
+    expect(gen.next().value).toEqual(3)
 })
