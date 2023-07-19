@@ -4,9 +4,9 @@ import { expect, test } from 'vitest'
 
 test('fibGenerator', () => {
     const counter = fibGenerator()
-    expect(gen.next().value).toEqual(0)
-    expect(gen.next().value).toEqual(1)
-    expect(gen.next().value).toEqual(1)
-    expect(gen.next().value).toEqual(2)
-    expect(gen.next().value).toEqual(3)
+    expect(counter.next().value).toEqual(0)
+    expect(counter.next().value).toEqual(1)
+    expect(counter.next().value).toEqual(1)
+    expect(counter.next().value).toEqual(2)
+    expect(counter.next().value).toEqual(3)
 })
