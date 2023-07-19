@@ -28,7 +28,7 @@ class Solution {
         start: Int,
         tgt: Int,
         counts: IntArray,
-        Adj: MutableList<MutableList<Int?>?>,
+        adj: MutableList<MutableList<Int?>?>,
         vis: BooleanArray
     ): Boolean {
         if (vis[start]) return false
@@ -38,8 +38,8 @@ class Solution {
             return true
         }
         var ans = false
-        for (adjacent in Adj[start]!!) {
-            ans = ans or dfsTraverse(adjacent!!, tgt, counts, Adj, vis)
+        for (adjacent in adj[start]!!) {
+            ans = ans or dfsTraverse(adjacent!!, tgt, counts, adj, vis)
         }
         if (ans) {
             counts[start]++
@@ -49,31 +49,31 @@ class Solution {
 
     private fun dpDFS(
         node: Int,
-        DP: IntArray,
-        Adj: MutableList<MutableList<Int?>?>,
+        dp: IntArray,
+        adj: MutableList<MutableList<Int?>?>,
         paths: BooleanArray,
         prices: IntArray,
         counts: IntArray
     ): Int {
         if (paths[node]) return 0
-        if (DP[node] != -1) return DP[node]
+        if (dp[node] != -1) return dp[node]
         var ans1 = 0
         var ans2 = 0
         var childval = 0
         paths[node] = true
-        for (child1 in Adj[node]!!) {
+        for (child1 in adj[node]!!) {
             if (paths[child1!!]) continue
             paths[child1] = true
-            for (child2 in Adj[child1]!!) {
-                val `val` = dpDFS(child2!!, DP, Adj, paths, prices, counts)
+            for (child2 in adj[child1]!!) {
+                val `val` = dpDFS(child2!!, dp, adj, paths, prices, counts)
                 ans2 += `val`
             }
             paths[child1] = false
             childval += counts[child1] * prices[child1]
-            ans1 += dpDFS(child1, DP, Adj, paths, prices, counts)
+            ans1 += dpDFS(child1, dp, adj, paths, prices, counts)
         }
         val ans = (ans2 + childval + prices[node] * counts[node] / 2).coerceAtMost(ans1 + prices[node] * counts[node])
         paths[node] = false
-        return ans.also { DP[node] = it }
+        return ans.also { dp[node] = it }
     }
 }

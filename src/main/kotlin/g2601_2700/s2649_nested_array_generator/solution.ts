@@ -8,8 +8,8 @@ function* inorderTraversal(arr: MultidimensionalArray): Generator<number, void, 
     return;
   }
 
-  for (let i = 0; i < arr.length; i++) {
-    yield* inorderTraversal(arr[i] as MultidimensionalArray);
+  for (let value of arr) {
+    yield* inorderTraversal(value as MultidimensionalArray);
   }
 }
 
