@@ -6,7 +6,7 @@ function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => 
         isCancelled = true
     }
 
-    const promise = new Promise<T>(async (resolve, reject) => {
+    const promise = new Promise<T>(async (resolve, reject) => { //NOSONAR
         try {
             let lastYielded = generator.next()
             while (!lastYielded.done) {
