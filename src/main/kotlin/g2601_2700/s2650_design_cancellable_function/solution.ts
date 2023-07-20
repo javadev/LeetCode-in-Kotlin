@@ -2,6 +2,7 @@
 
 function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => void, Promise<T>] {
     let isCancelled = false
+
     function cancel() {
         isCancelled = true
     }
@@ -36,3 +37,5 @@ function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => 
  * setTimeout(cancel, 50);
  * promise.catch(console.log); // logs "Cancelled" at t=50ms
  */
+
+export { cancellable }
