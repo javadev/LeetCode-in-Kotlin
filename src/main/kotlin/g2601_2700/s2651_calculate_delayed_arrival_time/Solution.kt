@@ -7,6 +7,6 @@ class Solution {
         if (ar + de >= 24) {
             return kotlin.math.abs(ar + de - 24)
         }
-        return if (ar + de == 24) 0 else ar + de
+        return ar + de
     }
 }
