@@ -8,7 +8,6 @@ class Solution {
         var list = mutableListOf<Int>()
         var padding = 0
         var result = nums.size
-
         for (i in 0 until nums.size) {
             val n = nums[i]
             if (n == 1) {
@@ -16,27 +15,20 @@ class Solution {
             }
             g = gcd(g, n)
             if (i == nums.size - 1) continue
-
             val m = nums[i + 1]
             list.add(gcd(m, n))
         }
-
         if (g > 1) return -1
-
         while (!list.any { it == 1 }) {
             padding++
             val nlist = mutableListOf<Int>()
-
             for (i in 0 until list.size - 1) {
                 val n = list[i]
                 val m = list[i + 1]
-
                 nlist.add(gcd(m, n))
             }
-
             list = nlist
         }
-
         return result + padding
     }
 
