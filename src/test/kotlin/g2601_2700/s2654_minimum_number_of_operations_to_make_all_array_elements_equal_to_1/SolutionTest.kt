@@ -20,4 +20,12 @@ internal class SolutionTest {
             equalTo(-1)
         )
     }
+
+    @Test
+    fun minOperations3() {
+        assertThat(
+            Solution().minOperations(intArrayOf(6,10,15)),
+            equalTo(4)
+        )
+    }
 }
