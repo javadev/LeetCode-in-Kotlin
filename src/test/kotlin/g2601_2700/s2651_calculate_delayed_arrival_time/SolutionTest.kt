@@ -20,4 +20,12 @@ internal class SolutionTest {
             equalTo(0)
         )
     }
+
+    @Test
+    fun findDelayedArrivalTime3() {
+        assertThat(
+            Solution().findDelayedArrivalTime(14, 11),
+            equalTo(1)
+        )
+    }
 }
