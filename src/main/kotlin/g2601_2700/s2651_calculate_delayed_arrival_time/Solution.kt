@@ -4,7 +4,7 @@ package g2601_2700.s2651_calculate_delayed_arrival_time
 
 class Solution {
     fun findDelayedArrivalTime(ar: Int, de: Int): Int {
-        if (ar + de >= 24 || de + ar >= 24) {
+        if (ar + de >= 24) {
             return kotlin.math.abs(ar + de - 24)
         }
         return if (ar + de == 24) 0 else ar + de
