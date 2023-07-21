@@ -13,8 +13,8 @@ function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => 
             while (!lastYielded.done) {
                 try {
                     const res = await lastYielded.value
-                    lastYielded = isCancelled ? generator.throw("Cancelled") : generator.next(res)
-                } catch(err) {
+                    lastYielded = isCancelled ? generator.throw('Cancelled') : generator.next(res)
+                } catch (err) {
                     lastYielded = generator.throw(err)
                 }
             }
@@ -25,7 +25,7 @@ function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => 
     })
 
     return [cancel, promise]
-};
+}
 
 /*
  * function* tasks() {
