@@ -2,8 +2,6 @@ package g2601_2700.s2657_find_the_prefix_common_array_of_two_arrays
 
 // #Medium #Array #Hash_Table #2023_07_21_Time_288_ms_(88.89%)_Space_39.9_MB_(100.00%)
 
-import java.util.HashSet
-
 class Solution {
     fun findThePrefixCommonArray(a: IntArray, b: IntArray): IntArray {
         val hsA = HashSet<Int>()
