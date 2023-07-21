@@ -16,15 +16,10 @@ Return _an integer denoting the number of operations it takes to make_ `nums` _e
 **Output:** 5
 
     Operation   Array
-    
     1           [4, -1, 3]
-    
     2           [-1, 3, 4]
-    
     3           [3, 4]
-    
     4           [4]
-    
     5           []
 
 **Example 2:**
@@ -34,15 +29,10 @@ Return _an integer denoting the number of operations it takes to make_ `nums` _e
 **Output:** 5
 
     Operation   Array
-    
     1           [2, 4, 3]
-    
     2           [4, 3]
-    
     3           [3, 4]
-    
     4           [4]
-    
     5           []
 
 **Example 3:**
@@ -52,11 +42,8 @@ Return _an integer denoting the number of operations it takes to make_ `nums` _e
 **Output:** 3
 
     Operation   Array
-    
     1           [2, 3]
-    
     2           [3]
-    
     3           []
 
 **Constraints:**
