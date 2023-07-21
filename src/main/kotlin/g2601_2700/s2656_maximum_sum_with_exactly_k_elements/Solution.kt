@@ -4,6 +4,6 @@ package g2601_2700.s2656_maximum_sum_with_exactly_k_elements
 
 class Solution {
     fun maximizeSum(nums: IntArray, k: Int): Int {
-        return k * (nums.max() ?: 0) + k * (k - 1) / 2
+        return k * nums.max() + k * (k - 1) / 2
     }
 }
