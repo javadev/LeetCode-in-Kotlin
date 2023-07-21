@@ -5,15 +5,15 @@ package g2601_2700.s2657_find_the_prefix_common_array_of_two_arrays
 import java.util.HashSet
 
 class Solution {
-    fun findThePrefixCommonArray(A: IntArray, B: IntArray): IntArray {
+    fun findThePrefixCommonArray(a: IntArray, b: IntArray): IntArray {
         val hsA = HashSet<Int>()
         val hsB = HashSet<Int>()
         val addedA = HashSet<Int>()
         val addedB = HashSet<Int>()
-        val res = IntArray(A.size)
-        for (i in A.indices) {
-            val numA = A[i]
-            val numB = B[i]
+        val res = IntArray(a.size)
+        for (i in a.indices) {
+            val numA = a[i]
+            val numB = b[i]
             hsA.add(numA)
             hsB.add(numB)
             if (i > 0) res[i] += res[i - 1] else res[i] = 0
