@@ -3,5 +3,15 @@ import { sleep } from 'src/main/kotlin/g2601_2700/s2621_sleep/solution'
 import { expect, test } from 'vitest'
 
 test('sleep', () => {
-    expect(1).toEqual(10)
+    let t = Date.now()
+    sleep(100).then(() => {
+        expect(Date.now() - t).toEqual(100)
+    })
+})
+
+test('sleep2', () => {
+    let t = Date.now()
+    sleep(200).then(() => {
+        expect(Date.now() - t).toEqual(200)
+    })
 })
