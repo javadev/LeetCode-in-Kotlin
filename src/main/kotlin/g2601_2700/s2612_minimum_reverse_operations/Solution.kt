@@ -1,6 +1,6 @@
 package g2601_2700.s2612_minimum_reverse_operations
 
-// #Hard #Array #Ordered_Set #Breadth_First_Search
+// #Hard #Array #Breadth_First_Search #Ordered_Set
 // #2023_07_14_Time_923_ms_(100.00%)_Space_66.3_MB_(66.67%)
 
 class Solution {

@@ -1,6 +1,6 @@
 package g2601_2700.s2646_minimize_the_total_price_of_the_trips
 
-// #Hard #Array #Dynamic_Programming #Tree #Graph #Depth_First_Search
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Graph
 // #2023_07_19_Time_264_ms_(100.00%)_Space_39.6_MB_(100.00%)
 
 class Solution {

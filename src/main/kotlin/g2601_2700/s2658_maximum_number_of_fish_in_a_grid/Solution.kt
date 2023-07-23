@@ -1,6 +1,6 @@
 package g2601_2700.s2658_maximum_number_of_fish_in_a_grid
 
-// #Medium #Array #Matrix #Union_Find #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
 // #2023_07_21_Time_269_ms_(80.00%)_Space_45.4_MB_(80.00%)
 
 class Solution {
