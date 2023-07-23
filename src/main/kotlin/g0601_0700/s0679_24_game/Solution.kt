@@ -2,11 +2,10 @@ package g0601_0700.s0679_24_game
 
 // #Hard #Array #Math #Backtracking #2023_02_16_Time_175_ms_(100.00%)_Space_34.7_MB_(100.00%)
 
-import java.util.Arrays
 import kotlin.math.abs
 
 class Solution {
-    private fun backtrack(list: DoubleArray, n: Int): Boolean {
+    private fun backtrack(list: Array<Double>, n: Int): Boolean {
         if (n == 1) {
             return abs(list[0] - 24) < EPS
         }
@@ -51,7 +50,7 @@ class Solution {
     }
 
     fun judgePoint24(nums: IntArray): Boolean {
-        val a = Arrays.stream(nums).asDoubleStream().toArray()
+        val a = nums.map { it.toDouble() }.toTypedArray()
         return backtrack(a, a.size)
     }
 
