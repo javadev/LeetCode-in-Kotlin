@@ -3,12 +3,10 @@ package g0901_1000.s0954_array_of_doubled_pairs
 // #Medium #Array #Hash_Table #Sorting #Greedy
 // #2023_05_02_Time_462_ms_(100.00%)_Space_92.1_MB_(50.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun canReorderDoubled(arr: IntArray): Boolean {
-        val max = 0.coerceAtLeast(Arrays.stream(arr).max().asInt)
-        val min = 0.coerceAtMost(Arrays.stream(arr).min().asInt)
+        val max = 0.coerceAtLeast(arr.max())
+        val min = 0.coerceAtMost(arr.min())
         val positive = IntArray(max + 1)
         val negative = IntArray(-min + 1)
         for (a in arr) {

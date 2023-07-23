@@ -2,8 +2,6 @@ package g0501_0600.s0552_student_attendance_record_ii
 
 // #Hard #Dynamic_Programming #2023_01_17_Time_151_ms_(100.00%)_Space_33.3_MB_(100.00%)
 
-import java.util.Arrays
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun checkRecord(n: Int): Int {
@@ -21,7 +19,7 @@ class Solution {
         )
         val e = quickPower(matrix, n - 1)
         return (
-            (Arrays.stream(e[0]).sum() + Arrays.stream(e[1]).sum() + Arrays.stream(e[3]).sum()) %
+            (e[0].sum() + e[1].sum() + e[3].sum()) %
                 mod
             ).toInt()
     }
