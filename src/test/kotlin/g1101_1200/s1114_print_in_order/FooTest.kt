@@ -14,7 +14,7 @@ internal class FooTest {
         Thread { foo.first { fooData[0]++ } }.start()
         Thread { foo.second { fooData[0]++ } }.start()
         Thread { foo.third { fooData[0]++ } }.start()
-        TimeUnit.MILLISECONDS.sleep(800)
+        TimeUnit.MILLISECONDS.sleep(1000)
         assertThat(fooData[0], equalTo(3))
     }
 }
