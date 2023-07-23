@@ -1,6 +1,6 @@
 package g2601_2700.s2608_shortest_cycle_in_a_graph
 
-// #Hard #Graph #Breadth_First_Search #2023_07_14_Time_1061_ms_(100.00%)_Space_54.9_MB_(100.00%)
+// #Hard #Breadth_First_Search #Graph #2023_07_14_Time_1061_ms_(100.00%)_Space_54.9_MB_(100.00%)
 
 import java.util.LinkedList
 import java.util.Queue
