@@ -4,7 +4,6 @@ package g0101_0200.s0144_binary_tree_preorder_traversal
 // #Udemy_Tree_Stack_Queue #2022_10_09_Time_277_ms_(37.90%)_Space_34.2_MB_(82.19%)
 
 import com_github_leetcode.TreeNode
-import java.util.Stack
 
 /*
  * Example:
@@ -22,15 +21,15 @@ class Solution {
         if (root == null) {
             return result
         }
-        val stack: Stack<TreeNode> = Stack<TreeNode>()
+        val stack: ArrayDeque<TreeNode?> = ArrayDeque()
         var current: TreeNode? = root
         while (current != null || stack.isNotEmpty()) {
             while (current != null) {
                 result.add(current.`val`)
-                stack.push(current.right)
+                stack.addLast(current.right)
                 current = current.left
             }
-            current = stack.pop()
+            current = stack.removeLast()
         }
         return result
     }

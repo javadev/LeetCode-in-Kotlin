@@ -4,7 +4,6 @@ package g0701_0800.s0770_basic_calculator_iv
 // #2023_03_10_Time_222_ms_(100.00%)_Space_39.2_MB_(100.00%)
 
 import java.util.Collections
-import java.util.Stack
 
 class Solution {
     internal inner class Node {
@@ -126,10 +125,10 @@ class Solution {
         return 0
     }
 
-    private fun helper(numS: Stack<Node>, ops: Stack<Char>): Node {
-        val b = numS.pop()
-        val a = numS.pop()
-        val op = ops.pop()
+    private fun helper(numS: ArrayDeque<Node>, ops: ArrayDeque<Char>): Node {
+        val b = numS.removeLast()
+        val a = numS.removeLast()
+        val op = ops.removeLast()
         if (op == '*') {
             return a.mul(b)
         } else if (op == '+') {
@@ -148,8 +147,8 @@ class Solution {
             vars[evalvarS[i]] = evalintS[i]
         }
         val n = expression.length
-        val numS = Stack<Node>()
-        val ops = Stack<Char>()
+        val numS = ArrayDeque<Node>()
+        val ops = ArrayDeque<Char>()
         var i = 0
         while (i < n) {
             val a = expression[i]
@@ -162,12 +161,12 @@ class Solution {
             } else if (a == '(') {
                 ops.add(a)
             } else if (a == ')') {
-                while (ops.peek() != '(') {
+                while (ops.last() != '(') {
                     numS.add(helper(numS, ops))
                 }
-                ops.pop()
+                ops.removeLast()
             } else if (a == '+' || a == '-' || a == '*') {
-                while (ops.isNotEmpty() && getPriority(ops.peek()) >= getPriority(a)) {
+                while (ops.isNotEmpty() && getPriority(ops.last()) >= getPriority(a)) {
                     numS.add(helper(numS, ops))
                 }
                 ops.add(a)
@@ -177,6 +176,6 @@ class Solution {
         while (ops.isNotEmpty()) {
             numS.add(helper(numS, ops))
         }
-        return numS.peek().evaluate(vars).toList()
+        return numS.last().evaluate(vars).toList()
     }
 }
