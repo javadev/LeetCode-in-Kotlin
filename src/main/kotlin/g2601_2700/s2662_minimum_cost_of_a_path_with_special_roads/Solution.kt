@@ -16,14 +16,11 @@ class Solution {
             val p = Point(road[0], road[1])
             val q = Point(road[2], road[3])
             val cost = road[4]
-
             if (costMap.getOrDefault(Pair(p, q), Int.MAX_VALUE) > cost) {
                 costMap[Pair(p, q)] = cost
             }
-
             pointList.add(p)
             pointList.add(q)
-
             distMap[p] = Int.MAX_VALUE
             distMap[q] = Int.MAX_VALUE
         }
@@ -50,7 +47,6 @@ class Solution {
                 }
             }
         }
-
         return -1
     }
 
