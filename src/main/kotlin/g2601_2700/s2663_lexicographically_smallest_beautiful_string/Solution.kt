@@ -18,23 +18,14 @@ class Solution {
                 }
             }
             if (!canbuild) continue
-
             for (j in i + 1 until n) {
                 charr[j] = 'a'
                 while (!isValid(charr, j)) {
                     ++charr[j]
-                    if (charr[j] > 'a' + k - 1) {
-                        canbuild = false
-                        break
-                    }
                 }
-
-                if (!canbuild) break
             }
-
-            if (canbuild) return StringBuilder().append(charr).toString()
+            return StringBuilder().append(charr).toString()
         }
-
         return ""
     }
 
