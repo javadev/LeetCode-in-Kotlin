@@ -21,7 +21,11 @@ A string `a` is lexicographically larger than a string `b` (of the same length) 
 
 **Output:** "abda"
 
-**Explanation:** The string "abda" is beautiful and lexicographically larger than the string "abcz". It can be proven that there is no string that is lexicographically larger than the string "abcz", beautiful, and lexicographically smaller than the string "abda".
+**Explanation:**
+
+The string "abda" is beautiful and lexicographically larger than the string "abcz".
+
+It can be proven that there is no string that is lexicographically larger than the string "abcz", beautiful, and lexicographically smaller than the string "abda".
 
 **Example 2:**
 
