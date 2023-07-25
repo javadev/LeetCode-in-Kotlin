@@ -12,14 +12,14 @@ class Solution {
         for (i in mat.indices) {
             var maxV = 0
             for (j in mat[0].indices) {
-                maxV = maxV.coerceAtLeast(map.get(mat[i][j])!!)
+                maxV = maxV.coerceAtLeast(map[mat[i][j]]!!)
             }
             ans = ans.coerceAtMost(maxV)
         }
         for (i in mat[0].indices) {
             var maxV = 0
             for (j in mat.indices) {
-                maxV = maxV.coerceAtLeast(map.get(mat[j][i])!!)
+                maxV = maxV.coerceAtLeast(map[mat[j][i]]!!)
             }
             ans = ans.coerceAtMost(maxV)
         }

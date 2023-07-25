@@ -33,7 +33,7 @@ class Solution {
         val points = pointList.distinct()
         val pq = PriorityQueue<PointWithCost>()
         pq.offer(PointWithCost(sp, 0))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val curr = pq.poll()
             val cost = curr.cost
             val cp = curr.p
