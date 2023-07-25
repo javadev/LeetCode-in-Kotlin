@@ -7,22 +7,22 @@ type ReturnObj = {
 }
 
 function createCounter(init: number): ReturnObj {
-    let n = init;
+    let n = init
     return {
         increment: () => {
-            n = n + 1;
-            return n;
+            n = n + 1
+            return n
         },
         decrement: () => {
-            n = n - 1;
-            return n;
+            n = n - 1
+            return n
         },
         reset: () => {
-            n = init;
-            return n;
+            n = init
+            return n
         }
     }
-};
+}
 
 /*
  * const counter = createCounter(5)
@@ -30,3 +30,5 @@ function createCounter(init: number): ReturnObj {
  * counter.reset(); // 5
  * counter.decrement(); // 4
  */
+
+export { createCounter }
