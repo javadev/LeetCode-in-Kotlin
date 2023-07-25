@@ -24,7 +24,7 @@ internal class SolutionTest {
     @Test
     fun smallestBeautifulString3() {
         assertThat(
-            Solution().smallestBeautifulString("abcd", 4),
+            Solution().smallestBeautifulString("abda", 4),
             equalTo("acba")
         )
     }
