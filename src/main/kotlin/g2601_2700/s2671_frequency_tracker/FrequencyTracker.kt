@@ -5,6 +5,7 @@ package g2601_2700.s2671_frequency_tracker
 class FrequencyTracker() {
     private val count = IntArray(100001)
     private val freq = IntArray(100001)
+
     fun add(number: Int) {
         val curFreq = ++count[number]
         freq[curFreq - 1]--
@@ -29,3 +30,4 @@ class FrequencyTracker() {
  * obj.deleteOne(number)
  * var param_3 = obj.hasFrequency(frequency)
  */
+ 
