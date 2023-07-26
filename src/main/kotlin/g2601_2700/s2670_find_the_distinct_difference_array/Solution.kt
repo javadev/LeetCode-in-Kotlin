@@ -10,14 +10,12 @@ class Solution {
         val preList = IntArray(n)
         val sufList = IntArray(n)
         val ans = IntArray(n)
-
         for (i in 0..nums.lastIndex) {
             prefixSet.add(nums[i])
             suffixSet.add(nums[n - 1 - i])
             preList[i] = prefixSet.size
             sufList[n - 1 - i] = suffixSet.size
         }
-
         for (i in 0..nums.lastIndex) {
             if (i == nums.lastIndex) {
                 ans[i] = preList[i]
