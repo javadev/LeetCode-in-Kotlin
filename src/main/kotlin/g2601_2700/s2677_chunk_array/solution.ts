@@ -6,7 +6,7 @@ function chunk(arr: any[], size: number): any[][] {
     let i:number = 0
     let res: Array<Array<number>> = []
     while (i < arr.length) {
-        res.push(arr.slice(i,i+size))
+        res.push(arr.slice(i, i+size))
         i += size
     }
     return res
