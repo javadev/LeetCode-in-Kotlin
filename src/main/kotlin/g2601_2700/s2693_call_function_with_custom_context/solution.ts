@@ -2,13 +2,13 @@
 
 declare global {
     interface Function {
-      callPolyfill(context: Record<any, any>, ...args: any[]): any;
+      callPolyfill(context: Record<any, any>, ...args: any[]): any
 	}
 }
 
 Function.prototype.callPolyfill = function(context, ...args): any {
     let fn = this.bind(context);
-    return fn(...args);
+    return fn(...args)
 }
 
 /*
