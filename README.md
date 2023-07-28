@@ -1,6 +1,6 @@
 # LeetCode-in-Kotlin
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-kotlin?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-kotlin/1.14)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-kotlin?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-kotlin/1.15)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg) ](https://github.com/javadev/leetcode-in-kotlin/blob/main/LICENSE)
 [![Java CI with Maven](https://github.com/javadev/LeetCode-in-Kotlin/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Kotlin/actions/workflows/maven.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Kotlin&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Kotlin)
