@@ -24,7 +24,6 @@ class Solution {
                 result = result.coerceAtLeast(dp[r][c])
             }
         }
-
         return result
     }
 }
