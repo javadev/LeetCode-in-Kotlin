@@ -1,24 +1,24 @@
 // #Easy #2023_07_29_Time_49_ms_(97.88%)_Space_42.3_MB_(89.10%)
 
 type ToBeOrNotToBe = {
-    toBe: (val: any) => boolean;
-    notToBe: (val: any) => boolean;
+    toBe: (val: any) => boolean
+    notToBe: (val: any) => boolean
 };
 
 const expect = (val: any): ToBeOrNotToBe => ({
     toBe: (equality: any) => {
         if (val !== equality) {
-            throw new Error("Not Equal");
+            throw new Error("Not Equal")
         }
-        return true;
+        return true
     },
     notToBe: (equality: any) => {
         if (val === equality) {
-            throw new Error("Equal");
+            throw new Error("Equal")
         }
-        return true;
+        return true
     },
-});
+})
 
 /*
  * expect(5).toBe(5); // true
