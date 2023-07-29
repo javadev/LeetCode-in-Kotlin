@@ -11,12 +11,10 @@ class EventEmitter {
     subscribe(eventName: string, callback: Callback): Subscription {
         if (!this.subs[eventName])
             this.subs[eventName] = []
-        
         const idx = this.subs[eventName].push(callback) - 1
-
         return {
             unsubscribe: () => this.subs[eventName].splice(idx, 1)
-        };
+        }
     }
 
     emit(eventName: string, args: any[] = []): any[] {
