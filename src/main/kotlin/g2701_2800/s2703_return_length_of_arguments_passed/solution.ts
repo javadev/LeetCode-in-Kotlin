@@ -4,7 +4,7 @@ function argumentsLength(...args: any[]): number {
 
 	let result = 0;
 
-	for(let index = 0 ; index < args.length ; index++){
+	for(let value of args){
 		result = result + 1;
 	}
 

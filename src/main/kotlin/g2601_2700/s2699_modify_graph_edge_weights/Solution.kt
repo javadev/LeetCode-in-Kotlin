@@ -79,7 +79,7 @@ class Solution {
         val q = PriorityQueue<Pair>()
         q.add(Pair(s, 0))
         val vis = BooleanArray(n)
-        while (q.size > 0) {
+        while (q.isNotEmpty()) {
             val rem = q.remove()
             vis[rem.s] = true
             if (rem.s == d) return rem.cost
