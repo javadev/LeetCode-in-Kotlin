@@ -7,9 +7,9 @@ test('compactObject', () => {
 })
 
 test('compactObject2', () => {
-    expect(compactObject({"a": null, "b": [false, 1]})).toEqual({"b": [1]})
+    expect(compactObject({ a: null, b: [false, 1] })).toEqual({ b: [1] })
 })
 
-test('compactObject', () => {
-    expect(compactObject([null, 0, 5, [0], [false, 16]])).toEqual( [5, [], [16]])
+test('compactObject3', () => {
+    expect(compactObject([null, 0, 5, [0], [false, 16]])).toEqual([5, [], [16]])
 })

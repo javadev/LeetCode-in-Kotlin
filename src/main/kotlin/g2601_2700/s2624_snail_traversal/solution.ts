@@ -19,7 +19,7 @@ Array.prototype.snail = function (rowsCount: number, colsCount: number): number[
     return res
 }
 
-/**
+/*
  * const arr = [1,2,3,4];
  * arr.snail(1,4); // [[1,2,3,4]]
  */

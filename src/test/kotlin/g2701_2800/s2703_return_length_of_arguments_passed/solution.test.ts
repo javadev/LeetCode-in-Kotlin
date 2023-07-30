@@ -7,5 +7,5 @@ test('argumentsLength', () => {
 })
 
 test('argumentsLength2', () => {
-    expect(argumentsLength({}, null, "3")).toEqual(3)
+    expect(argumentsLength({}, null, '3')).toEqual(3)
 })

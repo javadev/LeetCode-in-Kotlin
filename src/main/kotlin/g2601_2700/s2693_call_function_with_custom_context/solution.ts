@@ -6,7 +6,7 @@ declare global {
     }
 }
 
-Function.prototype.callPolyfill = function (context, ...args): any {
+Function.prototype.callPolyfill = function (context, ...args): any { //NOSONAR
     let fn = this.bind(context)
     return fn(...args)
 }
@@ -16,4 +16,4 @@ Function.prototype.callPolyfill = function (context, ...args): any {
  * increment.callPolyfill({count: 1}); // 2
  */
 
-export { Function.prototype.callPolyfill }
+export {}

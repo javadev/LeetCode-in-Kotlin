@@ -11,7 +11,7 @@ function checkIfInstanceOf(obj: any, classFunction: any): boolean {
     return false
 }
 
-/**
+/*
  * checkIfInstanceOf(new Date(), Date); // true
  */
 

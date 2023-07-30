@@ -1,6 +1,6 @@
 // #Medium #2023_07_29_Time_45_ms_(99.58%)_Space_44.6_MB_(72.08%)
 
-type Callback = (...args: any[]) => any;
+type Callback = (...args: any[]) => any
 type Subscription = {
     unsubscribe: () => void
 }
@@ -9,16 +9,15 @@ class EventEmitter {
     subs: Record<string, Callback[]> = {}
 
     subscribe(eventName: string, callback: Callback): Subscription {
-        if (!this.subs[eventName])
-            this.subs[eventName] = []
+        if (!this.subs[eventName]) this.subs[eventName] = []
         const idx = this.subs[eventName].push(callback) - 1
         return {
-            unsubscribe: () => this.subs[eventName].splice(idx, 1)
+            unsubscribe: () => this.subs[eventName].splice(idx, 1),
         }
     }
 
     emit(eventName: string, args: any[] = []): any[] {
-        return this.subs[eventName]?.map(callback => callback(...args)) || []
+        return this.subs[eventName]?.map((callback) => callback(...args)) || []
     }
 }
 
@@ -34,4 +33,4 @@ class EventEmitter {
  * emitter.emit('onClick'); // []
  */
 
- export { EventEmitter }
+export { EventEmitter }

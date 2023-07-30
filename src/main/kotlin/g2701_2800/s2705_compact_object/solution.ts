@@ -13,13 +13,13 @@ function compactObject(obj: Obj): Obj {
         return retArr
     } else if (obj !== null && typeof obj === 'object') {
         let retObj = {}
-        for(const key of Object.keys(obj)) {
-            if(obj[key]) {
+        for (const key of Object.keys(obj)) {
+            if (obj[key]) {
                 retObj[key] = compactObject(obj[key])
             }
         }
         return retObj
-    } 
+    }
     return obj
 }
 
