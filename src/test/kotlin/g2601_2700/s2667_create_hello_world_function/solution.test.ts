@@ -7,7 +7,7 @@ test('createHelloWorld', () => {
     expect(counter()).toEqual('Hello World')
 })
 
-test('createHelloWorld', () => {
+test('createHelloWorld2', () => {
     const counter = createHelloWorld()
     expect(counter({}, null, 42)).toEqual('Hello World')
 })

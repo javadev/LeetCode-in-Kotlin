@@ -1,9 +1,9 @@
 // #Easy #2023_07_25_Time_65_ms_(86.59%)_Space_44.8_MB_(93.23%)
 
 type ReturnObj = {
-    increment: () => number,
-    decrement: () => number,
-    reset: () => number,
+    increment: () => number
+    decrement: () => number
+    reset: () => number
 }
 
 function createCounter(init: number): ReturnObj {
@@ -20,7 +20,7 @@ function createCounter(init: number): ReturnObj {
         reset: () => {
             n = init
             return n
-        }
+        },
     }
 }
 

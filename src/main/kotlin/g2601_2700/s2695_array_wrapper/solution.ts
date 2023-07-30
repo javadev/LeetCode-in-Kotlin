@@ -1,19 +1,19 @@
 // #Easy #2023_07_29_Time_40_ms_(100.00%)_Space_45_MB_(48.83%)
 
 class ArrayWrapper {
-    nums: number[];
+    nums: number[]
     constructor(nums: number[]) {
-        this.nums = nums;
+        this.nums = nums
     }
 
     valueOf() {
-        return this.nums.reduce((n, a) => n + a, 0);
+        return this.nums.reduce((n, a) => n + a, 0)
     }
 
     toString() {
         return '[' + this.nums.join(',') + ']'
     }
-};
+}
 
 /*
  * const obj1 = new ArrayWrapper([1,2]);
@@ -23,4 +23,4 @@ class ArrayWrapper {
  * String(obj2); // "[3,4]"
  */
 
- export { ArrayWrapper }
+export { ArrayWrapper }

@@ -3,18 +3,18 @@
 type ToBeOrNotToBe = {
     toBe: (val: any) => boolean
     notToBe: (val: any) => boolean
-};
+}
 
 const expect = (val: any): ToBeOrNotToBe => ({
     toBe: (equality: any) => {
         if (val !== equality) {
-            throw new Error("Not Equal")
+            throw new Error('Not Equal')
         }
         return true
     },
     notToBe: (equality: any) => {
         if (val === equality) {
-            throw new Error("Equal")
+            throw new Error('Equal')
         }
         return true
     },
@@ -25,4 +25,4 @@ const expect = (val: any): ToBeOrNotToBe => ({
  * expect(5).notToBe(5); // throws "Equal"
  */
 
- export { expect }
+export { expect }

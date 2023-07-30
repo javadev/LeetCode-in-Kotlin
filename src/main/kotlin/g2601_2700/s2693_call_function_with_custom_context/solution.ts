@@ -16,4 +16,4 @@ Function.prototype.callPolyfill = function (context, ...args): any {
  * increment.callPolyfill({count: 1}); // 2
  */
 
-export { Function.prototype.callPolyfill }
+export {}
