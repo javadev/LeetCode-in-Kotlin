@@ -2,7 +2,7 @@
 
 function argumentsLength(...args: any[]): number {
     let result = 0
-    for (let value of args) { // NOSONAR
+    for (let value of args) { //NOSONAR
         result += 1
     }
     return result
