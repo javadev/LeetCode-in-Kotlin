@@ -1,6 +1,6 @@
 package g2601_2700.s2685_count_the_number_of_complete_components
 
-// #Medium #Array #Dynamic_Programming #Matrix #Graph #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Matrix #Graph
 // #2023_07_28_Time_436_ms_(100.00%)_Space_58.6_MB_(66.67%)
 
 @Suppress("NAME_SHADOWING")
