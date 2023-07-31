@@ -16,8 +16,8 @@ class Solution {
             filtered.add(num)
             product *= num.toLong()
         }
-        if (filtered.size == 0) return 0
-        if (filtered.size == 1 && filtered.get(0) <= 0) return if (hasZero) 0 else filtered.get(0).toLong()
+        if (filtered.isEmpty()) return 0
+        if (filtered.size == 1 && filtered[0] <= 0) return if (hasZero) 0 else filtered[0].toLong()
         var result = product
         for (num in nums) {
             if (num == 0) continue
