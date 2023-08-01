@@ -5,7 +5,7 @@ package g2701_2800.s2713_maximum_strictly_increasing_cells_in_a_matrix
 
 import java.util.concurrent.atomic.AtomicInteger
 
-internal class Solution {
+class Solution {
     fun maxIncreasingCells(mat: Array<IntArray>): Int {
         val n = mat.size
         val m = mat[0].size
