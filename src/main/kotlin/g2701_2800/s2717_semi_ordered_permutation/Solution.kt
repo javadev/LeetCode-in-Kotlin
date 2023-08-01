@@ -8,7 +8,6 @@ class Solution {
         var b = nums.size
         var idxA = 0
         var idxB = 0
-        val res = 0
         for (i in nums.indices) {
             if (nums[i] == a) idxA = i
             if (nums[i] == b) idxB = i
