@@ -9,7 +9,6 @@ class Solution {
         val h = n / 2
         val ca = s.toCharArray()
         var result: Long
-
         // to 1's
         var m = 0L
         var inverse = false
@@ -26,7 +25,6 @@ class Solution {
                 }
             }
         }
-
         inverse = false
         for (i in h + 1 until n) {
             if (inverse) {
@@ -41,12 +39,9 @@ class Solution {
                 }
             }
         }
-
         result = m
-
         m = 0L
         inverse = false
-
         for (i in h downTo 0) {
             if (inverse) {
                 if (ca[i] == '0') {
@@ -60,7 +55,6 @@ class Solution {
                 }
             }
         }
-
         inverse = false
         for (i in h + 1 until n) {
             if (inverse) {
@@ -75,9 +69,7 @@ class Solution {
                 }
             }
         }
-
         result = result.coerceAtMost(m)
-
         return result
     }
 }
