@@ -6,8 +6,8 @@ package g2701_2800.s2709_greatest_common_divisor_traversal
 @Suppress("NAME_SHADOWING")
 class Solution {
     private var map: MutableMap<Int, Int>? = null
-
     private lateinit var set: IntArray
+
     private fun findParent(u: Int): Int {
         return if (u == set[u]) u else findParent(set[u]).also { set[u] = it }
     }
