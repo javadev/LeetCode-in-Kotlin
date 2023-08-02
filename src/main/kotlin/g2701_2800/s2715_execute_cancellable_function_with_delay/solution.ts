@@ -4,13 +4,13 @@ function cancellable(fn: Function, args: any[], t: number): Function {
     let cancelled: boolean = false;
     setTimeout(() => {
         if (!cancelled) {
-            fn(...args);
+            fn(...args)
         }
     }, t);
     return () => {
-        cancelled = true;
-    };
-};
+        cancelled = true
+    }
+}
 
 /*
  *  const result = []
