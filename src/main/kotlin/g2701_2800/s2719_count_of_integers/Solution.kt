@@ -26,7 +26,7 @@ class Solution {
         return count.also { dp[i][if (tight1) 1 else 0][if (tight2) 1 else 0][sum] = it }
     }
 
-    fun count(num1: String, num2: String, min_sum: Int, max_sum: Int): Int {
+    fun count(num1: String, num2: String, minSum: Int, maxSum: Int): Int {
         val maxLength = num2.length
         val minLength = num1.length
         val leadingZeroes = maxLength - minLength
@@ -45,8 +45,8 @@ class Solution {
                 }
             }
         }
-        val total = countStrings(0, true, true, max_sum, num1extended, num2)
-        val unnecessary = countStrings(0, true, true, min_sum - 1, num1extended, num2)
+        val total = countStrings(0, true, true, maxSum, num1extended, num2)
+        val unnecessary = countStrings(0, true, true, minSum - 1, num1extended, num2)
         var ans = (total - unnecessary) % MOD
         if (ans < 0) {
             ans += MOD
