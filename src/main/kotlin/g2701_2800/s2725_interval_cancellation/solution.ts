@@ -1,12 +1,12 @@
 // #Easy #2023_08_03_Time_52_ms_(99.60%)_Space_43.1_MB_(49.00%)
 
 function cancellable(fn: Function, args: any[], t: number): Function {
-    fn(...args);
+    fn(...args)
     const timer = setInterval(() => {
-        fn(...args);
-    }, t);
+        fn(...args)
+    }, t)
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer)
 }
 
 /*
@@ -39,3 +39,5 @@ function cancellable(fn: Function, args: any[], t: number): Function {
  *                         //  ]
  *  }, cancelT + t + 15)    
  */
+
+export { cancellable }
