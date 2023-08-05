@@ -5,7 +5,7 @@ package g2701_2800.s2734_lexicographically_smallest_string_after_substring_opera
 class Solution {
     fun smallestString(s: String): String {
         var resultArray = CharArray(s.length)
-        var i = 0
+        var i: Int
         var found = false
         i = 0
         while (i < s.length) {
