@@ -19,4 +19,9 @@ internal class SolutionTest {
     fun smallestString3() {
         assertThat(Solution().smallestString("leetcode"), equalTo("kddsbncd"))
     }
+
+    @Test
+    fun smallestString4() {
+        assertThat(Solution().smallestString("a"), equalTo("z"))
+    }
 }
