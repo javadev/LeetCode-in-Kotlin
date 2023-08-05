@@ -6,7 +6,7 @@ package g2701_2800.s2736_maximum_sum_queries
 import java.util.TreeMap
 
 class Solution {
-    fun update(map: TreeMap<Int, Int>, num: Int, sum: Int) {
+    private fun update(map: TreeMap<Int, Int>, num: Int, sum: Int) {
         var entry = map.floorEntry(num)
         while (entry != null && entry.value <= sum) {
             map.remove(entry.key)
@@ -17,7 +17,7 @@ class Solution {
         if (entry == null || entry.value < sum) map.put(num, sum)
     }
 
-    fun queryVal(map: TreeMap<Int, Int>, num: Int): Int {
+    private fun queryVal(map: TreeMap<Int, Int>, num: Int): Int {
         val (_, value) = map.ceilingEntry(num) ?: return -1
         return value
     }
