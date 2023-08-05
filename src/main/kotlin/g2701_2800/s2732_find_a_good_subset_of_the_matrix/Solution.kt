@@ -24,7 +24,6 @@ class Solution {
                     return listOf(pos[mask]!!, i)
                 }
             }
-
             var curr = 0
             for (j in 0 until n) {
                 if (grid[i][j] == 1) {
