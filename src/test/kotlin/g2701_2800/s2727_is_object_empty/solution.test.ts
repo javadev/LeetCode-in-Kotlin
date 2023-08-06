@@ -3,7 +3,7 @@ import { isEmpty } from 'src/main/kotlin/g2701_2800/s2727_is_object_empty/soluti
 import { expect, test } from 'vitest'
 
 test('isEmpty', () => {
-    expect(isEmpty({"x": 5, "y": 42})).toEqual(false)
+    expect(isEmpty({ x: 5, y: 42 })).toEqual(false)
 })
 
 test('isEmpty2', () => {
