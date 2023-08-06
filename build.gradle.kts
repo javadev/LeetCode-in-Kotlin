@@ -15,8 +15,8 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:[5.9.3,)")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:[5.9.3,)")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:[5.10.0,)")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:[5.10.0,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.1.1,)")
 }
