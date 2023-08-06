@@ -20,7 +20,6 @@ class Solution {
         for (i in 0..last) map[nums[i]]++
         var ans = 0
         for (i in 0 until n) {
-            val curr = 1
             ans += n - last
             map[nums[i]]--
             if (map[nums[i]] == 0) {
