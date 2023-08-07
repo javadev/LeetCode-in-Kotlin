@@ -16,14 +16,12 @@ class Solution {
         val newSet = set xor (1 shl destIdx)
         for (i in adj[destIdx]!!) {
             if ((set and (1 shl i)) == 0) continue
-
             sum += count(i, newSet) % mod
             sum %= mod
         }
         dp[p] = sum
         return sum
     }
-
     fun specialPerm(nums: IntArray): Int {
         for (i in nums.indices) adj[i] = hashSetOf()
         for ((i, vI) in nums.withIndex()) {
