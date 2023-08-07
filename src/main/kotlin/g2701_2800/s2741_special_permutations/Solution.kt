@@ -11,7 +11,9 @@ class Solution {
     private fun count(destIdx: Int, set: Int): Long {
         if (Integer.bitCount(set) == 1) return 1
         val p = destIdx to set
-        if (dp.containsKey(p)) return dp[p]!!
+        if (dp.containsKey(p)) {
+            return dp[p]!!
+        }
         var sum = 0L
         val newSet = set xor (1 shl destIdx)
         for (i in adj[destIdx]!!) {
@@ -23,7 +25,7 @@ class Solution {
         return sum
     }
 
-    private fun specialPerm(nums: IntArray): Int {
+    fun specialPerm(nums: IntArray): Int {
         for (i in nums.indices) adj[i] = hashSetOf()
         for ((i, vI) in nums.withIndex()) {
             for ((j, vJ) in nums.withIndex()) {
