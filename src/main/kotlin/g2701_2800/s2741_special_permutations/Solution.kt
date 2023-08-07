@@ -28,11 +28,9 @@ class Solution {
         for (i in nums.indices) adj[i] = hashSetOf()
         for ((i, vI) in nums.withIndex()) {
             for ((j, vJ) in nums.withIndex()) {
-                if (vI != vJ) {
-                    if (vI % vJ == 0) {
-                        adj[i]!!.add(j)
-                        adj[j]!!.add(i)
-                    }
+                if (vI != vJ && vI % vJ == 0) {
+                    adj[i]!!.add(j)
+                    adj[j]!!.add(i)
                 }
             }
         }
