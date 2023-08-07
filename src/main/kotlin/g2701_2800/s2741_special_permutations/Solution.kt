@@ -22,7 +22,8 @@ class Solution {
         dp[p] = sum
         return sum
     }
-    fun specialPerm(nums: IntArray): Int {
+
+    private fun specialPerm(nums: IntArray): Int {
         for (i in nums.indices) adj[i] = hashSetOf()
         for ((i, vI) in nums.withIndex()) {
             for ((j, vJ) in nums.withIndex()) {
