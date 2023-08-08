@@ -6,5 +6,5 @@ class Solution {
     fun findValueOfPartition(nums: IntArray): Int = nums
         .sortedDescending()
         .zipWithNext(Int::minus)
-        .min()!!
+        .min()
 }
