@@ -6,6 +6,7 @@ package g2701_2800.s2746_decremental_string_concatenation
 class Solution {
     private val inf = 1e9.toInt()
     private lateinit var dp: Array<Array<Array<Int?>>>
+
     fun minimizeConcatenatedLength(words: Array<String>): Int {
         val n = words.size
         dp = Array(n) {
