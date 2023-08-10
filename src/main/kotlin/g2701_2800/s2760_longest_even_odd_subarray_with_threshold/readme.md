@@ -20,7 +20,11 @@ Return _an integer denoting the length of the longest such subarray._
 
 **Output:** 3
 
-**Explanation:** In this example, we can select the subarray that starts at l = 1 and ends at r = 3 => [2,5,4]. This subarray satisfies the conditions. Hence, the answer is the length of the subarray, 3. We can show that 3 is the maximum possible achievable length.
+**Explanation:**
+
+In this example, we can select the subarray that starts at l = 1 and ends at r = 3 => [2,5,4]. This subarray satisfies the conditions.
+
+Hence, the answer is the length of the subarray, 3. We can show that 3 is the maximum possible achievable length.
 
 **Example 2:**
 
@@ -28,7 +32,11 @@ Return _an integer denoting the length of the longest such subarray._
 
 **Output:** 1
 
-**Explanation:** In this example, we can select the subarray that starts at l = 1 and ends at r = 1 => [2]. It satisfies all the conditions and we can show that 1 is the maximum possible achievable length.
+**Explanation:**
+
+In this example, we can select the subarray that starts at l = 1 and ends at r = 1 => [2].
+
+It satisfies all the conditions and we can show that 1 is the maximum possible achievable length.
 
 **Example 3:**
 
@@ -36,7 +44,11 @@ Return _an integer denoting the length of the longest such subarray._
 
 **Output:** 3
 
-**Explanation:** In this example, we can select the subarray that starts at l = 0 and ends at r = 2 => [2,3,4]. It satisfies all the conditions. Hence, the answer is the length of the subarray, 3. We can show that 3 is the maximum possible achievable length.
+**Explanation:**
+
+In this example, we can select the subarray that starts at l = 0 and ends at r = 2 => [2,3,4].
+
+It satisfies all the conditions. Hence, the answer is the length of the subarray, 3. We can show that 3 is the maximum possible achievable length.
 
 **Constraints:**
 
