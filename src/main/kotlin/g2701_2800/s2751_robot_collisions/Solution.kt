@@ -3,8 +3,6 @@ package g2701_2800.s2751_robot_collisions
 // #Hard #Array #Sorting #Stack #Simulation
 // #2023_08_09_Time_1049_ms_(100.00%)_Space_78.2_MB_(66.67%)
 
-import java.util.ArrayDeque
-
 class Solution {
     fun survivedRobotsHealths(pos: IntArray, h: IntArray, dir: String): List<Int> {
         val a = Array(pos.size) { IntArray(4) { 0 } }
