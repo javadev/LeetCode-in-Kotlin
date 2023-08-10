@@ -34,4 +34,14 @@ internal class SolutionTest {
             )
         )
     }
+
+    @Test
+    fun survivedRobotsHealths4() {
+        assertThat(
+            Solution().survivedRobotsHealths(intArrayOf(3, 2, 30, 24, 38, 7), intArrayOf(47, 12, 49, 11, 47, 38), "RRLRRR"),
+            equalTo(
+                listOf([12, 47])
+            )
+        )
+    }
 }
