@@ -17,7 +17,7 @@ class Solution {
         a.sortWith(compareBy { it[0] })
         val q = ArrayDeque<Int>()
         for (i in a.indices) {
-            if (q.size == 0 || a[i][2] == 1) {
+            if (q.isEmpty() || a[i][2] == 1) {
                 q.push(i)
             } else {
                 var prev = a[q.peek()]
@@ -37,7 +37,7 @@ class Solution {
                             } else {
                                 q.pop()
                                 a[i][1] -= 1
-                                if (q.size == 0 || a[q.peek()][2] == 0) {
+                                if (q.isEmpty() || a[q.peek()][2] == 0) {
                                     q.push(i)
                                     break
                                 } else {
@@ -53,7 +53,7 @@ class Solution {
         }
         val b = Array(q.size) { IntArray(2) { 0 } }
         var j = 0
-        while (q.size != 0) {
+        while (q.isNotEmpty()) {
             val n = q.pop()
             b[j][0] = a[n][1]
             b[j][1] = a[n][3]

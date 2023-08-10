@@ -11,7 +11,7 @@ class Solution {
             if (nums[i] == 1) res.add(i)
         }
         var ans: Long = 0
-        if (res.size > 0) ans = 1
+        if (res.isNotEmpty()) ans = 1
         var kanishk = ans
         for (i in res.size - 2 downTo 0) {
             val leftInd = res[i]
