@@ -18,7 +18,11 @@ Return _the 2D sorted list of prime number pairs_ <code>[x<sub>i</sub>, y<sub>i<
 
 **Output:** [[3,7],[5,5]]
 
-**Explanation:** In this example, there are two prime pairs that satisfy the criteria. These pairs are [3,7] and [5,5], and we return them in the sorted order as described in the problem statement.
+**Explanation:**
+
+In this example, there are two prime pairs that satisfy the criteria.
+
+These pairs are [3,7] and [5,5], and we return them in the sorted order as described in the problem statement.
 
 **Example 2:**
 
@@ -26,7 +30,9 @@ Return _the 2D sorted list of prime number pairs_ <code>[x<sub>i</sub>, y<sub>i<
 
 **Output:** []
 
-**Explanation:** We can show that there is no prime number pair that gives a sum of 2, so we return an empty array.
+**Explanation:**
+
+We can show that there is no prime number pair that gives a sum of 2, so we return an empty array.
 
 **Constraints:**
 
