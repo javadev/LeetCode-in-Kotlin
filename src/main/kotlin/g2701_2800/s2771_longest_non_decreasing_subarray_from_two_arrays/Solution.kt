@@ -1,5 +1,7 @@
 package g2701_2800.s2771_longest_non_decreasing_subarray_from_two_arrays
 
+// #Medium #Array #Dynamic_Programming #2023_08_11_Time_665_ms_(96.88%)_Space_77.8_MB_(53.13%)
+
 class Solution {
     fun maxNonDecreasingLength(nums1: IntArray, nums2: IntArray): Int {
         var res = 1

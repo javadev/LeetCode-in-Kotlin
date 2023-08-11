@@ -1,5 +1,7 @@
 package g2701_2800.s2770_maximum_number_of_jumps_to_reach_the_last_index
 
+// #Medium #Array #Dynamic_Programming #2023_08_11_Time_325_ms_(51.16%)_Space_49.1_MB_(13.95%)
+
 class Solution {
     private class Pair(var prev: Int, var len: Int)
 
