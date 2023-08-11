@@ -13,31 +13,22 @@ function memoize(fn: Fn): Fn {
             currentCache = new Map()
             cache.set(args.length, currentCache)
         }
-
         for (let i = 0, len = args.length; i <= len; i++) {
             const arg = args[i]
             const isEnd = i >= len - 1
-
             if (currentCache.has(arg)) {
                 if (isEnd) {
                     return currentCache.get(arg)
                 } else {
                     currentCache = currentCache.get(arg)
                 }
-            } else {
-                if (isEnd) {
-                    break
-                } else {
-                    const newSubCache = new Map()
-
-                    currentCache.set(arg, newSubCache)
-                    currentCache = newSubCache
-                }
+            } else if (!isEnd) {
+                const newSubCache = new Map()
+                currentCache.set(arg, newSubCache)
+                currentCache = newSubCache
             }
         }
-
-        let value = fn.apply(null, args)
-
+        let value = fn.apply( ...args)
         currentCache.set(args[args.length - 1], value)
         return value
     }
