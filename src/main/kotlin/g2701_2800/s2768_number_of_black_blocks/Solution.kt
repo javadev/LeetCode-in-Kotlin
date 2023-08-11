@@ -2,8 +2,6 @@ package g2701_2800.s2768_number_of_black_blocks
 
 // #Medium #Array #Hash_Table #Enumeration #2023_08_11_Time_719_ms_(100.00%)_Space_55.3_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun countBlackBlocks(m: Int, n: Int, coordinates: Array<IntArray>): LongArray {
         val ans = LongArray(5)
@@ -24,7 +22,7 @@ class Solution {
         for (freq in count.values) {
             ++ans[freq]
         }
-        ans[0] = (m - 1L) * (n - 1) - Arrays.stream(ans).sum()
+        ans[0] = (m - 1L) * (n - 1) - ans.sum()
         return ans
     }
 }
