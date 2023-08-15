@@ -1,6 +1,6 @@
 package g2701_2800.s2791_count_paths_that_can_form_a_palindrome_in_a_tree
 
-// #Hard #Dynamic_Programming #Tree #Bit_Manipulation #Bitmask #Depth_First_Search
+// #Hard #Dynamic_Programming #Depth_First_Search #Tree #Bit_Manipulation #Bitmask
 // #2023_08_06_Time_683_ms_(100.00%)_Space_54_MB_(100.00%)
 
 class Solution {
