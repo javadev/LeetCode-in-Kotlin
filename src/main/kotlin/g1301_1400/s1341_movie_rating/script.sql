@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 # #Medium #Database #2023_08_15_Time_2843_ms_(48.31%)_Space_0B_(100.00%)
 (SELECT name results
-FROM Users as U, MovieRating as  MR
+FROM Users as U, MovieRating as MR
 WHERE U.user_id = MR.user_id
 GROUP BY U.user_id
 ORDER BY COUNT(MR.user_id) DESC, name ASC LIMIT 1)
