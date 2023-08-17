@@ -45,14 +45,14 @@ internal class MysqlTest {
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
+                    assertThat(resultSet.getNString(1), equalTo("Average Salary"))
+                    assertThat(resultSet.getInt(2), equalTo(0))
+                    assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("High Salary"))
                     assertThat(resultSet.getInt(2), equalTo(3))
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Low Salary"))
                     assertThat(resultSet.getInt(2), equalTo(1))
-                    assertThat(resultSet.next(), equalTo(true))
-                    assertThat(resultSet.getNString(1), equalTo("Average Salary"))
-                    assertThat(resultSet.getInt(2), equalTo(0))
                     assertThat(resultSet.next(), equalTo(false))
                 }
             }
