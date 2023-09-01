@@ -1,4 +1,4 @@
-// #Hard #2023_07_17_Time_314_ms_(99.39%)_Space_115.7_MB_(62.42%)
+// #Hard #2023_08_31_Time_264_ms_(98.86%)_Space_115.9_MB_(61.71%)
 
 type Fn = (...params: any) => any
 
@@ -13,22 +13,29 @@ function memoize(fn: Fn): Fn {
             currentCache = new Map()
             cache.set(args.length, currentCache)
         }
+
         for (let i = 0, len = args.length; i <= len; i++) {
             const arg = args[i]
             const isEnd = i >= len - 1
+
             if (currentCache.has(arg)) {
                 if (isEnd) {
                     return currentCache.get(arg)
                 } else {
                     currentCache = currentCache.get(arg)
                 }
-            } else if (!isEnd) {
+            } else if (isEnd) {
+                break
+            } else {
                 const newSubCache = new Map()
+
                 currentCache.set(arg, newSubCache)
                 currentCache = newSubCache
             }
         }
-        let value = fn.apply( ...args)
+
+        let value = fn(...args)
+
         currentCache.set(args[args.length - 1], value)
         return value
     }
