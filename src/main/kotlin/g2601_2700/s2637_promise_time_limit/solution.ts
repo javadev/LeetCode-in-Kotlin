@@ -1,4 +1,4 @@
-// #Easy #2023_07_17_Time_64_ms_(75.36%)_Space_43.5_MB_(5.78%)
+// #Medium #2023_07_17_Time_64_ms_(75.36%)_Space_43.5_MB_(5.78%)
 
 type Fn = (...params: any[]) => Promise<any>
 
