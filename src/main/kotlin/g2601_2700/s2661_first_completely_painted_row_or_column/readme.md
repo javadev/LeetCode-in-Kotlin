@@ -10,7 +10,7 @@ Return _the smallest index_ `i` _at which either a row or a column will be compl
 
 **Example 1:**
 
-![](image explanation for example 1)![image explanation for example 1](https://assets.leetcode.com/uploads/2023/01/18/grid1.jpg)
+![image explanation for example 1](https://assets.leetcode.com/uploads/2023/01/18/grid1.jpg)
 
 **Input:** arr = [1,3,4,2], mat = [[1,4],[2,3]]
 
