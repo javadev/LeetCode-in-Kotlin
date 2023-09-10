@@ -1,4 +1,4 @@
-// #Easy #2023_07_17_Time_47_ms_(99.33%)_Space_43.5_MB_(17.55%)
+// #Easy #2023_08_31_Time_43_ms_(98.46%)_Space_42.2_MB_(92.83%)
 
 function map(arr: number[], fn: (n: number, i: number) => number): number[] {
     const res: number[] = []

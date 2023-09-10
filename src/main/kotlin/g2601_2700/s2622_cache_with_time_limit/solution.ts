@@ -1,4 +1,4 @@
-// #Medium #2023_07_16_Time_59_ms_(86.77%)_Space_42.4_MB_(94.28%)
+// #Medium #2023_08_31_Time_51_ms_(94.82%)_Space_42.2_MB_(94.26%)
 
 class TimeLimitedCache {
     private keyMap: Map<number, any>

@@ -1,9 +1,7 @@
-// #Easy #2023_07_16_Time_49_ms_(97.92%)_Space_42.1_MB_(96.08%)
+// #Easy #2023_08_31_Time_40_ms_(99.59%)_Space_42.3_MB_(77.98%)
 
 async function sleep(millis: number): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-        setTimeout(resolve, millis)
-    })
+    await new Promise((resolve) => setTimeout(resolve, millis))
 }
 
 /*

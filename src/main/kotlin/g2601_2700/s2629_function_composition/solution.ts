@@ -1,16 +1,13 @@
-// #Easy #2023_07_17_Time_68_ms_(92.25%)_Space_45.6_MB_(61.28%)
+// #Easy #2023_08_31_Time_58_ms_(95.63%)_Space_45.3_MB_(73.06%)
 
 type F = (x: number) => number
 
 function compose(functions: F[]): F {
-    const n = functions.length
-
     return function (x) {
-        for (let i = n - 1; i >= 0; i--) {
-            const fn = functions[i]
-            x = fn(x)
+        if (functions.length == 0) return x
+        for (let ind = functions.length - 1; ind >= 0; ind--) {
+            x = functions[ind](x)
         }
-
         return x
     }
 }
