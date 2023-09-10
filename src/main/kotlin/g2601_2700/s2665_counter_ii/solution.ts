@@ -1,4 +1,4 @@
-// #Easy #2023_07_25_Time_65_ms_(86.59%)_Space_44.8_MB_(93.23%)
+// #Easy #2023_09_09_Time_54_ms_(94.09%)_Space_45.6_MB_(18.33%)
 
 type ReturnObj = {
     increment: () => number

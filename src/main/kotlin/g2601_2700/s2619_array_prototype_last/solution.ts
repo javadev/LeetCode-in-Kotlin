@@ -1,4 +1,4 @@
-// #Easy #2023_07_16_Time_51_ms_(94.69%)_Space_43.2_MB_(27.55%)
+// #Easy #2023_08_31_Time_41_ms_(98.99%)_Space_42_MB_(96.92%)
 
 declare global {
     interface Array<T> {
@@ -6,8 +6,8 @@ declare global {
     }
 }
 
-Array.prototype.last = function <T>(): T | -1 { //NOSONAR
-    return this.length ? this.at(-1) : -1
+Array.prototype.last = function () { //NOSONAR
+    return this.length !== 0 ? this[this.length - 1] : -1
 }
 
 /*

@@ -1,4 +1,4 @@
-// #Easy #2023_07_16_Time_53_ms_(91.77%)_Space_43.1_MB_(46.69%)
+// #Easy #2023_08_31_Time_43_ms_(98.60%)_Space_42.2_MB_(91.27%)
 
 function createCounter(n: number): () => number {
     const fun = function () {

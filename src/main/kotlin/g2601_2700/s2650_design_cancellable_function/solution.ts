@@ -1,4 +1,4 @@
-// #Hard #2023_07_20_Time_58_ms_(95.56%)_Space_42.6_MB_(94.44%)
+// #Hard #2023_09_06_Time_58_ms_(93.15%)_Space_43.5_MB_(17.81%)
 
 function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => void, Promise<T>] {
     let isCancelled = false

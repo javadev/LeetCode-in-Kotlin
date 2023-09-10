@@ -1,16 +1,11 @@
-// #Medium #2023_07_19_Time_192_ms_(70.11%)_Space_74.9_MB_(64.70%)
+// #Medium #2023_09_06_Time_138_ms_(86.92%)_Space_74.9_MB_(73.36%)
 
 type MultidimensionalArray = (MultidimensionalArray | number)[]
 
 function* inorderTraversal(arr: MultidimensionalArray): Generator<number, void, unknown> {
-    if (!Array.isArray(arr)) {
-        yield arr
-        return
-    }
-
-    for (let value of arr) {
-        yield* inorderTraversal(value as MultidimensionalArray)
-    }
+    for (const item of arr)
+        if (Array.isArray(item)) yield* inorderTraversal(item)
+        else yield item
 }
 
 /*

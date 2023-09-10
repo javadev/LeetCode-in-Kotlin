@@ -1,4 +1,4 @@
-// #Easy #2023_07_19_Time_53_ms_(93.66%)_Space_42.8_MB_(84.05%)
+// #Easy #2023_09_06_Time_42_ms_(98.08%)_Space_43.1_MB_(44.95%)
 
 function* fibGenerator(): Generator<number, any, number> {
     let first = 0

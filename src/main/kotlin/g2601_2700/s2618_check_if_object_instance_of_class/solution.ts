@@ -1,4 +1,4 @@
-// #Medium #2023_07_16_Time_100_ms_(91.86%)_Space_52.3_MB_(63.91%)
+// #Medium #2023_08_30_Time_82_ms_(99.55%)_Space_52.1_MB_(79.46%)
 
 function checkIfInstanceOf(obj: any, classFunction: any): boolean {
     if (obj === null || obj === undefined || typeof classFunction !== 'function') return false
@@ -10,9 +10,5 @@ function checkIfInstanceOf(obj: any, classFunction: any): boolean {
     }
     return false
 }
-
-/*
- * checkIfInstanceOf(new Date(), Date); // true
- */
 
 export { checkIfInstanceOf }

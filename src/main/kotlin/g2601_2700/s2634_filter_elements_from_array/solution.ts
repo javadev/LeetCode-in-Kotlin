@@ -1,4 +1,4 @@
-// #Easy #2023_07_17_Time_55_ms_(90.38%)_Space_44.6_MB_(12.44%)
+// #Easy #2023_08_31_Time_44_ms_(98.04%)_Space_42.7_MB_(69.67%)
 
 function filter(arr: number[], fn: (n: number, i: number) => boolean): number[] {
     const filteredArr: number[] = []
