@@ -27,7 +27,7 @@
         <url>https://github.com/javadev/LeetCode-in-Kotlin</url>
     </scm>
     <properties>
-        <kotlin.version>1.9.0</kotlin.version>
+        <kotlin.version>1.9.10</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <ciManagement>
@@ -109,7 +109,7 @@
             <plugin>
                 <groupId>org.jetbrains.dokka</groupId>
                 <artifactId>dokka-maven-plugin</artifactId>
-                <version>1.8.20</version>
+                <version>1.9.0</version>
                 <executions>
                     <execution>
                         <phase>prepare-package</phase>
