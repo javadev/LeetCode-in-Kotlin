@@ -1,7 +1,7 @@
 package g0101_0200.s0148_sort_list
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Sorting #Two_Pointers #Linked_List
-// #Divide_and_Conquer #Merge_Sort #Level_2_Day_4_Linked_List
+// #Divide_and_Conquer #Merge_Sort #Level_2_Day_4_Linked_List #Big_O_Time_O(log(N))_Space_O(log(N))
 // #2022_09_06_Time_820_ms_(61.70%)_Space_76_MB_(28.72%)
 
 import com_github_leetcode.ListNode

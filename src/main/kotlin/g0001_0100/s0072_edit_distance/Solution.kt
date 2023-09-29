@@ -2,7 +2,8 @@ package g0001_0100.s0072_edit_distance
 
 // #Hard #Top_100_Liked_Questions #String #Dynamic_Programming
 // #Algorithm_II_Day_18_Dynamic_Programming #Dynamic_Programming_I_Day_19
-// #Udemy_Dynamic_Programming #2023_07_10_Time_182_ms_(92.16%)_Space_36.2_MB_(98.04%)
+// #Udemy_Dynamic_Programming #Big_O_Time_O(n^2)_Space_O(n2)
+// #2023_07_10_Time_182_ms_(92.16%)_Space_36.2_MB_(98.04%)
 
 class Solution {
     fun minDistance(word1: String, word2: String): Int {

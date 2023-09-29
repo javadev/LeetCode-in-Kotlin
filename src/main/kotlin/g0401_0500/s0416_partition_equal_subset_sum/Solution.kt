@@ -1,7 +1,7 @@
 package g0401_0500.s0416_partition_equal_subset_sum
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Level_2_Day_13_Dynamic_Programming
-// #2023_01_02_Time_204_ms_(98.82%)_Space_34.9_MB_(100.00%)
+// #Big_O_Time_O(n*sums)_Space_O(n*sums) #2023_01_02_Time_204_ms_(98.82%)_Space_34.9_MB_(100.00%)
 
 class Solution {
     fun canPartition(nums: IntArray): Boolean {

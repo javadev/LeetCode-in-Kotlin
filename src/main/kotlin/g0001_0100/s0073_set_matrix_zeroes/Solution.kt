@@ -1,7 +1,8 @@
 package g0001_0100.s0073_set_matrix_zeroes
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Matrix
-// #Udemy_2D_Arrays/Matrix #2023_07_10_Time_248_ms_(97.33%)_Space_41.6_MB_(79.87%)
+// #Udemy_2D_Arrays/Matrix #Big_O_Time_O(m*n)_Space_O(1)
+// #2023_07_10_Time_248_ms_(97.33%)_Space_41.6_MB_(79.87%)
 
 class Solution {
     // Approach: Use first row and first column for storing whether in future

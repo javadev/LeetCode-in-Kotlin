@@ -1,6 +1,6 @@
 package g0001_0100.s0051_n_queens
 
-// #Hard #Top_100_Liked_Questions #Array #Backtracking
+// #Hard #Top_100_Liked_Questions #Array #Backtracking #Big_O_Time_O(N!)_Space_O(N)
 // #2023_07_10_Time_192_ms_(90.74%)_Space_37.8_MB_(88.89%)
 
 class Solution {

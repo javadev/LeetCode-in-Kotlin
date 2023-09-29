@@ -1,6 +1,6 @@
 package g0001_0100.s0032_longest_valid_parentheses
 
-// #Hard #Top_100_Liked_Questions #String #Dynamic_Programming #Stack
+// #Hard #Top_100_Liked_Questions #String #Dynamic_Programming #Stack #Big_O_Time_O(n)_Space_O(1)
 // #2023_07_05_Time_161_ms_(82.14%)_Space_36.3_MB_(91.07%)
 
 class Solution {

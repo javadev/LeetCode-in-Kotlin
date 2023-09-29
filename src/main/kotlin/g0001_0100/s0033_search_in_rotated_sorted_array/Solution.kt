@@ -2,7 +2,8 @@ package g0001_0100.s0033_search_in_rotated_sorted_array
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search
 // #Algorithm_II_Day_1_Binary_Search #Binary_Search_I_Day_11 #Level_2_Day_8_Binary_Search
-// #Udemy_Binary_Search #2023_07_05_Time_151_ms_(93.77%)_Space_34.5_MB_(94.08%)
+// #Udemy_Binary_Search #Big_O_Time_O(log_n)_Space_O(1)
+// #2023_07_05_Time_151_ms_(93.77%)_Space_34.5_MB_(94.08%)
 
 class Solution {
     fun search(nums: IntArray, target: Int): Int {

@@ -1,6 +1,7 @@
 package g2701_2800.s2717_semi_ordered_permutation
 
-// #Easy #Array #Simulation #2023_08_01_Time_186_ms_(100.00%)_Space_40.6_MB_(69.23%)
+// #Easy #Array #String #Hash_Table #Simulation
+// #2023_08_01_Time_186_ms_(100.00%)_Space_40.6_MB_(69.23%)
 
 class Solution {
     fun semiOrderedPermutation(nums: IntArray): Int {

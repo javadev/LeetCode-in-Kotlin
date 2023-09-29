@@ -1,7 +1,7 @@
 package g0101_0200.s0189_rotate_array
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Math #Two_Pointers
-// #Algorithm_I_Day_2_Two_Pointers #Udemy_Arrays
+// #Algorithm_I_Day_2_Two_Pointers #Udemy_Arrays #Big_O_Time_O(n)_Space_O(1)
 // #2022_09_08_Time_483_ms_(86.95%)_Space_71.9_MB_(50.13%)
 
 @Suppress("NAME_SHADOWING")

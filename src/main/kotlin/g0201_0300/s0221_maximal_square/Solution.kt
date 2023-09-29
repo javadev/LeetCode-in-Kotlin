@@ -1,7 +1,8 @@
 package g0201_0300.s0221_maximal_square
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix
-// #Dynamic_Programming_I_Day_16 #2022_09_10_Time_614_ms_(44.00%)_Space_76.2_MB_(65.33%)
+// #Dynamic_Programming_I_Day_16 #Big_O_Time_O(m*n)_Space_O(m*n)
+// #2022_09_10_Time_614_ms_(44.00%)_Space_76.2_MB_(65.33%)
 
 class Solution {
     fun maximalSquare(matrix: Array<CharArray>): Int {
