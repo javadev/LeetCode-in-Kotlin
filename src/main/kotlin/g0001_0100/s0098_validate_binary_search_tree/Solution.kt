@@ -2,7 +2,8 @@ package g0001_0100.s0098_validate_binary_search_tree
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search #Tree #Binary_Tree
 // #Binary_Search_Tree #Data_Structure_I_Day_14_Tree #Level_1_Day_8_Binary_Search_Tree
-// #Udemy_Tree_Stack_Queue #2023_07_10_Time_190_ms_(61.62%)_Space_37.6_MB_(48.48%)
+// #Udemy_Tree_Stack_Queue #Big_O_Time_O(N)_Space_O(log(N))
+// #2023_07_10_Time_190_ms_(61.62%)_Space_37.6_MB_(48.48%)
 
 import com_github_leetcode.TreeNode
 

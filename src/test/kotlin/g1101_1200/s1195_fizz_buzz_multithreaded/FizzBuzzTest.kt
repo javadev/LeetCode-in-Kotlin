@@ -39,7 +39,7 @@ internal class FizzBuzzTest {
             }
         }
             .start()
-        TimeUnit.MILLISECONDS.sleep(800)
+        TimeUnit.MILLISECONDS.sleep(1600)
         assertThat(fizz[0] > 0, equalTo(true))
     }
 

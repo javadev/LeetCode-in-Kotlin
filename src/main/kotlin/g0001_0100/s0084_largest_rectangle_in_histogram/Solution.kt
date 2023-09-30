@@ -1,7 +1,7 @@
 package g0001_0100.s0084_largest_rectangle_in_histogram
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Stack #Monotonic_Stack
-// #2023_07_10_Time_476_ms_(90.79%)_Space_51.8_MB_(84.21%)
+// #Big_O_Time_O(n_log_n)_Space_O(log_n) #2023_07_10_Time_476_ms_(90.79%)_Space_51.8_MB_(84.21%)
 
 import kotlin.math.max
 

@@ -1,6 +1,7 @@
 package g0401_0500.s0494_target_sum
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking
+// #Big_O_Time_O(n*(sum+s))_Space_O(n*(sum+s))
 // #2022_09_16_Time_308_ms_(89.61%)_Space_37.2_MB_(61.04%)
 
 @Suppress("NAME_SHADOWING")

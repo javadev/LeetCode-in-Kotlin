@@ -1,7 +1,8 @@
 package g0001_0100.s0024_swap_nodes_in_pairs
 
 // #Medium #Top_100_Liked_Questions #Linked_List #Recursion #Data_Structure_II_Day_12_Linked_List
-// #Udemy_Linked_List #2023_07_03_Time_149_ms_(44.20%)_Space_33.5_MB_(98.90%)
+// #Udemy_Linked_List #Big_O_Time_O(n)_Space_O(1)
+// #2023_07_03_Time_149_ms_(44.20%)_Space_33.5_MB_(98.90%)
 
 import com_github_leetcode.ListNode
 

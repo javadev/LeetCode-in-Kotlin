@@ -2,7 +2,7 @@ package g0001_0100.s0078_subsets
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Bit_Manipulation #Backtracking
 // #Algorithm_II_Day_9_Recursion_Backtracking #Udemy_Backtracking/Recursion
-// #2023_07_10_Time_171_ms_(94.92%)_Space_35.8_MB_(96.09%)
+// #Big_O_Time_O(2^n)_Space_O(n*2^n) #2023_07_10_Time_171_ms_(94.92%)_Space_35.8_MB_(96.09%)
 
 class Solution {
     fun subsets(nums: IntArray): List<List<Int>> {

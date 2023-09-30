@@ -2,7 +2,7 @@ package g0001_0100.s0015_3sum
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting #Two_Pointers
 // #Data_Structure_II_Day_1_Array #Algorithm_II_Day_3_Two_Pointers #Udemy_Two_Pointers
-// #2023_07_03_Time_493_ms_(93.45%)_Space_53_MB_(93.97%)
+// #Big_O_Time_O(n^2)_Space_O(1) #2023_07_03_Time_493_ms_(93.45%)_Space_53_MB_(93.97%)
 
 class Solution {
     fun threeSum(nums: IntArray): List<List<Int>> {

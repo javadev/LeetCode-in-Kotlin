@@ -2,7 +2,7 @@ package g0201_0300.s0300_longest_increasing_subsequence
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
 // #Binary_Search #Algorithm_II_Day_16_Dynamic_Programming #Binary_Search_II_Day_3
-// #Dynamic_Programming_I_Day_18 #Udemy_Dynamic_Programming
+// #Dynamic_Programming_I_Day_18 #Udemy_Dynamic_Programming #Big_O_Time_O(n*log_n)_Space_O(n)
 // #2022_09_11_Time_318_ms_(82.28%)_Space_39.2_MB_(82.77%)
 
 class Solution {
