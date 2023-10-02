@@ -1,6 +1,6 @@
 package g1401_1500.s1450_number_of_students_doing_homework_at_a_given_time
 
-// #Easy #Array #2023_06_07_Time_180_ms_(10.00%)_Space_34.1_MB_(90.00%)
+// #Easy #Array #2023_10_02_Time_144_ms_(88.89%)_Space_34.7_MB_(11.11%)
 
 class Solution {
     fun busyStudent(startTime: IntArray, endTime: IntArray, queryTime: Int): Int {

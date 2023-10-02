@@ -1,7 +1,7 @@
 package g1401_1500.s1461_check_if_a_string_contains_all_binary_codes_of_size_k
 
 // #Medium #String #Hash_Table #Bit_Manipulation #Hash_Function #Rolling_Hash
-// #2023_06_13_Time_578_ms_(20.00%)_Space_65.5_MB_(80.00%)
+// #2023_10_02_Time_482_ms_(100.00%)_Space_65.5_MB_(75.00%)
 
 class Solution {
     fun hasAllCodes(s: String, k: Int): Boolean {

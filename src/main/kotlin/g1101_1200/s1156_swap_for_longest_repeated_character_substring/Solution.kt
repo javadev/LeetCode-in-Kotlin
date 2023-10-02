@@ -1,6 +1,6 @@
 package g1101_1200.s1156_swap_for_longest_repeated_character_substring
 
-// #Medium #String #Sliding_Window #2023_05_25_Time_195_ms_(20.00%)_Space_38.9_MB_(20.00%)
+// #Medium #String #Sliding_Window #2023_10_02_Time_198_ms_(100.00%)_Space_37.4_MB_(100.00%)
 
 class Solution {
     private class Pair(var character: Char, var count: Int)

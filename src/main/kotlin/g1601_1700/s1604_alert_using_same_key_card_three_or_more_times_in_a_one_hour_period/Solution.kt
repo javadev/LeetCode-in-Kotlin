@@ -1,7 +1,7 @@
 package g1601_1700.s1604_alert_using_same_key_card_three_or_more_times_in_a_one_hour_period
 
 // #Medium #Array #String #Hash_Table #Sorting
-// #2023_06_13_Time_1063_ms_(20.00%)_Space_64.9_MB_(100.00%)
+// #2023_10_02_Time_704_ms_(83.33%)_Space_71.9_MB_(66.67%)
 
 class Solution {
     fun alertNames(keyName: Array<String>, keyTime: Array<String>): List<String> {
