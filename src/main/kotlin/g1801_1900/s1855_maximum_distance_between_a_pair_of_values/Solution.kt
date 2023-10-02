@@ -1,7 +1,7 @@
 package g1801_1900.s1855_maximum_distance_between_a_pair_of_values
 
 // #Medium #Array #Greedy #Binary_Search #Two_Pointers #Binary_Search_I_Day_11
-// #2023_06_22_Time_541_ms_(14.29%)_Space_54.8_MB_(85.71%)
+// #2023_10_02_Time_458_ms_(100.00%)_Space_55.7_MB_(50.00%)
 
 class Solution {
     fun maxDistance(nums1: IntArray, nums2: IntArray): Int {

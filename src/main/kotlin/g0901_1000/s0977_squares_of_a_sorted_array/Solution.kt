@@ -1,7 +1,7 @@
 package g0901_1000.s0977_squares_of_a_sorted_array
 
 // #Easy #Array #Sorting #Two_Pointers #Algorithm_I_Day_2_Two_Pointers #Udemy_Two_Pointers
-// #2023_05_08_Time_375_ms_(18.43%)_Space_78.9_MB_(12.90%)
+// #2023_10_02_Time_271_ms_(77.17%)_Space_41_MB_(61.94%)
 
 import kotlin.math.abs
 

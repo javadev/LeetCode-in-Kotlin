@@ -1,7 +1,7 @@
 package g1101_1200.s1129_shortest_path_with_alternating_colors
 
 // #Medium #Breadth_First_Search #Graph #Graph_Theory_I_Day_10_Standard_Traversal
-// #2023_05_31_Time_241_ms_(16.67%)_Space_49.4_MB_(33.33%)
+// #2023_10_02_Time_208_ms_(80.00%)_Space_39.9_MB_(70.00%)
 
 import java.util.LinkedList
 import java.util.Queue

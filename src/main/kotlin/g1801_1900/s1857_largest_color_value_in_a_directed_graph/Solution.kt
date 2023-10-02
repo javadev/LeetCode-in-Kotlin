@@ -1,7 +1,7 @@
 package g1801_1900.s1857_largest_color_value_in_a_directed_graph
 
 // #Hard #Hash_Table #Dynamic_Programming #Graph #Counting #Memoization #Topological_Sort
-// #2023_06_22_Time_1308_ms_(20.00%)_Space_172.5_MB_(60.00%)
+// #2023_10_02_Time_1005_ms_(60.00%)_Space_253.2_MB_(20.00%)
 
 class Solution {
     fun largestPathValue(colors: String, edges: Array<IntArray>): Int {

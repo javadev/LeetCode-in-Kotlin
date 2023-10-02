@@ -1,6 +1,6 @@
 package g1501_1600.s1590_make_sum_divisible_by_p
 
-// #Medium #Array #Hash_Table #Prefix_Sum #2023_06_14_Time_633_ms_(20.00%)_Space_58.2_MB_(100.00%)
+// #Medium #Array #Hash_Table #Prefix_Sum #2023_10_02_Time_464_ms_(100.00%)_Space_58.6_MB_(100.00%)
 
 class Solution {
     fun minSubarray(nums: IntArray, p: Int): Int {
