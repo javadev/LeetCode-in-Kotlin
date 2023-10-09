@@ -1,5 +1,5 @@
 // tslint:disable:no-magic-numbers
-import { cancellable } from 'src/main/java/g2701_2800/s2715_timeout_cancellation/solution'
+import { cancellable } from 'src/main/kotlin/g2701_2800/s2715_timeout_cancellation/solution'
 import { expect, test } from 'vitest'
 
 test('cancellable', () => {
