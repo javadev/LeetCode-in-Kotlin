@@ -1,4 +1,4 @@
-// #Easy #2023_08_03_Time_52_ms_(99.60%)_Space_43.1_MB_(49.00%)
+// #Easy #2023_09_19_Time_51_ms_(98.87%)_Space_43.3_MB_(30.92%)
 
 function cancellable(fn: Function, args: any[], t: number): Function {
     fn(...args)
