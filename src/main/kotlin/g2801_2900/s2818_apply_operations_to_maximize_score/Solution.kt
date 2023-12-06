@@ -29,7 +29,7 @@ class Solution {
             }
             // when an element is poped, its right bound is confirmed: (i - left + 1) * (right - i +
             // 1)
-            while (!monoStack.isEmpty() && monoStack.peekFirst()[0] < score) {
+            while (monoStack.isNotEmpty() && monoStack.peekFirst()[0] < score) {
                 val popIndex = monoStack.pollFirst()[1]
                 val actualRightIndexOfPopedElement = i - 1
                 dp[popIndex] *= actualRightIndexOfPopedElement - popIndex + 1

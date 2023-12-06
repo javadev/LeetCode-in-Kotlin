@@ -66,7 +66,7 @@ class Solution {
         }
         var level = 1
         val dir = arrayOf(intArrayOf(1, 0), intArrayOf(0, 1), intArrayOf(-1, 0), intArrayOf(0, -1))
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val len = q.size
             for (i in 0 until len) {
                 val v = q.poll()

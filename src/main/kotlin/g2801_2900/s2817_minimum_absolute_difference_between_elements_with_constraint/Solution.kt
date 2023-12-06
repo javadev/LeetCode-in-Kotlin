@@ -9,7 +9,6 @@ import kotlin.math.min
 
 class Solution {
     fun minAbsoluteDifference(nums: List<Int>, x: Int): Int {
-        // if (x == 0) x = 1;
         val xt = TreeSet<Int>()
         val start = nums.size - 1 - x
         var j = nums.size - 1

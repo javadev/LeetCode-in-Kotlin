@@ -39,7 +39,7 @@ class Solution {
 
     private fun revList(head: ListNode?): ListNode? {
         var prev: ListNode? = null
-        var nxt: ListNode? = null
+        var nxt: ListNode?
         var current = head
         while (current != null) {
             nxt = current.next

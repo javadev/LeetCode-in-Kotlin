@@ -12,7 +12,7 @@ class Solution {
         val hm = HashMap<Int, MutableList<Int>>()
         for (i in 0 until n) {
             val v = nums[i]
-            hm.computeIfAbsent(v) { k: Int? -> ArrayList() }.add(i)
+            hm.computeIfAbsent(v) { _: Int? -> ArrayList() }.add(i)
         }
         for (list in hm.values) {
             if (list.size > 1) {

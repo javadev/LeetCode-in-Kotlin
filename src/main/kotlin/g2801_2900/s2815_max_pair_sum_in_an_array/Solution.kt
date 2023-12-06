@@ -3,7 +3,6 @@ package g2801_2900.s2815_max_pair_sum_in_an_array
 // #Easy #Array #Hash_Table #2023_12_06_Time_223_ms_(82.35%)_Space_37.6_MB_(100.00%)
 
 import java.util.PriorityQueue
-import kotlin.Comparator
 import kotlin.collections.HashMap
 import kotlin.math.max
 

@@ -5,7 +5,7 @@ package g2801_2900.s2811_check_if_it_is_possible_to_split_array
 
 class Solution {
     fun canSplitArray(nums: List<Int>, m: Int): Boolean {
-        if (nums.size < 3 && !nums.isEmpty()) {
+        if (nums.size < 3 && nums.isNotEmpty()) {
             return true
         }
         var ans = false
