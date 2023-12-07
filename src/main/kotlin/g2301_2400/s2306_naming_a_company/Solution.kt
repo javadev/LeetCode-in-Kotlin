@@ -25,11 +25,10 @@ class Solution {
                 res += compare(b1, b2)
             }
         }
-
         return res
     }
 
-    fun compare(b1: MutableSet<String>, b2: MutableSet<String>): Long {
+    fun compare(b1: Set<String>, b2: Set<String>): Long {
         val set1 = if (b1.size > b2.size) b1 else b2
         val set2 = if (b1.size > b2.size) b2 else b1
         var n1 = set1.size
@@ -40,7 +39,6 @@ class Solution {
                 n2--
             }
         }
-
         return (n1 * n2) * 2L
     }
 }
