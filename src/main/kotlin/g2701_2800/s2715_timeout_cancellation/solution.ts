@@ -1,4 +1,4 @@
-// #Easy #2023_08_02_Time_64_ms_(91.95%)_Space_42.3_MB_(96.51%)
+// #Easy #2023_09_15_Time_53_ms_(97.68%)_Space_43.2_MB_(25.10%)
 
 function cancellable(fn: Function, args: any[], t: number): Function {
     let cancelled: boolean = false
