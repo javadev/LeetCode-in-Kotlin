@@ -26,7 +26,15 @@ class Solution {
     }
 
     private fun dp(
-        low: String, high: String, i: Int, mode: Int, odd: Int, even: Int, num: Int, rem: Int, k: Int
+        low: String,
+        high: String,
+        i: Int,
+        mode: Int,
+        odd: Int,
+        even: Int,
+        num: Int,
+        rem: Int,
+        k: Int
     ): Int {
         if (i == maxLength) {
             return if (num % k == 0 && odd == even) 1 else 0

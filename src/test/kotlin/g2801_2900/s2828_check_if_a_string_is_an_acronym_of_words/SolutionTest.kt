@@ -7,29 +7,29 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun isAcronym() {
-            assertThat(
-                Solution().isAcronym(mutableListOf("alice", "bob", "charlie"), "abc"),
-                equalTo(true)
-            )
-        }
+        assertThat(
+            Solution().isAcronym(mutableListOf("alice", "bob", "charlie"), "abc"),
+            equalTo(true)
+        )
+    }
 
     @Test
     fun isAcronym2() {
-            assertThat(
-                Solution().isAcronym(mutableListOf("an", "apple"), "a"),
-                equalTo(false)
-            )
-        }
+        assertThat(
+            Solution().isAcronym(mutableListOf("an", "apple"), "a"),
+            equalTo(false)
+        )
+    }
 
     @Test
     fun isAcronym3() {
-            assertThat(
-                Solution()
-                    .isAcronym(
-                        mutableListOf("never", "gonna", "give", "up", "on", "you"),
-                        "ngguoy"
-                    ),
-                equalTo(true)
-            )
-        }
+        assertThat(
+            Solution()
+                .isAcronym(
+                    mutableListOf("never", "gonna", "give", "up", "on", "you"),
+                    "ngguoy"
+                ),
+            equalTo(true)
+        )
+    }
 }
