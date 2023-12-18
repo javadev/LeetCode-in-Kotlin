@@ -4,6 +4,7 @@ package g2801_2900.s2827_number_of_beautiful_integers_in_the_range
 
 import kotlin.math.max
 
+@Suppress("kotlin:S107")
 class Solution {
     private lateinit var dp: Array<Array<Array<Array<IntArray>>>>
     private var maxLength = 0
