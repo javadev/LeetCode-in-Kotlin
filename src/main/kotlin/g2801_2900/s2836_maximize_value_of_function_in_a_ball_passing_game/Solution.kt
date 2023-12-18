@@ -13,7 +13,6 @@ class Solution {
         val n = receiver.size
         val next = Array(n) { IntArray(upper + 1) }
         val res = Array(n) { LongArray(upper + 1) }
-
         val kBit = IntArray(upper + 1)
         var currK = k
         for (x in 0 until n) {
@@ -24,7 +23,6 @@ class Solution {
             kBit[i] = (currK and 1L).toInt()
             currK = currK shr 1
         }
-
         for (i in 1..upper) {
             for (x in 0 until n) {
                 val nxt = next[x][i - 1]
