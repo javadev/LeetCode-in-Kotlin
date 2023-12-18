@@ -18,7 +18,7 @@ class Solution {
         if (sum < target) {
             return -1
         }
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val `val` = pq.poll()
             sum -= `val`.toLong()
             if (`val` <= target) {

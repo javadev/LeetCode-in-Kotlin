@@ -6,6 +6,7 @@ package g2801_2900.s2846_minimum_edge_weight_equilibrium_queries_in_a_tree
 import kotlin.math.ln
 import kotlin.math.max
 
+@Suppress("kotlin:S107")
 class Solution {
     private class Node(var v: Int, var w: Int)
 
