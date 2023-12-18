@@ -15,7 +15,6 @@ class Solution {
             for (j in 0 until value) {
                 locMax = max(locMax, arr[j])
             }
-
             locMax++
             arr[value - 1] = locMax
             if (locMax > max) {
