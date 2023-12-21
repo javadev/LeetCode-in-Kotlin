@@ -4,7 +4,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Hard #Array #Math #Greedy #Stack #Monotonic_Stack #Number_Theory
 internal class SolutionTest {
     @Test
     fun maximumScore() {

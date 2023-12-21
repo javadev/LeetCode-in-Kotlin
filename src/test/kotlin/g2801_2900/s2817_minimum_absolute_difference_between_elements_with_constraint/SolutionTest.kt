@@ -4,7 +4,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Medium #Array #Binary_Search #Ordered_Set
 internal class SolutionTest {
     @Test
     fun minAbsoluteDifference() {

@@ -4,7 +4,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Hard #Array #Dynamic_Programming #Sorting
 internal class SolutionTest {
     @Test
     fun minimumTime() {

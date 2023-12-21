@@ -5,7 +5,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Medium #Math #Stack #Linked_List
 internal class SolutionTest {
     @Test
     fun doubleIt() {
