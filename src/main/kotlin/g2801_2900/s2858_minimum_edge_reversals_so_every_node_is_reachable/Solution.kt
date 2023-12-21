@@ -22,7 +22,7 @@ class Solution {
         res[0] = dfs(nexts, 0, -1)
         val queue: Queue<Int> = LinkedList()
         queue.add(0)
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val index = queue.remove()
             val `val` = res[index]
             val next: List<IntArray> = nexts[index]

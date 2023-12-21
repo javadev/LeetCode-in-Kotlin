@@ -38,11 +38,11 @@ class Solution {
                 sum += get(ele, curNode, adj, isVis, values, k)
             }
         }
-        if (sum % k == 0L) {
+        return if (sum % k == 0L) {
             ans++
-            return 0
+            0
         } else {
-            return sum
+            sum
         }
     }
 }

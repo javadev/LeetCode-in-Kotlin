@@ -12,7 +12,7 @@ class Solution {
         val st: Deque<Int> = LinkedList()
         val prevSmaller = IntArray(n + 1)
         for (i in 0 until n) {
-            while (!st.isEmpty() && mH[st.peek()] >= mH[i]) {
+            while (st.isNotEmpty() && mH[st.peek()] >= mH[i]) {
                 st.pop()
             }
             if (st.isEmpty()) {
@@ -25,7 +25,7 @@ class Solution {
         st.clear()
         val nextSmaller = IntArray(n + 1)
         for (i in n - 1 downTo 0) {
-            while (!st.isEmpty() && mH[st.peek()] >= mH[i]) {
+            while (st.isNotEmpty() && mH[st.peek()] >= mH[i]) {
                 st.pop()
             }
             if (st.isEmpty()) {
