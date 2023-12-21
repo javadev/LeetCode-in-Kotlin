@@ -5,27 +5,23 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isReachableAtTime: Unit
-        get() {
-            assertThat(Solution().isReachableAtTime(2, 4, 7, 7, 6), equalTo(true))
-        }
+    @Test
+    fun isReachableAtTime() {
+        assertThat(Solution().isReachableAtTime(2, 4, 7, 7, 6), equalTo(true))
+    }
 
-    @get:Test
-    val isReachableAtTime2: Unit
-        get() {
-            assertThat(Solution().isReachableAtTime(3, 1, 7, 3, 3), equalTo(false))
-        }
+    @Test
+    fun isReachableAtTime2() {
+        assertThat(Solution().isReachableAtTime(3, 1, 7, 3, 3), equalTo(false))
+    }
 
-    @get:Test
-    val isReachableAtTime3: Unit
-        get() {
-            assertThat(Solution().isReachableAtTime(3, 1, 3, 1, 3), equalTo(true))
-        }
+    @Test
+    fun isReachableAtTime3() {
+        assertThat(Solution().isReachableAtTime(3, 1, 3, 1, 3), equalTo(true))
+    }
 
-    @get:Test
-    val isReachableAtTime4: Unit
-        get() {
-            assertThat(Solution().isReachableAtTime(3, 1, 3, 1, 1), equalTo(false))
-        }
+    @Test
+    fun isReachableAtTime4() {
+        assertThat(Solution().isReachableAtTime(3, 1, 3, 1, 1), equalTo(false))
+    }
 }
