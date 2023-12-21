@@ -1,13 +1,13 @@
 package g2801_2900.s2861_maximum_number_of_alloys
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun maxNumberOfAlloys() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .maxNumberOfAlloys(
                     3,
@@ -17,13 +17,13 @@ internal class SolutionTest {
                     mutableListOf(0, 0, 0),
                     mutableListOf(1, 2, 3)
                 ),
-            CoreMatchers.equalTo(2)
+            equalTo(2)
         )
     }
 
     @Test
     fun maxNumberOfAlloys2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .maxNumberOfAlloys(
                     3,
@@ -33,13 +33,13 @@ internal class SolutionTest {
                     mutableListOf(0, 0, 100),
                     mutableListOf(1, 2, 3)
                 ),
-            CoreMatchers.equalTo(5)
+            equalTo(5)
         )
     }
 
     @Test
     fun maxNumberOfAlloys3() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .maxNumberOfAlloys(
                     2,
@@ -53,7 +53,7 @@ internal class SolutionTest {
                     mutableListOf(1, 1),
                     mutableListOf(5, 5)
                 ),
-            CoreMatchers.equalTo(2)
+            equalTo(2)
         )
     }
 }

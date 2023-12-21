@@ -5,20 +5,18 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val maxFunctionValue: Unit
-        get() {
-            assertThat(
-                Solution().getMaxFunctionValue(mutableListOf(2, 0, 1), 4),
-                equalTo(6L)
-            )
-        }
+    @Test
+    fun maxFunctionValue() {
+        assertThat(
+            Solution().getMaxFunctionValue(mutableListOf(2, 0, 1), 4),
+            equalTo(6L)
+        )
+    }
 
-    @get:Test
-    val maxFunctionValue2: Unit
-        get() {
-            assertThat(
-                Solution().getMaxFunctionValue(mutableListOf(1, 1, 1, 2, 3), 3), equalTo(10L)
-            )
-        }
+    @Test
+    fun maxFunctionValue2() {
+        assertThat(
+            Solution().getMaxFunctionValue(mutableListOf(1, 1, 1, 2, 3), 3), equalTo(10L)
+        )
+    }
 }
