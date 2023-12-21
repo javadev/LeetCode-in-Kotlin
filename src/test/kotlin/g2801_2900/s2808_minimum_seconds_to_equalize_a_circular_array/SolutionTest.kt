@@ -4,7 +4,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Medium #Array #Hash_Table #Greedy
 internal class SolutionTest {
     @Test
     fun minimumSeconds() {

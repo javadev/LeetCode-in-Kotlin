@@ -4,7 +4,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Easy #Array #Hash_Table
 internal class SolutionTest {
     @Test
     fun maxSum() {

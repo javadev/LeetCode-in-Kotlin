@@ -5,7 +5,6 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
-// #Medium #Array #Breadth_First_Search #Binary_Search #Matrix #Union_Find
 internal class SolutionTest {
     @Test
     fun maximumSafenessFactor() {
