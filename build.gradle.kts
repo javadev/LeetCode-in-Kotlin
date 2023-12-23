@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:[5.10.0,)")
+    testImplementation("org.junit.jupiter:junit-jupiter:[5.10.1,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.1.1,)")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -27,7 +27,7 @@ tasks.test {
 }
 
 group = "com.github.javadev"
-version = "1.19-SNAPSHOT"
+version = "1.20-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_11
 java.targetCompatibility = JavaVersion.VERSION_11
