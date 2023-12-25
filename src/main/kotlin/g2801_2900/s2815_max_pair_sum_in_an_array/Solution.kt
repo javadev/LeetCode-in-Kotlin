@@ -6,6 +6,7 @@ import java.util.PriorityQueue
 import kotlin.collections.HashMap
 import kotlin.math.max
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun maxSum(nums: IntArray): Int {
         // what we'll return
