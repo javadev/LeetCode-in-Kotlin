@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.21")
     testImplementation("org.junit.jupiter:junit-jupiter:[5.10.1,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.1.1,)")
