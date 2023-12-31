@@ -2,29 +2,26 @@ package g0201_0300.s0207_course_schedule
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search
 // #Breadth_First_Search #Graph #Topological_Sort #Big_O_Time_O(N)_Space_O(N)
-// #2022_09_09_Time_416_ms_(40.10%)_Space_48.5_MB_(75.40%)
+// #2023_12_31_Time_356_ms_(10.58%)_Space_38.1_MB_(97.12%)
 
 class Solution {
     fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
-        val adj: Array<ArrayList<Int>?> = arrayOfNulls<ArrayList<Int>>(numCourses)
-        for (i in 0 until numCourses) {
-            adj[i] = ArrayList()
-        }
+        val adj: Array<ArrayList<Int>> = Array(numCourses) { ArrayList() }
         for (pre in prerequisites) {
-            adj[pre[1]]?.add(pre[0])
+            adj[pre[1]].add(pre[0])
         }
         val colors = IntArray(numCourses)
         for (i in 0 until numCourses) {
-            if (colors[i] == WHITE && !adj[i]?.isEmpty()!! && hasCycle(adj, i, colors)) {
+            if (colors[i] == WHITE && adj[i].isNotEmpty() && hasCycle(adj, i, colors)) {
                 return false
             }
         }
         return true
     }
 
-    private fun hasCycle(adj: Array<ArrayList<Int>?>, node: Int, colors: IntArray): Boolean {
+    private fun hasCycle(adj: Array<ArrayList<Int>>, node: Int, colors: IntArray): Boolean {
         colors[node] = GRAY
-        for (nei in adj[node]!!) {
+        for (nei in adj[node]) {
             if (colors[nei] == GRAY) {
                 return true
             }
