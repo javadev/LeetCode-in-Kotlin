@@ -5,6 +5,7 @@ package g2901_3000.s2902_count_of_sub_multisets_with_bounded_sum
 
 import kotlin.math.min
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun countSubMultisets(nums: List<Int>, l: Int, r: Int): Int {
         var r = r
