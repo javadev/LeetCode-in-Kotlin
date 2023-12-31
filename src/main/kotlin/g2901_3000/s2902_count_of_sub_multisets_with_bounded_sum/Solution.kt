@@ -1,67 +1,81 @@
 package g2901_3000.s2902_count_of_sub_multisets_with_bounded_sum
 
 // #Hard #Array #Hash_Table #Dynamic_Programming #Sliding_Window
-// #2023_12_27_Time_2416_ms_(100.00%)_Space_87.8_MB_(100.00%)
+// #2023_12_31_Time_249_ms_(100.00%)_Space_41.2_MB_(100.00%)
 
+import kotlin.math.min
+
+@Suppress("NAME_SHADOWING")
 class Solution {
-    private var map: HashMap<Int, Int>? = null
-    private lateinit var dp: Array<IntArray>
-
-    private fun solve(al: List<Int>, l: Int, r: Int, index: Int, sum: Int): Int {
-        if (sum > r) {
+    fun countSubMultisets(nums: List<Int>, l: Int, r: Int): Int {
+        var r = r
+        INT_MAP.clear()
+        INT_MAP.add(0)
+        var total = 0
+        for (num in nums) {
+            INT_MAP.add(num)
+            total += num
+        }
+        if (total < l) {
             return 0
         }
-        var ans: Long = 0
-        if (index >= al.size) {
-            return ans.toInt()
-        }
-        if (dp[index][sum] != -1) {
-            return dp[index][sum]
-        }
-        val cur = al[index]
-        val count = map!![cur]!!
-        for (i in 0..count) {
-            val curSum = sum + cur * i
-            if (curSum > r) {
-                break
+        r = min(r, total)
+        val cnt = IntArray(r + 1)
+        cnt[0] = INT_MAP.map[0]
+        var sum = 0
+        for (i in 1 until INT_MAP.size) {
+            val `val` = INT_MAP.vals[i]
+            val count = INT_MAP.map[`val`]
+            if (count > 0) {
+                sum = min(r, sum + `val` * count)
+                update(cnt, `val`, count, sum)
             }
-            ans += solve(al, l, r, index + 1, curSum)
-            if (i != 0 && curSum >= l) {
-                ans += 1
-            }
-            ans %= MOD
         }
-        dp[index][sum] = ans.toInt()
-        return ans.toInt()
+        var res = 0
+        for (i in l..r) {
+            res = (res + cnt[i]) % MOD
+        }
+        return res
     }
 
-    fun countSubMultisets(nums: List<Int>, l: Int, r: Int): Int {
-        map = HashMap()
-        val al: MutableList<Int> = ArrayList()
-        for (cur in nums) {
-            val count = map!!.getOrDefault(cur, 0) + 1
-            map!![cur] = count
-            if (count == 1) {
-                al.add(cur)
+    private fun update(cnt: IntArray, n: Int, count: Int, sum: Int) {
+        if (count == 1) {
+            for (i in sum downTo n) {
+                cnt[i] = (cnt[i] + cnt[i - n]) % MOD
+            }
+        } else {
+            for (i in n..sum) {
+                cnt[i] = (cnt[i] + cnt[i - n]) % MOD
+            }
+            val max = (count + 1) * n
+            for (i in sum downTo max) {
+                cnt[i] = (cnt[i] - cnt[i - max] + MOD) % MOD
             }
         }
-        val n = al.size
-        dp = Array(n) { IntArray(r + 1) }
-        for (i in dp.indices) {
-            for (j in dp[0].indices) {
-                dp[i][j] = -1
+    }
+
+    private class IntMap {
+        val map: IntArray = IntArray(MAX)
+        val vals: IntArray = IntArray(MAX)
+        var size: Int = 0
+
+        fun add(v: Int) {
+            if (map[v]++ == 0) {
+                vals[size++] = v
             }
         }
-        al.sort()
-        var ans = solve(al, l, r, 0, 0)
-        if (l == 0) {
-            ans += 1
+
+        fun clear() {
+            for (i in 0 until size) {
+                map[vals[i]] = 0
+            }
+            size = 0
         }
-        ans %= MOD
-        return ans
     }
 
     companion object {
-        private const val MOD = 1e9.toInt() + 7
+        private const val MOD = 1000000007
+        private const val MAX = 20001
+        private val INT_MAP = IntMap()
     }
 }
