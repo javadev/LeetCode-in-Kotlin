@@ -11,12 +11,12 @@ class Solution {
         for (i in 0..min(n, limit)) {
             var rem = (n - i).toLong()
             if (rem > 2 * limit) continue
-            //second student
+            // second student
             val max = min(limit.toLong(), rem)
-            //for third student
+            // for third student
             rem -= max
-            //if remain is grater than limit cant possible to arrange;
-            //if(rem <= limit) than max - rem combination
+            // if remain is grater than limit cant possible to arrange;
+            // if(rem <= limit) than max - rem combination
             if (rem <= limit) ans = ans + max - rem + 1
         }
         return ans
