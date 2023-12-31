@@ -3,6 +3,7 @@ package g2901_3000.s2916_subarrays_distinct_element_sum_of_squares_ii
 // #Hard #Array #Dynamic_Programming #Segment_Tree #Binary_Indexed_Tree
 // #2023_12_31_Time_467_ms_(100.00%)_Space_58_MB_(100.00%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private var n = 0
     private lateinit var tree1: LongArray

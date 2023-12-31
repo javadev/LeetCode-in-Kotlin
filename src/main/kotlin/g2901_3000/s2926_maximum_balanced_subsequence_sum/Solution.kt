@@ -5,6 +5,7 @@ package g2901_3000.s2926_maximum_balanced_subsequence_sum
 
 import kotlin.math.max
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     fun maxBalancedSubsequenceSum(nums: IntArray): Long {
         val n = nums.size
