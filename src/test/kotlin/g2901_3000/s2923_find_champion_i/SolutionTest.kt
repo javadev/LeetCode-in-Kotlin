@@ -1,6 +1,6 @@
 package g2901_3000.s2923_find_champion_i
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
+import com_github_leetcode.CommonUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findChampion(
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,1],[0,0]"
                     )
                 ),
@@ -24,7 +24,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findChampion(
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,0,1],[1,0,1],[0,0,0]"
                     )
                 ),
@@ -37,7 +37,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findChampion(
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,0,0],[1,0,0],[1,1,0]"
                     )
                 ),

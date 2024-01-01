@@ -1,6 +1,5 @@
 package g2401_2500.s2482_difference_between_ones_and_zeros_in_row_and_column
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test

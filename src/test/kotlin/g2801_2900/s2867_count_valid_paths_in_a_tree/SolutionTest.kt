@@ -1,6 +1,6 @@
 package g2801_2900.s2867_count_valid_paths_in_a_tree
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
+import com_github_leetcode.CommonUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .countPaths(
                     5,
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[1,3],[2,4],[2,5]"
                     )
                 ),
@@ -26,7 +26,7 @@ internal class SolutionTest {
             Solution()
                 .countPaths(
                     6,
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[1,3],[2,4],[3,5],[3,6]"
                     )
                 ),
