@@ -1,6 +1,6 @@
 package g2401_2500.s2477_minimum_fuel_cost_to_report_to_the_capital
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
+import com_github_leetcode.CommonUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumFuelCost(
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,1],[0,2],[0,3]"
                     ),
                     5
@@ -25,7 +25,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumFuelCost(
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]"
                     ),
                     2
