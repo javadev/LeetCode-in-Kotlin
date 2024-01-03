@@ -14,10 +14,10 @@ class Solution {
         l.offer(n - 1)
         gr[n - 1] = -1
         for (i in n - 2 downTo 0) {
-            while (!l.isEmpty() && heights[i] > heights[l.peek()]) {
+            while (l.isNotEmpty() && heights[i] > heights[l.peek()]) {
                 l.pop()
             }
-            if (!l.isEmpty()) {
+            if (l.isNotEmpty()) {
                 gr[i] = l.peek()
             } else {
                 gr[i] = -1
