@@ -1,6 +1,6 @@
 package g2901_3000.s2940_find_building_where_alice_and_bob_can_meet
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
+import com_github_leetcode.CommonUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .leftmostBuildingQueries(
                     intArrayOf(6, 4, 8, 5, 2, 7),
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,1],[0,3],[2,4],[3,4],[2,2]"
                     )
                 ),
@@ -26,7 +26,7 @@ internal class SolutionTest {
             Solution()
                 .leftmostBuildingQueries(
                     intArrayOf(5, 3, 8, 2, 6, 1, 4, 6),
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,7],[3,5],[5,2],[3,0],[1,6]"
                     )
                 ),
