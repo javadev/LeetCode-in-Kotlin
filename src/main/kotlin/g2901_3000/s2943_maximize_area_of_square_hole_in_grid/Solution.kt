@@ -5,6 +5,7 @@ package g2901_3000.s2943_maximize_area_of_square_hole_in_grid
 import kotlin.math.max
 import kotlin.math.min
 
+@Suppress("UNUSED_PARAMETER")
 class Solution {
     fun maximizeSquareHoleArea(n: Int, m: Int, hBars: IntArray, vBars: IntArray): Int {
         val x = find(hBars)
