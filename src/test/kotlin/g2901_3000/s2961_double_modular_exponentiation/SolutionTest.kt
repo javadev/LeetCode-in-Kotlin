@@ -1,14 +1,14 @@
 package g2901_3000.s2961_double_modular_exponentiation
 
 import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun goodIndices() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution()
                 .getGoodIndices(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
@@ -16,15 +16,15 @@ internal class SolutionTest {
                     ),
                     2
                 ),
-            CoreMatchers.equalTo(listOf(0, 2))
+            equalTo(listOf(0, 2))
         )
     }
 
     @Test
     fun goodIndices2() {
-        MatcherAssert.assertThat(
+        assertThat(
             Solution().getGoodIndices(arrayOf(intArrayOf(39, 3, 1000, 1000)), 17),
-            CoreMatchers.equalTo(listOf<Any>())
+            equalTo(listOf<Any>())
         )
     }
 }
