@@ -1,6 +1,6 @@
 package g2901_3000.s2924_find_champion_ii
 
-// #Medium #Graph #2023_12_31_Time_724_ms_(6.98%)_Space_45.3_MB_(97.67%)
+// #Medium #Graph #2024_01_16_Time_422_ms_(81.82%)_Space_58.4_MB_(63.64%)
 
 class Solution {
     fun findChampion(n: Int, edges: Array<IntArray>): Int {

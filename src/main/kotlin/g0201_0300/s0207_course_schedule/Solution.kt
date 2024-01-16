@@ -2,7 +2,7 @@ package g0201_0300.s0207_course_schedule
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search
 // #Breadth_First_Search #Graph #Topological_Sort #Big_O_Time_O(N)_Space_O(N)
-// #2023_12_31_Time_356_ms_(10.58%)_Space_38.1_MB_(97.12%)
+// #2024_01_16_Time_183_ms_(92.07%)_Space_39.1_MB_(81.50%)
 
 class Solution {
     fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {

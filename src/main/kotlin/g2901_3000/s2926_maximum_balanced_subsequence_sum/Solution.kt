@@ -1,7 +1,7 @@
 package g2901_3000.s2926_maximum_balanced_subsequence_sum
 
 // #Hard #Array #Dynamic_Programming #Binary_Search #Segment_Tree #Binary_Indexed_Tree
-// #2023_12_31_Time_1067_ms_(12.50%)_Space_64.7_MB_(68.75%)
+// #2024_01_16_Time_636_ms_(100.00%)_Space_66.4_MB_(66.67%)
 
 import kotlin.math.max
 
