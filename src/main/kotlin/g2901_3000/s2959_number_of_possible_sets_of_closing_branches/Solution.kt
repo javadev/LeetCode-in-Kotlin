@@ -3,8 +3,8 @@ package g2901_3000.s2959_number_of_possible_sets_of_closing_branches
 // #Hard #Bit_Manipulation #Heap_Priority_Queue #Graph #Enumeration #Shortest_Path
 // #2024_01_16_Time_231_ms_(87.50%)_Space_39.9_MB_(75.00%)
 
-import java.util.Queue
 import java.util.LinkedList
+import java.util.Queue
 
 class Solution {
     private fun get(n: Int, maxDis: Int, mask: Int, al: List<MutableList<IntArray>>): Int {

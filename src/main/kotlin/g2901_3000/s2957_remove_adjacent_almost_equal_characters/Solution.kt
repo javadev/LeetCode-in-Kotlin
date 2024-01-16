@@ -13,8 +13,10 @@ class Solution {
             if (abs((wordArray[i].code - wordArray[i - 1].code).toDouble()) <= 1) {
                 count++
                 wordArray[i] =
-                    if ((i + 1 < wordArray.size
-                                && (wordArray[i + 1] != 'a' && wordArray[i + 1] != 'b'))
+                    if ((
+                        i + 1 < wordArray.size &&
+                            (wordArray[i + 1] != 'a' && wordArray[i + 1] != 'b')
+                        )
                     ) 'a'
                     else 'z'
             }
