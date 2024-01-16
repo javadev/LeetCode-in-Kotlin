@@ -30,7 +30,7 @@ class Solution {
             dis.fill(Int.MAX_VALUE)
             dis[startVertex] = 0
             var nodeCount = 1
-            while (!q.isEmpty()) {
+            while (q.isNotEmpty()) {
                 val curr = q.poll()
                 for (adj in al[curr[0]]) {
                     if (!m[adj[0]] && curr[1] + adj[1] <= dis[adj[0]]) {
