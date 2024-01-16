@@ -1,6 +1,6 @@
 package g2901_3000.s2923_find_champion_i
 
-// #Easy #Array #Matrix #2023_12_31_Time_591_ms_(5.63%)_Space_49.8_MB_(36.62%)
+// #Easy #Array #Matrix #2024_01_16_Time_320_ms_(58.62%)_Space_49.8_MB_(48.28%)
 
 class Solution {
     fun findChampion(grid: Array<IntArray>): Int {

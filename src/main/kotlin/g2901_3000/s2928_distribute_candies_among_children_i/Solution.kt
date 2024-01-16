@@ -1,6 +1,6 @@
 package g2901_3000.s2928_distribute_candies_among_children_i
 
-// #Easy #Math #Enumeration #Combinatorics #2023_12_31_Time_282_ms_(6.38%)_Space_33.7_MB_(85.11%)
+// #Easy #Math #Enumeration #Combinatorics #2024_01_16_Time_141_ms_(86.36%)_Space_33.8_MB_(86.36%)
 
 import kotlin.math.min
 
