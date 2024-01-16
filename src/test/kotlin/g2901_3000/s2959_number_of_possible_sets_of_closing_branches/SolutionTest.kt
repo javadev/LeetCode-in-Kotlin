@@ -1,6 +1,6 @@
 package g2901_3000.s2959_number_of_possible_sets_of_closing_branches
 
-import com_github_leetcode.CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
+import com_github_leetcode.CommonUtils
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -13,7 +13,7 @@ internal class SolutionTest {
                 .numberOfSets(
                     3,
                     5,
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,1,2],[1,2,10],[0,2,10]"
                     )
                 ),
@@ -28,7 +28,7 @@ internal class SolutionTest {
                 .numberOfSets(
                     3,
                     5,
-                    convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                    CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[0,1,20],[0,1,10],[1,2,2],[0,2,2]"
                     )
                 ),
