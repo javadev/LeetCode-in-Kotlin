@@ -47,11 +47,11 @@ class Solution {
         for (ne in next) {
             if (ne != p) {
                 val r = dp(g, cost, ne, i)
-                while (!r.min!!.isEmpty()) {
+                while (r.min!!.isNotEmpty()) {
                     val a = r.min!!.poll()
                     pq2.add(a)
                 }
-                while (!r.max!!.isEmpty()) {
+                while (r.max!!.isNotEmpty()) {
                     val a = r.max!!.poll()
                     pq.add(a)
                 }
@@ -60,11 +60,11 @@ class Solution {
         if (pq.size + pq2.size < 3) {
             result[i] = 1
         } else {
-            val a = if (!pq.isEmpty()) pq.poll() else 0
-            val b = if (!pq.isEmpty()) pq.poll() else 0
-            val c = if (!pq.isEmpty()) pq.poll() else 0
-            val aa = if (!pq2.isEmpty()) pq2.poll() else 0
-            val bb = if (!pq2.isEmpty()) pq2.poll() else 0
+            val a = if (pq.isNotEmpty()) pq.poll() else 0
+            val b = if (pq.isNotEmpty()) pq.poll() else 0
+            val c = if (pq.isNotEmpty()) pq.poll() else 0
+            val aa = if (pq2.isNotEmpty()) pq2.poll() else 0
+            val bb = if (pq2.isNotEmpty()) pq2.poll() else 0
             result[i] = max(0, (a.toLong() * b * c))
             result[i] = max(result[i], max(0, (a.toLong() * aa * bb)))
                 .toLong()

@@ -65,7 +65,7 @@ class Solution {
             // in the left half to match the right end of the right interval, this
             // means we do not need the right end of the right interval to go too far
             while (mp.containsKey(s[rptr]) ||
-                (rptr >= n / 2 && s[rptr] == s[opp(rptr)] && mp.size == 0)
+                (rptr >= n / 2 && s[rptr] == s[opp(rptr)] && mp.isEmpty())
             ) {
                 mp.computeIfPresent(s[rptr]) { _: Char?, v: Int -> if (v == 1) null else v - 1 }
                 rptr--
@@ -79,7 +79,7 @@ class Solution {
         for (i in opp(problemPoint) downTo n / 2) {
             mp.compute(s[i]) { _: Char?, v: Int? -> if (v == null) 1 else v + 1 }
             while (mp.containsKey(s[lptr]) ||
-                (lptr < n / 2 && s[lptr] == s[opp(lptr)] && mp.size == 0)
+                (lptr < n / 2 && s[lptr] == s[opp(lptr)] && mp.isEmpty())
             ) {
                 mp.computeIfPresent(s[lptr]) { _: Char?, v: Int -> if (v == 1) null else v - 1 }
                 lptr++
