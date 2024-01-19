@@ -25,7 +25,7 @@ class Solution {
         for (values in arr) {
             if (values[0] != 0) {
                 max = if (values[1] >= 3) {
-                    max(max.toDouble(), values[0].toDouble()).toInt()
+                    max(max, values[0])
                 } else if (values[1] == 2 || values[2] == values[0] - 1) {
                     max(max, (values[0] - 1))
                 } else {

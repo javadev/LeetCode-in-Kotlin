@@ -19,7 +19,7 @@ class Solution {
             ans1 += abs((previousPalindrome - num))
             ans2 += abs((nextPalindrome - num))
         }
-        return min(ans1.toDouble(), ans2.toDouble()).toLong()
+        return min(ans1, ans2)
     }
 
     private fun getPreviousPalindrome(num: Int): Int {
