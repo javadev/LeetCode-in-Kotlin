@@ -4,8 +4,8 @@ package g3001_3100.s3014_minimum_number_of_pushes_to_type_word_i
 
 class Solution {
     fun minimumPushes(word: String): Int {
-        if (word.length <= 8) {
-            return word.length
+        return if (word.length <= 8) {
+            word.length
         } else {
             var iteration = 1
             var len = word.length
@@ -20,7 +20,7 @@ class Solution {
                 }
                 iteration++
             }
-            return count
+            count
         }
     }
 }

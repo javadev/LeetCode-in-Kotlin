@@ -37,7 +37,7 @@ class Solution {
         }
         j = 0
         i = j
-        while (i < n && !matchesA.isEmpty()) {
+        while (i < n && matchesA.isNotEmpty()) {
             if (s[i] == b[j]) {
                 i++
                 j++
@@ -52,10 +52,10 @@ class Solution {
                 val bStart = i - bLen
                 j = lpsB[bLen - 1]
 
-                while (!matchesA.isEmpty() && bStart - matchesA.peek() > k) {
+                while (matchesA.isNotEmpty() && bStart - matchesA.peek() > k) {
                     matchesA.poll()
                 }
-                while (!matchesA.isEmpty() && abs((matchesA.peek() - bStart).toDouble()) <= k) {
+                while (matchesA.isNotEmpty() && abs((matchesA.peek() - bStart).toDouble()) <= k) {
                     ans.add(matchesA.poll())
                 }
             }
