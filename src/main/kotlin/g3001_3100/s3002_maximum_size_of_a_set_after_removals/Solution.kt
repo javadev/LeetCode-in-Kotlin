@@ -31,6 +31,6 @@ class Solution {
         val from2 = min(uniq2.size - common, half)
         val takeFromCommon1 = half - from1
         val takeFromCommon2 = half - from2
-        return (from1 + from2 + min((takeFromCommon1 + takeFromCommon2).toDouble(), common.toDouble())).toInt()
+        return from1 + from2 + min(takeFromCommon1 + takeFromCommon2, common)
     }
 }

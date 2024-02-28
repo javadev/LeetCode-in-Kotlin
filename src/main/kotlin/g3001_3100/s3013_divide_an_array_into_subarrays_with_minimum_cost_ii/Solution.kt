@@ -22,7 +22,7 @@ class Solution {
         var sum: Long = 0
         val n = nums.size.toLong()
         var answer = Long.MAX_VALUE
-        for (currentWindow in 1..min((dist.toLong() + 1).toDouble(), (n - 1).toDouble()).toInt()) {
+        for (currentWindow in 1..min((dist.toLong() + 1), (n - 1)).toInt()) {
             sum += nums[currentWindow].toLong()
             used.add(currentWindow)
         }
@@ -31,7 +31,7 @@ class Solution {
             sum -= nums[largeValueIndex!!].toLong()
             unused.add(largeValueIndex)
         }
-        answer = min(sum.toDouble(), answer.toDouble()).toLong()
+        answer = min(sum, answer)
         var currentWindow = dist + 2
         var prevWindow = 1
         while (currentWindow < n
@@ -54,7 +54,7 @@ class Solution {
                     used.add(smallValueIndex)
                 }
             }
-            answer = min(answer.toDouble(), sum.toDouble()).toLong()
+            answer = min(answer, sum)
             currentWindow++
             prevWindow++
         }
