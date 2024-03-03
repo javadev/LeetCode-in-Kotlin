@@ -1,6 +1,6 @@
 package g3001_3100.s3030_find_the_grid_of_region_average
 
-// #Medium #Array #Matrix #2024_03_01_Time_53_ms_(98.79%)_Space_88.4_MB_(35.20%)
+// #Medium #Array #Matrix #2024_03_03_Time_1250_ms_(86.96%)_Space_90.4_MB_(86.96%)
 
 import kotlin.math.abs
 

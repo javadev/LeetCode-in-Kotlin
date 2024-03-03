@@ -1,33 +1,33 @@
 package g3001_3100.s3031_minimum_time_to_revert_word_to_initial_state_ii
 
 // #Hard #String #Hash_Function #String_Matching #Rolling_Hash
-// #2024_03_01_Time_24_ms_(74.98%)_Space_55.1_MB_(14.85%)
+// #2024_03_03_Time_328_ms_(52.94%)_Space_53_MB_(5.88%)
 
 class Solution {
-    fun minimumTimeToInitialState(w: String, q: Int): Int {
-        val c = w.toCharArray()
+    fun minimumTimeToInitialState(word: String, k: Int): Int {
+        val c = word.toCharArray()
         val lps = IntArray(c.size)
-        var k: Int
+        var q: Int
         for (i in 1 until lps.size) {
             if (c[i] == c[0]) {
                 lps[i] = 1
             }
-            k = lps[i - 1]
-            while (k > 0) {
-                if (c[k] == c[i]) {
-                    lps[i] = k + 1
+            q = lps[i - 1]
+            while (q > 0) {
+                if (c[q] == c[i]) {
+                    lps[i] = q + 1
                     break
                 }
-                k = lps[k - 1]
+                q = lps[q - 1]
             }
         }
-        k = lps[lps.size - 1]
-        while (k > 0) {
-            if ((c.size - k) % q == 0) {
-                return (c.size - k) / q
+        q = lps[lps.size - 1]
+        while (q > 0) {
+            if ((c.size - q) % k == 0) {
+                return (c.size - q) / k
             }
-            k = lps[k - 1]
+            q = lps[q - 1]
         }
-        return (c.size + q - 1) / q
+        return (c.size + k - 1) / k
     }
 }

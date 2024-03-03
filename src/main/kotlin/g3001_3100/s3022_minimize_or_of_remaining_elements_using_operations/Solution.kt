@@ -1,6 +1,6 @@
 package g3001_3100.s3022_minimize_or_of_remaining_elements_using_operations
 
-// #Hard #Array #Greedy #Bit_Manipulation #2024_02_29_Time_43_ms_(78.48%)_Space_56.6_MB_(23.73%)
+// #Hard #Array #Greedy #Bit_Manipulation #2024_03_03_Time_516_ms_(77.78%)_Space_62.7_MB_(100.00%)
 
 class Solution {
     fun minOrAfterOperations(nums: IntArray, k: Int): Int {

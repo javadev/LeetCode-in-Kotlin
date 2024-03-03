@@ -1,7 +1,7 @@
 package g3001_3100.s3035_maximum_palindromes_after_operations
 
 // #Medium #Array #String #Hash_Table #Sorting #Greedy #Counting
-// #2024_03_01_Time_4_ms_(99.13%)_Space_44.9_MB_(90.28%)
+// #2024_03_03_Time_214_ms_(100.00%)_Space_38.4_MB_(100.00%)
 
 class Solution {
     fun maxPalindromesAfterOperations(words: Array<String>): Int {

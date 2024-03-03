@@ -1,7 +1,7 @@
 package g3001_3100.s3025_find_the_number_of_ways_to_place_people_i
 
 // #Medium #Array #Math #Sorting #Enumeration #Geometry
-// #2024_02_29_Time_5_ms_(99.84%)_Space_44.7_MB_(30.13%)
+// #2024_03_03_Time_252_ms_(44.12%)_Space_44.1_MB_(73.53%)
 
 class Solution {
     fun numberOfPairs(points: Array<IntArray>): Int {

@@ -1,7 +1,7 @@
 package g3001_3100.s3044_most_frequent_prime
 
 // #Medium #Array #Hash_Table #Math #Matrix #Counting #Enumeration #Number_Theory
-// #2024_02_29_Time_6_ms_(100.00%)_Space_43.6_MB_(97.08%)
+// #2024_03_03_Time_198_ms_(100.00%)_Space_37.1_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.sqrt

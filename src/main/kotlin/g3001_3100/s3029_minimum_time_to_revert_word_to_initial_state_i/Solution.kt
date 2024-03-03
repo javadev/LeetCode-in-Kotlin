@@ -1,7 +1,7 @@
 package g3001_3100.s3029_minimum_time_to_revert_word_to_initial_state_i
 
 // #Medium #String #Hash_Function #String_Matching #Rolling_Hash
-// #2024_03_01_Time_1_ms_(99.70%)_Space_42.7_MB_(8.42%)
+// #2024_03_03_Time_160_ms_(82.05%)_Space_34.7_MB_(82.05%)
 
 class Solution {
     fun minimumTimeToInitialState(word: String, k: Int): Int {

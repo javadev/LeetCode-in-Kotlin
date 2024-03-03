@@ -1,6 +1,6 @@
 package g3001_3100.s3043_find_the_length_of_the_longest_common_prefix
 
-// #Medium #Array #String #Hash_Table #Trie #2024_02_29_Time_27_ms_(99.94%)_Space_55.6_MB_(78.30%)
+// #Medium #Array #String #Hash_Table #Trie #2024_03_03_Time_623_ms_(76.32%)_Space_58.5_MB_(68.42%)
 
 import kotlin.math.max
 

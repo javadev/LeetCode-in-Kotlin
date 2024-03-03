@@ -1,7 +1,7 @@
 package g3001_3100.s3034_number_of_subarrays_that_match_a_pattern_i
 
 // #Medium #Array #Hash_Function #String_Matching #Rolling_Hash
-// #2024_03_01_Time_1_ms_(100.00%)_Space_43.9_MB_(97.20%)
+// #2024_03_03_Time_225_ms_(38.09%)_Space_39_MB_(59.52%)
 
 class Solution {
     fun countMatchingSubarrays(nums: IntArray, pattern: IntArray): Int {
