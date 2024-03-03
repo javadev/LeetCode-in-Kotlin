@@ -5,18 +5,16 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
-    @get:Test
-    val isPossibleToSplit: Unit
-        get() {
-            assertThat(
-                Solution().isPossibleToSplit(intArrayOf(1, 1, 2, 2, 3, 4)),
-                equalTo(true)
-            )
-        }
+    @Test
+    fun isPossibleToSplit() {
+        assertThat(
+            Solution().isPossibleToSplit(intArrayOf(1, 1, 2, 2, 3, 4)),
+            equalTo(true)
+        )
+    }
 
-    @get:Test
-    val isPossibleToSplit2: Unit
-        get() {
-            assertThat(Solution().isPossibleToSplit(intArrayOf(1, 1, 1, 1)), equalTo(false))
-        }
+    @Test
+    fun isPossibleToSplit2() {
+        assertThat(Solution().isPossibleToSplit(intArrayOf(1, 1, 1, 1)), equalTo(false))
+    }
 }
