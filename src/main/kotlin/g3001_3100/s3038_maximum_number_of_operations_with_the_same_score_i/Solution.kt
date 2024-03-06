@@ -8,8 +8,7 @@ class Solution {
         var i = 2
         val s = nums[0] + nums[1]
         val l = nums.size - (if (nums.size % 2 == 0) 0 else 1)
-        while (i < l
-        ) {
+        while (i < l) {
             if (nums[i] + nums[i + 1] == s) {
                 c++
             } else {
