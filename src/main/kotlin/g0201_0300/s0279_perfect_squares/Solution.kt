@@ -1,7 +1,7 @@
 package g0201_0300.s0279_perfect_squares
 
-// #Medium #Top_Interview_Questions #Dynamic_Programming #Math #Breadth_First_Search
-// #Dynamic_Programming_I_Day_21 #2022_11_03_Time_176_ms_(98.80%)_Space_33.3_MB_(98.80%)
+// #Medium #Dynamic_Programming #Math #Breadth_First_Search #Dynamic_Programming_I_Day_21
+// #2022_11_03_Time_176_ms_(98.80%)_Space_33.3_MB_(98.80%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

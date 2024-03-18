@@ -1,7 +1,7 @@
 package g0401_0500.s0437_path_sum_iii
 
-// #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree #Level_2_Day_7_Tree
-// #Big_O_Time_O(n)_Space_O(n) #2022_09_11_Time_403_ms_(54.12%)_Space_41.7_MB_(62.35%)
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Level_2_Day_7_Tree #Big_O_Time_O(n)_Space_O(n)
+// #2022_09_11_Time_403_ms_(54.12%)_Space_41.7_MB_(62.35%)
 
 import com_github_leetcode.TreeNode
 

@@ -1,6 +1,6 @@
 package g0401_0500.s0412_fizz_buzz
 
-// #Easy #Top_Interview_Questions #String #Math #Simulation #Udemy_Integers
+// #Easy #String #Math #Simulation #Udemy_Integers
 // #2022_12_03_Time_307_ms_(71.81%)_Space_41.9_MB_(71.97%)
 
 class Solution {

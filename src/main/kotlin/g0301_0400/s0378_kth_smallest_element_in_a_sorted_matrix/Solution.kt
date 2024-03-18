@@ -1,6 +1,6 @@
 package g0301_0400.s0378_kth_smallest_element_in_a_sorted_matrix
 
-// #Medium #Top_Interview_Questions #Array #Sorting #Binary_Search #Matrix #Heap_Priority_Queue
+// #Medium #Array #Sorting #Binary_Search #Matrix #Heap_Priority_Queue
 // #2022_09_11_Time_522_ms_(59.78%)_Space_56.6_MB_(79.61%)
 
 class Solution {

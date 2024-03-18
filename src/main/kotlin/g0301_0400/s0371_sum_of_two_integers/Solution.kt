@@ -1,6 +1,6 @@
 package g0301_0400.s0371_sum_of_two_integers
 
-// #Medium #Top_Interview_Questions #Math #Bit_Manipulation #Udemy_Bit_Manipulation
+// #Medium #Math #Bit_Manipulation #Udemy_Bit_Manipulation
 // #2022_11_22_Time_129_ms_(95.45%)_Space_32.9_MB_(90.91%)
 
 @Suppress("NAME_SHADOWING")

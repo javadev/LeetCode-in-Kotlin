@@ -1,7 +1,7 @@
 package g0301_0400.s0329_longest_increasing_path_in_a_matrix
 
-// #Hard #Top_Interview_Questions #Dynamic_Programming #Depth_First_Search #Breadth_First_Search
-// #Graph #Memoization #Topological_Sort #2022_11_12_Time_322_ms_(92.65%)_Space_39.2_MB_(100.00%)
+// #Hard #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Graph #Memoization
+// #Topological_Sort #2022_11_12_Time_322_ms_(92.65%)_Space_39.2_MB_(100.00%)
 
 class Solution {
     fun longestIncreasingPath(matrix: Array<IntArray>): Int {

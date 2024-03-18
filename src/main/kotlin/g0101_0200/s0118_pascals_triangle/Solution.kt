@@ -1,7 +1,7 @@
 package g0101_0200.s0118_pascals_triangle
 
-// #Easy #Top_Interview_Questions #Array #Dynamic_Programming #Data_Structure_I_Day_4_Array
-// #Dynamic_Programming_I_Day_12 #Udemy_Dynamic_Programming
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
+// #Data_Structure_I_Day_4_Array #Dynamic_Programming_I_Day_12 #Udemy_Dynamic_Programming
 // #2022_10_08_Time_277_ms_(33.22%)_Space_34.2_MB_(90.60%)
 
 class Solution {

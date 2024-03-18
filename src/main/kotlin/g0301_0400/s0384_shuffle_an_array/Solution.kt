@@ -1,6 +1,6 @@
 package g0301_0400.s0384_shuffle_an_array
 
-// #Medium #Top_Interview_Questions #Array #Math #Randomized #Algorithm_II_Day_20_Others
+// #Medium #Array #Math #Randomized #Algorithm_II_Day_20_Others
 // #2022_11_24_Time_940_ms_(72.09%)_Space_81.5_MB_(51.16%)
 
 import kotlin.random.Random

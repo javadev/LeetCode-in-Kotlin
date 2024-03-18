@@ -1,8 +1,7 @@
 package g0301_0400.s0315_count_of_smaller_numbers_after_self
 
-// #Hard #Top_Interview_Questions #Array #Binary_Search #Ordered_Set #Divide_and_Conquer
-// #Segment_Tree #Binary_Indexed_Tree #Merge_Sort
-// #2022_11_10_Time_1282_ms_(88.46%)_Space_109.8_MB_(46.15%)
+// #Hard #Array #Binary_Search #Ordered_Set #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree
+// #Merge_Sort #2022_11_10_Time_1282_ms_(88.46%)_Space_109.8_MB_(46.15%)
 
 import java.util.LinkedList
 
