@@ -1,8 +1,7 @@
 package g0201_0300.s0218_the_skyline_problem
 
-// #Hard #Top_Interview_Questions #Array #Heap_Priority_Queue #Ordered_Set #Divide_and_Conquer
-// #Segment_Tree #Binary_Indexed_Tree #Line_Sweep
-// #2022_10_25_Time_365_ms_(93.14%)_Space_45.7_MB_(93.71%)
+// #Hard #Array #Heap_Priority_Queue #Ordered_Set #Divide_and_Conquer #Segment_Tree
+// #Binary_Indexed_Tree #Line_Sweep #2022_10_25_Time_365_ms_(93.14%)_Space_45.7_MB_(93.71%)
 
 import java.util.TreeMap
 

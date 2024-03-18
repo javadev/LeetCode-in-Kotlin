@@ -1,8 +1,7 @@
 package g0301_0400.s0350_intersection_of_two_arrays_ii
 
-// #Easy #Top_Interview_Questions #Array #Hash_Table #Sorting #Binary_Search #Two_Pointers
-// #Data_Structure_I_Day_3_Array #Binary_Search_I_Day_10
-// #2022_11_18_Time_321_ms_(73.37%)_Space_38.4_MB_(62.81%)
+// #Easy #Array #Hash_Table #Sorting #Binary_Search #Two_Pointers #Data_Structure_I_Day_3_Array
+// #Binary_Search_I_Day_10 #2022_11_18_Time_321_ms_(73.37%)_Space_38.4_MB_(62.81%)
 
 class Solution {
     fun intersect(nums1: IntArray, nums2: IntArray): IntArray {

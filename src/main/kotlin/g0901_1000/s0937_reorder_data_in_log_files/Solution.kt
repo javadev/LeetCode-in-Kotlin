@@ -1,6 +1,6 @@
 package g0901_1000.s0937_reorder_data_in_log_files
 
-// #Easy #Array #String #Sorting #2023_04_28_Time_205_ms_(81.82%)_Space_44_MB_(9.09%)
+// #Medium #Array #String #Sorting #2023_04_28_Time_205_ms_(81.82%)_Space_44_MB_(9.09%)
 
 import java.util.Collections
 

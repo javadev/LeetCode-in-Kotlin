@@ -1,6 +1,6 @@
 package g0101_0200.s0155_min_stack
 
-// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Stack #Design
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Stack #Design
 // #Data_Structure_II_Day_14_Stack_Queue #Programming_Skills_II_Day_18 #Level_2_Day_16_Design
 // #Udemy_Design #Big_O_Time_O(1)_Space_O(N)
 // #2022_09_06_Time_331_ms_(84.88%)_Space_54.3_MB_(46.34%)

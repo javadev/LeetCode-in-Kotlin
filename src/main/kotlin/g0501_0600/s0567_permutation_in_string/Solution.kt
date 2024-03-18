@@ -1,7 +1,7 @@
 package g0501_0600.s0567_permutation_in_string
 
-// #Medium #String #Hash_Table #Two_Pointers #Sliding_Window #Algorithm_I_Day_6_Sliding_Window
-// #2023_01_23_Time_169_ms_(100.00%)_Space_35.6_MB_(85.86%)
+// #Medium #Top_100_Liked_Questions #String #Hash_Table #Two_Pointers #Sliding_Window
+// #Algorithm_I_Day_6_Sliding_Window #2023_01_23_Time_169_ms_(100.00%)_Space_35.6_MB_(85.86%)
 
 class Solution {
     fun checkInclusion(s1: String, s2: String): Boolean {

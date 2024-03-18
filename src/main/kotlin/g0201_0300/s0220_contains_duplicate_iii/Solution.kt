@@ -1,6 +1,6 @@
 package g0201_0300.s0220_contains_duplicate_iii
 
-// #Medium #Array #Sorting #Sliding_Window #Ordered_Set #Bucket_Sort
+// #Hard #Array #Sorting #Sliding_Window #Ordered_Set #Bucket_Sort
 // #2022_10_25_Time_921_ms_(72.22%)_Space_77.4_MB_(41.67%)
 
 class Solution {

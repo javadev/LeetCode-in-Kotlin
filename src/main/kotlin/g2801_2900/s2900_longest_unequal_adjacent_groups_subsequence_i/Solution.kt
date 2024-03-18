@@ -1,6 +1,6 @@
 package g2801_2900.s2900_longest_unequal_adjacent_groups_subsequence_i
 
-// #Medium #Array #String #Dynamic_Programming #Greedy
+// #Easy #Array #String #Dynamic_Programming #Greedy
 // #2023_12_21_Time_294_ms_(100.00%)_Space_46.3_MB_(100.00%)
 
 class Solution {

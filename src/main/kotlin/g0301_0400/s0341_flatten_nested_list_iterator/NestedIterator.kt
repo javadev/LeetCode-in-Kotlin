@@ -1,7 +1,7 @@
 package g0301_0400.s0341_flatten_nested_list_iterator
 
-// #Medium #Top_Interview_Questions #Depth_First_Search #Tree #Stack #Design #Queue #Iterator
-// #Programming_Skills_II_Day_18 #2022_11_25_Time_210_ms_(100.00%)_Space_37.6_MB_(100.00%)
+// #Medium #Depth_First_Search #Tree #Stack #Design #Queue #Iterator #Programming_Skills_II_Day_18
+// #2022_11_25_Time_210_ms_(100.00%)_Space_37.6_MB_(100.00%)
 
 import com_github_leetcode.NestedInteger
 

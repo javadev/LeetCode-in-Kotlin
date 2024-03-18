@@ -1,7 +1,6 @@
 package g0201_0300.s0289_game_of_life
 
-// #Medium #Top_Interview_Questions #Array #Matrix #Simulation
-// #2022_11_04_Time_174_ms_(96.97%)_Space_34.2_MB_(93.94%)
+// #Medium #Array #Matrix #Simulation #2022_11_04_Time_174_ms_(96.97%)_Space_34.2_MB_(93.94%)
 
 class Solution {
     companion object {

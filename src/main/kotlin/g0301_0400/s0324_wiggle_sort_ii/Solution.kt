@@ -1,6 +1,6 @@
 package g0301_0400.s0324_wiggle_sort_ii
 
-// #Medium #Top_Interview_Questions #Array #Sorting #Divide_and_Conquer #Quickselect
+// #Medium #Array #Sorting #Divide_and_Conquer #Quickselect
 // #2022_11_12_Time_545_ms_(57.14%)_Space_57.1_MB_(57.14%)
 
 class Solution {

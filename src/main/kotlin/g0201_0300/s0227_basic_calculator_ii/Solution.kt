@@ -1,6 +1,6 @@
 package g0201_0300.s0227_basic_calculator_ii
 
-// #Medium #Top_Interview_Questions #String #Math #Stack #Level_2_Day_18_Stack
+// #Medium #String #Math #Stack #Level_2_Day_18_Stack
 // #2022_10_26_Time_383_ms_(62.50%)_Space_39.5_MB_(83.33%)
 
 class Solution {

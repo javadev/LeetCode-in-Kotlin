@@ -1,6 +1,6 @@
 package g1601_1700.s1637_widest_vertical_area_between_two_points_containing_no_points
 
-// #Medium #Array #Sorting #2023_06_17_Time_616_ms_(100.00%)_Space_80.5_MB_(100.00%)
+// #Easy #Array #Sorting #2023_06_17_Time_616_ms_(100.00%)_Space_80.5_MB_(100.00%)
 
 class Solution {
     fun maxWidthOfVerticalArea(points: Array<IntArray>): Int {

@@ -1,6 +1,6 @@
 package g1701_1800.s1770_maximum_score_from_performing_multiplication_operations
 
-// #Medium #Array #Dynamic_Programming #2023_06_18_Time_436_ms_(91.67%)_Space_51.6_MB_(79.17%)
+// #Hard #Array #Dynamic_Programming #2023_06_18_Time_436_ms_(91.67%)_Space_51.6_MB_(79.17%)
 
 class Solution {
     fun maximumScore(nums: IntArray, multipliers: IntArray): Int {

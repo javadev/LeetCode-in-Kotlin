@@ -1,7 +1,7 @@
 package g0201_0300.s0287_find_the_duplicate_number
 
-// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Two_Pointers
-// #Bit_Manipulation #Binary_Search_II_Day_5 #Big_O_Time_O(n)_Space_O(n)
+// #Medium #Top_100_Liked_Questions #Array #Binary_Search #Two_Pointers #Bit_Manipulation
+// #Binary_Search_II_Day_5 #Big_O_Time_O(n)_Space_O(n)
 // #2022_09_10_Time_656_ms_(66.21%)_Space_78.6_MB_(66.89%)
 
 class Solution {

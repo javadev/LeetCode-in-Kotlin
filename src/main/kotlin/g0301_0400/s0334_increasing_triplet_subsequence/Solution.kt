@@ -1,6 +1,6 @@
 package g0301_0400.s0334_increasing_triplet_subsequence
 
-// #Medium #Top_Interview_Questions #Array #Greedy #Data_Structure_II_Day_5_Array
+// #Medium #Array #Greedy #Data_Structure_II_Day_5_Array
 // #2022_11_15_Time_672_ms_(60.61%)_Space_128.6_MB_(5.23%)
 
 class Solution {

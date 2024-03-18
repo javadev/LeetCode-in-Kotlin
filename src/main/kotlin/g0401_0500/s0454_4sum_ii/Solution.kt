@@ -1,7 +1,6 @@
 package g0401_0500.s0454_4sum_ii
 
-// #Medium #Top_Interview_Questions #Array #Hash_Table
-// #2022_12_26_Time_660_ms_(85.71%)_Space_48.4_MB_(82.86%)
+// #Medium #Array #Hash_Table #2022_12_26_Time_660_ms_(85.71%)_Space_48.4_MB_(82.86%)
 
 class Solution {
     fun fourSumCount(nums1: IntArray, nums2: IntArray, nums3: IntArray, nums4: IntArray): Int {

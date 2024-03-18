@@ -1,8 +1,7 @@
 package g0001_0100.s0010_regular_expression_matching
 
-// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming #Recursion
-// #Udemy_Dynamic_Programming #Big_O_Time_O(m*n)_Space_O(m*n)
-// #2023_07_03_Time_171_ms_(85.26%)_Space_34.6_MB_(94.74%)
+// #Hard #Top_Interview_Questions #String #Dynamic_Programming #Recursion #Udemy_Dynamic_Programming
+// #Big_O_Time_O(m*n)_Space_O(m*n) #2023_07_03_Time_171_ms_(85.26%)_Space_34.6_MB_(94.74%)
 
 class Solution {
     fun isMatch(s: String, p: String): Boolean {
