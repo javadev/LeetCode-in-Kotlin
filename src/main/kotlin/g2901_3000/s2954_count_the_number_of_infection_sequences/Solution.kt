@@ -1,6 +1,6 @@
 package g2901_3000.s2954_count_the_number_of_infection_sequences
 
-// #Hard #Array #Math #Combinatorics #2024_01_16_Time_1446_ms_(14.29%)_Space_69.1_MB_(14.29%)
+// #Hard #Array #Math #Combinatorics #2024_03_30_Time_1493_ms_(100.00%)_Space_69.7_MB_(100.00%)
 
 import kotlin.math.max
 
