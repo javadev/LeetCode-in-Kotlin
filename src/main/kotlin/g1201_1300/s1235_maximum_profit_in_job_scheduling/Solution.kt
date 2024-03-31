@@ -3,8 +3,6 @@ package g1201_1300.s1235_maximum_profit_in_job_scheduling
 // #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
 // #2023_06_09_Time_370_ms_(100.00%)_Space_49.5_MB_(84.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun jobScheduling(startTime: IntArray, endTime: IntArray, profit: IntArray): Int {
         val n = startTime.size
@@ -14,7 +12,7 @@ class Solution {
             time[i][1] = endTime[i]
             time[i][2] = profit[i]
         }
-        Arrays.sort(time, { a: IntArray, b: IntArray -> a[1].compareTo(b[1]) })
+        time.sortWith { a: IntArray, b: IntArray -> a[1].compareTo(b[1]) }
         val maxP = Array(n) { IntArray(2) }
         var lastPos = -1
         var currProfit: Int

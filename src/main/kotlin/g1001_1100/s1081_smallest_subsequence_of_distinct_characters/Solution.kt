@@ -3,7 +3,6 @@ package g1001_1100.s1081_smallest_subsequence_of_distinct_characters
 // #Medium #String #Greedy #Stack #Monotonic_Stack
 // #2023_06_02_Time_146_ms_(100.00%)_Space_34_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.Deque
 import java.util.LinkedList
 
@@ -13,7 +12,7 @@ class Solution {
         val stk: Deque<Char> = LinkedList()
         val freq = IntArray(26)
         val exist = BooleanArray(26)
-        Arrays.fill(exist, false)
+        exist.fill(false)
         for (ch in s.toCharArray()) {
             freq[ch.code - 'a'.code]++
         }

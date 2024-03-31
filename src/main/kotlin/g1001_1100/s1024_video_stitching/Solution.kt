@@ -3,11 +3,9 @@ package g1001_1100.s1024_video_stitching
 // #Medium #Array #Dynamic_Programming #Greedy
 // #2023_05_22_Time_141_ms_(100.00%)_Space_34.8_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun videoStitching(clips: Array<IntArray>, time: Int): Int {
-        Arrays.sort(clips) { a: IntArray, b: IntArray ->
+        clips.sortWith { a: IntArray, b: IntArray ->
             if (a[0] == b[0]
             ) a[1] - b[1] else a[0] - b[0]
         }

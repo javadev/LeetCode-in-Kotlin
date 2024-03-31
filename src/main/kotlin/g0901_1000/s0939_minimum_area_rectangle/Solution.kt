@@ -3,7 +3,6 @@ package g0901_1000.s0939_minimum_area_rectangle
 // #Medium #Array #Hash_Table #Math #Sorting #Geometry
 // #2023_04_29_Time_461_ms_(100.00%)_Space_74.8_MB_(20.00%)
 
-import java.util.Arrays
 import kotlin.math.abs
 
 class Solution {
@@ -16,9 +15,7 @@ class Solution {
             map.putIfAbsent(p[0], HashSet())
             map.getValue(p[0]).add(p[1])
         }
-        Arrays.sort(
-            points
-        ) { a: IntArray, b: IntArray ->
+        points.sortWith { a: IntArray, b: IntArray ->
             if (a[0] == b[0]) Integer.compare(
                 a[1],
                 b[1]
