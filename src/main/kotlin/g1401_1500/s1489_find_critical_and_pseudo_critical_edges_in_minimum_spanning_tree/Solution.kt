@@ -3,7 +3,6 @@ package g1401_1500.s1489_find_critical_and_pseudo_critical_edges_in_minimum_span
 // #Hard #Sorting #Graph #Union_Find #Minimum_Spanning_Tree #Strongly_Connected_Component
 // #2023_06_13_Time_342_ms_(100.00%)_Space_39.1_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.LinkedList
 
 class Solution {
@@ -25,7 +24,7 @@ class Solution {
             mst[i] = LinkedList()
         }
         val mstSet = BooleanArray(edges.size)
-        Arrays.sort(edges) { a: IntArray, b: IntArray ->
+        edges.sortWith { a: IntArray, b: IntArray ->
             Integer.compare(
                 a[2], b[2]
             )

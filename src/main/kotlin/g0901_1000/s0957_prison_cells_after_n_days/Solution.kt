@@ -3,8 +3,6 @@ package g0901_1000.s0957_prison_cells_after_n_days
 // #Medium #Array #Hash_Table #Math #Bit_Manipulation
 // #2023_05_03_Time_172_ms_(100.00%)_Space_36.2_MB_(50.00%)
 
-import java.util.Arrays
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun prisonAfterNDays(cells: IntArray, n: Int): IntArray {
@@ -20,7 +18,7 @@ class Solution {
             day++
             n--
             val next = getNextDay(prev)
-            if (Arrays.equals(next, first)) {
+            if (next.contentEquals(first)) {
                 period = day - 1
                 n %= period
             }

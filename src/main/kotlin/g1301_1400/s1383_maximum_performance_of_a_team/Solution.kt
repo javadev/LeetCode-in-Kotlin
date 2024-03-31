@@ -3,7 +3,6 @@ package g1301_1400.s1383_maximum_performance_of_a_team
 // #Hard #Array #Sorting #Greedy #Heap_Priority_Queue
 // #2023_06_06_Time_427_ms_(100.00%)_Space_50.2_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 class Solution {
@@ -13,7 +12,7 @@ class Solution {
             engineers[i][0] = speed[i]
             engineers[i][1] = efficiency[i]
         }
-        Arrays.sort(engineers) { engineer1: IntArray, engineer2: IntArray -> engineer2[1] - engineer1[1] }
+        engineers.sortWith { engineer1: IntArray, engineer2: IntArray -> engineer2[1] - engineer1[1] }
         var speedSum: Long = 0
         var maximumPerformance: Long = 0
         val minHeap = PriorityQueue<Int>()
