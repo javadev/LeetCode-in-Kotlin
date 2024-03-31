@@ -2,6 +2,7 @@ package g3001_3100.s3067_count_pairs_of_connectable_servers_in_a_weighted_tree_n
 
 // #Medium #Array #Depth_First_Search #Tree #2024_03_31_Time_578_ms_(83.33%)_Space_59.5_MB_(45.83%)
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var adj: Array<ArrayList<Int>>
 
