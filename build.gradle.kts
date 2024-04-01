@@ -14,11 +14,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
-    testImplementation("org.junit.jupiter:junit-jupiter:[5.10.1,)")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.23")
+    testImplementation("org.junit.jupiter:junit-jupiter:[5.10.2,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.1.1,)")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.10.1,)")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.10.2,)")
 }
 
 tasks.test {
@@ -27,7 +27,7 @@ tasks.test {
 }
 
 group = "com.github.javadev"
-version = "1.22-SNAPSHOT"
+version = "1.23-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_11
 java.targetCompatibility = JavaVersion.VERSION_11
