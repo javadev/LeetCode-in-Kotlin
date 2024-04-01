@@ -34,7 +34,6 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.23'
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ##
-* [Programming Skills I](#programming-skills-i)
 * [Programming Skills II](#programming-skills-ii)
 * [Graph Theory I](#graph-theory-i)
 * [SQL I](#sql-i)
@@ -48,102 +47,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.23'
 * [Binary Search I](#binary-search-i)
 * [Binary Search II](#binary-search-ii)
 * [Dynamic Programming I](#dynamic-programming-i)
-
-### Programming Skills I
-
-#### Day 1 Basic Data Type
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1523 |[Count Odd Numbers in an Interval Range](src/main/kotlin/g1501_1600/s1523_count_odd_numbers_in_an_interval_range/Solution.kt)| Easy | Math | 114 | 97.22
-| 1491 |[Average Salary Excluding the Minimum and Maximum Salary](src/main/kotlin/g1401_1500/s1491_average_salary_excluding_the_minimum_and_maximum_salary/Solution.kt)| Easy | Array, Sorting | 165 | 27.87
-
-#### Day 2 Operator
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0191 |[Number of 1 Bits](src/main/kotlin/g0101_0200/s0191_number_of_1_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation | 237 | 68.44
-| 1281 |[Subtract the Product and Sum of Digits of an Integer](src/main/kotlin/g1201_1300/s1281_subtract_the_product_and_sum_of_digits_of_an_integer/Solution.kt)| Easy | Math | 128 | 61.82
-
-#### Day 3 Conditional Statements
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0976 |[Largest Perimeter Triangle](src/main/kotlin/g0901_1000/s0976_largest_perimeter_triangle/Solution.kt)| Easy | Array, Math, Sorting, Greedy | 304 | 33.33
-| 1779 |[Find Nearest Point That Has the Same X or Y Coordinate](src/main/kotlin/g1701_1800/s1779_find_nearest_point_that_has_the_same_x_or_y_coordinate/Solution.kt)| Easy | Array | 364 | 100.00
-
-#### Day 4 Loop
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1822 |[Sign of the Product of an Array](src/main/kotlin/g1801_1900/s1822_sign_of_the_product_of_an_array/Solution.kt)| Easy | Array, Math | 170 | 92.51
-| 1502 |[Can Make Arithmetic Progression From Sequence](src/main/kotlin/g1501_1600/s1502_can_make_arithmetic_progression_from_sequence/Solution.kt)| Easy | Array, Sorting | 156 | 94.82
-| 0202 |[Happy Number](src/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
-| 1790 |[Check if One String Swap Can Make Strings Equal](src/main/kotlin/g1701_1800/s1790_check_if_one_string_swap_can_make_strings_equal/Solution.kt)| Easy | String, Hash_Table, Counting | 138 | 100.00
-
-#### Day 5 Function
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0589 |[N-ary Tree Preorder Traversal](src/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack | 233 | 84.02
-| 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 171 | 100.00
-| 1232 |[Check If It Is a Straight Line](src/main/kotlin/g1201_1300/s1232_check_if_it_is_a_straight_line/Solution.kt)| Easy | Array, Math, Geometry | 152 | 95.38
-
-#### Day 6 Array
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1588 |[Sum of All Odd Length Subarrays](src/main/kotlin/g1501_1600/s1588_sum_of_all_odd_length_subarrays/Solution.kt)| Easy | Array, Math, Prefix_Sum | 157 | 64.00
-| 0283 |[Move Zeroes](src/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Array, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 516 | 79.07
-| 1672 |[Richest Customer Wealth](src/main/kotlin/g1601_1700/s1672_richest_customer_wealth/Solution.kt)| Easy | Array, Matrix | 155 | 94.54
-
-#### Day 7 Array
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1572 |[Matrix Diagonal Sum](src/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix | 221 | 67.61
-| 0566 |[Reshape the Matrix](src/main/kotlin/g0501_0600/s0566_reshape_the_matrix/Solution.kt)| Easy | Array, Matrix, Simulation | 239 | 99.05
-
-#### Day 8 String
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1768 |[Merge Strings Alternately](src/main/kotlin/g1701_1800/s1768_merge_strings_alternately/Solution.kt)| Easy | String, Two_Pointers | 138 | 93.81
-| 1678 |[Goal Parser Interpretation](src/main/kotlin/g1601_1700/s1678_goal_parser_interpretation/Solution.kt)| Easy | String | 136 | 88.24
-| 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 256 | 64.81
-
-#### Day 9 String
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0709 |[To Lower Case](src/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String | 142 | 98.68
-| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/kotlin/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.kt)| Easy | String | 129 | 95.45
-| 0953 |[Verifying an Alien Dictionary](src/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table | 137 | 100.00
-
-#### Day 10 Linked List and Tree
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1290 |[Convert Binary Number in a Linked List to Integer](src/main/kotlin/g1201_1300/s1290_convert_binary_number_in_a_linked_list_to_integer/Solution.kt)| Easy | Math, Linked_List | 145 | 25.93
-| 0876 |[Middle of the Linked List](src/main/kotlin/g0801_0900/s0876_middle_of_the_linked_list/Solution.kt)| Easy | Two_Pointers, Linked_List | 136 | 76.52
-| 0104 |[Maximum Depth of Binary Tree](src/main/kotlin/g0101_0200/s0104_maximum_depth_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 166 | 83.53
-| 0404 |[Sum of Left Leaves](src/main/kotlin/g0401_0500/s0404_sum_of_left_leaves/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 173 | 86.05
-
-#### Day 11 Containers and Libraries
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1356 |[Sort Integers by The Number of 1 Bits](src/main/kotlin/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.kt)| Easy | Array, Sorting, Bit_Manipulation, Counting | 236 | 92.31
-| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue | 258 | 70.86
-| 0242 |[Valid Anagram](src/main/kotlin/g0201_0300/s0242_valid_anagram/Solution.kt)| Easy | String, Hash_Table, Sorting | 251 | 87.65
-| 0217 |[Contains Duplicate](src/main/kotlin/g0201_0300/s0217_contains_duplicate/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 719 | 73.49
-
-#### Day 12 Class and Object
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1603 |[Design Parking System](src/main/kotlin/g1601_1700/s1603_design_parking_system/ParkingSystem.kt)| Easy | Design, Simulation, Counting | 376 | 31.83
-| 0303 |[Range Sum Query - Immutable](src/main/kotlin/g0301_0400/s0303_range_sum_query_immutable/NumArray.kt)| Easy | Array, Design, Prefix_Sum | 472 | 63.64
+* [Programming Skills I](#programming-skills-i)
 
 ### Programming Skills II
 
@@ -457,7 +361,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.23'
 |-|-|-|-|-|-
 | 0586 |[Customer Placing the Largest Number of Orders](src/main/kotlin/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 768 | 44.85
 | 0511 |[Game Play Analysis I](src/main/kotlin/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 790 | 45.04
-| 1890 |[The Latest Login in 2020](src/main/kotlin/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 1486 | 22.18
+| 1890 |[The Latest Login in 2020](src/main/kotlin/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 1280 | 43.62
 | 1741 |[Find Total Time Spent by Each Employee](src/main/kotlin/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 1101 | 51.40
 
 #### Day 9 Control of Flow
@@ -483,7 +387,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.23'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1480 |[Running Sum of 1d Array](src/main/kotlin/g1401_1500/s1480_running_sum_of_1d_array/Solution.kt)| Easy | Array, Prefix_Sum | 195 | 21.52
+| 1480 |[Running Sum of 1d Array](src/main/kotlin/g1401_1500/s1480_running_sum_of_1d_array/Solution.kt)| Easy | Array, Prefix_Sum | 161 | 84.80
 | 0724 |[Find Pivot Index](src/main/kotlin/g0701_0800/s0724_find_pivot_index/Solution.kt)| Easy | Array, Prefix_Sum | 255 | 88.92
 
 #### Day 2 String
@@ -1843,6 +1747,102 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.23'
 | 0377 |[Combination Sum IV](src/main/kotlin/g0301_0400/s0377_combination_sum_iv/Solution.kt)| Medium | Array, Dynamic_Programming | 217 | 72.41
 | 0343 |[Integer Break](src/main/kotlin/g0301_0400/s0343_integer_break/Solution.kt)| Medium | Dynamic_Programming, Math | 218 | 63.89
 | 0279 |[Perfect Squares](src/main/kotlin/g0201_0300/s0279_perfect_squares/Solution.kt)| Medium | Dynamic_Programming, Math, Breadth_First_Search | 176 | 98.80
+
+### Programming Skills I
+
+#### Day 1 Basic Data Type
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1523 |[Count Odd Numbers in an Interval Range](src/main/kotlin/g1501_1600/s1523_count_odd_numbers_in_an_interval_range/Solution.kt)| Easy | Math | 114 | 97.22
+| 1491 |[Average Salary Excluding the Minimum and Maximum Salary](src/main/kotlin/g1401_1500/s1491_average_salary_excluding_the_minimum_and_maximum_salary/Solution.kt)| Easy | Array, Sorting | 165 | 27.87
+
+#### Day 2 Operator
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0191 |[Number of 1 Bits](src/main/kotlin/g0101_0200/s0191_number_of_1_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation | 237 | 68.44
+| 1281 |[Subtract the Product and Sum of Digits of an Integer](src/main/kotlin/g1201_1300/s1281_subtract_the_product_and_sum_of_digits_of_an_integer/Solution.kt)| Easy | Math | 128 | 61.82
+
+#### Day 3 Conditional Statements
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0976 |[Largest Perimeter Triangle](src/main/kotlin/g0901_1000/s0976_largest_perimeter_triangle/Solution.kt)| Easy | Array, Math, Sorting, Greedy | 304 | 33.33
+| 1779 |[Find Nearest Point That Has the Same X or Y Coordinate](src/main/kotlin/g1701_1800/s1779_find_nearest_point_that_has_the_same_x_or_y_coordinate/Solution.kt)| Easy | Array | 364 | 100.00
+
+#### Day 4 Loop
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1822 |[Sign of the Product of an Array](src/main/kotlin/g1801_1900/s1822_sign_of_the_product_of_an_array/Solution.kt)| Easy | Array, Math | 170 | 92.51
+| 1502 |[Can Make Arithmetic Progression From Sequence](src/main/kotlin/g1501_1600/s1502_can_make_arithmetic_progression_from_sequence/Solution.kt)| Easy | Array, Sorting | 156 | 94.82
+| 0202 |[Happy Number](src/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
+| 1790 |[Check if One String Swap Can Make Strings Equal](src/main/kotlin/g1701_1800/s1790_check_if_one_string_swap_can_make_strings_equal/Solution.kt)| Easy | String, Hash_Table, Counting | 138 | 100.00
+
+#### Day 5 Function
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0589 |[N-ary Tree Preorder Traversal](src/main/kotlin/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.kt)| Easy | Depth_First_Search, Tree, Stack | 233 | 84.02
+| 0496 |[Next Greater Element I](src/main/kotlin/g0401_0500/s0496_next_greater_element_i/Solution.kt)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 171 | 100.00
+| 1232 |[Check If It Is a Straight Line](src/main/kotlin/g1201_1300/s1232_check_if_it_is_a_straight_line/Solution.kt)| Easy | Array, Math, Geometry | 152 | 95.38
+
+#### Day 6 Array
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1588 |[Sum of All Odd Length Subarrays](src/main/kotlin/g1501_1600/s1588_sum_of_all_odd_length_subarrays/Solution.kt)| Easy | Array, Math, Prefix_Sum | 157 | 64.00
+| 0283 |[Move Zeroes](src/main/kotlin/g0201_0300/s0283_move_zeroes/Solution.kt)| Easy | Top_100_Liked_Questions, Array, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 516 | 79.07
+| 1672 |[Richest Customer Wealth](src/main/kotlin/g1601_1700/s1672_richest_customer_wealth/Solution.kt)| Easy | Array, Matrix | 155 | 94.54
+
+#### Day 7 Array
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1572 |[Matrix Diagonal Sum](src/main/kotlin/g1501_1600/s1572_matrix_diagonal_sum/Solution.kt)| Easy | Array, Matrix | 221 | 67.61
+| 0566 |[Reshape the Matrix](src/main/kotlin/g0501_0600/s0566_reshape_the_matrix/Solution.kt)| Easy | Array, Matrix, Simulation | 239 | 99.05
+
+#### Day 8 String
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1768 |[Merge Strings Alternately](src/main/kotlin/g1701_1800/s1768_merge_strings_alternately/Solution.kt)| Easy | String, Two_Pointers | 138 | 93.81
+| 1678 |[Goal Parser Interpretation](src/main/kotlin/g1601_1700/s1678_goal_parser_interpretation/Solution.kt)| Easy | String | 136 | 88.24
+| 0389 |[Find the Difference](src/main/kotlin/g0301_0400/s0389_find_the_difference/Solution.kt)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 256 | 64.81
+
+#### Day 9 String
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0709 |[To Lower Case](src/main/kotlin/g0701_0800/s0709_to_lower_case/Solution.kt)| Easy | String | 142 | 98.68
+| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/kotlin/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.kt)| Easy | String | 129 | 95.45
+| 0953 |[Verifying an Alien Dictionary](src/main/kotlin/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.kt)| Easy | Array, String, Hash_Table | 137 | 100.00
+
+#### Day 10 Linked List and Tree
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1290 |[Convert Binary Number in a Linked List to Integer](src/main/kotlin/g1201_1300/s1290_convert_binary_number_in_a_linked_list_to_integer/Solution.kt)| Easy | Math, Linked_List | 145 | 25.93
+| 0876 |[Middle of the Linked List](src/main/kotlin/g0801_0900/s0876_middle_of_the_linked_list/Solution.kt)| Easy | Two_Pointers, Linked_List | 136 | 76.52
+| 0104 |[Maximum Depth of Binary Tree](src/main/kotlin/g0101_0200/s0104_maximum_depth_of_binary_tree/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 166 | 83.53
+| 0404 |[Sum of Left Leaves](src/main/kotlin/g0401_0500/s0404_sum_of_left_leaves/Solution.kt)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 173 | 86.05
+
+#### Day 11 Containers and Libraries
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1356 |[Sort Integers by The Number of 1 Bits](src/main/kotlin/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.kt)| Easy | Array, Sorting, Bit_Manipulation, Counting | 236 | 92.31
+| 0232 |[Implement Queue using Stacks](src/main/kotlin/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.kt)| Easy | Stack, Design, Queue | 258 | 70.86
+| 0242 |[Valid Anagram](src/main/kotlin/g0201_0300/s0242_valid_anagram/Solution.kt)| Easy | String, Hash_Table, Sorting | 251 | 87.65
+| 0217 |[Contains Duplicate](src/main/kotlin/g0201_0300/s0217_contains_duplicate/Solution.kt)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 719 | 73.49
+
+#### Day 12 Class and Object
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1603 |[Design Parking System](src/main/kotlin/g1601_1700/s1603_design_parking_system/ParkingSystem.kt)| Easy | Design, Simulation, Counting | 376 | 31.83
+| 0303 |[Range Sum Query - Immutable](src/main/kotlin/g0301_0400/s0303_range_sum_query_immutable/NumArray.kt)| Easy | Array, Design, Prefix_Sum | 472 | 63.64
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
