@@ -20,7 +20,7 @@ class Solution {
                 inc = 1
                 dec = 1
             }
-            res = max(res.toDouble(), max(inc.toDouble(), dec.toDouble())).toInt()
+            res = max(res, max(inc, dec))
         }
         return res
     }
