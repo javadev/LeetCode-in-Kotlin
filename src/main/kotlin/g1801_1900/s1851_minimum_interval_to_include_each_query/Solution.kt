@@ -3,7 +3,6 @@ package g1801_1900.s1851_minimum_interval_to_include_each_query
 // #Hard #Array #Sorting #Binary_Search #Heap_Priority_Queue #Line_Sweep
 // #2023_06_22_Time_1612_ms_(87.50%)_Space_129.5_MB_(75.00%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 class Solution {
@@ -13,8 +12,8 @@ class Solution {
         for (i in 0 until numQuery) {
             queriesWithIndex[i] = intArrayOf(queries[i], i)
         }
-        Arrays.sort(intervals, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
-        Arrays.sort(queriesWithIndex, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
+        intervals.sortWith { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) }
+        queriesWithIndex.sortWith { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) }
         val minHeap = PriorityQueue({ a: IntArray, b: IntArray -> (a[1] - a[0]).compareTo(b[1] - b[0]) })
         val result = IntArray(numQuery)
         var j = 0

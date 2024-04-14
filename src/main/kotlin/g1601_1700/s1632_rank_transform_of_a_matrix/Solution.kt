@@ -3,8 +3,6 @@ package g1601_1700.s1632_rank_transform_of_a_matrix
 // #Hard #Array #Greedy #Matrix #Graph #Union_Find #Topological_Sort
 // #2023_06_17_Time_807_ms_(100.00%)_Space_96.5_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun matrixRankTransform(matrix: Array<IntArray>): Array<IntArray> {
         val rowCount = matrix.size
@@ -49,7 +47,7 @@ class Solution {
         } else {
             val rowCount = matrix.size
             val ufind = IntArray(rowCount + matrix[0].size)
-            Arrays.fill(ufind, -1)
+            ufind.fill(-1)
             for (nIdx in startIdx until endIdx) {
                 val r = nums[nIdx].toInt() shr 16 and 0xFFFF
                 val c = nums[nIdx].toInt() and 0xFFFF
