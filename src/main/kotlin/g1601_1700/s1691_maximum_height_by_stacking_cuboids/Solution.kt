@@ -3,16 +3,13 @@ package g1601_1700.s1691_maximum_height_by_stacking_cuboids
 // #Hard #Array #Dynamic_Programming #Sorting
 // #2023_06_15_Time_187_ms_(100.00%)_Space_38.6_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun maxHeight(cuboids: Array<IntArray>): Int {
         for (a in cuboids) {
             a.sort()
         }
-        Arrays.sort(
-            cuboids
-        ) { a: IntArray, b: IntArray ->
+
+        cuboids.sortWith sort@{ a: IntArray, b: IntArray ->
             if (a[0] != b[0]) {
                 return@sort a[0] - b[0]
             } else if (a[1] != b[1]) {

@@ -17,7 +17,7 @@ class Solution {
             }
         }
         val n = events.size
-        Arrays.sort(events, { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) })
+        events.sortWith { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) }
         val memo = Array(n) { IntArray(k + 1) }
         return dfs(events, 0, k, memo)
     }
