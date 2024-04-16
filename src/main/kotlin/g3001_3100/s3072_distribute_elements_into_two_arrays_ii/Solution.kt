@@ -71,7 +71,6 @@ class Solution {
         for (i in p1 + 1 until arr1.size) {
             arr1[i] = arr2[i - p1 - 1]
         }
-
         return arr1
     }
 
