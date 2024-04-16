@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun resultArray2() {
         assertThat(
             Solution().resultArray(intArrayOf(5, 14, 3, 1, 2)),
-            equalTo(intArrayOf(5, 3, 2, 14, 1))
+            equalTo(intArrayOf(5, 3, 1, 2, 14))
         )
     }
 

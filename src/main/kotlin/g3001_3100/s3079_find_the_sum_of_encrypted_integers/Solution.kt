@@ -4,6 +4,7 @@ package g3001_3100.s3079_find_the_sum_of_encrypted_integers
 
 import kotlin.math.max
 
+@Suppress("NAME_SHADOWING")
 class Solution {
     private fun encrypt(x: Int): Int {
         var x = x
