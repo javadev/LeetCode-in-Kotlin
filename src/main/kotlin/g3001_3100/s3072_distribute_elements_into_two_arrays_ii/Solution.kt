@@ -3,7 +3,7 @@ package g3001_3100.s3072_distribute_elements_into_two_arrays_ii
 // #Hard #Array #Simulation #Segment_Tree #Binary_Indexed_Tree
 // #2024_04_16_Time_890_ms_(100.00%)_Space_77.6_MB_(54.17%)
 
-@Suppress("NAME_SHADOWING")
+@Suppress("NAME_SHADOWING", "kotlin:S1871")
 class Solution {
     internal inner class BIT(size: Int) {
         private val tree = IntArray(size + 1)

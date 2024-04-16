@@ -3,6 +3,7 @@ package g3001_3100.s3080_mark_elements_on_array_by_performing_queries
 // #Medium #Array #Hash_Table #Sorting #Heap_Priority_Queue #Simulation
 // #2024_04_16_Time_937_ms_(97.78%)_Space_90.4_MB_(55.56%)
 
+@Suppress("kotlin:S1871")
 class Solution {
     fun unmarkedSumArray(nums: IntArray, queries: Array<IntArray>): LongArray {
         val l = nums.size
