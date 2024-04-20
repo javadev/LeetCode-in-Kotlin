@@ -17,9 +17,11 @@ class Solution {
         }
         var res = 0
         for (i in lastIdx + 1..len - k) {
-            res = (res + dfs(
-                i, k - 1, min(minDiff, (nums[i] - nums[lastIdx])), dp, nums
-            )) % MOD
+            res = (
+                res + dfs(
+                    i, k - 1, min(minDiff, (nums[i] - nums[lastIdx])), dp, nums
+                )
+                ) % MOD
         }
         dp[key] = res
         return res
