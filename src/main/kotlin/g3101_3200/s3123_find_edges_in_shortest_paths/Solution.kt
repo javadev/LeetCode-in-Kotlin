@@ -41,7 +41,7 @@ class Solution {
         distances.fill(1e12.toLong())
         pq.offer(longArrayOf(0, 0))
         distances[0] = 0
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val cur = pq.poll()
             val u = cur[0].toInt()
             val distance = cur[1]

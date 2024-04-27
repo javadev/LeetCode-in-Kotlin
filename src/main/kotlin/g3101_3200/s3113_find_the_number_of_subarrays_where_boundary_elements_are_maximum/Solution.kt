@@ -8,7 +8,7 @@ class Solution {
         val stack = ArrayDeque<IntArray>()
         var res: Long = 0
         for (a in nums) {
-            while (!stack.isEmpty() && stack.last()[0] < a) {
+            while (stack.isNotEmpty() && stack.last()[0] < a) {
                 stack.removeLast()
             }
             if (stack.isEmpty() || stack.last()[0] != a) {
