@@ -4,7 +4,6 @@ package g2501_2600.s2503_maximum_number_of_points_from_grid_queries
 // #2023_07_04_Time_581_ms_(100.00%)_Space_62.6_MB_(100.00%)
 
 import java.util.ArrayDeque
-import java.util.Arrays
 import java.util.PriorityQueue
 import java.util.Queue
 
@@ -19,9 +18,9 @@ class Solution {
         for (i in queries.indices) {
             index[i] = i
         }
-        Arrays.sort(index, { o: Int?, m: Int? -> queries[o!!].compareTo(queries[m!!]) })
+        index.sortWith { o: Int?, m: Int? -> queries[o!!].compareTo(queries[m!!]) }
         val q1: Queue<IntArray> = ArrayDeque()
-        val q2 = PriorityQueue({ a: IntArray, b: IntArray -> a[2].compareTo(b[2]) })
+        val q2 = PriorityQueue { a: IntArray, b: IntArray -> a[2].compareTo(b[2]) }
         q2.offer(intArrayOf(0, 0, grid[0][0]))
         val visited = Array(r) { BooleanArray(c) }
         var count = 0

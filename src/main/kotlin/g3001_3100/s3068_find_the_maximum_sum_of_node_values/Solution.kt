@@ -9,7 +9,7 @@ import kotlin.math.min
 
 @Suppress("UNUSED_PARAMETER")
 class Solution {
-    fun maximumValueSum(nums: IntArray, k: Int, edges: Array<IntArray?>?): Long {
+    fun maximumValueSum(nums: IntArray, k: Int, edges: Array<IntArray>): Long {
         var res: Long = 0
         var d = 1 shl 30
         var c = 0

@@ -3,17 +3,15 @@ package g2701_2800.s2747_count_zero_request_servers
 // #Medium #Array #Hash_Table #Sorting #Sliding_Window
 // #2023_08_08_Time_991_ms_(100.00%)_Space_109.2_MB_(90.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun countServers(n: Int, logs: Array<IntArray>, x: Int, qs: IntArray): IntArray {
         val m = qs.size
         val valIdx = Array(m) { IntArray(2) }
         for (i in 0 until m) valIdx[i] = intArrayOf(qs[i], i)
-        Arrays.sort(valIdx) { a: IntArray, b: IntArray ->
+        valIdx.sortWith { a: IntArray, b: IntArray ->
             a[0] - b[0]
         }
-        Arrays.sort(logs) { a: IntArray, b: IntArray ->
+        logs.sortWith { a: IntArray, b: IntArray ->
             a[1] - b[1]
         }
         var l = 0

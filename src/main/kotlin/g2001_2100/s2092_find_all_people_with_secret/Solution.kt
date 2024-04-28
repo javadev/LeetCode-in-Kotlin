@@ -3,12 +3,10 @@ package g2001_2100.s2092_find_all_people_with_secret
 // #Hard #Sorting #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
 // #2023_06_28_Time_1086_ms_(100.00%)_Space_104.2_MB_(100.00%)
 
-import java.util.Arrays
-
 @Suppress("NAME_SHADOWING")
 class Solution {
     fun findAllPeople(n: Int, meetings: Array<IntArray>, firstPerson: Int): List<Int> {
-        Arrays.sort(meetings) { a: IntArray, b: IntArray -> a[2] - b[2] }
+        meetings.sortWith { a: IntArray, b: IntArray -> a[2] - b[2] }
         val uf = UF(n)
         // base
         uf.union(0, firstPerson)

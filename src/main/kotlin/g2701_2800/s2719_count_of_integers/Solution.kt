@@ -2,8 +2,6 @@ package g2701_2800.s2719_count_of_integers
 
 // #Hard #String #Dynamic_Programming #Math #2023_08_02_Time_208_ms_(100.00%)_Space_38_MB_(68.42%)
 
-import java.util.Arrays
-
 class Solution {
     private lateinit var dp: Array<Array<Array<IntArray>>>
     private fun countStrings(i: Int, tight1: Boolean, tight2: Boolean, sum: Int, num1: String, num2: String): Int {
@@ -41,7 +39,7 @@ class Solution {
         for (dim1 in dp) {
             for (dim2 in dim1) {
                 for (dim3 in dim2) {
-                    Arrays.fill(dim3, -1)
+                    dim3.fill(-1)
                 }
             }
         }

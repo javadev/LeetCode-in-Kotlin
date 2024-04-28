@@ -3,12 +3,10 @@ package g1801_1900.s1886_determine_whether_matrix_can_be_obtained_by_rotation
 // #Easy #Array #Matrix #Programming_Skills_II_Day_7
 // #2023_06_22_Time_147_ms_(85.71%)_Space_34.1_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
-    fun findRotation(mat: Array<IntArray>, target: Array<IntArray?>?): Boolean {
+    fun findRotation(mat: Array<IntArray>, target: Array<IntArray>): Boolean {
         for (i in 0..3) {
-            if (Arrays.deepEquals(mat, target)) {
+            if (mat.contentDeepEquals(target)) {
                 return true
             }
             rotate(mat)

@@ -3,14 +3,12 @@ package g2401_2500.s2463_minimum_total_distance_traveled
 // #Hard #Array #Dynamic_Programming #Sorting
 // #2023_07_05_Time_153_ms_(100.00%)_Space_37_MB_(100.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun minimumTotalDistance(robot: List<Int>, f: Array<IntArray>): Long {
         // sort factories :
         // 1. move all factories with 0-capacity to the end
         // 2. sort everything else by x-position in asc order
-        Arrays.sort(f) { a: IntArray, b: IntArray -> if (a[1] == 0) 1 else if (b[1] == 0) -1 else a[0] - b[0] }
+        f.sortWith { a: IntArray, b: IntArray -> if (a[1] == 0) 1 else if (b[1] == 0) -1 else a[0] - b[0] }
         // Sort robots by x-position in asc order
         // As we don't know the implementation of the List that is passed, it is better to map it to
         // an array explicitly
