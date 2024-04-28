@@ -13,7 +13,7 @@ class Solution {
         }
         val rows = grid.size
         val cols = grid[0].size
-        val dp = Array(rows) { Array(cols) {Tuple(1, 1)} }
+        val dp = Array(rows) { Array(cols) { Tuple(1, 1) } }
         // Init first row and column
         dp[0][0].max = grid[0][0].toLong()
         dp[0][0].min = grid[0][0].toLong()
