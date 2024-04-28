@@ -10,7 +10,7 @@ class Solution {
         var n1 = arrayOf(0)
         var shift = 1
         while (n > 0) {
-            val temp = Array(n1.size * 2) {0}
+            val temp = Array(n1.size * 2) { 0 }
             var pos = 0
             for (integer in n1) {
                 temp[pos++] = integer
