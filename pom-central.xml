@@ -27,7 +27,7 @@
         <url>https://github.com/javadev/LeetCode-in-Kotlin</url>
     </scm>
     <properties>
-        <kotlin.version>1.9.23</kotlin.version>
+        <kotlin.version>2.0.0-RC1</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <ciManagement>
@@ -149,6 +149,13 @@
             <version>[5.10.2,)</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>[5.10.2,)</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>

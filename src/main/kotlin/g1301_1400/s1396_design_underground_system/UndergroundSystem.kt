@@ -2,13 +2,11 @@ package g1301_1400.s1396_design_underground_system
 
 // #Medium #String #Hash_Table #Design #2023_06_06_Time_703_ms_(99.29%)_Space_76.5_MB_(99.29%)
 
-import java.util.LinkedList
-
 class UndergroundSystem {
     private class StationAndTime(var station: String, var time: Int)
 
     private val averageTimeMap: MutableMap<String, DoubleArray>
-    private val travelerMap: MutableMap<Int, LinkedList<StationAndTime>>
+    private val travelerMap: MutableMap<Int, ArrayList<StationAndTime>>
 
     init {
         averageTimeMap = HashMap()
@@ -16,13 +14,13 @@ class UndergroundSystem {
     }
 
     fun checkIn(id: Int, stationName: String, t: Int) {
-        travelerMap.putIfAbsent(id, LinkedList())
+        travelerMap.putIfAbsent(id, ArrayList())
         travelerMap[id]!!.add(StationAndTime(stationName, t))
     }
 
     fun checkOut(id: Int, stationName: String, t: Int) {
         val list = travelerMap[id]!!
-        val stationAndTime = list.last
+        val stationAndTime = list.last()
         val startToEndStation: String = stationAndTime.station + "->" + stationName
         val duration: Int = t - stationAndTime.time
         if (averageTimeMap.containsKey(startToEndStation)) {
