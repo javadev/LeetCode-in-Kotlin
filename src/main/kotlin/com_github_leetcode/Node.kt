@@ -1,8 +1,5 @@
 package com_github_leetcode
 
-import java.util.StringJoiner
-import kotlin.collections.ArrayList
-
 class Node {
     var `val`: Int
     var neighbors: List<Node>
@@ -23,18 +20,14 @@ class Node {
     }
 
     override fun toString(): String {
-        val result = StringJoiner(",", "[", "]")
-        for (node in neighbors) {
+        return neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { node ->
             if (node.neighbors.isEmpty()) {
-                result.add(node.`val`.toString())
+                node.`val`.toString()
             } else {
-                val result2 = StringJoiner(",", "[", "]")
-                for (nodeItem in node.neighbors) {
-                    result2.add(nodeItem.`val`.toString())
+                node.neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { nodeItem ->
+                    nodeItem.`val`.toString()
                 }
-                result.add(result2.toString())
             }
         }
-        return result.toString()
     }
 }
