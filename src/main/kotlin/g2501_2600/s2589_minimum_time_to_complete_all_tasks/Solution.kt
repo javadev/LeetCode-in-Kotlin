@@ -3,13 +3,11 @@ package g2501_2600.s2589_minimum_time_to_complete_all_tasks
 // #Hard #Array #Sorting #Greedy #Binary_Search #Stack
 // #2023_07_12_Time_422_ms_(100.00%)_Space_58.7_MB_(50.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun findMinimumTime(tasks: Array<IntArray>): Int {
         var res = 0
         val arr = BooleanArray(2001)
-        Arrays.sort(tasks) { a: IntArray, b: IntArray ->
+        tasks.sortWith { a: IntArray, b: IntArray ->
             a[1] - b[1]
         }
         for (task in tasks) {

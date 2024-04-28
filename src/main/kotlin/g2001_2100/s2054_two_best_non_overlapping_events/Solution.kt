@@ -3,11 +3,9 @@ package g2001_2100.s2054_two_best_non_overlapping_events
 // #Medium #Array #Dynamic_Programming #Sorting #Binary_Search #Heap_Priority_Queue
 // #2023_06_25_Time_851_ms_(100.00%)_Space_108.7_MB_(50.00%)
 
-import java.util.Arrays
-
 class Solution {
     fun maxTwoEvents(events: Array<IntArray>): Int {
-        Arrays.sort(events) { a: IntArray, b: IntArray -> a[0] - b[0] }
+        events.sortWith { a: IntArray, b: IntArray -> a[0] - b[0] }
         val max = IntArray(events.size)
         for (i in events.indices.reversed()) {
             if (i == events.size - 1) {

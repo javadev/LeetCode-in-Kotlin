@@ -4,7 +4,6 @@ package g2201_2300.s2286_booking_concert_tickets_in_groups
 // #2023_06_28_Time_1292_ms_(100.00%)_Space_98.3_MB_(100.00%)
 
 import java.util.ArrayDeque
-import java.util.Arrays
 import java.util.Deque
 
 @Suppress("NAME_SHADOWING")
@@ -35,8 +34,8 @@ class BookMyShow(n: Int, private val m: Int) {
         numZerosLeft = IntArray(this.n + 2)
         // initialize max and total, for max we firstly set values to m
         // segments of size 1 are placed starting from this.n - 1
-        Arrays.fill(max, this.n - 1, this.n + n - 1, m)
-        Arrays.fill(total, this.n - 1, this.n + n - 1, m.toLong())
+        max.fill(this.n - 1, this.n + n - 1, m)
+        total.fill((this.n - 1).toLong(), this.n + n - 1, m)
         // calculate values of max and total for segments based on values of their children
         var i = this.n - 2
         var i1 = i * 2 + 1

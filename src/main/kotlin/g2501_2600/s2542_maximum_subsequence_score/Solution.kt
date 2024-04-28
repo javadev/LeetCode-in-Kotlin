@@ -3,7 +3,6 @@ package g2501_2600.s2542_maximum_subsequence_score
 // #Medium #Array #Sorting #Greedy #Heap_Priority_Queue
 // #2023_07_04_Time_780_ms_(81.97%)_Space_56.7_MB_(99.45%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 class Solution {
@@ -15,9 +14,8 @@ class Solution {
         for (i in 0 until n) {
             nums[i] = PairInfo(nums1[i], nums2[i])
         }
-        Arrays.sort(
-            nums
-        ) { a: PairInfo?, b: PairInfo? ->
+
+        nums.sortWith sort@{ a: PairInfo?, b: PairInfo? ->
             if (a!!.val2 == b!!.val2) {
                 return@sort a.val1 - b.val1
             }

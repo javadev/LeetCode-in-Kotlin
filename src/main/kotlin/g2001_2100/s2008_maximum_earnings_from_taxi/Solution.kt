@@ -3,14 +3,13 @@ package g2001_2100.s2008_maximum_earnings_from_taxi
 // #Medium #Array #Dynamic_Programming #Sorting #Binary_Search
 // #2023_06_23_Time_1008_ms_(100.00%)_Space_67.3_MB_(100.00%)
 
-import java.util.Arrays
 import java.util.PriorityQueue
 
 @Suppress("UNUSED_PARAMETER")
 class Solution {
     fun maxTaxiEarnings(n: Int, rides: Array<IntArray>): Long {
         // Sort based on start time
-        Arrays.sort(rides) { a: IntArray, b: IntArray ->
+        rides.sortWith { a: IntArray, b: IntArray ->
             a[0] - b[0]
         }
         var max: Long = 0
