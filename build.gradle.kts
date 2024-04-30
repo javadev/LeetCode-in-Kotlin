@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.0-RC1"
+    kotlin("jvm") version "2.0.0-RC2"
     jacoco
     id("org.sonarqube") version "5.0.0.4638"
     id("com.diffplug.spotless") version "6.12.0"
@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.0-RC1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.0-RC2")
     testImplementation("org.junit.jupiter:junit-jupiter:[5.10.2,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.1.1,)")
