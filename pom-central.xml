@@ -120,6 +120,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <jdkVersion>11</jdkVersion>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
