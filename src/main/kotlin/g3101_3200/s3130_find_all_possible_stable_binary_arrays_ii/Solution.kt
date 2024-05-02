@@ -82,20 +82,6 @@ class Solution {
         return ((x % mod) + mod) % mod
     }
 
-    fun quickPower(base: Long, power: Long, p: Long): Long {
-        var base = base
-        var power = power
-        var result: Long = 1
-        while (power > 0) {
-            if ((power and 1L) == 1L) {
-                result = result * base % p
-            }
-            power = power shr 1
-            base = base * base % p
-        }
-        return result
-    }
-
     companion object {
         private const val MOD = 1e9.toInt() + 7
         private const val N = 1000
