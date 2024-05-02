@@ -1,10 +1,10 @@
 package g3101_3200.s3129_find_all_possible_stable_binary_arrays_i
 
+// #Medium #Dynamic_Programming #Prefix_Sum #2024_05_02_Time_169_ms_(92.86%)_Space_36.3_MB_(100.00%)
+
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min
-
-// #Medium #Dynamic_Programming #Prefix_Sum #2024_05_02_Time_3_ms_(100.00%)_Space_44.1_MB_(98.38%)
 
 class Solution {
     private fun add(x: Int, y: Int): Int {
@@ -21,10 +21,10 @@ class Solution {
 
     fun numberOfStableArrays(zero: Int, one: Int, limit: Int): Int {
         if (limit == 1) {
-            return max((2 - abs((zero - one).toDouble())).toDouble(), 0.0).toInt()
+            return max((2 - abs((zero - one))), 0)
         }
-        val max = max(zero.toDouble(), one.toDouble()).toInt()
-        val min = min(zero.toDouble(), one.toDouble()).toInt()
+        val max = max(zero, one)
+        val min = min(zero, one)
         val lcn = Array(max + 1) { IntArray(max + 1) }
         var row0 = lcn[0]
         var row1: IntArray

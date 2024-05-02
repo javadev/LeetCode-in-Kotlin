@@ -1,6 +1,6 @@
 package g3101_3200.s3131_find_the_integer_added_to_array_i
 
-// #Easy #Array #2024_05_02_Time_0_ms_(100.00%)_Space_43_MB_(75.29%)
+// #Easy #Array #2024_05_02_Time_162_ms_(98.15%)_Space_36.3_MB_(100.00%)
 
 class Solution {
     fun addedInteger(nums1: IntArray, nums2: IntArray): Int {

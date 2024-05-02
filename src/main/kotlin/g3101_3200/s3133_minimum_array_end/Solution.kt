@@ -1,6 +1,6 @@
 package g3101_3200.s3133_minimum_array_end
 
-// #Medium #Bit_Manipulation #2024_05_02_Time_1_ms_(92.38%)_Space_40.8_MB_(58.58%)
+// #Medium #Bit_Manipulation #2024_05_02_Time_131_ms_(90.91%)_Space_33.9_MB_(59.09%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

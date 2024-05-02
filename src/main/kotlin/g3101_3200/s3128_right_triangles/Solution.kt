@@ -1,5 +1,7 @@
-package g3101_3200.s3128_right_triangles // #Medium #Array #Hash_Table #Math #Counting #Combinatorics
-// #2024_05_02_Time_6_ms_(100.00%)_Space_145.9_MB_(90.67%)
+package g3101_3200.s3128_right_triangles
+
+// #Medium #Array #Hash_Table #Math #Counting #Combinatorics
+// #2024_05_02_Time_975_ms_(40.63%)_Space_217.6_MB_(56.25%)
 
 class Solution {
     fun numberOfRightTriangles(grid: Array<IntArray>): Long {

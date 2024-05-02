@@ -1,7 +1,7 @@
 package g3101_3200.s3132_find_the_integer_added_to_array_ii
 
 // #Medium #Array #Sorting #Two_Pointers #Enumeration
-// #2024_05_02_Time_2_ms_(100.00%)_Space_42.3_MB_(96.46%)
+// #2024_05_02_Time_189_ms_(84.85%)_Space_40.2_MB_(57.58%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

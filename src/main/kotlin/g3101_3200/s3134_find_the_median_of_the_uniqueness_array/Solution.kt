@@ -1,15 +1,15 @@
 package g3101_3200.s3134_find_the_median_of_the_uniqueness_array
 
-import kotlin.math.max
-
 // #Hard #Array #Hash_Table #Binary_Search #Sliding_Window
-// #2024_05_02_Time_47_ms_(100.00%)_Space_56.8_MB_(91.38%)
+// #2024_05_02_Time_733_ms_(100.00%)_Space_75.5_MB_(16.67%)
+
+import kotlin.math.max
 
 class Solution {
     fun medianOfUniquenessArray(nums: IntArray): Int {
         var max = 0
         for (x in nums) {
-            max = max(max.toDouble(), x.toDouble()).toInt()
+            max = max(max, x)
         }
         val n = nums.size
         val k = (n.toLong() * (n + 1) / 2 + 1) / 2

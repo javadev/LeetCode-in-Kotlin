@@ -1,6 +1,6 @@
 package g3101_3200.s3130_find_all_possible_stable_binary_arrays_ii
 
-// #Hard #Dynamic_Programming #Prefix_Sum #2024_05_02_Time_3_ms_(100.00%)_Space_40.6_MB_(100.00%)
+// #Hard #Dynamic_Programming #Prefix_Sum #2024_05_02_Time_242_ms_(100.00%)_Space_36.7_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min
@@ -24,9 +24,9 @@ class Solution {
         }
         var ans: Long = 0
         val s = LongArray(one + 1)
-        val n = (min(zero.toDouble(), one.toDouble()) + 1).toInt()
+        val n = (min(zero, one) + 1).toInt()
         for (
-            groups0 in (zero + limit - 1) / limit..min(zero.toDouble(), n.toDouble())
+            groups0 in (zero + limit - 1) / limit..min(zero, n)
                 .toInt()
         ) {
             val s0 = calc(groups0, zero, limit)
