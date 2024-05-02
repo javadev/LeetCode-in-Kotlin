@@ -21,4 +21,12 @@ internal class SolutionTest {
             equalTo(2)
         )
     }
+
+    @Test
+    fun minimumAddedInteger3() {
+        assertThat(
+            Solution().minimumAddedInteger(intArrayOf(10, 2, 8, 7, 5, 6, 7, 10), intArrayOf(5, 8, 5, 3, 8, 4)),
+            equalTo(-2)
+        )
+    }
 }
