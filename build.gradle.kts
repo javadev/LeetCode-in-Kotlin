@@ -52,9 +52,7 @@ spotless {
     kotlin {
         encoding("UTF-8")
         target("**/src/**/*.kt")
-        ktlint("1.2.1").userData(mapOf(
-                "max_line_length" to "120"
-                ))
+        ktlint("1.2.1")
         toggleOffOn()
         trimTrailingWhitespace()
         endWithNewline()
