@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "2.0.0-RC1"
     jacoco
     id("org.sonarqube") version "5.0.0.4638"
-    id("com.diffplug.spotless") version "6.12.0"
+    id("com.diffplug.spotless") version "6.25.0"
     `maven-publish`
 }
 
@@ -52,7 +52,7 @@ spotless {
     kotlin {
         encoding("UTF-8")
         target("**/src/**/*.kt")
-        ktlint("0.43.0").userData(mapOf(
+        ktlint("1.2.1").userData(mapOf(
                 "max_line_length" to "120"
                 ))
         toggleOffOn()
