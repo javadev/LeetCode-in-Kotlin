@@ -4,7 +4,7 @@ package g0001_0100.s0047_permutations_ii
 // #2023_07_05_Time_199_ms_(100.00%)_Space_39.1_MB_(92.98%)
 
 class Solution {
-    private var ans: MutableList<List<Int>>? = null
+    private lateinit var ans: MutableList<List<Int>>
 
     fun permuteUnique(nums: IntArray): List<List<Int>> {
         ans = ArrayList()
@@ -18,7 +18,7 @@ class Solution {
             for (n in nums) {
                 t.add(n)
             }
-            ans!!.add(t)
+            ans.add(t)
             return
         }
         permute(nums, p + 1)

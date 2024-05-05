@@ -16,13 +16,13 @@ import com_github_leetcode.ListNode
  * }
  */
 class Solution {
-    fun mergeKLists(lists: Array<ListNode>): ListNode? {
+    fun mergeKLists(lists: Array<ListNode?>): ListNode? {
         return if (lists.isEmpty()) {
             null
         } else mergeKLists(lists, 0, lists.size)
     }
 
-    private fun mergeKLists(lists: Array<ListNode>, leftIndex: Int, rightIndex: Int): ListNode? {
+    private fun mergeKLists(lists: Array<ListNode?>, leftIndex: Int, rightIndex: Int): ListNode? {
         return if (rightIndex > leftIndex + 1) {
             val mid = (leftIndex + rightIndex) / 2
             val left = mergeKLists(lists, leftIndex, mid)
