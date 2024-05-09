@@ -1,6 +1,6 @@
 package g1001_1100.s1053_previous_permutation_with_one_swap
 
-// #Medium #Array #Greedy #2023_05_30_Time_338_ms_(25.00%)_Space_71.2_MB_(25.00%)
+// #Medium #Array #Greedy #2024_05_09_Time_288_ms_(100.00%)_Space_38.9_MB_(100.00%)
 
 class Solution {
     fun prevPermOpt1(arr: IntArray): IntArray {

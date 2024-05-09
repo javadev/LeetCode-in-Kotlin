@@ -1,7 +1,7 @@
 package g1201_1300.s1290_convert_binary_number_in_a_linked_list_to_integer
 
 // #Easy #Math #Linked_List #Programming_Skills_I_Day_10_Linked_List_and_Tree
-// #2023_06_08_Time_145_ms_(25.93%)_Space_33.4_MB_(92.59%)
+// #2024_05_09_Time_138_ms_(65.79%)_Space_33.7_MB_(55.26%)
 
 import com_github_leetcode.ListNode
 
