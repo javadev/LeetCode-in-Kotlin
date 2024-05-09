@@ -1,7 +1,7 @@
 package g2901_3000.s2920_maximum_points_after_collecting_coins_from_all_nodes
 
 // #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Bit_Manipulation
-// #2023_12_31_Time_2255_ms_(25.00%)_Space_112.1_MB_(100.00%)
+// #2024_05_09_Time_1007_ms_(100.00%)_Space_149.4_MB_(100.00%)
 
 import kotlin.math.max
 

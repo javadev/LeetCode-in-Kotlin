@@ -1,6 +1,6 @@
 package g2101_2200.s2181_merge_nodes_in_between_zeros
 
-// #Medium #Simulation #Linked_List #2023_06_26_Time_980_ms_(25.00%)_Space_69.1_MB_(100.00%)
+// #Medium #Simulation #Linked_List #2024_05_09_Time_794_ms_(100.00%)_Space_69.1_MB_(64.29%)
 
 import com_github_leetcode.ListNode
 

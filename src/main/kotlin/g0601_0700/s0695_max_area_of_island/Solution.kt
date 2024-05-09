@@ -3,7 +3,7 @@ package g0601_0700.s0695_max_area_of_island
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
 // #Algorithm_I_Day_7_Breadth_First_Search_Depth_First_Search
 // #Graph_Theory_I_Day_2_Matrix_Related_Problems
-// #2023_02_22_Time_324_ms_(24.06%)_Space_47.2_MB_(21.92%)
+// #2024_05_09_Time_181_ms_(93.83%)_Space_38.9_MB_(77.78%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {
