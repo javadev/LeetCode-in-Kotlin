@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.0-RC2"
+    kotlin("jvm") version "2.0.0-RC3"
     jacoco
     id("org.sonarqube") version "5.0.0.4638"
     id("com.diffplug.spotless") version "6.12.0"
