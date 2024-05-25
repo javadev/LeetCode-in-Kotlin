@@ -1,6 +1,7 @@
 package g3101_3200.s3153_sum_of_digit_differences_of_all_pairs
 
-// #Medium #Array #Hash_Table #Math #Counting #2024_05_22_Time_12_ms_(100.00%)_Space_62.8_MB_(6.25%)
+// #Medium #Array #Hash_Table #Math #Counting
+// #2024_05_25_Time_491_ms_(95.74%)_Space_61.5_MB_(48.94%)
 
 class Solution {
     fun sumDigitDifferences(nums: IntArray): Long {

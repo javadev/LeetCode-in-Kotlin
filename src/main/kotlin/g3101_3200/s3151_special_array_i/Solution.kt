@@ -1,6 +1,6 @@
 package g3101_3200.s3151_special_array_i
 
-// #Easy #Array #2024_05_22_Time_0_ms_(100.00%)_Space_43.2_MB_(51.16%)
+// #Easy #Array #2024_05_25_Time_165_ms_(92.21%)_Space_36.7_MB_(84.42%)
 
 class Solution {
     fun isArraySpecial(nums: IntArray): Boolean {

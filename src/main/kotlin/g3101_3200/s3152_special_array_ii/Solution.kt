@@ -1,6 +1,6 @@
 package g3101_3200.s3152_special_array_ii
 
-// #Medium #Array #Binary_Search #Prefix_Sum #2024_05_22_Time_2_ms_(99.93%)_Space_97.9_MB_(79.71%)
+// #Medium #Array #Binary_Search #Prefix_Sum #2024_05_25_Time_707_ms_(93.83%)_Space_93.9_MB_(59.26%)
 
 class Solution {
     fun isArraySpecial(nums: IntArray, queries: Array<IntArray>): BooleanArray {
