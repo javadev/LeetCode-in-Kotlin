@@ -35,4 +35,12 @@ internal class SolutionTest {
             equalTo(9)
         )
     }
+
+    @Test
+    fun maxValue4() {
+        assertThat(
+            Solution().maxValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 4, 3), intArrayOf(2, 3, 10)), 1),
+            equalTo(10)
+        )
+    }
 }

@@ -5,7 +5,6 @@ package g0101_0200.s0107_binary_tree_level_order_traversal_ii
 
 import com_github_leetcode.TreeNode
 import java.util.Collections
-import kotlin.collections.ArrayList
 
 /*
  * Example:
