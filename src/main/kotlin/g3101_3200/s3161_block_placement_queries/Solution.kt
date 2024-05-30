@@ -1,9 +1,9 @@
 package g3101_3200.s3161_block_placement_queries
 
-import kotlin.math.max
-
 // #Hard #Array #Binary_Search #Segment_Tree #Binary_Indexed_Tree
-// #2024_05_30_Time_137_ms_(99.38%)_Space_143.7_MB_(54.52%)
+// #2024_05_30_Time_1701_ms_(100.00%)_Space_174.7_MB_(33.33%)
+
+import kotlin.math.max
 
 class Solution {
     private class Seg private constructor(private val start: Int, private val end: Int) {
@@ -42,17 +42,16 @@ class Solution {
                 min = left.min
                 if (right.obstacle) {
                     max = right.max
-                    len = max((right.min - left.max).toDouble(), max(left.len.toDouble(), right.len.toDouble()))
-                        .toInt()
+                    len = max((right.min - left.max), max(left.len, right.len))
                 } else {
                     max = left.max
-                    len = max(left.len.toDouble(), (right.end - left.max).toDouble()).toInt()
+                    len = max(left.len, (right.end - left.max))
                 }
                 obstacle = true
             } else if (right.obstacle) {
                 min = right.min
                 max = right.max
-                len = max(right.len.toDouble(), (right.min - left.start).toDouble()).toInt()
+                len = max(right.len, (right.min - left.start))
                 obstacle = true
             } else {
                 len = end - start
@@ -61,7 +60,7 @@ class Solution {
 
         fun max(n: Int, t: IntArray) {
             if (end <= n) {
-                t[0] = max(t[0].toDouble(), len.toDouble()).toInt()
+                t[0] = max(t[0], len)
                 if (obstacle) {
                     t[1] = max
                 }
@@ -71,7 +70,7 @@ class Solution {
             if (!right.obstacle || right.min >= n) {
                 return
             }
-            t[0] = max(t[0].toDouble(), (right.min - t[1]).toDouble()).toInt()
+            t[0] = max(t[0], (right.min - t[1]))
             right.max(n, t)
         }
 
@@ -85,7 +84,7 @@ class Solution {
     fun getResults(queries: Array<IntArray>): List<Boolean> {
         var max = 0
         for (i in queries) {
-            max = max(max.toDouble(), i[1].toDouble()).toInt()
+            max = max(max, i[1])
         }
         val root = Seg.init(max)
         root.set(0)
@@ -97,7 +96,7 @@ class Solution {
             } else {
                 val t = IntArray(2)
                 root.max(i[1], t)
-                res.add(max(t[0].toDouble(), (i[1] - t[1]).toDouble()) >= i[2])
+                res.add(max(t[0], (i[1] - t[1])) >= i[2])
             }
         }
         return res
