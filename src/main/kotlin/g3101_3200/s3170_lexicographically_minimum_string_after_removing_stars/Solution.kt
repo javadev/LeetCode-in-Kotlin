@@ -1,6 +1,7 @@
 package g3101_3200.s3170_lexicographically_minimum_string_after_removing_stars
 
-// #2024_06_06_Time_29_ms_(99.93%)_Space_45.6_MB_(92.80%)
+// #Medium #String #Hash_Table #Greedy #Stack #Heap_Priority_Queue
+// #2024_06_08_Time_316_ms_(100.00%)_Space_40.9_MB_(89.58%)
 
 class Solution {
     fun clearStars(s: String): String {

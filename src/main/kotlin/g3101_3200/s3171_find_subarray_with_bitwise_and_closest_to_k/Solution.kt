@@ -1,7 +1,7 @@
 package g3101_3200.s3171_find_subarray_with_bitwise_and_closest_to_k
 
 // #Hard #Array #Binary_Search #Bit_Manipulation #Segment_Tree
-// #2024_06_06_Time_10_ms_(98.04%)_Space_56.3_MB_(79.06%)
+// #2024_06_08_Time_520_ms_(100.00%)_Space_63.6_MB_(96.15%)
 
 import kotlin.math.abs
 import kotlin.math.min

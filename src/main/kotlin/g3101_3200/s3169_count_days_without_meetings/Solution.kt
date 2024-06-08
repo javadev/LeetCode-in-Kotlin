@@ -1,6 +1,6 @@
 package g3101_3200.s3169_count_days_without_meetings
 
-// #Medium #Array #Sorting #2024_06_06_Time_11_ms_(99.96%)_Space_113.7_MB_(5.10%)
+// #Medium #Array #Sorting #2024_06_08_Time_733_ms_(97.59%)_Space_101.5_MB_(93.98%)
 
 class Solution {
     fun countDays(days: Int, meetings: Array<IntArray>): Int {
