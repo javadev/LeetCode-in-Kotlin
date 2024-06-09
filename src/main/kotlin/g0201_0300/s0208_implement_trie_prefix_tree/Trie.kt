@@ -62,3 +62,12 @@ class Trie {
         root = TrieNode()
     }
 }
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * var obj = Trie()
+ * obj.insert(word)
+ * var param_2 = obj.search(word)
+ * var param_3 = obj.startsWith(prefix)
+ */
+ 
