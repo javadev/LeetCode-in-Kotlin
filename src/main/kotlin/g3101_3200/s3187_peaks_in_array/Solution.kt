@@ -1,6 +1,7 @@
 package g3101_3200.s3187_peaks_in_array
 
-// #2024_06_21_Time_18_ms_(100.00%)_Space_137.7_MB_(31.34%)
+// #Hard #Array #Segment_Tree #Binary_Indexed_Tree
+// #2024_06_22_Time_1339_ms_(80.00%)_Space_135.1_MB_(70.00%)
 
 import kotlin.math.max
 
@@ -10,12 +11,11 @@ class Solution {
         val peaks = BooleanArray(nums.size)
         val binaryIndexedTree = IntArray(Integer.highestOneBit(peaks.size) * 2 + 1)
         for (i in 1 until peaks.size - 1) {
-            if (nums[i] > max(nums[i - 1].toDouble(), nums[i + 1].toDouble())) {
+            if (nums[i] > max(nums[i - 1], nums[i + 1])) {
                 peaks[i] = true
                 update(binaryIndexedTree, i + 1, 1)
             }
         }
-
         val result: MutableList<Int> = ArrayList()
         for (query in queries) {
             if (query[0] == 1) {
@@ -30,7 +30,7 @@ class Solution {
                     val affected = index + i
                     if (affected >= 1 && affected <= nums.size - 2) {
                         val peak =
-                            nums[affected] > max(nums[affected - 1].toDouble(), nums[affected + 1].toDouble())
+                            nums[affected] > max(nums[affected - 1], nums[affected + 1])
                         if (peak != peaks[affected]) {
                             if (peak) {
                                 update(binaryIndexedTree, affected + 1, 1)
@@ -47,8 +47,7 @@ class Solution {
     }
 
     private fun computeRangeSum(binaryIndexedTree: IntArray, beginIndex: Int, endIndex: Int): Int {
-        return if ((beginIndex <= endIndex)
-        ) (query(binaryIndexedTree, endIndex) - query(binaryIndexedTree, beginIndex - 1))
+        return if (beginIndex <= endIndex) query(binaryIndexedTree, endIndex) - query(binaryIndexedTree, beginIndex - 1)
         else 0
     }
 

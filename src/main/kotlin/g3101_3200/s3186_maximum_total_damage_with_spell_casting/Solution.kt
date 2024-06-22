@@ -24,10 +24,9 @@ class Solution {
         }
         val dp = LongArray(maxPower + 6)
         dp[1] = counts[1].toLong()
-        dp[2] = max((counts[2] * 2L).toDouble(), dp[1].toDouble()).toLong()
+        dp[2] = max((counts[2] * 2L), dp[1])
         for (i in 3..maxPower) {
-            dp[i] = max((counts[i] * i + dp[i - 3]).toDouble(), max(dp[i - 1].toDouble(), dp[i - 2].toDouble()))
-                .toLong()
+            dp[i] = max((counts[i] * i + dp[i - 3]), max(dp[i - 1], dp[i - 2]))
         }
         return dp[maxPower]
     }
@@ -45,15 +44,12 @@ class Solution {
                 count++
             } else {
                 val curVal = max(
-                    (curPower.toLong() * count + prevs[3]).toDouble(),
-                    max(prevs[1].toDouble(), prevs[2].toDouble())
+                    (curPower * count + prevs[3]),
+                    max(prevs[1], prevs[2])
                 )
-                    .toLong()
-                val diff = min((p - curPower).toDouble(), (prevs.size - 1).toDouble()).toInt()
+                val diff = min((p - curPower), (prevs.size - 1))
                 val nextCurVal =
-                    if ((diff == 1)) 0 else max(prevs[3].toDouble(), max(curVal.toDouble(), prevs[2].toDouble()))
-                        .toLong()
-                // Shift the values in prevs[].
+                    if ((diff == 1)) 0 else max(prevs[3], max(curVal, prevs[2]))
                 var k = prevs.size - 1
                 if (diff < prevs.size - 1) {
                     while (k > diff) {
