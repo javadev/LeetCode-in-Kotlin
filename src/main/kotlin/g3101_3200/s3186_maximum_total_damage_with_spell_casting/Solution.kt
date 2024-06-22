@@ -1,7 +1,7 @@
 package g3101_3200.s3186_maximum_total_damage_with_spell_casting
 
 // #Medium #Array #Hash_Table #Dynamic_Programming #Sorting #Binary_Search #Two_Pointers #Counting
-// #2024_06_21_Time_51_ms_(99.29%)_Space_60.8_MB_(78.34%)
+// #2024_06_22_Time_1106_ms_(92.73%)_Space_81.1_MB_(41.82%)
 
 import kotlin.math.max
 import kotlin.math.min
@@ -24,9 +24,10 @@ class Solution {
         }
         val dp = LongArray(maxPower + 6)
         dp[1] = counts[1].toLong()
-        dp[2] = max((counts[2] * 2L), dp[1])
+        dp[2] = max((counts[2] * 2L).toDouble(), dp[1].toDouble()).toLong()
         for (i in 3..maxPower) {
-            dp[i] = max((counts[i] * i + dp[i - 3]), max(dp[i - 1], dp[i - 2]))
+            dp[i] = max((counts[i] * i + dp[i - 3]).toDouble(), max(dp[i - 1].toDouble(), dp[i - 2].toDouble()))
+                .toLong()
         }
         return dp[maxPower]
     }
@@ -44,12 +45,15 @@ class Solution {
                 count++
             } else {
                 val curVal = max(
-                    (curPower * count + prevs[3]),
-                    max(prevs[1], prevs[2])
+                    (curPower.toLong() * count + prevs[3]).toDouble(),
+                    max(prevs[1].toDouble(), prevs[2].toDouble())
                 )
-                val diff = min((p - curPower), (prevs.size - 1))
+                    .toLong()
+                val diff = min((p - curPower).toDouble(), (prevs.size - 1).toDouble()).toInt()
                 val nextCurVal =
-                    if ((diff == 1)) 0 else max(prevs[3], max(curVal, prevs[2]))
+                    if ((diff == 1)) 0 else max(prevs[3].toDouble(), max(curVal.toDouble(), prevs[2].toDouble()))
+                        .toLong()
+                // Shift the values in prevs[].
                 var k = prevs.size - 1
                 if (diff < prevs.size - 1) {
                     while (k > diff) {
