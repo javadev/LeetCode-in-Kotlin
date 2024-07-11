@@ -27,9 +27,6 @@ class Solution {
             len = 0
         }
         if (colors[0] != colors[colors.size - 1]) {
-            // if(len == colors.length) {
-            //     return Math.max(0, colors.length);
-            // }
             len = if (len == 0) 2 else len + 1
             var j = 1
             while (j < colors.size && colors[j] != colors[j - 1]) {
