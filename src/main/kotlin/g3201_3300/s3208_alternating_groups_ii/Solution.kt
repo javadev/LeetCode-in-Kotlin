@@ -1,6 +1,6 @@
 package g3201_3300.s3208_alternating_groups_ii
 
-// #Medium #Array #Sliding_Window #2024_07_09_Time_2_ms_(99.02%)_Space_63.3_MB_(22.96%)
+// #Medium #Array #Sliding_Window #2024_07_11_Time_449_ms_(97.62%)_Space_59.6_MB_(100.00%)
 
 import kotlin.math.max
 

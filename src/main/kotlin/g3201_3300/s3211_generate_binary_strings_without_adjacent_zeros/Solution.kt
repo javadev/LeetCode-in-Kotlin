@@ -1,6 +1,7 @@
 package g3201_3300.s3211_generate_binary_strings_without_adjacent_zeros
 
-// #Medium #String #Bit_Manipulation #Recursion #2024_07_09_Time_1_ms_(100.00%)_Space_46_MB_(27.65%)
+// #Medium #String #Bit_Manipulation #Recursion
+// #2024_07_11_Time_237_ms_(38.18%)_Space_45.3_MB_(5.45%)
 
 class Solution {
     fun validStrings(n: Int): List<String> {

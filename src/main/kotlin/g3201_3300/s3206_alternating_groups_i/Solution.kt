@@ -1,6 +1,6 @@
 package g3201_3300.s3206_alternating_groups_i
 
-// #Easy #Array #Sliding_Window #2024_07_09_Time_1_ms_(97.24%)_Space_42.8_MB_(90.31%)
+// #Easy #Array #Sliding_Window #2024_07_11_Time_167_ms_(88.14%)_Space_38.3_MB_(23.73%)
 
 class Solution {
     fun numberOfAlternatingGroups(colors: IntArray): Int {

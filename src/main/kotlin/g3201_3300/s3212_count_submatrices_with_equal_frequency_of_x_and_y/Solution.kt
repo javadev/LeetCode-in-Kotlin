@@ -1,6 +1,6 @@
 package g3201_3300.s3212_count_submatrices_with_equal_frequency_of_x_and_y
 
-// #Medium #Array #Matrix #Prefix_Sum #2024_07_09_Time_15_ms_(100.00%)_Space_117_MB_(99.13%)
+// #Medium #Array #Matrix #Prefix_Sum #2024_07_11_Time_1009_ms_(78.95%)_Space_158.6_MB_(50.00%)
 
 class Solution {
     fun numberOfSubmatrices(grid: Array<CharArray>): Int {

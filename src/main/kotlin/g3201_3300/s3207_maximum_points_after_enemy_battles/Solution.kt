@@ -1,6 +1,6 @@
 package g3201_3300.s3207_maximum_points_after_enemy_battles
 
-// #Medium #Array #Greedy #2024_07_09_Time_1_ms_(100.00%)_Space_55.5_MB_(99.34%)
+// #Medium #Array #Greedy #2024_07_11_Time_470_ms_(100.00%)_Space_62_MB_(95.56%)
 
 import kotlin.math.min
 
