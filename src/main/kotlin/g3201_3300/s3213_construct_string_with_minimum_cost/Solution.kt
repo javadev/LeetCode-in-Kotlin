@@ -88,8 +88,7 @@ class Solution {
         for (i in 1 until dp.size) {
             node = ac.go(node, target[i - 1])
             var temp = node
-            while (temp != null && temp !== root
-            ) {
+            while (temp != null && temp !== root) {
                 if (temp.`val` != null && dp[i - temp.len] < Int.MAX_VALUE / 2) {
                     dp[i] = min(dp[i], (dp[i - temp.len] + temp.`val`!!))
                 }
