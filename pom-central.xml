@@ -4,7 +4,7 @@
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-kotlin</artifactId>
     <packaging>jar</packaging>
-    <version>1.26</version>
+    <version>1.27</version>
     <name>leetcode-in-kotlin</name>
     <description>Kotlin-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Kotlin</url>
@@ -74,7 +74,7 @@
                     <dependency>
                         <groupId>org.junit.jupiter</groupId>
                         <artifactId>junit-jupiter-engine</artifactId>
-                        <version>[5.10.2,)</version>
+                        <version>[5.10.3,)</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -149,19 +149,19 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>[5.10.2,)</version>
+            <version>[5.10.3,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>[5.10.2,)</version>
+            <version>[5.10.3,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>[1.10.2,)</version>
+            <version>[1.10.3,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -173,7 +173,7 @@
         <dependency>
             <groupId>org.zapodot</groupId>
             <artifactId>embedded-db-junit-jupiter</artifactId>
-            <version>[2.1.1,)</version>
+            <version>[2.2.0,)</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
