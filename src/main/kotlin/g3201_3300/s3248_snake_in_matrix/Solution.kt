@@ -20,7 +20,6 @@ class Solution {
                 "RIGHT" -> if (y < n - 1) {
                     y++
                 }
-                else -> {}
             }
         }
         return (x * n) + y
