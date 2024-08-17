@@ -18,7 +18,6 @@ class MyStack() {
             queue2.add(queue1.remove())
         }
         val top = queue1.remove()
-        val temp = queue1
         queue1.clear()
         queue1.addAll(queue2)
         queue2.clear()
@@ -31,7 +30,6 @@ class MyStack() {
         }
         val top = queue1.remove()
         queue2.add(top)
-        val temp = queue1
         queue1.clear()
         queue1.addAll(queue2)
         queue2.clear()
