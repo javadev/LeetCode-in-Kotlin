@@ -50,7 +50,7 @@ class Solution {
                 p[0] *= multiplier.toLong()
                 pq.offer(p)
             }
-            while (!pq.isEmpty()) {
+            while (pq.isNotEmpty()) {
                 val p = pq.poll()
                 nums[p[1].toInt()] = (p[0] % MOD).toInt()
             }
