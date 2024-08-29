@@ -1,6 +1,7 @@
 package g3201_3300.s3267_count_almost_equal_pairs_ii
 
-// #Hard #2024_08_28_Time_791_ms_(100.00%)_Space_50.7_MB_(57.14%)
+// #Hard #Array #Hash_Table #Sorting #Counting #Enumeration
+// #2024_08_29_Time_814_ms_(100.00%)_Space_51.6_MB_(60.00%)
 
 class Solution {
     fun countPairs(nums: IntArray): Int {
