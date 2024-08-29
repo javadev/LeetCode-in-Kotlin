@@ -1,6 +1,7 @@
 package g3201_3300.s3266_final_array_state_after_k_multiplication_operations_ii
 
-// #Hard #2024_08_28_Time_546_ms_(100.00%)_Space_60.8_MB_(66.67%)
+// #Hard #Array #Heap_Priority_Queue #Simulation
+// #2024_08_29_Time_500_ms_(100.00%)_Space_45_MB_(100.00%)
 
 import java.util.PriorityQueue
 import kotlin.math.max

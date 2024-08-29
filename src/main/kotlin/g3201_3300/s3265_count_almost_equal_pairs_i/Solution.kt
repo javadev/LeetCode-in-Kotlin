@@ -1,6 +1,7 @@
 package g3201_3300.s3265_count_almost_equal_pairs_i
 
-// #Medium #2024_08_28_Time_188_ms_(100.00%)_Space_37.5_MB_(100.00%)
+// #Medium #Array #Hash_Table #Sorting #Counting #Enumeration
+// #2024_08_29_Time_184_ms_(100.00%)_Space_41.7_MB_(53.33%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

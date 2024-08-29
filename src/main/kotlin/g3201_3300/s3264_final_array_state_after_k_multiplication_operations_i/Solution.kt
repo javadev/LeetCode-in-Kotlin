@@ -1,6 +1,7 @@
 package g3201_3300.s3264_final_array_state_after_k_multiplication_operations_i
 
-// #Easy #2024_08_28_Time_226_ms_(68.00%)_Space_38.5_MB_(66.00%)
+// #Easy #Array #Math #Heap_Priority_Queue #Simulation
+// #2024_08_29_Time_237_ms_(55.55%)_Space_39.5_MB_(51.85%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {
