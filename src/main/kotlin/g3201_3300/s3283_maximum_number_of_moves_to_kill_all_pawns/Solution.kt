@@ -62,7 +62,7 @@ class Solution {
         val queue: Queue<IntArray> = LinkedList<IntArray>()
         queue.offer(intArrayOf(x1, y1, 0))
         visited[x1]!![y1] = true
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val current = queue.poll()
             val x = current[0]
             val y = current[1]
