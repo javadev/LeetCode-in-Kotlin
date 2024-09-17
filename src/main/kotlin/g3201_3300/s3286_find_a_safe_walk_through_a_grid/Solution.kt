@@ -16,7 +16,7 @@ class Solution {
         val bfs: Queue<IntArray?> = LinkedList<IntArray>()
         bfs.add(intArrayOf(0, 0, health - grid[0][0]))
         visited[0]!![0][health - grid[0][0]] = true
-        while (!bfs.isEmpty()) {
+        while (bfs.isNotEmpty()) {
             var size = bfs.size
             while (size-- > 0) {
                 val currNode = bfs.poll()

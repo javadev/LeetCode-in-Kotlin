@@ -38,7 +38,7 @@ class Solution {
         return longestIncreasingLength(upper) + longestIncreasingLength(lower) + 1
     }
 
-    private fun longestIncreasingLength(array: MutableList<IntArray>): Int {
+    private fun longestIncreasingLength(array: List<IntArray>): Int {
         val list: MutableList<Int?> = ArrayList<Int?>()
         for (pair in array) {
             val m = list.size
@@ -52,7 +52,7 @@ class Solution {
         return list.size
     }
 
-    private fun binarySearch(list: MutableList<Int?>, target: Int): Int {
+    private fun binarySearch(list: List<Int?>, target: Int): Int {
         val n = list.size
         var left = 0
         var right = n - 1
