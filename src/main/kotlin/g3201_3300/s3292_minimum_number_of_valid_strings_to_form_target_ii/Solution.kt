@@ -1,6 +1,7 @@
 package g3201_3300.s3292_minimum_number_of_valid_strings_to_form_target_ii
 
-// #Hard #2024_09_17_Time_674_ms_(50.00%)_Space_74.6_MB_(100.00%)
+// #Hard #Array #String #Dynamic_Programming #Binary_Search #Segment_Tree #Hash_Function
+// #String_Matching #Rolling_Hash #2024_09_17_Time_674_ms_(50.00%)_Space_74.6_MB_(100.00%)
 
 import java.util.ArrayList
 import kotlin.math.min

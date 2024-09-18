@@ -1,6 +1,7 @@
 package g3201_3300.s3286_find_a_safe_walk_through_a_grid
 
-// #Medium #2024_09_17_Time_357_ms_(48.28%)_Space_48.2_MB_(58.62%)
+// #Medium #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
+// #2024_09_17_Time_357_ms_(48.28%)_Space_48.2_MB_(58.62%)
 
 import java.util.LinkedList
 import java.util.Objects

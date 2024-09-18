@@ -1,6 +1,7 @@
 package g3201_3300.s3287_find_the_maximum_sequence_value_of_array
 
-// #Hard #2024_09_17_Time_2893_ms_(33.33%)_Space_290.4_MB_(33.33%)
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation
+// #2024_09_17_Time_2893_ms_(33.33%)_Space_290.4_MB_(33.33%)
 
 import kotlin.math.max
 

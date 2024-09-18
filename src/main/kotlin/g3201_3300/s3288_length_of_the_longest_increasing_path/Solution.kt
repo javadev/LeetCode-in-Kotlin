@@ -1,6 +1,6 @@
 package g3201_3300.s3288_length_of_the_longest_increasing_path
 
-// #Hard #2024_09_17_Time_984_ms_(83.33%)_Space_147.1_MB_(16.67%)
+// #Hard #Array #Sorting #Binary_Search #2024_09_17_Time_984_ms_(83.33%)_Space_147.1_MB_(16.67%)
 
 import java.util.ArrayList
 import java.util.Comparator

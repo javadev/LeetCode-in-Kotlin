@@ -1,6 +1,6 @@
 package g3201_3300.s3285_find_indices_of_stable_mountains
 
-// #Easy #2024_09_17_Time_195_ms_(92.68%)_Space_37.5_MB_(48.78%)
+// #Easy #Array #2024_09_17_Time_195_ms_(92.68%)_Space_37.5_MB_(48.78%)
 
 class Solution {
     fun stableMountains(height: IntArray, threshold: Int): List<Int> {

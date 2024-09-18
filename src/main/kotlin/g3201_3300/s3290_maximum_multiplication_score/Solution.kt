@@ -1,6 +1,6 @@
 package g3201_3300.s3290_maximum_multiplication_score
 
-// #Medium #2024_09_17_Time_749_ms_(66.67%)_Space_71.3_MB_(75.00%)
+// #Medium #Array #Dynamic_Programming #2024_09_17_Time_749_ms_(66.67%)_Space_71.3_MB_(75.00%)
 
 import kotlin.math.max
 

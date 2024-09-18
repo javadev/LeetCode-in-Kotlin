@@ -1,6 +1,6 @@
 package g3201_3300.s3289_the_two_sneaky_numbers_of_digitville
 
-// #Easy #2024_09_17_Time_223_ms_(68.97%)_Space_37.3_MB_(89.66%)
+// #Easy #Array #Hash_Table #Math #2024_09_17_Time_223_ms_(68.97%)_Space_37.3_MB_(89.66%)
 
 import java.util.HashMap
 
