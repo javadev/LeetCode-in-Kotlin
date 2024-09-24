@@ -20,7 +20,7 @@ class Solution {
         var start = 0
         var end = 0
         while (end < len) {
-            val index = word1.get(end).code - 'a'.code
+            val index = word1[end].code - 'a'.code
             if (!letters[index]) {
                 end++
                 continue
@@ -30,7 +30,7 @@ class Solution {
             }
             while (keys == 0) {
                 res += (len - end).toLong()
-                val beginIndex = word1.get(start++).code - 'a'.code
+                val beginIndex = word1[start++].code - 'a'.code
                 if (!letters[beginIndex]) {
                     continue
                 }
