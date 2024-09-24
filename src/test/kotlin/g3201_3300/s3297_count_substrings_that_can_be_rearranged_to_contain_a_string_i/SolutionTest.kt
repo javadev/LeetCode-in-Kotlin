@@ -25,4 +25,12 @@ internal class SolutionTest {
             equalTo<Long>(0L)
         )
     }
+
+    @Test
+    fun validSubstringCount4() {
+        assertThat<Long>(
+            Solution().validSubstringCount("dcbdcdccb", "cdd"),
+            equalTo<Long>(18L)
+        )
+    }
 }
