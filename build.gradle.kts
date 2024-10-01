@@ -15,10 +15,10 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.20")
-    testImplementation("org.junit.jupiter:junit-jupiter:[5.10.3,)")
+    testImplementation("org.junit.jupiter:junit-jupiter:[5.11.0,)")
     testImplementation("org.hamcrest:hamcrest-core:[2.2,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.2.0,)")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.10.3,)")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.11.0,)")
 }
 
 tasks.test {
