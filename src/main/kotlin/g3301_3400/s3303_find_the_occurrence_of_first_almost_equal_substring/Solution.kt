@@ -15,10 +15,10 @@ class Solution {
             f2[ch.code - 'a'.code]++
         }
         while (right < n) {
-            val ch = s.get(right)
+            val ch = s[right]
             f1[ch.code - 'a'.code]++
             if (right - left + 1 == pattern.length + 1) {
-                f1[s.get(left).code - 'a'.code]--
+                f1[s[left].code - 'a'.code]--
                 left += 1
             }
             if (right - left + 1 == pattern.length && check(f1, f2, left, s, pattern)) {

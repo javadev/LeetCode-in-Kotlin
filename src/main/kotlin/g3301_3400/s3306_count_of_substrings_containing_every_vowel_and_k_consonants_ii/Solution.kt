@@ -27,11 +27,11 @@ class Solution {
         val map: MutableMap<Char?, Int?> = HashMap<Char?, Int?>()
         var res: Long = 0
         while (end < word.length) {
-            val ch = word.get(end)
+            val ch = word[end]
             // adding vowel or consonants;
             if (vowels.contains(ch)) {
                 if (map.containsKey(ch)) {
-                    map.put(ch, map.get(ch)!! + 1)
+                    map.put(ch, map[ch]!! + 1)
                 } else {
                     map.put(ch, 1)
                 }
@@ -41,9 +41,9 @@ class Solution {
             // checking any valid string ispresent or not
             while (map.size == 5 && consonants >= k) {
                 res += (word.length - end).toLong()
-                val ch1 = word.get(start)
+                val ch1 = word[start]
                 if (vowels.contains(ch1)) {
-                    val temp = map.get(ch1)!! - 1
+                    val temp = map[ch1]!! - 1
                     if (temp == 0) {
                         map.remove(ch1)
                     } else {
