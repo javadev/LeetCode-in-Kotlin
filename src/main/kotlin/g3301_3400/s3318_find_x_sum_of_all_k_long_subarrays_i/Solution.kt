@@ -40,7 +40,7 @@ class Solution {
             }
             var count = x
             var sum = 0
-            while (!pq.isEmpty() && count > 0) {
+            while (pq.isNotEmpty() && count > 0) {
                 val pair = pq.remove()
                 sum += pair.num * pair.freq
                 count--

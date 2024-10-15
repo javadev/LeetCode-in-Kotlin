@@ -56,7 +56,7 @@ class Solution {
                 ans[i - k + 1] = if (s1.size == x) xSum else sum
                 val v = nums[i - k + 1]
                 sum -= v.toLong()
-                curCnt = cnt.get(v)!!
+                curCnt = cnt[v]!!
                 if (curCnt > 1) {
                     cnt.put(v, curCnt - 1)
                 } else {
@@ -74,7 +74,7 @@ class Solution {
                     if (curCnt > 1) {
                         s2.add(RC(v, curCnt - 1))
                     }
-                    while (s1.size < x && !s2.isEmpty()) {
+                    while (s1.size < x && s2.isNotEmpty()) {
                         val r = s2.last()
                         s2.remove(r)
                         s1.add(r)
