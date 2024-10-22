@@ -8,12 +8,12 @@ class Solution {
         var result = 0
         val count = IntArray(26)
         for (i in 0 until s.length) {
-            val ch = s.get(i)
+            val ch = s[i]
             count[ch.code - 'a'.code]++
 
             while (count[ch.code - 'a'.code] == k) {
                 result += s.length - i
-                val atLeft = s.get(left)
+                val atLeft = s[left]
                 count[atLeft.code - 'a'.code]--
                 left++
             }

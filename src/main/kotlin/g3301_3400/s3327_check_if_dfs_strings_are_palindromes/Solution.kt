@@ -18,10 +18,10 @@ class Solution {
 
     private fun dfs(x: Int) {
         l[x] = now + 1
-        for (v in e.get(x)!!) {
+        for (v in e[x]!!) {
             dfs(v!!)
         }
-        stringBuilder.append(s!!.get(x))
+        stringBuilder.append(s!![x])
         r[x] = ++now
     }
 
@@ -30,7 +30,7 @@ class Solution {
         c[1] = '#'
         for (i in 1..n) {
             c[2 * i + 1] = '#'
-            c[2 * i] = stringBuilder.get(i - 1)
+            c[2 * i] = stringBuilder[i - 1]
         }
         var j = 1
         var mid = 0
@@ -57,7 +57,7 @@ class Solution {
             e.add(ArrayList<Int?>())
         }
         for (i in 1 until n) {
-            e.get(parent[i])!!.add(i)
+            e[parent[i]]!!.add(i)
         }
         l = IntArray(n)
         r = IntArray(n)

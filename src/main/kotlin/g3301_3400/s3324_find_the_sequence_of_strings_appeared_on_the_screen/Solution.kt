@@ -11,8 +11,8 @@ class Solution {
             val tCh = target[i]
             cur.append('a')
             ans.add(cur.toString())
-            while (cur.get(i) != tCh) {
-                val lastCh = cur.get(i)
+            while (cur[i] != tCh) {
+                val lastCh = cur[i]
                 val nextCh = (if (lastCh == 'z') 'a'.code else lastCh.code + 1).toChar()
                 cur.setCharAt(i, nextCh)
                 ans.add(cur.toString())
