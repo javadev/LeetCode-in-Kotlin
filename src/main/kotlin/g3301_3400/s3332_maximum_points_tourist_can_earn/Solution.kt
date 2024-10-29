@@ -1,44 +1,27 @@
 package g3301_3400.s3332_maximum_points_tourist_can_earn
 
 // #Medium #Array #Dynamic_Programming #Matrix
-// #2024_10_29_Time_387_ms_(100.00%)_Space_68.8_MB_(47.37%)
+// #2024_10_29_Time_216_ms_(100.00%)_Space_64_MB_(78.95%)
 
 import kotlin.math.max
 
 class Solution {
-    var days: Int = 0
-    var cities: Int = 0
-    lateinit var dp: Array<Array<Int?>?>
-
-    private fun f(day: Int, city: Int, stayScore: Array<IntArray>, travelScore: Array<IntArray>): Int {
-        if (day == days) {
-            return 0
-        }
-        if (dp[day]!![city] != null) {
-            return dp[day]!![city]!!
-        }
-        var maxScore = 0
-        for (desCity in 0 until cities) {
-            var score: Int
-            if (desCity == city) {
-                score = stayScore[day][city]
-            } else {
-                score = travelScore[city][desCity]
+    fun maxScore(n: Int, k: Int, stayScores: Array<IntArray>, travelScores: Array<IntArray>): Int {
+        // dp[day][city]
+        val dp = Array<IntArray?>(k + 1) { IntArray(n) }
+        var result = 0
+        for (day in k - 1 downTo 0) {
+            for (city in 0 until n) {
+                val stayScore = stayScores[day][city] + dp[day + 1]!![city]
+                var travelScore = 0
+                for (nextCity in 0 until n) {
+                    val nextScore = travelScores[city][nextCity] + dp[day + 1]!![nextCity]
+                    travelScore = max(nextScore, travelScore)
+                }
+                dp[day]!![city] = max(stayScore, travelScore)
+                result = max(dp[day]!![city], result)
             }
-            maxScore = max(maxScore, (score + f(day + 1, desCity, stayScore, travelScore)))
         }
-        dp[day]!![city] = maxScore
-        return dp[day]!![city]!!
-    }
-
-    fun maxScore(n: Int, k: Int, stayScore: Array<IntArray>, travelScore: Array<IntArray>): Int {
-        days = k
-        cities = n
-        var maxScore = 0
-        dp = Array<Array<Int?>?>(days + 1) { arrayOfNulls<Int>(cities + 1) }
-        for (city in 0 until cities) {
-            maxScore = max(maxScore, f(0, city, stayScore, travelScore))
-        }
-        return maxScore
+        return result
     }
 }

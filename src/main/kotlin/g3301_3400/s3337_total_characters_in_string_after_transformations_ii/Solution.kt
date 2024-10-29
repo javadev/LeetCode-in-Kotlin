@@ -1,75 +1,90 @@
 package g3301_3400.s3337_total_characters_in_string_after_transformations_ii
 
 // #Hard #String #Hash_Table #Dynamic_Programming #Math #Counting
-// #2024_10_29_Time_581_ms_(33.33%)_Space_57.4_MB_(33.33%)
+// #2024_10_29_Time_320_ms_(100.00%)_Space_44_MB_(33.33%)
 
 class Solution {
     fun lengthAfterTransformations(s: String, t: Int, nums: List<Int>): Int {
-        // Initialize transformation matrix M
-        val matrix = Array<IntArray?>(ALPHABET_SIZE) { IntArray(ALPHABET_SIZE) }
-        for (i in 0 until ALPHABET_SIZE) {
-            val transforms: Int = nums[i]
-            for (j in 0 until transforms) {
-                matrix[i]!![(i + j + 1) % ALPHABET_SIZE] =
-                    matrix[i]!![(i + j + 1) % ALPHABET_SIZE] + 1
+        val m = Array<IntArray?>(26) { IntArray(26) }
+        for (i in 0..25) {
+            for (j in 1..nums[i]) {
+                m[(i + j) % 26]!![i] = m[(i + j) % 26]!![i] + 1
             }
         }
-        // Initialize count array based on string `s`
-        val count = IntArray(ALPHABET_SIZE)
-        for (ch in s.toCharArray()) {
-            count[ch.code - 'a'.code]++
+        var v = IntArray(26)
+        for (c in s.toCharArray()) {
+            v[c.code - 'a'.code]++
         }
-        // Apply matrix exponentiation to get M^t
-        val matrixT = power(matrix, t)
-        // Calculate final character counts after t transformations
-        val finalCount = IntArray(ALPHABET_SIZE)
-        for (i in 0 until ALPHABET_SIZE) {
-            for (j in 0 until ALPHABET_SIZE) {
-                finalCount[j] = ((finalCount[j] + (matrixT[i]!![j].toLong() * count[i]) % MOD) % MOD).toInt()
-            }
+        v = pow(m, v, t.toLong())
+        var ans: Long = 0
+        for (x in v) {
+            ans += x.toLong()
         }
-        // Calculate total length
-        var totalLength = 0
-        for (cnt in finalCount) {
-            totalLength = (totalLength + cnt) % MOD
-        }
-        return totalLength
+        return (ans % MOD).toInt()
     }
 
-    // Matrix multiplication function
-    private fun multiply(a: Array<IntArray?>, b: Array<IntArray?>): Array<IntArray?> {
-        val matrixC = Array<IntArray?>(ALPHABET_SIZE) { IntArray(ALPHABET_SIZE) }
-        for (i in 0 until ALPHABET_SIZE) {
-            for (j in 0 until ALPHABET_SIZE) {
-                for (k in 0 until ALPHABET_SIZE) {
-                    matrixC[i]!![j] = ((matrixC[i]!![j] + (a[i]!![k].toLong() * b[k]!![j]) % MOD) % MOD).toInt()
+    // A^e*v
+    private fun pow(a: Array<IntArray?>, v: IntArray, e: Long): IntArray {
+        var v = v
+        var e = e
+        for (i in v.indices) {
+            if (v[i] >= MOD) {
+                v[i] %= MOD
+            }
+        }
+        var mul = a
+        while (e > 0) {
+            if ((e and 1L) == 1L) {
+                v = mul(mul, v)
+            }
+            mul = p2(mul)
+            e = e ushr 1
+        }
+        return v
+    }
+
+    // int matrix*int vector
+    private fun mul(a: Array<IntArray?>, v: IntArray): IntArray {
+        val m = a.size
+        val n = v.size
+        val w = IntArray(m)
+        for (i in 0 until m) {
+            var sum: Long = 0
+            for (k in 0 until n) {
+                sum += a[i]!![k].toLong() * v[k]
+                if (sum >= BIG) {
+                    sum -= BIG
                 }
             }
+            w[i] = (sum % MOD).toInt()
         }
-        return matrixC
+        return w
     }
 
-    // Matrix exponentiation function
-    private fun power(matrix: Array<IntArray?>, exp: Int): Array<IntArray?> {
-        var matrix = matrix
-        var exp = exp
-        var result = Array<IntArray?>(ALPHABET_SIZE) { IntArray(ALPHABET_SIZE) }
-        for (i in 0 until ALPHABET_SIZE) {
-            // Identity matrix
-            result[i]!![i] = 1
-        }
-        while (exp > 0) {
-            if (exp % 2 == 1) {
-                result = multiply(result, matrix)
+    // int matrix^2 (be careful about negative value)
+    private fun p2(a: Array<IntArray?>): Array<IntArray?> {
+        val n = a.size
+        val c = Array<IntArray?>(n) { IntArray(n) }
+        for (i in 0 until n) {
+            val sum = LongArray(n)
+            for (k in 0 until n) {
+                for (j in 0 until n) {
+                    sum[j] += a[i]!![k].toLong() * a[k]!![j]
+                    if (sum[j] >= BIG) {
+                        sum[j] -= BIG
+                    }
+                }
             }
-            matrix = multiply(matrix, matrix)
-            exp /= 2
+            for (j in 0 until n) {
+                c[i]!![j] = (sum[j] % MOD).toInt()
+            }
         }
-        return result
+        return c
     }
 
     companion object {
-        private const val MOD = 1000000007
-        private const val ALPHABET_SIZE = 26
+        const val MOD: Int = 1000000007
+        const val M2: Long = MOD.toLong() * MOD
+        const val BIG: Long = 8L * M2
     }
 }
