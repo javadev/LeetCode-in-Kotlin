@@ -12,7 +12,7 @@ internal class SolutionTest {
                 .lengthAfterTransformations(
                     "abcyy",
                     2,
-                    mutableListOf<Int>(
+                    listOf<Int>(
                         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                         1, 1, 1, 1, 1, 2
                     )
@@ -28,12 +28,44 @@ internal class SolutionTest {
                 .lengthAfterTransformations(
                     "azbk",
                     1,
-                    mutableListOf<Int>(
+                    listOf<Int>(
                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
                         2, 2, 2, 2, 2, 2
                     )
                 ),
             equalTo<Int>(8)
+        )
+    }
+
+    @Test
+    fun lengthAfterTransformations3() {
+        assertThat<Int>(
+            Solution()
+                .lengthAfterTransformations(
+                    "sutnqlhkolxwjtrunkmaakgfyitzluklnrglpbnknbpdvxccpyupjzqldm",
+                    2826,
+                    listOf<Int>(
+                        9, 1, 6, 3, 2, 7, 8, 10, 8, 3, 9, 5, 10, 8, 10, 2, 2, 9, 10,
+                        1, 3, 5, 4, 4, 8, 10
+                    )
+                ),
+            equalTo<Int>(557232981)
+        )
+    }
+
+    @Test
+    fun lengthAfterTransformations4() {
+        assertThat<Int>(
+            Solution()
+                .lengthAfterTransformations(
+                    "mppgvcssluzhipednraxbdfbyn",
+                    3719,
+                    listOf<Int>(
+                        5, 3, 8, 1, 4, 2, 2, 4, 5, 2, 8, 5, 8, 2, 6, 10, 8, 1, 4, 1,
+                        7, 4, 2, 4, 7, 5
+                    )
+                ),
+            equalTo<Int>(467065288)
         )
     }
 }
