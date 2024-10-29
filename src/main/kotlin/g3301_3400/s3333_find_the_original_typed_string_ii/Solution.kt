@@ -1,6 +1,7 @@
 package g3301_3400.s3333_find_the_original_typed_string_ii
 
-// #Hard #2024_10_27_Time_590_ms_(100.00%)_Space_52.1_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #Prefix_Sum
+// #2024_10_29_Time_490_ms_(100.00%)_Space_52.2_MB_(33.33%)
 
 class Solution {
     fun possibleStringCount(word: String, k: Int): Int {

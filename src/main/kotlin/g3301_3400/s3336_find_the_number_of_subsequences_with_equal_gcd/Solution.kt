@@ -1,6 +1,7 @@
 package g3301_3400.s3336_find_the_number_of_subsequences_with_equal_gcd
 
-// #Hard #2024_10_27_Time_876_ms_(100.00%)_Space_112.8_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Math #Number_Theory
+// #2024_10_29_Time_324_ms_(100.00%)_Space_109.1_MB_(33.33%)
 
 class Solution {
     private lateinit var dp: Array<Array<IntArray>>

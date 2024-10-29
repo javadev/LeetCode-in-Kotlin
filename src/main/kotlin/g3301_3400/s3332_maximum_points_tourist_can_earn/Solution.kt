@@ -1,6 +1,7 @@
 package g3301_3400.s3332_maximum_points_tourist_can_earn
 
-// #Medium #2024_10_27_Time_495_ms_(100.00%)_Space_68.6_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Matrix
+// #2024_10_29_Time_387_ms_(100.00%)_Space_68.8_MB_(47.37%)
 
 import kotlin.math.max
 

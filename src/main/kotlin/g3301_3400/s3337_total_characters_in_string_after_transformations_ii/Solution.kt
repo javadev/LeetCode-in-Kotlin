@@ -1,6 +1,7 @@
 package g3301_3400.s3337_total_characters_in_string_after_transformations_ii
 
-// #Hard #2024_10_27_Time_607_ms_(100.00%)_Space_57.3_MB_(100.00%)
+// #Hard #String #Hash_Table #Dynamic_Programming #Math #Counting
+// #2024_10_29_Time_581_ms_(33.33%)_Space_57.4_MB_(33.33%)
 
 class Solution {
     fun lengthAfterTransformations(s: String, t: Int, nums: List<Int>): Int {

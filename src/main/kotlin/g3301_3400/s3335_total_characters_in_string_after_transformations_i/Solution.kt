@@ -1,6 +1,7 @@
 package g3301_3400.s3335_total_characters_in_string_after_transformations_i
 
-// #Medium #2024_10_27_Time_55_ms_(100.00%)_Space_38.3_MB_(100.00%)
+// #Medium #String #Hash_Table #Dynamic_Programming #Math #Counting
+// #2024_10_29_Time_58_ms_(80.00%)_Space_38.6_MB_(70.00%)
 
 import java.util.LinkedList
 
