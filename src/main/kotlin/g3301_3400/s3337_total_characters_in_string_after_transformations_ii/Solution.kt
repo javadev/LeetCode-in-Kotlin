@@ -5,10 +5,10 @@ package g3301_3400.s3337_total_characters_in_string_after_transformations_ii
 
 class Solution {
     fun lengthAfterTransformations(s: String, t: Int, nums: List<Int>): Int {
-        val m = Array<IntArray?>(26) { IntArray(26) }
+        val m = Array<IntArray>(26) { IntArray(26) }
         for (i in 0..25) {
             for (j in 1..nums[i]) {
-                m[(i + j) % 26]!![i] = m[(i + j) % 26]!![i] + 1
+                m[(i + j) % 26][i] = m[(i + j) % 26][i] + 1
             }
         }
         var v = IntArray(26)
@@ -24,7 +24,7 @@ class Solution {
     }
 
     // A^e*v
-    private fun pow(a: Array<IntArray?>, v: IntArray, e: Long): IntArray {
+    private fun pow(a: Array<IntArray>, v: IntArray, e: Long): IntArray {
         var v = v
         var e = e
         for (i in v.indices) {
@@ -44,14 +44,14 @@ class Solution {
     }
 
     // int matrix*int vector
-    private fun mul(a: Array<IntArray?>, v: IntArray): IntArray {
+    private fun mul(a: Array<IntArray>, v: IntArray): IntArray {
         val m = a.size
         val n = v.size
         val w = IntArray(m)
         for (i in 0 until m) {
             var sum: Long = 0
             for (k in 0 until n) {
-                sum += a[i]!![k].toLong() * v[k]
+                sum += a[i][k].toLong() * v[k]
                 if (sum >= BIG) {
                     sum -= BIG
                 }
@@ -62,21 +62,21 @@ class Solution {
     }
 
     // int matrix^2 (be careful about negative value)
-    private fun p2(a: Array<IntArray?>): Array<IntArray?> {
+    private fun p2(a: Array<IntArray>): Array<IntArray> {
         val n = a.size
-        val c = Array<IntArray?>(n) { IntArray(n) }
+        val c = Array<IntArray>(n) { IntArray(n) }
         for (i in 0 until n) {
             val sum = LongArray(n)
             for (k in 0 until n) {
                 for (j in 0 until n) {
-                    sum[j] += a[i]!![k].toLong() * a[k]!![j]
+                    sum[j] += a[i][k].toLong() * a[k][j]
                     if (sum[j] >= BIG) {
                         sum[j] -= BIG
                     }
                 }
             }
             for (j in 0 until n) {
-                c[i]!![j] = (sum[j] % MOD).toInt()
+                c[i][j] = (sum[j] % MOD).toInt()
             }
         }
         return c
