@@ -8,18 +8,18 @@ import kotlin.math.max
 class Solution {
     fun maxScore(n: Int, k: Int, stayScores: Array<IntArray>, travelScores: Array<IntArray>): Int {
         // dp[day][city]
-        val dp = Array<IntArray?>(k + 1) { IntArray(n) }
+        val dp = Array<IntArray>(k + 1) { IntArray(n) }
         var result = 0
         for (day in k - 1 downTo 0) {
             for (city in 0 until n) {
-                val stayScore = stayScores[day][city] + dp[day + 1]!![city]
+                val stayScore = stayScores[day][city] + dp[day + 1][city]
                 var travelScore = 0
                 for (nextCity in 0 until n) {
-                    val nextScore = travelScores[city][nextCity] + dp[day + 1]!![nextCity]
+                    val nextScore = travelScores[city][nextCity] + dp[day + 1][nextCity]
                     travelScore = max(nextScore, travelScore)
                 }
-                dp[day]!![city] = max(stayScore, travelScore)
-                result = max(dp[day]!![city], result)
+                dp[day][city] = max(stayScore, travelScore)
+                result = max(dp[day][city], result)
             }
         }
         return result
