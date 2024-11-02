@@ -38,7 +38,7 @@ internal class MysqlTest {
     @Test
     @Throws(SQLException::class, FileNotFoundException::class)
     fun testScript(@EmbeddedDatabase dataSource: DataSource) {
-        dataSource.getConnection().use { connection ->
+        dataSource.connection.use { connection ->
             connection.createStatement().use { statement ->
                 statement.executeQuery(
                     BufferedReader(
@@ -51,28 +51,28 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                 ).use { resultSet ->
-                    assertThat<Boolean?>(resultSet.next(), equalTo<Boolean?>(true))
-                    assertThat<String?>(
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String?>("2024-07-01")
+                        equalTo<String>("2024-07-01")
                     )
-                    assertThat<String?>(resultSet.getNString(2), equalTo<String?>("75"))
-                    assertThat<String?>(resultSet.getNString(3), equalTo<String?>("350"))
-                    assertThat<Boolean?>(resultSet.next(), equalTo<Boolean?>(true))
-                    assertThat<String?>(
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("75"))
+                    assertThat<String>(resultSet.getNString(3), equalTo<String>("350"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String?>("2024-07-02")
+                        equalTo<String>("2024-07-02")
                     )
-                    assertThat<String?>(resultSet.getNString(2), equalTo<String?>("0"))
-                    assertThat<String?>(resultSet.getNString(3), equalTo<String?>("350"))
-                    assertThat<Boolean?>(resultSet.next(), equalTo<Boolean?>(true))
-                    assertThat<String?>(
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("0"))
+                    assertThat<String>(resultSet.getNString(3), equalTo<String>("350"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String?>("2024-07-03")
+                        equalTo<String>("2024-07-03")
                     )
-                    assertThat<String?>(resultSet.getNString(2), equalTo<String?>("0"))
-                    assertThat<String?>(resultSet.getNString(3), equalTo<String?>("120"))
-                    assertThat<Boolean?>(resultSet.next(), equalTo<Boolean?>(false))
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("0"))
+                    assertThat<String>(resultSet.getNString(3), equalTo<String>("120"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
