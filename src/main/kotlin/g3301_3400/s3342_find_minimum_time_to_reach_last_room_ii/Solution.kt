@@ -29,7 +29,7 @@ class Solution {
         node.turn = 0
         pq.add(node)
         moveTime[0][0] = -1
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val curr = pq.poll()
             for (i in 0..3) {
                 val x = curr.x + dir[i]!![0]

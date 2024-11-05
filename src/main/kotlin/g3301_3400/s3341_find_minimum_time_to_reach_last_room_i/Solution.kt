@@ -21,7 +21,7 @@ class Solution {
         minHeap.offer(intArrayOf(0, 0, 0))
         time[0][0] = 0
         val directions = arrayOf<IntArray>(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
-        while (!minHeap.isEmpty()) {
+        while (minHeap.isNotEmpty()) {
             val current = minHeap.poll()
             val currentTime = current[0]
             val x = current[1]
