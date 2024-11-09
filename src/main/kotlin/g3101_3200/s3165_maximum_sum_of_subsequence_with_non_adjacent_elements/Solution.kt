@@ -1,124 +1,126 @@
 package g3101_3200.s3165_maximum_sum_of_subsequence_with_non_adjacent_elements
 
 // #Hard #Array #Dynamic_Programming #Divide_and_Conquer #Segment_Tree
-// #2024_06_03_Time_1301_ms_(22.22%)_Space_69.8_MB_(100.00%)
+// #2024_11_09_Time_109_ms_(100.00%)_Space_87.9_MB_(100.00%)
 
-import java.util.stream.Stream
 import kotlin.math.max
 
 class Solution {
     fun maximumSumSubsequence(nums: IntArray, queries: Array<IntArray>): Int {
-        var ans = 0
-        val segTree = SegTree(nums)
-        for (q in queries) {
-            val idx = q[0]
-            val `val` = q[1]
-            segTree.update(idx, `val`)
-            ans = (ans + segTree.max!!) % MOD
+        val tree: Array<LongArray?> = build(nums)
+        var result: Long = 0
+        for (i in queries.indices) {
+            result += set(tree, queries[i][0], queries[i][1])
+            result %= MOD.toLong()
         }
-        return ans
-    }
-
-    internal class SegTree(private val nums: IntArray) {
-        private class Record {
-            var takeFirstTakeLast: Int = 0
-            var takeFirstSkipLast: Int = 0
-            var skipFirstSkipLast: Int = 0
-            var skipFirstTakeLast: Int = 0
-
-            val max: Int
-                get() = Stream.of(
-                    this.takeFirstSkipLast,
-                    this.takeFirstTakeLast,
-                    this.skipFirstSkipLast,
-                    this.skipFirstTakeLast
-                )
-                    .max { x: Int?, y: Int? -> x!!.compareTo(y!!) }
-                    .orElse(null)
-
-            fun skipLast(): Int? {
-                return Stream.of(this.takeFirstSkipLast, this.skipFirstSkipLast)
-                    .max { x: Int?, y: Int? -> x!!.compareTo(y!!) }
-                    .orElse(null)
-            }
-
-            fun takeLast(): Int? {
-                return Stream.of(this.skipFirstTakeLast, this.takeFirstTakeLast)
-                    .max { x: Int?, y: Int? -> x!!.compareTo(y!!) }
-                    .orElse(null)
-            }
-        }
-
-        private val seg = arrayOfNulls<Record>(4 * nums.size)
-
-        init {
-            for (i in 0 until 4 * nums.size) {
-                seg[i] = Record()
-            }
-            build(0, nums.size - 1, 0)
-        }
-
-        private fun build(i: Int, j: Int, k: Int) {
-            if (i == j) {
-                seg[k]!!.takeFirstTakeLast = nums[i]
-                return
-            }
-            val mid = (i + j) shr 1
-            build(i, mid, 2 * k + 1)
-            build(mid + 1, j, 2 * k + 2)
-            merge(k)
-        }
-
-        // merge [2*k+1, 2*k+2] into k
-        private fun merge(k: Int) {
-            seg[k]!!.takeFirstSkipLast = max(
-                (seg[2 * k + 1]!!.takeFirstSkipLast + seg[2 * k + 2]!!.skipLast()!!),
-                (seg[2 * k + 1]!!.takeFirstTakeLast + seg[2 * k + 2]!!.skipFirstSkipLast)
-            )
-
-            seg[k]!!.takeFirstTakeLast = max(
-                (seg[2 * k + 1]!!.takeFirstSkipLast + seg[2 * k + 2]!!.takeLast()!!),
-                (seg[2 * k + 1]!!.takeFirstTakeLast + seg[2 * k + 2]!!.skipFirstTakeLast)
-            )
-
-            seg[k]!!.skipFirstTakeLast = max(
-                (seg[2 * k + 1]!!.skipFirstSkipLast + seg[2 * k + 2]!!.takeLast()!!),
-                (seg[2 * k + 1]!!.skipFirstTakeLast + seg[2 * k + 2]!!.skipFirstTakeLast)
-            )
-
-            seg[k]!!.skipFirstSkipLast = max(
-                (seg[2 * k + 1]!!.skipFirstSkipLast + seg[2 * k + 2]!!.skipLast()!!),
-                (seg[2 * k + 1]!!.skipFirstTakeLast + seg[2 * k + 2]!!.skipFirstSkipLast)
-            )
-        }
-
-        // child -> parent
-        fun update(idx: Int, `val`: Int) {
-            val i = 0
-            val j = nums.size - 1
-            val k = 0
-            update(idx, `val`, k, i, j)
-        }
-
-        private fun update(idx: Int, `val`: Int, k: Int, i: Int, j: Int) {
-            if (i == j) {
-                seg[k]!!.takeFirstTakeLast = `val`
-                return
-            }
-            val mid = (i + j) shr 1
-            if (idx <= mid) {
-                update(idx, `val`, 2 * k + 1, i, mid)
-            } else {
-                update(idx, `val`, 2 * k + 2, mid + 1, j)
-            }
-            merge(k)
-        }
-
-        val max: Int?
-            get() = seg[0]?.max
+        return result.toInt()
     }
 
     companion object {
+        private const val YY = 0
+        private const val YN = 1
+        private const val NY = 2
+        private const val NN = 3
         private const val MOD = 1000000007
+
+        private fun build(nums: IntArray): Array<LongArray?> {
+            val len = nums.size
+            var size = 1
+            while (size < len) {
+                size = size shl 1
+            }
+            val tree = Array<LongArray?>(size * 2) { LongArray(4) }
+            for (i in 0 until len) {
+                tree[size + i]!![YY] = nums[i].toLong()
+            }
+            for (i in size - 1 downTo 1) {
+                tree[i]!![YY] = max(
+                    (tree[2 * i]!![YY] + tree[2 * i + 1]!![NY]),
+                    (
+                        tree[2 * i]!![YN] + max(
+                            tree[2 * i + 1]!![YY],
+                            tree[2 * i + 1]!![NY]
+                        )
+                        )
+                )
+                tree[i]!![YN] = max(
+                    (tree[2 * i]!![YY] + tree[2 * i + 1]!![NN]),
+                    (
+                        tree[2 * i]!![YN] + max(
+                            tree[2 * i + 1]!![YN],
+                            tree[2 * i + 1]!![NN]
+                        )
+                        )
+                )
+                tree[i]!![NY] = max(
+                    (tree[2 * i]!![NY] + tree[2 * i + 1]!![NY]),
+                    (
+                        tree[2 * i]!![NN] + max(
+                            tree[2 * i + 1]!![YY],
+                            tree[2 * i + 1]!![NY]
+                        )
+                        )
+                )
+                tree[i]!![NN] = max(
+                    (tree[2 * i]!![NY] + tree[2 * i + 1]!![NN]),
+                    (
+                        tree[2 * i]!![NN] + max(
+                            tree[2 * i + 1]!![YN],
+                            tree[2 * i + 1]!![NN]
+                        )
+                        )
+                )
+            }
+            return tree
+        }
+
+        private fun set(tree: Array<LongArray?>, idx: Int, `val`: Int): Long {
+            val size = tree.size / 2
+            tree[size + idx]!![YY] = `val`.toLong()
+            var i = (size + idx) / 2
+            while (i > 0) {
+                tree[i]!![YY] = max(
+                    (tree[2 * i]!![YY] + tree[2 * i + 1]!![NY]),
+                    (
+                        tree[2 * i]!![YN] + max(
+                            tree[2 * i + 1]!![YY],
+                            tree[2 * i + 1]!![NY]
+                        )
+                        )
+                )
+                tree[i]!![YN] = max(
+                    (tree[2 * i]!![YY] + tree[2 * i + 1]!![NN]),
+                    (
+                        tree[2 * i]!![YN] + max(
+                            tree[2 * i + 1]!![YN],
+                            tree[2 * i + 1]!![NN]
+                        )
+                        )
+                )
+                tree[i]!![NY] = max(
+                    (tree[2 * i]!![NY] + tree[2 * i + 1]!![NY]),
+                    (
+                        tree[2 * i]!![NN] + max(
+                            tree[2 * i + 1]!![YY],
+                            tree[2 * i + 1]!![NY]
+                        )
+                        )
+                )
+                tree[i]!![NN] = max(
+                    (tree[2 * i]!![NY] + tree[2 * i + 1]!![NN]),
+                    (
+                        tree[2 * i]!![NN] + max(
+                            tree[2 * i + 1]!![YN],
+                            tree[2 * i + 1]!![NN]
+                        )
+                        )
+                )
+                i /= 2
+            }
+            return max(
+                tree[1]!![YY],
+                max(tree[1]!![YN], max(tree[1]!![NY], tree[1]!![NN]))
+            )
+        }
     }
 }
