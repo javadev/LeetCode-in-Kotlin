@@ -1,6 +1,6 @@
 package g3301_3400.s3331_find_subtree_sizes_after_changes
 
-// #Medium #Array #String #Hash_Table #Tree #Depth_First_Search
+// #Medium #Array #String #Hash_Table #Depth_First_Search #Tree
 // #2024_10_29_Time_139_ms_(95.24%)_Space_82.2_MB_(19.05%)
 
 class Solution {
