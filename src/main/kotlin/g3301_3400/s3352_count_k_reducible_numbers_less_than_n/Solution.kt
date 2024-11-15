@@ -17,7 +17,7 @@ class Solution {
                 dp[j + 1] += dp[j]
                 dp[j + 1] %= MOD.toLong()
             }
-            if (s.get(i) == '1') {
+            if (s[i] == '1') {
                 dp[curr]++
                 dp[curr] %= MOD.toLong()
                 curr++
