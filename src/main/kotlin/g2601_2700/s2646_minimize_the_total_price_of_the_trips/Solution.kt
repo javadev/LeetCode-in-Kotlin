@@ -29,7 +29,7 @@ class Solution {
         tgt: Int,
         counts: IntArray,
         adj: MutableList<MutableList<Int?>?>,
-        vis: BooleanArray
+        vis: BooleanArray,
     ): Boolean {
         if (vis[start]) return false
         vis[start] = true
@@ -53,7 +53,7 @@ class Solution {
         adj: MutableList<MutableList<Int?>?>,
         paths: BooleanArray,
         prices: IntArray,
-        counts: IntArray
+        counts: IntArray,
     ): Int {
         if (paths[node]) return 0
         if (dp[node] != -1) return dp[node]

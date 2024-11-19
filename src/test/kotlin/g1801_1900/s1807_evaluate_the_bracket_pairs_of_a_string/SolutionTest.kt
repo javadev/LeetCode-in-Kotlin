@@ -12,10 +12,11 @@ internal class SolutionTest {
                 .evaluate(
                     "(name)is(age)yearsold",
                     listOf(
-                        listOf("name", "bob"), listOf("age", "two")
-                    )
+                        listOf("name", "bob"),
+                        listOf("age", "two"),
+                    ),
                 ),
-            equalTo("bobistwoyearsold")
+            equalTo("bobistwoyearsold"),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .evaluate("hi(name)", listOf(listOf("a", "b"))),
-            equalTo("hi?")
+            equalTo("hi?"),
         )
     }
 
@@ -35,10 +36,11 @@ internal class SolutionTest {
                 .evaluate(
                     "(a)(a)(a)aaa",
                     listOf(
-                        listOf("a", "yes"), listOf("age", "two")
-                    )
+                        listOf("a", "yes"),
+                        listOf("age", "two"),
+                    ),
                 ),
-            equalTo("yesyesyesaaa")
+            equalTo("yesyesyesaaa"),
         )
     }
 }

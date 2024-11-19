@@ -12,7 +12,7 @@ class Solution {
     var profitMaxHeap = PriorityQueue<Data> { d1, d2 ->
         -1 * Integer.compare(
             d1.profit,
-            d2.profit
+            d2.profit,
         )
     }
 
@@ -23,7 +23,6 @@ class Solution {
         var maxCapital = w
         var currentCapital = w
         for (i in 0 until k) {
-
             // first fetch all tasks you can do with current capital and add those in profit max heap
             while (capitalMinHeap.isNotEmpty() && currentCapital >= capitalMinHeap.peek().capital) {
                 profitMaxHeap.add(capitalMinHeap.poll())

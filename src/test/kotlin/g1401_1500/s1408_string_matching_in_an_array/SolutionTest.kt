@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun stringMatching() {
         assertThat(
             Solution().stringMatching(arrayOf("mass", "as", "hero", "superhero")),
-            equalTo(mutableListOf("as", "hero"))
+            equalTo(mutableListOf("as", "hero")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun stringMatching2() {
         assertThat(
             Solution().stringMatching(arrayOf("leetcode", "et", "code")),
-            equalTo(mutableListOf("code", "et"))
+            equalTo(mutableListOf("code", "et")),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun stringMatching3() {
         assertThat(
             Solution().stringMatching(arrayOf("blue", "green", "bu")),
-            equalTo(emptyList<Any>())
+            equalTo(emptyList<Any>()),
         )
     }
 }

@@ -21,10 +21,10 @@ internal class SolutionTest {
                         intArrayOf(6, 5, 1),
                         intArrayOf(2, 5, 1),
                         intArrayOf(0, 4, 5),
-                        intArrayOf(4, 6, 2)
-                    )
+                        intArrayOf(4, 6, 2),
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

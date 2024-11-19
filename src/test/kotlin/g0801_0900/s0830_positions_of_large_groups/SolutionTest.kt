@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun largeGroupPositions() {
         assertThat(
             Solution().largeGroupPositions("abbxxxxzzy"),
-            equalTo(listOf(listOf(3, 6)))
+            equalTo(listOf(listOf(3, 6))),
         )
     }
 
@@ -24,9 +24,11 @@ internal class SolutionTest {
             Solution().largeGroupPositions("abcdddeeeeaabbbcd"),
             equalTo(
                 listOf(
-                    listOf(3, 5), listOf(6, 9), listOf(12, 14)
-                )
-            )
+                    listOf(3, 5),
+                    listOf(6, 9),
+                    listOf(12, 14),
+                ),
+            ),
         )
     }
 }

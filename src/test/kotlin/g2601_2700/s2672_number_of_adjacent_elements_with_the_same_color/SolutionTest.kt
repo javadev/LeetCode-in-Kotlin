@@ -11,11 +11,14 @@ internal class SolutionTest {
             Solution().colorTheArray(
                 4,
                 arrayOf(
-                    intArrayOf(0, 2), intArrayOf(1, 2), intArrayOf(3, 1),
-                    intArrayOf(1, 1), intArrayOf(2, 1)
-                )
+                    intArrayOf(0, 2),
+                    intArrayOf(1, 2),
+                    intArrayOf(3, 1),
+                    intArrayOf(1, 1),
+                    intArrayOf(2, 1),
+                ),
             ),
-            equalTo(intArrayOf(0, 1, 1, 0, 2))
+            equalTo(intArrayOf(0, 1, 1, 0, 2)),
         )
     }
 
@@ -23,7 +26,7 @@ internal class SolutionTest {
     fun colorTheArray2() {
         assertThat(
             Solution().colorTheArray(1, arrayOf(intArrayOf(0, 100000))),
-            equalTo(intArrayOf(0))
+            equalTo(intArrayOf(0)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findWordsContaining() {
         assertThat(
             Solution().findWordsContaining(arrayOf("leet", "code"), 'e'),
-            equalTo(mutableListOf(0, 1))
+            equalTo(mutableListOf(0, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findWordsContaining2() {
         assertThat(
             Solution().findWordsContaining(arrayOf("abc", "bcd", "aaaa", "cbc"), 'a'),
-            equalTo(mutableListOf(0, 2))
+            equalTo(mutableListOf(0, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun findWordsContaining3() {
         assertThat(
             Solution().findWordsContaining(arrayOf("abc", "bcd", "aaaa", "cbc"), 'z'),
-            equalTo(mutableListOf<Any>())
+            equalTo(mutableListOf<Any>()),
         )
     }
 }

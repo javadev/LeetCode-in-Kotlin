@@ -11,7 +11,7 @@ class Solution {
     fun calcEquation(
         equations: List<List<String?>>,
         values: DoubleArray,
-        queries: List<List<String?>>
+        queries: List<List<String?>>,
     ): DoubleArray {
         root = HashMap()
         rate = HashMap()
@@ -41,8 +41,12 @@ class Solution {
             }
             val rootX = findRoot(x, x, 1.0)
             val rootY = findRoot(y, y, 1.0)
-            result[i] = if (rootX == rootY) (rate as HashMap<String?, Double>).get(x)!! /
-                (rate as HashMap<String?, Double>).get(y)!! else -1.0
+            result[i] = if (rootX == rootY) {
+                (rate as HashMap<String?, Double>).get(x)!! /
+                    (rate as HashMap<String?, Double>).get(y)!!
+            } else {
+                -1.0
+            }
         }
         return result
     }

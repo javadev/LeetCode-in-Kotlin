@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .twoOutOfThree(intArrayOf(1, 1, 3, 2), intArrayOf(2, 3), intArrayOf(3)),
-            equalTo(mutableListOf(2, 3))
+            equalTo(mutableListOf(2, 3)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun twoOutOfThree2() {
         assertThat(
             Solution().twoOutOfThree(intArrayOf(3, 1), intArrayOf(2, 3), intArrayOf(1, 2)),
-            equalTo(mutableListOf(1, 2, 3))
+            equalTo(mutableListOf(1, 2, 3)),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .twoOutOfThree(intArrayOf(1, 2, 2), intArrayOf(4, 3, 3), intArrayOf(5)),
-            equalTo(emptyList<Any>())
+            equalTo(emptyList<Any>()),
         )
     }
 }

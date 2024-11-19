@@ -25,13 +25,15 @@ class RandomizedCollection() {
 
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
     fun remove(x: Int): Boolean {
-        if (x !in m2a)
+        if (x !in m2a) {
             return false
+        }
         val pos = m2a[x]!!.iterator().next()
-        if (m2a[x]!!.size == 1)
+        if (m2a[x]!!.size == 1) {
             m2a.remove(x)
-        else
+        } else {
             m2a[x]!!.remove(pos)
+        }
         if (pos != a2m.size - 1) {
             m2a[a2m[a2m.size - 1]]!!.remove(a2m.size - 1)
             m2a[a2m[a2m.size - 1]]!!.add(pos)

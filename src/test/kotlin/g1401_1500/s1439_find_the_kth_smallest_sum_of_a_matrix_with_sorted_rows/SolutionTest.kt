@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun kthSmallest3() {
         assertThat(
             Solution().kthSmallest(arrayOf(intArrayOf(1, 10, 10), intArrayOf(1, 4, 5), intArrayOf(2, 3, 6)), 7),
-            equalTo(9)
+            equalTo(9),
         )
     }
 }

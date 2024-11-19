@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isAlienSorted(arrayOf("hello", "leetcode"), "hlabcdefgijkmnopqrstuvwxyz"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
             Solution()
                 .isAlienSorted(
                     arrayOf("word", "world", "row"),
-                    "worldabcefghijkmnpqstuvxyz"
+                    "worldabcefghijkmnpqstuvxyz",
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -31,7 +31,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isAlienSorted(arrayOf("apple", "app"), "abcdefghijklmnopqrstuvwxyz"),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

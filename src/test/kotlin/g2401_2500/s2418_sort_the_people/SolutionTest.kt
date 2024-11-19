@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sortPeople(arrayOf("Mary", "John", "Emma"), intArrayOf(180, 165, 170)),
-            equalTo(arrayOf("Mary", "Emma", "John"))
+            equalTo(arrayOf("Mary", "Emma", "John")),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sortPeople(arrayOf("Alice", "Bob", "Bob"), intArrayOf(155, 185, 150)),
-            equalTo(arrayOf("Bob", "Alice", "Bob"))
+            equalTo(arrayOf("Bob", "Alice", "Bob")),
         )
     }
 }

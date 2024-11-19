@@ -22,10 +22,10 @@ internal class SolutionTest {
                 .evalRPN(
                     arrayOf(
                         "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5",
-                        "+"
-                    )
+                        "+",
+                    ),
                 ),
-            equalTo(22)
+            equalTo(22),
         )
     }
 }

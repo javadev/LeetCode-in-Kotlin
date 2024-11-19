@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isCousins(TreeNode.create(listOf(1, 2, 3, 4)), 4, 3),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -21,12 +21,12 @@ internal class SolutionTest {
             Solution()
                 .isCousins(
                     TreeNode.create(
-                        listOf(1, 2, 3, null, 4, null, 5)
+                        listOf(1, 2, 3, null, 4, null, 5),
                     ),
                     5,
-                    4
+                    4,
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -37,9 +37,9 @@ internal class SolutionTest {
                 .isCousins(
                     TreeNode.create(listOf(1, 2, 3, null, 4)),
                     2,
-                    3
+                    3,
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

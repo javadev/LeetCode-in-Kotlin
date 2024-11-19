@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun smallestNumber() {
         assertThat<String>(
             Solution().smallestNumber("1234", 256L),
-            equalTo<String>("1488")
+            equalTo<String>("1488"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun smallestNumber2() {
         assertThat<String>(
             Solution().smallestNumber("12355", 50L),
-            equalTo<String>("12355")
+            equalTo<String>("12355"),
         )
     }
 

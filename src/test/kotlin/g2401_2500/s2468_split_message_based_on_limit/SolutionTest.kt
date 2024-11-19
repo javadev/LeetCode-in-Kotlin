@@ -24,9 +24,9 @@ internal class SolutionTest {
                     " m<11/14>",
                     "es<12/14>",
                     "sa<13/14>",
-                    "ge<14/14>"
-                )
-            )
+                    "ge<14/14>",
+                ),
+            ),
         )
     }
 
@@ -34,7 +34,7 @@ internal class SolutionTest {
     fun splitMessage2() {
         assertThat(
             Solution().splitMessage("short message", 15),
-            equalTo(arrayOf<String?>("short mess<1/2>", "age<2/2>"))
+            equalTo(arrayOf<String?>("short mess<1/2>", "age<2/2>")),
         )
     }
 }

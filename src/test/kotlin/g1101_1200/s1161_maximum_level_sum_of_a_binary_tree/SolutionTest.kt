@@ -15,7 +15,7 @@ internal class SolutionTest {
     @Test
     fun maxLevelSum2() {
         val root = TreeNode.create(
-            listOf(989, null, 10250, 98693, -89388, null, null, null, -32127)
+            listOf(989, null, 10250, 98693, -89388, null, null, null, -32127),
         )
         assertThat(Solution().maxLevelSum(root), equalTo(2))
     }

@@ -9,8 +9,11 @@ class Solution {
         var small = Int.MAX_VALUE
 
         if (nums.size == 1) {
-            return if (nums[0] % 2 == 0) nums[0]
-            else -1
+            return if (nums[0] % 2 == 0) {
+                nums[0]
+            } else {
+                -1
+            }
         }
 
         for (i in nums.indices) {

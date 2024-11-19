@@ -12,12 +12,14 @@ internal class SolutionTest {
                 .distanceLimitedPathsExist(
                     3,
                     arrayOf(
-                        intArrayOf(0, 1, 2), intArrayOf(1, 2, 4),
-                        intArrayOf(2, 0, 8), intArrayOf(1, 0, 16)
+                        intArrayOf(0, 1, 2),
+                        intArrayOf(1, 2, 4),
+                        intArrayOf(2, 0, 8),
+                        intArrayOf(1, 0, 16),
                     ),
-                    arrayOf(intArrayOf(0, 1, 2), intArrayOf(0, 2, 5))
+                    arrayOf(intArrayOf(0, 1, 2), intArrayOf(0, 2, 5)),
                 ),
-            equalTo(booleanArrayOf(false, true))
+            equalTo(booleanArrayOf(false, true)),
         )
     }
 
@@ -28,12 +30,14 @@ internal class SolutionTest {
                 .distanceLimitedPathsExist(
                     5,
                     arrayOf(
-                        intArrayOf(0, 1, 10), intArrayOf(1, 2, 5),
-                        intArrayOf(2, 3, 9), intArrayOf(3, 4, 13)
+                        intArrayOf(0, 1, 10),
+                        intArrayOf(1, 2, 5),
+                        intArrayOf(2, 3, 9),
+                        intArrayOf(3, 4, 13),
                     ),
-                    arrayOf(intArrayOf(0, 4, 14), intArrayOf(1, 4, 13))
+                    arrayOf(intArrayOf(0, 4, 14), intArrayOf(1, 4, 13)),
                 ),
-            equalTo(booleanArrayOf(true, false))
+            equalTo(booleanArrayOf(true, false)),
         )
     }
 }

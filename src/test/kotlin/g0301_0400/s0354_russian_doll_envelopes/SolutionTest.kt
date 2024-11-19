@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun testMaxEnvelopes() {
         assertThat(
             Solution().maxEnvelopes(arrayOf(intArrayOf(5, 4), intArrayOf(6, 4), intArrayOf(6, 7), intArrayOf(2, 3))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

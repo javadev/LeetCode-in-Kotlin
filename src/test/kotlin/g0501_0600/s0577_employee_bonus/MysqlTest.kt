@@ -34,8 +34,8 @@ import javax.sql.DataSource
             "INSERT INTO Bonus(empId, bonus)" +
             " VALUES (2, 500); " +
             "INSERT INTO Bonus(empId, bonus)" +
-            " VALUES (4, 2000); "
-    ]
+            " VALUES (4, 2000); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -47,12 +47,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0501_0600/" +
-                                "s0577_employee_bonus/script.sql"
-                        )
+                                "s0577_employee_bonus/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("John"))

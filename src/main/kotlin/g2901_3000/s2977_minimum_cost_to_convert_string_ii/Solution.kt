@@ -11,7 +11,7 @@ class Solution {
         target: String,
         original: Array<String>,
         changed: Array<String>,
-        cost: IntArray
+        cost: IntArray,
     ): Long {
         val index = HashMap<String, Int>()
         for (o in original) {

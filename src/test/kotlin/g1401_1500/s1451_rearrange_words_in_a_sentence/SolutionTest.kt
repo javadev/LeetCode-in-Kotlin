@@ -14,14 +14,15 @@ internal class SolutionTest {
     fun arrangeWords2() {
         assertThat(
             Solution().arrangeWords("Keep calm and code on"),
-            equalTo("On and keep calm code")
+            equalTo("On and keep calm code"),
         )
     }
 
     @Test
     fun arrangeWords3() {
         assertThat(
-            Solution().arrangeWords("To be or not to be"), equalTo("To be or to be not")
+            Solution().arrangeWords("To be or not to be"),
+            equalTo("To be or to be not"),
         )
     }
 }

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numPairsDivisibleBy60() {
         assertThat(
-            Solution().numPairsDivisibleBy60(intArrayOf(30, 20, 150, 100, 40)), equalTo(3)
+            Solution().numPairsDivisibleBy60(intArrayOf(30, 20, 150, 100, 40)),
+            equalTo(3),
         )
     }
 

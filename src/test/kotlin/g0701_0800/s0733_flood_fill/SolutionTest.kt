@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun floodFill() {
         assertThat(
             Solution().floodFill(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 1, 0), intArrayOf(1, 0, 1)), 1, 1, 2),
-            equalTo(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 2, 0), intArrayOf(2, 0, 1)))
+            equalTo(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 2, 0), intArrayOf(2, 0, 1))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun floodFill2() {
         assertThat(
             Solution().floodFill(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 0, 0)), 1, 1, 2),
-            equalTo(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 2, 2)))
+            equalTo(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 2, 2))),
         )
     }
 }

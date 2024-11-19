@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun carPooling() {
         assertThat(
-            Solution().carPooling(arrayOf(intArrayOf(2, 1, 5), intArrayOf(3, 3, 7)), 4), equalTo(false)
+            Solution().carPooling(arrayOf(intArrayOf(2, 1, 5), intArrayOf(3, 3, 7)), 4),
+            equalTo(false),
         )
     }
 

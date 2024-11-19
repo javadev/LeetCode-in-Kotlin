@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .maximumScoreAfterOperations(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,2],[0,3],[2,4],[4,5]"
+                        "[0,1],[0,2],[0,3],[2,4],[4,5]",
                     ),
-                    intArrayOf(5, 2, 5, 2, 1, 1)
+                    intArrayOf(5, 2, 5, 2, 1, 1),
                 ),
-            equalTo(11L)
+            equalTo(11L),
         )
     }
 
@@ -26,11 +26,11 @@ internal class SolutionTest {
             Solution()
                 .maximumScoreAfterOperations(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]"
+                        "[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]",
                     ),
-                    intArrayOf(20, 10, 9, 7, 4, 3, 5)
+                    intArrayOf(20, 10, 9, 7, 4, 3, 5),
                 ),
-            equalTo(40L)
+            equalTo(40L),
         )
     }
 }

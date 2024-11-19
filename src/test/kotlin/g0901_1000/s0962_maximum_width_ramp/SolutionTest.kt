@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun maxWidthRamp2() {
         assertThat(
-            Solution().maxWidthRamp(intArrayOf(9, 8, 1, 0, 1, 9, 4, 0, 4, 1)), equalTo(7)
+            Solution().maxWidthRamp(intArrayOf(9, 8, 1, 0, 1, 9, 4, 0, 4, 1)),
+            equalTo(7),
         )
     }
 }

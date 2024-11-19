@@ -16,10 +16,10 @@ internal class SolutionTest {
                         intArrayOf(1, 2, 0),
                         intArrayOf(0, 3, 1),
                         intArrayOf(0, 3, 2),
-                        intArrayOf(0, 4, 1)
-                    )
+                        intArrayOf(0, 4, 1),
+                    ),
                 ),
-            equalTo(mutableListOf(true, false, false, true, true))
+            equalTo(mutableListOf(true, false, false, true, true)),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun canMakePaliQueries2() {
         assertThat(
             Solution().canMakePaliQueries("lyb  ", arrayOf(intArrayOf(0, 1, 0), intArrayOf(2, 2, 1))),
-            equalTo(mutableListOf(false, true))
+            equalTo(mutableListOf(false, true)),
         )
     }
 }

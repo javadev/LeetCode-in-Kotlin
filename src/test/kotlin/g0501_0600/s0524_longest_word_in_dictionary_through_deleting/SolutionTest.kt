@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findLongestWord(
-                    "abpcplea", listOf("ale", "apple", "monkey", "plea")
+                    "abpcplea",
+                    listOf("ale", "apple", "monkey", "plea"),
                 ),
-            equalTo("apple")
+            equalTo("apple"),
         )
     }
 
@@ -20,7 +21,7 @@ internal class SolutionTest {
     fun findLongestWord2() {
         assertThat(
             Solution().findLongestWord("abpcplea", listOf("a", "b", "c")),
-            equalTo("a")
+            equalTo("a"),
         )
     }
 }

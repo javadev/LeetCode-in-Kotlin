@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(10, 20),
                         intArrayOf(30, 200),
                         intArrayOf(400, 50),
-                        intArrayOf(30, 20)
-                    )
+                        intArrayOf(30, 20),
+                    ),
                 ),
-            equalTo(110)
+            equalTo(110),
         )
     }
 
@@ -32,10 +32,10 @@ internal class SolutionTest {
                         intArrayOf(926, 667),
                         intArrayOf(184, 139),
                         intArrayOf(840, 118),
-                        intArrayOf(577, 469)
-                    )
+                        intArrayOf(577, 469),
+                    ),
                 ),
-            equalTo(1859)
+            equalTo(1859),
         )
     }
 
@@ -52,10 +52,10 @@ internal class SolutionTest {
                         intArrayOf(855, 779),
                         intArrayOf(457, 60),
                         intArrayOf(650, 359),
-                        intArrayOf(631, 42)
-                    )
+                        intArrayOf(631, 42),
+                    ),
                 ),
-            equalTo(3086)
+            equalTo(3086),
         )
     }
 }

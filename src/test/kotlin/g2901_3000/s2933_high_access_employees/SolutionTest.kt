@@ -15,10 +15,10 @@ internal class SolutionTest {
                         mutableListOf("b", "0457"),
                         mutableListOf("a", "0532"),
                         mutableListOf("a", "0621"),
-                        mutableListOf("b", "0540")
-                    )
+                        mutableListOf("b", "0540"),
+                    ),
                 ),
-            equalTo(listOf("a"))
+            equalTo(listOf("a")),
         )
     }
 
@@ -35,10 +35,10 @@ internal class SolutionTest {
                         mutableListOf("d", "1508"),
                         mutableListOf("d", "1444"),
                         mutableListOf("d", "1410"),
-                        mutableListOf("c", "0809")
-                    )
+                        mutableListOf("c", "0809"),
+                    ),
                 ),
-            equalTo(listOf("c", "d"))
+            equalTo(listOf("c", "d")),
         )
     }
 
@@ -53,10 +53,10 @@ internal class SolutionTest {
                         mutableListOf("cd", "1046"),
                         mutableListOf("cd", "1055"),
                         mutableListOf("ab", "1124"),
-                        mutableListOf("ab", "1120")
-                    )
+                        mutableListOf("ab", "1120"),
+                    ),
                 ),
-            equalTo(listOf("cd", "ab"))
+            equalTo(listOf("cd", "ab")),
         )
     }
 }

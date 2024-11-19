@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestObstacleCourseAtEachPosition() {
         assertThat(
             Solution().longestObstacleCourseAtEachPosition(intArrayOf(1, 2, 3, 2)),
-            equalTo(intArrayOf(1, 2, 3, 3))
+            equalTo(intArrayOf(1, 2, 3, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestObstacleCourseAtEachPosition2() {
         assertThat(
             Solution().longestObstacleCourseAtEachPosition(intArrayOf(2, 2, 1)),
-            equalTo(intArrayOf(1, 2, 1))
+            equalTo(intArrayOf(1, 2, 1)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun longestObstacleCourseAtEachPosition3() {
         assertThat(
             Solution().longestObstacleCourseAtEachPosition(intArrayOf(3, 1, 5, 6, 4, 2)),
-            equalTo(intArrayOf(1, 1, 2, 3, 2, 2))
+            equalTo(intArrayOf(1, 1, 2, 3, 2, 2)),
         )
     }
 }

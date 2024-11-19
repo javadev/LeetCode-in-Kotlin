@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .uniquePathsIII(arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(0, 0, 0, 0), intArrayOf(0, 0, 2, -1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .uniquePathsIII(arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(0, 0, 0, 0), intArrayOf(0, 0, 0, 2))),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

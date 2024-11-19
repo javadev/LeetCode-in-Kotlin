@@ -9,13 +9,14 @@ internal class SolutionTest {
     fun oddCells() {
         assertThat(
             Solution().oddCells(
-                2, 3,
+                2,
+                3,
                 arrayOf(
                     intArrayOf(0, 1),
-                    intArrayOf(1, 1)
-                )
+                    intArrayOf(1, 1),
+                ),
             ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -23,13 +24,14 @@ internal class SolutionTest {
     fun oddCells2() {
         assertThat(
             Solution().oddCells(
-                2, 2,
+                2,
+                2,
                 arrayOf(
                     intArrayOf(1, 1),
-                    intArrayOf(0, 0)
-                )
+                    intArrayOf(0, 0),
+                ),
             ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

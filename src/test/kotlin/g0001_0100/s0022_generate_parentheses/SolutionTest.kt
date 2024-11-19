@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun generateParenthesis() {
         assertThat(
             Solution().generateParenthesis(3),
-            equalTo(listOf("((()))", "(()())", "(())()", "()(())", "()()()"))
+            equalTo(listOf("((()))", "(()())", "(())()", "()(())", "()()()")),
         )
     }
 

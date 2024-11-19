@@ -19,7 +19,9 @@ class Solution {
         }
         return if ((m + n) % 2 == 0) {
             false
-        } else dfs(0, 0, 0, 0, dp)
+        } else {
+            dfs(0, 0, 0, 0, dp)
+        }
     }
 
     private fun dfs(u: Int, v: Int, open: Int, close: Int, dp: Array<Array<Array<Boolean?>>>): Boolean {

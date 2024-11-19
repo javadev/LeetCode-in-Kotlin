@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canCompleteCircuit(intArrayOf(1, 2, 3, 4, 5), intArrayOf(3, 4, 5, 1, 2)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun canCompleteCircuit2() {
         assertThat(
             Solution().canCompleteCircuit(intArrayOf(2, 3, 4), intArrayOf(3, 4, 3)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

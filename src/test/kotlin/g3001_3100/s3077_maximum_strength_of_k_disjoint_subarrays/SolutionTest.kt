@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maximumStrength2() {
         assertThat(
             Solution().maximumStrength(intArrayOf(12, -2, -2, -2, -2), 5),
-            equalTo(64L)
+            equalTo(64L),
         )
     }
 

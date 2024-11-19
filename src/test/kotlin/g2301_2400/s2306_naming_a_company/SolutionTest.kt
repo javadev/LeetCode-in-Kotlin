@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distinctNames() {
         assertThat(
             Solution().distinctNames(arrayOf("coffee", "donuts", "time", "toffee")),
-            equalTo(6L)
+            equalTo(6L),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minOperations() {
         assertThat(
             Solution().minOperations(intArrayOf(4, 3, 1, 4), intArrayOf(1, 3, 7, 1), 3),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minOperations2() {
         assertThat(
             Solution().minOperations(intArrayOf(3, 8, 5, 2), intArrayOf(2, 4, 1, 6), 1),
-            equalTo(-1L)
+            equalTo(-1L),
         )
     }
 }

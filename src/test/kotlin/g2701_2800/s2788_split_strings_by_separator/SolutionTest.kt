@@ -9,9 +9,10 @@ internal class SolutionTest {
     fun splitWordsBySeparator() {
         assertThat(
             Solution().splitWordsBySeparator(
-                listOf("one.two.three", "four.five", "six"), '.'
+                listOf("one.two.three", "four.five", "six"),
+                '.',
             ),
-            equalTo(listOf("one", "two", "three", "four", "five", "six"))
+            equalTo(listOf("one", "two", "three", "four", "five", "six")),
         )
     }
 
@@ -19,9 +20,10 @@ internal class SolutionTest {
     fun splitWordsBySeparator2() {
         assertThat(
             Solution().splitWordsBySeparator(
-                listOf("\$easy\$", "\$problem\$"), '$'
+                listOf("\$easy\$", "\$problem\$"),
+                '$',
             ),
-            equalTo(listOf("easy", "problem"))
+            equalTo(listOf("easy", "problem")),
         )
     }
 }

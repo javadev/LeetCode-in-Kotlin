@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumPopulation() {
         assertThat(
             Solution().maximumPopulation(arrayOf(intArrayOf(1993, 1999), intArrayOf(2000, 2010))),
-            equalTo(1993)
+            equalTo(1993),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumPopulation(arrayOf(intArrayOf(1950, 1961), intArrayOf(1960, 1971), intArrayOf(1970, 1981))),
-            equalTo(1960)
+            equalTo(1960),
         )
     }
 }

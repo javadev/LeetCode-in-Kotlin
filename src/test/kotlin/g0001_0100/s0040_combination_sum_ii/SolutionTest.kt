@@ -11,7 +11,7 @@ internal class SolutionTest {
         val expected = arrayOf(intArrayOf(1, 1, 6), intArrayOf(1, 2, 5), intArrayOf(1, 7), intArrayOf(2, 6))
         assertThat(
             Solution().combinationSum2(intArrayOf(10, 1, 2, 7, 6, 1, 5), 8),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val expected = arrayOf(intArrayOf(1, 2, 2), intArrayOf(5))
         assertThat(
             Solution().combinationSum2(intArrayOf(2, 5, 2, 1, 2), 5),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 }

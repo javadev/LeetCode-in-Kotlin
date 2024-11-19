@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findRepeatedDnaSequences() {
         assertThat(
             Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"),
-            equalTo(listOf("AAAAACCCCC", "CCCCCAAAAA"))
+            equalTo(listOf("AAAAACCCCC", "CCCCCAAAAA")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findRepeatedDnaSequences2() {
         assertThat(
             Solution().findRepeatedDnaSequences("AAAAAAAAAAAAA"),
-            equalTo(listOf("AAAAAAAAAA"))
+            equalTo(listOf("AAAAAAAAAA")),
         )
     }
 }

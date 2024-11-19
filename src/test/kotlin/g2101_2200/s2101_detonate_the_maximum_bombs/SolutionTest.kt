@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun maximumDetonation() {
         assertThat(
-            Solution().maximumDetonation(arrayOf(intArrayOf(2, 1, 3), intArrayOf(6, 1, 4))), equalTo(2)
+            Solution().maximumDetonation(arrayOf(intArrayOf(2, 1, 3), intArrayOf(6, 1, 4))),
+            equalTo(2),
         )
     }
 
     @Test
     fun maximumDetonation2() {
         assertThat(
-            Solution().maximumDetonation(arrayOf(intArrayOf(1, 1, 5), intArrayOf(10, 10, 5))), equalTo(1)
+            Solution().maximumDetonation(arrayOf(intArrayOf(1, 1, 5), intArrayOf(10, 10, 5))),
+            equalTo(1),
         )
     }
 
@@ -29,10 +31,10 @@ internal class SolutionTest {
                         intArrayOf(2, 3, 1),
                         intArrayOf(3, 4, 2),
                         intArrayOf(4, 5, 3),
-                        intArrayOf(5, 6, 4)
-                    )
+                        intArrayOf(5, 6, 4),
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

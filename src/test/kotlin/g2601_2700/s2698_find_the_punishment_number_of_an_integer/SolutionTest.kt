@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun punishmentNumber() {
         assertThat(
             Solution().punishmentNumber(10),
-            equalTo(182)
+            equalTo(182),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun punishmentNumber2() {
         assertThat(
             Solution().punishmentNumber(37),
-            equalTo(1478)
+            equalTo(1478),
         )
     }
 }

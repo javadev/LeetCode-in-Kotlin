@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun highestPeak() {
         assertThat(
             Solution().highestPeak(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0))),
-            equalTo(arrayOf(intArrayOf(1, 0), intArrayOf(2, 1)))
+            equalTo(arrayOf(intArrayOf(1, 0), intArrayOf(2, 1))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun highestPeak2() {
         assertThat(
             Solution().highestPeak(arrayOf(intArrayOf(0, 0, 1), intArrayOf(1, 0, 0), intArrayOf(0, 0, 0))),
-            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(0, 1, 1), intArrayOf(1, 2, 2)))
+            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(0, 1, 1), intArrayOf(1, 2, 2))),
         )
     }
 }

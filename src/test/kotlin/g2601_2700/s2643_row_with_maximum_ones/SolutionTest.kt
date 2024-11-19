@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().rowAndMaximumOnes(arrayOf(intArrayOf(0, 1), intArrayOf(1, 0))),
             equalTo(
-                intArrayOf(0, 1)
-            )
+                intArrayOf(0, 1),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().rowAndMaximumOnes(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 1))),
             equalTo(
-                intArrayOf(1, 2)
-            )
+                intArrayOf(1, 2),
+            ),
         )
     }
 
@@ -30,8 +30,8 @@ internal class SolutionTest {
         assertThat(
             Solution().rowAndMaximumOnes(arrayOf(intArrayOf(0, 0), intArrayOf(1, 1), intArrayOf(0, 0))),
             equalTo(
-                intArrayOf(1, 2)
-            )
+                intArrayOf(1, 2),
+            ),
         )
     }
 }

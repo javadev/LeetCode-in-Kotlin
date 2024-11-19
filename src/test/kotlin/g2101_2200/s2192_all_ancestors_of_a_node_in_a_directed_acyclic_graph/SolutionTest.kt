@@ -17,7 +17,7 @@ internal class SolutionTest {
             intArrayOf(3, 5),
             intArrayOf(3, 6),
             intArrayOf(3, 7),
-            intArrayOf(4, 6)
+            intArrayOf(4, 6),
         )
         val expected = arrayOf(
             intArrayOf(),
@@ -27,11 +27,11 @@ internal class SolutionTest {
             intArrayOf(0, 2),
             intArrayOf(0, 1, 3),
             intArrayOf(0, 1, 2, 3, 4),
-            intArrayOf(0, 1, 2, 3)
+            intArrayOf(0, 1, 2, 3),
         )
         assertThat(
             Solution().getAncestors(8, edges),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 
@@ -47,7 +47,7 @@ internal class SolutionTest {
             intArrayOf(1, 4),
             intArrayOf(2, 3),
             intArrayOf(2, 4),
-            intArrayOf(3, 4)
+            intArrayOf(3, 4),
         )
         val expected = arrayOf(
             intArrayOf(),
@@ -57,11 +57,11 @@ internal class SolutionTest {
             intArrayOf(0, 1, 2, 3),
             intArrayOf(),
             intArrayOf(),
-            intArrayOf()
+            intArrayOf(),
         )
         assertThat(
             Solution().getAncestors(8, edges),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 }

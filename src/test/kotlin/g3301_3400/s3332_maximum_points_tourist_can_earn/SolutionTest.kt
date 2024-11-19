@@ -12,9 +12,9 @@ internal class SolutionTest {
                 2,
                 1,
                 arrayOf<IntArray>(intArrayOf(2, 3)),
-                arrayOf<IntArray>(intArrayOf(0, 2), intArrayOf(1, 0))
+                arrayOf<IntArray>(intArrayOf(0, 2), intArrayOf(1, 0)),
             ),
-            equalTo<Int>(3)
+            equalTo<Int>(3),
         )
     }
 
@@ -26,9 +26,9 @@ internal class SolutionTest {
                     3,
                     2,
                     arrayOf<IntArray>(intArrayOf(3, 4, 2), intArrayOf(2, 1, 2)),
-                    arrayOf<IntArray>(intArrayOf(0, 2, 1), intArrayOf(2, 0, 4), intArrayOf(3, 2, 0))
+                    arrayOf<IntArray>(intArrayOf(0, 2, 1), intArrayOf(2, 0, 4), intArrayOf(3, 2, 0)),
                 ),
-            equalTo<Int>(8)
+            equalTo<Int>(8),
         )
     }
 }

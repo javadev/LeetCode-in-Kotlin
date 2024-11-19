@@ -11,11 +11,16 @@ internal class SolutionTest {
             Solution().findShortestCycle(
                 7,
                 arrayOf(
-                    intArrayOf(0, 1), intArrayOf(1, 2),
-                    intArrayOf(2, 0), intArrayOf(3, 4), intArrayOf(4, 5), intArrayOf(5, 6), intArrayOf(6, 3)
-                )
+                    intArrayOf(0, 1),
+                    intArrayOf(1, 2),
+                    intArrayOf(2, 0),
+                    intArrayOf(3, 4),
+                    intArrayOf(4, 5),
+                    intArrayOf(5, 6),
+                    intArrayOf(6, 3),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

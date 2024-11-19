@@ -48,7 +48,7 @@ class Solution {
         printed: BooleanArray,
         colorBound: Array<IntArray>,
         visited: Array<BooleanArray>,
-        color: Int
+        color: Int,
     ): Boolean {
         printed[color] = true
         for (i in colorBound[color][0]..colorBound[color][2]) {

@@ -15,8 +15,11 @@ class Solution {
             val entry = map.higherEntry(num)
             if (entry != null && entry.key != num) {
                 count++
-                if (entry.value - 1 == 0) map.remove(entry.key)
-                else map[entry.key] = entry.value - 1
+                if (entry.value - 1 == 0) {
+                    map.remove(entry.key)
+                } else {
+                    map[entry.key] = entry.value - 1
+                }
             }
         }
 

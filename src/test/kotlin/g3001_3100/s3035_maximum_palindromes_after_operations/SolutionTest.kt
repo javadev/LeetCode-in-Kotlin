@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxPalindromesAfterOperations() {
         assertThat(
             Solution().maxPalindromesAfterOperations(arrayOf("abbb", "ba", "aa")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxPalindromesAfterOperations2() {
         assertThat(
             Solution().maxPalindromesAfterOperations(arrayOf("abc", "ab")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxPalindromesAfterOperations3() {
         assertThat(
             Solution().maxPalindromesAfterOperations(arrayOf("cd", "ef", "a")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

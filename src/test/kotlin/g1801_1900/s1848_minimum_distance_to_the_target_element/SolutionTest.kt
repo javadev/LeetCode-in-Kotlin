@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minDistance() {
         assertThat(
             Solution().getMinDistance(intArrayOf(1, 2, 3, 4, 5), 5, 3),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minDistance3() {
         assertThat(
             Solution().getMinDistance(intArrayOf(1, 1, 1, 1, 1, 1, 1, 1, 1, 1), 5, 3),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

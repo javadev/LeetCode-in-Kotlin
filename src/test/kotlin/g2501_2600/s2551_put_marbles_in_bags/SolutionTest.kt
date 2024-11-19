@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun putMarbles() {
         assertThat(
             Solution().putMarbles(intArrayOf(1, 3, 5, 1), 2),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun putMarbles2() {
         assertThat(
             Solution().putMarbles(intArrayOf(1, 3), 2),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

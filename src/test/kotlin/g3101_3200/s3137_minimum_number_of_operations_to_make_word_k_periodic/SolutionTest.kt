@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumOperationsToMakeKPeriodic() {
         assertThat(
             Solution().minimumOperationsToMakeKPeriodic("leetcodeleet", 4),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

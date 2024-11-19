@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestWord() {
         assertThat(
             Solution().longestWord(arrayOf("w", "wo", "wor", "worl", "world")),
-            equalTo("world")
+            equalTo("world"),
         )
     }
 
@@ -19,10 +19,16 @@ internal class SolutionTest {
             Solution()
                 .longestWord(
                     arrayOf(
-                        "a", "banana", "app", "appl", "ap", "apply", "apple"
-                    )
+                        "a",
+                        "banana",
+                        "app",
+                        "appl",
+                        "ap",
+                        "apply",
+                        "apple",
+                    ),
                 ),
-            equalTo("apple")
+            equalTo("apple"),
         )
     }
 }

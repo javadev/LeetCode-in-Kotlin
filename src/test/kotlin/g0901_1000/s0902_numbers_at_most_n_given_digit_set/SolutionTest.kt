@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun atMostNGivenDigitSet() {
         assertThat(
             Solution().atMostNGivenDigitSet(arrayOf("1", "3", "5", "7"), 100),
-            equalTo(20)
+            equalTo(20),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun atMostNGivenDigitSet2() {
         assertThat(
             Solution().atMostNGivenDigitSet(arrayOf("1", "4", "9"), 1000000000),
-            equalTo(29523)
+            equalTo(29523),
         )
     }
 

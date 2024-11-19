@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun restoreIpAddresses() {
         assertThat(
             Solution().restoreIpAddresses("25525511135").toString(),
-            equalTo("[255.255.11.135, 255.255.111.35]")
+            equalTo("[255.255.11.135, 255.255.111.35]"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun restoreIpAddresses3() {
         assertThat(
             Solution().restoreIpAddresses("101023").toString(),
-            equalTo("[1.0.10.23, 1.0.102.3, 10.1.0.23, 10.10.2.3, 101.0.2.3]")
+            equalTo("[1.0.10.23, 1.0.102.3, 10.1.0.23, 10.10.2.3, 101.0.2.3]"),
         )
     }
 }

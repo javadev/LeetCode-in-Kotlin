@@ -20,7 +20,7 @@ class Solution {
                 } else {
                     a[1] - b[1]
                 }
-            }
+            },
         )
         var time = tasks[0][0]
         val taskOrderResult = IntArray(n)

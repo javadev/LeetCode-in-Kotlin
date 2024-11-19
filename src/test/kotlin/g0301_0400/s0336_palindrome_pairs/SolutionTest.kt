@@ -16,10 +16,10 @@ internal class SolutionTest {
                         intArrayOf(0, 1),
                         intArrayOf(1, 0),
                         intArrayOf(2, 4),
-                        intArrayOf(3, 2)
-                    )
-                )
-            )
+                        intArrayOf(3, 2),
+                    ),
+                ),
+            ),
         )
     }
 
@@ -31,10 +31,10 @@ internal class SolutionTest {
                 ArrayUtils.getLists(
                     arrayOf(
                         intArrayOf(0, 1),
-                        intArrayOf(1, 0)
-                    )
-                )
-            )
+                        intArrayOf(1, 0),
+                    ),
+                ),
+            ),
         )
     }
 
@@ -46,10 +46,10 @@ internal class SolutionTest {
                 ArrayUtils.getLists(
                     arrayOf(
                         intArrayOf(0, 1),
-                        intArrayOf(1, 0)
-                    )
-                )
-            )
+                        intArrayOf(1, 0),
+                    ),
+                ),
+            ),
         )
     }
 }

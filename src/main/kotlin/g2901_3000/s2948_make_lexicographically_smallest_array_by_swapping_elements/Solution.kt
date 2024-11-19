@@ -10,7 +10,7 @@ class Solution {
         val nodes = Array(n) { i -> Node(i, nums[i]) }
         nodes.sortWith { a: Node, b: Node ->
             Integer.signum(
-                a.value - b.value
+                a.value - b.value,
             )
         }
         var group = 1

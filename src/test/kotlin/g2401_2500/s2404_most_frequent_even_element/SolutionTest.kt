@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun mostFrequentEven3() {
         assertThat(
             Solution().mostFrequentEven(intArrayOf(29, 47, 21, 41, 13, 37, 25, 7)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

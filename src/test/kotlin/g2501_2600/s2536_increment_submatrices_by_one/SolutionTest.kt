@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun rangeAddQueries() {
         assertThat(
             Solution().rangeAddQueries(3, arrayOf(intArrayOf(1, 1, 2, 2), intArrayOf(0, 0, 1, 1))),
-            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 2, 1), intArrayOf(0, 1, 1)))
+            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 2, 1), intArrayOf(0, 1, 1))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun rangeAddQueries2() {
         assertThat(
             Solution().rangeAddQueries(2, arrayOf(intArrayOf(0, 0, 1, 1))),
-            equalTo(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1)))
+            equalTo(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1))),
         )
     }
 }

@@ -13,7 +13,7 @@ internal class SolutionTest {
         val head3 = createSinglyLinkedList(listOf(2, 6))
         assertThat(
             Solution().mergeKLists(arrayOf(head1, head2, head3)).toString(),
-            equalTo("1, 1, 2, 3, 4, 4, 5, 6")
+            equalTo("1, 1, 2, 3, 4, 4, 5, 6"),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
         val head3 = createSinglyLinkedList(listOf(4, 6, 9, 10))
         assertThat(
             Solution().mergeKLists(arrayOf(head1, head2, head3)).toString(),
-            equalTo("1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12")
+            equalTo("1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12"),
         )
     }
 }

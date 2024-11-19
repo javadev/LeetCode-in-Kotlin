@@ -15,9 +15,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numOfMinutes(
-                    6, 2, intArrayOf(2, 2, -1, 2, 2, 2), intArrayOf(0, 0, 1, 0, 0, 0)
+                    6,
+                    2,
+                    intArrayOf(2, 2, -1, 2, 2, 2),
+                    intArrayOf(0, 0, 1, 0, 0, 0),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

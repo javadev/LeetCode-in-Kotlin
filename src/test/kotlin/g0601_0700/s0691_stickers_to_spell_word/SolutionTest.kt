@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minStickers() {
         assertThat(
             Solution().minStickers(arrayOf("with", "example", "science"), "thehat"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minStickers2() {
         assertThat(
             Solution().minStickers(arrayOf("notice", "possible"), "basicbasic"),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

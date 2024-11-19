@@ -15,9 +15,9 @@ internal class SolutionTest {
                     15,
                     listOf<List<Int>>(mutableListOf(1, 1, 1), mutableListOf(1, 1, 10)),
                     mutableListOf(0, 0, 0),
-                    mutableListOf(1, 2, 3)
+                    mutableListOf(1, 2, 3),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -31,9 +31,9 @@ internal class SolutionTest {
                     15,
                     listOf<List<Int>>(mutableListOf(1, 1, 1), mutableListOf(1, 1, 10)),
                     mutableListOf(0, 0, 100),
-                    mutableListOf(1, 2, 3)
+                    mutableListOf(1, 2, 3),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -48,12 +48,12 @@ internal class SolutionTest {
                     listOf<List<Int>>(
                         mutableListOf(2, 1),
                         mutableListOf(1, 2),
-                        mutableListOf(1, 1)
+                        mutableListOf(1, 1),
                     ),
                     mutableListOf(1, 1),
-                    mutableListOf(5, 5)
+                    mutableListOf(5, 5),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

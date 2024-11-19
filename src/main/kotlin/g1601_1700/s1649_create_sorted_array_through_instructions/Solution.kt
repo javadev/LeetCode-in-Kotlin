@@ -16,7 +16,7 @@ class Solution {
             updateBIT(bit, maxValue, instructions[i])
             cost += Math.min(
                 queryBIT(bit, instructions[i] - 1),
-                1 + i - queryBIT(bit, instructions[i])
+                1 + i - queryBIT(bit, instructions[i]),
             ).toLong()
         }
         return (cost % MODULO).toInt()

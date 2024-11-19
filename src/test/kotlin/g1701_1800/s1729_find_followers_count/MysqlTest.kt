@@ -24,8 +24,8 @@ import javax.sql.DataSource
             "INSERT INTO Followers(user_id, follower_id) " +
             " VALUES (2, 0); " +
             "INSERT INTO Followers(user_id, follower_id) " +
-            " VALUES (2, 1); "
-    ]
+            " VALUES (2, 1); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -37,12 +37,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1701_1800/s1729_find_fol" +
-                                "lowers_count/script.sql"
-                        )
+                                "lowers_count/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(0))

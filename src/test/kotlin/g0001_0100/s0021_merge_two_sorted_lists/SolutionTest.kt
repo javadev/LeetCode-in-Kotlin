@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun mergeTwoLists2() {
         assertThat(
             Solution().mergeTwoLists(ListNode(), ListNode()).toString(),
-            equalTo("0, 0")
+            equalTo("0, 0"),
         )
     }
 }

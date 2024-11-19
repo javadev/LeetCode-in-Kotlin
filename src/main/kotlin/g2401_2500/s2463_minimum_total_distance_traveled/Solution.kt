@@ -36,7 +36,6 @@ class Solution {
         // try assigning robot to each factory starting from the leftmost
         var j = 0
         while (j < d.size) {
-
             // cost of adding robot to the current factory
             var t = Math.abs(r[i] - f[j][0]).toLong()
             var tj = j

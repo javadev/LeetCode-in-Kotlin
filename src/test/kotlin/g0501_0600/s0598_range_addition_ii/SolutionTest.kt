@@ -16,7 +16,7 @@ internal class SolutionTest {
         val javaArray: Array<IntArray> = arrayOf(
             intArrayOf(2, 2), intArrayOf(3, 3), intArrayOf(3, 3), intArrayOf(3, 3),
             intArrayOf(2, 2), intArrayOf(3, 3), intArrayOf(3, 3), intArrayOf(3, 3), intArrayOf(2, 2), intArrayOf(3, 3),
-            intArrayOf(3, 3), intArrayOf(3, 3)
+            intArrayOf(3, 3), intArrayOf(3, 3),
         )
         assertThat(Solution().maxCount(3, 3, javaArray), equalTo(4))
     }

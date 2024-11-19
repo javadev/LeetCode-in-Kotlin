@@ -8,8 +8,11 @@ internal class SolutionTest {
     @Test
     fun kWeakestRows() {
         val mat = arrayOf(
-            intArrayOf(1, 1, 0, 0, 0), intArrayOf(1, 1, 1, 1, 0), intArrayOf(1, 0, 0, 0, 0),
-            intArrayOf(1, 1, 0, 0, 0), intArrayOf(1, 1, 1, 1, 1)
+            intArrayOf(1, 1, 0, 0, 0),
+            intArrayOf(1, 1, 1, 1, 0),
+            intArrayOf(1, 0, 0, 0, 0),
+            intArrayOf(1, 1, 0, 0, 0),
+            intArrayOf(1, 1, 1, 1, 1),
         )
         assertThat(Solution().kWeakestRows(mat, 3), equalTo(intArrayOf(2, 0, 3)))
     }
@@ -17,8 +20,10 @@ internal class SolutionTest {
     @Test
     fun kWeakestRows2() {
         val mat = arrayOf(
-            intArrayOf(1, 0, 0, 0), intArrayOf(1, 1, 1, 1), intArrayOf(1, 0, 0, 0),
-            intArrayOf(1, 0, 0, 0)
+            intArrayOf(1, 0, 0, 0),
+            intArrayOf(1, 1, 1, 1),
+            intArrayOf(1, 0, 0, 0),
+            intArrayOf(1, 0, 0, 0),
         )
         assertThat(Solution().kWeakestRows(mat, 2), equalTo(intArrayOf(0, 2)))
     }

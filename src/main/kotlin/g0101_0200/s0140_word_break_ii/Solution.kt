@@ -18,7 +18,7 @@ class Solution {
         wordSet: Set<String>,
         index: Int,
         sb: StringBuilder,
-        result: MutableList<String>
+        result: MutableList<String>,
     ) {
         if (index == s.length) {
             if (sb[sb.length - 1] == ' ') {

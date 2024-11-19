@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numBusesToDestination() {
         assertThat(
             Solution().numBusesToDestination(arrayOf(intArrayOf(1, 2, 7), intArrayOf(3, 6, 7)), 1, 6),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -23,12 +23,12 @@ internal class SolutionTest {
                         intArrayOf(4, 5, 15),
                         intArrayOf(6),
                         intArrayOf(15, 19),
-                        intArrayOf(9, 12, 13)
+                        intArrayOf(9, 12, 13),
                     ),
                     15,
-                    12
+                    12,
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

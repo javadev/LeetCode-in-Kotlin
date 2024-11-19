@@ -11,9 +11,11 @@ internal class SolutionTest {
             Solution().subdomainVisits(arrayOf("9001 discuss.leetcode.com")),
             equalTo(
                 listOf(
-                    "9001 com", "9001 leetcode.com", "9001 discuss.leetcode.com"
-                )
-            )
+                    "9001 com",
+                    "9001 leetcode.com",
+                    "9001 discuss.leetcode.com",
+                ),
+            ),
         )
     }
 
@@ -26,8 +28,8 @@ internal class SolutionTest {
                         "900 google.mail.com",
                         "50 yahoo.com",
                         "1 intel.mail.com",
-                        "5 wiki.org"
-                    )
+                        "5 wiki.org",
+                    ),
                 ),
             equalTo(
                 listOf(
@@ -37,9 +39,9 @@ internal class SolutionTest {
                     "5 org",
                     "5 wiki.org",
                     "901 mail.com",
-                    "50 yahoo.com"
-                )
-            )
+                    "50 yahoo.com",
+                ),
+            ),
         )
     }
 }

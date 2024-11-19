@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestCommonPrefix() {
         assertThat(
             Solution().longestCommonPrefix(arrayOf("flower", "flow", "flight")),
-            equalTo("fl")
+            equalTo("fl"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestCommonPrefix2() {
         assertThat(
             Solution().longestCommonPrefix(arrayOf("dog", "racecar", "car")),
-            equalTo("")
+            equalTo(""),
         )
     }
 }

@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .flipMatchVoyage(TreeNode.create(listOf(1, 2)), intArrayOf(2, 1)),
-            equalTo(listOf(-1))
+            equalTo(listOf(-1)),
         )
     }
 
@@ -20,9 +20,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .flipMatchVoyage(
-                    TreeNode.create(listOf(1, 2, 3)), intArrayOf(1, 3, 2)
+                    TreeNode.create(listOf(1, 2, 3)),
+                    intArrayOf(1, 3, 2),
                 ),
-            equalTo(listOf(1))
+            equalTo(listOf(1)),
         )
     }
 
@@ -31,9 +32,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .flipMatchVoyage(
-                    TreeNode.create(listOf(1, 2, 3)), intArrayOf(1, 2, 3)
+                    TreeNode.create(listOf(1, 2, 3)),
+                    intArrayOf(1, 2, 3),
                 ),
-            equalTo(emptyList())
+            equalTo(emptyList()),
         )
     }
 }

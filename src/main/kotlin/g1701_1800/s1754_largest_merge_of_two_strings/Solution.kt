@@ -51,6 +51,8 @@ class Solution {
         }
         return if (j == b.size) {
             true
-        } else a[i] > b[j]
+        } else {
+            a[i] > b[j]
+        }
     }
 }

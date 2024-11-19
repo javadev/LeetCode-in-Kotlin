@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canPartitionKSubsets() {
         assertThat(
             Solution().canPartitionKSubsets(intArrayOf(4, 3, 2, 3, 5, 2, 1), 4),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

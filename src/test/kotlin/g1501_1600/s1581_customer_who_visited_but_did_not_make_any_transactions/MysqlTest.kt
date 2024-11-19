@@ -35,8 +35,8 @@ import javax.sql.DataSource
             "INSERT INTO Transactions(transaction_id, visit_id, amount)" +
             " VALUES (12, 1, 910); " +
             "INSERT INTO Transactions(transaction_id, visit_id, amount)" +
-            " VALUES (13, 2, 970); "
-    ]
+            " VALUES (13, 2, 970); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -49,12 +49,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g1501_1600/s1581_customer_who_visi" +
                                 "ted_but_did_not_make_any_transactions/scr" +
-                                "ipt.sql"
-                        )
+                                "ipt.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(30))

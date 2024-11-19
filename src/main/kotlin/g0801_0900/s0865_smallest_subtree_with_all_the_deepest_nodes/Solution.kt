@@ -43,7 +43,9 @@ class Solution {
         val rightLca: TreeNode? = lca(root.right, left, right)
         return if (leftLca != null && rightLca != null) {
             root
-        } else leftLca ?: rightLca
+        } else {
+            leftLca ?: rightLca
+        }
     }
 
     private fun deep(root: TreeNode?, level: Int) {

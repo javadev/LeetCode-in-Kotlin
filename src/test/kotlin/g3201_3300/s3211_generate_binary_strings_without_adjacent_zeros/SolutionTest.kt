@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun validStrings() {
         assertThat(
             Solution().validStrings(3),
-            equalTo(listOf("111", "110", "101", "011", "010"))
+            equalTo(listOf("111", "110", "101", "011", "010")),
         )
     }
 

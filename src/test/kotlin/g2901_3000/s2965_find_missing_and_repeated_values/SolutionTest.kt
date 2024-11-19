@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMissingAndRepeatedValues() {
         assertThat(
             Solution().findMissingAndRepeatedValues(arrayOf(intArrayOf(1, 3), intArrayOf(2, 2))),
-            equalTo(intArrayOf(2, 4))
+            equalTo(intArrayOf(2, 4)),
         )
     }
 
@@ -18,9 +18,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findMissingAndRepeatedValues(
-                    arrayOf(intArrayOf(9, 1, 7), intArrayOf(8, 9, 2), intArrayOf(3, 4, 6))
+                    arrayOf(intArrayOf(9, 1, 7), intArrayOf(8, 9, 2), intArrayOf(3, 4, 6)),
                 ),
-            equalTo(intArrayOf(9, 5))
+            equalTo(intArrayOf(9, 5)),
         )
     }
 }

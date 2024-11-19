@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun evaluate() {
         assertThat(
-            Solution().evaluate("(let x 2 (mult x (let x 3 y 4 (add x y))))"), equalTo(14)
+            Solution().evaluate("(let x 2 (mult x (let x 3 y 4 (add x y))))"),
+            equalTo(14),
         )
     }
 

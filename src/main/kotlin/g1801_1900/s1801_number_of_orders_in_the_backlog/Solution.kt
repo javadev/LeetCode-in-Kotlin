@@ -10,7 +10,7 @@ class Solution {
 
     fun getNumberOfBacklogOrders(orders: Array<IntArray>): Int {
         val sell = PriorityQueue(
-            compareBy { a: Order -> a.price }
+            compareBy { a: Order -> a.price },
         )
         val buy = PriorityQueue { a: Order, b: Order -> b.price - a.price }
         for (order in orders) {

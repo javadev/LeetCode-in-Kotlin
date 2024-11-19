@@ -22,7 +22,10 @@ class Solution {
             for (j in i + 1 until n) {
                 val dist =
                     calculateMoves(
-                        positions[i][0], positions[i][1], positions[j][0], positions[j][1]
+                        positions[i][0],
+                        positions[i][1],
+                        positions[j][0],
+                        positions[j][1],
                     )
                 distances[j][i] = dist
                 distances[i][j] = distances[j][i]
@@ -85,8 +88,14 @@ class Solution {
 
     companion object {
         private val KNIGHT_MOVES = arrayOf<IntArray>(
-            intArrayOf(-2, -1), intArrayOf(-2, 1), intArrayOf(-1, -2), intArrayOf(-1, 2),
-            intArrayOf(1, -2), intArrayOf(1, 2), intArrayOf(2, -1), intArrayOf(2, 1)
+            intArrayOf(-2, -1),
+            intArrayOf(-2, 1),
+            intArrayOf(-1, -2),
+            intArrayOf(-1, 2),
+            intArrayOf(1, -2),
+            intArrayOf(1, 2),
+            intArrayOf(2, -1),
+            intArrayOf(2, 1),
         )
     }
 }

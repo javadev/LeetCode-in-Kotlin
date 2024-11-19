@@ -28,8 +28,8 @@ import javax.sql.DataSource
             "INSERT INTO Queue(person_id, person_name, weight, turn)" +
             " VALUES (1, 'Winston', 500, 6); " +
             "INSERT INTO Queue(person_id, person_name, weight, turn)" +
-            " VALUES (2, 'Marie', 200, 4); "
-    ]
+            " VALUES (2, 'Marie', 200, 4); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -40,12 +40,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1201_1300/s1204_last_person_to_fit_in_the_bus/script.sql"
-                        )
+                            "src/main/kotlin/g1201_1300/s1204_last_person_to_fit_in_the_bus/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("John Cena"))

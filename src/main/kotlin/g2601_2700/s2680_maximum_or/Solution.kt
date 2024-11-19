@@ -15,7 +15,7 @@ class Solution {
             val num = nums[i].toLong()
             max = maxOf(
                 max,
-                prefix or (num shl k) or suffix[i].toLong()
+                prefix or (num shl k) or suffix[i].toLong(),
             )
             prefix = prefix or num
         }

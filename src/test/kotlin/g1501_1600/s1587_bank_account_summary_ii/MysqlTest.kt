@@ -35,8 +35,8 @@ import javax.sql.DataSource
             "INSERT INTO Transactions(trans_id, account, amount, transacted_on)" +
             " VALUES (6, 900003, 6000, '2020-09-07'); " +
             "INSERT INTO Transactions(trans_id, account, amount, transacted_on)" +
-            " VALUES (7, 900003, -4000, '2020-09-11'); "
-    ]
+            " VALUES (7, 900003, -4000, '2020-09-11'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -48,12 +48,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1501_1600/s1587_bank_" +
-                                "account_summary_ii/script.sql"
-                        )
+                                "account_summary_ii/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Alice"))

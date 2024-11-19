@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun constructProductMatrix() {
         assertThat(
             Solution().constructProductMatrix(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))),
-            equalTo(arrayOf(intArrayOf(24, 12), intArrayOf(8, 6)))
+            equalTo(arrayOf(intArrayOf(24, 12), intArrayOf(8, 6))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun constructProductMatrix2() {
         assertThat(
             Solution().constructProductMatrix(arrayOf(intArrayOf(12345), intArrayOf(2), intArrayOf(1))),
-            equalTo(arrayOf(intArrayOf(2), intArrayOf(0), intArrayOf(0)))
+            equalTo(arrayOf(intArrayOf(2), intArrayOf(0), intArrayOf(0))),
         )
     }
 }

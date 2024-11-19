@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun addSpaces() {
         assertThat(
             Solution().addSpaces("LeetcodeHelpsMeLearn", intArrayOf(8, 13, 15)),
-            equalTo("Leetcode Helps Me Learn")
+            equalTo("Leetcode Helps Me Learn"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun addSpaces2() {
         assertThat(
             Solution().addSpaces("icodeinpython", intArrayOf(1, 5, 7, 9)),
-            equalTo("i code in py thon")
+            equalTo("i code in py thon"),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun addSpaces3() {
         assertThat(
             Solution().addSpaces("spacing", intArrayOf(0, 1, 2, 3, 4, 5, 6)),
-            equalTo(" s p a c i n g")
+            equalTo(" s p a c i n g"),
         )
     }
 }

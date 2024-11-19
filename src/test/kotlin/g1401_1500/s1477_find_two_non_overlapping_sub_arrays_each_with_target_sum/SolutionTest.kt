@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun minSumOfLengths3() {
         assertThat(
             Solution().minSumOfLengths(intArrayOf(4, 3, 2, 6, 2, 3, 4), 6),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

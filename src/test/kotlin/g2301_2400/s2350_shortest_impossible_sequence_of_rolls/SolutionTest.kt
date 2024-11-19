@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestSequence() {
         assertThat(
             Solution().shortestSequence(intArrayOf(4, 2, 1, 2, 3, 3, 2, 4, 1), 4),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -21,7 +21,8 @@ internal class SolutionTest {
     @Test
     fun shortestSequence3() {
         assertThat(
-            Solution().shortestSequence(intArrayOf(1, 1, 3, 2, 2, 2, 3, 3), 4), equalTo(1)
+            Solution().shortestSequence(intArrayOf(1, 1, 3, 2, 2, 2, 3, 3), 4),
+            equalTo(1),
         )
     }
 }

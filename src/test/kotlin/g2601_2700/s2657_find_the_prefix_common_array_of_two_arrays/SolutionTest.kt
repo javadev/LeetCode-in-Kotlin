@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findThePrefixCommonArray() {
         assertThat(
             Solution().findThePrefixCommonArray(intArrayOf(1, 3, 2, 4), intArrayOf(3, 1, 2, 4)),
-            equalTo(intArrayOf(0, 2, 3, 4))
+            equalTo(intArrayOf(0, 2, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findThePrefixCommonArray2() {
         assertThat(
             Solution().findThePrefixCommonArray(intArrayOf(2, 3, 1), intArrayOf(3, 1, 2)),
-            equalTo(intArrayOf(0, 1, 3))
+            equalTo(intArrayOf(0, 1, 3)),
         )
     }
 }

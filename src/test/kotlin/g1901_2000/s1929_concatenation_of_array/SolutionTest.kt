@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun concatenation() {
         assertThat(
             Solution().getConcatenation(intArrayOf(1, 2, 1)),
-            equalTo(intArrayOf(1, 2, 1, 1, 2, 1))
+            equalTo(intArrayOf(1, 2, 1, 1, 2, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun concatenation2() {
         assertThat(
             Solution().getConcatenation(intArrayOf(1, 3, 2, 1)),
-            equalTo(intArrayOf(1, 3, 2, 1, 1, 3, 2, 1))
+            equalTo(intArrayOf(1, 3, 2, 1, 1, 3, 2, 1)),
         )
     }
 }

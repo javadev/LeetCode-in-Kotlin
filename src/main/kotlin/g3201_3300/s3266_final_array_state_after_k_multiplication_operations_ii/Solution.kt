@@ -40,8 +40,11 @@ class Solution {
             val pq =
                 PriorityQueue { p: LongArray, q: LongArray ->
                     if (p[0] != q[0]
-                    ) java.lang.Long.compare(p[0], q[0])
-                    else java.lang.Long.compare(p[1], q[1])
+                    ) {
+                        java.lang.Long.compare(p[0], q[0])
+                    } else {
+                        java.lang.Long.compare(p[1], q[1])
+                    }
                 }
             for (i in 0 until n) {
                 pq.offer(longArrayOf(nums[i].toLong(), i.toLong()))

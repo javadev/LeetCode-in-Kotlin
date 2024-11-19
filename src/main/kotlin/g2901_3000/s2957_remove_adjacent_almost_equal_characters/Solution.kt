@@ -17,8 +17,11 @@ class Solution {
                         i + 1 < wordArray.size &&
                             (wordArray[i + 1] != 'a' && wordArray[i + 1] != 'b')
                         )
-                    ) 'a'
-                    else 'z'
+                    ) {
+                        'a'
+                    } else {
+                        'z'
+                    }
             }
         }
         return count

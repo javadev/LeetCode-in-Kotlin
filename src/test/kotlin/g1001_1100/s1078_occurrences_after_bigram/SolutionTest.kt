@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findOcurrences("alice is a good girl she is a good student", "a", "good"),
-            equalTo(arrayOf("girl", "student"))
+            equalTo(arrayOf("girl", "student")),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun findOcurrences2() {
         assertThat(
             Solution().findOcurrences("we will we will rock you", "we", "will"),
-            equalTo(arrayOf("we", "rock"))
+            equalTo(arrayOf("we", "rock")),
         )
     }
 }

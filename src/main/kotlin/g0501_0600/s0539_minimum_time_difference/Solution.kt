@@ -6,7 +6,9 @@ class Solution {
     fun findMinDifference(timePoints: List<String>): Int {
         return if (timePoints.size < 300) {
             smallInputSize(timePoints)
-        } else largeInputSize(timePoints)
+        } else {
+            largeInputSize(timePoints)
+        }
     }
 
     private fun largeInputSize(timePoints: List<String>): Int {

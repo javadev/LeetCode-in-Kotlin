@@ -21,10 +21,10 @@ internal class RandomizedSetTest {
         result.add(randomizedSet.getRandom().toString() + "")
         val expected: List<String> = ArrayList(
 
-            listOf("null", "true", "false", "true", "1", "true", "false", "2")
+            listOf("null", "true", "false", "true", "1", "true", "false", "2"),
         )
         val expected2: List<String> = ArrayList(
-            listOf("null", "true", "false", "true", "2", "true", "false", "2")
+            listOf("null", "true", "false", "true", "2", "true", "false", "2"),
         )
         if (random == 1) {
             assertThat(result, equalTo(expected))

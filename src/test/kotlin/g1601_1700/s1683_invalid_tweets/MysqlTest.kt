@@ -18,8 +18,8 @@ import javax.sql.DataSource
     initialSqls = [
         "CREATE TABLE Tweets(tweet_id INTEGER, content VARCHAR); " +
             "INSERT INTO Tweets(tweet_id, content) VALUES (1, 'Vote for Biden'); " +
-            "INSERT INTO Tweets(tweet_id, content) VALUES (2, 'Let us make America great again!'); "
-    ]
+            "INSERT INTO Tweets(tweet_id, content) VALUES (2, 'Let us make America great again!'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -30,12 +30,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1601_1700/s1683_invalid_tweets/script.sql"
-                        )
+                            "src/main/kotlin/g1601_1700/s1683_invalid_tweets/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(2))

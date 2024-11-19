@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun diffWaysToCompute2() {
         assertThat(
             Solution().diffWaysToCompute("2*3-4*5"),
-            equalTo(listOf(-34, -10, -14, -10, 10))
+            equalTo(listOf(-34, -10, -14, -10, 10)),
         )
     }
 }

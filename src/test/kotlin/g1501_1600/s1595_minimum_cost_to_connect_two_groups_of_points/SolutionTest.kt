@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .connectTwoGroups(getLists(arrayOf(intArrayOf(15, 96), intArrayOf(36, 2)))),
-            equalTo(17)
+            equalTo(17),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .connectTwoGroups(
-                    getLists(arrayOf(intArrayOf(1, 3, 5), intArrayOf(4, 1, 1), intArrayOf(1, 5, 3)))
+                    getLists(arrayOf(intArrayOf(1, 3, 5), intArrayOf(4, 1, 1), intArrayOf(1, 5, 3))),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -37,11 +37,11 @@ internal class SolutionTest {
                             intArrayOf(3, 4, 7),
                             intArrayOf(8, 1, 2),
                             intArrayOf(6, 2, 4),
-                            intArrayOf(3, 8, 8)
-                        )
-                    )
+                            intArrayOf(3, 8, 8),
+                        ),
+                    ),
                 ),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

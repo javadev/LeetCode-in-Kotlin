@@ -11,11 +11,15 @@ internal class SolutionTest {
             Solution()
                 .deleteDuplicateFolder(
                     listOf(
-                        listOf("a"), listOf("c"), listOf("d"),
-                        mutableListOf("a", "b"), mutableListOf("c", "b"), mutableListOf("d", "a")
-                    )
+                        listOf("a"),
+                        listOf("c"),
+                        listOf("d"),
+                        mutableListOf("a", "b"),
+                        mutableListOf("c", "b"),
+                        mutableListOf("d", "a"),
+                    ),
                 ),
-            equalTo(listOf(listOf("d"), mutableListOf("d", "a")))
+            equalTo(listOf(listOf("d"), mutableListOf("d", "a"))),
         )
     }
 
@@ -25,15 +29,19 @@ internal class SolutionTest {
             Solution()
                 .deleteDuplicateFolder(
                     listOf(
-                        listOf("a"), listOf("c"),
-                        mutableListOf("a", "b"), mutableListOf("c", "b"),
-                        mutableListOf("a", "b", "x"), mutableListOf("a", "b", "x", "y"),
-                        listOf("w"), mutableListOf("w", "y")
-                    )
+                        listOf("a"),
+                        listOf("c"),
+                        mutableListOf("a", "b"),
+                        mutableListOf("c", "b"),
+                        mutableListOf("a", "b", "x"),
+                        mutableListOf("a", "b", "x", "y"),
+                        listOf("w"),
+                        mutableListOf("w", "y"),
+                    ),
                 ),
             equalTo(
-                listOf(listOf("a"), mutableListOf("a", "b"), listOf("c"), mutableListOf("c", "b"))
-            )
+                listOf(listOf("a"), mutableListOf("a", "b"), listOf("c"), mutableListOf("c", "b")),
+            ),
         )
     }
 
@@ -42,11 +50,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .deleteDuplicateFolder(
-                    listOf(mutableListOf("a", "b"), mutableListOf("c", "d"), listOf("c"), listOf("a"))
+                    listOf(mutableListOf("a", "b"), mutableListOf("c", "d"), listOf("c"), listOf("a")),
                 ),
             equalTo(
-                listOf(listOf("a"), mutableListOf("a", "b"), listOf("c"), mutableListOf("c", "d"))
-            )
+                listOf(listOf("a"), mutableListOf("a", "b"), listOf("c"), mutableListOf("c", "d")),
+            ),
         )
     }
 }

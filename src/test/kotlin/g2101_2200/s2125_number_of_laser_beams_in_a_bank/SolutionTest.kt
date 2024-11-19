@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numberOfBeams() {
         assertThat(
             Solution().numberOfBeams(arrayOf("011001", "000000", "010100", "001000")),
-            equalTo(8)
+            equalTo(8),
         )
     }
 

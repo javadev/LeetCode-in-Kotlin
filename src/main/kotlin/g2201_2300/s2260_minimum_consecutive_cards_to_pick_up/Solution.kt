@@ -16,6 +16,8 @@ class Solution {
         }
         return if (mindiff == Int.MAX_VALUE) {
             -1
-        } else mindiff
+        } else {
+            mindiff
+        }
     }
 }

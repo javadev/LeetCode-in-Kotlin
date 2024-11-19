@@ -16,11 +16,11 @@ class Solution {
                         combine(br, ar, cr),
                         getSmaller(
                             combine(br, cr, ar),
-                            getSmaller(combine(cr, ar, br), combine(cr, br, ar))
-                        )
-                    )
-                )
-            )
+                            getSmaller(combine(cr, ar, br), combine(cr, br, ar)),
+                        ),
+                    ),
+                ),
+            ),
         )
     }
 
@@ -55,7 +55,11 @@ class Solution {
     }
 
     private fun getSmaller(res: CharArray, test: CharArray): CharArray {
-        if (res.size > test.size) return test else if (res.size < test.size) return res else {
+        if (res.size > test.size) {
+            return test
+        } else if (res.size < test.size) {
+            return res
+        } else {
             for (i in res.indices) {
                 if (res[i] > test[i]) return test else if (res[i] < test[i]) return res
             }

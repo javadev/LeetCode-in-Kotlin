@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun shortestCommonSupersequence2() {
         assertThat(
             Solution().shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"),
-            equalTo("aaaaaaaa")
+            equalTo("aaaaaaaa"),
         )
     }
 }

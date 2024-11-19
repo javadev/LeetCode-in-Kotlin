@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun singleNumber() {
         assertThat(
             Solution().singleNumber(intArrayOf(1, 2, 1, 3, 2, 5)),
-            equalTo(intArrayOf(3, 5))
+            equalTo(intArrayOf(3, 5)),
         )
     }
 

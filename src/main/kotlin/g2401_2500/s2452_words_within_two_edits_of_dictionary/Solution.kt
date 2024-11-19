@@ -36,7 +36,7 @@ class Solution {
                 word,
                 curr.childs[ch],
                 i + 1,
-                if (ch == word[i]) edits else edits + 1
+                if (ch == word[i]) edits else edits + 1,
             )
         }
         return ans

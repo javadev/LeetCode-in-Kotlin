@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun smallestGoodBase3() {
         assertThat(
             Solution().smallestGoodBase("1000000000000000000"),
-            equalTo("999999999999999999")
+            equalTo("999999999999999999"),
         )
     }
 }

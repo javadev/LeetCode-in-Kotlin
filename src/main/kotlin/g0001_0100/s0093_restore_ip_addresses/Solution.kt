@@ -17,7 +17,7 @@ class Solution {
                     '.' +
                     octets[2] +
                     '.' +
-                    octets[3]
+                    octets[3],
             )
         } else if (count < 4 && pos < 12) {
             var octet = 0

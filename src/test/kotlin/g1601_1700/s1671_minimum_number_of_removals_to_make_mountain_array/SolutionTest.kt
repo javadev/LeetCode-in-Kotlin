@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun minimumMountainRemovals2() {
         assertThat(
             Solution().minimumMountainRemovals(intArrayOf(2, 1, 1, 5, 6, 2, 3, 1)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

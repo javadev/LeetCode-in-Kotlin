@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numOfPairs() {
         assertThat(
             Solution().numOfPairs(arrayOf("777", "7", "77", "77"), "7777"),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numOfPairs2() {
         assertThat(
             Solution().numOfPairs(arrayOf("123", "4", "12", "34"), "1234"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

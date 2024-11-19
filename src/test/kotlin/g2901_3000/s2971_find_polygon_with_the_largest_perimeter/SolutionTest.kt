@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun largestPerimeter2() {
         assertThat(
-            Solution().largestPerimeter(intArrayOf(1, 12, 1, 2, 5, 50, 3)), equalTo(12L)
+            Solution().largestPerimeter(intArrayOf(1, 12, 1, 2, 5, 50, 3)),
+            equalTo(12L),
         )
     }
 

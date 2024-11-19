@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumSubarraySum() {
         assertThat(
             Solution().maximumSubarraySum(intArrayOf(1, 5, 4, 2, 9, 9, 9), 3),
-            equalTo(15L)
+            equalTo(15L),
         )
     }
 

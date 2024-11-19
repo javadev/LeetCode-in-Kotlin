@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun containsNearbyDuplicate() {
         assertThat(
-            Solution().containsNearbyDuplicate(intArrayOf(1, 2, 3, 1), 3), equalTo(true)
+            Solution().containsNearbyDuplicate(intArrayOf(1, 2, 3, 1), 3),
+            equalTo(true),
         )
     }
 
     @Test
     fun containsNearbyDuplicate2() {
         assertThat(
-            Solution().containsNearbyDuplicate(intArrayOf(1, 0, 1, 1), 1), equalTo(true)
+            Solution().containsNearbyDuplicate(intArrayOf(1, 0, 1, 1), 1),
+            equalTo(true),
         )
     }
 
@@ -23,7 +25,7 @@ internal class SolutionTest {
     fun containsNearbyDuplicate3() {
         assertThat(
             Solution().containsNearbyDuplicate(intArrayOf(1, 2, 3, 1, 2, 3), 2),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

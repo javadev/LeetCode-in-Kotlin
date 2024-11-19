@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .swapNodes(contructLinkedList(intArrayOf(1, 2, 3, 4, 5)), 2)
                 .toString(),
-            equalTo(contructLinkedList(intArrayOf(1, 4, 3, 2, 5)).toString())
+            equalTo(contructLinkedList(intArrayOf(1, 4, 3, 2, 5)).toString()),
         )
     }
 
@@ -22,13 +22,13 @@ internal class SolutionTest {
             Solution()
                 .swapNodes(
                     contructLinkedList(intArrayOf(7, 9, 6, 6, 7, 8, 3, 0, 9, 5)),
-                    5
+                    5,
                 )
                 .toString(),
             equalTo(
                 contructLinkedList(intArrayOf(7, 9, 6, 6, 8, 7, 3, 0, 9, 5))
-                    .toString()
-            )
+                    .toString(),
+            ),
         )
     }
 }

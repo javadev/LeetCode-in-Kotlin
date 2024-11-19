@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distinctDifferenceArray() {
         assertThat(
             Solution().distinctDifferenceArray(intArrayOf(1, 2, 3, 4, 5)),
-            equalTo(intArrayOf(-3, -1, 1, 3, 5))
+            equalTo(intArrayOf(-3, -1, 1, 3, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun distinctDifferenceArray2() {
         assertThat(
             Solution().distinctDifferenceArray(intArrayOf(3, 2, 3, 4, 2)),
-            equalTo(intArrayOf(-2, -1, 0, 2, 3))
+            equalTo(intArrayOf(-2, -1, 0, 2, 3)),
         )
     }
 }

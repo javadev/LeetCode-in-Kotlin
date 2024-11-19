@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countConsistentStrings(
-                    "ab", arrayOf("ad", "bd", "aaab", "baa", "badab")
+                    "ab",
+                    arrayOf("ad", "bd", "aaab", "baa", "badab"),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countConsistentStrings(
-                    "abc", arrayOf("a", "b", "c", "ab", "ac", "bc", "abc")
+                    "abc",
+                    arrayOf("a", "b", "c", "ab", "ac", "bc", "abc"),
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -32,9 +34,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countConsistentStrings(
-                    "cad", arrayOf("cc", "acd", "b", "ba", "bac", "bad", "ac", "d")
+                    "cad",
+                    arrayOf("cc", "acd", "b", "ba", "bac", "bad", "ac", "d"),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

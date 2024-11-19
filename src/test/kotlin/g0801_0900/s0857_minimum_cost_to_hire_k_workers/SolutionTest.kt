@@ -13,7 +13,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .mincostToHireWorkers(intArrayOf(10, 20, 5), intArrayOf(70, 50, 30), 2),
-            equalTo(105.00000)
+            equalTo(105.00000),
         )
     }
 
@@ -24,11 +24,11 @@ internal class SolutionTest {
                 Solution()
                     .mincostToHireWorkers(
                         intArrayOf(3, 1, 10, 10, 1), intArrayOf(4, 8, 2, 2, 7),
-                        3
+                        3,
                     ) *
                     n
                 ).roundToInt().toDouble() / n,
-            equalTo(30.66667)
+            equalTo(30.66667),
         )
     }
 }

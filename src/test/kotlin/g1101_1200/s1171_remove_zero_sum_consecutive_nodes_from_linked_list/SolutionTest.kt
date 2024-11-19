@@ -12,7 +12,7 @@ internal class SolutionTest {
         val expected = contructLinkedList(intArrayOf(3, 1))
         assertThat(
             Solution().removeZeroSumSublists(head).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
         val expected = contructLinkedList(intArrayOf(1, 2, 4))
         assertThat(
             Solution().removeZeroSumSublists(head).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -32,7 +32,7 @@ internal class SolutionTest {
         val expected = contructLinkedList(intArrayOf(1))
         assertThat(
             Solution().removeZeroSumSublists(head).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 }

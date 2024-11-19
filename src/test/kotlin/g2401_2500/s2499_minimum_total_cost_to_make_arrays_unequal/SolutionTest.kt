@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumTotalCost(intArrayOf(1, 2, 3, 4, 5), intArrayOf(1, 2, 3, 4, 5)),
-            equalTo(10L)
+            equalTo(10L),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumTotalCost(intArrayOf(2, 2, 2, 1, 3), intArrayOf(1, 2, 2, 3, 3)),
-            equalTo(10L)
+            equalTo(10L),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun minimumTotalCost3() {
         assertThat(
             Solution().minimumTotalCost(intArrayOf(1, 2, 2), intArrayOf(1, 2, 2)),
-            equalTo(-1L)
+            equalTo(-1L),
         )
     }
 }

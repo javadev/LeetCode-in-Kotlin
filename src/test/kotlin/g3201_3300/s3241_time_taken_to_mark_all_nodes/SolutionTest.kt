@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun timeTaken() {
         assertThat(
             Solution().timeTaken(arrayOf(intArrayOf(0, 1), intArrayOf(0, 2))),
-            equalTo(intArrayOf(2, 4, 3))
+            equalTo(intArrayOf(2, 4, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun timeTaken2() {
         assertThat(
             Solution().timeTaken(arrayOf(intArrayOf(0, 1))),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun timeTaken3() {
         assertThat(
             Solution().timeTaken(arrayOf(intArrayOf(2, 4), intArrayOf(0, 1), intArrayOf(2, 3), intArrayOf(0, 2))),
-            equalTo(intArrayOf(4, 6, 3, 5, 5))
+            equalTo(intArrayOf(4, 6, 3, 5, 5)),
         )
     }
 }

@@ -27,6 +27,8 @@ class Solution {
         }
         return if (zero % 2 == 1) {
             max - 2 > min
-        } else false
+        } else {
+            false
+        }
     }
 }

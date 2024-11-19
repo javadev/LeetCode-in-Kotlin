@@ -21,8 +21,8 @@ import javax.sql.DataSource
             "INSERT INTO Products(product_id, store1, store2, store3)" +
             " VALUES (0, 95, 100, 105); " +
             "INSERT INTO Products(product_id, store1, store2, store3)" +
-            " VALUES (1, 70, null, 80); "
-    ]
+            " VALUES (1, 70, null, 80); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -34,12 +34,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1701_1800/s1795_rearrange" +
-                                "_products_table/script.sql"
-                        )
+                                "_products_table/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(0))

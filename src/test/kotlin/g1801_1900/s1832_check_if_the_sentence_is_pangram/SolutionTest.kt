@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun checkIfPangram() {
         assertThat(
             Solution().checkIfPangram("thequickbrownfoxjumpsoverthelazydog"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

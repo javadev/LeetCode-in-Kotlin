@@ -19,10 +19,10 @@ internal class SolutionTest {
                         intArrayOf(0, 3, 2),
                         intArrayOf(0, 4, 3),
                         intArrayOf(3, 4, 3),
-                        intArrayOf(1, 4, 6)
-                    )
+                        intArrayOf(1, 4, 6),
+                    ),
                 ),
-            equalTo(getLists(arrayOf(intArrayOf(0, 1), intArrayOf(2, 3, 4, 5))))
+            equalTo(getLists(arrayOf(intArrayOf(0, 1), intArrayOf(2, 3, 4, 5)))),
         )
     }
 
@@ -31,9 +31,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findCriticalAndPseudoCriticalEdges(
-                    4, arrayOf(intArrayOf(0, 1, 1), intArrayOf(1, 2, 1), intArrayOf(2, 3, 1), intArrayOf(0, 3, 1))
+                    4,
+                    arrayOf(intArrayOf(0, 1, 1), intArrayOf(1, 2, 1), intArrayOf(2, 3, 1), intArrayOf(0, 3, 1)),
                 ),
-            equalTo(getLists(arrayOf(intArrayOf(), intArrayOf(0, 1, 2, 3))))
+            equalTo(getLists(arrayOf(intArrayOf(), intArrayOf(0, 1, 2, 3)))),
         )
     }
 }

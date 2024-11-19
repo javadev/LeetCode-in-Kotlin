@@ -16,11 +16,11 @@ internal class SolutionTest {
                             intArrayOf(9, 5, 7, 3),
                             intArrayOf(8, 9, 6, 1),
                             intArrayOf(6, 7, 14, 3),
-                            intArrayOf(2, 5, 3, 1)
-                        )
-                    )
+                            intArrayOf(2, 5, 3, 1),
+                        ),
+                    ),
                 ),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
     fun maxScore2() {
         assertThat(
             Solution().maxScore(getLists(arrayOf(intArrayOf(4, 3, 2), intArrayOf(3, 2, 1)))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

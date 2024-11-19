@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun shortestBridge2() {
         assertThat(
             Solution().shortestBridge(arrayOf(intArrayOf(0, 1, 0), intArrayOf(0, 0, 0), intArrayOf(0, 0, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -28,10 +28,10 @@ internal class SolutionTest {
                         intArrayOf(1, 0, 0, 0, 1),
                         intArrayOf(1, 0, 1, 0, 1),
                         intArrayOf(1, 0, 0, 0, 1),
-                        intArrayOf(1, 1, 1, 1, 1)
-                    )
+                        intArrayOf(1, 1, 1, 1, 1),
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

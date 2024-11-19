@@ -11,11 +11,11 @@ internal class SolutionTest {
         val nodes: List<TreeNode> = listOf(
             TreeNode.create(mutableListOf(2, 1))!!,
             TreeNode.create(mutableListOf(3, 2, 5))!!,
-            TreeNode.create(mutableListOf(5, 4))!!
+            TreeNode.create(mutableListOf(5, 4))!!,
         )
         assertThat(
             Solution().canMerge(nodes).toString(),
-            equalTo(TreeNode.create(mutableListOf(3, 2, 5, 1, null, 4)).toString())
+            equalTo(TreeNode.create(mutableListOf(3, 2, 5, 1, null, 4)).toString()),
         )
     }
 
@@ -23,20 +23,23 @@ internal class SolutionTest {
     fun canMerge2() {
         val nodes: List<TreeNode> = listOf(
             TreeNode.create(mutableListOf(5, 3, 8))!!,
-            TreeNode.create(mutableListOf(3, 2, 6))!!
+            TreeNode.create(mutableListOf(3, 2, 6))!!,
         )
         assertThat(
-            Solution().canMerge(nodes), equalTo(TreeNode.create(emptyList()))
+            Solution().canMerge(nodes),
+            equalTo(TreeNode.create(emptyList())),
         )
     }
 
     @Test
     fun canMerge3() {
         val nodes: List<TreeNode> = listOf(
-            TreeNode.create(mutableListOf(5, 4))!!, TreeNode.create(mutableListOf(3))!!
+            TreeNode.create(mutableListOf(5, 4))!!,
+            TreeNode.create(mutableListOf(3))!!,
         )
         assertThat(
-            Solution().canMerge(nodes), equalTo(TreeNode.create(emptyList()))
+            Solution().canMerge(nodes),
+            equalTo(TreeNode.create(emptyList())),
         )
     }
 }

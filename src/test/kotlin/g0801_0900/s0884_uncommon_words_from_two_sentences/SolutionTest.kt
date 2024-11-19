@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun uncommonFromSentences() {
         assertThat(
             Solution().uncommonFromSentences("this apple is sweet", "this apple is sour"),
-            equalTo(arrayOf("sweet", "sour"))
+            equalTo(arrayOf("sweet", "sour")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun uncommonFromSentences2() {
         assertThat(
             Solution().uncommonFromSentences("apple apple", "banana"),
-            equalTo(arrayOf("banana"))
+            equalTo(arrayOf("banana")),
         )
     }
 }

@@ -81,7 +81,9 @@ class BookMyShow(n: Int, private val m: Int) {
         val left = mostLeft(v * 2 + 1, l, mid, k, qr)
         return if (left != -1) {
             left
-        } else mostLeft(v * 2 + 2, mid, r, k, qr)
+        } else {
+            mostLeft(v * 2 + 2, mid, r, k, qr)
+        }
     }
 
     fun scatter(k: Int, maxRow: Int): Boolean {
@@ -146,7 +148,9 @@ class BookMyShow(n: Int, private val m: Int) {
         private fun nextPow2(n: Int): Int {
             return if (n and n - 1 == 0) {
                 n
-            } else Integer.highestOneBit(n) shl 1
+            } else {
+                Integer.highestOneBit(n) shl 1
+            }
         }
     }
 }

@@ -27,8 +27,8 @@ import javax.sql.DataSource
             "INSERT INTO World(name, continent, area, population, gdp)" +
             " VALUES ('Andorra', 'Europe', 468, 78115, 3712000000); " +
             "INSERT INTO World(name, continent, area, population, gdp)" +
-            " VALUES ('Angola', 'Africa', 1246700, 20609294, 100990000000); "
-    ]
+            " VALUES ('Angola', 'Africa', 1246700, 20609294, 100990000000); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -41,12 +41,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g0501_0600/" +
                                 "s0595_big_countries" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Afghanistan"))

@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun addOperators3() {
         assertThat(
-            Solution().addOperators("3456237490", 9191), equalTo(emptyList())
+            Solution().addOperators("3456237490", 9191),
+            equalTo(emptyList()),
         )
     }
 }

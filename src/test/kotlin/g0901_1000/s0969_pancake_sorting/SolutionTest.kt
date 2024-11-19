@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun pancakeSort() {
         assertThat(
             Solution().pancakeSort(intArrayOf(3, 2, 4, 1)),
-            equalTo(listOf(3, 4, 2, 3, 1, 2, 1, 1))
+            equalTo(listOf(3, 4, 2, 3, 1, 2, 1, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun pancakeSort2() {
         assertThat(
             Solution().pancakeSort(intArrayOf(1, 2, 3)),
-            equalTo(listOf(3, 3, 2, 2, 1, 1))
+            equalTo(listOf(3, 3, 2, 2, 1, 1)),
         )
     }
 }

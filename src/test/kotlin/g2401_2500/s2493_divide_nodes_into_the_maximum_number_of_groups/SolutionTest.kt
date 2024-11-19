@@ -13,10 +13,10 @@ internal class SolutionTest {
                 .magnificentSets(
                     6,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]"
-                    )
+                        "[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]",
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -27,10 +27,10 @@ internal class SolutionTest {
                 .magnificentSets(
                     3,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[2,3],[3,1]"
-                    )
+                        "[1,2],[2,3],[3,1]",
+                    ),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

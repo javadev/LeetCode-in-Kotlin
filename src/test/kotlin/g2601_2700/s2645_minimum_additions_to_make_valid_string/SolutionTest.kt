@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun addMinimum() {
         assertThat(
             Solution().addMinimum("b"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun addMinimum2() {
         assertThat(
             Solution().addMinimum("aaa"),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun addMinimum3() {
         assertThat(
             Solution().addMinimum("abc"),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

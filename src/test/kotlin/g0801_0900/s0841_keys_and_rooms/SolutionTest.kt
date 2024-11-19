@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canVisitAllRooms(
-                    listOf(listOf(1), listOf(2), listOf(3), emptyList())
+                    listOf(listOf(1), listOf(2), listOf(3), emptyList()),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -23,10 +23,12 @@ internal class SolutionTest {
                 .canVisitAllRooms(
                     listOf(
                         listOf(1, 3),
-                        listOf(3, 0, 1), listOf(2), listOf(0)
-                    )
+                        listOf(3, 0, 1),
+                        listOf(2),
+                        listOf(0),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

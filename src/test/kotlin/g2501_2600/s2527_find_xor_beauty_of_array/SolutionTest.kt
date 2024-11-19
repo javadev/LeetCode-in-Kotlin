@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun xorBeauty2() {
         assertThat(
             Solution().xorBeauty(intArrayOf(15, 45, 20, 2, 34, 35, 5, 44, 32, 30)),
-            equalTo(34)
+            equalTo(34),
         )
     }
 }

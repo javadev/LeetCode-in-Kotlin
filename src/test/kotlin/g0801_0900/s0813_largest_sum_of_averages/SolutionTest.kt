@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun largestSumOfAverages() {
         assertThat(
-            Solution().largestSumOfAverages(intArrayOf(9, 1, 2, 3, 9), 3), equalTo(20.0)
+            Solution().largestSumOfAverages(intArrayOf(9, 1, 2, 3, 9), 3),
+            equalTo(20.0),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun largestSumOfAverages2() {
         assertThat(
             Solution().largestSumOfAverages(intArrayOf(1, 2, 3, 4, 5, 6, 7), 4),
-            equalTo(20.5)
+            equalTo(20.5),
         )
     }
 }

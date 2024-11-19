@@ -79,7 +79,9 @@ class MKAverage(m: Int, k: Int) {
     fun calculateMKAverage(): Int {
         return if (q.size < m) {
             -1
-        } else avg.toInt()
+        } else {
+            avg.toInt()
+        }
     }
 
     internal class Bst {

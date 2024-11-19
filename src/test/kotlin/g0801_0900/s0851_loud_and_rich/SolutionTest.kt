@@ -17,18 +17,19 @@ internal class SolutionTest {
                         intArrayOf(3, 7),
                         intArrayOf(4, 3),
                         intArrayOf(5, 3),
-                        intArrayOf(6, 3)
+                        intArrayOf(6, 3),
                     ),
-                    intArrayOf(3, 2, 5, 4, 6, 1, 7, 0)
+                    intArrayOf(3, 2, 5, 4, 6, 1, 7, 0),
                 ),
-            equalTo(intArrayOf(5, 5, 2, 5, 4, 5, 6, 7))
+            equalTo(intArrayOf(5, 5, 2, 5, 4, 5, 6, 7)),
         )
     }
 
     @Test
     fun loudAndRich2() {
         assertThat(
-            Solution().loudAndRich(arrayOf(), intArrayOf(0)), equalTo(intArrayOf(0))
+            Solution().loudAndRich(arrayOf(), intArrayOf(0)),
+            equalTo(intArrayOf(0)),
         )
     }
 }

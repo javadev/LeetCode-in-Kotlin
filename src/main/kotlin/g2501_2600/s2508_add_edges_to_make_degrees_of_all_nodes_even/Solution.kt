@@ -49,7 +49,9 @@ class Solution {
         }
         return if (isNotConnected(a, c, g) && isNotConnected(b, d, g)) {
             true
-        } else isNotConnected(a, d, g) && isNotConnected(b, c, g)
+        } else {
+            isNotConnected(a, d, g) && isNotConnected(b, c, g)
+        }
     }
 
     private fun isNotConnected(x: Int, y: Int, g: Array<ArrayList<Int>?>): Boolean {

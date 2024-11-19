@@ -10,11 +10,13 @@ internal class SolutionTest {
         assertThat(
             Solution().findTheString(
                 arrayOf(
-                    intArrayOf(4, 0, 2, 0), intArrayOf(0, 3, 0, 1),
-                    intArrayOf(2, 0, 2, 0), intArrayOf(0, 1, 0, 1)
-                )
+                    intArrayOf(4, 0, 2, 0),
+                    intArrayOf(0, 3, 0, 1),
+                    intArrayOf(2, 0, 2, 0),
+                    intArrayOf(0, 1, 0, 1),
+                ),
             ),
-            equalTo("abab")
+            equalTo("abab"),
         )
     }
 
@@ -23,11 +25,13 @@ internal class SolutionTest {
         assertThat(
             Solution().findTheString(
                 arrayOf(
-                    intArrayOf(4, 3, 2, 1), intArrayOf(3, 3, 2, 1),
-                    intArrayOf(2, 2, 2, 1), intArrayOf(1, 1, 1, 1)
-                )
+                    intArrayOf(4, 3, 2, 1),
+                    intArrayOf(3, 3, 2, 1),
+                    intArrayOf(2, 2, 2, 1),
+                    intArrayOf(1, 1, 1, 1),
+                ),
             ),
-            equalTo("aaaa")
+            equalTo("aaaa"),
         )
     }
 
@@ -36,11 +40,13 @@ internal class SolutionTest {
         assertThat(
             Solution().findTheString(
                 arrayOf(
-                    intArrayOf(4, 3, 2, 1), intArrayOf(3, 3, 2, 1),
-                    intArrayOf(2, 2, 2, 1), intArrayOf(1, 1, 1, 3)
-                )
+                    intArrayOf(4, 3, 2, 1),
+                    intArrayOf(3, 3, 2, 1),
+                    intArrayOf(2, 2, 2, 1),
+                    intArrayOf(1, 1, 1, 3),
+                ),
             ),
-            equalTo("")
+            equalTo(""),
         )
     }
 }

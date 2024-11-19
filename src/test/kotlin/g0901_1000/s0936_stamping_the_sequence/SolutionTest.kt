@@ -10,9 +10,10 @@ internal class SolutionTest {
     fun movesToStamp() {
         assertThat(
             CommonUtils.compareArray(
-                Solution().movesToStamp("abc", "ababc"), intArrayOf(0, 2)
+                Solution().movesToStamp("abc", "ababc"),
+                intArrayOf(0, 2),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -20,9 +21,10 @@ internal class SolutionTest {
     fun movesToStamp2() {
         assertThat(
             CommonUtils.compareArray(
-                Solution().movesToStamp("abca", "aabcaca"), intArrayOf(3, 0, 1)
+                Solution().movesToStamp("abca", "aabcaca"),
+                intArrayOf(3, 0, 1),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

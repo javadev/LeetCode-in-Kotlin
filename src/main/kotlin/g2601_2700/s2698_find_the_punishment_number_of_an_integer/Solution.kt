@@ -14,8 +14,9 @@ class Solution {
         var res = 0
         for (i in 1..n) {
             val iSq = i * i
-            if (partition(iSq, i))
+            if (partition(iSq, i)) {
                 res += iSq
+            }
         }
         return res
     }

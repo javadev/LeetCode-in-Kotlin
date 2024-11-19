@@ -8,10 +8,11 @@ class Solution {
         var r = s.lastIndex
         val res = s.toCharArray()
         while (l <= r) {
-            if (s[l] < s[r])
+            if (s[l] < s[r]) {
                 res[r] = s[l]
-            else
+            } else {
                 res[l] = s[r]
+            }
             l++
             r--
         }

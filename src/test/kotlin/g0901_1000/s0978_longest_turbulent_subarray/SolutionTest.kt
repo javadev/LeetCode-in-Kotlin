@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxTurbulenceSize() {
         assertThat(
             Solution().maxTurbulenceSize(intArrayOf(9, 4, 2, 10, 7, 8, 8, 1, 9)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 

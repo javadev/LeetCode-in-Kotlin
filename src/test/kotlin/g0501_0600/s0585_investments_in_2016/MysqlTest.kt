@@ -29,8 +29,8 @@ import javax.sql.DataSource
             " VALUES (3, 10, 30, 20, 20); " +
             "INSERT INTO Insurance(pid, tiv_2015, tiv_2016" +
             ", lat, lon)" +
-            " VALUES (4, 10, 40, 40, 40); "
-    ]
+            " VALUES (4, 10, 40, 40, 40); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -43,12 +43,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g0501_0600/" +
                                 "s0585_investments_in_2016" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getDouble(1), equalTo(45.00))

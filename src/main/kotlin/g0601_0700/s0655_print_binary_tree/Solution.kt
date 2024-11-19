@@ -39,7 +39,7 @@ class Solution {
         row: Int,
         totalRows: Int,
         i: Int,
-        j: Int
+        j: Int,
     ) {
         if (row == totalRows || root == null) {
             return
@@ -52,6 +52,8 @@ class Solution {
     private fun getHeight(root: TreeNode?): Int {
         return if (root == null) {
             0
-        } else 1 + getHeight(root.left).coerceAtLeast(getHeight(root.right))
+        } else {
+            1 + getHeight(root.left).coerceAtLeast(getHeight(root.right))
+        }
     }
 }

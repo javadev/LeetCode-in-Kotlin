@@ -15,11 +15,11 @@ internal class SolutionTest {
                         intArrayOf(20, 17, 0),
                         intArrayOf(50, 20, 1),
                         intArrayOf(50, 80, 0),
-                        intArrayOf(80, 19, 1)
-                    )
+                        intArrayOf(80, 19, 1),
+                    ),
                 )
                 .toString(),
-            equalTo("50,20,15,17,80,19,null")
+            equalTo("50,20,15,17,80,19,null"),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
             Solution()
                 .createBinaryTree(arrayOf(intArrayOf(1, 2, 1), intArrayOf(2, 3, 0), intArrayOf(3, 4, 1)))
                 .toString(),
-            equalTo("1,2,null,3,4,null,null")
+            equalTo("1,2,null,3,4,null,null"),
         )
     }
 }

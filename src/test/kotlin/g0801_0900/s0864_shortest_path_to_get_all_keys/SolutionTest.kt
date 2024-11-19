@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestPathAllKeys() {
         assertThat(
             Solution().shortestPathAllKeys(arrayOf("@.a.#", "###.#", "b.A.B")),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun shortestPathAllKeys2() {
         assertThat(
             Solution().shortestPathAllKeys(arrayOf("@..aA", "..B#.", "....b")),
-            equalTo(6)
+            equalTo(6),
         )
     }
 

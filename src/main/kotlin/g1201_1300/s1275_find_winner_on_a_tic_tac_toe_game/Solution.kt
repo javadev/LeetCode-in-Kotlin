@@ -44,7 +44,9 @@ class Solution {
         val str = board[1][1]
         return if (str == board[0][0] && str == board[2][2] || str == board[0][2] && str == board[2][0]) {
             getWinner(str)
-        } else ""
+        } else {
+            ""
+        }
     }
 
     private fun getWinner(str: String?): String {

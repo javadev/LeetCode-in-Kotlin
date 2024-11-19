@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countWays() {
         assertThat(
             Solution().countWays(arrayOf(intArrayOf(6, 10), intArrayOf(5, 15))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -18,11 +18,13 @@ internal class SolutionTest {
         assertThat(
             Solution().countWays(
                 arrayOf(
-                    intArrayOf(1, 3), intArrayOf(10, 20),
-                    intArrayOf(2, 5), intArrayOf(4, 8)
-                )
+                    intArrayOf(1, 3),
+                    intArrayOf(10, 20),
+                    intArrayOf(2, 5),
+                    intArrayOf(4, 8),
+                ),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

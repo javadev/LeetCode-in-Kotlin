@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun maskPII() {
         assertThat(
-            Solution().maskPII("LeetCode@LeetCode.com"), equalTo("l*****e@leetcode.com")
+            Solution().maskPII("LeetCode@LeetCode.com"),
+            equalTo("l*****e@leetcode.com"),
         )
     }
 

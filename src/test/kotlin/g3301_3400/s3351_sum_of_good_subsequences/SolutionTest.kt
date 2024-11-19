@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumOfGoodSubsequences() {
         assertThat<Int>(
             Solution().sumOfGoodSubsequences(intArrayOf(1, 2, 1)),
-            equalTo<Int>(14)
+            equalTo<Int>(14),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumOfGoodSubsequences2() {
         assertThat<Int>(
             Solution().sumOfGoodSubsequences(intArrayOf(3, 4, 5)),
-            equalTo<Int>(40)
+            equalTo<Int>(40),
         )
     }
 }

@@ -12,11 +12,15 @@ internal class SolutionTest {
                 .maxNumberOfFamilies(
                     3,
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 8),
-                        intArrayOf(2, 6), intArrayOf(3, 1), intArrayOf(3, 10)
-                    )
+                        intArrayOf(1, 2),
+                        intArrayOf(1, 3),
+                        intArrayOf(1, 8),
+                        intArrayOf(2, 6),
+                        intArrayOf(3, 1),
+                        intArrayOf(3, 10),
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -24,7 +28,7 @@ internal class SolutionTest {
     fun maxNumberOfFamilies2() {
         assertThat(
             Solution().maxNumberOfFamilies(2, arrayOf(intArrayOf(2, 1), intArrayOf(1, 8), intArrayOf(2, 6))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -35,10 +39,12 @@ internal class SolutionTest {
                 4,
                 arrayOf(
                     intArrayOf(4, 3),
-                    intArrayOf(1, 4), intArrayOf(4, 6), intArrayOf(1, 7)
-                )
+                    intArrayOf(1, 4),
+                    intArrayOf(4, 6),
+                    intArrayOf(1, 7),
+                ),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

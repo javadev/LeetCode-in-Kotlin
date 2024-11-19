@@ -24,7 +24,7 @@ class Solution {
     private fun findLongest(
         word: String,
         lenStr: Array<MutableList<String>?>,
-        longest: MutableMap<String?, Int?>
+        longest: MutableMap<String?, Int?>,
     ): Int {
         if (longest.containsKey(word)) {
             return longest[word]!!

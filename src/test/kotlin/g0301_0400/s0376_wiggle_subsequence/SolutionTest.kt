@@ -14,14 +14,15 @@ internal class SolutionTest {
     fun wiggleMaxLength2() {
         assertThat(
             Solution().wiggleMaxLength(intArrayOf(1, 17, 5, 10, 13, 15, 10, 5, 16, 8)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
     @Test
     fun wiggleMaxLength3() {
         assertThat(
-            Solution().wiggleMaxLength(intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)), equalTo(2)
+            Solution().wiggleMaxLength(intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)),
+            equalTo(2),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestCommonPrefix() {
         assertThat(
             Solution().longestCommonPrefix(intArrayOf(1, 10, 100), intArrayOf(1000)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestCommonPrefix2() {
         assertThat(
             Solution().longestCommonPrefix(intArrayOf(1, 2, 3), intArrayOf(4, 4, 4)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

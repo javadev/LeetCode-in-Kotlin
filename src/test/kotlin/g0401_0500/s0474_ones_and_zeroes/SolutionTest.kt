@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMaxForm() {
         assertThat(
             Solution().findMaxForm(arrayOf("10", "0001", "111001", "1", "0"), 5, 3),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

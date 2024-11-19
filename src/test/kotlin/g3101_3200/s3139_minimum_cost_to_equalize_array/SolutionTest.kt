@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun minCostToEqualizeArray2() {
         assertThat(
-            Solution().minCostToEqualizeArray(intArrayOf(2, 3, 3, 3, 5), 2, 1), equalTo(6)
+            Solution().minCostToEqualizeArray(intArrayOf(2, 3, 3, 3, 5), 2, 1),
+            equalTo(6),
         )
     }
 

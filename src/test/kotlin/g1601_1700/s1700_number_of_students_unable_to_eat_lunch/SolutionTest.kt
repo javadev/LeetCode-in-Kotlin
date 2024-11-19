@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countStudents() {
         assertThat(
             Solution().countStudents(intArrayOf(1, 1, 0, 0), intArrayOf(0, 1, 0, 1)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countStudents(intArrayOf(1, 1, 1, 0, 0, 1), intArrayOf(1, 0, 0, 0, 1, 1)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumXor() {
         assertThat(
             Solution().getMaximumXor(intArrayOf(0, 1, 1, 3), 2),
-            equalTo(intArrayOf(0, 3, 2, 3))
+            equalTo(intArrayOf(0, 3, 2, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumXor2() {
         assertThat(
             Solution().getMaximumXor(intArrayOf(2, 3, 4, 7), 3),
-            equalTo(intArrayOf(5, 2, 6, 5))
+            equalTo(intArrayOf(5, 2, 6, 5)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maximumXor3() {
         assertThat(
             Solution().getMaximumXor(intArrayOf(0, 1, 2, 2, 5, 7), 3),
-            equalTo(intArrayOf(4, 3, 6, 4, 6, 7))
+            equalTo(intArrayOf(4, 3, 6, 4, 6, 7)),
         )
     }
 }

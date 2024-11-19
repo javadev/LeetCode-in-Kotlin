@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .intersection(arrayOf(intArrayOf(3, 1, 2, 4, 5), intArrayOf(1, 2, 3, 4), intArrayOf(3, 4, 5, 6))),
-            equalTo(mutableListOf(3, 4))
+            equalTo(mutableListOf(3, 4)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun intersection2() {
         assertThat(
             Solution().intersection(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6))),
-            equalTo(mutableListOf<Any>())
+            equalTo(mutableListOf<Any>()),
         )
     }
 }

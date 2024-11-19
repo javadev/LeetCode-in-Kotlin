@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .occurrencesOfElement(intArrayOf(1, 3, 1, 7), intArrayOf(1, 3, 2, 4), 1),
-            equalTo(intArrayOf(0, -1, 2, -1))
+            equalTo(intArrayOf(0, -1, 2, -1)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun occurrencesOfElement2() {
         assertThat(
             Solution().occurrencesOfElement(intArrayOf(1, 2, 3), intArrayOf(10), 5),
-            equalTo(intArrayOf(-1))
+            equalTo(intArrayOf(-1)),
         )
     }
 }

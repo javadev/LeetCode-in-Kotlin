@@ -31,12 +31,14 @@ class Solution {
             }
             return if (price < 100) {
                 "$0.$stringPrice"
-            } else (
-                "$" +
-                    stringPrice.substring(0, stringPrice.length - 2) +
-                    "." +
-                    stringPrice.substring(stringPrice.length - 2)
-                )
+            } else {
+                (
+                    "$" +
+                        stringPrice.substring(0, stringPrice.length - 2) +
+                        "." +
+                        stringPrice.substring(stringPrice.length - 2)
+                    )
+            }
         }
         return s
     }

@@ -22,11 +22,14 @@ class Solution {
         val lx = (finish - sn) / factor
 
         return if (sx == 0L
-        ) indexOfLimitIntSmallerThanOrEqual(lx, limit) + 1
-        else (
-            indexOfLimitIntSmallerThanOrEqual(lx, limit) -
-                indexOfLimitIntSmallerThanOrEqual(sx - 1, limit)
-            )
+        ) {
+            indexOfLimitIntSmallerThanOrEqual(lx, limit) + 1
+        } else {
+            (
+                indexOfLimitIntSmallerThanOrEqual(lx, limit) -
+                    indexOfLimitIntSmallerThanOrEqual(sx - 1, limit)
+                )
+        }
     }
 
     private fun indexOfLimitIntSmallerThanOrEqual(target: Long, limit: Int): Long {

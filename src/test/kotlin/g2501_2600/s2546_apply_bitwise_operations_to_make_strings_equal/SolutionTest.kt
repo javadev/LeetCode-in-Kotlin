@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun makeStringsEqual() {
         assertThat(
             Solution().makeStringsEqual("1010", "0110"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun makeStringsEqual2() {
         assertThat(
             Solution().makeStringsEqual("11", "00"),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

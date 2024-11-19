@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numMagicSquaresInside(arrayOf(intArrayOf(4, 3, 8, 4), intArrayOf(9, 5, 1, 9), intArrayOf(2, 7, 6, 2))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

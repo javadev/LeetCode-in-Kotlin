@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minLength() {
         assertThat(
             Solution().minLength("ABFCACDB"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minLength2() {
         assertThat(
             Solution().minLength("ACBBD"),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

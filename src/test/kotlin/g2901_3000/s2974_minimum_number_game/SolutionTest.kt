@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numberGame() {
         assertThat(
-            Solution().numberGame(intArrayOf(5, 4, 2, 3)), equalTo(intArrayOf(3, 2, 5, 4))
+            Solution().numberGame(intArrayOf(5, 4, 2, 3)),
+            equalTo(intArrayOf(3, 2, 5, 4)),
         )
     }
 

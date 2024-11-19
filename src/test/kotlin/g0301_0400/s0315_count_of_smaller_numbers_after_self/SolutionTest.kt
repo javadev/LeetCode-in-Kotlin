@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countSmaller() {
         assertThat(
             Solution().countSmaller(intArrayOf(5, 2, 6, 1)),
-            equalTo(listOf(2, 1, 1, 0))
+            equalTo(listOf(2, 1, 1, 0)),
         )
     }
 

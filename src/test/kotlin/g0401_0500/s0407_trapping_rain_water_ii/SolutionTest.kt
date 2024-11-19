@@ -13,10 +13,10 @@ internal class SolutionTest {
                     arrayOf(
                         intArrayOf(1, 4, 3, 1, 3, 2),
                         intArrayOf(3, 2, 1, 3, 2, 4),
-                        intArrayOf(2, 3, 3, 2, 3, 1)
-                    )
+                        intArrayOf(2, 3, 3, 2, 3, 1),
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -30,10 +30,10 @@ internal class SolutionTest {
                         intArrayOf(3, 2, 2, 2, 3),
                         intArrayOf(3, 2, 1, 2, 3),
                         intArrayOf(3, 2, 2, 2, 3),
-                        intArrayOf(3, 3, 3, 3, 3)
-                    )
+                        intArrayOf(3, 3, 3, 3, 3),
+                    ),
                 ),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

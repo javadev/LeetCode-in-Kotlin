@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun reorderSpaces() {
         assertThat(
             Solution().reorderSpaces("  this   is  a sentence "),
-            equalTo("this   is   a   sentence")
+            equalTo("this   is   a   sentence"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun reorderSpaces2() {
         assertThat(
             Solution().reorderSpaces(" practice   makes   perfect"),
-            equalTo("practice   makes   perfect ")
+            equalTo("practice   makes   perfect "),
         )
     }
 }

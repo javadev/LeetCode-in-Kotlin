@@ -32,7 +32,9 @@ class Solution {
         // When there is 1 char different, we return false;
         return if (i2 == -1) {
             false
-        } else s1[i1] == s2[i2] && s1[i2] == s2[i1]
+        } else {
+            s1[i1] == s2[i2] && s1[i2] == s2[i1]
+        }
         // When there are 2 char different, and swap them can make two string equal, we return true;
     }
 }

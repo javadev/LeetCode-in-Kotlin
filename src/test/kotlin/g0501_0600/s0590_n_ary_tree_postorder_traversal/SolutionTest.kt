@@ -45,7 +45,7 @@ internal class SolutionTest {
         node1.neighbors = listOf(node2, node3, node4, node5)
         assertThat(
             Solution().postorder(node1),
-            equalTo(listOf(2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1))
+            equalTo(listOf(2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1)),
         )
     }
 

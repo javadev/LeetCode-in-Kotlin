@@ -21,8 +21,9 @@ class Solution {
     private fun numberOfPaths(grid: Array<IntArray>, r: Int, c: Int, k: Int, remainder: Int): Int {
         if (r to c !in grid) return 0
         if (cache[r][c][remainder] != -1) return cache[r][c][remainder]
-        if (r == row - 1 && c == col - 1)
+        if (r == row - 1 && c == col - 1) {
             return if (grid[r][c] % k == remainder) 1 else 0
+        }
 
         return ((remainder - grid[r][c] + 100 * k) % k).let {
             (numberOfPaths(grid, r + 1, c, k, it) + numberOfPaths(grid, r, c + 1, k, it)) % mod

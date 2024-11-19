@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .countRectangles(
                     arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(2, 5)),
-                    arrayOf(intArrayOf(2, 1), intArrayOf(1, 4))
+                    arrayOf(intArrayOf(2, 1), intArrayOf(1, 4)),
                 ),
-            equalTo(intArrayOf(2, 1))
+            equalTo(intArrayOf(2, 1)),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .countRectangles(
                     arrayOf(intArrayOf(1, 1), intArrayOf(2, 2), intArrayOf(3, 3)),
-                    arrayOf(intArrayOf(1, 3), intArrayOf(1, 1))
+                    arrayOf(intArrayOf(1, 3), intArrayOf(1, 1)),
                 ),
-            equalTo(intArrayOf(1, 3))
+            equalTo(intArrayOf(1, 3)),
         )
     }
 }

@@ -20,8 +20,10 @@ internal class SolutionTest {
     @Test
     fun numberWays3() {
         val input = listOf(
-            mutableListOf(1, 2, 3, 4), mutableListOf(1, 2, 3, 4),
-            mutableListOf(1, 2, 3, 4), mutableListOf(1, 2, 3, 4)
+            mutableListOf(1, 2, 3, 4),
+            mutableListOf(1, 2, 3, 4),
+            mutableListOf(1, 2, 3, 4),
+            mutableListOf(1, 2, 3, 4),
         )
         assertThat(Solution().numberWays(input), equalTo(24))
     }

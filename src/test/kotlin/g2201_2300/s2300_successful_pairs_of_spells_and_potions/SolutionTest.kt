@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun successfulPairs() {
         assertThat(
             Solution().successfulPairs(intArrayOf(5, 1, 3), intArrayOf(1, 2, 3, 4, 5), 7),
-            equalTo(intArrayOf(4, 0, 3))
+            equalTo(intArrayOf(4, 0, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun successfulPairs2() {
         assertThat(
             Solution().successfulPairs(intArrayOf(3, 1, 2), intArrayOf(8, 5, 8), 16),
-            equalTo(intArrayOf(2, 0, 2))
+            equalTo(intArrayOf(2, 0, 2)),
         )
     }
 }

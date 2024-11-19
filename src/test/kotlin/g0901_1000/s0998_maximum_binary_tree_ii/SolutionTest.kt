@@ -12,12 +12,12 @@ internal class SolutionTest {
             Solution()
                 .insertIntoMaxTree(
                     TreeNode.create(
-                        listOf(4, 1, 3, null, null, 2)
+                        listOf(4, 1, 3, null, null, 2),
                     ),
-                    5
+                    5,
                 )
                 .toString(),
-            equalTo("5,4,1,3,2,null,null")
+            equalTo("5,4,1,3,2,null,null"),
         )
     }
 
@@ -26,10 +26,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .insertIntoMaxTree(
-                    TreeNode.create(listOf(5, 2, 4, null, 1)), 3
+                    TreeNode.create(listOf(5, 2, 4, null, 1)),
+                    3,
                 )
                 .toString(),
-            equalTo("5,2,null,1,4,null,3")
+            equalTo("5,2,null,1,4,null,3"),
         )
     }
 
@@ -38,10 +39,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .insertIntoMaxTree(
-                    TreeNode.create(listOf(5, 2, 3, null, 1)), 4
+                    TreeNode.create(listOf(5, 2, 3, null, 1)),
+                    4,
                 )
                 .toString(),
-            equalTo("5,2,null,1,4,3,null")
+            equalTo("5,2,null,1,4,3,null"),
         )
     }
 }

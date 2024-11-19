@@ -12,13 +12,16 @@ internal class SolutionTest {
                 .minCost(
                     30,
                     arrayOf(
-                        intArrayOf(0, 1, 10), intArrayOf(1, 2, 10),
-                        intArrayOf(2, 5, 10), intArrayOf(0, 3, 1), intArrayOf(3, 4, 10),
-                        intArrayOf(4, 5, 15)
+                        intArrayOf(0, 1, 10),
+                        intArrayOf(1, 2, 10),
+                        intArrayOf(2, 5, 10),
+                        intArrayOf(0, 3, 1),
+                        intArrayOf(3, 4, 10),
+                        intArrayOf(4, 5, 15),
                     ),
-                    intArrayOf(5, 1, 2, 20, 20, 3)
+                    intArrayOf(5, 1, 2, 20, 20, 3),
                 ),
-            equalTo(11)
+            equalTo(11),
         )
     }
 
@@ -29,13 +32,16 @@ internal class SolutionTest {
                 .minCost(
                     29,
                     arrayOf(
-                        intArrayOf(0, 1, 10), intArrayOf(1, 2, 10),
-                        intArrayOf(2, 5, 10), intArrayOf(0, 3, 1), intArrayOf(3, 4, 10),
-                        intArrayOf(4, 5, 15)
+                        intArrayOf(0, 1, 10),
+                        intArrayOf(1, 2, 10),
+                        intArrayOf(2, 5, 10),
+                        intArrayOf(0, 3, 1),
+                        intArrayOf(3, 4, 10),
+                        intArrayOf(4, 5, 15),
                     ),
-                    intArrayOf(5, 1, 2, 20, 20, 3)
+                    intArrayOf(5, 1, 2, 20, 20, 3),
                 ),
-            equalTo(48)
+            equalTo(48),
         )
     }
 
@@ -46,13 +52,16 @@ internal class SolutionTest {
                 .minCost(
                     25,
                     arrayOf(
-                        intArrayOf(0, 1, 10), intArrayOf(1, 2, 10),
-                        intArrayOf(2, 5, 10), intArrayOf(0, 3, 1), intArrayOf(3, 4, 10),
-                        intArrayOf(4, 5, 15)
+                        intArrayOf(0, 1, 10),
+                        intArrayOf(1, 2, 10),
+                        intArrayOf(2, 5, 10),
+                        intArrayOf(0, 3, 1),
+                        intArrayOf(3, 4, 10),
+                        intArrayOf(4, 5, 15),
                     ),
-                    intArrayOf(5, 1, 2, 20, 20, 3)
+                    intArrayOf(5, 1, 2, 20, 20, 3),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

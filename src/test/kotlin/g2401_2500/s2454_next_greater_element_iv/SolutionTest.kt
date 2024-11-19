@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun secondGreaterElement() {
         assertThat(
             Solution().secondGreaterElement(intArrayOf(2, 4, 0, 9, 6)),
-            equalTo(intArrayOf(9, 6, 6, -1, -1))
+            equalTo(intArrayOf(9, 6, 6, -1, -1)),
         )
     }
 
     @Test
     fun secondGreaterElement2() {
         assertThat(
-            Solution().secondGreaterElement(intArrayOf(3, 3)), equalTo(intArrayOf(-1, -1))
+            Solution().secondGreaterElement(intArrayOf(3, 3)),
+            equalTo(intArrayOf(-1, -1)),
         )
     }
 }

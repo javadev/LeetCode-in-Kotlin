@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestMonotonicSubarray() {
         assertThat(
             Solution().longestMonotonicSubarray(intArrayOf(1, 4, 3, 3, 2)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

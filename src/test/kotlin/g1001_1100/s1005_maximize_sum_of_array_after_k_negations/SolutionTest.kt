@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun largestSumAfterKNegations2() {
         assertThat(
-            Solution().largestSumAfterKNegations(intArrayOf(3, -1, 0, 2), 3), equalTo(6)
+            Solution().largestSumAfterKNegations(intArrayOf(3, -1, 0, 2), 3),
+            equalTo(6),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun largestSumAfterKNegations3() {
         assertThat(
             Solution().largestSumAfterKNegations(intArrayOf(2, -3, -1, 5, -4), 2),
-            equalTo(13)
+            equalTo(13),
         )
     }
 }

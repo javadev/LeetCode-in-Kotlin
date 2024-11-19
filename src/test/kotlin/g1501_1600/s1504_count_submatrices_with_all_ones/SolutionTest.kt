@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numSubmat() {
         assertThat(
             Solution().numSubmat(arrayOf(intArrayOf(1, 0, 1), intArrayOf(1, 1, 0), intArrayOf(1, 1, 0))),
-            equalTo(13)
+            equalTo(13),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numSubmat2() {
         assertThat(
             Solution().numSubmat(arrayOf(intArrayOf(0, 1, 1, 0), intArrayOf(0, 1, 1, 1), intArrayOf(1, 1, 1, 0))),
-            equalTo(24)
+            equalTo(24),
         )
     }
 }

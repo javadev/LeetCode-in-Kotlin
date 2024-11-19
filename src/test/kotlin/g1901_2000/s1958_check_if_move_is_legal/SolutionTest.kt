@@ -18,13 +18,13 @@ internal class SolutionTest {
                         charArrayOf('W', 'B', 'B', '.', 'W', 'W', 'W', 'B'),
                         charArrayOf('.', '.', '.', 'B', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', 'B', '.', '.', '.', '.'),
-                        charArrayOf('.', '.', '.', 'W', '.', '.', '.', '.')
+                        charArrayOf('.', '.', '.', 'W', '.', '.', '.', '.'),
                     ),
                     4,
                     3,
-                    'B'
+                    'B',
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -41,13 +41,13 @@ internal class SolutionTest {
                         charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', '.', 'B', 'W', '.', '.'),
                         charArrayOf('.', '.', '.', '.', '.', '.', 'W', '.'),
-                        charArrayOf('.', '.', '.', '.', '.', '.', '.', 'B')
+                        charArrayOf('.', '.', '.', '.', '.', '.', '.', 'B'),
                     ),
                     4,
                     4,
-                    'W'
+                    'W',
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

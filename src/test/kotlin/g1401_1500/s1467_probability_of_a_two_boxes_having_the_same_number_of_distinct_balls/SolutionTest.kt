@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun probability2() {
         assertThat(
             Solution().getProbability(intArrayOf(2, 1, 1)),
-            equalTo(0.6666666666666666)
+            equalTo(0.6666666666666666),
         )
     }
 

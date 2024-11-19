@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun maxResult3() {
         assertThat(
-            Solution().maxResult(intArrayOf(1, -5, -20, 4, -1, 3, -6, -3), 2), equalTo(0)
+            Solution().maxResult(intArrayOf(1, -5, -20, 4, -1, 3, -6, -3), 2),
+            equalTo(0),
         )
     }
 }

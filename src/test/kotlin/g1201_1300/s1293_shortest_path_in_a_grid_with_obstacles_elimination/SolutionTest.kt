@@ -11,12 +11,15 @@ internal class SolutionTest {
             Solution()
                 .shortestPath(
                     arrayOf(
-                        intArrayOf(0, 0, 0), intArrayOf(1, 1, 0),
-                        intArrayOf(0, 0, 0), intArrayOf(0, 1, 1), intArrayOf(0, 0, 0)
+                        intArrayOf(0, 0, 0),
+                        intArrayOf(1, 1, 0),
+                        intArrayOf(0, 0, 0),
+                        intArrayOf(0, 1, 1),
+                        intArrayOf(0, 0, 0),
                     ),
-                    1
+                    1,
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -25,12 +28,13 @@ internal class SolutionTest {
         assertThat(
             Solution().shortestPath(
                 arrayOf(
-                    intArrayOf(0, 1, 1), intArrayOf(1, 1, 1),
-                    intArrayOf(1, 0, 0)
+                    intArrayOf(0, 1, 1),
+                    intArrayOf(1, 1, 1),
+                    intArrayOf(1, 0, 0),
                 ),
-                1
+                1,
             ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

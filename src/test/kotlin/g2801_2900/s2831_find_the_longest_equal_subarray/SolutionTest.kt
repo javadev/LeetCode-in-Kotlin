@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestEqualSubarray() {
         assertThat(
             Solution().longestEqualSubarray(listOf(1, 3, 2, 3, 1, 3), 3),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestEqualSubarray2() {
         assertThat(
             Solution().longestEqualSubarray(listOf(1, 1, 2, 2, 1, 1), 2),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

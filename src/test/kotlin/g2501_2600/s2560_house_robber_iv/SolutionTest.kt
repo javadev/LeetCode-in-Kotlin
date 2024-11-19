@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minCapability() {
         assertThat(
             Solution().minCapability(intArrayOf(2, 3, 5, 9), 2),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minCapability2() {
         assertThat(
             Solution().minCapability(intArrayOf(2, 7, 9, 3, 1), 2),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

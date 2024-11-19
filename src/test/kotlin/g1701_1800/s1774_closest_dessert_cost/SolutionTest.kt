@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun closestCost2() {
         assertThat(
             Solution().closestCost(intArrayOf(2, 3), intArrayOf(4, 5, 100), 18),
-            equalTo(17)
+            equalTo(17),
         )
     }
 

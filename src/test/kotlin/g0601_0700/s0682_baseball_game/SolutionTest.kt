@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun calPoints2() {
         assertThat(
             Solution().calPoints(arrayOf("5", "-2", "4", "C", "D", "9", "+", "+")),
-            equalTo(27)
+            equalTo(27),
         )
     }
 

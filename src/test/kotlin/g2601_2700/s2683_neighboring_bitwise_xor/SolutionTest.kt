@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun doesValidArrayExist() {
         assertThat(
             Solution().doesValidArrayExist(intArrayOf(1, 1, 0)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun doesValidArrayExist2() {
         assertThat(
             Solution().doesValidArrayExist(intArrayOf(1, 1)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun doesValidArrayExist3() {
         assertThat(
             Solution().doesValidArrayExist(intArrayOf(1, 0)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

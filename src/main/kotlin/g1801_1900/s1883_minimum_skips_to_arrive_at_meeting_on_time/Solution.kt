@@ -18,7 +18,7 @@ class Solution {
                 }
                 if (j <= i - 1) {
                     dp[i][j] = Math.min(
-                        dp[i][j], (dp[i - 1][j] + speed - 1) / speed * speed + dist[i]
+                        dp[i][j], (dp[i - 1][j] + speed - 1) / speed * speed + dist[i],
                     )
                 }
             }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestDecomposition() {
         assertThat(
             Solution().longestDecomposition("ghiabcdefhelloadamhelloabcdefghi"),
-            equalTo(7)
+            equalTo(7),
         )
     }
 

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun convertDateToBinary() {
         assertThat<String?>(
-            Solution().convertDateToBinary("2080-02-29"), equalTo<String?>("100000100000-10-11101")
+            Solution().convertDateToBinary("2080-02-29"),
+            equalTo<String?>("100000100000-10-11101"),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun convertDateToBinary2() {
         assertThat<String?>(
             Solution().convertDateToBinary("1900-01-01"),
-            equalTo<String?>("11101101100-1-1")
+            equalTo<String?>("11101101100-1-1"),
         )
     }
 }

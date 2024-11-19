@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countCharacters() {
         assertThat(
             Solution().countCharacters(arrayOf("cat", "bt", "hat", "tree"), "atach"),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countCharacters(arrayOf("hello", "world", "leetcode"), "welldonehoneyr"),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

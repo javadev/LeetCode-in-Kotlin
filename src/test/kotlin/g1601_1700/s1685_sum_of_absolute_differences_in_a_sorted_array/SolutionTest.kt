@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumAbsoluteDifferences() {
         assertThat(
             Solution().getSumAbsoluteDifferences(intArrayOf(2, 3, 5)),
-            equalTo(intArrayOf(4, 3, 5))
+            equalTo(intArrayOf(4, 3, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumAbsoluteDifferences2() {
         assertThat(
             Solution().getSumAbsoluteDifferences(intArrayOf(1, 4, 6, 8, 10)),
-            equalTo(intArrayOf(24, 15, 13, 15, 21))
+            equalTo(intArrayOf(24, 15, 13, 15, 21)),
         )
     }
 }

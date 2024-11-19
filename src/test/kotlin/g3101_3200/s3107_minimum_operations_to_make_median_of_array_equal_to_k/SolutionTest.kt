@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minOperationsToMakeMedianK() {
         assertThat(
             Solution().minOperationsToMakeMedianK(intArrayOf(2, 5, 6, 8, 5), 4),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minOperationsToMakeMedianK2() {
         assertThat(
             Solution().minOperationsToMakeMedianK(intArrayOf(2, 5, 6, 8, 5), 7),
-            equalTo(3L)
+            equalTo(3L),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minOperationsToMakeMedianK3() {
         assertThat(
             Solution().minOperationsToMakeMedianK(intArrayOf(1, 2, 3, 4, 5, 6), 4),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 }

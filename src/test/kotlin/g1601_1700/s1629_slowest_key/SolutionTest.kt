@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun slowestKey2() {
         assertThat(
-            Solution().slowestKey(intArrayOf(12, 23, 36, 46, 62), "spuda"), equalTo('a')
+            Solution().slowestKey(intArrayOf(12, 23, 36, 46, 62), "spuda"),
+            equalTo('a'),
         )
     }
 }

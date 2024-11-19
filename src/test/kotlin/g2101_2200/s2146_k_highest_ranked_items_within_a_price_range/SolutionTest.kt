@@ -13,11 +13,11 @@ internal class SolutionTest {
                     arrayOf(intArrayOf(1, 2, 0, 1), intArrayOf(1, 3, 0, 1), intArrayOf(0, 2, 5, 1)),
                     intArrayOf(2, 5),
                     intArrayOf(0, 0),
-                    3
+                    3,
                 ),
             equalTo(
-                listOf(mutableListOf(0, 1), mutableListOf(1, 1), mutableListOf(2, 1))
-            )
+                listOf(mutableListOf(0, 1), mutableListOf(1, 1), mutableListOf(2, 1)),
+            ),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
                     arrayOf(intArrayOf(1, 2, 0, 1), intArrayOf(1, 3, 3, 1), intArrayOf(0, 2, 5, 1)),
                     intArrayOf(2, 3),
                     intArrayOf(2, 3),
-                    2
+                    2,
                 ),
-            equalTo(listOf(mutableListOf(2, 1), mutableListOf(1, 2)))
+            equalTo(listOf(mutableListOf(2, 1), mutableListOf(1, 2))),
         )
     }
 
@@ -43,9 +43,9 @@ internal class SolutionTest {
                     arrayOf(intArrayOf(1, 1, 1), intArrayOf(0, 0, 1), intArrayOf(2, 3, 4)),
                     intArrayOf(2, 3),
                     intArrayOf(0, 0),
-                    3
+                    3,
                 ),
-            equalTo(listOf(mutableListOf(2, 1), mutableListOf(2, 0)))
+            equalTo(listOf(mutableListOf(2, 1), mutableListOf(2, 0))),
         )
     }
 }

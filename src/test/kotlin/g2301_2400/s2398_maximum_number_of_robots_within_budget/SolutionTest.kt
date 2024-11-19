@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumRobots(intArrayOf(3, 6, 1, 3, 4), intArrayOf(2, 1, 3, 4, 5), 25),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun maximumRobots2() {
         assertThat(
             Solution().maximumRobots(intArrayOf(11, 12, 19), intArrayOf(10, 8, 7), 19),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

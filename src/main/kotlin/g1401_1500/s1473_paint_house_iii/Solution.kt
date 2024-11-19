@@ -20,11 +20,15 @@ class Solution {
     private fun calculate(house: Int, houses: IntArray, cost: Array<IntArray>, n: Int, target: Int) {
         swap()
         calculateMins(n, target)
-        if (houses[house] > 0) costInPaintedHouse(house, houses, cost, target) else costNotPaintedHouse(
-            house,
-            cost,
-            target
-        )
+        if (houses[house] > 0) {
+            costInPaintedHouse(house, houses, cost, target)
+        } else {
+            costNotPaintedHouse(
+                house,
+                cost,
+                target,
+            )
+        }
     }
 
     private fun costInPaintedHouse(house: Int, houses: IntArray, cost: Array<IntArray>, target: Int) {
@@ -38,7 +42,9 @@ class Solution {
                     curr[i][j] = if (mins[0][j - 1] == prev[i][j - 1]) mins[1][j - 1] else mins[0][j - 1]
                     curr[i][j] = if (newG && j == group) curr[i][j] else Math.min(curr[i][j], prev[i][j])
                 }
-            } else for (j in 0..group) curr[i][j] = Int.MAX_VALUE
+            } else {
+                for (j in 0..group) curr[i][j] = Int.MAX_VALUE
+            }
         }
     }
 

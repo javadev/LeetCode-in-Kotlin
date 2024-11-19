@@ -9,7 +9,8 @@ internal class SolutionTest {
     fun maxStudents() {
         val input = arrayOf(
             charArrayOf('#', '.', '#', '#', '.', '#'),
-            charArrayOf('.', '#', '#', '#', '#', '.'), charArrayOf('#', '.', '#', '#', '.', '#')
+            charArrayOf('.', '#', '#', '#', '#', '.'),
+            charArrayOf('#', '.', '#', '#', '.', '#'),
         )
         assertThat(Solution().maxStudents(input), equalTo(4))
     }
@@ -17,8 +18,11 @@ internal class SolutionTest {
     @Test
     fun maxStudents2() {
         val input = arrayOf(
-            charArrayOf('.', '#'), charArrayOf('#', '#'),
-            charArrayOf('#', '.'), charArrayOf('#', '#'), charArrayOf('.', '#')
+            charArrayOf('.', '#'),
+            charArrayOf('#', '#'),
+            charArrayOf('#', '.'),
+            charArrayOf('#', '#'),
+            charArrayOf('.', '#'),
         )
         assertThat(Solution().maxStudents(input), equalTo(3))
     }
@@ -27,8 +31,10 @@ internal class SolutionTest {
     fun maxStudents3() {
         val input = arrayOf(
             charArrayOf('#', '.', '.', '.', '#'),
-            charArrayOf('.', '#', '.', '#', '.'), charArrayOf('.', '.', '#', '.', '.'),
-            charArrayOf('.', '#', '.', '#', '.'), charArrayOf('#', '.', '.', '.', '#')
+            charArrayOf('.', '#', '.', '#', '.'),
+            charArrayOf('.', '.', '#', '.', '.'),
+            charArrayOf('.', '#', '.', '#', '.'),
+            charArrayOf('#', '.', '.', '.', '#'),
         )
         assertThat(Solution().maxStudents(input), equalTo(10))
     }

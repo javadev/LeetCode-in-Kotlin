@@ -27,6 +27,8 @@ class Solution {
         }
         return if (pcnt + ncnt != 0L) {
             -1
-        } else pcnt / k
+        } else {
+            pcnt / k
+        }
     }
 }

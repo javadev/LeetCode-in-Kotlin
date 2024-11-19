@@ -32,8 +32,8 @@ import javax.sql.DataSource
             "INSERT INTO Register (contest_id, user_id) VALUES (208, 7); " +
             "INSERT INTO Register (contest_id, user_id) VALUES (210, 2); " +
             "INSERT INTO Register (contest_id, user_id) VALUES (207, 2); " +
-            "INSERT INTO Register (contest_id, user_id) VALUES (210, 7); "
-    ]
+            "INSERT INTO Register (contest_id, user_id) VALUES (210, 7); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -44,12 +44,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1601_1700/s1633_percentage_of_users_attended_a_contest/script.sql"
-                        )
+                            "src/main/kotlin/g1601_1700/s1633_percentage_of_users_attended_a_contest/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(208))

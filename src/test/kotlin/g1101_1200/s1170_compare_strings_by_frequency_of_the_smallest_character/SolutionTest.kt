@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numSmallerByFrequency() {
         assertThat(
             Solution().numSmallerByFrequency(arrayOf("cbd"), arrayOf("zaaaz")),
-            equalTo(intArrayOf(1))
+            equalTo(intArrayOf(1)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numSmallerByFrequency(arrayOf("bbb", "cc"), arrayOf("a", "aa", "aaa", "aaaa")),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 }

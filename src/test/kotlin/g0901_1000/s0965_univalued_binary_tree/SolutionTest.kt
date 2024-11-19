@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun isUnivalTree() {
         assertThat(
             Solution().isUnivalTree(TreeNode.create(listOf(1, 1, 1, 1, 1, null, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun isUnivalTree2() {
         assertThat(
             Solution().isUnivalTree(TreeNode.create(listOf(2, 2, 2, 5, 2))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

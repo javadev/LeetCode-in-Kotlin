@@ -23,7 +23,8 @@ internal class SolutionTest {
         listNode1.next!!.next!!.next = ListNode(4)
         listNode1.next!!.next!!.next!!.next = ListNode(0)
         assertThat(
-            Solution().insertionSortList(listNode1).toString(), equalTo("-1, 0, 3, 4, 5")
+            Solution().insertionSortList(listNode1).toString(),
+            equalTo("-1, 0, 3, 4, 5"),
         )
     }
 }

@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .pathSum(
                     TreeNode.create(
-                        listOf(10, 5, -3, 3, 2, null, 11, 3, -2, null, 1)
+                        listOf(10, 5, -3, 3, 2, null, 11, 3, -2, null, 1),
                     ),
-                    8
+                    8,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -27,12 +27,12 @@ internal class SolutionTest {
                 .pathSum(
                     TreeNode.create(
                         listOf(
-                            5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1
-                        )
+                            5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1,
+                        ),
                     ),
-                    22
+                    22,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

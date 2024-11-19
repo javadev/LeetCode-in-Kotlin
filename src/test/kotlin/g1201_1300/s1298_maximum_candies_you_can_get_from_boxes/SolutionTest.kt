@@ -10,18 +10,23 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxCandies(
-                    intArrayOf(1, 0, 1, 0), intArrayOf(7, 5, 4, 100),
+                    intArrayOf(1, 0, 1, 0),
+                    intArrayOf(7, 5, 4, 100),
                     arrayOf(
-                        intArrayOf(), intArrayOf(), intArrayOf(1),
-                        intArrayOf()
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(1),
+                        intArrayOf(),
                     ),
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(3),
-                        intArrayOf(), intArrayOf()
+                        intArrayOf(1, 2),
+                        intArrayOf(3),
+                        intArrayOf(),
+                        intArrayOf(),
                     ),
-                    intArrayOf(0)
+                    intArrayOf(0),
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 
@@ -34,15 +39,23 @@ internal class SolutionTest {
                     intArrayOf(1, 1, 1, 1, 1, 1),
                     arrayOf(
                         intArrayOf(1, 2, 3, 4, 5),
-                        intArrayOf(), intArrayOf(), intArrayOf(), intArrayOf(), intArrayOf()
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
                     ),
                     arrayOf(
-                        intArrayOf(1, 2, 3, 4, 5), intArrayOf(), intArrayOf(),
-                        intArrayOf(), intArrayOf(), intArrayOf()
+                        intArrayOf(1, 2, 3, 4, 5),
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
+                        intArrayOf(),
                     ),
-                    intArrayOf(0)
+                    intArrayOf(0),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun maximumScore() {
         assertThat(
-            Solution().maximumScore(intArrayOf(1, 2, 3), intArrayOf(3, 2, 1)), equalTo(14)
+            Solution().maximumScore(intArrayOf(1, 2, 3), intArrayOf(3, 2, 1)),
+            equalTo(14),
         )
     }
 
@@ -17,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumScore(intArrayOf(-5, -3, -3, -2, 7, 1), intArrayOf(-10, -5, 3, 4, 6)),
-            equalTo(102)
+            equalTo(102),
         )
     }
 }

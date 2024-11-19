@@ -16,10 +16,10 @@ internal class SolutionTest {
                         charArrayOf('#', '.', '.', 'B', '.', '#'),
                         charArrayOf('#', '.', '#', '#', '.', '#'),
                         charArrayOf('#', '.', '.', '.', 'S', '#'),
-                        charArrayOf('#', '#', '#', '#', '#', '#')
-                    )
+                        charArrayOf('#', '#', '#', '#', '#', '#'),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -34,10 +34,10 @@ internal class SolutionTest {
                         charArrayOf('#', '.', '.', 'B', '.', '#'),
                         charArrayOf('#', '#', '#', '#', '.', '#'),
                         charArrayOf('#', '.', '.', '.', 'S', '#'),
-                        charArrayOf('#', '#', '#', '#', '#', '#')
-                    )
+                        charArrayOf('#', '#', '#', '#', '#', '#'),
+                    ),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 
@@ -52,10 +52,10 @@ internal class SolutionTest {
                         charArrayOf('#', '.', '#', 'B', '.', '#'),
                         charArrayOf('#', '.', '.', '.', '.', '#'),
                         charArrayOf('#', '.', '.', '.', 'S', '#'),
-                        charArrayOf('#', '#', '#', '#', '#', '#')
-                    )
+                        charArrayOf('#', '#', '#', '#', '#', '#'),
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

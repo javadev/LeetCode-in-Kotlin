@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun selfDividingNumbers() {
         assertThat(
             Solution().selfDividingNumbers(1, 22),
-            equalTo(listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22))
+            equalTo(listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22)),
         )
     }
 
     @Test
     fun selfDividingNumbers2() {
         assertThat(
-            Solution().selfDividingNumbers(47, 85), equalTo(listOf(48, 55, 66, 77))
+            Solution().selfDividingNumbers(47, 85),
+            equalTo(listOf(48, 55, 66, 77)),
         )
     }
 }

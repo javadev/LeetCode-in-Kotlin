@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun longestSubsequence3() {
         assertThat(
             Solution().longestSubsequence(intArrayOf(1, 5, 7, 8, 5, 3, 4, 2, 1), -2),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

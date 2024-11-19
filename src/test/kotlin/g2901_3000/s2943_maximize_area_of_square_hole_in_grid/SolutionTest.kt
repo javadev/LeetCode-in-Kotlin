@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximizeSquareHoleArea() {
         assertThat(
             Solution().maximizeSquareHoleArea(2, 1, intArrayOf(2, 3), intArrayOf(2)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximizeSquareHoleArea2() {
         assertThat(
             Solution().maximizeSquareHoleArea(1, 1, intArrayOf(2), intArrayOf(2)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maximizeSquareHoleArea3() {
         assertThat(
             Solution().maximizeSquareHoleArea(2, 3, intArrayOf(2, 3), intArrayOf(2, 3, 4)),
-            equalTo(9)
+            equalTo(9),
         )
     }
 }

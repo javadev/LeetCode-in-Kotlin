@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxFrequency() {
         assertThat<Int>(
             Solution().maxFrequency(intArrayOf(1, 4, 5), 1, 2),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxFrequency2() {
         assertThat<Int>(
             Solution().maxFrequency(intArrayOf(5, 11, 20, 20), 5, 1),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 }

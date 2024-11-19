@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun divideArray() {
         assertThat(
             Solution().divideArray(intArrayOf(1, 3, 4, 8, 7, 9, 3, 5, 1), 2),
-            equalTo(arrayOf<IntArray?>(intArrayOf(1, 1, 3), intArrayOf(3, 4, 5), intArrayOf(7, 8, 9)))
+            equalTo(arrayOf<IntArray?>(intArrayOf(1, 1, 3), intArrayOf(3, 4, 5), intArrayOf(7, 8, 9))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun divideArray2() {
         assertThat(
             Solution().divideArray(intArrayOf(1, 3, 3, 2, 7, 3), 3),
-            equalTo(arrayOf())
+            equalTo(arrayOf()),
         )
     }
 }

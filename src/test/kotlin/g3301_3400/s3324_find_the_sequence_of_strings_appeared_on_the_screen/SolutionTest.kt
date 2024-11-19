@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun stringSequence() {
         assertThat<List<String>>(
             Solution().stringSequence("abc"),
-            equalTo<List<String>>(listOf<String>("a", "aa", "ab", "aba", "abb", "abc"))
+            equalTo<List<String>>(listOf<String>("a", "aa", "ab", "aba", "abb", "abc")),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
             equalTo<List<String>>(
                 listOf<String>(
                     "a", "b", "c", "d", "e", "f", "g", "h", "ha", "hb", "hc", "hd",
-                    "he"
-                )
-            )
+                    "he",
+                ),
+            ),
         )
     }
 }

@@ -21,7 +21,7 @@ class Solution {
                 intArrayOf(0, 1),
                 intArrayOf(0, -1),
                 intArrayOf(1, 0),
-                intArrayOf(-1, 0)
+                intArrayOf(-1, 0),
             )
         val m = mat.size
         val n = mat[0].size
@@ -42,7 +42,7 @@ class Solution {
         mat: Array<IntArray>,
         num: Int,
         next: IntArray,
-        primeFreq: MutableMap<Int, Int>
+        primeFreq: MutableMap<Int, Int>,
     ) {
         var num = num
         val m = mat.size

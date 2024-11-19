@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun monkeyMove() {
         assertThat(
             Solution().monkeyMove(3),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun monkeyMove2() {
         assertThat(
             Solution().monkeyMove(4),
-            equalTo(14)
+            equalTo(14),
         )
     }
 }

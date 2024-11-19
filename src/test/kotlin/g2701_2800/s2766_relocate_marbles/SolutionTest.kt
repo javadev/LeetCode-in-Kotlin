@@ -9,10 +9,11 @@ internal class SolutionTest {
     fun relocateMarbles() {
         assertThat(
             Solution().relocateMarbles(
-                intArrayOf(1, 6, 7, 8), intArrayOf(1, 7, 2),
-                intArrayOf(2, 9, 5)
+                intArrayOf(1, 6, 7, 8),
+                intArrayOf(1, 7, 2),
+                intArrayOf(2, 9, 5),
             ),
-            equalTo(listOf(5, 6, 8, 9))
+            equalTo(listOf(5, 6, 8, 9)),
         )
     }
 
@@ -20,10 +21,11 @@ internal class SolutionTest {
     fun relocateMarbles2() {
         assertThat(
             Solution().relocateMarbles(
-                intArrayOf(1, 1, 3, 3), intArrayOf(1, 3),
-                intArrayOf(2, 2)
+                intArrayOf(1, 1, 3, 3),
+                intArrayOf(1, 3),
+                intArrayOf(2, 2),
             ),
-            equalTo(listOf(2))
+            equalTo(listOf(2)),
         )
     }
 }

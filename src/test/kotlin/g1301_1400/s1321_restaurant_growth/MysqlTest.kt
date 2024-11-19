@@ -39,8 +39,8 @@ import javax.sql.DataSource
             "INSERT INTO Customer(customer_id, name, visited_on, amount)" +
             " VALUES (1, 'Jhon', '2019-01-10', 130); " +
             "INSERT INTO Customer(customer_id, name, visited_on, amount)" +
-            " VALUES (3, 'Jaze', '2019-01-10', 150); "
-    ]
+            " VALUES (3, 'Jaze', '2019-01-10', 150); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -52,12 +52,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1321_restaurant_growth" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("2019-01-07"))

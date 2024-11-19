@@ -11,11 +11,11 @@ internal class SolutionTest {
         assertThat(
             Solution().kthLargestLevelSum(
                 TreeNode.create(
-                    listOf(5, 8, 9, 2, 1, 3, 7, 4, 6)
+                    listOf(5, 8, 9, 2, 1, 3, 7, 4, 6),
                 ),
-                2
+                2,
             ),
-            equalTo(13)
+            equalTo(13),
         )
     }
 
@@ -24,11 +24,11 @@ internal class SolutionTest {
         assertThat(
             Solution().kthLargestLevelSum(
                 TreeNode.create(
-                    listOf(1, 2, null, 3)
+                    listOf(1, 2, null, 3),
                 ),
-                1
+                1,
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

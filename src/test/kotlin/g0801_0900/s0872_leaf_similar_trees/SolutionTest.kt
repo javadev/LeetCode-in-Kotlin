@@ -18,8 +18,8 @@ internal class SolutionTest {
         val root1: TreeNode? = TreeNode.create(listOf(3, 5, 1, 6, 2, 9, 8, null, null, 7, 4))
         val root2: TreeNode? = TreeNode.create(
             listOf(
-                3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8
-            )
+                3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8,
+            ),
         )
         assertThat(Solution().leafSimilar(root1, root2), equalTo(true))
     }

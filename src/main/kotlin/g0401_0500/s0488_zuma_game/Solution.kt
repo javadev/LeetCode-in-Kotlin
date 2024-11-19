@@ -37,7 +37,7 @@ class Solution {
                     val sR = findMinStepDp(
                         removeRepeated(newS.toString()),
                         hand.substring(0, j) + hand.substring(j + 1, hand.length),
-                        dp
+                        dp,
                     )
                     if (sR != -1) {
                         min = if (min == -1) sR + 1 else Integer.min(min, sR + 1)
@@ -61,7 +61,7 @@ class Solution {
                 if (count >= 3) {
                     return removeRepeated(
                         original.substring(0, i - count) +
-                            original.substring(i, original.length)
+                            original.substring(i, original.length),
                     )
                 } else {
                     count = 1

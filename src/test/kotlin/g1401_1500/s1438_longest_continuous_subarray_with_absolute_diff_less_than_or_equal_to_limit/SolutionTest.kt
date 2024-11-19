@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun longestSubarray3() {
         assertThat(
-            Solution().longestSubarray(intArrayOf(4, 2, 2, 2, 4, 4, 2, 2), 0), equalTo(3)
+            Solution().longestSubarray(intArrayOf(4, 2, 2, 2, 4, 4, 2, 2), 0),
+            equalTo(3),
         )
     }
 }

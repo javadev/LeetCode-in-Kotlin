@@ -13,13 +13,13 @@ internal class SolutionTest {
                 .minOperationsQueries(
                     7,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1,1],[1,2,1],[2,3,1],[3,4,2],[4,5,2],[5,6,2]"
+                        "[0,1,1],[1,2,1],[2,3,1],[3,4,2],[4,5,2],[5,6,2]",
                     ),
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,3],[3,6],[2,6],[0,6]"
-                    )
+                        "[0,3],[3,6],[2,6],[0,6]",
+                    ),
                 ),
-            equalTo(intArrayOf(0, 0, 1, 3))
+            equalTo(intArrayOf(0, 0, 1, 3)),
         )
     }
 
@@ -30,13 +30,13 @@ internal class SolutionTest {
                 .minOperationsQueries(
                     8,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2,6],[1,3,4],[2,4,6],[2,5,3],[3,6,6],[3,0,8],[7,0,2]"
+                        "[1,2,6],[1,3,4],[2,4,6],[2,5,3],[3,6,6],[3,0,8],[7,0,2]",
                     ),
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[4,6],[0,4],[6,5],[7,4]"
-                    )
+                        "[4,6],[0,4],[6,5],[7,4]",
+                    ),
                 ),
-            equalTo(intArrayOf(1, 2, 2, 3))
+            equalTo(intArrayOf(1, 2, 2, 3)),
         )
     }
 }

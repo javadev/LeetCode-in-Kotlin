@@ -27,7 +27,7 @@ class Solution {
         prev: Int,
         visited: BooleanArray,
         visitedCnt: Int,
-        targetCnt: Int
+        targetCnt: Int,
     ) {
         if (foundStr != null) {
             return

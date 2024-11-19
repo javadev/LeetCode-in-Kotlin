@@ -15,9 +15,9 @@ class Solution {
             intArrayOf(1, 1),
             intArrayOf(-1, -1),
             intArrayOf(-1, 1),
-            intArrayOf(1, -1)
+            intArrayOf(1, -1),
         ),
-        arrayOf(intArrayOf(1, 1), intArrayOf(-1, -1), intArrayOf(-1, 1), intArrayOf(1, -1))
+        arrayOf(intArrayOf(1, 1), intArrayOf(-1, -1), intArrayOf(-1, 1), intArrayOf(1, -1)),
     )
 
     fun countCombinations(pieces: Array<String?>, positions: Array<IntArray>): Int {

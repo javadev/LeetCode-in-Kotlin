@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxMatrixSum() {
         assertThat(
             Solution().maxMatrixSum(arrayOf(intArrayOf(1, -1), intArrayOf(-1, 1))),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxMatrixSum2() {
         assertThat(
             Solution().maxMatrixSum(arrayOf(intArrayOf(1, 2, 3), intArrayOf(-1, -2, -3), intArrayOf(1, 2, 3))),
-            equalTo(16L)
+            equalTo(16L),
         )
     }
 }

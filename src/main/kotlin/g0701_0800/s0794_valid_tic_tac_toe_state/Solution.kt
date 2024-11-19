@@ -59,6 +59,8 @@ class Solution {
         }
         return if (sum == 0 && !xWin) {
             true
-        } else sum == 1 && !oWin
+        } else {
+            sum == 1 && !oWin
+        }
     }
 }

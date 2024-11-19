@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun minimumAddedCoins2() {
         assertThat(
-            Solution().minimumAddedCoins(intArrayOf(1, 4, 10, 5, 7, 19), 19), equalTo(1)
+            Solution().minimumAddedCoins(intArrayOf(1, 4, 10, 5, 7, 19), 19),
+            equalTo(1),
         )
     }
 

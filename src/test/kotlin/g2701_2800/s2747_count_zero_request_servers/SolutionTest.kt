@@ -9,12 +9,14 @@ internal class SolutionTest {
     fun countServers() {
         assertThat(
             Solution().countServers(
-                3, arrayOf(intArrayOf(1, 3), intArrayOf(2, 6), intArrayOf(1, 5)), 5,
-                intArrayOf(10, 11)
+                3,
+                arrayOf(intArrayOf(1, 3), intArrayOf(2, 6), intArrayOf(1, 5)),
+                5,
+                intArrayOf(10, 11),
             ),
             equalTo(
-                intArrayOf(1, 2)
-            )
+                intArrayOf(1, 2),
+            ),
         )
     }
 
@@ -24,14 +26,17 @@ internal class SolutionTest {
             Solution().countServers(
                 3,
                 arrayOf(
-                    intArrayOf(2, 4), intArrayOf(2, 1), intArrayOf(1, 2),
-                    intArrayOf(3, 1)
+                    intArrayOf(2, 4),
+                    intArrayOf(2, 1),
+                    intArrayOf(1, 2),
+                    intArrayOf(3, 1),
                 ),
-                2, intArrayOf(3, 4)
+                2,
+                intArrayOf(3, 4),
             ),
             equalTo(
-                intArrayOf(0, 1)
-            )
+                intArrayOf(0, 1),
+            ),
         )
     }
 }

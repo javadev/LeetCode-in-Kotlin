@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun numSubarrayBoundedMax2() {
         assertThat(
-            Solution().numSubarrayBoundedMax(intArrayOf(2, 9, 2, 5, 6), 2, 8), equalTo(7)
+            Solution().numSubarrayBoundedMax(intArrayOf(2, 9, 2, 5, 6), 2, 8),
+            equalTo(7),
         )
     }
 }

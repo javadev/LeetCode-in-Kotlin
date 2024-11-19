@@ -14,7 +14,9 @@ class Solution {
         n = n / 25 + if (n % 25 > 0) 1 else 0
         return if (n >= 500) {
             1.0
-        } else find(n, n, Array(n + 1) { arrayOfNulls(n + 1) })
+        } else {
+            find(n, n, Array(n + 1) { arrayOfNulls(n + 1) })
+        }
     }
 
     private fun find(a: Int, b: Int, mem: Array<Array<Double?>>): Double {

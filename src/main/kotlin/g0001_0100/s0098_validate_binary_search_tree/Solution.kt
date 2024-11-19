@@ -30,6 +30,8 @@ class Solution {
         }
         return if (root.`val` <= left || root.`val` >= right) {
             false
-        } else solve(root.left, left, root.`val`.toLong()) && solve(root.right, root.`val`.toLong(), right)
+        } else {
+            solve(root.left, left, root.`val`.toLong()) && solve(root.right, root.`val`.toLong(), right)
+        }
     }
 }

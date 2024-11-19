@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun maximumTotalDamage3() {
         assertThat(
             Solution().maximumTotalDamage(intArrayOf(1000001, 1, 6, 6)),
-            equalTo(1000014L)
+            equalTo(1000014L),
         )
     }
 }

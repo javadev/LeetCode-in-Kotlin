@@ -12,12 +12,15 @@ internal class SolutionTest {
                 5,
                 arrayOf(
                     intArrayOf(4, 1, -1),
-                    intArrayOf(2, 0, -1), intArrayOf(0, 3, -1),
-                    intArrayOf(4, 3, -1)
+                    intArrayOf(2, 0, -1),
+                    intArrayOf(0, 3, -1),
+                    intArrayOf(4, 3, -1),
                 ),
-                0, 1, 5
+                0,
+                1,
+                5,
             ),
-            equalTo(arrayOf(intArrayOf(4, 1, 1), intArrayOf(2, 0, 1), intArrayOf(0, 3, 1), intArrayOf(4, 3, 3)))
+            equalTo(arrayOf(intArrayOf(4, 1, 1), intArrayOf(2, 0, 1), intArrayOf(0, 3, 1), intArrayOf(4, 3, 3))),
         )
     }
 
@@ -28,11 +31,13 @@ internal class SolutionTest {
                 3,
                 arrayOf(
                     intArrayOf(0, 1, -1),
-                    intArrayOf(0, 2, 5)
+                    intArrayOf(0, 2, 5),
                 ),
-                0, 2, 6
+                0,
+                2,
+                6,
             ),
-            equalTo(arrayOf())
+            equalTo(arrayOf()),
         )
     }
 
@@ -43,11 +48,15 @@ internal class SolutionTest {
                 4,
                 arrayOf(
                     intArrayOf(1, 0, 4),
-                    intArrayOf(1, 2, 3), intArrayOf(2, 3, 5), intArrayOf(0, 3, -1)
+                    intArrayOf(1, 2, 3),
+                    intArrayOf(2, 3, 5),
+                    intArrayOf(0, 3, -1),
                 ),
-                0, 2, 6
+                0,
+                2,
+                6,
             ),
-            equalTo(arrayOf(intArrayOf(1, 0, 4), intArrayOf(1, 2, 3), intArrayOf(2, 3, 5), intArrayOf(0, 3, 1)))
+            equalTo(arrayOf(intArrayOf(1, 0, 4), intArrayOf(1, 2, 3), intArrayOf(2, 3, 5), intArrayOf(0, 3, 1))),
         )
     }
 }

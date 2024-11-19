@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMaximizedCapital() {
         assertThat(
             Solution().findMaximizedCapital(2, 0, intArrayOf(1, 2, 3), intArrayOf(0, 1, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findMaximizedCapital2() {
         assertThat(
             Solution().findMaximizedCapital(3, 0, intArrayOf(1, 2, 3), intArrayOf(0, 1, 2)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

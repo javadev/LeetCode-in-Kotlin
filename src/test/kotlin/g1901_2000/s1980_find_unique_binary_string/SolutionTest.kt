@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun findDifferentBinaryString() {
         assertThat(
-            Solution().findDifferentBinaryString(arrayOf("01", "10")), equalTo("00")
+            Solution().findDifferentBinaryString(arrayOf("01", "10")),
+            equalTo("00"),
         )
     }
 
     @Test
     fun findDifferentBinaryString2() {
         assertThat(
-            Solution().findDifferentBinaryString(arrayOf("00", "01")), equalTo("10")
+            Solution().findDifferentBinaryString(arrayOf("00", "01")),
+            equalTo("10"),
         )
     }
 
@@ -23,7 +25,7 @@ internal class SolutionTest {
     fun findDifferentBinaryString3() {
         assertThat(
             Solution().findDifferentBinaryString(arrayOf("111", "011", "001")),
-            equalTo("000")
+            equalTo("000"),
         )
     }
 }

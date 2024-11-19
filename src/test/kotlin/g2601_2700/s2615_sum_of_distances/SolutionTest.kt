@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distance() {
         assertThat(
             Solution().distance(intArrayOf(1, 3, 1, 1, 2)),
-            equalTo(longArrayOf(5, 0, 3, 4, 0))
+            equalTo(longArrayOf(5, 0, 3, 4, 0)),
         )
     }
 

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .createTargetArray(intArrayOf(0, 1, 2, 3, 4), intArrayOf(0, 1, 2, 2, 1)),
-            equalTo(intArrayOf(0, 4, 1, 3, 2))
+            equalTo(intArrayOf(0, 4, 1, 3, 2)),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .createTargetArray(intArrayOf(1, 2, 3, 4, 0), intArrayOf(0, 1, 2, 3, 0)),
-            equalTo(intArrayOf(0, 1, 2, 3, 4))
+            equalTo(intArrayOf(0, 1, 2, 3, 4)),
         )
     }
 }

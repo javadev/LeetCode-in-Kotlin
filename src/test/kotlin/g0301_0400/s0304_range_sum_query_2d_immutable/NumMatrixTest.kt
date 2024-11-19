@@ -13,8 +13,8 @@ internal class NumMatrixTest {
                 intArrayOf(5, 6, 3, 2, 1),
                 intArrayOf(1, 2, 0, 1, 5),
                 intArrayOf(4, 1, 0, 1, 7),
-                intArrayOf(1, 0, 3, 0, 5)
-            )
+                intArrayOf(1, 0, 3, 0, 5),
+            ),
         )
         assertThat(numMatrix.sumRegion(2, 1, 4, 3), equalTo(8))
         assertThat(numMatrix.sumRegion(1, 1, 2, 2), equalTo(11))

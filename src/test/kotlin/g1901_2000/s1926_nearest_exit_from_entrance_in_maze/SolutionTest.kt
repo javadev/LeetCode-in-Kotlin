@@ -12,11 +12,12 @@ internal class SolutionTest {
                 .nearestExit(
                     arrayOf(
                         charArrayOf('+', '+', '.', '+'),
-                        charArrayOf('.', '.', '.', '+'), charArrayOf('+', '+', '+', '.')
+                        charArrayOf('.', '.', '.', '+'),
+                        charArrayOf('+', '+', '+', '.'),
                     ),
-                    intArrayOf(1, 2)
+                    intArrayOf(1, 2),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -27,11 +28,12 @@ internal class SolutionTest {
                 .nearestExit(
                     arrayOf(
                         charArrayOf('+', '+', '+'),
-                        charArrayOf('.', '.', '.'), charArrayOf('+', '+', '+')
+                        charArrayOf('.', '.', '.'),
+                        charArrayOf('+', '+', '+'),
                     ),
-                    intArrayOf(1, 0)
+                    intArrayOf(1, 0),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -39,7 +41,7 @@ internal class SolutionTest {
     fun nearestExit3() {
         assertThat(
             Solution().nearestExit(arrayOf(charArrayOf('.', '+')), intArrayOf(0, 0)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

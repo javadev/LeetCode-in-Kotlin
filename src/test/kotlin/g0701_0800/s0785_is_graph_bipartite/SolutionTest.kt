@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(1, 2, 3),
                     intArrayOf(0, 2),
                     intArrayOf(0, 1, 3),
-                    intArrayOf(0, 2)
-                )
+                    intArrayOf(0, 2),
+                ),
             ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun isBipartite2() {
         assertThat(
             Solution().isBipartite(arrayOf(intArrayOf(1, 3), intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(0, 2))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

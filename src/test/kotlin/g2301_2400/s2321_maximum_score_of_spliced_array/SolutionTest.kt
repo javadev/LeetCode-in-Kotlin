@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumsSplicedArray() {
         assertThat(
             Solution().maximumsSplicedArray(intArrayOf(60, 60, 60), intArrayOf(10, 90, 10)),
-            equalTo(210)
+            equalTo(210),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumsSplicedArray(intArrayOf(20, 40, 20, 70, 30), intArrayOf(50, 20, 50, 40, 20)),
-            equalTo(220)
+            equalTo(220),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun maximumsSplicedArray3() {
         assertThat(
             Solution().maximumsSplicedArray(intArrayOf(7, 11, 13), intArrayOf(1, 1, 1)),
-            equalTo(31)
+            equalTo(31),
         )
     }
 
@@ -34,7 +34,7 @@ internal class SolutionTest {
     fun maximumsSplicedArray4() {
         assertThat(
             Solution().maximumsSplicedArray(intArrayOf(1, 1, 1), intArrayOf(7, 11, 13)),
-            equalTo(31)
+            equalTo(31),
         )
     }
 }

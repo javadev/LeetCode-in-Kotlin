@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun rotateTheBox() {
         assertThat(
             Solution().rotateTheBox(arrayOf(charArrayOf('#', '.', '#'))),
-            equalTo(arrayOf(charArrayOf('.'), charArrayOf('#'), charArrayOf('#')))
+            equalTo(arrayOf(charArrayOf('.'), charArrayOf('#'), charArrayOf('#'))),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
                     charArrayOf('#', '.'),
                     charArrayOf('#', '#'),
                     charArrayOf('*', '*'),
-                    charArrayOf('.', '.')
-                )
-            )
+                    charArrayOf('.', '.'),
+                ),
+            ),
         )
     }
 
@@ -37,8 +37,8 @@ internal class SolutionTest {
                     arrayOf(
                         charArrayOf('#', '#', '*', '.', '*', '.'),
                         charArrayOf('#', '#', '#', '*', '.', '.'),
-                        charArrayOf('#', '#', '#', '.', '#', '.')
-                    )
+                        charArrayOf('#', '#', '#', '.', '#', '.'),
+                    ),
                 ),
             equalTo(
                 arrayOf(
@@ -47,9 +47,9 @@ internal class SolutionTest {
                     charArrayOf('#', '#', '*'),
                     charArrayOf('#', '*', '.'),
                     charArrayOf('#', '.', '*'),
-                    charArrayOf('#', '.', '.')
-                )
-            )
+                    charArrayOf('#', '.', '.'),
+                ),
+            ),
         )
     }
 }

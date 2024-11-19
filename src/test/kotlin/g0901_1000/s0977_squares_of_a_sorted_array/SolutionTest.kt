@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sortedSquares() {
         assertThat(
             Solution().sortedSquares(intArrayOf(-4, -1, 0, 3, 10)),
-            equalTo(intArrayOf(0, 1, 9, 16, 100))
+            equalTo(intArrayOf(0, 1, 9, 16, 100)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sortedSquares2() {
         assertThat(
             Solution().sortedSquares(intArrayOf(-7, -3, 2, 3, 11)),
-            equalTo(intArrayOf(4, 9, 9, 49, 121))
+            equalTo(intArrayOf(4, 9, 9, 49, 121)),
         )
     }
 }

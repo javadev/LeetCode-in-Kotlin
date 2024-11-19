@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun assignTasks() {
         assertThat(
             Solution().assignTasks(intArrayOf(3, 3, 2), intArrayOf(1, 2, 3, 2, 1, 2)),
-            equalTo(intArrayOf(2, 2, 0, 2, 1, 2))
+            equalTo(intArrayOf(2, 2, 0, 2, 1, 2)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .assignTasks(intArrayOf(5, 1, 4, 3, 2), intArrayOf(2, 1, 2, 4, 5, 2, 1)),
-            equalTo(intArrayOf(1, 4, 1, 4, 1, 3, 2))
+            equalTo(intArrayOf(1, 4, 1, 4, 1, 3, 2)),
         )
     }
 }

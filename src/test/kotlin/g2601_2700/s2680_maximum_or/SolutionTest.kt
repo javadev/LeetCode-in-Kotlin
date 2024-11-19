@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumOr() {
         assertThat(
             Solution().maximumOr(intArrayOf(12, 9), 1),
-            equalTo(30)
+            equalTo(30),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumOr2() {
         assertThat(
             Solution().maximumOr(intArrayOf(8, 1, 2), 2),
-            equalTo(35)
+            equalTo(35),
         )
     }
 }

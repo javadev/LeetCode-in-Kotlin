@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findAndReplacePattern(arrayOf("abc", "deq", "mee", "aqq", "dkd", "ccc"), "abb"),
-            equalTo(listOf("mee", "aqq"))
+            equalTo(listOf("mee", "aqq")),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun findAndReplacePattern2() {
         assertThat(
             Solution().findAndReplacePattern(arrayOf("a", "b", "c"), "a"),
-            equalTo(listOf("a", "b", "c"))
+            equalTo(listOf("a", "b", "c")),
         )
     }
 }

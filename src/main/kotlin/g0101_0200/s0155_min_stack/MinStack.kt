@@ -9,8 +9,11 @@ class MinStack() {
     private val stack: ArrayDeque<Pair<Int, Int>> = ArrayDeque()
 
     fun push(x: Int) {
-        val min: Int = if (stack.isEmpty()) x
-        else getMin()
+        val min: Int = if (stack.isEmpty()) {
+            x
+        } else {
+            getMin()
+        }
         stack.addLast(x to minOf(min, x))
     }
 

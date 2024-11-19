@@ -17,7 +17,7 @@ class Solution {
          Traverse the array: At each index, subtract the element from rightSum and
          check if leftSum equals rightSum. If they do, return the index.
          Otherwise, add the number at current index to the leftSum and traverse further.
-        */for (i in nums.indices) {
+         */for (i in nums.indices) {
             rightSum -= nums[i]
             if (leftSum == rightSum) {
                 return i

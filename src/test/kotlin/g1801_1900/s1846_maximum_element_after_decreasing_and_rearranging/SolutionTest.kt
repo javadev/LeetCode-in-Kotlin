@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumElementAfterDecrementingAndRearranging(intArrayOf(2, 2, 1, 2, 1)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumElementAfterDecrementingAndRearranging(intArrayOf(100, 1, 1000)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumElementAfterDecrementingAndRearranging(intArrayOf(1, 2, 3, 4, 5)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

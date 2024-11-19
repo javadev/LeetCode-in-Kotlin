@@ -17,11 +17,11 @@ internal class SolutionTest {
                         intArrayOf(1, 4),
                         intArrayOf(1, 5),
                         intArrayOf(2, 3),
-                        intArrayOf(2, 6)
+                        intArrayOf(2, 6),
                     ),
-                    "abaedcd"
+                    "abaedcd",
                 ),
-            equalTo(intArrayOf(2, 1, 1, 1, 1, 1, 1))
+            equalTo(intArrayOf(2, 1, 1, 1, 1, 1, 1)),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun countSubTrees2() {
         assertThat(
             Solution().countSubTrees(4, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(0, 3)), "bbbb"),
-            equalTo(intArrayOf(4, 2, 1, 1))
+            equalTo(intArrayOf(4, 2, 1, 1)),
         )
     }
 
@@ -40,9 +40,9 @@ internal class SolutionTest {
                 .countSubTrees(
                     5,
                     arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(0, 4)),
-                    "aabab"
+                    "aabab",
                 ),
-            equalTo(intArrayOf(3, 2, 1, 1, 1))
+            equalTo(intArrayOf(3, 2, 1, 1, 1)),
         )
     }
 }

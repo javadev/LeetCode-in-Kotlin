@@ -6,7 +6,9 @@ class Solution {
     fun halvesAreAlike(s: String): Boolean {
         return if (s.isEmpty()) {
             false
-        } else countVowel(0, s.length / 2, s) == countVowel(s.length / 2, s.length, s)
+        } else {
+            countVowel(0, s.length / 2, s) == countVowel(s.length / 2, s.length, s)
+        }
     }
 
     private fun countVowel(start: Int, end: Int, s: String): Int {

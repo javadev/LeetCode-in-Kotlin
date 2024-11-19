@@ -10,11 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findAllConcatenatedWordsInADict(
-                    arrayOf("cat", "cats", "catsdogcats", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat")
+                    arrayOf("cat", "cats", "catsdogcats", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"),
                 ),
             equalTo(
-                arrayOf("dogcatsdog", "catsdogcats", "ratcatdogcat").toList()
-            )
+                arrayOf("dogcatsdog", "catsdogcats", "ratcatdogcat").toList(),
+            ),
         )
     }
 
@@ -23,11 +23,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findAllConcatenatedWordsInADict(
-                    arrayOf("cat", "dog", "catdog")
+                    arrayOf("cat", "dog", "catdog"),
                 ),
             equalTo(
-                arrayOf("catdog").toList()
-            )
+                arrayOf("catdog").toList(),
+            ),
         )
     }
 }

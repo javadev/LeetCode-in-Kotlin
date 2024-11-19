@@ -46,8 +46,8 @@ import javax.sql.DataSource
             "INSERT INTO Users(users_id, banned, role) VALUES (10, 'No', 'driver'); " +
             "INSERT INTO Users(users_id, banned, role) VALUES (11, 'No', 'driver'); " +
             "INSERT INTO Users(users_id, banned, role) VALUES (12, 'No', 'driver'); " +
-            "INSERT INTO Users(users_id, banned, role) VALUES (13, 'No', 'driver'); "
-    ]
+            "INSERT INTO Users(users_id, banned, role) VALUES (13, 'No', 'driver'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -58,12 +58,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0201_0300/s0262_trips_and_users/script.sql"
-                        )
+                            "src/main/kotlin/g0201_0300/s0262_trips_and_users/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getDate(1).toString(), equalTo("2013-10-01"))

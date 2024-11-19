@@ -14,10 +14,10 @@ internal class SolutionTest {
                     2,
                     listOf<Int>(
                         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-                        1, 1, 1, 1, 1, 2
-                    )
+                        1, 1, 1, 1, 1, 2,
+                    ),
                 ),
-            equalTo<Int>(7)
+            equalTo<Int>(7),
         )
     }
 
@@ -30,10 +30,10 @@ internal class SolutionTest {
                     1,
                     listOf<Int>(
                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                        2, 2, 2, 2, 2, 2
-                    )
+                        2, 2, 2, 2, 2, 2,
+                    ),
                 ),
-            equalTo<Int>(8)
+            equalTo<Int>(8),
         )
     }
 
@@ -46,10 +46,10 @@ internal class SolutionTest {
                     2826,
                     listOf<Int>(
                         9, 1, 6, 3, 2, 7, 8, 10, 8, 3, 9, 5, 10, 8, 10, 2, 2, 9, 10,
-                        1, 3, 5, 4, 4, 8, 10
-                    )
+                        1, 3, 5, 4, 4, 8, 10,
+                    ),
                 ),
-            equalTo<Int>(557232981)
+            equalTo<Int>(557232981),
         )
     }
 
@@ -62,10 +62,10 @@ internal class SolutionTest {
                     3719,
                     listOf<Int>(
                         5, 3, 8, 1, 4, 2, 2, 4, 5, 2, 8, 5, 8, 2, 6, 10, 8, 1, 4, 1,
-                        7, 4, 2, 4, 7, 5
-                    )
+                        7, 4, 2, 4, 7, 5,
+                    ),
                 ),
-            equalTo<Int>(467065288)
+            equalTo<Int>(467065288),
         )
     }
 }

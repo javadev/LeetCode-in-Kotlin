@@ -32,10 +32,10 @@ class Solution {
             ans = (
                 ans % mod +
                     (
-                    first * fact[len] % mod
-                        * modPow(rev, mod.toLong() - 2, mod) %
-                        mod
-                    ) %
+                        first * fact[len] % mod
+                            * modPow(rev, mod.toLong() - 2, mod) %
+                            mod
+                        ) %
                     mod
                 )
             ans %= mod

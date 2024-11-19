@@ -37,8 +37,8 @@ import javax.sql.DataSource
             "INSERT INTO Stocks(stock_name, operation, operation_day, price)" +
             " VALUES ('Handbags', 'Sell', 29, 7000); " +
             "INSERT INTO Stocks(stock_name, operation, operation_day, price)" +
-            " VALUES ('Corona Masks', 'Sell', 10, 10000); "
-    ]
+            " VALUES ('Corona Masks', 'Sell', 10, 10000); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -51,12 +51,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1393_" +
                                 "capital_gainloss" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Corona Masks"))

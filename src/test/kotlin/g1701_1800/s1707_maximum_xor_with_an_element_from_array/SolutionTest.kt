@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximizeXor(intArrayOf(0, 1, 2, 3, 4), arrayOf(intArrayOf(3, 1), intArrayOf(1, 3), intArrayOf(5, 6))),
-            equalTo(intArrayOf(3, 3, 7))
+            equalTo(intArrayOf(3, 3, 7)),
         )
     }
 
@@ -22,10 +22,11 @@ internal class SolutionTest {
                     intArrayOf(5, 2, 4, 6, 6, 3),
                     arrayOf(
                         intArrayOf(12, 4),
-                        intArrayOf(8, 1), intArrayOf(6, 3)
-                    )
+                        intArrayOf(8, 1),
+                        intArrayOf(6, 3),
+                    ),
                 ),
-            equalTo(intArrayOf(15, -1, 5))
+            equalTo(intArrayOf(15, -1, 5)),
         )
     }
 }

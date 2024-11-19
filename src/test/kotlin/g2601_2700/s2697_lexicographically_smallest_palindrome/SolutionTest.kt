@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun makeSmallestPalindrome() {
         assertThat(
             Solution().makeSmallestPalindrome("egcfe"),
-            equalTo("efcfe")
+            equalTo("efcfe"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun makeSmallestPalindrome2() {
         assertThat(
             Solution().makeSmallestPalindrome("abcd"),
-            equalTo("abba")
+            equalTo("abba"),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun makeSmallestPalindrome3() {
         assertThat(
             Solution().makeSmallestPalindrome("seven"),
-            equalTo("neven")
+            equalTo("neven"),
         )
     }
 }

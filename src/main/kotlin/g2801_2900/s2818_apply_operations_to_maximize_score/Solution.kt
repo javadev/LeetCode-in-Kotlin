@@ -17,7 +17,8 @@ class Solution {
         // [val, index]
         val pq = PriorityQueue { o1: IntArray, o2: IntArray ->
             Integer.compare(
-                o2[0], o1[0]
+                o2[0],
+                o1[0],
             )
         }
         val monoStack: Deque<IntArray> = ArrayDeque()

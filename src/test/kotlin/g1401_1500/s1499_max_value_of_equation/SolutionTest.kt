@@ -14,11 +14,11 @@ internal class SolutionTest {
                         intArrayOf(1, 3),
                         intArrayOf(2, 0),
                         intArrayOf(5, 10),
-                        intArrayOf(6, -10)
+                        intArrayOf(6, -10),
                     ),
-                    1
+                    1,
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun findMaxValueOfEquation2() {
         assertThat(
             Solution().findMaxValueOfEquation(arrayOf(intArrayOf(0, 0), intArrayOf(3, 0), intArrayOf(9, 2)), 3),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

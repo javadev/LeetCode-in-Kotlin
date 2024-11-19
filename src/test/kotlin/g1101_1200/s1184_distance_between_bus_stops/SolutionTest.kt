@@ -8,21 +8,24 @@ internal class SolutionTest {
     @Test
     fun distanceBetweenBusStops() {
         assertThat(
-            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 1), equalTo(1)
+            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 1),
+            equalTo(1),
         )
     }
 
     @Test
     fun distanceBetweenBusStops2() {
         assertThat(
-            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 2), equalTo(3)
+            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 2),
+            equalTo(3),
         )
     }
 
     @Test
     fun distanceBetweenBusStops3() {
         assertThat(
-            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 3), equalTo(4)
+            Solution().distanceBetweenBusStops(intArrayOf(1, 2, 3, 4), 0, 3),
+            equalTo(4),
         )
     }
 }

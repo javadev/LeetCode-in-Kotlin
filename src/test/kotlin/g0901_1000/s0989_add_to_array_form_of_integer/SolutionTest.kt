@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun addToArrayForm() {
         assertThat(
             Solution().addToArrayForm(intArrayOf(1, 2, 0, 0), 34),
-            equalTo(listOf(1, 2, 3, 4))
+            equalTo(listOf(1, 2, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun addToArrayForm2() {
         assertThat(
             Solution().addToArrayForm(intArrayOf(2, 7, 4), 181),
-            equalTo(listOf(4, 5, 5))
+            equalTo(listOf(4, 5, 5)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun addToArrayForm3() {
         assertThat(
             Solution().addToArrayForm(intArrayOf(2, 1, 5), 806),
-            equalTo(listOf(1, 0, 2, 1))
+            equalTo(listOf(1, 0, 2, 1)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun smallestEquivalentString() {
         assertThat(
             Solution().smallestEquivalentString("hello", "world", "hold"),
-            equalTo("hdld")
+            equalTo("hdld"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun smallestEquivalentString2() {
         assertThat(
             Solution().smallestEquivalentString("parker", "morris", "parser"),
-            equalTo("makkek")
+            equalTo("makkek"),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun smallestEquivalentString3() {
         assertThat(
             Solution().smallestEquivalentString("leetcode", "programs", "sourcecode"),
-            equalTo("aauaaaaada")
+            equalTo("aauaaaaada"),
         )
     }
 }

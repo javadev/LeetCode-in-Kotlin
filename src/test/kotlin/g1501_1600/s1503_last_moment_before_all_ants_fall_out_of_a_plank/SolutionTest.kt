@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun lastMoment() {
         assertThat(
             Solution().getLastMoment(4, intArrayOf(4, 3), intArrayOf(0, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun lastMoment2() {
         assertThat(
             Solution().getLastMoment(7, intArrayOf(), intArrayOf(0, 1, 2, 3, 4, 5, 6, 7)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun lastMoment3() {
         assertThat(
             Solution().getLastMoment(7, intArrayOf(0, 1, 2, 3, 4, 5, 6, 7), intArrayOf()),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

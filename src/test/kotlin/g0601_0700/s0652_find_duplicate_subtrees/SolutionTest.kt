@@ -14,7 +14,7 @@ internal class SolutionTest {
         val expected: List<TreeNode?> = listOf(item2, item1)
         assertThat(
             Solution().findDuplicateSubtrees(treeNode).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
         val expected: List<TreeNode?> = listOf(item2, item1)
         assertThat(
             Solution().findDuplicateSubtrees(treeNode).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 }

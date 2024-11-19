@@ -19,7 +19,7 @@ internal class SolutionTest {
         val expected = listOf(
             listOf("", "", "", "1", "", "", ""),
             listOf("", "2", "", "", "", "3", ""),
-            listOf("", "", "4", "", "", "", "")
+            listOf("", "", "4", "", "", "", ""),
         )
         assertThat(Solution().printTree(treeNode), equalTo(expected))
     }

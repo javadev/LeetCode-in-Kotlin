@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun areaOfMaxDiagonal() {
         assertThat(
             Solution().areaOfMaxDiagonal(arrayOf(intArrayOf(9, 3), intArrayOf(8, 6))),
-            equalTo(48)
+            equalTo(48),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun areaOfMaxDiagonal2() {
         assertThat(
             Solution().areaOfMaxDiagonal(arrayOf(intArrayOf(3, 4), intArrayOf(4, 3))),
-            equalTo(12)
+            equalTo(12),
         )
     }
 }

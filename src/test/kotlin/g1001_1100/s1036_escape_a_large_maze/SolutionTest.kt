@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isEscapePossible(arrayOf(intArrayOf(0, 1), intArrayOf(1, 0)), intArrayOf(0, 0), intArrayOf(0, 2)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isEscapePossible(arrayOf(), intArrayOf(0, 0), intArrayOf(999999, 999999)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

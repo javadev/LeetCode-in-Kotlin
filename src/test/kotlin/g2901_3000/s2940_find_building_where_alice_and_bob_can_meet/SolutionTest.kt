@@ -13,10 +13,10 @@ internal class SolutionTest {
                 .leftmostBuildingQueries(
                     intArrayOf(6, 4, 8, 5, 2, 7),
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,3],[2,4],[3,4],[2,2]"
-                    )
+                        "[0,1],[0,3],[2,4],[3,4],[2,2]",
+                    ),
                 ),
-            equalTo(intArrayOf(2, 5, -1, 5, 2))
+            equalTo(intArrayOf(2, 5, -1, 5, 2)),
         )
     }
 
@@ -27,10 +27,10 @@ internal class SolutionTest {
                 .leftmostBuildingQueries(
                     intArrayOf(5, 3, 8, 2, 6, 1, 4, 6),
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,7],[3,5],[5,2],[3,0],[1,6]"
-                    )
+                        "[0,7],[3,5],[5,2],[3,0],[1,6]",
+                    ),
                 ),
-            equalTo(intArrayOf(7, 6, -1, 4, 6))
+            equalTo(intArrayOf(7, 6, -1, 4, 6)),
         )
     }
 }

@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun minTimeToVisitAllPoints() {
         assertThat(
             Solution().minTimeToVisitAllPoints(arrayOf(intArrayOf(1, 1), intArrayOf(3, 4), intArrayOf(-1, 0))),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
     @Test
     fun minTimeToVisitAllPoints2() {
         assertThat(
-            Solution().minTimeToVisitAllPoints(arrayOf(intArrayOf(3, 2), intArrayOf(-2, 2))), equalTo(5)
+            Solution().minTimeToVisitAllPoints(arrayOf(intArrayOf(3, 2), intArrayOf(-2, 2))),
+            equalTo(5),
         )
     }
 }

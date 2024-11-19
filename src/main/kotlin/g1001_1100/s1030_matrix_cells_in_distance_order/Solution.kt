@@ -12,7 +12,7 @@ class Solution {
         for (i in 0 until rows) {
             for (j in 0 until cols) {
                 map.computeIfAbsent(
-                    abs(i - rCenter) + abs(j - cCenter)
+                    abs(i - rCenter) + abs(j - cCenter),
                 ) { ArrayList() }
                     .add(intArrayOf(i, j))
             }

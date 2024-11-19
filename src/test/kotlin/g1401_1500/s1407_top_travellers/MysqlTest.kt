@@ -42,8 +42,8 @@ import javax.sql.DataSource
             "INSERT INTO Rides(id, user_id, distance)" +
             " VALUES (8, 19, 400); " +
             "INSERT INTO Rides(id, user_id, distance)" +
-            " VALUES (9, 7, 230); "
-    ]
+            " VALUES (9, 7, 230); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -55,12 +55,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1401_1500/s1407_top_trave" +
-                                "llers/script.sql"
-                        )
+                                "llers/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Elvis"))

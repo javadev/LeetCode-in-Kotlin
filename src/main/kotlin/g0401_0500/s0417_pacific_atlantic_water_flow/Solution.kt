@@ -16,12 +16,12 @@ class Solution {
         row = matrix[0].size
         val pacific = Array(col) {
             BooleanArray(
-                row
+                row,
             )
         }
         val atlantic = Array(col) {
             BooleanArray(
-                row
+                row,
             )
         }
         for (i in 0 until col) {

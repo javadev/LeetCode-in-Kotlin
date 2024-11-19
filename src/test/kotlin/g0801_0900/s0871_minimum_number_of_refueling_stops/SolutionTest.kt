@@ -20,9 +20,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minRefuelStops(
-                    100, 10, arrayOf(intArrayOf(10, 60), intArrayOf(20, 30), intArrayOf(30, 30), intArrayOf(60, 40))
+                    100,
+                    10,
+                    arrayOf(intArrayOf(10, 60), intArrayOf(20, 30), intArrayOf(30, 30), intArrayOf(60, 40)),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

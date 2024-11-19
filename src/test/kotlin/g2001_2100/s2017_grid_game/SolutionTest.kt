@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun gridGame() {
         assertThat(
             Solution().gridGame(arrayOf(intArrayOf(2, 5, 4), intArrayOf(1, 5, 1))),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun gridGame2() {
         assertThat(
             Solution().gridGame(arrayOf(intArrayOf(3, 3, 1), intArrayOf(8, 5, 2))),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun gridGame3() {
         assertThat(
             Solution().gridGame(arrayOf(intArrayOf(1, 3, 1, 15), intArrayOf(1, 3, 3, 1))),
-            equalTo(7L)
+            equalTo(7L),
         )
     }
 }

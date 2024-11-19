@@ -87,6 +87,8 @@ class Solution {
         }
         return if (equal && merge[k - 1] > res[k - 1]) {
             merge
-        } else res
+        } else {
+            res
+        }
     }
 }

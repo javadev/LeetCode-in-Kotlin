@@ -11,13 +11,13 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .insertGreatestCommonDivisors(
-                    contructLinkedList(intArrayOf(18, 6, 10, 3))
+                    contructLinkedList(intArrayOf(18, 6, 10, 3)),
                 )
                 .toString(),
             equalTo(
                 contructLinkedList(intArrayOf(18, 6, 6, 2, 10, 1, 3))
-                    .toString()
-            )
+                    .toString(),
+            ),
         )
     }
 
@@ -26,10 +26,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .insertGreatestCommonDivisors(
-                    contructLinkedList(intArrayOf(7))
+                    contructLinkedList(intArrayOf(7)),
                 )
                 .toString(),
-            equalTo(contructLinkedList(intArrayOf(7)).toString())
+            equalTo(contructLinkedList(intArrayOf(7)).toString()),
         )
     }
 }

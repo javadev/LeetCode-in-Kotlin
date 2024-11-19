@@ -11,7 +11,8 @@ internal class SolutionTest {
     @Test
     fun new21Game() {
         assertThat(
-            (Solution().new21Game(10, 1, 10) * n).roundToInt().toDouble() / n, equalTo(1.00000)
+            (Solution().new21Game(10, 1, 10) * n).roundToInt().toDouble() / n,
+            equalTo(1.00000),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun new21Game3() {
         assertThat(
             (Solution().new21Game(21, 17, 10) * n).roundToInt().toDouble() / n,
-            equalTo(0.73278)
+            equalTo(0.73278),
         )
     }
 }

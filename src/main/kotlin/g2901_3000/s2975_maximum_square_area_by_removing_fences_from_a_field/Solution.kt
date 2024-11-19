@@ -7,7 +7,7 @@ class Solution {
         m: Int,
         n: Int,
         hFences: IntArray,
-        vFences: IntArray
+        vFences: IntArray,
     ): Int {
         val hFencesWithBorder = IntArray(hFences.size + 2)
         System.arraycopy(hFences, 0, hFencesWithBorder, 0, hFences.size)

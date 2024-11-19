@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canReachCorner() {
         assertThat(
             Solution().canReachCorner(3, 4, arrayOf(intArrayOf(2, 1, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun canReachCorner2() {
         assertThat(
             Solution().canReachCorner(3, 3, arrayOf(intArrayOf(1, 1, 2))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun canReachCorner3() {
         assertThat(
             Solution().canReachCorner(3, 3, arrayOf(intArrayOf(2, 1, 1), intArrayOf(1, 2, 1))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun canReachCorner4() {
         assertThat(
             Solution().canReachCorner(4, 4, arrayOf(intArrayOf(5, 5, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

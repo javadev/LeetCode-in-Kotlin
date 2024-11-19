@@ -55,14 +55,14 @@ class Solution {
                     (
                         max(
                             preLast,
-                            second[u]
+                            second[u],
                         ) + (if ((u and 1) == 0) 2 else 1)
                         )
                 } else {
                     (
                         max(
                             preLast,
-                            last[u]
+                            last[u],
                         ) + (if ((u and 1) == 0) 2 else 1)
                         )
                 }

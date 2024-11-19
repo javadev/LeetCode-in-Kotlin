@@ -16,7 +16,7 @@ class Solution {
         for (right in 1 until nums.size) {
             cost += abs(median - nums[right])
             median = nums[(right + left + 1) / 2]
-            while (cost> k) {
+            while (cost > k) {
                 cost -= abs(median - nums[left])
                 left++
                 median = nums[(right + left + 1) / 2]

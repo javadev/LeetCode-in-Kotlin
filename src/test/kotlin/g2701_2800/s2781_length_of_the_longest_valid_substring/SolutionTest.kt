@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestValidSubstring() {
         assertThat(
             Solution().longestValidSubstring("cbaaaabc", mutableListOf("aaa", "cb")),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestValidSubstring2() {
         assertThat(
             Solution().longestValidSubstring("leetcode", mutableListOf("de", "le", "e")),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

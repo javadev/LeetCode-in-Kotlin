@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun productExceptSelf() {
         assertThat(
             Solution().productExceptSelf(intArrayOf(1, 2, 3, 4)),
-            equalTo(intArrayOf(24, 12, 8, 6))
+            equalTo(intArrayOf(24, 12, 8, 6)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun productExceptSelf2() {
         assertThat(
             Solution().productExceptSelf(intArrayOf(-1, 1, 0, -3, 3)),
-            equalTo(intArrayOf(0, 0, 9, 0, 0))
+            equalTo(intArrayOf(0, 0, 9, 0, 0)),
         )
     }
 }

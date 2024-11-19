@@ -14,19 +14,19 @@ internal class CodecTest {
         expectedRoot.left!!.right = TreeNode(2)
         assertThat(
             Codec().deserialize(Codec().serialize(expectedRoot)).toString(),
-            equalTo(expectedRoot.toString())
+            equalTo(expectedRoot.toString()),
         )
         assertThat(
             Codec().deserialize(Codec().serialize(expectedRoot)).toString(),
-            equalTo(expectedRoot.toString())
+            equalTo(expectedRoot.toString()),
         )
         assertThat(
             Codec().deserialize(Codec().serialize(expectedRoot)).toString(),
-            equalTo(expectedRoot.toString())
+            equalTo(expectedRoot.toString()),
         )
         assertThat(
             Codec().deserialize(Codec().serialize(expectedRoot)).toString(),
-            equalTo(expectedRoot.toString())
+            equalTo(expectedRoot.toString()),
         )
     }
 }

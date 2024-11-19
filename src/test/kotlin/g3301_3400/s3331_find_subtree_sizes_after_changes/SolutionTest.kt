@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findSubtreeSizes() {
         assertThat<IntArray?>(
             Solution().findSubtreeSizes(intArrayOf(-1, 0, 0, 1, 1, 1), "abaabc"),
-            equalTo<IntArray?>(intArrayOf(6, 3, 1, 1, 1, 1))
+            equalTo<IntArray?>(intArrayOf(6, 3, 1, 1, 1, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findSubtreeSizes2() {
         assertThat<IntArray?>(
             Solution().findSubtreeSizes(intArrayOf(-1, 0, 4, 0, 1), "abbba"),
-            equalTo<IntArray?>(intArrayOf(5, 2, 1, 1, 1))
+            equalTo<IntArray?>(intArrayOf(5, 2, 1, 1, 1)),
         )
     }
 }

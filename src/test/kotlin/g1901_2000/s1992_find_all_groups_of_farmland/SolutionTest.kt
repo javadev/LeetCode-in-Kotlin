@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findFarmland() {
         assertThat(
             Solution().findFarmland(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 1, 1), intArrayOf(0, 1, 1))),
-            equalTo(arrayOf(intArrayOf(0, 0, 0, 0), intArrayOf(1, 1, 2, 2)))
+            equalTo(arrayOf(intArrayOf(0, 0, 0, 0), intArrayOf(1, 1, 2, 2))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findFarmland2() {
         assertThat(
             Solution().findFarmland(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1))),
-            equalTo(arrayOf(intArrayOf(0, 0, 1, 1)))
+            equalTo(arrayOf(intArrayOf(0, 0, 1, 1))),
         )
     }
 

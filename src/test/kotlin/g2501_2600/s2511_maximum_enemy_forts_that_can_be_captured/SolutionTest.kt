@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun captureForts() {
         assertThat(
             Solution().captureForts(intArrayOf(1, 0, 0, -1, 0, 0, 0, 0, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

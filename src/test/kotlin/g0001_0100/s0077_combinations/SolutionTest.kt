@@ -9,8 +9,12 @@ internal class SolutionTest {
     @Test
     fun combine() {
         val expected = arrayOf(
-            intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 4),
-            intArrayOf(2, 3), intArrayOf(2, 4), intArrayOf(3, 4)
+            intArrayOf(1, 2),
+            intArrayOf(1, 3),
+            intArrayOf(1, 4),
+            intArrayOf(2, 3),
+            intArrayOf(2, 4),
+            intArrayOf(3, 4),
         )
         assertThat(Solution().combine(4, 2), equalTo(getLists(expected)))
     }

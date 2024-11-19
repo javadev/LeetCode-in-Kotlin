@@ -9,6 +9,8 @@ class Solution {
         }
         return if (num % 9 == 0) {
             9
-        } else num % 9
+        } else {
+            num % 9
+        }
     }
 }

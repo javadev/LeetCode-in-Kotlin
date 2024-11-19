@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numPoints() {
         assertThat(
             Solution().numPoints(arrayOf(intArrayOf(-2, 0), intArrayOf(2, 0), intArrayOf(0, 2), intArrayOf(0, -2)), 2),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -24,11 +24,11 @@ internal class SolutionTest {
                         intArrayOf(2, 6),
                         intArrayOf(5, 4),
                         intArrayOf(0, 9),
-                        intArrayOf(7, 8)
+                        intArrayOf(7, 8),
                     ),
-                    5
+                    5,
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

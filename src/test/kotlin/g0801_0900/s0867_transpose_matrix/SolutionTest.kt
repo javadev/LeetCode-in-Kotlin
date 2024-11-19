@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun transpose() {
         assertThat(
             Solution().transpose(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))),
-            equalTo(arrayOf(intArrayOf(1, 4, 7), intArrayOf(2, 5, 8), intArrayOf(3, 6, 9)))
+            equalTo(arrayOf(intArrayOf(1, 4, 7), intArrayOf(2, 5, 8), intArrayOf(3, 6, 9))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun transpose2() {
         assertThat(
             Solution().transpose(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6))),
-            equalTo(arrayOf(intArrayOf(1, 4), intArrayOf(2, 5), intArrayOf(3, 6)))
+            equalTo(arrayOf(intArrayOf(1, 4), intArrayOf(2, 5), intArrayOf(3, 6))),
         )
     }
 }

@@ -19,8 +19,8 @@ import javax.sql.DataSource
         "CREATE TABLE Person(id INTEGER PRIMARY KEY, email VARCHAR); " +
             "INSERT INTO Person(id, email) VALUES (1, 'a@b.com'); " +
             "INSERT INTO Person(id, email) VALUES (2, 'c@d.com'); " +
-            "INSERT INTO Person(id, email) VALUES (3, 'a@b.com'); "
-    ]
+            "INSERT INTO Person(id, email) VALUES (3, 'a@b.com'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -31,12 +31,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0182_duplicate_emails/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("a@b.com"))

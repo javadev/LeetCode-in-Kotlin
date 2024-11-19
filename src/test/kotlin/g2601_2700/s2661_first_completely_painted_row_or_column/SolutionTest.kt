@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun firstCompleteIndex() {
         assertThat(
             Solution().firstCompleteIndex(intArrayOf(1, 3, 4, 2), arrayOf(intArrayOf(1, 4), intArrayOf(2, 3))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -20,10 +20,11 @@ internal class SolutionTest {
                 intArrayOf(2, 8, 7, 4, 1, 3, 5, 6, 9),
                 arrayOf(
                     intArrayOf(3, 2, 5),
-                    intArrayOf(1, 4, 6), intArrayOf(8, 7, 9)
-                )
+                    intArrayOf(1, 4, 6),
+                    intArrayOf(8, 7, 9),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

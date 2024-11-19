@@ -39,36 +39,36 @@ class Solution {
                     (
                         tree[2 * i]!![YN] + max(
                             tree[2 * i + 1]!![YY],
-                            tree[2 * i + 1]!![NY]
+                            tree[2 * i + 1]!![NY],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![YN] = max(
                     (tree[2 * i]!![YY] + tree[2 * i + 1]!![NN]),
                     (
                         tree[2 * i]!![YN] + max(
                             tree[2 * i + 1]!![YN],
-                            tree[2 * i + 1]!![NN]
+                            tree[2 * i + 1]!![NN],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![NY] = max(
                     (tree[2 * i]!![NY] + tree[2 * i + 1]!![NY]),
                     (
                         tree[2 * i]!![NN] + max(
                             tree[2 * i + 1]!![YY],
-                            tree[2 * i + 1]!![NY]
+                            tree[2 * i + 1]!![NY],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![NN] = max(
                     (tree[2 * i]!![NY] + tree[2 * i + 1]!![NN]),
                     (
                         tree[2 * i]!![NN] + max(
                             tree[2 * i + 1]!![YN],
-                            tree[2 * i + 1]!![NN]
+                            tree[2 * i + 1]!![NN],
                         )
-                        )
+                        ),
                 )
             }
             return tree
@@ -84,42 +84,42 @@ class Solution {
                     (
                         tree[2 * i]!![YN] + max(
                             tree[2 * i + 1]!![YY],
-                            tree[2 * i + 1]!![NY]
+                            tree[2 * i + 1]!![NY],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![YN] = max(
                     (tree[2 * i]!![YY] + tree[2 * i + 1]!![NN]),
                     (
                         tree[2 * i]!![YN] + max(
                             tree[2 * i + 1]!![YN],
-                            tree[2 * i + 1]!![NN]
+                            tree[2 * i + 1]!![NN],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![NY] = max(
                     (tree[2 * i]!![NY] + tree[2 * i + 1]!![NY]),
                     (
                         tree[2 * i]!![NN] + max(
                             tree[2 * i + 1]!![YY],
-                            tree[2 * i + 1]!![NY]
+                            tree[2 * i + 1]!![NY],
                         )
-                        )
+                        ),
                 )
                 tree[i]!![NN] = max(
                     (tree[2 * i]!![NY] + tree[2 * i + 1]!![NN]),
                     (
                         tree[2 * i]!![NN] + max(
                             tree[2 * i + 1]!![YN],
-                            tree[2 * i + 1]!![NN]
+                            tree[2 * i + 1]!![NN],
                         )
-                        )
+                        ),
                 )
                 i /= 2
             }
             return max(
                 tree[1]!![YY],
-                max(tree[1]!![YN], max(tree[1]!![NY], tree[1]!![NN]))
+                max(tree[1]!![YN], max(tree[1]!![NY], tree[1]!![NN])),
             )
         }
     }

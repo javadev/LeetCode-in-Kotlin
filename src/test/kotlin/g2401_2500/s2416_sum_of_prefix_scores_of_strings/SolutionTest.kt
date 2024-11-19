@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumPrefixScores() {
         assertThat(
             Solution().sumPrefixScores(arrayOf("abc", "ab", "bc", "b")),
-            equalTo(intArrayOf(5, 4, 3, 2))
+            equalTo(intArrayOf(5, 4, 3, 2)),
         )
     }
 

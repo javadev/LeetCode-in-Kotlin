@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun majorityElement2() {
         assertThat(
             Solution().majorityElement(intArrayOf(1)),
-            equalTo(listOf(1))
+            equalTo(listOf(1)),
         )
     }
 

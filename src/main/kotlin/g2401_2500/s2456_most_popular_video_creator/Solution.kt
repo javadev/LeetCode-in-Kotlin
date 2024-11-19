@@ -15,8 +15,8 @@ class Solution {
             val lastIndex = maxView.getOrDefault(creators[i], -1)
             if (!maxView.containsKey(creators[i]) || views[lastIndex] < views[i] ||
                 views[lastIndex] == views[i] && ids[lastIndex].compareTo(
-                        ids[i]
-                    ) > 0
+                    ids[i],
+                ) > 0
             ) {
                 maxView[creators[i]] = i
             }

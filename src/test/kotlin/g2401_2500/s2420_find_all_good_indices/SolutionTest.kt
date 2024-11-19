@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun goodIndices() {
         assertThat(
             Solution().goodIndices(intArrayOf(2, 1, 1, 1, 3, 4, 1), 2),
-            equalTo(listOf(2, 3))
+            equalTo(listOf(2, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun goodIndices2() {
         assertThat(
             Solution().goodIndices(intArrayOf(2, 1, 1, 2), 2),
-            equalTo(emptyList<Any>())
+            equalTo(emptyList<Any>()),
         )
     }
 }

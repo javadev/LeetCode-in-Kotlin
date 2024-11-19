@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minDifference() {
         assertThat<Int>(
             Solution().minDifference(intArrayOf(1, 2, -1, 10, 8)),
-            equalTo<Int>(4)
+            equalTo<Int>(4),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minDifference3() {
         assertThat<Int>(
             Solution().minDifference(intArrayOf(-1, 10, -1, 8)),
-            equalTo<Int>(1)
+            equalTo<Int>(1),
         )
     }
 
@@ -30,7 +30,7 @@ internal class SolutionTest {
     fun minDifference4() {
         assertThat<Int>(
             Solution().minDifference(intArrayOf(14, -1, -1, 46)),
-            equalTo<Int>(11)
+            equalTo<Int>(11),
         )
     }
 }

@@ -11,9 +11,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .amountOfTime(
-                    TreeNode.create(mutableListOf(1, 5, 3, null, 4, 10, 6, 9, 2)), 3
+                    TreeNode.create(mutableListOf(1, 5, 3, null, 4, 10, 6, 9, 2)),
+                    3,
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -27,9 +28,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .amountOfTime(
-                    TreeNode.create(mutableListOf(1, 2, null, 3, null, 4, null, 5)), 4
+                    TreeNode.create(mutableListOf(1, 2, null, 3, null, 4, null, 5)),
+                    4,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

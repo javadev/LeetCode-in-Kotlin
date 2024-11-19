@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun xORSum() {
         assertThat(
             Solution().getXORSum(intArrayOf(1, 2, 3), intArrayOf(6, 5)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 

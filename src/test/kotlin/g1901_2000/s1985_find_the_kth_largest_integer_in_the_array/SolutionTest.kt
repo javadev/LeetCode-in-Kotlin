@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthLargestNumber() {
         assertThat(
             Solution().kthLargestNumber(arrayOf("3", "6", "7", "10"), 4),
-            equalTo("3")
+            equalTo("3"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kthLargestNumber2() {
         assertThat(
             Solution().kthLargestNumber(arrayOf("2", "21", "12", "1"), 3),
-            equalTo("2")
+            equalTo("2"),
         )
     }
 

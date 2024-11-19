@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findDiagonalOrder() {
         assertThat(
             Solution().findDiagonalOrder(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))),
-            equalTo(intArrayOf(1, 2, 4, 7, 5, 3, 6, 8, 9))
+            equalTo(intArrayOf(1, 2, 4, 7, 5, 3, 6, 8, 9)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findDiagonalOrder2() {
         assertThat(
             Solution().findDiagonalOrder(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))),
-            equalTo(intArrayOf(1, 2, 3, 4))
+            equalTo(intArrayOf(1, 2, 3, 4)),
         )
     }
 }

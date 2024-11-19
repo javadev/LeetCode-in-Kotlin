@@ -16,7 +16,8 @@ internal class SolutionTest {
         headActual.next!!.next!!.next!!.next!!.next = ListNode(5)
         headActual.next!!.next!!.next!!.next!!.next!!.next = ListNode(6)
         assertThat(
-            Solution().removeElements(headActual, 6).toString(), equalTo("1, 2, 3, 4, 5")
+            Solution().removeElements(headActual, 6).toString(),
+            equalTo("1, 2, 3, 4, 5"),
         )
     }
 

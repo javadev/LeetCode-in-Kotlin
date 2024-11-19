@@ -24,7 +24,7 @@ class Solution {
                         mask or (1 shl currNum),
                         currNum,
                         nums,
-                        dp
+                        dp,
                     )
                     )
                 minScore = min(minScore, currScore)

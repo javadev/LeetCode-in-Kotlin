@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distributeCookies() {
         assertThat(
             Solution().distributeCookies(intArrayOf(8, 15, 10, 20, 8), 2),
-            equalTo(31)
+            equalTo(31),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun distributeCookies2() {
         assertThat(
             Solution().distributeCookies(intArrayOf(6, 1, 3, 2, 2, 4, 1, 2), 3),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

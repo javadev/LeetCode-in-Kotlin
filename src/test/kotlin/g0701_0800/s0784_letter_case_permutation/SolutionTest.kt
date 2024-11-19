@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun letterCasePermutation() {
         assertThat(
             Solution().letterCasePermutation("a1b2"),
-            equalTo(listOf("a1b2", "a1B2", "A1b2", "A1B2"))
+            equalTo(listOf("a1b2", "a1B2", "A1b2", "A1B2")),
         )
     }
 
     @Test
     fun letterCasePermutation2() {
         assertThat(
-            Solution().letterCasePermutation("3z4"), equalTo(listOf("3z4", "3Z4"))
+            Solution().letterCasePermutation("3z4"),
+            equalTo(listOf("3z4", "3Z4")),
         )
     }
 

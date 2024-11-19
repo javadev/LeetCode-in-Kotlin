@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(0, 0, 0, 0),
                         intArrayOf(1, 0, 1, 0),
                         intArrayOf(0, 1, 1, 0),
-                        intArrayOf(0, 0, 0, 0)
-                    )
+                        intArrayOf(0, 0, 0, 0),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -30,10 +30,10 @@ internal class SolutionTest {
                         intArrayOf(0, 1, 1, 0),
                         intArrayOf(1, 0, 1, 0),
                         intArrayOf(0, 1, 1, 0),
-                        intArrayOf(0, 0, 0, 0)
-                    )
+                        intArrayOf(0, 0, 0, 0),
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

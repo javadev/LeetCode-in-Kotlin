@@ -7,7 +7,7 @@ import java.util.StringJoiner
 
 class Solution {
     private val ones = arrayOf(
-        "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "
+        "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine ",
     )
     private val teens = arrayOf(
         "Ten ",
@@ -19,10 +19,17 @@ class Solution {
         "Sixteen ",
         "Seventeen ",
         "Eighteen ",
-        "Nineteen "
+        "Nineteen ",
     )
     private val twenties = arrayOf(
-        "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "
+        "Twenty ",
+        "Thirty ",
+        "Forty ",
+        "Fifty ",
+        "Sixty ",
+        "Seventy ",
+        "Eighty ",
+        "Ninety ",
     )
 
     fun numberToWords(num: Int): String {

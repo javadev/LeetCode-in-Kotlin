@@ -11,15 +11,16 @@ internal class NestedIteratorTest {
         val iterator = NestedIterator(
             mutableListOf(
                 NestedInteger(
-                    mutableListOf(NestedInteger(1), NestedInteger(1))
+                    mutableListOf(NestedInteger(1), NestedInteger(1)),
                 ),
                 NestedInteger(2),
                 NestedInteger(
                     mutableListOf(
-                        NestedInteger(1), NestedInteger(1)
-                    )
-                )
-            )
+                        NestedInteger(1),
+                        NestedInteger(1),
+                    ),
+                ),
+            ),
         )
         val result: MutableList<Int> = ArrayList()
         while (iterator.hasNext()) {

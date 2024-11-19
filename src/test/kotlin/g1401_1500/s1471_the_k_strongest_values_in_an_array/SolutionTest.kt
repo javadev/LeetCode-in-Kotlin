@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun strongest() {
         assertThat(
             Solution().getStrongest(intArrayOf(1, 2, 3, 4, 5), 2),
-            equalTo(intArrayOf(5, 1))
+            equalTo(intArrayOf(5, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun strongest2() {
         assertThat(
             Solution().getStrongest(intArrayOf(1, 1, 3, 5, 5), 2),
-            equalTo(intArrayOf(5, 5))
+            equalTo(intArrayOf(5, 5)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun strongest3() {
         assertThat(
             Solution().getStrongest(intArrayOf(6, 7, 11, 7, 6, 8), 5),
-            equalTo(intArrayOf(11, 8, 6, 6, 7))
+            equalTo(intArrayOf(11, 8, 6, 6, 7)),
         )
     }
 }

@@ -29,6 +29,8 @@ class Solution {
     private fun isSubset(subset: Set<String>, set: Set<String>): Boolean {
         return if (subset.size >= set.size) {
             false
-        } else set.containsAll(subset)
+        } else {
+            set.containsAll(subset)
+        }
     }
 }

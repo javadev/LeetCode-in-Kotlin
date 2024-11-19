@@ -24,12 +24,12 @@ class Solution {
                 if (row[j] == 0) {
                     if (j + 1 < rl && row[j + 1] == 1 && j - w + 1 >= 0 &&
                         i + 1 < grid.size && grid[i + 1][j] == 1 && i - h + 1 >= 0 && canPaved(
-                                grid,
-                                i - h + 1,
-                                j - w + 1,
-                                i,
-                                j
-                            )
+                            grid,
+                            i - h + 1,
+                            j - w + 1,
+                            i,
+                            j,
+                        )
                     ) {
                         return false
                     }

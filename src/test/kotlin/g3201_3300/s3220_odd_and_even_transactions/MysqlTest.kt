@@ -31,8 +31,8 @@ import javax.sql.DataSource
                 " VALUES (5, 50, '2024-07-02'); " +
                 "INSERT INTO transactions(transaction_id, amount, transaction_date)" +
                 " VALUES (6, 120, '2024-07-03'); "
-            )
-    ]
+            ),
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -44,31 +44,31 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g3201_3300/" +
-                                "s3220_odd_and_even_transactions/script.sql"
-                        )
+                                "s3220_odd_and_even_transactions/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
                     assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String>("2024-07-01")
+                        equalTo<String>("2024-07-01"),
                     )
                     assertThat<String>(resultSet.getNString(2), equalTo<String>("75"))
                     assertThat<String>(resultSet.getNString(3), equalTo<String>("350"))
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
                     assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String>("2024-07-02")
+                        equalTo<String>("2024-07-02"),
                     )
                     assertThat<String>(resultSet.getNString(2), equalTo<String>("0"))
                     assertThat<String>(resultSet.getNString(3), equalTo<String>("350"))
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
                     assertThat<String>(
                         resultSet.getNString(1),
-                        equalTo<String>("2024-07-03")
+                        equalTo<String>("2024-07-03"),
                     )
                     assertThat<String>(resultSet.getNString(2), equalTo<String>("0"))
                     assertThat<String>(resultSet.getNString(3), equalTo<String>("120"))

@@ -14,17 +14,18 @@ internal class SolutionTest {
                         charArrayOf('(', '(', '('),
                         charArrayOf(')', '(', ')'),
                         charArrayOf('(', '(', ')'),
-                        charArrayOf('(', '(', ')')
-                    )
+                        charArrayOf('(', '(', ')'),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
     @Test
     fun hasValidPath2() {
         assertThat(
-            Solution().hasValidPath(arrayOf(charArrayOf(')', ')'), charArrayOf('(', '('))), equalTo(false)
+            Solution().hasValidPath(arrayOf(charArrayOf(')', ')'), charArrayOf('(', '('))),
+            equalTo(false),
         )
     }
 }

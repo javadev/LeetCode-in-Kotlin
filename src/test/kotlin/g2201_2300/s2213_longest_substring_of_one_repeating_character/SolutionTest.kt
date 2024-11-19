@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestRepeating() {
         assertThat(
             Solution().longestRepeating("babacc", "bcb", intArrayOf(1, 3, 3)),
-            equalTo(intArrayOf(3, 3, 4))
+            equalTo(intArrayOf(3, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun longestRepeating2() {
         assertThat(
             Solution().longestRepeating("abyzz", "aa", intArrayOf(2, 1)),
-            equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3)),
         )
     }
 }

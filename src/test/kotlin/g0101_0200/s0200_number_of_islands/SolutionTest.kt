@@ -11,11 +11,13 @@ internal class SolutionTest {
             Solution()
                 .numIslands(
                     arrayOf(
-                        charArrayOf('1', '1', '1', '1', '0'), charArrayOf('1', '1', '0', '1', '0'),
-                        charArrayOf('1', '1', '0', '0', '0'), charArrayOf('0', '0', '0', '0', '0')
-                    )
+                        charArrayOf('1', '1', '1', '1', '0'),
+                        charArrayOf('1', '1', '0', '1', '0'),
+                        charArrayOf('1', '1', '0', '0', '0'),
+                        charArrayOf('0', '0', '0', '0', '0'),
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,11 +27,13 @@ internal class SolutionTest {
             Solution()
                 .numIslands(
                     arrayOf(
-                        charArrayOf('1', '1', '0', '0', '0'), charArrayOf('1', '1', '0', '0', '0'),
-                        charArrayOf('0', '0', '1', '0', '0'), charArrayOf('0', '0', '0', '1', '1')
-                    )
+                        charArrayOf('1', '1', '0', '0', '0'),
+                        charArrayOf('1', '1', '0', '0', '0'),
+                        charArrayOf('0', '0', '1', '0', '0'),
+                        charArrayOf('0', '0', '0', '1', '1'),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

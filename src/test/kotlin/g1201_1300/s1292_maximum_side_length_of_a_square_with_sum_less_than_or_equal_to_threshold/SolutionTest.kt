@@ -12,11 +12,12 @@ internal class SolutionTest {
                 .maxSideLength(
                     arrayOf(
                         intArrayOf(1, 1, 3, 2, 4, 3, 2),
-                        intArrayOf(1, 1, 3, 2, 4, 3, 2), intArrayOf(1, 1, 3, 2, 4, 3, 2)
+                        intArrayOf(1, 1, 3, 2, 4, 3, 2),
+                        intArrayOf(1, 1, 3, 2, 4, 3, 2),
                     ),
-                    4
+                    4,
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -26,12 +27,15 @@ internal class SolutionTest {
             Solution()
                 .maxSideLength(
                     arrayOf(
-                        intArrayOf(2, 2, 2, 2, 2), intArrayOf(2, 2, 2, 2, 2),
-                        intArrayOf(2, 2, 2, 2, 2), intArrayOf(2, 2, 2, 2, 2), intArrayOf(2, 2, 2, 2, 2)
+                        intArrayOf(2, 2, 2, 2, 2),
+                        intArrayOf(2, 2, 2, 2, 2),
+                        intArrayOf(2, 2, 2, 2, 2),
+                        intArrayOf(2, 2, 2, 2, 2),
+                        intArrayOf(2, 2, 2, 2, 2),
                     ),
-                    1
+                    1,
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

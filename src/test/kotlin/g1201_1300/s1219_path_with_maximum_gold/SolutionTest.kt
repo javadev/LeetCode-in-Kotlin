@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumGold() {
         assertThat(
             Solution().getMaximumGold(arrayOf(intArrayOf(0, 6, 0), intArrayOf(5, 8, 7), intArrayOf(0, 9, 0))),
-            equalTo(24)
+            equalTo(24),
         )
     }
 
@@ -23,10 +23,10 @@ internal class SolutionTest {
                         intArrayOf(2, 0, 6),
                         intArrayOf(3, 4, 5),
                         intArrayOf(0, 3, 0),
-                        intArrayOf(9, 0, 20)
-                    )
+                        intArrayOf(9, 0, 20),
+                    ),
                 ),
-            equalTo(28)
+            equalTo(28),
         )
     }
 }

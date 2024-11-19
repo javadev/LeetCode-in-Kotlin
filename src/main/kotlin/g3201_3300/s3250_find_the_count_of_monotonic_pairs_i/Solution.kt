@@ -35,8 +35,11 @@ class Solution {
             for (j in 1 until currCases.size) {
                 val prevCases =
                     if (j < cases[i - 1]!!.size
-                    ) cases[i - 1]!![j]
-                    else cases[i - 1]!![cases[i - 1]!!.size - 1]
+                    ) {
+                        cases[i - 1]!![j]
+                    } else {
+                        cases[i - 1]!![cases[i - 1]!!.size - 1]
+                    }
                 currCases[j] = (currCases[j - 1] + prevCases) % (1000000000 + 7)
             }
             cases[i] = currCases

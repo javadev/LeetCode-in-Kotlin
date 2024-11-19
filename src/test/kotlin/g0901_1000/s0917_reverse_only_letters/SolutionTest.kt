@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun reverseOnlyLetters3() {
         assertThat(
             Solution().reverseOnlyLetters("Test1ng-Leet=code-Q!"),
-            equalTo("Qedo1ct-eeLg=ntse-T!")
+            equalTo("Qedo1ct-eeLg=ntse-T!"),
         )
     }
 }

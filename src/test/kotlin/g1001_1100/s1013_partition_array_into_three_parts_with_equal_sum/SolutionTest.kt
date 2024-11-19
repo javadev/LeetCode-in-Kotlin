@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canThreePartsEqualSum() {
         assertThat(
             Solution().canThreePartsEqualSum(intArrayOf(0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun canThreePartsEqualSum2() {
         assertThat(
             Solution().canThreePartsEqualSum(intArrayOf(0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun canThreePartsEqualSum3() {
         assertThat(
             Solution().canThreePartsEqualSum(intArrayOf(3, 3, 6, 5, -2, 2, 5, 1, -9, 4)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

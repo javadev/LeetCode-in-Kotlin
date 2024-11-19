@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun findUnsortedSubarray() {
         assertThat(
-            Solution().findUnsortedSubarray(intArrayOf(2, 6, 4, 8, 10, 9, 15)), equalTo(5)
+            Solution().findUnsortedSubarray(intArrayOf(2, 6, 4, 8, 10, 9, 15)),
+            equalTo(5),
         )
     }
 

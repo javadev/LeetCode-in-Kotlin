@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .makeArrayIncreasing(intArrayOf(1, 5, 3, 6, 7), intArrayOf(1, 3, 2, 4)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun makeArrayIncreasing2() {
         assertThat(
             Solution().makeArrayIncreasing(intArrayOf(1, 5, 3, 6, 7), intArrayOf(4, 3, 1)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .makeArrayIncreasing(intArrayOf(1, 5, 3, 6, 7), intArrayOf(1, 6, 3, 3)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

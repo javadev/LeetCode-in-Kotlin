@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun bagOfTokensScore2() {
         assertThat(
-            Solution().bagOfTokensScore(intArrayOf(100, 200, 300, 400), 200), equalTo(2)
+            Solution().bagOfTokensScore(intArrayOf(100, 200, 300, 400), 200),
+            equalTo(2),
         )
     }
 }

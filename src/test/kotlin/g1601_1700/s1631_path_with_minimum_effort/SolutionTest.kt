@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumEffortPath() {
         assertThat(
             Solution().minimumEffortPath(arrayOf(intArrayOf(1, 2, 2), intArrayOf(3, 8, 2), intArrayOf(5, 3, 5))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumEffortPath2() {
         assertThat(
             Solution().minimumEffortPath(arrayOf(intArrayOf(1, 2, 3), intArrayOf(3, 8, 4), intArrayOf(5, 3, 5))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -31,10 +31,10 @@ internal class SolutionTest {
                         intArrayOf(1, 2, 1, 2, 1),
                         intArrayOf(1, 2, 1, 2, 1),
                         intArrayOf(1, 2, 1, 2, 1),
-                        intArrayOf(1, 1, 1, 2, 1)
-                    )
+                        intArrayOf(1, 1, 1, 2, 1),
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

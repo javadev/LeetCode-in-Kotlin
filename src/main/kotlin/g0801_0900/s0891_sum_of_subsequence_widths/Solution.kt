@@ -26,7 +26,7 @@ class Solution {
         + nums[1]*(pow[1]-1) + nums[2]*(pow[2]-1) + .... + nums[5]*(pow[5]-1)
 
         (-1)*A[i]*(pow[l-1-i]-1) + A[i]*(pow[i]-1)
-    */
+     */
     fun sumSubseqWidths(nums: IntArray): Int {
         val mod = 1000000007
         nums.sort()

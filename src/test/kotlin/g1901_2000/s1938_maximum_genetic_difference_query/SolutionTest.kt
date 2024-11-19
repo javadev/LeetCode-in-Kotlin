@@ -13,10 +13,11 @@ internal class SolutionTest {
                     intArrayOf(-1, 0, 1, 1),
                     arrayOf(
                         intArrayOf(0, 2),
-                        intArrayOf(3, 2), intArrayOf(2, 5)
-                    )
+                        intArrayOf(3, 2),
+                        intArrayOf(2, 5),
+                    ),
                 ),
-            equalTo(intArrayOf(2, 3, 7))
+            equalTo(intArrayOf(2, 3, 7)),
         )
     }
 
@@ -26,9 +27,9 @@ internal class SolutionTest {
             Solution()
                 .maxGeneticDifference(
                     intArrayOf(3, 7, -1, 2, 0, 7, 0, 2),
-                    arrayOf(intArrayOf(4, 6), intArrayOf(1, 15), intArrayOf(0, 5))
+                    arrayOf(intArrayOf(4, 6), intArrayOf(1, 15), intArrayOf(0, 5)),
                 ),
-            equalTo(intArrayOf(6, 14, 7))
+            equalTo(intArrayOf(6, 14, 7)),
         )
     }
 }

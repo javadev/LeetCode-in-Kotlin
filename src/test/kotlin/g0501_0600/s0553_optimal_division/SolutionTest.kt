@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun optimalDivision() {
         assertThat(
             Solution().optimalDivision(intArrayOf(1000, 100, 10, 2)),
-            equalTo("1000/(100/10/2)")
+            equalTo("1000/(100/10/2)"),
         )
     }
 

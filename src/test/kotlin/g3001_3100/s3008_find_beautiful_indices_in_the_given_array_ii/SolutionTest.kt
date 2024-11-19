@@ -10,9 +10,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .beautifulIndices(
-                    "isawsquirrelnearmysquirrelhouseohmy", "my", "squirrel", 15
+                    "isawsquirrelnearmysquirrelhouseohmy",
+                    "my",
+                    "squirrel",
+                    15,
                 ),
-            equalTo(mutableListOf(16, 33))
+            equalTo(mutableListOf(16, 33)),
         )
     }
 

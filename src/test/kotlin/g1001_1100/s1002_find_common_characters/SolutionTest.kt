@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun commonChars() {
         assertThat(
             Solution().commonChars(arrayOf("bella", "label", "roller")),
-            equalTo(listOf("e", "l", "l"))
+            equalTo(listOf("e", "l", "l")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun commonChars2() {
         assertThat(
             Solution().commonChars(arrayOf("cool", "lock", "cook")),
-            equalTo(listOf("c", "o"))
+            equalTo(listOf("c", "o")),
         )
     }
 }

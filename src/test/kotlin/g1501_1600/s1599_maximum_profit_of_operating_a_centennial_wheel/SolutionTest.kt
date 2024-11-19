@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun minOperationsMaxProfit3() {
         assertThat(
             Solution().minOperationsMaxProfit(intArrayOf(3, 4, 0, 5, 1), 1, 92),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

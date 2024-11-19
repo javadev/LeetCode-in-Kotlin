@@ -10,14 +10,15 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxDistance(intArrayOf(55, 30, 5, 4, 2), intArrayOf(100, 20, 10, 10, 5)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
     @Test
     fun maxDistance2() {
         assertThat(
-            Solution().maxDistance(intArrayOf(2, 2, 2), intArrayOf(10, 10, 1)), equalTo(1)
+            Solution().maxDistance(intArrayOf(2, 2, 2), intArrayOf(10, 10, 1)),
+            equalTo(1),
         )
     }
 
@@ -26,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxDistance(intArrayOf(30, 29, 19, 5), intArrayOf(25, 25, 25, 25, 25)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

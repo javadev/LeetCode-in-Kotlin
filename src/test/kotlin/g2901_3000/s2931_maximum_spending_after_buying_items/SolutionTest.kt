@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .maxSpending(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[8,5,2],[6,4,1],[9,7,3]"
-                    )
+                        "[8,5,2],[6,4,1],[9,7,3]",
+                    ),
                 ),
-            equalTo(285L)
+            equalTo(285L),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .maxSpending(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[10,8,6,4,2],[9,7,5,3,2]"
-                    )
+                        "[10,8,6,4,2],[9,7,5,3,2]",
+                    ),
                 ),
-            equalTo(386L)
+            equalTo(386L),
         )
     }
 }

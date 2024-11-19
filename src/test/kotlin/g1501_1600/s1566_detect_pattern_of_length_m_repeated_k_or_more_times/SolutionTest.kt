@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun containsPattern() {
         assertThat(
-            Solution().containsPattern(intArrayOf(1, 2, 4, 4, 4, 4), 1, 3), equalTo(true)
+            Solution().containsPattern(intArrayOf(1, 2, 4, 4, 4, 4), 1, 3),
+            equalTo(true),
         )
     }
 
@@ -16,14 +17,15 @@ internal class SolutionTest {
     fun containsPattern2() {
         assertThat(
             Solution().containsPattern(intArrayOf(1, 2, 1, 2, 1, 1, 1, 3), 2, 2),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
     @Test
     fun containsPattern3() {
         assertThat(
-            Solution().containsPattern(intArrayOf(1, 2, 1, 2, 1, 3), 2, 3), equalTo(false)
+            Solution().containsPattern(intArrayOf(1, 2, 1, 2, 1, 3), 2, 3),
+            equalTo(false),
         )
     }
 }

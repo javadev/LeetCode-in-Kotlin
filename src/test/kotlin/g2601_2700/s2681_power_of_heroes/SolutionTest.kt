@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumOfPower() {
         assertThat(
             Solution().sumOfPower(intArrayOf(2, 1, 4)),
-            equalTo(141)
+            equalTo(141),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumOfPower2() {
         assertThat(
             Solution().sumOfPower(intArrayOf(1, 1, 1)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

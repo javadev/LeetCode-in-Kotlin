@@ -12,9 +12,10 @@ internal class SolutionTest {
             equalTo(
                 listOf(
                     listOf(1, 3, 4, 2),
-                    listOf(1, 3), listOf(1)
-                )
-            )
+                    listOf(1, 3),
+                    listOf(1),
+                ),
+            ),
         )
     }
 

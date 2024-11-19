@@ -10,9 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findCrossingTime(
-                    1, 3, arrayOf(intArrayOf(1, 1, 2, 1), intArrayOf(1, 1, 3, 1), intArrayOf(1, 1, 4, 1))
+                    1,
+                    3,
+                    arrayOf(intArrayOf(1, 1, 2, 1), intArrayOf(1, 1, 3, 1), intArrayOf(1, 1, 4, 1)),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -20,7 +22,7 @@ internal class SolutionTest {
     fun findCrossingTime2() {
         assertThat(
             Solution().findCrossingTime(3, 2, arrayOf(intArrayOf(1, 9, 1, 8), intArrayOf(10, 10, 10, 10))),
-            equalTo(50)
+            equalTo(50),
         )
     }
 }

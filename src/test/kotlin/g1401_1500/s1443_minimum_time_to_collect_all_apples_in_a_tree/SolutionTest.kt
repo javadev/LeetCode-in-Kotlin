@@ -12,13 +12,16 @@ internal class SolutionTest {
                 .minTime(
                     7,
                     arrayOf(
-                        intArrayOf(0, 1), intArrayOf(0, 2),
-                        intArrayOf(1, 4), intArrayOf(1, 5), intArrayOf(2, 3),
-                        intArrayOf(2, 6)
+                        intArrayOf(0, 1),
+                        intArrayOf(0, 2),
+                        intArrayOf(1, 4),
+                        intArrayOf(1, 5),
+                        intArrayOf(2, 3),
+                        intArrayOf(2, 6),
                     ),
-                    mutableListOf(false, false, true, false, true, true, false)
+                    mutableListOf(false, false, true, false, true, true, false),
                 ),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -29,12 +32,16 @@ internal class SolutionTest {
                 .minTime(
                     7,
                     arrayOf(
-                        intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 4),
-                        intArrayOf(1, 5), intArrayOf(2, 3), intArrayOf(2, 6)
+                        intArrayOf(0, 1),
+                        intArrayOf(0, 2),
+                        intArrayOf(1, 4),
+                        intArrayOf(1, 5),
+                        intArrayOf(2, 3),
+                        intArrayOf(2, 6),
                     ),
-                    mutableListOf(false, false, true, false, false, true, false)
+                    mutableListOf(false, false, true, false, false, true, false),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -45,12 +52,16 @@ internal class SolutionTest {
                 .minTime(
                     7,
                     arrayOf(
-                        intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 4),
-                        intArrayOf(1, 5), intArrayOf(2, 3), intArrayOf(2, 6)
+                        intArrayOf(0, 1),
+                        intArrayOf(0, 2),
+                        intArrayOf(1, 4),
+                        intArrayOf(1, 5),
+                        intArrayOf(2, 3),
+                        intArrayOf(2, 6),
                     ),
-                    mutableListOf(false, false, false, false, false, false, false)
+                    mutableListOf(false, false, false, false, false, false, false),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

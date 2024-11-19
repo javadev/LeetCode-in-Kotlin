@@ -36,7 +36,7 @@ class Solution {
         node: Int,
         calculatedFrequencies: HashMap<Int, IntArray>,
         status: IntArray,
-        colors: String
+        colors: String,
     ): IntArray? {
         if (calculatedFrequencies.containsKey(node)) {
             return calculatedFrequencies[node]

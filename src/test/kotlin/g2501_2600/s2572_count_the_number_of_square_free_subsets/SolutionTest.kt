@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun squareFreeSubsets() {
         assertThat(
             Solution().squareFreeSubsets(intArrayOf(3, 4, 4, 5)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun squareFreeSubsets2() {
         assertThat(
             Solution().squareFreeSubsets(intArrayOf(1)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun squareFreeSubsets3() {
         assertThat(
             Solution().squareFreeSubsets(intArrayOf(26, 6, 4, 27, 6, 18)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun squareFreeSubsets4() {
         assertThat(
             Solution().squareFreeSubsets(intArrayOf(8, 11, 17, 2, 25, 29, 21, 20, 4, 22)),
-            equalTo(39)
+            equalTo(39),
         )
     }
 }

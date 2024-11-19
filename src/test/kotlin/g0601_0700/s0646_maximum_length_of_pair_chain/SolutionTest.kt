@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun findLongestChain() {
         assertThat(
-            Solution().findLongestChain(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4))), equalTo(2)
+            Solution().findLongestChain(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4))),
+            equalTo(2),
         )
     }
 
     @Test
     fun findLongestChain2() {
         assertThat(
-            Solution().findLongestChain(arrayOf(intArrayOf(1, 2), intArrayOf(7, 8), intArrayOf(4, 5))), equalTo(3)
+            Solution().findLongestChain(arrayOf(intArrayOf(1, 2), intArrayOf(7, 8), intArrayOf(4, 5))),
+            equalTo(3),
         )
     }
 }

@@ -13,7 +13,7 @@ internal class SolutionTest {
             intArrayOf(3, 7, 15),
             intArrayOf(5, 12, 12),
             intArrayOf(15, 20, 10),
-            intArrayOf(19, 24, 8)
+            intArrayOf(19, 24, 8),
         )
         val expected = arrayOf(
             intArrayOf(2, 10),
@@ -22,7 +22,7 @@ internal class SolutionTest {
             intArrayOf(12, 0),
             intArrayOf(15, 10),
             intArrayOf(20, 8),
-            intArrayOf(24, 0)
+            intArrayOf(24, 0),
         )
         assertThat(Solution().getSkyline(buildings), equalTo(ArrayUtils.getLists(expected)))
     }

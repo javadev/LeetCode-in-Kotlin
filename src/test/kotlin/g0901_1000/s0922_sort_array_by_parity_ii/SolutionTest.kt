@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sortArrayByParityII() {
         assertThat(
             Solution().sortArrayByParityII(intArrayOf(4, 2, 5, 7)),
-            equalTo(intArrayOf(4, 5, 2, 7))
+            equalTo(intArrayOf(4, 5, 2, 7)),
         )
     }
 

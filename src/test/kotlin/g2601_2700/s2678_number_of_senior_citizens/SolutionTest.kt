@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countSeniors() {
         assertThat(
             Solution().countSeniors(arrayOf("7868190130M7522", "5303914400F9211", "9273338290F4010")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countSeniors2() {
         assertThat(
             Solution().countSeniors(arrayOf("1313579440F2036", "2921522980M5644")),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

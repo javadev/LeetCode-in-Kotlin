@@ -19,8 +19,8 @@ import javax.sql.DataSource
         "CREATE TABLE Person(id INTEGER PRIMARY KEY, email VARCHAR); " +
             "INSERT INTO Person(id, email) VALUES (1, 'john@example.com'); " +
             "INSERT INTO Person(id, email) VALUES (2, 'bob@example.com'); " +
-            "INSERT INTO Person(id, email) VALUES (3, 'john@example.com'); "
-    ]
+            "INSERT INTO Person(id, email) VALUES (3, 'john@example.com'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -31,12 +31,12 @@ internal class MysqlTest {
                 statement.executeUpdate(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0196_delete_duplicate_emails/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0196_delete_duplicate_emails/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 )
                 val resultSet = statement.executeQuery("select email from Person")
                 assertThat(resultSet.next(), equalTo(true))

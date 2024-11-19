@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countSubgraphsForEachDiameter(4, arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(2, 4))),
-            equalTo(intArrayOf(3, 4, 0))
+            equalTo(intArrayOf(3, 4, 0)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun countSubgraphsForEachDiameter2() {
         assertThat(
             Solution().countSubgraphsForEachDiameter(2, arrayOf(intArrayOf(1, 2))),
-            equalTo(intArrayOf(1))
+            equalTo(intArrayOf(1)),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun countSubgraphsForEachDiameter3() {
         assertThat(
             Solution().countSubgraphsForEachDiameter(3, arrayOf(intArrayOf(1, 2), intArrayOf(2, 3))),
-            equalTo(intArrayOf(2, 1))
+            equalTo(intArrayOf(2, 1)),
         )
     }
 }

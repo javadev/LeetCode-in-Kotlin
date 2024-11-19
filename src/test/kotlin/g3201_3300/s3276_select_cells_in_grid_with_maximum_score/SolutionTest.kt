@@ -11,9 +11,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxScore(
-                    getLists(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 3, 2), intArrayOf(1, 1, 1)))
+                    getLists(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 3, 2), intArrayOf(1, 1, 1))),
                 ),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -21,7 +21,7 @@ internal class SolutionTest {
     fun maxScore2() {
         assertThat(
             Solution().maxScore(getLists(arrayOf(intArrayOf(8, 7, 6), intArrayOf(8, 3, 2)))),
-            equalTo(15)
+            equalTo(15),
         )
     }
 }

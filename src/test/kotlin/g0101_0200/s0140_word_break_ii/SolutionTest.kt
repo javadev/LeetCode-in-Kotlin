@@ -10,7 +10,7 @@ internal class SolutionTest {
         val wordDict = listOf("cat", "cats", "and", "sand", "dog")
         assertThat(
             Solution().wordBreak("catsanddog", wordDict),
-            equalTo(listOf("cat sand dog", "cats and dog"))
+            equalTo(listOf("cat sand dog", "cats and dog")),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
                 listOf(
                     "pine apple pen apple",
                     "pine applepen apple",
-                    "pineapple pen apple"
-                )
-            )
+                    "pineapple pen apple",
+                ),
+            ),
         )
     }
 
@@ -33,7 +33,8 @@ internal class SolutionTest {
     fun wordBreak3() {
         val wordDict = listOf("cats", "dog", "sand", "and", "cat")
         assertThat(
-            Solution().wordBreak("catsandog", wordDict), equalTo(emptyList())
+            Solution().wordBreak("catsandog", wordDict),
+            equalTo(emptyList()),
         )
     }
 }

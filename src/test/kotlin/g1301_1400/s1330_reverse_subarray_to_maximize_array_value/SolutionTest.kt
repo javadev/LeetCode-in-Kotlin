@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maxValueAfterReverse2() {
         assertThat(
             Solution().maxValueAfterReverse(intArrayOf(2, 4, 9, 24, 2, 1, 10)),
-            equalTo(68)
+            equalTo(68),
         )
     }
 }

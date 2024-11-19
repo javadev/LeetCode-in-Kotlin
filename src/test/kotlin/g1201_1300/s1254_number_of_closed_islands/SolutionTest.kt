@@ -8,9 +8,11 @@ internal class SolutionTest {
     @Test
     fun closedIsland() {
         val grid = arrayOf(
-            intArrayOf(1, 1, 1, 1, 1, 1, 1, 0), intArrayOf(1, 0, 0, 0, 0, 1, 1, 0),
+            intArrayOf(1, 1, 1, 1, 1, 1, 1, 0),
+            intArrayOf(1, 0, 0, 0, 0, 1, 1, 0),
             intArrayOf(1, 0, 1, 0, 1, 1, 1, 0),
-            intArrayOf(1, 0, 0, 0, 0, 1, 0, 1), intArrayOf(1, 1, 1, 1, 1, 1, 1, 0)
+            intArrayOf(1, 0, 0, 0, 0, 1, 0, 1),
+            intArrayOf(1, 1, 1, 1, 1, 1, 1, 0),
         )
         assertThat(Solution().closedIsland(grid), equalTo(2))
     }
@@ -24,9 +26,13 @@ internal class SolutionTest {
     @Test
     fun closedIsland3() {
         val grid = arrayOf(
-            intArrayOf(1, 1, 1, 1, 1, 1, 1), intArrayOf(1, 0, 0, 0, 0, 0, 1),
-            intArrayOf(1, 0, 1, 1, 1, 0, 1), intArrayOf(1, 0, 1, 0, 1, 0, 1),
-            intArrayOf(1, 0, 1, 1, 1, 0, 1), intArrayOf(1, 0, 0, 0, 0, 0, 1), intArrayOf(1, 1, 1, 1, 1, 1, 1)
+            intArrayOf(1, 1, 1, 1, 1, 1, 1),
+            intArrayOf(1, 0, 0, 0, 0, 0, 1),
+            intArrayOf(1, 0, 1, 1, 1, 0, 1),
+            intArrayOf(1, 0, 1, 0, 1, 0, 1),
+            intArrayOf(1, 0, 1, 1, 1, 0, 1),
+            intArrayOf(1, 0, 0, 0, 0, 0, 1),
+            intArrayOf(1, 1, 1, 1, 1, 1, 1),
         )
         assertThat(Solution().closedIsland(grid), equalTo(2))
     }

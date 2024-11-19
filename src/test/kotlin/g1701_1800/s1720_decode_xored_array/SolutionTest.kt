@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun decode2() {
         assertThat(
             Solution().decode(intArrayOf(6, 2, 7, 3), 4),
-            equalTo(intArrayOf(4, 2, 0, 7, 4))
+            equalTo(intArrayOf(4, 2, 0, 7, 4)),
         )
     }
 }

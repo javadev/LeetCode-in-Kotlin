@@ -47,7 +47,7 @@ class Solution {
         val second = points[j]
         val third = points[k]
         return abs(
-            first[0] * (second[1] - third[1]) + second[0] * (third[1] - first[1]) + third[0] * (first[1] - second[1])
+            first[0] * (second[1] - third[1]) + second[0] * (third[1] - first[1]) + third[0] * (first[1] - second[1]),
         ).toDouble()
     }
 }

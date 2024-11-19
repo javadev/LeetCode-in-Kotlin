@@ -18,7 +18,7 @@ class Solution {
         watchedVideos: List<List<String>>,
         friends: Array<IntArray>,
         id: Int,
-        level: Int
+        level: Int,
     ): List<String> {
         val visited = BooleanArray(watchedVideos.size)
         val queue: Queue<Int> = LinkedList()
@@ -51,7 +51,7 @@ class Solution {
                 map[video]!!.count++
             }
         }
-        val pq = PriorityQueue { v1: VideoCount, v2: VideoCount
+        val pq = PriorityQueue { v1: VideoCount, v2: VideoCount,
             ->
             if (v1.count == v2.count) v1.v.compareTo(v2.v) else v1.count - v2.count
         }

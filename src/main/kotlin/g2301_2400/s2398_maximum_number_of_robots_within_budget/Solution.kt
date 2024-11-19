@@ -21,7 +21,6 @@ class Solution {
         var left = 0
         var right = 0
         while (right < n) {
-
             // add right into the sliding window, so the window becomes [left, right].
             // update sliding window max and window sum.
             while (end - front > 0 && chargeTimes[deque[end - 1]] <= chargeTimes[right]) {

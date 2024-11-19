@@ -23,7 +23,7 @@ internal class SolutionTest {
     fun preorderTraversal3() {
         assertThat(
             Solution().preorderTraversal(TreeNode(1)),
-            equalTo(listOf(1))
+            equalTo(listOf(1)),
         )
     }
 }

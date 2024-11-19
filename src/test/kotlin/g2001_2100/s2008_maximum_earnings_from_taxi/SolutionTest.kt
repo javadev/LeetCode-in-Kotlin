@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun maxTaxiEarnings() {
         assertThat(
-            Solution().maxTaxiEarnings(5, arrayOf(intArrayOf(2, 5, 4), intArrayOf(1, 5, 1))), equalTo(7L)
+            Solution().maxTaxiEarnings(5, arrayOf(intArrayOf(2, 5, 4), intArrayOf(1, 5, 1))),
+            equalTo(7L),
         )
     }
 
@@ -24,10 +25,10 @@ internal class SolutionTest {
                         intArrayOf(10, 12, 3),
                         intArrayOf(11, 12, 2),
                         intArrayOf(12, 15, 2),
-                        intArrayOf(13, 18, 1)
-                    )
+                        intArrayOf(13, 18, 1),
+                    ),
                 ),
-            equalTo(20L)
+            equalTo(20L),
         )
     }
 }

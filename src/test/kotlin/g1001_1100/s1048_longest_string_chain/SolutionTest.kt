@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestStrChain() {
         assertThat(
             Solution().longestStrChain(arrayOf("a", "b", "ba", "bca", "bda", "bdca")),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .longestStrChain(arrayOf("xbc", "pcxbcf", "xb", "cxbc", "pcxbc")),
-            equalTo(5)
+            equalTo(5),
         )
     }
 

@@ -23,7 +23,7 @@ internal class NodeTest {
         val node4and1and3 = Node(4, listOf(node1, node3))
         val node = Node(
             5,
-            listOf(node1and2and4, node2and1and3, node3and2and4, node4and1and3)
+            listOf(node1and2and4, node2and1and3, node3and2and4, node4and1and3),
         )
         assertThat(node.toString(), equalTo("[[2,4],[1,3],[2,4],[1,3]]"))
     }

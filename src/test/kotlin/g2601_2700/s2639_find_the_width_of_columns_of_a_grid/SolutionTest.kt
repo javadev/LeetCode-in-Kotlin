@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().findColumnWidth(arrayOf(intArrayOf(1), intArrayOf(22), intArrayOf(333))),
             equalTo(
-                intArrayOf(3)
-            )
+                intArrayOf(3),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().findColumnWidth(arrayOf(intArrayOf(-15, 1, 3), intArrayOf(15, 7, 12), intArrayOf(5, 6, -2))),
             equalTo(
-                intArrayOf(3, 1, 2)
-            )
+                intArrayOf(3, 1, 2),
+            ),
         )
     }
 }

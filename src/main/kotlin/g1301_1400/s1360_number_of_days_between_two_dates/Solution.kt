@@ -8,7 +8,7 @@ class Solution {
         val strings2 = date2.split("-").dropLastWhile { it.isEmpty() }.toTypedArray()
         return Math.abs(
             julianDay(strings1[0].toInt(), strings1[1].toInt(), strings1[2].toInt()) -
-                julianDay(strings2[0].toInt(), strings2[1].toInt(), strings2[2].toInt())
+                julianDay(strings2[0].toInt(), strings2[1].toInt(), strings2[2].toInt()),
         )
     }
 

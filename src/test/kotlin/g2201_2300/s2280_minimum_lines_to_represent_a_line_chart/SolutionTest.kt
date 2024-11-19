@@ -18,10 +18,10 @@ internal class SolutionTest {
                         intArrayOf(5, 4),
                         intArrayOf(6, 3),
                         intArrayOf(7, 2),
-                        intArrayOf(8, 1)
-                    )
+                        intArrayOf(8, 1),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun minimumLines2() {
         assertThat(
             Solution().minimumLines(arrayOf(intArrayOf(3, 4), intArrayOf(1, 2), intArrayOf(7, 8), intArrayOf(2, 3))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

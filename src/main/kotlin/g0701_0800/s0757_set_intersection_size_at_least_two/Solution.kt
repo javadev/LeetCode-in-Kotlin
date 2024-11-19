@@ -7,7 +7,9 @@ class Solution {
         intervals.sortWith { a, b ->
             if (a[1] == b[1]) {
                 b[0] - a[0]
-            } else a[1] - b[1]
+            } else {
+                a[1] - b[1]
+            }
         }
         val list: MutableList<Int> = ArrayList()
         list.add(intervals[0][1] - 1)

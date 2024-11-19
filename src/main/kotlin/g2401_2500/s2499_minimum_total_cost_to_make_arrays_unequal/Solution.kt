@@ -38,6 +38,8 @@ class Solution {
         }
         return if (lackBucket > 0) {
             -1
-        } else cost
+        } else {
+            cost
+        }
     }
 }

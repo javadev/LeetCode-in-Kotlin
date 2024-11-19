@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun replaceElements() {
         assertThat(
             Solution().replaceElements(intArrayOf(17, 18, 5, 4, 6, 1)),
-            equalTo(intArrayOf(18, 6, 6, 6, 1, -1))
+            equalTo(intArrayOf(18, 6, 6, 6, 1, -1)),
         )
     }
 

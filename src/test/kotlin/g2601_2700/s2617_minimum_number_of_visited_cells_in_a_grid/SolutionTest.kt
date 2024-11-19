@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(3, 4, 2, 1),
                     intArrayOf(4, 2, 3, 1),
                     intArrayOf(2, 1, 0, 0),
-                    intArrayOf(2, 4, 0, 0)
-                )
+                    intArrayOf(2, 4, 0, 0),
+                ),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -28,10 +28,10 @@ internal class SolutionTest {
                     intArrayOf(3, 4, 2, 1),
                     intArrayOf(4, 2, 1, 1),
                     intArrayOf(2, 1, 1, 0),
-                    intArrayOf(3, 4, 1, 0)
-                )
+                    intArrayOf(3, 4, 1, 0),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -39,7 +39,7 @@ internal class SolutionTest {
     fun minimumVisitedCells3() {
         assertThat(
             Solution().minimumVisitedCells(arrayOf(intArrayOf(2, 1, 0), intArrayOf(1, 0, 0))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

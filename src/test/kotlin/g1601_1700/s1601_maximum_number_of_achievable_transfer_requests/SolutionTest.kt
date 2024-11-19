@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(0, 1),
                         intArrayOf(1, 2),
                         intArrayOf(2, 0),
-                        intArrayOf(3, 4)
-                    )
+                        intArrayOf(3, 4),
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
     fun maximumRequests2() {
         assertThat(
             Solution().maximumRequests(3, arrayOf(intArrayOf(0, 0), intArrayOf(1, 2), intArrayOf(2, 1))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -37,9 +37,9 @@ internal class SolutionTest {
         assertThat(
             Solution().maximumRequests(
                 4,
-                arrayOf(intArrayOf(0, 3), intArrayOf(3, 1), intArrayOf(1, 2), intArrayOf(2, 0))
+                arrayOf(intArrayOf(0, 3), intArrayOf(3, 1), intArrayOf(1, 2), intArrayOf(2, 0)),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun kSum3() {
         assertThat(
             Solution().kSum(intArrayOf(-530219056, 353285209, 493533664), 6),
-            equalTo(-36685392L)
+            equalTo(-36685392L),
         )
     }
 }

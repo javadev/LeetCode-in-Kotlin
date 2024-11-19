@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun largestComponentSize3() {
         assertThat(
             Solution().largestComponentSize(intArrayOf(2, 3, 6, 7, 4, 12, 21, 39)),
-            equalTo(8)
+            equalTo(8),
         )
     }
 }

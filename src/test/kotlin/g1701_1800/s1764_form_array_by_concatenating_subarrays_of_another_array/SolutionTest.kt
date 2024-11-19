@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .canChoose(
                     arrayOf(intArrayOf(1, -1, -1), intArrayOf(3, -2, 0)),
-                    intArrayOf(1, -1, 0, 1, -1, -1, 3, -2, 0)
+                    intArrayOf(1, -1, 0, 1, -1, -1, 3, -2, 0),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .canChoose(
                     arrayOf(intArrayOf(10, -2), intArrayOf(1, 2, 3, 4)),
-                    intArrayOf(1, 2, 3, 4, 10, -2)
+                    intArrayOf(1, 2, 3, 4, 10, -2),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -34,7 +34,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canChoose(arrayOf(intArrayOf(1, 2, 3), intArrayOf(3, 4)), intArrayOf(7, 7, 1, 2, 3, 4, 7, 7)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

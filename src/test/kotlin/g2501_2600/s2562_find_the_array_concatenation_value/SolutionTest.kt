@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findTheArrayConcVal() {
         assertThat(
             Solution().findTheArrayConcVal(intArrayOf(7, 52, 2, 4)),
-            equalTo(596)
+            equalTo(596),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findTheArrayConcVal2() {
         assertThat(
             Solution().findTheArrayConcVal(intArrayOf(5, 14, 13, 8, 12)),
-            equalTo(673)
+            equalTo(673),
         )
     }
 }

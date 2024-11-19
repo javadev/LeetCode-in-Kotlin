@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun countAlternatingSubarrays2() {
         assertThat(
             Solution().countAlternatingSubarrays(intArrayOf(1, 0, 1, 0)),
-            equalTo(10L)
+            equalTo(10L),
         )
     }
 }

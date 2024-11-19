@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun partitionLabels() {
         assertThat(
             Solution().partitionLabels("ababcbacadefegdehijhklij"),
-            equalTo(listOf(9, 7, 8))
+            equalTo(listOf(9, 7, 8)),
         )
     }
 

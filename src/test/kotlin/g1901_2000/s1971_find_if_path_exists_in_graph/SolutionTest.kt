@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun validPath() {
         assertThat(
             Solution().validPath(3, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 0)), 0, 2),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -21,9 +21,9 @@ internal class SolutionTest {
                     6,
                     arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(3, 5), intArrayOf(5, 4), intArrayOf(4, 3)),
                     0,
-                    5
+                    5,
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

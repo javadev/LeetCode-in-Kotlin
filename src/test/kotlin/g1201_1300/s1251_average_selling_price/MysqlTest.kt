@@ -33,8 +33,8 @@ import javax.sql.DataSource
             "INSERT INTO UnitsSold(product_id, purchase_date, units)" +
             " VALUES (2, '2019-02-10', 200); " +
             "INSERT INTO UnitsSold(product_id, purchase_date, units)" +
-            " VALUES (2, '2019-03-22', 30); "
-    ]
+            " VALUES (2, '2019-03-22', 30); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -45,12 +45,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1201_1300/s1251_average_selling_price/script.sql"
-                        )
+                            "src/main/kotlin/g1201_1300/s1251_average_selling_price/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

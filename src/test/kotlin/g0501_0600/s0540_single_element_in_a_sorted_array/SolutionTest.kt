@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun singleNonDuplicate() {
         assertThat(
             Solution().singleNonDuplicate(intArrayOf(1, 1, 2, 3, 3, 4, 4, 8, 8)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
     @Test
     fun singleNonDuplicate2() {
         assertThat(
-            Solution().singleNonDuplicate(intArrayOf(3, 3, 7, 7, 10, 11, 11)), equalTo(10)
+            Solution().singleNonDuplicate(intArrayOf(3, 3, 7, 7, 10, 11, 11)),
+            equalTo(10),
         )
     }
 }

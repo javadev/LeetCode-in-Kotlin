@@ -14,9 +14,9 @@ internal class SolutionTest {
                     "acbe",
                     arrayOf("a", "b", "c", "c", "e", "d"),
                     arrayOf("b", "c", "b", "e", "b", "e"),
-                    intArrayOf(2, 5, 5, 1, 2, 20)
+                    intArrayOf(2, 5, 5, 1, 2, 20),
                 ),
-            equalTo(28L)
+            equalTo(28L),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
                     "acdeeghh",
                     arrayOf("bcd", "fgh", "thh"),
                     arrayOf("cde", "thh", "ghh"),
-                    intArrayOf(1, 3, 5)
+                    intArrayOf(1, 3, 5),
                 ),
-            equalTo(9L)
+            equalTo(9L),
         )
     }
 
@@ -44,9 +44,9 @@ internal class SolutionTest {
                     "addddddd",
                     arrayOf("bcd", "defgh"),
                     arrayOf("ddd", "ddddd"),
-                    intArrayOf(100, 1578)
+                    intArrayOf(100, 1578),
                 ),
-            equalTo(-1L)
+            equalTo(-1L),
         )
     }
 }

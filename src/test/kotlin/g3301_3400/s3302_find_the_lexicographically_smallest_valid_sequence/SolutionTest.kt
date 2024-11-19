@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun validSequence() {
         assertThat<IntArray>(
             Solution().validSequence("vbcca", "abc"),
-            equalTo<IntArray>(intArrayOf(0, 1, 2))
+            equalTo<IntArray>(intArrayOf(0, 1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun validSequence2() {
         assertThat<IntArray>(
             Solution().validSequence("bacdc", "abc"),
-            equalTo<IntArray>(intArrayOf(1, 2, 4))
+            equalTo<IntArray>(intArrayOf(1, 2, 4)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun validSequence3() {
         assertThat<IntArray>(
             Solution().validSequence("aaaaaa", "aaabc"),
-            equalTo<IntArray>(intArrayOf())
+            equalTo<IntArray>(intArrayOf()),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun validSequence4() {
         assertThat<IntArray>(
             Solution().validSequence("abc", "ab"),
-            equalTo<IntArray>(intArrayOf(0, 1))
+            equalTo<IntArray>(intArrayOf(0, 1)),
         )
     }
 }

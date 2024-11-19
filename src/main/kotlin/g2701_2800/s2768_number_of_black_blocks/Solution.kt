@@ -13,7 +13,8 @@ class Solution {
                 for (j in y until y + 2) {
                     if (i - 1 >= 0 && i < m && j - 1 >= 0 && j < n) {
                         count.merge(
-                            i * n + j, 1
+                            i * n + j,
+                            1,
                         ) { a: Int?, b: Int? -> Integer.sum(a!!, b!!) }
                     }
                 }

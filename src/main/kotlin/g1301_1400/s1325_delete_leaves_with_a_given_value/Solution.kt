@@ -53,6 +53,8 @@ class Solution {
         }
         return if (root.left == null && root.right == null && root.`val` == target) {
             true
-        } else hasTargetLeafNodes(root.left, target) || hasTargetLeafNodes(root.right, target)
+        } else {
+            hasTargetLeafNodes(root.left, target) || hasTargetLeafNodes(root.right, target)
+        }
     }
 }

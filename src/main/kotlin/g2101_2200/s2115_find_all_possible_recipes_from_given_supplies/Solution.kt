@@ -10,7 +10,7 @@ class Solution {
     fun findAllRecipes(
         recipes: Array<String>,
         ingredients: List<List<String>>,
-        supplies: Array<String>
+        supplies: Array<String>,
     ): List<String> {
         val indegree: MutableMap<String, Int> = HashMap()
         val supplySet: MutableSet<String> = HashSet()

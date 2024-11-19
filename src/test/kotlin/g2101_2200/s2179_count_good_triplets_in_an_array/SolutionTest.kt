@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun goodTriplets() {
         assertThat(
             Solution().goodTriplets(intArrayOf(2, 0, 1, 3), intArrayOf(0, 1, 2, 3)),
-            equalTo(1L)
+            equalTo(1L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun goodTriplets2() {
         assertThat(
             Solution().goodTriplets(intArrayOf(4, 0, 1, 3, 2), intArrayOf(4, 1, 0, 2, 3)),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 }

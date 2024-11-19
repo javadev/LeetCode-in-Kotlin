@@ -15,7 +15,7 @@ class Solution {
         edges: Array<IntArray>,
         source: Int,
         destination: Int,
-        target: Int
+        target: Int,
     ): Array<IntArray> {
         this.n = n
         g = arrayOfNulls(n)

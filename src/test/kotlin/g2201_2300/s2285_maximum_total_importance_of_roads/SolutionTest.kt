@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(2, 3),
                         intArrayOf(0, 2),
                         intArrayOf(1, 3),
-                        intArrayOf(2, 4)
-                    )
+                        intArrayOf(2, 4),
+                    ),
                 ),
-            equalTo(43L)
+            equalTo(43L),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
     fun maximumImportance2() {
         assertThat(
             Solution().maximumImportance(5, arrayOf(intArrayOf(0, 3), intArrayOf(2, 4), intArrayOf(1, 3))),
-            equalTo(20L)
+            equalTo(20L),
         )
     }
 }

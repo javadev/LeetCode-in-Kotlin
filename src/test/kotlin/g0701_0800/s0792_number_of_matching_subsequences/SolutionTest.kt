@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numMatchingSubseq() {
         assertThat(
             Solution().numMatchingSubseq("abcde", arrayOf("a", "bb", "acd", "ace")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -18,9 +18,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numMatchingSubseq(
-                    "dsahjpjauf", arrayOf("ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax")
+                    "dsahjpjauf",
+                    arrayOf("ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

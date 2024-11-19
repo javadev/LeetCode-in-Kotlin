@@ -23,8 +23,8 @@ import javax.sql.DataSource
             "INSERT INTO Customers(id, name) VALUES (4, 'Max'); " +
             "CREATE TABLE Orders(id INTEGER, customerId INTEGER); " +
             "INSERT INTO Orders(id, customerId) VALUES (1, 3); " +
-            "INSERT INTO Orders(id, customerId) VALUES (2, 1); "
-    ]
+            "INSERT INTO Orders(id, customerId) VALUES (2, 1); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -35,12 +35,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0183_customers_who_never_order/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Henry"))

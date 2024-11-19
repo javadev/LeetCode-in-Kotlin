@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun fairCandySwap() {
         assertThat(
             Solution().fairCandySwap(intArrayOf(1, 1), intArrayOf(2, 2)),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun fairCandySwap2() {
         assertThat(
             Solution().fairCandySwap(intArrayOf(1, 2), intArrayOf(2, 3)),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun fairCandySwap3() {
         assertThat(
             Solution().fairCandySwap(intArrayOf(2), intArrayOf(1, 3)),
-            equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3)),
         )
     }
 }

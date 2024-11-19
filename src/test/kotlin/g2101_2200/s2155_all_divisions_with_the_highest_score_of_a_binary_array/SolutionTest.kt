@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxScoreIndices() {
         assertThat(
             Solution().maxScoreIndices(intArrayOf(0, 0, 1, 0)),
-            equalTo(mutableListOf(2, 4))
+            equalTo(mutableListOf(2, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxScoreIndices2() {
         assertThat(
             Solution().maxScoreIndices(intArrayOf(0, 0, 0)),
-            equalTo(mutableListOf(3))
+            equalTo(mutableListOf(3)),
         )
     }
 

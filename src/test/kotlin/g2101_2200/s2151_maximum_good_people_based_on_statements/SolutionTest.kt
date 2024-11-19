@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumGood() {
         assertThat(
             Solution().maximumGood(arrayOf(intArrayOf(2, 1, 2), intArrayOf(1, 2, 2), intArrayOf(2, 0, 2))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumGood2() {
         assertThat(
             Solution().maximumGood(arrayOf(intArrayOf(2, 0), intArrayOf(0, 2))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

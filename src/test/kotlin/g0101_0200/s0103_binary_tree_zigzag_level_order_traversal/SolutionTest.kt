@@ -12,7 +12,7 @@ internal class SolutionTest {
         val root: TreeNode = TreeNode.create(arrayListOf(3, 9, 20, null, null, 15, 7))!!
         assertThat(
             Solution().zigzagLevelOrder(root),
-            equalTo(getLists(arrayOf(intArrayOf(3), intArrayOf(20, 9), intArrayOf(15, 7))))
+            equalTo(getLists(arrayOf(intArrayOf(3), intArrayOf(20, 9), intArrayOf(15, 7)))),
         )
     }
 
@@ -21,7 +21,7 @@ internal class SolutionTest {
         val root: TreeNode = TreeNode.create(arrayListOf(1))!!
         assertThat(
             Solution().zigzagLevelOrder(root),
-            equalTo(getLists(arrayOf(intArrayOf(1))))
+            equalTo(getLists(arrayOf(intArrayOf(1)))),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun zigzagLevelOrder3() {
         assertThat(
             Solution().zigzagLevelOrder(null),
-            equalTo(getLists(arrayOf<IntArray>()))
+            equalTo(getLists(arrayOf<IntArray>())),
         )
     }
 }

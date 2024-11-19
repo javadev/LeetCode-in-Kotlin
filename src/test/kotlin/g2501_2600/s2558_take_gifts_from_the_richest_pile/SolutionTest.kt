@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun pickGifts() {
         assertThat(
             Solution().pickGifts(intArrayOf(25, 64, 9, 4, 100), 4),
-            equalTo(29)
+            equalTo(29),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun pickGifts2() {
         assertThat(
             Solution().pickGifts(intArrayOf(1, 1, 1, 1), 4),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

@@ -50,8 +50,8 @@ import javax.sql.DataSource
             "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)" +
             " VALUES (3, 1, 3, '2020-02-22'); " +
             "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)" +
-            " VALUES (3, 2, 4, '2020-02-25'); "
-    ]
+            " VALUES (3, 2, 4, '2020-02-25'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -63,12 +63,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1341_movie_rating" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Daniel"))

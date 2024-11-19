@@ -11,7 +11,7 @@ internal class SolutionTest {
             Solution()
                 .constructFromPrePost(intArrayOf(1, 2, 4, 5, 3, 6, 7), intArrayOf(4, 5, 2, 6, 7, 3, 1))
                 .toString(),
-            equalTo("1,2,4,5,3,6,7")
+            equalTo("1,2,4,5,3,6,7"),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun constructFromPrePost2() {
         assertThat(
             Solution().constructFromPrePost(intArrayOf(1), intArrayOf(1)).toString(),
-            equalTo("1")
+            equalTo("1"),
         )
     }
 }

@@ -13,14 +13,14 @@ internal class SolutionTest {
                     arrayOf("KiTe", "kite", "hare", "Hare"),
                     arrayOf(
                         "kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti",
-                        "keet", "keto"
-                    )
+                        "keet", "keto",
+                    ),
                 ),
             equalTo(
                 arrayOf(
-                    "kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe"
-                )
-            )
+                    "kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe",
+                ),
+            ),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
     fun spellchecker2() {
         assertThat(
             Solution().spellchecker(arrayOf("yellow"), arrayOf("YellOw")),
-            equalTo(arrayOf("yellow"))
+            equalTo(arrayOf("yellow")),
         )
     }
 }

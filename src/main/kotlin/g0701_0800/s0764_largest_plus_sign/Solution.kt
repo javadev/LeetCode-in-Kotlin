@@ -30,7 +30,7 @@ class Solution {
                 val i2 = if (i == n - 1) 0 else down[i + 1][j]
                 down[i][j] = if (mat[i][j]) 0 else 1 + i2
                 val x = left[i][j].coerceAtMost(up[i][j]).coerceAtMost(
-                    right[i][j].coerceAtMost(down[i][j])
+                    right[i][j].coerceAtMost(down[i][j]),
                 )
                 ans = ans.coerceAtLeast(x)
             }

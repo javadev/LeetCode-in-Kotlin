@@ -31,8 +31,8 @@ import javax.sql.DataSource
             "INSERT INTO Delivery(delivery_id, customer_id, order_date, customer_pref_delivery_date)" +
             " VALUES (6, 2, '2019-08-11', '2019-08-13'); " +
             "INSERT INTO Delivery(delivery_id, customer_id, order_date, customer_pref_delivery_date)" +
-            " VALUES (7, 4, '2019-08-09', '2019-08-09'); "
-    ]
+            " VALUES (7, 4, '2019-08-09', '2019-08-09'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -44,12 +44,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1101_1200/s1174_immediate_food_delivery_ii" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getDouble(1), equalTo(50.00))

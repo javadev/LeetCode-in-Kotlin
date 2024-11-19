@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun totalSteps() {
         assertThat(
             Solution().totalSteps(intArrayOf(5, 3, 4, 4, 7, 3, 6, 11, 8, 5, 11)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxIncreasingSubarrays() {
         assertThat<Int>(
             Solution().maxIncreasingSubarrays(listOf<Int>(2, 5, 7, 8, 9, 2, 3, 4, 3, 1)),
-            equalTo<Int>(3)
+            equalTo<Int>(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxIncreasingSubarrays2() {
         assertThat<Int>(
             Solution().maxIncreasingSubarrays(listOf<Int>(1, 2, 3, 4, 4, 4, 4, 5, 6, 7)),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 }

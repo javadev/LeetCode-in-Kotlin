@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun replaceNonCoprimes() {
         assertThat(
             Solution().replaceNonCoprimes(intArrayOf(6, 4, 3, 2, 7, 6, 2)),
-            equalTo(mutableListOf(12, 7, 6))
+            equalTo(mutableListOf(12, 7, 6)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun replaceNonCoprimes2() {
         assertThat(
             Solution().replaceNonCoprimes(intArrayOf(2, 2, 1, 1, 3, 3, 3)),
-            equalTo(mutableListOf(2, 1, 1, 3))
+            equalTo(mutableListOf(2, 1, 1, 3)),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .replaceNonCoprimes(intArrayOf(287, 41, 49, 287, 899, 23, 23, 20677, 5, 825)),
-            equalTo(mutableListOf(2009, 20677, 825))
+            equalTo(mutableListOf(2009, 20677, 825)),
         )
     }
 }

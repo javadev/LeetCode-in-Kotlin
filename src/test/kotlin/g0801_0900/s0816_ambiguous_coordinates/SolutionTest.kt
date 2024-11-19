@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun ambiguousCoordinates() {
         assertThat(
             Solution().ambiguousCoordinates("(123)"),
-            equalTo(listOf("(1, 23)", "(1, 2.3)", "(12, 3)", "(1.2, 3)"))
+            equalTo(listOf("(1, 23)", "(1, 2.3)", "(12, 3)", "(1.2, 3)")),
         )
     }
 
@@ -24,9 +24,9 @@ internal class SolutionTest {
                     "(0, 12.3)",
                     "(0.1, 23)",
                     "(0.1, 2.3)",
-                    "(0.12, 3)"
-                )
-            )
+                    "(0.12, 3)",
+                ),
+            ),
         )
     }
 
@@ -34,7 +34,7 @@ internal class SolutionTest {
     fun ambiguousCoordinates3() {
         assertThat(
             Solution().ambiguousCoordinates("(00011)"),
-            equalTo(listOf("(0, 0.011)", "(0.001, 1)"))
+            equalTo(listOf("(0, 0.011)", "(0.001, 1)")),
         )
     }
 }

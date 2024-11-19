@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProduct(arrayOf("abcw", "baz", "foo", "bar", "xtfn", "abcdef")),
-            equalTo(16)
+            equalTo(16),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProduct(arrayOf("a", "ab", "abc", "d", "cd", "bcd", "abcd")),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

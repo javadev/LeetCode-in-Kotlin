@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumValueSum(intArrayOf(1, 2, 1), 3, arrayOf(intArrayOf(0, 1), intArrayOf(0, 2))),
-            equalTo(6L)
+            equalTo(6L),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun maximumValueSum2() {
         assertThat(
             Solution().maximumValueSum(intArrayOf(2, 3), 7, arrayOf(intArrayOf(0, 1))),
-            equalTo(9L)
+            equalTo(9L),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
                 .maximumValueSum(
                     intArrayOf(7, 7, 7, 7, 7, 7),
                     3,
-                    arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(0, 3), intArrayOf(0, 4), intArrayOf(0, 5))
+                    arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(0, 3), intArrayOf(0, 4), intArrayOf(0, 5)),
                 ),
-            equalTo(42L)
+            equalTo(42L),
         )
     }
 }

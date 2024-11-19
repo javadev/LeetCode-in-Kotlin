@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat(
             Solution().countDays(
                 10,
-                arrayOf(intArrayOf(5, 7), intArrayOf(1, 3), intArrayOf(9, 10))
+                arrayOf(intArrayOf(5, 7), intArrayOf(1, 3), intArrayOf(9, 10)),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
     fun countDays2() {
         assertThat(
             Solution().countDays(5, arrayOf(intArrayOf(2, 4), intArrayOf(1, 3))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

@@ -48,7 +48,8 @@ internal class UndergroundSystemTest {
         undergroundSystem.checkOut(2, "Paradise", 30)
         // return 6.66667, (5 + 6 + 9) / 3 = 6.66667
         assertThat(
-            undergroundSystem.getAverageTime("Leyton", "Paradise"), equalTo(6.666666666666667)
+            undergroundSystem.getAverageTime("Leyton", "Paradise"),
+            equalTo(6.666666666666667),
         )
     }
 }

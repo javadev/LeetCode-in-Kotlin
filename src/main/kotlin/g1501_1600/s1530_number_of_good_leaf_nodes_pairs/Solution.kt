@@ -19,7 +19,9 @@ class Solution {
     fun countPairs(root: TreeNode?, distance: Int): Int {
         return if (distance < 2) {
             0
-        } else pairsAndLeaves(root, distance)[0]
+        } else {
+            pairsAndLeaves(root, distance)[0]
+        }
     }
 
     private fun pairsAndLeaves(node: TreeNode?, distance: Int): IntArray {

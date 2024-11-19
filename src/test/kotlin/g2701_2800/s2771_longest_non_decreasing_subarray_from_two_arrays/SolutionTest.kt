@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxNonDecreasingLength() {
         assertThat(
             Solution().maxNonDecreasingLength(intArrayOf(2, 3, 1), intArrayOf(1, 2, 1)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxNonDecreasingLength2() {
         assertThat(
             Solution().maxNonDecreasingLength(intArrayOf(1, 3, 2, 1), intArrayOf(2, 2, 3, 4)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

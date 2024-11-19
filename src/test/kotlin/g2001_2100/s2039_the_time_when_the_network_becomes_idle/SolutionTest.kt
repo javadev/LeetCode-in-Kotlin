@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .networkBecomesIdle(arrayOf(intArrayOf(0, 1), intArrayOf(1, 2)), intArrayOf(0, 2, 1)),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
             Solution()
                 .networkBecomesIdle(
                     arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 2)),
-                    intArrayOf(0, 10, 10)
+                    intArrayOf(0, 10, 10),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

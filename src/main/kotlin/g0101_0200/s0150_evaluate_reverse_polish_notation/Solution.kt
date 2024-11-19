@@ -8,7 +8,7 @@ class Solution {
         "/" to { a, b -> a / b },
         "*" to { a, b -> a * b },
         "+" to { a, b -> a + b },
-        "-" to { a, b -> a - b }
+        "-" to { a, b -> a - b },
     )
     fun evalRPN(tokens: Array<String>): Int {
         val stack = ArrayDeque<String>()

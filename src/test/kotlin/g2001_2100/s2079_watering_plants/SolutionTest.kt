@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun wateringPlants3() {
         assertThat(
             Solution().wateringPlants(intArrayOf(7, 7, 7, 7, 7, 7, 7), 8),
-            equalTo(49)
+            equalTo(49),
         )
     }
 }

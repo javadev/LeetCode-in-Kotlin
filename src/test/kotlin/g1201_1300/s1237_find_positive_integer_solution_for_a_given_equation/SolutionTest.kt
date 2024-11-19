@@ -15,7 +15,7 @@ internal class SolutionTest {
         }
         assertThat(
             Solution().findSolution(customFunction, 1),
-            equalTo(listOf(mutableListOf(2, 1000)))
+            equalTo(listOf(mutableListOf(2, 1000))),
         )
     }
 }

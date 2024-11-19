@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun countPyramids() {
         assertThat(
-            Solution().countPyramids(arrayOf(intArrayOf(0, 1, 1, 0), intArrayOf(1, 1, 1, 1))), equalTo(2)
+            Solution().countPyramids(arrayOf(intArrayOf(0, 1, 1, 0), intArrayOf(1, 1, 1, 1))),
+            equalTo(2),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun countPyramids2() {
         assertThat(
             Solution().countPyramids(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 1, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -29,10 +30,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 1, 1, 0),
                         intArrayOf(1, 1, 1, 1, 1),
                         intArrayOf(1, 1, 1, 1, 1),
-                        intArrayOf(0, 1, 0, 0, 1)
-                    )
+                        intArrayOf(0, 1, 0, 0, 1),
+                    ),
                 ),
-            equalTo(13)
+            equalTo(13),
         )
     }
 }

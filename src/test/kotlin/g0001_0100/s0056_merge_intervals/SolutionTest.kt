@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().merge(arrayOf(intArrayOf(1, 3), intArrayOf(2, 6), intArrayOf(8, 10), intArrayOf(15, 18))),
             equalTo(
-                arrayOf(intArrayOf(1, 6), intArrayOf(8, 10), intArrayOf(15, 18))
-            )
+                arrayOf(intArrayOf(1, 6), intArrayOf(8, 10), intArrayOf(15, 18)),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().merge(arrayOf(intArrayOf(1, 4), intArrayOf(4, 5))),
             equalTo(
-                arrayOf(intArrayOf(1, 5))
-            )
+                arrayOf(intArrayOf(1, 5)),
+            ),
         )
     }
 }

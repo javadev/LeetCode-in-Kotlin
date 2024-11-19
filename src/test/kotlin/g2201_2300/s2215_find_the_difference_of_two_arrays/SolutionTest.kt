@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun findDifference() {
         assertThat(
             Solution().findDifference(intArrayOf(1, 2, 3), intArrayOf(2, 4, 6)),
-            equalTo(getLists(arrayOf(intArrayOf(1, 3), intArrayOf(4, 6))))
+            equalTo(getLists(arrayOf(intArrayOf(1, 3), intArrayOf(4, 6)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun findDifference2() {
         assertThat(
             Solution().findDifference(intArrayOf(1, 2, 3, 3), intArrayOf(1, 1, 2, 2)),
-            equalTo(getLists(arrayOf(intArrayOf(3), intArrayOf())))
+            equalTo(getLists(arrayOf(intArrayOf(3), intArrayOf()))),
         )
     }
 }

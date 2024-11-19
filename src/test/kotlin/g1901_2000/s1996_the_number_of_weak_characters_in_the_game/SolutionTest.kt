@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numberOfWeakCharacters() {
         assertThat(
             Solution().numberOfWeakCharacters(arrayOf(intArrayOf(5, 5), intArrayOf(6, 3), intArrayOf(3, 6))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numberOfWeakCharacters2() {
         assertThat(
             Solution().numberOfWeakCharacters(arrayOf(intArrayOf(2, 2), intArrayOf(3, 3))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun numberOfWeakCharacters3() {
         assertThat(
             Solution().numberOfWeakCharacters(arrayOf(intArrayOf(1, 5), intArrayOf(10, 4), intArrayOf(4, 3))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

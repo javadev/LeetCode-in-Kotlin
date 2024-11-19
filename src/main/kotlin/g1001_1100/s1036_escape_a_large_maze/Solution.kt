@@ -26,7 +26,7 @@ class Solution {
         i: Int,
         j: Int,
         visited: MutableSet<Int>,
-        target: IntArray
+        target: IntArray,
     ): Boolean {
         if (i < 0 || j < 0 || i > 999999 || j > 999999 || blocks.contains(i * 1000000 + j) ||
             visited.contains(i * 1000000 + j)
@@ -39,9 +39,11 @@ class Solution {
         visited.add(i * 1000000 + j)
         return if (visited.size > blocks.size * (blocks.size + 1)) {
             true
-        } else dfs(blocks, start, i + 1, j, visited, target) ||
-            dfs(blocks, start, i - 1, j, visited, target) ||
-            dfs(blocks, start, i, j + 1, visited, target) ||
-            dfs(blocks, start, i, j - 1, visited, target)
+        } else {
+            dfs(blocks, start, i + 1, j, visited, target) ||
+                dfs(blocks, start, i - 1, j, visited, target) ||
+                dfs(blocks, start, i, j + 1, visited, target) ||
+                dfs(blocks, start, i, j - 1, visited, target)
+        }
     }
 }

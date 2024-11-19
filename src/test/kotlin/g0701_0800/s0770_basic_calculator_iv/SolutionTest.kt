@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .basicCalculatorIV("e + 8 - a + 5", arrayOf("e"), intArrayOf(1)),
-            equalTo(listOf("-1*a", "14"))
+            equalTo(listOf("-1*a", "14")),
         )
     }
 
@@ -19,9 +19,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .basicCalculatorIV(
-                    "e - 8 + temperature - pressure", arrayOf("e", "temperature"), intArrayOf(1, 12)
+                    "e - 8 + temperature - pressure",
+                    arrayOf("e", "temperature"),
+                    intArrayOf(1, 12),
                 ),
-            equalTo(listOf("-1*pressure", "5"))
+            equalTo(listOf("-1*pressure", "5")),
         )
     }
 
@@ -30,7 +32,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .basicCalculatorIV("(e + 8) * (e - 8)", arrayOf(), intArrayOf()),
-            equalTo(listOf("1*e*e", "-64"))
+            equalTo(listOf("1*e*e", "-64")),
         )
     }
 }

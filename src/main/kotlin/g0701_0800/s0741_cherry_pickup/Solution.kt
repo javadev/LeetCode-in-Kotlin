@@ -8,7 +8,7 @@ class Solution {
         val dp = Array(grid.size) {
             Array(grid.size) {
                 IntArray(
-                    grid.size
+                    grid.size,
                 )
             }
         }

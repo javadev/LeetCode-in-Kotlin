@@ -12,12 +12,12 @@ internal class SolutionTest {
             Solution()
                 .distanceK(
                     TreeNode.create(
-                        listOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4)
+                        listOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4),
                     ),
                     TreeNode(5),
-                    2
+                    2,
                 ),
-            equalTo(listOf(7, 4, 1))
+            equalTo(listOf(7, 4, 1)),
         )
     }
 
@@ -28,9 +28,9 @@ internal class SolutionTest {
                 .distanceK(
                     TreeNode.create(listOf(1)),
                     TreeNode(1),
-                    3
+                    3,
                 ),
-            equalTo(emptyList())
+            equalTo(emptyList()),
         )
     }
 }

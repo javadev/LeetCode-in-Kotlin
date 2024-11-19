@@ -15,13 +15,18 @@ internal class SolutionTest {
     @Test
     fun diagonalSort2() {
         val mat = arrayOf(
-            intArrayOf(11, 25, 66, 1, 69, 7), intArrayOf(23, 55, 17, 45, 15, 52),
-            intArrayOf(75, 31, 36, 44, 58, 8), intArrayOf(22, 27, 33, 25, 68, 4), intArrayOf(84, 28, 14, 11, 5, 50)
+            intArrayOf(11, 25, 66, 1, 69, 7),
+            intArrayOf(23, 55, 17, 45, 15, 52),
+            intArrayOf(75, 31, 36, 44, 58, 8),
+            intArrayOf(22, 27, 33, 25, 68, 4),
+            intArrayOf(84, 28, 14, 11, 5, 50),
         )
         val expected = arrayOf(
-            intArrayOf(5, 17, 4, 1, 52, 7), intArrayOf(11, 11, 25, 45, 8, 69),
-            intArrayOf(14, 23, 25, 44, 58, 15), intArrayOf(22, 27, 31, 36, 50, 66),
-            intArrayOf(84, 28, 75, 33, 55, 68)
+            intArrayOf(5, 17, 4, 1, 52, 7),
+            intArrayOf(11, 11, 25, 45, 8, 69),
+            intArrayOf(14, 23, 25, 44, 58, 15),
+            intArrayOf(22, 27, 31, 36, 50, 66),
+            intArrayOf(84, 28, 75, 33, 55, 68),
         )
         assertThat(Solution().diagonalSort(mat), equalTo(expected))
     }

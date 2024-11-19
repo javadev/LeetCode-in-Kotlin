@@ -22,11 +22,11 @@ internal class SolutionTest {
                 .validSubarraySize(
                     intArrayOf(
                         818, 232, 595, 418, 608, 229, 37, 330, 876, 774, 931, 939, 479,
-                        884, 354, 328
+                        884, 354, 328,
                     ),
-                    3790
+                    3790,
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

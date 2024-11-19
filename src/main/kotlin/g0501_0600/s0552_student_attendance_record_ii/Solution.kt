@@ -15,7 +15,7 @@ class Solution {
             longArrayOf(1, 0, 0, 1, 0, 0),
             longArrayOf(0, 0, 0, 1, 1, 0),
             longArrayOf(0, 0, 0, 1, 0, 1),
-            longArrayOf(0, 0, 0, 1, 0, 0)
+            longArrayOf(0, 0, 0, 1, 0, 0),
         )
         val e = quickPower(matrix, n - 1)
         return (

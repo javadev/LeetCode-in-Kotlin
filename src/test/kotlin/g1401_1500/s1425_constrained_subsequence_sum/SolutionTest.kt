@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun constrainedSubsetSum() {
         assertThat(
-            Solution().constrainedSubsetSum(intArrayOf(10, 2, -10, 5, 20), 2), equalTo(37)
+            Solution().constrainedSubsetSum(intArrayOf(10, 2, -10, 5, 20), 2),
+            equalTo(37),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun constrainedSubsetSum3() {
         assertThat(
             Solution().constrainedSubsetSum(intArrayOf(10, -2, -10, -5, 20), 2),
-            equalTo(23)
+            equalTo(23),
         )
     }
 }

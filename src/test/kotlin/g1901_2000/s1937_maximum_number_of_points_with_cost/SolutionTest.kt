@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxPoints() {
         assertThat(
             Solution().maxPoints(arrayOf(intArrayOf(1, 2, 3), intArrayOf(1, 5, 1), intArrayOf(3, 1, 1))),
-            equalTo(9L)
+            equalTo(9L),
         )
     }
 

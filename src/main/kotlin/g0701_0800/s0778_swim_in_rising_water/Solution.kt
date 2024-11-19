@@ -43,7 +43,7 @@ class Solution {
         // boolean array to keep track of visited cells
         val visited = Array(grid.size) {
             BooleanArray(
-                grid[0].size
+                grid[0].size,
             )
         }
         // we start from top left corner

@@ -11,7 +11,7 @@ class Solution {
         }
         val pq = PriorityQueue { a: String?, b: String? ->
             b!!.compareTo(
-                a!!
+                a!!,
             )
         }
         var acc = 1

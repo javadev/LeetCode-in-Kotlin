@@ -16,10 +16,10 @@ internal class SolutionTest {
                         intArrayOf(0, 4, 5),
                         intArrayOf(1, 4, 5),
                         intArrayOf(2, 3),
-                        intArrayOf(0, 2, 3)
-                    )
+                        intArrayOf(0, 2, 3),
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun catMouseGame2() {
         assertThat(
             Solution().catMouseGame(arrayOf(intArrayOf(1, 3), intArrayOf(0), intArrayOf(3), intArrayOf(0, 2))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

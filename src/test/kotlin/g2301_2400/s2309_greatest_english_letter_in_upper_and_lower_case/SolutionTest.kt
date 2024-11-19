@@ -24,7 +24,7 @@ internal class SolutionTest {
     @Test
     fun greatestLetter4() {
         Assertions.assertThrows(
-            ArrayIndexOutOfBoundsException::class.java
+            ArrayIndexOutOfBoundsException::class.java,
         ) { Solution().greatestLetter("0|") }
     }
 }

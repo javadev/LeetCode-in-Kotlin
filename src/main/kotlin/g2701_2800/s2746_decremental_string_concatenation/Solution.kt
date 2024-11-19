@@ -12,7 +12,7 @@ class Solution {
         dp = Array(n) {
             Array(26) {
                 arrayOfNulls(
-                    26
+                    26,
                 )
             }
         }

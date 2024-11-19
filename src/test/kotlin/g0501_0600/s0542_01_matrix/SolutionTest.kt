@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun updateMatrix() {
         assertThat(
             Solution().updateMatrix(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0))),
-            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0)))
+            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun updateMatrix2() {
         assertThat(
             Solution().updateMatrix(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 1, 1))),
-            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 2, 1)))
+            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 2, 1))),
         )
     }
 }

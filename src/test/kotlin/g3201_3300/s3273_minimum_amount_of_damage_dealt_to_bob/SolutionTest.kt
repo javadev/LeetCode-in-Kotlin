@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minDamage() {
         assertThat(
             Solution().minDamage(4, intArrayOf(1, 2, 3, 4), intArrayOf(4, 5, 6, 8)),
-            equalTo(39L)
+            equalTo(39L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minDamage2() {
         assertThat(
             Solution().minDamage(1, intArrayOf(1, 1, 1, 1), intArrayOf(1, 2, 3, 4)),
-            equalTo(20L)
+            equalTo(20L),
         )
     }
 

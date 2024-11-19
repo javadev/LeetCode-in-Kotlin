@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun braceExpansionII() {
         assertThat(
             Solution().braceExpansionII("{a,b}{c,{d,e}}"),
-            equalTo(listOf("ac", "ad", "ae", "bc", "bd", "be"))
+            equalTo(listOf("ac", "ad", "ae", "bc", "bd", "be")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun braceExpansionII2() {
         assertThat(
             Solution().braceExpansionII("{{a,z},a{b,c},{ab,z}}"),
-            equalTo(listOf("a", "ab", "ac", "z"))
+            equalTo(listOf("a", "ab", "ac", "z")),
         )
     }
 }

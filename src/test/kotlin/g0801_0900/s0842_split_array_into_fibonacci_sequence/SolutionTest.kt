@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun splitIntoFibonacci() {
         assertThat(
             Solution().splitIntoFibonacci("1101111"),
-            equalTo(listOf(11, 0, 11, 11))
+            equalTo(listOf(11, 0, 11, 11)),
         )
     }
 
     @Test
     fun splitIntoFibonacci2() {
         assertThat(
-            Solution().splitIntoFibonacci("112358130"), equalTo(emptyList())
+            Solution().splitIntoFibonacci("112358130"),
+            equalTo(emptyList()),
         )
     }
 

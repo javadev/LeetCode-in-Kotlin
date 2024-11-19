@@ -12,9 +12,9 @@ internal class SolutionTest {
             Solution()
                 .smallestSufficientTeam(
                     arrayOf("java", "nodejs", "reactjs"),
-                    getLists(arrayOf(arrayOf("java"), arrayOf("nodejs"), arrayOf("nodejs", "reactjs")))
+                    getLists(arrayOf(arrayOf("java"), arrayOf("nodejs"), arrayOf("nodejs", "reactjs"))),
                 ),
-            equalTo(intArrayOf(0, 2))
+            equalTo(intArrayOf(0, 2)),
         )
     }
 
@@ -24,7 +24,12 @@ internal class SolutionTest {
             Solution()
                 .smallestSufficientTeam(
                     arrayOf(
-                        "algorithms", "math", "java", "reactjs", "csharp", "aws"
+                        "algorithms",
+                        "math",
+                        "java",
+                        "reactjs",
+                        "csharp",
+                        "aws",
                     ),
                     getLists(
                         arrayOf(
@@ -33,11 +38,11 @@ internal class SolutionTest {
                             arrayOf("java", "csharp", "aws"),
                             arrayOf("reactjs", "csharp"),
                             arrayOf("csharp", "math"),
-                            arrayOf("aws", "java")
-                        )
-                    )
+                            arrayOf("aws", "java"),
+                        ),
+                    ),
                 ),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 }

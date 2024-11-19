@@ -12,9 +12,9 @@ internal class SolutionTest {
             equalTo(
                 arrayOf(
                     arrayOf(".Q..", "...Q", "Q...", "..Q.").toList(),
-                    arrayOf("..Q.", "Q...", "...Q", ".Q..").toList()
-                ).toList()
-            )
+                    arrayOf("..Q.", "Q...", "...Q", ".Q..").toList(),
+                ).toList(),
+            ),
         )
     }
 

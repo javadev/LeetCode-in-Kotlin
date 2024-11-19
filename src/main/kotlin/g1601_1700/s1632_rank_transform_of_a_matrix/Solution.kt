@@ -36,7 +36,7 @@ class Solution {
         startIdx: Int,
         endIdx: Int,
         rows: IntArray,
-        cols: IntArray
+        cols: IntArray,
     ) {
         if (startIdx + 1 == endIdx) {
             val r = nums[startIdx].toInt() shr 16 and 0xFFFF
@@ -57,7 +57,7 @@ class Solution {
                     ufind[pr] = ufind[pr].coerceAtMost(ufind[pc])
                         .coerceAtMost(
                             -rows[r]
-                                .coerceAtLeast(cols[c]) - 1
+                                .coerceAtLeast(cols[c]) - 1,
                         )
                     ufind[pc] = pr
                 }

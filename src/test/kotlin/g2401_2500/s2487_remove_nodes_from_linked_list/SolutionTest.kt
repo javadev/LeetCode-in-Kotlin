@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .removeNodes(contructLinkedList(intArrayOf(5, 2, 13, 3, 8)))
                 .toString(),
-            equalTo(contructLinkedList(intArrayOf(13, 8)).toString())
+            equalTo(contructLinkedList(intArrayOf(13, 8)).toString()),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
             Solution()
                 .removeNodes(contructLinkedList(intArrayOf(1, 1, 1, 1)))
                 .toString(),
-            equalTo(contructLinkedList(intArrayOf(1, 1, 1, 1)).toString())
+            equalTo(contructLinkedList(intArrayOf(1, 1, 1, 1)).toString()),
         )
     }
 }

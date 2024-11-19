@@ -69,7 +69,7 @@ class Solution {
             val ans: MutableList<String> = ArrayList()
             val keys: List<List<String>> = ArrayList(mem.keys)
             Collections.sort(
-                keys
+                keys,
             ) { a: List<String>, b: List<String> ->
                 if (a.size != b.size) {
                     return@sort b.size - a.size

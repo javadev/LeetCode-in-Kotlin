@@ -23,7 +23,7 @@ internal class SolutionTest {
         node2.topRight!!.bottomRight = Node(true, true)
         assertThat(
             Solution().intersect(node1, node2).toString(),
-            equalTo("[0,0][1,1][1,1][1,1][1,0]")
+            equalTo("[0,0][1,1][1,1][1,1][1,0]"),
         )
     }
 }

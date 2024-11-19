@@ -15,10 +15,10 @@ internal class SolutionTest {
                         intArrayOf(3, 3, 4, 2, 3),
                         intArrayOf(20, 30, 200, 40, 10),
                         intArrayOf(1, 5, 5, 4, 1),
-                        intArrayOf(4, 3, 2, 2, 5)
-                    )
+                        intArrayOf(4, 3, 2, 2, 5),
+                    ),
                 ),
-            equalTo(intArrayOf(228, 216, 211))
+            equalTo(intArrayOf(228, 216, 211)),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun biggestThree2() {
         assertThat(
             Solution().getBiggestThree(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))),
-            equalTo(intArrayOf(20, 9, 8))
+            equalTo(intArrayOf(20, 9, 8)),
         )
     }
 
@@ -35,8 +35,8 @@ internal class SolutionTest {
         assertThat(
             Solution().getBiggestThree(arrayOf(intArrayOf(7, 7, 7))),
             equalTo(
-                intArrayOf(7)
-            )
+                intArrayOf(7),
+            ),
         )
     }
 }

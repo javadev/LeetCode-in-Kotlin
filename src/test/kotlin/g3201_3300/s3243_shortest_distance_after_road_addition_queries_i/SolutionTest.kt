@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestDistanceAfterQueries(5, arrayOf(intArrayOf(2, 4), intArrayOf(0, 2), intArrayOf(0, 4))),
-            equalTo(intArrayOf(3, 2, 1))
+            equalTo(intArrayOf(3, 2, 1)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun shortestDistanceAfterQueries2() {
         assertThat(
             Solution().shortestDistanceAfterQueries(4, arrayOf(intArrayOf(0, 3), intArrayOf(0, 2))),
-            equalTo(intArrayOf(1, 1))
+            equalTo(intArrayOf(1, 1)),
         )
     }
 }

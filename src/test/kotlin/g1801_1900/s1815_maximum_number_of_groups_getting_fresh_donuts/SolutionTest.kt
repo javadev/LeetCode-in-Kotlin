@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun maxHappyGroups2() {
         assertThat(
-            Solution().maxHappyGroups(4, intArrayOf(1, 3, 2, 5, 2, 2, 1, 6)), equalTo(4)
+            Solution().maxHappyGroups(4, intArrayOf(1, 3, 2, 5, 2, 2, 1, 6)),
+            equalTo(4),
         )
     }
 }

@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat<Array<IntArray>>(
             Solution().constructGridLayout(
                 4,
-                arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(2, 3))
+                arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(2, 3)),
             ),
-            equalTo<Array<IntArray>>(arrayOf<IntArray>(intArrayOf(0, 2), intArrayOf(1, 3)))
+            equalTo<Array<IntArray>>(arrayOf<IntArray>(intArrayOf(0, 2), intArrayOf(1, 3))),
         )
     }
 
@@ -21,9 +21,9 @@ internal class SolutionTest {
         assertThat<Array<IntArray>>(
             Solution().constructGridLayout(
                 5,
-                arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(1, 3), intArrayOf(2, 3), intArrayOf(2, 4))
+                arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(1, 3), intArrayOf(2, 3), intArrayOf(2, 4)),
             ),
-            equalTo<Array<IntArray>>(arrayOf<IntArray>(intArrayOf(0, 1, 3, 2, 4)))
+            equalTo<Array<IntArray>>(arrayOf<IntArray>(intArrayOf(0, 1, 3, 2, 4))),
         )
     }
 
@@ -45,16 +45,16 @@ internal class SolutionTest {
                         intArrayOf(4, 6),
                         intArrayOf(4, 7),
                         intArrayOf(6, 8),
-                        intArrayOf(7, 8)
-                    )
+                        intArrayOf(7, 8),
+                    ),
                 ),
             equalTo<Array<IntArray>>(
                 arrayOf<IntArray>(
                     intArrayOf(1, 0, 5),
                     intArrayOf(7, 4, 2),
-                    intArrayOf(8, 6, 3)
-                )
-            )
+                    intArrayOf(8, 6, 3),
+                ),
+            ),
         )
     }
 }

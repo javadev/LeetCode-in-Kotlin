@@ -10,7 +10,6 @@ class Solution {
         val li = s.toCharArray()
         var i = 0
         while (i < n) {
-
             // o == ok
             if (i == 0 || li[i] == 'o') {
                 j = Math.max(j, i + minJump)

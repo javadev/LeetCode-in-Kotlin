@@ -39,7 +39,9 @@ class FoodRatings(foods: Array<String>, cuisines: Array<String>, ratings: IntArr
         override fun compare(f1: Food, f2: Food): Int {
             return if (f1.rating == f2.rating) {
                 f1.foodItem.compareTo(f2.foodItem)
-            } else Integer.compare(f2.rating, f1.rating)
+            } else {
+                Integer.compare(f2.rating, f1.rating)
+            }
         }
     }
 

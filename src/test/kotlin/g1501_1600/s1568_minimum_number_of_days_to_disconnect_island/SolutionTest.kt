@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minDays() {
         assertThat(
             Solution().minDays(arrayOf(intArrayOf(0, 1, 1, 0), intArrayOf(0, 1, 1, 0), intArrayOf(0, 0, 0, 0))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun minSwapsCouples2() {
         assertThat(
             Solution().minSwapsCouples(intArrayOf(0, 4, 7, 3, 1, 5, 2, 8, 6, 9)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minSwapsCouples3() {
         assertThat(
             Solution().minSwapsCouples(intArrayOf(5, 6, 4, 0, 2, 1, 9, 3, 8, 7, 11, 10)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

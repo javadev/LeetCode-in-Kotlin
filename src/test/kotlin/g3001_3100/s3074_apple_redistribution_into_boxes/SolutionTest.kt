@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumBoxes() {
         assertThat(
             Solution().minimumBoxes(intArrayOf(1, 3, 2), intArrayOf(4, 3, 1, 5, 2)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumBoxes2() {
         assertThat(
             Solution().minimumBoxes(intArrayOf(5, 5, 5), intArrayOf(2, 4, 2, 7)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun countSubMultisets2() {
         assertThat(
-            Solution().countSubMultisets(mutableListOf(2, 1, 4, 2, 7), 1, 5), equalTo(7)
+            Solution().countSubMultisets(mutableListOf(2, 1, 4, 2, 7), 1, 5),
+            equalTo(7),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun countSubMultisets3() {
         assertThat(
             Solution().countSubMultisets(mutableListOf(1, 2, 1, 3, 5, 2), 3, 5),
-            equalTo(9)
+            equalTo(9),
         )
     }
 }

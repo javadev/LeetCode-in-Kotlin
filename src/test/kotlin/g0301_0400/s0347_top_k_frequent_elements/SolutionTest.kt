@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun topKFrequent() {
         assertThat(
             Solution().topKFrequent(intArrayOf(1, 1, 1, 2, 2, 3), 2),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 

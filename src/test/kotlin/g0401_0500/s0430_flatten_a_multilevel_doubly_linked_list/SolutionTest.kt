@@ -45,8 +45,8 @@ internal class SolutionTest {
                 "Node{val=1,next=Node{" +
                     "val=2,next=Node{val=3,next=Node{val=7,next=Node{val=8,next=Node{val=11,next=" +
                     "Node{val=12,next=Node{val=9,next=Node{val=10,next=Node{val=4,next=Node{val=5" +
-                    ",next=Node{val=6,next=null}}}}}}}}}}}}"
-            )
+                    ",next=Node{val=6,next=null}}}}}}}}}}}}",
+            ),
         )
     }
 }

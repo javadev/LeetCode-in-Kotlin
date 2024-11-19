@@ -26,7 +26,7 @@ class Solution {
             if (points[rMax][0] - points[l][0] <= k) {
                 res = Math.max(
                     res,
-                    points[rMax][0] - points[l][0] + points[rMax][1] + points[l][1]
+                    points[rMax][0] - points[l][0] + points[rMax][1] + points[l][1],
                 )
             }
         }

@@ -27,8 +27,8 @@ class Solution {
                 // Create set with single element
                 val set: Set<String> = HashSet(
                     listOf(
-                        expression[idx].toString()
-                    )
+                        expression[idx].toString(),
+                    ),
                 )
                 curSet = concatenateSet(curSet, set)
                 idx++

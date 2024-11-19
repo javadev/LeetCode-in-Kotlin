@@ -11,9 +11,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .getDirections(
-                    TreeNode.create(listOf(5, 1, 2, 3, null, 6, 4)), 3, 6
+                    TreeNode.create(listOf(5, 1, 2, 3, null, 6, 4)),
+                    3,
+                    6,
                 ),
-            equalTo("UURL")
+            equalTo("UURL"),
         )
     }
 
@@ -21,7 +23,7 @@ internal class SolutionTest {
     fun directions2() {
         assertThat(
             Solution().getDirections(TreeNode.create(listOf(2, 1)), 2, 1),
-            equalTo("L")
+            equalTo("L"),
         )
     }
 }

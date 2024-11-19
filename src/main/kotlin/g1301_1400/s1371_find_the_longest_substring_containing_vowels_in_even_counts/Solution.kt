@@ -13,8 +13,11 @@ class Solution {
         for (i in 0 until s.length) {
             val c = s[i]
             if (set.contains(c)) {
-                sum = if (sum and (1 shl 'a'.code - c.code) == 0) sum or (1 shl 'a'.code - c.code) else
+                sum = if (sum and (1 shl 'a'.code - c.code) == 0) {
+                    sum or (1 shl 'a'.code - c.code)
+                } else {
                     sum and (1 shl 'a'.code - c.code).inv()
+                }
             }
             arr[i] = sum
         }

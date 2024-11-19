@@ -20,7 +20,7 @@ class Solution {
         turnedOn: Int,
         selectedTimes: MutableList<String>,
         hour: Int,
-        minutes: Int
+        minutes: Int,
     ) {
         if (isValidTime(turnedOn, hour, minutes)) {
             selectedTimes.add(getTimeString(hour, minutes))

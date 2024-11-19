@@ -24,7 +24,7 @@ class Solution {
         `val`: Int,
         mul: Int,
         preOp: Char,
-        join: Int
+        join: Int,
     ) {
         var j = j
         arr[j++] = list[i]

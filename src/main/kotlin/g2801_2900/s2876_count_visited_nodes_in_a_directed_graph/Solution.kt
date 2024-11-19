@@ -23,7 +23,7 @@ class Solution {
         curr: Int,
         ans: IntArray,
         visited: BooleanArray,
-        level: IntArray
+        level: IntArray,
     ): IntArray {
         if (ans[curr] != 0) {
             return intArrayOf(-1, ans[curr])

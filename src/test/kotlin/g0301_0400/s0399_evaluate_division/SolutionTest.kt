@@ -16,8 +16,8 @@ internal class SolutionTest {
                 arrayOf("b", "a"),
                 arrayOf("a", "e"),
                 arrayOf("a", "a"),
-                arrayOf("x", "x")
-            )
+                arrayOf("x", "x"),
+            ),
         )
         val expected = doubleArrayOf(6.00000, 0.50000, -1.00000, 1.00000, -1.00000)
         assertThat(Solution().calcEquation(equations, values, queries), equalTo(expected))

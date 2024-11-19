@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun lexicographicallySmallestArray() {
         assertThat(
             Solution().lexicographicallySmallestArray(intArrayOf(1, 5, 3, 9, 8), 2),
-            equalTo(intArrayOf(1, 3, 5, 8, 9))
+            equalTo(intArrayOf(1, 3, 5, 8, 9)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun lexicographicallySmallestArray2() {
         assertThat(
             Solution().lexicographicallySmallestArray(intArrayOf(1, 7, 6, 18, 2, 1), 3),
-            equalTo(intArrayOf(1, 6, 7, 18, 1, 2))
+            equalTo(intArrayOf(1, 6, 7, 18, 1, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun lexicographicallySmallestArray3() {
         assertThat(
             Solution().lexicographicallySmallestArray(intArrayOf(1, 7, 28, 19, 10), 3),
-            equalTo(intArrayOf(1, 7, 28, 19, 10))
+            equalTo(intArrayOf(1, 7, 28, 19, 10)),
         )
     }
 }

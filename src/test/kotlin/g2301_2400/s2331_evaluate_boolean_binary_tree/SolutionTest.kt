@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .evaluateTree(TreeNode.create(listOf(2, 1, 3, null, null, 0, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun evaluateTree2() {
         assertThat(
             Solution().evaluateTree(TreeNode.create(listOf(0))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -36,11 +36,11 @@ internal class SolutionTest {
                             1, 0, 3, null, null, null, null, null, null, null,
                             null, null, null, 3, 0, 3, 3, null, null, 0, 0, 1,
                             0, null, null, null, null, null, null, null,
-                            null
-                        )
-                    )
+                            null,
+                        ),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

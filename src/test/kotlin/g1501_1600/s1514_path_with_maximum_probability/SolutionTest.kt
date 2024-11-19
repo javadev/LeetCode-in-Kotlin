@@ -10,11 +10,13 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProbability(
-                    3, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(0, 2)), doubleArrayOf(0.5, 0.5, 0.2),
+                    3,
+                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(0, 2)),
+                    doubleArrayOf(0.5, 0.5, 0.2),
                     0,
-                    2
+                    2,
                 ),
-            equalTo(0.2500)
+            equalTo(0.2500),
         )
     }
 
@@ -23,11 +25,13 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProbability(
-                    3, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(0, 2)), doubleArrayOf(0.5, 0.5, 0.3),
+                    3,
+                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(0, 2)),
+                    doubleArrayOf(0.5, 0.5, 0.3),
                     0,
-                    2
+                    2,
                 ),
-            equalTo(0.3)
+            equalTo(0.3),
         )
     }
 
@@ -35,7 +39,7 @@ internal class SolutionTest {
     fun maxProbability3() {
         assertThat(
             Solution().maxProbability(3, arrayOf(intArrayOf(0, 1)), doubleArrayOf(0.5), 0, 2),
-            equalTo(0.0)
+            equalTo(0.0),
         )
     }
 }

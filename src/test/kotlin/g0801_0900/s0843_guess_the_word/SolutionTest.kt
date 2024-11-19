@@ -43,7 +43,7 @@ internal class SolutionTest {
                         }
                         return result
                     }
-                }
+                },
             )
     }
 }

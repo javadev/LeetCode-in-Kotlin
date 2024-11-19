@@ -49,8 +49,8 @@ class Solution {
                         res,
                         min(
                             maxb - a,
-                            min(b - mina, (maxb - mina + 2) / 3 * 2)
-                        )
+                            min(b - mina, (maxb - mina + 2) / 3 * 2),
+                        ),
                     )
                 }
             }

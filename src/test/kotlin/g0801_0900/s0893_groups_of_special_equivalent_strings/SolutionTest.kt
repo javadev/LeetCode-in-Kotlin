@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numSpecialEquivGroups(arrayOf("abcd", "cdab", "cbad", "xyzz", "zzxy", "zzyx")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numSpecialEquivGroups(arrayOf("abc", "acb", "bac", "bca", "cab", "cba")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

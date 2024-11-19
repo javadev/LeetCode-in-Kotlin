@@ -12,14 +12,14 @@ internal class SolutionTest {
             Solution()
                 .modifiedMatrix(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2,-1],[4,-1,6],[7,8,9]"
-                    )
+                        "[1,2,-1],[4,-1,6],[7,8,9]",
+                    ),
                 ),
             equalTo(
                 convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[1,2,9],[4,8,6],[7,8,9]"
-                )
-            )
+                    "[1,2,9],[4,8,6],[7,8,9]",
+                ),
+            ),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun modifiedMatrix2() {
         assertThat(
             Solution().modifiedMatrix(arrayOf(intArrayOf(3, -1), intArrayOf(5, 2))),
-            equalTo(arrayOf(intArrayOf(3, 2), intArrayOf(5, 2)))
+            equalTo(arrayOf(intArrayOf(3, 2), intArrayOf(5, 2))),
         )
     }
 }

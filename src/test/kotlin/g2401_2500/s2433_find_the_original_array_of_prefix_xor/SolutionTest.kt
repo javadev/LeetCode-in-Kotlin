@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findArray() {
         assertThat(
             Solution().findArray(intArrayOf(5, 2, 0, 3, 1)),
-            equalTo(intArrayOf(5, 7, 2, 3, 2))
+            equalTo(intArrayOf(5, 7, 2, 3, 2)),
         )
     }
 

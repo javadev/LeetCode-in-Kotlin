@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countDifferentSubsequenceGCDs() {
         assertThat(
             Solution().countDifferentSubsequenceGCDs(intArrayOf(6, 10, 3)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countDifferentSubsequenceGCDs2() {
         assertThat(
             Solution().countDifferentSubsequenceGCDs(intArrayOf(5, 15, 40, 5, 6)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

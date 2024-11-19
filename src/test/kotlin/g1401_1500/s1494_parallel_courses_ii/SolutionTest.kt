@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minNumberOfSemesters() {
         assertThat(
             Solution().minNumberOfSemesters(4, arrayOf(intArrayOf(2, 1), intArrayOf(3, 1), intArrayOf(1, 4)), 2),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
                 .minNumberOfSemesters(
                     5,
                     arrayOf(intArrayOf(2, 1), intArrayOf(3, 1), intArrayOf(4, 1), intArrayOf(1, 5)),
-                    2
+                    2,
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

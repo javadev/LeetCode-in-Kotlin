@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .uniqueMorseRepresentations(arrayOf("gin", "zen", "gig", "msg")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

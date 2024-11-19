@@ -7,7 +7,9 @@ class Solution {
     fun findMin(nums: IntArray): Int {
         return if (nums.isEmpty()) {
             0
-        } else find(0, nums.size - 1, nums)
+        } else {
+            find(0, nums.size - 1, nums)
+        }
     }
 
     private fun find(left: Int, right: Int, nums: IntArray): Int {

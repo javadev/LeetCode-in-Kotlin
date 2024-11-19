@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun largestNumber() {
         assertThat(
             Solution().largestNumber(intArrayOf(4, 3, 2, 5, 6, 7, 2, 5, 5), 9),
-            equalTo("7772")
+            equalTo("7772"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun largestNumber2() {
         assertThat(
             Solution().largestNumber(intArrayOf(7, 6, 5, 5, 5, 6, 8, 7, 8), 12),
-            equalTo("85")
+            equalTo("85"),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun largestNumber3() {
         assertThat(
             Solution().largestNumber(intArrayOf(2, 4, 6, 2, 4, 6, 4, 4, 4), 5),
-            equalTo("0")
+            equalTo("0"),
         )
     }
 }

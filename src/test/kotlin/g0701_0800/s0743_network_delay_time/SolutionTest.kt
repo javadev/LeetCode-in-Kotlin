@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .networkDelayTime(arrayOf(intArrayOf(2, 1, 1), intArrayOf(2, 3, 1), intArrayOf(3, 4, 1)), 4, 2),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

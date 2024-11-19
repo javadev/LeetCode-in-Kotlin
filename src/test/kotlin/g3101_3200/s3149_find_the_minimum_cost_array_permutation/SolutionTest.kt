@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun findPermutation() {
         assertThat(
-            Solution().findPermutation(intArrayOf(1, 0, 2)), equalTo(intArrayOf(0, 1, 2))
+            Solution().findPermutation(intArrayOf(1, 0, 2)),
+            equalTo(intArrayOf(0, 1, 2)),
         )
     }
 
     @Test
     fun findPermutation2() {
         assertThat(
-            Solution().findPermutation(intArrayOf(0, 2, 1)), equalTo(intArrayOf(0, 2, 1))
+            Solution().findPermutation(intArrayOf(0, 2, 1)),
+            equalTo(intArrayOf(0, 2, 1)),
         )
     }
 }

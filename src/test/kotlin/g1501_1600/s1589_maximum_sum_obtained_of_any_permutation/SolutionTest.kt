@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxSumRangeQuery(intArrayOf(1, 2, 3, 4, 5), arrayOf(intArrayOf(1, 3), intArrayOf(0, 1))),
-            equalTo(19)
+            equalTo(19),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun maxSumRangeQuery2() {
         assertThat(
             Solution().maxSumRangeQuery(intArrayOf(1, 2, 3, 4, 5, 6), arrayOf(intArrayOf(0, 1))),
-            equalTo(11)
+            equalTo(11),
         )
     }
 }

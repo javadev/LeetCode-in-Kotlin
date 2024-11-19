@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(1, 2),
                     intArrayOf(2, 3),
                     intArrayOf(3, 4),
-                    intArrayOf(1, 3)
-                )
+                    intArrayOf(1, 3),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun eraseOverlapIntervals2() {
         assertThat(
             Solution().eraseOverlapIntervals(arrayOf(intArrayOf(1, 2), intArrayOf(1, 2), intArrayOf(1, 2))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

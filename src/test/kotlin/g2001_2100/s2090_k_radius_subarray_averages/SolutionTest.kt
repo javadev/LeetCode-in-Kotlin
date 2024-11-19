@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun averages() {
         assertThat(
             Solution().getAverages(intArrayOf(7, 4, 3, 9, 1, 8, 5, 2, 6), 3),
-            equalTo(intArrayOf(-1, -1, -1, 5, 4, 4, -1, -1, -1))
+            equalTo(intArrayOf(-1, -1, -1, 5, 4, 4, -1, -1, -1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun averages2() {
         assertThat(
             Solution().getAverages(intArrayOf(100000), 0),
-            equalTo(intArrayOf(100000))
+            equalTo(intArrayOf(100000)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun averages3() {
         assertThat(
             Solution().getAverages(intArrayOf(8), 100000),
-            equalTo(intArrayOf(-1))
+            equalTo(intArrayOf(-1)),
         )
     }
 }

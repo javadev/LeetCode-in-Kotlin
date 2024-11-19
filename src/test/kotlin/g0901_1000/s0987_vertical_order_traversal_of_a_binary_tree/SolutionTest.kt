@@ -13,10 +13,10 @@ internal class SolutionTest {
             Solution()
                 .verticalTraversal(
                     TreeNode.create(
-                        listOf(3, 9, 20, null, null, 15, 7)
-                    )
+                        listOf(3, 9, 20, null, null, 15, 7),
+                    ),
                 ),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(9), intArrayOf(3, 15), intArrayOf(20), intArrayOf(7))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(9), intArrayOf(3, 15), intArrayOf(20), intArrayOf(7)))),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .verticalTraversal(
-                    TreeNode.create(listOf(1, 2, 3, 4, 5, 6, 7))
+                    TreeNode.create(listOf(1, 2, 3, 4, 5, 6, 7)),
                 ),
             equalTo(
                 ArrayUtils.getLists(
@@ -34,10 +34,10 @@ internal class SolutionTest {
                         intArrayOf(2),
                         intArrayOf(1, 5, 6),
                         intArrayOf(3),
-                        intArrayOf(7)
-                    )
-                )
-            )
+                        intArrayOf(7),
+                    ),
+                ),
+            ),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun diagonalSum() {
         assertThat(
             Solution().diagonalSum(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))),
-            equalTo(25)
+            equalTo(25),
         )
     }
 
@@ -22,10 +22,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 1, 1),
                         intArrayOf(1, 1, 1, 1),
                         intArrayOf(1, 1, 1, 1),
-                        intArrayOf(1, 1, 1, 1)
-                    )
+                        intArrayOf(1, 1, 1, 1),
+                    ),
                 ),
-            equalTo(8)
+            equalTo(8),
         )
     }
 

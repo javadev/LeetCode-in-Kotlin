@@ -20,7 +20,9 @@ class Solution {
         }
         return if (distancesSquared[4] != distancesSquared[5]) {
             false
-        } else distancesSquared[5] == 2 * distancesSquared[0]
+        } else {
+            distancesSquared[5] == 2 * distancesSquared[0]
+        }
     }
 
     private fun getDistanceSquared(p1: IntArray, p2: IntArray): Int {

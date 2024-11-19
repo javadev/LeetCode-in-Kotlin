@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun letterCombinations() {
         assertThat(
             Solution().letterCombinations("23"),
-            equalTo(listOf("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"))
+            equalTo(listOf("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf")),
         )
     }
 
@@ -41,7 +41,8 @@ internal class SolutionTest {
     @Test
     fun letterCombinations7() {
         assertThat(
-            Solution().letterCombinations("7"), equalTo(listOf("p", "q", "r", "s"))
+            Solution().letterCombinations("7"),
+            equalTo(listOf("p", "q", "r", "s")),
         )
     }
 
@@ -53,7 +54,8 @@ internal class SolutionTest {
     @Test
     fun letterCombinations9() {
         assertThat(
-            Solution().letterCombinations("9"), equalTo(listOf("w", "x", "y", "z"))
+            Solution().letterCombinations("9"),
+            equalTo(listOf("w", "x", "y", "z")),
         )
     }
 }

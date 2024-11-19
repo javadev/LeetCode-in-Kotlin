@@ -14,9 +14,9 @@ internal class SolutionTest {
                     arrayOf("not"),
                     arrayOf("this student is studious", "the student is smart"),
                     intArrayOf(1, 2),
-                    2
+                    2,
                 ),
-            equalTo(mutableListOf(1, 2))
+            equalTo(mutableListOf(1, 2)),
         )
     }
 
@@ -25,14 +25,16 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .topStudents(
-                    arrayOf("smart", "brilliant", "studious"), arrayOf("not"),
+                    arrayOf("smart", "brilliant", "studious"),
+                    arrayOf("not"),
                     arrayOf(
-                        "this student is not studious", "the student is smart"
+                        "this student is not studious",
+                        "the student is smart",
                     ),
                     intArrayOf(1, 2),
-                    2
+                    2,
                 ),
-            equalTo(mutableListOf(2, 1))
+            equalTo(mutableListOf(2, 1)),
         )
     }
 }

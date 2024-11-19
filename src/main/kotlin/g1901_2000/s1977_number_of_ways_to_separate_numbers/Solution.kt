@@ -28,13 +28,18 @@ class Solution {
                 val len = j - i + 1
                 val prevStart = i - 1 - (len - 1)
                 var count: Long
-                if (prevStart < 0) count = pref[i - 1][i - 1] else {
+                if (prevStart < 0) {
+                    count = pref[i - 1][i - 1]
+                } else {
                     count = (pref[i - 1][i - 1] - pref[prevStart][i - 1] + mod) % mod
                     if (compare(prevStart, i, len, dp, num)) {
                         val cnt =
                             (
-                                if (prevStart == 0) pref[prevStart][i - 1] else
+                                if (prevStart == 0) {
+                                    pref[prevStart][i - 1]
+                                } else {
                                     pref[prevStart][i - 1] - pref[prevStart - 1][i - 1] + mod
+                                }
                                 ) % mod
                         count = (count + cnt + mod) % mod
                     }

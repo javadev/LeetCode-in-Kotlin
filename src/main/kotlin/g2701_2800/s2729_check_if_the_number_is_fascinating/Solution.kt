@@ -10,16 +10,18 @@ class Solution {
             var cur = _cur
             while (cur > 0) {
                 val n = cur % 10
-                if (n == 0 || set.contains(n))
+                if (n == 0 || set.contains(n)) {
                     return false
+                }
                 set.add(n)
                 cur /= 10
             }
             return true
         }
 
-        if (!add(n) || !add(2 * n) || !add(3 * n))
+        if (!add(n) || !add(2 * n) || !add(3 * n)) {
             return false
+        }
         return true
     }
 }

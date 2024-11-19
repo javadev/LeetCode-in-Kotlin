@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(5, 1),
                     intArrayOf(4, 5),
                     intArrayOf(11, 9),
-                    intArrayOf(9, 4)
-                )
+                    intArrayOf(9, 4),
+                ),
             ),
-            equalTo(arrayOf(intArrayOf(11, 9), intArrayOf(9, 4), intArrayOf(4, 5), intArrayOf(5, 1)))
+            equalTo(arrayOf(intArrayOf(11, 9), intArrayOf(9, 4), intArrayOf(4, 5), intArrayOf(5, 1))),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun validArrangement2() {
         assertThat(
             Solution().validArrangement(arrayOf(intArrayOf(1, 3), intArrayOf(3, 2), intArrayOf(2, 1))),
-            equalTo(arrayOf(intArrayOf(3, 2), intArrayOf(2, 1), intArrayOf(1, 3)))
+            equalTo(arrayOf(intArrayOf(3, 2), intArrayOf(2, 1), intArrayOf(1, 3))),
         )
     }
 
@@ -32,7 +32,7 @@ internal class SolutionTest {
     fun validArrangement3() {
         assertThat(
             Solution().validArrangement(arrayOf(intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(2, 1))),
-            equalTo(arrayOf(intArrayOf(1, 2), intArrayOf(2, 1), intArrayOf(1, 3)))
+            equalTo(arrayOf(intArrayOf(1, 2), intArrayOf(2, 1), intArrayOf(1, 3))),
         )
     }
 }

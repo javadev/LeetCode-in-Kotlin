@@ -13,11 +13,11 @@ internal class SolutionTest {
                 .maxOutput(
                     6,
                     CommonUtils.convertLeetCodeRegularRectangleArrayInputIntoJavaArray(
-                        "[0,1],[1,2],[1,3],[3,4],[3,5]"
+                        "[0,1],[1,2],[1,3],[3,4],[3,5]",
                     ),
-                    intArrayOf(9, 8, 7, 6, 10, 5)
+                    intArrayOf(9, 8, 7, 6, 10, 5),
                 ),
-            equalTo(24L)
+            equalTo(24L),
         )
     }
 
@@ -28,11 +28,11 @@ internal class SolutionTest {
                 .maxOutput(
                     3,
                     CommonUtils.convertLeetCodeRegularRectangleArrayInputIntoJavaArray(
-                        "[0,1],[1,2]"
+                        "[0,1],[1,2]",
                     ),
-                    intArrayOf(1, 1, 1)
+                    intArrayOf(1, 1, 1),
                 ),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 }

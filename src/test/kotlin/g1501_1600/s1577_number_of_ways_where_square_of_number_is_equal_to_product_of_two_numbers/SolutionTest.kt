@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numTriplets() {
         assertThat(
-            Solution().numTriplets(intArrayOf(7, 4), intArrayOf(5, 2, 8, 9)), equalTo(1)
+            Solution().numTriplets(intArrayOf(7, 4), intArrayOf(5, 2, 8, 9)),
+            equalTo(1),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun numTriplets3() {
         assertThat(
             Solution().numTriplets(intArrayOf(7, 7, 8, 3), intArrayOf(1, 2, 9, 7)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

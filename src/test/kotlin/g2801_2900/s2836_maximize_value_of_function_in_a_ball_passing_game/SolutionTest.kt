@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun maxFunctionValue() {
         assertThat(
             Solution().getMaxFunctionValue(mutableListOf(2, 0, 1), 4),
-            equalTo(6L)
+            equalTo(6L),
         )
     }
 
     @Test
     fun maxFunctionValue2() {
         assertThat(
-            Solution().getMaxFunctionValue(mutableListOf(1, 1, 1, 2, 3), 3), equalTo(10L)
+            Solution().getMaxFunctionValue(mutableListOf(1, 1, 1, 2, 3), 3),
+            equalTo(10L),
         )
     }
 }

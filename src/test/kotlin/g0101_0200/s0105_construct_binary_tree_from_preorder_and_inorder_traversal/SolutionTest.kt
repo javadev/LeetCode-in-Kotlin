@@ -12,9 +12,9 @@ internal class SolutionTest {
             Solution().buildTree(intArrayOf(3, 9, 20, 15, 7), intArrayOf(9, 3, 15, 20, 7)).toString(),
             equalTo(
                 TreeNode.create(
-                    listOf(3, 9, 20, null, null, 15, 7)
-                ).toString()
-            )
+                    listOf(3, 9, 20, null, null, 15, 7),
+                ).toString(),
+            ),
         )
     }
 
@@ -24,9 +24,9 @@ internal class SolutionTest {
             Solution().buildTree(intArrayOf(-1), intArrayOf(-1)).toString(),
             equalTo(
                 TreeNode.create(
-                    listOf(-1)
-                ).toString()
-            )
+                    listOf(-1),
+                ).toString(),
+            ),
         )
     }
 }

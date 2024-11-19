@@ -22,8 +22,8 @@ internal class SolutionTest {
                     intArrayOf(1, 2, 0, 3),
                     intArrayOf(4, 7, 15, 6),
                     intArrayOf(8, 9, 10, 11),
-                    intArrayOf(12, 13, 14, 5)
-                )
+                    intArrayOf(12, 13, 14, 5),
+                ),
             )
         assertThat(neighborSum.adjacentSum(15), equalTo(23))
         assertThat(neighborSum.diagonalSum(9), equalTo(45))

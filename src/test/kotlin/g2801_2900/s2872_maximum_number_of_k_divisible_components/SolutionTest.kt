@@ -13,12 +13,12 @@ internal class SolutionTest {
                 .maxKDivisibleComponents(
                     5,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,2],[1,2],[1,3],[2,4]"
+                        "[0,2],[1,2],[1,3],[2,4]",
                     ),
                     intArrayOf(1, 8, 1, 4, 4),
-                    6
+                    6,
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -29,12 +29,12 @@ internal class SolutionTest {
                 .maxKDivisibleComponents(
                     7,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]"
+                        "[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]",
                     ),
                     intArrayOf(3, 0, 6, 1, 5, 2, 1),
-                    3
+                    3,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

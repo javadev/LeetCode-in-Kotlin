@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countOperationsToEmptyArray() {
         assertThat(
             Solution().countOperationsToEmptyArray(intArrayOf(3, 4, -1)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countOperationsToEmptyArray2() {
         assertThat(
             Solution().countOperationsToEmptyArray(intArrayOf(1, 2, 4, 3)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun countOperationsToEmptyArray3() {
         assertThat(
             Solution().countOperationsToEmptyArray(intArrayOf(1, 2, 3)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

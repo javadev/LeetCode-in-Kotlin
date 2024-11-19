@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun kSmallestPairs() {
         assertThat(
             Solution().kSmallestPairs(intArrayOf(1, 7, 11), intArrayOf(2, 4, 6), 3),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2), intArrayOf(1, 4), intArrayOf(1, 6))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2), intArrayOf(1, 4), intArrayOf(1, 6)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun kSmallestPairs2() {
         assertThat(
             Solution().kSmallestPairs(intArrayOf(1, 1, 2), intArrayOf(1, 2, 3), 2),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1)))),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun kSmallestPairs3() {
         assertThat(
             Solution().kSmallestPairs(intArrayOf(1, 2), intArrayOf(3), 3),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 3), intArrayOf(2, 3))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 3), intArrayOf(2, 3)))),
         )
     }
 }

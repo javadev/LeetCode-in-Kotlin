@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestPathLength() {
         assertThat(
             Solution().shortestPathLength(arrayOf(intArrayOf(1, 2, 3), intArrayOf(0), intArrayOf(0), intArrayOf(0))),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -23,10 +23,10 @@ internal class SolutionTest {
                         intArrayOf(0, 2, 3),
                         intArrayOf(1, 3, 4),
                         intArrayOf(2),
-                        intArrayOf(1, 2)
-                    )
+                        intArrayOf(1, 2),
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

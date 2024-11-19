@@ -6,7 +6,9 @@ class Solution {
     private fun sol(a: Int, b: Int): Int {
         return if (b == 0) {
             a
-        } else sol(b, a % b)
+        } else {
+            sol(b, a % b)
+        }
     }
 
     fun subarrayGCD(nums: IntArray, k: Int): Int {

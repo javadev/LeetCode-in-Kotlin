@@ -16,8 +16,8 @@ internal class SolutionTest {
                         intArrayOf(7, 1),
                         intArrayOf(5, 0),
                         intArrayOf(6, 1),
-                        intArrayOf(5, 2)
-                    )
+                        intArrayOf(5, 2),
+                    ),
                 ),
             equalTo(
                 arrayOf(
@@ -26,9 +26,9 @@ internal class SolutionTest {
                     intArrayOf(5, 2),
                     intArrayOf(6, 1),
                     intArrayOf(4, 4),
-                    intArrayOf(7, 1)
-                )
-            )
+                    intArrayOf(7, 1),
+                ),
+            ),
         )
     }
 
@@ -43,8 +43,8 @@ internal class SolutionTest {
                         intArrayOf(4, 0),
                         intArrayOf(3, 2),
                         intArrayOf(2, 2),
-                        intArrayOf(1, 4)
-                    )
+                        intArrayOf(1, 4),
+                    ),
                 ),
             equalTo(
                 arrayOf(
@@ -53,9 +53,9 @@ internal class SolutionTest {
                     intArrayOf(2, 2),
                     intArrayOf(3, 2),
                     intArrayOf(1, 4),
-                    intArrayOf(6, 0)
-                )
-            )
+                    intArrayOf(6, 0),
+                ),
+            ),
         )
     }
 }

@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 3),
                         intArrayOf(1, 2, 4),
                         intArrayOf(1, 1, 2),
-                        intArrayOf(2, 3, 4)
-                    )
+                        intArrayOf(2, 3, 4),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -29,9 +29,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxNumEdgesToRemove(
-                    4, arrayOf(intArrayOf(3, 1, 2), intArrayOf(3, 2, 3), intArrayOf(1, 1, 4), intArrayOf(2, 1, 4))
+                    4,
+                    arrayOf(intArrayOf(3, 1, 2), intArrayOf(3, 2, 3), intArrayOf(1, 1, 4), intArrayOf(2, 1, 4)),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -40,7 +41,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxNumEdgesToRemove(4, arrayOf(intArrayOf(3, 2, 3), intArrayOf(1, 1, 2), intArrayOf(2, 3, 4))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

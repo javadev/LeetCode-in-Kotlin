@@ -18,7 +18,7 @@ internal class SolutionTest {
             "   comment for ",
             "   testing */",
             "a = b + c;",
-            "}"
+            "}",
         )
         val expected = listOf("int main()", "{ ", "  ", "int a, b, c;", "a = b + c;", "}")
         assertThat(Solution().removeComments(input), equalTo(expected))

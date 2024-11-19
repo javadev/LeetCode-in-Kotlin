@@ -13,16 +13,16 @@ internal class SolutionTest {
                 .findLadders(
                     "hit",
                     "cog",
-                    listOf("hot", "dot", "dog", "lot", "log", "cog")
+                    listOf("hot", "dot", "dog", "lot", "log", "cog"),
                 ),
             equalTo(
                 ArrayUtils.getLists(
                     arrayOf(
                         arrayOf("hit", "hot", "lot", "log", "cog"),
-                        arrayOf("hit", "hot", "dot", "dog", "cog")
-                    )
-                )
-            )
+                        arrayOf("hit", "hot", "dot", "dog", "cog"),
+                    ),
+                ),
+            ),
         )
     }
 
@@ -31,9 +31,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findLadders(
-                    "hit", "cog", listOf("hot", "dot", "dog", "lot", "log")
+                    "hit",
+                    "cog",
+                    listOf("hot", "dot", "dog", "lot", "log"),
                 ),
-            equalTo(ArrayUtils.getLists(arrayOf<Array<String>>()))
+            equalTo(ArrayUtils.getLists(arrayOf<Array<String>>())),
         )
     }
 }

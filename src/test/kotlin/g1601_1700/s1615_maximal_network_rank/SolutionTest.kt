@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat(
             Solution().maximalNetworkRank(
                 4,
-                arrayOf(intArrayOf(2, 1), intArrayOf(0, 3), intArrayOf(1, 2), intArrayOf(1, 3))
+                arrayOf(intArrayOf(2, 1), intArrayOf(0, 3), intArrayOf(1, 2), intArrayOf(1, 3)),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -28,10 +28,10 @@ internal class SolutionTest {
                         intArrayOf(2, 3),
                         intArrayOf(2, 4),
                         intArrayOf(5, 6),
-                        intArrayOf(5, 7)
-                    )
+                        intArrayOf(5, 7),
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -47,10 +47,10 @@ internal class SolutionTest {
                         intArrayOf(1, 2),
                         intArrayOf(1, 3),
                         intArrayOf(2, 3),
-                        intArrayOf(2, 4)
-                    )
+                        intArrayOf(2, 4),
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

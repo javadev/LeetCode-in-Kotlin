@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findLength() {
         assertThat(
             Solution().findLength(intArrayOf(1, 2, 3, 2, 1), intArrayOf(3, 2, 1, 4, 7)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findLength2() {
         assertThat(
             Solution().findLength(intArrayOf(0, 0, 0, 0, 0), intArrayOf(0, 0, 0, 0, 0)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

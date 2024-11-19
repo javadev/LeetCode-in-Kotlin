@@ -7,7 +7,7 @@ class Solution {
     fun shoppingOffers(
         price: List<Int>,
         special: List<List<Int>>,
-        needs: List<Int>
+        needs: List<Int>,
     ): Int {
         val map: MutableMap<List<Int>, Int> = HashMap()
         shoppingOffersUtil(price, special, needs, map)
@@ -18,7 +18,7 @@ class Solution {
         price: List<Int>,
         special: List<List<Int>>,
         needs: List<Int>,
-        map: MutableMap<List<Int>, Int>
+        map: MutableMap<List<Int>, Int>,
     ): Int {
         if (map.containsKey(needs)) {
             return map[needs]!!
@@ -32,9 +32,9 @@ class Solution {
                             price,
                             special,
                             updatedNeeds(needs, special[i]),
-                            map
+                            map,
                         ),
-                    ans
+                    ans,
                 )
             }
         }

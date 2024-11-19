@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun divisibilityArray() {
         assertThat(
             Solution().divisibilityArray("998244353", 3),
-            equalTo(intArrayOf(1, 1, 0, 0, 0, 1, 1, 0, 0))
+            equalTo(intArrayOf(1, 1, 0, 0, 0, 1, 1, 0, 0)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun divisibilityArray2() {
         assertThat(
             Solution().divisibilityArray("1010", 10),
-            equalTo(intArrayOf(0, 1, 0, 1))
+            equalTo(intArrayOf(0, 1, 0, 1)),
         )
     }
 }

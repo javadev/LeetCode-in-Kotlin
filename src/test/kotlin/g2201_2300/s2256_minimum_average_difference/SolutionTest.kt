@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minimumAverageDifference() {
         assertThat(
-            Solution().minimumAverageDifference(intArrayOf(2, 5, 3, 9, 5, 3)), equalTo(3)
+            Solution().minimumAverageDifference(intArrayOf(2, 5, 3, 9, 5, 3)),
+            equalTo(3),
         )
     }
 

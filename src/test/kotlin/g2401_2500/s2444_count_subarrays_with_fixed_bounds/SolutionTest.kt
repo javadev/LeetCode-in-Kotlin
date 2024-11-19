@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countSubarrays() {
         assertThat(
             Solution().countSubarrays(intArrayOf(1, 3, 5, 2, 7, 5), 1, 5),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 

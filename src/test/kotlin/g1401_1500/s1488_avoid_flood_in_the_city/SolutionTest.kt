@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun avoidFlood() {
         assertThat(
             Solution().avoidFlood(intArrayOf(1, 2, 3, 4)),
-            equalTo(intArrayOf(-1, -1, -1, -1))
+            equalTo(intArrayOf(-1, -1, -1, -1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun avoidFlood2() {
         assertThat(
             Solution().avoidFlood(intArrayOf(1, 2, 0, 0, 2, 1)),
-            equalTo(intArrayOf(-1, -1, 2, 1, -1, -1))
+            equalTo(intArrayOf(-1, -1, 2, 1, -1, -1)),
         )
     }
 

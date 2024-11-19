@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMaximumScore() {
         assertThat<Long?>(
             Solution().findMaximumScore(mutableListOf<Int>(1, 3, 1, 5)),
-            equalTo<Long?>(7L)
+            equalTo<Long?>(7L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findMaximumScore2() {
         assertThat<Long?>(
             Solution().findMaximumScore(mutableListOf<Int>(4, 3, 1, 3, 2)),
-            equalTo<Long?>(16L)
+            equalTo<Long?>(16L),
         )
     }
 }

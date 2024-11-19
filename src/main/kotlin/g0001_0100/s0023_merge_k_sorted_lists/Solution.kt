@@ -19,7 +19,9 @@ class Solution {
     fun mergeKLists(lists: Array<ListNode>): ListNode? {
         return if (lists.isEmpty()) {
             null
-        } else mergeKLists(lists, 0, lists.size)
+        } else {
+            mergeKLists(lists, 0, lists.size)
+        }
     }
 
     private fun mergeKLists(lists: Array<ListNode>, leftIndex: Int, rightIndex: Int): ListNode? {

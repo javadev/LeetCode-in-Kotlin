@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat(
             Solution().countPairs(
                 3,
-                arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 2))
+                arrayOf(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 2)),
             ),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 
@@ -21,9 +21,9 @@ internal class SolutionTest {
         assertThat(
             Solution().countPairs(
                 7,
-                arrayOf(intArrayOf(0, 2), intArrayOf(0, 5), intArrayOf(2, 4), intArrayOf(1, 6), intArrayOf(5, 4))
+                arrayOf(intArrayOf(0, 2), intArrayOf(0, 5), intArrayOf(2, 4), intArrayOf(1, 6), intArrayOf(5, 4)),
             ),
-            equalTo(14L)
+            equalTo(14L),
         )
     }
 }

@@ -16,7 +16,7 @@ class Solution {
                 count += length[i][j]
             }
             indexes.computeIfAbsent(
-                arr[i].toLong()
+                arr[i].toLong(),
             ) { _: Long? -> ArrayList() }.add(i)
         }
         return count

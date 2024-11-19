@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun productQueries() {
         assertThat(
             Solution().productQueries(15, arrayOf(intArrayOf(0, 1), intArrayOf(2, 2), intArrayOf(0, 3))),
-            equalTo(intArrayOf(2, 4, 64))
+            equalTo(intArrayOf(2, 4, 64)),
         )
     }
 
@@ -18,8 +18,8 @@ internal class SolutionTest {
         assertThat(
             Solution().productQueries(2, arrayOf(intArrayOf(0, 0))),
             equalTo(
-                intArrayOf(2)
-            )
+                intArrayOf(2),
+            ),
         )
     }
 }

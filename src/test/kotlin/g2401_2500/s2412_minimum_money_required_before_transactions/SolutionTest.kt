@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumMoney() {
         assertThat(
             Solution().minimumMoney(arrayOf(intArrayOf(2, 1), intArrayOf(5, 0), intArrayOf(4, 2))),
-            equalTo(10L)
+            equalTo(10L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumMoney2() {
         assertThat(
             Solution().minimumMoney(arrayOf(intArrayOf(3, 0), intArrayOf(0, 3))),
-            equalTo(3L)
+            equalTo(3L),
         )
     }
 }

@@ -28,7 +28,7 @@ class Solution {
         index: Int,
         jumpLength: Int,
         expectedVal: Int,
-        rocks: Map<Int, Int>
+        rocks: Map<Int, Int>,
     ): Boolean {
         // overshoot and going backwards not allowed
         if (index >= stones.size || jumpLength <= 0) {
@@ -52,21 +52,21 @@ class Solution {
                 rocks[stones[index] + jumpLength] ?: stones.size,
                 jumpLength + 1,
                 stones[index] + jumpLength,
-                rocks
+                rocks,
             ) ||
                 jump(
                     stones,
                     rocks[stones[index] + jumpLength] ?: stones.size,
                     jumpLength,
                     stones[index] + jumpLength,
-                    rocks
+                    rocks,
                 ) ||
                 jump(
                     stones,
                     rocks[stones[index] + jumpLength] ?: stones.size,
                     jumpLength - 1,
                     stones[index] + jumpLength,
-                    rocks
+                    rocks,
                 )
             )
     }

@@ -51,7 +51,7 @@ class Solution {
                 if (idx < sums1.size) {
                     min = Math.min(
                         min,
-                        Math.abs(sum - s1 - sums2[idx] - (sums2[idx] + s1))
+                        Math.abs(sum - s1 - sums2[idx] - (sums2[idx] + s1)),
                     )
                 }
                 if (idx - 1 >= 0) {
@@ -59,8 +59,8 @@ class Solution {
                         min,
                         Math.abs(
                             sum - s1 - sums2[idx - 1] -
-                                (sums2[idx - 1] + s1)
-                        )
+                                (sums2[idx - 1] + s1),
+                        ),
                     )
                 }
             }

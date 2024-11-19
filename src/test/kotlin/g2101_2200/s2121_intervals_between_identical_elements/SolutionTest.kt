@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distances() {
         assertThat(
             Solution().getDistances(intArrayOf(2, 1, 3, 1, 2, 3, 3)),
-            equalTo(longArrayOf(4, 2, 7, 2, 4, 4, 5))
+            equalTo(longArrayOf(4, 2, 7, 2, 4, 4, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun distances2() {
         assertThat(
             Solution().getDistances(intArrayOf(10, 5, 10, 10)),
-            equalTo(longArrayOf(5, 0, 3, 4))
+            equalTo(longArrayOf(5, 0, 3, 4)),
         )
     }
 }

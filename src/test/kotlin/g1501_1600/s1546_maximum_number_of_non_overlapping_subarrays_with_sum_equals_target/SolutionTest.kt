@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun maxNonOverlapping2() {
         assertThat(
-            Solution().maxNonOverlapping(intArrayOf(-1, 3, 5, 1, 4, 2, -9), 6), equalTo(2)
+            Solution().maxNonOverlapping(intArrayOf(-1, 3, 5, 1, 4, 2, -9), 6),
+            equalTo(2),
         )
     }
 }

@@ -21,8 +21,8 @@ import javax.sql.DataSource
             "INSERT INTO Tree(id, p_id) VALUES (2, 1); " +
             "INSERT INTO Tree(id, p_id) VALUES (3, 1); " +
             "INSERT INTO Tree(id, p_id) VALUES (4, 2); " +
-            "INSERT INTO Tree(id, p_id) VALUES (5, 2); "
-    ]
+            "INSERT INTO Tree(id, p_id) VALUES (5, 2); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -35,12 +35,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g0601_0700/" +
                                 "s0608_tree_node" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findTheDistanceValue(intArrayOf(4, 5, 8), intArrayOf(10, 9, 1, 8), 2),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findTheDistanceValue(intArrayOf(1, 4, 2, 3), intArrayOf(-4, -3, 6, 10, 20, 30), 3),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findTheDistanceValue(intArrayOf(2, 1, 100, 3), intArrayOf(-5, -2, 10, -3, 7), 6),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

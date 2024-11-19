@@ -23,7 +23,7 @@ class Solution {
         key: String,
         j: Int,
         cache: Array<IntArray>,
-        indexs: Array<MutableList<Int>?>
+        indexs: Array<MutableList<Int>?>,
     ): Int {
         if (j == key.length) {
             return 0

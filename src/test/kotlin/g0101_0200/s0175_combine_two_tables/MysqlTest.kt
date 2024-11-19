@@ -27,8 +27,8 @@ import javax.sql.DataSource
             "INSERT INTO Address(addressId, personId, city, state)" +
             " VALUES (1, 2, 'New York City', 'New York'); " +
             "INSERT INTO Address(addressId, personId, city, state)" +
-            " VALUES (2, 3, 'Leetcode', 'California'); "
-    ]
+            " VALUES (2, 3, 'Leetcode', 'California'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -39,12 +39,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0175_combine_two_tables/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Allen"))

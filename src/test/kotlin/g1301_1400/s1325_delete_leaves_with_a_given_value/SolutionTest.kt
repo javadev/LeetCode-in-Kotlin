@@ -12,7 +12,7 @@ internal class SolutionTest {
         val expected = TreeNode.create(mutableListOf(1, null, 3, null, 4))
         assertThat(
             Solution().removeLeafNodes(treeNode, 2).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
         val expected = TreeNode.create(mutableListOf(1, 3, null, null, 2))
         assertThat(
             Solution().removeLeafNodes(treeNode, 3).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -32,7 +32,7 @@ internal class SolutionTest {
         val expected = TreeNode.create(listOf(1))
         assertThat(
             Solution().removeLeafNodes(treeNode, 2).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 }

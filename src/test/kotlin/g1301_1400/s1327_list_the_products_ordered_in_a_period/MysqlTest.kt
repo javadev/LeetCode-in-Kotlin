@@ -51,8 +51,8 @@ import javax.sql.DataSource
             "INSERT INTO Orders(product_id, order_date, unit)" +
             " VALUES (5, '2020-02-27', 50); " +
             "INSERT INTO Orders(product_id, order_date, unit)" +
-            " VALUES (5, '2020-03-01', 50); "
-    ]
+            " VALUES (5, '2020-03-01', 50); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -64,12 +64,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1327_list_the_products_ordered_in_a_period" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Leetcode Kit"))

@@ -22,31 +22,45 @@ class Solution {
         for (tree in trees) {
             valToNode[tree.`val`] = tree
             count.merge(
-                tree.`val`, 1
+                tree.`val`,
+                1,
             ) { a: Int?, b: Int? ->
                 Integer.sum(
-                    a!!, b!!
+                    a!!,
+                    b!!,
                 )
             }
-            if (tree.left != null) count.merge(
-                tree.left!!.`val`, 1
-            ) { a: Int?, b: Int? ->
-                Integer.sum(
-                    a!!, b!!
-                )
+            if (tree.left != null) {
+                count.merge(
+                    tree.left!!.`val`,
+                    1,
+                ) { a: Int?, b: Int? ->
+                    Integer.sum(
+                        a!!,
+                        b!!,
+                    )
+                }
             }
-            if (tree.right != null) count.merge(
-                tree.right!!.`val`, 1
-            ) { a: Int?, b: Int? ->
-                Integer.sum(
-                    a!!, b!!
-                )
+            if (tree.right != null) {
+                count.merge(
+                    tree.right!!.`val`,
+                    1,
+                ) { a: Int?, b: Int? ->
+                    Integer.sum(
+                        a!!,
+                        b!!,
+                    )
+                }
             }
         }
         for (tree in trees) if (count[tree.`val`] == 1) {
             return if (isValidBST(tree, null, null, valToNode) &&
                 valToNode.size <= 1
-            ) tree else null
+            ) {
+                tree
+            } else {
+                null
+            }
         }
         return null
     }
@@ -55,7 +69,7 @@ class Solution {
         tree: TreeNode?,
         minNode: TreeNode?,
         maxNode: TreeNode?,
-        valToNode: MutableMap<Int, TreeNode>
+        valToNode: MutableMap<Int, TreeNode>,
     ): Boolean {
         if (tree == null) return true
         if (minNode != null && tree.`val` <= minNode.`val`) return false

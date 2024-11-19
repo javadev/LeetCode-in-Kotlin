@@ -15,7 +15,7 @@ internal class SolutionTest {
         val root = TreeNode(6, leftNode, rightNode)
         assertThat(
             Solution().lowestCommonAncestor(root, TreeNode(2), TreeNode(8))!!.`val`,
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         val root = TreeNode(6, leftNode, rightNode)
         assertThat(
             Solution().lowestCommonAncestor(root, TreeNode(2), TreeNode(4))!!.`val`,
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -39,9 +39,9 @@ internal class SolutionTest {
                 .lowestCommonAncestor(
                     TreeNode(2, TreeNode(1), null),
                     TreeNode(2),
-                    TreeNode(1)
+                    TreeNode(1),
                 )!!.`val`,
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -52,9 +52,9 @@ internal class SolutionTest {
                 .lowestCommonAncestor(
                     TreeNode.create(listOf(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5)),
                     TreeNode(3),
-                    TreeNode(5)
+                    TreeNode(5),
                 )!!.`val`,
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

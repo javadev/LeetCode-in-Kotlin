@@ -16,10 +16,14 @@ class Solution {
             map.getValue(p[0]).add(p[1])
         }
         points.sortWith { a: IntArray, b: IntArray ->
-            if (a[0] == b[0]) Integer.compare(
-                a[1],
-                b[1]
-            ) else Integer.compare(a[0], b[0])
+            if (a[0] == b[0]) {
+                Integer.compare(
+                    a[1],
+                    b[1],
+                )
+            } else {
+                Integer.compare(a[0], b[0])
+            }
         }
         var min = Int.MAX_VALUE
         for (i in 0 until points.size - 2) {

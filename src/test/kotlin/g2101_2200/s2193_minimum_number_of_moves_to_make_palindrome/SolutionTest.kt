@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun minMovesToMakePalindrome3() {
         assertThat(
             Solution().minMovesToMakePalindrome("skwhhaaunskegmdtutlgtteunmuuludii"),
-            equalTo(163)
+            equalTo(163),
         )
     }
 }

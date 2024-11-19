@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxScore() {
         assertThat(
             Solution().maxScore(intArrayOf(1, 3, 3, 2), intArrayOf(2, 1, 3, 4), 3),
-            equalTo(12L)
+            equalTo(12L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxScore2() {
         assertThat(
             Solution().maxScore(intArrayOf(4, 2, 3, 1, 1), intArrayOf(7, 5, 10, 9, 6), 1),
-            equalTo(30L)
+            equalTo(30L),
         )
     }
 }

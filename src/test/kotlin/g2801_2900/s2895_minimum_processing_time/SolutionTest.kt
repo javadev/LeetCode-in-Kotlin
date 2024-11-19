@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minProcessingTime(
-                    mutableListOf(8, 10), mutableListOf(2, 2, 3, 1, 8, 7, 4, 5)
+                    mutableListOf(8, 10),
+                    mutableListOf(2, 2, 3, 1, 8, 7, 4, 5),
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minProcessingTime(
-                    mutableListOf(10, 20), mutableListOf(2, 3, 1, 2, 5, 8, 4, 3)
+                    mutableListOf(10, 20),
+                    mutableListOf(2, 3, 1, 2, 5, 8, 4, 3),
                 ),
-            equalTo(23)
+            equalTo(23),
         )
     }
 }

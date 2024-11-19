@@ -10,28 +10,33 @@ internal class SolutionTest {
         val expected = listOf(
             mutableListOf("mobile", "moneypot", "monitor"),
             mutableListOf("mobile", "moneypot", "monitor"),
-            mutableListOf("mouse", "mousepad"), mutableListOf("mouse", "mousepad"),
-            mutableListOf("mouse", "mousepad")
+            mutableListOf("mouse", "mousepad"),
+            mutableListOf("mouse", "mousepad"),
+            mutableListOf("mouse", "mousepad"),
         )
         assertThat(
             Solution()
                 .suggestedProducts(
                     arrayOf("mobile", "mouse", "moneypot", "monitor", "mousepad"),
-                    "mouse"
+                    "mouse",
                 ),
-            equalTo(expected)
+            equalTo(expected),
         )
     }
 
     @Test
     fun suggestedProducts2() {
         val expected = listOf(
-            listOf("havana"), listOf("havana"), listOf("havana"),
-            listOf("havana"), listOf("havana"), listOf("havana")
+            listOf("havana"),
+            listOf("havana"),
+            listOf("havana"),
+            listOf("havana"),
+            listOf("havana"),
+            listOf("havana"),
         )
         assertThat(
             Solution().suggestedProducts(arrayOf("havana"), "havana"),
-            equalTo(expected)
+            equalTo(expected),
         )
     }
 
@@ -39,15 +44,17 @@ internal class SolutionTest {
     fun suggestedProducts3() {
         val expected = listOf(
             mutableListOf("baggage", "bags", "banner"),
-            mutableListOf("baggage", "bags", "banner"), mutableListOf("baggage", "bags"), listOf("bags")
+            mutableListOf("baggage", "bags", "banner"),
+            mutableListOf("baggage", "bags"),
+            listOf("bags"),
         )
         assertThat(
             Solution()
                 .suggestedProducts(
                     arrayOf("bags", "baggage", "banner", "box", "cloths"),
-                    "bags"
+                    "bags",
                 ),
-            equalTo(expected)
+            equalTo(expected),
         )
     }
 }

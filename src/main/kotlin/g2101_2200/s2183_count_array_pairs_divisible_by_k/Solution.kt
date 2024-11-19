@@ -25,6 +25,8 @@ class Solution {
         }
         return if (a == 0) {
             b
-        } else gcd(a, b % a)
+        } else {
+            gcd(a, b % a)
+        }
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun executeInstructions() {
         assertThat(
             Solution().executeInstructions(3, intArrayOf(0, 1), "RRDDLU"),
-            equalTo(intArrayOf(1, 5, 4, 3, 1, 0))
+            equalTo(intArrayOf(1, 5, 4, 3, 1, 0)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun executeInstructions2() {
         assertThat(
             Solution().executeInstructions(2, intArrayOf(1, 1), "LURD"),
-            equalTo(intArrayOf(4, 1, 0, 0))
+            equalTo(intArrayOf(4, 1, 0, 0)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun executeInstructions3() {
         assertThat(
             Solution().executeInstructions(1, intArrayOf(0, 0), "LRUD"),
-            equalTo(intArrayOf(0, 0, 0, 0))
+            equalTo(intArrayOf(0, 0, 0, 0)),
         )
     }
 }

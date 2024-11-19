@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun maxSumSubmatrix() {
         assertThat(
-            Solution().maxSumSubmatrix(arrayOf(intArrayOf(1, 0, 1), intArrayOf(0, -2, 3)), 2), equalTo(2)
+            Solution().maxSumSubmatrix(arrayOf(intArrayOf(1, 0, 1), intArrayOf(0, -2, 3)), 2),
+            equalTo(2),
         )
     }
 

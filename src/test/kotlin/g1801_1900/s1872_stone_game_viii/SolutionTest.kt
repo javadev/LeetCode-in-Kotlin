@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun stoneGameVIII2() {
         assertThat(
             Solution().stoneGameVIII(intArrayOf(7, -6, 5, 10, 5, -2, -6)),
-            equalTo(13)
+            equalTo(13),
         )
     }
 

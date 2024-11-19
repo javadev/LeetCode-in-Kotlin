@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findRelativeRanks() {
         assertThat(
             Solution().findRelativeRanks(intArrayOf(5, 4, 3, 2, 1)),
-            equalTo(arrayOf("Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"))
+            equalTo(arrayOf("Gold Medal", "Silver Medal", "Bronze Medal", "4", "5")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findRelativeRanks2() {
         assertThat(
             Solution().findRelativeRanks(intArrayOf(10, 3, 8, 9, 4)),
-            equalTo(arrayOf("Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"))
+            equalTo(arrayOf("Gold Medal", "5", "Bronze Medal", "Silver Medal", "4")),
         )
     }
 }

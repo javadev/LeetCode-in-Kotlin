@@ -9,13 +9,15 @@ internal class SolutionTest {
     fun maximumSumQueries() {
         assertThat(
             Solution().maximumSumQueries(
-                intArrayOf(4, 3, 1, 2), intArrayOf(2, 4, 9, 5),
+                intArrayOf(4, 3, 1, 2),
+                intArrayOf(2, 4, 9, 5),
                 arrayOf(
                     intArrayOf(4, 1),
-                    intArrayOf(1, 3), intArrayOf(2, 5)
-                )
+                    intArrayOf(1, 3),
+                    intArrayOf(2, 5),
+                ),
             ),
-            equalTo(intArrayOf(6, 10, 7))
+            equalTo(intArrayOf(6, 10, 7)),
         )
     }
 
@@ -23,13 +25,15 @@ internal class SolutionTest {
     fun maximumSumQueries2() {
         assertThat(
             Solution().maximumSumQueries(
-                intArrayOf(3, 2, 5), intArrayOf(2, 3, 4),
+                intArrayOf(3, 2, 5),
+                intArrayOf(2, 3, 4),
                 arrayOf(
                     intArrayOf(4, 4),
-                    intArrayOf(3, 2), intArrayOf(1, 1)
-                )
+                    intArrayOf(3, 2),
+                    intArrayOf(1, 1),
+                ),
             ),
-            equalTo(intArrayOf(9, 9, 9))
+            equalTo(intArrayOf(9, 9, 9)),
         )
     }
 
@@ -37,10 +41,11 @@ internal class SolutionTest {
     fun maximumSumQueries3() {
         assertThat(
             Solution().maximumSumQueries(
-                intArrayOf(2, 1), intArrayOf(2, 3),
-                arrayOf(intArrayOf(3, 3))
+                intArrayOf(2, 1),
+                intArrayOf(2, 3),
+                arrayOf(intArrayOf(3, 3)),
             ),
-            equalTo(intArrayOf(-1))
+            equalTo(intArrayOf(-1)),
         )
     }
 }

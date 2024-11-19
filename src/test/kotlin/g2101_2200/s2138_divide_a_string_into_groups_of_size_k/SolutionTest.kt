@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun divideString() {
         assertThat(
             Solution().divideString("abcdefghi", 3, 'x'),
-            equalTo(arrayOf("abc", "def", "ghi"))
+            equalTo(arrayOf("abc", "def", "ghi")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun divideString2() {
         assertThat(
             Solution().divideString("abcdefghij", 3, 'x'),
-            equalTo(arrayOf("abc", "def", "ghi", "jxx"))
+            equalTo(arrayOf("abc", "def", "ghi", "jxx")),
         )
     }
 }

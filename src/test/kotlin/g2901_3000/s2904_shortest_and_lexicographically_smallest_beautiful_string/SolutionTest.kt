@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun shortestBeautifulSubstring4() {
         assertThat(
             Solution().shortestBeautifulSubstring("001110101101101111", 10),
-            equalTo("10101101101111")
+            equalTo("10101101101111"),
         )
     }
 }

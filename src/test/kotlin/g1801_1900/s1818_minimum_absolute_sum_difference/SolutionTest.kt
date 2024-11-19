@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minAbsoluteSumDiff() {
         assertThat(
             Solution().minAbsoluteSumDiff(intArrayOf(1, 7, 5), intArrayOf(2, 3, 5)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minAbsoluteSumDiff(intArrayOf(2, 4, 6, 8, 10), intArrayOf(2, 4, 6, 8, 10)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minAbsoluteSumDiff(intArrayOf(1, 10, 4, 4, 2, 7), intArrayOf(9, 3, 5, 1, 7, 4)),
-            equalTo(20)
+            equalTo(20),
         )
     }
 }

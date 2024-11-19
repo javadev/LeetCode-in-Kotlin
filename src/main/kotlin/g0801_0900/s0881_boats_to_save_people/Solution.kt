@@ -21,6 +21,8 @@ class Solution {
         }
         return if (i == j) {
             boats + 1
-        } else boats
+        } else {
+            boats
+        }
     }
 }

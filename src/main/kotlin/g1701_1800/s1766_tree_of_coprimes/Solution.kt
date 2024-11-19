@@ -13,7 +13,7 @@ class Solution {
         node: Int,
         ans: IntArray,
         nums: IntArray,
-        neighbors: Array<ArrayList<Int>>
+        neighbors: Array<ArrayList<Int>>,
     ) {
         var d = Int.MIN_VALUE
         var n = -1

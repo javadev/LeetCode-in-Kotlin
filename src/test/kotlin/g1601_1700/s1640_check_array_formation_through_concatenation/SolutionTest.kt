@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canFormArray() {
         assertThat(
             Solution().canFormArray(intArrayOf(15, 88), arrayOf(intArrayOf(88), intArrayOf(15))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun canFormArray2() {
         assertThat(
             Solution().canFormArray(intArrayOf(49, 18, 16), arrayOf(intArrayOf(16, 18, 49))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canFormArray(intArrayOf(91, 4, 64, 78), arrayOf(intArrayOf(78), intArrayOf(4, 64), intArrayOf(91))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

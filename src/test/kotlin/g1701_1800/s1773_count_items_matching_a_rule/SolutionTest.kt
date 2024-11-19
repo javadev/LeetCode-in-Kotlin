@@ -12,12 +12,13 @@ internal class SolutionTest {
                 .countMatches(
                     listOf(
                         mutableListOf("phone", "blue", "pixel"),
-                        mutableListOf("computer", "silver", "lenovo"), mutableListOf("phone", "gold", "iphone")
+                        mutableListOf("computer", "silver", "lenovo"),
+                        mutableListOf("phone", "gold", "iphone"),
                     ),
                     "color",
-                    "silver"
+                    "silver",
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -29,12 +30,12 @@ internal class SolutionTest {
                     listOf(
                         mutableListOf("phone", "blue", "pixel"),
                         mutableListOf("computer", "silver", "phone"),
-                        mutableListOf("phone", "gold", "iphone")
+                        mutableListOf("phone", "gold", "iphone"),
                     ),
                     "type",
-                    "phone"
+                    "phone",
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

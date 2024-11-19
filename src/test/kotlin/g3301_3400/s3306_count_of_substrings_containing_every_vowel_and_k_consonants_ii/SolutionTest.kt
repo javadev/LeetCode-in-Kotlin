@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun countOfSubstrings3() {
         assertThat<Long>(
             Solution().countOfSubstrings("ieaouqqieaouqq", 1),
-            equalTo<Long>(3L)
+            equalTo<Long>(3L),
         )
     }
 }

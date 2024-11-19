@@ -27,8 +27,8 @@ internal class RandomizedCollectionTest {
                 "true",
                 random.toString() + "",
                 "true",
-                random2.toString() + ""
-            )
+                random2.toString() + "",
+            ),
         )
         assertThat(result, equalTo(expected))
     }

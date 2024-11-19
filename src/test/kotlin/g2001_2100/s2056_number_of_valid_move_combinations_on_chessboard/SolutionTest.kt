@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countCombinations() {
         assertThat(
             Solution().countCombinations(arrayOf("rook"), arrayOf(intArrayOf(1, 1))),
-            equalTo(15)
+            equalTo(15),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countCombinations2() {
         assertThat(
             Solution().countCombinations(arrayOf("queen"), arrayOf(intArrayOf(1, 1))),
-            equalTo(22)
+            equalTo(22),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun countCombinations3() {
         assertThat(
             Solution().countCombinations(arrayOf("bishop"), arrayOf(intArrayOf(4, 3))),
-            equalTo(12)
+            equalTo(12),
         )
     }
 }

@@ -9,15 +9,17 @@ class Solution {
         for (divisor in divisors) {
             var dividedNums = 0
             for (num in nums) {
-                if (num % divisor == 0)
+                if (num % divisor == 0) {
                     dividedNums++
+                }
             }
             if (dividedNums > maxDividedNums) {
                 maxDividedNums = dividedNums
                 maxDivisor = divisor
             }
-            if (dividedNums == maxDividedNums && divisor < maxDivisor)
+            if (dividedNums == maxDividedNums && divisor < maxDivisor) {
                 maxDivisor = divisor
+            }
         }
         return maxDivisor
     }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numSpecial() {
         assertThat(
             Solution().numSpecial(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 0, 1), intArrayOf(1, 0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numSpecial2() {
         assertThat(
             Solution().numSpecial(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 1))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

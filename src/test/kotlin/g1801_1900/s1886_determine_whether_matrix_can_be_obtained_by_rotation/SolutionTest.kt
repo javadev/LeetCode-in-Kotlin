@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findRotation(arrayOf(intArrayOf(0, 1), intArrayOf(1, 0)), arrayOf(intArrayOf(1, 0), intArrayOf(0, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findRotation(arrayOf(intArrayOf(0, 1), intArrayOf(1, 1)), arrayOf(intArrayOf(1, 0), intArrayOf(0, 1))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
             Solution()
                 .findRotation(
                     arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 1, 1)),
-                    arrayOf(intArrayOf(1, 1, 1), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0))
+                    arrayOf(intArrayOf(1, 1, 1), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0)),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

@@ -44,9 +44,9 @@ class Solution {
                         getAns(
                             rewards,
                             j,
-                            min((validLimit - rewards[j]), (rewards[j] - 1))
+                            min((validLimit - rewards[j]), (rewards[j] - 1)),
                         )
-                    )
+                    ),
             )
             j--
         }

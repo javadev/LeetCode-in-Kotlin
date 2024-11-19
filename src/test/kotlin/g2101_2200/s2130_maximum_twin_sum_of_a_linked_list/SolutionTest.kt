@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun pairSum() {
         assertThat(
             Solution().pairSum(contructLinkedList(intArrayOf(5, 4, 2, 1))),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun pairSum2() {
         assertThat(
             Solution().pairSum(contructLinkedList(intArrayOf(4, 2, 2, 3))),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun pairSum3() {
         assertThat(
             Solution().pairSum(contructLinkedList(intArrayOf(1, 100000))),
-            equalTo(100001)
+            equalTo(100001),
         )
     }
 }

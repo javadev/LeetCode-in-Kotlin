@@ -24,7 +24,7 @@ class TweetCounts {
         freq: String,
         tweetName: String,
         startTime: Int,
-        endTime: Int
+        endTime: Int,
     ): List<Int> {
         val sfreq = convFreqToSecond(freq)
         val dstore: Map<Int, MutableMap<Int, MutableMap<Int, MutableList<Int>>>> = store[tweetName]!!
@@ -42,10 +42,16 @@ class TweetCounts {
                 if (!hstore.containsKey(h)) {
                     continue
                 }
-                val sm = if (startTime <= d * DAY + h * HOUR) 0
-                else (startTime - d * DAY - h * HOUR) / MINUTE
-                val em = if (endTime > d * DAY + (h + 1) * HOUR) HOUR / MINUTE
-                else (endTime - d * DAY - h * HOUR) / MINUTE + 1
+                val sm = if (startTime <= d * DAY + h * HOUR) {
+                    0
+                } else {
+                    (startTime - d * DAY - h * HOUR) / MINUTE
+                }
+                val em = if (endTime > d * DAY + (h + 1) * HOUR) {
+                    HOUR / MINUTE
+                } else {
+                    (endTime - d * DAY - h * HOUR) / MINUTE + 1
+                }
                 val mstore: Map<Int, MutableList<Int>> = hstore[h]!!
                 for (m in sm..em) {
                     if (!mstore.containsKey(m)) {

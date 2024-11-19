@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isFascinating() {
         assertThat(
             Solution().isFascinating(192),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isFascinating2() {
         assertThat(
             Solution().isFascinating(100),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

@@ -13,12 +13,14 @@ internal class SolutionTest {
                 .findSafeWalk(
                     getLists(
                         arrayOf<IntArray>(
-                            intArrayOf(0, 1, 0, 0, 0), intArrayOf(0, 1, 0, 1, 0), intArrayOf(0, 0, 0, 1, 0)
-                        )
+                            intArrayOf(0, 1, 0, 0, 0),
+                            intArrayOf(0, 1, 0, 1, 0),
+                            intArrayOf(0, 0, 0, 1, 0),
+                        ),
                     ),
-                    1
+                    1,
                 ),
-            CoreMatchers.equalTo<Boolean?>(true)
+            CoreMatchers.equalTo<Boolean?>(true),
         )
     }
 
@@ -32,12 +34,12 @@ internal class SolutionTest {
                             intArrayOf(0, 1, 1, 0, 0, 0),
                             intArrayOf(1, 0, 1, 0, 0, 0),
                             intArrayOf(0, 1, 1, 1, 0, 1),
-                            intArrayOf(0, 0, 1, 0, 1, 0)
-                        )
+                            intArrayOf(0, 0, 1, 0, 1, 0),
+                        ),
                     ),
-                    3
+                    3,
                 ),
-            CoreMatchers.equalTo<Boolean?>(false)
+            CoreMatchers.equalTo<Boolean?>(false),
         )
     }
 
@@ -50,12 +52,12 @@ internal class SolutionTest {
                         arrayOf(
                             intArrayOf(1, 1, 1),
                             intArrayOf(1, 0, 1),
-                            intArrayOf(1, 1, 1)
-                        )
+                            intArrayOf(1, 1, 1),
+                        ),
                     ),
-                    5
+                    5,
                 ),
-            CoreMatchers.equalTo<Boolean?>(true)
+            CoreMatchers.equalTo<Boolean?>(true),
         )
     }
 }

@@ -31,6 +31,8 @@ class Solution {
     private fun greatestCommonDivisor(val1: Int, val2: Int): Int {
         return if (val2 == 0) {
             val1
-        } else greatestCommonDivisor(val2, val1 % val2)
+        } else {
+            greatestCommonDivisor(val2, val1 % val2)
+        }
     }
 }

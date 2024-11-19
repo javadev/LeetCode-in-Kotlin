@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findIndices() {
         assertThat(
             Solution().findIndices(intArrayOf(5, 1, 4, 1), 2, 4),
-            equalTo(intArrayOf(0, 3))
+            equalTo(intArrayOf(0, 3)),
         )
     }
 
@@ -21,7 +21,8 @@ internal class SolutionTest {
     @Test
     fun findIndices3() {
         assertThat(
-            Solution().findIndices(intArrayOf(1, 2, 3), 2, 4), equalTo(intArrayOf(-1, -1))
+            Solution().findIndices(intArrayOf(1, 2, 3), 2, 4),
+            equalTo(intArrayOf(-1, -1)),
         )
     }
 }

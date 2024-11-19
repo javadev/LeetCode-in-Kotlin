@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numberOfPaths() {
         assertThat(
             Solution().numberOfPaths(arrayOf(intArrayOf(5, 2, 4), intArrayOf(3, 0, 5), intArrayOf(0, 7, 2)), 3),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -23,7 +23,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfPaths(arrayOf(intArrayOf(7, 3, 4, 9), intArrayOf(2, 3, 6, 2), intArrayOf(2, 3, 7, 0)), 1),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

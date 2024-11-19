@@ -39,8 +39,8 @@ import javax.sql.DataSource
             "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
             " VALUES (4, 3, ' 2019-06-25', 'open_session'); " +
             "INSERT INTO activity(user_id, session_id, activity_date, activity_type)" +
-            " VALUES (4, 3, ' 2019-06-25', 'end_session'); "
-    ]
+            " VALUES (4, 3, ' 2019-06-25', 'end_session'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -52,12 +52,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1101_1200/s1141_user_activity_" +
-                                "for_the_past_30_days_i/script.sql"
-                        )
+                                "for_the_past_30_days_i/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("2019-07-20"))

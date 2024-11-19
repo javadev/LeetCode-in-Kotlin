@@ -25,8 +25,8 @@ import javax.sql.DataSource
             "INSERT INTO Courses(student, class) VALUES ('F', 'Computer'); " +
             "INSERT INTO Courses(student, class) VALUES ('G', 'Math'); " +
             "INSERT INTO Courses(student, class) VALUES ('H', 'Math'); " +
-            "INSERT INTO Courses(student, class) VALUES ('I', 'Math'); "
-    ]
+            "INSERT INTO Courses(student, class) VALUES ('I', 'Math'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -40,12 +40,12 @@ internal class MysqlTest {
                             "src/main/kotlin/g0501_0600/" +
                                 "s0596_classes_more" +
                                 "_than_5_students" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Math"))

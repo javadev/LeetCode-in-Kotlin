@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun eliminateMaximum() {
         assertThat(
             Solution().eliminateMaximum(intArrayOf(1, 3, 4), intArrayOf(1, 1, 1)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun eliminateMaximum2() {
         assertThat(
             Solution().eliminateMaximum(intArrayOf(1, 1, 2, 3), intArrayOf(1, 1, 1, 1)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun eliminateMaximum3() {
         assertThat(
             Solution().eliminateMaximum(intArrayOf(3, 2, 4), intArrayOf(5, 3, 2)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

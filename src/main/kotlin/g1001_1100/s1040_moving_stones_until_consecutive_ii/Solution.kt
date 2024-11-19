@@ -12,8 +12,11 @@ class Solution {
         val high = (a[n - 1] - n + 2 - a[1]).coerceAtLeast(a[n - 2] - a[0] - n + 2)
         for (j in 0 until n) {
             while (a[j] - a[i] >= n) ++i
-            low = if (j - i + 1 == n - 1 && a[j] - a[i] == n - 2) low.coerceAtMost(2)
-            else low.coerceAtMost(n - (j - i + 1))
+            low = if (j - i + 1 == n - 1 && a[j] - a[i] == n - 2) {
+                low.coerceAtMost(2)
+            } else {
+                low.coerceAtMost(n - (j - i + 1))
+            }
         }
         return intArrayOf(low, high)
     }

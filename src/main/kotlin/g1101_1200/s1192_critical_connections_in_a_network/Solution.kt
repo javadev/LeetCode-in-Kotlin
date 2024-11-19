@@ -32,7 +32,7 @@ class Solution {
         time: Int,
         parent: Int,
         rank: IntArray,
-        res: MutableList<List<Int>>
+        res: MutableList<List<Int>>,
     ): Int {
         if (rank[node] > 0) {
             return rank[node]

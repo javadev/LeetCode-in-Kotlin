@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canTraverseAllPairs() {
         assertThat(
             Solution().canTraverseAllPairs(intArrayOf(2, 3, 6)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun canTraverseAllPairs2() {
         assertThat(
             Solution().canTraverseAllPairs(intArrayOf(3, 9, 5)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun canTraverseAllPairs3() {
         assertThat(
             Solution().canTraverseAllPairs(intArrayOf(4, 3, 12, 8)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

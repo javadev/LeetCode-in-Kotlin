@@ -15,11 +15,11 @@ internal class SolutionTest {
                         intArrayOf(2, 2),
                         intArrayOf(4, 1),
                         intArrayOf(0, 0),
-                        intArrayOf(5, 3)
+                        intArrayOf(5, 3),
                     ),
-                    1
+                    1,
                 ),
-            equalTo<Int?>(3)
+            equalTo<Int?>(3),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun maxPathLength2() {
         assertThat<Int?>(
             Solution().maxPathLength(arrayOf<IntArray>(intArrayOf(2, 1), intArrayOf(7, 0), intArrayOf(5, 6)), 2),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 
@@ -35,7 +35,7 @@ internal class SolutionTest {
     fun maxPathLength3() {
         assertThat<Int?>(
             Solution().maxPathLength(arrayOf<IntArray>(intArrayOf(0, 3), intArrayOf(8, 5), intArrayOf(6, 8)), 0),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 
@@ -47,11 +47,11 @@ internal class SolutionTest {
                     intArrayOf(8, 8),
                     intArrayOf(7, 0),
                     intArrayOf(5, 6),
-                    intArrayOf(9, 1)
+                    intArrayOf(9, 1),
                 ),
-                0
+                0,
             ),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 
@@ -67,11 +67,11 @@ internal class SolutionTest {
                         intArrayOf(3, 3),
                         intArrayOf(2, 0),
                         intArrayOf(1, 4),
-                        intArrayOf(6, 8)
+                        intArrayOf(6, 8),
                     ),
-                    6
+                    6,
                 ),
-            equalTo<Int?>(4)
+            equalTo<Int?>(4),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun frequencySort() {
         assertThat(
             Solution().frequencySort(intArrayOf(1, 1, 2, 2, 2, 3)),
-            equalTo(intArrayOf(3, 1, 1, 2, 2, 2))
+            equalTo(intArrayOf(3, 1, 1, 2, 2, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun frequencySort2() {
         assertThat(
             Solution().frequencySort(intArrayOf(2, 3, 1, 3, 2)),
-            equalTo(intArrayOf(1, 3, 3, 2, 2))
+            equalTo(intArrayOf(1, 3, 3, 2, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun frequencySort3() {
         assertThat(
             Solution().frequencySort(intArrayOf(-1, 1, -6, 4, 5, -6, 1, 4, 1)),
-            equalTo(intArrayOf(5, -1, 4, 4, -6, -6, 1, 1, 1))
+            equalTo(intArrayOf(5, -1, 4, 4, -6, -6, 1, 1, 1)),
         )
     }
 }

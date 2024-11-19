@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numWays() {
         assertThat(
-            Solution().numWays(arrayOf("acca", "bbbb", "caca"), "aba"), equalTo(6)
+            Solution().numWays(arrayOf("acca", "bbbb", "caca"), "aba"),
+            equalTo(6),
         )
     }
 

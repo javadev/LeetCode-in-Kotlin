@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostFrequentIDs() {
         assertThat(
             Solution().mostFrequentIDs(intArrayOf(2, 3, 2, 1), intArrayOf(3, 2, -3, 1)),
-            equalTo(longArrayOf(3, 3, 2, 2))
+            equalTo(longArrayOf(3, 3, 2, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun mostFrequentIDs2() {
         assertThat(
             Solution().mostFrequentIDs(intArrayOf(5, 5, 3), intArrayOf(2, -2, 1)),
-            equalTo(longArrayOf(2, 0, 1))
+            equalTo(longArrayOf(2, 0, 1)),
         )
     }
 }

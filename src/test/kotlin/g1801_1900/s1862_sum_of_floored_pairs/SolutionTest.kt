@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun sumOfFlooredPairs2() {
         assertThat(
             Solution().sumOfFlooredPairs(intArrayOf(7, 7, 7, 7, 7, 7, 7)),
-            equalTo(49)
+            equalTo(49),
         )
     }
 }

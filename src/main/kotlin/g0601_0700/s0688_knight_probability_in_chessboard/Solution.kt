@@ -11,14 +11,14 @@ class Solution {
         intArrayOf(2, -1),
         intArrayOf(2, 1),
         intArrayOf(1, -2),
-        intArrayOf(-1, -2)
+        intArrayOf(-1, -2),
     )
     private lateinit var probabilityGiven: Array<Array<DoubleArray>>
     fun knightProbability(n: Int, k: Int, row: Int, column: Int): Double {
         probabilityGiven = Array(n) {
             Array(n) {
                 DoubleArray(
-                    k + 1
+                    k + 1,
                 )
             }
         }

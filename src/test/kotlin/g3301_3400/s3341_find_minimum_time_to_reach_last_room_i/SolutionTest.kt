@@ -11,10 +11,10 @@ internal class SolutionTest {
             Solution().minTimeToReach(
                 arrayOf<IntArray>(
                     intArrayOf(0, 4),
-                    intArrayOf(4, 4)
-                )
+                    intArrayOf(4, 4),
+                ),
             ),
-            equalTo<Int?>(6)
+            equalTo<Int?>(6),
         )
     }
 
@@ -24,10 +24,10 @@ internal class SolutionTest {
             Solution().minTimeToReach(
                 arrayOf<IntArray>(
                     intArrayOf(0, 0, 0),
-                    intArrayOf(0, 0, 0)
-                )
+                    intArrayOf(0, 0, 0),
+                ),
             ),
-            equalTo<Int?>(3)
+            equalTo<Int?>(3),
         )
     }
 
@@ -37,10 +37,10 @@ internal class SolutionTest {
             Solution().minTimeToReach(
                 arrayOf<IntArray>(
                     intArrayOf(0, 1),
-                    intArrayOf(1, 2)
-                )
+                    intArrayOf(1, 2),
+                ),
             ),
-            equalTo<Int?>(3)
+            equalTo<Int?>(3),
         )
     }
 }

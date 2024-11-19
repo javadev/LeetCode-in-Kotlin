@@ -17,6 +17,8 @@ class Solution {
         }
         return if (n > m && str2.substring(0, m) == str1) {
             gcdOfStrings(str2.substring(m), str1)
-        } else ""
+        } else {
+            ""
+        }
     }
 }

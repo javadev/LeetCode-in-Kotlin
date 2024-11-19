@@ -20,7 +20,9 @@ class Solution {
         val leftResult = findInPeakLeft(target, peakIndex, mountainArr)
         return if (leftResult != -1) {
             leftResult
-        } else findInPeakRight(target, peakIndex, mountainArr)
+        } else {
+            findInPeakRight(target, peakIndex, mountainArr)
+        }
     }
 
     private fun findPeak(mountainArray: MountainArray): Int {

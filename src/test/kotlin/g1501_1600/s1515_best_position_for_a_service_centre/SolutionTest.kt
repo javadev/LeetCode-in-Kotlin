@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(0, 1),
                     intArrayOf(1, 0),
                     intArrayOf(1, 2),
-                    intArrayOf(2, 1)
-                )
+                    intArrayOf(2, 1),
+                ),
             ),
-            equalTo(4.00)
+            equalTo(4.00),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun minDistSum2() {
         assertThat(
             Solution().getMinDistSum(arrayOf(intArrayOf(1, 1), intArrayOf(3, 3))),
-            equalTo(2.82842712474619)
+            equalTo(2.82842712474619),
         )
     }
 }

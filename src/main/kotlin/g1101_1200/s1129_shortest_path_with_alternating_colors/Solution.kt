@@ -15,7 +15,7 @@ class Solution {
         vis: Array<BooleanArray>,
         graph: List<MutableList<Pair>>,
         blue: Boolean,
-        shortestPaths: IntArray
+        shortestPaths: IntArray,
     ) {
         var blue = blue
         var level = 0

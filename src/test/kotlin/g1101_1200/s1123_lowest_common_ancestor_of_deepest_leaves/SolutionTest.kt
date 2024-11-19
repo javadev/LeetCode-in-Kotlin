@@ -11,10 +11,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .lcaDeepestLeaves(
-                    TreeNode.create(mutableListOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4))
+                    TreeNode.create(mutableListOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4)),
                 )
                 .toString(),
-            equalTo("2,7,4")
+            equalTo("2,7,4"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun lcaDeepestLeaves2() {
         assertThat(
             Solution().lcaDeepestLeaves(TreeNode.create(mutableListOf<Int?>(1))).toString(),
-            equalTo("1")
+            equalTo("1"),
         )
     }
 
@@ -32,7 +32,7 @@ internal class SolutionTest {
             Solution()
                 .lcaDeepestLeaves(TreeNode.create(mutableListOf(0, 1, 3, null, 2)))
                 .toString(),
-            equalTo("2")
+            equalTo("2"),
         )
     }
 }

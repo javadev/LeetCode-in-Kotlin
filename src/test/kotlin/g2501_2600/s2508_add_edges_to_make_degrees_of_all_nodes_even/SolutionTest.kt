@@ -19,11 +19,11 @@ internal class SolutionTest {
                             intArrayOf(3, 4),
                             intArrayOf(4, 2),
                             intArrayOf(1, 4),
-                            intArrayOf(2, 5)
-                        )
-                    )
+                            intArrayOf(2, 5),
+                        ),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -31,7 +31,7 @@ internal class SolutionTest {
     fun isPossible2() {
         assertThat(
             Solution().isPossible(4, getLists(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4)))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -40,7 +40,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isPossible(4, getLists(arrayOf(intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 4)))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -259,11 +259,11 @@ internal class SolutionTest {
                             intArrayOf(2, 7),
                             intArrayOf(8, 20),
                             intArrayOf(5, 14),
-                            intArrayOf(4, 16)
-                        )
-                    )
+                            intArrayOf(4, 16),
+                        ),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -279,11 +279,11 @@ internal class SolutionTest {
                             intArrayOf(1, 3),
                             intArrayOf(1, 4),
                             intArrayOf(4, 5),
-                            intArrayOf(5, 2)
-                        )
-                    )
+                            intArrayOf(5, 2),
+                        ),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -293,9 +293,9 @@ internal class SolutionTest {
             Solution()
                 .isPossible(
                     4,
-                    getLists(arrayOf(intArrayOf(4, 1), intArrayOf(3, 2), intArrayOf(2, 4), intArrayOf(1, 3)))
+                    getLists(arrayOf(intArrayOf(4, 1), intArrayOf(3, 2), intArrayOf(2, 4), intArrayOf(1, 3))),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -305,9 +305,9 @@ internal class SolutionTest {
             Solution()
                 .isPossible(
                     4,
-                    getLists(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(2, 4), intArrayOf(3, 4)))
+                    getLists(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(2, 4), intArrayOf(3, 4))),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

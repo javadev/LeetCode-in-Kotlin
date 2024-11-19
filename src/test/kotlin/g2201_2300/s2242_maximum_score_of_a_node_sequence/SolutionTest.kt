@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(2, 3),
                         intArrayOf(0, 2),
                         intArrayOf(1, 3),
-                        intArrayOf(2, 4)
-                    )
+                        intArrayOf(2, 4),
+                    ),
                 ),
-            equalTo(24)
+            equalTo(24),
         )
     }
 
@@ -30,9 +30,9 @@ internal class SolutionTest {
             Solution()
                 .maximumScore(
                     intArrayOf(9, 20, 6, 4, 11, 12),
-                    arrayOf(intArrayOf(0, 3), intArrayOf(5, 3), intArrayOf(2, 4), intArrayOf(1, 3))
+                    arrayOf(intArrayOf(0, 3), intArrayOf(5, 3), intArrayOf(2, 4), intArrayOf(1, 3)),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 
@@ -50,10 +50,10 @@ internal class SolutionTest {
                         intArrayOf(5, 1),
                         intArrayOf(6, 1),
                         intArrayOf(7, 1),
-                        intArrayOf(2, 1)
-                    )
+                        intArrayOf(2, 1),
+                    ),
                 ),
-            equalTo(44)
+            equalTo(44),
         )
     }
 
@@ -82,10 +82,10 @@ internal class SolutionTest {
                         intArrayOf(4, 8),
                         intArrayOf(8, 0),
                         intArrayOf(0, 5),
-                        intArrayOf(1, 5)
-                    )
+                        intArrayOf(1, 5),
+                    ),
                 ),
-            equalTo(112)
+            equalTo(112),
         )
     }
 }

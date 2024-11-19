@@ -26,7 +26,7 @@ class Solution {
                     return@Comparator firstWord1.compareTo(secondWord1)
                 }
                 firstWord.compareTo(secondWord)
-            }
+            },
         )
         val result = arrayOfNulls<String>(digi.size + word.size)
         var `in` = 0

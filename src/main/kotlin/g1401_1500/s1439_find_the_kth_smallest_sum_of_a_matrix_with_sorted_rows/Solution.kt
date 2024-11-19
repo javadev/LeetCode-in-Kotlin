@@ -21,7 +21,7 @@ class Solution {
                     }
                     return@Comparator 0
                 }
-            }
+            },
         )
         val m = mat.size
         val n = mat[0].size

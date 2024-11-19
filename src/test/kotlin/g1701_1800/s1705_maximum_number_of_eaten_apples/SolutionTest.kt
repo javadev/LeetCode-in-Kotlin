@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun eatenApples() {
         assertThat(
             Solution().eatenApples(intArrayOf(1, 2, 3, 5, 2), intArrayOf(3, 2, 1, 4, 2)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .eatenApples(intArrayOf(3, 0, 0, 0, 0, 2), intArrayOf(3, 0, 0, 0, 0, 2)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

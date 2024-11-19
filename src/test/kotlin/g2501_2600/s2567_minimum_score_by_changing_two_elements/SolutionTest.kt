@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimizeSum() {
         assertThat(
             Solution().minimizeSum(intArrayOf(1, 4, 3)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimizeSum2() {
         assertThat(
             Solution().minimizeSum(intArrayOf(1, 4, 7, 8, 5)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

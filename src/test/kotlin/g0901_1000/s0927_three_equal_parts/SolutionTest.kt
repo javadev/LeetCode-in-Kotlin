@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun threeEqualParts() {
         assertThat(
             Solution().threeEqualParts(intArrayOf(1, 0, 1, 0, 1)),
-            equalTo(intArrayOf(0, 3))
+            equalTo(intArrayOf(0, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun threeEqualParts2() {
         assertThat(
             Solution().threeEqualParts(intArrayOf(1, 1, 0, 1, 1)),
-            equalTo(intArrayOf(-1, -1))
+            equalTo(intArrayOf(-1, -1)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun threeEqualParts3() {
         assertThat(
             Solution().threeEqualParts(intArrayOf(1, 1, 0, 0, 1)),
-            equalTo(intArrayOf(0, 2))
+            equalTo(intArrayOf(0, 2)),
         )
     }
 }

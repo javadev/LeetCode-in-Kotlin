@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun maxDepthAfterSplit() {
         assertThat(
-            Solution().maxDepthAfterSplit("(()())"), equalTo(intArrayOf(1, 0, 0, 0, 0, 1))
+            Solution().maxDepthAfterSplit("(()())"),
+            equalTo(intArrayOf(1, 0, 0, 0, 0, 1)),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun maxDepthAfterSplit2() {
         assertThat(
             Solution().maxDepthAfterSplit("()(())()"),
-            equalTo(intArrayOf(1, 1, 1, 0, 0, 1, 1, 1))
+            equalTo(intArrayOf(1, 1, 1, 0, 0, 1, 1, 1)),
         )
     }
 }

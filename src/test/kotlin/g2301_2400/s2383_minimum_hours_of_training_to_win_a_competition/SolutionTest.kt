@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minNumberOfHours(5, 3, intArrayOf(1, 4, 3, 2), intArrayOf(2, 6, 3, 1)),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun minNumberOfHours2() {
         assertThat(
             Solution().minNumberOfHours(2, 4, intArrayOf(1), intArrayOf(3)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

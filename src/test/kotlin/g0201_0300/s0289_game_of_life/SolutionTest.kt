@@ -11,7 +11,7 @@ internal class SolutionTest {
         Solution().gameOfLife(board)
         assertThat(
             board,
-            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(1, 0, 1), intArrayOf(0, 1, 1), intArrayOf(0, 1, 0)))
+            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(1, 0, 1), intArrayOf(0, 1, 1), intArrayOf(0, 1, 0))),
         )
     }
 

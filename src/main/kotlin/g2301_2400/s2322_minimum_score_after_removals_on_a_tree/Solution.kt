@@ -14,7 +14,7 @@ class Solution {
         par: Int,
         block: Int,
         xor1: Int,
-        tot: Int
+        tot: Int,
     ): Int {
         // Setting the value for the current subtree's XOR value
         var myXOR = arr[src]

@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestStringWithSwaps(
-                    "dcab", listOf(listOf(0, 3), listOf(1, 2))
+                    "dcab",
+                    listOf(listOf(0, 3), listOf(1, 2)),
                 ),
-            equalTo("bacd")
+            equalTo("bacd"),
         )
     }
 
@@ -25,10 +26,10 @@ internal class SolutionTest {
                     listOf(
                         listOf(0, 3),
                         listOf(1, 2),
-                        listOf(0, 2)
-                    )
+                        listOf(0, 2),
+                    ),
                 ),
-            equalTo("abcd")
+            equalTo("abcd"),
         )
     }
 
@@ -37,9 +38,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestStringWithSwaps(
-                    "cba", listOf(listOf(0, 1), listOf(1, 2))
+                    "cba",
+                    listOf(listOf(0, 1), listOf(1, 2)),
                 ),
-            equalTo("abc")
+            equalTo("abc"),
         )
     }
 }

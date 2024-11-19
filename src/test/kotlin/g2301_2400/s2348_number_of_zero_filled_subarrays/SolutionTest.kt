@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun zeroFilledSubarray() {
         assertThat(
-            Solution().zeroFilledSubarray(intArrayOf(1, 3, 0, 0, 2, 0, 0, 4)), equalTo(6L)
+            Solution().zeroFilledSubarray(intArrayOf(1, 3, 0, 0, 2, 0, 0, 4)),
+            equalTo(6L),
         )
     }
 

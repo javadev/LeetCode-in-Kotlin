@@ -32,8 +32,8 @@ import javax.sql.DataSource
             "INSERT INTO Stadium(id, visit_date, people)" +
             " VALUES (7, '2017-01-07', 199); " +
             "INSERT INTO Stadium(id, visit_date, people)" +
-            " VALUES (8, '2017-01-09', 188); "
-    ]
+            " VALUES (8, '2017-01-09', 188); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -47,12 +47,12 @@ internal class MysqlTest {
                             "src/main/kotlin/g0601_0700/" +
                                 "s0601_human_traffic" +
                                 "_of_stadium" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(5))

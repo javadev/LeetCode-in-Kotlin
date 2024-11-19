@@ -13,10 +13,10 @@ internal class SolutionTest {
                     arrayOf(
                         "test.email+alex@leetcode.com",
                         "test.e.mail+bob.cathy@leetcode.com",
-                        "testemail+david@lee.tcode.com"
-                    )
+                        "testemail+david@lee.tcode.com",
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -26,10 +26,12 @@ internal class SolutionTest {
             Solution()
                 .numUniqueEmails(
                     arrayOf(
-                        "a@leetcode.com", "b@leetcode.com", "c@leetcode.com"
-                    )
+                        "a@leetcode.com",
+                        "b@leetcode.com",
+                        "c@leetcode.com",
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

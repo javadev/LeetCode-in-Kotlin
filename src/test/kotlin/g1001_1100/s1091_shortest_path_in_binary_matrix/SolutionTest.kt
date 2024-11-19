@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun shortestPathBinaryMatrix() {
         assertThat(
-            Solution().shortestPathBinaryMatrix(arrayOf(intArrayOf(0, 1), intArrayOf(1, 0))), equalTo(2)
+            Solution().shortestPathBinaryMatrix(arrayOf(intArrayOf(0, 1), intArrayOf(1, 0))),
+            equalTo(2),
         )
     }
 
@@ -17,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestPathBinaryMatrix(arrayOf(intArrayOf(0, 0, 0), intArrayOf(1, 1, 0), intArrayOf(1, 1, 0))),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -26,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestPathBinaryMatrix(arrayOf(intArrayOf(1, 0, 0), intArrayOf(1, 1, 0), intArrayOf(1, 1, 0))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

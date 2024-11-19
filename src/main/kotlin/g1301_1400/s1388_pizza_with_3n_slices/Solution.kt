@@ -8,7 +8,8 @@ class Solution {
         val n = slices.size
         val third = n / 3
         return Math.max(
-            maxSizeSlices(slices, 0, n - 2, third), maxSizeSlices(slices, 1, n - 1, third)
+            maxSizeSlices(slices, 0, n - 2, third),
+            maxSizeSlices(slices, 1, n - 1, third),
         )
     }
 

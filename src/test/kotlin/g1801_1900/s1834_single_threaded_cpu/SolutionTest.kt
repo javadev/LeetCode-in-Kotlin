@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun order() {
         assertThat(
             Solution().getOrder(arrayOf(intArrayOf(1, 2), intArrayOf(2, 4), intArrayOf(3, 2), intArrayOf(4, 1))),
-            equalTo(intArrayOf(0, 2, 3, 1))
+            equalTo(intArrayOf(0, 2, 3, 1)),
         )
     }
 
@@ -22,10 +22,10 @@ internal class SolutionTest {
                     intArrayOf(7, 12),
                     intArrayOf(7, 5),
                     intArrayOf(7, 4),
-                    intArrayOf(7, 2)
-                )
+                    intArrayOf(7, 2),
+                ),
             ),
-            equalTo(intArrayOf(4, 3, 2, 0, 1))
+            equalTo(intArrayOf(4, 3, 2, 0, 1)),
         )
     }
 }

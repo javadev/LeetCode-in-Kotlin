@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxSlidingWindow() {
         assertThat(
             Solution().maxSlidingWindow(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3),
-            equalTo(intArrayOf(3, 3, 5, 5, 6, 7))
+            equalTo(intArrayOf(3, 3, 5, 5, 6, 7)),
         )
     }
 

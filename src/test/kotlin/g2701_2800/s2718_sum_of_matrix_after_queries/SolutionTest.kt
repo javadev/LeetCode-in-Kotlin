@@ -11,11 +11,13 @@ internal class SolutionTest {
             Solution().matrixSumQueries(
                 3,
                 arrayOf(
-                    intArrayOf(0, 0, 1), intArrayOf(1, 2, 2),
-                    intArrayOf(0, 2, 3), intArrayOf(1, 0, 4)
-                )
+                    intArrayOf(0, 0, 1),
+                    intArrayOf(1, 2, 2),
+                    intArrayOf(0, 2, 3),
+                    intArrayOf(1, 0, 4),
+                ),
             ),
-            equalTo(23)
+            equalTo(23),
         )
     }
 
@@ -25,11 +27,14 @@ internal class SolutionTest {
             Solution().matrixSumQueries(
                 3,
                 arrayOf(
-                    intArrayOf(0, 0, 4), intArrayOf(0, 1, 2),
-                    intArrayOf(1, 0, 1), intArrayOf(0, 2, 3), intArrayOf(1, 2, 1)
-                )
+                    intArrayOf(0, 0, 4),
+                    intArrayOf(0, 1, 2),
+                    intArrayOf(1, 0, 1),
+                    intArrayOf(0, 2, 3),
+                    intArrayOf(1, 2, 1),
+                ),
             ),
-            equalTo(17)
+            equalTo(17),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countMatchingSubarrays(intArrayOf(1, 2, 3, 4, 5, 6), intArrayOf(1, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -19,9 +19,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countMatchingSubarrays(
-                    intArrayOf(1, 4, 4, 1, 3, 5, 5, 3), intArrayOf(1, 0, -1)
+                    intArrayOf(1, 4, 4, 1, 3, 5, 5, 3),
+                    intArrayOf(1, 0, -1),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

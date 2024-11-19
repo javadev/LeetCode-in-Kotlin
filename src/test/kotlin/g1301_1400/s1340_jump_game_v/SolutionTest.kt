@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxJumps() {
         assertThat(
             Solution().maxJumps(intArrayOf(6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12), 2),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

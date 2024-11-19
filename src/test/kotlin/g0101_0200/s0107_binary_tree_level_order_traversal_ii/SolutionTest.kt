@@ -12,7 +12,7 @@ internal class SolutionTest {
         val root: TreeNode? = TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))
         assertThat(
             Solution().levelOrderBottom(root),
-            equalTo(getLists(arrayOf(intArrayOf(15, 7), intArrayOf(9, 20), intArrayOf(3))))
+            equalTo(getLists(arrayOf(intArrayOf(15, 7), intArrayOf(9, 20), intArrayOf(3)))),
         )
     }
 
@@ -21,7 +21,7 @@ internal class SolutionTest {
         val root: TreeNode? = TreeNode.create(listOf(1))
         assertThat(
             Solution().levelOrderBottom(root),
-            equalTo(getLists(arrayOf(intArrayOf(1))))
+            equalTo(getLists(arrayOf(intArrayOf(1)))),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun levelOrderBottom3() {
         assertThat(
             Solution().levelOrderBottom(null),
-            equalTo(getLists(arrayOf<IntArray>()))
+            equalTo(getLists(arrayOf<IntArray>())),
         )
     }
 }

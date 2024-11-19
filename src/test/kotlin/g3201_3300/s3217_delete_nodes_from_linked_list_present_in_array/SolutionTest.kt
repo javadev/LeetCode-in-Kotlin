@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .modifiedList(
                     intArrayOf(1, 2, 3),
-                    contructLinkedList(intArrayOf(1, 2, 3, 4, 5))
+                    contructLinkedList(intArrayOf(1, 2, 3, 4, 5)),
                 )
                 .toString(),
-            equalTo("4, 5")
+            equalTo("4, 5"),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .modifiedList(
                     intArrayOf(1),
-                    contructLinkedList(intArrayOf(1, 2, 1, 2, 1, 2))
+                    contructLinkedList(intArrayOf(1, 2, 1, 2, 1, 2)),
                 )
                 .toString(),
-            equalTo("2, 2, 2")
+            equalTo("2, 2, 2"),
         )
     }
 
@@ -38,10 +38,10 @@ internal class SolutionTest {
             Solution()
                 .modifiedList(
                     intArrayOf(5),
-                    contructLinkedList(intArrayOf(1, 2, 3, 4))
+                    contructLinkedList(intArrayOf(1, 2, 3, 4)),
                 )
                 .toString(),
-            equalTo("1, 2, 3, 4")
+            equalTo("1, 2, 3, 4"),
         )
     }
 }

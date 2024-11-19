@@ -13,10 +13,12 @@ internal class SolutionTest {
                     intArrayOf(1, 3, 4, 8),
                     arrayOf(
                         intArrayOf(0, 1),
-                        intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(0, 3)
-                    )
+                        intArrayOf(1, 2),
+                        intArrayOf(2, 3),
+                        intArrayOf(0, 3),
+                    ),
                 ),
-            equalTo(intArrayOf(2, 1, 4, 1))
+            equalTo(intArrayOf(2, 1, 4, 1)),
         )
     }
 
@@ -26,9 +28,9 @@ internal class SolutionTest {
             Solution()
                 .minDifference(
                     intArrayOf(4, 5, 2, 2, 7, 10),
-                    arrayOf(intArrayOf(2, 3), intArrayOf(0, 2), intArrayOf(0, 5), intArrayOf(3, 5))
+                    arrayOf(intArrayOf(2, 3), intArrayOf(0, 2), intArrayOf(0, 5), intArrayOf(3, 5)),
                 ),
-            equalTo(intArrayOf(-1, 1, 1, 3))
+            equalTo(intArrayOf(-1, 1, 1, 3)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun getSubarrayBeauty() {
         assertThat(
             Solution().getSubarrayBeauty(intArrayOf(1, -1, -3, -2, 3), 3, 2),
-            equalTo(intArrayOf(-1, -2, -2))
+            equalTo(intArrayOf(-1, -2, -2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun getSubarrayBeauty2() {
         assertThat(
             Solution().getSubarrayBeauty(intArrayOf(-1, -2, -3, -4, -5), 2, 2),
-            equalTo(intArrayOf(-1, -2, -3, -4))
+            equalTo(intArrayOf(-1, -2, -3, -4)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun getSubarrayBeauty3() {
         assertThat(
             Solution().getSubarrayBeauty(intArrayOf(-3, 1, 2, -3, 0, -3), 2, 1),
-            equalTo(intArrayOf(-3, 0, -3, -3, -3))
+            equalTo(intArrayOf(-3, 0, -3, -3, -3)),
         )
     }
 }

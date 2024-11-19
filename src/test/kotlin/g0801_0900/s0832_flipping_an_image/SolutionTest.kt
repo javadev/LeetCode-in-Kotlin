@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun flipAndInvertImage() {
         assertThat(
             Solution().flipAndInvertImage(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 0, 1), intArrayOf(0, 0, 0))),
-            equalTo(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 1, 1)))
+            equalTo(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 1, 0), intArrayOf(1, 1, 1))),
         )
     }
 
@@ -22,17 +22,17 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 0, 0),
                         intArrayOf(1, 0, 0, 1),
                         intArrayOf(0, 1, 1, 1),
-                        intArrayOf(1, 0, 1, 0)
-                    )
+                        intArrayOf(1, 0, 1, 0),
+                    ),
                 ),
             equalTo(
                 arrayOf(
                     intArrayOf(1, 1, 0, 0),
                     intArrayOf(0, 1, 1, 0),
                     intArrayOf(0, 0, 0, 1),
-                    intArrayOf(1, 0, 1, 0)
-                )
-            )
+                    intArrayOf(1, 0, 1, 0),
+                ),
+            ),
         )
     }
 }

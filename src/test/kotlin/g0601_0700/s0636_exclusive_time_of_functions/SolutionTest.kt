@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .exclusiveTime(
-                    2, listOf("0:start:0", "1:start:2", "1:end:5", "0:end:6")
+                    2,
+                    listOf("0:start:0", "1:start:2", "1:end:5", "0:end:6"),
                 ),
-            equalTo(intArrayOf(3, 4))
+            equalTo(intArrayOf(3, 4)),
         )
     }
 
@@ -28,10 +29,10 @@ internal class SolutionTest {
                         "0:end:5",
                         "0:start:6",
                         "0:end:6",
-                        "0:end:7"
-                    )
+                        "0:end:7",
+                    ),
                 ),
-            equalTo(intArrayOf(8))
+            equalTo(intArrayOf(8)),
         )
     }
 
@@ -47,10 +48,10 @@ internal class SolutionTest {
                         "0:end:5",
                         "1:start:6",
                         "1:end:6",
-                        "0:end:7"
-                    )
+                        "0:end:7",
+                    ),
                 ),
-            equalTo(intArrayOf(7, 1))
+            equalTo(intArrayOf(7, 1)),
         )
     }
 }

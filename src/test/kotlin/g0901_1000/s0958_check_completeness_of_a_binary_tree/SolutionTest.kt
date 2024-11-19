@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun isCompleteTree() {
         assertThat(
             Solution().isCompleteTree(TreeNode.create(listOf(1, 2, 3, 4, 5, 6))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isCompleteTree(TreeNode.create(listOf(1, 2, 3, 4, 5, null, 7))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

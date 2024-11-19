@@ -11,10 +11,11 @@ internal class SolutionTest {
             Solution().isPossibleToCutPath(
                 arrayOf(
                     intArrayOf(1, 1, 1),
-                    intArrayOf(1, 0, 0), intArrayOf(1, 1, 1)
-                )
+                    intArrayOf(1, 0, 0),
+                    intArrayOf(1, 1, 1),
+                ),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -23,10 +24,12 @@ internal class SolutionTest {
         assertThat(
             Solution().isPossibleToCutPath(
                 arrayOf(
-                    intArrayOf(1, 1, 1), intArrayOf(1, 0, 1), intArrayOf(1, 1, 1)
-                )
+                    intArrayOf(1, 1, 1),
+                    intArrayOf(1, 0, 1),
+                    intArrayOf(1, 1, 1),
+                ),
             ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

@@ -23,8 +23,9 @@ class Solution {
             val prev = HashMap(dp)
             dp[v] = (dp[v] ?: 0) + howmany
             for ((product, quantity) in prev)
-                if (gcd(product, v) == 1)
+                if (gcd(product, v) == 1) {
                     dp[product * v] = ((dp[product * v] ?: 0L) + quantity * howmany.toLong()) % mod
+                }
         }
         for (v in primes) {
             if (v !in freqMap) continue

@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun diameterOfBinaryTree() {
         assertThat(
             Solution().diameterOfBinaryTree(TreeNode.create(listOf(1, 2, 3, 4, 5))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun diameterOfBinaryTree2() {
         assertThat(
             Solution().diameterOfBinaryTree(TreeNode.create(listOf(1, 2))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minimumRounds() {
         assertThat(
-            Solution().minimumRounds(intArrayOf(2, 2, 3, 3, 2, 4, 4, 4, 4, 4)), equalTo(4)
+            Solution().minimumRounds(intArrayOf(2, 2, 3, 3, 2, 4, 4, 4, 4, 4)),
+            equalTo(4),
         )
     }
 

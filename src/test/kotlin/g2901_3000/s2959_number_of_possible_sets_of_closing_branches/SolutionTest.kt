@@ -14,10 +14,10 @@ internal class SolutionTest {
                     3,
                     5,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1,2],[1,2,10],[0,2,10]"
-                    )
+                        "[0,1,2],[1,2,10],[0,2,10]",
+                    ),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -29,10 +29,10 @@ internal class SolutionTest {
                     3,
                     5,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1,20],[0,1,10],[1,2,2],[0,2,2]"
-                    )
+                        "[0,1,20],[0,1,10],[1,2,2],[0,2,2]",
+                    ),
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 

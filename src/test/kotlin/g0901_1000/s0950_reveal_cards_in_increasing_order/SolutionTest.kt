@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun deckRevealedIncreasing() {
         assertThat(
             Solution().deckRevealedIncreasing(intArrayOf(17, 13, 11, 2, 3, 5, 7)),
-            equalTo(intArrayOf(2, 13, 3, 11, 5, 17, 7))
+            equalTo(intArrayOf(2, 13, 3, 11, 5, 17, 7)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun deckRevealedIncreasing2() {
         assertThat(
             Solution().deckRevealedIncreasing(intArrayOf(1, 1000)),
-            equalTo(intArrayOf(1, 1000))
+            equalTo(intArrayOf(1, 1000)),
         )
     }
 }

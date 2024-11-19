@@ -67,7 +67,7 @@ class Solution {
         islands: MutableMap<Int, MutableSet<Int>>,
         scores: MutableMap<Int, MutableSet<Int>>,
         walls: MutableMap<Int, Int>,
-        id: Int
+        id: Int,
     ) {
         if (!visited.add(i * n + j)) {
             return
@@ -84,7 +84,7 @@ class Solution {
             }
             if (grid[x][y] == 0) {
                 scores.computeIfAbsent(
-                    id
+                    id,
                 ) { HashSet() }.add(x * n + y)
                 walls[id] = walls.getOrDefault(id, 0) + 1
             }

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun sortArray() {
         assertThat(
-            Solution().sortArray(intArrayOf(5, 2, 3, 1)), equalTo(intArrayOf(1, 2, 3, 5))
+            Solution().sortArray(intArrayOf(5, 2, 3, 1)),
+            equalTo(intArrayOf(1, 2, 3, 5)),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun sortArray2() {
         assertThat(
             Solution().sortArray(intArrayOf(5, 1, 1, 2, 0, 0)),
-            equalTo(intArrayOf(0, 0, 1, 1, 2, 5))
+            equalTo(intArrayOf(0, 0, 1, 1, 2, 5)),
         )
     }
 }

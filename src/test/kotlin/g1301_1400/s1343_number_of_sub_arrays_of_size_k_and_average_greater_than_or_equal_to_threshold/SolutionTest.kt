@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numOfSubarrays() {
         assertThat(
             Solution().numOfSubarrays(intArrayOf(2, 2, 2, 2, 5, 5, 5, 8), 3, 4),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numOfSubarrays2() {
         assertThat(
             Solution().numOfSubarrays(intArrayOf(11, 13, 17, 23, 29, 31, 7, 5, 2, 3), 3, 5),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

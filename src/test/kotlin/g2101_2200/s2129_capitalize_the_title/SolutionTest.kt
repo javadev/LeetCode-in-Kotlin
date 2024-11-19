@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun capitalizeTitle() {
         assertThat(
             Solution().capitalizeTitle("capiTalIze tHe titLe"),
-            equalTo("Capitalize The Title")
+            equalTo("Capitalize The Title"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun capitalizeTitle2() {
         assertThat(
             Solution().capitalizeTitle("First leTTeR of EACH Word"),
-            equalTo("First Letter of Each Word")
+            equalTo("First Letter of Each Word"),
         )
     }
 

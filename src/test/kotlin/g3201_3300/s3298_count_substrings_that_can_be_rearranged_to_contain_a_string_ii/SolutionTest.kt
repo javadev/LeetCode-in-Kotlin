@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun validSubstringCount2() {
         assertThat<Long>(
             Solution().validSubstringCount("abcabc", "abc"),
-            equalTo<Long>(10L)
+            equalTo<Long>(10L),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun validSubstringCount3() {
         assertThat<Long>(
             Solution().validSubstringCount("abcabc", "aaabc"),
-            equalTo<Long>(0L)
+            equalTo<Long>(0L),
         )
     }
 }

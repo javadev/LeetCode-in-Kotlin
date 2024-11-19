@@ -20,7 +20,9 @@ class Solution {
         return if (n != null && m != null) {
             if (n.`val` != m.`val`) {
                 false
-            } else trav(n.left, m.left) && trav(n.right, m.right)
+            } else {
+                trav(n.left, m.left) && trav(n.right, m.right)
+            }
         } else {
             n == null && m == null
         }

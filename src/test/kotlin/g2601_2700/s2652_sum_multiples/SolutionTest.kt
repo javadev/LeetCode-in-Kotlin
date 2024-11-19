@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumOfMultiples() {
         assertThat(
             Solution().sumOfMultiples(7),
-            equalTo(21)
+            equalTo(21),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumOfMultiples2() {
         assertThat(
             Solution().sumOfMultiples(10),
-            equalTo(40)
+            equalTo(40),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun sumOfMultiples3() {
         assertThat(
             Solution().sumOfMultiples(9),
-            equalTo(30)
+            equalTo(30),
         )
     }
 }

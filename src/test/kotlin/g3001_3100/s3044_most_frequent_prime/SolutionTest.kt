@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostFrequentPrime() {
         assertThat(
             Solution().mostFrequentPrime(arrayOf(intArrayOf(1, 1), intArrayOf(9, 9), intArrayOf(1, 1))),
-            equalTo(19)
+            equalTo(19),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun mostFrequentPrime3() {
         assertThat(
             Solution().mostFrequentPrime(arrayOf(intArrayOf(9, 7, 8), intArrayOf(4, 6, 5), intArrayOf(2, 8, 6))),
-            equalTo(97)
+            equalTo(97),
         )
     }
 }

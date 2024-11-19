@@ -24,8 +24,8 @@ import javax.sql.DataSource
             "INSERT INTO MyNumbers(num) VALUES (1); " +
             "INSERT INTO MyNumbers(num) VALUES (4); " +
             "INSERT INTO MyNumbers(num) VALUES (5); " +
-            "INSERT INTO MyNumbers(num) VALUES (6); "
-    ]
+            "INSERT INTO MyNumbers(num) VALUES (6); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -37,12 +37,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0601_0700/" +
-                                "s0619_biggest_single_number/script.sql"
-                        )
+                                "s0619_biggest_single_number/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(6))

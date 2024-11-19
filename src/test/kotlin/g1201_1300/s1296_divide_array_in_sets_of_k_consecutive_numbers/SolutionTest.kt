@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isPossibleDivide() {
         assertThat(
             Solution().isPossibleDivide(intArrayOf(1, 2, 3, 3, 4, 4, 5, 6), 4),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isPossibleDivide(intArrayOf(3, 2, 1, 2, 3, 4, 3, 4, 5, 9, 10, 11), 3),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

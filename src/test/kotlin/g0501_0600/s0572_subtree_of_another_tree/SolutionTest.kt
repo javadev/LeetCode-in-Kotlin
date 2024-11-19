@@ -16,7 +16,7 @@ internal class SolutionTest {
     @Test
     fun isSubtree2() {
         val treeNode: TreeNode = TreeNode.create(
-            listOf(3, 4, 5, 1, 2, null, null, null, null, 0)
+            listOf(3, 4, 5, 1, 2, null, null, null, null, 0),
         )!!
         val subTree: TreeNode = TreeNode.create(listOf(4, 1, 2))!!
         assertThat(Solution().isSubtree(treeNode, subTree), equalTo(false))

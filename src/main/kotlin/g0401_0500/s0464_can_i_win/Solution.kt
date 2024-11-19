@@ -10,7 +10,9 @@ class Solution {
         }
         return if (1.0 * maxChoosableInteger * (1 + maxChoosableInteger) / 2 < desiredTotal) {
             false
-        } else canWin(0, arrayOfNulls(1 shl maxChoosableInteger), desiredTotal, maxChoosableInteger)
+        } else {
+            canWin(0, arrayOfNulls(1 shl maxChoosableInteger), desiredTotal, maxChoosableInteger)
+        }
     }
 
     private fun canWin(state: Int, dp: Array<Boolean?>, desiredTotal: Int, maxChoosableInteger: Int): Boolean {

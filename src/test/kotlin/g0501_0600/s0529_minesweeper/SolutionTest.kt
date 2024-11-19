@@ -11,13 +11,13 @@ internal class SolutionTest {
             charArrayOf('E', 'E', 'E', 'E', 'E'),
             charArrayOf('E', 'E', 'M', 'E', 'E'),
             charArrayOf('E', 'E', 'E', 'E', 'E'),
-            charArrayOf('E', 'E', 'E', 'E', 'E')
+            charArrayOf('E', 'E', 'E', 'E', 'E'),
         )
         val expected = arrayOf(
             charArrayOf('B', '1', 'E', '1', 'B'),
             charArrayOf('B', '1', 'M', '1', 'B'),
             charArrayOf('B', '1', '1', '1', 'B'),
-            charArrayOf('B', 'B', 'B', 'B', 'B')
+            charArrayOf('B', 'B', 'B', 'B', 'B'),
         )
         assertThat(Solution().updateBoard(input, intArrayOf(3, 0)), equalTo(expected))
     }
@@ -28,13 +28,13 @@ internal class SolutionTest {
             charArrayOf('B', '1', 'E', '1', 'B'),
             charArrayOf('B', '1', 'M', '1', 'B'),
             charArrayOf('B', '1', '1', '1', 'B'),
-            charArrayOf('B', 'B', 'B', 'B', 'B')
+            charArrayOf('B', 'B', 'B', 'B', 'B'),
         )
         val expected = arrayOf(
             charArrayOf('B', '1', 'E', '1', 'B'),
             charArrayOf('B', '1', 'X', '1', 'B'),
             charArrayOf('B', '1', '1', '1', 'B'),
-            charArrayOf('B', 'B', 'B', 'B', 'B')
+            charArrayOf('B', 'B', 'B', 'B', 'B'),
         )
         assertThat(Solution().updateBoard(input, intArrayOf(1, 2)), equalTo(expected))
     }

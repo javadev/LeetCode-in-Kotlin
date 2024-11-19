@@ -11,7 +11,7 @@ internal class SolutionTest {
         val head = contructLinkedList(intArrayOf(5, 2, 6, 3, 9, 1, 7, 3, 8, 4))
         assertThat(
             Solution().reverseEvenLengthGroups(head).toString(),
-            equalTo("5, 6, 2, 3, 9, 1, 4, 8, 3, 7")
+            equalTo("5, 6, 2, 3, 9, 1, 4, 8, 3, 7"),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val head = contructLinkedList(intArrayOf(1, 1, 0, 6))
         assertThat(
             Solution().reverseEvenLengthGroups(head).toString(),
-            equalTo("1, 0, 1, 6")
+            equalTo("1, 0, 1, 6"),
         )
     }
 
@@ -28,7 +28,8 @@ internal class SolutionTest {
     fun reverseEvenLengthGroups3() {
         val head = contructLinkedList(intArrayOf(1, 1, 0, 6, 5))
         assertThat(
-            Solution().reverseEvenLengthGroups(head).toString(), equalTo("1, 0, 1, 5, 6")
+            Solution().reverseEvenLengthGroups(head).toString(),
+            equalTo("1, 0, 1, 5, 6"),
         )
     }
 }

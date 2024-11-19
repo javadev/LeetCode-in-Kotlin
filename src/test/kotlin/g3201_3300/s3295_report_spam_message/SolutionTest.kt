@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .reportSpam(
                     arrayOf<String>("hello", "world", "leetcode"),
-                    arrayOf<String>("world", "hello")
+                    arrayOf<String>("world", "hello"),
                 ),
-            equalTo<Boolean>(true)
+            equalTo<Boolean>(true),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .reportSpam(
                     arrayOf<String>("hello", "programming", "fun"),
-                    arrayOf<String>("world", "programming", "leetcode")
+                    arrayOf<String>("world", "programming", "leetcode"),
                 ),
-            equalTo<Boolean>(false)
+            equalTo<Boolean>(false),
         )
     }
 }

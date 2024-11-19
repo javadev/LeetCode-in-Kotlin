@@ -10,11 +10,13 @@ internal class SolutionTest {
         assertThat(
             Solution().matrixSum(
                 arrayOf(
-                    intArrayOf(7, 2, 1), intArrayOf(6, 4, 2),
-                    intArrayOf(6, 5, 3), intArrayOf(3, 2, 1)
-                )
+                    intArrayOf(7, 2, 1),
+                    intArrayOf(6, 4, 2),
+                    intArrayOf(6, 5, 3),
+                    intArrayOf(3, 2, 1),
+                ),
             ),
-            equalTo(15)
+            equalTo(15),
         )
     }
 
@@ -22,7 +24,7 @@ internal class SolutionTest {
     fun matrixSum2() {
         assertThat(
             Solution().matrixSum(arrayOf(intArrayOf(1))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countSquares() {
         assertThat(
             Solution().countSquares(arrayOf(intArrayOf(0, 1, 1, 1), intArrayOf(1, 1, 1, 1), intArrayOf(0, 1, 1, 1))),
-            equalTo(15)
+            equalTo(15),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countSquares2() {
         assertThat(
             Solution().countSquares(arrayOf(intArrayOf(1, 0, 1), intArrayOf(1, 1, 0), intArrayOf(1, 1, 0))),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

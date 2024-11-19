@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .reverseOddLevels(TreeNode.create(listOf(2, 3, 5, 8, 13, 21, 34))!!)
                 .toString(),
-            equalTo("2,5,8,13,3,21,34")
+            equalTo("2,5,8,13,3,21,34"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
             Solution()
                 .reverseOddLevels(TreeNode.create(listOf(7, 13, 11))!!)
                 .toString(),
-            equalTo("7,11,13")
+            equalTo("7,11,13"),
         )
     }
 }

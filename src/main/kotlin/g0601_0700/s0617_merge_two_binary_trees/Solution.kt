@@ -23,10 +23,12 @@ class Solution {
         }
         return if (root2 == null) {
             root1
-        } else TreeNode(
-            root1.`val` + root2.`val`,
-            mergeTrees(root1.left, root2.left),
-            mergeTrees(root1.right, root2.right)
-        )
+        } else {
+            TreeNode(
+                root1.`val` + root2.`val`,
+                mergeTrees(root1.left, root2.left),
+                mergeTrees(root1.right, root2.right),
+            )
+        }
     }
 }

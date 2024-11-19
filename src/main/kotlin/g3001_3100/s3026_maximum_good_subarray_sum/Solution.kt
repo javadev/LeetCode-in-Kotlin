@@ -17,7 +17,7 @@ class Solution {
                         prefixSum +
                             value -
                             valueToMinPrefixSum[value + targetDifference]!!
-                        )
+                        ),
                 )
             }
             if (valueToMinPrefixSum.containsKey(value - targetDifference)) {
@@ -27,7 +27,7 @@ class Solution {
                         prefixSum +
                             value -
                             valueToMinPrefixSum[value - targetDifference]!!
-                        )
+                        ),
                 )
             }
             if (!valueToMinPrefixSum.containsKey(value) ||

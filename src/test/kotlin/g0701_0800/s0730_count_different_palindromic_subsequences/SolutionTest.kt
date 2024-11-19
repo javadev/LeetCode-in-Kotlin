@@ -15,9 +15,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countPalindromicSubsequences(
-                    "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"
+                    "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
                 ),
-            equalTo(104860361)
+            equalTo(104860361),
         )
     }
 }

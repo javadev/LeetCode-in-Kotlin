@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun folderNames() {
         assertThat(
             Solution().getFolderNames(arrayOf("pes", "fifa", "gta", "pes(2019)")),
-            equalTo(arrayOf("pes", "fifa", "gta", "pes(2019)"))
+            equalTo(arrayOf("pes", "fifa", "gta", "pes(2019)")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun folderNames2() {
         assertThat(
             Solution().getFolderNames(arrayOf("gta", "gta(1)", "gta", "avalon")),
-            equalTo(arrayOf("gta", "gta(1)", "gta(2)", "avalon"))
+            equalTo(arrayOf("gta", "gta(1)", "gta(2)", "avalon")),
         )
     }
 
@@ -31,14 +31,18 @@ internal class SolutionTest {
                         "onepiece(1)",
                         "onepiece(2)",
                         "onepiece(3)",
-                        "onepiece"
-                    )
+                        "onepiece",
+                    ),
                 ),
             equalTo(
                 arrayOf(
-                    "onepiece", "onepiece(1)", "onepiece(2)", "onepiece(3)", "onepiece(4)"
-                )
-            )
+                    "onepiece",
+                    "onepiece(1)",
+                    "onepiece(2)",
+                    "onepiece(3)",
+                    "onepiece(4)",
+                ),
+            ),
         )
     }
 }

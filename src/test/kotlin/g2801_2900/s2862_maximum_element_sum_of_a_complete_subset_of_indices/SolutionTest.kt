@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumSum() {
         assertThat(
             Solution().maximumSum(mutableListOf(8, 7, 3, 5, 7, 2, 4, 9)),
-            equalTo(16L)
+            equalTo(16L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumSum2() {
         assertThat(
             Solution().maximumSum(mutableListOf(5, 10, 3, 10, 1, 13, 7, 9, 4)),
-            equalTo(19L)
+            equalTo(19L),
         )
     }
 }

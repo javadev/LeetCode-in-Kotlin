@@ -12,15 +12,15 @@ internal class SolutionTest {
             Solution()
                 .resultGrid(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[5,6,7,10],[8,9,10,10],[11,12,13,10]"
+                        "[5,6,7,10],[8,9,10,10],[11,12,13,10]",
                     ),
-                    3
+                    3,
                 ),
             equalTo(
                 convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[9,9,9,9],[9,9,9,9],[9,9,9,9]"
-                )
-            )
+                    "[9,9,9,9],[9,9,9,9],[9,9,9,9]",
+                ),
+            ),
         )
     }
 
@@ -30,15 +30,15 @@ internal class SolutionTest {
             Solution()
                 .resultGrid(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[10,20,30],[15,25,35],[20,30,40],[25,35,45]"
+                        "[10,20,30],[15,25,35],[20,30,40],[25,35,45]",
                     ),
-                    12
+                    12,
                 ),
             equalTo(
                 convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[25,25,25],[27,27,27],[27,27,27],[30,30,30]"
-                )
-            )
+                    "[25,25,25],[27,27,27],[27,27,27],[30,30,30]",
+                ),
+            ),
         )
     }
 
@@ -48,15 +48,15 @@ internal class SolutionTest {
             Solution()
                 .resultGrid(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[5,6,7],[8,9,10],[11,12,13]"
+                        "[5,6,7],[8,9,10],[11,12,13]",
                     ),
-                    1
+                    1,
                 ),
             equalTo(
                 convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[5,6,7],[8,9,10],[11,12,13]"
-                )
-            )
+                    "[5,6,7],[8,9,10],[11,12,13]",
+                ),
+            ),
         )
     }
 }

@@ -15,11 +15,11 @@ internal class SolutionTest {
                         intArrayOf(10, 11),
                         intArrayOf(12, 18),
                         intArrayOf(20, 25),
-                        intArrayOf(30, 32)
+                        intArrayOf(30, 32),
                     ),
-                    10
+                    10,
                 ),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun maximumWhiteTiles2() {
         assertThat(
             Solution().maximumWhiteTiles(arrayOf(intArrayOf(10, 11), intArrayOf(1, 1)), 2),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

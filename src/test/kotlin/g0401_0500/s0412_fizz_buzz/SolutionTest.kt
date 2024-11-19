@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun fizzBuzz2() {
         assertThat(
-            Solution().fizzBuzz(5), equalTo(arrayOf("1", "2", "Fizz", "4", "Buzz"))
+            Solution().fizzBuzz(5),
+            equalTo(arrayOf("1", "2", "Fizz", "4", "Buzz")),
         )
     }
 
@@ -37,9 +38,9 @@ internal class SolutionTest {
                     "Fizz",
                     "13",
                     "14",
-                    "FizzBuzz"
-                )
-            )
+                    "FizzBuzz",
+                ),
+            ),
         )
     }
 }

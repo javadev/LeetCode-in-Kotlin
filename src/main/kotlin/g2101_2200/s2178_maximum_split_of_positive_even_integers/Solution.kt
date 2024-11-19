@@ -23,7 +23,7 @@ class Solution {
         result = [2,4,6]
         so remove 6 from list and add it to remainigSum and insert to list
         result = [2,4,10]
-        */
+         */
         val lastSum = result[result.size - 1]
         result.removeAt(result.size - 1)
         result.add(lastSum + remainingSum)

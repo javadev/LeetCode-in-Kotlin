@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun fallingSquares() {
         assertThat(
             Solution().fallingSquares(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(6, 1))),
-            equalTo(listOf(2, 5, 5))
+            equalTo(listOf(2, 5, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun fallingSquares2() {
         assertThat(
             Solution().fallingSquares(arrayOf(intArrayOf(100, 100), intArrayOf(200, 100))),
-            equalTo(listOf(100, 100))
+            equalTo(listOf(100, 100)),
         )
     }
 }

@@ -9,7 +9,9 @@ class Solution {
         }
         return if (y - x <= 2 || z - y <= 2) {
             1
-        } else 2
+        } else {
+            2
+        }
     }
 
     private fun maxMoves(x: Int, z: Int): Int {

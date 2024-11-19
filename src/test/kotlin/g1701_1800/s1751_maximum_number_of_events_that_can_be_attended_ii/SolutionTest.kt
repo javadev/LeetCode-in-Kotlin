@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxValue() {
         assertThat(
             Solution().maxValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 4, 3), intArrayOf(2, 3, 1)), 2),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxValue2() {
         assertThat(
             Solution().maxValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 4, 3), intArrayOf(2, 3, 10)), 2),
-            equalTo(10)
+            equalTo(10),
         )
     }
 
@@ -27,12 +27,14 @@ internal class SolutionTest {
             Solution()
                 .maxValue(
                     arrayOf(
-                        intArrayOf(1, 1, 1), intArrayOf(2, 2, 2), intArrayOf(3, 3, 3),
-                        intArrayOf(4, 4, 4)
+                        intArrayOf(1, 1, 1),
+                        intArrayOf(2, 2, 2),
+                        intArrayOf(3, 3, 3),
+                        intArrayOf(4, 4, 4),
                     ),
-                    3
+                    3,
                 ),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -40,7 +42,7 @@ internal class SolutionTest {
     fun maxValue4() {
         assertThat(
             Solution().maxValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 4, 3), intArrayOf(2, 3, 10)), 1),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

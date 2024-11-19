@@ -13,8 +13,11 @@ class Solution {
         val comparator =
             Comparator { i: Int?, j: Int? ->
                 if (nums[i!!] == nums[j!!]
-                ) Integer.compare(i, j)
-                else nums[i].compareTo(nums[j])
+                ) {
+                    Integer.compare(i, j)
+                } else {
+                    nums[i].compareTo(nums[j])
+                }
             }
         val used = TreeSet(comparator)
         val unused = TreeSet(comparator)

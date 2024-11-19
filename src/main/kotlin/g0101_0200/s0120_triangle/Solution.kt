@@ -27,7 +27,7 @@ class Solution {
             triangle[row][col] +
                 Math.min(
                     dfs(triangle, dp, row + 1, col),
-                    dfs(triangle, dp, row + 1, col + 1)
+                    dfs(triangle, dp, row + 1, col + 1),
                 )
             )
         dp[row][col] = sum

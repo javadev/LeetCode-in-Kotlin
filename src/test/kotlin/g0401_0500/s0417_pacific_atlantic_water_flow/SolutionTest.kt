@@ -17,18 +17,21 @@ internal class SolutionTest {
                         intArrayOf(0, 2),
                         intArrayOf(1, 1),
                         intArrayOf(1, 2),
-                        intArrayOf(2, 0)
-                    )
-                )
-            )
+                        intArrayOf(2, 0),
+                    ),
+                ),
+            ),
         )
     }
 
     @Test
     fun pacificAtlantic2() {
         val matrix = arrayOf(
-            intArrayOf(1, 2, 2, 3, 5), intArrayOf(3, 2, 3, 4, 4), intArrayOf(2, 4, 5, 3, 1),
-            intArrayOf(6, 7, 1, 4, 5), intArrayOf(5, 1, 1, 2, 4)
+            intArrayOf(1, 2, 2, 3, 5),
+            intArrayOf(3, 2, 3, 4, 4),
+            intArrayOf(2, 4, 5, 3, 1),
+            intArrayOf(6, 7, 1, 4, 5),
+            intArrayOf(5, 1, 1, 2, 4),
         )
         assertThat(
             Solution().pacificAtlantic(matrix),
@@ -42,9 +45,9 @@ internal class SolutionTest {
                         intArrayOf(3, 0),
                         intArrayOf(3, 1),
                         intArrayOf(4, 0),
-                    )
-                )
-            )
+                    ),
+                ),
+            ),
         )
     }
 
@@ -56,10 +59,10 @@ internal class SolutionTest {
             equalTo(
                 ArrayUtils.getLists(
                     arrayOf(
-                        intArrayOf(0, 0)
-                    )
-                )
-            )
+                        intArrayOf(0, 0),
+                    ),
+                ),
+            ),
         )
     }
 }

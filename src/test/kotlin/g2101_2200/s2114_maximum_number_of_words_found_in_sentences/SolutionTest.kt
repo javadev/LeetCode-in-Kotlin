@@ -13,10 +13,10 @@ internal class SolutionTest {
                     arrayOf(
                         "alice and bob love leetcode",
                         "i think so too",
-                        "this is great thanks very much"
-                    )
+                        "this is great thanks very much",
+                    ),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -26,10 +26,12 @@ internal class SolutionTest {
             Solution()
                 .mostWordsFound(
                     arrayOf(
-                        "please wait", "continue to fight", "continue to win"
-                    )
+                        "please wait",
+                        "continue to fight",
+                        "continue to win",
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

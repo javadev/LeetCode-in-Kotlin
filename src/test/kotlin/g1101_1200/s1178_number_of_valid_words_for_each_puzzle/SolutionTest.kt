@@ -11,13 +11,24 @@ internal class SolutionTest {
             Solution()
                 .findNumOfValidWords(
                     arrayOf(
-                        "aaaa", "asas", "able", "ability", "actt", "actor", "access"
+                        "aaaa",
+                        "asas",
+                        "able",
+                        "ability",
+                        "actt",
+                        "actor",
+                        "access",
                     ),
                     arrayOf(
-                        "aboveyz", "abrodyz", "abslute", "absoryz", "actresz", "gaswxyz"
-                    )
+                        "aboveyz",
+                        "abrodyz",
+                        "abslute",
+                        "absoryz",
+                        "actresz",
+                        "gaswxyz",
+                    ),
                 ),
-            equalTo(mutableListOf(1, 1, 3, 2, 4, 0))
+            equalTo(mutableListOf(1, 1, 3, 2, 4, 0)),
         )
     }
 
@@ -28,10 +39,14 @@ internal class SolutionTest {
                 .findNumOfValidWords(
                     arrayOf("apple", "pleas", "please"),
                     arrayOf(
-                        "aelwxyz", "aelpxyz", "aelpsxy", "saelpxy", "xaelpsy"
-                    )
+                        "aelwxyz",
+                        "aelpxyz",
+                        "aelpsxy",
+                        "saelpxy",
+                        "xaelpsy",
+                    ),
                 ),
-            equalTo(mutableListOf(0, 1, 3, 2, 0))
+            equalTo(mutableListOf(0, 1, 3, 2, 0)),
         )
     }
 }

@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .shoppingOffers(
                     listOf(2, 5),
                     listOf(listOf(3, 0, 5), listOf(1, 2, 10)),
-                    listOf(3, 2)
+                    listOf(3, 2),
                 ),
-            equalTo(14)
+            equalTo(14),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .shoppingOffers(
                     listOf(2, 3, 4),
                     listOf(listOf(1, 1, 0, 4), listOf(2, 2, 1, 9)),
-                    listOf(1, 2, 1)
+                    listOf(1, 2, 1),
                 ),
-            equalTo(11)
+            equalTo(11),
         )
     }
 }

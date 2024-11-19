@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numberOfPermutations() {
         assertThat(
-            Solution().numberOfPermutations(3, arrayOf(intArrayOf(2, 2), intArrayOf(0, 0))), equalTo(2)
+            Solution().numberOfPermutations(3, arrayOf(intArrayOf(2, 2), intArrayOf(0, 0))),
+            equalTo(2),
         )
     }
 
@@ -16,14 +17,15 @@ internal class SolutionTest {
     fun numberOfPermutations2() {
         assertThat(
             Solution().numberOfPermutations(3, arrayOf(intArrayOf(2, 2), intArrayOf(1, 1), intArrayOf(0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
     @Test
     fun numberOfPermutations3() {
         assertThat(
-            Solution().numberOfPermutations(2, arrayOf(intArrayOf(0, 0), intArrayOf(1, 0))), equalTo(1)
+            Solution().numberOfPermutations(2, arrayOf(intArrayOf(0, 0), intArrayOf(1, 0))),
+            equalTo(1),
         )
     }
 }

@@ -32,7 +32,7 @@ class Solution {
                 if (isLadder(word, next)) {
                     // construct the reverse graph from endWord
                     val reverseLadders = reverse.computeIfAbsent(
-                        next
+                        next,
                     ) { _: String? -> HashSet() }
                     reverseLadders.add(word)
                     if (endWord == next) {
@@ -71,7 +71,7 @@ class Solution {
         beginWord: String,
         graph: Map<String, MutableSet<String>>,
         ans: MutableList<List<String>>,
-        path: MutableSet<String>
+        path: MutableSet<String>,
     ) {
         val next = graph[endWord] ?: return
         for (word in next) {

@@ -20,8 +20,8 @@ import javax.sql.DataSource
             "INSERT INTO Weather(id, recordDate, temperature) VALUES (1, '2015-01-01', 10); " +
             "INSERT INTO Weather(id, recordDate, temperature) VALUES (2, '2015-01-02', 25); " +
             "INSERT INTO Weather(id, recordDate, temperature) VALUES (3, '2015-01-03', 20); " +
-            "INSERT INTO Weather(id, recordDate, temperature) VALUES (4, '2015-01-04', 30); "
-    ]
+            "INSERT INTO Weather(id, recordDate, temperature) VALUES (4, '2015-01-04', 30); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -32,16 +32,16 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0197_rising_temperature/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0197_rising_temperature/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), "")
                         .replace(
                             "ADDDATE(FirstDate.recordDate,1)",
-                            "TIMESTAMPADD(DAY, 1, FirstDate.recordDate)"
-                        )
+                            "TIMESTAMPADD(DAY, 1, FirstDate.recordDate)",
+                        ),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(2))

@@ -16,7 +16,7 @@ internal class SolutionTest {
         val result = intArrayOf(
             nestedInteger.getList()!![0].getInteger()!!,
             nestedInteger.getList()!![1].getList()!![0].getInteger()!!,
-            nestedInteger.getList()!![1].getList()!![1].getList()!![0].getInteger()!!
+            nestedInteger.getList()!![1].getList()!![1].getList()!![0].getInteger()!!,
         )
         val expected = intArrayOf(123, 456, 789)
         assertThat(result, equalTo(expected))

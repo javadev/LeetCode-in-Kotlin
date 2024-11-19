@@ -7,7 +7,7 @@ import java.util.Queue
 
 class Solution {
     fun removeCoveredIntervals(intervals: Array<IntArray>): Int {
-        val q: Queue<IntArray> = PriorityQueue { a: IntArray, b: IntArray
+        val q: Queue<IntArray> = PriorityQueue { a: IntArray, b: IntArray,
             ->
             if (a[0] == b[0]) b[1] - a[1] else a[0] - b[0]
         }

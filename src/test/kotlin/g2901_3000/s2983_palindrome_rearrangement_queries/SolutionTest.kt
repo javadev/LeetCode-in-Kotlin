@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakePalindromeQueries(
-                    "abcabc", arrayOf(intArrayOf(1, 1, 3, 5), intArrayOf(0, 2, 5, 5))
+                    "abcabc",
+                    arrayOf(intArrayOf(1, 1, 3, 5), intArrayOf(0, 2, 5, 5)),
                 ),
-            equalTo(booleanArrayOf(true, true))
+            equalTo(booleanArrayOf(true, true)),
         )
     }
 
@@ -20,7 +21,7 @@ internal class SolutionTest {
     fun canMakePalindromeQueries2() {
         assertThat(
             Solution().canMakePalindromeQueries("abbcdecbba", arrayOf(intArrayOf(0, 2, 7, 9))),
-            equalTo(booleanArrayOf(false))
+            equalTo(booleanArrayOf(false)),
         )
     }
 
@@ -28,7 +29,7 @@ internal class SolutionTest {
     fun canMakePalindromeQueries3() {
         assertThat(
             Solution().canMakePalindromeQueries("acbcab", arrayOf(intArrayOf(1, 2, 4, 5))),
-            equalTo(booleanArrayOf(true))
+            equalTo(booleanArrayOf(true)),
         )
     }
 
@@ -36,7 +37,7 @@ internal class SolutionTest {
     fun canMakePalindromeQueries4() {
         assertThat(
             Solution().canMakePalindromeQueries("bb", arrayOf(intArrayOf(0, 0, 1, 1))),
-            equalTo(booleanArrayOf(true))
+            equalTo(booleanArrayOf(true)),
         )
     }
 
@@ -45,9 +46,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakePalindromeQueries(
-                    "abcabc", arrayOf(intArrayOf(1, 1, 3, 5), intArrayOf(0, 2, 5, 5))
+                    "abcabc",
+                    arrayOf(intArrayOf(1, 1, 3, 5), intArrayOf(0, 2, 5, 5)),
                 ),
-            equalTo(booleanArrayOf(true, true))
+            equalTo(booleanArrayOf(true, true)),
         )
     }
 
@@ -56,9 +58,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakePalindromeQueries(
-                    "ckwbnmqmtzbixrrkixbtbqzmnwmc", arrayOf(intArrayOf(1, 9, 15, 24))
+                    "ckwbnmqmtzbixrrkixbtbqzmnwmc",
+                    arrayOf(intArrayOf(1, 9, 15, 24)),
                 ),
-            equalTo(booleanArrayOf(true))
+            equalTo(booleanArrayOf(true)),
         )
     }
 }

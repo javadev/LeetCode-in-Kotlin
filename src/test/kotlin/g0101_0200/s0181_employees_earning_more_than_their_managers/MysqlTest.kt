@@ -21,8 +21,8 @@ import javax.sql.DataSource
             "INSERT INTO Employee(id, name, salary, managerId) VALUES (1, 'Joe', 70000, 3); " +
             "INSERT INTO Employee(id, name, salary, managerId) VALUES (2, 'Henry', 80000, 4); " +
             "INSERT INTO Employee(id, name, salary, managerId) VALUES (3, 'Sam', 60000, NULL); " +
-            "INSERT INTO Employee(id, name, salary, managerId) VALUES (4, 'Max', 90000, NULL); "
-    ]
+            "INSERT INTO Employee(id, name, salary, managerId) VALUES (4, 'Max', 90000, NULL); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -33,12 +33,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Joe"))

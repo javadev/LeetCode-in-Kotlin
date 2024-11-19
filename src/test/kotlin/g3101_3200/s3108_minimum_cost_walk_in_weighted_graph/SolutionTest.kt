@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .minimumCost(
                     5,
                     arrayOf(intArrayOf(0, 1, 7), intArrayOf(1, 3, 7), intArrayOf(1, 2, 1)),
-                    arrayOf(intArrayOf(0, 3), intArrayOf(3, 4))
+                    arrayOf(intArrayOf(0, 3), intArrayOf(3, 4)),
                 ),
-            equalTo(intArrayOf(1, -1))
+            equalTo(intArrayOf(1, -1)),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .minimumCost(
                     3,
                     arrayOf(intArrayOf(0, 2, 7), intArrayOf(0, 1, 15), intArrayOf(1, 2, 6), intArrayOf(1, 2, 1)),
-                    arrayOf(intArrayOf(1, 2))
+                    arrayOf(intArrayOf(1, 2)),
                 ),
-            equalTo(intArrayOf(0))
+            equalTo(intArrayOf(0)),
         )
     }
 }

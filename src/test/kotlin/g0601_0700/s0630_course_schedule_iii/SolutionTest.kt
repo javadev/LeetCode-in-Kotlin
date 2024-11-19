@@ -28,7 +28,7 @@ internal class SolutionTest {
             intArrayOf(200, 1300),
             intArrayOf(1000, 1250),
             intArrayOf(2000, 3200),
-            intArrayOf(300, 1200)
+            intArrayOf(300, 1200),
         )
         assertThat(Solution().scheduleCourse(input), equalTo(4))
     }

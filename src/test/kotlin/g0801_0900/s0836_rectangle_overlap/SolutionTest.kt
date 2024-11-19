@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isRectangleOverlap() {
         assertThat(
             Solution().isRectangleOverlap(intArrayOf(0, 0, 2, 2), intArrayOf(1, 1, 3, 3)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isRectangleOverlap2() {
         assertThat(
             Solution().isRectangleOverlap(intArrayOf(0, 0, 1, 1), intArrayOf(1, 0, 2, 1)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun isRectangleOverlap3() {
         assertThat(
             Solution().isRectangleOverlap(intArrayOf(0, 0, 1, 1), intArrayOf(2, 2, 3, 3)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

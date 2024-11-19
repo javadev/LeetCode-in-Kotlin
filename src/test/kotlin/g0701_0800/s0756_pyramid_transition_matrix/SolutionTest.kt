@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun pyramidTransition() {
         assertThat(
             Solution().pyramidTransition("BCD", listOf("BCC", "CDE", "CEA", "FFF")),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -18,9 +18,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .pyramidTransition(
-                    "AAAA", listOf("AAB", "AAC", "BCD", "BBE", "DEF")
+                    "AAAA",
+                    listOf("AAB", "AAC", "BCD", "BBE", "DEF"),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimizeTheDifference(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9)), 13),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -18,14 +18,15 @@ internal class SolutionTest {
     fun minimizeTheDifference2() {
         assertThat(
             Solution().minimizeTheDifference(arrayOf(intArrayOf(1), intArrayOf(2), intArrayOf(3)), 100),
-            equalTo(94)
+            equalTo(94),
         )
     }
 
     @Test
     fun minimizeTheDifference3() {
         assertThat(
-            Solution().minimizeTheDifference(arrayOf(intArrayOf(1, 2, 9, 8, 7)), 6), equalTo(1)
+            Solution().minimizeTheDifference(arrayOf(intArrayOf(1, 2, 9, 8, 7)), 6),
+            equalTo(1),
         )
     }
 }

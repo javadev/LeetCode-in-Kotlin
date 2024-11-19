@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 1, 1),
                         intArrayOf(1, 2, 2, 1),
                         intArrayOf(1, 2, 2, 1),
-                        intArrayOf(1, 1, 1, 1)
-                    )
+                        intArrayOf(1, 1, 1, 1),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -30,10 +30,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 1, 1),
                         intArrayOf(1, 1, 3, 3),
                         intArrayOf(1, 1, 3, 4),
-                        intArrayOf(5, 5, 1, 4)
-                    )
+                        intArrayOf(5, 5, 1, 4),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -41,7 +41,7 @@ internal class SolutionTest {
     fun isPrintable3() {
         assertThat(
             Solution().isPrintable(arrayOf(intArrayOf(1, 2, 1), intArrayOf(2, 1, 2), intArrayOf(1, 2, 1))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

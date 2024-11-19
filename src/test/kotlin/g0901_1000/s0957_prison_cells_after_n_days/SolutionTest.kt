@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun prisonAfterNDays() {
         assertThat(
             Solution().prisonAfterNDays(intArrayOf(0, 1, 0, 1, 1, 0, 0, 1), 7),
-            equalTo(intArrayOf(0, 0, 1, 1, 0, 0, 0, 0))
+            equalTo(intArrayOf(0, 0, 1, 1, 0, 0, 0, 0)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun prisonAfterNDays2() {
         assertThat(
             Solution().prisonAfterNDays(intArrayOf(1, 0, 0, 1, 0, 0, 1, 0), 1000000000),
-            equalTo(intArrayOf(0, 0, 1, 1, 1, 1, 1, 0))
+            equalTo(intArrayOf(0, 0, 1, 1, 1, 1, 1, 0)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minJumps() {
         assertThat(
             Solution().minJumps(intArrayOf(100, -23, -23, 404, 100, 23, 23, 23, 3, 404)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

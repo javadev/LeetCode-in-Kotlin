@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().spiralOrder(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))),
             equalTo(
-                intArrayOf(1, 2, 3, 6, 9, 8, 7, 4, 5).toList()
-            )
+                intArrayOf(1, 2, 3, 6, 9, 8, 7, 4, 5).toList(),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().spiralOrder(arrayOf(intArrayOf(1, 2, 3, 4), intArrayOf(5, 6, 7, 8), intArrayOf(9, 10, 11, 12))),
             equalTo(
-                intArrayOf(1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7).toList()
-            )
+                intArrayOf(1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7).toList(),
+            ),
         )
     }
 }

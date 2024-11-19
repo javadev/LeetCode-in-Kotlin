@@ -18,12 +18,16 @@ class Solution {
         var j = 1
         var i = 0
         while (j < vowelCount.size) {
-            if (vowelCount[j] > 0) while (i < result.size) {
-                if (countIndexMap[result[i++].code] == 0) continue
-                vowelCount[j]--
-                result[i - 1] = charMap[j - 1]
-                break
-            } else j++
+            if (vowelCount[j] > 0) {
+                while (i < result.size) {
+                    if (countIndexMap[result[i++].code] == 0) continue
+                    vowelCount[j]--
+                    result[i - 1] = charMap[j - 1]
+                    break
+                }
+            } else {
+                j++
+            }
         }
         return String(result)
     }

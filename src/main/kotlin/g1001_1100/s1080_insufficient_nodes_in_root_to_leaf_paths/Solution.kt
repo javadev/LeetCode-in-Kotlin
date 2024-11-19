@@ -26,13 +26,13 @@ class Solution {
                 root.left,
                 limit,
                 sum + root.`val`,
-                root.left == null && root.right == null
+                root.left == null && root.right == null,
             )
             val rightSum = sufficientSubset(
                 root.right,
                 limit,
                 sum + root.`val`,
-                root.left == null && root.right == null
+                root.left == null && root.right == null,
             )
             if (leftSum < limit) {
                 root.left = null

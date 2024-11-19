@@ -18,8 +18,8 @@ import javax.sql.DataSource
     initialSqls = [
         "CREATE TABLE Users(user_id INTEGER PRIMARY KEY, name VARCHAR); " +
             "INSERT INTO Users(user_id, name) VALUES (1, 'aLice'); " +
-            "INSERT INTO Users(user_id, name) VALUES (2, 'bOB'); "
-    ]
+            "INSERT INTO Users(user_id, name) VALUES (2, 'bOB'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -31,12 +31,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1601_1700/s1667_fix_" +
-                                "names_in_a_table/script.sql"
-                        )
+                                "names_in_a_table/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(2), equalTo("Alice"))

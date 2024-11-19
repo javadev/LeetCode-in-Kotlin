@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .minimumTime(
                     3,
                     arrayOf(intArrayOf(0, 1, 2), intArrayOf(1, 2, 1), intArrayOf(0, 2, 4)),
-                    intArrayOf(1, 1, 5)
+                    intArrayOf(1, 1, 5),
                 ),
-            equalTo(intArrayOf(0, -1, 4))
+            equalTo(intArrayOf(0, -1, 4)),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .minimumTime(
                     3,
                     arrayOf(intArrayOf(0, 1, 2), intArrayOf(1, 2, 1), intArrayOf(0, 2, 4)),
-                    intArrayOf(1, 3, 5)
+                    intArrayOf(1, 3, 5),
                 ),
-            equalTo(intArrayOf(0, 2, 3))
+            equalTo(intArrayOf(0, 2, 3)),
         )
     }
 
@@ -35,7 +35,7 @@ internal class SolutionTest {
     fun minimumTime3() {
         assertThat(
             Solution().minimumTime(2, arrayOf(intArrayOf(0, 1, 1)), intArrayOf(1, 1)),
-            equalTo(intArrayOf(0, -1))
+            equalTo(intArrayOf(0, -1)),
         )
     }
 }

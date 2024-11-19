@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun cellsInRange() {
         assertThat(
             Solution().cellsInRange("K1:L2"),
-            equalTo(mutableListOf("K1", "K2", "L1", "L2"))
+            equalTo(mutableListOf("K1", "K2", "L1", "L2")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun cellsInRange2() {
         assertThat(
             Solution().cellsInRange("A1:F1"),
-            equalTo(mutableListOf("A1", "B1", "C1", "D1", "E1", "F1"))
+            equalTo(mutableListOf("A1", "B1", "C1", "D1", "E1", "F1")),
         )
     }
 }
