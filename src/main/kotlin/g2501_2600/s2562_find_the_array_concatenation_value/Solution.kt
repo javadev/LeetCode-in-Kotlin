@@ -10,7 +10,9 @@ class Solution {
             result += if (i < n - 1 - i) {
                 val concat = "" + nums[i] + nums[n - 1 - i]
                 concat.toLong()
-            } else nums[i].toLong()
+            } else {
+                nums[i].toLong()
+            }
         }
         return result
     }

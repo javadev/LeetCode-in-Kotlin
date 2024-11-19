@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumTotalDistance(mutableListOf(0, 4, 6), arrayOf(intArrayOf(2, 2), intArrayOf(6, 2))),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumTotalDistance(listOf(1, -1), arrayOf(intArrayOf(-2, 1), intArrayOf(2, 1))),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 }

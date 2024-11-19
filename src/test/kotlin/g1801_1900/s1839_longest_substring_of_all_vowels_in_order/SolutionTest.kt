@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestBeautifulSubstring() {
         assertThat(
             Solution().longestBeautifulSubstring("aeiaaioaaaaeiiiiouuuooaauuaeiu"),
-            equalTo(13)
+            equalTo(13),
         )
     }
 

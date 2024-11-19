@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun stoneGameVI3() {
         assertThat(
-            Solution().stoneGameVI(intArrayOf(2, 4, 3), intArrayOf(1, 6, 7)), equalTo(-1)
+            Solution().stoneGameVI(intArrayOf(2, 4, 3), intArrayOf(1, 6, 7)),
+            equalTo(-1),
         )
     }
 }

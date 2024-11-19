@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumScore() {
         assertThat(
             Solution().minimumScore("abacaba", "bzaa"),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumScore2() {
         assertThat(
             Solution().minimumScore("cde", "xyz"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

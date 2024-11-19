@@ -11,7 +11,7 @@ class Solution {
             intArrayOf(5, 6, 9, 10, 12), intArrayOf(6, 10, 11, 12, -1), intArrayOf(1, 2, 3, 11, 12),
             intArrayOf(1, 3, 4, 11, -1), intArrayOf(2, 9, 10, 12, -1), intArrayOf(1, 2, 10, 11, 12),
             intArrayOf(1, 2, 3, 7, -1), intArrayOf(1, 3, 4, 7, 8), intArrayOf(4, 5, 6, 8, -1),
-            intArrayOf(3, 4, 5, 7, 8)
+            intArrayOf(3, 4, 5, 7, 8),
         )
         for (i in 2..n) {
             for (j in 0..11) {

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minFlips() {
         assertThat(
             Solution().minFlips(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 0, 0), intArrayOf(0, 0, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minFlips2() {
         assertThat(
             Solution().minFlips(arrayOf(intArrayOf(0, 1), intArrayOf(0, 1), intArrayOf(0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

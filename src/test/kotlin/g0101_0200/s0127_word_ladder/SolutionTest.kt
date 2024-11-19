@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .ladderLength(
                     "hit",
                     "cog",
-                    listOf("hot", "dot", "dog", "lot", "log", "cog")
+                    listOf("hot", "dot", "dog", "lot", "log", "cog"),
                 ),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -23,9 +23,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .ladderLength(
-                    "hit", "cog", listOf("hot", "dot", "dog", "lot", "log")
+                    "hit",
+                    "cog",
+                    listOf("hot", "dot", "dog", "lot", "log"),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

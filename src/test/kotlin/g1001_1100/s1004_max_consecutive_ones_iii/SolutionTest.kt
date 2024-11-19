@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestOnes() {
         assertThat(
             Solution().longestOnes(intArrayOf(1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0), 2),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -19,9 +19,9 @@ internal class SolutionTest {
             Solution()
                 .longestOnes(
                     intArrayOf(0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1),
-                    3
+                    3,
                 ),
-            equalTo(10)
+            equalTo(10),
         )
     }
 }

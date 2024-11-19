@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun leastInterval() {
         assertThat(
             Solution().leastInterval(charArrayOf('A', 'A', 'A', 'B', 'B', 'B'), 2),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun leastInterval2() {
         assertThat(
             Solution().leastInterval(charArrayOf('A', 'A', 'A', 'B', 'B', 'B'), 0),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -27,11 +27,11 @@ internal class SolutionTest {
             Solution()
                 .leastInterval(
                     charArrayOf(
-                        'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G'
+                        'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G',
                     ),
-                    2
+                    2,
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 }

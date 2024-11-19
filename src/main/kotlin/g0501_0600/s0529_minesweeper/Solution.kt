@@ -57,7 +57,7 @@ class Solution {
             intArrayOf(-1, -1),
             intArrayOf(-1, 1),
             intArrayOf(1, -1),
-            intArrayOf(1, 1)
+            intArrayOf(1, 1),
         )
     }
 }

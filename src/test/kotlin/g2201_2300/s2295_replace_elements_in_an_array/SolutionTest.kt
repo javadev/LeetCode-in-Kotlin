@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .arrayChange(intArrayOf(1, 2, 4, 6), arrayOf(intArrayOf(1, 3), intArrayOf(4, 7), intArrayOf(6, 1))),
-            equalTo(intArrayOf(3, 2, 7, 1))
+            equalTo(intArrayOf(3, 2, 7, 1)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun arrayChange2() {
         assertThat(
             Solution().arrayChange(intArrayOf(1, 2), arrayOf(intArrayOf(1, 3), intArrayOf(2, 1), intArrayOf(3, 2))),
-            equalTo(intArrayOf(2, 1))
+            equalTo(intArrayOf(2, 1)),
         )
     }
 }

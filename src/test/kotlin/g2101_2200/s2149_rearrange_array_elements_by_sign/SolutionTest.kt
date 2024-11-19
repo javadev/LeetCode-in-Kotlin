@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun rearrangeArray() {
         assertThat(
             Solution().rearrangeArray(intArrayOf(3, 1, -2, -5, 2, -4)),
-            equalTo(intArrayOf(3, -2, 1, -5, 2, -4))
+            equalTo(intArrayOf(3, -2, 1, -5, 2, -4)),
         )
     }
 

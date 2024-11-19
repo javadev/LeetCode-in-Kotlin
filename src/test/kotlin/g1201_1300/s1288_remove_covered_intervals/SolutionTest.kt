@@ -11,10 +11,11 @@ internal class SolutionTest {
             Solution().removeCoveredIntervals(
                 arrayOf(
                     intArrayOf(1, 4),
-                    intArrayOf(3, 6), intArrayOf(2, 8)
-                )
+                    intArrayOf(3, 6),
+                    intArrayOf(2, 8),
+                ),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -24,10 +25,10 @@ internal class SolutionTest {
             Solution().removeCoveredIntervals(
                 arrayOf(
                     intArrayOf(1, 4),
-                    intArrayOf(2, 3)
-                )
+                    intArrayOf(2, 3),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

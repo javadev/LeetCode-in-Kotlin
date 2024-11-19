@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun removeInvalidParentheses() {
         assertThat(
             Solution().removeInvalidParentheses("()())()"),
-            equalTo(listOf("(())()", "()()()"))
+            equalTo(listOf("(())()", "()()()")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun removeInvalidParentheses2() {
         assertThat(
             Solution().removeInvalidParentheses("(a)())()"),
-            equalTo(listOf("(a())()", "(a)()()"))
+            equalTo(listOf("(a())()", "(a)()()")),
         )
     }
 

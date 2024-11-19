@@ -13,9 +13,9 @@ internal class SolutionTest {
                     5,
                     arrayOf(intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 4), intArrayOf(3, 4), intArrayOf(4, 5)),
                     3,
-                    5
+                    5,
                 ),
-            equalTo(13)
+            equalTo(13),
         )
     }
 

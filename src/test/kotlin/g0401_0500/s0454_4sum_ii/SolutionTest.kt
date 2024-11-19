@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .fourSumCount(intArrayOf(1, 2), intArrayOf(-2, -1), intArrayOf(-1, 2), intArrayOf(0, 2)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .fourSumCount(intArrayOf(0), intArrayOf(0), intArrayOf(0), intArrayOf(0)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

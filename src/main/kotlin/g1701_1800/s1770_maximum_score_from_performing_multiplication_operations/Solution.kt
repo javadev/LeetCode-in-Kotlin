@@ -13,7 +13,7 @@ class Solution {
             for (i in 0..row) {
                 dp[i] = Math.max(
                     prev[i] + multipliers[row] * nums[n - row + i - 1],
-                    prev[i + 1] + multipliers[row] * nums[i]
+                    prev[i + 1] + multipliers[row] * nums[i],
                 )
             }
             prev = dp

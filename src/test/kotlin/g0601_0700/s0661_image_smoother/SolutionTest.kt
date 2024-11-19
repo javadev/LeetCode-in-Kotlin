@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun imageSmoother() {
         assertThat(
             Solution().imageSmoother(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 0, 1), intArrayOf(1, 1, 1))),
-            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 0, 0), intArrayOf(0, 0, 0)))
+            equalTo(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 0, 0), intArrayOf(0, 0, 0))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .imageSmoother(arrayOf(intArrayOf(100, 200, 100), intArrayOf(200, 50, 200), intArrayOf(100, 200, 100))),
-            equalTo(arrayOf(intArrayOf(137, 141, 137), intArrayOf(141, 138, 141), intArrayOf(137, 141, 137)))
+            equalTo(arrayOf(intArrayOf(137, 141, 137), intArrayOf(141, 138, 141), intArrayOf(137, 141, 137))),
         )
     }
 }

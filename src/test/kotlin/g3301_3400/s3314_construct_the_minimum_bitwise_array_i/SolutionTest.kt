@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minBitwiseArray() {
         assertThat<IntArray?>(
             Solution().minBitwiseArray(mutableListOf<Int>(2, 3, 5, 7)),
-            equalTo<IntArray?>(intArrayOf(-1, 1, 4, 3))
+            equalTo<IntArray?>(intArrayOf(-1, 1, 4, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minBitwiseArray2() {
         assertThat<IntArray?>(
             Solution().minBitwiseArray(mutableListOf<Int>(11, 13, 31)),
-            equalTo<IntArray?>(intArrayOf(9, 12, 15))
+            equalTo<IntArray?>(intArrayOf(9, 12, 15)),
         )
     }
 }

@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun findShortestSubArray2() {
         assertThat(
-            Solution().findShortestSubArray(intArrayOf(1, 2, 2, 3, 1, 4, 2)), equalTo(6)
+            Solution().findShortestSubArray(intArrayOf(1, 2, 2, 3, 1, 4, 2)),
+            equalTo(6),
         )
     }
 }

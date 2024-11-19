@@ -31,8 +31,8 @@ import javax.sql.DataSource
             "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
             " VALUES (3, 4, 4, '2019-07-21'); " +
             "INSERT INTO views(article_id, author_id, viewer_id, view_date)" +
-            " VALUES (3, 4, 4, '2019-07-21'); "
-    ]
+            " VALUES (3, 4, 4, '2019-07-21'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -44,12 +44,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1101_1200/s1148" +
-                                "_article_views_i/script.sql"
-                        )
+                                "_article_views_i/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(4))

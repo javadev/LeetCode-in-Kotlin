@@ -12,9 +12,9 @@ internal class SolutionTest {
             equalTo(
                 listOf(
                     "0:01", "0:02", "0:04", "0:08", "0:16", "0:32", "1:00", "2:00",
-                    "4:00", "8:00"
-                )
-            )
+                    "4:00", "8:00",
+                ),
+            ),
         )
     }
 
@@ -23,8 +23,8 @@ internal class SolutionTest {
         assertThat(
             Solution().readBinaryWatch(9),
             equalTo(
-                listOf()
-            )
+                listOf(),
+            ),
         )
     }
 }

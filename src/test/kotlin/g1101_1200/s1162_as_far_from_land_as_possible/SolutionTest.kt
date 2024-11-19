@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxDistance() {
         assertThat(
             Solution().maxDistance(arrayOf(intArrayOf(1, 0, 1), intArrayOf(0, 0, 0), intArrayOf(1, 0, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxDistance2() {
         assertThat(
             Solution().maxDistance(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 0, 0), intArrayOf(0, 0, 0))),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

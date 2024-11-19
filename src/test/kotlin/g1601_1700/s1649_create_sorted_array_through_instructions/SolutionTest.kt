@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun createSortedArray3() {
         assertThat(
             Solution().createSortedArray(intArrayOf(1, 3, 3, 3, 2, 4, 2, 1, 2)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

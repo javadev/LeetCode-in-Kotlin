@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxArea() {
         assertThat(
             Solution().maxArea(5, 4, intArrayOf(1, 2, 4), intArrayOf(1, 3)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

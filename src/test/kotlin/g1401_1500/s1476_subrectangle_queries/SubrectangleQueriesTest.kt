@@ -12,8 +12,8 @@ internal class SubrectangleQueriesTest {
                 intArrayOf(1, 2, 1),
                 intArrayOf(4, 3, 4),
                 intArrayOf(3, 2, 1),
-                intArrayOf(1, 1, 1)
-            )
+                intArrayOf(1, 1, 1),
+            ),
         )
         assertThat(subrectangleQueries.getValue(0, 2), equalTo(1))
         subrectangleQueries.updateSubrectangle(0, 0, 3, 2, 5)

@@ -5,8 +5,14 @@ package g0201_0300.s0289_game_of_life
 class Solution {
     companion object {
         var dim: Array<IntArray> = arrayOf(
-            intArrayOf(1, 0), intArrayOf(0, 1), intArrayOf(-1, 0), intArrayOf(0, -1),
-            intArrayOf(1, 1), intArrayOf(1, -1), intArrayOf(-1, 1), intArrayOf(-1, -1)
+            intArrayOf(1, 0),
+            intArrayOf(0, 1),
+            intArrayOf(-1, 0),
+            intArrayOf(0, -1),
+            intArrayOf(1, 1),
+            intArrayOf(1, -1),
+            intArrayOf(-1, 1),
+            intArrayOf(-1, -1),
         )
     }
 

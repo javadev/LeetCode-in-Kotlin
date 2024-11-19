@@ -10,9 +10,11 @@ internal class GraphTest {
         val graph = Graph(
             4,
             arrayOf(
-                intArrayOf(0, 2, 5), intArrayOf(0, 1, 2),
-                intArrayOf(1, 2, 1), intArrayOf(3, 0, 3)
-            )
+                intArrayOf(0, 2, 5),
+                intArrayOf(0, 1, 2),
+                intArrayOf(1, 2, 1),
+                intArrayOf(3, 0, 3),
+            ),
         )
         assertThat(graph.shortestPath(3, 2), equalTo(6))
         assertThat(graph.shortestPath(0, 3), equalTo(-1))

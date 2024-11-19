@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun maxDotProduct() {
         assertThat(
             Solution().maxDotProduct(intArrayOf(2, 1, -2, 5), intArrayOf(3, 0, -6)),
-            equalTo(18)
+            equalTo(18),
         )
     }
 
     @Test
     fun maxDotProduct2() {
         assertThat(
-            Solution().maxDotProduct(intArrayOf(3, -2), intArrayOf(2, -6, 7)), equalTo(21)
+            Solution().maxDotProduct(intArrayOf(3, -2), intArrayOf(2, -6, 7)),
+            equalTo(21),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun maxDotProduct3() {
         assertThat(
             Solution().maxDotProduct(intArrayOf(-1, -1), intArrayOf(1, 1)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

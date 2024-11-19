@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .decodeMessage(
-                    "the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"
+                    "the quick brown fox jumps over the lazy dog",
+                    "vkbs bs t suepuv",
                 ),
-            equalTo("this is a secret")
+            equalTo("this is a secret"),
         )
     }
 
@@ -22,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .decodeMessage(
                     "eljuxhpwnyrdgtqkviszcfmabo",
-                    "zwx hnfx lqantp mnoeius ycgk vcnjrdb"
+                    "zwx hnfx lqantp mnoeius ycgk vcnjrdb",
                 ),
-            equalTo("the five boxing wizards jump quickly")
+            equalTo("the five boxing wizards jump quickly"),
         )
     }
 }

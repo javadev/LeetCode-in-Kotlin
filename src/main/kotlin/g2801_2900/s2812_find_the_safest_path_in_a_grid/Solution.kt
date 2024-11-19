@@ -35,7 +35,7 @@ class Solution {
         cost: Array<IntArray>,
         mid: Int,
         n: Int,
-        visited: Array<BooleanArray>
+        visited: Array<BooleanArray>,
     ): Boolean {
         if (i < 0 || j < 0 || i >= n || j >= n) return false
         if (cost[i][j] == Int.MAX_VALUE || cost[i][j] < mid) return false

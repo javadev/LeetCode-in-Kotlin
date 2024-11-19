@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun minimumJumps2() {
         assertThat(
             Solution().minimumJumps(intArrayOf(8, 3, 16, 6, 12, 20), 15, 13, 11),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minimumJumps3() {
         assertThat(
             Solution().minimumJumps(intArrayOf(1, 6, 2, 14, 5, 17, 4), 16, 9, 7),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

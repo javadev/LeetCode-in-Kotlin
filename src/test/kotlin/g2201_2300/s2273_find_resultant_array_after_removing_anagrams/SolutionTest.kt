@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun removeAnagrams() {
         assertThat(
             Solution().removeAnagrams(arrayOf("abba", "baba", "bbaa", "cd", "cd")),
-            equalTo(mutableListOf("abba", "cd"))
+            equalTo(mutableListOf("abba", "cd")),
         )
     }
 
@@ -17,14 +17,15 @@ internal class SolutionTest {
     fun removeAnagrams2() {
         assertThat(
             Solution().removeAnagrams(arrayOf("a", "b", "c", "d", "e")),
-            equalTo(mutableListOf("a", "b", "c", "d", "e"))
+            equalTo(mutableListOf("a", "b", "c", "d", "e")),
         )
     }
 
     @Test
     fun removeAnagrams3() {
         assertThat(
-            Solution().removeAnagrams(arrayOf()), equalTo(emptyList<Any>())
+            Solution().removeAnagrams(arrayOf()),
+            equalTo(emptyList<Any>()),
         )
     }
 }

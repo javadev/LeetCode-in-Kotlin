@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .areSimilar(arrayOf(intArrayOf(1, 2, 1, 2), intArrayOf(5, 5, 5, 5), intArrayOf(6, 3, 6, 3)), 2),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun areSimilar2() {
         assertThat(
             Solution().areSimilar(arrayOf(intArrayOf(2, 2), intArrayOf(2, 2)), 3),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

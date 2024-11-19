@@ -23,7 +23,7 @@ class Solution {
 
     /*
     Utility to check if the 2 words are anagrams or not
-    */
+     */
     private fun isAnagram(word1: String, word2: String): Boolean {
         val charMap = IntArray(26)
         val word1Arr = word1.toCharArray()

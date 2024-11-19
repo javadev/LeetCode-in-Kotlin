@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minMutation() {
         assertThat(
             Solution().minMutation("AACCGGTT", "AACCGGTA", arrayOf("AACCGGTA")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -19,9 +19,10 @@ internal class SolutionTest {
             Solution()
                 .minMutation(
                     "AACCGGTT",
-                    "AAACGGTA", arrayOf("AACCGGTA", "AACCGCTA", "AAACGGTA")
+                    "AAACGGTA",
+                    arrayOf("AACCGGTA", "AACCGCTA", "AAACGGTA"),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -31,9 +32,10 @@ internal class SolutionTest {
             Solution()
                 .minMutation(
                     "AAAAACCC",
-                    "AACCCCCC", arrayOf("AAAACCCC", "AAACCCCC", "AACCCCCC")
+                    "AACCCCCC",
+                    arrayOf("AAAACCCC", "AAACCCCC", "AACCCCCC"),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

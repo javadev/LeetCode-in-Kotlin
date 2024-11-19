@@ -12,13 +12,17 @@ internal class SolutionTest {
                 .frogPosition(
                     7,
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(1, 3),
-                        intArrayOf(1, 7), intArrayOf(2, 4), intArrayOf(2, 6), intArrayOf(3, 5)
+                        intArrayOf(1, 2),
+                        intArrayOf(1, 3),
+                        intArrayOf(1, 7),
+                        intArrayOf(2, 4),
+                        intArrayOf(2, 6),
+                        intArrayOf(3, 5),
                     ),
                     2,
-                    4
+                    4,
                 ),
-            equalTo(0.16666666666666666)
+            equalTo(0.16666666666666666),
         )
     }
 
@@ -29,13 +33,17 @@ internal class SolutionTest {
                 .frogPosition(
                     7,
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(1, 3),
-                        intArrayOf(1, 7), intArrayOf(2, 4), intArrayOf(2, 6), intArrayOf(3, 5)
+                        intArrayOf(1, 2),
+                        intArrayOf(1, 3),
+                        intArrayOf(1, 7),
+                        intArrayOf(2, 4),
+                        intArrayOf(2, 6),
+                        intArrayOf(3, 5),
                     ),
                     1,
-                    7
+                    7,
                 ),
-            equalTo(0.3333333333333333)
+            equalTo(0.3333333333333333),
         )
     }
 }

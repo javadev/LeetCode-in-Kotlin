@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findXSum() {
         assertThat<LongArray?>(
             Solution().findXSum(intArrayOf(1, 1, 2, 2, 3, 4, 2, 3), 6, 2),
-            equalTo<LongArray?>(longArrayOf(6L, 10L, 12L))
+            equalTo<LongArray?>(longArrayOf(6L, 10L, 12L)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findXSum2() {
         assertThat<LongArray?>(
             Solution().findXSum(intArrayOf(3, 8, 7, 8, 7, 5), 2, 2),
-            equalTo<LongArray?>(longArrayOf(11L, 15L, 15L, 15L, 12L))
+            equalTo<LongArray?>(longArrayOf(11L, 15L, 15L, 15L, 12L)),
         )
     }
 }

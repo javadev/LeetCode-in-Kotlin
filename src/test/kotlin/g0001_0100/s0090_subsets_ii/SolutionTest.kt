@@ -9,12 +9,16 @@ internal class SolutionTest {
     @Test
     fun subsetsWithDup() {
         val expected = arrayOf(
-            intArrayOf(1), intArrayOf(1, 2), intArrayOf(1, 2, 2),
-            intArrayOf(2), intArrayOf(2, 2), intArrayOf()
+            intArrayOf(1),
+            intArrayOf(1, 2),
+            intArrayOf(1, 2, 2),
+            intArrayOf(2),
+            intArrayOf(2, 2),
+            intArrayOf(),
         )
         assertThat(
             Solution().subsetsWithDup(intArrayOf(1, 2, 2)),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 
@@ -23,7 +27,7 @@ internal class SolutionTest {
         val expected = arrayOf(intArrayOf(0), intArrayOf())
         assertThat(
             Solution().subsetsWithDup(intArrayOf(0)),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 }

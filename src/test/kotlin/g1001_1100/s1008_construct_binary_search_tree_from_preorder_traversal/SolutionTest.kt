@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun bstFromPreorder() {
         assertThat(
             Solution().bstFromPreorder(intArrayOf(8, 5, 1, 7, 10, 12)).toString(),
-            equalTo(TreeNode.create(listOf(8, 5, 10, 1, 7, null, 12)).toString())
+            equalTo(TreeNode.create(listOf(8, 5, 10, 1, 7, null, 12)).toString()),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun bstFromPreorder2() {
         assertThat(
             Solution().bstFromPreorder(intArrayOf(1, 3)).toString(),
-            equalTo(TreeNode.create(listOf(1, null, 3)).toString())
+            equalTo(TreeNode.create(listOf(1, null, 3)).toString()),
         )
     }
 }

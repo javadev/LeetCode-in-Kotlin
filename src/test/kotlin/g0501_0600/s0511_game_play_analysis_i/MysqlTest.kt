@@ -27,8 +27,8 @@ import javax.sql.DataSource
             "INSERT INTO Activity(player_id, device_id, event_date, games_played)" +
             " VALUES (3, 1, '2016-03-02', 0); " +
             "INSERT INTO Activity(player_id, device_id, event_date, games_played)" +
-            " VALUES (3, 4, '2018-07-03', 5); "
-    ]
+            " VALUES (3, 4, '2018-07-03', 5); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -40,12 +40,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0501_0600/" +
-                                "s0511_game_play_analysis_i/script.sql"
-                        )
+                                "s0511_game_play_analysis_i/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

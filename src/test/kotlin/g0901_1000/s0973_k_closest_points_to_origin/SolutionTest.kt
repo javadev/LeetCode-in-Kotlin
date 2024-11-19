@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kClosest() {
         assertThat(
             Solution().kClosest(arrayOf(intArrayOf(1, 3), intArrayOf(-2, 2)), 1),
-            equalTo(arrayOf(intArrayOf(-2, 2)))
+            equalTo(arrayOf(intArrayOf(-2, 2))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kClosest2() {
         assertThat(
             Solution().kClosest(arrayOf(intArrayOf(3, 3), intArrayOf(5, -1), intArrayOf(-2, 4)), 2),
-            equalTo(arrayOf(intArrayOf(3, 3), intArrayOf(-2, 4)))
+            equalTo(arrayOf(intArrayOf(3, 3), intArrayOf(-2, 4))),
         )
     }
 }

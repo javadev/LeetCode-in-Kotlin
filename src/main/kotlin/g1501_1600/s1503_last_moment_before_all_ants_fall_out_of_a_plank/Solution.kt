@@ -19,6 +19,8 @@ class Solution {
         }
         return if (right.isNotEmpty() && left.isEmpty()) {
             Math.abs(smallestRight - n)
-        } else Math.max(highestLeft, Math.abs(smallestRight - n))
+        } else {
+            Math.max(highestLeft, Math.abs(smallestRight - n))
+        }
     }
 }

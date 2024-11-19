@@ -23,7 +23,7 @@ class Solution {
         graph: Map<Int, MutableList<Int>>,
         hasApple: List<Boolean>,
         node: Int,
-        visited: MutableSet<Int>
+        visited: MutableSet<Int>,
     ): Int {
         var steps = 0
         for (child in graph.getOrDefault(node, mutableListOf())) {

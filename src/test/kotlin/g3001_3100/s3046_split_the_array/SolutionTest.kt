@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isPossibleToSplit() {
         assertThat(
             Solution().isPossibleToSplit(intArrayOf(1, 1, 2, 2, 3, 4)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

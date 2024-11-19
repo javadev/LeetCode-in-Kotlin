@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun entityParser() {
         assertThat(
             Solution().entityParser("&amp; is an HTML entity but &ambassador; is not."),
-            equalTo("& is an HTML entity but &ambassador; is not.")
+            equalTo("& is an HTML entity but &ambassador; is not."),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun entityParser2() {
         assertThat(
             Solution().entityParser("and I quote: &quot;...&quot;"),
-            equalTo("and I quote: \"...\"")
+            equalTo("and I quote: \"...\""),
         )
     }
 

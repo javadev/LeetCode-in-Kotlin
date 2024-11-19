@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun scoreOfStudents() {
         assertThat(
             Solution().scoreOfStudents("3+5*2", intArrayOf(13, 0, 10, 13, 13, 16, 16)),
-            equalTo(19)
+            equalTo(19),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun scoreOfStudents2() {
         assertThat(
             Solution().scoreOfStudents("6+0*1", intArrayOf(12, 9, 6, 4, 8, 6)),
-            equalTo(10)
+            equalTo(10),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun scoreOfStudents3() {
         assertThat(
             Solution().scoreOfStudents("3+5*2", intArrayOf(13, 0, 10, 13, 13, 16, 16)),
-            equalTo(19)
+            equalTo(19),
         )
     }
 }

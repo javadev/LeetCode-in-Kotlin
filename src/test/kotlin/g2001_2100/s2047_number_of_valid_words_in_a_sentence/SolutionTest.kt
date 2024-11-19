@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun countValidWords3() {
         assertThat(
             Solution().countValidWords("alice and  bob are playing stone-game10"),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

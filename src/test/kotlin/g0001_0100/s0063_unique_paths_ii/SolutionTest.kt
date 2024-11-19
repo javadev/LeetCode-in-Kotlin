@@ -10,14 +10,15 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .uniquePathsWithObstacles(arrayOf(intArrayOf(0, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 0))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
     @Test
     fun uniquePathsWithObstacles2() {
         assertThat(
-            Solution().uniquePathsWithObstacles(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0))), equalTo(1)
+            Solution().uniquePathsWithObstacles(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0))),
+            equalTo(1),
         )
     }
 }

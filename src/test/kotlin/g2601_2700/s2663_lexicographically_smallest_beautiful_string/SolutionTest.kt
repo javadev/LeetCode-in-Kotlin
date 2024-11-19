@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun smallestBeautifulString() {
         assertThat(
             Solution().smallestBeautifulString("abcz", 26),
-            equalTo("abda")
+            equalTo("abda"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun smallestBeautifulString2() {
         assertThat(
             Solution().smallestBeautifulString("dc", 4),
-            equalTo("")
+            equalTo(""),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun smallestBeautifulString3() {
         assertThat(
             Solution().smallestBeautifulString("abcd", 4),
-            equalTo("abda")
+            equalTo("abda"),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun smallestBeautifulString4() {
         assertThat(
             Solution().smallestBeautifulString("abdc", 4),
-            equalTo("acba")
+            equalTo("acba"),
         )
     }
 }

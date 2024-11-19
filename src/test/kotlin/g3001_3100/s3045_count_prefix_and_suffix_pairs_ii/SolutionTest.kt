@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countPrefixSuffixPairs() {
         assertThat(
             Solution().countPrefixSuffixPairs(arrayOf("a", "aba", "ababa", "aa")),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countPrefixSuffixPairs2() {
         assertThat(
             Solution().countPrefixSuffixPairs(arrayOf("pa", "papa", "ma", "mama")),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 

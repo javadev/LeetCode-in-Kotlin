@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumSumSubsequence(intArrayOf(3, 5, 9), arrayOf(intArrayOf(1, -2), intArrayOf(0, -3))),
-            equalTo(21)
+            equalTo(21),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun maximumSumSubsequence2() {
         assertThat(
             Solution().maximumSumSubsequence(intArrayOf(0, -1), arrayOf(intArrayOf(0, -5))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

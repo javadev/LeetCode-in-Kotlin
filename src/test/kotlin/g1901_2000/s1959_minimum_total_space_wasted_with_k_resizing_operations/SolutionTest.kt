@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun checkMove2() {
         assertThat(
             Solution().minSpaceWastedKResizing(intArrayOf(10, 20, 30), 1),
-            equalTo(10)
+            equalTo(10),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun checkMove3() {
         assertThat(
             Solution().minSpaceWastedKResizing(intArrayOf(10, 20, 15, 30, 20), 2),
-            equalTo(15)
+            equalTo(15),
         )
     }
 }

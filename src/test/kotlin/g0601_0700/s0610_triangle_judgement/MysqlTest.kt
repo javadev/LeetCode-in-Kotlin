@@ -20,8 +20,8 @@ import javax.sql.DataSource
             "INSERT INTO Triangle(x, y, z)" +
             " VALUES (13, 15, 30); " +
             "INSERT INTO Triangle(x, y, z)" +
-            " VALUES (10, 20, 15); "
-    ]
+            " VALUES (10, 20, 15); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -33,12 +33,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0601_0700/" +
-                                "s0610_triangle_judgement/script.sql"
-                        )
+                                "s0610_triangle_judgement/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(13))

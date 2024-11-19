@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun prevPermOpt3() {
         assertThat(
             Solution().prevPermOpt1(intArrayOf(1, 9, 4, 6, 7)),
-            equalTo(intArrayOf(1, 7, 4, 6, 9))
+            equalTo(intArrayOf(1, 7, 4, 6, 9)),
         )
     }
 }

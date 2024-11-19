@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun asteroidsDestroyed() {
         assertThat(
-            Solution().asteroidsDestroyed(10, intArrayOf(3, 9, 19, 5, 21)), equalTo(true)
+            Solution().asteroidsDestroyed(10, intArrayOf(3, 9, 19, 5, 21)),
+            equalTo(true),
         )
     }
 

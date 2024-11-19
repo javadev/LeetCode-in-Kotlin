@@ -11,7 +11,7 @@ internal class SolutionTest {
         val head = createSinglyLinkedList(listOf(1, 2, 3, 4, 5))
         assertThat(
             Solution().middleNode(head).toString(),
-            equalTo(createSinglyLinkedList(listOf(3, 4, 5)).toString())
+            equalTo(createSinglyLinkedList(listOf(3, 4, 5)).toString()),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val head = createSinglyLinkedList(listOf(1, 2, 3, 4, 5, 6))
         assertThat(
             Solution().middleNode(head).toString(),
-            equalTo(createSinglyLinkedList(listOf(4, 5, 6)).toString())
+            equalTo(createSinglyLinkedList(listOf(4, 5, 6)).toString()),
         )
     }
 }

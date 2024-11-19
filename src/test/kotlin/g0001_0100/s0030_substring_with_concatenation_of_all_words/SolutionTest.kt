@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun findSubstring() {
         assertThat(
             Solution().findSubstring("barfoothefoobarman", arrayOf("foo", "bar")),
-            equalTo(listOf(0, 9))
+            equalTo(listOf(0, 9)),
         )
     }
 
@@ -19,9 +19,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findSubstring(
-                    "wordgoodgoodgoodbestword", arrayOf("word", "good", "best", "word")
+                    "wordgoodgoodgoodbestword",
+                    arrayOf("word", "good", "best", "word"),
                 ),
-            equalTo(Collections.emptyList())
+            equalTo(Collections.emptyList()),
         )
     }
 
@@ -30,9 +31,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findSubstring(
-                    "barfoofoobarthefoobarman", arrayOf("bar", "foo", "the")
+                    "barfoofoobarthefoobarman",
+                    arrayOf("bar", "foo", "the"),
                 ),
-            equalTo(listOf(6, 9, 12))
+            equalTo(listOf(6, 9, 12)),
         )
     }
 }

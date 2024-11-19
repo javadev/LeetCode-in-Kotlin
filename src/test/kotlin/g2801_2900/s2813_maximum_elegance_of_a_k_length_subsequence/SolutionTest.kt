@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMaximumElegance() {
         assertThat(
             Solution().findMaximumElegance(arrayOf(intArrayOf(3, 2), intArrayOf(5, 1), intArrayOf(10, 1)), 2),
-            equalTo(17L)
+            equalTo(17L),
         )
     }
 
@@ -21,11 +21,11 @@ internal class SolutionTest {
                     intArrayOf(3, 1),
                     intArrayOf(3, 1),
                     intArrayOf(2, 2),
-                    intArrayOf(5, 3)
+                    intArrayOf(5, 3),
                 ),
-                3
+                3,
             ),
-            equalTo(19L)
+            equalTo(19L),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun findMaximumElegance3() {
         assertThat(
             Solution().findMaximumElegance(arrayOf(intArrayOf(1, 1), intArrayOf(2, 1), intArrayOf(3, 1)), 3),
-            equalTo(7L)
+            equalTo(7L),
         )
     }
 }

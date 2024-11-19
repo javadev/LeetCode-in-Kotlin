@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostPoints() {
         assertThat(
             Solution().mostPoints(arrayOf(intArrayOf(3, 2), intArrayOf(4, 3), intArrayOf(4, 4), intArrayOf(2, 5))),
-            equalTo(5L)
+            equalTo(5L),
         )
     }
 
@@ -22,10 +22,10 @@ internal class SolutionTest {
                     intArrayOf(2, 2),
                     intArrayOf(3, 3),
                     intArrayOf(4, 4),
-                    intArrayOf(5, 5)
-                )
+                    intArrayOf(5, 5),
+                ),
             ),
-            equalTo(7L)
+            equalTo(7L),
         )
     }
 }

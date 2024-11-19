@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findContentChildren() {
         assertThat(
             Solution().findContentChildren(intArrayOf(1, 2, 3), intArrayOf(1, 1)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -19,11 +19,12 @@ internal class SolutionTest {
             Solution()
                 .findContentChildren(
                     intArrayOf(
-                        1, 2
+                        1,
+                        2,
                     ),
-                    intArrayOf(1, 2, 3)
+                    intArrayOf(1, 2, 3),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

@@ -11,7 +11,7 @@ internal class SolutionTest {
         val expected: TreeNode? = TreeNode.create(listOf(1, 2, 5, 3, 4, 6, 7))
         assertThat(
             Solution().recoverFromPreorder("1-2--3--4-5--6--7").toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val expected: TreeNode? = TreeNode.create(listOf(1, 2, 5, 3, null, 6, null, 4, null, 7))
         assertThat(
             Solution().recoverFromPreorder("1-2--3---4-5--6---7").toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
         val expected: TreeNode? = TreeNode.create(listOf(1, 401, null, 349, 88, 90))
         assertThat(
             Solution().recoverFromPreorder("1-401--349---90--88").toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 }

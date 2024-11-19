@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .replaceWords(
                     listOf("cat", "bat", "rat"),
-                    "the cattle was rattled by the battery"
+                    "the cattle was rattled by the battery",
                 ),
-            equalTo("the cat was rat by the bat")
+            equalTo("the cat was rat by the bat"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .replaceWords(listOf("a", "b", "c"), "aadsfasf absbs bbab cadsfafs"),
-            equalTo("a a b c")
+            equalTo("a a b c"),
         )
     }
 }

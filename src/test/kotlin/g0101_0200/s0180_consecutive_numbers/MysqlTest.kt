@@ -23,8 +23,8 @@ import javax.sql.DataSource
             "INSERT INTO Logs(id, num) VALUES (4, 2); " +
             "INSERT INTO Logs(id, num) VALUES (5, 1); " +
             "INSERT INTO Logs(id, num) VALUES (6, 2); " +
-            "INSERT INTO Logs(id, num) VALUES (7, 2); "
-    ]
+            "INSERT INTO Logs(id, num) VALUES (7, 2); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -35,12 +35,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0180_consecutive_numbers/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0180_consecutive_numbers/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

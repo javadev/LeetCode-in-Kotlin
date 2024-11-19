@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .firstPalindrome(arrayOf("abc", "car", "ada", "racecar", "cool")),
-            equalTo("ada")
+            equalTo("ada"),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun firstPalindrome2() {
         assertThat(
             Solution().firstPalindrome(arrayOf("notapalindrome", "racecar")),
-            equalTo("racecar")
+            equalTo("racecar"),
         )
     }
 

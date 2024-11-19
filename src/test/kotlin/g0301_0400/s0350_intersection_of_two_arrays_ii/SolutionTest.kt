@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun intersect() {
         assertThat(
             Solution().intersect(intArrayOf(1, 2, 2, 1), intArrayOf(2, 2)),
-            equalTo(intArrayOf(2, 2))
+            equalTo(intArrayOf(2, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun intersect2() {
         assertThat(
             Solution().intersect(intArrayOf(4, 9, 5), intArrayOf(9, 4, 9, 8, 4)),
-            equalTo(intArrayOf(9, 4))
+            equalTo(intArrayOf(9, 4)),
         )
     }
 }

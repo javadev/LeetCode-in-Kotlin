@@ -11,7 +11,8 @@ internal class SolutionTest {
         val treeNode: TreeNode = TreeNode.create(listOf(4, 2, 6, 3, 1, 5))!!
         val expected: TreeNode = TreeNode.create(listOf(4, 1, 1, 2, null, null, 6, 3, 1, 5))!!
         assertThat(
-            Solution().addOneRow(treeNode, 1, 2).toString(), equalTo(expected.toString())
+            Solution().addOneRow(treeNode, 1, 2).toString(),
+            equalTo(expected.toString()),
         )
     }
 
@@ -20,7 +21,8 @@ internal class SolutionTest {
         val treeNode: TreeNode = TreeNode.create(listOf(4, 2, null, 3, 1))!!
         val expected: TreeNode = TreeNode.create(listOf(4, 2, null, 1, 1, 3, null, null, 1))!!
         assertThat(
-            Solution().addOneRow(treeNode, 1, 3).toString(), equalTo(expected.toString())
+            Solution().addOneRow(treeNode, 1, 3).toString(),
+            equalTo(expected.toString()),
         )
     }
 }

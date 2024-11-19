@@ -11,10 +11,11 @@ internal class SolutionTest {
             Solution().goodSubsetofBinaryMatrix(
                 arrayOf(
                     intArrayOf(0, 1, 1, 0),
-                    intArrayOf(0, 0, 0, 1), intArrayOf(1, 1, 1, 1)
-                )
+                    intArrayOf(0, 0, 0, 1),
+                    intArrayOf(1, 1, 1, 1),
+                ),
             ),
-            equalTo(listOf(0, 1))
+            equalTo(listOf(0, 1)),
         )
     }
 
@@ -29,10 +30,10 @@ internal class SolutionTest {
             Solution().goodSubsetofBinaryMatrix(
                 arrayOf(
                     intArrayOf(1, 1, 1),
-                    intArrayOf(1, 1, 1)
-                )
+                    intArrayOf(1, 1, 1),
+                ),
             ),
-            equalTo(listOf())
+            equalTo(listOf()),
         )
     }
 }

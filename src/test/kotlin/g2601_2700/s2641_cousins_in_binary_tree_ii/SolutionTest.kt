@@ -11,8 +11,8 @@ internal class SolutionTest {
         assertThat(
             Solution().replaceValueInTree(TreeNode.create(listOf(5, 4, 9, 1, 10, null, 7))).toString(),
             equalTo(
-                TreeNode.create(listOf(0, 0, 0, 7, 7, null, 11)).toString()
-            )
+                TreeNode.create(listOf(0, 0, 0, 7, 7, null, 11)).toString(),
+            ),
         )
     }
 
@@ -21,8 +21,8 @@ internal class SolutionTest {
         assertThat(
             Solution().replaceValueInTree(TreeNode.create(listOf(3, 1, 2))).toString(),
             equalTo(
-                TreeNode.create(listOf(0, 0, 0)).toString()
-            )
+                TreeNode.create(listOf(0, 0, 0)).toString(),
+            ),
         )
     }
 }

@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun countLatticePoints2() {
         assertThat(
-            Solution().countLatticePoints(arrayOf(intArrayOf(2, 2, 2), intArrayOf(3, 4, 1))), equalTo(16)
+            Solution().countLatticePoints(arrayOf(intArrayOf(2, 2, 2), intArrayOf(3, 4, 1))),
+            equalTo(16),
         )
     }
 }

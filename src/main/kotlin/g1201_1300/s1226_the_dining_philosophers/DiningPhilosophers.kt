@@ -15,7 +15,7 @@ class DiningPhilosophers {
         pickRightFork: Runnable,
         eat: Runnable,
         putLeftFork: Runnable,
-        putRightFork: Runnable
+        putRightFork: Runnable,
     ) {
         synchronized(leftFork) {
             synchronized(rightFork) {

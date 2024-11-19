@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxSumAfterPartitioning() {
         assertThat(
             Solution().maxSumAfterPartitioning(intArrayOf(1, 15, 7, 9, 2, 5, 10), 3),
-            equalTo(84)
+            equalTo(84),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxSumAfterPartitioning(intArrayOf(1, 4, 1, 5, 7, 3, 6, 1, 9, 9, 3), 4),
-            equalTo(83)
+            equalTo(83),
         )
     }
 

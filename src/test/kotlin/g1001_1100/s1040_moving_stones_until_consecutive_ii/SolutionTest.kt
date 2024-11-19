@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun numMovesStonesII2() {
         assertThat(
             Solution().numMovesStonesII(intArrayOf(6, 5, 4, 3, 10)),
-            equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3)),
         )
     }
 }

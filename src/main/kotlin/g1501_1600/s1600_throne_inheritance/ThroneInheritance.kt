@@ -33,7 +33,7 @@ class ThroneInheritance(private val king: String) {
         graph: Map<String, LinkedHashSet<String>>,
         src: String,
         l: MutableList<String>,
-        visited: MutableSet<String>
+        visited: MutableSet<String>,
     ) {
         visited.add(src)
         if (!isDead.contains(src)) {

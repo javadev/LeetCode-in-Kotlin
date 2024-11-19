@@ -12,9 +12,9 @@ internal class SolutionTest {
             Solution()
                 .getAllElements(
                     TreeNode.create(mutableListOf(2, 1, 4))!!,
-                    TreeNode.create(mutableListOf(1, 0, 3))!!
+                    TreeNode.create(mutableListOf(1, 0, 3))!!,
                 ),
-            equalTo(mutableListOf(0, 1, 1, 2, 3, 4))
+            equalTo(mutableListOf(0, 1, 1, 2, 3, 4)),
         )
     }
 
@@ -24,9 +24,9 @@ internal class SolutionTest {
             Solution()
                 .getAllElements(
                     TreeNode.create(mutableListOf(1, null, 8))!!,
-                    TreeNode.create(mutableListOf(8, 1))!!
+                    TreeNode.create(mutableListOf(8, 1))!!,
                 ),
-            equalTo(mutableListOf(1, 1, 8, 8))
+            equalTo(mutableListOf(1, 1, 8, 8)),
         )
     }
 }

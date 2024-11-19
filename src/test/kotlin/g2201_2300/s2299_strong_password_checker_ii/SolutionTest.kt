@@ -25,9 +25,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .strongPasswordCheckerII(
-                    "ecuwcfoyajkolntovfniplayrxhzpmhrkhzonopcwxgupzhoupw"
+                    "ecuwcfoyajkolntovfniplayrxhzpmhrkhzonopcwxgupzhoupw",
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 

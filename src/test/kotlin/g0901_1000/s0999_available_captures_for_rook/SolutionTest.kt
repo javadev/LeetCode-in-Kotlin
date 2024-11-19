@@ -18,10 +18,10 @@ internal class SolutionTest {
                         charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', 'p', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
-                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.')
-                    )
+                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -38,10 +38,10 @@ internal class SolutionTest {
                         charArrayOf('.', 'p', 'p', 'B', 'p', 'p', '.', '.'),
                         charArrayOf('.', 'p', 'p', 'p', 'p', 'p', '.', '.'),
                         charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
-                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.')
-                    )
+                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -58,10 +58,10 @@ internal class SolutionTest {
                         charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', 'B', '.', '.', '.', '.'),
                         charArrayOf('.', '.', '.', 'p', '.', '.', '.', '.'),
-                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.')
-                    )
+                        charArrayOf('.', '.', '.', '.', '.', '.', '.', '.'),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

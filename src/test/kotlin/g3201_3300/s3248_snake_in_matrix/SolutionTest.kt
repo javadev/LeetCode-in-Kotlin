@@ -14,7 +14,8 @@ internal class SolutionTest {
     @Test
     fun finalPositionOfSnake2() {
         assertThat(
-            Solution().finalPositionOfSnake(3, listOf("DOWN", "RIGHT", "UP")), equalTo(1)
+            Solution().finalPositionOfSnake(3, listOf("DOWN", "RIGHT", "UP")),
+            equalTo(1),
         )
     }
 

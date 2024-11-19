@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isCircularSentence() {
         assertThat(
             Solution().isCircularSentence("leetcode exercises sound delightful"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

@@ -11,9 +11,10 @@ internal class SolutionTest {
             Solution()
                 .mostProfitablePath(
                     arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(3, 4)),
-                    3, intArrayOf(-2, 4, 2, -4, 6)
+                    3,
+                    intArrayOf(-2, 4, 2, -4, 6),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun mostProfitablePath2() {
         assertThat(
             Solution().mostProfitablePath(arrayOf(intArrayOf(0, 1)), 1, intArrayOf(-7280, 2350)),
-            equalTo(-7280)
+            equalTo(-7280),
         )
     }
 }

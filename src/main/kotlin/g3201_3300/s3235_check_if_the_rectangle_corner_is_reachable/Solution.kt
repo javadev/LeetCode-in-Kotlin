@@ -63,7 +63,7 @@ class Solution {
                 val y2 = circles[j][1]
                 val r2 = circles[j][2]
                 val dist = sqrt(
-                    (x1 - x2.toDouble()).pow(2.0) + (y1 - y2.toDouble()).pow(2.0)
+                    (x1 - x2.toDouble()).pow(2.0) + (y1 - y2.toDouble()).pow(2.0),
                 )
                 if (dist <= (r1 + r2)) {
                     ds.dsu(i, j)

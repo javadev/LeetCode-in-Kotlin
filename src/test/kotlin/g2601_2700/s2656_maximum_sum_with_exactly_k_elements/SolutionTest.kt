@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximizeSum() {
         assertThat(
             Solution().maximizeSum(intArrayOf(1, 2, 3, 4, 5), 3),
-            equalTo(18)
+            equalTo(18),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximizeSum2() {
         assertThat(
             Solution().maximizeSum(intArrayOf(5, 5, 5), 2),
-            equalTo(11)
+            equalTo(11),
         )
     }
 }

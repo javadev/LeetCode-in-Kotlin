@@ -43,8 +43,8 @@ import javax.sql.DataSource
             "INSERT INTO items(item_id, item_brand) VALUES (1, 'Samsung'); " +
             "INSERT INTO items(item_id, item_brand) VALUES (2, 'Lenovo'); " +
             "INSERT INTO items(item_id, item_brand) VALUES (3, 'LG'); " +
-            "INSERT INTO items(item_id, item_brand) VALUES (4, 'HP'); "
-    ]
+            "INSERT INTO items(item_id, item_brand) VALUES (4, 'HP'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -56,12 +56,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1101_1200/s1158_" +
-                                "market_analysis_i/script.sql"
-                        )
+                                "market_analysis_i/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

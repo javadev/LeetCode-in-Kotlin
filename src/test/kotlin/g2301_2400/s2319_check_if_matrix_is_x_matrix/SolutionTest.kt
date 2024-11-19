@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(2, 0, 0, 1),
                         intArrayOf(0, 3, 1, 0),
                         intArrayOf(0, 5, 2, 0),
-                        intArrayOf(4, 0, 0, 2)
-                    )
+                        intArrayOf(4, 0, 0, 2),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun checkXMatrix2() {
         assertThat(
             Solution().checkXMatrix(arrayOf(intArrayOf(5, 7, 0), intArrayOf(0, 3, 1), intArrayOf(0, 5, 0))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -39,10 +39,10 @@ internal class SolutionTest {
                         intArrayOf(0, 4, 0, 1, 0),
                         intArrayOf(0, 0, 5, 0, 0),
                         intArrayOf(0, 5, 0, 2, 0),
-                        intArrayOf(4, 0, 0, 0, 2)
-                    )
+                        intArrayOf(4, 0, 0, 0, 2),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

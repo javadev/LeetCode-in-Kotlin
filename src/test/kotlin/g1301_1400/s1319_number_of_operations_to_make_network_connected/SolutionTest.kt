@@ -12,10 +12,11 @@ internal class SolutionTest {
                 4,
                 arrayOf(
                     intArrayOf(0, 1),
-                    intArrayOf(0, 2), intArrayOf(1, 2)
-                )
+                    intArrayOf(0, 2),
+                    intArrayOf(1, 2),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -27,10 +28,13 @@ internal class SolutionTest {
                     6,
                     arrayOf(
                         intArrayOf(0, 1),
-                        intArrayOf(0, 2), intArrayOf(0, 3), intArrayOf(1, 2), intArrayOf(1, 3)
-                    )
+                        intArrayOf(0, 2),
+                        intArrayOf(0, 3),
+                        intArrayOf(1, 2),
+                        intArrayOf(1, 3),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -41,10 +45,12 @@ internal class SolutionTest {
                 6,
                 arrayOf(
                     intArrayOf(0, 1),
-                    intArrayOf(0, 2), intArrayOf(0, 3), intArrayOf(1, 2)
-                )
+                    intArrayOf(0, 2),
+                    intArrayOf(0, 3),
+                    intArrayOf(1, 2),
+                ),
             ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

@@ -13,7 +13,7 @@ class Solution {
                     intArrayOf(i, j),
                     intArrayOf(j, n - 1 - i),
                     intArrayOf(n - 1 - i, n - 1 - j),
-                    intArrayOf(n - 1 - j, i)
+                    intArrayOf(n - 1 - j, i),
                 )
                 var t = matrix[pos[0][0]][pos[0][1]]
                 for (k in 1 until pos.size) {

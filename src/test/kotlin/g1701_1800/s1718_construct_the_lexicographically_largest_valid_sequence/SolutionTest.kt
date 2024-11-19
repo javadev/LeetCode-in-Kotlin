@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun constructDistancedSequence() {
         assertThat(
-            Solution().constructDistancedSequence(3), equalTo(intArrayOf(3, 1, 2, 3, 2))
+            Solution().constructDistancedSequence(3),
+            equalTo(intArrayOf(3, 1, 2, 3, 2)),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun constructDistancedSequence2() {
         assertThat(
             Solution().constructDistancedSequence(5),
-            equalTo(intArrayOf(5, 3, 1, 4, 3, 5, 2, 4, 2))
+            equalTo(intArrayOf(5, 3, 1, 4, 3, 5, 2, 4, 2)),
         )
     }
 }

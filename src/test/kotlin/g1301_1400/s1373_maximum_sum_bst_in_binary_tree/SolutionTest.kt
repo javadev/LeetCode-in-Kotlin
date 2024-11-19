@@ -10,8 +10,8 @@ internal class SolutionTest {
     fun maxSumBST() {
         val treeNode = TreeNode.create(
             mutableListOf(
-                1, 4, 3, 2, 4, 2, 5, null, null, null, null, null, null, 4, 6
-            )
+                1, 4, 3, 2, 4, 2, 5, null, null, null, null, null, null, 4, 6,
+            ),
         )
         assertThat(Solution().maxSumBST(treeNode), equalTo(20))
     }

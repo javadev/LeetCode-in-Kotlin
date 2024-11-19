@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMedianSortedArrays() {
         assertThat(
             Solution().findMedianSortedArrays(intArrayOf(1, 3), intArrayOf(2)),
-            equalTo(2.0)
+            equalTo(2.0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findMedianSortedArrays2() {
         assertThat(
             Solution().findMedianSortedArrays(intArrayOf(1, 2), intArrayOf(3, 4)),
-            equalTo(2.5)
+            equalTo(2.5),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestMissingValueSubtree(intArrayOf(-1, 0, 0, 2), intArrayOf(1, 2, 3, 4)),
-            equalTo(intArrayOf(5, 1, 1, 1))
+            equalTo(intArrayOf(5, 1, 1, 1)),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestMissingValueSubtree(intArrayOf(-1, 0, 1, 0, 3, 3), intArrayOf(5, 4, 6, 2, 1, 3)),
-            equalTo(intArrayOf(7, 1, 1, 4, 2, 1))
+            equalTo(intArrayOf(7, 1, 1, 4, 2, 1)),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestMissingValueSubtree(intArrayOf(-1, 2, 3, 0, 2, 4, 1), intArrayOf(2, 3, 4, 5, 6, 7, 8)),
-            equalTo(intArrayOf(1, 1, 1, 1, 1, 1, 1))
+            equalTo(intArrayOf(1, 1, 1, 1, 1, 1, 1)),
         )
     }
 }

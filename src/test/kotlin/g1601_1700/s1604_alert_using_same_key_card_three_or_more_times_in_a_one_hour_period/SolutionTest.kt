@@ -11,13 +11,25 @@ internal class SolutionTest {
             Solution()
                 .alertNames(
                     arrayOf(
-                        "daniel", "daniel", "daniel", "luis", "luis", "luis", "luis"
+                        "daniel",
+                        "daniel",
+                        "daniel",
+                        "luis",
+                        "luis",
+                        "luis",
+                        "luis",
                     ),
                     arrayOf(
-                        "10:00", "10:40", "11:00", "09:00", "11:00", "13:00", "15:00"
-                    )
+                        "10:00",
+                        "10:40",
+                        "11:00",
+                        "09:00",
+                        "11:00",
+                        "13:00",
+                        "15:00",
+                    ),
                 ),
-            equalTo(listOf("daniel"))
+            equalTo(listOf("daniel")),
         )
     }
 
@@ -27,13 +39,25 @@ internal class SolutionTest {
             Solution()
                 .alertNames(
                     arrayOf(
-                        "alice", "alice", "alice", "bob", "bob", "bob", "bob"
+                        "alice",
+                        "alice",
+                        "alice",
+                        "bob",
+                        "bob",
+                        "bob",
+                        "bob",
                     ),
                     arrayOf(
-                        "12:01", "12:00", "18:00", "21:00", "21:20", "21:30", "23:00"
-                    )
+                        "12:01",
+                        "12:00",
+                        "18:00",
+                        "21:00",
+                        "21:20",
+                        "21:30",
+                        "23:00",
+                    ),
                 ),
-            equalTo(listOf("bob"))
+            equalTo(listOf("bob")),
         )
     }
 }

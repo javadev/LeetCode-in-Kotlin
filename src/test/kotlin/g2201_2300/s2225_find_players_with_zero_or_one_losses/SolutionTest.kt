@@ -20,10 +20,10 @@ internal class SolutionTest {
                         intArrayOf(4, 8),
                         intArrayOf(4, 9),
                         intArrayOf(10, 4),
-                        intArrayOf(10, 9)
-                    )
+                        intArrayOf(10, 9),
+                    ),
                 ),
-            equalTo(listOf(mutableListOf(1, 2, 10), mutableListOf(4, 5, 7, 8)))
+            equalTo(listOf(mutableListOf(1, 2, 10), mutableListOf(4, 5, 7, 8))),
         )
     }
 
@@ -31,7 +31,7 @@ internal class SolutionTest {
     fun findWinners2() {
         assertThat(
             Solution().findWinners(arrayOf(intArrayOf(2, 3), intArrayOf(1, 3), intArrayOf(5, 4), intArrayOf(6, 4))),
-            equalTo(listOf(mutableListOf(1, 2, 5, 6), emptyList<Any>()))
+            equalTo(listOf(mutableListOf(1, 2, 5, 6), emptyList<Any>())),
         )
     }
 }

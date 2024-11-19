@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().findPrefixScore(intArrayOf(2, 3, 7, 5, 10)),
             equalTo(
-                longArrayOf(4, 10, 24, 36, 56)
-            )
+                longArrayOf(4, 10, 24, 36, 56),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().findPrefixScore(intArrayOf(1, 1, 2, 4, 8, 16)),
             equalTo(
-                longArrayOf(2, 4, 8, 16, 32, 64)
-            )
+                longArrayOf(2, 4, 8, 16, 32, 64),
+            ),
         )
     }
 }

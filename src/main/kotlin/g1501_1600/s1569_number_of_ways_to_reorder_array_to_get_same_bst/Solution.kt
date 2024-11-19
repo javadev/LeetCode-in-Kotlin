@@ -31,14 +31,14 @@ class Solution {
         val right: TreeInfo
         left = if (root!!.left != null) {
             calcPerms(
-                root.left, fact
+                root.left, fact,
             )
         } else {
             TreeInfo(0, 1)
         }
         right = if (root.right != null) {
             calcPerms(
-                root.right, fact
+                root.right, fact,
             )
         } else {
             TreeInfo(0, 1)
@@ -49,7 +49,7 @@ class Solution {
             fact[totNodes.toInt() - 1],
             fact[left.numOfNodes.toInt()],
             fact[right.numOfNodes.toInt()],
-            mod
+            mod,
         )
         val perms = if (totNodes == 1L) 1 else left.perm * right.perm % mod * modDiv % mod
         left.numOfNodes = totNodes

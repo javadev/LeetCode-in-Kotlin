@@ -9,21 +9,23 @@ internal class SolutionTest {
     fun maxBalancedSubsequenceSum() {
         assertThat(
             Solution().maxBalancedSubsequenceSum(intArrayOf(3, 3, 5, 6)),
-            equalTo(14L)
+            equalTo(14L),
         )
     }
 
     @Test
     fun maxBalancedSubsequenceSum2() {
         assertThat(
-            Solution().maxBalancedSubsequenceSum(intArrayOf(5, -1, -3, 8)), equalTo(13L)
+            Solution().maxBalancedSubsequenceSum(intArrayOf(5, -1, -3, 8)),
+            equalTo(13L),
         )
     }
 
     @Test
     fun maxBalancedSubsequenceSum3() {
         assertThat(
-            Solution().maxBalancedSubsequenceSum(intArrayOf(5, -1, -3, 8)), equalTo(13L)
+            Solution().maxBalancedSubsequenceSum(intArrayOf(5, -1, -3, 8)),
+            equalTo(13L),
         )
     }
 }

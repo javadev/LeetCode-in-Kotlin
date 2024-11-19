@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .stringIndices(
                     arrayOf("abcd", "bcd", "xbcd"),
-                    arrayOf("cd", "bcd", "xyz")
+                    arrayOf("cd", "bcd", "xyz"),
                 ),
-            equalTo(intArrayOf(1, 1, 1))
+            equalTo(intArrayOf(1, 1, 1)),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .stringIndices(
                     arrayOf("abcdefgh", "poiuygh", "ghghgh"),
-                    arrayOf("gh", "acbfgh", "acbfegh")
+                    arrayOf("gh", "acbfgh", "acbfegh"),
                 ),
-            equalTo(intArrayOf(2, 0, 2))
+            equalTo(intArrayOf(2, 0, 2)),
         )
     }
 }

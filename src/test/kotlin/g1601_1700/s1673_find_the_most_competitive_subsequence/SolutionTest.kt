@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostCompetitive() {
         assertThat(
             Solution().mostCompetitive(intArrayOf(3, 5, 2, 6), 2),
-            equalTo(intArrayOf(2, 6))
+            equalTo(intArrayOf(2, 6)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun mostCompetitive2() {
         assertThat(
             Solution().mostCompetitive(intArrayOf(2, 4, 3, 3, 5, 4, 9, 6), 4),
-            equalTo(intArrayOf(2, 3, 3, 4))
+            equalTo(intArrayOf(2, 3, 3, 4)),
         )
     }
 }

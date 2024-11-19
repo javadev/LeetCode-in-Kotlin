@@ -15,11 +15,11 @@ internal class SolutionTest {
                         intArrayOf(1, 2),
                         intArrayOf(0, 2),
                         intArrayOf(0, 5),
-                        intArrayOf(1, 3)
+                        intArrayOf(1, 3),
                     ),
-                    5
+                    5,
                 ),
-            equalTo(intArrayOf(0, 2, 0, 0, 0))
+            equalTo(intArrayOf(0, 2, 0, 0, 0)),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun findingUsersActiveMinutes2() {
         assertThat(
             Solution().findingUsersActiveMinutes(arrayOf(intArrayOf(1, 1), intArrayOf(2, 2), intArrayOf(2, 3)), 4),
-            equalTo(intArrayOf(1, 1, 0, 0))
+            equalTo(intArrayOf(1, 1, 0, 0)),
         )
     }
 }

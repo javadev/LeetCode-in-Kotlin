@@ -41,8 +41,8 @@ import javax.sql.DataSource
             "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
             "VALUES (2, 1, 'start', 2.500); " +
             "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-            "VALUES (2, 1, 'end', 5.000); "
-    ]
+            "VALUES (2, 1, 'end', 5.000); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -53,12 +53,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1601_1700/s1661_average_time_of_process_per_machine/script.sql"
-                        )
+                            "src/main/kotlin/g1601_1700/s1661_average_time_of_process_per_machine/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(0))

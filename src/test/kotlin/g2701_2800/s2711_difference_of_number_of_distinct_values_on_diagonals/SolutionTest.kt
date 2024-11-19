@@ -11,10 +11,11 @@ internal class SolutionTest {
             Solution().differenceOfDistinctValues(
                 arrayOf(
                     intArrayOf(1, 2, 3),
-                    intArrayOf(3, 1, 5), intArrayOf(3, 2, 1)
-                )
+                    intArrayOf(3, 1, 5),
+                    intArrayOf(3, 2, 1),
+                ),
             ),
-            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 0, 1), intArrayOf(0, 1, 1)))
+            equalTo(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 0, 1), intArrayOf(0, 1, 1))),
         )
     }
 
@@ -22,7 +23,7 @@ internal class SolutionTest {
     fun differenceOfDistinctValues2() {
         assertThat(
             Solution().differenceOfDistinctValues(arrayOf(intArrayOf(1))),
-            equalTo(arrayOf(intArrayOf(0)))
+            equalTo(arrayOf(intArrayOf(0))),
         )
     }
 }

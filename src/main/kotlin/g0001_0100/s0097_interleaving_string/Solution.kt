@@ -18,7 +18,7 @@ class Solution {
         i1: Int,
         i2: Int,
         i3: Int,
-        cache: Array<Array<Boolean?>>
+        cache: Array<Array<Boolean?>>,
     ): Boolean {
         if (cache[i1][i2] != null) {
             return cache[i1][i2]!!

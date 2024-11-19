@@ -24,14 +24,14 @@ class Solution {
             diff = Math.max(
                 diff,
                 getAbsoluteDifference(nums[0], nums[i + 1]) -
-                    getAbsoluteDifference(nums[i], nums[i + 1])
+                    getAbsoluteDifference(nums[i], nums[i + 1]),
             )
         }
         for (i in 0 until n - 1) {
             diff = Math.max(
                 diff,
                 getAbsoluteDifference(nums[n - 1], nums[i]) -
-                    getAbsoluteDifference(nums[i + 1], nums[i])
+                    getAbsoluteDifference(nums[i + 1], nums[i]),
             )
         }
         return result + diff

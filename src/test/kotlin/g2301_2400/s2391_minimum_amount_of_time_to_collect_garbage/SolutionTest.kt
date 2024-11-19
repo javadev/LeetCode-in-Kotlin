@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .garbageCollection(arrayOf("G", "P", "GP", "GG"), intArrayOf(2, 4, 3)),
-            equalTo(21)
+            equalTo(21),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .garbageCollection(arrayOf("MMM", "PGM", "GP"), intArrayOf(3, 10)),
-            equalTo(37)
+            equalTo(37),
         )
     }
 }

@@ -42,14 +42,14 @@ class Solution {
                     while (t <= c[d] && k + t <= m && s + d * t <= hs) {
                         dp[k + t]!![s + d * t] =
                             (
-                            dp[k + t]!![s + d * t] + dp[k]!![s] * comb(
-                                c[d],
-                                t,
-                                f,
-                                invF,
-                                M
-                            )
-                            ) % M
+                                dp[k + t]!![s + d * t] + dp[k]!![s] * comb(
+                                    c[d],
+                                    t,
+                                    f,
+                                    invF,
+                                    M,
+                                )
+                                ) % M
                         t++
                     }
                 }

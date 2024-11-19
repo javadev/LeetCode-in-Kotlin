@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canSeePersonsCount() {
         assertThat(
             Solution().canSeePersonsCount(intArrayOf(10, 6, 8, 5, 11, 9)),
-            equalTo(intArrayOf(3, 1, 2, 1, 1, 0))
+            equalTo(intArrayOf(3, 1, 2, 1, 1, 0)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun canSeePersonsCount2() {
         assertThat(
             Solution().canSeePersonsCount(intArrayOf(5, 1, 2, 3, 10)),
-            equalTo(intArrayOf(4, 1, 1, 1, 0))
+            equalTo(intArrayOf(4, 1, 1, 1, 0)),
         )
     }
 }

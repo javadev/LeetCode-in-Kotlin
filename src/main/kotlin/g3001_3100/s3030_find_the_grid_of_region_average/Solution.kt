@@ -25,16 +25,16 @@ class Solution {
                 val r2c2 = image[i + 1][j + 1]
                 regionSum += (r0c0 + r0c1 + r0c2 + r1c0 + r1c1 + r1c2 + r2c0 + r2c1 + r2c2)
                 if (abs((r0c0 - r0c1)) > threshold || abs((r0c0 - r1c0)) > threshold || abs(
-                        (r0c1 - r0c0)
+                        (r0c1 - r0c0),
                     ) > threshold || abs((r0c1 - r1c1)) > threshold || abs((r0c1 - r0c2)) > threshold || abs(
-                            (r0c2 - r0c1)
-                        ) > threshold || abs((r0c2 - r1c2)) > threshold || abs((r1c0 - r1c1)) > threshold || abs(
-                            (r1c2 - r1c1)
-                        ) > threshold || abs((r2c0 - r2c1)) > threshold || abs((r2c0 - r1c0)) > threshold || abs(
-                            (r2c1 - r2c0)
-                        ) > threshold || abs((r2c1 - r1c1)) > threshold || abs((r2c1 - r2c2)) > threshold || abs(
-                            (r2c2 - r2c1)
-                        ) > threshold || abs((r2c2 - r1c2)) > threshold
+                        (r0c2 - r0c1),
+                    ) > threshold || abs((r0c2 - r1c2)) > threshold || abs((r1c0 - r1c1)) > threshold || abs(
+                        (r1c2 - r1c1),
+                    ) > threshold || abs((r2c0 - r2c1)) > threshold || abs((r2c0 - r1c0)) > threshold || abs(
+                        (r2c1 - r2c0),
+                    ) > threshold || abs((r2c1 - r1c1)) > threshold || abs((r2c1 - r2c2)) > threshold || abs(
+                        (r2c2 - r2c1),
+                    ) > threshold || abs((r2c2 - r1c2)) > threshold
                 ) {
                     regionPossible = false
                 }

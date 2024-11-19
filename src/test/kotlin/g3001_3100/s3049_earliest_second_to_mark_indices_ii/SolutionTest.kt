@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .earliestSecondToMarkIndices(
-                    intArrayOf(3, 2, 3), intArrayOf(1, 3, 2, 2, 2, 2, 3)
+                    intArrayOf(3, 2, 3),
+                    intArrayOf(1, 3, 2, 2, 2, 2, 3),
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .earliestSecondToMarkIndices(
-                    intArrayOf(0, 0, 1, 2), intArrayOf(1, 2, 1, 2, 1, 2, 1, 2)
+                    intArrayOf(0, 0, 1, 2),
+                    intArrayOf(1, 2, 1, 2, 1, 2, 1, 2),
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -32,7 +34,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .earliestSecondToMarkIndices(intArrayOf(1, 2, 3), intArrayOf(1, 2, 3)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

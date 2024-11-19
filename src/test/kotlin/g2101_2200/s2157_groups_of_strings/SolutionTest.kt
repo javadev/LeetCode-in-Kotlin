@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun groupStrings() {
         assertThat(
             Solution().groupStrings(arrayOf("a", "b", "ab", "cde")),
-            equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun groupStrings2() {
         assertThat(
             Solution().groupStrings(arrayOf("a", "ab", "abc")),
-            equalTo(intArrayOf(1, 3))
+            equalTo(intArrayOf(1, 3)),
         )
     }
 }

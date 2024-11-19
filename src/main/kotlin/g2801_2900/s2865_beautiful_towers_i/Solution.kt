@@ -26,9 +26,9 @@ class Solution {
         var ans: Long = 0
         for (i in 0 until n) {
             if (i == 0 || i == n - 1 || (
-                maxHeights[i] >= maxHeights[i - 1] &&
-                    maxHeights[i] >= maxHeights[i + 1]
-                )
+                    maxHeights[i] >= maxHeights[i - 1] &&
+                        maxHeights[i] >= maxHeights[i + 1]
+                    )
             ) {
                 ans = max(ans.toDouble(), `fun`(maxHeights, i).toDouble()).toLong()
             }

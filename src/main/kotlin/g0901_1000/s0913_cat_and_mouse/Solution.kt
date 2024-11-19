@@ -12,14 +12,14 @@ class Solution {
         val states = Array(n) {
             Array(n) {
                 IntArray(
-                    2
+                    2,
                 )
             }
         }
         val degree = Array(n) {
             Array(n) {
                 IntArray(
-                    2
+                    2,
                 )
             }
         }

@@ -12,14 +12,14 @@ internal class SolutionTest {
                 .mostPopularCreator(
                     arrayOf("alice", "bob", "alice", "chris"),
                     arrayOf("one", "two", "three", "four"),
-                    intArrayOf(5, 10, 5, 4)
+                    intArrayOf(5, 10, 5, 4),
                 ),
             equalTo(
                 listOf(
                     mutableListOf("bob", "two"),
-                    mutableListOf("alice", "one")
-                )
-            )
+                    mutableListOf("alice", "one"),
+                ),
+            ),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .mostPopularCreator(arrayOf("alice", "alice", "alice"), arrayOf("a", "b", "c"), intArrayOf(1, 2, 2)),
-            equalTo(listOf<List<String>>(mutableListOf("alice", "b")))
+            equalTo(listOf<List<String>>(mutableListOf("alice", "b"))),
         )
     }
 }

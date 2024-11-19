@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maximumTripletValue2() {
         assertThat(
             Solution().maximumTripletValue(intArrayOf(1, 10, 3, 4, 19)),
-            equalTo(133L)
+            equalTo(133L),
         )
     }
 
@@ -28,9 +28,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumTripletValue(
-                    intArrayOf(8, 6, 3, 13, 2, 12, 19, 5, 19, 6, 10, 11, 9)
+                    intArrayOf(8, 6, 3, 13, 2, 12, 19, 5, 19, 6, 10, 11, 9),
                 ),
-            equalTo(266L)
+            equalTo(266L),
         )
     }
 }

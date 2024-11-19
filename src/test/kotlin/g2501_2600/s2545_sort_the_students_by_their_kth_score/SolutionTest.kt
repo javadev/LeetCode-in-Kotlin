@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sortTheStudents(arrayOf(intArrayOf(10, 6, 9, 1), intArrayOf(7, 5, 11, 2), intArrayOf(4, 8, 3, 15)), 2),
-            equalTo(arrayOf(intArrayOf(7, 5, 11, 2), intArrayOf(10, 6, 9, 1), intArrayOf(4, 8, 3, 15)))
+            equalTo(arrayOf(intArrayOf(7, 5, 11, 2), intArrayOf(10, 6, 9, 1), intArrayOf(4, 8, 3, 15))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun sortTheStudents2() {
         assertThat(
             Solution().sortTheStudents(arrayOf(intArrayOf(3, 4), intArrayOf(5, 6)), 0),
-            equalTo(arrayOf(intArrayOf(5, 6), intArrayOf(3, 4)))
+            equalTo(arrayOf(intArrayOf(5, 6), intArrayOf(3, 4))),
         )
     }
 }

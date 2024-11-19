@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun simplifiedFractions() {
         assertThat(
-            Solution().simplifiedFractions(2), equalTo(listOf("1/2"))
+            Solution().simplifiedFractions(2),
+            equalTo(listOf("1/2")),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun simplifiedFractions2() {
         assertThat(
             Solution().simplifiedFractions(4),
-            equalTo(mutableListOf("1/2", "1/3", "2/3", "1/4", "3/4"))
+            equalTo(mutableListOf("1/2", "1/3", "2/3", "1/4", "3/4")),
         )
     }
 }

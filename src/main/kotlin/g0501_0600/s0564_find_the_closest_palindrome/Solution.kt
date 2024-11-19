@@ -12,10 +12,14 @@ class Solution {
         val offset = Math.pow(10.0, (n.length / 2).toDouble()).toInt()
         val first =
             if (isPalindrome(n)) palindromeGenerator(num + offset, n.length) else palindromeGenerator(num, n.length)
-        val second = if (first < num) palindromeGenerator(num + offset, n.length) else palindromeGenerator(
-            num - offset,
-            n.length
-        )
+        val second = if (first < num) {
+            palindromeGenerator(num + offset, n.length)
+        } else {
+            palindromeGenerator(
+                num - offset,
+                n.length,
+            )
+        }
         if (first + second == 2 * num) {
             return if (first < second) first.toString() else second.toString()
         }

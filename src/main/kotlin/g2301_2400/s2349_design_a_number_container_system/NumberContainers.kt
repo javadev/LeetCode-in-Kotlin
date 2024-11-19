@@ -23,7 +23,9 @@ class NumberContainers {
     fun find(number: Int): Int {
         return if (indices.containsKey(number)) {
             indices[number]!!.first()
-        } else -1
+        } else {
+            -1
+        }
     }
 }
 /*

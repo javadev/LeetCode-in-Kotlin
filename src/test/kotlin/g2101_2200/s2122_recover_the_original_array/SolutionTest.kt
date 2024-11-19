@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun recoverArray() {
         assertThat(
             Solution().recoverArray(intArrayOf(2, 10, 6, 4, 8, 12)),
-            equalTo(intArrayOf(3, 7, 11))
+            equalTo(intArrayOf(3, 7, 11)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun recoverArray2() {
         assertThat(
             Solution().recoverArray(intArrayOf(1, 1, 3, 3)),
-            equalTo(intArrayOf(2, 2))
+            equalTo(intArrayOf(2, 2)),
         )
     }
 
@@ -30,7 +30,7 @@ internal class SolutionTest {
     fun recoverArray4() {
         assertThat(
             Solution().recoverArray(intArrayOf(1, 50, 99, 101, 150, 199)),
-            equalTo(intArrayOf(51, 100, 149))
+            equalTo(intArrayOf(51, 100, 149)),
         )
     }
 }

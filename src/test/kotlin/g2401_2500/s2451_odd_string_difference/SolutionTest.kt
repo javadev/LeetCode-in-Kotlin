@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun oddString2() {
         assertThat(
             Solution().oddString(arrayOf("aaa", "bob", "ccc", "ddd")),
-            equalTo("bob")
+            equalTo("bob"),
         )
     }
 }

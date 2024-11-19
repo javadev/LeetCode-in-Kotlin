@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun threeSumMulti() {
         assertThat(
             Solution().threeSumMulti(intArrayOf(1, 1, 2, 2, 3, 3, 4, 4, 5, 5), 8),
-            equalTo(20)
+            equalTo(20),
         )
     }
 

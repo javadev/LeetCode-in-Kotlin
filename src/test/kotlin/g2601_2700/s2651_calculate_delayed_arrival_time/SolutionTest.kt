@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findDelayedArrivalTime() {
         assertThat(
             Solution().findDelayedArrivalTime(15, 5),
-            equalTo(20)
+            equalTo(20),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findDelayedArrivalTime2() {
         assertThat(
             Solution().findDelayedArrivalTime(13, 11),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun findDelayedArrivalTime3() {
         assertThat(
             Solution().findDelayedArrivalTime(14, 11),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

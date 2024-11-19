@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .mostCommonWord(
-                    "Bob hit a ball, the hit BALL flew far after it was hit.", arrayOf("hit")
+                    "Bob hit a ball, the hit BALL flew far after it was hit.",
+                    arrayOf("hit"),
                 ),
-            equalTo("ball")
+            equalTo("ball"),
         )
     }
 

@@ -12,14 +12,14 @@ internal class SolutionTest {
             Solution()
                 .onesMinusZeros(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1,1],[1,0,1],[0,0,1]"
-                    )
+                        "[0,1,1],[1,0,1],[0,0,1]",
+                    ),
                 ),
             equalTo(
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[0,0,4],[0,0,4],[-2,-2,2]"
-                )
-            )
+                    "[0,0,4],[0,0,4],[-2,-2,2]",
+                ),
+            ),
         )
     }
 
@@ -29,14 +29,14 @@ internal class SolutionTest {
             Solution()
                 .onesMinusZeros(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,1,1],[1,1,1]"
-                    )
+                        "[1,1,1],[1,1,1]",
+                    ),
                 ),
             equalTo(
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                    "[5,5,5],[5,5,5]"
-                )
-            )
+                    "[5,5,5],[5,5,5]",
+                ),
+            ),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun totalCost() {
         assertThat(
             Solution().totalCost(intArrayOf(17, 12, 10, 2, 7, 2, 11, 20, 8), 3, 4),
-            equalTo(11L)
+            equalTo(11L),
         )
     }
 

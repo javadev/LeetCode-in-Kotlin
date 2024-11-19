@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun countCompleteDayPairs() {
         assertThat(
-            Solution().countCompleteDayPairs(intArrayOf(12, 12, 30, 24, 24)), equalTo(2)
+            Solution().countCompleteDayPairs(intArrayOf(12, 12, 30, 24, 24)),
+            equalTo(2),
         )
     }
 

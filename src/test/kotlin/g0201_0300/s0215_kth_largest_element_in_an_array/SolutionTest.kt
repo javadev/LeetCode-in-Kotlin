@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun findKthLargest2() {
         assertThat(
             Solution().findKthLargest(intArrayOf(3, 2, 3, 1, 2, 4, 5, 5, 6), 4),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

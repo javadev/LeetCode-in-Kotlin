@@ -12,11 +12,11 @@ internal class SolutionTest {
                 arrayOf(
                     intArrayOf(1, 3, 5, 7),
                     intArrayOf(10, 11, 16, 20),
-                    intArrayOf(23, 30, 34, 60)
+                    intArrayOf(23, 30, 34, 60),
                 ),
-                3
+                3,
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -27,11 +27,11 @@ internal class SolutionTest {
                 arrayOf(
                     intArrayOf(1, 3, 5, 7),
                     intArrayOf(10, 11, 16, 20),
-                    intArrayOf(23, 30, 34, 60)
+                    intArrayOf(23, 30, 34, 60),
                 ),
-                13
+                13,
             ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

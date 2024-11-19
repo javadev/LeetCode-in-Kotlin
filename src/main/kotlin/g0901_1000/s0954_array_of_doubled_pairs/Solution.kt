@@ -18,7 +18,9 @@ class Solution {
         }
         return if (positive[0] % 2 != 0) {
             false
-        } else validateFrequencies(positive, max) && validateFrequencies(negative, -min)
+        } else {
+            validateFrequencies(positive, max) && validateFrequencies(negative, -min)
+        }
     }
 
     private fun validateFrequencies(frequencies: IntArray, limit: Int): Boolean {

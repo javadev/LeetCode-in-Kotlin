@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minGroupsForValidAssignment() {
         assertThat(
-            Solution().minGroupsForValidAssignment(intArrayOf(3, 2, 3, 2, 3)), equalTo(2)
+            Solution().minGroupsForValidAssignment(intArrayOf(3, 2, 3, 2, 3)),
+            equalTo(2),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun minGroupsForValidAssignment2() {
         assertThat(
             Solution().minGroupsForValidAssignment(intArrayOf(10, 10, 10, 3, 1, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

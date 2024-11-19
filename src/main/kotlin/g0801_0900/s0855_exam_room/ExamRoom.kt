@@ -65,7 +65,9 @@ class ExamRoom() {
         }
         return if (right > max) {
             Node(n - 1, map).insert(tail.pre)
-        } else Node(maxAt, map).insert(maxAtLeft)
+        } else {
+            Node(maxAt, map).insert(maxAtLeft)
+        }
     }
 
     fun leave(p: Int) {

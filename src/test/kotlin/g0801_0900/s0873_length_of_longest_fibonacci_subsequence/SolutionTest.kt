@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun lenLongestFibSubseq() {
         assertThat(
-            Solution().lenLongestFibSubseq(intArrayOf(1, 2, 3, 4, 5, 6, 7, 8)), equalTo(5)
+            Solution().lenLongestFibSubseq(intArrayOf(1, 2, 3, 4, 5, 6, 7, 8)),
+            equalTo(5),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun lenLongestFibSubseq2() {
         assertThat(
             Solution().lenLongestFibSubseq(intArrayOf(1, 3, 7, 11, 12, 14, 18)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

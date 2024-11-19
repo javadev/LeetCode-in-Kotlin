@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shuffle() {
         assertThat(
             Solution().shuffle(intArrayOf(2, 5, 1, 3, 4, 7), 3),
-            equalTo(intArrayOf(2, 3, 5, 4, 1, 7))
+            equalTo(intArrayOf(2, 3, 5, 4, 1, 7)),
         )
     }
 
@@ -17,14 +17,15 @@ internal class SolutionTest {
     fun shuffle2() {
         assertThat(
             Solution().shuffle(intArrayOf(1, 2, 3, 4, 4, 3, 2, 1), 4),
-            equalTo(intArrayOf(1, 4, 2, 3, 3, 2, 4, 1))
+            equalTo(intArrayOf(1, 4, 2, 3, 3, 2, 4, 1)),
         )
     }
 
     @Test
     fun shuffle3() {
         assertThat(
-            Solution().shuffle(intArrayOf(1, 1, 2, 2), 2), equalTo(intArrayOf(1, 2, 1, 2))
+            Solution().shuffle(intArrayOf(1, 1, 2, 2), 2),
+            equalTo(intArrayOf(1, 2, 1, 2)),
         )
     }
 }

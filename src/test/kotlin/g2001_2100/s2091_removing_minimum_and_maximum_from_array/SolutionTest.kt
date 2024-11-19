@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minimumDeletions() {
         assertThat(
-            Solution().minimumDeletions(intArrayOf(2, 10, 7, 5, 4, 1, 8, 6)), equalTo(5)
+            Solution().minimumDeletions(intArrayOf(2, 10, 7, 5, 4, 1, 8, 6)),
+            equalTo(5),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun minimumDeletions2() {
         assertThat(
             Solution().minimumDeletions(intArrayOf(0, -4, 19, 1, 8, -2, -3, 5)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

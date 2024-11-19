@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestAlternatingPaths(3, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2)), arrayOf()),
-            equalTo(intArrayOf(0, 1, -1))
+            equalTo(intArrayOf(0, 1, -1)),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestAlternatingPaths(3, arrayOf(intArrayOf(0, 1)), arrayOf(intArrayOf(2, 1))),
-            equalTo(intArrayOf(0, 1, -1))
+            equalTo(intArrayOf(0, 1, -1)),
         )
     }
 }

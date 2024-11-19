@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun buyChoco() {
         assertThat(
             Solution().buyChoco(intArrayOf(1, 2, 2), 3),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun buyChoco2() {
         assertThat(
             Solution().buyChoco(intArrayOf(3, 2, 3), 3),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

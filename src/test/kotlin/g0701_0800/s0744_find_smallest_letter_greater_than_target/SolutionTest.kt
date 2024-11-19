@@ -8,28 +8,32 @@ internal class SolutionTest {
     @Test
     fun nextGreatestLetter() {
         assertThat(
-            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'a'), equalTo('c')
+            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'a'),
+            equalTo('c'),
         )
     }
 
     @Test
     fun nextGreatestLetter2() {
         assertThat(
-            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'c'), equalTo('f')
+            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'c'),
+            equalTo('f'),
         )
     }
 
     @Test
     fun nextGreatestLetter3() {
         assertThat(
-            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'), equalTo('f')
+            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'),
+            equalTo('f'),
         )
     }
 
     @Test
     fun nextGreatestLetter4() {
         assertThat(
-            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'k'), equalTo('c')
+            Solution().nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'k'),
+            equalTo('c'),
         )
     }
 }

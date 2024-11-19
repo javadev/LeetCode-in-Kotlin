@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun maxAscendingSum3() {
         assertThat(
             Solution().maxAscendingSum(intArrayOf(12, 17, 15, 13, 10, 11, 12)),
-            equalTo(33)
+            equalTo(33),
         )
     }
 }

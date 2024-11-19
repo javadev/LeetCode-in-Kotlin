@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minSetSize() {
         assertThat(
             Solution().minSetSize(intArrayOf(3, 3, 3, 3, 5, 5, 5, 2, 2, 7)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

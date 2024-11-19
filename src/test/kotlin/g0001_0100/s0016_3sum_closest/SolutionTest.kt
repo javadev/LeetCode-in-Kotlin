@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun threeSumClosest3() {
         assertThat(
             Solution().threeSumClosest(intArrayOf(1, 2, 4, 8, 16, 32, 64, 128), 82),
-            equalTo(82)
+            equalTo(82),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun threeSumClosest4() {
         assertThat(
             Solution().threeSumClosest(intArrayOf(4, 0, 5, -5, 3, 3, 0, -4, -5), -2),
-            equalTo(-2)
+            equalTo(-2),
         )
     }
 }

@@ -47,7 +47,7 @@ internal class SolutionTest {
             "everything",
             "else",
             "we",
-            "do"
+            "do",
         )
         val actual = Solution().fullJustify(input, 20)
         val expected: MutableList<String> = ArrayList()

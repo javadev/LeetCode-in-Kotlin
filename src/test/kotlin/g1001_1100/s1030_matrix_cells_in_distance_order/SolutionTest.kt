@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun allCellsDistOrder() {
         assertThat(
             Solution().allCellsDistOrder(1, 2, 0, 0),
-            equalTo(arrayOf(intArrayOf(0, 0), intArrayOf(0, 1)))
+            equalTo(arrayOf(intArrayOf(0, 0), intArrayOf(0, 1))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun allCellsDistOrder2() {
         assertThat(
             Solution().allCellsDistOrder(2, 2, 0, 1),
-            equalTo(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0), intArrayOf(1, 1), intArrayOf(1, 0)))
+            equalTo(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0), intArrayOf(1, 1), intArrayOf(1, 0))),
         )
     }
 
@@ -32,9 +32,9 @@ internal class SolutionTest {
                     intArrayOf(1, 1),
                     intArrayOf(0, 1),
                     intArrayOf(1, 0),
-                    intArrayOf(0, 0)
-                )
-            )
+                    intArrayOf(0, 0),
+                ),
+            ),
         )
     }
 }

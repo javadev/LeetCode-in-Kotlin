@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findProductsOfElements() {
         assertThat(
             Solution().findProductsOfElements(arrayOf(longArrayOf(1, 3, 7))),
-            equalTo(intArrayOf(4))
+            equalTo(intArrayOf(4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findProductsOfElements2() {
         assertThat(
             Solution().findProductsOfElements(arrayOf(longArrayOf(2, 5, 3), longArrayOf(7, 7, 4))),
-            equalTo(intArrayOf(2, 2))
+            equalTo(intArrayOf(2, 2)),
         )
     }
 }

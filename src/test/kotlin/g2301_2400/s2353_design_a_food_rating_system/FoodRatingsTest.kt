@@ -10,9 +10,14 @@ internal class FoodRatingsTest {
         val foodRatings = FoodRatings(
             arrayOf("kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"),
             arrayOf(
-                "korean", "japanese", "japanese", "greek", "japanese", "korean"
+                "korean",
+                "japanese",
+                "japanese",
+                "greek",
+                "japanese",
+                "korean",
             ),
-            intArrayOf(9, 12, 8, 15, 14, 7)
+            intArrayOf(9, 12, 8, 15, 14, 7),
         )
         // return "kimchi"
         assertThat(foodRatings.highestRated("korean"), equalTo("kimchi"))

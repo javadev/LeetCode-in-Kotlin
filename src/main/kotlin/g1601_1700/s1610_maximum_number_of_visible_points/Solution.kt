@@ -52,7 +52,9 @@ class Solution {
             }
             return if (y2 < y1) {
                 270.0
-            } else 360.0
+            } else {
+                360.0
+            }
         }
         var angle = Math.toDegrees(atan((y2 - y1).toDouble() / (x2 - x1)))
         if (x2 > x1) {

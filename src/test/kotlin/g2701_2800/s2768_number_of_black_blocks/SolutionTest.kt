@@ -14,13 +14,15 @@ internal class SolutionTest {
     fun countBlackBlocks2() {
         assertThat(
             Solution().countBlackBlocks(
-                3, 3,
+                3,
+                3,
                 arrayOf(
-                    intArrayOf(0, 0), intArrayOf(1, 1),
-                    intArrayOf(0, 2)
-                )
+                    intArrayOf(0, 0),
+                    intArrayOf(1, 1),
+                    intArrayOf(0, 2),
+                ),
             ),
-            equalTo(longArrayOf(0, 2, 2, 0, 0))
+            equalTo(longArrayOf(0, 2, 2, 0, 0)),
         )
     }
 }

@@ -11,7 +11,7 @@ internal class SolutionTest {
             charArrayOf('o', 'a', 'a', 'n'),
             charArrayOf('e', 't', 'a', 'e'),
             charArrayOf('i', 'h', 'k', 'r'),
-            charArrayOf('i', 'f', 'l', 'v')
+            charArrayOf('i', 'f', 'l', 'v'),
         )
         val words = arrayOf<String?>("oath", "pea", "eat", "rain")
         val expected: MutableList<String> = ArrayList()

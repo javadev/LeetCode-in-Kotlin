@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findWords() {
         assertThat(
             Solution().findWords(arrayOf("Hello", "Alaska", "Dad", "Peace")),
-            equalTo(arrayOf("Alaska", "Dad"))
+            equalTo(arrayOf("Alaska", "Dad")),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun findWords3() {
         assertThat(
             Solution().findWords(arrayOf("adsdf", "sfd")),
-            equalTo(arrayOf("adsdf", "sfd"))
+            equalTo(arrayOf("adsdf", "sfd")),
         )
     }
 }

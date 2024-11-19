@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun allPathsSourceTarget() {
         assertThat(
             Solution().allPathsSourceTarget(arrayOf(intArrayOf(1, 2), intArrayOf(3), intArrayOf(3), intArrayOf())),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(0, 1, 3), intArrayOf(0, 2, 3))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(0, 1, 3), intArrayOf(0, 2, 3)))),
         )
     }
 
@@ -24,8 +24,8 @@ internal class SolutionTest {
                         intArrayOf(3, 2, 4),
                         intArrayOf(3),
                         intArrayOf(4),
-                        intArrayOf()
-                    )
+                        intArrayOf(),
+                    ),
                 ),
             equalTo(
                 ArrayUtils.getLists(
@@ -34,10 +34,10 @@ internal class SolutionTest {
                         intArrayOf(0, 3, 4),
                         intArrayOf(0, 1, 3, 4),
                         intArrayOf(0, 1, 2, 3, 4),
-                        intArrayOf(0, 1, 4)
-                    )
-                )
-            )
+                        intArrayOf(0, 1, 4),
+                    ),
+                ),
+            ),
         )
     }
 }

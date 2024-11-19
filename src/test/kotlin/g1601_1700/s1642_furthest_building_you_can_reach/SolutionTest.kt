@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun furthestBuilding() {
         assertThat(
             Solution().furthestBuilding(intArrayOf(4, 2, 7, 6, 9, 14, 12), 5, 1),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun furthestBuilding2() {
         assertThat(
             Solution().furthestBuilding(intArrayOf(4, 12, 2, 7, 3, 18, 20, 3, 19), 10, 2),
-            equalTo(7)
+            equalTo(7),
         )
     }
 

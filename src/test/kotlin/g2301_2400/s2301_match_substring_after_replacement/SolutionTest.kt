@@ -11,9 +11,10 @@ internal class SolutionTest {
             Solution()
                 .matchReplacement(
                     "fool3e7bar",
-                    "leet", arrayOf(charArrayOf('e', '3'), charArrayOf('t', '7'), charArrayOf('t', '8'))
+                    "leet",
+                    arrayOf(charArrayOf('e', '3'), charArrayOf('t', '7'), charArrayOf('t', '8')),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun matchReplacement2() {
         assertThat(
             Solution().matchReplacement("fooleetbar", "f00l", arrayOf(charArrayOf('o', '0'))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -37,10 +38,10 @@ internal class SolutionTest {
                         charArrayOf('t', '7'),
                         charArrayOf('t', '8'),
                         charArrayOf('d', 'b'),
-                        charArrayOf('p', 'b')
-                    )
+                        charArrayOf('p', 'b'),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

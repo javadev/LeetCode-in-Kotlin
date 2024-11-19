@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minimumFinishTime() {
         assertThat(
-            Solution().minimumFinishTime(arrayOf(intArrayOf(2, 3), intArrayOf(3, 4)), 5, 4), equalTo(21)
+            Solution().minimumFinishTime(arrayOf(intArrayOf(2, 3), intArrayOf(3, 4)), 5, 4),
+            equalTo(21),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun minimumFinishTime2() {
         assertThat(
             Solution().minimumFinishTime(arrayOf(intArrayOf(1, 10), intArrayOf(2, 2), intArrayOf(3, 4)), 6, 5),
-            equalTo(25)
+            equalTo(25),
         )
     }
 }

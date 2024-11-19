@@ -18,7 +18,7 @@ internal class SolutionTest {
         val numCourses = 4
         assertThat(
             Solution().findOrder(numCourses, prerequisites),
-            equalTo(intArrayOf(0, 1, 2, 3))
+            equalTo(intArrayOf(0, 1, 2, 3)),
         )
     }
 

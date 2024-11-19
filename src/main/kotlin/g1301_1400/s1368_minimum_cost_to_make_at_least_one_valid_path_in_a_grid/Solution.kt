@@ -10,8 +10,11 @@ import java.util.Queue
 @Suppress("NAME_SHADOWING")
 class Solution {
     private val dir = arrayOf(
-        intArrayOf(0, 0), intArrayOf(0, 1),
-        intArrayOf(0, -1), intArrayOf(1, 0), intArrayOf(-1, 0)
+        intArrayOf(0, 0),
+        intArrayOf(0, 1),
+        intArrayOf(0, -1),
+        intArrayOf(1, 0),
+        intArrayOf(-1, 0),
     )
 
     fun minCost(grid: Array<IntArray>): Int {
@@ -45,7 +48,7 @@ class Solution {
         y: Int,
         grid: Array<IntArray>,
         queue: Queue<Pair>,
-        visited: Array<IntArray>
+        visited: Array<IntArray>,
     ) {
         var x = x
         var y = y

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMinHeightTrees() {
         assertThat(
             Solution().findMinHeightTrees(4, arrayOf(intArrayOf(1, 0), intArrayOf(1, 2), intArrayOf(1, 3))),
-            equalTo(listOf(1))
+            equalTo(listOf(1)),
         )
     }
 
@@ -18,9 +18,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findMinHeightTrees(
-                    6, arrayOf(intArrayOf(3, 0), intArrayOf(3, 1), intArrayOf(3, 2), intArrayOf(3, 4), intArrayOf(5, 4))
+                    6,
+                    arrayOf(intArrayOf(3, 0), intArrayOf(3, 1), intArrayOf(3, 2), intArrayOf(3, 4), intArrayOf(5, 4)),
                 ),
-            equalTo(listOf(3, 4))
+            equalTo(listOf(3, 4)),
         )
     }
 }

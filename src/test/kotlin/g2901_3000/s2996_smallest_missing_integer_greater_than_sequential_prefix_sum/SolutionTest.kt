@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun missingInteger2() {
         assertThat(
             Solution().missingInteger(intArrayOf(3, 4, 5, 1, 12, 14, 13)),
-            equalTo(15)
+            equalTo(15),
         )
     }
 }

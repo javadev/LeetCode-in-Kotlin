@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minIncrementOperations() {
         assertThat(
-            Solution().minIncrementOperations(intArrayOf(2, 3, 0, 0, 2), 4), equalTo(3L)
+            Solution().minIncrementOperations(intArrayOf(2, 3, 0, 0, 2), 4),
+            equalTo(3L),
         )
     }
 

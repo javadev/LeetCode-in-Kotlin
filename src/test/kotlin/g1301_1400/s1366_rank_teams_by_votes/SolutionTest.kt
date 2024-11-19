@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun rankTeams() {
         assertThat(
             Solution().rankTeams(arrayOf("ABC", "ACB", "ABC", "ACB", "ACB")),
-            equalTo("ACB")
+            equalTo("ACB"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun rankTeams3() {
         assertThat(
             Solution().rankTeams(arrayOf("ZMNAGUEDSJYLBOPHRQICWFXTVK")),
-            equalTo("ZMNAGUEDSJYLBOPHRQICWFXTVK")
+            equalTo("ZMNAGUEDSJYLBOPHRQICWFXTVK"),
         )
     }
 }

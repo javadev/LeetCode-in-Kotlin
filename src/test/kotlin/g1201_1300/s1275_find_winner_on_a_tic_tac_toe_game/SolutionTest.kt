@@ -10,11 +10,14 @@ internal class SolutionTest {
         assertThat(
             Solution().tictactoe(
                 arrayOf(
-                    intArrayOf(0, 0), intArrayOf(2, 0),
-                    intArrayOf(1, 1), intArrayOf(2, 1), intArrayOf(2, 2)
-                )
+                    intArrayOf(0, 0),
+                    intArrayOf(2, 0),
+                    intArrayOf(1, 1),
+                    intArrayOf(2, 1),
+                    intArrayOf(2, 2),
+                ),
             ),
-            equalTo("A")
+            equalTo("A"),
         )
     }
 
@@ -24,11 +27,15 @@ internal class SolutionTest {
             Solution()
                 .tictactoe(
                     arrayOf(
-                        intArrayOf(0, 0), intArrayOf(1, 1),
-                        intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 0), intArrayOf(2, 0)
-                    )
+                        intArrayOf(0, 0),
+                        intArrayOf(1, 1),
+                        intArrayOf(0, 1),
+                        intArrayOf(0, 2),
+                        intArrayOf(1, 0),
+                        intArrayOf(2, 0),
+                    ),
                 ),
-            equalTo("B")
+            equalTo("B"),
         )
     }
 
@@ -40,10 +47,10 @@ internal class SolutionTest {
                     arrayOf(
                         intArrayOf(0, 0), intArrayOf(1, 1),
                         intArrayOf(2, 0), intArrayOf(1, 0), intArrayOf(1, 2), intArrayOf(2, 1),
-                        intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(2, 2)
-                    )
+                        intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(2, 2),
+                    ),
                 ),
-            equalTo("Draw")
+            equalTo("Draw"),
         )
     }
 }

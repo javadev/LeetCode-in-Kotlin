@@ -10,8 +10,11 @@ class Solution {
             val firstCharNot = org.firstOrNull {
                 it != want
             }
-            if (firstCharNot == null) num
-            else org.replace(firstCharNot, want).toInt()
+            if (firstCharNot == null) {
+                num
+            } else {
+                org.replace(firstCharNot, want).toInt()
+            }
         }
 
         return helper('9') - helper('0')

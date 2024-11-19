@@ -19,7 +19,7 @@ internal class SolutionTest {
             intArrayOf(5, 3),
             intArrayOf(4, 1),
             intArrayOf(2, 3),
-            intArrayOf(1, 4)
+            intArrayOf(1, 4),
         )
         assertThat(Solution().maxPoints(input), equalTo(4))
     }

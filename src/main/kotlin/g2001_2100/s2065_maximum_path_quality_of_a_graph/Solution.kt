@@ -32,7 +32,7 @@ class Solution {
         curTime: Int,
         maxTime: Int,
         curValue: Int,
-        values: IntArray
+        values: IntArray,
     ) {
         if (curTime > maxTime) {
             return

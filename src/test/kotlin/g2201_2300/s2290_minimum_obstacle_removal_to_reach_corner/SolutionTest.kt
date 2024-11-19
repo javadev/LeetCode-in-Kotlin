@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumObstacles() {
         assertThat(
             Solution().minimumObstacles(arrayOf(intArrayOf(0, 1, 1), intArrayOf(1, 1, 0), intArrayOf(1, 1, 0))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -21,10 +21,10 @@ internal class SolutionTest {
                     arrayOf(
                         intArrayOf(0, 1, 0, 0, 0),
                         intArrayOf(0, 1, 0, 1, 0),
-                        intArrayOf(0, 0, 0, 1, 0)
-                    )
+                        intArrayOf(0, 0, 0, 1, 0),
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 

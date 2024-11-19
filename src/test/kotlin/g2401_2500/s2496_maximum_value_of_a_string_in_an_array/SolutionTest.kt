@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun maximumValue() {
         assertThat(
             Solution().maximumValue(arrayOf("alic3", "bob", "3", "4", "00000")),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
     @Test
     fun maximumValue2() {
         assertThat(
-            Solution().maximumValue(arrayOf("1", "01", "001", "0001")), equalTo(1)
+            Solution().maximumValue(arrayOf("1", "01", "001", "0001")),
+            equalTo(1),
         )
     }
 }

@@ -27,8 +27,8 @@ import javax.sql.DataSource
             "INSERT INTO Patients(patient_id, patient_name, conditions)" +
             " VALUES (4, 'George', 'ACNE DIAB100'); " +
             "INSERT INTO Patients(patient_id, patient_name, conditions)" +
-            " VALUES (5, 'Alain', 'DIAB201'); "
-    ]
+            " VALUES (5, 'Alain', 'DIAB201'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -40,12 +40,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1501_1600/s1527_patien" +
-                                "ts_with_a_condition/script.sql"
-                        )
+                                "ts_with_a_condition/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(3))

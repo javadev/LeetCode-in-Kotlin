@@ -10,13 +10,17 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .nearestValidPoint(
-                    3, 4,
+                    3,
+                    4,
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(3, 1),
-                        intArrayOf(2, 4), intArrayOf(2, 3), intArrayOf(4, 4)
-                    )
+                        intArrayOf(1, 2),
+                        intArrayOf(3, 1),
+                        intArrayOf(2, 4),
+                        intArrayOf(2, 3),
+                        intArrayOf(4, 4),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

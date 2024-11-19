@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun findCenter2() {
         assertThat(
             Solution().findCenter(arrayOf(intArrayOf(1, 2), intArrayOf(5, 1), intArrayOf(1, 3), intArrayOf(1, 4))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

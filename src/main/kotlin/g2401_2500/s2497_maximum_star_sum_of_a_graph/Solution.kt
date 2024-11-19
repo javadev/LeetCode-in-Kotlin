@@ -25,7 +25,7 @@ class Solution {
         nodeValues: IntArray,
         fromNode: Int,
         toNode: Int,
-        maxNumberOfEdges: Int
+        maxNumberOfEdges: Int,
     ) {
         if (nodeValues[toNode] > 0 && graphNodeIdToNodeValues[fromNode]!!.size < maxNumberOfEdges) {
             graphNodeIdToNodeValues[fromNode]!!.add(nodeValues[toNode])

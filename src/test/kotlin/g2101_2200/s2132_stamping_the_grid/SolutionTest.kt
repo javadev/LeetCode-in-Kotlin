@@ -15,12 +15,12 @@ internal class SolutionTest {
                         intArrayOf(1, 0, 0, 0),
                         intArrayOf(1, 0, 0, 0),
                         intArrayOf(1, 0, 0, 0),
-                        intArrayOf(1, 0, 0, 0)
+                        intArrayOf(1, 0, 0, 0),
                     ),
                     4,
-                    3
+                    3,
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -33,12 +33,12 @@ internal class SolutionTest {
                         intArrayOf(1, 0, 0, 0),
                         intArrayOf(0, 1, 0, 0),
                         intArrayOf(0, 0, 1, 0),
-                        intArrayOf(0, 0, 0, 1)
+                        intArrayOf(0, 0, 0, 1),
                     ),
                     2,
-                    2
+                    2,
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -52,12 +52,12 @@ internal class SolutionTest {
                         intArrayOf(0, 0, 0, 0, 0),
                         intArrayOf(0, 0, 1, 0, 0),
                         intArrayOf(0, 0, 0, 0, 1),
-                        intArrayOf(0, 0, 0, 1, 1)
+                        intArrayOf(0, 0, 0, 1, 1),
                     ),
                     2,
-                    2
+                    2,
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -75,11 +75,12 @@ internal class SolutionTest {
                         intArrayOf(1),
                         intArrayOf(0),
                         intArrayOf(0),
-                        intArrayOf(1)
+                        intArrayOf(1),
                     ),
-                    9, 1
+                    9,
+                    1,
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -87,21 +88,23 @@ internal class SolutionTest {
     fun possibleToStamp5() {
         assertThat(
             Solution().possibleToStamp(arrayOf(intArrayOf(1), intArrayOf(1), intArrayOf(0), intArrayOf(0)), 3, 1),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
     @Test
     fun possibleToStamp6() {
         assertThat(
-            Solution().possibleToStamp(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0)), 2, 2), equalTo(false)
+            Solution().possibleToStamp(arrayOf(intArrayOf(0, 1), intArrayOf(0, 0)), 2, 2),
+            equalTo(false),
         )
     }
 
     @Test
     fun possibleToStamp7() {
         assertThat(
-            Solution().possibleToStamp(arrayOf(intArrayOf(1, 1, 0, 0)), 1, 3), equalTo(false)
+            Solution().possibleToStamp(arrayOf(intArrayOf(1, 1, 0, 0)), 1, 3),
+            equalTo(false),
         )
     }
 }

@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun minimumXORSum2() {
         assertThat(
-            Solution().minimumXORSum(intArrayOf(1, 0, 3), intArrayOf(5, 3, 4)), equalTo(8)
+            Solution().minimumXORSum(intArrayOf(1, 0, 3), intArrayOf(5, 3, 4)),
+            equalTo(8),
         )
     }
 }

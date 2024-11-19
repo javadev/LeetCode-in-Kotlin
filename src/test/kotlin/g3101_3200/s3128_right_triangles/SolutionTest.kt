@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfRightTriangles(arrayOf(intArrayOf(0, 1, 0), intArrayOf(0, 1, 1), intArrayOf(0, 1, 0))),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 
@@ -19,9 +19,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfRightTriangles(
-                    arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(0, 1, 0, 1), intArrayOf(1, 0, 0, 0))
+                    arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(0, 1, 0, 1), intArrayOf(1, 0, 0, 0)),
                 ),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 
@@ -30,7 +30,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfRightTriangles(arrayOf(intArrayOf(1, 0, 1), intArrayOf(1, 0, 0), intArrayOf(1, 0, 0))),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 }

@@ -21,8 +21,8 @@ internal class NodeTest {
             equalTo(
                 "Node{val=1,left=Node{val=2,left=null,right=null," +
                     "next=null},right=Node{val=3,left=null,right=null,next=null},next=Node{val=4," +
-                    "left=null,right=null,next=null}}"
-            )
+                    "left=null,right=null,next=null}}",
+            ),
         )
     }
 }

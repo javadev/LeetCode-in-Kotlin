@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isNStraightHand() {
         assertThat(
             Solution().isNStraightHand(intArrayOf(1, 2, 3, 6, 2, 3, 4, 7, 8), 3),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

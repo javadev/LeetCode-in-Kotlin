@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun combinationSum() {
         assertThat(
             Solution().combinationSum(intArrayOf(2, 3, 6, 7), 7),
-            equalTo(arrayOf(intArrayOf(2, 2, 3).toList(), intArrayOf(7).toList()).toList())
+            equalTo(arrayOf(intArrayOf(2, 2, 3).toList(), intArrayOf(7).toList()).toList()),
         )
     }
 
@@ -21,9 +21,9 @@ internal class SolutionTest {
                 arrayOf(
                     intArrayOf(2, 2, 2, 2).toList(),
                     intArrayOf(2, 3, 3).toList(),
-                    intArrayOf(3, 5).toList()
-                ).toList()
-            )
+                    intArrayOf(3, 5).toList(),
+                ).toList(),
+            ),
         )
     }
 

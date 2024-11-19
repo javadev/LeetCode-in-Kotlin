@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun finalState() {
         assertThat(
             Solution().getFinalState(intArrayOf(2, 1, 3, 5, 6), 5, 2),
-            equalTo(intArrayOf(8, 4, 6, 5, 6))
+            equalTo(intArrayOf(8, 4, 6, 5, 6)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun finalState2() {
         assertThat(
             Solution().getFinalState(intArrayOf(100000, 2000), 2, 1000000),
-            equalTo(intArrayOf(999999307, 999999993))
+            equalTo(intArrayOf(999999307, 999999993)),
         )
     }
 }

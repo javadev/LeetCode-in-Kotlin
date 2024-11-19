@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .rectangleArea(arrayOf(intArrayOf(0, 0, 2, 2), intArrayOf(1, 0, 2, 3), intArrayOf(1, 0, 3, 1))),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun rectangleArea2() {
         assertThat(
             Solution().rectangleArea(arrayOf(intArrayOf(0, 0, 1000000000, 1000000000))),
-            equalTo(49)
+            equalTo(49),
         )
     }
 }

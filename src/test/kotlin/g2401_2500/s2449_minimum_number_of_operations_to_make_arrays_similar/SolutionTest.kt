@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun makeSimilar() {
         assertThat(
             Solution().makeSimilar(intArrayOf(8, 12, 6), intArrayOf(2, 14, 10)),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 
     @Test
     fun makeSimilar2() {
         assertThat(
-            Solution().makeSimilar(intArrayOf(1, 2, 5), intArrayOf(4, 1, 3)), equalTo(1L)
+            Solution().makeSimilar(intArrayOf(1, 2, 5), intArrayOf(4, 1, 3)),
+            equalTo(1L),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun makeSimilar3() {
         assertThat(
             Solution().makeSimilar(intArrayOf(1, 1, 1, 1, 1), intArrayOf(1, 1, 1, 1, 1)),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 }

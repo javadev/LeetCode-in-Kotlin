@@ -54,8 +54,8 @@ import javax.sql.DataSource
             "INSERT INTO Examinations(student_id, subject_name)" +
             " VALUES (2, 'Math'); " +
             "INSERT INTO Examinations(student_id, subject_name)" +
-            " VALUES (1, 'Math'); "
-    ]
+            " VALUES (1, 'Math'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -66,12 +66,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1201_1300/s1280_students_and_examinations/script.sql"
-                        )
+                            "src/main/kotlin/g1201_1300/s1280_students_and_examinations/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

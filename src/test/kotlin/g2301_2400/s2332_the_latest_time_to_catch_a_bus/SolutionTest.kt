@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .latestTimeCatchTheBus(intArrayOf(10, 20), intArrayOf(2, 17, 18, 19), 2),
-            equalTo(16)
+            equalTo(16),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .latestTimeCatchTheBus(intArrayOf(20, 30, 10), intArrayOf(19, 13, 26, 4, 25, 11, 21), 2),
-            equalTo(20)
+            equalTo(20),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun latestTimeCatchTheBus3() {
         assertThat(
             Solution().latestTimeCatchTheBus(intArrayOf(3), intArrayOf(2, 4), 2),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

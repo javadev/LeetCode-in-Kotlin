@@ -10,9 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .validateBinaryTreeNodes(
-                    4, intArrayOf(1, -1, 3, -1), intArrayOf(2, -1, -1, -1)
+                    4,
+                    intArrayOf(1, -1, 3, -1),
+                    intArrayOf(2, -1, -1, -1),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -21,9 +23,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .validateBinaryTreeNodes(
-                    4, intArrayOf(1, -1, 3, -1), intArrayOf(2, 3, -1, -1)
+                    4,
+                    intArrayOf(1, -1, 3, -1),
+                    intArrayOf(2, 3, -1, -1),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -31,7 +35,7 @@ internal class SolutionTest {
     fun validateBinaryTreeNodes3() {
         assertThat(
             Solution().validateBinaryTreeNodes(2, intArrayOf(1, 0), intArrayOf(-1, -1)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

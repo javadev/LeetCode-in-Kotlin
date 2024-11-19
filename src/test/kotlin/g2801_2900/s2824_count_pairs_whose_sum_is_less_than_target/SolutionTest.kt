@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun countPairs2() {
         assertThat(
-            Solution().countPairs(listOf(-6, 2, 5, -2, -7, -1, 3), -2), equalTo(10)
+            Solution().countPairs(listOf(-6, 2, 5, -2, -7, -1, 3), -2),
+            equalTo(10),
         )
     }
 }

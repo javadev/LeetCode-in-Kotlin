@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthCharacter() {
         assertThat<Char>(
             Solution().kthCharacter(5, intArrayOf(0, 0, 0)),
-            equalTo<Char>('a')
+            equalTo<Char>('a'),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kthCharacter2() {
         assertThat<Char>(
             Solution().kthCharacter(10, intArrayOf(0, 1, 0, 1)),
-            equalTo<Char>('b')
+            equalTo<Char>('b'),
         )
     }
 }

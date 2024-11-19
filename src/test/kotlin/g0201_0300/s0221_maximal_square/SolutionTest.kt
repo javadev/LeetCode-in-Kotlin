@@ -8,8 +8,10 @@ internal class SolutionTest {
     @Test
     fun maximalSquare() {
         val input = arrayOf(
-            charArrayOf('1', '0', '1', '0', '0'), charArrayOf('1', '0', '1', '1', '1'),
-            charArrayOf('1', '1', '1', '1', '1'), charArrayOf('1', '0', '0', '1', '0')
+            charArrayOf('1', '0', '1', '0', '0'),
+            charArrayOf('1', '0', '1', '1', '1'),
+            charArrayOf('1', '1', '1', '1', '1'),
+            charArrayOf('1', '0', '0', '1', '0'),
         )
         assertThat(Solution().maximalSquare(input), equalTo(4))
     }

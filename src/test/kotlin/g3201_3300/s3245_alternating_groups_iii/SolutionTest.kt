@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfAlternatingGroups(
-                    intArrayOf(0, 1, 1, 0, 1), arrayOf(intArrayOf(2, 1, 0), intArrayOf(1, 4))
+                    intArrayOf(0, 1, 1, 0, 1),
+                    arrayOf(intArrayOf(2, 1, 0), intArrayOf(1, 4)),
                 ),
-            equalTo(listOf(2))
+            equalTo(listOf(2)),
         )
     }
 
@@ -22,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .numberOfAlternatingGroups(
                     intArrayOf(0, 0, 1, 0, 1, 1),
-                    arrayOf(intArrayOf(1, 3), intArrayOf(2, 3, 0), intArrayOf(1, 5))
+                    arrayOf(intArrayOf(1, 3), intArrayOf(2, 3, 0), intArrayOf(1, 5)),
                 ),
-            equalTo(listOf(2, 0))
+            equalTo(listOf(2, 0)),
         )
     }
 }

@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun countCollisions3() {
         assertThat(
             Solution().countCollisions("SRRLRLRSRLRSSRRLSLRLLRSLSLLSSRRLSRSLSLRRS"),
-            equalTo(28)
+            equalTo(28),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
     fun countCollisions4() {
         assertThat(
             Solution().countCollisions("SSRSSRLLRSLLRSRSSRLRRRRLLRRLSSRR"),
-            equalTo(20)
+            equalTo(20),
         )
     }
 }

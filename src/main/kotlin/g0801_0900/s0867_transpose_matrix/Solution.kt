@@ -6,7 +6,7 @@ class Solution {
     fun transpose(input: Array<IntArray>): Array<IntArray> {
         val output = Array(input[0].size) {
             IntArray(
-                input.size
+                input.size,
             )
         }
         var i = 0

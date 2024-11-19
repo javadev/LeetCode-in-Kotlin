@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun findLengthOfShortestSubarray() {
         assertThat(
             Solution().findLengthOfShortestSubarray(intArrayOf(1, 2, 3, 10, 4, 2, 3, 5)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
     @Test
     fun findLengthOfShortestSubarray2() {
         assertThat(
-            Solution().findLengthOfShortestSubarray(intArrayOf(5, 4, 3, 2, 1)), equalTo(4)
+            Solution().findLengthOfShortestSubarray(intArrayOf(5, 4, 3, 2, 1)),
+            equalTo(4),
         )
     }
 

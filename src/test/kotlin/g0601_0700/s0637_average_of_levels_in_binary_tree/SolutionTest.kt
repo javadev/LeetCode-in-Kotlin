@@ -11,7 +11,7 @@ internal class SolutionTest {
         val treeNode: TreeNode? = TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))
         assertThat(
             Solution().averageOfLevels(treeNode),
-            equalTo(listOf(3.00000, 14.50000, 11.00000))
+            equalTo(listOf(3.00000, 14.50000, 11.00000)),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val treeNode: TreeNode? = TreeNode.create(listOf(3, 9, 20, 15, 7))
         assertThat(
             Solution().averageOfLevels(treeNode),
-            equalTo(listOf(3.00000, 14.50000, 11.00000))
+            equalTo(listOf(3.00000, 14.50000, 11.00000)),
         )
     }
 }

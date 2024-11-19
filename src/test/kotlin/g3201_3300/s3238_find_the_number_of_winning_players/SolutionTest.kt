@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(1, 0),
                         intArrayOf(2, 1),
                         intArrayOf(2, 1),
-                        intArrayOf(2, 0)
-                    )
+                        intArrayOf(2, 0),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
         assertThat(
             Solution().winningPlayerCount(
                 5,
-                arrayOf(intArrayOf(1, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 4))
+                arrayOf(intArrayOf(1, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(1, 4)),
             ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -40,9 +40,9 @@ internal class SolutionTest {
         assertThat(
             Solution().winningPlayerCount(
                 5,
-                arrayOf(intArrayOf(1, 1), intArrayOf(2, 4), intArrayOf(2, 4), intArrayOf(2, 4))
+                arrayOf(intArrayOf(1, 1), intArrayOf(2, 4), intArrayOf(2, 4), intArrayOf(2, 4)),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

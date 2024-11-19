@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .minimumScore(
                     intArrayOf(1, 5, 5, 4, 11),
-                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(3, 4))
+                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(3, 4)),
                 ),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .minimumScore(
                     intArrayOf(5, 5, 2, 4, 4, 2),
-                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(5, 2), intArrayOf(4, 3), intArrayOf(1, 3))
+                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(5, 2), intArrayOf(4, 3), intArrayOf(1, 3)),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

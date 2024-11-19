@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun minStartingIndex2() {
         assertThat<Int>(
             Solution().minStartingIndex("ababbababa", "bacaba"),
-            equalTo<Int>(4)
+            equalTo<Int>(4),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun busyStudent() {
         assertThat(
             Solution().busyStudent(intArrayOf(1, 2, 3), intArrayOf(3, 2, 7), 4),
-            equalTo(1)
+            equalTo(1),
         )
     }
 

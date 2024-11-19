@@ -10,9 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution().boxDelivering(
                 arrayOf(intArrayOf(1, 1), intArrayOf(2, 1), intArrayOf(1, 1)),
-                2, 3, 3
+                2,
+                3,
+                3,
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -22,12 +24,17 @@ internal class SolutionTest {
             Solution()
                 .boxDelivering(
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(3, 3), intArrayOf(3, 1),
-                        intArrayOf(3, 1), intArrayOf(2, 4)
+                        intArrayOf(1, 2),
+                        intArrayOf(3, 3),
+                        intArrayOf(3, 1),
+                        intArrayOf(3, 1),
+                        intArrayOf(2, 4),
                     ),
-                    3, 3, 6
+                    3,
+                    3,
+                    6,
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -37,14 +44,18 @@ internal class SolutionTest {
             Solution()
                 .boxDelivering(
                     arrayOf(
-                        intArrayOf(1, 4), intArrayOf(1, 2), intArrayOf(2, 1),
-                        intArrayOf(2, 1), intArrayOf(3, 2), intArrayOf(3, 4)
+                        intArrayOf(1, 4),
+                        intArrayOf(1, 2),
+                        intArrayOf(2, 1),
+                        intArrayOf(2, 1),
+                        intArrayOf(3, 2),
+                        intArrayOf(3, 4),
                     ),
                     3,
                     6,
-                    7
+                    7,
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

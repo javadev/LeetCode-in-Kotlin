@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canBeEqual() {
         assertThat(
             Solution().canBeEqual(intArrayOf(1, 2, 3, 4), intArrayOf(2, 4, 1, 3)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun canBeEqual3() {
         assertThat(
             Solution().canBeEqual(intArrayOf(3, 7, 9), intArrayOf(3, 7, 11)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

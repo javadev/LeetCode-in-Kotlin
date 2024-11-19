@@ -45,7 +45,9 @@ class Solution {
         val res = search(adj, num, set)
         return if (res == 1 && c > 1) {
             2
-        } else res
+        } else {
+            res
+        }
     }
 
     private fun search(adj: Array<IntArray>, num: IntArray, vals: HashSet<Int>): Int {
@@ -99,6 +101,8 @@ class Solution {
         }
         return if (res1 == 2 || res2 == 2 || c) {
             2
-        } else 1
+        } else {
+            1
+        }
     }
 }

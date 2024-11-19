@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumTastiness() {
         assertThat(
             Solution().maximumTastiness(intArrayOf(13, 5, 1, 8, 21, 2), 3),
-            equalTo(8)
+            equalTo(8),
         )
     }
 

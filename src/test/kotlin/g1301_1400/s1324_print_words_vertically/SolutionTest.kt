@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun printVertically() {
         assertThat(
             Solution().printVertically("HOW ARE YOU"),
-            equalTo(mutableListOf("HAY", "ORO", "WEU"))
+            equalTo(mutableListOf("HAY", "ORO", "WEU")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun printVertically2() {
         assertThat(
             Solution().printVertically("TO BE OR NOT TO BE"),
-            equalTo(mutableListOf("TBONTB", "OEROOE", "   T"))
+            equalTo(mutableListOf("TBONTB", "OEROOE", "   T")),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun printVertically3() {
         assertThat(
             Solution().printVertically("CONTEST IS COMING"),
-            equalTo(mutableListOf("CIC", "OSO", "N M", "T I", "E N", "S G", "T"))
+            equalTo(mutableListOf("CIC", "OSO", "N M", "T I", "E N", "S G", "T")),
         )
     }
 }

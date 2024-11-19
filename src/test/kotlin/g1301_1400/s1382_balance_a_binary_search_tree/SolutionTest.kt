@@ -11,10 +11,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .balanceBST(
-                    TreeNode.create(mutableListOf(1, null, 2, null, 3, null, 4, null, null))
+                    TreeNode.create(mutableListOf(1, null, 2, null, 3, null, 4, null, null)),
                 )
                 .toString(),
-            equalTo("2,1,3,null,4")
+            equalTo("2,1,3,null,4"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun balanceBST2() {
         assertThat(
             Solution().balanceBST(TreeNode.create(mutableListOf(2, 1, 3))).toString(),
-            equalTo("2,1,3")
+            equalTo("2,1,3"),
         )
     }
 }

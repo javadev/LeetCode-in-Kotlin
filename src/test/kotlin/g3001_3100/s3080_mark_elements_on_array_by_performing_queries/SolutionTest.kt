@@ -13,10 +13,10 @@ internal class SolutionTest {
                 .unmarkedSumArray(
                     intArrayOf(1, 2, 2, 1, 2, 3, 1),
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[3,3],[4,2]"
-                    )
+                        "[1,2],[3,3],[4,2]",
+                    ),
                 ),
-            equalTo(longArrayOf(8, 3, 0))
+            equalTo(longArrayOf(8, 3, 0)),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun unmarkedSumArray2() {
         assertThat(
             Solution().unmarkedSumArray(intArrayOf(1, 4, 2, 3), arrayOf(intArrayOf(0, 1))),
-            equalTo(longArrayOf(7))
+            equalTo(longArrayOf(7)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxIncreasingCells() {
         assertThat(
             Solution().maxIncreasingCells(arrayOf(intArrayOf(3, 1), intArrayOf(3, 4))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxIncreasingCells2() {
         assertThat(
             Solution().maxIncreasingCells(arrayOf(intArrayOf(1, 1), intArrayOf(1, 1))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxIncreasingCells3() {
         assertThat(
             Solution().maxIncreasingCells(arrayOf(intArrayOf(3, 1, 6), intArrayOf(-9, 5, 7))),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

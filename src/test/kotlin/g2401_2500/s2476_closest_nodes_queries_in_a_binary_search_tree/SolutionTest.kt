@@ -14,14 +14,14 @@ internal class SolutionTest {
                     TreeNode.create(
                         mutableListOf(
                             6, 2, 13, 1, 4, 9, 15, null, null, null, null, null,
-                            null, 14
-                        )
+                            null, 14,
+                        ),
                     ),
-                    mutableListOf(2, 5, 16)
+                    mutableListOf(2, 5, 16),
                 ),
             equalTo(
-                listOf(mutableListOf(2, 2), mutableListOf(4, 6), listOf(15, -1))
-            )
+                listOf(mutableListOf(2, 2), mutableListOf(4, 6), listOf(15, -1)),
+            ),
         )
     }
 
@@ -30,9 +30,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .closestNodes(
-                    TreeNode.create(mutableListOf(4, null, 9)), listOf(3)
+                    TreeNode.create(mutableListOf(4, null, 9)),
+                    listOf(3),
                 ),
-            equalTo(listOf(listOf(-1, 4)))
+            equalTo(listOf(listOf(-1, 4))),
         )
     }
 }

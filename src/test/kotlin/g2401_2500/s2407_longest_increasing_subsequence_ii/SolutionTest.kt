@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun lengthOfLIS() {
         assertThat(
-            Solution().lengthOfLIS(intArrayOf(4, 2, 1, 4, 3, 4, 5, 8, 15), 3), equalTo(5)
+            Solution().lengthOfLIS(intArrayOf(4, 2, 1, 4, 3, 4, 5, 8, 15), 3),
+            equalTo(5),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun lengthOfLIS2() {
         assertThat(
             Solution().lengthOfLIS(intArrayOf(7, 4, 5, 1, 8, 12, 4, 7), 5),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

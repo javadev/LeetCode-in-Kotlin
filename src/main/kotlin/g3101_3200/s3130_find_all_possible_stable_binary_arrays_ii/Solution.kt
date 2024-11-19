@@ -26,15 +26,15 @@ class Solution {
         val s = LongArray(one + 1)
         val n = (min(zero, one) + 1).toInt()
         for (
-            groups0 in (zero + limit - 1) / limit..min(zero, n)
-                .toInt()
+        groups0 in (zero + limit - 1) / limit..min(zero, n)
+            .toInt()
         ) {
             val s0 = calc(groups0, zero, limit)
             for (
-                groups1 in max(
-                    groups0 - 1,
-                    (one + limit - 1) / limit
-                )..min((groups0 + 1), one)
+            groups1 in max(
+                groups0 - 1,
+                (one + limit - 1) / limit,
+            )..min((groups0 + 1), one)
             ) {
                 var s1: Long
                 if (s[groups1] != 0L) {

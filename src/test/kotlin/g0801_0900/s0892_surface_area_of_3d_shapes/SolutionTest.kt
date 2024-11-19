@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun surfaceArea2() {
         assertThat(
             Solution().surfaceArea(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 0, 1), intArrayOf(1, 1, 1))),
-            equalTo(32)
+            equalTo(32),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun surfaceArea3() {
         assertThat(
             Solution().surfaceArea(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 1, 2), intArrayOf(2, 2, 2))),
-            equalTo(46)
+            equalTo(46),
         )
     }
 }

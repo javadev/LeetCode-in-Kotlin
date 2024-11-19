@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canArrange() {
         assertThat(
             Solution().canArrange(intArrayOf(1, 2, 3, 4, 5, 10, 6, 7, 8, 9), 5),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

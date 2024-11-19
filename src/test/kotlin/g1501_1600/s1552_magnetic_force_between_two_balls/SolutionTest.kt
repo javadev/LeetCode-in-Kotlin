@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maxDistance2() {
         assertThat(
             Solution().maxDistance(intArrayOf(5, 4, 3, 2, 1, 1000000000), 2),
-            equalTo(999999999)
+            equalTo(999999999),
         )
     }
 }

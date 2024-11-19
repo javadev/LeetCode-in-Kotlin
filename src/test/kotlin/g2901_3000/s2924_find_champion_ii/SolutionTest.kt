@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findChampion() {
         assertThat(
             Solution().findChampion(3, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findChampion2() {
         assertThat(
             Solution().findChampion(4, arrayOf(intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(1, 2))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

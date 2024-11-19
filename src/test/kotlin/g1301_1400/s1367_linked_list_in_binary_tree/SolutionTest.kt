@@ -13,8 +13,8 @@ internal class SolutionTest {
         val treeNode = TreeNode.create(
             mutableListOf(
                 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
-                3
-            )
+                3,
+            ),
         )
         assertThat(Solution().isSubPath(listNode, treeNode), equalTo(true))
     }
@@ -25,8 +25,8 @@ internal class SolutionTest {
         val treeNode = TreeNode.create(
             mutableListOf(
                 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
-                3
-            )
+                3,
+            ),
         )
         assertThat(Solution().isSubPath(listNode, treeNode), equalTo(true))
     }
@@ -37,8 +37,8 @@ internal class SolutionTest {
         val treeNode = TreeNode.create(
             mutableListOf(
                 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
-                3
-            )
+                3,
+            ),
         )
         assertThat(Solution().isSubPath(listNode, treeNode), equalTo(false))
     }

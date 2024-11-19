@@ -24,8 +24,8 @@ import javax.sql.DataSource
             "INSERT INTO Transactions(id, country, state, amount, trans_date)" +
             " VALUES (123, 'US', 'approved', 2000, '2019-01-01'); " +
             "INSERT INTO Transactions(id, country, state, amount, trans_date)" +
-            " VALUES (124, 'DE', 'approved', 2000, '2019-01-07'); "
-    ]
+            " VALUES (124, 'DE', 'approved', 2000, '2019-01-07'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -37,12 +37,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1101_1200/s1193_monthly_transactions_i" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("2018-12"))

@@ -14,8 +14,12 @@ internal class SolutionTest {
     @Test
     fun findTheCity2() {
         val edges = arrayOf(
-            intArrayOf(0, 1, 2), intArrayOf(0, 4, 8), intArrayOf(1, 2, 3), intArrayOf(1, 4, 2),
-            intArrayOf(2, 3, 1), intArrayOf(3, 4, 1)
+            intArrayOf(0, 1, 2),
+            intArrayOf(0, 4, 8),
+            intArrayOf(1, 2, 3),
+            intArrayOf(1, 4, 2),
+            intArrayOf(2, 3, 1),
+            intArrayOf(3, 4, 1),
         )
         assertThat(Solution().findTheCity(5, edges, 2), equalTo(0))
     }

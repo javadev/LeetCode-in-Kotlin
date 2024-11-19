@@ -29,8 +29,9 @@ class Solution {
         for (i in 0 until n) {
             if (!visited[i]) {
                 val (nodes, edges) = bfs(i)
-                if ((nodes * (nodes - 1)) == edges)
+                if ((nodes * (nodes - 1)) == edges) {
                     res++
+                }
             }
         }
         return res

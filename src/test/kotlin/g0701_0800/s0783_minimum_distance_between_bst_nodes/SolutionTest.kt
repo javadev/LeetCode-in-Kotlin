@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .minDiffInBST(
                     TreeNode.create(
-                        listOf(4, 2, 6, 1, 3, null, null)
-                    )
+                        listOf(4, 2, 6, 1, 3, null, null),
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .minDiffInBST(
                     TreeNode.create(
-                        listOf(1, 0, 48, null, null, 12, 49)
-                    )
+                        listOf(1, 0, 48, null, null, 12, 49),
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

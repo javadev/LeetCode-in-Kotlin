@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minValidStrings() {
         assertThat<Int?>(
             Solution().minValidStrings(arrayOf<String>("abc", "aaaaa", "bcdef"), "aabcdabc"),
-            equalTo<Int?>(3)
+            equalTo<Int?>(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minValidStrings2() {
         assertThat<Int?>(
             Solution().minValidStrings(arrayOf<String>("abababab", "ab"), "ababaababa"),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minValidStrings3() {
         assertThat<Int?>(
             Solution().minValidStrings(arrayOf<String>("abcdef"), "xyz"),
-            equalTo<Int?>(-1)
+            equalTo<Int?>(-1),
         )
     }
 }

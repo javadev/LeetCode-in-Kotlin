@@ -17,11 +17,11 @@ internal class SolutionTest {
                         intArrayOf(1, 3),
                         intArrayOf(3, 4),
                         intArrayOf(3, 5),
-                        intArrayOf(3, 6)
+                        intArrayOf(3, 6),
                     ),
-                    2
+                    2,
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 

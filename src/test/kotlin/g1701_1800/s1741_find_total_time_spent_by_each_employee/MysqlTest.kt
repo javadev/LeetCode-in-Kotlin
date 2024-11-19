@@ -26,8 +26,8 @@ import javax.sql.DataSource
             "INSERT INTO Employees(emp_id, event_day, in_time, out_time) " +
             " VALUES (2, '2020-11-28', 3, 33); " +
             "INSERT INTO Employees(emp_id, event_day, in_time, out_time) " +
-            " VALUES (2, '2020-12-09', 47, 74); "
-    ]
+            " VALUES (2, '2020-12-09', 47, 74); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -39,12 +39,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1701_1800/s1741_find_total_time_" +
-                                "spent_by_each_employee/script.sql"
-                        )
+                                "spent_by_each_employee/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("2020-11-28"))

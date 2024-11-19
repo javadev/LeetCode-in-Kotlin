@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun matchPlayersAndTrainers() {
         assertThat(
             Solution().matchPlayersAndTrainers(intArrayOf(4, 7, 9), intArrayOf(8, 2, 5, 8)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun matchPlayersAndTrainers2() {
         assertThat(
             Solution().matchPlayersAndTrainers(intArrayOf(1, 1, 1), intArrayOf(10)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .minimumCost(
                     "abcdef",
                     arrayOf("abdef", "abc", "d", "def", "ef"),
-                    intArrayOf(100, 1, 1, 10, 5)
+                    intArrayOf(100, 1, 1, 10, 5),
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -23,9 +23,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumCost(
-                    "aaaa", arrayOf("z", "zz", "zzz"), intArrayOf(1, 10, 100)
+                    "aaaa",
+                    arrayOf("z", "zz", "zzz"),
+                    intArrayOf(1, 10, 100),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

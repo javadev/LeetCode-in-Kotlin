@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().miceAndCheese(intArrayOf(1, 1, 3, 4), intArrayOf(4, 4, 1, 1), 2),
             equalTo(
-                15
-            )
+                15,
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().miceAndCheese(intArrayOf(1, 1), intArrayOf(1, 1), 2),
             equalTo(
-                2
-            )
+                2,
+            ),
         )
     }
 }

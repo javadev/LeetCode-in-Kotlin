@@ -17,11 +17,11 @@ internal class SolutionTest {
                         intArrayOf(1, 1),
                         intArrayOf(1, 1),
                         intArrayOf(1, 1),
-                        intArrayOf(1, 2)
+                        intArrayOf(1, 2),
                     ),
-                    4
+                    4,
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun minHeightShelves2() {
         assertThat(
             Solution().minHeightShelves(arrayOf(intArrayOf(1, 3), intArrayOf(2, 4), intArrayOf(3, 2)), 66),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

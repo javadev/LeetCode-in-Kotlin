@@ -22,7 +22,7 @@ class Solution {
             if (num == lastNum) {
                 continue
             }
-            length ++
+            length++
             if (num - lastNum > 1) {
                 length = 1
             }

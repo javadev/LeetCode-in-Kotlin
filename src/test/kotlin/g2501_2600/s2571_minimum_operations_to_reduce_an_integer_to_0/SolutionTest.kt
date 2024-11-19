@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minOperations() {
         assertThat(
             Solution().minOperations(39),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minOperations2() {
         assertThat(
             Solution().minOperations(54),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

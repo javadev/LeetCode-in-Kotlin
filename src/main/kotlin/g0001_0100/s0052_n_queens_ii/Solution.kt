@@ -17,7 +17,7 @@ class Solution {
         row: BooleanArray,
         col: BooleanArray,
         diagonal: BooleanArray,
-        antiDiagonal: BooleanArray
+        antiDiagonal: BooleanArray,
     ): Int {
         if (r == n) {
             return 1

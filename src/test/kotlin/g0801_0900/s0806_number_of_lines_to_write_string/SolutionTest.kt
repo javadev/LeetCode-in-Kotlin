@@ -12,11 +12,11 @@ internal class SolutionTest {
                 .numberOfLines(
                     intArrayOf(
                         10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-                        10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+                        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
                     ),
-                    "abcdefghijklmnopqrstuvwxyz"
+                    "abcdefghijklmnopqrstuvwxyz",
                 ),
-            equalTo(intArrayOf(3, 60))
+            equalTo(intArrayOf(3, 60)),
         )
     }
 
@@ -27,11 +27,11 @@ internal class SolutionTest {
                 .numberOfLines(
                     intArrayOf(
                         4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-                        10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+                        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
                     ),
-                    "bbbcccdddaaa"
+                    "bbbcccdddaaa",
                 ),
-            equalTo(intArrayOf(2, 4))
+            equalTo(intArrayOf(2, 4)),
         )
     }
 }

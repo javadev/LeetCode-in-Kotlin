@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun longestPalindrome2() {
         assertThat(
             Solution().longestPalindrome(arrayOf("ab", "ty", "yt", "lc", "cl", "ab")),
-            equalTo(8)
+            equalTo(8),
         )
     }
 

@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun closestToTarget2() {
         assertThat(
             Solution().closestToTarget(intArrayOf(1000000, 1000000, 1000000), 1),
-            equalTo(999999)
+            equalTo(999999),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun pivotArray() {
         assertThat(
             Solution().pivotArray(intArrayOf(9, 12, 5, 10, 14, 3, 10), 10),
-            equalTo(intArrayOf(9, 5, 3, 10, 10, 12, 14))
+            equalTo(intArrayOf(9, 5, 3, 10, 10, 12, 14)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun pivotArray2() {
         assertThat(
             Solution().pivotArray(intArrayOf(-3, 4, 3, 2), 2),
-            equalTo(intArrayOf(-3, 2, 4, 3))
+            equalTo(intArrayOf(-3, 2, 4, 3)),
         )
     }
 }

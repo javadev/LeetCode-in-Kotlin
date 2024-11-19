@@ -25,7 +25,7 @@ class Solution {
                 val b = Math.acos(dis[i][j] / (2 * r))
                 val a = Math.atan2(
                     points[j][1] - points[i][1] * 1.0,
-                    points[j][0] * 1.0 - points[i][0]
+                    points[j][0] * 1.0 - points[i][0],
                 )
                 val alpha = a - b
                 val beta = a + b
@@ -56,7 +56,7 @@ class Solution {
             for (j in i + 1 until n) {
                 dis[j][i] = Math.sqrt(
                     Math.pow(points[i][0] * 1.0 - points[j][0], 2.0) +
-                        Math.pow(points[i][1] * 1.0 - points[j][1], 2.0)
+                        Math.pow(points[i][1] * 1.0 - points[j][1], 2.0),
                 )
                 dis[i][j] = dis[j][i]
             }

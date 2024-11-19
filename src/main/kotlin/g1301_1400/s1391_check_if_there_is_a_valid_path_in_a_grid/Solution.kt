@@ -12,14 +12,14 @@ class Solution {
         arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0)),
         arrayOf(
             intArrayOf(0, -1),
-            intArrayOf(1, 0)
+            intArrayOf(1, 0),
         ),
         arrayOf(intArrayOf(0, 1), intArrayOf(1, 0)),
         arrayOf(intArrayOf(0, -1), intArrayOf(-1, 0)),
         arrayOf(
             intArrayOf(0, 1),
-            intArrayOf(-1, 0)
-        )
+            intArrayOf(-1, 0),
+        ),
     )
 
     // the idea is you need to check port direction match, you can go to next cell and check whether

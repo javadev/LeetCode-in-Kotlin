@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun minSubArrayLen3() {
         assertThat(
-            Solution().minSubArrayLen(11, intArrayOf(1, 1, 1, 1, 1, 1, 1, 1)), equalTo(0)
+            Solution().minSubArrayLen(11, intArrayOf(1, 1, 1, 1, 1, 1, 1, 1)),
+            equalTo(0),
         )
     }
 }

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun kLengthApart() {
         assertThat(
-            Solution().kLengthApart(intArrayOf(1, 0, 0, 0, 1, 0, 0, 1), 2), equalTo(true)
+            Solution().kLengthApart(intArrayOf(1, 0, 0, 0, 1, 0, 0, 1), 2),
+            equalTo(true),
         )
     }
 

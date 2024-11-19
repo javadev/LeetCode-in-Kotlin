@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .largestValsFromLabels(intArrayOf(5, 4, 3, 2, 1), intArrayOf(1, 1, 2, 2, 3), 3, 1),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .largestValsFromLabels(intArrayOf(5, 4, 3, 2, 1), intArrayOf(1, 3, 3, 3, 2), 3, 2),
-            equalTo(12)
+            equalTo(12),
         )
     }
 }

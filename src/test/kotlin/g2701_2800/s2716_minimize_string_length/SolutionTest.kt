@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimizedStringLength() {
         assertThat(
             Solution().minimizedStringLength("aaabc"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimizedStringLength2() {
         assertThat(
             Solution().minimizedStringLength("cbbd"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minimizedStringLength3() {
         assertThat(
             Solution().minimizedStringLength("dddaaa"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

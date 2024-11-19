@@ -10,11 +10,13 @@ internal class SolutionTest {
         assertThat(
             Solution().maxMoves(
                 arrayOf(
-                    intArrayOf(2, 4, 3, 5), intArrayOf(5, 4, 9, 3),
-                    intArrayOf(3, 4, 2, 11), intArrayOf(10, 9, 13, 15)
-                )
+                    intArrayOf(2, 4, 3, 5),
+                    intArrayOf(5, 4, 9, 3),
+                    intArrayOf(3, 4, 2, 11),
+                    intArrayOf(10, 9, 13, 15),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -22,7 +24,7 @@ internal class SolutionTest {
     fun maxMoves2() {
         assertThat(
             Solution().maxMoves(arrayOf(intArrayOf(3, 2, 4), intArrayOf(2, 1, 9), intArrayOf(1, 1, 7))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun removeOuterParentheses2() {
         assertThat(
             Solution().removeOuterParentheses("(()())(())(()(()))"),
-            equalTo("()()()()(())")
+            equalTo("()()()()(())"),
         )
     }
 

@@ -12,10 +12,12 @@ internal class SolutionTest {
                 .countNegatives(
                     arrayOf(
                         intArrayOf(4, 3, 2, -1),
-                        intArrayOf(3, 2, 1, -1), intArrayOf(1, 1, -1, -2), intArrayOf(-1, -1, -2, -3)
-                    )
+                        intArrayOf(3, 2, 1, -1),
+                        intArrayOf(1, 1, -1, -2),
+                        intArrayOf(-1, -1, -2, -3),
+                    ),
                 ),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -23,7 +25,7 @@ internal class SolutionTest {
     fun countNegatives2() {
         assertThat(
             Solution().countNegatives(arrayOf(intArrayOf(3, 2), intArrayOf(1, 0))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

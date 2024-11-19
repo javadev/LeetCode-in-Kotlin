@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(7, 1, 4, 5, 6),
                         intArrayOf(2, 5, 1, 6, 4),
                         intArrayOf(1, 5, 4, 3, 2),
-                        intArrayOf(1, 2, 7, 3, 4)
-                    )
+                        intArrayOf(1, 2, 7, 3, 4),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .largestMagicSquare(arrayOf(intArrayOf(5, 1, 3, 1), intArrayOf(9, 3, 3, 1), intArrayOf(1, 3, 3, 8))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun profitableSchemes() {
         assertThat(
             Solution().profitableSchemes(5, 3, intArrayOf(2, 2), intArrayOf(2, 3)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun profitableSchemes2() {
         assertThat(
             Solution().profitableSchemes(10, 5, intArrayOf(2, 3, 5), intArrayOf(6, 7, 8)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

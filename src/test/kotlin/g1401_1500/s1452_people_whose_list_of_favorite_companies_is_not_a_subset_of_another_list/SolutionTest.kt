@@ -12,7 +12,7 @@ internal class SolutionTest {
             mutableListOf("google", "microsoft"),
             mutableListOf("google", "facebook"),
             listOf("google"),
-            listOf("amazon")
+            listOf("amazon"),
         )
         assertThat(Solution().peopleIndexes(input), equalTo(mutableListOf(0, 1, 4)))
     }
@@ -22,7 +22,7 @@ internal class SolutionTest {
         val input = listOf(
             mutableListOf("leetcode", "google", "facebook"),
             mutableListOf("leetcode", "amazon"),
-            mutableListOf("facebook", "google")
+            mutableListOf("facebook", "google"),
         )
         assertThat(Solution().peopleIndexes(input), equalTo(mutableListOf(0, 1)))
     }

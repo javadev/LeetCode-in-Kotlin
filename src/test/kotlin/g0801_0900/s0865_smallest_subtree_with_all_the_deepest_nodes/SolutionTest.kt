@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .subtreeWithAllDeepest(
                     TreeNode.create(
-                        listOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4)
-                    )
+                        listOf(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4),
+                    ),
                 )
                 .toString(),
-            equalTo("2,7,4")
+            equalTo("2,7,4"),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
             Solution()
                 .subtreeWithAllDeepest(TreeNode.create(listOf(1)))
                 .toString(),
-            equalTo("1")
+            equalTo("1"),
         )
     }
 
@@ -35,10 +35,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .subtreeWithAllDeepest(
-                    TreeNode.create(listOf(0, 1, 3, null, 2))
+                    TreeNode.create(listOf(0, 1, 3, null, 2)),
                 )
                 .toString(),
-            equalTo("2")
+            equalTo("2"),
         )
     }
 }

@@ -21,11 +21,13 @@ class Solution {
         val curWord = words[idxCurWord]
         val lenW = curWord.length
         for (idxCh in curWord.indices) {
-            if (cur!!.index >= 0 && cur.index != idxCurWord && isPalindrome(curWord, idxCh, lenW - 1))
+            if (cur!!.index >= 0 && cur.index != idxCurWord && isPalindrome(curWord, idxCh, lenW - 1)) {
                 res.add(listOf(idxCurWord, cur.index))
+            }
             cur = cur.children[curWord[idxCh] - 'a']
-            if (cur == null)
+            if (cur == null) {
                 return
+            }
         }
         for (idxPalin in cur!!.panlinIndicies) {
             if (idxPalin == idxCurWord) continue
@@ -37,10 +39,12 @@ class Solution {
         var cur: TrieNode? = root
         for (idx in word.indices.reversed()) {
             val idxCh = word[idx] - 'a'
-            if (cur!!.children[idxCh] == null)
+            if (cur!!.children[idxCh] == null) {
                 cur.children[idxCh] = TrieNode()
-            if (isPalindrome(word, 0, idx))
+            }
+            if (isPalindrome(word, 0, idx)) {
                 cur.panlinIndicies.add(index)
+            }
             cur = cur.children[idxCh]
         }
         cur!!.panlinIndicies.add(index)
@@ -51,8 +55,9 @@ class Solution {
         var lo = lo
         var hi = hi
         while (lo < hi) {
-            if (word[lo] != word[hi])
+            if (word[lo] != word[hi]) {
                 return false
+            }
             ++lo
             --hi
         }
@@ -62,6 +67,6 @@ class Solution {
     private data class TrieNode(
         val children: Array<TrieNode?> = Array<TrieNode?>(26) { null },
         var index: Int = -1,
-        val panlinIndicies: MutableList<Int> = mutableListOf<Int>()
+        val panlinIndicies: MutableList<Int> = mutableListOf<Int>(),
     )
 }

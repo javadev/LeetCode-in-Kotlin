@@ -19,8 +19,8 @@ import javax.sql.DataSource
         "CREATE TABLE Employee(id INTEGER PRIMARY KEY, salary INTEGER); " +
             "INSERT INTO Employee(id, salary) VALUES (1, 100); " +
             "INSERT INTO Employee(id, salary) VALUES (2, 200); " +
-            "INSERT INTO Employee(id, salary) VALUES (3, 300); "
-    ]
+            "INSERT INTO Employee(id, salary) VALUES (3, 300); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -31,12 +31,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0176_second_highest_salary/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(200))

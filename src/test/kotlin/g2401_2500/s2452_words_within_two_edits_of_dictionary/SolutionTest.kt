@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .twoEditWords(arrayOf("word", "note", "ants", "wood"), arrayOf("wood", "joke", "moat")),
-            equalTo(mutableListOf("word", "note", "wood"))
+            equalTo(mutableListOf("word", "note", "wood")),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun twoEditWords2() {
         assertThat(
             Solution().twoEditWords(arrayOf("yes"), arrayOf("not")),
-            equalTo(emptyList<Any>())
+            equalTo(emptyList<Any>()),
         )
     }
 }

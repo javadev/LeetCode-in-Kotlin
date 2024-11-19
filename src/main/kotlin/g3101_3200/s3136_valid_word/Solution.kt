@@ -14,7 +14,7 @@ class Solution {
         val consonants = charArrayOf(
             'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v',
             'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q',
-            'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'
+            'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z',
         )
         var flag1 = false
         var flag2 = false

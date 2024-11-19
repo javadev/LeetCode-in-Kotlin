@@ -28,8 +28,8 @@ import javax.sql.DataSource
             "INSERT INTO Queries(query_name, result, position, rating)" +
             " VALUES ('Cat', 'Siamese', 3, 3); " +
             "INSERT INTO Queries(query_name, result, position, rating)" +
-            " VALUES ('Cat', 'Sphynx', 7, 4); "
-    ]
+            " VALUES ('Cat', 'Sphynx', 7, 4); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -40,12 +40,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g1201_1300/s1211_queries_quality_and_percentage/script.sql"
-                        )
+                            "src/main/kotlin/g1201_1300/s1211_queries_quality_and_percentage/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Cat"))

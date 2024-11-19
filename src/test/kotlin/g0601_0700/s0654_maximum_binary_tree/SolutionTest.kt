@@ -11,7 +11,7 @@ internal class SolutionTest {
         val expected = TreeNode.create(listOf(6, 3, 5, null, 2, 0, null, null, 1))
         assertThat(
             Solution().constructMaximumBinaryTree(intArrayOf(3, 2, 1, 6, 0, 5)).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val expected = TreeNode.create(listOf(3, null, 2, null, 1))
         assertThat(
             Solution().constructMaximumBinaryTree(intArrayOf(3, 2, 1)).toString(),
-            equalTo(expected.toString())
+            equalTo(expected.toString()),
         )
     }
 }

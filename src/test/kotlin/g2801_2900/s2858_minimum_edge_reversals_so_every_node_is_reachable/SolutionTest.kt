@@ -13,10 +13,10 @@ internal class SolutionTest {
                 .minEdgeReversals(
                     4,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[2,0],[2,1],[1,3]"
-                    )
+                        "[2,0],[2,1],[1,3]",
+                    ),
                 ),
-            equalTo(intArrayOf(1, 1, 0, 2))
+            equalTo(intArrayOf(1, 1, 0, 2)),
         )
     }
 
@@ -27,10 +27,10 @@ internal class SolutionTest {
                 .minEdgeReversals(
                     3,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[2,0]"
-                    )
+                        "[1,2],[2,0]",
+                    ),
                 ),
-            equalTo(intArrayOf(2, 0, 1))
+            equalTo(intArrayOf(2, 0, 1)),
         )
     }
 }

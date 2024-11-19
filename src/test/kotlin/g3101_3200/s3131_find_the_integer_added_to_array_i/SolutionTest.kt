@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun addedInteger() {
         assertThat(
-            Solution().addedInteger(intArrayOf(2, 6, 4), intArrayOf(9, 7, 5)), equalTo(3)
+            Solution().addedInteger(intArrayOf(2, 6, 4), intArrayOf(9, 7, 5)),
+            equalTo(3),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun addedInteger3() {
         assertThat(
             Solution().addedInteger(intArrayOf(1, 1, 1, 1), intArrayOf(1, 1, 1, 1)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

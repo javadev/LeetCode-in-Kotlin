@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun largestCombination() {
         assertThat(
             Solution().largestCombination(intArrayOf(16, 17, 71, 62, 12, 24, 14)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

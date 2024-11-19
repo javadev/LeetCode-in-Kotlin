@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun maxProductDifference2() {
         assertThat(
-            Solution().maxProductDifference(intArrayOf(4, 2, 5, 9, 7, 4, 8)), equalTo(64)
+            Solution().maxProductDifference(intArrayOf(4, 2, 5, 9, 7, 4, 8)),
+            equalTo(64),
         )
     }
 }

@@ -58,6 +58,8 @@ class Solution {
         }
         return if (f[0] > f['o'.code - 'a'.code]) {
             false
-        } else f['k'.code - 'a'.code] <= f[0]
+        } else {
+            f['k'.code - 'a'.code] <= f[0]
+        }
     }
 }

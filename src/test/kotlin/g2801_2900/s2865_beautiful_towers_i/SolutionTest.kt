@@ -9,21 +9,23 @@ internal class SolutionTest {
     fun maximumSumOfHeights() {
         assertThat(
             Solution().maximumSumOfHeights(mutableListOf(5, 3, 4, 1, 1)),
-            equalTo(13L)
+            equalTo(13L),
         )
     }
 
     @Test
     fun maximumSumOfHeights2() {
         assertThat(
-            Solution().maximumSumOfHeights(mutableListOf(6, 5, 3, 9, 2, 7)), equalTo(22L)
+            Solution().maximumSumOfHeights(mutableListOf(6, 5, 3, 9, 2, 7)),
+            equalTo(22L),
         )
     }
 
     @Test
     fun maximumSumOfHeights3() {
         assertThat(
-            Solution().maximumSumOfHeights(mutableListOf(3, 2, 5, 5, 2, 3)), equalTo(18L)
+            Solution().maximumSumOfHeights(mutableListOf(3, 2, 5, 5, 2, 3)),
+            equalTo(18L),
         )
     }
 }

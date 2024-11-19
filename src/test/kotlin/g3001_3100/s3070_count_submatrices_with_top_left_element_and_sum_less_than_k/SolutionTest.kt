@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .countSubmatrices(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[7,6,3],[6,6,1]"
+                        "[7,6,3],[6,6,1]",
                     ),
-                    18
+                    18,
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -26,11 +26,11 @@ internal class SolutionTest {
             Solution()
                 .countSubmatrices(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[7,2,9],[1,5,0],[2,6,6]"
+                        "[7,2,9],[1,5,0],[2,6,6]",
                     ),
-                    20
+                    20,
                 ),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

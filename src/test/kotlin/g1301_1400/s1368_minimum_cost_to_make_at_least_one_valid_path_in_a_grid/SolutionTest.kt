@@ -11,11 +11,13 @@ internal class SolutionTest {
             Solution()
                 .minCost(
                     arrayOf(
-                        intArrayOf(1, 1, 1, 1), intArrayOf(2, 2, 2, 2),
-                        intArrayOf(1, 1, 1, 1), intArrayOf(2, 2, 2, 2)
-                    )
+                        intArrayOf(1, 1, 1, 1),
+                        intArrayOf(2, 2, 2, 2),
+                        intArrayOf(1, 1, 1, 1),
+                        intArrayOf(2, 2, 2, 2),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -24,11 +26,12 @@ internal class SolutionTest {
         assertThat(
             Solution().minCost(
                 arrayOf(
-                    intArrayOf(1, 1, 3), intArrayOf(3, 2, 2),
-                    intArrayOf(1, 1, 4)
-                )
+                    intArrayOf(1, 1, 3),
+                    intArrayOf(3, 2, 2),
+                    intArrayOf(1, 1, 4),
+                ),
             ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -38,10 +41,10 @@ internal class SolutionTest {
             Solution().minCost(
                 arrayOf(
                     intArrayOf(1, 2),
-                    intArrayOf(4, 3)
-                )
+                    intArrayOf(4, 3),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

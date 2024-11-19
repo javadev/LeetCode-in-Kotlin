@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun incremovableSubarrayCount() {
         assertThat(
             Solution().incremovableSubarrayCount(intArrayOf(1, 2, 3, 4)),
-            equalTo(10L)
+            equalTo(10L),
         )
     }
 

@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun threeSum() {
         assertThat(
             Solution().threeSum(intArrayOf(-1, 0, 1, 2, -1, -4)),
-            equalTo(getLists(arrayOf(intArrayOf(-1, -1, 2), intArrayOf(-1, 0, 1))))
+            equalTo(getLists(arrayOf(intArrayOf(-1, -1, 2), intArrayOf(-1, 0, 1)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun threeSum2() {
         assertThat(
             Solution().threeSum(intArrayOf()),
-            equalTo(listOf())
+            equalTo(listOf()),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun threeSum3() {
         assertThat(
             Solution().threeSum(intArrayOf(0)),
-            equalTo(listOf())
+            equalTo(listOf()),
         )
     }
 }

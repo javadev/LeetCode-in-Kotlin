@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .longestCommonSubpath(
-                    5, arrayOf(intArrayOf(0, 1, 2, 3, 4), intArrayOf(2, 3, 4), intArrayOf(4, 0, 1, 2, 3))
+                    5,
+                    arrayOf(intArrayOf(0, 1, 2, 3, 4), intArrayOf(2, 3, 4), intArrayOf(4, 0, 1, 2, 3)),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -26,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .longestCommonSubpath(5, arrayOf(intArrayOf(0, 1, 2, 3, 4), intArrayOf(4, 3, 2, 1, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

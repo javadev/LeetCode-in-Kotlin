@@ -14,12 +14,12 @@ internal class SolutionTest {
                     TreeNode.create(
                         mutableListOf(
                             1, 3, 4, 2, null, 6, 5, null, null, null, null,
-                            null, 7
-                        )
+                            null, 7,
+                        ),
                     ),
-                    intArrayOf(4)
+                    intArrayOf(4),
                 ),
-            equalTo(intArrayOf(2))
+            equalTo(intArrayOf(2)),
         )
     }
 
@@ -28,9 +28,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .treeQueries(
-                    TreeNode.create(mutableListOf(5, 8, 9, 2, 1, 3, 7, 4, 6)), intArrayOf(3, 2, 4, 8)
+                    TreeNode.create(mutableListOf(5, 8, 9, 2, 1, 3, 7, 4, 6)),
+                    intArrayOf(3, 2, 4, 8),
                 ),
-            equalTo(intArrayOf(3, 2, 3, 2))
+            equalTo(intArrayOf(3, 2, 3, 2)),
         )
     }
 }

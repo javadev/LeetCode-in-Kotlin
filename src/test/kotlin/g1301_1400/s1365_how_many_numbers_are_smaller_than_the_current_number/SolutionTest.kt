@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun smallerNumbersThanCurrent() {
         assertThat(
             Solution().smallerNumbersThanCurrent(intArrayOf(8, 1, 2, 2, 3)),
-            equalTo(intArrayOf(4, 0, 1, 1, 3))
+            equalTo(intArrayOf(4, 0, 1, 1, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun smallerNumbersThanCurrent2() {
         assertThat(
             Solution().smallerNumbersThanCurrent(intArrayOf(6, 5, 4, 8)),
-            equalTo(intArrayOf(2, 1, 0, 3))
+            equalTo(intArrayOf(2, 1, 0, 3)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun smallerNumbersThanCurrent3() {
         assertThat(
             Solution().smallerNumbersThanCurrent(intArrayOf(7, 7, 7, 7)),
-            equalTo(intArrayOf(0, 0, 0, 0))
+            equalTo(intArrayOf(0, 0, 0, 0)),
         )
     }
 }

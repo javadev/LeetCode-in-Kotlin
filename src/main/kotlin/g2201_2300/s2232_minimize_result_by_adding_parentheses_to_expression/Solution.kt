@@ -59,7 +59,7 @@ class Solution {
     a = (0, left) // from the start of the expression to the first parentheses
     b = (left, right) // between parentheses, include plus sign
     c = (right, end of expression) // from the last parentheses to the end
-    */
+     */
     private fun evaluate(left: Int, right: Int, expression: String): Int {
         // This means that the parentheses are at the beginning or end of the expression and are
         // equal to the range of the expression to be evaluated. Return 1 to avoid zero factors in

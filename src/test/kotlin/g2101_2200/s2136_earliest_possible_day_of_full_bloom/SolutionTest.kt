@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun earliestFullBloom() {
         assertThat(
             Solution().earliestFullBloom(intArrayOf(1, 4, 3), intArrayOf(2, 3, 1)),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun earliestFullBloom2() {
         assertThat(
             Solution().earliestFullBloom(intArrayOf(1, 2, 3, 2), intArrayOf(2, 1, 2, 1)),
-            equalTo(9)
+            equalTo(9),
         )
     }
 

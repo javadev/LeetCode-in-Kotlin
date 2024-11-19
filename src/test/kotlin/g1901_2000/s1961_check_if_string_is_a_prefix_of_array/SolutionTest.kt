@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isPrefixString(
-                    "iloveleetcode", arrayOf("i", "love", "leetcode", "apples")
+                    "iloveleetcode",
+                    arrayOf("i", "love", "leetcode", "apples"),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isPrefixString(
-                    "iloveleetcode", arrayOf("apples", "i", "love", "leetcode")
+                    "iloveleetcode",
+                    arrayOf("apples", "i", "love", "leetcode"),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

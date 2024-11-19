@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthPalindrome() {
         assertThat(
             Solution().kthPalindrome(intArrayOf(1, 2, 3, 4, 5, 90), 3),
-            equalTo(longArrayOf(101, 111, 121, 131, 141, 999))
+            equalTo(longArrayOf(101, 111, 121, 131, 141, 999)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kthPalindrome2() {
         assertThat(
             Solution().kthPalindrome(intArrayOf(2, 4, 6), 4),
-            equalTo(longArrayOf(1111, 1331, 1551))
+            equalTo(longArrayOf(1111, 1331, 1551)),
         )
     }
 }

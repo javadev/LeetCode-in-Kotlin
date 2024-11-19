@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun removeTrailingZeros() {
         assertThat(
             Solution().removeTrailingZeros("51230100"),
-            equalTo("512301")
+            equalTo("512301"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun removeTrailingZeros2() {
         assertThat(
             Solution().removeTrailingZeros("123"),
-            equalTo("123")
+            equalTo("123"),
         )
     }
 }

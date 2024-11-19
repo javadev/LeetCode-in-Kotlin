@@ -40,7 +40,8 @@ class Solution {
             return
         }
         map.putIfAbsent(
-            c, PriorityQueue { a: Node, b: Node -> if (a.row != b.row) a.row - b.row else a.`val` - b.`val` }
+            c,
+            PriorityQueue { a: Node, b: Node -> if (a.row != b.row) a.row - b.row else a.`val` - b.`val` },
         )
         map.getValue(c).add(Node(r, cur.`val`))
         helper(cur.left, map, r + 1, c - 1)

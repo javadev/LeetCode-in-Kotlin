@@ -7,7 +7,9 @@ class Solution {
     fun subsetXORSum(nums: IntArray): Int {
         return if (nums.isEmpty()) {
             0
-        } else subsetXORSum(nums, 0, 0)
+        } else {
+            subsetXORSum(nums, 0, 0)
+        }
     }
 
     private fun subsetXORSum(nums: IntArray, currIndex: Int, res: Int): Int {

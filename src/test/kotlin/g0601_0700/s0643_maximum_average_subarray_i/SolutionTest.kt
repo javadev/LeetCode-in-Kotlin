@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findMaxAverage() {
         assertThat(
             Solution().findMaxAverage(intArrayOf(1, 12, -5, -6, 50, 3), 4),
-            equalTo(12.75000)
+            equalTo(12.75000),
         )
     }
 

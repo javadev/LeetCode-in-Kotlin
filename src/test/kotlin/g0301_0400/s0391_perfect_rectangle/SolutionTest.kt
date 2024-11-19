@@ -15,10 +15,10 @@ internal class SolutionTest {
                         intArrayOf(3, 1, 4, 2),
                         intArrayOf(3, 2, 4, 4),
                         intArrayOf(1, 3, 2, 4),
-                        intArrayOf(2, 3, 3, 4)
-                    )
+                        intArrayOf(2, 3, 3, 4),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -31,10 +31,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 2, 3),
                         intArrayOf(1, 3, 2, 4),
                         intArrayOf(3, 1, 4, 2),
-                        intArrayOf(3, 2, 4, 4)
-                    )
+                        intArrayOf(3, 2, 4, 4),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -47,10 +47,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 3, 3),
                         intArrayOf(3, 1, 4, 2),
                         intArrayOf(1, 3, 2, 4),
-                        intArrayOf(3, 2, 4, 4)
-                    )
+                        intArrayOf(3, 2, 4, 4),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -63,10 +63,10 @@ internal class SolutionTest {
                         intArrayOf(1, 1, 3, 3),
                         intArrayOf(3, 1, 4, 2),
                         intArrayOf(1, 3, 2, 4),
-                        intArrayOf(2, 2, 4, 4)
-                    )
+                        intArrayOf(2, 2, 4, 4),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

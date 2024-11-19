@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxSubarrayLength() {
         assertThat(
             Solution().maxSubarrayLength(intArrayOf(1, 2, 3, 1, 2, 3, 1, 2), 2),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -17,14 +17,15 @@ internal class SolutionTest {
     fun maxSubarrayLength2() {
         assertThat(
             Solution().maxSubarrayLength(intArrayOf(1, 2, 1, 2, 1, 2, 1, 2), 1),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
     @Test
     fun maxSubarrayLength3() {
         assertThat(
-            Solution().maxSubarrayLength(intArrayOf(5, 5, 5, 5, 5, 5, 5), 4), equalTo(4)
+            Solution().maxSubarrayLength(intArrayOf(5, 5, 5, 5, 5, 5, 5), 4),
+            equalTo(4),
         )
     }
 }

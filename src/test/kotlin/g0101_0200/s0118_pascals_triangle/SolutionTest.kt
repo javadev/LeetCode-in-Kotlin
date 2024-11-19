@@ -14,8 +14,8 @@ internal class SolutionTest {
                 intArrayOf(1, 1),
                 intArrayOf(1, 2, 1),
                 intArrayOf(1, 3, 3, 1),
-                intArrayOf(1, 4, 6, 4, 1)
-            )
+                intArrayOf(1, 4, 6, 4, 1),
+            ),
         )
         assertThat(Solution().generate(5), equalTo(expected))
     }

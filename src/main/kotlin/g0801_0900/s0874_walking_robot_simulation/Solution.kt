@@ -52,7 +52,7 @@ class Solution {
             override fun turnRight(): Direction {
                 return NORTH
             }
-        };
+        }, ;
 
         abstract fun turnLeft(): Direction
         abstract fun turnRight(): Direction

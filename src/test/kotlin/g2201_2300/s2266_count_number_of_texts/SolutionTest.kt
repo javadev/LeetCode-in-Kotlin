@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun countTexts2() {
         assertThat(
             Solution().countTexts("222222222222222222222222222222222222"),
-            equalTo(82876089)
+            equalTo(82876089),
         )
     }
 }

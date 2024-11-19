@@ -21,7 +21,9 @@ class Solution {
                 calculateFullRounds(loginSerializeTime, MID_NIGHT_END) +
                     calculateFullRounds(MID_NIGHT_START, logoutSerializeTime)
                 )
-        } else calculateFullRounds(loginSerializeTime, logoutSerializeTime)
+        } else {
+            calculateFullRounds(loginSerializeTime, logoutSerializeTime)
+        }
     }
 
     private fun maskSerializeTime(serializeTime: Int, mask: Int): Int {

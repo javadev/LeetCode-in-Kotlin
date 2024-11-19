@@ -30,7 +30,7 @@ class Solution {
                             return@Comparator b.num - a.num
                         }
                         b.freq - a.freq
-                    }
+                    },
                 )
             for (j in i until i + k) {
                 map.put(nums[j], map.getOrDefault(nums[j], 0)!! + 1)

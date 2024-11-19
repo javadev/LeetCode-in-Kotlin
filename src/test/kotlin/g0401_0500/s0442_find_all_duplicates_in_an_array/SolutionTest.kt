@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findDuplicates() {
         assertThat(
             Solution().findDuplicates(intArrayOf(4, 3, 2, 7, 8, 2, 3, 1)),
-            equalTo(listOf(2, 3))
+            equalTo(listOf(2, 3)),
         )
     }
 

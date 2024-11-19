@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun findDisappearedNumbers() {
         assertThat(
             Solution().findDisappearedNumbers(intArrayOf(4, 3, 2, 7, 8, 2, 3, 1)),
-            equalTo(listOf(5, 6))
+            equalTo(listOf(5, 6)),
         )
     }
 
     @Test
     fun findDisappearedNumbers2() {
         assertThat(
-            Solution().findDisappearedNumbers(intArrayOf(1, 1)), equalTo(listOf(2))
+            Solution().findDisappearedNumbers(intArrayOf(1, 1)),
+            equalTo(listOf(2)),
         )
     }
 }

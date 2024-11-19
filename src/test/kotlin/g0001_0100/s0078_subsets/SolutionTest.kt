@@ -18,9 +18,9 @@ internal class SolutionTest {
                     intArrayOf(1, 3).toList(),
                     intArrayOf(2).toList(),
                     intArrayOf(2, 3).toList(),
-                    intArrayOf(3).toList()
-                ).toList()
-            )
+                    intArrayOf(3).toList(),
+                ).toList(),
+            ),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
     fun subsets2() {
         assertThat(
             Solution().subsets(intArrayOf(0)),
-            equalTo(arrayOf(intArrayOf().toList(), intArrayOf(0).toList()).toList())
+            equalTo(arrayOf(intArrayOf().toList(), intArrayOf(0).toList()).toList()),
         )
     }
 }

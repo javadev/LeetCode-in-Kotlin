@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun runningSum() {
         assertThat(
             Solution().runningSum(intArrayOf(1, 2, 3, 4)),
-            equalTo(intArrayOf(1, 3, 6, 10))
+            equalTo(intArrayOf(1, 3, 6, 10)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun runningSum2() {
         assertThat(
             Solution().runningSum(intArrayOf(1, 1, 1, 1, 1)),
-            equalTo(intArrayOf(1, 2, 3, 4, 5))
+            equalTo(intArrayOf(1, 2, 3, 4, 5)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun runningSum3() {
         assertThat(
             Solution().runningSum(intArrayOf(3, 1, 2, 10, 1)),
-            equalTo(intArrayOf(3, 4, 6, 16, 17))
+            equalTo(intArrayOf(3, 4, 6, 16, 17)),
         )
     }
 }

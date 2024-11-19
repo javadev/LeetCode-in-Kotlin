@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maxScore2() {
         assertThat<Long?>(
             Solution().maxScore(intArrayOf(1, 2, 3, 4, 5)),
-            equalTo<Long?>(60L)
+            equalTo<Long?>(60L),
         )
     }
 

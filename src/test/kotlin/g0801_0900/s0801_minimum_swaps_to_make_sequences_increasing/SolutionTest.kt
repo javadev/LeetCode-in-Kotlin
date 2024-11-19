@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minSwap() {
         assertThat(
-            Solution().minSwap(intArrayOf(1, 3, 5, 4), intArrayOf(1, 2, 3, 7)), equalTo(1)
+            Solution().minSwap(intArrayOf(1, 3, 5, 4), intArrayOf(1, 2, 3, 7)),
+            equalTo(1),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun minSwap2() {
         assertThat(
             Solution().minSwap(intArrayOf(0, 3, 5, 8, 9), intArrayOf(2, 1, 4, 6, 9)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

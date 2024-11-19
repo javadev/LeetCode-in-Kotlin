@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minDominoRotations(intArrayOf(2, 1, 2, 4, 2, 2), intArrayOf(5, 2, 6, 2, 3, 2)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minDominoRotations(intArrayOf(3, 5, 1, 2, 3), intArrayOf(3, 6, 3, 3, 4)),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

@@ -21,7 +21,8 @@ class Solution {
         distance[0] = 0
         val pq = PriorityQueue { a1: IntArray, a2: IntArray ->
             Integer.compare(
-                a1[1], a2[1]
+                a1[1],
+                a2[1],
             )
         }
         pq.add(intArrayOf(0, 0))

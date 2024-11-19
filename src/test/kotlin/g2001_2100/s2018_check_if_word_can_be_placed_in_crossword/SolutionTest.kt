@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf('#', ' ', '#'), charArrayOf(' ', ' ', '#'), charArrayOf('#', 'c', ' ')),
-                    "abc"
+                    "abc",
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf(' ', '#', 'a'), charArrayOf(' ', '#', 'c'), charArrayOf(' ', '#', 'a')),
-                    "ac"
+                    "ac",
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -35,9 +35,9 @@ internal class SolutionTest {
             Solution()
                 .placeWordInCrossword(
                     arrayOf(charArrayOf('#', ' ', '#'), charArrayOf(' ', ' ', '#'), charArrayOf('#', ' ', 'c')),
-                    "ca"
+                    "ca",
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

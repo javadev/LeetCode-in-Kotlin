@@ -10,7 +10,7 @@ class Solution {
         x1: Int,
         y1: Int,
         x2: Int,
-        y2: Int
+        y2: Int,
     ): Boolean {
         // Find the closest point to the circle within the rectangle
         val closestX = clamp(xCenter, x1, x2)

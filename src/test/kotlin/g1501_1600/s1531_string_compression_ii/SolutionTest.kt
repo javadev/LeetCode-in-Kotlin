@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun lengthOfOptimalCompression3() {
         assertThat(
             Solution().getLengthOfOptimalCompression("aaaaaaaaaaa", 0),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

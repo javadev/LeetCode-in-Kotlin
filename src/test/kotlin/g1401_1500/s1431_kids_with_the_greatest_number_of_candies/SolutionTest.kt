@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kidsWithCandies() {
         assertThat(
             Solution().kidsWithCandies(intArrayOf(2, 3, 5, 1, 3), 3),
-            equalTo(mutableListOf(true, true, true, false, true))
+            equalTo(mutableListOf(true, true, true, false, true)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kidsWithCandies2() {
         assertThat(
             Solution().kidsWithCandies(intArrayOf(4, 2, 1, 1, 2), 1),
-            equalTo(mutableListOf(true, false, false, false, false))
+            equalTo(mutableListOf(true, false, false, false, false)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun kidsWithCandies3() {
         assertThat(
             Solution().kidsWithCandies(intArrayOf(12, 1, 12), 10),
-            equalTo(mutableListOf(true, false, true))
+            equalTo(mutableListOf(true, false, true)),
         )
     }
 }

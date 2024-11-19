@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .minimumFuelCost(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,2],[0,3]"
+                        "[0,1],[0,2],[0,3]",
                     ),
-                    5
+                    5,
                 ),
-            equalTo(3L)
+            equalTo(3L),
         )
     }
 
@@ -26,11 +26,11 @@ internal class SolutionTest {
             Solution()
                 .minimumFuelCost(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]"
+                        "[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]",
                     ),
-                    2
+                    2,
                 ),
-            equalTo(7L)
+            equalTo(7L),
         )
     }
 

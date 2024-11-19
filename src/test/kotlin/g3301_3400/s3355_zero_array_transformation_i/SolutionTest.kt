@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat<Boolean>(
             Solution()
                 .isZeroArray(intArrayOf(1, 0, 1), arrayOf<IntArray>(intArrayOf(0, 2))),
-            CoreMatchers.equalTo<Boolean>(true)
+            CoreMatchers.equalTo<Boolean>(true),
         )
     }
 
@@ -19,9 +19,9 @@ internal class SolutionTest {
         assertThat<Boolean>(
             Solution().isZeroArray(
                 intArrayOf(4, 3, 2, 1),
-                arrayOf<IntArray>(intArrayOf(1, 3), intArrayOf(0, 2))
+                arrayOf<IntArray>(intArrayOf(1, 3), intArrayOf(0, 2)),
             ),
-            CoreMatchers.equalTo<Boolean>(false)
+            CoreMatchers.equalTo<Boolean>(false),
         )
     }
 
@@ -30,9 +30,9 @@ internal class SolutionTest {
         assertThat<Boolean>(
             Solution().isZeroArray(
                 intArrayOf(-1, 0, 1),
-                arrayOf<IntArray>(intArrayOf(1, 3), intArrayOf(0, 2))
+                arrayOf<IntArray>(intArrayOf(1, 3), intArrayOf(0, 2)),
             ),
-            CoreMatchers.equalTo<Boolean>(true)
+            CoreMatchers.equalTo<Boolean>(true),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .prefixCount(arrayOf("pay", "attention", "practice", "attend"), "at"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .prefixCount(arrayOf("leetcode", "win", "loops", "success"), "code"),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

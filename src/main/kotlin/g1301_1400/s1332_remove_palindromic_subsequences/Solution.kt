@@ -9,6 +9,8 @@ class Solution {
         }
         return if (s == StringBuilder(s).reverse().toString()) {
             1
-        } else 2
+        } else {
+            2
+        }
     }
 }

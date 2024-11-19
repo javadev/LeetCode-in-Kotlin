@@ -26,9 +26,15 @@ internal class ThroneInheritanceTest {
             t.getInheritanceOrder(),
             equalTo(
                 mutableListOf(
-                    "king", "andy", "matthew", "bob", "alex", "asha", "catherine"
-                )
-            )
+                    "king",
+                    "andy",
+                    "matthew",
+                    "bob",
+                    "alex",
+                    "asha",
+                    "catherine",
+                ),
+            ),
         )
         // order: king > andy > matthew > bob > alex > asha > catherine
         t.death("bob")
@@ -36,7 +42,7 @@ internal class ThroneInheritanceTest {
         t.getInheritanceOrder()
         assertThat(
             t.getInheritanceOrder(),
-            equalTo(mutableListOf("king", "andy", "matthew", "alex", "asha", "catherine"))
+            equalTo(mutableListOf("king", "andy", "matthew", "alex", "asha", "catherine")),
         )
     }
 }

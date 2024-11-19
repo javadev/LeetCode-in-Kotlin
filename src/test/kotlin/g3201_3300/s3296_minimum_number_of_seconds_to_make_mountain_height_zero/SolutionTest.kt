@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minNumberOfSeconds() {
         assertThat<Long>(
             Solution().minNumberOfSeconds(4, intArrayOf(2, 1, 1)),
-            equalTo<Long>(3L)
+            equalTo<Long>(3L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minNumberOfSeconds2() {
         assertThat<Long>(
             Solution().minNumberOfSeconds(10, intArrayOf(3, 2, 2, 4)),
-            equalTo<Long>(12L)
+            equalTo<Long>(12L),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minNumberOfSeconds3() {
         assertThat<Long>(
             Solution().minNumberOfSeconds(5, intArrayOf(1)),
-            equalTo<Long>(15L)
+            equalTo<Long>(15L),
         )
     }
 }

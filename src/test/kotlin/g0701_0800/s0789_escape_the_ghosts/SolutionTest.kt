@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun escapeGhosts() {
         assertThat(
             Solution().escapeGhosts(arrayOf(intArrayOf(1, 0), intArrayOf(0, 3)), intArrayOf(0, 1)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun escapeGhosts2() {
         assertThat(
             Solution().escapeGhosts(arrayOf(intArrayOf(1, 0)), intArrayOf(2, 0)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun escapeGhosts3() {
         assertThat(
             Solution().escapeGhosts(arrayOf(intArrayOf(2, 0)), intArrayOf(1, 0)),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

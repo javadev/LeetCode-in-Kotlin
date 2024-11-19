@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countKConstraintSubstrings() {
         assertThat(
             Solution().countKConstraintSubstrings("0001111", 2, arrayOf(intArrayOf(0, 6))),
-            equalTo(longArrayOf(26))
+            equalTo(longArrayOf(26)),
         )
     }
 
@@ -18,9 +18,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countKConstraintSubstrings(
-                    "010101", 1, arrayOf(intArrayOf(0, 5), intArrayOf(1, 4), intArrayOf(2, 3))
+                    "010101",
+                    1,
+                    arrayOf(intArrayOf(0, 5), intArrayOf(1, 4), intArrayOf(2, 3)),
                 ),
-            equalTo(longArrayOf(15, 9, 3))
+            equalTo(longArrayOf(15, 9, 3)),
         )
     }
 }

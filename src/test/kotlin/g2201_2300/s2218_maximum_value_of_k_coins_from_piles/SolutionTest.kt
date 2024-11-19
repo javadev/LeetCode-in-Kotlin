@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxValueOfCoins(
-                    listOf(mutableListOf(1, 100, 3), mutableListOf(7, 8, 9)), 2
+                    listOf(mutableListOf(1, 100, 3), mutableListOf(7, 8, 9)),
+                    2,
                 ),
-            equalTo(101)
+            equalTo(101),
         )
     }
 
@@ -28,11 +29,11 @@ internal class SolutionTest {
                         listOf(100),
                         listOf(100),
                         listOf(100),
-                        mutableListOf(1, 1, 1, 1, 1, 1, 700)
+                        mutableListOf(1, 1, 1, 1, 1, 1, 700),
                     ),
-                    7
+                    7,
                 ),
-            equalTo(706)
+            equalTo(706),
         )
     }
 }

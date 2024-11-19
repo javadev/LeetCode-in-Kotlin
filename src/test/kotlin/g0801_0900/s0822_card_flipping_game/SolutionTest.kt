@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun flipame() {
         assertThat(
             Solution().flipgame(intArrayOf(1, 2, 4, 4, 7), intArrayOf(1, 3, 4, 1, 3)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

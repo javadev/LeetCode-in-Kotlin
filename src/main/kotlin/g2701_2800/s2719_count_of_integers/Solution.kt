@@ -7,8 +7,9 @@ class Solution {
     private fun countStrings(i: Int, tight1: Boolean, tight2: Boolean, sum: Int, num1: String, num2: String): Int {
         if (sum < 0) return 0
         if (i == num2.length) return 1
-        if (dp[i][if (tight1) 1 else 0][if (tight2) 1 else 0][sum] != -1)
+        if (dp[i][if (tight1) 1 else 0][if (tight2) 1 else 0][sum] != -1) {
             return dp[i][if (tight1) 1 else 0][if (tight2) 1 else 0][sum]
+        }
         val lo = if (tight1) num1[i].code - '0'.code else 0
         val hi = if (tight2) num2[i].code - '0'.code else 9
         var count = 0
@@ -17,7 +18,7 @@ class Solution {
                 count % MOD + countStrings(
                     i + 1,
                     tight1 and (idx == lo), tight2 and (idx == hi),
-                    sum - idx, num1, num2
+                    sum - idx, num1, num2,
                 ) % MOD
                 ) % MOD
         }

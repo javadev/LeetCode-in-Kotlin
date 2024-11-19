@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestCompletingWord(
-                    "1s3 PSt", arrayOf("step", "steps", "stripe", "stepple")
+                    "1s3 PSt",
+                    arrayOf("step", "steps", "stripe", "stepple"),
                 ),
-            equalTo("steps")
+            equalTo("steps"),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestCompletingWord(
-                    "1s3 456", arrayOf("looks", "pest", "stew", "show")
+                    "1s3 456",
+                    arrayOf("looks", "pest", "stew", "show"),
                 ),
-            equalTo("pest")
+            equalTo("pest"),
         )
     }
 }

@@ -14,10 +14,10 @@ internal class SolutionTest {
                         intArrayOf(4, 8),
                         intArrayOf(3, 6),
                         intArrayOf(10, 20),
-                        intArrayOf(15, 30)
-                    )
+                        intArrayOf(15, 30),
+                    ),
                 ),
-            equalTo(6L)
+            equalTo(6L),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun interchangeableRectangles2() {
         assertThat(
             Solution().interchangeableRectangles(arrayOf(intArrayOf(4, 5), intArrayOf(7, 8))),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 }

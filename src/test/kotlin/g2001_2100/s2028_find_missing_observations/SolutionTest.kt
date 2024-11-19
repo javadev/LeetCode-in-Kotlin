@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun missingRolls() {
         assertThat(
             Solution().missingRolls(intArrayOf(3, 2, 4, 3), 4, 2),
-            equalTo(intArrayOf(6, 6))
+            equalTo(intArrayOf(6, 6)),
         )
     }
 
@@ -17,14 +17,15 @@ internal class SolutionTest {
     fun missingRolls2() {
         assertThat(
             Solution().missingRolls(intArrayOf(1, 5, 6), 3, 4),
-            equalTo(intArrayOf(6, 1, 1, 1))
+            equalTo(intArrayOf(6, 1, 1, 1)),
         )
     }
 
     @Test
     fun missingRolls3() {
         assertThat(
-            Solution().missingRolls(intArrayOf(1, 2, 3, 4), 6, 4), equalTo(intArrayOf())
+            Solution().missingRolls(intArrayOf(1, 2, 3, 4), 6, 4),
+            equalTo(intArrayOf()),
         )
     }
 }

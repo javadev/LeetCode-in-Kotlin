@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun minimumAbsDifference() {
         assertThat(
             Solution().minimumAbsDifference(intArrayOf(4, 2, 1, 3)),
-            equalTo(getLists(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4))))
+            equalTo(getLists(arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun minimumAbsDifference2() {
         assertThat(
             Solution().minimumAbsDifference(intArrayOf(1, 3, 6, 10, 15)),
-            equalTo(getLists(arrayOf(intArrayOf(1, 3))))
+            equalTo(getLists(arrayOf(intArrayOf(1, 3)))),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun minimumAbsDifference3() {
         assertThat(
             Solution().minimumAbsDifference(intArrayOf(3, 8, -10, 23, 19, -4, -14, 27)),
-            equalTo(getLists(arrayOf(intArrayOf(-14, -10), intArrayOf(19, 23), intArrayOf(23, 27))))
+            equalTo(getLists(arrayOf(intArrayOf(-14, -10), intArrayOf(19, 23), intArrayOf(23, 27)))),
         )
     }
 }

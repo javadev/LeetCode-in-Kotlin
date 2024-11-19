@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minImpossibleOR() {
         assertThat(
             Solution().minImpossibleOR(intArrayOf(2, 1)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minImpossibleOR2() {
         assertThat(
             Solution().minImpossibleOR(intArrayOf(5, 3, 2)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

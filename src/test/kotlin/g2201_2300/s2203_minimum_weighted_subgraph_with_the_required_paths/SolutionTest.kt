@@ -20,13 +20,13 @@ internal class SolutionTest {
                         intArrayOf(2, 3, 3),
                         intArrayOf(2, 3, 4),
                         intArrayOf(3, 4, 2),
-                        intArrayOf(4, 5, 1)
+                        intArrayOf(4, 5, 1),
                     ),
                     0,
                     1,
-                    5
+                    5,
                 ),
-            equalTo(9L)
+            equalTo(9L),
         )
     }
 
@@ -34,7 +34,7 @@ internal class SolutionTest {
     fun minimumWeight2() {
         assertThat(
             Solution().minimumWeight(3, arrayOf(intArrayOf(0, 1, 1), intArrayOf(2, 1, 1)), 0, 1, 2),
-            equalTo(-1L)
+            equalTo(-1L),
         )
     }
 }

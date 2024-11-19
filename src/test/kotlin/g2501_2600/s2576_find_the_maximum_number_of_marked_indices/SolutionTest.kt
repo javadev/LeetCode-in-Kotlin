@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxNumOfMarkedIndices() {
         assertThat(
             Solution().maxNumOfMarkedIndices(intArrayOf(3, 5, 2, 4)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxNumOfMarkedIndices2() {
         assertThat(
             Solution().maxNumOfMarkedIndices(intArrayOf(9, 2, 5, 4)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxNumOfMarkedIndices3() {
         assertThat(
             Solution().maxNumOfMarkedIndices(intArrayOf(7, 6, 8)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

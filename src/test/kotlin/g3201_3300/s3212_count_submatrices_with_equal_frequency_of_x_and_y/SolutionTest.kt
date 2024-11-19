@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numberOfSubmatrices() {
         assertThat(
             Solution().numberOfSubmatrices(arrayOf(charArrayOf('X', 'Y', '.'), charArrayOf('Y', '.', '.'))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numberOfSubmatrices2() {
         assertThat(
             Solution().numberOfSubmatrices(arrayOf(charArrayOf('X', 'X'), charArrayOf('X', 'Y'))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun numberOfSubmatrices3() {
         assertThat(
             Solution().numberOfSubmatrices(arrayOf(charArrayOf('.', '.'), charArrayOf('.', '.'))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

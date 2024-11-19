@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun maximumStrongPairXor3() {
         assertThat(
             Solution().maximumStrongPairXor(intArrayOf(500, 520, 2500, 3000)),
-            equalTo(1020)
+            equalTo(1020),
         )
     }
 }

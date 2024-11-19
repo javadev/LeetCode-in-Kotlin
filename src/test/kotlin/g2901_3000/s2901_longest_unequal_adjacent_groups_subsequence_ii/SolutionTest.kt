@@ -10,9 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .getWordsInLongestSubsequence(
-                    3, arrayOf("bab", "dab", "cab"), intArrayOf(1, 2, 2)
+                    3,
+                    arrayOf("bab", "dab", "cab"),
+                    intArrayOf(1, 2, 2),
                 ),
-            equalTo(mutableListOf("bab", "dab"))
+            equalTo(mutableListOf("bab", "dab")),
         )
     }
 
@@ -21,9 +23,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .getWordsInLongestSubsequence(
-                    4, arrayOf("a", "b", "c", "d"), intArrayOf(1, 2, 3, 4)
+                    4,
+                    arrayOf("a", "b", "c", "d"),
+                    intArrayOf(1, 2, 3, 4),
                 ),
-            equalTo(mutableListOf("a", "b", "c", "d"))
+            equalTo(mutableListOf("a", "b", "c", "d")),
         )
     }
 }

@@ -11,7 +11,7 @@ internal class SolutionTest {
         val root = TreeNode(
             3,
             TreeNode(2, null, TreeNode(3)),
-            TreeNode(3, null, TreeNode(1))
+            TreeNode(3, null, TreeNode(1)),
         )
         assertThat(Solution().rob(root), equalTo(7))
     }
@@ -21,7 +21,7 @@ internal class SolutionTest {
         val root = TreeNode(
             3,
             TreeNode(4, TreeNode(1), TreeNode(3)),
-            TreeNode(5, null, TreeNode(1))
+            TreeNode(5, null, TreeNode(1)),
         )
         assertThat(Solution().rob(root), equalTo(9))
     }

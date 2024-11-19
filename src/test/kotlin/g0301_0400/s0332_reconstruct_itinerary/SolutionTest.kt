@@ -11,11 +11,11 @@ internal class SolutionTest {
             listOf("MUC", "LHR"),
             listOf("JFK", "MUC"),
             listOf("SFO", "SJC"),
-            listOf("LHR", "SFO")
+            listOf("LHR", "SFO"),
         )
         assertThat(
             Solution().findItinerary(input),
-            equalTo(listOf("JFK", "MUC", "LHR", "SFO", "SJC"))
+            equalTo(listOf("JFK", "MUC", "LHR", "SFO", "SJC")),
         )
     }
 
@@ -26,11 +26,11 @@ internal class SolutionTest {
             listOf("JFK", "ATL"),
             listOf("SFO", "ATL"),
             listOf("ATL", "JFK"),
-            listOf("ATL", "SFO")
+            listOf("ATL", "SFO"),
         )
         assertThat(
             Solution().findItinerary(input),
-            equalTo(listOf("JFK", "ATL", "JFK", "SFO", "ATL", "SFO"))
+            equalTo(listOf("JFK", "ATL", "JFK", "SFO", "ATL", "SFO")),
         )
     }
 }

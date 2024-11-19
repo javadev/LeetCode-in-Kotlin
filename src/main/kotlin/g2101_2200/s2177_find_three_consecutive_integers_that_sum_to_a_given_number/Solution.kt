@@ -6,6 +6,8 @@ class Solution {
     fun sumOfThree(num: Long): LongArray {
         return if (num % 3 == 0L) {
             longArrayOf(num / 3 - 1, num / 3, num / 3 + 1)
-        } else LongArray(0)
+        } else {
+            LongArray(0)
+        }
     }
 }

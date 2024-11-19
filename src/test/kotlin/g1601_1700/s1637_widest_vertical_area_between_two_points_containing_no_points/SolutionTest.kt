@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(8, 7),
                     intArrayOf(9, 9),
                     intArrayOf(7, 4),
-                    intArrayOf(9, 7)
-                )
+                    intArrayOf(9, 7),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -31,10 +31,10 @@ internal class SolutionTest {
                         intArrayOf(1, 0),
                         intArrayOf(1, 4),
                         intArrayOf(5, 3),
-                        intArrayOf(8, 8)
-                    )
+                        intArrayOf(8, 8),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

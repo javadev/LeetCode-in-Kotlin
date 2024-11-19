@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun gardenNoAdj() {
         assertThat(
             Solution().gardenNoAdj(3, arrayOf(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 1))),
-            equalTo(intArrayOf(1, 2, 3))
+            equalTo(intArrayOf(1, 2, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun gardenNoAdj2() {
         assertThat(
             Solution().gardenNoAdj(4, arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))),
-            equalTo(intArrayOf(1, 2, 1, 2))
+            equalTo(intArrayOf(1, 2, 1, 2)),
         )
     }
 
@@ -33,10 +33,10 @@ internal class SolutionTest {
                         intArrayOf(3, 4),
                         intArrayOf(4, 1),
                         intArrayOf(1, 3),
-                        intArrayOf(2, 4)
-                    )
+                        intArrayOf(2, 4),
+                    ),
                 ),
-            equalTo(intArrayOf(1, 2, 3, 4))
+            equalTo(intArrayOf(1, 2, 3, 4)),
         )
     }
 }

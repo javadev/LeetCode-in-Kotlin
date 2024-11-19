@@ -9,7 +9,9 @@ class Solution {
         this.x = x
         return if (x == target) {
             0
-        } else dfs(0, target.toLong()) - 1
+        } else {
+            dfs(0, target.toLong()) - 1
+        }
     }
 
     // ax^0 + bx^1 + cx^2 +....

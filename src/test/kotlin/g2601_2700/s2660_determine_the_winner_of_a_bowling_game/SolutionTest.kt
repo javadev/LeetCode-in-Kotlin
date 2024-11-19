@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isWinner() {
         assertThat(
             Solution().isWinner(intArrayOf(4, 10, 7, 9), intArrayOf(6, 5, 2, 3)),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isWinner2() {
         assertThat(
             Solution().isWinner(intArrayOf(3, 5, 7, 6), intArrayOf(8, 10, 10, 2)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun isWinner3() {
         assertThat(
             Solution().isWinner(intArrayOf(2, 3), intArrayOf(4, 1)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

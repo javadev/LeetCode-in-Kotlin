@@ -40,13 +40,17 @@ class MyCircularQueue(private val maxSize: Int) {
     fun Rear(): Int {
         return if (size == 0) {
             -1
-        } else dumyHead.right!!.`val`
+        } else {
+            dumyHead.right!!.`val`
+        }
     }
 
     fun Front(): Int {
         return if (size == 0) {
             -1
-        } else dumyHead.left!!.`val`
+        } else {
+            dumyHead.left!!.`val`
+        }
     }
 
     fun isEmpty(): Boolean {

@@ -12,12 +12,16 @@ internal class SolutionTest {
                 .countRestrictedPaths(
                     5,
                     arrayOf(
-                        intArrayOf(1, 2, 3), intArrayOf(1, 3, 3),
-                        intArrayOf(2, 3, 1), intArrayOf(1, 4, 2), intArrayOf(5, 2, 2),
-                        intArrayOf(3, 5, 1), intArrayOf(5, 4, 10)
-                    )
+                        intArrayOf(1, 2, 3),
+                        intArrayOf(1, 3, 3),
+                        intArrayOf(2, 3, 1),
+                        intArrayOf(1, 4, 2),
+                        intArrayOf(5, 2, 2),
+                        intArrayOf(3, 5, 1),
+                        intArrayOf(5, 4, 10),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -28,12 +32,17 @@ internal class SolutionTest {
                 .countRestrictedPaths(
                     7,
                     arrayOf(
-                        intArrayOf(1, 3, 1), intArrayOf(4, 1, 2), intArrayOf(7, 3, 4),
-                        intArrayOf(2, 5, 3), intArrayOf(5, 6, 1), intArrayOf(6, 7, 2), intArrayOf(7, 5, 3),
-                        intArrayOf(2, 6, 4)
-                    )
+                        intArrayOf(1, 3, 1),
+                        intArrayOf(4, 1, 2),
+                        intArrayOf(7, 3, 4),
+                        intArrayOf(2, 5, 3),
+                        intArrayOf(5, 6, 1),
+                        intArrayOf(6, 7, 2),
+                        intArrayOf(7, 5, 3),
+                        intArrayOf(2, 6, 4),
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

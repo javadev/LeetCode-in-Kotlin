@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun splitArraySameAverage() {
         assertThat(
             Solution().splitArraySameAverage(intArrayOf(1, 2, 3, 4, 5, 6, 7, 8)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

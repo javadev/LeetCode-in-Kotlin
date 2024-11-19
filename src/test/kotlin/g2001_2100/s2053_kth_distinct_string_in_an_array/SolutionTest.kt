@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthDistinct() {
         assertThat(
             Solution().kthDistinct(arrayOf("d", "b", "c", "b", "c", "a"), 2),
-            equalTo("a")
+            equalTo("a"),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumSetSize() {
         assertThat(
             Solution().maximumSetSize(intArrayOf(1, 2, 1, 2), intArrayOf(1, 1, 1, 1)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumSetSize(intArrayOf(1, 2, 3, 4, 5, 6), intArrayOf(2, 3, 2, 3, 2, 3)),
-            equalTo(5)
+            equalTo(5),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumSetSize(intArrayOf(1, 1, 2, 2, 3, 3), intArrayOf(4, 4, 5, 5, 6, 6)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

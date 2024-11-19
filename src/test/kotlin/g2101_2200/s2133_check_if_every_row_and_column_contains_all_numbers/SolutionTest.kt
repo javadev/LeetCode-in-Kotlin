@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun checkValid() {
         assertThat(
             Solution().checkValid(arrayOf(intArrayOf(1, 2, 3), intArrayOf(3, 1, 2), intArrayOf(2, 3, 1))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun checkValid2() {
         assertThat(
             Solution().checkValid(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 2, 3), intArrayOf(1, 2, 3))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

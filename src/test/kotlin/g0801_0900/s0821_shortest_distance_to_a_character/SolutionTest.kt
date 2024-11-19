@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestToChar() {
         assertThat(
             Solution().shortestToChar("loveleetcode", 'e'),
-            equalTo(intArrayOf(3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0))
+            equalTo(intArrayOf(3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0)),
         )
     }
 

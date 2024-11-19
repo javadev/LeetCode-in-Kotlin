@@ -39,8 +39,8 @@ import javax.sql.DataSource
             "INSERT INTO Confirmations(user_id, time_stamp, action)" +
             " VALUES (2, '2021-01-22 00:00:00', 'confirmed'); " +
             "INSERT INTO Confirmations(user_id, time_stamp, action)" +
-            " VALUES (2, '2021-02-28 23:59:59', 'timeout'); "
-    ]
+            " VALUES (2, '2021-02-28 23:59:59', 'timeout'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -52,12 +52,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1901_2000/" +
-                                "s1934_confirmation_rate/script.sql"
-                        )
+                                "s1934_confirmation_rate/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(2))

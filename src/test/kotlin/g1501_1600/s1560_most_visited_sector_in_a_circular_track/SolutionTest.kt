@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostVisited() {
         assertThat(
             Solution().mostVisited(4, intArrayOf(1, 3, 1, 2)),
-            equalTo(mutableListOf(1, 2))
+            equalTo(mutableListOf(1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun mostVisited2() {
         assertThat(
             Solution().mostVisited(2, intArrayOf(2, 1, 2, 1, 2, 1, 2, 1, 2)),
-            equalTo(listOf(2))
+            equalTo(listOf(2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun mostVisited3() {
         assertThat(
             Solution().mostVisited(7, intArrayOf(1, 3, 5, 7)),
-            equalTo(mutableListOf(1, 2, 3, 4, 5, 6, 7))
+            equalTo(mutableListOf(1, 2, 3, 4, 5, 6, 7)),
         )
     }
 }

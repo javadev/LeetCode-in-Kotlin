@@ -10,9 +10,10 @@ internal class SolutionTest {
     fun rearrangeArray() {
         assertThat(
             CommonUtils.compareArray(
-                Solution().rearrangeArray(intArrayOf(1, 2, 3, 4, 5)), intArrayOf(1, 2, 4, 5, 3)
+                Solution().rearrangeArray(intArrayOf(1, 2, 3, 4, 5)),
+                intArrayOf(1, 2, 4, 5, 3),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -20,9 +21,10 @@ internal class SolutionTest {
     fun rearrangeArray2() {
         assertThat(
             CommonUtils.compareArray(
-                Solution().rearrangeArray(intArrayOf(6, 2, 0, 9, 7)), intArrayOf(6, 2, 0, 9, 7)
+                Solution().rearrangeArray(intArrayOf(6, 2, 0, 9, 7)),
+                intArrayOf(6, 2, 0, 9, 7),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

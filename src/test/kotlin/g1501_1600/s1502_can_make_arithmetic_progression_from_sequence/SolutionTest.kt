@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun canMakeArithmeticProgression() {
         assertThat(
             Solution().canMakeArithmeticProgression(intArrayOf(3, 5, 1)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
     @Test
     fun canMakeArithmeticProgression2() {
         assertThat(
-            Solution().canMakeArithmeticProgression(intArrayOf(1, 2, 4)), equalTo(false)
+            Solution().canMakeArithmeticProgression(intArrayOf(1, 2, 4)),
+            equalTo(false),
         )
     }
 }

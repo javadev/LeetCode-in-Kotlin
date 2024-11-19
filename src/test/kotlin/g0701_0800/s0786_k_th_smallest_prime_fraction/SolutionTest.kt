@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthSmallestPrimeFraction() {
         assertThat(
             Solution().kthSmallestPrimeFraction(intArrayOf(1, 2, 3, 5), 3),
-            equalTo(intArrayOf(2, 5))
+            equalTo(intArrayOf(2, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kthSmallestPrimeFraction2() {
         assertThat(
             Solution().kthSmallestPrimeFraction(intArrayOf(1, 7), 1),
-            equalTo(intArrayOf(1, 7))
+            equalTo(intArrayOf(1, 7)),
         )
     }
 }

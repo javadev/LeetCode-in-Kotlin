@@ -12,7 +12,7 @@ internal class SolutionTest {
             Solution()
                 .doubleIt(contructLinkedList(intArrayOf(1, 8, 9)))
                 .toString(),
-            equalTo("3, 7, 8")
+            equalTo("3, 7, 8"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
             Solution()
                 .doubleIt(contructLinkedList(intArrayOf(9, 9, 9)))
                 .toString(),
-            equalTo("1, 9, 9, 8")
+            equalTo("1, 9, 9, 8"),
         )
     }
 }

@@ -8,7 +8,9 @@ class Solution {
     private fun gcd(a: Int, b: Int): Int {
         return if (b == 0) {
             a
-        } else gcd(b, a % b)
+        } else {
+            gcd(b, a % b)
+        }
     }
 
     fun minimizeSet(divisor1: Int, divisor2: Int, uniqueCnt1: Int, uniqueCnt2: Int): Int {

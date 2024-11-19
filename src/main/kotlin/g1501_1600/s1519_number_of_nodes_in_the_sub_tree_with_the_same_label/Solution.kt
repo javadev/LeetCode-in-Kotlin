@@ -33,7 +33,7 @@ class Solution {
         graph: ArrayList<ArrayList<Int>>,
         labels: IntArray,
         labelsCount: IntArray,
-        parent: Int
+        parent: Int,
     ): IntArray {
         val labelsFrequency = IntArray(26)
         val rootLabel = labels[root]

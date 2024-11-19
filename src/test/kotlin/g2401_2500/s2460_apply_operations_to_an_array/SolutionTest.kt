@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun applyOperations() {
         assertThat(
             Solution().applyOperations(intArrayOf(1, 2, 2, 1, 1, 0)),
-            equalTo(intArrayOf(1, 4, 2, 0, 0, 0))
+            equalTo(intArrayOf(1, 4, 2, 0, 0, 0)),
         )
     }
 

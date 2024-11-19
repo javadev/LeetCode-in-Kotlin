@@ -6,5 +6,5 @@ class Employee(
     /** the importance value of this employee  */
     var importance: Int,
     /** the id of direct subordinates  */
-    var subordinates: List<Int> = listOf()
+    var subordinates: List<Int> = listOf(),
 )

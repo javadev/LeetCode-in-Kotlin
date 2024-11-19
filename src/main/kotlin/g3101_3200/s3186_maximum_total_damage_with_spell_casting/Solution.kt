@@ -46,13 +46,17 @@ class Solution {
             } else {
                 val curVal = max(
                     (curPower.toLong() * count + prevs[3]).toDouble(),
-                    max(prevs[1].toDouble(), prevs[2].toDouble())
+                    max(prevs[1].toDouble(), prevs[2].toDouble()),
                 )
                     .toLong()
                 val diff = min((p - curPower).toDouble(), (prevs.size - 1).toDouble()).toInt()
                 val nextCurVal =
-                    if ((diff == 1)) 0 else max(prevs[3].toDouble(), max(curVal.toDouble(), prevs[2].toDouble()))
-                        .toLong()
+                    if ((diff == 1)) {
+                        0
+                    } else {
+                        max(prevs[3].toDouble(), max(curVal.toDouble(), prevs[2].toDouble()))
+                            .toLong()
+                    }
                 // Shift the values in prevs[].
                 var k = prevs.size - 1
                 if (diff < prevs.size - 1) {

@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .findAllRecipes(
                     arrayOf("bread"),
                     listOf<List<String>>(mutableListOf("yeast", "flour")),
-                    arrayOf("yeast", "flour", "corn")
+                    arrayOf("yeast", "flour", "corn"),
                 ),
-            equalTo(listOf("bread"))
+            equalTo(listOf("bread")),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .findAllRecipes(
                     arrayOf("bread", "sandwich"),
                     listOf(mutableListOf("yeast", "flour"), mutableListOf("bread", "meat")),
-                    arrayOf("yeast", "flour", "meat")
+                    arrayOf("yeast", "flour", "meat"),
                 ),
-            equalTo(mutableListOf("bread", "sandwich"))
+            equalTo(mutableListOf("bread", "sandwich")),
         )
     }
 
@@ -40,11 +40,11 @@ internal class SolutionTest {
                     listOf(
                         mutableListOf("yeast", "flour"),
                         mutableListOf("bread", "meat"),
-                        mutableListOf("sandwich", "meat", "bread")
+                        mutableListOf("sandwich", "meat", "bread"),
                     ),
-                    arrayOf("yeast", "flour", "meat")
+                    arrayOf("yeast", "flour", "meat"),
                 ),
-            equalTo(mutableListOf("bread", "sandwich", "burger"))
+            equalTo(mutableListOf("bread", "sandwich", "burger")),
         )
     }
 }

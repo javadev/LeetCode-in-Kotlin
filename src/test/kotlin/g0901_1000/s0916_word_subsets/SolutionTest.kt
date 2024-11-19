@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .wordSubsets(arrayOf("amazon", "apple", "facebook", "google", "leetcode"), arrayOf("e", "o")),
-            equalTo(listOf("facebook", "google", "leetcode"))
+            equalTo(listOf("facebook", "google", "leetcode")),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .wordSubsets(arrayOf("amazon", "apple", "facebook", "google", "leetcode"), arrayOf("l", "e")),
-            equalTo(listOf("apple", "google", "leetcode"))
+            equalTo(listOf("apple", "google", "leetcode")),
         )
     }
 }

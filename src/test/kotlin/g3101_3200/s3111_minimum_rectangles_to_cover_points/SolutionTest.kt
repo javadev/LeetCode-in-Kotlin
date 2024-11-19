@@ -16,11 +16,11 @@ internal class SolutionTest {
                         intArrayOf(1, 4),
                         intArrayOf(1, 8),
                         intArrayOf(3, 5),
-                        intArrayOf(4, 6)
+                        intArrayOf(4, 6),
                     ),
-                    1
+                    1,
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -36,11 +36,11 @@ internal class SolutionTest {
                         intArrayOf(3, 3),
                         intArrayOf(4, 4),
                         intArrayOf(5, 5),
-                        intArrayOf(6, 6)
+                        intArrayOf(6, 6),
                     ),
-                    2
+                    2,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -48,7 +48,7 @@ internal class SolutionTest {
     fun minRectanglesToCoverPoints3() {
         assertThat(
             Solution().minRectanglesToCoverPoints(arrayOf(intArrayOf(2, 3), intArrayOf(1, 2)), 0),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

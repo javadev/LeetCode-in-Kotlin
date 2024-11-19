@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun lengthOfLongestSubsequence() {
         assertThat(
             Solution().lengthOfLongestSubsequence(mutableListOf(1, 2, 3, 4, 5), 9),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun lengthOfLongestSubsequence2() {
         assertThat(
             Solution().lengthOfLongestSubsequence(mutableListOf(4, 1, 3, 2, 1, 5), 7),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun lengthOfLongestSubsequence3() {
         assertThat(
             Solution().lengthOfLongestSubsequence(mutableListOf(1, 1, 5, 4, 5), 3),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

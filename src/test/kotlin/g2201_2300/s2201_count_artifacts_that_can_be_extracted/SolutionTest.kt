@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .digArtifacts(
                     2,
                     arrayOf(intArrayOf(0, 0, 0, 0), intArrayOf(0, 1, 1, 1)),
-                    arrayOf(intArrayOf(0, 0), intArrayOf(0, 1))
+                    arrayOf(intArrayOf(0, 0), intArrayOf(0, 1)),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .digArtifacts(
                     2,
                     arrayOf(intArrayOf(0, 0, 0, 0), intArrayOf(0, 1, 1, 1)),
-                    arrayOf(intArrayOf(0, 0), intArrayOf(0, 1), intArrayOf(1, 1))
+                    arrayOf(intArrayOf(0, 0), intArrayOf(0, 1), intArrayOf(1, 1)),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

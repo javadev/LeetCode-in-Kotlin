@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun satisfiesConditions() {
         assertThat(
             Solution().satisfiesConditions(arrayOf(intArrayOf(1, 0, 2), intArrayOf(1, 0, 2))),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun satisfiesConditions2() {
         assertThat(
             Solution().satisfiesConditions(arrayOf(intArrayOf(1, 1, 1), intArrayOf(0, 0, 0))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

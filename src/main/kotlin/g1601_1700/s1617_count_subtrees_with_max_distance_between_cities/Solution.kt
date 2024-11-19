@@ -17,12 +17,12 @@ class Solution {
         for (i in edges) {
             graph.computeIfAbsent(1 shl i[0] - 1) { initialCapacity: Int? ->
                 ArrayList(
-                    initialCapacity!!
+                    initialCapacity!!,
                 )
             }.add(1 shl i[1] - 1)
             graph.computeIfAbsent(1 shl i[1] - 1) { initialCapacity: Int? ->
                 ArrayList(
-                    initialCapacity!!
+                    initialCapacity!!,
                 )
             }.add(1 shl i[0] - 1)
         }

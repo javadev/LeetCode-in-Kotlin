@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun isPrefixOfWord2() {
         assertThat(
             Solution().isPrefixOfWord("this problem is an easy problem", "pro"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

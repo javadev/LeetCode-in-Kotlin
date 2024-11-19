@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun nextGreaterElements() {
         assertThat(
             Solution().nextGreaterElements(intArrayOf(1, 2, 1)),
-            equalTo(intArrayOf(2, -1, 2))
+            equalTo(intArrayOf(2, -1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun nextGreaterElements2() {
         assertThat(
             Solution().nextGreaterElements(intArrayOf(1, 2, 3, 4, 3)),
-            equalTo(intArrayOf(2, 3, 4, -1, 4))
+            equalTo(intArrayOf(2, 3, 4, -1, 4)),
         )
     }
 }

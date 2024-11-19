@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .hitBricks(arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(1, 1, 1, 0)), arrayOf(intArrayOf(1, 0))),
-            equalTo(intArrayOf(2))
+            equalTo(intArrayOf(2)),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
             Solution()
                 .hitBricks(
                     arrayOf(intArrayOf(1, 0, 0, 0), intArrayOf(1, 1, 0, 0)),
-                    arrayOf(intArrayOf(1, 1), intArrayOf(1, 0))
+                    arrayOf(intArrayOf(1, 1), intArrayOf(1, 0)),
                 ),
-            equalTo(intArrayOf(0, 0))
+            equalTo(intArrayOf(0, 0)),
         )
     }
 }

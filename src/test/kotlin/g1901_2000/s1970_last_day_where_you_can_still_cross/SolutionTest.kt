@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution().latestDayToCross(
                 2,
                 2,
-                arrayOf(intArrayOf(1, 1), intArrayOf(2, 1), intArrayOf(1, 2), intArrayOf(2, 2))
+                arrayOf(intArrayOf(1, 1), intArrayOf(2, 1), intArrayOf(1, 2), intArrayOf(2, 2)),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution().latestDayToCross(
                 2,
                 2,
-                arrayOf(intArrayOf(1, 1), intArrayOf(1, 2), intArrayOf(2, 1), intArrayOf(2, 2))
+                arrayOf(intArrayOf(1, 1), intArrayOf(1, 2), intArrayOf(2, 1), intArrayOf(2, 2)),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -45,10 +45,10 @@ internal class SolutionTest {
                         intArrayOf(1, 3),
                         intArrayOf(2, 3),
                         intArrayOf(3, 2),
-                        intArrayOf(3, 1)
-                    )
+                        intArrayOf(3, 1),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

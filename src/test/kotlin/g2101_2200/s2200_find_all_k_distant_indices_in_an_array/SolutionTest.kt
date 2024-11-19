@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findKDistantIndices() {
         assertThat(
             Solution().findKDistantIndices(intArrayOf(3, 4, 9, 1, 3, 9, 5), 9, 1),
-            equalTo(mutableListOf(1, 2, 3, 4, 5, 6))
+            equalTo(mutableListOf(1, 2, 3, 4, 5, 6)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findKDistantIndices2() {
         assertThat(
             Solution().findKDistantIndices(intArrayOf(2, 2, 2, 2, 2), 2, 2),
-            equalTo(mutableListOf(0, 1, 2, 3, 4))
+            equalTo(mutableListOf(0, 1, 2, 3, 4)),
         )
     }
 }

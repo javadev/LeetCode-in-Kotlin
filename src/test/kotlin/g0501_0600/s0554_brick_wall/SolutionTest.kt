@@ -18,11 +18,11 @@ internal class SolutionTest {
                             intArrayOf(1, 3, 2),
                             intArrayOf(2, 4),
                             intArrayOf(3, 1, 2),
-                            intArrayOf(1, 3, 1, 1)
-                        )
-                    )
+                            intArrayOf(1, 3, 1, 1),
+                        ),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -30,7 +30,7 @@ internal class SolutionTest {
     fun leastBricks2() {
         assertThat(
             Solution().leastBricks(ArrayUtils.getLists(arrayOf(intArrayOf(1), intArrayOf(1), intArrayOf(1)))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun substringXorQueries() {
         assertThat(
             Solution().substringXorQueries("101101", arrayOf(intArrayOf(0, 5), intArrayOf(1, 2))),
-            equalTo(arrayOf(intArrayOf(0, 2), intArrayOf(2, 3)))
+            equalTo(arrayOf(intArrayOf(0, 2), intArrayOf(2, 3))),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun substringXorQueries2() {
         assertThat(
             Solution().substringXorQueries("0101", arrayOf(intArrayOf(12, 8))),
-            equalTo(arrayOf(intArrayOf(-1, -1)))
+            equalTo(arrayOf(intArrayOf(-1, -1))),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun substringXorQueries3() {
         assertThat(
             Solution().substringXorQueries("1", arrayOf(intArrayOf(4, 5))),
-            equalTo(arrayOf(intArrayOf(0, 0)))
+            equalTo(arrayOf(intArrayOf(0, 0))),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProductPath(arrayOf(intArrayOf(-1, -2, -3), intArrayOf(-2, -3, -3), intArrayOf(-3, -3, -2))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun maxProductPath2() {
         assertThat(
             Solution().maxProductPath(arrayOf(intArrayOf(1, -2, 1), intArrayOf(1, -2, 1), intArrayOf(3, -4, 1))),
-            equalTo(8)
+            equalTo(8),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun maxProductPath3() {
         assertThat(
             Solution().maxProductPath(arrayOf(intArrayOf(1, 3), intArrayOf(0, -4))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

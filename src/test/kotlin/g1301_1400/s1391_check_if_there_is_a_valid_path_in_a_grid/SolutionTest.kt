@@ -11,10 +11,10 @@ internal class SolutionTest {
             Solution().hasValidPath(
                 arrayOf(
                     intArrayOf(2, 4, 3),
-                    intArrayOf(6, 5, 2)
-                )
+                    intArrayOf(6, 5, 2),
+                ),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -24,10 +24,10 @@ internal class SolutionTest {
             Solution().hasValidPath(
                 arrayOf(
                     intArrayOf(1, 2, 1),
-                    intArrayOf(1, 2, 1)
-                )
+                    intArrayOf(1, 2, 1),
+                ),
             ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -35,7 +35,7 @@ internal class SolutionTest {
     fun hasValidPath3() {
         assertThat(
             Solution().hasValidPath(arrayOf(intArrayOf(1, 1, 2))),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

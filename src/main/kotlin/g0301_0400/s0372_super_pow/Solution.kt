@@ -11,7 +11,9 @@ class Solution {
             // Cycle has started
             // cycle starts at phi with length phi
             exp(a % MOD, phi + arrMod)
-        } else exp(a % MOD, arrMod)
+        } else {
+            exp(a % MOD, arrMod)
+        }
     }
 
     private fun phi(n: Int): Int {

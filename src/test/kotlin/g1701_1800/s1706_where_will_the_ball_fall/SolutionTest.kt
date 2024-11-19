@@ -11,12 +11,14 @@ internal class SolutionTest {
             Solution()
                 .findBall(
                     arrayOf(
-                        intArrayOf(1, 1, 1, -1, -1), intArrayOf(1, 1, 1, -1, -1),
-                        intArrayOf(-1, -1, -1, 1, 1), intArrayOf(1, 1, 1, 1, -1),
-                        intArrayOf(-1, -1, -1, -1, -1)
-                    )
+                        intArrayOf(1, 1, 1, -1, -1),
+                        intArrayOf(1, 1, 1, -1, -1),
+                        intArrayOf(-1, -1, -1, 1, 1),
+                        intArrayOf(1, 1, 1, 1, -1),
+                        intArrayOf(-1, -1, -1, -1, -1),
+                    ),
                 ),
-            equalTo(intArrayOf(1, -1, -1, -1, -1))
+            equalTo(intArrayOf(1, -1, -1, -1, -1)),
         )
     }
 
@@ -31,11 +33,13 @@ internal class SolutionTest {
             Solution()
                 .findBall(
                     arrayOf(
-                        intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1),
-                        intArrayOf(1, 1, 1, 1, 1, 1), intArrayOf(-1, -1, -1, -1, -1, -1)
-                    )
+                        intArrayOf(1, 1, 1, 1, 1, 1),
+                        intArrayOf(-1, -1, -1, -1, -1, -1),
+                        intArrayOf(1, 1, 1, 1, 1, 1),
+                        intArrayOf(-1, -1, -1, -1, -1, -1),
+                    ),
                 ),
-            equalTo(intArrayOf(0, 1, 2, 3, 4, -1))
+            equalTo(intArrayOf(0, 1, 2, 3, 4, -1)),
         )
     }
 }

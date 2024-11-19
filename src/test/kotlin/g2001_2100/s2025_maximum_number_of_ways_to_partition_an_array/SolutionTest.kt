@@ -21,9 +21,9 @@ internal class SolutionTest {
             Solution()
                 .waysToPartition(
                     intArrayOf(22, 4, -25, -20, -15, 15, -16, 7, 19, -10, 0, -13, -14),
-                    -33
+                    -33,
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

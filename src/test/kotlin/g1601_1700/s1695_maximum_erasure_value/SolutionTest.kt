@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun maximumUniqueSubarray2() {
         assertThat(
             Solution().maximumUniqueSubarray(intArrayOf(5, 2, 1, 2, 5, 2, 1, 2, 5)),
-            equalTo(8)
+            equalTo(8),
         )
     }
 }

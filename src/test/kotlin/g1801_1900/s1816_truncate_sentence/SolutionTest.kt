@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun truncateSentence() {
         assertThat(
             Solution().truncateSentence("Hello how are you Contestant", 4),
-            equalTo("Hello how are you")
+            equalTo("Hello how are you"),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun truncateSentence2() {
         assertThat(
             Solution().truncateSentence("What is the solution to this problem", 4),
-            equalTo("What is the solution")
+            equalTo("What is the solution"),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun truncateSentence3() {
         assertThat(
             Solution().truncateSentence("chopper is not a tanuki", 5),
-            equalTo("chopper is not a tanuki")
+            equalTo("chopper is not a tanuki"),
         )
     }
 }

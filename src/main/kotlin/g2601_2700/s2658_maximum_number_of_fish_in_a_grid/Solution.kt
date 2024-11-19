@@ -10,7 +10,7 @@ class Solution {
             intArrayOf(0, 1),
             intArrayOf(0, -1),
             intArrayOf(1, 0),
-            intArrayOf(-1, 0)
+            intArrayOf(-1, 0),
         )
 
         fun isValid(x: Int, y: Int) = x in (0..grid.lastIndex) && y in (0..grid[0].lastIndex) &&
@@ -31,8 +31,9 @@ class Solution {
         var res = 0
         for (i in grid.indices) {
             for (j in grid[0].indices) {
-                if (grid[i][j] != 0)
+                if (grid[i][j] != 0) {
                     res = maxOf(res, dfs(i, j))
+                }
             }
         }
 

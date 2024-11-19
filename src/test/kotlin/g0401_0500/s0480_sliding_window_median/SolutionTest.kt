@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun medianSlidingWindow() {
         assertThat(
             Solution().medianSlidingWindow(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3),
-            equalTo(doubleArrayOf(1.00000, -1.00000, -1.00000, 3.00000, 5.00000, 6.00000))
+            equalTo(doubleArrayOf(1.00000, -1.00000, -1.00000, 3.00000, 5.00000, 6.00000)),
         )
     }
 
@@ -19,9 +19,15 @@ internal class SolutionTest {
             Solution().medianSlidingWindow(intArrayOf(1, 2, 3, 4, 2, 3, 1, 4, 2), 3),
             equalTo(
                 doubleArrayOf(
-                    2.00000, 3.00000, 3.00000, 3.00000, 2.00000, 3.00000, 2.00000
-                )
-            )
+                    2.00000,
+                    3.00000,
+                    3.00000,
+                    3.00000,
+                    2.00000,
+                    3.00000,
+                    2.00000,
+                ),
+            ),
         )
     }
 }

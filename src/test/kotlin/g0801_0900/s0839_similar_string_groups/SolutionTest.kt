@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numSimilarGroups() {
         assertThat(
             Solution().numSimilarGroups(arrayOf("tars", "rats", "arts", "star")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

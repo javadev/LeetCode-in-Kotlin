@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .fullBloomFlowers(
                     arrayOf(intArrayOf(1, 6), intArrayOf(3, 7), intArrayOf(9, 12), intArrayOf(4, 13)),
-                    intArrayOf(2, 3, 7, 11)
+                    intArrayOf(2, 3, 7, 11),
                 ),
-            equalTo(intArrayOf(1, 2, 2, 2))
+            equalTo(intArrayOf(1, 2, 2, 2)),
         )
     }
 
@@ -21,7 +21,7 @@ internal class SolutionTest {
     fun fullBloomFlowers2() {
         assertThat(
             Solution().fullBloomFlowers(arrayOf(intArrayOf(1, 10), intArrayOf(3, 3)), intArrayOf(3, 3, 2)),
-            equalTo(intArrayOf(2, 2, 1))
+            equalTo(intArrayOf(2, 2, 1)),
         )
     }
 }

@@ -18,7 +18,8 @@ internal class SolutionTest {
     @Test
     fun countSpecialSubsequences3() {
         assertThat(
-            Solution().countSpecialSubsequences(intArrayOf(0, 1, 2, 0, 1, 2)), equalTo(7)
+            Solution().countSpecialSubsequences(intArrayOf(0, 1, 2, 0, 1, 2)),
+            equalTo(7),
         )
     }
 }

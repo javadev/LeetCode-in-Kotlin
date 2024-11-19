@@ -11,7 +11,7 @@ internal class SolutionTest {
         val treeNode = TreeNode(1, TreeNode(2, null, TreeNode(5)), TreeNode(3))
         assertThat(
             Solution().binaryTreePaths(treeNode),
-            equalTo(listOf("1->2->5", "1->3"))
+            equalTo(listOf("1->2->5", "1->3")),
         )
     }
 

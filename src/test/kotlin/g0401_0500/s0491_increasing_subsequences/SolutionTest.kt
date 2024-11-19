@@ -17,17 +17,17 @@ internal class SolutionTest {
                 listOf(4, 7, 7),
                 listOf(6, 7),
                 listOf(6, 7, 7),
-                listOf(7, 7)
-            )
+                listOf(7, 7),
+            ),
         )
         val result = Solution().findSubsequences(intArrayOf(4, 6, 7, 7))
         result.forEach(
             Consumer { e: List<Int> ->
                 assertThat(
                     expected.contains(e),
-                    equalTo(true)
+                    equalTo(true),
                 )
-            }
+            },
         )
     }
 

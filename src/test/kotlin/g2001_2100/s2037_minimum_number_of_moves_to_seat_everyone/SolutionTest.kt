@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minMovesToSeat() {
         assertThat(
             Solution().minMovesToSeat(intArrayOf(3, 1, 5), intArrayOf(2, 7, 4)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minMovesToSeat2() {
         assertThat(
             Solution().minMovesToSeat(intArrayOf(4, 1, 5, 9), intArrayOf(1, 3, 2, 6)),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minMovesToSeat3() {
         assertThat(
             Solution().minMovesToSeat(intArrayOf(2, 2, 6, 6), intArrayOf(1, 3, 2, 6)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

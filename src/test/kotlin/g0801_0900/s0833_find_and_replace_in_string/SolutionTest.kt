@@ -10,9 +10,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findReplaceString(
-                    "abcd", intArrayOf(0, 2), arrayOf("a", "cd"), arrayOf("eee", "ffff")
+                    "abcd",
+                    intArrayOf(0, 2),
+                    arrayOf("a", "cd"),
+                    arrayOf("eee", "ffff"),
                 ),
-            equalTo("eeebffff")
+            equalTo("eeebffff"),
         )
     }
 
@@ -21,9 +24,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findReplaceString(
-                    "abcd", intArrayOf(0, 2), arrayOf("ab", "ec"), arrayOf("eee", "ffff")
+                    "abcd",
+                    intArrayOf(0, 2),
+                    arrayOf("ab", "ec"),
+                    arrayOf("eee", "ffff"),
                 ),
-            equalTo("eeecd")
+            equalTo("eeecd"),
         )
     }
 }

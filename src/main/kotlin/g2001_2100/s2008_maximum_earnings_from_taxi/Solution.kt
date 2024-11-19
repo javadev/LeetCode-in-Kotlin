@@ -19,7 +19,7 @@ class Solution {
         val myQueue = PriorityQueue { a: LongArray, b: LongArray ->
             java.lang.Long.compare(
                 a[0],
-                b[0]
+                b[0],
             )
         }
         for (i in rides.indices) {

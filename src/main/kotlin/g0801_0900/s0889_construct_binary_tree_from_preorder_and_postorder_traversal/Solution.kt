@@ -19,7 +19,9 @@ class Solution {
     fun constructFromPrePost(preorder: IntArray, postorder: IntArray): TreeNode? {
         return if (preorder.isEmpty() || preorder.size != postorder.size) {
             null
-        } else buildTree(preorder, 0, preorder.size - 1, postorder, 0, postorder.size - 1)
+        } else {
+            buildTree(preorder, 0, preorder.size - 1, postorder, 0, postorder.size - 1)
+        }
     }
 
     private fun buildTree(
@@ -28,7 +30,7 @@ class Solution {
         preEnd: Int,
         postorder: IntArray,
         postStart: Int,
-        postEnd: Int
+        postEnd: Int,
     ): TreeNode? {
         if (preStart > preEnd || postStart > postEnd) {
             return null
@@ -51,7 +53,7 @@ class Solution {
             preStart + offset - postStart + 1,
             postorder,
             postStart,
-            offset
+            offset,
         )
         root.right = buildTree(
             preorder,
@@ -59,7 +61,7 @@ class Solution {
             preEnd,
             postorder,
             offset + 1,
-            postEnd - 1
+            postEnd - 1,
         )
         return root
     }

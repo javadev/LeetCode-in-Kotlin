@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .closetTarget(arrayOf("hello", "i", "am", "leetcode", "hello"), "hello", 1),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun closetTarget2() {
         assertThat(
             Solution().closetTarget(arrayOf("a", "b", "leetcode"), "leetcode", 0),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun closetTarget3() {
         assertThat(
             Solution().closetTarget(arrayOf("i", "eat", "leetcode"), "ate", 0),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

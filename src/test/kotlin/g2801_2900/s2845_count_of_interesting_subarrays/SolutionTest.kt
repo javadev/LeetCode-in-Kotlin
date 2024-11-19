@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countInterestingSubarrays() {
         assertThat(
             Solution().countInterestingSubarrays(mutableListOf(3, 2, 4), 2, 1),
-            equalTo(3L)
+            equalTo(3L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countInterestingSubarrays2() {
         assertThat(
             Solution().countInterestingSubarrays(mutableListOf(3, 1, 9, 6), 3, 0),
-            equalTo(2L)
+            equalTo(2L),
         )
     }
 }

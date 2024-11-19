@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun sortedArrayToBST() {
         assertThat(
             Solution().sortedArrayToBST(intArrayOf(-10, -3, 0, 5, 9)).toString(),
-            equalTo("0,-10,null,-3,5,null,9")
+            equalTo("0,-10,null,-3,5,null,9"),
         )
     }
 
     @Test
     fun sortedArrayToBST2() {
         assertThat(
-            Solution().sortedArrayToBST(intArrayOf(1, 3)).toString(), equalTo("1,null,3")
+            Solution().sortedArrayToBST(intArrayOf(1, 3)).toString(),
+            equalTo("1,null,3"),
         )
     }
 }

@@ -22,7 +22,7 @@ class Solution {
         for (j in n - 2 downTo 1) {
             result = max(
                 result.toDouble(),
-                ((iNumMaxs[j - 1] - nums[j]).toLong() * kNumMax).toDouble()
+                ((iNumMaxs[j - 1] - nums[j]).toLong() * kNumMax).toDouble(),
             ).toLong()
             if (nums[j] > kNumMax) {
                 kNumMax = nums[j]

@@ -24,6 +24,8 @@ class Solution {
         }
         return if (sumGas < sumCost) {
             -1
-        } else result
+        } else {
+            result
+        }
     }
 }

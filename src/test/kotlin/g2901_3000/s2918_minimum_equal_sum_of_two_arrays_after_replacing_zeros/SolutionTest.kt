@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minSum() {
         assertThat(
             Solution().minSum(intArrayOf(3, 2, 0, 1, 0), intArrayOf(6, 5, 0)),
-            equalTo(12L)
+            equalTo(12L),
         )
     }
 

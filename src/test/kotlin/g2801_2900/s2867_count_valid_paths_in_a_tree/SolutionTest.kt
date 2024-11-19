@@ -13,10 +13,10 @@ internal class SolutionTest {
                 .countPaths(
                     5,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[1,3],[2,4],[2,5]"
-                    )
+                        "[1,2],[1,3],[2,4],[2,5]",
+                    ),
                 ),
-            equalTo(4L)
+            equalTo(4L),
         )
     }
 
@@ -27,10 +27,10 @@ internal class SolutionTest {
                 .countPaths(
                     6,
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,2],[1,3],[2,4],[3,5],[3,6]"
-                    )
+                        "[1,2],[1,3],[2,4],[3,5],[3,6]",
+                    ),
                 ),
-            equalTo(6L)
+            equalTo(6L),
         )
     }
 }

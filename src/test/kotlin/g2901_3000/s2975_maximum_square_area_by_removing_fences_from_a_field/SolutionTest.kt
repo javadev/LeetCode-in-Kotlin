@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun maximizeSquareArea() {
         assertThat(
             Solution().maximizeSquareArea(4, 3, intArrayOf(2, 3), intArrayOf(2)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
     @Test
     fun maximizeSquareArea2() {
         assertThat(
-            Solution().maximizeSquareArea(6, 7, intArrayOf(2), intArrayOf(4)), equalTo(-1)
+            Solution().maximizeSquareArea(6, 7, intArrayOf(2), intArrayOf(4)),
+            equalTo(-1),
         )
     }
 }

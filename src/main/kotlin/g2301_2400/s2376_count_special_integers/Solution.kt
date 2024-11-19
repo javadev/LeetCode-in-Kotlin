@@ -5,6 +5,7 @@ package g2301_2400.s2376_count_special_integers
 @Suppress("NAME_SHADOWING")
 class Solution {
     private lateinit var cntMap: IntArray
+
     // number n as an array, splitted by each digit
     private lateinit var digits: IntArray
 
@@ -48,7 +49,9 @@ class Solution {
     private fun count(i: Int, max: Int): Int {
         return if (i == 0) {
             max
-        } else (max - i) * count(i - 1, max)
+        } else {
+            (max - i) * count(i - 1, max)
+        }
     }
 
     private fun countUnbounded(len: Int): Int {

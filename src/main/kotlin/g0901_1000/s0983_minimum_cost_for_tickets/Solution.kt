@@ -13,9 +13,9 @@ class Solution {
                     getNext(
                         days,
                         i,
-                        days[i] + 6
-                    )
-                ]
+                        days[i] + 6,
+                    ),
+                ],
             ).coerceAtMost(costs[2] + memo[getNext(days, i, days[i] + 29)])
         }
         return memo[0]

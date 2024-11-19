@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun targetIndices() {
         assertThat(
             Solution().targetIndices(intArrayOf(1, 2, 5, 2, 3), 2),
-            equalTo(listOf(1, 2))
+            equalTo(listOf(1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun targetIndices2() {
         assertThat(
             Solution().targetIndices(intArrayOf(1, 2, 5, 2, 3), 3),
-            equalTo(listOf(3))
+            equalTo(listOf(3)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun targetIndices3() {
         assertThat(
             Solution().targetIndices(intArrayOf(1, 2, 5, 2, 3), 5),
-            equalTo(listOf(4))
+            equalTo(listOf(4)),
         )
     }
 }

@@ -37,7 +37,7 @@ class Solution {
         cols: Array<IntArray>,
         r: Int,
         c: Int,
-        side: Int
+        side: Int,
     ): Boolean {
         val sum = rows[r][c + side] - rows[r][c]
         var d1 = 0

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun semiOrderedPermutation() {
         assertThat(
             Solution().semiOrderedPermutation(intArrayOf(2, 1, 4, 3)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun semiOrderedPermutation2() {
         assertThat(
             Solution().semiOrderedPermutation(intArrayOf(2, 4, 1, 3)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun semiOrderedPermutation3() {
         assertThat(
             Solution().semiOrderedPermutation(intArrayOf(1, 3, 4, 2, 5)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

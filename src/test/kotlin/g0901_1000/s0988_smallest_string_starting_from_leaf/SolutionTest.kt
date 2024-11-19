@@ -11,9 +11,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestFromLeaf(
-                    TreeNode.create(listOf(0, 1, 2, 3, 4, 3, 4))
+                    TreeNode.create(listOf(0, 1, 2, 3, 4, 3, 4)),
                 ),
-            equalTo("dba")
+            equalTo("dba"),
         )
     }
 
@@ -22,9 +22,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .smallestFromLeaf(
-                    TreeNode.create(listOf(25, 1, 3, 1, 3, 0, 2))
+                    TreeNode.create(listOf(25, 1, 3, 1, 3, 0, 2)),
                 ),
-            equalTo("adz")
+            equalTo("adz"),
         )
     }
 
@@ -34,10 +34,10 @@ internal class SolutionTest {
             Solution()
                 .smallestFromLeaf(
                     TreeNode.create(
-                        listOf(2, 2, 1, null, 1, 0, null, 0)
-                    )
+                        listOf(2, 2, 1, null, 1, 0, null, 0),
+                    ),
                 ),
-            equalTo("abc")
+            equalTo("abc"),
         )
     }
 }

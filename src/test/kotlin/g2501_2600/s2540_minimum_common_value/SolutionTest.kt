@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun common() {
         assertThat(
             Solution().getCommon(intArrayOf(1, 2, 3), intArrayOf(2, 4)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun common2() {
         assertThat(
             Solution().getCommon(intArrayOf(1, 2, 3, 6), intArrayOf(2, 3, 4, 5)),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

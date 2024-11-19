@@ -16,10 +16,11 @@ internal class SolutionTest {
             Solution().checkWays(
                 arrayOf(
                     intArrayOf(1, 2),
-                    intArrayOf(2, 3), intArrayOf(1, 3)
-                )
+                    intArrayOf(2, 3),
+                    intArrayOf(1, 3),
+                ),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -28,11 +29,13 @@ internal class SolutionTest {
         assertThat(
             Solution().checkWays(
                 arrayOf(
-                    intArrayOf(1, 2), intArrayOf(2, 3),
-                    intArrayOf(2, 4), intArrayOf(1, 5)
-                )
+                    intArrayOf(1, 2),
+                    intArrayOf(2, 3),
+                    intArrayOf(2, 4),
+                    intArrayOf(1, 5),
+                ),
             ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

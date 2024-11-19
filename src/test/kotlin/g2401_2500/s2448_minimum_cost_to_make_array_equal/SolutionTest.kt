@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minCost() {
         assertThat(
             Solution().minCost(intArrayOf(1, 3, 5, 2), intArrayOf(2, 3, 1, 14)),
-            equalTo(8L)
+            equalTo(8L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minCost2() {
         assertThat(
             Solution().minCost(intArrayOf(2, 2, 2, 2, 2), intArrayOf(4, 2, 8, 1, 3)),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 }

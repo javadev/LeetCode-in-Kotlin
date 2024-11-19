@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun mostBooked() {
         assertThat(
             Solution().mostBooked(2, arrayOf(intArrayOf(0, 10), intArrayOf(1, 5), intArrayOf(2, 7), intArrayOf(3, 4))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -19,9 +19,9 @@ internal class SolutionTest {
             Solution()
                 .mostBooked(
                     3,
-                    arrayOf(intArrayOf(1, 20), intArrayOf(2, 10), intArrayOf(3, 5), intArrayOf(4, 9), intArrayOf(6, 8))
+                    arrayOf(intArrayOf(1, 20), intArrayOf(2, 10), intArrayOf(3, 5), intArrayOf(4, 9), intArrayOf(6, 8)),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

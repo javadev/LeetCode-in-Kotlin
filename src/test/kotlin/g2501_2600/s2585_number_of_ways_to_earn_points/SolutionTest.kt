@@ -11,11 +11,12 @@ internal class SolutionTest {
             Solution().waysToReachTarget(
                 5,
                 arrayOf(
-                    intArrayOf(50, 1), intArrayOf(50, 2),
-                    intArrayOf(50, 5)
-                )
+                    intArrayOf(50, 1),
+                    intArrayOf(50, 2),
+                    intArrayOf(50, 5),
+                ),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -25,11 +26,12 @@ internal class SolutionTest {
             Solution().waysToReachTarget(
                 6,
                 arrayOf(
-                    intArrayOf(6, 1), intArrayOf(3, 2),
-                    intArrayOf(2, 3)
-                )
+                    intArrayOf(6, 1),
+                    intArrayOf(3, 2),
+                    intArrayOf(2, 3),
+                ),
             ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -39,11 +41,12 @@ internal class SolutionTest {
             Solution().waysToReachTarget(
                 18,
                 arrayOf(
-                    intArrayOf(6, 1), intArrayOf(3, 2),
-                    intArrayOf(2, 3)
-                )
+                    intArrayOf(6, 1),
+                    intArrayOf(3, 2),
+                    intArrayOf(2, 3),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

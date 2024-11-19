@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun groupThePeople() {
         assertThat(
             Solution().groupThePeople(intArrayOf(3, 3, 3, 3, 3, 1, 3)),
-            equalTo(getLists(arrayOf(intArrayOf(5), intArrayOf(0, 1, 2), intArrayOf(3, 4, 6))))
+            equalTo(getLists(arrayOf(intArrayOf(5), intArrayOf(0, 1, 2), intArrayOf(3, 4, 6)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun groupThePeople2() {
         assertThat(
             Solution().groupThePeople(intArrayOf(2, 1, 3, 3, 3, 2)),
-            equalTo(getLists(arrayOf(intArrayOf(1), intArrayOf(0, 5), intArrayOf(2, 3, 4))))
+            equalTo(getLists(arrayOf(intArrayOf(1), intArrayOf(0, 5), intArrayOf(2, 3, 4)))),
         )
     }
 }

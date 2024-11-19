@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun buildArray() {
         assertThat(
             Solution().buildArray(intArrayOf(1, 3), 3),
-            equalTo(mutableListOf("Push", "Push", "Pop", "Push"))
+            equalTo(mutableListOf("Push", "Push", "Pop", "Push")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun buildArray2() {
         assertThat(
             Solution().buildArray(intArrayOf(1, 2, 3), 3),
-            equalTo(mutableListOf("Push", "Push", "Push"))
+            equalTo(mutableListOf("Push", "Push", "Push")),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun buildArray3() {
         assertThat(
             Solution().buildArray(intArrayOf(1, 2), 4),
-            equalTo(mutableListOf("Push", "Push"))
+            equalTo(mutableListOf("Push", "Push")),
         )
     }
 }

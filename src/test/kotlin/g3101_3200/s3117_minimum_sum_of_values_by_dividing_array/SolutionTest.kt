@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumValueSum() {
         assertThat(
             Solution().minimumValueSum(intArrayOf(1, 4, 3, 3, 2), intArrayOf(0, 3, 3, 2)),
-            equalTo(12)
+            equalTo(12),
         )
     }
 
@@ -18,14 +18,15 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumValueSum(intArrayOf(2, 3, 5, 7, 7, 7, 5), intArrayOf(0, 7, 5)),
-            equalTo(17)
+            equalTo(17),
         )
     }
 
     @Test
     fun minimumValueSum3() {
         assertThat(
-            Solution().minimumValueSum(intArrayOf(1, 2, 3, 4), intArrayOf(2)), equalTo(-1)
+            Solution().minimumValueSum(intArrayOf(1, 2, 3, 4), intArrayOf(2)),
+            equalTo(-1),
         )
     }
 }

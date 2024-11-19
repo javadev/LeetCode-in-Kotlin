@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun gcdValues() {
         assertThat<IntArray?>(
             Solution().gcdValues(intArrayOf(2, 3, 4), longArrayOf(0L, 2L, 2L)),
-            equalTo<IntArray?>(intArrayOf(1, 2, 2))
+            equalTo<IntArray?>(intArrayOf(1, 2, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun gcdValues2() {
         assertThat<IntArray?>(
             Solution().gcdValues(intArrayOf(4, 4, 2, 1), longArrayOf(5L, 3L, 1L, 0L)),
-            equalTo<IntArray?>(intArrayOf(4, 2, 1, 1))
+            equalTo<IntArray?>(intArrayOf(4, 2, 1, 1)),
         )
     }
 }

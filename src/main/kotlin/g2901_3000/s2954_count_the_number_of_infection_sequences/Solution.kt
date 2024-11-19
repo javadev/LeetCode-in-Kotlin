@@ -21,7 +21,7 @@ class Solution {
     private fun binomCoeff(n: Int, k: Int): Long {
         return max(
             1.0,
-            (fact[n] * invFact[k] % MOD * invFact[n - k] % MOD).toDouble()
+            (fact[n] * invFact[k] % MOD * invFact[n - k] % MOD).toDouble(),
         ).toLong()
     }
 

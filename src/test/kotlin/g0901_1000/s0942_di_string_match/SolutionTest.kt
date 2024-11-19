@@ -10,9 +10,10 @@ internal class SolutionTest {
     fun diStringMatch() {
         assertThat(
             CommonUtils.compareArray(
-                Solution().diStringMatch("IDID"), intArrayOf(0, 4, 1, 3, 2)
+                Solution().diStringMatch("IDID"),
+                intArrayOf(0, 4, 1, 3, 2),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

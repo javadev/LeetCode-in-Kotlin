@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .relativeSortArray(intArrayOf(2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19), intArrayOf(2, 1, 4, 3, 9, 6)),
-            equalTo(intArrayOf(2, 2, 2, 1, 4, 3, 3, 9, 6, 7, 19))
+            equalTo(intArrayOf(2, 2, 2, 1, 4, 3, 3, 9, 6, 7, 19)),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .relativeSortArray(intArrayOf(28, 6, 22, 8, 44, 17), intArrayOf(22, 28, 8, 6)),
-            equalTo(intArrayOf(22, 28, 8, 6, 17, 44))
+            equalTo(intArrayOf(22, 28, 8, 6, 17, 44)),
         )
     }
 }

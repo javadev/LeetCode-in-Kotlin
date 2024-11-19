@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumTotalSum() {
         assertThat<Long>(
             Solution().maximumTotalSum(intArrayOf(2, 3, 4, 3)),
-            equalTo<Long>(10L)
+            equalTo<Long>(10L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumTotalSum2() {
         assertThat<Long>(
             Solution().maximumTotalSum(intArrayOf(15, 10)),
-            equalTo<Long>(25L)
+            equalTo<Long>(25L),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maximumTotalSum3() {
         assertThat<Long>(
             Solution().maximumTotalSum(intArrayOf(2, 2, 1)),
-            equalTo<Long>(-1L)
+            equalTo<Long>(-1L),
         )
     }
 }

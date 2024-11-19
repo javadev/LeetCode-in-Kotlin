@@ -7,7 +7,11 @@ class Solution {
     fun videoStitching(clips: Array<IntArray>, time: Int): Int {
         clips.sortWith { a: IntArray, b: IntArray ->
             if (a[0] == b[0]
-            ) a[1] - b[1] else a[0] - b[0]
+            ) {
+                a[1] - b[1]
+            } else {
+                a[0] - b[0]
+            }
         }
         var count = 0
         var covered = 0

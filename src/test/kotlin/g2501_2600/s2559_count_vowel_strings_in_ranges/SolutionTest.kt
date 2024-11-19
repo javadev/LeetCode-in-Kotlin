@@ -12,10 +12,11 @@ internal class SolutionTest {
                 arrayOf("aba", "bcb", "ece", "aa", "e"),
                 arrayOf(
                     intArrayOf(0, 2),
-                    intArrayOf(1, 4), intArrayOf(1, 1)
-                )
+                    intArrayOf(1, 4),
+                    intArrayOf(1, 1),
+                ),
             ),
-            equalTo(intArrayOf(2, 3, 0))
+            equalTo(intArrayOf(2, 3, 0)),
         )
     }
 
@@ -25,11 +26,12 @@ internal class SolutionTest {
             Solution().vowelStrings(
                 arrayOf("a", "e", "i"),
                 arrayOf(
-                    intArrayOf(0, 2), intArrayOf(0, 1),
-                    intArrayOf(2, 2)
-                )
+                    intArrayOf(0, 2),
+                    intArrayOf(0, 1),
+                    intArrayOf(2, 2),
+                ),
             ),
-            equalTo(intArrayOf(3, 2, 1))
+            equalTo(intArrayOf(3, 2, 1)),
         )
     }
 }

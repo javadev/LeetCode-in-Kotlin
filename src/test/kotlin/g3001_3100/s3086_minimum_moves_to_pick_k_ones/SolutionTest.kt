@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumMoves() {
         assertThat(
             Solution().minimumMoves(intArrayOf(1, 1, 0, 0, 0, 1, 1, 0, 0, 1), 3, 1),
-            equalTo(3L)
+            equalTo(3L),
         )
     }
 

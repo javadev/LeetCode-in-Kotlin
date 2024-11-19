@@ -19,10 +19,10 @@ internal class SolutionTest {
                         intArrayOf(1, 5, 1),
                         intArrayOf(2, 3, 1),
                         intArrayOf(3, 5, 3),
-                        intArrayOf(4, 5, 2)
-                    )
+                        intArrayOf(4, 5, 2),
+                    ),
                 ),
-            equalTo(booleanArrayOf(true, true, true, false, true, true, true, false))
+            equalTo(booleanArrayOf(true, true, true, false, true, true, true, false)),
         )
     }
 
@@ -32,9 +32,9 @@ internal class SolutionTest {
             Solution()
                 .findAnswer(
                     4,
-                    arrayOf(intArrayOf(2, 0, 1), intArrayOf(0, 1, 1), intArrayOf(0, 3, 4), intArrayOf(3, 2, 2))
+                    arrayOf(intArrayOf(2, 0, 1), intArrayOf(0, 1, 1), intArrayOf(0, 3, 4), intArrayOf(3, 2, 2)),
                 ),
-            equalTo(booleanArrayOf(true, false, false, true))
+            equalTo(booleanArrayOf(true, false, false, true)),
         )
     }
 }

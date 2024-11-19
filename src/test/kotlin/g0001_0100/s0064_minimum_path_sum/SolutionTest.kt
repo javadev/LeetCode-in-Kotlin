@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minPathSum() {
         assertThat(
             Solution().minPathSum(arrayOf(intArrayOf(1, 3, 1), intArrayOf(1, 5, 1), intArrayOf(4, 2, 1))),
-            equalTo(7)
+            equalTo(7),
         )
     }
 

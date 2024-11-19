@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findOriginalArray() {
         assertThat(
             Solution().findOriginalArray(intArrayOf(1, 3, 4, 2, 6, 8)),
-            equalTo(intArrayOf(1, 3, 4))
+            equalTo(intArrayOf(1, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findOriginalArray2() {
         assertThat(
             Solution().findOriginalArray(intArrayOf(6, 3, 0, 1)),
-            equalTo(intArrayOf())
+            equalTo(intArrayOf()),
         )
     }
 

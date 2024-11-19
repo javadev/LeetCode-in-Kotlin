@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumLengthEncoding() {
         assertThat(
             Solution().minimumLengthEncoding(arrayOf("time", "me", "bell")),
-            equalTo(10)
+            equalTo(10),
         )
     }
 

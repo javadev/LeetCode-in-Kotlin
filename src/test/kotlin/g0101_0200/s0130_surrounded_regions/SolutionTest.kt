@@ -11,7 +11,7 @@ internal class SolutionTest {
             charArrayOf('X', 'X', 'X', 'X'),
             charArrayOf('X', 'O', 'O', 'X'),
             charArrayOf('X', 'X', 'O', 'X'),
-            charArrayOf('X', 'O', 'X', 'X')
+            charArrayOf('X', 'O', 'X', 'X'),
         )
         Solution().solve(board)
         assertThat(
@@ -21,9 +21,9 @@ internal class SolutionTest {
                     charArrayOf('X', 'X', 'X', 'X'),
                     charArrayOf('X', 'X', 'X', 'X'),
                     charArrayOf('X', 'X', 'X', 'X'),
-                    charArrayOf('X', 'O', 'X', 'X')
-                )
-            )
+                    charArrayOf('X', 'O', 'X', 'X'),
+                ),
+            ),
         )
     }
 

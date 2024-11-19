@@ -15,11 +15,11 @@ internal class SolutionTest {
                         "FooBarTest",
                         "FootBall",
                         "FrameBuffer",
-                        "ForceFeedBack"
+                        "ForceFeedBack",
                     ),
-                    "FB"
+                    "FB",
                 ),
-            equalTo(listOf(true, false, true, true, false))
+            equalTo(listOf(true, false, true, true, false)),
         )
     }
 
@@ -33,11 +33,11 @@ internal class SolutionTest {
                         "FooBarTest",
                         "FootBall",
                         "FrameBuffer",
-                        "ForceFeedBack"
+                        "ForceFeedBack",
                     ),
-                    "FoBa"
+                    "FoBa",
                 ),
-            equalTo(listOf(true, false, true, false, false))
+            equalTo(listOf(true, false, true, false, false)),
         )
     }
 
@@ -51,11 +51,11 @@ internal class SolutionTest {
                         "FooBarTest",
                         "FootBall",
                         "FrameBuffer",
-                        "ForceFeedBack"
+                        "ForceFeedBack",
                     ),
-                    "FoBaT"
+                    "FoBaT",
                 ),
-            equalTo(listOf(false, true, false, false, false))
+            equalTo(listOf(false, true, false, false, false)),
         )
     }
 }

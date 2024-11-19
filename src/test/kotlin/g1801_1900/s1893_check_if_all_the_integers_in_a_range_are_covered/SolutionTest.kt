@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isCovered() {
         assertThat(
             Solution().isCovered(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4), intArrayOf(5, 6)), 2, 5),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isCovered2() {
         assertThat(
             Solution().isCovered(arrayOf(intArrayOf(1, 10), intArrayOf(10, 20)), 21, 21),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

@@ -31,7 +31,7 @@ class Solution {
                     i,
                     j - 2,
                     s,
-                    p
+                    p,
                 )
             }
         } else {

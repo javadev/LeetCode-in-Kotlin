@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minWastedSpace() {
         assertThat(
             Solution().minWastedSpace(intArrayOf(2, 3, 5), arrayOf(intArrayOf(4, 8), intArrayOf(2, 8))),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minWastedSpace(intArrayOf(2, 3, 5), arrayOf(intArrayOf(1, 4), intArrayOf(2, 3), intArrayOf(3, 4))),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 
@@ -28,9 +28,9 @@ internal class SolutionTest {
             Solution()
                 .minWastedSpace(
                     intArrayOf(3, 5, 8, 10, 11, 12),
-                    arrayOf(intArrayOf(12), intArrayOf(11, 9), intArrayOf(10, 5, 14))
+                    arrayOf(intArrayOf(12), intArrayOf(11, 9), intArrayOf(10, 5, 14)),
                 ),
-            equalTo(9)
+            equalTo(9),
         )
     }
 }

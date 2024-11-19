@@ -10,14 +10,14 @@ internal class SolutionTest {
     fun convertBST() {
         val treeNode: TreeNode = TreeNode.create(
             listOf(
-                4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8
-            )
+                4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8,
+            ),
         )!!
         val expected: TreeNode = TreeNode.create(
             listOf(
                 30, 36, 21, 36, 35, 26, 15, null, null, null, 33, null, null, null,
-                8
-            )
+                8,
+            ),
         )!!
         assertThat(Solution().convertBST(treeNode).toString(), equalTo(expected.toString()))
     }

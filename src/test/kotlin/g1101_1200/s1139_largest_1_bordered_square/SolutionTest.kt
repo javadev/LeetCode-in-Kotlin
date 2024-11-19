@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .largest1BorderedSquare(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 0, 1), intArrayOf(1, 1, 1))),
-            equalTo(9)
+            equalTo(9),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun largest1BorderedSquare2() {
         assertThat(
             Solution().largest1BorderedSquare(arrayOf(intArrayOf(1, 1, 0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

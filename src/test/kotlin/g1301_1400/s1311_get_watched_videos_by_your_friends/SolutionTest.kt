@@ -11,17 +11,21 @@ internal class SolutionTest {
             Solution()
                 .watchedVideosByFriends(
                     listOf(
-                        mutableListOf("A", "B"), listOf("C"), mutableListOf("B", "C"),
-                        listOf("D")
+                        mutableListOf("A", "B"),
+                        listOf("C"),
+                        mutableListOf("B", "C"),
+                        listOf("D"),
                     ),
                     arrayOf(
-                        intArrayOf(1, 2), intArrayOf(0, 3),
-                        intArrayOf(0, 3), intArrayOf(1, 2)
+                        intArrayOf(1, 2),
+                        intArrayOf(0, 3),
+                        intArrayOf(0, 3),
+                        intArrayOf(1, 2),
                     ),
                     0,
-                    1
+                    1,
                 ),
-            equalTo(mutableListOf("B", "C"))
+            equalTo(mutableListOf("B", "C")),
         )
     }
 
@@ -31,14 +35,16 @@ internal class SolutionTest {
             Solution()
                 .watchedVideosByFriends(
                     listOf(
-                        mutableListOf("A", "B"), listOf("C"),
-                        mutableListOf("B", "C"), listOf("D")
+                        mutableListOf("A", "B"),
+                        listOf("C"),
+                        mutableListOf("B", "C"),
+                        listOf("D"),
                     ),
                     arrayOf(intArrayOf(1, 2), intArrayOf(0, 3), intArrayOf(0, 3), intArrayOf(1, 2)),
                     0,
-                    2
+                    2,
                 ),
-            equalTo(listOf("D"))
+            equalTo(listOf("D")),
         )
     }
 }

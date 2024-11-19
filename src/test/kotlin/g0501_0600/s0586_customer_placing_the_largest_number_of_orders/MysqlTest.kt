@@ -20,8 +20,8 @@ import javax.sql.DataSource
             "INSERT INTO Orders(order_number, customer_number) VALUES (1, 1); " +
             "INSERT INTO Orders(order_number, customer_number) VALUES (2, 2); " +
             "INSERT INTO Orders(order_number, customer_number) VALUES (3, 3); " +
-            "INSERT INTO Orders(order_number, customer_number) VALUES (4, 3); "
-    ]
+            "INSERT INTO Orders(order_number, customer_number) VALUES (4, 3); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -35,12 +35,12 @@ internal class MysqlTest {
                             "src/main/kotlin/g0501_0600/" +
                                 "s0586_customer_placing" +
                                 "_the_largest_number_of" +
-                                "_orders/script.sql"
-                        )
+                                "_orders/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(3))

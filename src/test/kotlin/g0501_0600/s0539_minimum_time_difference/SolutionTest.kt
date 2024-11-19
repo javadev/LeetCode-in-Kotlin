@@ -15,7 +15,7 @@ internal class SolutionTest {
     fun findMinDifference2() {
         assertThat(
             Solution().findMinDifference(listOf("00:00", "23:59", "00:00")),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -40,8 +40,9 @@ internal class SolutionTest {
             timePoints.add(
                 String.format(
                     "%s:%s",
-                    if (hour < 10) "0$hour" else hour, if (minute < 10) "0$minute" else minute
-                )
+                    if (hour < 10) "0$hour" else hour,
+                    if (minute < 10) "0$minute" else minute,
+                ),
             )
             index++
         }

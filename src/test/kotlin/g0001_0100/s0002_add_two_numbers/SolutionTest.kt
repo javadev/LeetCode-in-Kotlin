@@ -12,7 +12,8 @@ internal class SolutionTest {
         val listNode1: ListNode? = contructLinkedList(intArrayOf(2, 4, 3))
         val listNode2: ListNode? = contructLinkedList(intArrayOf(5, 6, 4))
         assertThat(
-            Solution().addTwoNumbers(listNode1, listNode2).toString(), equalTo("7, 0, 8")
+            Solution().addTwoNumbers(listNode1, listNode2).toString(),
+            equalTo("7, 0, 8"),
         )
     }
 
@@ -20,7 +21,7 @@ internal class SolutionTest {
     fun addTwoNumbers2() {
         assertThat(
             Solution().addTwoNumbers(ListNode(0), ListNode(0)).toString(),
-            equalTo("0")
+            equalTo("0"),
         )
     }
 
@@ -30,7 +31,7 @@ internal class SolutionTest {
         val listNode2: ListNode? = contructLinkedList(intArrayOf(9, 9, 9, 9))
         assertThat(
             Solution().addTwoNumbers(listNode1, listNode2).toString(),
-            equalTo("8, 9, 9, 9, 0, 0, 0, 1")
+            equalTo("8, 9, 9, 9, 0, 0, 0, 1"),
         )
     }
 }

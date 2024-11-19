@@ -14,8 +14,8 @@ internal class SolutionTest {
                     arrayOf("eat", "tea", "ate").toList(),
                     arrayOf("bat").toList(),
                     arrayOf("tan", "nat").toList(),
-                ).toList()
-            )
+                ).toList(),
+            ),
         )
     }
 

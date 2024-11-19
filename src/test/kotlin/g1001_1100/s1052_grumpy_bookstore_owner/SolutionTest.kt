@@ -10,10 +10,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxSatisfied(
-                    intArrayOf(1, 0, 1, 2, 1, 1, 7, 5), intArrayOf(0, 1, 0, 1, 0, 1, 0, 1),
-                    3
+                    intArrayOf(1, 0, 1, 2, 1, 1, 7, 5),
+                    intArrayOf(0, 1, 0, 1, 0, 1, 0, 1),
+                    3,
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 

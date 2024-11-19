@@ -81,7 +81,7 @@ class Solution {
         i2: Int,
         diff: Int,
         indexNums1: List<IntArray>,
-        indexNums2: List<IntArray>
+        indexNums2: List<IntArray>,
     ): Boolean {
         val c1 = s1!![i1]
         val c2 = s2!![i2]

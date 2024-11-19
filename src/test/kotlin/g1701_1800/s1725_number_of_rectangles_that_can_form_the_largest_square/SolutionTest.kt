@@ -11,10 +11,12 @@ internal class SolutionTest {
             Solution().countGoodRectangles(
                 arrayOf(
                     intArrayOf(5, 8),
-                    intArrayOf(3, 9), intArrayOf(5, 12), intArrayOf(16, 5)
-                )
+                    intArrayOf(3, 9),
+                    intArrayOf(5, 12),
+                    intArrayOf(16, 5),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -24,10 +26,12 @@ internal class SolutionTest {
             Solution().countGoodRectangles(
                 arrayOf(
                     intArrayOf(2, 3),
-                    intArrayOf(3, 7), intArrayOf(4, 3), intArrayOf(3, 7)
-                )
+                    intArrayOf(3, 7),
+                    intArrayOf(4, 3),
+                    intArrayOf(3, 7),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

@@ -9,7 +9,10 @@ internal class SolutionTest {
     fun findRestaurant() {
         val list1 = arrayOf<String>("Shogun", "Tapioca Express", "Burger King", "KFC")
         val list2 = arrayOf(
-            "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"
+            "Piatti",
+            "The Grill at Torrey Pines",
+            "Hungry Hunter Steakhouse",
+            "Shogun",
         )
         assertThat(Solution().findRestaurant(list1, list2), equalTo(arrayOf("Shogun")))
     }

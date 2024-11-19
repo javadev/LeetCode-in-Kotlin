@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxBuilding() {
         assertThat(
             Solution().maxBuilding(5, arrayOf(intArrayOf(2, 1), intArrayOf(4, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun maxBuilding3() {
         assertThat(
             Solution().maxBuilding(5, arrayOf(intArrayOf(5, 3), intArrayOf(2, 5), intArrayOf(7, 4), intArrayOf(10, 3))),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findRedundantConnection() {
         assertThat(
             Solution().findRedundantConnection(arrayOf(intArrayOf(1, 2), intArrayOf(1, 3), intArrayOf(2, 3))),
-            equalTo(intArrayOf(2, 3))
+            equalTo(intArrayOf(2, 3)),
         )
     }
 
@@ -23,10 +23,10 @@ internal class SolutionTest {
                         intArrayOf(2, 3),
                         intArrayOf(3, 4),
                         intArrayOf(1, 4),
-                        intArrayOf(1, 5)
-                    )
+                        intArrayOf(1, 5),
+                    ),
                 ),
-            equalTo(intArrayOf(1, 4))
+            equalTo(intArrayOf(1, 4)),
         )
     }
 }

@@ -9,9 +9,10 @@ internal class SolutionTest {
     fun sortArrayByParity() {
         assertThat(
             compareArray(
-                Solution().sortArrayByParity(intArrayOf(3, 1, 2, 4)), intArrayOf(2, 4, 3, 1)
+                Solution().sortArrayByParity(intArrayOf(3, 1, 2, 4)),
+                intArrayOf(2, 4, 3, 1),
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

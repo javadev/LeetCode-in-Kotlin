@@ -33,8 +33,8 @@ import javax.sql.DataSource
             "INSERT INTO EmployeeUNI(id, unique_id)" +
             " VALUES (11, 2); " +
             "INSERT INTO EmployeeUNI(id, unique_id)" +
-            " VALUES (90, 3); "
-    ]
+            " VALUES (90, 3); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -46,12 +46,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1301_1400/s1378_replace_employee_id_with_the_unique_identifier" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo(null))

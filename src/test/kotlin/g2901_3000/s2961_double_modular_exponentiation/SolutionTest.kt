@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .getGoodIndices(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[2,3,3,10],[3,3,3,1],[6,1,1,4]"
+                        "[2,3,3,10],[3,3,3,1],[6,1,1,4]",
                     ),
-                    2
+                    2,
                 ),
-            equalTo(listOf(0, 2))
+            equalTo(listOf(0, 2)),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun goodIndices2() {
         assertThat(
             Solution().getGoodIndices(arrayOf(intArrayOf(39, 3, 1000, 1000)), 17),
-            equalTo(listOf<Any>())
+            equalTo(listOf<Any>()),
         )
     }
 }

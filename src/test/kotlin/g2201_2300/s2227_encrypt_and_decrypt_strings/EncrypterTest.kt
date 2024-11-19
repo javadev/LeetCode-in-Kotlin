@@ -8,10 +8,18 @@ internal class EncrypterTest {
     @Test
     fun encrypterTest() {
         val encrypter = Encrypter(
-            charArrayOf('a', 'b', 'c', 'd'), arrayOf("ei", "zf", "ei", "am"),
+            charArrayOf('a', 'b', 'c', 'd'),
+            arrayOf("ei", "zf", "ei", "am"),
             arrayOf(
-                "abcd", "acbd", "adbc", "badc", "dacb", "cadb", "cbda", "abad"
-            )
+                "abcd",
+                "acbd",
+                "adbc",
+                "badc",
+                "dacb",
+                "cadb",
+                "cbda",
+                "abad",
+            ),
         )
         assertThat(encrypter.encrypt("abcd"), equalTo("eizfeiam"))
         assertThat(encrypter.decrypt("eizfeiam"), equalTo(2))

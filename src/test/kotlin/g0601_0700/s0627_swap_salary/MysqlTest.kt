@@ -25,8 +25,8 @@ import javax.sql.DataSource
             "INSERT INTO Salary(id, name, sex, salary)" +
             " VALUES (3, 'C', 'm', 5500); " +
             "INSERT INTO Salary(id, name, sex, salary)" +
-            " VALUES (4, 'D', 'f', 500); "
-    ]
+            " VALUES (4, 'D', 'f', 500); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -38,12 +38,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g0601_0700/" +
-                                "s0627_swap_salary/script.sql"
-                        )
+                                "s0627_swap_salary/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 )
                 val resultSet = statement.executeQuery("select id, name, sex, salary from Salary")
                 assertThat(resultSet.next(), equalTo(true))

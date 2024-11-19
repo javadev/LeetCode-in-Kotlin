@@ -31,8 +31,8 @@ import javax.sql.DataSource
             "INSERT INTO Users(user_id, name, mail)" +
             " VALUES (6, 'David', 'david69@gmail.com'); " +
             "INSERT INTO Users(user_id, name, mail)" +
-            " VALUES (7, 'Shapiro', '.shapo@leetcode.com'); "
-    ]
+            " VALUES (7, 'Shapiro', '.shapo@leetcode.com'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -44,12 +44,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1501_1600/s1517_find_users_with_valid_e_mails" +
-                                "/script.sql"
-                        )
+                                "/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(1))

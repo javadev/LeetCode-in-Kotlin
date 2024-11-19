@@ -11,10 +11,10 @@ internal class SolutionTest {
             Solution().minFlips(
                 arrayOf(
                     intArrayOf(0, 0),
-                    intArrayOf(0, 1)
-                )
+                    intArrayOf(0, 1),
+                ),
             ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minFlips2() {
         assertThat(
             Solution().minFlips(arrayOf(intArrayOf(0))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -32,10 +32,10 @@ internal class SolutionTest {
             Solution().minFlips(
                 arrayOf(
                     intArrayOf(1, 0, 0),
-                    intArrayOf(1, 0, 0)
-                )
+                    intArrayOf(1, 0, 0),
+                ),
             ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

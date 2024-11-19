@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumIndicesWithKSetBits() {
         assertThat(
             Solution().sumIndicesWithKSetBits(mutableListOf(5, 10, 1, 5, 2), 1),
-            equalTo(13)
+            equalTo(13),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumIndicesWithKSetBits2() {
         assertThat(
             Solution().sumIndicesWithKSetBits(mutableListOf(4, 3, 2, 1), 2),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

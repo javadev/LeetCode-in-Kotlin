@@ -85,7 +85,9 @@ class Solution {
     private fun match(ch: Char): Boolean {
         return if (isAtEnd) {
             false
-        } else peek() == ch
+        } else {
+            peek() == ch
+        }
     }
 
     private fun consume(ch: Char) {

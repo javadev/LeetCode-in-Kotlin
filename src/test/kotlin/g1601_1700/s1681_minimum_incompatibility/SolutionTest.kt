@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun minimumIncompatibility2() {
         assertThat(
             Solution().minimumIncompatibility(intArrayOf(6, 3, 8, 1, 3, 1, 2, 2), 4),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun minimumIncompatibility3() {
         assertThat(
             Solution().minimumIncompatibility(intArrayOf(5, 3, 3, 6, 3, 3), 3),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 }

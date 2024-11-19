@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun numberToWords2() {
         assertThat(
             Solution().numberToWords(12345),
-            equalTo("Twelve Thousand Three Hundred Forty Five")
+            equalTo("Twelve Thousand Three Hundred Forty Five"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun numberToWords3() {
         assertThat(
             Solution().numberToWords(1234567),
-            equalTo("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven")
+            equalTo("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"),
         )
     }
 }

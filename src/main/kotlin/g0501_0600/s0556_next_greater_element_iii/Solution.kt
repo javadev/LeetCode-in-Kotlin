@@ -14,7 +14,7 @@ class Solution {
                look for largest index l such that inp[l] > inp[k]
                swap the two index
                reverse from k+1 to n.length
-       */
+     */
     fun nextGreaterElement(n: Int): Int {
         val inp = n.toString().toCharArray()
         // Find k

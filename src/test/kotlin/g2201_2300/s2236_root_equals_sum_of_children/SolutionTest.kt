@@ -11,9 +11,9 @@ internal class SolutionTest {
         val treeNode = TreeNode.create(mutableListOf(10, 4, 6))
         assertThat(
             Solution().checkTree(
-                treeNode!!
+                treeNode!!,
             ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -22,9 +22,9 @@ internal class SolutionTest {
         val treeNode = TreeNode.create(mutableListOf(5, 3, 1))
         assertThat(
             Solution().checkTree(
-                treeNode!!
+                treeNode!!,
             ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

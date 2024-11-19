@@ -10,9 +10,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxPerformance(
-                    6, intArrayOf(2, 10, 3, 1, 5, 8), intArrayOf(5, 4, 3, 9, 7, 2), 2
+                    6,
+                    intArrayOf(2, 10, 3, 1, 5, 8),
+                    intArrayOf(5, 4, 3, 9, 7, 2),
+                    2,
                 ),
-            equalTo(60)
+            equalTo(60),
         )
     }
 
@@ -21,9 +24,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxPerformance(
-                    6, intArrayOf(2, 10, 3, 1, 5, 8), intArrayOf(5, 4, 3, 9, 7, 2), 3
+                    6,
+                    intArrayOf(2, 10, 3, 1, 5, 8),
+                    intArrayOf(5, 4, 3, 9, 7, 2),
+                    3,
                 ),
-            equalTo(68)
+            equalTo(68),
         )
     }
 
@@ -32,9 +38,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxPerformance(
-                    6, intArrayOf(2, 10, 3, 1, 5, 8), intArrayOf(5, 4, 3, 9, 7, 2), 4
+                    6,
+                    intArrayOf(2, 10, 3, 1, 5, 8),
+                    intArrayOf(5, 4, 3, 9, 7, 2),
+                    4,
                 ),
-            equalTo(72)
+            equalTo(72),
         )
     }
 }

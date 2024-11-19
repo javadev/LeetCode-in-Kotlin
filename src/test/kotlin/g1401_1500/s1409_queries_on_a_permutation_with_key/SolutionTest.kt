@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun processQueries() {
         assertThat(
             Solution().processQueries(intArrayOf(3, 1, 2, 1), 5),
-            equalTo(intArrayOf(2, 1, 2, 1))
+            equalTo(intArrayOf(2, 1, 2, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun processQueries2() {
         assertThat(
             Solution().processQueries(intArrayOf(4, 1, 2, 2), 4),
-            equalTo(intArrayOf(3, 1, 2, 0))
+            equalTo(intArrayOf(3, 1, 2, 0)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun processQueries3() {
         assertThat(
             Solution().processQueries(intArrayOf(7, 5, 5, 8, 3), 8),
-            equalTo(intArrayOf(6, 5, 0, 7, 5))
+            equalTo(intArrayOf(6, 5, 0, 7, 5)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun goodDaysToRobBank() {
         assertThat(
             Solution().goodDaysToRobBank(intArrayOf(5, 3, 3, 3, 5, 6, 2), 2),
-            equalTo(listOf(2, 3))
+            equalTo(listOf(2, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun goodDaysToRobBank2() {
         assertThat(
             Solution().goodDaysToRobBank(intArrayOf(1, 1, 1, 1, 1), 0),
-            equalTo(listOf(0, 1, 2, 3, 4))
+            equalTo(listOf(0, 1, 2, 3, 4)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun goodDaysToRobBank3() {
         assertThat(
             Solution().goodDaysToRobBank(intArrayOf(1, 2, 3, 4, 5, 6), 2),
-            equalTo(emptyList<Any>())
+            equalTo(emptyList<Any>()),
         )
     }
 }

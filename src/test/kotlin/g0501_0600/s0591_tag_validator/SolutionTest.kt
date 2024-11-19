@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isValid() {
         assertThat(
             Solution().isValid("<DIV>This is the first line <![CDATA[<div>]]></DIV>"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -18,9 +18,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .isValid(
-                    "<ABCDEFGHIJKLMN>This is the first line <![CDATA[<div>]]></ABCDEFGHIJKLMN>"
+                    "<ABCDEFGHIJKLMN>This is the first line <![CDATA[<div>]]></ABCDEFGHIJKLMN>",
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

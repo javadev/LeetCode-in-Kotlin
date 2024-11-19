@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun compress() {
         assertThat(
             Solution().compress(charArrayOf('a', 'a', 'b', 'b', 'c', 'c', 'c')),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -24,10 +24,10 @@ internal class SolutionTest {
             Solution()
                 .compress(
                     charArrayOf(
-                        'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'
-                    )
+                        'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b',
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

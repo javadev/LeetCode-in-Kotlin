@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun uniqueOccurrences3() {
         assertThat(
             Solution().uniqueOccurrences(intArrayOf(-3, 0, 1, -3, 1, 1, 1, -3, 10, 0)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

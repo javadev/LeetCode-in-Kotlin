@@ -22,6 +22,8 @@ class Solution {
         }
         return if (ld == -1) {
             -1
-        } else ans
+        } else {
+            ans
+        }
     }
 }

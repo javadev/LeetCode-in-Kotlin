@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .maximalPathQuality(
                     intArrayOf(0, 32, 10, 43),
                     arrayOf(intArrayOf(0, 1, 10), intArrayOf(1, 2, 15), intArrayOf(0, 3, 10)),
-                    49
+                    49,
                 ),
-            equalTo(75)
+            equalTo(75),
         )
     }
 
@@ -25,9 +25,9 @@ internal class SolutionTest {
                 .maximalPathQuality(
                     intArrayOf(1, 2, 3, 4),
                     arrayOf(intArrayOf(0, 1, 10), intArrayOf(1, 2, 11), intArrayOf(2, 3, 12), intArrayOf(1, 3, 13)),
-                    50
+                    50,
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -38,9 +38,9 @@ internal class SolutionTest {
                 .maximalPathQuality(
                     intArrayOf(5, 10, 15, 20),
                     arrayOf(intArrayOf(0, 1, 10), intArrayOf(1, 2, 10), intArrayOf(0, 3, 10)),
-                    30
+                    30,
                 ),
-            equalTo(25)
+            equalTo(25),
         )
     }
 }

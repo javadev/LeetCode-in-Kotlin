@@ -20,7 +20,7 @@ internal class DiningPhilosophersTest {
                         { calls[0]++ },
                         { calls[0]++ },
                         { calls[0]++ },
-                        { calls[0]++ }
+                        { calls[0]++ },
                     ) { calls[0]++ }
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
@@ -36,7 +36,7 @@ internal class DiningPhilosophersTest {
                         { calls[0]++ },
                         { calls[0]++ },
                         { calls[0]++ },
-                        { calls[0]++ }
+                        { calls[0]++ },
                     ) { calls[0]++ }
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
@@ -52,7 +52,7 @@ internal class DiningPhilosophersTest {
                         { calls[0]++ },
                         { calls[0]++ },
                         { calls[0]++ },
-                        { calls[0]++ }
+                        { calls[0]++ },
                     ) { calls[0]++ }
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
@@ -68,7 +68,7 @@ internal class DiningPhilosophersTest {
                         { calls[0]++ },
                         { calls[0]++ },
                         { calls[0]++ },
-                        { calls[0]++ }
+                        { calls[0]++ },
                     ) { calls[0]++ }
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
@@ -84,7 +84,7 @@ internal class DiningPhilosophersTest {
                         { calls[0]++ },
                         { calls[0]++ },
                         { calls[0]++ },
-                        { calls[0]++ }
+                        { calls[0]++ },
                     ) { calls[0]++ }
                 } catch (e: InterruptedException) {
                     e.printStackTrace()

@@ -12,9 +12,9 @@ internal class SolutionTest {
             Solution()
                 .criticalConnections(
                     4,
-                    getLists(arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 0), intArrayOf(1, 3)))
+                    getLists(arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 0), intArrayOf(1, 3))),
                 ),
-            equalTo(getLists(arrayOf(intArrayOf(3, 1))))
+            equalTo(getLists(arrayOf(intArrayOf(3, 1)))),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun criticalConnections2() {
         assertThat(
             Solution().criticalConnections(2, getLists(arrayOf(intArrayOf(0, 1)))),
-            equalTo(getLists(arrayOf(intArrayOf(1, 0))))
+            equalTo(getLists(arrayOf(intArrayOf(1, 0)))),
         )
     }
 }

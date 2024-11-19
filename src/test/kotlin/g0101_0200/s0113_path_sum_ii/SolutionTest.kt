@@ -10,11 +10,11 @@ internal class SolutionTest {
     @Test
     fun pathSum() {
         val root: TreeNode? = TreeNode.create(
-            listOf(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1)
+            listOf(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1),
         )
         assertThat(
             Solution().pathSum(root, 22),
-            equalTo(getLists(arrayOf(intArrayOf(5, 4, 11, 2), intArrayOf(5, 8, 4, 5))))
+            equalTo(getLists(arrayOf(intArrayOf(5, 4, 11, 2), intArrayOf(5, 8, 4, 5)))),
         )
     }
 

@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun combinationSum3() {
         assertThat(
             Solution().combinationSum3(3, 7),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2, 4))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2, 4)))),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun combinationSum32() {
         assertThat(
             Solution().combinationSum3(3, 9),
-            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2, 6), intArrayOf(1, 3, 5), intArrayOf(2, 3, 4))))
+            equalTo(ArrayUtils.getLists(arrayOf(intArrayOf(1, 2, 6), intArrayOf(1, 3, 5), intArrayOf(2, 3, 4)))),
         )
     }
 }

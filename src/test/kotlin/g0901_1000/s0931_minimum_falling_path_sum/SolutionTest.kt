@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun minFallingPathSum() {
         assertThat(
             Solution().minFallingPathSum(arrayOf(intArrayOf(2, 1, 3), intArrayOf(6, 5, 4), intArrayOf(7, 8, 9))),
-            equalTo(13)
+            equalTo(13),
         )
     }
 
     @Test
     fun minFallingPathSum2() {
         assertThat(
-            Solution().minFallingPathSum(arrayOf(intArrayOf(-19, 57), intArrayOf(-40, -5))), equalTo(-59)
+            Solution().minFallingPathSum(arrayOf(intArrayOf(-19, 57), intArrayOf(-40, -5))),
+            equalTo(-59),
         )
     }
 }

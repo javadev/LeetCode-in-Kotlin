@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .findChampion(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,0]"
-                    )
+                        "[0,1],[0,0]",
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .findChampion(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,0,1],[1,0,1],[0,0,0]"
-                    )
+                        "[0,0,1],[1,0,1],[0,0,0]",
+                    ),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -38,10 +38,10 @@ internal class SolutionTest {
             Solution()
                 .findChampion(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,0,0],[1,0,0],[1,1,0]"
-                    )
+                        "[0,0,0],[1,0,0],[1,1,0]",
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

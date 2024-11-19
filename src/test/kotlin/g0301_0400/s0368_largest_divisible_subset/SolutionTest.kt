@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun largestDivisibleSubset() {
         assertThat(
             Solution().largestDivisibleSubset(intArrayOf(1, 2, 3)),
-            equalTo(listOf(2, 1))
+            equalTo(listOf(2, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun largestDivisibleSubset2() {
         assertThat(
             Solution().largestDivisibleSubset(intArrayOf(1, 2, 4, 8)),
-            equalTo(listOf(8, 4, 2, 1))
+            equalTo(listOf(8, 4, 2, 1)),
         )
     }
 }

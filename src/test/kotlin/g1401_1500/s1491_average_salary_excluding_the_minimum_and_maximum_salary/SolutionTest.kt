@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun average() {
         assertThat(
             Solution().average(intArrayOf(4000, 3000, 1000, 2000)),
-            equalTo(2500.00000)
+            equalTo(2500.00000),
         )
     }
 

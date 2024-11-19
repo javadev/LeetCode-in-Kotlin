@@ -15,9 +15,9 @@ internal class SolutionTest {
                 arrayOf(
                     intArrayOf(3, 0, 2, 6, 8),
                     intArrayOf(5, 0, -1, -1, 1),
-                    intArrayOf(5, 2, 4, 9, 7)
-                )
-            )
+                    intArrayOf(5, 2, 4, 9, 7),
+                ),
+            ),
         )
     }
 
@@ -25,7 +25,8 @@ internal class SolutionTest {
     fun spiralMatrix2() {
         val listNode = contructLinkedList(intArrayOf(0, 1, 2))
         assertThat(
-            Solution().spiralMatrix(1, 4, listNode), equalTo(arrayOf(intArrayOf(0, 1, 2, -1)))
+            Solution().spiralMatrix(1, 4, listNode),
+            equalTo(arrayOf(intArrayOf(0, 1, 2, -1))),
         )
     }
 }

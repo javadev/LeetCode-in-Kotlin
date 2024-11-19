@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun circularGameLosers() {
         assertThat(
             Solution().circularGameLosers(5, 2),
-            equalTo(intArrayOf(4, 5))
+            equalTo(intArrayOf(4, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun circularGameLosers2() {
         assertThat(
             Solution().circularGameLosers(4, 4),
-            equalTo(intArrayOf(2, 3, 4))
+            equalTo(intArrayOf(2, 3, 4)),
         )
     }
 }

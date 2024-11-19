@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun leftRightDifference() {
         assertThat(
             Solution().leftRightDifference(intArrayOf(10, 4, 8, 3)),
-            equalTo(intArrayOf(15, 1, 11, 22))
+            equalTo(intArrayOf(15, 1, 11, 22)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun leftRightDifference2() {
         assertThat(
             Solution().leftRightDifference(intArrayOf(1)),
-            equalTo(intArrayOf(0))
+            equalTo(intArrayOf(0)),
         )
     }
 }

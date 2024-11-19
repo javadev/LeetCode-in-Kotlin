@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun kthSmallestProduct() {
         assertThat(
             Solution().kthSmallestProduct(intArrayOf(2, 5), intArrayOf(3, 4), 2),
-            equalTo(8L)
+            equalTo(8L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun kthSmallestProduct2() {
         assertThat(
             Solution().kthSmallestProduct(intArrayOf(-4, -2, 0, 3), intArrayOf(2, 4), 6),
-            equalTo(0L)
+            equalTo(0L),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .kthSmallestProduct(intArrayOf(-2, -1, 0, 1, 2), intArrayOf(-3, -1, 2, 4, 5), 3),
-            equalTo(-6L)
+            equalTo(-6L),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .friendRequests(3, arrayOf(intArrayOf(0, 1)), arrayOf(intArrayOf(0, 2), intArrayOf(2, 1))),
-            equalTo(booleanArrayOf(true, false))
+            equalTo(booleanArrayOf(true, false)),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .friendRequests(3, arrayOf(intArrayOf(0, 1)), arrayOf(intArrayOf(1, 2), intArrayOf(0, 2))),
-            equalTo(booleanArrayOf(true, false))
+            equalTo(booleanArrayOf(true, false)),
         )
     }
 
@@ -30,9 +30,9 @@ internal class SolutionTest {
                 .friendRequests(
                     5,
                     arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 3)),
-                    arrayOf(intArrayOf(0, 4), intArrayOf(1, 2), intArrayOf(3, 1), intArrayOf(3, 4))
+                    arrayOf(intArrayOf(0, 4), intArrayOf(1, 2), intArrayOf(3, 1), intArrayOf(3, 4)),
                 ),
-            equalTo(booleanArrayOf(true, false, true, false))
+            equalTo(booleanArrayOf(true, false, true, false)),
         )
     }
 }

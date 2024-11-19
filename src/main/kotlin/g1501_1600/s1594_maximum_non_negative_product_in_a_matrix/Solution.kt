@@ -38,6 +38,8 @@ class Solution {
         }
         return if (dp[rows - 1][cols - 1].max < 0) {
             -1
-        } else (dp[rows - 1][cols - 1].max % (1e9 + 7)).toInt()
+        } else {
+            (dp[rows - 1][cols - 1].max % (1e9 + 7)).toInt()
+        }
     }
 }

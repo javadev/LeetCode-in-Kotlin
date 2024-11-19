@@ -12,11 +12,13 @@ internal class SolutionTest {
                 intArrayOf(1, 0, 0, 0, 0, 1),
                 arrayOf(
                     intArrayOf(0, 1),
-                    intArrayOf(1, 2), intArrayOf(2, 3),
-                    intArrayOf(3, 4), intArrayOf(4, 5)
-                )
+                    intArrayOf(1, 2),
+                    intArrayOf(2, 3),
+                    intArrayOf(3, 4),
+                    intArrayOf(4, 5),
+                ),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -27,11 +29,15 @@ internal class SolutionTest {
                 intArrayOf(0, 0, 0, 1, 1, 0, 0, 1),
                 arrayOf(
                     intArrayOf(0, 1),
-                    intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(1, 4), intArrayOf(2, 5),
-                    intArrayOf(5, 6), intArrayOf(5, 7)
-                )
+                    intArrayOf(0, 2),
+                    intArrayOf(1, 3),
+                    intArrayOf(1, 4),
+                    intArrayOf(2, 5),
+                    intArrayOf(5, 6),
+                    intArrayOf(5, 7),
+                ),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

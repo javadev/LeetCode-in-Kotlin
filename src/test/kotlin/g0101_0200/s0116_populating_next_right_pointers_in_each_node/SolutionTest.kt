@@ -17,7 +17,7 @@ internal class SolutionTest {
             1,
             Node(2, Node(4), Node(5), null),
             Node(3, Node(6), Node(7), null),
-            null
+            null,
         )
         val node7 = Node(7)
         val node6 = Node(6, null, null, node7)

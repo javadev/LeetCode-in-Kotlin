@@ -11,10 +11,12 @@ internal class SolutionTest {
             Solution().getCollisionTimes(
                 arrayOf(
                     intArrayOf(1, 2),
-                    intArrayOf(2, 1), intArrayOf(4, 3), intArrayOf(7, 2)
-                )
+                    intArrayOf(2, 1),
+                    intArrayOf(4, 3),
+                    intArrayOf(7, 2),
+                ),
             ),
-            equalTo(doubleArrayOf(1.00000, -1.00000, 3.00000, -1.00000))
+            equalTo(doubleArrayOf(1.00000, -1.00000, 3.00000, -1.00000)),
         )
     }
 
@@ -23,11 +25,13 @@ internal class SolutionTest {
         assertThat(
             Solution().getCollisionTimes(
                 arrayOf(
-                    intArrayOf(3, 4), intArrayOf(5, 4),
-                    intArrayOf(6, 3), intArrayOf(9, 1)
-                )
+                    intArrayOf(3, 4),
+                    intArrayOf(5, 4),
+                    intArrayOf(6, 3),
+                    intArrayOf(9, 1),
+                ),
             ),
-            equalTo(doubleArrayOf(2.00000, 1.00000, 1.50000, -1.00000))
+            equalTo(doubleArrayOf(2.00000, 1.00000, 1.50000, -1.00000)),
         )
     }
 }

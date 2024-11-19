@@ -14,11 +14,11 @@ internal class SolutionTest {
             intArrayOf(2, 1, 3),
             intArrayOf(2, 3, 1),
             intArrayOf(3, 1, 2),
-            intArrayOf(3, 2, 1)
+            intArrayOf(3, 2, 1),
         )
         assertThat(
             Solution().permute(intArrayOf(1, 2, 3)),
-            equalTo(getLists(expected))
+            equalTo(getLists(expected)),
         )
     }
 
@@ -26,7 +26,8 @@ internal class SolutionTest {
     fun permute2() {
         val expected = arrayOf(intArrayOf(0, 1), intArrayOf(1, 0))
         assertThat(
-            Solution().permute(intArrayOf(0, 1)), equalTo(getLists(expected))
+            Solution().permute(intArrayOf(0, 1)),
+            equalTo(getLists(expected)),
         )
     }
 

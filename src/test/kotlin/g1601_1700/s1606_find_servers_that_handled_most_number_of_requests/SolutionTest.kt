@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .busiestServers(3, intArrayOf(1, 2, 3, 4, 5), intArrayOf(5, 2, 3, 3, 3)),
-            equalTo(listOf(1))
+            equalTo(listOf(1)),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun busiestServers2() {
         assertThat(
             Solution().busiestServers(3, intArrayOf(1, 2, 3, 4), intArrayOf(1, 2, 1, 2)),
-            equalTo(listOf(0))
+            equalTo(listOf(0)),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun busiestServers3() {
         assertThat(
             Solution().busiestServers(3, intArrayOf(1, 2, 3), intArrayOf(10, 12, 11)),
-            equalTo(mutableListOf(0, 1, 2))
+            equalTo(mutableListOf(0, 1, 2)),
         )
     }
 }

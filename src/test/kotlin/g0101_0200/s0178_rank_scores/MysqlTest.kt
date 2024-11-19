@@ -22,8 +22,8 @@ import javax.sql.DataSource
             "INSERT INTO Scores(id, score) VALUES (3, 4.00); " +
             "INSERT INTO Scores(id, score) VALUES (4, 3.85); " +
             "INSERT INTO Scores(id, score) VALUES (5, 4.00); " +
-            "INSERT INTO Scores(id, score) VALUES (6, 3.65); "
-    ]
+            "INSERT INTO Scores(id, score) VALUES (6, 3.65); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -34,12 +34,12 @@ internal class MysqlTest {
                 statement.executeQuery(
                     BufferedReader(
                         FileReader(
-                            "src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql"
-                        )
+                            "src/main/kotlin/g0101_0200/s0178_rank_scores/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getDouble(1), equalTo(4.0))

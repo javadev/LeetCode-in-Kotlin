@@ -23,7 +23,7 @@ class Solution {
             if (mask / bit % 3 > 0) {
                 memo[mask] = Math.max(
                     memo[mask],
-                    (ints[i] and slot) + dp(i - 1, mask - bit, numSlots, memo, ints)
+                    (ints[i] and slot) + dp(i - 1, mask - bit, numSlots, memo, ints),
                 )
             }
             ++slot

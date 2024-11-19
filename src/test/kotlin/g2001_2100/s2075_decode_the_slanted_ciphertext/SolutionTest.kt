@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun decodeCiphertext2() {
         assertThat(
             Solution().decodeCiphertext("iveo    eed   l te   olc", 4),
-            equalTo("i love leetcode")
+            equalTo("i love leetcode"),
         )
     }
 

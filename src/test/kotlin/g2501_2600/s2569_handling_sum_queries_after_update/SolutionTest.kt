@@ -9,13 +9,15 @@ internal class SolutionTest {
     fun handleQuery() {
         assertThat(
             Solution().handleQuery(
-                intArrayOf(1, 0, 1), intArrayOf(0, 0, 0),
+                intArrayOf(1, 0, 1),
+                intArrayOf(0, 0, 0),
                 arrayOf(
                     intArrayOf(1, 1, 1),
-                    intArrayOf(2, 1, 0), intArrayOf(3, 0, 0)
-                )
+                    intArrayOf(2, 1, 0),
+                    intArrayOf(3, 0, 0),
+                ),
             ),
-            equalTo(longArrayOf(3))
+            equalTo(longArrayOf(3)),
         )
     }
 
@@ -23,7 +25,7 @@ internal class SolutionTest {
     fun handleQuery2() {
         assertThat(
             Solution().handleQuery(intArrayOf(1), intArrayOf(5), arrayOf(intArrayOf(2, 0, 0), intArrayOf(3, 0, 0))),
-            equalTo(longArrayOf(5))
+            equalTo(longArrayOf(5)),
         )
     }
 }

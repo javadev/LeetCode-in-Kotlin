@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .arrayStringsAreEqual(arrayOf("ab", "c"), arrayOf("a", "bc")),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .arrayStringsAreEqual(arrayOf("a", "cb"), arrayOf("ab", "c")),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .arrayStringsAreEqual(arrayOf("abc", "d", "defg"), arrayOf("abcddefg")),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numberOfBoomerangs() {
         assertThat(
             Solution().numberOfBoomerangs(arrayOf(intArrayOf(0, 0), intArrayOf(1, 0), intArrayOf(2, 0))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numberOfBoomerangs2() {
         assertThat(
             Solution().numberOfBoomerangs(arrayOf(intArrayOf(1, 1), intArrayOf(2, 2), intArrayOf(3, 3))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

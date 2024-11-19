@@ -16,8 +16,8 @@ class Solution {
                     sum == grid[i][j + 1] + grid[i + 1][j + 1] + grid[i + 2][j + 1] && sum == grid[i][j + 2] +
                     grid[i + 1][j + 2] + grid[i + 2][j + 2] && sum == grid[i][j] + grid[i + 1][j + 1] +
                     grid[i + 2][j + 2] && sum == grid[i][j + 2] + grid[i + 1][j + 1] + grid[i + 2][j] && set.add(
-                            grid[i][j]
-                        ) &&
+                        grid[i][j],
+                    ) &&
                     isLegit(grid[i][j]) &&
                     set.add(grid[i][j + 1]) &&
                     isLegit(grid[i][j + 1]) &&

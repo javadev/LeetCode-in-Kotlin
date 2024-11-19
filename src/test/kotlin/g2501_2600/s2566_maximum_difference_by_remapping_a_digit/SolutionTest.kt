@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minMaxDifference() {
         assertThat(
             Solution().minMaxDifference(11891),
-            equalTo(99009)
+            equalTo(99009),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minMaxDifference2() {
         assertThat(
             Solution().minMaxDifference(90),
-            equalTo(99)
+            equalTo(99),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxSubsequence() {
         assertThat(
             Solution().maxSubsequence(intArrayOf(2, 1, 3, 3), 2),
-            equalTo(intArrayOf(3, 3))
+            equalTo(intArrayOf(3, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxSubsequence2() {
         assertThat(
             Solution().maxSubsequence(intArrayOf(-1, -2, 3, 4), 3),
-            equalTo(intArrayOf(-1, 3, 4))
+            equalTo(intArrayOf(-1, 3, 4)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxSubsequence3() {
         assertThat(
             Solution().maxSubsequence(intArrayOf(3, 4, 3, 3), 2),
-            equalTo(intArrayOf(4, 3))
+            equalTo(intArrayOf(4, 3)),
         )
     }
 }

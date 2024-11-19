@@ -34,8 +34,8 @@ import javax.sql.DataSource
             "INSERT INTO Logins(user_id, time_stamp)" +
             " VALUES (14, '2019-07-14 09:00:00'); " +
             "INSERT INTO Logins(user_id, time_stamp)" +
-            " VALUES (14, '2021-01-06 11:59:59'); "
-    ]
+            " VALUES (14, '2021-01-06 11:59:59'); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -47,12 +47,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1801_1900/s1890_the_latest_" +
-                                "login_in_2020/script.sql"
-                        )
+                                "login_in_2020/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getInt(1), equalTo(2))

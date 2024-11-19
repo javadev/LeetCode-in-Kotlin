@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun expressiveWords() {
         assertThat(
             Solution().expressiveWords("heeellooo", arrayOf("hello", "hi", "helo")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun expressiveWords2() {
         assertThat(
             Solution().expressiveWords("zzzzzyyyyy", arrayOf("zzyy", "zy", "zyy")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

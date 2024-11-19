@@ -26,10 +26,11 @@ class Solution {
             var resultLen = m + 1
             for (i in 0 until m) {
                 val curLen = search(
-                    cs, i,
+                    cs,
+                    i,
                     min(m.toDouble(), (i + resultLen).toDouble())
                         .toInt(),
-                    k
+                    k,
                 )
                 if (curLen != -1) {
                     val sub = String(cs, i, curLen)

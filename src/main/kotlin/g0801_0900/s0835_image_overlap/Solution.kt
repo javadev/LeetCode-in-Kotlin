@@ -15,7 +15,7 @@ class Solution {
                     for (i in -1 * veti until n) {
                         curOverLapping += if (hori < 0) {
                             Integer.bitCount(
-                                bits1[i] shl -1 * hori and bits2[i - -1 * veti]
+                                bits1[i] shl -1 * hori and bits2[i - -1 * veti],
                             )
                         } else {
                             Integer.bitCount(bits1[i] shr hori and bits2[i - -1 * veti])

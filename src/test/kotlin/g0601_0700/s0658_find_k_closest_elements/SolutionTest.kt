@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findClosestElements() {
         assertThat(
             Solution().findClosestElements(intArrayOf(1, 2, 3, 4, 5), 4, 3),
-            equalTo(listOf(1, 2, 3, 4))
+            equalTo(listOf(1, 2, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findClosestElements2() {
         assertThat(
             Solution().findClosestElements(intArrayOf(1, 2, 3, 4, 5), 4, -1),
-            equalTo(listOf(1, 2, 3, 4))
+            equalTo(listOf(1, 2, 3, 4)),
         )
     }
 }

@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun findLeastNumOfUniqueInts2() {
         assertThat(
             Solution().findLeastNumOfUniqueInts(intArrayOf(4, 3, 1, 1, 3, 3, 2), 3),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

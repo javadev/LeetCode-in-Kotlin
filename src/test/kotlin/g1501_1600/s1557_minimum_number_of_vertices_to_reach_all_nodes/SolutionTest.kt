@@ -16,10 +16,10 @@ internal class SolutionTest {
                         mutableListOf<Int>(0, 2),
                         mutableListOf<Int>(2, 5),
                         mutableListOf<Int>(3, 4),
-                        mutableListOf<Int>(4, 2)
-                    )
+                        mutableListOf<Int>(4, 2),
+                    ),
                 ),
-            equalTo(mutableListOf(0, 3))
+            equalTo(mutableListOf(0, 3)),
         )
     }
 
@@ -34,10 +34,10 @@ internal class SolutionTest {
                         mutableListOf<Int>(2, 1),
                         mutableListOf<Int>(3, 1),
                         mutableListOf<Int>(1, 4),
-                        mutableListOf<Int>(2, 4)
-                    )
+                        mutableListOf<Int>(2, 4),
+                    ),
                 ),
-            equalTo(mutableListOf(0, 2, 3))
+            equalTo(mutableListOf(0, 2, 3)),
         )
     }
 }

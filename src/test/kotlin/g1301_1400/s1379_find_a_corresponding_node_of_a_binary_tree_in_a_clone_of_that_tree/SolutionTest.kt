@@ -13,7 +13,7 @@ internal class SolutionTest {
         val target = TreeNode.create(mutableListOf(3, 6, 19))
         assertThat(
             Solution().getTargetCopy(original, cloned, target!!).toString(),
-            equalTo("3,6,19")
+            equalTo("3,6,19"),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
         val target = TreeNode.create(mutableListOf(7))
         assertThat(
             Solution().getTargetCopy(original, cloned, target!!).toString(),
-            equalTo("7")
+            equalTo("7"),
         )
     }
 
@@ -35,7 +35,7 @@ internal class SolutionTest {
         val target = TreeNode.create(mutableListOf(4, null, 3, null, 2, null, 1))
         assertThat(
             Solution().getTargetCopy(original, cloned, target!!).toString(),
-            equalTo("4,null,3,null,2,null,1")
+            equalTo("4,null,3,null,2,null,1"),
         )
     }
 
@@ -46,7 +46,7 @@ internal class SolutionTest {
         val target = TreeNode.create(mutableListOf(5, 10))
         assertThat(
             Solution().getTargetCopy(original, cloned, target!!).toString(),
-            equalTo("5,10,null")
+            equalTo("5,10,null"),
         )
     }
 
@@ -57,7 +57,7 @@ internal class SolutionTest {
         val target = TreeNode.create(mutableListOf(2, 3))
         assertThat(
             Solution().getTargetCopy(original, cloned, target!!).toString(),
-            equalTo("2,3,null")
+            equalTo("2,3,null"),
         )
     }
 }

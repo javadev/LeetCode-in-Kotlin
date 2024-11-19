@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun numberOfAlternatingGroups() {
         assertThat(
-            Solution().numberOfAlternatingGroups(intArrayOf(0, 1, 0, 1, 0), 3), equalTo(3)
+            Solution().numberOfAlternatingGroups(intArrayOf(0, 1, 0, 1, 0), 3),
+            equalTo(3),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun numberOfAlternatingGroups2() {
         assertThat(
             Solution().numberOfAlternatingGroups(intArrayOf(0, 1, 0, 0, 1, 0, 1), 6),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun numberOfAlternatingGroups3() {
         assertThat(
             Solution().numberOfAlternatingGroups(intArrayOf(1, 1, 0, 1), 4),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

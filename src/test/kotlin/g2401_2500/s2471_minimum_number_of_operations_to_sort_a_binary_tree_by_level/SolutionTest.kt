@@ -14,11 +14,11 @@ internal class SolutionTest {
                     TreeNode.create(
                         mutableListOf(
                             1, 4, 3, 7, 6, 8, 5, null, null, null, null, 9,
-                            null, 10
-                        )
-                    )!!
+                            null, 10,
+                        ),
+                    )!!,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -27,7 +27,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minimumOperations(TreeNode.create(mutableListOf(1, 3, 2, 7, 6, 5, 4))!!),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -35,9 +35,9 @@ internal class SolutionTest {
     fun minimumOperations3() {
         assertThat(
             Solution().minimumOperations(
-                TreeNode.create(mutableListOf(1, 2, 3, 4, 5, 6))!!
+                TreeNode.create(mutableListOf(1, 2, 3, 4, 5, 6))!!,
             ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

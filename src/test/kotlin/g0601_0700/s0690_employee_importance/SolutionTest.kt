@@ -11,7 +11,7 @@ internal class SolutionTest {
         val employees = listOf(
             Employee(1, 5, listOf(2, 3)),
             Employee(2, 3, listOf()),
-            Employee(3, 3, listOf())
+            Employee(3, 3, listOf()),
         )
         assertThat(Solution().getImportance(employees, 1), equalTo(11))
     }
@@ -22,7 +22,7 @@ internal class SolutionTest {
             Employee(1, 5, listOf(2, 3)),
             Employee(2, 3, listOf(4)),
             Employee(3, 4, listOf()),
-            Employee(4, 1, listOf())
+            Employee(4, 1, listOf()),
         )
         assertThat(Solution().getImportance(employees, 1), equalTo(13))
     }

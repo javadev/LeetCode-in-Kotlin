@@ -24,7 +24,9 @@ class Solution {
         val res = dp(0, target)
         return if (res > target.length) {
             -1
-        } else res
+        } else {
+            res
+        }
     }
 
     private fun dp(bits: Int, target: String): Int {

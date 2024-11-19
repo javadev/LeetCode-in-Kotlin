@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun generateMatrix() {
         assertThat(
             Solution().generateMatrix(3),
-            equalTo(arrayOf(intArrayOf(1, 2, 3), intArrayOf(8, 9, 4), intArrayOf(7, 6, 5)))
+            equalTo(arrayOf(intArrayOf(1, 2, 3), intArrayOf(8, 9, 4), intArrayOf(7, 6, 5))),
         )
     }
 

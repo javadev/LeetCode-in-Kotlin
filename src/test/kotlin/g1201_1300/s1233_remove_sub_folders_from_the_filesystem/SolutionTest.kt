@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .removeSubfolders(arrayOf("/a", "/a/b", "/c/d", "/c/d/e", "/c/f")),
-            equalTo(mutableListOf("/a", "/c/d", "/c/f"))
+            equalTo(mutableListOf("/a", "/c/d", "/c/f")),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun removeSubfolders2() {
         assertThat(
             Solution().removeSubfolders(arrayOf("/a", "/a/b/c", "/a/b/d")),
-            equalTo(listOf("/a"))
+            equalTo(listOf("/a")),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun removeSubfolders3() {
         assertThat(
             Solution().removeSubfolders(arrayOf("/a/b/c", "/a/b/ca", "/a/b/d")),
-            equalTo(mutableListOf("/a/b/c", "/a/b/ca", "/a/b/d"))
+            equalTo(mutableListOf("/a/b/c", "/a/b/ca", "/a/b/d")),
         )
     }
 }

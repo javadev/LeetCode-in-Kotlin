@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun isBoomerang2() {
         assertThat(
-            Solution().isBoomerang(arrayOf(intArrayOf(1, 1), intArrayOf(2, 2), intArrayOf(3, 3))), equalTo(false)
+            Solution().isBoomerang(arrayOf(intArrayOf(1, 1), intArrayOf(2, 2), intArrayOf(3, 3))),
+            equalTo(false),
         )
     }
 }

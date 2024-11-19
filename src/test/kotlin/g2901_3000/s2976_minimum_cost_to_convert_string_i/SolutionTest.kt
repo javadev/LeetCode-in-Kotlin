@@ -14,9 +14,9 @@ internal class SolutionTest {
                     "acbe",
                     charArrayOf('a', 'b', 'c', 'c', 'e', 'd'),
                     charArrayOf('b', 'c', 'b', 'e', 'b', 'e'),
-                    intArrayOf(2, 5, 5, 1, 2, 20)
+                    intArrayOf(2, 5, 5, 1, 2, 20),
                 ),
-            equalTo(28L)
+            equalTo(28L),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
                     "bbbb",
                     charArrayOf('a', 'c'),
                     charArrayOf('c', 'b'),
-                    intArrayOf(1, 2)
+                    intArrayOf(1, 2),
                 ),
-            equalTo(12L)
+            equalTo(12L),
         )
     }
 
@@ -44,9 +44,9 @@ internal class SolutionTest {
                     "abce",
                     charArrayOf('a'),
                     charArrayOf('e'),
-                    intArrayOf(1000)
+                    intArrayOf(1000),
                 ),
-            equalTo(-1L)
+            equalTo(-1L),
         )
     }
 }

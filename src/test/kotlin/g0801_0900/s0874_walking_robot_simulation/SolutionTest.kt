@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun robotSim2() {
         assertThat(
             Solution().robotSim(intArrayOf(4, -1, 4, -2, 4), arrayOf(intArrayOf(2, 4))),
-            equalTo(65)
+            equalTo(65),
         )
     }
 
@@ -25,11 +25,11 @@ internal class SolutionTest {
                 .robotSim(
                     intArrayOf(
                         4, -1, 4, -2, 4, 3, 5, -1, 3, -2, 4, -1, 3, -1, 2, -1, 4, -1, 5,
-                        -1, 3, -1, 2
+                        -1, 3, -1, 2,
                     ),
-                    arrayOf(intArrayOf(2, 4), intArrayOf(4, 5), intArrayOf(2, 3), intArrayOf(0, 1), intArrayOf(1, 6))
+                    arrayOf(intArrayOf(2, 4), intArrayOf(4, 5), intArrayOf(2, 3), intArrayOf(0, 1), intArrayOf(1, 6)),
                 ),
-            equalTo(202)
+            equalTo(202),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minSumSquareDiff(intArrayOf(1, 2, 3, 4), intArrayOf(2, 10, 20, 19), 0, 0),
-            equalTo(579L)
+            equalTo(579L),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minSumSquareDiff(intArrayOf(1, 4, 10, 12), intArrayOf(5, 8, 6, 9), 1, 1),
-            equalTo(43L)
+            equalTo(43L),
         )
     }
 
@@ -28,11 +28,12 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minSumSquareDiff(
-                    intArrayOf(7, 11, 4, 19, 11, 5, 6, 1, 8), intArrayOf(4, 7, 6, 16, 12, 9, 10, 2, 10),
+                    intArrayOf(7, 11, 4, 19, 11, 5, 6, 1, 8),
+                    intArrayOf(4, 7, 6, 16, 12, 9, 10, 2, 10),
                     3,
-                    6
+                    6,
                 ),
-            equalTo(27L)
+            equalTo(27L),
         )
     }
 }

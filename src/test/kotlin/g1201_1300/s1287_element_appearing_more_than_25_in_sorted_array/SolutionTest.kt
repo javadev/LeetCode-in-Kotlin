@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findSpecialInteger() {
         assertThat(
             Solution().findSpecialInteger(intArrayOf(1, 2, 2, 6, 6, 6, 6, 7, 10)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 

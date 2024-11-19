@@ -44,7 +44,7 @@ class Solution {
         target: Int,
         queue: Queue<Int>,
         targetRoutes: MutableSet<Int>,
-        taken: BooleanArray
+        taken: BooleanArray,
     ): Array<ArrayList<Int>?> {
         val len = routes.size
         val graph: Array<ArrayList<Int>?> = arrayOfNulls(len)

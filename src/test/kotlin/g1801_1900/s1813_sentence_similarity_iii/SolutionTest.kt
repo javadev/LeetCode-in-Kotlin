@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun areSentencesSimilar() {
         assertThat(
-            Solution().areSentencesSimilar("My name is Haley", "My Haley"), equalTo(true)
+            Solution().areSentencesSimilar("My name is Haley", "My Haley"),
+            equalTo(true),
         )
     }
 
@@ -21,7 +22,7 @@ internal class SolutionTest {
     fun areSentencesSimilar3() {
         assertThat(
             Solution().areSentencesSimilar("Eating right now", "Eating"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

@@ -14,13 +14,13 @@ internal class SolutionTest {
                     TreeNode.create(
                         listOf(
                             1, 2, 3, 4, -99, -99, 7, 8, 9, -99, -99, 12, 13,
-                            -99, 14
-                        )
+                            -99, 14,
+                        ),
                     ),
-                    1
+                    1,
                 )
                 .toString(),
-            equalTo("1,2,4,8,9,null,3,null,7,null,14")
+            equalTo("1,2,4,8,9,null,3,null,7,null,14"),
         )
     }
 
@@ -31,13 +31,13 @@ internal class SolutionTest {
                 .sufficientSubset(
                     TreeNode.create(
                         listOf(
-                            5, 4, 8, 11, null, 17, 4, 7, 1, null, null, 5, 3
-                        )
+                            5, 4, 8, 11, null, 17, 4, 7, 1, null, null, 5, 3,
+                        ),
                     ),
-                    22
+                    22,
                 )
                 .toString(),
-            equalTo("5,4,11,7,null,null,8,17,4,5,null")
+            equalTo("5,4,11,7,null,null,8,17,4,5,null"),
         )
     }
 
@@ -46,10 +46,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sufficientSubset(
-                    TreeNode.create(listOf(1, 2, -3, -5, null, 4, null)), -1
+                    TreeNode.create(listOf(1, 2, -3, -5, null, 4, null)),
+                    -1,
                 )
                 .toString(),
-            equalTo("1,null,-3,4,null")
+            equalTo("1,null,-3,4,null"),
         )
     }
 }

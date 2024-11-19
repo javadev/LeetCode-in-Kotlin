@@ -15,11 +15,11 @@ internal class SolutionTest {
                         intArrayOf(-1, -2),
                         intArrayOf(-4, 4),
                         intArrayOf(-3, 1),
-                        intArrayOf(3, -3)
+                        intArrayOf(3, -3),
                     ),
-                    "abdca"
+                    "abdca",
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxPointsInsideSquare(arrayOf(intArrayOf(1, 1), intArrayOf(-2, -2), intArrayOf(-2, 2)), "abb"),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

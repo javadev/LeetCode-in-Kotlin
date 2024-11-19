@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxAbsValExpr() {
         assertThat(
             Solution().maxAbsValExpr(intArrayOf(1, 2, 3, 4), intArrayOf(-1, 4, 5, 6)),
-            equalTo(13)
+            equalTo(13),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxAbsValExpr(intArrayOf(1, -2, -5, 0, 10), intArrayOf(0, -2, -1, -7, -4)),
-            equalTo(20)
+            equalTo(20),
         )
     }
 }

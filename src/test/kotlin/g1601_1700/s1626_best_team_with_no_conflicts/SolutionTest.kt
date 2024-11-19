@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .bestTeamScore(intArrayOf(1, 3, 5, 10, 15), intArrayOf(1, 2, 3, 4, 5)),
-            equalTo(34)
+            equalTo(34),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun bestTeamScore2() {
         assertThat(
             Solution().bestTeamScore(intArrayOf(4, 5, 6, 5), intArrayOf(2, 1, 2, 1)),
-            equalTo(16)
+            equalTo(16),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun bestTeamScore3() {
         assertThat(
             Solution().bestTeamScore(intArrayOf(1, 2, 3, 5), intArrayOf(8, 9, 10, 1)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

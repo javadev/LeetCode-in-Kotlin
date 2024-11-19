@@ -13,7 +13,8 @@ internal class SolutionTest {
     @Test
     fun largestMultipleOfThree2() {
         assertThat(
-            Solution().largestMultipleOfThree(intArrayOf(8, 6, 7, 1, 0)), equalTo("8760")
+            Solution().largestMultipleOfThree(intArrayOf(8, 6, 7, 1, 0)),
+            equalTo("8760"),
         )
     }
 

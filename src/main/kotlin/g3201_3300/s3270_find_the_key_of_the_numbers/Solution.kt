@@ -11,8 +11,8 @@ class Solution {
                 num1 / 1000 % 10,
                 min(
                     num2 / 1000 % 10,
-                    num3 / 1000 % 10
-                )
+                    num3 / 1000 % 10,
+                ),
             ) * 1000
             )
         val s2 = (
@@ -20,8 +20,8 @@ class Solution {
                 num1 / 100 % 10,
                 min(
                     num2 / 100 % 10,
-                    num3 / 100 % 10
-                )
+                    num3 / 100 % 10,
+                ),
             ) * 100
             )
         val s3 =
@@ -30,13 +30,13 @@ class Solution {
                     num1 / 10 % 10,
                     min(
                         num2 / 10 % 10,
-                        num3 / 10 % 10
-                    )
+                        num3 / 10 % 10,
+                    ),
                 ) * 10
                 )
         val s4 = min(
             num1 % 10,
-            min(num2 % 10, num3 % 10)
+            min(num2 % 10, num3 % 10),
         )
         return s1 + s2 + s3 + s4
     }

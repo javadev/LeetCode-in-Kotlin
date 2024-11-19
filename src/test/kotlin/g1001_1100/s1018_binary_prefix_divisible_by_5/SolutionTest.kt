@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun prefixesDivBy5() {
         assertThat(
             Solution().prefixesDivBy5(intArrayOf(0, 1, 1)),
-            equalTo(listOf(true, false, false))
+            equalTo(listOf(true, false, false)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun prefixesDivBy52() {
         assertThat(
             Solution().prefixesDivBy5(intArrayOf(1, 1, 1)),
-            equalTo(listOf(false, false, false))
+            equalTo(listOf(false, false, false)),
         )
     }
 }

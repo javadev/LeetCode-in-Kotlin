@@ -17,10 +17,10 @@ internal class SolutionTest {
                         intArrayOf(0),
                         intArrayOf(5),
                         intArrayOf(),
-                        intArrayOf()
-                    )
+                        intArrayOf(),
+                    ),
                 ),
-            equalTo(listOf(2, 4, 5, 6))
+            equalTo(listOf(2, 4, 5, 6)),
         )
     }
 
@@ -34,10 +34,10 @@ internal class SolutionTest {
                         intArrayOf(1, 2),
                         intArrayOf(3, 4),
                         intArrayOf(0, 4),
-                        intArrayOf()
-                    )
+                        intArrayOf(),
+                    ),
                 ),
-            equalTo(listOf(4))
+            equalTo(listOf(4)),
         )
     }
 }

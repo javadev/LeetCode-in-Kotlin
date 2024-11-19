@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countPrefixes(arrayOf("a", "b", "c", "ab", "bc", "abc"), "abc"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 

@@ -30,7 +30,7 @@ class Solution {
                     if (cNodeDist <= maxMoves) pQueue.add(intArrayOf(cNode, cNodeDist))
                 } else {
                     res += (weight - (maxMoves - minDis[cNode]).coerceAtMost(weight)).coerceAtMost(
-                        (maxMoves - dist).coerceAtMost(weight)
+                        (maxMoves - dist).coerceAtMost(weight),
                     )
                 }
             }

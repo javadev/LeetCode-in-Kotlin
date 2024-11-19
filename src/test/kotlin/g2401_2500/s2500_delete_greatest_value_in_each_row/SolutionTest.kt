@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun deleteGreatestValue() {
         assertThat(
-            Solution().deleteGreatestValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 3, 1))), equalTo(8)
+            Solution().deleteGreatestValue(arrayOf(intArrayOf(1, 2, 4), intArrayOf(3, 3, 1))),
+            equalTo(8),
         )
     }
 

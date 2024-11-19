@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numOfStrings() {
         assertThat(
             Solution().numOfStrings(arrayOf("a", "abc", "bc", "d"), "abc"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun numOfStrings2() {
         assertThat(
             Solution().numOfStrings(arrayOf("a", "b", "c"), "aaaaabbbbb"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

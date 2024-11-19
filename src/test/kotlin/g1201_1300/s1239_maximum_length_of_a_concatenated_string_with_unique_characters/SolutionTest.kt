@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun maxLength3() {
         assertThat(
             Solution().maxLength(listOf("abcdefghijklmnopqrstuvwxyz")),
-            equalTo(26)
+            equalTo(26),
         )
     }
 }

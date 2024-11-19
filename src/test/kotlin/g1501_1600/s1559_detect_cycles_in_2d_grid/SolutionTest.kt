@@ -14,10 +14,10 @@ internal class SolutionTest {
                         charArrayOf('a', 'a', 'a', 'a'),
                         charArrayOf('a', 'b', 'b', 'a'),
                         charArrayOf('a', 'b', 'b', 'a'),
-                        charArrayOf('a', 'a', 'a', 'a')
-                    )
+                        charArrayOf('a', 'a', 'a', 'a'),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -30,10 +30,10 @@ internal class SolutionTest {
                         charArrayOf('c', 'c', 'c', 'a'),
                         charArrayOf('c', 'd', 'c', 'c'),
                         charArrayOf('c', 'c', 'e', 'c'),
-                        charArrayOf('f', 'c', 'c', 'c')
-                    )
+                        charArrayOf('f', 'c', 'c', 'c'),
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -45,10 +45,10 @@ internal class SolutionTest {
                     arrayOf(
                         charArrayOf('a', 'b', 'b'),
                         charArrayOf('b', 'z', 'b'),
-                        charArrayOf('b', 'b', 'a')
-                    )
+                        charArrayOf('b', 'b', 'a'),
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

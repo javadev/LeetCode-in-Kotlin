@@ -23,7 +23,9 @@ class Solution {
         next = getNext(evil)
         return if (s1.compareTo(s2) > 0) {
             lessOrEqualThan(s2, evil)
-        } else (lessOrEqualThan(s2, evil) - lessOrEqualThan(s1, evil) + mod) % mod
+        } else {
+            (lessOrEqualThan(s2, evil) - lessOrEqualThan(s1, evil) + mod) % mod
+        }
     }
 
     private fun lessOrEqualThan(s: String, e: String): Int {

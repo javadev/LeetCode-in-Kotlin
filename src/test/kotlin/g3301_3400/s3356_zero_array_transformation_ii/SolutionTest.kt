@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .minZeroArray(
                     intArrayOf(2, 0, 2),
-                    arrayOf<IntArray>(intArrayOf(0, 2, 1), intArrayOf(0, 2, 1), intArrayOf(1, 1, 3))
+                    arrayOf<IntArray>(intArrayOf(0, 2, 1), intArrayOf(0, 2, 1), intArrayOf(1, 1, 3)),
                 ),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
         assertThat<Int>(
             Solution()
                 .minZeroArray(intArrayOf(4, 3, 2, 1), arrayOf<IntArray>(intArrayOf(1, 3, 2), intArrayOf(0, 2, 1))),
-            equalTo<Int>(-1)
+            equalTo<Int>(-1),
         )
     }
 }

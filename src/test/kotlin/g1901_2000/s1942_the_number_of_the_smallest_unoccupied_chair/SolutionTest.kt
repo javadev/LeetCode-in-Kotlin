@@ -8,14 +8,16 @@ internal class SolutionTest {
     @Test
     fun smallestChair() {
         assertThat(
-            Solution().smallestChair(arrayOf(intArrayOf(1, 4), intArrayOf(2, 3), intArrayOf(4, 6)), 1), equalTo(1)
+            Solution().smallestChair(arrayOf(intArrayOf(1, 4), intArrayOf(2, 3), intArrayOf(4, 6)), 1),
+            equalTo(1),
         )
     }
 
     @Test
     fun smallestChair2() {
         assertThat(
-            Solution().smallestChair(arrayOf(intArrayOf(3, 10), intArrayOf(1, 5), intArrayOf(2, 6)), 0), equalTo(2)
+            Solution().smallestChair(arrayOf(intArrayOf(3, 10), intArrayOf(1, 5), intArrayOf(2, 6)), 0),
+            equalTo(2),
         )
     }
 }

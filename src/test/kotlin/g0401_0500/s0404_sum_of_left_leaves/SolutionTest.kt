@@ -11,9 +11,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .sumOfLeftLeaves(
-                    TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))!!
+                    TreeNode.create(listOf(3, 9, 20, null, null, 15, 7))!!,
                 ),
-            equalTo(24)
+            equalTo(24),
         )
     }
 

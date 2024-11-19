@@ -17,7 +17,7 @@ class Solution {
             return 0
         }
         val result = dp[if (f1 == null) 0 else f1.code - 'A'.code + 1][
-            if (f2 == null) 0 else f2.code - 'A'.code + 1
+            if (f2 == null) 0 else f2.code - 'A'.code + 1,
         ][index]
         if (result != null) {
             return result

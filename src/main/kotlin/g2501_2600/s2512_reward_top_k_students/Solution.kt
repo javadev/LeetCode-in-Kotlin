@@ -12,7 +12,7 @@ class Solution {
         negativeFeedback: Array<String>,
         report: Array<String>,
         studentId: IntArray,
-        k: Int
+        k: Int,
     ): List<Int> {
         var k = k
         val feedback = HashMap<String, Int>()

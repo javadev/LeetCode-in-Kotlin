@@ -16,10 +16,10 @@ internal class SolutionTest {
                 Arrays.asList<Any?>(
                     TreeNode.create(mutableListOf(1, 2, null, 4)),
                     TreeNode.create(listOf(6)),
-                    TreeNode.create(listOf(7))
+                    TreeNode.create(listOf(7)),
                 )
-                    .toString()
-            )
+                    .toString(),
+            ),
         )
     }
 
@@ -29,8 +29,8 @@ internal class SolutionTest {
         assertThat(
             Solution().delNodes(root, intArrayOf(3)).toString(),
             equalTo(
-                listOf<Any?>(TreeNode.create(mutableListOf<Int?>(1, 2, 4))).toString()
-            )
+                listOf<Any?>(TreeNode.create(mutableListOf<Int?>(1, 2, 4))).toString(),
+            ),
         )
     }
 }

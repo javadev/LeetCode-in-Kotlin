@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findEvenNumbers() {
         assertThat(
             Solution().findEvenNumbers(intArrayOf(2, 1, 3, 0)),
-            equalTo(intArrayOf(102, 120, 130, 132, 210, 230, 302, 310, 312, 320))
+            equalTo(intArrayOf(102, 120, 130, 132, 210, 230, 302, 310, 312, 320)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findEvenNumbers2() {
         assertThat(
             Solution().findEvenNumbers(intArrayOf(2, 2, 8, 8, 2)),
-            equalTo(intArrayOf(222, 228, 282, 288, 822, 828, 882))
+            equalTo(intArrayOf(222, 228, 282, 288, 822, 828, 882)),
         )
     }
 

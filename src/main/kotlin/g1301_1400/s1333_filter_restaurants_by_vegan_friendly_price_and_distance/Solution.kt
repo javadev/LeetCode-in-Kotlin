@@ -9,7 +9,7 @@ class Solution {
         restaurants: Array<IntArray>,
         veganFriendly: Int,
         maxPrice: Int,
-        maxDistance: Int
+        maxDistance: Int,
     ): List<Int> {
         val pq = PriorityQueue { a: IntArray, b: IntArray -> if (a[1] == b[1]) b[0] - a[0] else b[1] - a[1] }
         for (i in restaurants.indices) {

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun areConnected() {
         assertThat(
             Solution().areConnected(6, 2, arrayOf(intArrayOf(1, 4), intArrayOf(2, 5), intArrayOf(3, 6))),
-            equalTo(listOf(false, false, true))
+            equalTo(listOf(false, false, true)),
         )
     }
 
@@ -20,9 +20,9 @@ internal class SolutionTest {
                 .areConnected(
                     6,
                     0,
-                    arrayOf(intArrayOf(4, 5), intArrayOf(3, 4), intArrayOf(3, 2), intArrayOf(2, 6), intArrayOf(1, 3))
+                    arrayOf(intArrayOf(4, 5), intArrayOf(3, 4), intArrayOf(3, 2), intArrayOf(2, 6), intArrayOf(1, 3)),
                 ),
-            equalTo(listOf(true, true, true, true, true))
+            equalTo(listOf(true, true, true, true, true)),
         )
     }
 
@@ -33,9 +33,9 @@ internal class SolutionTest {
                 .areConnected(
                     5,
                     1,
-                    arrayOf(intArrayOf(4, 5), intArrayOf(4, 5), intArrayOf(3, 2), intArrayOf(2, 3), intArrayOf(3, 4))
+                    arrayOf(intArrayOf(4, 5), intArrayOf(4, 5), intArrayOf(3, 2), intArrayOf(2, 3), intArrayOf(3, 4)),
                 ),
-            equalTo(listOf(false, false, false, false, false))
+            equalTo(listOf(false, false, false, false, false)),
         )
     }
 }

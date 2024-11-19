@@ -113,7 +113,7 @@ class Solution {
         parent: IntArray,
         level: IntArray,
         weightFreq: Array<IntArray>,
-        freq: IntArray
+        freq: IntArray,
     ) {
         parent[src] = p
         level[src] = currlevel

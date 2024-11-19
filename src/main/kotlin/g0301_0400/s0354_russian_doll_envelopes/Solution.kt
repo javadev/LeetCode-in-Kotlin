@@ -7,7 +7,11 @@ class Solution {
     fun maxEnvelopes(envelopes: Array<IntArray>): Int {
         envelopes.sortWith { a: IntArray, b: IntArray ->
             if (a[0] != b[0]
-            ) a[0] - b[0] else b[1] - a[1]
+            ) {
+                a[0] - b[0]
+            } else {
+                b[1] - a[1]
+            }
         }
         val tails = IntArray(envelopes.size)
         var size = 0

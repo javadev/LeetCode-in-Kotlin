@@ -19,7 +19,7 @@ class Solution {
         nums: String,
         letters: Array<String>,
         curr: StringBuilder,
-        ans: MutableList<String>
+        ans: MutableList<String>,
     ) {
         if (curr.length == nums.length) {
             ans.add(curr.toString())

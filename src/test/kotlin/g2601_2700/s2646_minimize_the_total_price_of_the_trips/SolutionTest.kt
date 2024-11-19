@@ -9,13 +9,16 @@ internal class SolutionTest {
     fun minimumTotalPrice() {
         assertThat(
             Solution().minimumTotalPrice(
-                4, arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3)),
+                4,
+                arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3)),
                 intArrayOf(2, 2, 10, 6),
                 arrayOf(
-                    intArrayOf(0, 3), intArrayOf(2, 1), intArrayOf(2, 3)
-                )
+                    intArrayOf(0, 3),
+                    intArrayOf(2, 1),
+                    intArrayOf(2, 3),
+                ),
             ),
-            equalTo(23)
+            equalTo(23),
         )
     }
 
@@ -23,12 +26,14 @@ internal class SolutionTest {
     fun minimumTotalPrice2() {
         assertThat(
             Solution().minimumTotalPrice(
-                2, arrayOf(intArrayOf(0, 1)), intArrayOf(2, 2),
+                2,
+                arrayOf(intArrayOf(0, 1)),
+                intArrayOf(2, 2),
                 arrayOf(
-                    intArrayOf(0, 0)
-                )
+                    intArrayOf(0, 0),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

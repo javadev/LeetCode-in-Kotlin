@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .minimumMoves(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,1,0],[1,1,1],[1,2,1]"
-                    )
+                        "[1,1,0],[1,1,1],[1,2,1]",
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .minimumMoves(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,3,0],[1,0,0],[1,0,3]"
-                    )
+                        "[1,3,0],[1,0,0],[1,0,3]",
+                    ),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun decompressRLElist() {
         assertThat(
             Solution().decompressRLElist(intArrayOf(1, 2, 3, 4)),
-            equalTo(intArrayOf(2, 4, 4, 4))
+            equalTo(intArrayOf(2, 4, 4, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun decompressRLElist2() {
         assertThat(
             Solution().decompressRLElist(intArrayOf(1, 1, 2, 3)),
-            equalTo(intArrayOf(1, 3, 3))
+            equalTo(intArrayOf(1, 3, 3)),
         )
     }
 }

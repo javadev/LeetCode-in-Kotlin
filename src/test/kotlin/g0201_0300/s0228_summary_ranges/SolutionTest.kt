@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun summaryRanges() {
         assertThat(
             Solution().summaryRanges(intArrayOf(0, 1, 2, 4, 5, 7)),
-            equalTo(listOf("0->2", "4->5", "7"))
+            equalTo(listOf("0->2", "4->5", "7")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun summaryRanges2() {
         assertThat(
             Solution().summaryRanges(intArrayOf(0, 2, 3, 4, 6, 8, 9)),
-            equalTo(listOf("0", "2->4", "6", "8->9"))
+            equalTo(listOf("0", "2->4", "6", "8->9")),
         )
     }
 }

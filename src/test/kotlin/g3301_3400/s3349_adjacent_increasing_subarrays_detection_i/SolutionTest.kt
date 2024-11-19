@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun hasIncreasingSubarrays() {
         assertThat<Boolean>(
             Solution().hasIncreasingSubarrays(listOf<Int>(2, 5, 7, 8, 9, 2, 3, 4, 3, 1), 3),
-            equalTo<Boolean>(true)
+            equalTo<Boolean>(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun hasIncreasingSubarrays2() {
         assertThat<Boolean>(
             Solution().hasIncreasingSubarrays(listOf<Int>(1, 2, 3, 4, 4, 4, 4, 5, 6, 7), 5),
-            equalTo<Boolean>(false)
+            equalTo<Boolean>(false),
         )
     }
 }

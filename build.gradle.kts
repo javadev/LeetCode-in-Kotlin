@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "2.0.21"
     jacoco
     id("org.sonarqube") version "5.1.0.4882"
-    id("com.diffplug.spotless") version "6.12.0"
+    id("com.diffplug.spotless") version "6.21.0"
     `maven-publish`
 }
 
@@ -52,9 +52,14 @@ spotless {
     kotlin {
         encoding("UTF-8")
         target("**/src/**/*.kt")
-        ktlint("0.43.0").userData(mapOf(
-                "max_line_length" to "120"
-                ))
+        ktlint("0.50.0").editorConfigOverride(
+            mapOf(
+                "max_line_length" to "120",
+                "indent_size" to "4",
+                "ktlint_standard_package-name" to "disabled",
+                "ktlint_standard_comment-wrapping" to "disabled"
+            )
+        )
         toggleOffOn()
         trimTrailingWhitespace()
         endWithNewline()

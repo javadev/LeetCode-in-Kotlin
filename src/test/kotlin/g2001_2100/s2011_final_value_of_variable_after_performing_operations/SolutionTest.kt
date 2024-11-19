@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun finalValueAfterOperations() {
         assertThat(
             Solution().finalValueAfterOperations(arrayOf("--X", "X++", "X++")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun finalValueAfterOperations2() {
         assertThat(
             Solution().finalValueAfterOperations(arrayOf("++X", "++X", "X++")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun finalValueAfterOperations3() {
         assertThat(
             Solution().finalValueAfterOperations(arrayOf("X++", "++X", "--X", "X--")),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

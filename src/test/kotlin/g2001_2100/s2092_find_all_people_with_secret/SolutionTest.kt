@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findAllPeople() {
         assertThat(
             Solution().findAllPeople(6, arrayOf(intArrayOf(1, 2, 5), intArrayOf(2, 3, 8), intArrayOf(1, 5, 10)), 1),
-            equalTo(listOf(0, 1, 2, 3, 5))
+            equalTo(listOf(0, 1, 2, 3, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findAllPeople2() {
         assertThat(
             Solution().findAllPeople(4, arrayOf(intArrayOf(3, 1, 3), intArrayOf(1, 2, 2), intArrayOf(0, 3, 3)), 3),
-            equalTo(listOf(0, 1, 3))
+            equalTo(listOf(0, 1, 3)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun findAllPeople3() {
         assertThat(
             Solution().findAllPeople(5, arrayOf(intArrayOf(3, 4, 2), intArrayOf(1, 2, 1), intArrayOf(2, 3, 1)), 1),
-            equalTo(listOf(0, 1, 2, 3, 4))
+            equalTo(listOf(0, 1, 2, 3, 4)),
         )
     }
 }

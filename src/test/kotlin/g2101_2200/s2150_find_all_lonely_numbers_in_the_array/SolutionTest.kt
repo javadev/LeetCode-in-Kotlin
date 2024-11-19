@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun findLonely() {
         assertThat(
-            Solution().findLonely(intArrayOf(10, 6, 5, 8)), equalTo(mutableListOf(10, 8))
+            Solution().findLonely(intArrayOf(10, 6, 5, 8)),
+            equalTo(mutableListOf(10, 8)),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun findLonely2() {
         assertThat(
             Solution().findLonely(intArrayOf(1, 3, 5, 3)),
-            equalTo(mutableListOf(1, 5))
+            equalTo(mutableListOf(1, 5)),
         )
     }
 }

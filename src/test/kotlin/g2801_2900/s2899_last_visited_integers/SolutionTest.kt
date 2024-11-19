@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun lastVisitedIntegers() {
         assertThat(
             Solution().lastVisitedIntegers(mutableListOf("1", "2", "prev", "prev", "prev")),
-            equalTo(listOf(2, 1, -1))
+            equalTo(listOf(2, 1, -1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun lastVisitedIntegers2() {
         assertThat(
             Solution().lastVisitedIntegers(mutableListOf("1", "prev", "2", "prev", "prev")),
-            equalTo(mutableListOf(1, 2, 1))
+            equalTo(mutableListOf(1, 2, 1)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxSumOfThreeSubarrays() {
         assertThat(
             Solution().maxSumOfThreeSubarrays(intArrayOf(1, 2, 1, 2, 6, 7, 5, 1), 2),
-            equalTo(intArrayOf(0, 3, 5))
+            equalTo(intArrayOf(0, 3, 5)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxSumOfThreeSubarrays2() {
         assertThat(
             Solution().maxSumOfThreeSubarrays(intArrayOf(1, 2, 1, 2, 1, 2, 1, 2, 1), 2),
-            equalTo(intArrayOf(0, 2, 4))
+            equalTo(intArrayOf(0, 2, 4)),
         )
     }
 }

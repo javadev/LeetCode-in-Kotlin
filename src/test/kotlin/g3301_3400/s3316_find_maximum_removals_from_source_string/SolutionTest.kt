@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxRemovals() {
         assertThat<Int?>(
             Solution().maxRemovals("abbaa", "aba", intArrayOf(0, 1, 2)),
-            equalTo<Int?>(1)
+            equalTo<Int?>(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxRemovals2() {
         assertThat<Int?>(
             Solution().maxRemovals("bcda", "d", intArrayOf(0, 3)),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxRemovals3() {
         assertThat<Int?>(
             Solution().maxRemovals("dda", "dda", intArrayOf(0, 1, 2)),
-            equalTo<Int?>(0)
+            equalTo<Int?>(0),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun maxRemovals4() {
         assertThat<Int?>(
             Solution().maxRemovals("yeyeykyded", "yeyyd", intArrayOf(0, 2, 3, 4)),
-            equalTo<Int?>(2)
+            equalTo<Int?>(2),
         )
     }
 }

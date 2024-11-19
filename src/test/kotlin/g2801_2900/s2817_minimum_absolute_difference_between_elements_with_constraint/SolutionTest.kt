@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minAbsoluteDifference() {
         assertThat(
             Solution().minAbsoluteDifference(mutableListOf(4, 3, 2, 4), 2),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minAbsoluteDifference2() {
         assertThat(
             Solution().minAbsoluteDifference(mutableListOf(5, 3, 2, 10, 15), 1),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minAbsoluteDifference3() {
         assertThat(
             Solution().minAbsoluteDifference(mutableListOf(1, 2, 3, 4), 3),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

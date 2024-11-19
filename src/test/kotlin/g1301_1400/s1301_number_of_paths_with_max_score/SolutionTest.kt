@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun pathsWithMaxScore() {
         assertThat(
             Solution().pathsWithMaxScore(mutableListOf("E23", "2X2", "12S")),
-            equalTo(intArrayOf(7, 1))
+            equalTo(intArrayOf(7, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun pathsWithMaxScore2() {
         assertThat(
             Solution().pathsWithMaxScore(mutableListOf("E12", "1X1", "21S")),
-            equalTo(intArrayOf(4, 2))
+            equalTo(intArrayOf(4, 2)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun pathsWithMaxScore3() {
         assertThat(
             Solution().pathsWithMaxScore(mutableListOf("E11", "XXX", "11S")),
-            equalTo(intArrayOf(0, 0))
+            equalTo(intArrayOf(0, 0)),
         )
     }
 }

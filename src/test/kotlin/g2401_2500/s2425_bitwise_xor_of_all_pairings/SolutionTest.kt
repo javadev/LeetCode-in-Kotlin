@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun xorAllNums() {
         assertThat(
             Solution().xorAllNums(intArrayOf(2, 1, 3), intArrayOf(10, 2, 5, 0)),
-            equalTo(13)
+            equalTo(13),
         )
     }
 

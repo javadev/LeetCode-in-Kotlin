@@ -12,9 +12,9 @@ internal class SolutionTest {
                 .maxProfitAssignment(
                     intArrayOf(2, 4, 6, 8, 10),
                     intArrayOf(10, 20, 30, 40, 50),
-                    intArrayOf(4, 5, 6, 7)
+                    intArrayOf(4, 5, 6, 7),
                 ),
-            equalTo(100)
+            equalTo(100),
         )
     }
 
@@ -23,7 +23,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maxProfitAssignment(intArrayOf(85, 47, 57), intArrayOf(24, 66, 99), intArrayOf(40, 25, 25)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

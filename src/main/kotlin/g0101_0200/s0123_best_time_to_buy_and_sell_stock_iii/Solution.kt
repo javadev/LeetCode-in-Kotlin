@@ -5,7 +5,7 @@ package g0101_0200.s0123_best_time_to_buy_and_sell_stock_iii
 class Solution {
     fun maxProfit(prices: IntArray): Int {
         val n = prices.size
-        if (n <2) {
+        if (n < 2) {
             return 0
         }
         val a = IntArray(n) { 0 }

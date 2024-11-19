@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minExtraChar() {
         assertThat(
             Solution().minExtraChar("leetscode", arrayOf("leet", "code", "leetcode")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minExtraChar2() {
         assertThat(
             Solution().minExtraChar("sayhelloworld", arrayOf("hello", "world")),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

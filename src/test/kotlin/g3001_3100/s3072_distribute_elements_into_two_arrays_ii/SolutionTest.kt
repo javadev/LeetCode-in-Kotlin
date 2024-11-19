@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun resultArray() {
         assertThat(
             Solution().resultArray(intArrayOf(2, 1, 3, 3)),
-            equalTo(intArrayOf(2, 3, 1, 3))
+            equalTo(intArrayOf(2, 3, 1, 3)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun resultArray2() {
         assertThat(
             Solution().resultArray(intArrayOf(5, 14, 3, 1, 2)),
-            equalTo(intArrayOf(5, 3, 1, 2, 14))
+            equalTo(intArrayOf(5, 3, 1, 2, 14)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun resultArray3() {
         assertThat(
             Solution().resultArray(intArrayOf(3, 3, 3, 3)),
-            equalTo(intArrayOf(3, 3, 3, 3))
+            equalTo(intArrayOf(3, 3, 3, 3)),
         )
     }
 }

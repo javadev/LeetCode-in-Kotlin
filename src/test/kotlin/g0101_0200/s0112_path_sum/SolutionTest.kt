@@ -9,7 +9,7 @@ internal class SolutionTest {
     @Test
     fun hasPathSum() {
         val root: TreeNode? = TreeNode.create(
-            listOf(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1)
+            listOf(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1),
         )
         assertThat(Solution().hasPathSum(root, 22), equalTo(true))
     }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun reverseWords() {
         assertThat(
             Solution().reverseWords("Let's take LeetCode contest"),
-            equalTo("s'teL ekat edoCteeL tsetnoc")
+            equalTo("s'teL ekat edoCteeL tsetnoc"),
         )
     }
 

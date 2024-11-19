@@ -11,7 +11,7 @@ internal class SolutionTest {
             intArrayOf(0, 1, 0, 0, 0, 0, 0, 1),
             intArrayOf(0, 1, 0, 0, 0, 0, 0, 1),
             intArrayOf(0, 0, 0, 0, 0, 0, 0, 1),
-            intArrayOf(0, 0, 0, 0, 0, 0, 0, 0)
+            intArrayOf(0, 0, 0, 0, 0, 0, 0, 0),
         )
         assertThat(Solution().containVirus(input), equalTo(10))
     }
@@ -27,7 +27,7 @@ internal class SolutionTest {
         val input = arrayOf(
             intArrayOf(1, 1, 1, 0, 0, 0, 0, 0, 0),
             intArrayOf(1, 0, 1, 0, 1, 1, 1, 1, 1),
-            intArrayOf(1, 1, 1, 0, 0, 0, 0, 0, 0)
+            intArrayOf(1, 1, 1, 0, 0, 0, 0, 0, 0),
         )
         assertThat(Solution().containVirus(input), equalTo(13))
     }

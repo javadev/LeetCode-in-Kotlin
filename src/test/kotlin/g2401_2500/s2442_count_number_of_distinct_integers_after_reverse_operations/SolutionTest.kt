@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countDistinctIntegers() {
         assertThat(
             Solution().countDistinctIntegers(intArrayOf(1, 13, 10, 12, 31)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findAnswer() {
         assertThat<BooleanArray>(
             Solution().findAnswer(intArrayOf(-1, 0, 0, 1, 1, 2), "aababa"),
-            equalTo<BooleanArray>(booleanArrayOf(true, true, false, true, true, true))
+            equalTo<BooleanArray>(booleanArrayOf(true, true, false, true, true, true)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findAnswer2() {
         assertThat<BooleanArray>(
             Solution().findAnswer(intArrayOf(-1, 0, 0, 0, 0), "aabcb"),
-            equalTo<BooleanArray>(booleanArrayOf(true, true, true, true, true))
+            equalTo<BooleanArray>(booleanArrayOf(true, true, true, true, true)),
         )
     }
 }

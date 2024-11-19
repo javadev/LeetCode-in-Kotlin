@@ -17,7 +17,7 @@ class Solution {
             if (i + 2 < stoneValue.size) {
                 ans = Math.max(
                     ans,
-                    stoneValue[i] + stoneValue[i + 1] + stoneValue[i + 2] - dp[i + 3]
+                    stoneValue[i] + stoneValue[i + 1] + stoneValue[i + 2] - dp[i + 3],
                 )
             }
             dp[i] = ans

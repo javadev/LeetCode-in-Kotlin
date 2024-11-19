@@ -16,15 +16,15 @@ class Solution {
                 max(0, k - nums[i]) + min(
                     min(
                         dp[i - 3],
-                        dp[i - 2]
+                        dp[i - 2],
                     ),
-                    dp[i - 1]
+                    dp[i - 1],
                 )
                 )
         }
         return min(
             min(dp[nums.size - 3], dp[nums.size - 2]),
-            dp[nums.size - 1]
+            dp[nums.size - 1],
         )
     }
 }

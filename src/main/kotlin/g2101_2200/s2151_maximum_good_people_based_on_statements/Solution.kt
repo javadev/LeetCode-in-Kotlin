@@ -13,13 +13,15 @@ class Solution {
     private fun max(statements: Array<IntArray>, known: IntArray, position: Int): Int {
         return if (position == statements.size) {
             known.asSequence().filter { a: Int -> a == 1 }.count()
-        } else when (known[position]) {
-            0 -> assumeBad(statements, known, position)
-            1 -> assumeGood(statements, known, position)
-            else -> Math.max(
-                assumeBad(statements, known, position),
-                assumeGood(statements, known, position)
-            )
+        } else {
+            when (known[position]) {
+                0 -> assumeBad(statements, known, position)
+                1 -> assumeGood(statements, known, position)
+                else -> Math.max(
+                    assumeBad(statements, known, position),
+                    assumeGood(statements, known, position),
+                )
+            }
         }
     }
 

@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun isSolvable() {
         assertThat(
-            Solution().isSolvable(arrayOf("SEND", "MORE"), "MONEY"), equalTo(true)
+            Solution().isSolvable(arrayOf("SEND", "MORE"), "MONEY"),
+            equalTo(true),
         )
     }
 
@@ -16,14 +17,15 @@ internal class SolutionTest {
     fun isSolvable2() {
         assertThat(
             Solution().isSolvable(arrayOf("SIX", "SEVEN", "SEVEN"), "TWENTY"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
     @Test
     fun isSolvable3() {
         assertThat(
-            Solution().isSolvable(arrayOf("LEET", "CODE"), "POINT"), equalTo(false)
+            Solution().isSolvable(arrayOf("LEET", "CODE"), "POINT"),
+            equalTo(false),
         )
     }
 }

@@ -14,11 +14,11 @@ internal class SolutionTest {
             contructLinkedList(intArrayOf(2)),
             contructLinkedList(intArrayOf(3)),
             contructLinkedList(intArrayOf()),
-            contructLinkedList(intArrayOf())
+            contructLinkedList(intArrayOf()),
         )
         assertThat(
             Solution().splitListToParts(listNode, 5).contentToString(),
-            equalTo(expected.contentToString())
+            equalTo(expected.contentToString()),
         )
     }
 
@@ -28,11 +28,11 @@ internal class SolutionTest {
         val expected = arrayOf(
             contructLinkedList(intArrayOf(1, 2, 3, 4)),
             contructLinkedList(intArrayOf(5, 6, 7)),
-            contructLinkedList(intArrayOf(8, 9, 10))
+            contructLinkedList(intArrayOf(8, 9, 10)),
         )
         assertThat(
             Solution().splitListToParts(listNode, 3).contentToString(),
-            equalTo(expected.contentToString())
+            equalTo(expected.contentToString()),
         )
     }
 }

@@ -32,7 +32,7 @@ class Solution {
         v.sortWith(
             Comparator { a: IntArray, b: IntArray ->
                 a[0] - b[0]
-            }
+            },
         )
         val ind: MutableList<Int> = ArrayList()
         for (i in 0 until m) ind.add(i)

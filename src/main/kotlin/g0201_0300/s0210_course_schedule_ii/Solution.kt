@@ -34,7 +34,7 @@ class Solution {
     private fun buildGraph(
         numCourses: Int,
         prerequisites: Array<IntArray>,
-        indegrees: IntArray
+        indegrees: IntArray,
     ): List<List<Int>> {
         val graph = List(numCourses) { mutableListOf<Int>() }
         for ((cur, prev) in prerequisites) {

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun matrixScore() {
         assertThat(
             Solution().matrixScore(arrayOf(intArrayOf(0, 0, 1, 1), intArrayOf(1, 0, 1, 0), intArrayOf(1, 1, 0, 0))),
-            equalTo(39)
+            equalTo(39),
         )
     }
 

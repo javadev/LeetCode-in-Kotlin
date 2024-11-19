@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun longestPath() {
         assertThat(
             Solution().longestPath(intArrayOf(-1, 0, 0, 1, 1, 2), "abacbe"),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -34,14 +34,14 @@ internal class SolutionTest {
                         77, 15, 101, 138, 7, 153, 138, 56, 132, 37, 122, 43, 33, 62, 95,
                         91, 46, 103, 34, 63, 115, 2, 132, 86, 86, 9, 26, 110, 8, 87, 58,
                         30, 103, 93, 43, 45, 46, 143, 30, 87, 97, 115, 8, 58, 125, 10,
-                        152, 10, 2, 107, 141, 108, 37, 32, 43, 69, 100
+                        152, 10, 2, 107, 141, 108, 37, 32, 43, 69, 100,
                     ),
                     "ofarlvkejasusszlxapxqmpecaduhuogzltxuclafjrb" +
                         "rvqtsidmmrjjespdupikvyopweptnjteylnixcj" +
                         "jfsubmhcekgbdorwihftfbtrqhzinccijwbpj" +
-                        "aafkdplnjrydmkrluvdcmmoohwgkdmeuuqtsktbyl"
+                        "aafkdplnjrydmkrluvdcmmoohwgkdmeuuqtsktbyl",
                 ),
-            equalTo(18)
+            equalTo(18),
         )
     }
 }

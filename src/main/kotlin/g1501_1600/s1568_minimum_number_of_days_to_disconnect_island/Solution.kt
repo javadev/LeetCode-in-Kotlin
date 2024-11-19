@@ -53,7 +53,7 @@ class Solution {
         grid: Array<IntArray>,
         articulationPoints: MutableList<Int>,
         color: Int,
-        islandSize: IntArray
+        islandSize: IntArray,
     ) {
         times[x][y] = time
         lows[x][y] = time
@@ -79,7 +79,7 @@ class Solution {
                     grid,
                     articulationPoints,
                     color,
-                    islandSize
+                    islandSize,
                 )
                 lows[x][y] = Math.min(lows[x][y], lows[nx][ny])
                 if (prex != -1 && lows[nx][ny] >= time) {

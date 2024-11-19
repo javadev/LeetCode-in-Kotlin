@@ -69,7 +69,7 @@ class Solution {
     private fun minSum3(
         firstSplitVertical: Boolean,
         takeLower: Boolean,
-        secondSplitVertical: Boolean
+        secondSplitVertical: Boolean,
     ): Int {
         var min = Int.MAX_VALUE
         if (firstSplitVertical) {

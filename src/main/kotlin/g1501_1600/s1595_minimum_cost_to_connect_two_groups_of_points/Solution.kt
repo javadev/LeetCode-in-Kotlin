@@ -36,7 +36,7 @@ class Solution {
                     if (msk and (1 shl row) == 0 && tmpRecord[msk] != Int.MAX_VALUE) {
                         tmpRecord[newMask] = Math.min(
                             tmpRecord[newMask],
-                            tmpRecord[msk] + cost[row][col]
+                            tmpRecord[msk] + cost[row][col],
                         )
                     }
                 }

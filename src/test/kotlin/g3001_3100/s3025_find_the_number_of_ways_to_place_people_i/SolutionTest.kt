@@ -12,10 +12,10 @@ internal class SolutionTest {
             Solution()
                 .numberOfPairs(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[1,1],[2,2],[3,3]"
-                    )
+                        "[1,1],[2,2],[3,3]",
+                    ),
                 ),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -25,10 +25,10 @@ internal class SolutionTest {
             Solution()
                 .numberOfPairs(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[6,2],[4,4],[2,6]"
-                    )
+                        "[6,2],[4,4],[2,6]",
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -38,10 +38,10 @@ internal class SolutionTest {
             Solution()
                 .numberOfPairs(
                     convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[3,1],[1,3],[1,1]"
-                    )
+                        "[3,1],[1,3],[1,1]",
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

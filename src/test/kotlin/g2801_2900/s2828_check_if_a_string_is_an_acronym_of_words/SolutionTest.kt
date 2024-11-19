@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isAcronym() {
         assertThat(
             Solution().isAcronym(mutableListOf("alice", "bob", "charlie"), "abc"),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isAcronym2() {
         assertThat(
             Solution().isAcronym(mutableListOf("an", "apple"), "a"),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -27,9 +27,9 @@ internal class SolutionTest {
             Solution()
                 .isAcronym(
                     mutableListOf("never", "gonna", "give", "up", "on", "you"),
-                    "ngguoy"
+                    "ngguoy",
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

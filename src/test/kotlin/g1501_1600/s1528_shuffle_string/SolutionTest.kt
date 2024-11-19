@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun restoreString() {
         assertThat(
             Solution().restoreString("codeleet", intArrayOf(4, 5, 6, 7, 0, 2, 1, 3)),
-            equalTo("leetcode")
+            equalTo("leetcode"),
         )
     }
 

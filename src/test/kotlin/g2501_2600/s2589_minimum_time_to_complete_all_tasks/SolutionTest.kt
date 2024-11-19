@@ -10,11 +10,12 @@ internal class SolutionTest {
         assertThat(
             Solution().findMinimumTime(
                 arrayOf(
-                    intArrayOf(2, 3, 1), intArrayOf(4, 5, 1),
-                    intArrayOf(1, 5, 2)
-                )
+                    intArrayOf(2, 3, 1),
+                    intArrayOf(4, 5, 1),
+                    intArrayOf(1, 5, 2),
+                ),
             ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -23,11 +24,12 @@ internal class SolutionTest {
         assertThat(
             Solution().findMinimumTime(
                 arrayOf(
-                    intArrayOf(1, 3, 2), intArrayOf(2, 5, 3),
-                    intArrayOf(5, 6, 2)
-                )
+                    intArrayOf(1, 3, 2),
+                    intArrayOf(2, 5, 3),
+                    intArrayOf(5, 6, 2),
+                ),
             ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

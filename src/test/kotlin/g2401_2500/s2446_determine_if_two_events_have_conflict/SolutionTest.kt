@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .haveConflict(arrayOf("01:15", "02:00"), arrayOf("02:00", "03:00")),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .haveConflict(arrayOf("01:00", "02:00"), arrayOf("01:20", "03:00")),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .haveConflict(arrayOf("10:00", "11:00"), arrayOf("14:00", "15:00")),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

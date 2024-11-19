@@ -16,7 +16,9 @@ class Solution {
         val result = minimumBeautifulSubstringsHelper(s, 0, set, 0)
         return if (result == Int.MAX_VALUE) {
             -1
-        } else result
+        } else {
+            result
+        }
     }
 
     private fun minimumBeautifulSubstringsHelper(s: String, index: Int, set: Set<String>, count: Int): Int {

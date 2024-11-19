@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minCost(intArrayOf(1, 0), intArrayOf(2, 3), intArrayOf(5, 4, 3), intArrayOf(8, 2, 6, 7)),
-            equalTo(18)
+            equalTo(18),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minCost(intArrayOf(0, 0), intArrayOf(0, 0), intArrayOf(5), intArrayOf(26)),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

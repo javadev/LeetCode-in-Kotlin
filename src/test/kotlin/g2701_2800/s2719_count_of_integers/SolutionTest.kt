@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun count() {
         assertThat(
             Solution().count("1", "12", 1, 8),
-            equalTo(11)
+            equalTo(11),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun count2() {
         assertThat(
             Solution().count("1", "5", 1, 5),
-            equalTo(5)
+            equalTo(5),
         )
     }
 }

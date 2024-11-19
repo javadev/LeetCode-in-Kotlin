@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .sumEvenAfterQueries(
                     intArrayOf(1, 2, 3, 4),
-                    arrayOf(intArrayOf(1, 0), intArrayOf(-3, 1), intArrayOf(-4, 0), intArrayOf(2, 3))
+                    arrayOf(intArrayOf(1, 0), intArrayOf(-3, 1), intArrayOf(-4, 0), intArrayOf(2, 3)),
                 ),
-            equalTo(intArrayOf(8, 6, 2, 4))
+            equalTo(intArrayOf(8, 6, 2, 4)),
         )
     }
 
@@ -21,7 +21,7 @@ internal class SolutionTest {
     fun sumEvenAfterQueries2() {
         assertThat(
             Solution().sumEvenAfterQueries(intArrayOf(1), arrayOf(intArrayOf(4, 0))),
-            equalTo(intArrayOf(0))
+            equalTo(intArrayOf(0)),
         )
     }
 }

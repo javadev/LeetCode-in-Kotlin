@@ -10,9 +10,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findInMountainArray(
-                    3, MountainArrayImpl(intArrayOf(1, 2, 3, 4, 5, 3, 1))
+                    3,
+                    MountainArrayImpl(intArrayOf(1, 2, 3, 4, 5, 3, 1)),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -21,9 +22,10 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .findInMountainArray(
-                    3, MountainArrayImpl(intArrayOf(0, 1, 2, 4, 2, 1))
+                    3,
+                    MountainArrayImpl(intArrayOf(0, 1, 2, 4, 2, 1)),
                 ),
-            equalTo(-1)
+            equalTo(-1),
         )
     }
 

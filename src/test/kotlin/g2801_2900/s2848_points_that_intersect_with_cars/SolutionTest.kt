@@ -13,10 +13,10 @@ internal class SolutionTest {
                     listOf<List<Int>>(
                         mutableListOf(3, 6),
                         mutableListOf(1, 5),
-                        mutableListOf(4, 7)
-                    )
+                        mutableListOf(4, 7),
+                    ),
                 ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .numberOfPoints(listOf<List<Int>>(mutableListOf(1, 3), mutableListOf(5, 8))),
-            equalTo(7)
+            equalTo(7),
         )
     }
 }

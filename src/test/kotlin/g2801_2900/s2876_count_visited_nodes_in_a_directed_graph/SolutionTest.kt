@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countVisitedNodes() {
         assertThat(
             Solution().countVisitedNodes(mutableListOf(1, 2, 0, 0)),
-            equalTo(intArrayOf(3, 3, 3, 4))
+            equalTo(intArrayOf(3, 3, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countVisitedNodes2() {
         assertThat(
             Solution().countVisitedNodes(mutableListOf(1, 2, 3, 4, 0)),
-            equalTo(intArrayOf(5, 5, 5, 5, 5))
+            equalTo(intArrayOf(5, 5, 5, 5, 5)),
         )
     }
 }

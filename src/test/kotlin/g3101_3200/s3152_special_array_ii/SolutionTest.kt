@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun isArraySpecial() {
         assertThat(
             Solution().isArraySpecial(intArrayOf(3, 4, 1, 2, 6), arrayOf(intArrayOf(0, 4))),
-            equalTo(booleanArrayOf(false))
+            equalTo(booleanArrayOf(false)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun isArraySpecial2() {
         assertThat(
             Solution().isArraySpecial(intArrayOf(4, 3, 1, 6), arrayOf(intArrayOf(0, 2), intArrayOf(2, 3))),
-            equalTo(booleanArrayOf(false, true))
+            equalTo(booleanArrayOf(false, true)),
         )
     }
 }

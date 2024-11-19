@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .getCoprimes(intArrayOf(2, 3, 3, 2), arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(1, 3))),
-            equalTo(intArrayOf(-1, 0, 0, 1))
+            equalTo(intArrayOf(-1, 0, 0, 1)),
         )
     }
 
@@ -22,11 +22,14 @@ internal class SolutionTest {
                     intArrayOf(5, 6, 10, 2, 3, 6, 15),
                     arrayOf(
                         intArrayOf(0, 1),
-                        intArrayOf(0, 2), intArrayOf(1, 3), intArrayOf(1, 4), intArrayOf(2, 5),
-                        intArrayOf(2, 6)
-                    )
+                        intArrayOf(0, 2),
+                        intArrayOf(1, 3),
+                        intArrayOf(1, 4),
+                        intArrayOf(2, 5),
+                        intArrayOf(2, 6),
+                    ),
                 ),
-            equalTo(intArrayOf(-1, 0, -1, 0, 0, 0, -1))
+            equalTo(intArrayOf(-1, 0, -1, 0, 0, 0, -1)),
         )
     }
 }

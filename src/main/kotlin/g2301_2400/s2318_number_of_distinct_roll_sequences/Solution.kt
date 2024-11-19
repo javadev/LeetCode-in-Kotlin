@@ -12,7 +12,7 @@ class Solution {
         intArrayOf(1, 2, 4, 5),
         intArrayOf(1, 3, 5),
         intArrayOf(1, 2, 3, 4, 6),
-        intArrayOf(1, 5)
+        intArrayOf(1, 5),
     )
 
     fun distinctSequences(n: Int): Int {

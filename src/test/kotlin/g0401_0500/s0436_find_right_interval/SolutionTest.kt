@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun findRightInterval2() {
         assertThat(
             Solution().findRightInterval(arrayOf(intArrayOf(3, 4), intArrayOf(2, 3), intArrayOf(1, 2))),
-            equalTo(intArrayOf(-1, 0, 1))
+            equalTo(intArrayOf(-1, 0, 1)),
         )
     }
 }

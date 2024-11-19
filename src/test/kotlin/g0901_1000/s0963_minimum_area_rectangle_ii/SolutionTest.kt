@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minAreaFreeRect() {
         assertThat(
             Solution().minAreaFreeRect(arrayOf(intArrayOf(1, 2), intArrayOf(2, 1), intArrayOf(1, 0), intArrayOf(0, 1))),
-            equalTo(2.0)
+            equalTo(2.0),
         )
     }
 
@@ -23,10 +23,10 @@ internal class SolutionTest {
                         intArrayOf(2, 1),
                         intArrayOf(1, 1),
                         intArrayOf(1, 0),
-                        intArrayOf(2, 0)
-                    )
+                        intArrayOf(2, 0),
+                    ),
                 ),
-            equalTo(1.0)
+            equalTo(1.0),
         )
     }
 
@@ -40,10 +40,10 @@ internal class SolutionTest {
                         intArrayOf(1, 2),
                         intArrayOf(3, 1),
                         intArrayOf(1, 3),
-                        intArrayOf(2, 1)
-                    )
+                        intArrayOf(2, 1),
+                    ),
                 ),
-            equalTo(0.0)
+            equalTo(0.0),
         )
     }
 }

@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun countGoodTriplets() {
         assertThat(
             Solution().countGoodTriplets(intArrayOf(3, 0, 1, 1, 9, 7), 7, 2, 3),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
     @Test
     fun countGoodTriplets2() {
         assertThat(
-            Solution().countGoodTriplets(intArrayOf(1, 1, 2, 2, 3), 0, 0, 1), equalTo(0)
+            Solution().countGoodTriplets(intArrayOf(1, 1, 2, 2, 3), 0, 0, 1),
+            equalTo(0),
         )
     }
 }

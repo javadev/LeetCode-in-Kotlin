@@ -16,7 +16,7 @@ class Solution {
         var ans = max(d1[0], d2[0])
         ans = max(
             ((d1[0] + 1) / 2 + ((d2[0] + 1) / 2) + 1),
-            ans
+            ans,
         )
         return ans
     }

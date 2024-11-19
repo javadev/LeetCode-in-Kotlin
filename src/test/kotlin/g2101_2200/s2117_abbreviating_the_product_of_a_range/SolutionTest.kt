@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun abbreviateProduct4() {
         assertThat(
             Solution().abbreviateProduct(10000, 100005),
-            equalTo("99240...51744e22505")
+            equalTo("99240...51744e22505"),
         )
     }
 }

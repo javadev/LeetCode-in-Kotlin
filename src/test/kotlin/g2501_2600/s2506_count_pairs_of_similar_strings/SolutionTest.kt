@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun similarPairs() {
         assertThat(
             Solution().similarPairs(arrayOf("aba", "aabb", "abcd", "bac", "aabc")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 

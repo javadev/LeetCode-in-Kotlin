@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumArea() {
         assertThat(
             Solution().minimumArea(arrayOf(intArrayOf(0, 1, 0), intArrayOf(1, 0, 1))),
-            equalTo(6)
+            equalTo(6),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumArea2() {
         assertThat(
             Solution().minimumArea(arrayOf(intArrayOf(1, 0), intArrayOf(0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun queryResults() {
         assertThat(
             Solution().queryResults(4, arrayOf(intArrayOf(1, 4), intArrayOf(2, 5), intArrayOf(1, 3), intArrayOf(3, 4))),
-            equalTo(intArrayOf(1, 2, 2, 3))
+            equalTo(intArrayOf(1, 2, 2, 3)),
         )
     }
 
@@ -19,9 +19,9 @@ internal class SolutionTest {
             Solution()
                 .queryResults(
                     4,
-                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 2), intArrayOf(3, 4), intArrayOf(4, 5))
+                    arrayOf(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 2), intArrayOf(3, 4), intArrayOf(4, 5)),
                 ),
-            equalTo(intArrayOf(1, 2, 2, 3, 4))
+            equalTo(intArrayOf(1, 2, 2, 3, 4)),
         )
     }
 
@@ -31,9 +31,9 @@ internal class SolutionTest {
             Solution()
                 .queryResults(
                     1,
-                    arrayOf(intArrayOf(0, 2), intArrayOf(1, 10), intArrayOf(0, 10), intArrayOf(0, 3), intArrayOf(1, 5))
+                    arrayOf(intArrayOf(0, 2), intArrayOf(1, 10), intArrayOf(0, 10), intArrayOf(0, 3), intArrayOf(1, 5)),
                 ),
-            equalTo(intArrayOf(1, 2, 1, 2, 2))
+            equalTo(intArrayOf(1, 2, 1, 2, 2)),
         )
     }
 }

@@ -8,21 +8,24 @@ internal class SolutionTest {
     @Test
     fun validTicTacToe() {
         assertThat(
-            Solution().validTicTacToe(arrayOf("O  ", "   ", "   ")), equalTo(false)
+            Solution().validTicTacToe(arrayOf("O  ", "   ", "   ")),
+            equalTo(false),
         )
     }
 
     @Test
     fun validTicTacToe2() {
         assertThat(
-            Solution().validTicTacToe(arrayOf("XOX", " X ", "   ")), equalTo(false)
+            Solution().validTicTacToe(arrayOf("XOX", " X ", "   ")),
+            equalTo(false),
         )
     }
 
     @Test
     fun validTicTacToe3() {
         assertThat(
-            Solution().validTicTacToe(arrayOf("XOX", "O O", "XOX")), equalTo(true)
+            Solution().validTicTacToe(arrayOf("XOX", "O O", "XOX")),
+            equalTo(true),
         )
     }
 }

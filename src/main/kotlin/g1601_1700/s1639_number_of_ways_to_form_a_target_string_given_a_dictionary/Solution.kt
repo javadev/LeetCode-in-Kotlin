@@ -26,7 +26,7 @@ class Solution {
         words: Array<String>,
         target: String,
         idx: Int,
-        len: Int
+        len: Int,
     ): Int {
         if (idx >= target.length) {
             return 1
@@ -47,7 +47,7 @@ class Solution {
                 words,
                 target,
                 idx + 1,
-                len + 1
+                len + 1,
             ).toLong() * counts[len][target[idx].code - 'a'.code] %
                 MOD
             ).toInt()

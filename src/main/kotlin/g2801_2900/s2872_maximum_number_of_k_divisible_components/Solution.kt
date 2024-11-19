@@ -29,7 +29,7 @@ class Solution {
         adj: List<MutableList<Int>>,
         isVis: BooleanArray,
         values: IntArray,
-        k: Long
+        k: Long,
     ): Long {
         var sum = values[curNode].toLong()
         for (ele in adj[curNode]) {

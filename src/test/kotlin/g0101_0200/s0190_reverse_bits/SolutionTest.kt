@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun reverseBits() {
         assertThat(
             Solution().reverseBits(43261596),
-            equalTo(964176192)
+            equalTo(964176192),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun reverseBits2() {
         assertThat(
             Solution().reverseBits(-3),
-            equalTo(-1073741825)
+            equalTo(-1073741825),
         )
     }
 }

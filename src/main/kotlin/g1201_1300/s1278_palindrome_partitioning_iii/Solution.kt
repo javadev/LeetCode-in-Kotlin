@@ -20,7 +20,7 @@ class Solution {
         n: Int,
         k: Int,
         pal: Array<IntArray>,
-        dp: Array<IntArray>
+        dp: Array<IntArray>,
     ): Int {
         if (index == n) {
             return n

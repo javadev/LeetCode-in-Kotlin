@@ -25,7 +25,7 @@ class Solution {
             while (r < logs.size && logs[r][1] <= rVal) servCount.merge(logs[r++][0], 1) { a: Int, b: Int ->
                 Integer.sum(
                     a,
-                    b
+                    b,
                 )
             }
             while (l < r && logs[l][1] < lVal) {

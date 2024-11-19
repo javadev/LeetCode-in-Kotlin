@@ -12,11 +12,11 @@ internal class SolutionTest {
             Solution()
                 .kthLargestPerfectSubtree(
                     TreeNode.create(
-                        mutableListOf(5, 3, 6, 5, 2, 5, 7, 1, 8, null, null, 6, 8)
+                        mutableListOf(5, 3, 6, 5, 2, 5, 7, 1, 8, null, null, 6, 8),
                     ),
-                    2
+                    2,
                 ),
-            equalTo<Int?>(3)
+            equalTo<Int?>(3),
         )
     }
 
@@ -25,9 +25,10 @@ internal class SolutionTest {
         assertThat<Int?>(
             Solution()
                 .kthLargestPerfectSubtree(
-                    TreeNode.create(mutableListOf(1, 2, 3, 4, 5, 6, 7)), 1
+                    TreeNode.create(mutableListOf(1, 2, 3, 4, 5, 6, 7)),
+                    1,
                 ),
-            equalTo<Int?>(7)
+            equalTo<Int?>(7),
         )
     }
 
@@ -36,9 +37,10 @@ internal class SolutionTest {
         assertThat<Int?>(
             Solution()
                 .kthLargestPerfectSubtree(
-                    TreeNode.create(mutableListOf(1, 2, 3, null, 4)), 3
+                    TreeNode.create(mutableListOf(1, 2, 3, null, 4)),
+                    3,
                 ),
-            equalTo<Int?>(-1)
+            equalTo<Int?>(-1),
         )
     }
 }

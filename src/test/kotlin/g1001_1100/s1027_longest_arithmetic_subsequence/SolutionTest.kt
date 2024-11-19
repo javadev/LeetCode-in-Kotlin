@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun longestArithSeqLength3() {
         assertThat(
             Solution().longestArithSeqLength(intArrayOf(20, 1, 15, 3, 10, 5, 8)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

@@ -28,10 +28,14 @@ class Solution {
             for (l in temp) {
                 dp[l[1]] =
                     if ((i != 0)
-                    ) max(dp[l[1]], (dp[i - 1] + l[2])) else max(
-                        dp[l[1]],
-                        l[2]
-                    )
+                    ) {
+                        max(dp[l[1]], (dp[i - 1] + l[2]))
+                    } else {
+                        max(
+                            dp[l[1]],
+                            l[2],
+                        )
+                    }
             }
             i++
         }

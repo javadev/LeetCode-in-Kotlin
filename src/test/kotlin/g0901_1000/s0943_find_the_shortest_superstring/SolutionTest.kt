@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestSuperstring() {
         assertThat(
             Solution().shortestSuperstring(arrayOf("alex", "loves", "leetcode")),
-            equalTo("alexlovesleetcode")
+            equalTo("alexlovesleetcode"),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .shortestSuperstring(arrayOf("catg", "ctaagt", "gcta", "ttca", "atgcatc")),
-            equalTo("gctaagttcatgcatc")
+            equalTo("gctaagttcatgcatc"),
         )
     }
 }

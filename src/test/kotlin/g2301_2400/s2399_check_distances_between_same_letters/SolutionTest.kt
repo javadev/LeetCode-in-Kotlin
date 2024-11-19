@@ -13,10 +13,10 @@ internal class SolutionTest {
                     "abaccb",
                     intArrayOf(
                         1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, 0, 0
-                    )
+                        0, 0, 0, 0, 0,
+                    ),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -28,10 +28,10 @@ internal class SolutionTest {
                     "aa",
                     intArrayOf(
                         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, 0, 0
-                    )
+                        0, 0, 0, 0, 0,
+                    ),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 }

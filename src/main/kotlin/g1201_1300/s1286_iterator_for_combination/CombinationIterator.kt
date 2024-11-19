@@ -18,7 +18,7 @@ class CombinationIterator(characters: String, private val combinationLength: Int
         characters: String,
         start: Int,
         sb: StringBuilder,
-        visited: BooleanArray
+        visited: BooleanArray,
     ) {
         if (sb.length == combinationLength) {
             list.add(sb.toString())

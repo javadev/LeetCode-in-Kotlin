@@ -41,9 +41,9 @@ class Solution {
                         res +
                             getSum(
                                 nums, forward, prefix, backward, suffix,
-                                prev, cur, i
+                                prev, cur, i,
                             ) *
-                                nums[cur]
+                            nums[cur]
                         ) %
                         mod
                     )
@@ -57,7 +57,7 @@ class Solution {
                 (
                     res +
                         getSum(nums, forward, prefix, backward, suffix, prev, cur, n) *
-                            nums[cur]
+                        nums[cur]
                     ) %
                     mod
                 )
@@ -73,7 +73,7 @@ class Solution {
         suffix: LongArray,
         prev: Int,
         cur: Int,
-        next: Int
+        next: Int,
     ): Long {
         val sum = (cur - prev) * nums[cur].toLong() % mod * (next - cur) % mod
         val preSum = getPresum(backward, suffix, prev + 1, cur - 1, next - cur)

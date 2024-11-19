@@ -18,8 +18,8 @@ internal class TreeAncestorTest {
         val treeAncestor = TreeAncestor(
             21,
             intArrayOf(
-                -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2
-            )
+                -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2,
+            ),
         )
         assertThat(treeAncestor.getKthAncestor(3, 1), equalTo(1))
         assertThat(treeAncestor.getKthAncestor(5, 2), equalTo(0))

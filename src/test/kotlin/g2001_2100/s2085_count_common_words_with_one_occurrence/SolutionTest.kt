@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countWords(arrayOf("leetcode", "is", "amazing", "as", "is"), arrayOf("amazing", "leetcode", "is")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -19,7 +19,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countWords(arrayOf("b", "bb", "bbb"), arrayOf("a", "aa", "aaa")),
-            equalTo(0)
+            equalTo(0),
         )
     }
 
@@ -28,7 +28,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .countWords(arrayOf("a", "ab"), arrayOf("a", "a", "a", "ab")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun numberOfAlternatingGroups2() {
         assertThat(
             Solution().numberOfAlternatingGroups(intArrayOf(0, 1, 0, 0, 1)),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

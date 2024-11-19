@@ -10,8 +10,8 @@ internal class SolutionTest {
         assertThat(
             Solution().survivedRobotsHealths(intArrayOf(5, 4, 3, 2, 1), intArrayOf(2, 17, 9, 15, 10), "RRRRR"),
             equalTo(
-                listOf(2, 17, 9, 15, 10)
-            )
+                listOf(2, 17, 9, 15, 10),
+            ),
         )
     }
 
@@ -20,8 +20,8 @@ internal class SolutionTest {
         assertThat(
             Solution().survivedRobotsHealths(intArrayOf(3, 5, 2, 6), intArrayOf(10, 10, 15, 12), "RLRL"),
             equalTo(
-                listOf(14)
-            )
+                listOf(14),
+            ),
         )
     }
 
@@ -30,8 +30,8 @@ internal class SolutionTest {
         assertThat(
             Solution().survivedRobotsHealths(intArrayOf(1, 2, 5, 6), intArrayOf(10, 10, 11, 11), "RLRL"),
             equalTo(
-                listOf()
-            )
+                listOf(),
+            ),
         )
     }
 
@@ -40,11 +40,12 @@ internal class SolutionTest {
         assertThat(
             Solution().survivedRobotsHealths(
                 intArrayOf(3, 2, 30, 24, 38, 7),
-                intArrayOf(47, 12, 49, 11, 47, 38), "RRLRRR"
+                intArrayOf(47, 12, 49, 11, 47, 38),
+                "RRLRRR",
             ),
             equalTo(
-                listOf(12, 47)
-            )
+                listOf(12, 47),
+            ),
         )
     }
 
@@ -53,8 +54,8 @@ internal class SolutionTest {
         assertThat(
             Solution().survivedRobotsHealths(intArrayOf(1, 40), intArrayOf(10, 11), "RL"),
             equalTo(
-                listOf(10)
-            )
+                listOf(10),
+            ),
         )
     }
 }

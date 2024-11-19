@@ -10,7 +10,11 @@ class Solution {
         var ans: Long = 0
         val pq = PriorityQueue { a: IntArray, b: IntArray ->
             if (a[0] == b[0]
-            ) a[1] - b[1] else a[0] - b[0]
+            ) {
+                a[1] - b[1]
+            } else {
+                a[0] - b[0]
+            }
         }
         val vis = BooleanArray(nums.size)
         for (i in nums.indices) {

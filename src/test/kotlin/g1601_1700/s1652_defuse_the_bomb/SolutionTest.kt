@@ -9,14 +9,15 @@ internal class SolutionTest {
     fun decrypt() {
         assertThat(
             Solution().decrypt(intArrayOf(5, 7, 1, 4), 3),
-            equalTo(intArrayOf(12, 10, 16, 13))
+            equalTo(intArrayOf(12, 10, 16, 13)),
         )
     }
 
     @Test
     fun decrypt2() {
         assertThat(
-            Solution().decrypt(intArrayOf(1, 2, 3, 4), 0), equalTo(intArrayOf(0, 0, 0, 0))
+            Solution().decrypt(intArrayOf(1, 2, 3, 4), 0),
+            equalTo(intArrayOf(0, 0, 0, 0)),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun decrypt3() {
         assertThat(
             Solution().decrypt(intArrayOf(2, 4, 9, 3), -2),
-            equalTo(intArrayOf(12, 5, 6, 13))
+            equalTo(intArrayOf(12, 5, 6, 13)),
         )
     }
 }

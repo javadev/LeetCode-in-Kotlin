@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun stableMountains() {
         assertThat<List<Int>>(
             Solution().stableMountains(intArrayOf(1, 2, 3, 4, 5), 2),
-            equalTo<List<Int>>(listOf<Int>(3, 4))
+            equalTo<List<Int>>(listOf<Int>(3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun stableMountains2() {
         assertThat<List<Int>>(
             Solution().stableMountains(intArrayOf(10, 1, 10, 1, 10), 3),
-            equalTo<List<Int>>(listOf<Int>(1, 3))
+            equalTo<List<Int>>(listOf<Int>(1, 3)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun stableMountains3() {
         assertThat<List<Int>>(
             Solution().stableMountains(intArrayOf(10, 1, 10, 1, 10), 10),
-            equalTo<List<Int>>(listOf<Int>())
+            equalTo<List<Int>>(listOf<Int>()),
         )
     }
 }

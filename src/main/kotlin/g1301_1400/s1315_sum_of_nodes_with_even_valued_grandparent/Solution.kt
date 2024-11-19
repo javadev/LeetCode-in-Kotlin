@@ -20,7 +20,9 @@ class Solution {
     fun sumEvenGrandparent(root: TreeNode?): Int {
         return if (root == null) {
             0
-        } else dfs(root, root.left, 0) + dfs(root, root.right, 0)
+        } else {
+            dfs(root, root.left, 0) + dfs(root, root.right, 0)
+        }
     }
 
     private fun dfs(grandparent: TreeNode?, parent: TreeNode?, sum: Int): Int {

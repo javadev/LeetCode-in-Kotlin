@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .wordCount(arrayOf("ant", "act", "tack"), arrayOf("tack", "act", "acti")),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -18,7 +18,7 @@ internal class SolutionTest {
     fun wordCount2() {
         assertThat(
             Solution().wordCount(arrayOf("ab", "a"), arrayOf("abc", "abcd")),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

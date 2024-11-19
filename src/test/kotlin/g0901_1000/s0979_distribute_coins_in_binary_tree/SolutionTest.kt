@@ -11,7 +11,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .distributeCoins(TreeNode.create(listOf(3, 0, 0))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .distributeCoins(TreeNode.create(listOf(0, 3, 0))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -29,9 +29,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .distributeCoins(
-                    TreeNode.create(listOf(1, 0, 0, null, 3))
+                    TreeNode.create(listOf(1, 0, 0, null, 3)),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 }

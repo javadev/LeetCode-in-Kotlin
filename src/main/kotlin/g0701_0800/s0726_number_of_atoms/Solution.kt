@@ -7,7 +7,7 @@ class Solution {
     data class Item(
         var title: String = "",
         var total: String = "",
-        var count: Int = 0
+        var count: Int = 0,
     ) {
         fun getT(): String {
             return if (total == "") "1" else total

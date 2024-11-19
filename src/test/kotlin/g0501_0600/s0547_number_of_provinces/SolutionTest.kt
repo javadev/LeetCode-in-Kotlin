@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun findCircleNum() {
         assertThat(
             Solution().findCircleNum(arrayOf(intArrayOf(1, 1, 0), intArrayOf(1, 1, 0), intArrayOf(0, 0, 1))),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun findCircleNum2() {
         assertThat(
             Solution().findCircleNum(arrayOf(intArrayOf(1, 0, 0), intArrayOf(0, 1, 0), intArrayOf(0, 0, 1))),
-            equalTo(3)
+            equalTo(3),
         )
     }
 }

@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .maximumSubarrayXor(
                     intArrayOf(2, 8, 4, 32, 16, 1),
-                    arrayOf(intArrayOf(0, 2), intArrayOf(1, 4), intArrayOf(0, 5))
+                    arrayOf(intArrayOf(0, 2), intArrayOf(1, 4), intArrayOf(0, 5)),
                 ),
-            equalTo(intArrayOf(12, 60, 60))
+            equalTo(intArrayOf(12, 60, 60)),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .maximumSubarrayXor(
                     intArrayOf(0, 7, 3, 2, 8, 5, 1),
-                    arrayOf(intArrayOf(0, 3), intArrayOf(1, 5), intArrayOf(2, 4), intArrayOf(2, 6), intArrayOf(5, 6))
+                    arrayOf(intArrayOf(0, 3), intArrayOf(1, 5), intArrayOf(2, 4), intArrayOf(2, 6), intArrayOf(5, 6)),
                 ),
-            equalTo(intArrayOf(7, 14, 11, 14, 5))
+            equalTo(intArrayOf(7, 14, 11, 14, 5)),
         )
     }
 }

@@ -47,7 +47,7 @@ class Solution {
             }
             ans = Math.min(
                 n / 2 + n % 2 - maxEven + (n / 2 - secondOdd),
-                n / 2 + n % 2 - secondEven + (n / 2 - maxOdd)
+                n / 2 + n % 2 - secondEven + (n / 2 - maxOdd),
             )
         } else {
             ans = n / 2 + n % 2 - maxEven + n / 2 - maxOdd

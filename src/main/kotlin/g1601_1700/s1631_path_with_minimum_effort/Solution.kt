@@ -42,13 +42,14 @@ class Solution {
                 }
                 pq.add(
                     Pair(
-                        r, c,
+                        r,
+                        c,
                         diff.coerceAtLeast(
                             abs(
-                                heights[r][c] - heights[row][col]
-                            )
-                        )
-                    )
+                                heights[r][c] - heights[row][col],
+                            ),
+                        ),
+                    ),
                 )
             }
         }

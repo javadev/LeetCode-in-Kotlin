@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun answerQueries() {
         assertThat(
             Solution().answerQueries(intArrayOf(4, 5, 2, 1), intArrayOf(3, 10, 21)),
-            equalTo(intArrayOf(2, 3, 4))
+            equalTo(intArrayOf(2, 3, 4)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun answerQueries2() {
         assertThat(
             Solution().answerQueries(intArrayOf(2, 3, 4, 5), intArrayOf(1)),
-            equalTo(intArrayOf(0))
+            equalTo(intArrayOf(0)),
         )
     }
 }

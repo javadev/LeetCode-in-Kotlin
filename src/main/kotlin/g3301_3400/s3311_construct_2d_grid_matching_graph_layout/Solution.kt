@@ -62,7 +62,7 @@ class Solution {
         seen: BooleanArray,
         st: Int,
         als: Array<ArrayList<Int>>,
-        cs: IntArray
+        cs: IntArray,
     ): Array<IntArray> {
         var st = st
         var res: Array<IntArray>
@@ -107,7 +107,7 @@ class Solution {
         st: Int,
         row2: Int,
         seen: BooleanArray,
-        als: Array<ArrayList<Int>>
+        als: Array<ArrayList<Int>>,
     ): Array<IntArray> {
         var res: Array<IntArray> = Array<IntArray>(2) { IntArray(n / 2) }
         res[0][0] = st

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun asteroidCollision() {
         assertThat(
             Solution().asteroidCollision(intArrayOf(5, 10, -5)),
-            equalTo(intArrayOf(5, 10))
+            equalTo(intArrayOf(5, 10)),
         )
     }
 
@@ -21,7 +21,8 @@ internal class SolutionTest {
     @Test
     fun asteroidCollision3() {
         assertThat(
-            Solution().asteroidCollision(intArrayOf(10, 2, -5)), equalTo(intArrayOf(10))
+            Solution().asteroidCollision(intArrayOf(10, 2, -5)),
+            equalTo(intArrayOf(10)),
         )
     }
 }

@@ -15,7 +15,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .minCostClimbingStairs(intArrayOf(1, 100, 1, 1, 1, 100, 1, 1, 100, 1)),
-            equalTo(6)
+            equalTo(6),
         )
     }
 }

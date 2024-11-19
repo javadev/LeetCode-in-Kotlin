@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distinctIntegers() {
         assertThat(
             Solution().distinctIntegers(5),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun distinctIntegers2() {
         assertThat(
             Solution().distinctIntegers(3),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

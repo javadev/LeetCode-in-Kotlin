@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun canMouseWin() {
         assertThat(
             Solution().canMouseWin(arrayOf("####F", "#C...", "M...."), 1, 2),
-            equalTo(true)
+            equalTo(true),
         )
     }
 

@@ -10,7 +10,7 @@ class Solution {
     fun checkIfPrerequisite(
         numCourses: Int,
         prerequisites: Array<IntArray>,
-        queries: Array<IntArray>
+        queries: Array<IntArray>,
     ): List<Boolean> {
         val m: MutableMap<Int, MutableList<Int>> = HashMap()
         val ind = IntArray(numCourses)

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minSubsequence() {
         assertThat(
             Solution().minSubsequence(intArrayOf(4, 3, 10, 9, 8)),
-            equalTo(mutableListOf(10, 9))
+            equalTo(mutableListOf(10, 9)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minSubsequence2() {
         assertThat(
             Solution().minSubsequence(intArrayOf(4, 4, 7, 6, 7)),
-            equalTo(mutableListOf(7, 7, 6))
+            equalTo(mutableListOf(7, 7, 6)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun minSubsequence3() {
         assertThat(
             Solution().minSubsequence(intArrayOf(6)),
-            equalTo(listOf(6))
+            equalTo(listOf(6)),
         )
     }
 }

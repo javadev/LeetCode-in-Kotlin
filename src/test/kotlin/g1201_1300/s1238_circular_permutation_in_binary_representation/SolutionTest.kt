@@ -11,7 +11,7 @@ internal class SolutionTest {
         val actual = Solution().circularPermutation(2, 3)
         assertThat(
             CommonUtils.compareArray(actual, mutableListOf<Int>(3, 2, 0, 1)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -20,7 +20,7 @@ internal class SolutionTest {
         val actual = Solution().circularPermutation(3, 2)
         assertThat(
             CommonUtils.compareArray(actual, mutableListOf<Int>(2, 6, 7, 5, 4, 0, 1, 3)),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

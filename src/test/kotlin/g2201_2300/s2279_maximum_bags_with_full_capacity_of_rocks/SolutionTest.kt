@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maximumBags() {
         assertThat(
             Solution().maximumBags(intArrayOf(2, 3, 4, 5), intArrayOf(1, 2, 4, 4), 2),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maximumBags2() {
         assertThat(
             Solution().maximumBags(intArrayOf(10, 2, 2), intArrayOf(2, 2, 0), 100),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -26,10 +26,11 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .maximumBags(
-                    intArrayOf(91, 54, 63, 99, 24, 45, 78), intArrayOf(35, 32, 45, 98, 6, 1, 25),
-                    17
+                    intArrayOf(91, 54, 63, 99, 24, 45, 78),
+                    intArrayOf(35, 32, 45, 98, 6, 1, 25),
+                    17,
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

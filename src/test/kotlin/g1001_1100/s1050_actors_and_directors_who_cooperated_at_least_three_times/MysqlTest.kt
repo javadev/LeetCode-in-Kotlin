@@ -31,8 +31,8 @@ import javax.sql.DataSource
             "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)" +
             " VALUES (1, 1, 5); " +
             "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)" +
-            " VALUES (2, 1, 6); "
-    ]
+            " VALUES (2, 1, 6); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -45,12 +45,12 @@ internal class MysqlTest {
                         FileReader(
                             "src/main/kotlin/g1001_1100/s1050_actors" +
                                 "_and_directors_who_cooperated_at_least" +
-                                "_three_times/script.sql"
-                        )
+                                "_three_times/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("1"))

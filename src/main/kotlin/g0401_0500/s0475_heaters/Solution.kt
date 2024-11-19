@@ -22,7 +22,7 @@ class Solution {
             } else if (houses[hs] <= heaters[ht + 1]) {
                 res = Math.max(
                     res,
-                    Math.min(houses[hs] - heaters[ht], heaters[ht + 1] - houses[hs])
+                    Math.min(houses[hs] - heaters[ht], heaters[ht + 1] - houses[hs]),
                 )
                 hs++
             } else {

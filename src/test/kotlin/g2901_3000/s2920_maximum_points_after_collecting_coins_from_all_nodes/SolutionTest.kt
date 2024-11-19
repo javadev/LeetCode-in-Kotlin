@@ -12,12 +12,12 @@ internal class SolutionTest {
             Solution()
                 .maximumPoints(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[1,2],[2,3]"
+                        "[0,1],[1,2],[2,3]",
                     ),
                     intArrayOf(10, 10, 3, 3),
-                    5
+                    5,
                 ),
-            equalTo(11)
+            equalTo(11),
         )
     }
 
@@ -27,12 +27,12 @@ internal class SolutionTest {
             Solution()
                 .maximumPoints(
                     CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[0,1],[0,2]"
+                        "[0,1],[0,2]",
                     ),
                     intArrayOf(8, 4, 4),
-                    0
+                    0,
                 ),
-            equalTo(16)
+            equalTo(16),
         )
     }
 }

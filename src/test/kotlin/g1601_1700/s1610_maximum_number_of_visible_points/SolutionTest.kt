@@ -13,12 +13,12 @@ internal class SolutionTest {
                     listOf(
                         listOf(2, 1),
                         listOf(2, 2),
-                        listOf(2, 3)
+                        listOf(2, 3),
                     ),
                     90,
-                    listOf(1, 1)
+                    listOf(1, 1),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -31,12 +31,12 @@ internal class SolutionTest {
                         listOf(2, 1),
                         listOf(2, 2),
                         listOf(3, 4),
-                        listOf(1, 1)
+                        listOf(1, 1),
                     ),
                     90,
-                    listOf(1, 1)
+                    listOf(1, 1),
                 ),
-            equalTo(4)
+            equalTo(4),
         )
     }
 
@@ -47,9 +47,9 @@ internal class SolutionTest {
                 .visiblePoints(
                     listOf(listOf(1, 0), listOf(2, 1)),
                     13,
-                    listOf(1, 1)
+                    listOf(1, 1),
                 ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

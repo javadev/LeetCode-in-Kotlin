@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun minimumCost() {
         assertThat(
             Solution().minimumCost("0011"),
-            equalTo(2)
+            equalTo(2),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun minimumCost2() {
         assertThat(
             Solution().minimumCost("010101"),
-            equalTo(9)
+            equalTo(9),
         )
     }
 }

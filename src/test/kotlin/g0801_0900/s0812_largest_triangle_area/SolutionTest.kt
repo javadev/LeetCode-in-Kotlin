@@ -15,10 +15,10 @@ internal class SolutionTest {
                         intArrayOf(0, 1),
                         intArrayOf(1, 0),
                         intArrayOf(0, 2),
-                        intArrayOf(2, 0)
-                    )
+                        intArrayOf(2, 0),
+                    ),
                 ),
-            equalTo(2.0)
+            equalTo(2.0),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun largestTriangleArea2() {
         assertThat(
             Solution().largestTriangleArea(arrayOf(intArrayOf(1, 0), intArrayOf(0, 0), intArrayOf(0, 1))),
-            equalTo(0.5)
+            equalTo(0.5),
         )
     }
 }

@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .topKFrequent(arrayOf("i", "love", "leetcode", "i", "love", "coding"), 2),
-            equalTo(listOf("i", "love"))
+            equalTo(listOf("i", "love")),
         )
     }
 
@@ -21,11 +21,11 @@ internal class SolutionTest {
                 .topKFrequent(
                     arrayOf(
                         "the", "day", "is", "sunny", "the", "the", "the", "sunny", "is",
-                        "is"
+                        "is",
                     ),
-                    4
+                    4,
                 ),
-            equalTo(listOf("the", "is", "sunny", "day"))
+            equalTo(listOf("the", "is", "sunny", "day")),
         )
     }
 }

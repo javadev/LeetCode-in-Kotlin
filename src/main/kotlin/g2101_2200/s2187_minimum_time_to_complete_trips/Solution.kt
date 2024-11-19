@@ -12,10 +12,14 @@ class Solution {
             return Long.MAX_VALUE
         }
         val mid = left + right shr 1
-        return if (isPossible(time, mid, totalTrips)) Math.min(
-            mid,
-            bs(left, mid - 1, time, totalTrips)
-        ) else bs(mid + 1, right, time, totalTrips)
+        return if (isPossible(time, mid, totalTrips)) {
+            Math.min(
+                mid,
+                bs(left, mid - 1, time, totalTrips),
+            )
+        } else {
+            bs(mid + 1, right, time, totalTrips)
+        }
     }
 
     private fun isPossible(time: IntArray, mid: Long, totalTrips: Long): Boolean {

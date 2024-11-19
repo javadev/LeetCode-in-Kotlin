@@ -51,12 +51,12 @@ class Solution {
         return if (res1.`val` + res2.`val` == 0) {
             Result(
                 0,
-                Math.min(res1.minFlips, res2.minFlips)
+                Math.min(res1.minFlips, res2.minFlips),
             )
         } else if (res1.`val` + res2.`val` == 2) {
             Result(
                 1,
-                1 + Math.min(res1.minFlips, res2.minFlips)
+                1 + Math.min(res1.minFlips, res2.minFlips),
             )
         } else {
             Result(1, 1)
@@ -67,12 +67,12 @@ class Solution {
         return if (res1.`val` + res2.`val` == 0) {
             Result(
                 0,
-                1 + Math.min(res1.minFlips, res2.minFlips)
+                1 + Math.min(res1.minFlips, res2.minFlips),
             )
         } else if (res1.`val` + res2.`val` == 2) {
             Result(
                 1,
-                Math.min(res1.minFlips, res2.minFlips)
+                Math.min(res1.minFlips, res2.minFlips),
             )
         } else {
             Result(0, 1)

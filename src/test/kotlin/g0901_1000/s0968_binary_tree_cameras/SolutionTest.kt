@@ -10,7 +10,7 @@ internal class SolutionTest {
     fun minCameraCover() {
         assertThat(
             Solution().minCameraCover(TreeNode.create(listOf(0, 0, null, 0, 0))),
-            equalTo(1)
+            equalTo(1),
         )
     }
 
@@ -20,10 +20,10 @@ internal class SolutionTest {
             Solution()
                 .minCameraCover(
                     TreeNode.create(
-                        listOf(0, 0, null, 0, null, 0, null, null, 0)
-                    )
+                        listOf(0, 0, null, 0, null, 0, null, null, 0),
+                    ),
                 ),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

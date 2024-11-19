@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun distinctPrimeFactors() {
         assertThat(
             Solution().distinctPrimeFactors(intArrayOf(2, 4, 3, 7, 10, 6)),
-            equalTo(4)
+            equalTo(4),
         )
     }
 

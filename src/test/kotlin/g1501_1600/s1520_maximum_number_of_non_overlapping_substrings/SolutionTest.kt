@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxNumOfSubstrings() {
         assertThat(
             Solution().maxNumOfSubstrings("adefaddaccc"),
-            equalTo(mutableListOf("e", "f", "ccc"))
+            equalTo(mutableListOf("e", "f", "ccc")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxNumOfSubstrings2() {
         assertThat(
             Solution().maxNumOfSubstrings("abbaccd"),
-            equalTo(mutableListOf("bb", "cc", "d"))
+            equalTo(mutableListOf("bb", "cc", "d")),
         )
     }
 }

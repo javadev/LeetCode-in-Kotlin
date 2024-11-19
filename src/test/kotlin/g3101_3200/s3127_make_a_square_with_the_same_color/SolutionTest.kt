@@ -10,9 +10,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakeSquare(
-                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('B', 'W', 'W'), charArrayOf('B', 'W', 'B'))
+                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('B', 'W', 'W'), charArrayOf('B', 'W', 'B')),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -21,9 +21,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakeSquare(
-                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('W', 'B', 'W'), charArrayOf('B', 'W', 'B'))
+                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('W', 'B', 'W'), charArrayOf('B', 'W', 'B')),
                 ),
-            equalTo(false)
+            equalTo(false),
         )
     }
 
@@ -32,9 +32,9 @@ internal class SolutionTest {
         assertThat(
             Solution()
                 .canMakeSquare(
-                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('B', 'W', 'W'), charArrayOf('B', 'W', 'W'))
+                    arrayOf(charArrayOf('B', 'W', 'B'), charArrayOf('B', 'W', 'W'), charArrayOf('B', 'W', 'W')),
                 ),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }

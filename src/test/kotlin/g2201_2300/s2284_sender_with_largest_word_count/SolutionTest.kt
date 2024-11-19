@@ -14,11 +14,11 @@ internal class SolutionTest {
                         "Hello userTwooo",
                         "Hi userThree",
                         "Wonderful day Alice",
-                        "Nice day userThree"
+                        "Nice day userThree",
                     ),
-                    arrayOf("Alice", "userTwo", "userThree", "Alice")
+                    arrayOf("Alice", "userTwo", "userThree", "Alice"),
                 ),
-            equalTo("Alice")
+            equalTo("Alice"),
         )
     }
 
@@ -29,11 +29,11 @@ internal class SolutionTest {
                 .largestWordCount(
                     arrayOf(
                         "How is leetcode for everyone",
-                        "Leetcode is useful for practice"
+                        "Leetcode is useful for practice",
                     ),
-                    arrayOf("Bob", "Charlie")
+                    arrayOf("Bob", "Charlie"),
                 ),
-            equalTo("Charlie")
+            equalTo("Charlie"),
         )
     }
 }

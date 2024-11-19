@@ -17,7 +17,7 @@ class Solution {
         nums: IntArray,
         start: Int,
         currList: MutableList<Int>,
-        answer: MutableSet<List<Int>>
+        answer: MutableSet<List<Int>>,
     ): Set<List<Int>> {
         if (currList.size >= 2) {
             answer.add(ArrayList(currList))

@@ -31,7 +31,7 @@ internal class NodeTest {
         val node = Node(
             1,
             Node(2, Node(21), Node(22)),
-            Node(3, null, Node(32))
+            Node(3, null, Node(32)),
         )
         assertThat(node.`val`, equalTo(1))
         assertThat(node.toString(), equalTo("[[1,3],[2,2],[21,null]]"))

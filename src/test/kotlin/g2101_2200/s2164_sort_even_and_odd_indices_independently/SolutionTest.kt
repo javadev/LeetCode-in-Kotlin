@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sortEvenOdd() {
         assertThat(
             Solution().sortEvenOdd(intArrayOf(4, 1, 2, 3)),
-            equalTo(intArrayOf(2, 3, 4, 1))
+            equalTo(intArrayOf(2, 3, 4, 1)),
         )
     }
 

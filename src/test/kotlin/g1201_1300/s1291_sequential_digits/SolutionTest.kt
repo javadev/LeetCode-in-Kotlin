@@ -14,7 +14,7 @@ internal class SolutionTest {
     fun sequentialDigits2() {
         assertThat(
             Solution().sequentialDigits(1000, 13000),
-            equalTo(mutableListOf(1234, 2345, 3456, 4567, 5678, 6789, 12345))
+            equalTo(mutableListOf(1234, 2345, 3456, 4567, 5678, 6789, 12345)),
         )
     }
 }

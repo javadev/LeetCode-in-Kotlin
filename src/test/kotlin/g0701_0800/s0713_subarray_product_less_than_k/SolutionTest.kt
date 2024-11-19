@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun numSubarrayProductLessThanK() {
         assertThat(
             Solution().numSubarrayProductLessThanK(intArrayOf(10, 5, 2, 6), 100),
-            equalTo(8)
+            equalTo(8),
         )
     }
 

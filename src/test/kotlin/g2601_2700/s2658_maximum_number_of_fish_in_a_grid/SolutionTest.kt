@@ -10,11 +10,13 @@ internal class SolutionTest {
         assertThat(
             Solution().findMaxFish(
                 arrayOf(
-                    intArrayOf(0, 2, 1, 0), intArrayOf(4, 0, 0, 3),
-                    intArrayOf(1, 0, 0, 4), intArrayOf(0, 3, 2, 0)
-                )
+                    intArrayOf(0, 2, 1, 0),
+                    intArrayOf(4, 0, 0, 3),
+                    intArrayOf(1, 0, 0, 4),
+                    intArrayOf(0, 3, 2, 0),
+                ),
             ),
-            equalTo(7)
+            equalTo(7),
         )
     }
 
@@ -23,11 +25,13 @@ internal class SolutionTest {
         assertThat(
             Solution().findMaxFish(
                 arrayOf(
-                    intArrayOf(1, 0, 0, 0), intArrayOf(0, 0, 0, 0),
-                    intArrayOf(0, 0, 0, 0), intArrayOf(0, 0, 0, 1)
-                )
+                    intArrayOf(1, 0, 0, 0),
+                    intArrayOf(0, 0, 0, 0),
+                    intArrayOf(0, 0, 0, 0),
+                    intArrayOf(0, 0, 0, 1),
+                ),
             ),
-            equalTo(1)
+            equalTo(1),
         )
     }
 }

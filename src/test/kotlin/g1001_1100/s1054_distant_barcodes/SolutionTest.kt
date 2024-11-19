@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun rearrangeBarcodes() {
         assertThat(
             Solution().rearrangeBarcodes(intArrayOf(1, 1, 1, 2, 2, 2)),
-            equalTo(intArrayOf(1, 2, 1, 2, 1, 2))
+            equalTo(intArrayOf(1, 2, 1, 2, 1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun rearrangeBarcodes2() {
         assertThat(
             Solution().rearrangeBarcodes(intArrayOf(1, 1, 1, 1, 2, 2, 3, 3)),
-            equalTo(intArrayOf(1, 3, 1, 2, 1, 2, 3, 1))
+            equalTo(intArrayOf(1, 3, 1, 2, 1, 2, 3, 1)),
         )
     }
 }

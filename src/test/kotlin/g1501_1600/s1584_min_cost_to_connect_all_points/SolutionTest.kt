@@ -15,10 +15,10 @@ internal class SolutionTest {
                         intArrayOf(2, 2),
                         intArrayOf(3, 10),
                         intArrayOf(5, 2),
-                        intArrayOf(7, 0)
-                    )
+                        intArrayOf(7, 0),
+                    ),
                 ),
-            equalTo(20)
+            equalTo(20),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun minCostConnectPoints2() {
         assertThat(
             Solution().minCostConnectPoints(arrayOf(intArrayOf(3, 12), intArrayOf(-2, 5), intArrayOf(-4, 1))),
-            equalTo(18)
+            equalTo(18),
         )
     }
 }

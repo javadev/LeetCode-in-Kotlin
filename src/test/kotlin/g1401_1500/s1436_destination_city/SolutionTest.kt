@@ -9,7 +9,8 @@ internal class SolutionTest {
     fun destCity() {
         val input = listOf(
             mutableListOf("London", "New York"),
-            mutableListOf("New York", "Lima"), mutableListOf("Lima", "Sao Paulo")
+            mutableListOf("New York", "Lima"),
+            mutableListOf("Lima", "Sao Paulo"),
         )
         assertThat(Solution().destCity(input), equalTo("Sao Paulo"))
     }

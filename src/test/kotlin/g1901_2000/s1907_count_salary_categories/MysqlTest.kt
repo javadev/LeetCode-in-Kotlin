@@ -24,8 +24,8 @@ import javax.sql.DataSource
             "INSERT INTO Accounts(account_id, income)" +
             " VALUES (8, 87709); " +
             "INSERT INTO Accounts(account_id, income)" +
-            " VALUES (6, 91796); "
-    ]
+            " VALUES (6, 91796); ",
+    ],
 )
 internal class MysqlTest {
     @Test
@@ -37,12 +37,12 @@ internal class MysqlTest {
                     BufferedReader(
                         FileReader(
                             "src/main/kotlin/g1901_2000/" +
-                                "s1907_count_salary_categories/script.sql"
-                        )
+                                "s1907_count_salary_categories/script.sql",
+                        ),
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*?\\r?\\n".toRegex(), "")
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat(resultSet.next(), equalTo(true))
                     assertThat(resultSet.getNString(1), equalTo("Average Salary"))

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun bestCoordinate() {
         assertThat(
             Solution().bestCoordinate(arrayOf(intArrayOf(1, 2, 5), intArrayOf(2, 1, 7), intArrayOf(3, 1, 9)), 2),
-            equalTo(intArrayOf(2, 1))
+            equalTo(intArrayOf(2, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun bestCoordinate2() {
         assertThat(
             Solution().bestCoordinate(arrayOf(intArrayOf(23, 11, 21)), 9),
-            equalTo(intArrayOf(23, 11))
+            equalTo(intArrayOf(23, 11)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun bestCoordinate3() {
         assertThat(
             Solution().bestCoordinate(arrayOf(intArrayOf(1, 2, 13), intArrayOf(2, 1, 7), intArrayOf(0, 1, 9)), 2),
-            equalTo(intArrayOf(1, 2))
+            equalTo(intArrayOf(1, 2)),
         )
     }
 }

@@ -24,9 +24,9 @@ class Solution {
                     for (t in min(g, 0)..max(g, 0)) {
                         val cost: Int =
                             abs(x) + abs(y) + abs(z) + abs(t) + abs((x - a)) + abs(
-                                (y - c)
+                                (y - c),
                             ) + abs((z - i)) + abs((t - g)) + abs((x - y + b + c)) + abs(
-                                (y - z + i + f)
+                                (y - z + i + f),
                             ) + abs((z - t + g + h)) + abs((t - x + a + d))
                         if (cost < minCost) {
                             minCost = cost

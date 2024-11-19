@@ -15,10 +15,10 @@ internal class SolutionTest {
                         intArrayOf(8, 1, 20, 27, 11),
                         intArrayOf(9, 4, 6, 2, 21),
                         intArrayOf(40, 9, 1, 10, 6),
-                        intArrayOf(22, 7, 4, 5, 3)
-                    )
+                        intArrayOf(22, 7, 4, 5, 3),
+                    ),
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun maxTrailingZeros2() {
         assertThat(
             Solution().maxTrailingZeros(arrayOf(intArrayOf(4, 3, 2), intArrayOf(7, 6, 1), intArrayOf(8, 8, 8))),
-            equalTo(0)
+            equalTo(0),
         )
     }
 }

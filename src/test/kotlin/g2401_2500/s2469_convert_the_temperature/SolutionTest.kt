@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun convertTemperature() {
         assertThat(
             Solution().convertTemperature(36.50),
-            equalTo(doubleArrayOf(309.65000, 97.70000))
+            equalTo(doubleArrayOf(309.65000, 97.70000)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun convertTemperature2() {
         assertThat(
             Solution().convertTemperature(122.11),
-            equalTo(doubleArrayOf(395.26000, 251.79800))
+            equalTo(doubleArrayOf(395.26000, 251.79800)),
         )
     }
 }

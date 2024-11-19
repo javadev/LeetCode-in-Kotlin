@@ -41,7 +41,7 @@ class Solution {
         temp2: Int,
         k: Int,
         prefix: Array<IntArray>,
-        dp: Array<Array<IntArray>>
+        dp: Array<Array<IntArray>>,
     ): Int {
         if (k == 0) {
             return if (hasApple(prefix, m, n, temp1 - 1, temp2 - 1)) 1 else 0
@@ -77,7 +77,7 @@ class Solution {
     private fun hasApple(prefix: Array<IntArray>, x1: Int, y1: Int, x2: Int, y2: Int): Boolean {
         return (
             prefix[x2 + 1][y2 + 1] - prefix[x1][y2 + 1] - prefix[x2 + 1][y1] + prefix[x1][y1]
-            > 0
+                > 0
             )
     }
 

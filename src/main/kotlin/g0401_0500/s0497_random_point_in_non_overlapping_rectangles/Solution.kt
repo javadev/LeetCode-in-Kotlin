@@ -49,7 +49,8 @@ class Solution(rects: Array<IntArray>) {
         val bot = r[1]
         val top = r[3]
         return intArrayOf(
-            left + random.nextInt(right - left + 1), bot + random.nextInt(top - bot + 1)
+            left + random.nextInt(right - left + 1),
+            bot + random.nextInt(top - bot + 1),
         )
     }
 }

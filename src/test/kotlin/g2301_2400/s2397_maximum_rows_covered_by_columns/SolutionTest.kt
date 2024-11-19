@@ -14,11 +14,11 @@ internal class SolutionTest {
                         intArrayOf(0, 0, 0),
                         intArrayOf(1, 0, 1),
                         intArrayOf(0, 1, 1),
-                        intArrayOf(0, 0, 1)
+                        intArrayOf(0, 0, 1),
                     ),
-                    2
+                    2,
                 ),
-            equalTo(3)
+            equalTo(3),
         )
     }
 
@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun maximumRows2() {
         assertThat(
             Solution().maximumRows(arrayOf(intArrayOf(1), intArrayOf(0)), 1),
-            equalTo(2)
+            equalTo(2),
         )
     }
 }

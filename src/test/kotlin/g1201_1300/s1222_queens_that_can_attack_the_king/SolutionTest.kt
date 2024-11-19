@@ -16,14 +16,14 @@ internal class SolutionTest {
                     intArrayOf(4, 0),
                     intArrayOf(0, 4),
                     intArrayOf(3, 3),
-                    intArrayOf(2, 4)
+                    intArrayOf(2, 4),
                 ),
-                intArrayOf(0, 0)
+                intArrayOf(0, 0),
             )
         val expected = listOf(mutableListOf(0, 1), mutableListOf(1, 0), mutableListOf(3, 3))
         assertThat(
             CommonUtils.compareMatrix(actual, expected),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -38,14 +38,14 @@ internal class SolutionTest {
                     intArrayOf(3, 4),
                     intArrayOf(3, 5),
                     intArrayOf(4, 4),
-                    intArrayOf(4, 5)
+                    intArrayOf(4, 5),
                 ),
-                intArrayOf(3, 3)
+                intArrayOf(3, 3),
             )
         val expected = listOf(mutableListOf(2, 2), mutableListOf(3, 4), mutableListOf(4, 4))
         assertThat(
             CommonUtils.compareMatrix(actual, expected),
-            equalTo(true)
+            equalTo(true),
         )
     }
 
@@ -87,9 +87,9 @@ internal class SolutionTest {
                     intArrayOf(6, 1),
                     intArrayOf(0, 6),
                     intArrayOf(4, 3),
-                    intArrayOf(1, 7)
+                    intArrayOf(1, 7),
                 ),
-                intArrayOf(3, 4)
+                intArrayOf(3, 4),
             )
         val expected = listOf(
             mutableListOf(2, 3),
@@ -98,11 +98,11 @@ internal class SolutionTest {
             mutableListOf(3, 7),
             mutableListOf(4, 3),
             mutableListOf(5, 4),
-            mutableListOf(4, 5)
+            mutableListOf(4, 5),
         )
         assertThat(
             CommonUtils.compareMatrix(actual, expected),
-            equalTo(true)
+            equalTo(true),
         )
     }
 }
