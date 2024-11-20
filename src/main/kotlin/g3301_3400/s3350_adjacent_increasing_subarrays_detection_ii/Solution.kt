@@ -9,7 +9,7 @@ class Solution {
     fun maxIncreasingSubarrays(nums: List<Int>): Int {
         val n = nums.size
         val a = IntArray(n)
-        for (i in 0.rangeUntil(n)) {
+        for (i in 0..<n) {
             a[i] = nums[i]
         }
         var ans = 1
