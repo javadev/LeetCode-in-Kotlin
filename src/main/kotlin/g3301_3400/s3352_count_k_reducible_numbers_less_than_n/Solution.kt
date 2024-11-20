@@ -7,12 +7,12 @@ class Solution {
     fun countKReducibleNumbers(s: String, k: Int): Int {
         val n = s.length
         val reducible = IntArray(n + 1)
-        for (i in 2.rangeUntil(reducible.size)) {
+        for (i in 2..<reducible.size) {
             reducible[i] = 1 + reducible[Integer.bitCount(i)]
         }
         val dp = LongArray(n + 1)
         var curr = 0
-        for (i in 0.rangeUntil(n)) {
+        for (i in 0..<n) {
             for (j in i - 1 downTo 0) {
                 dp[j + 1] += dp[j]
                 dp[j + 1] %= MOD.toLong()

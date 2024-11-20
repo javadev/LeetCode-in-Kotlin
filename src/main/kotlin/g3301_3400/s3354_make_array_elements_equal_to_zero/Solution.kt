@@ -11,7 +11,7 @@ class Solution {
         var result = 0
         leftSum[0] = 0
         rightSum[nums.size - 1] = 0
-        for (i in 1.rangeUntil(nums.size)) {
+        for (i in 1..<nums.size) {
             leftSum[i] = leftSum[i - 1] + nums[i - 1]
         }
         for (j in nums.size - 2 downTo 0) {

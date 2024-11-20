@@ -8,7 +8,7 @@ class Solution {
         if (l < k * 2) {
             return false
         }
-        for (i in 0.rangeUntil(l - 2 * k + 1)) {
+        for (i in 0..<l - 2 * k + 1) {
             if (check(i, k, nums) && check(i + k, k, nums)) {
                 return true
             }
@@ -17,7 +17,7 @@ class Solution {
     }
 
     private fun check(p: Int, k: Int, nums: List<Int>): Boolean {
-        for (i in p.rangeUntil(p + k - 1)) {
+        for (i in p..<p + k - 1) {
             if (nums[i] >= nums[i + 1]) {
                 return false
             }

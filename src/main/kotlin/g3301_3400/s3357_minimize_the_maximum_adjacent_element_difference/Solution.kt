@@ -12,7 +12,7 @@ class Solution {
         var maxAdj = 0
         var mina = Int.Companion.MAX_VALUE
         var maxb = Int.Companion.MIN_VALUE
-        for (i in 0.rangeUntil(n - 1)) {
+        for (i in 0..<n - 1) {
             val a = nums[i]
             val b = nums[i + 1]
             if (a > 0 && b > 0) {
@@ -23,7 +23,7 @@ class Solution {
             }
         }
         var res = 0
-        for (i in 0.rangeUntil(n)) {
+        for (i in 0..<n) {
             if ((i > 0 && nums[i - 1] == -1) || nums[i] > 0) {
                 continue
             }

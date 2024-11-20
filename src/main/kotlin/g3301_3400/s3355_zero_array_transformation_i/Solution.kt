@@ -21,7 +21,7 @@ class Solution {
                 diff[high + 1] += 1
             }
         }
-        for (i in 0.rangeUntil(n)) {
+        for (i in 0..<n) {
             if (i > 0) {
                 diff[i] += diff[i - 1]
             }
