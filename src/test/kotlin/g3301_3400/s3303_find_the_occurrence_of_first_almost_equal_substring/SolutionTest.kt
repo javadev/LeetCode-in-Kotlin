@@ -20,11 +20,11 @@ internal class SolutionTest {
 
     @Test
     fun minStartingIndex3() {
-        assertThat<Int?>(Solution().minStartingIndex("abcd", "dba"), equalTo<Int?>(-1))
+        assertThat<Int>(Solution().minStartingIndex("abcd", "dba"), equalTo<Int>(-1))
     }
 
     @Test
     fun minStartingIndex4() {
-        assertThat<Int?>(Solution().minStartingIndex("dde", "d"), equalTo<Int?>(0))
+        assertThat<Int>(Solution().minStartingIndex("dde", "d"), equalTo<Int>(0))
     }
 }

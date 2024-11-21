@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun numberOfWays() {
-        assertThat<Int?>(Solution().numberOfWays(1, 2, 3), equalTo<Int?>(6))
+        assertThat<Int>(Solution().numberOfWays(1, 2, 3), equalTo<Int>(6))
     }
 
     @Test
     fun numberOfWays2() {
-        assertThat<Int?>(Solution().numberOfWays(5, 2, 1), equalTo<Int?>(32))
+        assertThat<Int>(Solution().numberOfWays(5, 2, 1), equalTo<Int>(32))
     }
 
     @Test
     fun numberOfWays3() {
-        assertThat<Int?>(Solution().numberOfWays(3, 3, 4), equalTo<Int?>(684))
+        assertThat<Int>(Solution().numberOfWays(3, 3, 4), equalTo<Int>(684))
     }
 }

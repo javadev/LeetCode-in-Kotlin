@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun findMaximumScore() {
-        assertThat<Long?>(
+        assertThat<Long>(
             Solution().findMaximumScore(mutableListOf<Int>(1, 3, 1, 5)),
-            equalTo<Long?>(7L),
+            equalTo<Long>(7L),
         )
     }
 
     @Test
     fun findMaximumScore2() {
-        assertThat<Long?>(
+        assertThat<Long>(
             Solution().findMaximumScore(mutableListOf<Int>(4, 3, 1, 3, 2)),
-            equalTo<Long?>(16L),
+            equalTo<Long>(16L),
         )
     }
 }

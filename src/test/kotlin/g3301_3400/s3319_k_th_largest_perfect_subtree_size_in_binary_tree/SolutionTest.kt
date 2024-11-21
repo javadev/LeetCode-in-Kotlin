@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun kthLargestPerfectSubtree() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution()
                 .kthLargestPerfectSubtree(
                     TreeNode.create(
@@ -16,31 +16,31 @@ internal class SolutionTest {
                     ),
                     2,
                 ),
-            equalTo<Int?>(3),
+            equalTo<Int>(3),
         )
     }
 
     @Test
     fun kthLargestPerfectSubtree2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution()
                 .kthLargestPerfectSubtree(
                     TreeNode.create(mutableListOf(1, 2, 3, 4, 5, 6, 7)),
                     1,
                 ),
-            equalTo<Int?>(7),
+            equalTo<Int>(7),
         )
     }
 
     @Test
     fun kthLargestPerfectSubtree3() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution()
                 .kthLargestPerfectSubtree(
                     TreeNode.create(mutableListOf(1, 2, 3, null, 4)),
                     3,
                 ),
-            equalTo<Int?>(-1),
+            equalTo<Int>(-1),
         )
     }
 }

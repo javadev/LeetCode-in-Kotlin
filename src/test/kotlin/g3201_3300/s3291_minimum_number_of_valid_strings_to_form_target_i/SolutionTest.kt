@@ -7,25 +7,25 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun minValidStrings() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().minValidStrings(arrayOf<String>("abc", "aaaaa", "bcdef"), "aabcdabc"),
-            equalTo<Int?>(3),
+            equalTo<Int>(3),
         )
     }
 
     @Test
     fun minValidStrings2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().minValidStrings(arrayOf<String>("abababab", "ab"), "ababaababa"),
-            equalTo<Int?>(2),
+            equalTo<Int>(2),
         )
     }
 
     @Test
     fun minValidStrings3() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().minValidStrings(arrayOf<String>("abcdef"), "xyz"),
-            equalTo<Int?>(-1),
+            equalTo<Int>(-1),
         )
     }
 }

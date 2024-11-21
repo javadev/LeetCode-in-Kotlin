@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun maxPathLength() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution()
                 .maxPathLength(
                     arrayOf<IntArray>(
@@ -19,29 +19,29 @@ internal class SolutionTest {
                     ),
                     1,
                 ),
-            equalTo<Int?>(3),
+            equalTo<Int>(3),
         )
     }
 
     @Test
     fun maxPathLength2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().maxPathLength(arrayOf<IntArray>(intArrayOf(2, 1), intArrayOf(7, 0), intArrayOf(5, 6)), 2),
-            equalTo<Int?>(2),
+            equalTo<Int>(2),
         )
     }
 
     @Test
     fun maxPathLength3() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().maxPathLength(arrayOf<IntArray>(intArrayOf(0, 3), intArrayOf(8, 5), intArrayOf(6, 8)), 0),
-            equalTo<Int?>(2),
+            equalTo<Int>(2),
         )
     }
 
     @Test
     fun maxPathLength4() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().maxPathLength(
                 arrayOf<IntArray>(
                     intArrayOf(8, 8),
@@ -51,13 +51,13 @@ internal class SolutionTest {
                 ),
                 0,
             ),
-            equalTo<Int?>(2),
+            equalTo<Int>(2),
         )
     }
 
     @Test
     fun maxPathLength5() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution()
                 .maxPathLength(
                     arrayOf<IntArray>(
@@ -71,7 +71,7 @@ internal class SolutionTest {
                     ),
                     6,
                 ),
-            equalTo<Int?>(4),
+            equalTo<Int>(4),
         )
     }
 }

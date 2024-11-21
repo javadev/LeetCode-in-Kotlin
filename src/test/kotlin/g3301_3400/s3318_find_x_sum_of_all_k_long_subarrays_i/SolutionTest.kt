@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun findXSum() {
-        assertThat<IntArray?>(
+        assertThat<IntArray>(
             Solution().findXSum(intArrayOf(1, 1, 2, 2, 3, 4, 2, 3), 6, 2),
-            equalTo<IntArray?>(intArrayOf(6, 10, 12)),
+            equalTo<IntArray>(intArrayOf(6, 10, 12)),
         )
     }
 
     @Test
     fun findXSum2() {
-        assertThat<IntArray?>(
+        assertThat<IntArray>(
             Solution().findXSum(intArrayOf(3, 8, 7, 8, 7, 5), 2, 2),
-            equalTo<IntArray?>(intArrayOf(11, 15, 15, 15, 12)),
+            equalTo<IntArray>(intArrayOf(11, 15, 15, 15, 12)),
         )
     }
 }

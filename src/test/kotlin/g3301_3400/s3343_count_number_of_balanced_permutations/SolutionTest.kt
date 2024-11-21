@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun countBalancedPermutations() {
-        assertThat<Int?>(Solution().countBalancedPermutations("123"), equalTo<Int?>(2))
+        assertThat<Int>(Solution().countBalancedPermutations("123"), equalTo<Int>(2))
     }
 
     @Test
     fun countBalancedPermutations2() {
-        assertThat<Int?>(Solution().countBalancedPermutations("112"), equalTo<Int?>(1))
+        assertThat<Int>(Solution().countBalancedPermutations("112"), equalTo<Int>(1))
     }
 
     @Test
     fun countBalancedPermutations3() {
-        assertThat<Int?>(Solution().countBalancedPermutations("12345"), equalTo<Int?>(0))
+        assertThat<Int>(Solution().countBalancedPermutations("12345"), equalTo<Int>(0))
     }
 }
