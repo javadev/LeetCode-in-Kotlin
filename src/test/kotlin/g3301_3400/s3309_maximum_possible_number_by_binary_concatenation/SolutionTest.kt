@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun maxGoodNumber() {
-        assertThat<Int?>(Solution().maxGoodNumber(intArrayOf(1, 2, 3)), equalTo<Int?>(30))
+        assertThat<Int>(Solution().maxGoodNumber(intArrayOf(1, 2, 3)), equalTo<Int>(30))
     }
 
     @Test
     fun maxGoodNumber2() {
-        assertThat<Int?>(Solution().maxGoodNumber(intArrayOf(2, 8, 16)), equalTo<Int?>(1296))
+        assertThat<Int>(Solution().maxGoodNumber(intArrayOf(2, 8, 16)), equalTo<Int>(1296))
     }
 }

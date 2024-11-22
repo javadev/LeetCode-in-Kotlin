@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun lengthAfterTransformations() {
-        assertThat<Int?>(Solution().lengthAfterTransformations("abcyy", 2), equalTo<Int?>(7))
+        assertThat<Int>(Solution().lengthAfterTransformations("abcyy", 2), equalTo<Int>(7))
     }
 
     @Test
     fun lengthAfterTransformations2() {
-        assertThat<Int?>(Solution().lengthAfterTransformations("azbk", 1), equalTo<Int?>(5))
+        assertThat<Int>(Solution().lengthAfterTransformations("azbk", 1), equalTo<Int>(5))
     }
 }

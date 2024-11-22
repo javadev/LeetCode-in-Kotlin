@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun shortestSubstrings() {
         assertThat(
             Solution().shortestSubstrings(arrayOf("cab", "ad", "bad", "c")),
-            equalTo(arrayOf<String?>("ab", "", "ba", "")),
+            equalTo(arrayOf<String>("ab", "", "ba", "")),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun shortestSubstrings2() {
         assertThat(
             Solution().shortestSubstrings(arrayOf("abc", "bcd", "abcd")),
-            equalTo(arrayOf<String?>("", "", "abcd")),
+            equalTo(arrayOf<String>("", "", "abcd")),
         )
     }
 }

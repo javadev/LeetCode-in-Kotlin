@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun maxPossibleScore() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().maxPossibleScore(intArrayOf(6, 0, 3), 2),
-            equalTo<Int?>(4),
+            equalTo<Int>(4),
         )
     }
 
     @Test
     fun maxPossibleScore2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().maxPossibleScore(intArrayOf(2, 6, 13, 13), 5),
-            equalTo<Int?>(5),
+            equalTo<Int>(5),
         )
     }
 }

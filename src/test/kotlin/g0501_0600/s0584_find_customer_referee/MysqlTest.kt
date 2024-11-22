@@ -29,7 +29,7 @@ internal class MysqlTest {
     @Test
     @Throws(SQLException::class, FileNotFoundException::class)
     fun testScript(@EmbeddedDatabase dataSource: DataSource) {
-        dataSource.getConnection().use { connection ->
+        dataSource.connection.use { connection ->
             connection.createStatement().use { statement ->
                 statement.executeQuery(
                     BufferedReader(

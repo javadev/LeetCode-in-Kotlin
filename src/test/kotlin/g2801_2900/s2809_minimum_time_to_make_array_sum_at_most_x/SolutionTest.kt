@@ -8,7 +8,7 @@ internal class SolutionTest {
     @Test
     fun minimumTime() {
         assertThat(
-            Solution().minimumTime(mutableListOf<Int?>(1, 2, 3), mutableListOf<Int?>(1, 2, 3), 4),
+            Solution().minimumTime(mutableListOf<Int>(1, 2, 3), mutableListOf<Int>(1, 2, 3), 4),
             equalTo(3),
         )
     }
@@ -16,7 +16,7 @@ internal class SolutionTest {
     @Test
     fun minimumTime2() {
         assertThat(
-            Solution().minimumTime(mutableListOf<Int?>(1, 2, 3), mutableListOf<Int?>(3, 3, 3), 4),
+            Solution().minimumTime(mutableListOf<Int>(1, 2, 3), mutableListOf<Int>(3, 3, 3), 4),
             equalTo(-1),
         )
     }

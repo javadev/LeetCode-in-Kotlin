@@ -6,13 +6,14 @@ package g0201_0300.s0212_word_search_ii
 @Suppress("NAME_SHADOWING")
 class Solution {
     private var root: Tree? = null
-    fun findWords(board: Array<CharArray>, words: Array<String?>): List<String> {
-        if (board.size < 1 || board[0].size < 1) {
+
+    fun findWords(board: Array<CharArray>, words: Array<String>): List<String> {
+        if (board.isEmpty() || board[0].isEmpty()) {
             return emptyList()
         }
         root = Tree()
         for (word in words) {
-            Tree.addWord(root, word!!)
+            Tree.addWord(root, word)
         }
         val collected: MutableList<String> = ArrayList()
         for (i in board.indices) {

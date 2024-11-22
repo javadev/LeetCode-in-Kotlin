@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun subsequencePairCount() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().subsequencePairCount(intArrayOf(1, 2, 3, 4)),
-            equalTo<Int?>(10),
+            equalTo<Int>(10),
         )
     }
 
     @Test
     fun subsequencePairCount2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().subsequencePairCount(intArrayOf(10, 20, 30)),
-            equalTo<Int?>(2),
+            equalTo<Int>(2),
         )
     }
 }

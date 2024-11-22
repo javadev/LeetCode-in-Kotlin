@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun findSubtreeSizes() {
-        assertThat<IntArray?>(
+        assertThat<IntArray>(
             Solution().findSubtreeSizes(intArrayOf(-1, 0, 0, 1, 1, 1), "abaabc"),
-            equalTo<IntArray?>(intArrayOf(6, 3, 1, 1, 1, 1)),
+            equalTo<IntArray>(intArrayOf(6, 3, 1, 1, 1, 1)),
         )
     }
 
     @Test
     fun findSubtreeSizes2() {
-        assertThat<IntArray?>(
+        assertThat<IntArray>(
             Solution().findSubtreeSizes(intArrayOf(-1, 0, 4, 0, 1), "abbba"),
-            equalTo<IntArray?>(intArrayOf(5, 2, 1, 1, 1)),
+            equalTo<IntArray>(intArrayOf(5, 2, 1, 1, 1)),
         )
     }
 }

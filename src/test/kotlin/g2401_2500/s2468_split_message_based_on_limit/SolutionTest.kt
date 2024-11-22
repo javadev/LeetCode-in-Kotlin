@@ -10,7 +10,7 @@ internal class SolutionTest {
         assertThat(
             Solution().splitMessage("this is really a very awesome message", 9),
             equalTo(
-                arrayOf<String?>(
+                arrayOf<String>(
                     "thi<1/14>",
                     "s i<2/14>",
                     "s r<3/14>",
@@ -34,7 +34,7 @@ internal class SolutionTest {
     fun splitMessage2() {
         assertThat(
             Solution().splitMessage("short message", 15),
-            equalTo(arrayOf<String?>("short mess<1/2>", "age<2/2>")),
+            equalTo(arrayOf<String>("short mess<1/2>", "age<2/2>")),
         )
     }
 }

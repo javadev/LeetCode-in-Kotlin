@@ -8,7 +8,7 @@ internal class SolutionTest {
     @Test
     fun maximumScore() {
         assertThat(
-            Solution().maximumScore(mutableListOf<Int?>(8, 3, 9, 3, 8), 2),
+            Solution().maximumScore(mutableListOf<Int>(8, 3, 9, 3, 8), 2),
             equalTo(81),
         )
     }
@@ -16,7 +16,7 @@ internal class SolutionTest {
     @Test
     fun maximumScore2() {
         assertThat(
-            Solution().maximumScore(mutableListOf<Int?>(19, 12, 14, 6, 10, 18), 3),
+            Solution().maximumScore(mutableListOf<Int>(19, 12, 14, 6, 10, 18), 3),
             equalTo(4788),
         )
     }

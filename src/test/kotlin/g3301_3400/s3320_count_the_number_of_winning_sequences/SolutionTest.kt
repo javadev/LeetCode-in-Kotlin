@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun countWinningSequences() {
-        assertThat<Int?>(Solution().countWinningSequences("FFF"), equalTo<Int?>(3))
+        assertThat<Int>(Solution().countWinningSequences("FFF"), equalTo<Int>(3))
     }
 
     @Test
     fun countWinningSequences2() {
-        assertThat<Int?>(Solution().countWinningSequences("FWEFW"), equalTo<Int?>(18))
+        assertThat<Int>(Solution().countWinningSequences("FWEFW"), equalTo<Int>(18))
     }
 }

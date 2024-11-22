@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun isBalanced() {
-        assertThat<Boolean?>(Solution().isBalanced("1234"), equalTo<Boolean?>(false))
+        assertThat<Boolean>(Solution().isBalanced("1234"), equalTo<Boolean>(false))
     }
 
     @Test
     fun isBalanced2() {
-        assertThat<Boolean?>(Solution().isBalanced("24123"), equalTo<Boolean?>(true))
+        assertThat<Boolean>(Solution().isBalanced("24123"), equalTo<Boolean>(true))
     }
 }

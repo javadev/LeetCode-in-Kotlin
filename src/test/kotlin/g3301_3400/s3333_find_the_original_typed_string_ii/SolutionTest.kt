@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun possibleStringCount() {
-        assertThat<Int?>(Solution().possibleStringCount("aabbccdd", 7), equalTo<Int?>(5))
+        assertThat<Int>(Solution().possibleStringCount("aabbccdd", 7), equalTo<Int>(5))
     }
 
     @Test
     fun possibleStringCount2() {
-        assertThat<Int?>(Solution().possibleStringCount("aabbccdd", 8), equalTo<Int?>(1))
+        assertThat<Int>(Solution().possibleStringCount("aabbccdd", 8), equalTo<Int>(1))
     }
 
     @Test
     fun possibleStringCount3() {
-        assertThat<Int?>(Solution().possibleStringCount("aaabbb", 3), equalTo<Int?>(8))
+        assertThat<Int>(Solution().possibleStringCount("aaabbb", 3), equalTo<Int>(8))
     }
 }
