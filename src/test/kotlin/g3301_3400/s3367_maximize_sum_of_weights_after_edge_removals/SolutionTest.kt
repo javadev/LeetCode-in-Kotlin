@@ -1,34 +1,43 @@
-package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals;
+package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
+import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Test;
-
-class SolutionTest {
+internal class SolutionTest {
     @Test
-    void maximizeSumOfWeights() {
-        assertThat(
-                new Solution()
-                        .maximizeSumOfWeights(
-                                new int[][] {{0, 1, 4}, {0, 2, 2}, {2, 3, 12}, {2, 4, 6}}, 2),
-                equalTo(22L));
+    fun maximizeSumOfWeights() {
+        assertThat<Long>(
+            Solution()
+                .maximizeSumOfWeights(
+                    arrayOf<IntArray>(
+                        intArrayOf(0, 1, 4),
+                        intArrayOf(0, 2, 2),
+                        intArrayOf(2, 3, 12),
+                        intArrayOf(2, 4, 6),
+                    ),
+                    2,
+                ),
+            equalTo<Long>(22L),
+        )
     }
 
     @Test
-    void maximizeSumOfWeights2() {
-        assertThat(
-                new Solution()
-                        .maximizeSumOfWeights(
-                                new int[][] {
-                                    {0, 1, 5},
-                                    {1, 2, 10},
-                                    {0, 3, 15},
-                                    {3, 4, 20},
-                                    {3, 5, 5},
-                                    {0, 6, 10}
-                                },
-                                3),
-                equalTo(65L));
+    fun maximizeSumOfWeights2() {
+        assertThat<Long>(
+            Solution()
+                .maximizeSumOfWeights(
+                    arrayOf<IntArray>(
+                        intArrayOf(0, 1, 5),
+                        intArrayOf(1, 2, 10),
+                        intArrayOf(0, 3, 15),
+                        intArrayOf(3, 4, 20),
+                        intArrayOf(3, 5, 5),
+                        intArrayOf(0, 6, 10),
+                    ),
+                    3,
+                ),
+            equalTo<Long?>(65L),
+        )
     }
 }

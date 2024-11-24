@@ -17,7 +17,7 @@ class Solution {
                 idx++
             }
             cur += diffs[i]
-            while (cur < nums[i] && !last.isEmpty() && last.peek()!! >= i) {
+            while (cur < nums[i] && last.isNotEmpty() && last.peek()!! >= i) {
                 cur++
                 diffs[last.poll()!! + 1]--
             }

@@ -9,9 +9,9 @@ class Solution {
     fun maximizeSumOfWeights(edges: Array<IntArray>, k: Int): Long {
         val map = HashMap<Int?, ArrayList<IntArray>?>()
         for (edge in edges) {
-            map.computeIfAbsent(edge[0]) { t: Int? -> ArrayList<IntArray>() }!!
+            map.computeIfAbsent(edge[0]) { _: Int? -> ArrayList<IntArray>() }!!
                 .add(intArrayOf(edge[1], edge[2]))
-            map.computeIfAbsent(edge[1]) { t: Int? -> ArrayList<IntArray>() }!!
+            map.computeIfAbsent(edge[1]) { _: Int? -> ArrayList<IntArray>() }!!
                 .add(intArrayOf(edge[0], edge[2]))
         }
         return maximizeSumOfWeights(0, -1, k, map)[0]
@@ -25,7 +25,7 @@ class Solution {
     ): LongArray {
         var sum: Long = 0
         val queue = PriorityQueue<Long>()
-        for (i in map.get(v)!!) {
+        for (i in map[v]!!) {
             if (i[0] != from) {
                 val next = maximizeSumOfWeights(i[0], v, k, map)
                 next[1] += i[1].toLong()

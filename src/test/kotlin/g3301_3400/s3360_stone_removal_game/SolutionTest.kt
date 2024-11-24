@@ -1,23 +1,22 @@
-package g3301_3400.s3360_stone_removal_game;
+package g3301_3400.s3360_stone_removal_game
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
+import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Test;
-
-class SolutionTest {
+internal class SolutionTest {
     @Test
-    void canAliceWin() {
-        assertThat(new Solution().canAliceWin(12), equalTo(true));
+    fun canAliceWin() {
+        assertThat<Boolean>(Solution().canAliceWin(12), equalTo<Boolean>(true))
     }
 
     @Test
-    void canAliceWin2() {
-        assertThat(new Solution().canAliceWin(1), equalTo(false));
+    fun canAliceWin2() {
+        assertThat<Boolean>(Solution().canAliceWin(1), equalTo<Boolean>(false))
     }
 
     @Test
-    void canAliceWin3() {
-        assertThat(new Solution().canAliceWin(19), equalTo(false));
+    fun canAliceWin3() {
+        assertThat<Boolean>(Solution().canAliceWin(19), equalTo<Boolean>(false))
     }
 }
