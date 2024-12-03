@@ -1,6 +1,7 @@
 package g3301_3400.s3362_zero_array_transformation_iii
 
-// #Medium #2024_11_24_Time_217_ms_(100.00%)_Space_105.7_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #Heap_Priority_Queue #Prefix_Sum
+// #2024_11_24_Time_217_ms_(100.00%)_Space_105.7_MB_(100.00%)
 
 import java.util.PriorityQueue
 

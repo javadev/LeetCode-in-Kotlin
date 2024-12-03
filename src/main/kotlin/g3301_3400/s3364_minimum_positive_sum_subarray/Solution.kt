@@ -1,6 +1,6 @@
 package g3301_3400.s3364_minimum_positive_sum_subarray
 
-// #Easy #2024_11_24_Time_24_ms_(100.00%)_Space_38_MB_(100.00%)
+// #Easy #Array #Prefix_Sum #Sliding_Window #2024_11_24_Time_24_ms_(100.00%)_Space_38_MB_(100.00%)
 
 class Solution {
     fun minimumSumSubarray(nums: List<Int>, l: Int, r: Int): Int {

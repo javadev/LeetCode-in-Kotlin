@@ -1,6 +1,6 @@
 package g3301_3400.s3361_shift_distance_between_two_strings
 
-// #Medium #2024_11_24_Time_425_ms_(100.00%)_Space_41_MB_(100.00%)
+// #Medium #Array #String #Prefix_Sum #2024_11_24_Time_425_ms_(100.00%)_Space_41_MB_(100.00%)
 
 import kotlin.math.min
 

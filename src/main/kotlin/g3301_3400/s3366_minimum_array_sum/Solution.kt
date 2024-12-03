@@ -1,6 +1,6 @@
 package g3301_3400.s3366_minimum_array_sum
 
-// #Medium #2024_11_24_Time_59_ms_(100.00%)_Space_53.4_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2024_11_24_Time_59_ms_(100.00%)_Space_53.4_MB_(100.00%)
 
 import kotlin.math.ceil
 import kotlin.math.min

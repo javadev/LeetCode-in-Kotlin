@@ -1,6 +1,7 @@
 package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals
 
-// #Hard #2024_11_27_Time_118_ms_(100.00%)_Space_140.5_MB_(100.00%)
+// #Hard #Dynamic_Programming #Depth_First_Search #Tree
+// #2024_11_27_Time_118_ms_(100.00%)_Space_140.5_MB_(100.00%)
 
 import java.util.PriorityQueue
 import kotlin.math.max
