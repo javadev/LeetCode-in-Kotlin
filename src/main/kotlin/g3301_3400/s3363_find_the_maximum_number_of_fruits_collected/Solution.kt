@@ -1,6 +1,7 @@
 package g3301_3400.s3363_find_the_maximum_number_of_fruits_collected
 
-// #Hard #Array #Dynamic_Programming #Matrix #2024_11_24_Time_53_ms_(100.00%)_Space_162_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Matrix
+// #2024_12_03_Time_39_ms_(88.89%)_Space_161.2_MB_(100.00%)
 
 import kotlin.math.max
 

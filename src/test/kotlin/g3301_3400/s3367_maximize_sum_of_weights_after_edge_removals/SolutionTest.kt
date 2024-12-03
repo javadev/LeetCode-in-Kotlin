@@ -37,7 +37,18 @@ internal class SolutionTest {
                     ),
                     3,
                 ),
-            equalTo<Long?>(65L),
+            equalTo<Long>(65L),
+        )
+    }
+
+    @Test
+    fun maximizeSumOfWeights3() {
+        assertThat<Long>(
+            Solution().maximizeSumOfWeights(
+                arrayOf<IntArray>(intArrayOf(0, 1, 34), intArrayOf(0, 2, 17)),
+                1,
+            ),
+            equalTo<Long>(34L),
         )
     }
 }

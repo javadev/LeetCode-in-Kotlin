@@ -1,7 +1,7 @@
 package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Tree
-// #2024_11_27_Time_118_ms_(100.00%)_Space_140.5_MB_(100.00%)
+// #2024_12_03_Time_113_ms_(100.00%)_Space_141.5_MB_(81.82%)
 
 import java.util.PriorityQueue
 import kotlin.math.max
@@ -33,7 +33,7 @@ class Solution {
                 continue
             }
             val res = dfs(w, v)
-            val max = max((e[2] + res[0]), res[1])
+            val max = max(e[2] + res[0], res[1])
             sum += max
             pq.add(max - res[1])
         }

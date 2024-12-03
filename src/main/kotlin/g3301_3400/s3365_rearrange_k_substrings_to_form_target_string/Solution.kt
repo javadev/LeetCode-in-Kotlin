@@ -1,6 +1,6 @@
 package g3301_3400.s3365_rearrange_k_substrings_to_form_target_string
 
-// #Medium #String #Hash_Table #Sorting #2024_11_24_Time_490_ms_(100.00%)_Space_50.5_MB_(100.00%)
+// #Medium #String #Hash_Table #Sorting #2024_12_03_Time_457_ms_(100.00%)_Space_51.5_MB_(81.40%)
 
 class Solution {
     fun isPossibleToRearrange(s: String, t: String, k: Int): Boolean {

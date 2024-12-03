@@ -20,4 +20,20 @@ internal class SolutionTest {
             equalTo<Int>(3),
         )
     }
+
+    @Test
+    fun minArraySum3() {
+        assertThat<Int>(
+            Solution()
+                .minArraySum(
+                    intArrayOf(
+                        1, 3, 5, 7, 9, 12, 12, 12, 13, 15, 15, 15, 16, 17, 19, 20,
+                    ),
+                    11,
+                    15,
+                    4,
+                ),
+            equalTo<Int>(77),
+        )
+    }
 }

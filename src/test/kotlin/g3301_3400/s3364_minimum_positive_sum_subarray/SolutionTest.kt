@@ -24,7 +24,7 @@ internal class SolutionTest {
     @Test
     fun minimumSumSubarray3() {
         assertThat<Int>(
-            Solution().minimumSumSubarray(mutableListOf<Int>(1, 2, 3, 4), 2, 4),
+            Solution().minimumSumSubarray(listOf<Int>(1, 2, 3, 4), 2, 4),
             equalTo<Int>(3),
         )
     }
