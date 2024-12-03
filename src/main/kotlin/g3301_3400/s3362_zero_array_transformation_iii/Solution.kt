@@ -7,7 +7,7 @@ import java.util.PriorityQueue
 
 class Solution {
     fun maxRemoval(nums: IntArray, queries: Array<IntArray>): Int {
-        queries.sortWith { a: IntArray?, b: IntArray? -> a!![0] - b!![0] }
+        queries.sortWith { a: IntArray, b: IntArray -> a[0] - b[0] }
         val last = PriorityQueue<Int?>(Comparator { a: Int?, b: Int? -> b!! - a!! })
         val diffs = IntArray(nums.size + 1)
         var idx = 0
