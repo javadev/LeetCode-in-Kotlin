@@ -29,7 +29,7 @@ class Solution {
         val pq = PriorityQueue<IntArray>(Comparator { a: IntArray, b: IntArray -> a[0] - b[0] })
         visited[n] = true
         pq.add(intArrayOf(n, n))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val current = pq.poll()
             val cost = current[0]
             val num = current[1]

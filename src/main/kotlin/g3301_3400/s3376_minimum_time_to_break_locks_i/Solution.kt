@@ -34,7 +34,7 @@ class Solution {
         while (nums[j] <= nums[i]) {
             j--
         }
-        nums[i] = nums.set(j, nums[i])
+        nums[j] = nums[i]
         nums.subList(i + 1, nums.size).reverse()
         return true
     }
