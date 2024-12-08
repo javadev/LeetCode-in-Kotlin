@@ -34,7 +34,9 @@ class Solution {
         while (nums[j] <= nums[i]) {
             j--
         }
-        nums[j] = nums[i]
+        val temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
         nums.subList(i + 1, nums.size).reverse()
         return true
     }
