@@ -11,7 +11,7 @@ class Solution {
         if (xCoord.size < 4) {
             return -1
         }
-        val pair = Array<Pair>(xCoord.size) { i -> Pair(0, 0) }
+        val pair = xCoord.zip(yCoord) { x, y -> Pair(x, y) }.toTypedArray()
         for (i in xCoord.indices) {
             val x0 = xCoord[i]
             val y0 = yCoord[i]
