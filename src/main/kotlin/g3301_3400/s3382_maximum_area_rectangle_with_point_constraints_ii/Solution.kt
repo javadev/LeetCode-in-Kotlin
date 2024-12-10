@@ -12,28 +12,23 @@ class Solution {
             return -1
         }
         val pair = xCoord.zip(yCoord) { x, y -> Pair(x, y) }.toTypedArray()
-        for (i in xCoord.indices) {
-            val x0 = xCoord[i]
-            val y0 = yCoord[i]
-            pair[i] = Pair(x0, y0)
-        }
         pair.sort()
         val map = HashMap<Int?, Pair>()
         val yVals = TreeSet<Int?>()
         var best: Long = -1
         for (i in 0..<pair.size - 1) {
-            if (!yVals.isEmpty()) {
+            if (yVals.isNotEmpty()) {
                 val y0 = pair[i].y
                 var y1 = yVals.floor(y0)
                 while (y1 != null) {
-                    val p1: Pair = map.get(y1)!!
+                    val p1: Pair = map[y1]!!
                     if (p1.y < y0) {
                         break
                     }
                     if (y1 == y0 && pair[i + 1].x == pair[i].x && pair[i + 1].y == p1.y) {
                         val dY = p1.y - y0.toLong()
                         val dX = pair[i].x - p1.x.toLong()
-                        best = max((dY * dX).toDouble(), best.toDouble()).toLong()
+                        best = max(dY * dX, best)
                     }
                     if (p1.x != pair[i].x) {
                         yVals.remove(y1)
