@@ -1,6 +1,7 @@
 package g3301_3400.s3377_digit_operations_to_make_two_integers_equal
 
-// #Medium #2024_12_08_Time_215_ms_(100.00%)_Space_40.7_MB_(100.00%)
+// #Medium #Math #Heap_Priority_Queue #Graph #Shortest_Path #Number_Theory
+// #2024_12_08_Time_215_ms_(100.00%)_Space_40.7_MB_(100.00%)
 
 import java.util.PriorityQueue
 

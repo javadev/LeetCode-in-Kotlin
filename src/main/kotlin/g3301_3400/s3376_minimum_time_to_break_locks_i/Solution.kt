@@ -1,6 +1,7 @@
 package g3301_3400.s3376_minimum_time_to_break_locks_i
 
-// #Medium #2024_12_08_Time_202_ms_(100.00%)_Space_40_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2024_12_08_Time_202_ms_(100.00%)_Space_40_MB_(100.00%)
 
 import kotlin.math.min
 

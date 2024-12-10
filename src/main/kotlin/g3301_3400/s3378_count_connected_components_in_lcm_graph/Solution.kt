@@ -1,6 +1,7 @@
 package g3301_3400.s3378_count_connected_components_in_lcm_graph
 
-// #Hard #2024_12_08_Time_58_ms_(100.00%)_Space_54.4_MB_(100.00%)
+// #Hard #Array #Hash_Table #Math #Union_Find #Number_Theory
+// #2024_12_08_Time_58_ms_(100.00%)_Space_54.4_MB_(100.00%)
 
 class Solution {
     private class UnionFind(n: Int) {
