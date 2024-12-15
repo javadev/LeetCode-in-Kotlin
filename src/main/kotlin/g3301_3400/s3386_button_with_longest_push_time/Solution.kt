@@ -1,6 +1,6 @@
 package g3301_3400.s3386_button_with_longest_push_time
 
-// #Easy #2024_12_15_Time_0_ms_(100.00%)_Space_44.6_MB_(100.00%)
+// #Easy #2024_12_15_Time_1_ms_(100.00%)_Space_40.6_MB_(100.00%)
 
 import kotlin.math.min
 
@@ -15,7 +15,7 @@ class Solution {
                 time = diff
                 ans = event[0]
             } else if (diff == time) {
-                ans = min(ans.toDouble(), event[0].toDouble()).toInt()
+                ans = min(ans, event[0])
             }
             last = event[1]
         }

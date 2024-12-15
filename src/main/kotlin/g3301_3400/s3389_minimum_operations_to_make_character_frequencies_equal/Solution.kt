@@ -1,6 +1,6 @@
 package g3301_3400.s3389_minimum_operations_to_make_character_frequencies_equal
 
-// #Hard #2024_12_15_Time_56_ms_(100.00%)_Space_44.8_MB_(100.00%)
+// #Hard #2024_12_15_Time_88_ms_(100.00%)_Space_40.7_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min
