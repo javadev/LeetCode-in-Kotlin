@@ -1,6 +1,6 @@
 package g3301_3400.s3388_count_beautiful_splits_in_an_array
 
-// #Medium #2024_12_15_Time_162_ms_(100.00%)_Space_235.2_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2024_12_15_Time_162_ms_(100.00%)_Space_235.2_MB_(100.00%)
 
 import kotlin.math.min
 
