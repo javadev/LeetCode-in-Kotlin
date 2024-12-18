@@ -1,7 +1,7 @@
 package g3301_3400.s3387_maximize_amount_after_two_days_of_conversions
 
 // #Medium #Array #String #Depth_First_Search #Breadth_First_Search #Graph
-// #2024_12_15_Time_13_ms_(100.00%)_Space_43.7_MB_(100.00%)
+// #2024_12_18_Time_13_ms_(88.46%)_Space_47.8_MB_(30.77%)
 
 import kotlin.math.max
 

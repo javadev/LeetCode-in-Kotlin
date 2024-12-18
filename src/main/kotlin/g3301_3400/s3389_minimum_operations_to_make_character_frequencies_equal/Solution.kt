@@ -1,44 +1,44 @@
 package g3301_3400.s3389_minimum_operations_to_make_character_frequencies_equal
 
 // #Hard #String #Hash_Table #Dynamic_Programming #Counting #Enumeration
-// #2024_12_15_Time_88_ms_(100.00%)_Space_40.7_MB_(100.00%)
-
-import kotlin.math.max
-import kotlin.math.min
+// #2024_12_18_Time_9_ms_(78.95%)_Space_39.3_MB_(18.42%)
 
 class Solution {
     fun makeStringGood(s: String): Int {
         val n = s.length
-        val a = IntArray(110)
-        for (ch in s.toCharArray()) {
-            a[ch.code - 'a'.code + 1]++
-        }
-        val f: Array<IntArray> = Array<IntArray>(30) { IntArray(3) }
-        val inf = Int.Companion.MAX_VALUE / 2
-        var ans = inf
-        for (avg in 1..n) {
-            for (row in f) {
-                row.fill(inf)
+        val cnt = IntArray(26)
+        for (c in s) cnt[c - 'a']++
+        var mn = n
+        var mx = 0
+        for (c in cnt)
+            if (c != 0) {
+                mn = Math.min(mn, c)
+                mx = Math.max(mx, c)
             }
-            f[0][0] = 0
-            for (i in 1..26) {
-                f[i][0] = min(min(f[i - 1][0], f[i - 1][1]), f[i - 1][2]) + a[i]
-                if (a[i] <= avg) {
-                    f[i][1] = min(
-                        min(
-                            (f[i - 1][0] + max(avg - a[i - 1] - a[i], 0)),
-                            (f[i - 1][1] + (avg - a[i])),
-                        ),
-                        (f[i - 1][2] + max(avg - (a[i - 1] - avg) - a[i], 0)),
-                    ).toInt()
-                }
-                if (a[i] >= avg) {
-                    f[i][2] =
-                        min(min(f[i - 1][0], f[i - 1][1]), f[i - 1][2]) + (a[i] - avg)
+        if (mn == mx) return 0
+        var dp0 = 0
+        var dp1 = 0
+        var tmp0 = 0
+        var tmp1 = 0
+        var ans = n - 1
+        for (i in mn..mx) {
+            dp0 = cnt[0]
+            dp1 = Math.abs(i - cnt[0])
+            for (j in 1 until 26) {
+                tmp0 = dp0
+                tmp1 = dp1
+                dp0 = Math.min(tmp0, tmp1) + cnt[j]
+                if (cnt[j] >= i) {
+                    dp1 = Math.min(tmp0, tmp1) + (cnt[j] - i)
+                } else {
+                    dp1 = Math.min(
+                        tmp0 + i - Math.min(i, cnt[j] + cnt[j - 1]),
+                        tmp1 + i - Math.min(i, cnt[j] + Math.max(0, cnt[j - 1] - i)),
+                    )
                 }
             }
-            ans = min(ans, min(f[26][0], min(f[26][1], f[26][2])))
+            ans = Math.min(ans, minOf(dp0, dp1))
         }
-        return if (ans == inf) -1 else ans
+        return ans
     }
 }

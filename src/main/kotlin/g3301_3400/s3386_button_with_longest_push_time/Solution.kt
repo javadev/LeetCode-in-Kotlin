@@ -1,6 +1,6 @@
 package g3301_3400.s3386_button_with_longest_push_time
 
-// #Easy #Array #2024_12_15_Time_1_ms_(100.00%)_Space_40.6_MB_(100.00%)
+// #Easy #Array #2024_12_18_Time_1_ms_(100.00%)_Space_41.1_MB_(91.89%)
 
 import kotlin.math.min
 
