@@ -20,10 +20,10 @@ class Solution {
                 mx = max(mx, c)
             }
         if (mn == mx) return 0
-        var dp0 : Int
-        var dp1 : Int
-        var tmp0 : Int
-        var tmp1 : Int
+        var dp0: Int
+        var dp1: Int
+        var tmp0: Int
+        var tmp1: Int
         var ans = n - 1
         for (i in mn..mx) {
             dp0 = cnt[0]
