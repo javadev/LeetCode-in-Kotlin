@@ -10,7 +10,7 @@ class Solution {
         var dupct = 0
         for (num in nums) {
             map.put(num, map.getOrDefault(num, 0)!! + 1)
-            if (map.get(num) == 2) {
+            if (map[num] == 2) {
                 dupct++
             }
         }

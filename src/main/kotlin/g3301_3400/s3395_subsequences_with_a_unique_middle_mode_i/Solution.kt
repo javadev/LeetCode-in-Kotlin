@@ -8,7 +8,7 @@ class Solution {
         // Create a dictionary to store indices of each number
         val dict: MutableMap<Int?, MutableList<Int?>?> = HashMap<Int?, MutableList<Int?>?>()
         for (i in 0..<n) {
-            dict.computeIfAbsent(a[i]) { k: Int? -> java.util.ArrayList<Int?>() }!!.add(i)
+            dict.computeIfAbsent(a[i]) { _: Int? -> java.util.ArrayList<Int?>() }!!.add(i)
         }
         var ans = 0L
         // Iterate over each unique number and its indices
