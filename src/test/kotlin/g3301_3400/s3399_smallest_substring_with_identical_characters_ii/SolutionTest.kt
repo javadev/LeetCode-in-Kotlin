@@ -19,4 +19,14 @@ internal class SolutionTest {
     fun minLength3() {
         assertThat<Int>(Solution().minLength("0101", 0), equalTo<Int>(1))
     }
+
+    @Test
+    fun minLength4() {
+        assertThat<Int>(Solution().minLength("000", 0), equalTo<Int>(3))
+    }
+
+    @Test
+    fun minLength5() {
+        assertThat<Int>(Solution().minLength("000001", 1), equalTo<Int>(2))
+    }
 }

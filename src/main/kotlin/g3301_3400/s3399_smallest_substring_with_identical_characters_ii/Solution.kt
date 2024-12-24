@@ -1,84 +1,71 @@
 package g3301_3400.s3399_smallest_substring_with_identical_characters_ii
 
-// #Hard #2024_12_24_Time_22_ms_(100.00%)_Space_40.7_MB_(100.00%)
+// #Hard #2024_12_24_Time_26_ms_(100.00%)_Space_40.2_MB_(100.00%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun minLength(s: String, numOps: Int): Int {
-        val l = s.length
-        var lingyi = 0
-        var yiling = 0
-        val pq: MutableList<Int> = ArrayList<Int>()
-        var thisone = s[0]
-        var chang = 1
-        if (thisone == '0') {
-            yiling++
-        } else {
-            lingyi++
-        }
-        for (i in 1..<l) {
-            val cur = s[i]
-            if (cur == thisone) {
-                chang++
-            } else {
-                if (chang >= 2) {
-                    pq.add(chang)
-                }
-                chang = 1
-                thisone = cur
+        val b = s.toByteArray()
+        var flips1 = 0
+        var flips2 = 0
+        for (i in b.indices) {
+            val e1 = (if (i % 2 == 0) '0' else '1').code.toByte()
+            val e2 = (if (i % 2 == 0) '1' else '0').code.toByte()
+            if (b[i] != e1) {
+                flips1++
             }
-            if (i % 2 == 0) {
-                if (cur == '0') {
-                    yiling++
-                } else {
-                    lingyi++
-                }
-            } else {
-                if (cur == '0') {
-                    lingyi++
-                } else {
-                    yiling++
-                }
+            if (b[i] != e2) {
+                flips2++
             }
         }
-        if (numOps >= lingyi || numOps >= yiling) {
+        val flips = min(flips1, flips2)
+        if (flips <= numOps) {
             return 1
         }
-        if (chang >= 2) {
-            pq.add(chang)
-        }
-        var one = -1
-        var two = -1
-        for (cur in pq) {
-            if (cur > one) {
-                two = one
-                one = cur
-            } else if (cur > two) {
-                two = cur
-            }
-        }
-        if (two == -1) {
-            return if (one / (numOps + 1) > 1) one / (numOps + 1) else 2
-        }
-        if (numOps == 0) {
-            return one
-        }
-        if (numOps == 1) {
-            return if (one / 2 > two) (if (one / 2 == 1) 2 else one / 2) else two
-        }
-        var left = 2
-        var right = l / (numOps + 1)
-        while (left < right) {
-            val mid = left + (right - left) / 2
-            var sum = 0
-            for (integer in pq) {
-                sum += integer / (mid + 1)
-            }
-            if (sum <= numOps) {
-                right = mid
+        val seg: MutableList<Int?> = ArrayList<Int?>()
+        var count = 1
+        var max = 1
+        for (i in 1..<b.size) {
+            if (b[i] != b[i - 1]) {
+                if (count != 1) {
+                    seg.add(count)
+                    max = max(max, count)
+                }
+                count = 1
             } else {
-                left = mid + 1
+                count++
             }
         }
-        return left
+        if (count != 1) {
+            seg.add(count)
+            max = max(max, count)
+        }
+        var l = 2
+        var r = max
+        var res = max
+        while (l <= r) {
+            val m = l + (r - l) / 2
+            if (check(m, seg, numOps)) {
+                r = m - 1
+                res = m
+            } else {
+                l = m + 1
+            }
+        }
+        return res
+    }
+
+    private fun check(sz: Int, seg: MutableList<Int?>, ops: Int): Boolean {
+        var ops = ops
+        for (i in seg) {
+            val x = i!! / (sz + 1)
+            ops -= x
+            if (ops < 0) {
+                return false
+            }
+        }
+        return true
     }
 }
