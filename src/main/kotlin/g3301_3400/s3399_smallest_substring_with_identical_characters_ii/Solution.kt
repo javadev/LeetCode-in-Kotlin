@@ -1,6 +1,6 @@
 package g3301_3400.s3399_smallest_substring_with_identical_characters_ii
 
-// #Hard #2024_12_24_Time_11_ms_(100.00%)_Space_45.7_MB_(54.55%)
+// #Hard #2024_12_24_Time_22_ms_(100.00%)_Space_40.7_MB_(100.00%)
 
 class Solution {
     fun minLength(s: String, numOps: Int): Int {
@@ -8,7 +8,7 @@ class Solution {
         var lingyi = 0
         var yiling = 0
         val pq: MutableList<Int> = ArrayList<Int>()
-        var thisone = s.get(0)
+        var thisone = s[0]
         var chang = 1
         if (thisone == '0') {
             yiling++
@@ -16,7 +16,7 @@ class Solution {
             lingyi++
         }
         for (i in 1..<l) {
-            val cur = s.get(i)
+            val cur = s[i]
             if (cur == thisone) {
                 chang++
             } else {
