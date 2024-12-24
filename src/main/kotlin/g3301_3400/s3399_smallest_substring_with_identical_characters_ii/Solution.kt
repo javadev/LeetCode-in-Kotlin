@@ -24,7 +24,7 @@ class Solution {
         if (flips <= numOps) {
             return 1
         }
-        val seg: MutableList<Int?> = ArrayList<Int?>()
+        val seg: MutableList<Int> = ArrayList<Int>()
         var count = 1
         var max = 1
         for (i in 1..<b.size) {
@@ -57,10 +57,10 @@ class Solution {
         return res
     }
 
-    private fun check(sz: Int, seg: MutableList<Int?>, ops: Int): Boolean {
+    private fun check(sz: Int, seg: MutableList<Int>, ops: Int): Boolean {
         var ops = ops
         for (i in seg) {
-            val x = i!! / (sz + 1)
+            val x = i / (sz + 1)
             ops -= x
             if (ops < 0) {
                 return false
