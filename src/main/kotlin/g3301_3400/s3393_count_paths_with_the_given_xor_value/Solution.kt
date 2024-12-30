@@ -1,6 +1,6 @@
 package g3301_3400.s3393_count_paths_with_the_given_xor_value
 
-// #Medium #2024_12_22_Time_72_ms_(100.00%)_Space_71.2_MB_(100.00%)
+// #Medium #2024_12_30_Time_57_(68.42%)_Space_73.12_(52.63%)
 
 class Solution {
     private var m = -1
@@ -10,12 +10,7 @@ class Solution {
     fun countPathsWithXorValue(grid: Array<IntArray>, k: Int): Int {
         m = grid.size
         n = grid[0].size
-        dp = Array<Array<IntArray>>(m) { Array<IntArray>(n) { IntArray(16) } }
-        for (a in dp) {
-            for (b in a) {
-                b.fill(-1)
-            }
-        }
+        dp = Array(m) { Array(n) { IntArray(16) { -1 } } }
         return dfs(grid, 0, k, 0, 0)
     }
 
