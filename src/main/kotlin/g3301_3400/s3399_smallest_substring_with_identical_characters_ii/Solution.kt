@@ -24,7 +24,7 @@ class Solution {
         if (flips <= numOps) {
             return 1
         }
-        val seg: MutableList<Int> = ArrayList<Int>()
+        val seg: MutableList<Int> = ArrayList()
         var count = 1
         var max = 1
         for (i in 1..<b.size) {

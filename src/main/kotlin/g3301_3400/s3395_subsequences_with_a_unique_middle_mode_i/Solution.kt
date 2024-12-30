@@ -6,17 +6,17 @@ class Solution {
     fun subsequencesWithMiddleMode(a: IntArray): Int {
         val n = a.size
         // Create a dictionary to store indices of each number
-        val dict: MutableMap<Int?, MutableList<Int?>?> = HashMap<Int?, MutableList<Int?>?>()
+        val dict: MutableMap<Int, MutableList<Int>> = HashMap()
         for (i in 0..<n) {
-            dict.computeIfAbsent(a[i]) { _: Int? -> java.util.ArrayList<Int?>() }!!.add(i)
+            dict.computeIfAbsent(a[i]) { _: Int -> ArrayList<Int>() }.add(i)
         }
         var ans = 0L
         // Iterate over each unique number and its indices
         for (entry in dict.entries) {
-            val b: MutableList<Int?> = entry.value!!
+            val b: MutableList<Int> = entry.value
             val m = b.size
             for (k in 0..<m) {
-                val i: Int = b[k]!!
+                val i: Int = b[k]
                 val r = m - 1 - k
                 val u = i - k
                 val v = (n - 1 - i) - r
@@ -71,20 +71,20 @@ class Solution {
         var dif: Long = 0
         // Principle of inclusion-exclusion
         for (midEntry in dict.entries) {
-            val b: MutableList<Int?> = midEntry.value!!
+            val b: MutableList<Int> = midEntry.value
             val m = b.size
             for (tmpEntry in dict.entries) {
                 if (midEntry.key != tmpEntry.key) {
-                    val c: MutableList<Int?> = tmpEntry.value!!
+                    val c: MutableList<Int> = tmpEntry.value
                     val size = c.size
                     var k = 0
                     var j = 0
                     while (k < m) {
-                        val i: Int = b[k]!!
+                        val i: Int = b[k]
                         val r = m - 1 - k
                         val u = i - k
                         val v = (n - 1 - i) - r
-                        while (j < size && c[j]!! < i) {
+                        while (j < size && c[j] < i) {
                             j++
                         }
                         val x = j

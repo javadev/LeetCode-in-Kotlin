@@ -6,10 +6,10 @@ import kotlin.math.min
 
 class Solution {
     fun minimumOperations(nums: IntArray): Int {
-        val map: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
+        val map: MutableMap<Int, Int> = HashMap()
         var dupct = 0
         for (num in nums) {
-            map.put(num, map.getOrDefault(num, 0)!! + 1)
+            map.put(num, map.getOrDefault(num, 0) + 1)
             if (map[num] == 2) {
                 dupct++
             }

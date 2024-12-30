@@ -8,8 +8,8 @@ import kotlin.math.max
 class Solution {
     fun checkValidCuts(n: Int, rectangles: Array<IntArray>): Boolean {
         val m = rectangles.size
-        val xAxis = Array<IntArray?>(m) { IntArray(2) }
-        val yAxis = Array<IntArray?>(m) { IntArray(2) }
+        val xAxis = Array<IntArray>(m) { IntArray(2) }
+        val yAxis = Array<IntArray>(m) { IntArray(2) }
         var ind = 0
         for (axis in rectangles) {
             val startX = axis[0]
@@ -21,8 +21,8 @@ class Solution {
             ind++
         }
 
-        xAxis.sortWith<IntArray?>(
-            Comparator { a: IntArray?, b: IntArray? -> if (a!![0] == b!![0]) a[1] - b[1] else a[0] - b[0] },
+        xAxis.sortWith<IntArray>(
+            Comparator { a: IntArray, b: IntArray -> if (a[0] == b[0]) a[1] - b[1] else a[0] - b[0] },
         )
 
         yAxis.sortWith<IntArray?>(
@@ -36,15 +36,15 @@ class Solution {
         return horizontalCuts > 2
     }
 
-    private fun findSections(axis: Array<IntArray?>): Int {
-        var end = axis[0]!![1]
+    private fun findSections(axis: Array<IntArray>): Int {
+        var end = axis[0][1]
         var sections = 1
         for (i in 1..<axis.size) {
-            if (end > axis[i]!![0]) {
-                end = max(end, axis[i]!![1])
+            if (end > axis[i][0]) {
+                end = max(end, axis[i][1])
             } else {
                 sections++
-                end = axis[i]!![1]
+                end = axis[i][1]
             }
             if (sections > 2) {
                 return sections
