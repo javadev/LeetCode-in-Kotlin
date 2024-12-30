@@ -25,8 +25,8 @@ class Solution {
             Comparator { a: IntArray, b: IntArray -> if (a[0] == b[0]) a[1] - b[1] else a[0] - b[0] },
         )
 
-        yAxis.sortWith<IntArray?>(
-            Comparator { a: IntArray?, b: IntArray? -> if (a!![0] == b!![0]) a[1] - b[1] else a[0] - b[0] },
+        yAxis.sortWith<IntArray>(
+            Comparator { a: IntArray, b: IntArray -> if (a[0] == b[0]) a[1] - b[1] else a[0] - b[0] },
         )
         val verticalCuts = findSections(xAxis)
         if (verticalCuts > 2) {
