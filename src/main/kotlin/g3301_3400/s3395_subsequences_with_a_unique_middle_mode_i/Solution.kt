@@ -20,7 +20,7 @@ class Solution {
         var m = 0
         var index = 0
         for (x in nums) {
-            var id = map.get(x)
+            var id = map[x]
             if (id == null) {
                 id = m++
                 map.put(x, id)
