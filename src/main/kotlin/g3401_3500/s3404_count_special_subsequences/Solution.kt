@@ -1,6 +1,7 @@
 package g3401_3500.s3404_count_special_subsequences
 
-// #Medium #2024_12_29_Time_276_(100.00%)_Space_60.90_(100.00%)
+// #Medium #Array #Hash_Table #Math #Enumeration
+// #2024_12_29_Time_276_(100.00%)_Space_60.90_(100.00%)
 
 class Solution {
     fun numberOfSubsequences(nums: IntArray): Long {
