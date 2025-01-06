@@ -53,10 +53,14 @@ class Solution {
                     ans -= c2[leftY] * rightX * (right - rightX)
                     ans -= c2[rightY] * leftX * (left - leftX)
                     ans -=
-                        (leftY
+                        (
+                            leftY
                                 * rightY
-                                * (leftX * (right - rightX - rightY)
-                                + rightX * (left - leftX - leftY))).toLong()
+                                * (
+                                    leftX * (right - rightX - rightY) +
+                                        rightX * (left - leftX - leftY)
+                                    )
+                            ).toLong()
                 }
             }
             leftCount[x]++
