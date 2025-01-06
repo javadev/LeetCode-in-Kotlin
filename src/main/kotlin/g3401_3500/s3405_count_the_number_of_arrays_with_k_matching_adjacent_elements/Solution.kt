@@ -1,6 +1,6 @@
 package g3401_3500.s3405_count_the_number_of_arrays_with_k_matching_adjacent_elements
 
-// #Hard #2024_12_29_Time_57_(100.00%)_Space_37.63_(100.00%)
+// #Hard #Math #Combinatorics #2024_12_29_Time_57_(100.00%)_Space_37.63_(100.00%)
 
 class Solution {
     fun countGoodArrays(n: Int, m: Int, k: Int): Int {

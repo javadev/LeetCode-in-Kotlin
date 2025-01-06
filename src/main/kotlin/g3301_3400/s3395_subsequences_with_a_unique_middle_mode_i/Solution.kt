@@ -1,190 +1,74 @@
 package g3301_3400.s3395_subsequences_with_a_unique_middle_mode_i
 
-// #Hard #2024_12_22_Time_485_ms_(100.00%)_Space_50.6_MB_(100.00%)
+// #Hard #Array #Hash_Table #Math #Combinatorics #2025_01_06_Time_49_(100.00%)_Space_41.14_(100.00%)
 
 class Solution {
-    fun subsequencesWithMiddleMode(a: IntArray): Int {
-        val n = a.size
-        // Create a dictionary to store indices of each number
-        val dict: MutableMap<Int, MutableList<Int>> = HashMap()
-        for (i in 0..<n) {
-            dict.computeIfAbsent(a[i]) { _: Int -> ArrayList<Int>() }.add(i)
-        }
-        var ans = 0L
-        // Iterate over each unique number and its indices
-        for (entry in dict.entries) {
-            val b: MutableList<Int> = entry.value
-            val m = b.size
-            for (k in 0..<m) {
-                val i: Int = b[k]
-                val r = m - 1 - k
-                val u = i - k
-                val v = (n - 1 - i) - r
-                // Case 2: Frequency of occurrence is 2 times
-                ans = (
-                    ans + convert(k, 1) * convert(u, 1) % MOD * convert(
-                        v,
-                        2,
-                    ) % MOD
-                    ) % MOD
-                ans = (
-                    ans + convert(r, 1) * convert(u, 2) % MOD * convert(
-                        v,
-                        1,
-                    ) % MOD
-                    ) % MOD
-                // Case 3: Frequency of occurrence is 3 times
-                ans = (ans + convert(k, 2) * convert(v, 2) % MOD) % MOD
-                ans = (ans + convert(r, 2) * convert(u, 2) % MOD) % MOD
-                ans =
-                    (
-                        (
-                            ans +
-                                convert(k, 1) *
-                                convert(r, 1) %
-                                MOD
-                                * convert(u, 1) %
-                                MOD
-                                * convert(v, 1) %
-                                MOD
-                            ) %
-                            MOD
-                        )
-                // Case 4: Frequency of occurrence is 4 times
-                ans = (
-                    ans + convert(k, 2) * convert(r, 1) % MOD * convert(
-                        v,
-                        1,
-                    ) % MOD
-                    ) % MOD
-                ans = (
-                    ans + convert(k, 1) * convert(r, 2) % MOD * convert(
-                        u,
-                        1,
-                    ) % MOD
-                    ) % MOD
+    private val c2 = LongArray(1001)
 
-                // Case 5: Frequency of occurrence is 5 times
-                ans = (ans + convert(k, 2) * convert(r, 2) % MOD) % MOD
+    fun subsequencesWithMiddleMode(nums: IntArray): Int {
+        if (c2[2] == 0L) {
+            c2[1] = 0
+            c2[0] = c2[1]
+            c2[2] = 1
+            for (i in 3..<c2.size) {
+                c2[i] = (i * (i - 1) / 2).toLong()
             }
         }
-        var dif: Long = 0
-        // Principle of inclusion-exclusion
-        for (midEntry in dict.entries) {
-            val b: MutableList<Int> = midEntry.value
-            val m = b.size
-            for (tmpEntry in dict.entries) {
-                if (midEntry.key != tmpEntry.key) {
-                    val c: MutableList<Int> = tmpEntry.value
-                    val size = c.size
-                    var k = 0
-                    var j = 0
-                    while (k < m) {
-                        val i: Int = b[k]
-                        val r = m - 1 - k
-                        val u = i - k
-                        val v = (n - 1 - i) - r
-                        while (j < size && c[j] < i) {
-                            j++
-                        }
-                        val x = j
-                        val y = size - x
-                        dif =
-                            (
-                                (
-                                    dif +
-                                        convert(k, 1) *
-                                        convert(x, 1) %
-                                        MOD
-                                        * convert(y, 1) %
-                                        MOD
-                                        * convert(v - y, 1) %
-                                        MOD
-                                    ) %
-                                    MOD
-                                )
-                        dif =
-                            (
-                                (
-                                    dif +
-                                        convert(k, 1) *
-                                        convert(y, 2) %
-                                        MOD
-                                        * convert(u - x, 1) %
-                                        MOD
-                                    ) %
-                                    MOD
-                                )
-                        dif =
-                            (
-                                (
-                                    dif + convert(k, 1) * convert(x, 1) % MOD * convert(
-                                        y,
-                                        2,
-                                    ) % MOD
-                                    ) %
-                                    MOD
-                                )
-
-                        dif =
-                            (
-                                (
-                                    dif +
-                                        convert(r, 1) *
-                                        convert(x, 1) %
-                                        MOD
-                                        * convert(y, 1) %
-                                        MOD
-                                        * convert(u - x, 1) %
-                                        MOD
-                                    ) %
-                                    MOD
-                                )
-                        dif =
-                            (
-                                (
-                                    dif +
-                                        convert(r, 1) *
-                                        convert(x, 2) %
-                                        MOD
-                                        * convert(v - y, 1) %
-                                        MOD
-                                    ) %
-                                    MOD
-                                )
-                        dif =
-                            (
-                                (
-                                    dif + convert(r, 1) * convert(x, 2) % MOD * convert(
-                                        y,
-                                        1,
-                                    ) % MOD
-                                    ) %
-                                    MOD
-                                )
-                        k++
-                    }
-                }
+        val n = nums.size
+        val newNums = IntArray(n)
+        val map: MutableMap<Int?, Int?> = HashMap<Int?, Int?>(n)
+        var m = 0
+        var index = 0
+        for (x in nums) {
+            var id = map[x]
+            if (id == null) {
+                id = m++
+                map.put(x, id)
             }
+            newNums[index++] = id
         }
-        return ((ans - dif + MOD) % MOD).toInt()
-    }
-
-    private fun convert(n: Int, k: Int): Long {
-        if (k > n) {
+        if (m == n) {
             return 0
         }
-        if (k == 0 || k == n) {
-            return 1
+        val rightCount = IntArray(m)
+        for (x in newNums) {
+            rightCount[x]++
         }
-        var res: Long = 1
-        for (i in 0..<k) {
-            res = res * (n - i) / (i + 1)
+        val leftCount = IntArray(m)
+        var ans = n.toLong() * (n - 1) * (n - 2) * (n - 3) * (n - 4) / 120
+        for (left in 0..<n - 2) {
+            val x = newNums[left]
+            rightCount[x]--
+            if (left >= 2) {
+                val right = n - (left + 1)
+                val leftX = leftCount[x]
+                val rightX = rightCount[x]
+                ans -= c2[left - leftX] * c2[right - rightX]
+                for (y in 0..<m) {
+                    if (y == x) {
+                        continue
+                    }
+                    val rightY = rightCount[y]
+                    val leftY = leftCount[y]
+                    ans -= c2[leftY] * rightX * (right - rightX)
+                    ans -= c2[rightY] * leftX * (left - leftX)
+                    ans -=
+                        (
+                            leftY
+                                * rightY
+                                * (
+                                    leftX * (right - rightX - rightY) +
+                                        rightX * (left - leftX - leftY)
+                                    )
+                            ).toLong()
+                }
+            }
+            leftCount[x]++
         }
-        return res % MOD
+        return (ans % MOD).toInt()
     }
 
     companion object {
-        private const val MOD = 1000000007
+        private val MOD = 1e9.toInt() + 7
     }
 }

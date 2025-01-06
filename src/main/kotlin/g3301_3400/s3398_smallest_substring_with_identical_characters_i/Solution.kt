@@ -1,6 +1,6 @@
 package g3301_3400.s3398_smallest_substring_with_identical_characters_i
 
-// #Hard #2024_12_24_Time_2_ms_(100.00%)_Space_36.4_MB_(92.86%)
+// #Hard #Array #Binary_Search #Enumeration #2024_12_24_Time_2_ms_(100.00%)_Space_36.4_MB_(92.86%)
 
 class Solution {
     fun minLength(s: String, ops: Int): Int {

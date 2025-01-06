@@ -1,6 +1,6 @@
 package g3401_3500.s3403_find_the_lexicographically_largest_string_from_the_box_i
 
-// #Medium #2024_12_29_Time_22_(100.00%)_Space_38.72_(100.00%)
+// #Medium #String #Two_Pointers #Enumeration #2024_12_29_Time_22_(100.00%)_Space_38.72_(100.00%)
 
 import kotlin.math.min
 

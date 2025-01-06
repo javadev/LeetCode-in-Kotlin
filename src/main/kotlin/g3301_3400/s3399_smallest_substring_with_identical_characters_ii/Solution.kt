@@ -1,6 +1,6 @@
 package g3301_3400.s3399_smallest_substring_with_identical_characters_ii
 
-// #Hard #2024_12_24_Time_26_ms_(100.00%)_Space_40.2_MB_(100.00%)
+// #Hard #Bit_Manipulation #Sliding_Window #2024_12_24_Time_26_ms_(100.00%)_Space_40.2_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

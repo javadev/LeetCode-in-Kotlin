@@ -1,6 +1,6 @@
 package g3401_3500.s3402_minimum_operations_to_make_columns_strictly_increasing
 
-// #Easy #2024_12_29_Time_1_(100.00%)_Space_44.94_(100.00%)
+// #Easy #Matrix #Simulation #2024_12_29_Time_1_(100.00%)_Space_44.94_(100.00%)
 
 class Solution {
     fun minimumOperations(grid: Array<IntArray>): Int {

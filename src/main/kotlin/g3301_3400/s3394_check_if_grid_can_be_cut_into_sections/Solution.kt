@@ -1,55 +1,43 @@
 package g3301_3400.s3394_check_if_grid_can_be_cut_into_sections
 
-// #Medium #2024_12_22_Time_298_ms_(100.00%)_Space_132.4_MB_(100.00%)
+// #Medium #Geometry #Line_Sweep #2025_01_06_Time_61_(100.00%)_Space_152.17_(45.00%)
 
 import kotlin.math.max
 
 @Suppress("unused")
 class Solution {
-    fun checkValidCuts(n: Int, rectangles: Array<IntArray>): Boolean {
-        val m = rectangles.size
-        val xAxis = Array<IntArray>(m) { IntArray(2) }
-        val yAxis = Array<IntArray>(m) { IntArray(2) }
-        var ind = 0
-        for (axis in rectangles) {
-            val startX = axis[0]
-            val startY = axis[1]
-            val endX = axis[2]
-            val endY = axis[3]
-            xAxis[ind] = intArrayOf(startX, endX)
-            yAxis[ind] = intArrayOf(startY, endY)
-            ind++
+    fun checkValidCuts(m: Int, rectangles: Array<IntArray>): Boolean {
+        val n = rectangles.size
+        val start = LongArray(n)
+        for (i in 0..<n) {
+            start[i] = (rectangles[i][1].toLong() shl 32) + rectangles[i][3]
         }
-
-        xAxis.sortWith<IntArray>(
-            Comparator { a: IntArray, b: IntArray -> if (a[0] == b[0]) a[1] - b[1] else a[0] - b[0] },
-        )
-
-        yAxis.sortWith<IntArray>(
-            Comparator { a: IntArray, b: IntArray -> if (a[0] == b[0]) a[1] - b[1] else a[0] - b[0] },
-        )
-        val verticalCuts = findSections(xAxis)
-        if (verticalCuts > 2) {
+        start.sort()
+        if (validate(start)) {
             return true
         }
-        val horizontalCuts = findSections(yAxis)
-        return horizontalCuts > 2
+        for (i in 0..<n) {
+            start[i] = (rectangles[i][0].toLong() shl 32) + rectangles[i][2]
+        }
+        start.sort()
+        return validate(start)
     }
 
-    private fun findSections(axis: Array<IntArray>): Int {
-        var end = axis[0][1]
-        var sections = 1
-        for (i in 1..<axis.size) {
-            if (end > axis[i][0]) {
-                end = max(end, axis[i][1])
-            } else {
-                sections++
-                end = axis[i][1]
+    private fun validate(arr: LongArray): Boolean {
+        var cut = 0
+        val n = arr.size
+        var max = arr[0].toInt() and MASK
+        for (i in 0..<n) {
+            val start = (arr[i] shr 32).toInt()
+            if (start >= max && ++cut == 2) {
+                return true
             }
-            if (sections > 2) {
-                return sections
-            }
+            max = max(max.toDouble(), (arr[i] and MASK.toLong()).toInt().toDouble()).toInt()
         }
-        return sections
+        return false
+    }
+
+    companion object {
+        private val MASK = (1 shl 30) - 1
     }
 }

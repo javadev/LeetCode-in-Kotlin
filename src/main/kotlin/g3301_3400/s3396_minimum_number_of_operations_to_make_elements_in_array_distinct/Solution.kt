@@ -1,6 +1,6 @@
 package g3301_3400.s3396_minimum_number_of_operations_to_make_elements_in_array_distinct
 
-// #Easy #2024_12_22_Time_9_ms_(100.00%)_Space_37.9_MB_(100.00%)
+// #Easy #Array #Greedy #Simulation #2024_12_22_Time_9_ms_(100.00%)_Space_37.9_MB_(100.00%)
 
 import kotlin.math.min
 

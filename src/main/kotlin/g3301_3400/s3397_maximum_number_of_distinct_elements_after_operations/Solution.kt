@@ -1,6 +1,6 @@
 package g3301_3400.s3397_maximum_number_of_distinct_elements_after_operations
 
-// #Medium #2024_12_22_Time_517_ms_(100.00%)_Space_61.2_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #2024_12_22_Time_517_ms_(100.00%)_Space_61.2_MB_(100.00%)
 
 import kotlin.math.max
 
