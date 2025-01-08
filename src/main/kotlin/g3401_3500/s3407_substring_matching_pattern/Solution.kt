@@ -22,7 +22,7 @@ class Solution {
     private fun `fun`(s: String, k: String): Int {
         val n = s.length
         val m = k.length
-        var j = 0
+        var j: Int
         for (i in 0..n - m) {
             j = 0
             while (j < m) {

@@ -8,7 +8,7 @@ import kotlin.math.min
 
 class Solution {
     fun maxSubarraySum(nums: IntArray): Long {
-        val prefixMap: MutableMap<Long?, Long?> = HashMap<Long?, Long?>()
+        val prefixMap: MutableMap<Long, Long> = HashMap<Long, Long>()
         var result = nums[0].toLong()
         var prefixSum: Long = 0
         var minPrefix: Long = 0
@@ -28,7 +28,7 @@ class Solution {
                 minPrefix = min(minPrefix, prefixMap[num.toLong()]!!)
             }
             prefixMap.put(0L, min(prefixMap[0L]!!, prefixSum))
-            minPrefix = min(minPrefix.toDouble(), prefixMap.get(0L)!!.toDouble()).toLong()
+            minPrefix = min(minPrefix, prefixMap[0L]!!)
         }
         return result
     }
