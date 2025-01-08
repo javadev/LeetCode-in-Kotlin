@@ -12,7 +12,7 @@ class Solution {
         var dp1 = Array<IntArray?>(n) { IntArray(0) }
         var dp = LongArray(n)
         ns.sortWith { a: IntArray?, b: IntArray? -> a!![0] - b!![0] }
-        (0..3).forEach { k ->
+        for (k in 0..3) {
             val dp3 = arrayOfNulls<IntArray>(n)
             val dp2 = LongArray(n)
             dp3[n - 1] = intArrayOf(ns[n - 1]!![3])
