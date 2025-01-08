@@ -1,13 +1,13 @@
 package g3401_3500.s3413_maximum_coins_from_k_consecutive_bags
 
 // #Medium #Array #Sorting #Greedy #Binary_Search #Prefix_Sum #Sliding_Window
-// #2025_01_07_Time_312_(60.00%)_Space_125.55_(80.00%)
+// #2025_01_08_Time_275_(86.67%)_Space_125.92_(80.00%)
 
 import kotlin.math.max
 
 class Solution {
     fun maximumCoins(coins: Array<IntArray>, k: Int): Long {
-        coins.sortWith { a: IntArray, b: IntArray -> a[0] - b[0] }
+        coins.sortWith { a: IntArray?, b: IntArray? -> a!![0] - b!![0] }
         val n = coins.size
         var res: Long = 0
         var cur: Long = 0
@@ -32,7 +32,7 @@ class Solution {
                 j++
             }
             val part = max(0.0, (coin[1] - k - coins[j][0] + 1).toDouble()).toLong() * coins[j][2]
-            res = max(res.toDouble(), (cur - part).toDouble()).toLong()
+            res = max(res, (cur - part))
         }
         return res
     }
