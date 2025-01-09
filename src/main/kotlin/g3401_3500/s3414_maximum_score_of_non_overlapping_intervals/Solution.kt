@@ -1,7 +1,7 @@
 package g3401_3500.s3414_maximum_score_of_non_overlapping_intervals
 
 // #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
-// #2025_01_09_Time_918_(100.00%)_Space_87.41_(100.00%)
+// #2025_01_09_Time_892_(100.00%)_Space_91.42_(100.00%)
 
 class Solution {
     fun maximumWeight(intervals: List<List<Int>>): IntArray {
@@ -10,7 +10,6 @@ class Solution {
         ns.sortBy { it[0] }
         var dp1 = Array<IntArray>(n) { IntArray(0) }
         var dp = LongArray(n)
-        ns.sortWith { a: IntArray?, b: IntArray? -> a!![0] - b!![0] }
         repeat(4) {
             val dp3 = Array<IntArray>(n) { IntArray(0) }
             val dp2 = LongArray(n)
