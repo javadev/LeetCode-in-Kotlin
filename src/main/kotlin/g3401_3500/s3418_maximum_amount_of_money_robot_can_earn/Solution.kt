@@ -1,6 +1,6 @@
 package g3401_3500.s3418_maximum_amount_of_money_robot_can_earn
 
-// #Medium #2025_01_14_Time_60_(81.82%)_Space_84.66_(81.82%)
+// #Medium #Array #Dynamic_Programming #Matrix #2025_01_14_Time_60_(81.82%)_Space_84.66_(81.82%)
 
 import kotlin.math.max
 

@@ -1,6 +1,6 @@
 package g3401_3500.s3417_zigzag_grid_traversal_with_skip
 
-// #Easy #2025_01_14_Time_2_(100.00%)_Space_43.72_(76.92%)
+// #Easy #Array #Matrix #Simulation #2025_01_14_Time_2_(100.00%)_Space_43.72_(76.92%)
 
 class Solution {
     fun zigzagTraversal(grid: Array<IntArray>): List<Int> {

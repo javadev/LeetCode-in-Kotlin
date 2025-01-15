@@ -1,6 +1,7 @@
 package g3401_3500.s3420_count_non_decreasing_subarrays_after_k_operations
 
-// #Hard #2025_01_14_Time_18_(100.00%)_Space_69.62_(_%)
+// #Hard #Array #Two_Pointers #Stack #Monotonic_Stack #Queue #Segment_Tree #Monotonic_Queue
+// #2025_01_15_Time_28_(100.00%)_Space_68.93_(88.89%)
 
 class Solution {
     fun countNonDecreasingSubarrays(nums: IntArray, k: Int): Long {
