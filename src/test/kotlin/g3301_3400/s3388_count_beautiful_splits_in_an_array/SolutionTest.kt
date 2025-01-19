@@ -15,9 +15,9 @@ internal class SolutionTest {
 
     @Test
     fun beautifulSplits2() {
-        assertThat<Int?>(
+        assertThat<Int>(
             Solution().beautifulSplits(intArrayOf(1, 2, 3, 4)),
-            equalTo<Int?>(0),
+            equalTo<Int>(0),
         )
     }
 }

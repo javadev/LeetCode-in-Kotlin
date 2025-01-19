@@ -12,7 +12,7 @@ internal class SolutionTest {
 
     @Test
     fun makeStringGood2() {
-        assertThat<Int?>(Solution().makeStringGood("wddw"), equalTo<Int>(0))
+        assertThat<Int>(Solution().makeStringGood("wddw"), equalTo<Int>(0))
     }
 
     @Test

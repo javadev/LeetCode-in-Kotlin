@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun maxAmount() {
-        assertThat<Double?>(
+        assertThat<Double>(
             Solution()
                 .maxAmount(
                     "EUR",
