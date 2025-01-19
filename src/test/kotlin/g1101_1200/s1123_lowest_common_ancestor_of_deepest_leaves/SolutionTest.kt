@@ -21,7 +21,7 @@ internal class SolutionTest {
     @Test
     fun lcaDeepestLeaves2() {
         assertThat(
-            Solution().lcaDeepestLeaves(TreeNode.create(mutableListOf<Int?>(1))).toString(),
+            Solution().lcaDeepestLeaves(TreeNode.create(mutableListOf(1))).toString(),
             equalTo("1"),
         )
     }
