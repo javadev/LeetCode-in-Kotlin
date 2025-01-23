@@ -9,7 +9,7 @@ class Solution {
     fun minCost(arr: IntArray, brr: IntArray, k: Long): Long {
         val n = arr.size
         var sum1: Long = 0
-        var sum2: Long = 0
+        var sum2: Long
         for (i in 0..<n) {
             sum1 = sum1 + abs((arr[i] - brr[i]))
         }
