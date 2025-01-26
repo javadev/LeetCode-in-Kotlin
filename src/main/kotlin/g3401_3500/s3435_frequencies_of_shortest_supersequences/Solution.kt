@@ -1,6 +1,6 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences
 
-// #Hard #2025_01_26_Time_427_(100.00%)_Space_52.78_(100.00%)
+// #Hard #2025_01_26_Time_385_(100.00%)_Space_54.41_(100.00%)
 
 class Solution {
     private fun buildWordMap(words: List<String>): MutableMap<String?, Boolean?> {
@@ -109,14 +109,14 @@ class Solution {
         bg: IntArray,
         ed: IntArray,
     ): Boolean {
-        val chk: MutableList<Int?> = ArrayList<Int?>()
+        val chk: MutableList<Int> = ArrayList<Int>()
         for (j in 0..25) {
             if (indg[j] == 0 && tans[j] == 1) {
                 chk.add(j)
             }
         }
-        while (!chk.isEmpty()) {
-            val u: Int = chk.removeAt(chk.size - 1)!!
+        while (chk.isNotEmpty()) {
+            val u: Int = chk.removeAt(chk.size - 1)
             if (bg[u] == -1) {
                 continue
             }
@@ -155,7 +155,7 @@ class Solution {
             return ans
         }
         val gm = findMinimalSolutions(wtc, tans, bg, ed)
-        val minb = gm.stream().mapToInt { i: Int? -> Integer.bitCount(i!!) }.min().getAsInt()
+        val minb = gm.minOf { Integer.bitCount(it) }
         val ns: MutableList<Int> = ArrayList<Int>()
         for (i in 0..25) {
             if (tans[i] == 1) {
