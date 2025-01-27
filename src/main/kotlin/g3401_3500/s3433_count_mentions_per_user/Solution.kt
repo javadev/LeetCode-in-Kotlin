@@ -18,7 +18,6 @@ class Solution {
         for (event in sortedEvents) {
             val msg = event[0]
             val time = event[1].toInt()
-
             when (msg) {
                 "OFFLINE" -> {
                     userTimestamps[event[2].toInt()] = time + 60
