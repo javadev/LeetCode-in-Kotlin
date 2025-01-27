@@ -1,6 +1,7 @@
 package g3401_3500.s3434_maximum_frequency_after_subarray_operation
 
-// #Medium #2025_01_26_Time_51_(100.00%)_Space_56.51_(100.00%)
+// #Medium #Array #Hash_Table #Dynamic_Programming #Greedy #Prefix_Sum
+// #2025_01_26_Time_51_(100.00%)_Space_56.51_(100.00%)
 
 import kotlin.math.max
 

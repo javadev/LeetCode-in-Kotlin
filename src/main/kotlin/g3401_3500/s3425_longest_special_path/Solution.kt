@@ -1,6 +1,7 @@
 package g3401_3500.s3425_longest_special_path
 
-// #Hard #2025_01_19_Time_106_(100.00%)_Space_187.68_(100.00%)
+// #Hard #Array #Hash_Table #Depth_First_Search #Tree #Sliding_Window
+// #2025_01_19_Time_106_(100.00%)_Space_187.68_(100.00%)
 
 class Solution {
     private lateinit var adj: Array<ArrayList<IntArray>>

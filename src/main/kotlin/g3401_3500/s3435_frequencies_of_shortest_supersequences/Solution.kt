@@ -1,6 +1,7 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences
 
-// #Hard #2025_01_26_Time_385_(100.00%)_Space_54.41_(100.00%)
+// #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
+// #2025_01_26_Time_385_(100.00%)_Space_54.41_(100.00%)
 
 class Solution {
     private fun buildWordMap(words: List<String>): MutableMap<String?, Boolean?> {

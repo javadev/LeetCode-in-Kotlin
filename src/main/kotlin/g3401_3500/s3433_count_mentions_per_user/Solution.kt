@@ -1,6 +1,6 @@
 package g3401_3500.s3433_count_mentions_per_user
 
-// #Medium #2025_01_26_Time_90_(100.00%)_Space_49.08_(100.00%)
+// #Medium #Array #Math #Sorting #Simulation #2025_01_26_Time_90_(100.00%)_Space_49.08_(100.00%)
 
 class Solution {
     fun countMentions(numberOfUsers: Int, events: List<List<String>>): IntArray {

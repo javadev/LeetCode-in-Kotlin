@@ -1,6 +1,6 @@
 package g3401_3500.s3423_maximum_difference_between_adjacent_elements_in_a_circular_array
 
-// #Easy #2025_01_19_Time_2_(100.00%)_Space_38.80_(100.00%)
+// #Easy #Array #2025_01_19_Time_2_(100.00%)_Space_38.80_(100.00%)
 
 import kotlin.math.abs
 import kotlin.math.max
