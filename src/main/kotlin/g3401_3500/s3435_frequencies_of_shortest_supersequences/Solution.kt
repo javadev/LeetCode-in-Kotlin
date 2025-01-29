@@ -1,184 +1,103 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences
 
 // #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
-// #2025_01_26_Time_385_(100.00%)_Space_54.41_(100.00%)
+// #2025_01_29_Time_35_(100.00%)_Space_43.62_(100.00%)
 
 class Solution {
-    private fun buildWordMap(words: List<String>): MutableMap<String?, Boolean?> {
-        val mp: MutableMap<String?, Boolean?> = HashMap<String?, Boolean?>()
-        for (x in words) {
-            mp.put(x, true)
-        }
-        return mp
-    }
+    private var m = 0
+    private var forcedMask = 0
+    private lateinit var adj: IntArray
+    private val idxToChar = CharArray(26)
+    private val charToIdx = IntArray(26)
+    private val used = BooleanArray(26)
 
-    private fun buildCharMap(words: List<String>): MutableMap<Char?, Boolean?> {
-        val mp2: MutableMap<Char?, Boolean?> = HashMap<Char?, Boolean?>()
-        for (x in words) {
-            mp2.put(x[0], true)
-            mp2.put(x[1], true)
+    fun supersequences(words: Array<String>): MutableList<MutableList<Int?>?> {
+        charToIdx.fill(-1)
+        for (w in words) {
+            used[w[0].code - 'a'.code] = true
+            used[w[1].code - 'a'.code] = true
         }
-        return mp2
-    }
-
-    private fun initializeAnswerArray(mp: MutableMap<String?, Boolean?>, mp2: MutableMap<Char?, Boolean?>): IntArray {
-        val tans = IntArray(26)
-        tans.fill(0)
-        var c = 'a'
-        while (c <= 'z') {
-            val aux = "" + c + c
-            if (mp.containsKey(aux)) {
-                tans[c.code - 'a'.code] = 2
-            } else if (mp2.containsKey(c)) {
-                tans[c.code - 'a'.code] = 1
-            }
-            c++
-        }
-        return tans
-    }
-
-    private fun filterWords(words: List<String>, tans: IntArray): MutableList<String> {
-        val wtc: MutableList<String> = ArrayList<String>()
-        for (x in words) {
-            if (tans[x[0].code - 'a'.code] != 2 && tans[x[1].code - 'a'.code] != 2) {
-                wtc.add(x)
+        // Map each used letter to an index [0..m-1]
+        for (c in 0..25) {
+            if (used[c]) {
+                idxToChar[m] = (c + 'a'.code).toChar()
+                charToIdx[c] = m++
             }
         }
-        return wtc
-    }
-
-    private fun updateBoundaries(wtc: MutableList<String>, bg: IntArray, ed: IntArray) {
-        for (i in wtc.indices) {
-            val l = wtc[i][0].code - 'a'.code
-            if (bg[l] == -1) {
-                bg[l] = i
-            }
-            ed[l] = i
-        }
-    }
-
-    private fun findMinimalSolutions(
-        wtc: MutableList<String>,
-        tans: IntArray,
-        bg: IntArray,
-        ed: IntArray,
-    ): MutableList<Int> {
-        val ns: MutableList<Int> = ArrayList<Int>()
-        for (i in 0..25) {
-            if (tans[i] == 1) {
-                ns.add(i)
-            }
-        }
-        val gm: MutableList<Int> = ArrayList<Int>()
-        for (i in 0..<(1 shl ns.size)) {
-            if (isValidSolution(i, ns, wtc, tans.clone(), bg, ed)) {
-                gm.add(i)
-            }
-        }
-        return gm
-    }
-
-    private fun isValidSolution(
-        i: Int,
-        ns: MutableList<Int>,
-        wtc: MutableList<String>,
-        tans: IntArray,
-        bg: IntArray,
-        ed: IntArray,
-    ): Boolean {
-        val indg = IntArray(26)
-        indg.fill(0)
-        for (j in ns.indices) {
-            if ((i and (1 shl j)) != 0) {
-                tans[ns[j]] = 2
+        adj = IntArray(m)
+        // Build graph and record forced duplicates
+        for (w in words) {
+            val u = charToIdx[w[0].code - 'a'.code]
+            val v = charToIdx[w[1].code - 'a'.code]
+            if (u == v) {
+                forcedMask = forcedMask or (1 shl u)
             } else {
-                tans[ns[j]] = 1
+                adj[u] = adj[u] or (1 shl v)
             }
         }
-        for (w in wtc) {
-            if (tans[w[0].code - 'a'.code] != 2 && tans[w[1].code - 'a'.code] != 2) {
-                indg[w[1].code - 'a'.code]++
-            }
-        }
-        return processIndegrees(indg, tans, wtc, bg, ed)
-    }
-
-    private fun processIndegrees(
-        indg: IntArray,
-        tans: IntArray,
-        wtc: MutableList<String>,
-        bg: IntArray,
-        ed: IntArray,
-    ): Boolean {
-        val chk: MutableList<Int> = ArrayList<Int>()
-        for (j in 0..25) {
-            if (indg[j] == 0 && tans[j] == 1) {
-                chk.add(j)
-            }
-        }
-        while (chk.isNotEmpty()) {
-            val u: Int = chk.removeAt(chk.size - 1)
-            if (bg[u] == -1) {
+        // Try all supersets of forcedMask; keep those that kill all cycles
+        var best = 9999
+        val goodSets: MutableList<Int?> = ArrayList<Int?>()
+        for (s in 0..<(1 shl m)) {
+            if ((s and forcedMask) != forcedMask) {
                 continue
             }
-            for (j in bg[u]..ed[u]) {
-                val l = wtc[j][1].code - 'a'.code
-                if (tans[l] == 2) {
-                    continue
+            val size = Integer.bitCount(s)
+            if (size <= best && !hasCycle(s)) {
+                if (size < best) {
+                    best = size
+                    goodSets.clear()
                 }
-                indg[l]--
-                if (indg[l] == 0) {
-                    chk.add(l)
-                }
+                goodSets.add(s)
             }
         }
-        return indg.max() == 0
-    }
-
-    fun supersequences(wordsArray: Array<String>): List<List<Int>> {
-        val words = wordsArray.sorted()
-        val bg = IntArray(26)
-        bg.fill(-1)
-        val ed = IntArray(26)
-        ed.fill(0)
-        val mp = buildWordMap(words)
-        val mp2 = buildCharMap(words)
-        val tans = initializeAnswerArray(mp, mp2)
-        val wtc = filterWords(words, tans)
-        updateBoundaries(wtc, bg, ed)
-        val ans: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()
-        if (wtc.isEmpty()) {
-            val tansList: MutableList<Int> = ArrayList<Int>()
-            for (t in tans) {
-                tansList.add(t)
+        // Build distinct freq arrays from these sets
+        val seen: MutableSet<String?> = HashSet<String?>()
+        val ans: MutableList<MutableList<Int?>?> = ArrayList<MutableList<Int?>?>()
+        for (s in goodSets) {
+            val freq = IntArray(26)
+            for (i in 0..<m) {
+                freq[idxToChar[i].code - 'a'.code] = if ((s!! and (1 shl i)) != 0) 2 else 1
             }
-            ans.add(tansList)
-            return ans
-        }
-        val gm = findMinimalSolutions(wtc, tans, bg, ed)
-        val minb = gm.minOf { Integer.bitCount(it) }
-        val ns: MutableList<Int> = ArrayList<Int>()
-        for (i in 0..25) {
-            if (tans[i] == 1) {
-                ns.add(i)
-            }
-        }
-        for (x in gm) {
-            if (Integer.bitCount(x) == minb) {
-                for (j in ns.indices) {
-                    if ((x and (1 shl j)) != 0) {
-                        tans[ns[j]] = 2
-                    } else {
-                        tans[ns[j]] = 1
-                    }
+            val key = freq.contentToString()
+            if (seen.add(key)) {
+                val tmp: MutableList<Int?> = ArrayList<Int?>()
+                for (f in freq) {
+                    tmp.add(f)
                 }
-                val tansList: MutableList<Int> = ArrayList<Int>()
-                for (t in tans) {
-                    tansList.add(t)
-                }
-                ans.add(tansList)
+                ans.add(tmp)
             }
         }
         return ans
+    }
+
+    private fun hasCycle(mask: Int): Boolean {
+        val color = IntArray(m)
+        for (i in 0..<m) {
+            if (((mask shr i) and 1) == 0 && color[i] == 0 && dfs(i, color, mask)) {
+                return true
+            }
+        }
+        return false
+    }
+
+    private fun dfs(u: Int, color: IntArray, mask: Int): Boolean {
+        color[u] = 1
+        var nxt = adj[u]
+        while (nxt != 0) {
+            val v = Integer.numberOfTrailingZeros(nxt)
+            nxt = nxt and (nxt - 1)
+            if (((mask shr v) and 1) == 1) {
+                continue
+            }
+            if (color[v] == 1) {
+                return true
+            }
+            if (color[v] == 0 && dfs(v, color, mask)) {
+                return true
+            }
+        }
+        color[u] = 2
+        return false
     }
 }
