@@ -2,7 +2,8 @@ package g0101_0200.s0101_symmetric_tree
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search #Breadth_First_Search
 // #Tree #Binary_Tree #Data_Structure_I_Day_11_Tree #Level_2_Day_15_Tree
-// #Big_O_Time_O(N)_Space_O(log(N)) #2023_07_11_Time_153_ms_(82.35%)_Space_34.2_MB_(88.24%)
+// #Top_Interview_150_Binary_Tree_General #Big_O_Time_O(N)_Space_O(log(N))
+// #2023_07_11_Time_153_ms_(82.35%)_Space_34.2_MB_(88.24%)
 
 import com_github_leetcode.TreeNode
 

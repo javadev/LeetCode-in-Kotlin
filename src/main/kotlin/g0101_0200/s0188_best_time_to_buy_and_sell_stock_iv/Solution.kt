@@ -1,6 +1,7 @@
 package g0101_0200.s0188_best_time_to_buy_and_sell_stock_iv
 
-// #Hard #Array #Dynamic_Programming #2022_10_18_Time_293_ms_(68.31%)_Space_34.9_MB_(84.15%)
+// #Hard #Array #Dynamic_Programming #Top_Interview_150_Multidimensional_DP
+// #2022_10_18_Time_293_ms_(68.31%)_Space_34.9_MB_(84.15%)
 
 class Solution {
     fun maxProfit(k: Int, prices: IntArray): Int {

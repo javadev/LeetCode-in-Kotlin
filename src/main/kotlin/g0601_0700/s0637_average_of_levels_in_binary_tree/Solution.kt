@@ -1,7 +1,7 @@
 package g0601_0700.s0637_average_of_levels_in_binary_tree
 
 // #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
-// #2023_02_10_Time_249_ms_(100.00%)_Space_39.5_MB_(72.73%)
+// #Top_Interview_150_Binary_Tree_BFS #2023_02_10_Time_249_ms_(100.00%)_Space_39.5_MB_(72.73%)
 
 import com_github_leetcode.TreeNode
 

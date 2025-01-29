@@ -1,6 +1,6 @@
 package g0201_0300.s0228_summary_ranges
 
-// #Easy #Array #2022_10_26_Time_169_ms_(91.89%)_Space_34_MB_(95.95%)
+// #Easy #Array #Top_Interview_150_Intervals #2022_10_26_Time_169_ms_(91.89%)_Space_34_MB_(95.95%)
 
 class Solution {
     fun summaryRanges(nums: IntArray): List<String> {

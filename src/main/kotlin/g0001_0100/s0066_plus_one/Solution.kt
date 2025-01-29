@@ -1,7 +1,7 @@
 package g0001_0100.s0066_plus_one
 
 // #Easy #Top_Interview_Questions #Array #Math #Programming_Skills_II_Day_3 #Udemy_Arrays
-// #2023_07_10_Time_148_ms_(98.75%)_Space_34.6_MB_(81.44%)
+// #Top_Interview_150_Math #2023_07_10_Time_148_ms_(98.75%)_Space_34.6_MB_(81.44%)
 
 class Solution {
     fun plusOne(digits: IntArray): IntArray {

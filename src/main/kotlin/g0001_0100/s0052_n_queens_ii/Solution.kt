@@ -1,6 +1,7 @@
 package g0001_0100.s0052_n_queens_ii
 
-// #Hard #Backtracking #2023_07_10_Time_128_ms_(97.56%)_Space_32.7_MB_(92.68%)
+// #Hard #Backtracking #Top_Interview_150_Backtracking #Top_Interview_150_Kadane's_Algorithm
+// #2023_07_10_Time_128_ms_(97.56%)_Space_32.7_MB_(92.68%)
 
 class Solution {
     fun totalNQueens(n: Int): Int {

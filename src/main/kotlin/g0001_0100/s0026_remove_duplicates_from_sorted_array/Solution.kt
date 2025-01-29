@@ -1,7 +1,7 @@
 package g0001_0100.s0026_remove_duplicates_from_sorted_array
 
 // #Easy #Top_Interview_Questions #Array #Two_Pointers #Udemy_Two_Pointers
-// #2023_07_03_Time_249_ms_(67.38%)_Space_42_MB_(57.99%)
+// #Top_Interview_150_Array/String #2023_07_03_Time_249_ms_(67.38%)_Space_42_MB_(57.99%)
 
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {

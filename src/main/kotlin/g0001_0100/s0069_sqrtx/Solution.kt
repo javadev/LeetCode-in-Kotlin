@@ -1,7 +1,7 @@
 package g0001_0100.s0069_sqrtx
 
 // #Easy #Top_Interview_Questions #Math #Binary_Search #Binary_Search_I_Day_4
-// #2023_07_10_Time_140_ms_(94.72%)_Space_33.5_MB_(66.67%)
+// #Top_Interview_150_Math #2023_07_10_Time_140_ms_(94.72%)_Space_33.5_MB_(66.67%)
 
 class Solution {
     fun mySqrt(x: Int): Int {

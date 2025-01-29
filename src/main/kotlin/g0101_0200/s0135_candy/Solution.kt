@@ -1,6 +1,7 @@
 package g0101_0200.s0135_candy
 
-// #Hard #Array #Greedy #2022_10_09_Time_466_ms_(58.33%)_Space_51.2_MB_(83.33%)
+// #Hard #Array #Greedy #Top_Interview_150_Array/String
+// #2022_10_09_Time_466_ms_(58.33%)_Space_51.2_MB_(83.33%)
 
 class Solution {
     fun candy(ratings: IntArray): Int {
