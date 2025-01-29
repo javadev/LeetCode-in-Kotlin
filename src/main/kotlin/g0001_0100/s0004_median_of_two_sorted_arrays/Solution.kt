@@ -1,8 +1,8 @@
 package g0001_0100.s0004_median_of_two_sorted_arrays
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
-// #Big_O_Time_O(log(min(N,M)))_Space_O(1) #AI_can_be_used_to_solve_the_task
-// #2023_07_03_Time_293_ms_(75.96%)_Space_47.5_MB_(64.85%)
+// #Top_Interview_150_Binary_Search #Big_O_Time_O(log(min(N,M)))_Space_O(1)
+// #AI_can_be_used_to_solve_the_task #2023_07_03_Time_293_ms_(75.96%)_Space_47.5_MB_(64.85%)
 
 class Solution {
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {

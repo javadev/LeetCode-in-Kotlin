@@ -1,7 +1,7 @@
 package g0101_0200.s0190_reverse_bits
 
 // #Easy #Top_Interview_Questions #Bit_Manipulation #Divide_and_Conquer
-// #Algorithm_I_Day_14_Bit_Manipulation #Udemy_Bit_Manipulation
+// #Algorithm_I_Day_14_Bit_Manipulation #Udemy_Bit_Manipulation #Top_Interview_150_Bit_Manipulation
 // #2022_10_18_Time_198_ms_(81.82%)_Space_32.8_MB_(73.86%)
 
 @Suppress("NAME_SHADOWING")

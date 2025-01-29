@@ -1,6 +1,7 @@
 package g0401_0500.s0452_minimum_number_of_arrows_to_burst_balloons
 
-// #Medium #Array #Sorting #Greedy #2022_12_25_Time_934_ms_(100.00%)_Space_87_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #Top_Interview_150_Intervals
+// #2022_12_25_Time_934_ms_(100.00%)_Space_87_MB_(100.00%)
 
 class Solution {
     /*

@@ -1,6 +1,6 @@
 package g0201_0300.s0205_isomorphic_strings
 
-// #Easy #String #Hash_Table #Level_1_Day_2_String
+// #Easy #String #Hash_Table #Level_1_Day_2_String #Top_Interview_150_Hashmap
 // #2022_10_20_Time_278_ms_(79.96%)_Space_37.7_MB_(72.52%)
 
 class Solution {

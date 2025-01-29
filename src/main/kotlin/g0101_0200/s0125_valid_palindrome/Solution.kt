@@ -1,7 +1,7 @@
 package g0101_0200.s0125_valid_palindrome
 
 // #Easy #Top_Interview_Questions #String #Two_Pointers #Udemy_Two_Pointers
-// #2022_10_08_Time_353_ms_(52.06%)_Space_39.2_MB_(73.02%)
+// #Top_Interview_150_Two_Pointers #2022_10_08_Time_353_ms_(52.06%)_Space_39.2_MB_(73.02%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

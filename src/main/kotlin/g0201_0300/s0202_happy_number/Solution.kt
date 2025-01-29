@@ -2,7 +2,7 @@ package g0201_0300.s0202_happy_number
 
 // #Easy #Top_Interview_Questions #Hash_Table #Math #Two_Pointers #Algorithm_II_Day_21_Others
 // #Programming_Skills_I_Day_4_Loop #Level_2_Day_1_Implementation/Simulation
-// #2022_10_19_Time_261_ms_(45.08%)_Space_33.7_MB_(78.51%)
+// #Top_Interview_150_Hashmap #2022_10_19_Time_261_ms_(45.08%)_Space_33.7_MB_(78.51%)
 
 class Solution {
     private val set = mutableSetOf<Int>()

@@ -1,6 +1,6 @@
 package g0201_0300.s0290_word_pattern
 
-// #Easy #String #Hash_Table #Data_Structure_II_Day_7_String
+// #Easy #String #Hash_Table #Data_Structure_II_Day_7_String #Top_Interview_150_Hashmap
 // #2022_11_04_Time_177_ms_(89.55%)_Space_35.2_MB_(95.52%)
 
 class Solution {

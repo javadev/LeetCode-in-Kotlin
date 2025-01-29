@@ -1,7 +1,7 @@
 package g0301_0400.s0399_evaluate_division
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Graph #Union_Find #Shortest_Path
-// #2022_11_29_Time_183_ms_(91.49%)_Space_34.6_MB_(95.74%)
+// #Top_Interview_150_Graph_General #2022_11_29_Time_183_ms_(91.49%)_Space_34.6_MB_(95.74%)
 
 @Suppress("kotlin:S6518")
 class Solution {

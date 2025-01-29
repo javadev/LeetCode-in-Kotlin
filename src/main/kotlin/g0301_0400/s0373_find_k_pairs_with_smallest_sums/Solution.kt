@@ -1,6 +1,7 @@
 package g0301_0400.s0373_find_k_pairs_with_smallest_sums
 
-// #Medium #Array #Heap_Priority_Queue #2022_11_22_Time_1809_ms_(80.95%)_Space_119.1_MB_(66.67%)
+// #Medium #Array #Heap_Priority_Queue #Top_Interview_150_Heap
+// #2022_11_22_Time_1809_ms_(80.95%)_Space_119.1_MB_(66.67%)
 
 import java.util.PriorityQueue
 

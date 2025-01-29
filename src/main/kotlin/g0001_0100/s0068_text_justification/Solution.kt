@@ -1,6 +1,7 @@
 package g0001_0100.s0068_text_justification
 
-// #Hard #Array #String #Simulation #2023_07_10_Time_153_ms_(92.96%)_Space_34.1_MB_(100.00%)
+// #Hard #Array #String #Simulation #Top_Interview_150_Array/String
+// #2023_07_10_Time_153_ms_(92.96%)_Space_34.1_MB_(100.00%)
 
 class Solution {
     fun fullJustify(words: Array<String>, maxWidth: Int): List<String> {

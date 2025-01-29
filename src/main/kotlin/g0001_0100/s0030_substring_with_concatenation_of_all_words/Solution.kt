@@ -1,6 +1,6 @@
 package g0001_0100.s0030_substring_with_concatenation_of_all_words
 
-// #Hard #String #Hash_Table #Sliding_Window
+// #Hard #String #Hash_Table #Sliding_Window #Top_Interview_150_Sliding_Window
 // #2023_07_03_Time_182_ms_(100.00%)_Space_37.9_MB_(100.00%)
 
 class Solution {

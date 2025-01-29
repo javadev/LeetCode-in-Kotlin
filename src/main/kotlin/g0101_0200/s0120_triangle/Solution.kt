@@ -1,7 +1,7 @@
 package g0101_0200.s0120_triangle
 
 // #Medium #Array #Dynamic_Programming #Algorithm_I_Day_12_Dynamic_Programming
-// #Dynamic_Programming_I_Day_13 #Udemy_Dynamic_Programming
+// #Dynamic_Programming_I_Day_13 #Udemy_Dynamic_Programming #Top_Interview_150_Multidimensional_DP
 // #2022_10_08_Time_194_ms_(97.87%)_Space_40_MB_(71.28%)
 
 class Solution {
