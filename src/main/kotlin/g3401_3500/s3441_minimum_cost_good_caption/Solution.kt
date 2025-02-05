@@ -5,6 +5,7 @@ package g3401_3500.s3441_minimum_cost_good_caption
 import kotlin.math.abs
 import kotlin.math.min
 
+@Suppress("kotlin:S107")
 class Solution {
     fun minCostGoodCaption(caption: String): String {
         val n = caption.length
