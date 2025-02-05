@@ -13,11 +13,11 @@ class Solution {
             return ""
         }
         val arr = caption.toCharArray()
-        val prefixCost = Array<IntArray?>(n + 1) { IntArray(26) }
+        val prefixCost = Array<IntArray>(n + 1) { IntArray(26) }
         for (i in 0..<n) {
             val orig = arr[i].code - 'a'.code
             for (c in 0..25) {
-                prefixCost[i + 1]!![c] = prefixCost[i]!![c] + abs((orig - c))
+                prefixCost[i + 1][c] = prefixCost[i][c] + abs((orig - c))
             }
         }
         val dp = IntArray(n + 1)
@@ -37,7 +37,7 @@ class Solution {
                     var bestLetter = 0
                     var bestCost: Int = INF
                     for (c in 0..25) {
-                        val costBlock = prefixCost[i + l]!![c] - prefixCost[i]!![c]
+                        val costBlock = prefixCost[i + l][c] - prefixCost[i][c]
                         if (costBlock < bestCost) {
                             bestCost = costBlock
                             bestLetter = c
