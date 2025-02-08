@@ -48,19 +48,19 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(true))
-                    MatcherAssert.assertThat<Int?>(resultSet.getInt(1), CoreMatchers.equalTo<Int?>(1))
-                    MatcherAssert.assertThat<String?>(
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
+                    MatcherAssert.assertThat<Int>(resultSet.getInt(1), CoreMatchers.equalTo<Int>(1))
+                    MatcherAssert.assertThat<String>(
                         resultSet.getNString(2),
-                        CoreMatchers.equalTo<String?>("alice@example.com"),
+                        CoreMatchers.equalTo<String>("alice@example.com"),
                     )
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(true))
-                    MatcherAssert.assertThat<Int?>(resultSet.getInt(1), CoreMatchers.equalTo<Int?>(4))
-                    MatcherAssert.assertThat<String?>(
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
+                    MatcherAssert.assertThat<Int>(resultSet.getInt(1), CoreMatchers.equalTo<Int>(4))
+                    MatcherAssert.assertThat<String>(
                         resultSet.getNString(2),
-                        CoreMatchers.equalTo<String?>("david@domain.com"),
+                        CoreMatchers.equalTo<String>("david@domain.com"),
                     )
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(false))
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
                 }
             }
         }
