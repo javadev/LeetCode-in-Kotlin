@@ -1,7 +1,7 @@
 package g3401_3500.s3411_maximum_subarray_with_equal_products
 
 // #Easy #Array #Math #Sliding_Window #Enumeration #Number_Theory
-// #2025_01_07_Time_7_(60.71%)_Space_36.33_(92.86%)
+// #2025_01_07_Time_7_ms_(60.71%)_Space_36.33_MB_(92.86%)
 
 import kotlin.math.max
 

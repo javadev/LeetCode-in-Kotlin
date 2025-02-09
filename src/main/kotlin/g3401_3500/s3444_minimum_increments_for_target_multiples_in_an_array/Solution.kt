@@ -1,7 +1,7 @@
 package g3401_3500.s3444_minimum_increments_for_target_multiples_in_an_array
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Number_Theory
-// #2025_02_05_Time_34_(100.00%)_Space_44.36_(100.00%)
+// #2025_02_05_Time_34_ms_(100.00%)_Space_44.36_MB_(100.00%)
 
 import kotlin.math.min
 

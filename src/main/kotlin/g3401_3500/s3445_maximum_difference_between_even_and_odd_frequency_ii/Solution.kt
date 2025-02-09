@@ -1,7 +1,7 @@
 package g3401_3500.s3445_maximum_difference_between_even_and_odd_frequency_ii
 
 // #Hard #String #Prefix_Sum #Sliding_Window #Enumeration
-// #2025_02_05_Time_84_(83.33%)_Space_50.62_(66.67%)
+// #2025_02_05_Time_84_ms_(83.33%)_Space_50.62_MB_(66.67%)
 
 import kotlin.math.max
 

@@ -1,7 +1,7 @@
 package g3401_3500.s3428_maximum_and_minimum_sums_of_at_most_size_k_subsequences
 
 // #Medium #Array #Dynamic_Programming #Math #Sorting #Combinatorics
-// #2025_01_22_Time_167_(77.78%)_Space_75.34_(66.67%)
+// #2025_01_22_Time_167_ms_(77.78%)_Space_75.34_MB_(66.67%)
 
 class Solution {
     private lateinit var fact: LongArray

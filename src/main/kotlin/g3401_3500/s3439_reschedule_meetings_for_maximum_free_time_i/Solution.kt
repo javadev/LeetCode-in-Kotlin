@@ -1,6 +1,6 @@
 package g3401_3500.s3439_reschedule_meetings_for_maximum_free_time_i
 
-// #Medium #Array #Greedy #Sliding_Window #2025_02_05_Time_5_(80.00%)_Space_78.59_(17.14%)
+// #Medium #Array #Greedy #Sliding_Window #2025_02_05_Time_5_ms_(80.00%)_Space_78.59_MB_(17.14%)
 
 import kotlin.math.max
 

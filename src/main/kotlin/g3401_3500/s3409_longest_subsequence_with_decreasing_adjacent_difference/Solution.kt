@@ -1,6 +1,6 @@
 package g3401_3500.s3409_longest_subsequence_with_decreasing_adjacent_difference
 
-// #Medium #Array #Dynamic_Programming #2025_01_07_Time_70_(100.00%)_Space_57.87_(85.71%)
+// #Medium #Array #Dynamic_Programming #2025_01_07_Time_70_ms_(100.00%)_Space_57.87_MB_(85.71%)
 
 import kotlin.math.max
 

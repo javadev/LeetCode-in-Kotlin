@@ -1,7 +1,7 @@
 package g3401_3500.s3413_maximum_coins_from_k_consecutive_bags
 
 // #Medium #Array #Sorting #Greedy #Binary_Search #Prefix_Sum #Sliding_Window
-// #2025_01_08_Time_275_(86.67%)_Space_125.92_(80.00%)
+// #2025_01_08_Time_275_ms_(86.67%)_Space_125.92_MB_(80.00%)
 
 import kotlin.math.max
 

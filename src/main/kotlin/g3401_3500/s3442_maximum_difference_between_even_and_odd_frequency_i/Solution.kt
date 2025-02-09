@@ -1,6 +1,6 @@
 package g3401_3500.s3442_maximum_difference_between_even_and_odd_frequency_i
 
-// #Easy #String #Hash_Table #Counting #2025_02_05_Time_1_(100.00%)_Space_36.02_(91.30%)
+// #Easy #String #Hash_Table #Counting #2025_02_05_Time_1_ms_(100.00%)_Space_36.02_MB_(91.30%)
 
 import kotlin.math.max
 import kotlin.math.min

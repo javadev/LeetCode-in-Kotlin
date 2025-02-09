@@ -1,6 +1,7 @@
 package g3401_3500.s3430_maximum_and_minimum_sums_of_at_most_size_k_subarrays
 
-// #Hard #Array #Math #Stack #Monotonic_Stack #2025_01_22_Time_31_(100.00%)_Space_74.84_(24.24%)
+// #Hard #Array #Math #Stack #Monotonic_Stack
+// #2025_01_22_Time_31_ms_(100.00%)_Space_74.84_MB_(24.24%)
 
 import kotlin.math.min
 

@@ -1,7 +1,7 @@
 package g3301_3400.s3393_count_paths_with_the_given_xor_value
 
 // #Medium #Array #Dynamic_Programming #Math #Matrix #Bit_Manipulation
-// #2024_12_30_Time_57_(68.42%)_Space_73.12_(52.63%)
+// #2024_12_30_Time_57_ms_(68.42%)_Space_73.12_MB_(52.63%)
 
 class Solution {
     private var m = -1

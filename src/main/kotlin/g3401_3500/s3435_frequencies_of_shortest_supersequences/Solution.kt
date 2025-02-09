@@ -1,7 +1,7 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences
 
 // #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
-// #2025_01_29_Time_35_(100.00%)_Space_43.62_(100.00%)
+// #2025_01_29_Time_35_ms_(100.00%)_Space_43.62_MB_(100.00%)
 
 class Solution {
     private var m = 0
