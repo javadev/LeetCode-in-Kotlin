@@ -1,6 +1,7 @@
 package g3301_3400.s3395_subsequences_with_a_unique_middle_mode_i
 
-// #Hard #Array #Hash_Table #Math #Combinatorics #2025_01_06_Time_49_(100.00%)_Space_41.14_(100.00%)
+// #Hard #Array #Hash_Table #Math #Combinatorics
+// #2025_01_06_Time_49_ms_(100.00%)_Space_41.14_MB_(100.00%)
 
 class Solution {
     private val c2 = LongArray(1001)

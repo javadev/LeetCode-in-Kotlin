@@ -1,6 +1,6 @@
 package g3401_3500.s3441_minimum_cost_good_caption
 
-// #Hard #String #Dynamic_Programming #2025_02_05_Time_78_(100.00%)_Space_51.28_(100.00%)
+// #Hard #String #Dynamic_Programming #2025_02_05_Time_78_ms_(100.00%)_Space_51.28_MB_(100.00%)
 
 import kotlin.math.abs
 import kotlin.math.min

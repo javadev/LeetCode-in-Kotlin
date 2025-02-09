@@ -1,6 +1,6 @@
 package g3301_3400.s3394_check_if_grid_can_be_cut_into_sections
 
-// #Medium #Geometry #Line_Sweep #2025_01_06_Time_61_(100.00%)_Space_152.17_(45.00%)
+// #Medium #Geometry #Line_Sweep #2025_01_06_Time_61_ms_(100.00%)_Space_152.17_MB_(45.00%)
 
 import kotlin.math.max
 

@@ -1,6 +1,6 @@
 package g3401_3500.s3432_count_partitions_with_even_sum_difference
 
-// #Easy #Array #Math #Prefix_Sum #2025_01_26_Time_2_(100.00%)_Space_35.68_(100.00%)
+// #Easy #Array #Math #Prefix_Sum #2025_01_26_Time_2_ms_(100.00%)_Space_35.68_MB_(100.00%)
 
 import kotlin.math.abs
 

@@ -1,7 +1,7 @@
 package g3401_3500.s3414_maximum_score_of_non_overlapping_intervals
 
 // #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
-// #2025_01_09_Time_892_(100.00%)_Space_91.42_(100.00%)
+// #2025_01_09_Time_892_ms_(100.00%)_Space_91.42_MB_(100.00%)
 
 class Solution {
     fun maximumWeight(intervals: List<List<Int>>): IntArray {

@@ -1,6 +1,6 @@
 package g3401_3500.s3407_substring_matching_pattern
 
-// #Easy #String #String_Matching #2025_01_07_Time_2_(100.00%)_Space_38.80_(35.14%)
+// #Easy #String #String_Matching #2025_01_07_Time_2_ms_(100.00%)_Space_38.80_MB_(35.14%)
 
 class Solution {
     fun hasMatch(s: String, p: String): Boolean {

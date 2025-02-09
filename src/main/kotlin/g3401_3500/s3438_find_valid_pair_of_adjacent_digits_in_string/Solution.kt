@@ -1,6 +1,6 @@
 package g3401_3500.s3438_find_valid_pair_of_adjacent_digits_in_string
 
-// #Easy #String #Hash_Table #Counting #2025_02_05_Time_2_(93.18%)_Space_36.38_(100.00%)
+// #Easy #String #Hash_Table #Counting #2025_02_05_Time_2_ms_(93.18%)_Space_36.38_MB_(100.00%)
 
 class Solution {
     fun findValidPair(s: String): String {

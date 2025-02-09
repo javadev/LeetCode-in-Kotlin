@@ -1,6 +1,7 @@
 package g3401_3500.s3443_maximum_manhattan_distance_after_k_changes
 
-// #Medium #String #Hash_Table #Math #Counting #2025_02_05_Time_52_(100.00%)_Space_39.63_(100.00%)
+// #Medium #String #Hash_Table #Math #Counting
+// #2025_02_05_Time_52_ms_(100.00%)_Space_39.63_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

@@ -1,6 +1,6 @@
 package g3401_3500.s3429_paint_house_iv
 
-// #Medium #Array #Dynamic_Programming #2025_01_22_Time_10_(100.00%)_Space_119.77_(84.62%)
+// #Medium #Array #Dynamic_Programming #2025_01_22_Time_10_ms_(100.00%)_Space_119.77_MB_(84.62%)
 
 import kotlin.math.min
 

@@ -1,6 +1,7 @@
 package g3401_3500.s3412_find_mirror_score_of_a_string
 
-// #Medium #String #Hash_Table #Stack #Simulation #2025_01_07_Time_17_(96.15%)_Space_40.02_(80.77%)
+// #Medium #String #Hash_Table #Stack #Simulation
+// #2025_01_07_Time_17_ms_(96.15%)_Space_40.02_MB_(80.77%)
 
 class Solution {
     fun calculateScore(s: String): Long {

@@ -1,7 +1,7 @@
 package g3401_3500.s3410_maximize_subarray_sum_after_removing_all_occurrences_of_one_element
 
 // #Hard #Array #Dynamic_Programming #Segment_Tree
-// #2025_01_07_Time_80_(100.00%)_Space_68.87_(100.00%)
+// #2025_01_07_Time_80_ms_(100.00%)_Space_68.87_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

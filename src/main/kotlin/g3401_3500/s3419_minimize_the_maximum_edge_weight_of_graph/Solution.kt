@@ -1,7 +1,7 @@
 package g3401_3500.s3419_minimize_the_maximum_edge_weight_of_graph
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Binary_Search #Graph #Shortest_Path
-// #2025_01_14_Time_88_(100.00%)_Space_115.26_(83.33%)
+// #2025_01_14_Time_88_ms_(100.00%)_Space_115.26_MB_(83.33%)
 
 import java.util.LinkedList
 import java.util.Queue
