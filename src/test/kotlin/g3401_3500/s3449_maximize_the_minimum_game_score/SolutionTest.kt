@@ -14,4 +14,9 @@ internal class SolutionTest {
     fun maxScore2() {
         assertThat<Long>(Solution().maxScore(intArrayOf(1, 2, 3), 5), equalTo<Long>(2L))
     }
+
+    @Test
+    fun maxScore3() {
+        assertThat<Long>(Solution().maxScore(intArrayOf(1, 2, 3), 2), equalTo<Long>(0L))
+    }
 }
