@@ -6,7 +6,7 @@ package g1001_1100.s1044_longest_duplicate_substring
 class Solution {
     private lateinit var hsh: LongArray
     private lateinit var pw: LongArray
-    private val cnt: Array<MutableList<Int>?> = arrayOfNulls(26)
+    private val cnt: Array<MutableList<Int>> = Array(26) { ArrayList() }
 
     fun longestDupSubstring(s: String): String {
         val n = s.length
@@ -20,17 +20,17 @@ class Solution {
         for (j in 1..n) {
             hsh[j] = (hsh[j - 1] * base + s[j - 1].code.toLong()) % MOD
             pw[j] = pw[j - 1] * base % MOD
-            cnt[s[j - 1].code - 'a'.code]!!.add(j - 1)
+            cnt[s[j - 1].code - 'a'.code].add(j - 1)
         }
         var ans = ""
         for (i in 0..25) {
-            if (cnt[i]!!.isEmpty()) {
+            if (cnt[i].isEmpty()) {
                 continue
             }
-            val idx: MutableList<Int>? = cnt[i]
-            var set: MutableSet<Long?>
+            val idx: MutableList<Int> = cnt[i]
+            var set: MutableSet<Long>
             var lo = 1
-            var hi = n - idx!![0]
+            var hi = n - idx[0]
             while (lo <= hi) {
                 val len = (lo + hi) / 2
                 set = HashSet()
