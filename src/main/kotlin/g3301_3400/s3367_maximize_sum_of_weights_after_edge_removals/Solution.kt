@@ -26,7 +26,7 @@ class Solution {
 
     private fun dfs(v: Int, parent: Int): LongArray {
         var sum: Long = 0
-        val pq = PriorityQueue<Long?>()
+        val pq = PriorityQueue<Long>()
         for (e in adj[v]) {
             val w = if (e[0] == v) e[1] else e[0]
             if (w == parent) {
