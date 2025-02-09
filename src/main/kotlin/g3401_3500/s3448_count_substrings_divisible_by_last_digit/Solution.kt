@@ -12,7 +12,7 @@ class Solution {
         computeModArrays(s, p3, p7, p9)
         val freq3 = LongArray(3)
         val freq9 = LongArray(9)
-        val freq7 = Array<LongArray?>(6) { LongArray(7) }
+        val freq7 = Array<LongArray>(6) { LongArray(7) }
         val inv7 = intArrayOf(1, 5, 4, 6, 2, 3)
         return countValidSubstrings(s, p3, p7, p9, freq3, freq9, freq7, inv7)
     }
@@ -36,7 +36,7 @@ class Solution {
         p9: IntArray,
         freq3: LongArray,
         freq9: LongArray,
-        freq7: Array<LongArray?>,
+        freq7: Array<LongArray>,
         inv7: IntArray,
     ): Long {
         var ans: Long = 0
@@ -46,7 +46,7 @@ class Solution {
                 ans += countDivisibilityCases(s, j, d, p3, p7, p9, freq3, freq9, freq7, inv7)
             }
             freq3[p3[j]]++
-            freq7[j % 6]!![p7[j]] = freq7[j % 6]!![p7[j]] + 1
+            freq7[j % 6][p7[j]] = freq7[j % 6][p7[j]] + 1
             freq9[p9[j]]++
         }
         return ans
@@ -61,7 +61,7 @@ class Solution {
         p9: IntArray,
         freq3: LongArray,
         freq9: LongArray,
-        freq7: Array<LongArray?>,
+        freq7: Array<LongArray>,
         inv7: IntArray,
     ): Long {
         var ans: Long = 0
@@ -102,12 +102,12 @@ class Solution {
         return (if (num3 % 8 == 0) j - 1 else 0) + (if (num2 % 8 == 0) 1 else 0) + 1L
     }
 
-    private fun countDivisibilityBy7(j: Int, p7: IntArray, freq7: Array<LongArray?>, inv7: IntArray): Long {
+    private fun countDivisibilityBy7(j: Int, p7: IntArray, freq7: Array<LongArray>, inv7: IntArray): Long {
         var ans = (if (p7[j] == 0) 1L else 0L)
         for (m in 0..5) {
             val idx = ((j % 6) - m + 6) % 6
             val req = (p7[j] * inv7[m]) % 7
-            ans += freq7[idx]!![req]
+            ans += freq7[idx][req]
         }
         return ans
     }
