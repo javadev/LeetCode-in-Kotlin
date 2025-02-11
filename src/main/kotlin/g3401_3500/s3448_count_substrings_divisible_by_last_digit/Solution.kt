@@ -1,8 +1,7 @@
 package g3401_3500.s3448_count_substrings_divisible_by_last_digit
 
-// #Hard #2025_02_09_Time_29_(100.00%)_Space_40.60_(100.00%)
+// #Hard #String #Dynamic_Programming #2025_02_11_Time_29_ms_(77.78%)_Space_41.05_MB_(77.78%)
 
-@Suppress("kotlin:S107")
 class Solution {
     fun countSubstrings(s: String): Long {
         val n = s.length
@@ -12,17 +11,17 @@ class Solution {
         computeModArrays(s, p3, p7, p9)
         val freq3 = LongArray(3)
         val freq9 = LongArray(9)
-        val freq7 = Array<LongArray>(6) { LongArray(7) }
+        val freq7 = Array<LongArray?>(6) { LongArray(7) }
         val inv7 = intArrayOf(1, 5, 4, 6, 2, 3)
         return countValidSubstrings(s, p3, p7, p9, freq3, freq9, freq7, inv7)
     }
 
     private fun computeModArrays(s: String, p3: IntArray, p7: IntArray, p9: IntArray) {
-        p3[0] = (s[0].code - '0'.code) % 3
-        p7[0] = (s[0].code - '0'.code) % 7
-        p9[0] = (s[0].code - '0'.code) % 9
+        p3[0] = (s.get(0).code - '0'.code) % 3
+        p7[0] = (s.get(0).code - '0'.code) % 7
+        p9[0] = (s.get(0).code - '0'.code) % 9
         for (i in 1..<s.length) {
-            val dig = s[i].code - '0'.code
+            val dig = s.get(i).code - '0'.code
             p3[i] = (p3[i - 1] * 10 + dig) % 3
             p7[i] = (p7[i - 1] * 10 + dig) % 7
             p9[i] = (p9[i - 1] * 10 + dig) % 9
@@ -36,17 +35,17 @@ class Solution {
         p9: IntArray,
         freq3: LongArray,
         freq9: LongArray,
-        freq7: Array<LongArray>,
+        freq7: Array<LongArray?>,
         inv7: IntArray,
     ): Long {
         var ans: Long = 0
         for (j in 0..<s.length) {
-            val d = s[j].code - '0'.code
+            val d = s.get(j).code - '0'.code
             if (d != 0) {
                 ans += countDivisibilityCases(s, j, d, p3, p7, p9, freq3, freq9, freq7, inv7)
             }
             freq3[p3[j]]++
-            freq7[j % 6][p7[j]] = freq7[j % 6][p7[j]] + 1
+            freq7[j % 6]!![p7[j]] = freq7[j % 6]!![p7[j]] + 1
             freq9[p9[j]]++
         }
         return ans
@@ -61,7 +60,7 @@ class Solution {
         p9: IntArray,
         freq3: LongArray,
         freq9: LongArray,
-        freq7: Array<LongArray>,
+        freq7: Array<LongArray?>,
         inv7: IntArray,
     ): Long {
         var ans: Long = 0
@@ -85,7 +84,7 @@ class Solution {
         if (j == 0) {
             return 1
         }
-        val num = (s[j - 1].code - '0'.code) * 10 + (s[j].code - '0'.code)
+        val num = (s.get(j - 1).code - '0'.code) * 10 + (s.get(j).code - '0'.code)
         return (if (num % 4 == 0) j + 1 else 1).toLong()
     }
 
@@ -94,20 +93,20 @@ class Solution {
             return 1
         }
         if (j == 1) {
-            val num = (s[0].code - '0'.code) * 10 + 8
+            val num = (s.get(0).code - '0'.code) * 10 + 8
             return (if (num % 8 == 0) 2 else 1).toLong()
         }
-        val num3 = (s[j - 2].code - '0'.code) * 100 + (s[j - 1].code - '0'.code) * 10 + 8
-        val num2 = (s[j - 1].code - '0'.code) * 10 + 8
+        val num3 = (s.get(j - 2).code - '0'.code) * 100 + (s.get(j - 1).code - '0'.code) * 10 + 8
+        val num2 = (s.get(j - 1).code - '0'.code) * 10 + 8
         return (if (num3 % 8 == 0) j - 1 else 0) + (if (num2 % 8 == 0) 1 else 0) + 1L
     }
 
-    private fun countDivisibilityBy7(j: Int, p7: IntArray, freq7: Array<LongArray>, inv7: IntArray): Long {
+    private fun countDivisibilityBy7(j: Int, p7: IntArray, freq7: Array<LongArray?>, inv7: IntArray): Long {
         var ans = (if (p7[j] == 0) 1L else 0L)
         for (m in 0..5) {
             val idx = ((j % 6) - m + 6) % 6
             val req = (p7[j] * inv7[m]) % 7
-            ans += freq7[idx][req]
+            ans += freq7[idx]!![req]
         }
         return ans
     }

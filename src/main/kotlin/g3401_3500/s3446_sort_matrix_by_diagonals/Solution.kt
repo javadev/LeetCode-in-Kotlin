@@ -1,31 +1,40 @@
 package g3401_3500.s3446_sort_matrix_by_diagonals
 
-// #Medium #2025_02_09_Time_64_(100.00%)_Space_60.34_(100.00%)
+// #Medium #Array #Sorting #Matrix #2025_02_11_Time_12_ms_(93.75%)_Space_49.17_MB_(12.50%)
 
 class Solution {
-    fun sortMatrix(matrix: Array<IntArray>): Array<IntArray> {
-        val diagonalMap = mutableMapOf<Int, MutableList<Int>>()
-        val rows = matrix.size
-        val cols = matrix[0].size
-        for (i in 0 until rows) {
-            for (j in 0 until cols) {
-                val key = i - j
-                diagonalMap.computeIfAbsent(key) { mutableListOf() }.add(matrix[i][j])
+    fun sortMatrix(grid: Array<IntArray>): Array<IntArray> {
+        val top = 0
+        var left = 0
+        var right = grid[0].size - 1
+        while (top < right) {
+            var x = grid[0].size - 1 - left
+            val arr = IntArray(left + 1)
+            for (i in top..left) {
+                arr[i] = grid[i][x++]
             }
-        }
-        for ((key, values) in diagonalMap) {
-            if (key < 0) {
-                values.sort()
-            } else {
-                values.sortDescending()
+            arr.sort()
+            x = grid[0].size - 1 - left
+            for (i in top..left) {
+                grid[i][x++] = arr[i]
             }
+            left++
+            right--
         }
-        for (i in 0 until rows) {
-            for (j in 0 until cols) {
-                val key = i - j
-                matrix[i][j] = diagonalMap[key]!!.removeAt(0)
+        var bottom = grid.size - 1
+        var x = 0
+        while (top <= bottom) {
+            val arr = IntArray(bottom + 1)
+            for (i in arr.indices) {
+                arr[i] = grid[x + i][i]
             }
+            arr.sort()
+            for (i in arr.indices) {
+                grid[x + i][i] = arr[arr.size - 1 - i]
+            }
+            bottom--
+            x++
         }
-        return matrix
+        return grid
     }
 }

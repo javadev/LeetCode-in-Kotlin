@@ -1,46 +1,48 @@
 package g3401_3500.s3449_maximize_the_minimum_game_score
 
-// #Hard #2025_02_09_Time_214_(100.00%)_Space_61.96_(100.00%)
-
-import kotlin.math.max
+// #Hard #Array #Greedy #Binary_Search #2025_02_11_Time_123_ms_(100.00%)_Space_62.76_MB_(100.00%)
 
 class Solution {
-    fun maxScore(points: IntArray, m: Int): Long {
+    private fun judge(points: IntArray, m: Long, tgt: Long): Boolean {
+        var m = m
+        var cur: Long
+        var nxt = 0L
         val n = points.size
-        if (m < n) {
-            return 0
-        }
-        var lo: Long = 1
-        var hi = 1e18.toLong()
-        var ans: Long = 0
-        while (lo <= hi) {
-            val mid = lo + (hi - lo) / 2
-            var tot: Long = 0
-            var tr: Long = 0
-            var skip: Long = 0
-            var i = 0
-            while (i < n && tot <= m) {
-                val p = points[i]
-                val need = (mid + p - 1L) / p
-                if (tr >= need) {
-                    tr = 0
-                    skip++
-                } else {
-                    val cur = tr * p
-                    val ops = (mid - cur + p - 1L) / p
-                    tot += 2 * ops - 1 + skip
-                    tr = max((ops - 1), 0)
-                    skip = 0
+        for (i in 0..<n) {
+            if (i == n - 1 && nxt >= tgt) {
+                return true
+            }
+            m--
+            cur = nxt + points[i]
+            nxt = 0
+            if (cur < tgt) {
+                val req = (tgt - cur - 1) / points[i] + 1
+                if (i < n - 1) {
+                    nxt = points[i + 1] * req
                 }
-                i++
+                m -= req * 2
             }
-            if (tot <= m) {
-                ans = mid
-                lo = mid + 1
-            } else {
-                hi = mid - 1
+            if (m < 0) {
+                return false
             }
         }
-        return ans
+        return true
+    }
+
+    fun maxScore(points: IntArray, m: Int): Long {
+        var x = 0L
+        var y = 10000000L * m
+        while (x < y - 1) {
+            val mid = (x + y) / 2
+            if (judge(points, m.toLong(), mid)) {
+                x = mid
+            } else {
+                y = mid - 1
+            }
+        }
+        while (judge(points, m.toLong(), x + 1)) {
+            x++
+        }
+        return x
     }
 }
