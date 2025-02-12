@@ -28,4 +28,16 @@ internal class SolutionTest {
             equalTo(listOf(2, 0)),
         )
     }
+
+    @Test
+    fun numberOfAlternatingGroups3() {
+        assertThat(
+            Solution()
+                .numberOfAlternatingGroups(
+                    intArrayOf(0, 0, 0, 1),
+                    arrayOf<IntArray>(intArrayOf(2, 1, 1), intArrayOf(1, 3), intArrayOf(2, 1, 1), intArrayOf(2, 0, 1)),
+                ),
+            equalTo(listOf(4)),
+        )
+    }
 }
