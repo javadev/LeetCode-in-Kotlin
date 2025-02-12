@@ -1,5 +1,7 @@
 package g3201_3300.s3245_alternating_groups_iii
 
+// #Hard #Array #Binary_Indexed_Tree #2025_02_12_Time_188_ms_(100.00%)_Space_95.34_MB_(100.00%)
+
 import java.util.TreeMap
 import kotlin.math.max
 
