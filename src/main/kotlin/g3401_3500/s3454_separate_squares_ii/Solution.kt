@@ -9,15 +9,15 @@ class Solution {
         val m = 2 * n
         val events = createEvents(squares, m)
         val xsRaw = createXsRaw(squares, m)
-        events.sortWith<Event?> { a, b: Event? -> a!!.y.compareTo(b!!.y) }
+        events.sortWith<Event> { a, b: Event -> a.y.compareTo(b.y) }
         val xs = compress(xsRaw)
         val totalUnionArea = calculateTotalUnionArea(events, xs, m)
         val target = totalUnionArea / 2.0
         return findSplitPoint(events, xs, m, target)
     }
 
-    private fun createEvents(squares: Array<IntArray>, m: Int): Array<Event?> {
-        val events = arrayOfNulls<Event>(m)
+    private fun createEvents(squares: Array<IntArray>, m: Int): Array<Event> {
+        val events = Array(m) { Event(0.0, 0.0, 0.0, 0) }
         var idx = 0
         for (sq in squares) {
             val x = sq[0].toDouble()
@@ -43,34 +43,34 @@ class Solution {
         return xsRaw
     }
 
-    private fun calculateTotalUnionArea(events: Array<Event?>, xs: DoubleArray, m: Int): Double {
+    private fun calculateTotalUnionArea(events: Array<Event>, xs: DoubleArray, m: Int): Double {
         val segTree = SegmentTree(xs)
         var totalUnionArea = 0.0
-        var lastY = events[0]!!.y
+        var lastY = events[0].y
         var i = 0
         while (i < m) {
-            val curY = events[i]!!.y
+            val curY = events[i].y
             if (curY > lastY) {
                 val unionX = segTree.query()
                 totalUnionArea += unionX * (curY - lastY)
                 lastY = curY
             }
-            while (i < m && events[i]!!.y == curY) {
-                val indices = findIndices(xs, events[i]!!)
-                segTree.update(1, 0, xs.size - 1, indices[0], indices[1], events[i]!!.type)
+            while (i < m && events[i].y == curY) {
+                val indices = findIndices(xs, events[i])
+                segTree.update(1, 0, xs.size - 1, indices[0], indices[1], events[i].type)
                 i++
             }
         }
         return totalUnionArea
     }
 
-    private fun findSplitPoint(events: Array<Event?>, xs: DoubleArray, m: Int, target: Double): Double {
+    private fun findSplitPoint(events: Array<Event>, xs: DoubleArray, m: Int, target: Double): Double {
         val segTree = SegmentTree(xs)
-        var lastY = events[0]!!.y
+        var lastY = events[0].y
         var cumArea = 0.0
         var i = 0
         while (i < m) {
-            val curY = events[i]!!.y
+            val curY = events[i].y
             if (curY > lastY) {
                 val unionX = segTree.query()
                 val dy = curY - lastY
@@ -80,9 +80,9 @@ class Solution {
                 cumArea += unionX * dy
                 lastY = curY
             }
-            while (i < m && events[i]!!.y == curY) {
-                val indices = findIndices(xs, events[i]!!)
-                segTree.update(1, 0, xs.size - 1, indices[0], indices[1], events[i]!!.type)
+            while (i < m && events[i].y == curY) {
+                val indices = findIndices(xs, events[i])
+                segTree.update(1, 0, xs.size - 1, indices[0], indices[1], events[i].type)
                 i++
             }
         }
