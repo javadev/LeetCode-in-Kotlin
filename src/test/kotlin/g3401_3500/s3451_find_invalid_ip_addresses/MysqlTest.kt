@@ -1,7 +1,7 @@
 package g3401_3500.s3451_find_invalid_ip_addresses
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -56,25 +56,25 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(true))
-                    MatcherAssert.assertThat<String?>(
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        CoreMatchers.equalTo<String?>("256.1.2.3"),
+                        equalTo<String>("256.1.2.3"),
                     )
-                    MatcherAssert.assertThat<String?>(resultSet.getNString(2), CoreMatchers.equalTo<String?>("2"))
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(true))
-                    MatcherAssert.assertThat<String?>(
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("2"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        CoreMatchers.equalTo<String?>("192.168.001.1"),
+                        equalTo<String>("192.168.001.1"),
                     )
-                    MatcherAssert.assertThat<String?>(resultSet.getNString(2), CoreMatchers.equalTo<String?>("2"))
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(true))
-                    MatcherAssert.assertThat<String?>(
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("2"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(
                         resultSet.getNString(1),
-                        CoreMatchers.equalTo<String?>("192.168.1"),
+                        equalTo<String>("192.168.1"),
                     )
-                    MatcherAssert.assertThat<String?>(resultSet.getNString(2), CoreMatchers.equalTo<String?>("1"))
-                    MatcherAssert.assertThat<Boolean?>(resultSet.next(), CoreMatchers.equalTo<Boolean?>(false))
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("1"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
