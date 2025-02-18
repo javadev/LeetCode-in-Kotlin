@@ -20,4 +20,12 @@ internal class SolutionTest {
             equalTo<Boolean>(false),
         )
     }
+
+    @Test
+    fun hasSpecialSubstring3() {
+        assertThat<Boolean>(
+            Solution().hasSpecialSubstring("ccc", 2),
+            equalTo<Boolean>(false),
+        )
+    }
 }
