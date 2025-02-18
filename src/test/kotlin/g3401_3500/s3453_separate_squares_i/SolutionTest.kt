@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun separateSquares() {
         assertThat<Double>(
             Solution().separateSquares(arrayOf<IntArray>(intArrayOf(0, 0, 1), intArrayOf(2, 2, 1))),
-            equalTo<Double>(1.0000000012083676),
+            equalTo<Double>(1.0),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun separateSquares2() {
         assertThat<Double>(
             Solution().separateSquares(arrayOf<IntArray>(intArrayOf(0, 0, 2), intArrayOf(1, 1, 1))),
-            equalTo<Double>(1.1666666677873083),
+            equalTo<Double>(1.1666666666666667),
         )
     }
 }
