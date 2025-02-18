@@ -1,13 +1,11 @@
 package g3401_3500.s3458_select_k_disjoint_special_substrings
 
 // #Medium #String #Hash_Table #Dynamic_Programming #Sorting #Greedy
-// #2025_02_18_Time_28_ms_(33.33%)_Space_39.48_MB_(66.67%)
+// #2025_02_18_Time_24_ms_(100.00%)_Space_39.71_MB_(50.00%)
 
 class Solution {
     fun maxSubstringLength(s: String, k: Int): Boolean {
-        if (k == 0) {
-            return true
-        }
+        if (k == 0) return true
         val n = s.length
         val left = IntArray(26) { n }
         val right = IntArray(26) { -1 }

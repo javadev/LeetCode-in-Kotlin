@@ -1,7 +1,7 @@
 package g3401_3500.s3459_length_of_longest_v_shaped_diagonal_segment
 
 // #Hard #Array #Dynamic_Programming #Matrix #Memoization
-// #2025_02_18_Time_289_ms_(_%)_Space_147.08_MB_(100.00%)
+// #2025_02_18_Time_287_ms_(_%)_Space_131.62_MB_(100.00%)
 
 import kotlin.math.max
 
@@ -53,7 +53,7 @@ class Solution {
         if (k > 0) {
             val d2 = (d + 1) % 4
             val res2 = dp(i + ds[d2][0], j + ds[d2][1], nx[x], d2, 0) + 1
-            res = max(res.toDouble(), res2.toDouble()).toInt()
+            res = max(res, res2)
         }
         dp[i][j][d][k] = res
         return res
