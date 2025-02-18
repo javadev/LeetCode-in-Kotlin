@@ -1,7 +1,7 @@
 package g3401_3500.s3459_length_of_longest_v_shaped_diagonal_segment
 
 // #Hard #Array #Dynamic_Programming #Matrix #Memoization
-// #2025_02_18_Time_287_ms_(_%)_Space_131.62_MB_(100.00%)
+// #2025_02_18_Time_287_ms_(100.00%)_Space_131.62_MB_(100.00%)
 
 import kotlin.math.max
 
