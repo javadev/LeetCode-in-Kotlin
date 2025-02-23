@@ -34,7 +34,7 @@ class Solution {
     private fun binomMod5(n: Int, k: Int): Int {
         var n = n
         var k = k
-        val t = arrayOf<IntArray?>(
+        val t = arrayOf<IntArray>(
             intArrayOf(1),
             intArrayOf(1, 1),
             intArrayOf(1, 2, 1),
@@ -48,7 +48,7 @@ class Solution {
             if (kd > nd) {
                 return 0
             }
-            res = (res * t[nd]!![kd]) % 5
+            res = (res * t[nd][kd]) % 5
             n /= 5
             k /= 5
         }
