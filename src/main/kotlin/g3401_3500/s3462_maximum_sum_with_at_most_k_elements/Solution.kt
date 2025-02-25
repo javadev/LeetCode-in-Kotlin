@@ -1,6 +1,7 @@
 package g3401_3500.s3462_maximum_sum_with_at_most_k_elements
 
-// #Medium #2025_02_23_Time_202_ms_(100.00%)_Space_107.52_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #Matrix #Heap_(Priority_Queue)
+// #2025_02_25_Time_197_ms_(86.21%)_Space_106.34_MB_(6.90%)
 
 import java.util.Collections
 import java.util.PriorityQueue
@@ -11,7 +12,7 @@ class Solution {
             return 0
         }
         val pq = PriorityQueue<Int>(Collections.reverseOrder<Int>())
-        var temp: PriorityQueue<Int>?
+        var temp: PriorityQueue<Int>
         for (i in grid.indices) {
             temp = PriorityQueue<Int>(Collections.reverseOrder<Int>())
             for (j in grid[i].indices) {
