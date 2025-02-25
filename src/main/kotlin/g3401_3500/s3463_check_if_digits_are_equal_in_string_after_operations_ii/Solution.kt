@@ -63,7 +63,7 @@ class Solution {
         val xs = f(n - 2)
         val arr = IntArray(n)
         for (i in 0..<n) {
-            arr[i] = s.get(i).code - '0'.code
+            arr[i] = s[i].code - '0'.code
         }
         var num1 = 0
         var num2 = 0
