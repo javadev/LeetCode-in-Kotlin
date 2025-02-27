@@ -1,6 +1,6 @@
 package g3401_3500.s3464_maximize_the_distance_between_points_on_a_square
 
-// #Hard #Array #Greedy #Binary_Search #2025_02_25_Time_18_ms_(98.51%)_Space_49.78_MB_(46.27%)
+// #Hard #Array #Greedy #Binary_Search #2025_02_27_Time_24_ms_(100.00%)_Space_46.55_MB_(100.00%)
 
 class Solution {
     fun maxDistance(side: Int, points: Array<IntArray>, k: Int): Int {
