@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun transformArray() {
         assertThat<IntArray>(
             Solution().transformArray(intArrayOf(4, 3, 2, 1)),
-            equalTo<IntArray>(intArrayOf(0, 0, 1, 1))
+            equalTo<IntArray>(intArrayOf(0, 0, 1, 1)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun transformArray2() {
         assertThat<IntArray>(
             Solution().transformArray(intArrayOf(1, 5, 1, 4, 2)),
-            equalTo<IntArray>(intArrayOf(0, 0, 1, 1, 1))
+            equalTo<IntArray>(intArrayOf(0, 0, 1, 1, 1)),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun permute() {
         MatcherAssert.assertThat<IntArray?>(
             Solution().permute(4, 6L),
-            CoreMatchers.equalTo<IntArray?>(intArrayOf(3, 4, 1, 2))
+            CoreMatchers.equalTo<IntArray?>(intArrayOf(3, 4, 1, 2)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun permute2() {
         MatcherAssert.assertThat<IntArray?>(
             Solution().permute(3, 2L),
-            CoreMatchers.equalTo<IntArray?>(intArrayOf(3, 2, 1))
+            CoreMatchers.equalTo<IntArray?>(intArrayOf(3, 2, 1)),
         )
     }
 
@@ -34,9 +34,9 @@ internal class SolutionTest {
                 intArrayOf(
                     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                     21, 22, 43, 40, 27, 36, 25, 34, 31, 32, 29, 28, 33, 24, 23, 26, 41, 42,
-                    35, 38, 37, 30, 39
-                )
-            )
+                    35, 38, 37, 30, 39,
+                ),
+            ),
         )
     }
 }

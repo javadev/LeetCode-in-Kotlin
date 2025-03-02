@@ -24,11 +24,11 @@ class Solution {
         var res: Int = max(nums[i], nums[i + 1]) + solve(nums, i + 2, last)
         res = min(
             res,
-            max(nums[i], nums[last]) + solve(nums, i + 2, i + 1)
+            max(nums[i], nums[last]) + solve(nums, i + 2, i + 1),
         )
         res = min(
             res,
-            max(nums[i + 1], nums[last]) + solve(nums, i + 2, i)
+            max(nums[i + 1], nums[last]) + solve(nums, i + 2, i),
         )
         dp[i][last] = res
         return res

@@ -11,9 +11,9 @@ internal class SolutionTest {
             Solution()
                 .countArrays(
                     intArrayOf(1, 2, 3, 4),
-                    arrayOf<IntArray>(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4), intArrayOf(4, 5))
+                    arrayOf<IntArray>(intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4), intArrayOf(4, 5)),
                 ),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 
@@ -23,9 +23,9 @@ internal class SolutionTest {
             Solution()
                 .countArrays(
                     intArrayOf(1, 2, 3, 4),
-                    arrayOf<IntArray>(intArrayOf(1, 10), intArrayOf(2, 9), intArrayOf(3, 8), intArrayOf(4, 7))
+                    arrayOf<IntArray>(intArrayOf(1, 10), intArrayOf(2, 9), intArrayOf(3, 8), intArrayOf(4, 7)),
                 ),
-            equalTo<Int>(4)
+            equalTo<Int>(4),
         )
     }
 
@@ -35,9 +35,9 @@ internal class SolutionTest {
             Solution()
                 .countArrays(
                     intArrayOf(1, 2, 1, 2),
-                    arrayOf<IntArray>(intArrayOf(1, 1), intArrayOf(2, 3), intArrayOf(3, 3), intArrayOf(2, 3))
+                    arrayOf<IntArray>(intArrayOf(1, 1), intArrayOf(2, 3), intArrayOf(3, 3), intArrayOf(2, 3)),
                 ),
-            equalTo<Int>(0)
+            equalTo<Int>(0),
         )
     }
 }

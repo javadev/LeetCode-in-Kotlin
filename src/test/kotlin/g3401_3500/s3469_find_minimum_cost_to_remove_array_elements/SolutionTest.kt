@@ -19,7 +19,7 @@ internal class SolutionTest {
     fun minCost3() {
         assertThat<Int>(
             Solution().minCost(intArrayOf(83, 47, 66, 24, 57, 85, 16)),
-            equalTo<Int>(224)
+            equalTo<Int>(224),
         )
     }
 }
