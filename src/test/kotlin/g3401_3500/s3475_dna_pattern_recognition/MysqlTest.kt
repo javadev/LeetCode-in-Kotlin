@@ -9,6 +9,7 @@ import org.zapodot.junit.db.common.CompatibilityMode
 import java.io.BufferedReader
 import java.io.FileNotFoundException
 import java.io.FileReader
+import java.sql.ResultSet
 import java.sql.SQLException
 import java.util.stream.Collectors
 import javax.sql.DataSource
@@ -60,91 +61,41 @@ internal class MysqlTest {
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("1"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("ATGCTAGCTAGCTAA"),
-                    )
-                    assertThat<String>(resultSet.getNString(3), equalTo<String>("Human"))
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("FALSE"))
+                    checkRow(resultSet, 1, "ATGCTAGCTAGCTAA", "Human", "TRUE", "TRUE", "FALSE", "FALSE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("2"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("GGGTCAATCATC"),
-                    )
-                    assertThat<String>(resultSet.getNString(3), equalTo<String>("Human"))
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("TRUE"))
+                    checkRow(resultSet, 2, "GGGTCAATCATC", "Human", "FALSE", "FALSE", "FALSE", "TRUE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("3"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("ATATATCGTAGCTA"),
-                    )
-                    assertThat<String>(resultSet.getNString(3), equalTo<String>("Human"))
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("FALSE"))
+                    checkRow(resultSet, 3, "ATATATCGTAGCTA", "Human", "FALSE", "FALSE", "TRUE", "FALSE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("4"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("ATGGGGTCATCATAA"),
-                    )
-                    assertThat<String>(resultSet.getNString(3), equalTo<String>("Human"))
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("TRUE"))
+                    checkRow(resultSet, 4, "ATGGGGTCATCATAA", "Human", "TRUE", "TRUE", "FALSE", "TRUE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("5"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("TCAGTCAGTCAG"),
-                    )
-                    assertThat<String>(resultSet.getNString(3), equalTo<String>("Human"))
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("FALSE"))
+                    checkRow(resultSet, 5, "TCAGTCAGTCAG", "Human", "FALSE", "FALSE", "FALSE", "FALSE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("6"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("ATATCGCGCTAG"),
-                    )
-                    assertThat<String>(
-                        resultSet.getNString(3),
-                        equalTo<String>("Zebrafish"),
-                    )
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("TRUE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("FALSE"))
+                    checkRow(resultSet, 6, "ATATCGCGCTAG", "Zebrafish", "FALSE", "TRUE", "TRUE", "FALSE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
-                    assertThat<String>(resultSet.getNString(1), equalTo<String>("7"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("CGTATGCGTCGTA"),
-                    )
-                    assertThat<String>(
-                        resultSet.getNString(3),
-                        equalTo<String>("Zebrafish"),
-                    )
-                    assertThat<String>(resultSet.getNString(4), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(5), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(6), equalTo<String>("FALSE"))
-                    assertThat<String>(resultSet.getNString(7), equalTo<String>("FALSE"))
+                    checkRow(resultSet, 7, "CGTATGCGTCGTA", "Zebrafish", "FALSE", "FALSE", "FALSE", "FALSE")
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
+    }
+
+    private fun checkRow(
+        resultSet: ResultSet,
+        sampleId: Int,
+        dnaSequence: String,
+        species: String,
+        hasStart: String,
+        hasStop: String,
+        hasAtat: String,
+        hasGgg: String,
+    ) {
+        assertThat<Int>(resultSet.getInt(1), equalTo<Int>(sampleId))
+        assertThat<String>(resultSet.getNString(2), equalTo<String>(dnaSequence))
+        assertThat<String>(resultSet.getNString(3), equalTo<String>(species))
+        assertThat<String>(resultSet.getNString(4), equalTo<String>(hasStart))
+        assertThat<String>(resultSet.getNString(5), equalTo<String>(hasStop))
+        assertThat<String>(resultSet.getNString(6), equalTo<String>(hasAtat))
+        assertThat<String>(resultSet.getNString(7), equalTo<String>(hasGgg))
     }
 }
