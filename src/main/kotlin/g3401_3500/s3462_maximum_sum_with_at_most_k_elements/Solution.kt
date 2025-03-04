@@ -1,6 +1,6 @@
 package g3401_3500.s3462_maximum_sum_with_at_most_k_elements
 
-// #Medium #Array #Sorting #Greedy #Matrix #Heap_(Priority_Queue)
+// #Medium #Array #Sorting #Greedy #Matrix #Heap_Priority_Queue
 // #2025_02_25_Time_139_ms_(100.00%)_Space_88.84_MB_(79.31%)
 
 class Solution {
