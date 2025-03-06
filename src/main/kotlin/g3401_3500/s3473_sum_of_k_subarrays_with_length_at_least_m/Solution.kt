@@ -1,6 +1,7 @@
 package g3401_3500.s3473_sum_of_k_subarrays_with_length_at_least_m
 
-// #Medium #2025_03_02_Time_305_ms_(100.00%)_Space_76.92_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Prefix_Sum
+// #2025_03_06_Time_227_ms_(24.47%)_Space_99.61_MB_(48.94%)
 
 import kotlin.math.max
 

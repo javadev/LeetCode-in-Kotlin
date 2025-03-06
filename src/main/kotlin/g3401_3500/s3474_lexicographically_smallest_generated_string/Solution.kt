@@ -1,6 +1,6 @@
 package g3401_3500.s3474_lexicographically_smallest_generated_string
 
-// #Hard #2025_03_02_Time_41_ms_(100.00%)_Space_39.75_MB_(100.00%)
+// #Hard #String #Greedy #String_Matching #2025_03_06_Time_30_ms_(100.00%)_Space_46.67_MB_(20.00%)
 
 class Solution {
     fun generateString(str1: String, str2: String): String {

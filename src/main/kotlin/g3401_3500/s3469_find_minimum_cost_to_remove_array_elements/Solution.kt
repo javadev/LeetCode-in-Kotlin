@@ -1,6 +1,6 @@
 package g3401_3500.s3469_find_minimum_cost_to_remove_array_elements
 
-// #Medium #2025_03_06_Time_51_ms_(100.00%)_Space_46.26_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2025_03_06_Time_27_ms_(100.00%)_Space_49.13_MB_(93.33%)
 
 import kotlin.math.max
 import kotlin.math.min

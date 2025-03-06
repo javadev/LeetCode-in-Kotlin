@@ -1,6 +1,6 @@
 package g3401_3500.s3468_find_the_number_of_copy_arrays
 
-// #Medium #2025_03_02_Time_4_ms_(100.00%)_Space_112.45_MB_(100.00%)
+// #Medium #Array #Math #2025_03_06_Time_3_ms_(100.00%)_Space_111.85_MB_(22.73%)
 
 import kotlin.math.max
 import kotlin.math.min

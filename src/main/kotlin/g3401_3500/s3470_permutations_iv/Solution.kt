@@ -1,6 +1,7 @@
 package g3401_3500.s3470_permutations_iv
 
-// #Hard #2025_03_02_Time_63_ms_(100.00%)_Space_38.70_MB_(100.00%)
+// #Hard #Array #Math #Enumeration #Combinatorics
+// #2025_03_06_Time_21_ms_(25.81%)_Space_47.38_MB_(6.45%)
 
 class Solution {
     private fun helper(a: Int, b: Int): Long {

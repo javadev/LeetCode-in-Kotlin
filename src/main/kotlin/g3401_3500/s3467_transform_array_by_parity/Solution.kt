@@ -1,6 +1,6 @@
 package g3401_3500.s3467_transform_array_by_parity
 
-// #Easy #2025_03_06_Time_1_ms_(100.00%)_Space_38.10_MB_(100.00%)
+// #Easy #Array #Sorting #Counting #2025_03_06_Time_1_ms_(100.00%)_Space_45.41_MB_(5.41%)
 
 class Solution {
     fun transformArray(nums: IntArray): IntArray {
