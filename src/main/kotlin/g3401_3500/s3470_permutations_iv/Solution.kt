@@ -1,70 +1,73 @@
 package g3401_3500.s3470_permutations_iv
 
 // #Hard #Array #Math #Enumeration #Combinatorics
-// #2025_03_06_Time_3_ms_(100.00%)_Space_46.15_MB_(6.45%)
+// #2025_03_06_Time_4_ms_(96.77%)_Space_45.40_MB_(9.68%)
 
 class Solution {
+    private val maxFac = 100_000_000L
+
     fun permute(n: Int, k: Long): IntArray {
-        val perm = LongArray(n + 1)
-        perm[1] = 1L
-        for (i in 2..n) {
-            if (perm[i - 1] > 10_000_000_000_000_000) {
-                perm[i] = perm[i - 1]
+        var res = IntArray(n)
+        var k = k - 1
+        var i = 0
+        val sqrtK = sqrt(k.toDouble()).toLong()
+        val fac = LongArray(n / 2 + 1)
+        fac[0] = 1
+        for (i in 1..n / 2) {
+            fac[i] = fac[i - 1] * i
+            if (fac[i] >= maxFac) { fac[i] = maxFac }
+        }
+        var evenNum = n / 2
+        var oddNum = n - evenNum
+        var evens = mutableListOf<Int>()
+        var odds = mutableListOf<Int>()
+        for (i in 1..n) {
+            if (i % 2 == 0) {
+                evens.add(i)
             } else {
-                perm[i] = ((i + 2) / 2) * perm[i - 1]
+                odds.add(i)
             }
         }
-        val used = BooleanArray(n + 1)
-        val result = IntArray(n)
-        var index = 0
-        // Deal with the edge cases first
-        if (n < 3) {
-            if (k > n) return intArrayOf()
-            if (k == 2L) return intArrayOf(2, 1)
-            if (n == 1) return intArrayOf(1)
-            return intArrayOf(1, 2)
-        }
-        val firstCycle = (((k.toLong() - 1L) / perm[n - 2]).toInt()) + 1
-        var odd = 2
-        if (n % 2 == 0) {
-            if (firstCycle > n) return intArrayOf()
-            result[index++] = firstCycle
-            used[firstCycle] = true
-            if (firstCycle % 2 == 0) {
-                odd = 1
-            }
-        } else {
-            val first = firstCycle * 2 - 1
-            if (first > n) {
-                return intArrayOf()
-            }
-            result[index++] = first
-            used[first] = true
-        }
-        var rem = ((k - 1L) % perm[n - 2]) + 1L
-        fun findNum(start: Int, nth: Int): Int {
-            var toFind = nth
-            for (i in start..n step 2) {
-                if (used[i] == false) {
-                    toFind--
-                    if (toFind == 0) {
-                        return i
+        for (i in 0..<n) {
+            if (i == 0) {
+                if (n % 2 == 0) {
+                    val trailCombs = fac[evenNum] * fac[evenNum - 1]
+                    val leadIdx = (k / trailCombs).toInt()
+                    if (leadIdx + 1 > n) return IntArray(0)
+                    res[i] = leadIdx + 1
+                    if ((leadIdx + 1) % 2 == 0) {
+                        evens.remove(leadIdx + 1)
+                    } else {
+                        odds.remove(leadIdx + 1)
                     }
+                    k = k % trailCombs
+                } else {
+                    val trailCombs = fac[oddNum - 1] * fac[evenNum]
+                    val leadIdx = (k / trailCombs).toInt()
+                    if (leadIdx >= odds.size) return IntArray(0)
+                    val num = odds.removeAt(leadIdx)
+                    res[i] = num
+                    k = k % trailCombs
+                }
+            } else {
+                if (res[i - 1] % 2 == 0) {
+                    val trailCombs = fac[evenNum] * fac[oddNum - 1]
+                    val leadIdx = (k / trailCombs).toInt()
+                    val num = odds.removeAt(leadIdx)
+                    res[i] = num
+                    k = k % trailCombs
+                } else {
+                    val trailCombs = fac[evenNum - 1] * fac[oddNum ]
+                    val leadIdx = (k / trailCombs).toInt()
+                    val num = evens.removeAt(leadIdx)
+                    res[i] = num
+                    k = k % trailCombs
                 }
             }
-            return -1
+            if (res[i] % 2 == 0) {
+                evenNum--
+            } else { oddNum-- }
         }
-        for (i in n - 3 downTo 1) {
-            val nextNum = ((rem - 1) / perm[i]).toInt()
-            val nextDigit = findNum(odd, nextNum + 1)
-            result[index++] = nextDigit
-            used[nextDigit] = true
-            rem = ((rem - 1L) % perm[i]) + 1L
-            odd = 3 - odd
-        }
-        result[index++] = findNum(odd, 1)
-        odd = 3 - odd
-        result[index] = findNum(odd, 1)
-        return result
+        return res
     }
 }
