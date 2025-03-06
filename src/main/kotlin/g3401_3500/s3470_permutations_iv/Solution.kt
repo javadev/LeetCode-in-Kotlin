@@ -9,13 +9,13 @@ class Solution {
     fun permute(n: Int, k: Long): IntArray {
         var res = IntArray(n)
         var k = k - 1
-        var i = 0
-        val sqrtK = sqrt(k.toDouble()).toLong()
         val fac = LongArray(n / 2 + 1)
         fac[0] = 1
         for (i in 1..n / 2) {
             fac[i] = fac[i - 1] * i
-            if (fac[i] >= maxFac) { fac[i] = maxFac }
+            if (fac[i] >= maxFac) {
+                fac[i] = maxFac
+            }
         }
         var evenNum = n / 2
         var oddNum = n - evenNum
@@ -66,7 +66,9 @@ class Solution {
             }
             if (res[i] % 2 == 0) {
                 evenNum--
-            } else { oddNum-- }
+            } else {
+                oddNum--
+            }
         }
         return res
     }
