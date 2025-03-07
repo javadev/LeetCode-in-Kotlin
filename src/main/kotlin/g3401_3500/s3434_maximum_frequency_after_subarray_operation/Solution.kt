@@ -7,15 +7,15 @@ import kotlin.math.max
 
 class Solution {
     fun maxFrequency(nums: IntArray, k: Int): Int {
-        val count: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
+        val count: MutableMap<Int, Int> = HashMap<Int, Int>()
         for (a in nums) {
-            count.put(a, count.getOrDefault(a, 0)!! + 1)
+            count.put(a, count.getOrDefault(a, 0) + 1)
         }
         var res = 0
         for (b in count.keys) {
-            res = max(res, kadane(nums, k, b!!))
+            res = max(res, kadane(nums, k, b))
         }
-        return count.getOrDefault(k, 0)!! + res
+        return count.getOrDefault(k, 0) + res
     }
 
     private fun kadane(nums: IntArray, k: Int, b: Int): Int {

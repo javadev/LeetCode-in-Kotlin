@@ -6,17 +6,14 @@ package g3401_3500.s3408_design_task_manager
 import java.util.TreeSet
 
 class TaskManager(tasks: List<List<Int>>) {
-    private val tasks: TreeSet<IntArray?>
-    private val taskMap: MutableMap<Int?, IntArray>
+    private val tasks: TreeSet<IntArray> = TreeSet<IntArray>(
+        Comparator { a: IntArray, b: IntArray ->
+            if (b[2] == a[2]) b[1] - a[1] else b[2] - a[2]
+        },
+    )
+    private val taskMap: MutableMap<Int, IntArray> = HashMap<Int, IntArray>()
 
     init {
-        this.tasks =
-            TreeSet<IntArray?>(
-                Comparator { a: IntArray?, b: IntArray? ->
-                    if (b!![2] == a!![2]) b[1] - a[1] else b[2] - a[2]
-                },
-            )
-        this.taskMap = HashMap<Int?, IntArray>()
         for (task in tasks) {
             val t = intArrayOf(task[0], task[1], task[2])
             this.tasks.add(t)
