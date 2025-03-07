@@ -8,8 +8,8 @@ class Solution {
 
     fun subsequencesWithMiddleMode(nums: IntArray): Int {
         if (c2[2] == 0L) {
+            c2[0] = 0
             c2[1] = 0
-            c2[0] = c2[1]
             c2[2] = 1
             for (i in 3..<c2.size) {
                 c2[i] = (i * (i - 1) / 2).toLong()
@@ -17,7 +17,7 @@ class Solution {
         }
         val n = nums.size
         val newNums = IntArray(n)
-        val map: MutableMap<Int?, Int?> = HashMap<Int?, Int?>(n)
+        val map: MutableMap<Int, Int> = HashMap<Int, Int>(n)
         var m = 0
         var index = 0
         for (x in nums) {
@@ -70,6 +70,6 @@ class Solution {
     }
 
     companion object {
-        private val MOD = 1e9.toInt() + 7
+        private const val MOD = 1e9.toInt() + 7
     }
 }
