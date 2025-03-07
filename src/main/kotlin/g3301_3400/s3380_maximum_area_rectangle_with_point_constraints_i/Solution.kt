@@ -8,7 +8,7 @@ import kotlin.math.min
 
 class Solution {
     fun maxRectangleArea(points: Array<IntArray>): Int {
-        val set: MutableSet<String?> = HashSet<String?>()
+        val set: MutableSet<String> = HashSet<String>()
         for (p in points) {
             set.add(p.contentToString())
         }

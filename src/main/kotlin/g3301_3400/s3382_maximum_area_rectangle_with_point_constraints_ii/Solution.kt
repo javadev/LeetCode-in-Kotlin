@@ -13,8 +13,8 @@ class Solution {
         }
         val pair = xCoord.zip(yCoord) { x, y -> Pair(x, y) }.toTypedArray()
         pair.sort()
-        val map = HashMap<Int?, Pair>()
-        val yVals = TreeSet<Int?>()
+        val map = HashMap<Int, Pair>()
+        val yVals = TreeSet<Int>()
         var best: Long = -1
         for (i in 0..<pair.size - 1) {
             if (yVals.isNotEmpty()) {

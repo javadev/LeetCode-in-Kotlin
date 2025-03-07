@@ -20,13 +20,13 @@ class Solution {
                 op2--
             }
         }
-        val count: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
+        val count: MutableMap<Int, Int> = HashMap<Int, Int>()
         var odd = 0
         for (i in low..<high) {
             if (op2 > 0) {
                 nums[i] -= k
                 if (k % 2 > 0 && nums[i] % 2 > 0) {
-                    count.merge(nums[i], 1) { a: Int?, b: Int? -> Integer.sum(a!!, b!!) }
+                    count.merge(nums[i], 1) { a: Int, b: Int -> Integer.sum(a, b) }
                 }
                 op2--
             } else {
@@ -40,8 +40,8 @@ class Solution {
             while (i < high && odd > 0) {
                 val x = nums[i]
                 if (count.containsKey(x)) {
-                    if (count.merge(x, -1) { a: Int?, b: Int? ->
-                            Integer.sum(a!!, b!!)
+                    if (count.merge(x, -1) { a: Int, b: Int ->
+                            Integer.sum(a, b)
                         } == 0
                     ) {
                         count.remove(x)

@@ -14,22 +14,22 @@ class Solution {
         val p2 = parents(g2)
         val eo2 = IntArray(2)
         for (i in 0..<m) {
-            eo2[p2[2]!![i] % 2]++
+            eo2[p2[2][i] % 2]++
         }
         val max = max(eo2[0], eo2[1])
         val p1 = parents(g1)
         val eo1 = IntArray(2)
         for (i in 0..<n) {
-            eo1[p1[2]!![i] % 2]++
+            eo1[p1[2][i] % 2]++
         }
         val ans = IntArray(n)
         for (i in 0..<n) {
-            ans[i] = eo1[p1[2]!![i] % 2] + max
+            ans[i] = eo1[p1[2][i] % 2] + max
         }
         return ans
     }
 
-    private fun parents(g: Array<IntArray?>): Array<IntArray?> {
+    private fun parents(g: Array<IntArray>): Array<IntArray> {
         val n = g.size
         val par = IntArray(n)
         par.fill(-1)
@@ -41,7 +41,7 @@ class Solution {
         var r = 1
         while (p < r) {
             val cur = q[p]
-            for (nex in g[cur]!!) {
+            for (nex in g[cur]) {
                 if (par[cur] != nex) {
                     q[r++] = nex
                     par[nex] = cur
@@ -50,11 +50,11 @@ class Solution {
             }
             p++
         }
-        return arrayOf<IntArray?>(par, q, depth)
+        return arrayOf<IntArray>(par, q, depth)
     }
 
-    private fun packU(n: Int, ft: Array<IntArray>): Array<IntArray?> {
-        val g = arrayOfNulls<IntArray>(n)
+    private fun packU(n: Int, ft: Array<IntArray>): Array<IntArray> {
+        val g = Array<IntArray>(n) { IntArray(0) }
         val p = IntArray(n)
         for (u in ft) {
             p[u[0]]++
@@ -64,8 +64,8 @@ class Solution {
             g[i] = IntArray(p[i])
         }
         for (u in ft) {
-            g[u[0]]!![--p[u[0]]] = u[1]
-            g[u[1]]!![--p[u[1]]] = u[0]
+            g[u[0]][--p[u[0]]] = u[1]
+            g[u[1]][--p[u[1]]] = u[0]
         }
         return g
     }
