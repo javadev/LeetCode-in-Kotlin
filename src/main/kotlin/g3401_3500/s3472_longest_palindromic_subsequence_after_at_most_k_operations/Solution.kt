@@ -12,7 +12,7 @@ class Solution {
         val arr = Array<IntArray>(26) { IntArray(26) }
         for (i in 0..25) {
             for (j in 0..25) {
-                arr[i][j] = min(abs(i - j), (26 - abs(i - j)))
+                arr[i][j] = min(abs(i - j), 26 - abs(i - j))
             }
         }
         val dp = Array<Array<IntArray>>(n) { Array<IntArray>(n) { IntArray(k + 1) } }

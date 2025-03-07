@@ -10,27 +10,24 @@ import kotlin.math.max
 @Suppress("unused")
 class Solution {
     fun minMaxWeight(n: Int, edges: Array<IntArray>, threshold: Int): Int {
-        val reversedG: Array<MutableList<IntArray>?> = arrayOfNulls<MutableList<IntArray>?>(n)
-        for (i in 0..<n) {
-            reversedG[i] = ArrayList<IntArray>()
-        }
+        val reversedG: Array<MutableList<IntArray>> = Array<MutableList<IntArray>>(n) { ArrayList<IntArray>() }
         for (i in edges) {
             val a = i[0]
             val b = i[1]
             val w = i[2]
-            reversedG[b]!!.add(intArrayOf(a, w))
+            reversedG[b].add(intArrayOf(a, w))
         }
         val distance = IntArray(n)
         distance.fill(Int.Companion.MAX_VALUE)
         distance[0] = 0
-        if (reversedG[0]!!.isEmpty()) {
+        if (reversedG[0].isEmpty()) {
             return -1
         }
-        val que: Queue<Int?> = LinkedList<Int?>()
+        val que: Queue<Int> = LinkedList<Int>()
         que.add(0)
         while (que.isNotEmpty()) {
             val cur: Int = que.poll()!!
-            for (next in reversedG[cur]!!) {
+            for (next in reversedG[cur]) {
                 val node = next[0]
                 val w = next[1]
                 val nextdis = max(w, distance[cur])
