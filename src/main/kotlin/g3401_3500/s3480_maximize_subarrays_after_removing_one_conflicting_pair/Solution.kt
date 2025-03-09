@@ -22,7 +22,7 @@ class Solution {
         for (start in n downTo 1) {
             while (currentIndex >= 0 && cp[currentIndex][0] >= start) {
                 val end = cp[currentIndex][1]
-                endPointMap.computeIfAbsent(end) { k: Int -> ArrayList<Int>() }
+                endPointMap.computeIfAbsent(end) { _: Int -> ArrayList<Int>() }
                     .add(currentIndex)
                 currentIndex--
             }
@@ -45,7 +45,7 @@ class Solution {
                 val nextEnd: Int = endPointMap.firstKey()!!
                 contributions[pairIndex] += (nextEnd - smallestEnd).toLong()
             }
-            endPointMap.computeIfAbsent(smallestEnd) { k: Int? -> ArrayList<Int>() }
+            endPointMap.computeIfAbsent(smallestEnd) { _: Int -> ArrayList<Int>() }
                 .add(pairIndex)
         }
         var result = totalPossible
