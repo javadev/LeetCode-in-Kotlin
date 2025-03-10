@@ -1,6 +1,7 @@
 package g3401_3500.s3478_choose_k_elements_with_maximum_sum
 
-// #Medium #2025_03_09_Time_241_ms_(100.00%)_Space_89.04_MB_(100.00%)
+// #Medium #Array #Sorting #Heap_Priority_Queue
+// #2025_03_10_Time_238_ms_(100.00%)_Space_87.94_MB_(100.00%)
 
 import java.util.PriorityQueue
 

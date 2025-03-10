@@ -1,6 +1,7 @@
 package g3401_3500.s3480_maximize_subarrays_after_removing_one_conflicting_pair
 
-// #Hard #2025_03_09_Time_768_ms_(100.00%)_Space_170.46_MB_(100.00%)
+// #Hard #Array #Prefix_Sum #Enumeration #Segment_Tree
+// #2025_03_10_Time_742_ms_(100.00%)_Space_165.07_MB_(100.00%)
 
 import java.util.TreeMap
 import kotlin.math.max
