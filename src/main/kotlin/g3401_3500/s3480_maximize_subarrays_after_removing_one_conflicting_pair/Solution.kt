@@ -1,58 +1,86 @@
 package g3401_3500.s3480_maximize_subarrays_after_removing_one_conflicting_pair
 
 // #Hard #Array #Prefix_Sum #Enumeration #Segment_Tree
-// #2025_03_10_Time_742_ms_(100.00%)_Space_165.07_MB_(100.00%)
+// #2025_03_11_Time_48_ms_(100.00%)_Space_164.15_MB_(100.00%)
 
-import java.util.TreeMap
 import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
-    fun maxSubarrays(n: Int, cp: Array<IntArray>): Long {
-        for (pair in cp) {
-            if (pair[0] > pair[1]) {
-                val temp = pair[0]
-                pair[0] = pair[1]
-                pair[1] = temp
+    fun maxSubarrays(n: Int, conflictingPairs: Array<IntArray>): Long {
+        val totalSubarrays = n.toLong() * (n + 1) / 2
+        val h = IntArray(n + 1)
+        val d2 = IntArray(n + 1)
+        h.fill(n + 1)
+        d2.fill(n + 1)
+        for (pair in conflictingPairs) {
+            var a = pair[0]
+            var b = pair[1]
+            if (a > b) {
+                val temp = a
+                a = b
+                b = temp
+            }
+            if (b < h[a]) {
+                d2[a] = h[a]
+                h[a] = b
+            } else if (b < d2[a]) {
+                d2[a] = b
             }
         }
-        cp.sortWith { a: IntArray, b: IntArray -> a[0].compareTo(b[0]) }
-        val contributions = LongArray(cp.size)
-        var totalPossible = n.toLong() * (n + 1) / 2
-        val endPointMap = TreeMap<Int, MutableList<Int>>()
-        var currentIndex = cp.size - 1
-        for (start in n downTo 1) {
-            while (currentIndex >= 0 && cp[currentIndex][0] >= start) {
-                val end = cp[currentIndex][1]
-                endPointMap.computeIfAbsent(end) { _: Int -> ArrayList<Int>() }
-                    .add(currentIndex)
-                currentIndex--
+        val f = IntArray(n + 2)
+        f[n + 1] = n + 1
+        f[n] = h[n]
+        for (i in n - 1 downTo 1) {
+            f[i] = min(h[i], f[i + 1]).toInt()
+        }
+        // forbiddenCount(x) returns (n - x + 1) if x <= n, else 0.
+        // This is the number of forbidden subarrays starting at some i when f[i] = x.
+        var originalUnion: Long = 0
+        for (i in 1..n) {
+            if (f[i] <= n) {
+                originalUnion += (n - f[i] + 1).toLong()
             }
-            if (endPointMap.isEmpty()) {
+        }
+        val originalValid = totalSubarrays - originalUnion
+        var best = originalValid
+        // For each index j (1 <= j <= n) where a candidate conflicting pair exists,
+        // simulate removal of the pair that gave h[j] (if any).
+        // (If there is no candidate pair at j, h[j] remains n+1.)
+        for (j in 1..n) {
+            // no conflicting pair at index j
+            if (h[j] == n + 1) {
                 continue
             }
-            val firstEntry = endPointMap.firstEntry()
-            val smallestEnd: Int = firstEntry.key!!
-            val pairIndex: Int = firstEntry.value!![0]
-            if (firstEntry.value!!.size == 1) {
-                endPointMap.remove(smallestEnd)
-            } else {
-                firstEntry.value!!.removeAt(0)
+            // Simulate removal: new candidate at j becomes d2[j]
+            val newCandidate = if (j < n) min(d2[j], f[j + 1]).toInt() else d2[j]
+            // We'll recompute the new f values for indices 1..j.
+            // Let newF[i] denote the updated value.
+            // For i > j, newF[i] remains as original f[i].
+            // For i = j, newF[j] = min( newCandidate, f[j+1] ) (which is newCandidate by
+            // definition).
+            val newFj = newCandidate
+            // forbiddenCount(x) is defined as (n - x + 1) if x<= n, else 0.
+            var delta = forbiddenCount(newFj, n) - forbiddenCount(f[j], n)
+            var cur = newFj
+            // Now update backwards for i = j-1 down to 1.
+            for (i in j - 1 downTo 1) {
+                val newVal = min(h[i], cur)
+                // no further change for i' <= i
+                if (newVal == f[i]) {
+                    break
+                }
+                delta += forbiddenCount(newVal, n) - forbiddenCount(f[i], n)
+                cur = newVal
             }
-            val covered = n - smallestEnd + 1L
-            totalPossible -= covered
-            if (endPointMap.isEmpty()) {
-                contributions[pairIndex] += covered
-            } else {
-                val nextEnd: Int = endPointMap.firstKey()!!
-                contributions[pairIndex] += (nextEnd - smallestEnd).toLong()
-            }
-            endPointMap.computeIfAbsent(smallestEnd) { _: Int -> ArrayList<Int>() }
-                .add(pairIndex)
+            val newUnion = originalUnion + delta
+            val newValid = totalSubarrays - newUnion
+            best = max(best, newValid)
         }
-        var result = totalPossible
-        for (contribution in contributions) {
-            result = max(result, (totalPossible + contribution))
-        }
-        return result
+        return best
+    }
+
+    private fun forbiddenCount(x: Int, n: Int): Long {
+        return (if (x <= n) (n - x + 1) else 0).toLong()
     }
 }

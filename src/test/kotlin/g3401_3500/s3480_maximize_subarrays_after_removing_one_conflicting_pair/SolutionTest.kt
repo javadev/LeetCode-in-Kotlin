@@ -34,4 +34,12 @@ internal class SolutionTest {
             equalTo<Long>(50L),
         )
     }
+
+    @Test
+    fun maxSubarrays4() {
+        assertThat(
+            Solution().maxSubarrays(25, arrayOf<IntArray>(intArrayOf(9, 7), intArrayOf(15, 7), intArrayOf(4, 7))),
+            equalTo(216L),
+        )
+    }
 }
