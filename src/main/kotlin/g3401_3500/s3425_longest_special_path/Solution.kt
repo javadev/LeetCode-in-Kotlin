@@ -1,92 +1,63 @@
 package g3401_3500.s3425_longest_special_path
 
 // #Hard #Array #Hash_Table #Depth_First_Search #Tree #Sliding_Window
-// #2025_01_19_Time_106_ms_(100.00%)_Space_187.68_MB_(100.00%)
+// #2025_03_13_Time_59_ms_(100.00%)_Space_123.56_MB_(55.56%)
+
+import kotlin.math.max
 
 class Solution {
-    private lateinit var adj: Array<ArrayList<IntArray>>
-    private lateinit var nums: IntArray
-    private lateinit var dist: IntArray
-    private lateinit var lastOccur: IntArray
-    private lateinit var pathStack: ArrayList<Int>
-    private var minIndex = 0
-    private var maxLen = 0
-    private var minNodesForMaxLen = 0
-
     fun longestSpecialPath(edges: Array<IntArray>, nums: IntArray): IntArray {
-        val n = nums.size
-        this.nums = nums
-        adj = Array<ArrayList<IntArray>>(n) { ArrayList<IntArray>() }
+        val n = edges.size + 1
+        var max = 0
+        val adj: Array<MutableList<IntArray>> = Array(n) { ArrayList<IntArray>() }
         for (i in 0..<n) {
             adj[i] = ArrayList<IntArray>()
+            max = max(nums[i].toDouble(), max.toDouble()).toInt()
         }
         for (e in edges) {
-            val u = e[0]
-            val v = e[1]
-            val w = e[2]
-            adj[u].add(intArrayOf(v, w))
-            adj[v].add(intArrayOf(u, w))
+            adj[e[0]].add(intArrayOf(e[1], e[2]))
+            adj[e[1]].add(intArrayOf(e[0], e[2]))
         }
-        dist = IntArray(n)
-        buildDist(0, -1, 0)
-        var maxVal = 0
-        for (`val` in nums) {
-            if (`val` > maxVal) {
-                maxVal = `val`
-            }
-        }
-        lastOccur = IntArray(maxVal + 1)
-        lastOccur.fill(-1)
-        pathStack = ArrayList<Int>()
-        minIndex = 0
-        maxLen = 0
-        minNodesForMaxLen = Int.Companion.MAX_VALUE
-        dfs(0, -1)
-        return intArrayOf(maxLen, minNodesForMaxLen)
+        val dist = IntArray(n)
+        val res = intArrayOf(0, Int.Companion.MAX_VALUE)
+        val st = IntArray(n + 1)
+        val seen = arrayOfNulls<Int>(max + 1)
+        dfs(adj, nums, res, dist, seen, st, 0, -1, 0, 0)
+        return res
     }
 
-    private fun buildDist(u: Int, parent: Int, currDist: Int) {
-        dist[u] = currDist
-        for (edge in adj[u]) {
-            val v = edge[0]
-            val w = edge[1]
-            if (v == parent) {
+    private fun dfs(
+        adj: Array<MutableList<IntArray>>,
+        nums: IntArray,
+        res: IntArray,
+        dist: IntArray,
+        seen: Array<Int?>,
+        st: IntArray,
+        node: Int,
+        parent: Int,
+        start: Int,
+        pos: Int,
+    ) {
+        var start = start
+        val last = seen[nums[node]]
+        if (last != null && last >= start) {
+            start = last + 1
+        }
+        seen[nums[node]] = pos
+        st[pos] = node
+        val len = dist[node] - dist[st[start]]
+        val sz = pos - start + 1
+        if (res[0] < len || res[0] == len && res[1] > sz) {
+            res[0] = len
+            res[1] = sz
+        }
+        for (neighbor in adj[node]) {
+            if (neighbor[0] == parent) {
                 continue
             }
-            buildDist(v, u, currDist + w)
+            dist[neighbor[0]] = dist[node] + neighbor[1]
+            dfs(adj, nums, res, dist, seen, st, neighbor[0], node, start, pos + 1)
         }
-    }
-
-    private fun dfs(u: Int, parent: Int) {
-        val stackPos = pathStack.size
-        pathStack.add(u)
-        val `val` = nums[u]
-        val oldPos = lastOccur[`val`]
-        val oldMinIndex = minIndex
-        lastOccur[`val`] = stackPos
-        if (oldPos >= minIndex) {
-            minIndex = oldPos + 1
-        }
-        if (minIndex <= stackPos) {
-            val ancestor = pathStack[minIndex]
-            val pathLength = dist[u] - dist[ancestor]
-            val pathNodes = stackPos - minIndex + 1
-            if (pathLength > maxLen) {
-                maxLen = pathLength
-                minNodesForMaxLen = pathNodes
-            } else if (pathLength == maxLen && pathNodes < minNodesForMaxLen) {
-                minNodesForMaxLen = pathNodes
-            }
-        }
-        for (edge in adj[u]) {
-            val v = edge[0]
-            if (v == parent) {
-                continue
-            }
-            dfs(v, u)
-        }
-        pathStack.removeAt(pathStack.size - 1)
-        lastOccur[`val`] = oldPos
-        minIndex = oldMinIndex
+        seen[nums[node]] = last
     }
 }

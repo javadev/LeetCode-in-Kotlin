@@ -1,131 +1,62 @@
 package g1801_1900.s1825_finding_mk_average
 
 // #Hard #Design #Heap_Priority_Queue #Ordered_Set #Queue
-// #2023_06_21_Time_1101_ms_(100.00%)_Space_122.8_MB_(100.00%)
+// #2025_03_13_Time_69_ms_(100.00%)_Space_98.49_MB_(100.00%)
 
-import java.util.Deque
 import java.util.LinkedList
-import java.util.TreeMap
+import java.util.TreeSet
+import kotlin.math.abs
+import kotlin.math.min
 
-@Suppress("NAME_SHADOWING")
-class MKAverage(m: Int, k: Int) {
-    private val m: Double
-    private val k: Double
-    private val c: Double
-    private var avg: Double
-    private val middle: Bst
-    private val min: Bst
-    private val max: Bst
-    private val q: Deque<Int>
-
-    init {
-        this.m = m.toDouble()
-        this.k = k.toDouble()
-        c = (m - k * 2).toDouble()
-        avg = 0.0
-        middle = Bst()
-        min = Bst()
-        max = Bst()
-        q = LinkedList()
-    }
+class MKAverage(private val capacity: Int, private val boundary: Int) {
+    private val nums: IntArray = IntArray(100001)
+    private val numSet: TreeSet<Int> = TreeSet<Int>()
+    private val order: LinkedList<Int> = LinkedList<Int>()
 
     fun addElement(num: Int) {
-        var num = num
-        if (min.size < k) {
-            min.add(num)
-            q.offer(num)
-            return
-        }
-        if (max.size < k) {
-            min.add(num)
-            max.add(min.removeMax())
-            q.offer(num)
-            return
-        }
-        if (num >= min.lastKey() && num <= max.firstKey()) {
-            middle.add(num)
-            avg += num / c
-        } else if (num < min.lastKey()) {
-            min.add(num)
-            val `val` = min.removeMax()
-            middle.add(`val`)
-            avg += `val` / c
-        } else if (num > max.firstKey()) {
-            max.add(num)
-            val `val` = max.removeMin()
-            middle.add(`val`)
-            avg += `val` / c
-        }
-        q.offer(num)
-        if (q.size > m) {
-            num = q.poll()
-            if (middle.containsKey(num)) {
-                avg -= num / c
-                middle.remove(num)
-            } else if (min.containsKey(num)) {
-                min.remove(num)
-                val `val` = middle.removeMin()
-                avg -= `val` / c
-                min.add(`val`)
-            } else if (max.containsKey(num)) {
-                max.remove(num)
-                val `val` = middle.removeMax()
-                avg -= `val` / c
-                max.add(`val`)
+        if (order.size == capacity) {
+            val numToDelete = order.removeFirst()
+            nums[numToDelete] = nums[numToDelete] - 1
+            if (nums[numToDelete] == 0) {
+                numSet.remove(numToDelete)
             }
         }
+        nums[num]++
+        numSet.add(num)
+        order.add(num)
     }
 
     fun calculateMKAverage(): Int {
-        return if (q.size < m) {
-            -1
-        } else {
-            avg.toInt()
-        }
-    }
-
-    internal class Bst {
-        var map: TreeMap<Int, Int> = TreeMap()
-        var size: Int = 0
-
-        fun add(num: Int) {
-            val count = map.getOrDefault(num, 0) + 1
-            map[num] = count
-            size++
-        }
-
-        fun remove(num: Int) {
-            val count = map.getOrDefault(num, 1) - 1
-            if (count > 0) {
-                map[num] = count
-            } else {
-                map.remove(num)
+        if (order.size == capacity) {
+            var skipCount = boundary
+            var numsCount = capacity - 2 * boundary
+            val freq = capacity - 2 * boundary
+            var sum = 0
+            for (num in numSet) {
+                val count = nums[num]
+                if (skipCount < 0) {
+                    sum += num * min(count, numsCount)
+                    numsCount = (numsCount - min(count, numsCount)).toInt()
+                } else {
+                    skipCount -= count
+                    if (skipCount < 0) {
+                        sum += num * min(abs(skipCount), numsCount)
+                        numsCount = (numsCount - min(abs(skipCount), numsCount)).toInt()
+                    }
+                }
+                if (numsCount == 0) {
+                    break
+                }
             }
-            size--
+            return sum / freq
         }
-
-        fun removeMin(): Int {
-            val key = map.firstKey()
-            remove(key)
-            return key
-        }
-
-        fun removeMax(): Int {
-            val key = map.lastKey()
-            remove(key)
-            return key
-        }
-
-        fun containsKey(key: Int): Boolean {
-            return map.containsKey(key)
-        }
-
-        fun firstKey(): Int {
-            return map.firstKey()
-        }
-
-        fun lastKey(): Int {
-            return map.lastKey()
-        }
+        return -1
     }
 }
+
+/*
+ * Your MKAverage object will be instantiated and called as such:
+ * var obj = MKAverage(m, k)
+ * obj.addElement(num)
+ * var param_2 = obj.calculateMKAverage()
+ */
