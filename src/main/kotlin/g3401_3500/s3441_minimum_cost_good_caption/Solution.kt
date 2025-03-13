@@ -1,167 +1,72 @@
 package g3401_3500.s3441_minimum_cost_good_caption
 
-// #Hard #String #Dynamic_Programming #2025_02_05_Time_78_ms_(100.00%)_Space_51.28_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #2025_03_13_Time_48_ms_(83.33%)_Space_48.60_MB_(83.33%)
 
-import kotlin.math.abs
-import kotlin.math.min
+import kotlin.math.max
 
-@Suppress("kotlin:S107")
 class Solution {
     fun minCostGoodCaption(caption: String): String {
         val n = caption.length
         if (n < 3) {
             return ""
         }
-        val arr = caption.toCharArray()
-        val prefixCost = Array<IntArray>(n + 1) { IntArray(26) }
-        for (i in 0..<n) {
-            val orig = arr[i].code - 'a'.code
-            for (c in 0..25) {
-                prefixCost[i + 1][c] = prefixCost[i][c] + abs((orig - c))
-            }
-        }
-        val dp = IntArray(n + 1)
-        val nextIndex = IntArray(n + 1)
-        val nextChar = IntArray(n + 1)
-        val blockLen = IntArray(n + 1)
-        for (i in 0..<n) {
-            dp[i] = INF
-            nextIndex[i] = -1
-            nextChar[i] = -1
-            blockLen[i] = 0
-        }
-        dp[n] = 0
-        for (i in n - 1 downTo 0) {
-            for (l in 3..5) {
-                if (i + l <= n) {
-                    var bestLetter = 0
-                    var bestCost: Int = INF
-                    for (c in 0..25) {
-                        val costBlock = prefixCost[i + l][c] - prefixCost[i][c]
-                        if (costBlock < bestCost) {
-                            bestCost = costBlock
-                            bestLetter = c
-                        }
-                    }
-                    val costCandidate = dp[i + l] + bestCost
-                    if (costCandidate < dp[i]) {
-                        dp[i] = costCandidate
-                        nextIndex[i] = i + l
-                        nextChar[i] = bestLetter
-                        blockLen[i] = l
-                    } else if (costCandidate == dp[i]) {
-                        val cmp =
-                            compareSolutions(
-                                nextChar[i],
-                                blockLen[i],
-                                nextIndex[i],
-                                bestLetter,
-                                l,
-                                (i + l),
-                                nextIndex,
-                                nextChar,
-                                blockLen,
-                                n,
-                            )
-                        if (cmp > 0) {
-                            nextIndex[i] = i + l
-                            nextChar[i] = bestLetter
-                            blockLen[i] = l
-                        }
-                    }
+        val s = caption.toByteArray()
+        val f = IntArray(n + 1)
+        f[n - 2] = Int.Companion.MAX_VALUE / 2
+        f[n - 1] = f[n - 2]
+        val t = ByteArray(n + 1)
+        val size = ByteArray(n)
+        for (i in n - 3 downTo 0) {
+            val sub = s.copyOfRange(i, i + 3)
+            sub.sort()
+            val a = sub[0]
+            val b = sub[1]
+            val c = sub[2]
+            val s3 = t[i + 3]
+            var res = f[i + 3] + (c - a)
+            var mask = b.toInt() shl 24 or (s3.toInt() shl 16) or (s3.toInt() shl 8) or s3.toInt()
+            size[i] = 3
+            if (i + 4 <= n) {
+                val sub4 = s.copyOfRange(i, i + 4)
+                sub4.sort()
+                val a4 = sub4[0]
+                val b4 = sub4[1]
+                val c4 = sub4[2]
+                val d4 = sub4[3]
+                val s4 = t[i + 4]
+                val res4 = f[i + 4] + (c4 - a4 + d4 - b4)
+                val mask4 = b4.toInt() shl 24 or (b4.toInt() shl 16) or (s4.toInt() shl 8) or s4.toInt()
+                if (res4 < res || res4 == res && mask4 < mask) {
+                    res = res4
+                    mask = mask4
+                    size[i] = 4
                 }
             }
-        }
-        if (dp[0] >= INF) {
-            return ""
-        }
-        val builder = StringBuilder(n)
-        var idx = 0
-        while (idx < n) {
-            val len = blockLen[idx]
-            val c = nextChar[idx]
-            (0..<len).forEach { _ ->
-                builder.append(('a'.code + c).toChar())
+            if (i + 5 <= n) {
+                val sub5 = s.copyOfRange(i, i + 5)
+                sub5.sort()
+                val a5 = sub5[0]
+                val b5 = sub5[1]
+                val c5 = sub5[2]
+                val d5 = sub5[3]
+                val e5 = sub5[4]
+                val res5 = f[i + 5] + (d5 - a5 + e5 - b5)
+                val mask5 = c5.toInt() shl 24 or (c5.toInt() shl 16) or (c5.toInt() shl 8) or t[i + 5].toInt()
+                if (res5 < res || res5 == res && mask5 < mask) {
+                    res = res5
+                    mask = mask5
+                    size[i] = 5
+                }
             }
-            idx = nextIndex[idx]
+            f[i] = res
+            t[i] = (mask shr 24).toByte()
         }
-        return builder.toString()
-    }
-
-    private fun compareSolutions(
-        oldLetter: Int,
-        oldLen: Int,
-        oldNext: Int,
-        newLetter: Int,
-        newLen: Int,
-        newNext: Int,
-        nextIndex: IntArray,
-        nextChar: IntArray,
-        blockLen: IntArray,
-        n: Int,
-    ): Int {
-        var offsetOld = 0
-        var offsetNew = 0
-        var curOldPos: Int
-        var curNewPos: Int
-        var letOld = oldLetter
-        var letNew = newLetter
-        var lenOld = oldLen
-        var lenNew = newLen
-        var nxtOld = oldNext
-        var nxtNew = newNext
-        while (true) {
-            if (letOld != letNew) {
-                return if (letOld < letNew) -1 else 1
-            }
-            val remainOld = lenOld - offsetOld
-            val remainNew = lenNew - offsetNew
-            val step = min(remainOld.toDouble(), remainNew.toDouble()).toInt()
-            offsetOld += step
-            offsetNew += step
-            if (offsetOld == lenOld && offsetNew == lenNew) {
-                if (nxtOld == n && nxtNew == n) {
-                    return 0
-                }
-                if (nxtOld == n) {
-                    return -1
-                }
-                if (nxtNew == n) {
-                    return 1
-                }
-                curOldPos = nxtOld
-                letOld = nextChar[curOldPos]
-                lenOld = blockLen[curOldPos]
-                nxtOld = nextIndex[curOldPos]
-                offsetOld = 0
-                curNewPos = nxtNew
-                letNew = nextChar[curNewPos]
-                lenNew = blockLen[curNewPos]
-                nxtNew = nextIndex[curNewPos]
-                offsetNew = 0
-            } else if (offsetOld == lenOld) {
-                if (nxtOld == n) {
-                    return -1
-                }
-                curOldPos = nxtOld
-                letOld = nextChar[curOldPos]
-                lenOld = blockLen[curOldPos]
-                nxtOld = nextIndex[curOldPos]
-                offsetOld = 0
-            } else if (offsetNew == lenNew) {
-                if (nxtNew == n) {
-                    return 1
-                }
-                curNewPos = nxtNew
-                letNew = nextChar[curNewPos]
-                lenNew = blockLen[curNewPos]
-                nxtNew = nextIndex[curNewPos]
-                offsetNew = 0
-            }
+        val ans = StringBuilder(n)
+        var i = 0
+        while (i < n) {
+            ans.append(Char(t[i].toUShort()).toString().repeat(max(0.0, size[i].toDouble()).toInt()))
+            i += size[i].toInt()
         }
-    }
-
-    companion object {
-        private const val INF = Int.Companion.MAX_VALUE / 2
+        return ans.toString()
     }
 }
