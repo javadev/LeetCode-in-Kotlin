@@ -13,7 +13,7 @@ class Solution {
         val adj: Array<MutableList<IntArray>> = Array(n) { ArrayList<IntArray>() }
         for (i in 0..<n) {
             adj[i] = ArrayList<IntArray>()
-            max = max(nums[i].toDouble(), max.toDouble()).toInt()
+            max = max(nums[i], max)
         }
         for (e in edges) {
             adj[e[0]].add(intArrayOf(e[1], e[2]))
