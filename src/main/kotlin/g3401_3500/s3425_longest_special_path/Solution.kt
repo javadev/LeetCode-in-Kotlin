@@ -5,6 +5,7 @@ package g3401_3500.s3425_longest_special_path
 
 import kotlin.math.max
 
+@Suppress("kotlin:S107")
 class Solution {
     fun longestSpecialPath(edges: Array<IntArray>, nums: IntArray): IntArray {
         val n = edges.size + 1
