@@ -18,7 +18,7 @@ import java.util.Queue
  * }
  */
 class Solution {
-    private val pq: Queue<Int?> = PriorityQueue<Int?>()
+    private val pq: Queue<Int> = PriorityQueue<Int>()
 
     fun kthLargestPerfectSubtree(root: TreeNode?, k: Int): Int {
         dfs(root, k)

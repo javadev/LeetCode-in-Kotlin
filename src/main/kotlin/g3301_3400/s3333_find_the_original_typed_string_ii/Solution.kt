@@ -27,29 +27,29 @@ class Solution {
         if (m >= k) {
             return power[0].toInt()
         }
-        val dp = Array<LongArray?>(m) { LongArray(k - m + 1) }
+        val dp = Array<LongArray>(m) { LongArray(k - m + 1) }
         i = 0
         while (i < k - m + 1) {
             if (list[m - 1] + i + m > k) {
-                dp[m - 1]!![i] = list[m - 1] - (k - m - i).toLong()
+                dp[m - 1][i] = list[m - 1] - (k - m - i).toLong()
             }
             i++
         }
         i = m - 2
         while (i >= 0) {
-            var sum: Long = dp[i + 1]!![k - m] * list[i] % MOD
+            var sum: Long = dp[i + 1][k - m] * list[i] % MOD
             for (j in k - m downTo 0) {
-                sum += dp[i + 1]!![j]
+                sum += dp[i + 1][j]
                 if (j + list[i] > k - m) {
-                    sum = (sum - dp[i + 1]!![k - m] + MOD) % MOD
+                    sum = (sum - dp[i + 1][k - m] + MOD) % MOD
                 } else {
-                    sum = (sum - dp[i + 1]!![j + list[i]] + MOD) % MOD
+                    sum = (sum - dp[i + 1][j + list[i]] + MOD) % MOD
                 }
-                dp[i]!![j] = sum
+                dp[i][j] = sum
             }
             i--
         }
-        return dp[0]!![0].toInt()
+        return dp[0][0].toInt()
     }
 
     companion object {

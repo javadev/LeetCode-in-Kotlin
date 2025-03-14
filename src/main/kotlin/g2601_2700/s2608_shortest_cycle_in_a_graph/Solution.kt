@@ -15,12 +15,12 @@ class Solution {
             adj[edge[1]].add(edge[0])
         }
         for (i in 0 until n) {
-            dfs(adj, HashSet<Int?>(), i)
+            dfs(adj, HashSet<Int>(), i)
         }
         return if (min == Int.MAX_VALUE) -1 else min
     }
 
-    private fun dfs(adj: List<MutableList<Int>>, set: HashSet<Int?>, node: Int) {
+    private fun dfs(adj: List<MutableList<Int>>, set: HashSet<Int>, node: Int) {
         val queue: Queue<IntArray> = LinkedList()
         set.add(node)
         queue.add(intArrayOf(node, node))

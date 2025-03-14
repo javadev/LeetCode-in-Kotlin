@@ -27,22 +27,22 @@ class Solution {
         for (i in l - 1 downTo 0) {
             invF[i] = invF[i + 1] * (i + 1) % M
         }
-        val dp = Array<LongArray?>(m + 1) { LongArray(hs + 1) }
-        dp[0]!![0] = 1
+        val dp = Array<LongArray>(m + 1) { LongArray(hs + 1) }
+        dp[0][0] = 1
         for (d in 0..9) {
             if (c[d] == 0) {
                 continue
             }
             for (k in m downTo 0) {
                 for (s in hs downTo 0) {
-                    if (dp[k]!![s] == 0L) {
+                    if (dp[k][s] == 0L) {
                         continue
                     }
                     var t = 1
                     while (t <= c[d] && k + t <= m && s + d * t <= hs) {
-                        dp[k + t]!![s + d * t] =
+                        dp[k + t][s + d * t] =
                             (
-                                dp[k + t]!![s + d * t] + dp[k]!![s] * comb(
+                                dp[k + t][s + d * t] + dp[k][s] * comb(
                                     c[d],
                                     t,
                                     f,
@@ -55,7 +55,7 @@ class Solution {
                 }
             }
         }
-        val w = dp[m]!![hs]
+        val w = dp[m][hs]
         var r: Long = f[m] * f[l - m] % M
         for (d in 0..9) {
             r = r * invF[c[d]] % M

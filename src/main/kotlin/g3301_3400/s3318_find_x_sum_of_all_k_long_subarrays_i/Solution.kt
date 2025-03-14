@@ -22,7 +22,7 @@ class Solution {
         val n = nums.size
         val ans = IntArray(n - k + 1)
         for (i in 0 until n - k + 1) {
-            val map = HashMap<Int?, Int?>()
+            val map = HashMap<Int, Int>()
             val pq =
                 PriorityQueue<Pair>(
                     Comparator { a: Pair, b: Pair ->
@@ -33,10 +33,10 @@ class Solution {
                     },
                 )
             for (j in i until i + k) {
-                map.put(nums[j], map.getOrDefault(nums[j], 0)!! + 1)
+                map.put(nums[j], map.getOrDefault(nums[j], 0) + 1)
             }
             for (entry in map.entries) {
-                pq.add(Pair(entry.key!!, entry.value!!))
+                pq.add(Pair(entry.key, entry.value))
             }
             var count = x
             var sum = 0

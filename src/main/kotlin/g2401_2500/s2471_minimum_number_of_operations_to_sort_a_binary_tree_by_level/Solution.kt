@@ -18,7 +18,7 @@ import java.util.ArrayDeque
  */
 class Solution {
     fun minimumOperations(root: TreeNode): Int {
-        val q = ArrayDeque<TreeNode?>()
+        val q = ArrayDeque<TreeNode>()
         var count = 0
         if (root.left != null && root.right != null && root.left!!.`val` > root.right!!.`val`) {
             count++
@@ -55,14 +55,14 @@ class Solution {
             sorted[i] = list[i]
         }
         sorted.sort()
-        val ind: MutableMap<Int, Int?> = HashMap()
+        val ind: MutableMap<Int, Int> = HashMap()
         for (i in list.indices) {
             ind[list[i]] = i
         }
         for (i in list.indices) {
             if (list[i] != sorted[i]) {
                 swaps++
-                ind[list[i]] = ind[sorted[i]]
+                ind[list[i]] = ind[sorted[i]]!!
                 list[ind[sorted[i]]!!] = list[i]
             }
         }

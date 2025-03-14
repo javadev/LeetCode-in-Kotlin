@@ -27,14 +27,14 @@ class Solution {
     fun findXSum(nums: IntArray, k: Int, x: Int): LongArray {
         val n = nums.size
         val ans = LongArray(n - k + 1)
-        val cnt: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
+        val cnt: MutableMap<Int, Int> = HashMap<Int, Int>()
         val s1 = TreeSet<RC>()
         val s2 = TreeSet<RC>()
         var sum: Long = 0
         var xSum: Long = 0
         for (i in 0 until n) {
             sum += nums[i].toLong()
-            var curCnt: Int = cnt.getOrDefault(nums[i], 0)!!
+            var curCnt: Int = cnt.getOrDefault(nums[i], 0)
             cnt.put(nums[i], curCnt + 1)
             var tmp = RC(nums[i], curCnt)
             if (s1.contains(tmp)) {

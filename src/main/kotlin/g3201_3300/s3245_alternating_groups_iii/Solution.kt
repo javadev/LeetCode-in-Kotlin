@@ -74,7 +74,7 @@ class Solution {
     }
 
     // Initializes the alternating groups using the colors array.
-    private fun initializeGroups(colors: IntArray, groups: TreeMap<Int?, Int?>) {
+    private fun initializeGroups(colors: IntArray, groups: TreeMap<Int, Int>) {
         val n = colors.size
         var i = 0
         while (i < n) {
@@ -95,7 +95,7 @@ class Solution {
 
     // Processes a type 1 query: returns the number of alternating groups
     // of at least the given size.
-    private fun processQueryType1(colors: IntArray, groups: TreeMap<Int?, Int?>, groupSize: Int): Int {
+    private fun processQueryType1(colors: IntArray, groups: TreeMap<Int, Int>, groupSize: Int): Int {
         var ans = qry(groupSize)
         val firstGroup = groups.firstEntry()
         val lastGroup = groups.lastEntry()
@@ -114,7 +114,7 @@ class Solution {
     // Processes a type 2 query: updates the color at index x and adjusts groups.
     private fun processQueryType2(
         colors: IntArray,
-        groups: TreeMap<Int?, Int?>,
+        groups: TreeMap<Int, Int>,
         x: Int,
         newColor: Int,
     ) {
@@ -175,10 +175,10 @@ class Solution {
     }
 
     // Main function to handle queries on alternating groups.
-    fun numberOfAlternatingGroups(colors: IntArray, queries: Array<IntArray>): MutableList<Int?> {
-        val groups = TreeMap<Int?, Int?>()
+    fun numberOfAlternatingGroups(colors: IntArray, queries: Array<IntArray>): MutableList<Int> {
+        val groups = TreeMap<Int, Int>()
         val n = colors.size
-        val results: MutableList<Int?> = ArrayList<Int?>()
+        val results: MutableList<Int> = ArrayList<Int>()
         // Initialize alternating groups.
         initializeGroups(colors, groups)
         // Process each query.

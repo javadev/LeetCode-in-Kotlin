@@ -66,7 +66,7 @@ class Solution {
     ): Array<IntArray> {
         var st = st
         var res: Array<IntArray>
-        val al = ArrayList<Int?>()
+        val al = ArrayList<Int>()
         var f = true
         seen[st] = true
         al.add(st)
@@ -86,7 +86,7 @@ class Solution {
         }
         res = Array<IntArray>(n / al.size) { IntArray(al.size) }
         for (i in res[0].indices) {
-            res[0][i] = al[i]!!
+            res[0][i] = al[i]
         }
         for (i in 1 until res.size) {
             for (j in res[0].indices) {

@@ -14,4 +14,14 @@ internal class SolutionTest {
     fun countWinningSequences2() {
         assertThat<Int>(Solution().countWinningSequences("FWEFW"), equalTo<Int>(18))
     }
+
+    @Test
+    fun countWinningSequences3() {
+        assertThat<Int>(Solution().countWinningSequences("W"), equalTo<Int>(1))
+    }
+
+    @Test
+    fun countWinningSequences4() {
+        assertThat<Int>(Solution().countWinningSequences("E"), equalTo<Int>(1))
+    }
 }
