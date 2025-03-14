@@ -1,6 +1,6 @@
 package g3301_3400.s3320_count_the_number_of_winning_sequences
 
-// #Hard #String #Dynamic_Programming #2024_10_15_Time_335_ms_(100.00%)_Space_78.8_MB_(66.67%)
+// #Hard #String #Dynamic_Programming #2025_03_14_Time_56_ms_(100.00%)_Space_79.51_MB_(100.00%)
 
 class Solution {
     fun countWinningSequences(s: String): Int {
