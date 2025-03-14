@@ -17,14 +17,14 @@ class Solution {
     private fun countOfSubstringHavingAtleastXConsonants(word: String, k: Int): Long {
         var start = 0
         var end = 0
-        val vowels: MutableSet<Char?> = HashSet<Char?>()
+        val vowels: MutableSet<Char> = HashSet<Char>()
         vowels.add('a')
         vowels.add('e')
         vowels.add('i')
         vowels.add('o')
         vowels.add('u')
         var consonants = 0
-        val map: MutableMap<Char?, Int?> = HashMap<Char?, Int?>()
+        val map: MutableMap<Char, Int> = HashMap<Char, Int>()
         var res: Long = 0
         while (end < word.length) {
             val ch = word[end]

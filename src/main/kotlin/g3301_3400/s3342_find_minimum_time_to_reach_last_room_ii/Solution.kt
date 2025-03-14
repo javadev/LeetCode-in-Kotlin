@@ -15,7 +15,7 @@ class Solution {
         var turn: Int = 0
     }
 
-    private val dir = arrayOf<IntArray?>(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
+    private val dir = arrayOf<IntArray>(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
 
     fun minTimeToReach(moveTime: Array<IntArray>): Int {
         val pq = PriorityQueue<Node>(Comparator { a: Node, b: Node -> a.t - b.t })
@@ -32,8 +32,8 @@ class Solution {
         while (pq.isNotEmpty()) {
             val curr = pq.poll()
             for (i in 0..3) {
-                val x = curr.x + dir[i]!![0]
-                val y = curr.y + dir[i]!![1]
+                val x = curr.x + dir[i][0]
+                val y = curr.y + dir[i][1]
                 if (x == m - 1 && y == n - 1) {
                     t = max(curr.t, moveTime[x][y]) + 1 + curr.turn
                     return t

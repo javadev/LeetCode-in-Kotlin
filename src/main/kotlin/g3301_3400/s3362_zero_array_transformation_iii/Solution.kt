@@ -1,14 +1,14 @@
 package g3301_3400.s3362_zero_array_transformation_iii
 
 // #Medium #Array #Sorting #Greedy #Heap_Priority_Queue #Prefix_Sum
-// #2024_12_03_Time_195_ms_(81.82%)_Space_106.3_MB_(72.73%)
+// #2025_03_14_Time_142_ms_(100.00%)_Space_133.36_MB_(16.67%)
 
 import java.util.PriorityQueue
 
 class Solution {
     fun maxRemoval(nums: IntArray, queries: Array<IntArray>): Int {
         queries.sortWith { a: IntArray, b: IntArray -> a[0] - b[0] }
-        val last = PriorityQueue<Int?>(Comparator { a: Int?, b: Int? -> b!! - a!! })
+        val last = PriorityQueue<Int>(Comparator { a: Int, b: Int -> b - a })
         val diffs = IntArray(nums.size + 1)
         var idx = 0
         var cur = 0

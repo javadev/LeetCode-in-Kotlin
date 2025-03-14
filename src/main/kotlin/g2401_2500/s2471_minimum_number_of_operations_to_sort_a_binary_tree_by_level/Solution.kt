@@ -1,7 +1,7 @@
 package g2401_2500.s2471_minimum_number_of_operations_to_sort_a_binary_tree_by_level
 
 // #Medium #Breadth_First_Search #Tree #Binary_Tree
-// #2023_07_05_Time_789_ms_(100.00%)_Space_63.6_MB_(100.00%)
+// #2025_03_14_Time_117_ms_(100.00%)_Space_72.60_MB_(_%)
 
 import com_github_leetcode.TreeNode
 import java.util.ArrayDeque
@@ -18,7 +18,7 @@ import java.util.ArrayDeque
  */
 class Solution {
     fun minimumOperations(root: TreeNode): Int {
-        val q = ArrayDeque<TreeNode?>()
+        val q = ArrayDeque<TreeNode>()
         var count = 0
         if (root.left != null && root.right != null && root.left!!.`val` > root.right!!.`val`) {
             count++
@@ -55,14 +55,14 @@ class Solution {
             sorted[i] = list[i]
         }
         sorted.sort()
-        val ind: MutableMap<Int, Int?> = HashMap()
+        val ind: MutableMap<Int, Int> = HashMap()
         for (i in list.indices) {
             ind[list[i]] = i
         }
         for (i in list.indices) {
             if (list[i] != sorted[i]) {
                 swaps++
-                ind[list[i]] = ind[sorted[i]]
+                ind[list[i]] = ind[sorted[i]]!!
                 list[ind[sorted[i]]!!] = list[i]
             }
         }

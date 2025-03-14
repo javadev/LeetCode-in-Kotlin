@@ -13,10 +13,10 @@ class Solution {
         val m = grid[0].size
         val dr = intArrayOf(0, 0, 1, -1)
         val dc = intArrayOf(1, -1, 0, 0)
-        val visited = Array<Array<BooleanArray>?>(n) { Array<BooleanArray>(m) { BooleanArray(health + 1) } }
+        val visited = Array<Array<BooleanArray>>(n) { Array<BooleanArray>(m) { BooleanArray(health + 1) } }
         val bfs: Queue<IntArray?> = LinkedList<IntArray>()
         bfs.add(intArrayOf(0, 0, health - grid[0][0]))
-        visited[0]!![0][health - grid[0][0]] = true
+        visited[0][0][health - grid[0][0]] = true
         while (bfs.isNotEmpty()) {
             var size = bfs.size
             while (size-- > 0) {
@@ -32,8 +32,8 @@ class Solution {
                     val nc = c + dc[k]
                     if (isValidMove(nr, nc, n, m)) {
                         val nh: Int = h - grid[nr][nc]
-                        if (nh >= 0 && !visited[nr]!![nc][nh]) {
-                            visited[nr]!![nc][nh] = true
+                        if (nh >= 0 && !visited[nr][nc][nh]) {
+                            visited[nr][nc][nh] = true
                             bfs.add(intArrayOf(nr, nc, nh))
                         }
                     }

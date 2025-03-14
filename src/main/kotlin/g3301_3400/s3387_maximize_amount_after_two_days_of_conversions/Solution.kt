@@ -1,7 +1,7 @@
 package g3301_3400.s3387_maximize_amount_after_two_days_of_conversions
 
 // #Medium #Array #String #Depth_First_Search #Breadth_First_Search #Graph
-// #2024_12_18_Time_13_ms_(88.46%)_Space_47.8_MB_(30.77%)
+// #2025_03_14_Time_10_ms_(93.75%)_Space_51.20_MB_(12.50%)
 
 import kotlin.math.max
 
@@ -15,9 +15,9 @@ class Solution {
     private fun solve(
         currCurrency: String,
         value: Double,
-        targetCurrency: String?,
+        targetCurrency: String,
         day: Int,
-        used: MutableSet<String?>,
+        used: MutableSet<String>,
     ) {
         if (currCurrency == targetCurrency) {
             res = max(res, value)
@@ -37,7 +37,7 @@ class Solution {
             }
         }
         if (day == 1) {
-            solve(currCurrency, value, targetCurrency, day + 1, HashSet<String?>())
+            solve(currCurrency, value, targetCurrency, day + 1, HashSet<String>())
         }
     }
 
@@ -79,7 +79,7 @@ class Solution {
             map2[c2]!!.add(Pair(c1, 1.0 / rates2[i]))
         }
         res = 1.0
-        solve(initialCurrency, 1.0, initialCurrency, 1, HashSet<String?>())
+        solve(initialCurrency, 1.0, initialCurrency, 1, HashSet<String>())
         return res
     }
 }

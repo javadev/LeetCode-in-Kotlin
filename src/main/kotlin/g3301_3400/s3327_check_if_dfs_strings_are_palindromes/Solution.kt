@@ -6,7 +6,7 @@ package g3301_3400.s3327_check_if_dfs_strings_are_palindromes
 import kotlin.math.min
 
 class Solution {
-    private val e: MutableList<MutableList<Int?>?> = ArrayList<MutableList<Int?>?>()
+    private val e: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()
     private val stringBuilder = StringBuilder()
     private var s: String? = null
     private var now = 0
@@ -18,8 +18,8 @@ class Solution {
 
     private fun dfs(x: Int) {
         l[x] = now + 1
-        for (v in e[x]!!) {
-            dfs(v!!)
+        for (v in e[x]) {
+            dfs(v)
         }
         stringBuilder.append(s!![x])
         r[x] = ++now
@@ -54,10 +54,10 @@ class Solution {
         n = parent.size
         this.s = s
         for (i in 0 until n) {
-            e.add(ArrayList<Int?>())
+            e.add(ArrayList<Int>())
         }
         for (i in 1 until n) {
-            e[parent[i]]!!.add(i)
+            e[parent[i]].add(i)
         }
         l = IntArray(n)
         r = IntArray(n)

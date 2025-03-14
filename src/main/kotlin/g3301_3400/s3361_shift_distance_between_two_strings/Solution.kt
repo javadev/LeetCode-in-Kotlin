@@ -6,13 +6,13 @@ import kotlin.math.min
 
 class Solution {
     fun shiftDistance(s: String, t: String, nextCost: IntArray, previousCost: IntArray): Long {
-        val costs = Array<LongArray?>(26) { LongArray(26) }
+        val costs = Array<LongArray>(26) { LongArray(26) }
         var cost: Long
         for (i in 0..25) {
             cost = nextCost[i].toLong()
             var j = if (i == 25) 0 else i + 1
             while (j != i) {
-                costs[i]!![j] = cost
+                costs[i][j] = cost
                 cost += nextCost[j].toLong()
                 if (j == 25) {
                     j = -1
@@ -24,7 +24,7 @@ class Solution {
             cost = previousCost[i].toLong()
             var j = if (i == 0) 25 else i - 1
             while (j != i) {
-                costs[i]!![j] = min(costs[i]!![j].toDouble(), cost.toDouble()).toLong()
+                costs[i][j] = min(costs[i][j], cost)
                 cost += previousCost[j].toLong()
                 if (j == 0) {
                     j = 26
@@ -35,7 +35,7 @@ class Solution {
         val n = s.length
         var ans: Long = 0
         for (i in 0..<n) {
-            ans += costs[s[i].code - 'a'.code]!![t[i].code - 'a'.code]
+            ans += costs[s[i].code - 'a'.code][t[i].code - 'a'.code]
         }
         return ans
     }

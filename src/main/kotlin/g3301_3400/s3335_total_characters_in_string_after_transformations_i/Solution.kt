@@ -11,13 +11,13 @@ class Solution {
         for (c in s.toCharArray()) {
             count[c.code - 'a'.code]++
         }
-        val list = LinkedList<Int?>()
+        val list = LinkedList<Int>()
         for (c in count) {
             list.add(c)
         }
         var delta = s.length % 1000000007
         for (i in 0 until t) {
-            val zCount = list.removeLast()!! % 1000000007
+            val zCount = list.removeLast() % 1000000007
             val aCount = list.pollFirst()!! % 1000000007
             list.offerFirst((aCount + zCount) % 1000000007)
             list.offerFirst(zCount)
