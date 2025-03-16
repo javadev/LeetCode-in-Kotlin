@@ -35,7 +35,7 @@ class Solution {
         }
         val str = "$i - $tight - $sum - $prod"
         if (dp.containsKey(str)) {
-            return dp.get(str)!!
+            return dp[str]!!
         }
         val limit: Int = if (tight == 1) {
             digits[i].code - '0'.code
