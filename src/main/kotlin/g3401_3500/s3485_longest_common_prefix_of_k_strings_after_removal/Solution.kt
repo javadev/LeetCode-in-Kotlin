@@ -43,7 +43,7 @@ class Solution {
         depths[0] = 0
         // trie insertion
         for (i in 0..<wordLength) {
-            val letterIndex = word.get(i).code - 'a'.code
+            val letterIndex = word[i].code - 'a'.code
             if (nodePath[i].children[letterIndex] == null) {
                 nodePath[i].children[letterIndex] = TrieNode()
             }

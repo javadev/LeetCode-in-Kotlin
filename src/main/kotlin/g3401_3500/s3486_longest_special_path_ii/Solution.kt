@@ -2,6 +2,7 @@ package g3401_3500.s3486_longest_special_path_ii
 
 // #Hard #2025_03_16_Time_255_ms_(100.00%)_Space_125.42_MB_(100.00%)
 
+@Suppress("kotlin:S107")
 class Solution {
     fun longestSpecialPath(edges: Array<IntArray>, nums: IntArray): IntArray {
         val ans = intArrayOf(0, 1)
@@ -10,9 +11,9 @@ class Solution {
             val a = edge[0]
             val b = edge[1]
             val c = edge[2]
-            graph.computeIfAbsent(a) { k: Int -> ArrayList<IntArray>() }
+            graph.computeIfAbsent(a) { _: Int -> ArrayList<IntArray>() }
                 .add(intArrayOf(b, c))
-            graph.computeIfAbsent(b) { k: Int -> ArrayList<IntArray>() }
+            graph.computeIfAbsent(b) { _: Int -> ArrayList<IntArray>() }
                 .add(intArrayOf(a, c))
         }
         val costs: MutableList<Int> = ArrayList<Int>()
