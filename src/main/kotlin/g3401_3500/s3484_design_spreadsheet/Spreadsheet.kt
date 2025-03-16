@@ -36,8 +36,8 @@ class Spreadsheet(rows: Int) {
 
 /*
  * Your Spreadsheet object will be instantiated and called as such:
- * Spreadsheet obj = new Spreadsheet(rows);
- * obj.setCell(cell,value);
- * obj.resetCell(cell);
- * int param_3 = obj.getValue(formula);
+ * var obj = Spreadsheet(rows)
+ * obj.setCell(cell,value)
+ * obj.resetCell(cell)
+ * var param_3 = obj.getValue(formula)
  */
