@@ -12,7 +12,7 @@ class Solution {
         val st = ArrayDeque<Int>()
         val n = s.length
         var i = 0
-        dp = Array(n) { arrayOfNulls<HashSet<Int>?>(n) }
+        dp = Array(n) { arrayOfNulls<HashSet<Int>>(n) }
         while (i < n) {
             if (s[i].code - '0'.code >= 0 && s[i].code - '9'.code <= 0) {
                 st.push(s[i].code - '0'.code)

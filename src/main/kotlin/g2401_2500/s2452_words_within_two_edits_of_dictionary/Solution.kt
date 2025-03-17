@@ -6,7 +6,7 @@ class Solution {
     private var root: Node? = null
 
     internal class Node {
-        var childs = HashMap<Char, Node?>()
+        var childs = HashMap<Char, Node>()
     }
 
     private fun insert(s: String) {

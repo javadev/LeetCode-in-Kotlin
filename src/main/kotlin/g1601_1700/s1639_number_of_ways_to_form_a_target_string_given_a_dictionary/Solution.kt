@@ -6,7 +6,7 @@ package g1601_1700.s1639_number_of_ways_to_form_a_target_string_given_a_dictiona
 class Solution {
     fun numWays(words: Array<String>, target: String): Int {
         val counts = precompute(words)
-        val memo = Array(target.length) { arrayOfNulls<Int?>(words[0].length) }
+        val memo = Array(target.length) { arrayOfNulls<Int>(words[0].length) }
         return solve(memo, counts, words, target, 0, 0)
     }
 

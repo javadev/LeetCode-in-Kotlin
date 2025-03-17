@@ -5,9 +5,9 @@ package g0901_1000.s0989_add_to_array_form_of_integer
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun addToArrayForm(num: IntArray, k: Int): List<Int?> {
+    fun addToArrayForm(num: IntArray, k: Int): List<Int> {
         var k = k
-        val result = ArrayList<Int?>()
+        val result = ArrayList<Int>()
         var carry = 0
         for (i in num.indices.reversed()) {
             val temp = num[i] + k % 10 + carry

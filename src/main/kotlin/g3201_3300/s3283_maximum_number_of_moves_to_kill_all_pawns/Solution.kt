@@ -61,10 +61,10 @@ class Solution {
         if (x1 == x2 && y1 == y2) {
             return 0
         }
-        val visited = Array<BooleanArray?>(50) { BooleanArray(50) }
+        val visited = Array<BooleanArray>(50) { BooleanArray(50) }
         val queue: Queue<IntArray> = LinkedList<IntArray>()
         queue.offer(intArrayOf(x1, y1, 0))
-        visited[x1]!![y1] = true
+        visited[x1][y1] = true
         while (queue.isNotEmpty()) {
             val current = queue.poll()
             val x = current[0]
@@ -76,9 +76,9 @@ class Solution {
                 if (nx == x2 && ny == y2) {
                     return moves + 1
                 }
-                if (nx >= 0 && nx < 50 && ny >= 0 && ny < 50 && !visited[nx]!![ny]) {
+                if (nx >= 0 && nx < 50 && ny >= 0 && ny < 50 && !visited[nx][ny]) {
                     queue.offer(intArrayOf(nx, ny, moves + 1))
-                    visited[nx]!![ny] = true
+                    visited[nx][ny] = true
                 }
             }
         }
