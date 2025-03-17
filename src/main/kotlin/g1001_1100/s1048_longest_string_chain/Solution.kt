@@ -5,7 +5,7 @@ package g1001_1100.s1048_longest_string_chain
 
 class Solution {
     fun longestStrChain(words: Array<String>): Int {
-        val lenStr = arrayOfNulls<MutableList<String>?>(20)
+        val lenStr = arrayOfNulls<MutableList<String>>(20)
         for (word in words) {
             val len = word.length
             if (lenStr[len] == null) {

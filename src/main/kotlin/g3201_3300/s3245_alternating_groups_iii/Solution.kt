@@ -5,7 +5,7 @@ package g3201_3300.s3245_alternating_groups_iii
 import java.util.BitSet
 
 class Solution {
-    fun numberOfAlternatingGroups(colors: IntArray, queries: Array<IntArray>): MutableList<Int?> {
+    fun numberOfAlternatingGroups(colors: IntArray, queries: Array<IntArray>): List<Int> {
         val n = colors.size
         val set = BitSet()
         val bit = BIT(n)
@@ -14,7 +14,7 @@ class Solution {
                 add(set, bit, n, i)
             }
         }
-        val ans: MutableList<Int?> = ArrayList<Int?>()
+        val ans: MutableList<Int> = ArrayList<Int>()
         for (q in queries) {
             if (q[0] == 1) {
                 if (set.isEmpty) {

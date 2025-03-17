@@ -9,7 +9,7 @@ class Solution {
 
     private fun countBeautiful(x: Int): Int {
         val digits = getCharArray(x)
-        val dp = HashMap<String?, Int?>()
+        val dp = HashMap<String, Int>()
         return solve(0, 1, 0, 1, digits, dp)
     }
 
@@ -24,7 +24,7 @@ class Solution {
         sum: Int,
         prod: Int,
         digits: CharArray,
-        dp: HashMap<String?, Int?>,
+        dp: HashMap<String, Int>,
     ): Int {
         if (i == digits.size) {
             return if (sum > 0 && prod % sum == 0) {

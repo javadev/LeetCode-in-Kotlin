@@ -53,7 +53,7 @@ class Solution {
             if (last.containsKey(nums[nextNode])) {
                 nextLeft.add(last[nums[nextNode]]!! + 1)
             }
-            nextLeft.sortWith(Comparator.naturalOrder<Int?>())
+            nextLeft.sortWith(Comparator.naturalOrder<Int>())
             while (nextLeft.size > 2) {
                 nextLeft.removeAt(0)
             }
