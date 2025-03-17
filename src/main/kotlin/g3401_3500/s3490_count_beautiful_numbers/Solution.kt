@@ -1,6 +1,6 @@
 package g3401_3500.s3490_count_beautiful_numbers
 
-// #Hard #2025_03_16_Time_246_ms_(100.00%)_Space_61.00_MB_(100.00%)
+// #Hard #Dynamic_Programming #2025_03_16_Time_246_ms_(100.00%)_Space_61.00_MB_(100.00%)
 
 class Solution {
     fun beautifulNumbers(l: Int, r: Int): Int {

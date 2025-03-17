@@ -1,6 +1,6 @@
 package g3401_3500.s3489_zero_array_transformation_iv
 
-// #Medium #2025_03_16_Time_104_ms_(100.00%)_Space_73.10_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2025_03_16_Time_104_ms_(100.00%)_Space_73.10_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

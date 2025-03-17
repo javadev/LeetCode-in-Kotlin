@@ -1,6 +1,6 @@
 package g3401_3500.s3487_maximum_unique_subarray_sum_after_deletion
 
-// #Easy #2025_03_16_Time_4_ms_(100.00%)_Space_43.27_MB_(100.00%)
+// #Easy #Array #Hash_Table #Greedy #2025_03_16_Time_4_ms_(100.00%)_Space_43.27_MB_(100.00%)
 
 class Solution {
     fun maxSum(nums: IntArray): Int {

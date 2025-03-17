@@ -1,6 +1,7 @@
 package g3401_3500.s3484_design_spreadsheet
 
-// #Medium #2025_03_16_Time_176_ms_(100.00%)_Space_79.62_MB_(100.00%)
+// #Medium #Array #String #Hash_Table #Matrix #Design
+// #2025_03_16_Time_176_ms_(100.00%)_Space_79.62_MB_(100.00%)
 
 @Suppress("unused")
 class Spreadsheet(rows: Int) {

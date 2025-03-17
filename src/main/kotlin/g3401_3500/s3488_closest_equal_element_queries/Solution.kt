@@ -1,6 +1,7 @@
 package g3401_3500.s3488_closest_equal_element_queries
 
-// #Medium #2025_03_16_Time_93_ms_(100.00%)_Space_99.42_MB_(100.00%)
+// #Medium #Array #Hash_Table #Binary_Search
+// #2025_03_16_Time_93_ms_(100.00%)_Space_99.42_MB_(100.00%)
 
 import kotlin.math.abs
 import kotlin.math.min

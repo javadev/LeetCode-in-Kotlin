@@ -1,6 +1,7 @@
 package g3401_3500.s3483_unique_3_digit_even_numbers
 
-// #Easy #2025_03_16_Time_6_ms_(100.00%)_Space_44.99_MB_(100.00%)
+// #Easy #Array #Hash_Table #Recursion #Enumeration
+// #2025_03_16_Time_6_ms_(100.00%)_Space_44.99_MB_(100.00%)
 
 class Solution {
     fun totalNumbers(digits: IntArray): Int {

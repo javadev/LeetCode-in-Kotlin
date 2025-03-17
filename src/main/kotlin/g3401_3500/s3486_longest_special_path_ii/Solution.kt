@@ -1,6 +1,7 @@
 package g3401_3500.s3486_longest_special_path_ii
 
-// #Hard #2025_03_16_Time_255_ms_(100.00%)_Space_125.42_MB_(100.00%)
+// #Hard #Array #Hash_Table #Depth_First_Search #Tree #Prefix_Sum
+// #2025_03_16_Time_255_ms_(100.00%)_Space_125.42_MB_(100.00%)
 
 @Suppress("kotlin:S107")
 class Solution {
