@@ -1,101 +1,114 @@
 package g3201_3300.s3283_maximum_number_of_moves_to_kill_all_pawns
 
 // #Hard #Array #Math #Breadth_First_Search #Bit_Manipulation #Bitmask #Game_Theory
-// #2024_09_11_Time_638_ms_(100.00%)_Space_62.2_MB_(87.50%)
+// #2025_03_22_Time_119_ms_(100.00%)_Space_66.82_MB_(100.00%)
 
-import java.util.LinkedList
-import java.util.Queue
 import kotlin.math.max
 import kotlin.math.min
 
 class Solution {
-    private lateinit var distances: Array<IntArray>
-    private lateinit var memo: Array<Array<Int?>?>
+    private fun initializePositions(positions: Array<IntArray>, pos: Array<IntArray>, kx: Int, ky: Int) {
+        val n = positions.size
+        for (i in 0..<n) {
+            val x = positions[i][0]
+            val y = positions[i][1]
+            pos[x][y] = i
+        }
+        pos[kx][ky] = n
+    }
+
+    private fun calculateDistances(positions: Array<IntArray>, pos: Array<IntArray>, distances: Array<IntArray>) {
+        val n = positions.size
+        for (i in 0..<n) {
+            var count = n - i
+            val visited = Array<BooleanArray>(50) { BooleanArray(50) }
+            visited[positions[i][0]][positions[i][1]] = true
+            val que: java.util.Queue<IntArray> = java.util.ArrayDeque<IntArray>()
+            que.offer(intArrayOf(positions[i][0], positions[i][1]))
+            var steps = 1
+            while (!que.isEmpty() && count > 0) {
+                var size = que.size
+                while (size-- > 0) {
+                    val cur = que.poll()
+                    val x = cur[0]
+                    val y = cur[1]
+                    for (d in DIRECTIONS) {
+                        val nx = x + d[0]
+                        val ny = y + d[1]
+                        if (0 <= nx && nx < 50 && 0 <= ny && ny < 50 && !visited[nx][ny]) {
+                            que.offer(intArrayOf(nx, ny))
+                            visited[nx][ny] = true
+                            val j = pos[nx][ny]
+                            if (j > i) {
+                                distances[j][i] = steps
+                                distances[i][j] = distances[j][i]
+                                if (--count == 0) {
+                                    break
+                                }
+                            }
+                        }
+                    }
+                    if (count == 0) {
+                        break
+                    }
+                }
+                steps++
+            }
+        }
+    }
+
+    private fun calculateDP(n: Int, distances: Array<IntArray>): Int {
+        val m = (1 shl n) - 1
+        val dp = Array<IntArray>(1 shl n) { IntArray(n + 1) }
+        for (mask in 1..<(1 shl n)) {
+            val isEven = (Integer.bitCount(m xor mask)) % 2 == 0
+            for (i in 0..n) {
+                var result = 0
+                if (isEven) {
+                    for (j in 0..<n) {
+                        if ((mask and (1 shl j)) > 0) {
+                            result = max(
+                                result,
+                                (dp[mask xor (1 shl j)][j] + distances[i][j]),
+                            )
+                        }
+                    }
+                } else {
+                    result = Int.Companion.MAX_VALUE
+                    for (j in 0..<n) {
+                        if ((mask and (1 shl j)) > 0) {
+                            result = min(
+                                result,
+                                (dp[mask xor (1 shl j)][j] + distances[i][j]),
+                            )
+                        }
+                    }
+                }
+                dp[mask][i] = result
+            }
+        }
+        return dp[m][n]
+    }
 
     fun maxMoves(kx: Int, ky: Int, positions: Array<IntArray>): Int {
         val n = positions.size
-        distances = Array<IntArray>(n + 1) { IntArray(n + 1) { 0 } }
-        memo = Array<Array<Int?>?>(n + 1) { arrayOfNulls<Int>(1 shl n) }
-        // Calculate distances between all pairs of positions (including knight's initial position)
-        for (i in 0 until n) {
-            distances[n][i] = calculateMoves(kx, ky, positions[i][0], positions[i][1])
-            for (j in i + 1 until n) {
-                val dist =
-                    calculateMoves(
-                        positions[i][0],
-                        positions[i][1],
-                        positions[j][0],
-                        positions[j][1],
-                    )
-                distances[j][i] = dist
-                distances[i][j] = distances[j][i]
-            }
-        }
-        return minimax(n, (1 shl n) - 1, true)
-    }
-
-    private fun minimax(lastPos: Int, remainingPawns: Int, isAlice: Boolean): Int {
-        if (remainingPawns == 0) {
-            return 0
-        }
-        if (memo[lastPos]!![remainingPawns] != null) {
-            return memo[lastPos]!![remainingPawns]!!
-        }
-        var result = if (isAlice) 0 else Int.Companion.MAX_VALUE
-        for (i in 0 until distances.size - 1) {
-            if ((remainingPawns and (1 shl i)) != 0) {
-                val newRemainingPawns = remainingPawns and (1 shl i).inv()
-                val moveValue = distances[lastPos][i] + minimax(i, newRemainingPawns, !isAlice)
-                result = if (isAlice) {
-                    max(result, moveValue)
-                } else {
-                    min(result, moveValue)
-                }
-            }
-        }
-        memo[lastPos]!![remainingPawns] = result
-        return result
-    }
-
-    private fun calculateMoves(x1: Int, y1: Int, x2: Int, y2: Int): Int {
-        if (x1 == x2 && y1 == y2) {
-            return 0
-        }
-        val visited = Array<BooleanArray>(50) { BooleanArray(50) }
-        val queue: Queue<IntArray> = LinkedList<IntArray>()
-        queue.offer(intArrayOf(x1, y1, 0))
-        visited[x1][y1] = true
-        while (queue.isNotEmpty()) {
-            val current = queue.poll()
-            val x = current[0]
-            val y = current[1]
-            val moves = current[2]
-            for (move in KNIGHT_MOVES) {
-                val nx = x + move[0]
-                val ny = y + move[1]
-                if (nx == x2 && ny == y2) {
-                    return moves + 1
-                }
-                if (nx >= 0 && nx < 50 && ny >= 0 && ny < 50 && !visited[nx][ny]) {
-                    queue.offer(intArrayOf(nx, ny, moves + 1))
-                    visited[nx][ny] = true
-                }
-            }
-        }
-        // Should never reach here if input is valid
-        return -1
+        val pos = Array<IntArray>(50) { IntArray(50) }
+        initializePositions(positions, pos, kx, ky)
+        val distances = Array<IntArray>(n + 1) { IntArray(n + 1) }
+        calculateDistances(positions, pos, distances)
+        return calculateDP(n, distances)
     }
 
     companion object {
-        private val KNIGHT_MOVES = arrayOf<IntArray>(
-            intArrayOf(-2, -1),
-            intArrayOf(-2, 1),
-            intArrayOf(-1, -2),
-            intArrayOf(-1, 2),
-            intArrayOf(1, -2),
-            intArrayOf(1, 2),
-            intArrayOf(2, -1),
+        private val DIRECTIONS = arrayOf<IntArray>(
             intArrayOf(2, 1),
+            intArrayOf(1, 2),
+            intArrayOf(-1, 2),
+            intArrayOf(-2, 1),
+            intArrayOf(-2, -1),
+            intArrayOf(-1, -2),
+            intArrayOf(1, -2),
+            intArrayOf(2, -1),
         )
     }
 }
