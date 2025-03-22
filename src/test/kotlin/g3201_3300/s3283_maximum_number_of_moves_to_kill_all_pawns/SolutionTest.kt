@@ -36,4 +36,37 @@ internal class SolutionTest {
             equalTo<Int>(3),
         )
     }
+
+    @Test
+    fun maxMoves4() {
+        assertThat(
+            Solution().maxMoves(0, 0, arrayOf()),
+            equalTo(0),
+        )
+    }
+
+    @Test
+    fun maxMoves5() {
+        assertThat(
+            Solution().maxMoves(49, 49, arrayOf(intArrayOf(48, 48))),
+            equalTo(4),
+        )
+    }
+
+    @Test
+    fun maxMoves6() {
+        assertThat(
+            Solution().maxMoves(1, 1, arrayOf(intArrayOf(2, 2), intArrayOf(2, 2), intArrayOf(3, 3))),
+            equalTo(6),
+        )
+    }
+
+    @Test
+    fun maxMoves7() {
+        val positions = Array(50) { intArrayOf(it, it) }
+        assertThat(
+            Solution().maxMoves(0, 0, positions),
+            equalTo(266),
+        )
+    }
 }
