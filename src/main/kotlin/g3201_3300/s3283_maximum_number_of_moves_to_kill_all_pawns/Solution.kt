@@ -69,7 +69,7 @@ class Solution {
                         if ((mask and (1 shl j)) > 0) {
                             result = max(
                                 result,
-                                (dp[mask xor (1 shl j)][j] + distances[i][j]),
+                                dp[mask xor (1 shl j)][j] + distances[i][j],
                             )
                         }
                     }
@@ -79,7 +79,7 @@ class Solution {
                         if ((mask and (1 shl j)) > 0) {
                             result = min(
                                 result,
-                                (dp[mask xor (1 shl j)][j] + distances[i][j]),
+                                dp[mask xor (1 shl j)][j] + distances[i][j],
                             )
                         }
                     }
