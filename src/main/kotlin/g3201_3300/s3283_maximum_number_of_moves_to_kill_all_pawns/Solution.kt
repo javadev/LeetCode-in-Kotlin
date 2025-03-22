@@ -1,7 +1,7 @@
 package g3201_3300.s3283_maximum_number_of_moves_to_kill_all_pawns
 
 // #Hard #Array #Math #Breadth_First_Search #Bit_Manipulation #Bitmask #Game_Theory
-// #2025_03_22_Time_119_ms_(100.00%)_Space_66.82_MB_(100.00%)
+// #2025_03_22_Time_147_ms_(100.00%)_Space_67.70_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min
@@ -23,20 +23,20 @@ class Solution {
             var count = n - i
             val visited = Array<BooleanArray>(50) { BooleanArray(50) }
             visited[positions[i][0]][positions[i][1]] = true
-            val que: java.util.Queue<IntArray> = java.util.ArrayDeque<IntArray>()
-            que.offer(intArrayOf(positions[i][0], positions[i][1]))
+            val que: ArrayDeque<IntArray> = ArrayDeque()
+            que.add(intArrayOf(positions[i][0], positions[i][1]))
             var steps = 1
-            while (!que.isEmpty() && count > 0) {
+            while (que.isNotEmpty() && count > 0) {
                 var size = que.size
                 while (size-- > 0) {
-                    val cur = que.poll()
+                    val cur = que.removeFirst()
                     val x = cur[0]
                     val y = cur[1]
                     for (d in DIRECTIONS) {
                         val nx = x + d[0]
                         val ny = y + d[1]
                         if (0 <= nx && nx < 50 && 0 <= ny && ny < 50 && !visited[nx][ny]) {
-                            que.offer(intArrayOf(nx, ny))
+                            que.add(intArrayOf(nx, ny))
                             visited[nx][ny] = true
                             val j = pos[nx][ny]
                             if (j > i) {
