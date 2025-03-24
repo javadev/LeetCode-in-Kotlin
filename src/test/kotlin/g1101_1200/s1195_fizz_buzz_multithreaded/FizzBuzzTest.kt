@@ -14,32 +14,32 @@ internal class FizzBuzzTest {
         Thread {
             try {
                 fizzBuzz.fizz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.buzz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.fizzbuzz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.number { _: Int -> fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
-        TimeUnit.MILLISECONDS.sleep(2000)
+        TimeUnit.MILLISECONDS.sleep(2200)
         assertThat(fizz[0] > 0, equalTo(true))
     }
 
@@ -51,28 +51,28 @@ internal class FizzBuzzTest {
         Thread {
             try {
                 fizzBuzz.fizz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.buzz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.fizzbuzz { fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
         Thread {
             try {
                 fizzBuzz.number { _: Int -> fizz[0]++ }
-            } catch (e: InterruptedException) {
+            } catch (_: InterruptedException) {
             }
         }
             .start()
