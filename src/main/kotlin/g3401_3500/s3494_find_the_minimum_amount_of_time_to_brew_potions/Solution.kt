@@ -1,6 +1,6 @@
 package g3401_3500.s3494_find_the_minimum_amount_of_time_to_brew_potions
 
-// #Medium #2025_03_23_Time_70_ms_(100.00%)_Space_50.98_MB_(100.00%)
+// #Medium #Array #Simulation #Prefix_Sum #2025_03_23_Time_70_ms_(100.00%)_Space_50.98_MB_(100.00%)
 
 import kotlin.math.max
 

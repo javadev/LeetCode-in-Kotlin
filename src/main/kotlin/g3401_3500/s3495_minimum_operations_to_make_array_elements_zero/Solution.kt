@@ -1,6 +1,6 @@
 package g3401_3500.s3495_minimum_operations_to_make_array_elements_zero
 
-// #Hard #2025_03_23_Time_12_ms_(100.00%)_Space_105.09_MB_(100.00%)
+// #Hard #Array #Math #Bit_Manipulation #2025_03_23_Time_12_ms_(100.00%)_Space_105.09_MB_(100.00%)
 
 class Solution {
     fun minOperations(queries: Array<IntArray>): Long {

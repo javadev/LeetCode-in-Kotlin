@@ -1,6 +1,7 @@
 package g3401_3500.s3493_properties_graph
 
-// #Medium #2025_03_23_Time_45_ms_(100.00%)_Space_65.05_MB_(60.00%)
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
+// #2025_03_23_Time_45_ms_(100.00%)_Space_65.05_MB_(60.00%)
 
 import java.util.BitSet
 
