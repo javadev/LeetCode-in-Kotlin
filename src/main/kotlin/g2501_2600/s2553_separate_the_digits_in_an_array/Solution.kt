@@ -14,8 +14,8 @@ class Solution {
         }
         val num = IntArray(arr.size)
         var i = arr.size - 1
-        for (I in arr) {
-            num[i--] = I
+        for (j in arr) {
+            num[i--] = j
         }
         return num
     }

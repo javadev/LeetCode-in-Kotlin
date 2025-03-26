@@ -21,14 +21,14 @@ internal class NodeTest {
 
     @Test
     fun constructor3() {
-        val node: Node = Node(1, listOf(Node(2)))
+        val node = Node(1, listOf(Node(2)))
         assertThat(node.`val`, equalTo(1))
         assertThat(node.toString(), equalTo("[2]"))
     }
 
     @Test
     fun constructor4() {
-        val node: Node = Node(
+        val node = Node(
             1,
             listOf(
                 Node(2, listOf(Node(3))),

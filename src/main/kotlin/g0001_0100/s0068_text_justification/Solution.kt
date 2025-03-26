@@ -55,7 +55,7 @@ class Solution {
                 startWord = i + 1
                 // resetting these to 0 for processing next line
                 lineTotal = 0
-                numWordsOnLine = lineTotal
+                numWordsOnLine = 0
                 // need a new StringBuilder for the next line
                 sb = StringBuilder(maxWidth)
             }

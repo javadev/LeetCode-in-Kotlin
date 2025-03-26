@@ -11,7 +11,7 @@ class Solution {
         for (c in s.toCharArray()) {
             set.flip(c.code - 'A'.code)
         }
-        return if (set.isEmpty()) {
+        return if (set.isEmpty) {
             s.length
         } else {
             s.length - set.cardinality() + 1

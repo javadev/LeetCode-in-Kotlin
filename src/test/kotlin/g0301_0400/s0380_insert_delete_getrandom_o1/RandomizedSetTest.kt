@@ -8,9 +8,8 @@ internal class RandomizedSetTest {
     @Test
     fun randomizedSet() {
         val result: MutableList<String> = ArrayList()
-        var randomizedSet: RandomizedSet? = null
-        result.add(randomizedSet.toString() + "")
-        randomizedSet = RandomizedSet()
+        result.add("null")
+        var randomizedSet = RandomizedSet()
         result.add(randomizedSet.insert(1).toString() + "")
         result.add(randomizedSet.remove(2).toString() + "")
         result.add(randomizedSet.insert(2).toString() + "")

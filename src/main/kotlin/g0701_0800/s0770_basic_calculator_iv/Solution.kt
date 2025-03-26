@@ -97,7 +97,7 @@ class Solution {
     }
 
     private fun make(cur: String): Node {
-        val ans: Node = Node()
+        val ans = Node()
         val tmp: MutableList<String> = ArrayList()
         if (Character.isDigit(cur[0])) {
             ans.update(tmp, Integer.valueOf(cur))

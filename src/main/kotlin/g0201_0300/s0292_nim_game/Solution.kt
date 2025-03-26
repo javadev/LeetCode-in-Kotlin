@@ -4,9 +4,6 @@ package g0201_0300.s0292_nim_game
 
 class Solution {
     fun canWinNim(n: Int): Boolean {
-        if (n % 4 == 0) {
-            return false
-        }
-        return true
+        return n % 4 != 0
     }
 }

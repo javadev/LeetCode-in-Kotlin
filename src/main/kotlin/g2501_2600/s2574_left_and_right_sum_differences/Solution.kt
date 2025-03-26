@@ -5,7 +5,7 @@ package g2501_2600.s2574_left_and_right_sum_differences
 class Solution {
     fun leftRightDifference(nums: IntArray): IntArray {
         val n = nums.size
-        val ans: IntArray = IntArray(n)
+        val ans = IntArray(n)
         var rightSum = nums.sum()
         var leftSum = 0
 

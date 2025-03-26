@@ -6,22 +6,18 @@ package g2701_2800.s2729_check_if_the_number_is_fascinating
 class Solution {
     fun isFascinating(n: Int): Boolean {
         val set = HashSet<Int>()
-        fun add(_cur: Int): Boolean {
-            var cur = _cur
-            while (cur > 0) {
-                val n = cur % 10
+        fun add(cur: Int): Boolean {
+            var localCur = cur
+            while (localCur > 0) {
+                val n = localCur % 10
                 if (n == 0 || set.contains(n)) {
                     return false
                 }
                 set.add(n)
-                cur /= 10
+                localCur /= 10
             }
             return true
         }
-
-        if (!add(n) || !add(2 * n) || !add(3 * n)) {
-            return false
-        }
-        return true
+        return !(!add(n) || !add(2 * n) || !add(3 * n))
     }
 }
