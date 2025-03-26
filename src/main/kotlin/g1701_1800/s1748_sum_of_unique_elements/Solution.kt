@@ -5,7 +5,7 @@ package g1701_1800.s1748_sum_of_unique_elements
 class Solution {
     fun sumOfUnique(nums: IntArray): Int {
         val map: MutableMap<Int, Int> = HashMap()
-        var sum: Int = 0
+        var sum = 0
         for (num: Int in nums) {
             map.put(num, map.getOrDefault(num, 0) + 1)
         }

@@ -4,9 +4,9 @@ package g1701_1800.s1749_maximum_absolute_sum_of_any_subarray
 
 class Solution {
     fun maxAbsoluteSum(nums: IntArray): Int {
-        var min: Int = 0
-        var max: Int = 0
-        var s: Int = 0
+        var min = 0
+        var max = 0
+        var s = 0
         for (num: Int in nums) {
             s += num
             min = Math.min(min, s)

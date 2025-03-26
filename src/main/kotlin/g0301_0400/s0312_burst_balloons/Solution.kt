@@ -18,7 +18,7 @@ class Solution {
             while (ei < nums.size) {
                 val l = if (si - 1 == -1) 1 else nums[si - 1]
                 val r = if (ei + 1 == nums.size) 1 else nums[ei + 1]
-                var maxAns = -1e7.toInt()
+                var maxAns = (-1e7).toInt()
                 for (cut in si..ei) {
                     val leftAns = if (si == cut) 0 else dp[si][cut - 1]
                     val rightAns = if (ei == cut) 0 else dp[cut + 1][ei]

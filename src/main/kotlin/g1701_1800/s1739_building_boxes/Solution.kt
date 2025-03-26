@@ -40,7 +40,7 @@ class Solution {
     }
 
     private fun product(vararg vals: Long): Long {
-        var product: Long = 1L
+        var product = 1L
         for (`val`: Long in vals) {
             product *= `val`
         }

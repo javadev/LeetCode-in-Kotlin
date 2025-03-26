@@ -8,7 +8,7 @@ class Solution {
         val fmap: MutableMap<String, Int> = HashMap()
         for (s in d) {
             var rep = 0
-            var i: Int = 0
+            var i = 0
             while (i < s.length) {
                 val c = s[i]
                 rep = if (c in '0'..'9') {

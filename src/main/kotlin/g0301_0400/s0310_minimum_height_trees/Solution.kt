@@ -18,7 +18,7 @@ class Solution {
         while (queue.isNotEmpty()) {
             val size = queue.size
             val newLeaves = mutableListOf<Int>()
-            for (_sz in 0 until size) {
+            for (sz in 0 until size) {
                 val cur = queue.removeFirst()
                 newLeaves.add(cur)
                 for (next in graph[cur]) {

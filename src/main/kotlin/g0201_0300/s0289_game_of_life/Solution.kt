@@ -47,7 +47,7 @@ class Solution {
     }
 
     private fun compute(board: Array<IntArray>, r: Int, c: Int): Int {
-        var ret: Int = 0
+        var ret = 0
         for (arr in dim) {
             val row = arr[0] + r
             val col = arr[1] + c
