@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.1.10"
+    kotlin("jvm") version "2.1.20"
     jacoco
     id("org.sonarqube") version "5.1.0.4882"
     id("com.diffplug.spotless") version "6.25.0"
@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.10")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20")
     testImplementation("org.junit.jupiter:junit-jupiter:[5.11.3,)")
     testImplementation("org.hamcrest:hamcrest-core:[3.0,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.2.0,)")
@@ -27,7 +27,7 @@ tasks.test {
 }
 
 group = "com.github.javadev"
-version = "1.34-SNAPSHOT"
+version = "1.35-SNAPSHOT"
 description = "leetcode-in-kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
