@@ -45,8 +45,8 @@ class Solution {
     }
 
     private class Pair(val x: Int, val y: Int) : Comparable<Pair> {
-        override fun compareTo(p: Pair): Int {
-            return if (x == p.x) y - p.y else x - p.x
+        override fun compareTo(other: Pair): Int {
+            return if (x == other.x) y - other.y else x - other.x
         }
     }
 }

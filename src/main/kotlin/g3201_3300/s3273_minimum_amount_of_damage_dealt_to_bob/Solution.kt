@@ -22,8 +22,8 @@ class Solution {
     }
 
     internal class Pair(var key: Int, var `val`: Int) : Comparable<Pair> {
-        override fun compareTo(p: Pair): Int {
-            return `val` * p.key - key * p.`val`
+        override fun compareTo(other: Pair): Int {
+            return `val` * other.key - key * other.`val`
         }
     }
 }

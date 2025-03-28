@@ -29,7 +29,7 @@ internal class SolutionTest {
     fun remainingMethods3() {
         assertThat<List<Int>>(
             Solution().remainingMethods(3, 2, arrayOf<IntArray>(intArrayOf(1, 2), intArrayOf(0, 1), intArrayOf(2, 0))),
-            equalTo<List<out Any>>(listOf<Any>()),
+            equalTo<List<Int>>(listOf<Int>()),
         )
     }
 }
