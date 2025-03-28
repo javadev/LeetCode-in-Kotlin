@@ -16,11 +16,11 @@ class Solution {
             cnt = c
         }
 
-        override fun compareTo(o: RC): Int {
-            if (cnt != o.cnt) {
-                return cnt - o.cnt
+        override fun compareTo(other: RC): Int {
+            if (cnt != other.cnt) {
+                return cnt - other.cnt
             }
-            return `val` - o.`val`
+            return `val` - other.`val`
         }
     }
 
