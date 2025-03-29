@@ -30,7 +30,7 @@ class Solution {
                     curr = curr!!.next
                     key += curr!!.`val`
                 }
-                map.getValue(preSum).next = curr!!.next
+                map.getValue(preSum).next = curr.next
             } else {
                 map[preSum] = curr
             }
