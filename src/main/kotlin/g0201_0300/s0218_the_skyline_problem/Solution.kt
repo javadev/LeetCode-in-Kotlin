@@ -14,9 +14,9 @@ class Solution {
         val totalBuildings = blds.size
         val buildings = Array(totalBuildings * 2) { i ->
             if (i % 2 == 0) {
-                Building(blds[i/2][0], blds[i/2][2], true)
+                Building(blds[i / 2][0], blds[i / 2][2], true)
             } else {
-                Building(blds[i/2][1], blds[i/2][2], false)
+                Building(blds[i / 2][1], blds[i / 2][2], false)
             }
         }
         buildings.sort()
