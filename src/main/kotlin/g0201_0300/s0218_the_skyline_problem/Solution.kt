@@ -1,7 +1,7 @@
 package g0201_0300.s0218_the_skyline_problem
 
 // #Hard #Array #Heap_Priority_Queue #Ordered_Set #Divide_and_Conquer #Segment_Tree
-// #Binary_Indexed_Tree #Line_Sweep #2022_10_25_Time_365_ms_(93.14%)_Space_45.7_MB_(93.71%)
+// #Binary_Indexed_Tree #Line_Sweep #2025_03_29_Time_50_ms_(100.00%)_Space_63.12_MB_(10.53%)
 
 import java.util.TreeMap
 
@@ -12,21 +12,18 @@ class Solution {
             return ans
         }
         val totalBuildings = blds.size
-        val buildings = Array<Building?>(totalBuildings * 2) { null }
-        var idx = 0
-        for (building in blds) {
-            buildings[idx] = Building(building[0], building[2], true)
-            buildings[idx + 1] = Building(building[1], building[2], false)
-            idx += 2
+        val buildings = Array(totalBuildings * 2) { i ->
+            if (i % 2 == 0) {
+                Building(blds[i/2][0], blds[i/2][2], true)
+            } else {
+                Building(blds[i/2][1], blds[i/2][2], false)
+            }
         }
         buildings.sort()
         val skyline = TreeMap<Int, Int>()
         skyline[0] = 1
         var prevMaxHeight = 0
         for (building in buildings) {
-            if (building == null) {
-                continue
-            }
             val height = building.height
             if (building.isStart) {
                 skyline[height] = 1 + (skyline[height] ?: 0)
