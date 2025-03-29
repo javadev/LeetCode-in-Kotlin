@@ -50,7 +50,7 @@ class ExamRoom() {
         var maxAtLeft: Node? = null
         var cur = tail.pre
         while (cur !== head && cur!!.pre !== head) {
-            val pre = cur!!.pre
+            val pre = cur.pre
             val at = (cur.`val` + pre!!.`val`) / 2
             val distance = at - pre.`val`
             if (distance >= max) {
