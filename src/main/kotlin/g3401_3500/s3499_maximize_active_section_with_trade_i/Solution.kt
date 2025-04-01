@@ -11,7 +11,7 @@ class Solution {
         var curZeroCount = 0
         var lastZeroCount = 0
         for (i in 0..<s.length) {
-            if (s.get(i) == '0') {
+            if (s[i] == '0') {
                 curZeroCount++
             } else {
                 if (curZeroCount != 0) {

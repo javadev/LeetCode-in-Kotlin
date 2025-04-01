@@ -44,7 +44,7 @@ class Solution {
 
         fun remove(num: Int) {
             delayedRemovals.put(num, delayedRemovals.getOrDefault(num, 0) + 1)
-            if (!leftHeap.isEmpty() && num <= leftHeap.peek()!!) {
+            if (leftHeap.isNotEmpty() && num <= leftHeap.peek()!!) {
                 sumLeft -= num
                 sizeLeft--
             } else {
@@ -75,7 +75,7 @@ class Solution {
         }
 
         fun pruneHeap(heap: PriorityQueue<Int>) {
-            while (!heap.isEmpty() && delayedRemovals.containsKey(heap.peek())) {
+            while (heap.isNotEmpty() && delayedRemovals.containsKey(heap.peek())) {
                 val num: Int = heap.peek()!!
                 if (delayedRemovals[num]!! > 0) {
                     heap.poll()

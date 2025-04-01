@@ -6,7 +6,7 @@ class Solution {
     fun reverseDegree(s: String): Int {
         var ans = 0
         for (i in 0..<s.length) {
-            ans += (26 - (s.get(i).code - 'a'.code)) * (i + 1)
+            ans += (26 - (s[i].code - 'a'.code)) * (i + 1)
         }
         return ans
     }
