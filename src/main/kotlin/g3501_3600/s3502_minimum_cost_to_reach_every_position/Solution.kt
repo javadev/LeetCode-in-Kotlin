@@ -1,6 +1,6 @@
 package g3501_3600.s3502_minimum_cost_to_reach_every_position
 
-// #Easy #2025_03_30_Time_1_ms_(100.00%)_Space_47.23_MB_(86.36%)
+// #Easy #Array #2025_04_01_Time_1_ms_(100.00%)_Space_46.62_MB_(96.30%)
 
 import kotlin.math.min
 

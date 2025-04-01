@@ -1,6 +1,7 @@
 package g3501_3600.s3501_maximize_active_section_with_trade_ii
 
-// #Hard #2025_03_30_Time_219_ms_(100.00%)_Space_142.64_MB_(100.00%)
+// #Hard #Array #String #Binary_Search #Segment_Tree
+// #2025_04_01_Time_259_ms_(100.00%)_Space_140.14_MB_(_%)
 
 import kotlin.math.max
 

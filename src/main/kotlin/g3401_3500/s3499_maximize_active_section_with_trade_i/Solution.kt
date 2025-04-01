@@ -1,6 +1,6 @@
 package g3401_3500.s3499_maximize_active_section_with_trade_i
 
-// #Medium #2025_03_30_Time_45_ms_(100.00%)_Space_49.16_MB_(100.00%)
+// #Medium #String #Enumeration #2025_04_01_Time_52_ms_(73.08%)_Space_47.99_MB_(100.00%)
 
 import kotlin.math.max
 

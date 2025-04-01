@@ -1,6 +1,7 @@
 package g3501_3600.s3504_longest_palindrome_after_substring_concatenation_ii
 
-// #Hard #2025_03_30_Time_58_ms_(100.00%)_Space_60.00_MB_(50.00%)
+// #Hard #String #Dynamic_Programming #Two_Pointers
+// #2025_04_01_Time_59_ms_(100.00%)_Space_58.68_MB_(57.14%)
 
 import kotlin.math.max
 

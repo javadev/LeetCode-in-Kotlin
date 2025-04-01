@@ -1,73 +1,26 @@
 package g3401_3500.s3500_minimum_cost_to_divide_array_into_subarrays
 
-// #Hard #2025_03_30_Time_200_ms_(100.00%)_Space_88.62_MB_(_%)
+// #Hard #Array #Dynamic_Programming #Prefix_Sum
+// #2025_04_01_Time_28_ms_(92.31%)_Space_49.69_MB_(69.23%)
 
 class Solution {
     fun minimumCost(nums: IntArray, cost: IntArray, k: Int): Long {
         val n = nums.size
-        val prefixNums = LongArray(n)
-        var total: Long = 0
-        for (i in 0..<n) {
-            total += nums[i].toLong()
-            prefixNums[i] = total
+        val k = k.toLong()
+        val preNums = LongArray(n + 1)
+        val preCost = LongArray(n + 1)
+        for (i in 0..n - 1) {
+            preNums[i + 1] = preNums[i] + nums[i]
+            preCost[i + 1] = preCost[i] + cost[i]
         }
-        val prefixCost = LongArray(n + 1)
-        total = 0
-        for (i in 0..<n) {
-            total += cost[i].toLong()
-            prefixCost[i + 1] = total
+        val dp = LongArray(n + 1) {
+            Long.MAX_VALUE / 2
+        }.also { it[0] = 0L }
+        for (r in 1..n) for (l in 0..r - 1) {
+            val sumNums = preNums[r] * (preCost[r] - preCost[l])
+            val sumCost = k * (preCost[n] - preCost[l])
+            dp[r] = minOf(dp[r], dp[l] + sumNums + sumCost)
         }
-        val memo: Array<LongArray> = Array<LongArray>(n) { LongArray(n + 1) }
-        for (row in memo) {
-            row.fill(-1)
-        }
-        val bestSplit = IntArray(n)
-        bestSplit.fill(-1)
-        return rec(0, 1, nums, prefixNums, prefixCost, k, memo, bestSplit)
-    }
-
-    private fun rec(
-        index: Int,
-        i: Int,
-        nums: IntArray,
-        prefixNums: LongArray,
-        prefixCost: LongArray,
-        k: Int,
-        memo: Array<LongArray>,
-        bestSplit: IntArray,
-    ): Long {
-        val n = nums.size
-        if (index == n) {
-            return 0
-        }
-        if (memo[index][i] != -1L) {
-            return memo[index][i]
-        }
-        if (bestSplit[index] != -1) {
-            val j = bestSplit[index]
-            val `val` =
-                (
-                    (prefixNums[j] + k.toLong() * i) * (prefixCost[j + 1] - prefixCost[index]) +
-                        rec(j + 1, i + 1, nums, prefixNums, prefixCost, k, memo, bestSplit)
-                    )
-            memo[index][i] = `val`
-            return `val`
-        }
-        var best = Long.Companion.MAX_VALUE
-        var bestIndex = -1
-        for (j in index..<n) {
-            val `val` =
-                (
-                    (prefixNums[j] + k.toLong() * i) * (prefixCost[j + 1] - prefixCost[index]) +
-                        rec(j + 1, i + 1, nums, prefixNums, prefixCost, k, memo, bestSplit)
-                    )
-            if (`val` < best) {
-                best = `val`
-                bestIndex = j
-            }
-        }
-        bestSplit[index] = bestIndex
-        memo[index][i] = best
-        return best
+        return dp[n]
     }
 }
