@@ -34,7 +34,6 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.35'
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ##
-* [Algorithm II](#algorithm-ii)
 * [Binary Search I](#binary-search-i)
 * [Binary Search II](#binary-search-ii)
 * [Dynamic Programming I](#dynamic-programming-i)
@@ -49,160 +48,7 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.35'
 * [Data Structure I](#data-structure-i)
 * [Data Structure II](#data-structure-ii)
 * [Algorithm I](#algorithm-i)
-
-### Algorithm II
-
-#### Day 1 Binary Search
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0034 |[Find First and Last Position of Element in Sorted Array](src/main/kotlin/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 174 | 100.00
-| 0033 |[Search in Rotated Sorted Array](src/main/kotlin/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 151 | 93.77
-| 0074 |[Search a 2D Matrix](src/main/kotlin/g0001_0100/s0074_search_a_2d_matrix/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Big_O_Time_O(endRow+endCol)_Space_O(1) | 159 | 74.46
-
-#### Day 2 Binary Search
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0153 |[Find Minimum in Rotated Sorted Array](src/main/kotlin/g0101_0200/s0153_find_minimum_in_rotated_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_N)_Space_O(log_N) | 262 | 60.96
-| 0162 |[Find Peak Element](src/main/kotlin/g0101_0200/s0162_find_peak_element/Solution.kt)| Medium | Top_Interview_Questions, Array, Binary_Search | 297 | 53.85
-
-#### Day 3 Two Pointers
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0082 |[Remove Duplicates from Sorted List II](src/main/kotlin/g0001_0100/s0082_remove_duplicates_from_sorted_list_ii/Solution.kt)| Medium | Two_Pointers, Linked_List | 166 | 89.47
-| 0015 |[3Sum](src/main/kotlin/g0001_0100/s0015_3sum/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Big_O_Time_O(n\*log(n))_Space_O(n^2) | 493 | 93.45
-
-#### Day 4 Two Pointers
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0844 |[Backspace String Compare](src/main/kotlin/g0801_0900/s0844_backspace_string_compare/Solution.kt)| Easy | String, Two_Pointers, Stack, Simulation | 126 | 98.31
-| 0986 |[Interval List Intersections](src/main/kotlin/g0901_1000/s0986_interval_list_intersections/Solution.kt)| Medium | Array, Two_Pointers | 318 | 60.98
-| 0011 |[Container With Most Water](src/main/kotlin/g0001_0100/s0011_container_with_most_water/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 402 | 78.57
-
-#### Day 5 Sliding Window
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src/main/kotlin/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 561 | 54.68
-| 0713 |[Subarray Product Less Than K](src/main/kotlin/g0701_0800/s0713_subarray_product_less_than_k/Solution.kt)| Medium | Array, Sliding_Window | 336 | 92.11
-| 0209 |[Minimum Size Subarray Sum](src/main/kotlin/g0201_0300/s0209_minimum_size_subarray_sum/Solution.kt)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 315 | 96.73
-
-#### Day 6 Breadth First Search Depth First Search
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0200 |[Number of Islands](src/main/kotlin/g0101_0200/s0200_number_of_islands/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Big_O_Time_O(M\*N)_Space_O(M\*N) | 252 | 95.41
-| 0547 |[Number of Provinces](src/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 229 | 79.73
-
-#### Day 7 Breadth First Search Depth First Search
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0117 |[Populating Next Right Pointers in Each Node II](src/main/kotlin/g0101_0200/s0117_populating_next_right_pointers_in_each_node_ii/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 199 | 94.67
-| 0572 |[Subtree of Another Tree](src/main/kotlin/g0501_0600/s0572_subtree_of_another_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching | 214 | 92.39
-
-#### Day 8 Breadth First Search Depth First Search
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1091 |[Shortest Path in Binary Matrix](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 305 | 98.28
-| 0130 |[Surrounded Regions](src/main/kotlin/g0101_0200/s0130_surrounded_regions/Solution.kt)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 355 | 84.42
-| 0797 |[All Paths From Source to Target](src/main/kotlin/g0701_0800/s0797_all_paths_from_source_to_target/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Backtracking | 232 | 100.00
-
-#### Day 9 Recursion Backtracking
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0078 |[Subsets](src/main/kotlin/g0001_0100/s0078_subsets/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking, Big_O_Time_O(2^n)_Space_O(n\*2^n) | 171 | 94.92
-| 0090 |[Subsets II](src/main/kotlin/g0001_0100/s0090_subsets_ii/Solution.kt)| Medium | Array, Bit_Manipulation, Backtracking | 200 | 88.33
-
-#### Day 10 Recursion Backtracking
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0047 |[Permutations II](src/main/kotlin/g0001_0100/s0047_permutations_ii/Solution.kt)| Medium | Array, Backtracking | 199 | 100.00
-| 0039 |[Combination Sum](src/main/kotlin/g0001_0100/s0039_combination_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Backtracking, Big_O_Time_O(2^n)_Space_O(n+2^n) | 226 | 88.89
-| 0040 |[Combination Sum II](src/main/kotlin/g0001_0100/s0040_combination_sum_ii/Solution.kt)| Medium | Array, Backtracking | 217 | 93.75
-
-#### Day 11 Recursion Backtracking
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0017 |[Letter Combinations of a Phone Number](src/main/kotlin/g0001_0100/s0017_letter_combinations_of_a_phone_number/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Big_O_Time_O(4^n)_Space_O(n) | 155 | 95.24
-| 0022 |[Generate Parentheses](src/main/kotlin/g0001_0100/s0022_generate_parentheses/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Big_O_Time_O(2^n)_Space_O(n) | 161 | 85.45
-| 0079 |[Word Search](src/main/kotlin/g0001_0100/s0079_word_search/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking, Big_O_Time_O(4^(m\*n))_Space_O(m\*n) | 392 | 72.92
-
-#### Day 12 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0213 |[House Robber II](src/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
-| 0055 |[Jump Game](src/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy, Big_O_Time_O(n)_Space_O(1) | 332 | 89.35
-
-#### Day 13 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0045 |[Jump Game II](src/main/kotlin/g0001_0100/s0045_jump_game_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy, Big_O_Time_O(n)_Space_O(1) | 208 | 93.37
-| 0062 |[Unique Paths](src/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics, Big_O_Time_O(m\*n)_Space_O(m\*n) | 118 | 94.65
-
-#### Day 14 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0005 |[Longest Palindromic Substring](src/main/kotlin/g0001_0100/s0005_longest_palindromic_substring/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 162 | 99.00
-| 0413 |[Arithmetic Slices](src/main/kotlin/g0401_0500/s0413_arithmetic_slices/Solution.kt)| Medium | Array, Dynamic_Programming | 156 | 100.00
-
-#### Day 15 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0091 |[Decode Ways](src/main/kotlin/g0001_0100/s0091_decode_ways/Solution.kt)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 148 | 79.07
-| 0139 |[Word Break](src/main/kotlin/g0101_0200/s0139_word_break/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization, Big_O_Time_O(M+max\*N)_Space_O(M+N+max) | 197 | 87.17
-
-#### Day 16 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0300 |[Longest Increasing Subsequence](src/main/kotlin/g0201_0300/s0300_longest_increasing_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Binary_Search, Big_O_Time_O(n\*log_n)_Space_O(n) | 318 | 82.28
-| 0673 |[Number of Longest Increasing Subsequence](src/main/kotlin/g0601_0700/s0673_number_of_longest_increasing_subsequence/Solution.kt)| Medium | Array, Dynamic_Programming, Segment_Tree, Binary_Indexed_Tree | 226 | 91.67
-
-#### Day 17 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 307 | 38.36
-| 0583 |[Delete Operation for Two Strings](src/main/kotlin/g0501_0600/s0583_delete_operation_for_two_strings/Solution.kt)| Medium | String, Dynamic_Programming | 197 | 100.00
-
-#### Day 18 Dynamic Programming
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0072 |[Edit Distance](src/main/kotlin/g0001_0100/s0072_edit_distance/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 182 | 92.16
-| 0322 |[Coin Change](src/main/kotlin/g0301_0400/s0322_coin_change/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Big_O_Time_O(m\*n)_Space_O(amount) | 332 | 50.68
-| 0343 |[Integer Break](src/main/kotlin/g0301_0400/s0343_integer_break/Solution.kt)| Medium | Dynamic_Programming, Math | 218 | 63.89
-
-#### Day 19 Bit Manipulation
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0201 |[Bitwise AND of Numbers Range](src/main/kotlin/g0201_0300/s0201_bitwise_and_of_numbers_range/Solution.kt)| Medium | Bit_Manipulation | 368 | 80.00
-
-#### Day 20 Others
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0384 |[Shuffle an Array](src/main/kotlin/g0301_0400/s0384_shuffle_an_array/Solution.kt)| Medium | Array, Math, Randomized | 940 | 72.09
-
-#### Day 21 Others
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0202 |[Happy Number](src/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
-| 0149 |[Max Points on a Line](src/main/kotlin/g0101_0200/s0149_max_points_on_a_line/Solution.kt)| Hard | Top_Interview_Questions, Array, Hash_Table, Math, Geometry | 307 | 83.33
+* [Algorithm II](#algorithm-ii)
 
 ### Binary Search I
 
@@ -2111,6 +1957,160 @@ implementation 'com.github.javadev:leetcode-in-kotlin:1.35'
 |-|-|-|-|-|-
 | 0190 |[Reverse Bits](src/main/kotlin/g0101_0200/s0190_reverse_bits/Solution.kt)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 198 | 81.82
 | 0136 |[Single Number](src/main/kotlin/g0101_0200/s0136_single_number/Solution.kt)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Big_O_Time_O(N)_Space_O(1) | 344 | 83.63
+
+### Algorithm II
+
+#### Day 1 Binary Search
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0034 |[Find First and Last Position of Element in Sorted Array](src/main/kotlin/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 174 | 100.00
+| 0033 |[Search in Rotated Sorted Array](src/main/kotlin/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 151 | 93.77
+| 0074 |[Search a 2D Matrix](src/main/kotlin/g0001_0100/s0074_search_a_2d_matrix/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Big_O_Time_O(endRow+endCol)_Space_O(1) | 159 | 74.46
+
+#### Day 2 Binary Search
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0153 |[Find Minimum in Rotated Sorted Array](src/main/kotlin/g0101_0200/s0153_find_minimum_in_rotated_sorted_array/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_N)_Space_O(log_N) | 262 | 60.96
+| 0162 |[Find Peak Element](src/main/kotlin/g0101_0200/s0162_find_peak_element/Solution.kt)| Medium | Top_Interview_Questions, Array, Binary_Search | 297 | 53.85
+
+#### Day 3 Two Pointers
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0082 |[Remove Duplicates from Sorted List II](src/main/kotlin/g0001_0100/s0082_remove_duplicates_from_sorted_list_ii/Solution.kt)| Medium | Two_Pointers, Linked_List | 166 | 89.47
+| 0015 |[3Sum](src/main/kotlin/g0001_0100/s0015_3sum/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Big_O_Time_O(n\*log(n))_Space_O(n^2) | 493 | 93.45
+
+#### Day 4 Two Pointers
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0844 |[Backspace String Compare](src/main/kotlin/g0801_0900/s0844_backspace_string_compare/Solution.kt)| Easy | String, Two_Pointers, Stack, Simulation | 126 | 98.31
+| 0986 |[Interval List Intersections](src/main/kotlin/g0901_1000/s0986_interval_list_intersections/Solution.kt)| Medium | Array, Two_Pointers | 318 | 60.98
+| 0011 |[Container With Most Water](src/main/kotlin/g0001_0100/s0011_container_with_most_water/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 402 | 78.57
+
+#### Day 5 Sliding Window
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0438 |[Find All Anagrams in a String](src/main/kotlin/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.kt)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 561 | 54.68
+| 0713 |[Subarray Product Less Than K](src/main/kotlin/g0701_0800/s0713_subarray_product_less_than_k/Solution.kt)| Medium | Array, Sliding_Window | 336 | 92.11
+| 0209 |[Minimum Size Subarray Sum](src/main/kotlin/g0201_0300/s0209_minimum_size_subarray_sum/Solution.kt)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 315 | 96.73
+
+#### Day 6 Breadth First Search Depth First Search
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0200 |[Number of Islands](src/main/kotlin/g0101_0200/s0200_number_of_islands/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Big_O_Time_O(M\*N)_Space_O(M\*N) | 252 | 95.41
+| 0547 |[Number of Provinces](src/main/kotlin/g0501_0600/s0547_number_of_provinces/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 229 | 79.73
+
+#### Day 7 Breadth First Search Depth First Search
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0117 |[Populating Next Right Pointers in Each Node II](src/main/kotlin/g0101_0200/s0117_populating_next_right_pointers_in_each_node_ii/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 199 | 94.67
+| 0572 |[Subtree of Another Tree](src/main/kotlin/g0501_0600/s0572_subtree_of_another_tree/Solution.kt)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching | 214 | 92.39
+
+#### Day 8 Breadth First Search Depth First Search
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1091 |[Shortest Path in Binary Matrix](src/main/kotlin/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.kt)| Medium | Array, Breadth_First_Search, Matrix | 305 | 98.28
+| 0130 |[Surrounded Regions](src/main/kotlin/g0101_0200/s0130_surrounded_regions/Solution.kt)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 355 | 84.42
+| 0797 |[All Paths From Source to Target](src/main/kotlin/g0701_0800/s0797_all_paths_from_source_to_target/Solution.kt)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Backtracking | 232 | 100.00
+
+#### Day 9 Recursion Backtracking
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0078 |[Subsets](src/main/kotlin/g0001_0100/s0078_subsets/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking, Big_O_Time_O(2^n)_Space_O(n\*2^n) | 171 | 94.92
+| 0090 |[Subsets II](src/main/kotlin/g0001_0100/s0090_subsets_ii/Solution.kt)| Medium | Array, Bit_Manipulation, Backtracking | 200 | 88.33
+
+#### Day 10 Recursion Backtracking
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0047 |[Permutations II](src/main/kotlin/g0001_0100/s0047_permutations_ii/Solution.kt)| Medium | Array, Backtracking | 199 | 100.00
+| 0039 |[Combination Sum](src/main/kotlin/g0001_0100/s0039_combination_sum/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Backtracking, Big_O_Time_O(2^n)_Space_O(n+2^n) | 226 | 88.89
+| 0040 |[Combination Sum II](src/main/kotlin/g0001_0100/s0040_combination_sum_ii/Solution.kt)| Medium | Array, Backtracking | 217 | 93.75
+
+#### Day 11 Recursion Backtracking
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0017 |[Letter Combinations of a Phone Number](src/main/kotlin/g0001_0100/s0017_letter_combinations_of_a_phone_number/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Big_O_Time_O(4^n)_Space_O(n) | 155 | 95.24
+| 0022 |[Generate Parentheses](src/main/kotlin/g0001_0100/s0022_generate_parentheses/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Big_O_Time_O(2^n)_Space_O(n) | 161 | 85.45
+| 0079 |[Word Search](src/main/kotlin/g0001_0100/s0079_word_search/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking, Big_O_Time_O(4^(m\*n))_Space_O(m\*n) | 392 | 72.92
+
+#### Day 12 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0213 |[House Robber II](src/main/kotlin/g0201_0300/s0213_house_robber_ii/Solution.kt)| Medium | Array, Dynamic_Programming | 257 | 59.62
+| 0055 |[Jump Game](src/main/kotlin/g0001_0100/s0055_jump_game/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy, Big_O_Time_O(n)_Space_O(1) | 332 | 89.35
+
+#### Day 13 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0045 |[Jump Game II](src/main/kotlin/g0001_0100/s0045_jump_game_ii/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy, Big_O_Time_O(n)_Space_O(1) | 208 | 93.37
+| 0062 |[Unique Paths](src/main/kotlin/g0001_0100/s0062_unique_paths/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics, Big_O_Time_O(m\*n)_Space_O(m\*n) | 118 | 94.65
+
+#### Day 14 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0005 |[Longest Palindromic Substring](src/main/kotlin/g0001_0100/s0005_longest_palindromic_substring/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 162 | 99.00
+| 0413 |[Arithmetic Slices](src/main/kotlin/g0401_0500/s0413_arithmetic_slices/Solution.kt)| Medium | Array, Dynamic_Programming | 156 | 100.00
+
+#### Day 15 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0091 |[Decode Ways](src/main/kotlin/g0001_0100/s0091_decode_ways/Solution.kt)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 148 | 79.07
+| 0139 |[Word Break](src/main/kotlin/g0101_0200/s0139_word_break/Solution.kt)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization, Big_O_Time_O(M+max\*N)_Space_O(M+N+max) | 197 | 87.17
+
+#### Day 16 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0300 |[Longest Increasing Subsequence](src/main/kotlin/g0201_0300/s0300_longest_increasing_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Binary_Search, Big_O_Time_O(n\*log_n)_Space_O(n) | 318 | 82.28
+| 0673 |[Number of Longest Increasing Subsequence](src/main/kotlin/g0601_0700/s0673_number_of_longest_increasing_subsequence/Solution.kt)| Medium | Array, Dynamic_Programming, Segment_Tree, Binary_Indexed_Tree | 226 | 91.67
+
+#### Day 17 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1143 |[Longest Common Subsequence](src/main/kotlin/g1101_1200/s1143_longest_common_subsequence/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 307 | 38.36
+| 0583 |[Delete Operation for Two Strings](src/main/kotlin/g0501_0600/s0583_delete_operation_for_two_strings/Solution.kt)| Medium | String, Dynamic_Programming | 197 | 100.00
+
+#### Day 18 Dynamic Programming
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0072 |[Edit Distance](src/main/kotlin/g0001_0100/s0072_edit_distance/Solution.kt)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 182 | 92.16
+| 0322 |[Coin Change](src/main/kotlin/g0301_0400/s0322_coin_change/Solution.kt)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Big_O_Time_O(m\*n)_Space_O(amount) | 332 | 50.68
+| 0343 |[Integer Break](src/main/kotlin/g0301_0400/s0343_integer_break/Solution.kt)| Medium | Dynamic_Programming, Math | 218 | 63.89
+
+#### Day 19 Bit Manipulation
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0201 |[Bitwise AND of Numbers Range](src/main/kotlin/g0201_0300/s0201_bitwise_and_of_numbers_range/Solution.kt)| Medium | Bit_Manipulation | 368 | 80.00
+
+#### Day 20 Others
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0384 |[Shuffle an Array](src/main/kotlin/g0301_0400/s0384_shuffle_an_array/Solution.kt)| Medium | Array, Math, Randomized | 940 | 72.09
+
+#### Day 21 Others
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0202 |[Happy Number](src/main/kotlin/g0201_0300/s0202_happy_number/Solution.kt)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 261 | 45.08
+| 0149 |[Max Points on a Line](src/main/kotlin/g0101_0200/s0149_max_points_on_a_line/Solution.kt)| Hard | Top_Interview_Questions, Array, Hash_Table, Math, Geometry | 307 | 83.33
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
