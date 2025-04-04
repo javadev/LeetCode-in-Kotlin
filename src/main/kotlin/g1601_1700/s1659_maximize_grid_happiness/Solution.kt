@@ -5,6 +5,7 @@ package g1601_1700.s1659_maximize_grid_happiness
 
 import kotlin.math.max
 
+@Suppress("kotlin:S107")
 class Solution {
     private fun maxHappiness(
         index: Int,
