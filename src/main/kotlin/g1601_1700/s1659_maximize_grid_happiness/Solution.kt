@@ -1,80 +1,111 @@
 package g1601_1700.s1659_maximize_grid_happiness
 
 // #Hard #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization
-// #2023_06_15_Time_181_ms_(100.00%)_Space_36.9_MB_(100.00%)
+// #2025_04_04_Time_44_ms_(100.00%)_Space_56.67_MB_(100.00%)
+
+import kotlin.math.max
 
 class Solution {
-    private var m = 0
-    private var n = 0
-    private lateinit var dp: Array<Array<Array<Array<IntArray>>>>
-    private val notPlace = 0
-    private val intro = 1
-    private val extro = 2
-    private var mod = 0
-
-    fun getMaxGridHappiness(m: Int, n: Int, introvertsCount: Int, extrovertsCount: Int): Int {
-        this.m = m
-        this.n = n
-        val numOfState = Math.pow(3.0, n.toDouble()).toInt()
-        dp = Array(m) {
-            Array(n) {
-                Array(introvertsCount + 1) {
-                    Array(extrovertsCount + 1) { IntArray(numOfState) }
-                }
-            }
+    private fun maxHappiness(
+        index: Int,
+        m: Int,
+        n: Int,
+        introverts: Int,
+        extroverts: Int,
+        board: Int,
+        dp: Array<Array<Array<IntArray>>>,
+        tmask: Int,
+    ): Int {
+        if (index >= m * n) {
+            return 0
         }
-        mod = numOfState / 3
-        return dfs(0, 0, introvertsCount, extrovertsCount, 0)
+        if (dp[index][introverts][extroverts][board] != 0) {
+            return dp[index][introverts][extroverts][board]
+        }
+        var introScore = -1
+        var extroScore = -1
+        if (introverts > 0) {
+            val newBoard = ((board shl 2) or INTROVERT) and tmask
+            introScore =
+                (
+                    120 +
+                        adjust(board, INTROVERT, n, index) +
+                        maxHappiness(
+                            index + 1,
+                            m,
+                            n,
+                            introverts - 1,
+                            extroverts,
+                            newBoard,
+                            dp,
+                            tmask,
+                        )
+                    )
+        }
+        if (extroverts > 0) {
+            val newBoard = ((board shl 2) or EXTROVERT) and tmask
+            extroScore =
+                (
+                    40 +
+                        adjust(board, EXTROVERT, n, index) +
+                        maxHappiness(
+                            index + 1,
+                            m,
+                            n,
+                            introverts,
+                            extroverts - 1,
+                            newBoard,
+                            dp,
+                            tmask,
+                        )
+                    )
+        }
+        val newBoard = ((board shl 2) or NONE) and tmask
+        val skip = maxHappiness(index + 1, m, n, introverts, extroverts, newBoard, dp, tmask)
+        dp[index][introverts][extroverts][board] =
+            max(skip, max(introScore, extroScore))
+        return dp[index][introverts][extroverts][board]
     }
 
-    private fun dfs(x: Int, y: Int, ic: Int, ec: Int, state: Int): Int {
-        if (x == m) {
-            return 0
-        } else if (y == n) {
-            return dfs(x + 1, 0, ic, ec, state)
+    private fun adjust(board: Int, thisIs: Int, col: Int, index: Int): Int {
+        val shiftBy = 2 * (col - 1)
+        var left = board and 0x03
+        if (index % col == 0) {
+            left = NONE
         }
-        if (dp[x][y][ic][ec][state] != 0) {
-            return dp[x][y][ic][ec][state]
+        val up = (board shr shiftBy) and 0x03
+        val combination = intArrayOf(left, up)
+        var adjustment = 0
+        for (neighbor in combination) {
+            if (neighbor == NONE) {
+                continue
+            }
+            if (neighbor == INTROVERT && thisIs == INTROVERT) {
+                adjustment -= 60
+            } else if (neighbor == INTROVERT && thisIs == EXTROVERT) {
+                adjustment -= 10
+            } else if (neighbor == EXTROVERT && thisIs == INTROVERT) {
+                adjustment -= 10
+            } else if (neighbor == EXTROVERT && thisIs == EXTROVERT) {
+                adjustment += 40
+            }
         }
-        // 1 - not place
-        var max = dfs(x, y + 1, ic, ec, state % mod * 3)
-        val up = state / mod
-        val left = state % 3
-        // 2 - place intro
-        if (ic > 0) {
-            var temp = 120
-            if (x > 0 && up != notPlace) {
-                temp -= 30
-                temp += if (up == intro) -30 else 20
+        return adjustment
+    }
+
+    fun getMaxGridHappiness(m: Int, n: Int, introvertsCount: Int, extrovertsCount: Int): Int {
+        val dp = Array<Array<Array<IntArray>>>(m * n) {
+            Array<Array<IntArray>>(introvertsCount + 1) {
+                Array<IntArray>(extrovertsCount + 1) { IntArray((1 shl (2 * n))) }
             }
-            if (y > 0 && left != notPlace) {
-                temp -= 30
-                temp += if (left == intro) -30 else 20
-            }
-            var nextState = state
-            nextState %= mod
-            nextState *= 3
-            nextState += intro
-            max = Math.max(max, temp + dfs(x, y + 1, ic - 1, ec, nextState))
         }
-        // 3 - place extro
-        if (ec > 0) {
-            var temp = 40
-            if (x > 0 && up != notPlace) {
-                temp += 20
-                temp += if (up == intro) -30 else 20
-            }
-            if (y > 0 && left != notPlace) {
-                temp += 20
-                temp += if (left == intro) -30 else 20
-            }
-            var nextState = state
-            nextState %= mod
-            nextState *= 3
-            nextState += extro
-            max = Math.max(max, temp + dfs(x, y + 1, ic, ec - 1, nextState))
-        }
-        dp[x][y][ic][ec][state] = max
-        return max
+        val tmask = (1 shl (2 * n)) - 1
+        return maxHappiness(0, m, n, introvertsCount, extrovertsCount, 0, dp, tmask)
+    }
+
+    companion object {
+        private const val NONE = 0
+        private const val INTROVERT = 1
+        private const val EXTROVERT = 2
     }
 }

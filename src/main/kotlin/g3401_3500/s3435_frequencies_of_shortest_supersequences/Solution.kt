@@ -1,103 +1,106 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences
 
 // #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
-// #2025_01_29_Time_35_ms_(100.00%)_Space_43.62_MB_(100.00%)
+// #2025_04_04_Time_275_ms_(100.00%)_Space_49.81_MB_(100.00%)
 
 class Solution {
-    private var m = 0
-    private var forcedMask = 0
-    private lateinit var adj: IntArray
-    private val idxToChar = CharArray(26)
-    private val charToIdx = IntArray(26)
-    private val used = BooleanArray(26)
+    private var min = Int.Companion.MAX_VALUE
+    private var lists: MutableList<IntArray> = ArrayList<IntArray>()
 
     fun supersequences(words: Array<String>): List<List<Int>> {
-        charToIdx.fill(-1)
-        for (w in words) {
-            used[w[0].code - 'a'.code] = true
-            used[w[1].code - 'a'.code] = true
-        }
-        // Map each used letter to an index [0..m-1]
-        for (c in 0..25) {
-            if (used[c]) {
-                idxToChar[m] = (c + 'a'.code).toChar()
-                charToIdx[c] = m++
+        val pairs = Array<BooleanArray>(26) { BooleanArray(26) }
+        val counts = IntArray(26)
+        for (word in words) {
+            val a = word[0].code - 'a'.code
+            val b = word[1].code - 'a'.code
+            if (!pairs[a][b]) {
+                pairs[a][b] = true
+                counts[a]++
+                counts[b]++
             }
         }
-        adj = IntArray(m)
-        // Build graph and record forced duplicates
-        for (w in words) {
-            val u = charToIdx[w[0].code - 'a'.code]
-            val v = charToIdx[w[1].code - 'a'.code]
-            if (u == v) {
-                forcedMask = forcedMask or (1 shl u)
+        val links: Array<ArrayList<Int>> = Array<ArrayList<Int>>(26) { ArrayList<Int>() }
+        val counts1 = IntArray(26)
+        val sides = IntArray(26)
+        for (i in 0..25) {
+            for (j in 0..25) {
+                if (pairs[i][j]) {
+                    links[i].add(j)
+                    counts1[j]++
+                    sides[i] = sides[i] or 1
+                    sides[j] = sides[j] or 2
+                }
+            }
+        }
+        val arr = IntArray(26)
+        for (i in 0..25) {
+            if (counts[i] <= 1) {
+                arr[i] = counts[i]
+            } else if (counts1[i] == 0 || sides[i] != 3) {
+                arr[i] = 1
+            } else if (pairs[i][i]) {
+                arr[i] = 2
             } else {
-                adj[u] = adj[u] or (1 shl v)
+                arr[i] = -1
             }
         }
-        // Try all supersets of forcedMask; keep those that kill all cycles
-        var best = 9999
-        val goodSets: MutableList<Int> = ArrayList<Int>()
-        for (s in 0..<(1 shl m)) {
-            if ((s and forcedMask) != forcedMask) {
-                continue
+        dfs(links, 0, arr, IntArray(26), 0)
+        val res: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()
+        for (arr1 in lists) {
+            val list: MutableList<Int> = ArrayList<Int>()
+            for (n in arr1) {
+                list.add(n)
             }
-            val size = Integer.bitCount(s)
-            if (size <= best && !hasCycle(s)) {
-                if (size < best) {
-                    best = size
-                    goodSets.clear()
-                }
-                goodSets.add(s)
-            }
+            res.add(list)
         }
-        // Build distinct freq arrays from these sets
-        val seen: MutableSet<String> = HashSet<String>()
-        val ans: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()
-        for (s in goodSets) {
-            val freq = IntArray(26)
-            for (i in 0..<m) {
-                freq[idxToChar[i].code - 'a'.code] = if ((s and (1 shl i)) != 0) 2 else 1
-            }
-            val key = freq.contentToString()
-            if (seen.add(key)) {
-                val tmp: MutableList<Int> = ArrayList<Int>()
-                for (f in freq) {
-                    tmp.add(f)
-                }
-                ans.add(tmp)
-            }
-        }
-        return ans
+        return res
     }
 
-    private fun hasCycle(mask: Int): Boolean {
-        val color = IntArray(m)
-        for (i in 0..<m) {
-            if (((mask shr i) and 1) == 0 && color[i] == 0 && dfs(i, color, mask)) {
-                return true
-            }
+    private fun dfs(links: Array<ArrayList<Int>>, i: Int, arr1: IntArray, arr: IntArray, n: Int) {
+        if (n > min) {
+            return
         }
-        return false
+        if (i == 26) {
+            if (!chk(links, arr)) {
+                return
+            }
+            if (n < min) {
+                min = n
+                lists = ArrayList<IntArray>()
+                lists.add(arr.clone())
+            } else if (n == min) {
+                lists.add(arr.clone())
+            }
+            return
+        }
+        if (arr1[i] >= 0) {
+            arr[i] = arr1[i]
+            dfs(links, i + 1, arr1, arr, n + arr1[i])
+        } else {
+            arr[i] = 1
+            dfs(links, i + 1, arr1, arr, n + 1)
+            arr[i] = 2
+            dfs(links, i + 1, arr1, arr, n + 2)
+        }
     }
 
-    private fun dfs(u: Int, color: IntArray, mask: Int): Boolean {
-        color[u] = 1
-        var nxt = adj[u]
-        while (nxt != 0) {
-            val v = Integer.numberOfTrailingZeros(nxt)
-            nxt = nxt and (nxt - 1)
-            if (((mask shr v) and 1) == 1) {
-                continue
+    private fun chk(links: Array<ArrayList<Int>>, arr: IntArray): Boolean {
+        for (i in 0..25) {
+            if (arr[i] == 1 && dfs1(links, arr, BooleanArray(26), i)) {
+                return false
             }
-            if (color[v] == 1) {
-                return true
-            }
-            if (color[v] == 0 && dfs(v, color, mask)) {
+        }
+        return true
+    }
+
+    private fun dfs1(links: Array<ArrayList<Int>>, arr: IntArray, seens: BooleanArray, i: Int): Boolean {
+        seens[i] = true
+        for (next in links[i]) {
+            if (arr[next] == 1 && (seens[next] || dfs1(links, arr, seens, next))) {
                 return true
             }
         }
-        color[u] = 2
+        seens[i] = false
         return false
     }
 }
