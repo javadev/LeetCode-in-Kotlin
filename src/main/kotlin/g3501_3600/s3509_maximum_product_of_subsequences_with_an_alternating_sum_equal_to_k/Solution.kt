@@ -11,11 +11,10 @@ class Solution {
             return prod * 31 + parity
         }
 
-        override fun equals(obj: Any?): Boolean {
-            if (obj !is StateKey) {
+        override fun equals(other: Any?): Boolean {
+            if (other !is StateKey) {
                 return false
             }
-            val other = obj
             return this.prod == other.prod && this.parity == other.parity
         }
     }
@@ -96,7 +95,7 @@ class Solution {
             }
             val bs: BitSet = entry.value
             if (targetIdx >= 0 && targetIdx < size && bs[targetIdx]) {
-                answer = max(answer.toDouble(), key.prod.toDouble()).toInt()
+                answer = max(answer, key.prod)
             }
         }
         return answer
