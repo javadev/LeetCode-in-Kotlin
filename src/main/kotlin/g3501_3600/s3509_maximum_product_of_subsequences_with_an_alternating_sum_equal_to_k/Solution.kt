@@ -95,7 +95,7 @@ class Solution {
                 continue
             }
             val bs: BitSet = entry.value
-            if (targetIdx >= 0 && targetIdx < size && bs.get(targetIdx)) {
+            if (targetIdx >= 0 && targetIdx < size && bs[targetIdx]) {
                 answer = max(answer.toDouble(), key.prod.toDouble()).toInt()
             }
         }

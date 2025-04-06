@@ -65,7 +65,7 @@ class Router(private val size: Int) {
     }
 
     fun getCount(destination: Int, startTime: Int, endTime: Int): Int {
-        if (map.containsKey(destination)) {
+        return if (map.containsKey(destination)) {
             val list: ArrayList<IntArray> = map[destination]!!
             var lower = -1
             var higher = -1
@@ -81,13 +81,13 @@ class Router(private val size: Int) {
                     break
                 }
             }
-            return if (lower == -1 || higher == -1) {
+            if (lower == -1 || higher == -1) {
                 0
             } else {
                 max(0.0, (higher - lower + 1).toDouble()).toInt()
             }
         } else {
-            return 0
+            0
         }
     }
 }
