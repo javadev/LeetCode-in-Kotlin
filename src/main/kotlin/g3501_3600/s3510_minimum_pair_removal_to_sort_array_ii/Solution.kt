@@ -179,10 +179,10 @@ class Solution {
         }
 
         private fun compare(i: Int, j: Int): Int {
-            if (hi[i] != hi[j]) {
-                return hi[i].compareTo(hi[j])
+            return if (hi[i] != hi[j]) {
+                hi[i].compareTo(hi[j])
             } else {
-                return lo[i].compareTo(lo[j])
+                lo[i].compareTo(lo[j])
             }
         }
 
