@@ -2,15 +2,6 @@ package g3501_3600.s3510_minimum_pair_removal_to_sort_array_ii
 
 // #Hard #2025_04_06_Time_291_ms_(100.00%)_Space_84.49_MB_(100.00%)
 
-import kotlin.Array
-import kotlin.Int
-import kotlin.IntArray
-import kotlin.LongArray
-import kotlin.String
-import kotlin.arrayOfNulls
-import kotlin.assert
-import kotlin.run
-
 class Solution {
     fun minimumPairRemoval(nums: IntArray): Int {
         val n = nums.size
