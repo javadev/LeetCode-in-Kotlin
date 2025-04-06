@@ -19,7 +19,7 @@ class Router(private val size: Int) {
     fun addPacket(source: Int, destination: Int, timestamp: Int): Boolean {
         if (map.containsKey(destination)) {
             var found = false
-            val list: ArrayList<IntArray> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map[destination]!!
             for (i in list.indices.reversed()) {
                 if (list[i][1] < timestamp) {
                     break
@@ -33,7 +33,7 @@ class Router(private val size: Int) {
             }
         }
         if (map.containsKey(destination)) {
-            val list: ArrayList<IntArray> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map[destination]!!
             list.add(intArrayOf(source, timestamp))
             cur++
             q.offer(intArrayOf(source, destination, timestamp))
@@ -55,7 +55,7 @@ class Router(private val size: Int) {
             return intArrayOf()
         }
         val temp = q.poll()
-        val list: ArrayList<IntArray> = map.get(temp[1])!!
+        val list: ArrayList<IntArray> = map[temp[1]]!!
         list.removeAt(0)
         if (list.isEmpty()) {
             map.remove(temp[1])
@@ -66,7 +66,7 @@ class Router(private val size: Int) {
 
     fun getCount(destination: Int, startTime: Int, endTime: Int): Int {
         if (map.containsKey(destination)) {
-            val list: ArrayList<IntArray> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map[destination]!!
             var lower = -1
             var higher = -1
             for (i in list.indices) {
