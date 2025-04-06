@@ -9,21 +9,21 @@ import kotlin.math.max
 class Router(private val size: Int) {
     private var cur = 0
     private val q: Queue<IntArray>
-    private val map: HashMap<Int?, ArrayList<IntArray?>>
+    private val map: HashMap<Int, ArrayList<IntArray>>
 
     init {
         q = LinkedList<IntArray>()
-        map = HashMap<Int?, ArrayList<IntArray?>>()
+        map = HashMap<Int, ArrayList<IntArray>>()
     }
 
     fun addPacket(source: Int, destination: Int, timestamp: Int): Boolean {
         if (map.containsKey(destination)) {
             var found = false
-            val list: ArrayList<IntArray?> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map.get(destination)!!
             for (i in list.indices.reversed()) {
-                if (list.get(i)!![1] < timestamp) {
+                if (list[i][1] < timestamp) {
                     break
-                } else if (list.get(i)!![0] == source) {
+                } else if (list[i][0] == source) {
                     found = true
                     break
                 }
@@ -33,12 +33,12 @@ class Router(private val size: Int) {
             }
         }
         if (map.containsKey(destination)) {
-            val list: ArrayList<IntArray?> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map.get(destination)!!
             list.add(intArrayOf(source, timestamp))
             cur++
             q.offer(intArrayOf(source, destination, timestamp))
         } else {
-            val temp = ArrayList<IntArray?>()
+            val temp = ArrayList<IntArray>()
             temp.add(intArrayOf(source, timestamp))
             cur++
             map.put(destination, temp)
@@ -55,7 +55,7 @@ class Router(private val size: Int) {
             return intArrayOf()
         }
         val temp = q.poll()
-        val list: ArrayList<IntArray?> = map.get(temp[1])!!
+        val list: ArrayList<IntArray> = map.get(temp[1])!!
         list.removeAt(0)
         if (list.isEmpty()) {
             map.remove(temp[1])
@@ -66,25 +66,25 @@ class Router(private val size: Int) {
 
     fun getCount(destination: Int, startTime: Int, endTime: Int): Int {
         if (map.containsKey(destination)) {
-            val list: ArrayList<IntArray?> = map.get(destination)!!
+            val list: ArrayList<IntArray> = map.get(destination)!!
             var lower = -1
             var higher = -1
             for (i in list.indices) {
-                if (list.get(i)!![1] >= startTime) {
+                if (list[i][1] >= startTime) {
                     lower = i
                     break
                 }
             }
             for (i in list.indices.reversed()) {
-                if (list.get(i)!![1] <= endTime) {
+                if (list[i][1] <= endTime) {
                     higher = i
                     break
                 }
             }
-            if (lower == -1 || higher == -1) {
-                return 0
+            return if (lower == -1 || higher == -1) {
+                0
             } else {
-                return max(0.0, (higher - lower + 1).toDouble()).toInt()
+                max(0.0, (higher - lower + 1).toDouble()).toInt()
             }
         } else {
             return 0
