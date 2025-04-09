@@ -25,4 +25,9 @@ internal class SolutionTest {
             equalTo<Int>(9),
         )
     }
+
+    @Test
+    fun maxProduct4() {
+        assertThat(Solution().maxProduct(intArrayOf(12, 0, 9), 21, 20), equalTo(0))
+    }
 }
