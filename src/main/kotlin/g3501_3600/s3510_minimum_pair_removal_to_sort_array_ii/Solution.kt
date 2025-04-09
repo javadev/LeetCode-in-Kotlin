@@ -1,6 +1,7 @@
 package g3501_3600.s3510_minimum_pair_removal_to_sort_array_ii
 
-// #Hard #2025_04_06_Time_291_ms_(100.00%)_Space_84.49_MB_(100.00%)
+// #Hard #Array #Hash_Table #Heap_Priority_Queue #Simulation #Linked_List #Ordered_Set
+// #Doubly_Linked_List #2025_04_09_Time_284_ms_(100.00%)_Space_80.60_MB_(90.91%)
 
 class Solution {
     fun minimumPairRemoval(nums: IntArray): Int {

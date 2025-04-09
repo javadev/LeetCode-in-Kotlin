@@ -1,6 +1,7 @@
 package g3501_3600.s3509_maximum_product_of_subsequences_with_an_alternating_sum_equal_to_k
 
-// #Hard #2025_04_06_Time_91_ms_(100.00%)_Space_59.23_MB_(100.00%)
+// #Hard #Array #Hash_Table #Dynamic_Programming
+// #2025_04_09_Time_99_ms_(96.30%)_Space_59.53_MB_(92.59%)
 
 import java.util.BitSet
 import kotlin.math.max

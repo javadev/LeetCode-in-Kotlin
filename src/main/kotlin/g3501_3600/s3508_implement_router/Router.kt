@@ -1,6 +1,7 @@
 package g3501_3600.s3508_implement_router
 
-// #Medium #2025_04_06_Time_267_ms_(100.00%)_Space_172.86_MB_(85.71%)
+// #Medium #Array #Hash_Table #Binary_Search #Design #Ordered_Set #Queue
+// #2025_04_09_Time_202_ms_(100.00%)_Space_172.82_MB_(95.24%)
 
 import java.util.LinkedList
 import java.util.Queue
