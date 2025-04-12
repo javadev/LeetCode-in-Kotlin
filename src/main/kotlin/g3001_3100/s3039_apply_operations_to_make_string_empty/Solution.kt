@@ -14,7 +14,7 @@ class Solution {
         val sb = StringBuilder()
         for (c in ar) {
             freq[c.code - 'a'.code]++
-            max = max(freq[c.code - 'a'.code].toDouble(), max.toDouble()).toInt()
+            max = max(freq[c.code - 'a'.code], max)
         }
         for (i in n - 1 downTo 0) {
             if (freq[ar[i].code - 'a'.code] == max) {

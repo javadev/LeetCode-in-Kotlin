@@ -51,7 +51,7 @@ class Router(private val size: Int) {
         return true
     }
 
-    fun forwardPacket(): IntArray? {
+    fun forwardPacket(): IntArray {
         if (q.isEmpty()) {
             return intArrayOf()
         }
@@ -85,7 +85,7 @@ class Router(private val size: Int) {
             if (lower == -1 || higher == -1) {
                 0
             } else {
-                max(0.0, (higher - lower + 1).toDouble()).toInt()
+                max(0, higher - lower + 1)
             }
         } else {
             0

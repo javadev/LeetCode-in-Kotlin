@@ -10,7 +10,7 @@ class Solution {
         var addResult = nums[0].toLong()
         var subResult = nums[0].toLong()
         for (i in 1 until n) {
-            val tempAdd = (max(addResult.toDouble(), subResult.toDouble()) + nums[i]).toLong()
+            val tempAdd = max(addResult, subResult) + nums[i]
             val tempSub = addResult - nums[i]
             addResult = tempAdd
             subResult = tempSub

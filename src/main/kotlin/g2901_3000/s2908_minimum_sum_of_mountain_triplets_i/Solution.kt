@@ -15,7 +15,7 @@ class Solution {
                 for (k in j + 1 until nums.size) {
                     if (nums[i] < nums[j] && nums[k] < nums[j]) {
                         val min = nums[i] + nums[k] + nums[j]
-                        output = min(min.toDouble(), output.toDouble()).toInt()
+                        output = min(min, output)
                     }
                 }
             }

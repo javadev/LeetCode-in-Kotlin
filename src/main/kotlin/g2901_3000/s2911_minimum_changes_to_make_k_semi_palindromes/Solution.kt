@@ -28,7 +28,7 @@ class Solution {
         }
         var min = INF
         for (j in (k - 1) * 2 until (i - 1)) {
-            min = min(min.toDouble(), (calc(j, k - 1) + change(j, i)).toDouble()).toInt()
+            min = min(min, calc(j, k - 1) + change(j, i))
         }
         dp[i][k] = min
         return min

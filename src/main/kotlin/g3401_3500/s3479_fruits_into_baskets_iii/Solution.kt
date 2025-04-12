@@ -20,7 +20,7 @@ class Solution {
             seg[size + i] = 0
         }
         for (i in size - 1 downTo 1) {
-            seg[i] = max(seg[i shl 1].toDouble(), seg[i shl 1 or 1].toDouble()).toInt()
+            seg[i] = max(seg[i shl 1], seg[i shl 1 or 1])
         }
         var ans = 0
         for (f in fruits) {
@@ -46,7 +46,7 @@ class Solution {
         seg[i] = `val`
         i /= 2
         while (i > 0) {
-            seg[i] = max(seg[i shl 1].toDouble(), seg[i shl 1 or 1].toDouble()).toInt()
+            seg[i] = max(seg[i shl 1], seg[i shl 1 or 1])
             i /= 2
         }
     }

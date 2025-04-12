@@ -66,7 +66,7 @@ class Solution {
         for (i in 2..<m - 2) {
             var len = 0
             if (i < right) {
-                len = min(lens[2 * center - i].toDouble(), (right - i).toDouble()).toInt()
+                len = min(lens[2 * center - i], right - i)
             }
             while (t[i + len + 1] == t[i - len - 1]) {
                 len++

@@ -14,7 +14,7 @@ class Solution {
         for (i in word.indices) {
             val a = word[i]
             if (a.code < 91) {
-                capital[a.code - 65] = min(capital[a.code - 65].toDouble(), i.toDouble()).toInt()
+                capital[a.code - 65] = min(capital[a.code - 65], i)
             } else {
                 small[a.code - 97] = i
             }

@@ -10,7 +10,7 @@ class Solution {
         var max = Int.MIN_VALUE
         val n = nums.size
         for (num in nums) {
-            max = max(max.toDouble(), num.toDouble()).toInt()
+            max = max(max, num)
         }
         val bins = LongArray(max + 1)
         var mostFrequentID = 0

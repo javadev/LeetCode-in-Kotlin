@@ -82,7 +82,7 @@ class Solution {
         run {
             var i = 0
             while (k != 0 && i < m) {
-                max = max(max.toDouble(), b[i][k - 1].toDouble()).toInt()
+                max = max(max, b[i][k - 1])
                 i++
             }
         }

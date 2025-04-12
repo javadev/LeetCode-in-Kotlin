@@ -10,12 +10,12 @@ class Solution {
         var ans = maxHeights[pickId].toLong()
         var min = maxHeights[pickId].toLong()
         for (i in pickId - 1 downTo 0) {
-            min = min(min.toDouble(), maxHeights[i].toDouble()).toLong()
+            min = min(min, maxHeights[i].toLong())
             ans += min
         }
         min = maxHeights[pickId].toLong()
         for (i in pickId + 1 until maxHeights.size) {
-            min = min(min.toDouble(), maxHeights[i].toDouble()).toLong()
+            min = min(min, maxHeights[i].toLong())
             ans += min
         }
         return ans
@@ -30,7 +30,7 @@ class Solution {
                         maxHeights[i] >= maxHeights[i + 1]
                     )
             ) {
-                ans = max(ans.toDouble(), `fun`(maxHeights, i).toDouble()).toLong()
+                ans = max(ans, `fun`(maxHeights, i))
             }
         }
         return ans

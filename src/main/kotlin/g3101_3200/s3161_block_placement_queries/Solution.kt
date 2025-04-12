@@ -70,7 +70,7 @@ class Solution {
                 right.parent[x] = next
                 bit.update(next, next - pre)
             } else {
-                val maxGap = max(bit.query(pre).toDouble(), (x - pre).toDouble()).toInt()
+                val maxGap = max(bit.query(pre), x - pre)
                 ans[index--] = maxGap >= q[2]
             }
         }
@@ -83,7 +83,7 @@ class Solution {
         fun update(i: Int, v: Int) {
             var i = i
             while (i < n) {
-                tree[i] = max(tree[i].toDouble(), v.toDouble()).toInt()
+                tree[i] = max(tree[i], v)
                 i += i and -i
             }
         }
@@ -92,7 +92,7 @@ class Solution {
             var i = i
             var result = 0
             while (i > 0) {
-                result = max(result.toDouble(), tree[i].toDouble()).toInt()
+                result = max(result, tree[i])
                 i = i and i - 1
             }
             return result
