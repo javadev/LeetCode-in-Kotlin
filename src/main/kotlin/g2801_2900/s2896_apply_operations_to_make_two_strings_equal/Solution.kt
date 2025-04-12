@@ -21,14 +21,12 @@ class Solution {
         }
         val dp = IntArray(m)
         dp[0] = 0
-        dp[1] = min(x.toDouble(), (diffs[1] - diffs[0]).toDouble()).toInt()
+        dp[1] = min(x, diffs[1] - diffs[0])
         for (i in 2 until m) {
             if ((i and 1) == 1) {
-                dp[i] = min((dp[i - 1] + x).toDouble(), (dp[i - 2] + diffs[i] - diffs[i - 1]).toDouble())
-                    .toInt()
+                dp[i] = min(dp[i - 1] + x, dp[i - 2] + diffs[i] - diffs[i - 1])
             } else {
-                dp[i] = min(dp[i - 1].toDouble(), (dp[i - 2] + diffs[i] - diffs[i - 1]).toDouble())
-                    .toInt()
+                dp[i] = min(dp[i - 1], dp[i - 2] + diffs[i] - diffs[i - 1])
             }
         }
         return dp[m - 1]

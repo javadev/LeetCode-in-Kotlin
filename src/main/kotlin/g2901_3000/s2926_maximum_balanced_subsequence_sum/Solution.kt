@@ -68,7 +68,7 @@ class Solution {
             var index = index
             var result: Long = 0
             while (index > 0) {
-                result = max(tree[index].toDouble(), result.toDouble()).toLong()
+                result = max(tree[index], result)
                 index -= lowbit(index)
             }
             return result

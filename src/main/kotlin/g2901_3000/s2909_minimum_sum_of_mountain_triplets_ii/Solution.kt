@@ -32,8 +32,7 @@ class Solution {
         var ans = Int.MAX_VALUE
         for (i in 0 until n) {
             if (leftSmallest[i] != -1 && rightSmallest[i] != -1) {
-                ans = min(ans.toDouble(), (leftSmallest[i] + rightSmallest[i] + nums[i]).toDouble())
-                    .toInt()
+                ans = min(ans, leftSmallest[i] + rightSmallest[i] + nums[i])
             }
         }
         if (ans == Int.MAX_VALUE) {

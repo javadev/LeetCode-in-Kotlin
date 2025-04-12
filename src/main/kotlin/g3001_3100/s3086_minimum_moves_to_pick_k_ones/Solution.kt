@@ -53,7 +53,7 @@ class Solution {
             val area1 = (mid - l + 1).toLong() * median
             val area2 = (r - mid).toLong() * median
             val curRes = area1 - sum1 + sum2 - area2
-            res = min(res.toDouble(), curRes.toDouble()).toLong()
+            res = min(res, curRes)
             l++
         }
         res += 2L * maxChanges

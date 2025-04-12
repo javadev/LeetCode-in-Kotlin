@@ -10,8 +10,8 @@ class Solution {
         var m1 = Int.MIN_VALUE
         var m2 = Int.MAX_VALUE
         for (num in nums) {
-            m1 = max(m1.toDouble(), num.toDouble()).toInt()
-            m2 = min(m2.toDouble(), num.toDouble()).toInt()
+            m1 = max(m1, num)
+            m2 = min(m2, num)
         }
         var max = 0
         val f = IntArray(m1 - m2 + 1)

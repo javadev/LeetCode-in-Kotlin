@@ -9,7 +9,7 @@ class Solution {
         val n = enemyEnergies.size
         var min = enemyEnergies[0]
         for (i in 1 until n) {
-            min = min(min.toDouble(), enemyEnergies[i].toDouble()).toInt()
+            min = min(min, enemyEnergies[i])
         }
         if (currentEnergy == 0 || currentEnergy < min) {
             return 0

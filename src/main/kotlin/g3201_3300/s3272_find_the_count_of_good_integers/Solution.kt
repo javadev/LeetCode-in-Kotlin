@@ -73,7 +73,7 @@ class Solution {
 
     private fun allKPalindromes(n: Int, k: Int): List<String> {
         val ans = StringBuilder(n)
-        ans.append("0".repeat(max(0.0, n.toDouble()).toInt()))
+        ans.append("0".repeat(max(0, n)))
         val rem = IntArray(n)
         rem[0] = 1
         for (i in 1 until n) {

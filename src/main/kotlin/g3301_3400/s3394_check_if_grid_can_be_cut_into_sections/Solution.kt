@@ -32,12 +32,12 @@ class Solution {
             if (start >= max && ++cut == 2) {
                 return true
             }
-            max = max(max.toDouble(), (arr[i] and MASK.toLong()).toInt().toDouble()).toInt()
+            max = max(max, (arr[i] and MASK.toLong()).toInt())
         }
         return false
     }
 
     companion object {
-        private val MASK = (1 shl 30) - 1
+        private const val MASK = (1 shl 30) - 1
     }
 }

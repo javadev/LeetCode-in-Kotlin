@@ -28,8 +28,7 @@ class Solution {
                 val curLen = search(
                     cs,
                     i,
-                    min(m.toDouble(), (i + resultLen).toDouble())
-                        .toInt(),
+                    min(m, (i + resultLen)),
                     k,
                 )
                 if (curLen != -1) {

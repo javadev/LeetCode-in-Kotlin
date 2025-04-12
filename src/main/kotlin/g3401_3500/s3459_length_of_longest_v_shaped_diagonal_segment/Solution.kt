@@ -31,7 +31,7 @@ class Solution {
             for (j in 0..<m) {
                 if (g[i][j] == 1) {
                     for (d in 0..3) {
-                        res = max(res.toDouble(), dp(i, j, 1, d, 1).toDouble()).toInt()
+                        res = max(res, dp(i, j, 1, d, 1))
                     }
                 }
             }

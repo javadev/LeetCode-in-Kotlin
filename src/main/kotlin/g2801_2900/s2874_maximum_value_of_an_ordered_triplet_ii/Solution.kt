@@ -10,14 +10,14 @@ class Solution {
         var tempMax = nums[0]
         for (i in 1 until diff.size - 1) {
             diff[i] = tempMax - nums[i]
-            tempMax = max(tempMax.toDouble(), nums[i].toDouble()).toInt()
+            tempMax = max(tempMax, nums[i])
         }
         var max = Long.MIN_VALUE
         tempMax = nums[nums.size - 1]
         for (i in nums.size - 2 downTo 1) {
-            max = max(max.toDouble(), (tempMax.toLong() * diff[i]).toDouble()).toLong()
-            tempMax = max(tempMax.toDouble(), nums[i].toDouble()).toInt()
+            max = max(max, tempMax.toLong() * diff[i])
+            tempMax = max(tempMax, nums[i])
         }
-        return max(max.toDouble(), 0.0).toLong()
+        return max(max, 0)
     }
 }

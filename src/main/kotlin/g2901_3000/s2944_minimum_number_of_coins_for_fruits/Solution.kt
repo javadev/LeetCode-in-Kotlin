@@ -16,7 +16,7 @@ class Solution {
             if (acquired + 1 < n) {
                 var min = Int.MAX_VALUE
                 for (j in acquired + 1 downTo i + 1) {
-                    min = min(min.toDouble(), dp[j].toDouble()).toInt()
+                    min = min(min, dp[j])
                 }
                 dp[i] = prices[i] + min
             } else {

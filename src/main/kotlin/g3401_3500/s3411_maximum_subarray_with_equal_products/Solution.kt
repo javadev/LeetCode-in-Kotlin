@@ -26,7 +26,7 @@ class Solution {
                 currGCD = gcd(currGCD, nums[j])
                 currLCM = lcm(currLCM, nums[j])
                 if (currPro == currLCM * currGCD) {
-                    maxL = max(maxL.toDouble(), (j - i + 1).toDouble()).toInt()
+                    maxL = max(maxL, j - i + 1)
                 }
             }
         }

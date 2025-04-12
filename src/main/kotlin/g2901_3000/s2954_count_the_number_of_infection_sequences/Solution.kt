@@ -40,7 +40,7 @@ class Solution {
         var res: Long = 1
         for (i in 1 until sick.size) {
             val group = sick[i] - sick[i - 1] - 1
-            res = res * modPow(2, max(0.0, (group - 1).toDouble()).toInt(), MOD) % MOD
+            res = res * modPow(2, max(0, group - 1), MOD) % MOD
             res = res * binomCoeff(sick[i] - i, group) % MOD
         }
         return (res * binomCoeff(n - sick.size, n - sick[sick.size - 1] - 1) % MOD).toInt()

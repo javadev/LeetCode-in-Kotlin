@@ -15,7 +15,7 @@ class Solution {
         var max = 0
         for (j in capacity) {
             count[j]++
-            max = max(max.toDouble(), j.toDouble()).toInt()
+            max = max(max, j)
         }
         for (i in max downTo 0) {
             if (count[i] >= 1) {
