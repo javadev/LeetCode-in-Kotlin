@@ -1,8 +1,8 @@
 package g0001_0100.s0011_container_with_most_water
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Greedy #Two_Pointers
-// #Algorithm_II_Day_4_Two_Pointers #Top_Interview_150_Two_Pointers #Big_O_Time_O(n)_Space_O(1)
-// #2023_07_03_Time_402_ms_(78.57%)_Space_52.1_MB_(77.51%)
+// #LeetCode_75_Two_Pointers #Algorithm_II_Day_4_Two_Pointers #Top_Interview_150_Two_Pointers
+// #Big_O_Time_O(n)_Space_O(1) #2023_07_03_Time_402_ms_(78.57%)_Space_52.1_MB_(77.51%)
 
 class Solution {
     fun maxArea(height: IntArray): Int {

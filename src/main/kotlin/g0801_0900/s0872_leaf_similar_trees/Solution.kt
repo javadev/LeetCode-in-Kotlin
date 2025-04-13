@@ -1,6 +1,6 @@
 package g0801_0900.s0872_leaf_similar_trees
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree
+// #Easy #Depth_First_Search #Tree #Binary_Tree #LeetCode_75_Binary_Tree/DFS
 // #2023_04_08_Time_140_ms_(100.00%)_Space_33.9_MB_(64.29%)
 
 import com_github_leetcode.TreeNode

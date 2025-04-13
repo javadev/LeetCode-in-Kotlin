@@ -1,7 +1,7 @@
 package g0101_0200.s0151_reverse_words_in_a_string
 
-// #Medium #String #Two_Pointers #Udemy_Strings #Top_Interview_150_Array/String
-// #2022_10_11_Time_206_ms_(98.90%)_Space_36.1_MB_(96.70%)
+// #Medium #String #Two_Pointers #LeetCode_75_Array/String #Udemy_Strings
+// #Top_Interview_150_Array/String #2022_10_11_Time_206_ms_(98.90%)_Space_36.1_MB_(96.70%)
 
 class Solution {
     fun reverseWords(s: String): String {

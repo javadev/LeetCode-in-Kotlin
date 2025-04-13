@@ -1,6 +1,6 @@
 package g2301_2400.s2336_smallest_number_in_infinite_set
 
-// #Medium #Hash_Table #Design #Heap_Priority_Queue
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #LeetCode_75_Heap/Priority_Queue
 // #2023_07_01_Time_308_ms_(95.45%)_Space_45.1_MB_(79.55%)
 
 class SmallestInfiniteSet {

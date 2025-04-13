@@ -1,6 +1,6 @@
 package g2201_2300.s2300_successful_pairs_of_spells_and_potions
 
-// #Medium #Array #Sorting #Binary_Search #Two_Pointers
+// #Medium #Array #Sorting #Binary_Search #Two_Pointers #LeetCode_75_Binary_Search
 // #2023_06_28_Time_818_ms_(72.22%)_Space_62.9_MB_(44.44%)
 
 class Solution {

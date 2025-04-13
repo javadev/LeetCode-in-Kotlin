@@ -1,7 +1,7 @@
 package g0601_0700.s0700_search_in_a_binary_search_tree
 
-// #Easy #Tree #Binary_Tree #Binary_Search_Tree #Data_Structure_I_Day_13_Tree
-// #2023_02_22_Time_251_ms_(88.31%)_Space_51_MB_(7.79%)
+// #Easy #Tree #Binary_Tree #Binary_Search_Tree #LeetCode_75_Binary_Search_Tree
+// #Data_Structure_I_Day_13_Tree #2023_02_22_Time_251_ms_(88.31%)_Space_51_MB_(7.79%)
 
 import com_github_leetcode.TreeNode
 

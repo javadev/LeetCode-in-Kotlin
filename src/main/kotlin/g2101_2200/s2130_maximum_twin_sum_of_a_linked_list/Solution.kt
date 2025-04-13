@@ -1,6 +1,7 @@
 package g2101_2200.s2130_maximum_twin_sum_of_a_linked_list
 
-// #Medium #Two_Pointers #Stack #Linked_List #2023_10_02_Time_458_ms_(93.88%)_Space_61.6_MB_(35.71%)
+// #Medium #Two_Pointers #Stack #Linked_List #LeetCode_75_LinkedList
+// #2023_10_02_Time_458_ms_(93.88%)_Space_61.6_MB_(35.71%)
 
 import com_github_leetcode.ListNode
 
