@@ -1,6 +1,6 @@
 package g0701_0800.s0735_asteroid_collision
 
-// #Medium #Array #Stack #Level_2_Day_18_Stack
+// #Medium #Array #Stack #LeetCode_75_Stack #Level_2_Day_18_Stack
 // #2023_03_02_Time_243_ms_(100.00%)_Space_37.9_MB_(88.46%)
 
 import java.util.Deque

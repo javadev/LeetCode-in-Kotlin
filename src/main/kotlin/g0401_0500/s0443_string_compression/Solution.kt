@@ -1,6 +1,7 @@
 package g0401_0500.s0443_string_compression
 
-// #Medium #String #Two_Pointers #2022_12_23_Time_198_ms_(92.68%)_Space_35.4_MB_(95.12%)
+// #Medium #String #Two_Pointers #LeetCode_75_Array/String
+// #2022_12_23_Time_198_ms_(92.68%)_Space_35.4_MB_(95.12%)
 
 class Solution {
     /* This is breaking the rules, it's not in-place. */

@@ -1,6 +1,6 @@
 package g0701_0800.s0724_find_pivot_index
 
-// #Easy #Array #Prefix_Sum #Level_1_Day_1_Prefix_Sum
+// #Easy #Array #Prefix_Sum #LeetCode_75_Prefix_Sum #Level_1_Day_1_Prefix_Sum
 // #2023_02_28_Time_255_ms_(88.92%)_Space_38.7_MB_(93.26%)
 
 class Solution {

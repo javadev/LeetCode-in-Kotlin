@@ -1,6 +1,7 @@
 package g1001_1100.s1071_greatest_common_divisor_of_strings
 
-// #Easy #String #Math #2023_05_31_Time_150_ms_(80.68%)_Space_36.2_MB_(84.09%)
+// #Easy #String #Math #LeetCode_75_Array/String
+// #2023_05_31_Time_150_ms_(80.68%)_Space_36.2_MB_(84.09%)
 
 class Solution {
     fun gcdOfStrings(str1: String?, str2: String?): String {

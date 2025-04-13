@@ -1,6 +1,7 @@
 package g1601_1700.s1657_determine_if_two_strings_are_close
 
-// #Medium #String #Hash_Table #Sorting #2023_06_15_Time_287_ms_(100.00%)_Space_40.1_MB_(97.06%)
+// #Medium #String #Hash_Table #Sorting #LeetCode_75_Hash_Map/Set
+// #2023_06_15_Time_287_ms_(100.00%)_Space_40.1_MB_(97.06%)
 
 class Solution {
     fun closeStrings(word1: String, word2: String): Boolean {

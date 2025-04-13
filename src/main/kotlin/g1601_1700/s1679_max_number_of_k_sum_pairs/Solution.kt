@@ -1,6 +1,6 @@
 package g1601_1700.s1679_max_number_of_k_sum_pairs
 
-// #Medium #Array #Hash_Table #Sorting #Two_Pointers
+// #Medium #Array #Hash_Table #Sorting #Two_Pointers #LeetCode_75_Two_Pointers
 // #2023_06_15_Time_468_ms_(92.86%)_Space_50.5_MB_(92.86%)
 
 class Solution {

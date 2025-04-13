@@ -1,7 +1,8 @@
 package g0701_0800.s0739_daily_temperatures
 
-// #Medium #Top_100_Liked_Questions #Array #Stack #Monotonic_Stack #Programming_Skills_II_Day_6
-// #Big_O_Time_O(n)_Space_O(n) #2022_09_13_Time_936_ms_(80.54%)_Space_79.5_MB_(63.09%)
+// #Medium #Top_100_Liked_Questions #Array #Stack #Monotonic_Stack #LeetCode_75_Monotonic_Stack
+// #Programming_Skills_II_Day_6 #Big_O_Time_O(n)_Space_O(n)
+// #2022_09_13_Time_936_ms_(80.54%)_Space_79.5_MB_(63.09%)
 
 class Solution {
     fun dailyTemperatures(temperatures: IntArray): IntArray {

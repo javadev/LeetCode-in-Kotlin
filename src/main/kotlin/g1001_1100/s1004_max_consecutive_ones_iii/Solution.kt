@@ -1,6 +1,6 @@
 package g1001_1100.s1004_max_consecutive_ones_iii
 
-// #Medium #Array #Binary_Search #Prefix_Sum #Sliding_Window
+// #Medium #Array #Binary_Search #Prefix_Sum #Sliding_Window #LeetCode_75_Sliding_Window
 // #2023_05_14_Time_318_ms_(30.95%)_Space_84.7_MB_(8.33%)
 
 class Solution {

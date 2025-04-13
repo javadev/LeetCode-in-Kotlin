@@ -1,6 +1,7 @@
 package g1701_1800.s1732_find_the_highest_altitude
 
-// #Easy #Array #Prefix_Sum #2023_06_16_Time_139_ms_(90.70%)_Space_34.1_MB_(63.95%)
+// #Easy #Array #Prefix_Sum #LeetCode_75_Prefix_Sum
+// #2023_06_16_Time_139_ms_(90.70%)_Space_34.1_MB_(63.95%)
 
 class Solution {
     fun largestAltitude(gain: IntArray): Int {

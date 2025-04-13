@@ -1,7 +1,8 @@
 package g0301_0400.s0338_counting_bits
 
-// #Easy #Dynamic_Programming #Bit_Manipulation #Udemy_Bit_Manipulation
-// #Big_O_Time_O(num)_Space_O(num) #2022_09_27_Time_186_ms_(99.26%)_Space_38.8_MB_(89.71%)
+// #Easy #Dynamic_Programming #Bit_Manipulation #LeetCode_75_Bit_Manipulation
+// #Udemy_Bit_Manipulation #Big_O_Time_O(num)_Space_O(num)
+// #2022_09_27_Time_186_ms_(99.26%)_Space_38.8_MB_(89.71%)
 
 class Solution {
     fun countBits(num: Int): IntArray {

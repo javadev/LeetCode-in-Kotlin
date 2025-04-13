@@ -1,6 +1,7 @@
 package g0601_0700.s0605_can_place_flowers
 
-// #Easy #Array #Greedy #Udemy_Arrays #2023_02_03_Time_209_ms_(85.71%)_Space_37.3_MB_(71.43%)
+// #Easy #Array #Greedy #LeetCode_75_Array/String #Udemy_Arrays
+// #2023_02_03_Time_209_ms_(85.71%)_Space_37.3_MB_(71.43%)
 
 @Suppress("NAME_SHADOWING")
 class Solution {

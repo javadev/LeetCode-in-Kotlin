@@ -1,6 +1,6 @@
 package g1201_1300.s1268_search_suggestions_system
 
-// #Medium #Array #String #2023_06_08_Time_331_ms_(100.00%)_Space_50.2_MB_(88.89%)
+// #Medium #Array #String #LeetCode_75_Trie #2023_06_08_Time_331_ms_(100.00%)_Space_50.2_MB_(88.89%)
 
 class Solution {
     private var result: MutableList<List<String>> = ArrayList()

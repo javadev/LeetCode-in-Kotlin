@@ -1,6 +1,7 @@
 package g0301_0400.s0345_reverse_vowels_of_a_string
 
-// #Easy #String #Two_Pointers #2022_11_18_Time_349_ms_(80.63%)_Space_42.2_MB_(76.91%)
+// #Easy #String #Two_Pointers #LeetCode_75_Array/String
+// #2022_11_18_Time_349_ms_(80.63%)_Space_42.2_MB_(76.91%)
 
 class Solution {
     private fun isVowel(c: Char): Boolean {

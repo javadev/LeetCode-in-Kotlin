@@ -1,6 +1,6 @@
 package g2301_2400.s2352_equal_row_and_column_pairs
 
-// #Medium #Array #Hash_Table #Matrix #Simulation
+// #Medium #Array #Hash_Table #Matrix #Simulation #LeetCode_75_Hash_Map/Set
 // #2023_07_02_Time_339_ms_(100.00%)_Space_48.6_MB_(96.25%)
 
 class Solution {

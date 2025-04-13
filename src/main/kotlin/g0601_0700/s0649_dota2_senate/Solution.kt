@@ -1,6 +1,7 @@
 package g0601_0700.s0649_dota2_senate
 
-// #Medium #String #Greedy #Queue #2023_02_12_Time_217_ms_(100.00%)_Space_36.1_MB_(100.00%)
+// #Medium #String #Greedy #Queue #LeetCode_75_Queue
+// #2023_02_12_Time_217_ms_(100.00%)_Space_36.1_MB_(100.00%)
 
 class Solution {
     fun predictPartyVictory(senate: String): String {

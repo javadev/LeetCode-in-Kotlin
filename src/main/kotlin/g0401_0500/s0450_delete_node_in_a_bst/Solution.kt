@@ -1,7 +1,7 @@
 package g0401_0500.s0450_delete_node_in_a_bst
 
-// #Medium #Tree #Binary_Tree #Binary_Search_Tree #Data_Structure_II_Day_16_Tree
-// #2022_12_25_Time_257_ms_(84.62%)_Space_38.6_MB_(92.31%)
+// #Medium #Tree #Binary_Tree #Binary_Search_Tree #LeetCode_75_Binary_Search_Tree
+// #Data_Structure_II_Day_16_Tree #2022_12_25_Time_257_ms_(84.62%)_Space_38.6_MB_(92.31%)
 
 import com_github_leetcode.TreeNode
 

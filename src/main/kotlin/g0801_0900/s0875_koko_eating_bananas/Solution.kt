@@ -1,6 +1,6 @@
 package g0801_0900.s0875_koko_eating_bananas
 
-// #Medium #Array #Binary_Search #Binary_Search_II_Day_4
+// #Medium #Array #Binary_Search #LeetCode_75_Binary_Search #Binary_Search_II_Day_4
 // #2023_04_08_Time_267_ms_(93.85%)_Space_37.7_MB_(96.62%)
 
 class Solution {

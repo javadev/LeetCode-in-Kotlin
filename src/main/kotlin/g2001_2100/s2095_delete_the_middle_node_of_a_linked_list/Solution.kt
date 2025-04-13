@@ -1,6 +1,7 @@
 package g2001_2100.s2095_delete_the_middle_node_of_a_linked_list
 
-// #Medium #Two_Pointers #Linked_List #2023_06_28_Time_1115_ms_(50.00%)_Space_61.4_MB_(81.25%)
+// #Medium #Two_Pointers #Linked_List #LeetCode_75_LinkedList
+// #2023_06_28_Time_1115_ms_(50.00%)_Space_61.4_MB_(81.25%)
 
 import com_github_leetcode.ListNode
 

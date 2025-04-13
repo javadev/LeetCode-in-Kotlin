@@ -1,6 +1,7 @@
 package g1201_1300.s1207_unique_number_of_occurrences
 
-// #Easy #Array #Hash_Table #2023_06_10_Time_151_ms_(83.00%)_Space_33.9_MB_(100.00%)
+// #Easy #Array #Hash_Table #LeetCode_75_Hash_Map/Set
+// #2023_06_10_Time_151_ms_(83.00%)_Space_33.9_MB_(100.00%)
 
 class Solution {
     fun uniqueOccurrences(arr: IntArray): Boolean {

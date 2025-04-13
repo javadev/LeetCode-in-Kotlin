@@ -1,6 +1,7 @@
 package g0601_0700.s0643_maximum_average_subarray_i
 
-// #Easy #Array #Sliding_Window #2023_02_11_Time_494_ms_(98.65%)_Space_45.8_MB_(95.95%)
+// #Easy #Array #Sliding_Window #LeetCode_75_Sliding_Window
+// #2023_02_11_Time_494_ms_(98.65%)_Space_45.8_MB_(95.95%)
 
 class Solution {
     fun findMaxAverage(nums: IntArray, k: Int): Double {
