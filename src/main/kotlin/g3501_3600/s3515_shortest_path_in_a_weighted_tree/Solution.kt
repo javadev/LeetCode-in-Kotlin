@@ -29,7 +29,7 @@ class Solution {
         edgeWeight = IntArray(n + 1)
         dfs(1, 0, 0)
         val fenw = Fen(n)
-        val ansList: MutableList<Int?> = ArrayList<Int?>()
+        val ansList: MutableList<Int> = ArrayList<Int>()
         for (query in queries) {
             if (query[0] == 1) {
                 val u = query[1]
@@ -54,7 +54,7 @@ class Solution {
         }
         val answer = IntArray(ansList.size)
         for (i in ansList.indices) {
-            answer[i] = ansList.get(i)!!
+            answer[i] = ansList[i]
         }
         return answer
     }
@@ -77,11 +77,7 @@ class Solution {
     }
 
     private class Fen(var n: Int) {
-        var fenw: IntArray
-
-        init {
-            fenw = IntArray(n + 2)
-        }
+        var fenw: IntArray = IntArray(n + 2)
 
         fun update(i: Int, delta: Int) {
             var i = i
