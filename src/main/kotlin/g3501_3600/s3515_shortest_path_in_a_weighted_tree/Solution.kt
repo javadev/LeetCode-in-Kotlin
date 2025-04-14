@@ -1,7 +1,7 @@
 package g3501_3600.s3515_shortest_path_in_a_weighted_tree
 
 // #Hard #Array #Depth_First_Search #Tree #Segment_Tree #Binary_Indexed_Tree
-// #2025_04_13_Time_72_ms_(100.00%)_Space_188.48_MB_(100.00%)
+// #2025_04_14_Time_65_ms_(100.00%)_Space_179.96_MB_(100.00%)
 
 class Solution {
     private lateinit var `in`: IntArray
