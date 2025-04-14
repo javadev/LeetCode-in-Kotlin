@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun smallestPalindrome() {
         assertThat<String>(
             Solution().smallestPalindrome("abba", 2),
-            equalTo<String>("baab")
+            equalTo<String>("baab"),
         )
     }
 
@@ -22,7 +22,7 @@ internal class SolutionTest {
     fun smallestPalindrome3() {
         assertThat<String>(
             Solution().smallestPalindrome("bacab", 1),
-            equalTo<String>("abcba")
+            equalTo<String>("abcba"),
         )
     }
 }

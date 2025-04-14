@@ -8,7 +8,7 @@ class Solution {
         var k = k
         val frequency = IntArray(26)
         for (i in 0..<inputStr.length) {
-            val ch = inputStr.get(i)
+            val ch = inputStr[i]
             frequency[ch.code - 'a'.code]++
         }
         var mid = 0.toChar()
@@ -47,13 +47,11 @@ class Solution {
         }
         val firstHalf = firstHalfBuilder.toString()
         val revHalf = StringBuilder(firstHalf).reverse().toString()
-        val result: String
-        if (mid.code == 0) {
-            result = firstHalf + revHalf
+        return if (mid.code == 0) {
+            firstHalf + revHalf
         } else {
-            result = firstHalf + mid + revHalf
+            firstHalf + mid + revHalf
         }
-        return result
     }
 
     private fun multinomial(counts: IntArray): Long {
