@@ -8,12 +8,12 @@ class Solution {
     fun findClosest(x: Int, y: Int, z: Int): Int {
         val d1 = abs(z - x)
         val d2 = abs(z - y)
-        if (d1 == d2) {
-            return 0
+        return if (d1 == d2) {
+            0
         } else if (d1 < d2) {
-            return 1
+            1
         } else {
-            return 2
+            2
         }
     }
 }
