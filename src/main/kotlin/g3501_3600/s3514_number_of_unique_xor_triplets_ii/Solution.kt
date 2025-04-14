@@ -1,6 +1,7 @@
 package g3501_3600.s3514_number_of_unique_xor_triplets_ii
 
-// #Medium #2025_04_13_Time_778_ms_(100.00%)_Space_61.80_MB_(100.00%)
+// #Medium #Array #Math #Bit_Manipulation #Enumeration
+// #2025_04_13_Time_778_ms_(100.00%)_Space_61.80_MB_(100.00%)
 
 import java.util.BitSet
 
