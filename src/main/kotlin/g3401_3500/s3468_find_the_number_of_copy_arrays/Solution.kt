@@ -14,7 +14,7 @@ class Solution {
             val diff = original[i] - original[i - 1]
             low = max((low + diff), bounds[i][0])
             high = min((high + diff), bounds[i][1])
-            ans = min(ans, (high - low + 1)).toInt()
+            ans = min(ans, high - low + 1)
         }
         return max(ans, 0)
     }

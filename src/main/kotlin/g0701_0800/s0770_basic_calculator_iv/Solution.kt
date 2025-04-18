@@ -48,7 +48,7 @@ class Solution {
             return ans
         }
 
-        fun evaluate(vars: Map<String?, Int>): Node {
+        fun evaluate(vars: Map<String, Int>): Node {
             val ans = Node()
             for (cur in mem.keys) {
                 var cnt = mem[cur]!!
@@ -137,14 +137,14 @@ class Solution {
         return a.sub(b)
     }
 
-    fun basicCalculatorIV(expression: String?, evalvarS: Array<String?>?, evalintS: IntArray?): List<String> {
+    fun basicCalculatorIV(expression: String, evalvars: Array<String>, evalints: IntArray): List<String> {
         val ans: List<String> = ArrayList()
-        if (expression.isNullOrEmpty() || evalvarS == null || evalintS == null) {
+        if (expression.isEmpty()) {
             return ans
         }
-        val vars: MutableMap<String?, Int> = HashMap()
-        for (i in evalvarS.indices) {
-            vars[evalvarS[i]] = evalintS[i]
+        val vars: MutableMap<String, Int> = HashMap()
+        for (i in evalvars.indices) {
+            vars[evalvars[i]] = evalints[i]
         }
         val n = expression.length
         val numS = ArrayDeque<Node>()

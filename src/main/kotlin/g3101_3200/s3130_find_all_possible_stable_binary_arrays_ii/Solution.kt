@@ -24,10 +24,9 @@ class Solution {
         }
         var ans: Long = 0
         val s = LongArray(one + 1)
-        val n = (min(zero, one) + 1).toInt()
+        val n = min(zero, one) + 1
         for (
         groups0 in (zero + limit - 1) / limit..min(zero, n)
-            .toInt()
         ) {
             val s0 = calc(groups0, zero, limit)
             for (
