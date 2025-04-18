@@ -137,14 +137,14 @@ class Solution {
         return a.sub(b)
     }
 
-    fun basicCalculatorIV(expression: String, evaluators: Array<String>, evalintS: IntArray): List<String> {
+    fun basicCalculatorIV(expression: String, evalvars: Array<String>, evalints: IntArray): List<String> {
         val ans: List<String> = ArrayList()
         if (expression.isEmpty()) {
             return ans
         }
         val vars: MutableMap<String, Int> = HashMap()
-        for (i in evaluators.indices) {
-            vars[evaluators[i]] = evalintS[i]
+        for (i in evalvars.indices) {
+            vars[evalvars[i]] = evalints[i]
         }
         val n = expression.length
         val numS = ArrayDeque<Node>()
