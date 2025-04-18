@@ -32,7 +32,7 @@ class Solution {
         f[n + 1] = n + 1
         f[n] = h[n]
         for (i in n - 1 downTo 1) {
-            f[i] = min(h[i], f[i + 1]).toInt()
+            f[i] = min(h[i], f[i + 1])
         }
         // forbiddenCount(x) returns (n - x + 1) if x <= n, else 0.
         // This is the number of forbidden subarrays starting at some i when f[i] = x.
@@ -53,7 +53,7 @@ class Solution {
                 continue
             }
             // Simulate removal: new candidate at j becomes d2[j]
-            val newCandidate = if (j < n) min(d2[j], f[j + 1]).toInt() else d2[j]
+            val newCandidate = if (j < n) min(d2[j], f[j + 1]) else d2[j]
             // We'll recompute the new f values for indices 1..j.
             // Let newF[i] denote the updated value.
             // For i > j, newF[i] remains as original f[i].

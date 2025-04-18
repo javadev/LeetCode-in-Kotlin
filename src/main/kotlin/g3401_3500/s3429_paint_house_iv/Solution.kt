@@ -34,7 +34,7 @@ class Solution {
         }
         var ans = Long.Companion.MAX_VALUE
         for (x in longArrayOf(dp0, dp1, dp2, dp3, dp4, dp5)) {
-            ans = min(ans, x).toLong()
+            ans = min(ans, x)
         }
         return ans
     }

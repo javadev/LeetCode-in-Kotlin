@@ -36,12 +36,12 @@ class MKAverage(private val capacity: Int, private val boundary: Int) {
                 val count = nums[num]
                 if (skipCount < 0) {
                     sum += num * min(count, numsCount)
-                    numsCount = (numsCount - min(count, numsCount)).toInt()
+                    numsCount = numsCount - min(count, numsCount)
                 } else {
                     skipCount -= count
                     if (skipCount < 0) {
                         sum += num * min(abs(skipCount), numsCount)
-                        numsCount = (numsCount - min(abs(skipCount), numsCount)).toInt()
+                        numsCount = numsCount - min(abs(skipCount), numsCount)
                     }
                 }
                 if (numsCount == 0) {
