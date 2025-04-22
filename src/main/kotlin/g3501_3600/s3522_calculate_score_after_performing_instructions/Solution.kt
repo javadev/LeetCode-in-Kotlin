@@ -1,6 +1,7 @@
 package g3501_3600.s3522_calculate_score_after_performing_instructions
 
-// #Medium #2025_04_20_Time_3_ms_(100.00%)_Space_84.28_MB_(81.82%)
+// #Medium #Array #String #Hash_Table #Simulation
+// #2025_04_20_Time_3_ms_(100.00%)_Space_84.28_MB_(81.82%)
 
 class Solution {
     fun calculateScore(instructions: Array<String>, values: IntArray): Long {

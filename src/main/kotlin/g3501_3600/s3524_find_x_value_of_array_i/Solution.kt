@@ -1,6 +1,7 @@
 package g3501_3600.s3524_find_x_value_of_array_i
 
-// #Medium #2025_04_20_Time_12_ms_(100.00%)_Space_71.76_MB_(60.00%)
+// #Medium #Array #Dynamic_Programming #Math
+// #2025_04_20_Time_12_ms_(100.00%)_Space_71.76_MB_(60.00%)
 
 class Solution {
     fun resultArray(nums: IntArray, k: Int): LongArray {
