@@ -73,7 +73,7 @@ internal class MysqlTest {
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*\\r\\n".toRegex(), ""),
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     checkRow(resultSet, arrayOf<String>("101", "102", "Electronics", "Books", "3"))
                     checkRow(resultSet, arrayOf<String>("101", "103", "Electronics", "Clothing", "3"))
