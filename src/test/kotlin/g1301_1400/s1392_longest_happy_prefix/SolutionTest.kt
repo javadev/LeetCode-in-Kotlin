@@ -14,4 +14,9 @@ internal class SolutionTest {
     fun longestPrefix2() {
         assertThat(Solution().longestPrefix("ababab"), equalTo("abab"))
     }
+
+    @Test
+    fun longestPrefix3() {
+        assertThat(Solution().longestPrefix("babbb"), equalTo("b"))
+    }
 }
