@@ -1,25 +1,29 @@
 package g1301_1400.s1392_longest_happy_prefix
 
 // #Hard #String #Hash_Function #String_Matching #Rolling_Hash
-// #2023_06_06_Time_291_ms_(50.00%)_Space_38.1_MB_(100.00%)
+// #2025_04_24_Time_7_ms_(100.00%)_Space_47.37_MB_(25.00%)
 
 class Solution {
     fun longestPrefix(s: String): String {
-        val times = 2
-        var prefixHash: Long = 0
-        var suffixHash: Long = 0
-        var multiplier: Long = 1
-        var len: Long = 0
-        // use some large prime as a modulo to avoid overflow errors, e.g. 10 ^ 9 + 7.
-        val mod: Long = 1000000007
-        for (i in 0 until s.length - 1) {
-            prefixHash = (prefixHash * times + s[i].code.toLong()) % mod
-            suffixHash = (multiplier * s[s.length - i - 1].code.toLong() + suffixHash) % mod
-            if (prefixHash == suffixHash) {
-                len = i.toLong() + 1
+        val c = s.toCharArray()
+        val n = c.size
+        val a = IntArray(n)
+        var max = 0
+        var i = 1
+        while (i < n) {
+            if (c[max] == c[i]) {
+                max++
+                a[i] = max
+                i++
+            } else {
+                if (max > 0) {
+                    max = a[max - 1]
+                } else {
+                    a[i] = 0
+                    i++
+                }
             }
-            multiplier = multiplier * times % mod
         }
-        return s.substring(0, len.toInt())
+        return s.substring(0, a[n - 1])
     }
 }

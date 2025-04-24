@@ -1,51 +1,26 @@
 package g1301_1400.s1309_decrypt_string_from_alphabet_to_integer_mapping
 
 // #Easy #String #Programming_Skills_I_Day_9_String
-// #2023_06_05_Time_129_ms_(95.45%)_Space_34.8_MB_(63.64%)
+// #2025_04_24_Time_0_ms_(100.00%)_Space_40.80_MB_(77.78%)
 
 class Solution {
     fun freqAlphabets(s: String): String {
-        val map: MutableMap<String, String> = HashMap()
-        map["1"] = "a"
-        map["2"] = "b"
-        map["3"] = "c"
-        map["4"] = "d"
-        map["5"] = "e"
-        map["6"] = "f"
-        map["7"] = "g"
-        map["8"] = "h"
-        map["9"] = "i"
-        map["10#"] = "j"
-        map["11#"] = "k"
-        map["12#"] = "l"
-        map["13#"] = "m"
-        map["14#"] = "n"
-        map["15#"] = "o"
-        map["16#"] = "p"
-        map["17#"] = "q"
-        map["18#"] = "r"
-        map["19#"] = "s"
-        map["20#"] = "t"
-        map["21#"] = "u"
-        map["22#"] = "v"
-        map["23#"] = "w"
-        map["24#"] = "x"
-        map["25#"] = "y"
-        map["26#"] = "z"
-        val sb = StringBuilder()
-        var i = 0
-        while (i < s.length) {
-            if ((("" + s[i]).toInt() == 1 || ("" + s[i]).toInt() == 2) &&
-                i + 1 < s.length && i + 2 < s.length &&
-                s[i + 2] == '#'
-            ) {
-                sb.append(map[s.substring(i, i + 3)])
-                i += 3
+        val builder = StringBuilder()
+        var i = s.length - 1
+        while (i >= 0) {
+            if (s[i] == '#') {
+                decryptor(builder, i - 1, i - 2, s)
+                i -= 3
             } else {
-                sb.append(map["" + s[i]])
-                i++
+                val ch = (s[i].code - '0'.code + 96).toChar()
+                builder.append(ch)
+                i--
             }
         }
-        return sb.toString()
+        return builder.reverse().toString()
+    }
+
+    private fun decryptor(builder: StringBuilder, a: Int, b: Int, s: String) {
+        builder.append((((s[b].code - '0'.code) * 10 + s[a].code - '0'.code) + 96).toChar())
     }
 }
