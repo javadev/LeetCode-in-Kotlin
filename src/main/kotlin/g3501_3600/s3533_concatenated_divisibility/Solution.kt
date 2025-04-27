@@ -39,7 +39,7 @@ class Solution {
         digCnt: IntArray,
         nums: IntArray,
         pow10: IntArray,
-        visited: Array<BooleanArray?>,
+        visited: Array<BooleanArray>,
         ansIdx: Int,
         ans: IntArray,
         n: Int,
@@ -47,7 +47,7 @@ class Solution {
         if (ansIdx == n) {
             return residue == 0
         }
-        if (visited[mask]!![residue]) {
+        if (visited[mask][residue]) {
             return false
         }
         var i = 0
@@ -66,7 +66,7 @@ class Solution {
             i++
             bit = bit shl 1
         }
-        visited[mask]!![residue] = true
+        visited[mask][residue] = true
         return false
     }
 }
