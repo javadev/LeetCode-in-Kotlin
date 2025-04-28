@@ -1,6 +1,6 @@
 package g3501_3600.s3531_count_covered_buildings
 
-// #Medium #2025_04_27_Time_34_ms_(100.00%)_Space_119.08_MB_(80.00%)
+// #Medium #Array #Hash_Table #Sorting #2025_04_27_Time_34_ms_(100.00%)_Space_119.08_MB_(80.00%)
 
 import kotlin.math.max
 import kotlin.math.min

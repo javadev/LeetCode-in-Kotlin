@@ -1,6 +1,7 @@
 package g3501_3600.s3527_find_the_most_common_response
 
-// #Medium #2025_04_27_Time_73_ms_(100.00%)_Space_243.97_MB_(50.00%)
+// #Medium #Array #String #Hash_Table #Counting
+// #2025_04_27_Time_73_ms_(100.00%)_Space_243.97_MB_(50.00%)
 
 class Solution {
     private fun compareStrings(str1: String, str2: String): Boolean {

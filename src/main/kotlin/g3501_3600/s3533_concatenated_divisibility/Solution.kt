@@ -1,6 +1,7 @@
 package g3501_3600.s3533_concatenated_divisibility
 
-// #Hard #2025_04_27_Time_20_ms_(100.00%)_Space_49.10_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2025_04_27_Time_20_ms_(100.00%)_Space_49.10_MB_(100.00%)
 
 @Suppress("kotlin:S107")
 class Solution {
