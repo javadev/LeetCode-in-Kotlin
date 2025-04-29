@@ -38,7 +38,7 @@ class Solution {
                 tin[u] = ++time
             }
             if (ptr[u] < adj[u].size) {
-                val e = adj[u].get(ptr[u]++)
+                val e = adj[u][ptr[u]++]
                 val v = e.to
                 if (v == parent[u]) {
                     continue
