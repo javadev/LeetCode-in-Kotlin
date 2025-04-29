@@ -20,4 +20,22 @@ internal class SolutionTest {
             equalTo<Int>(0),
         )
     }
+
+    @Test
+    fun minimumPairRemoval3() {
+        assertThat(Solution().minimumPairRemoval(intArrayOf(5, 2, 3, 1)), equalTo(2))
+    }
+
+    @Test
+    fun minimumPairRemoval4() {
+        assertThat(
+            Solution().minimumPairRemoval(intArrayOf(2, 2, -1, 3, -2, 2, 1, 1, 1, 0, -1)),
+            equalTo(9),
+        )
+    }
+
+    @Test
+    fun minimumPairRemoval5() {
+        assertThat(Solution().minimumPairRemoval(intArrayOf(5)), equalTo(0))
+    }
 }
