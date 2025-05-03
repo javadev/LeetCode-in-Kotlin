@@ -17,4 +17,9 @@ internal class SolutionTest {
         val root: TreeNode? = TreeNode.create(listOf(0))
         assertThat(Solution().sumRootToLeaf(root), equalTo(0))
     }
+
+    @Test
+    fun sumRootToLeaf3() {
+        assertThat(Solution().sumRootToLeaf(null), equalTo(0))
+    }
 }

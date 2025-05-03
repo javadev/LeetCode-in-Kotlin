@@ -1,7 +1,7 @@
 package g1001_1100.s1022_sum_of_root_to_leaf_binary_numbers
 
 // #Easy #Depth_First_Search #Tree #Binary_Tree
-// #2023_05_22_Time_158_ms_(88.89%)_Space_36.3_MB_(11.11%)
+// #2025_05_03_Time_0_ms_(100.00%)_Space_41.68_MB_(93.33%)
 
 import com_github_leetcode.TreeNode
 
@@ -17,31 +17,18 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     fun sumRootToLeaf(root: TreeNode?): Int {
-        val paths: MutableList<List<Int>> = ArrayList()
-        dfs(root, paths, ArrayList())
-        var sum = 0
-        for (list in paths) {
-            var num = 0
-            for (i in list) {
-                num = (num shl 1) + i
-            }
-            sum += num
-        }
-        return sum
+        return sumRootToLeaf(root, 0)
     }
 
-    private fun dfs(root: TreeNode?, paths: MutableList<List<Int>>, path: MutableList<Int>) {
-        path.add(root!!.`val`)
-        if (root.left != null) {
-            dfs(root.left!!, paths, path)
-            path.removeAt(path.size - 1)
+    private fun sumRootToLeaf(root: TreeNode?, sum: Int): Int {
+        var sum = sum
+        if (root == null) {
+            return 0
         }
-        if (root.right != null) {
-            dfs(root.right!!, paths, path)
-            path.removeAt(path.size - 1)
-        }
+        sum = 2 * sum + root.`val`
         if (root.left == null && root.right == null) {
-            paths.add(ArrayList(path))
+            return sum
         }
+        return sumRootToLeaf(root.left, sum) + sumRootToLeaf(root.right, sum)
     }
 }
