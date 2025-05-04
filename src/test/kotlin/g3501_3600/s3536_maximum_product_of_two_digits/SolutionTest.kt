@@ -19,4 +19,19 @@ internal class SolutionTest {
     fun maxProduct3() {
         assertThat<Int>(Solution().maxProduct(124), equalTo<Int>(8))
     }
+
+    @Test
+    fun maxProduct4() {
+        assertThat<Int>(Solution().maxProduct(453), equalTo<Int>(20))
+    }
+
+    @Test
+    fun maxProduct5() {
+        assertThat<Int>(Solution().maxProduct(437), equalTo<Int>(28))
+    }
+
+    @Test
+    fun maxProduct6() {
+        assertThat<Int>(Solution().maxProduct(724), equalTo<Int>(28))
+    }
 }
