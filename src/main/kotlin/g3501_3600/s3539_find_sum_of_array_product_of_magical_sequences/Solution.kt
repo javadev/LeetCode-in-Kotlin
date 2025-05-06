@@ -1,6 +1,7 @@
 package g3501_3600.s3539_find_sum_of_array_product_of_magical_sequences
 
-// #Hard #2025_05_04_Time_58_ms_(_%)_Space_49.73_MB_(_%)
+// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Combinatorics
+// #2025_05_04_Time_58_ms_(_%)_Space_49.73_MB_(_%)
 
 class Solution {
     fun magicalSum(m: Int, k: Int, nums: IntArray): Int {

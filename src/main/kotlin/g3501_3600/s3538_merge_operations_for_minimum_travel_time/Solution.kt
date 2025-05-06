@@ -1,6 +1,7 @@
 package g3501_3600.s3538_merge_operations_for_minimum_travel_time
 
-// #Hard #2025_05_04_Time_10_ms_(100.00%)_Space_46.96_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Prefix_Sum
+// #2025_05_04_Time_10_ms_(100.00%)_Space_46.96_MB_(100.00%)
 
 import kotlin.math.min
 

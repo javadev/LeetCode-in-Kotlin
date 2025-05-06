@@ -1,6 +1,7 @@
 package g3501_3600.s3537_fill_a_special_grid
 
-// #Medium #2025_05_04_Time_2_ms_(100.00%)_Space_88.71_MB_(61.54%)
+// #Medium #Array #Matrix #Divide_and_Conquer
+// #2025_05_04_Time_2_ms_(100.00%)_Space_88.71_MB_(61.54%)
 
 import kotlin.math.pow
 

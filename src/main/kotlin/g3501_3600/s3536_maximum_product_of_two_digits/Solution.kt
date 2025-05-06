@@ -1,6 +1,6 @@
 package g3501_3600.s3536_maximum_product_of_two_digits
 
-// #Easy #2025_05_04_Time_1_ms_(100.00%)_Space_40.93_MB_(100.00%)
+// #Easy #Math #Sorting #2025_05_04_Time_1_ms_(100.00%)_Space_40.93_MB_(100.00%)
 
 class Solution {
     fun maxProduct(n: Int): Int {
