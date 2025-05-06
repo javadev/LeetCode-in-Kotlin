@@ -4,17 +4,13 @@ package g3501_3600.s3539_find_sum_of_array_product_of_magical_sequences
 // #2025_05_06_Time_60_ms_(100.00%)_Space_48.98_MB_(100.00%)
 
 class Solution {
-    private val mod = 1000000007
-    private val c: Array<IntArray> = precomputeBinom(31)
-    private val p: IntArray = precomputePop(31)
-
     fun magicalSum(m: Int, k: Int, nums: IntArray): Int {
         val n = nums.size
         val pow = Array<LongArray>(n) { LongArray(m + 1) }
         for (j in 0..<n) {
             pow[j][0] = 1L
             for (c in 1..m) {
-                pow[j][c] = pow[j][c - 1] * nums[j] % mod
+                pow[j][c] = pow[j][c - 1] * nums[j] % MOD
             }
         }
         var dp = Array<Array<LongArray>>(m + 1) { Array<LongArray>(k + 1) { LongArray(m + 1) } }
@@ -42,12 +38,12 @@ class Solution {
                                     (
                                         next[t + cc][o + (total and 1)][total ushr 1] +
                                             dp[t][o][c] *
-                                            this@Solution.c[m - t][cc] %
-                                            mod
+                                            C[m - t][cc] %
+                                            MOD
                                             * pow[i][cc] %
-                                            mod
+                                            MOD
                                         ) %
-                                        mod
+                                        MOD
                                     )
                         }
                     }
@@ -60,31 +56,37 @@ class Solution {
         var res: Long = 0
         for (o in 0..k) {
             for (c in 0..m) {
-                if (o + p[c] == k) {
-                    res = (res + dp[m][o][c]) % mod
+                if (o + P[c] == k) {
+                    res = (res + dp[m][o][c]) % MOD
                 }
             }
         }
         return res.toInt()
     }
 
-    private fun precomputeBinom(max: Int): Array<IntArray> {
-        val res = Array<IntArray>(max) { IntArray(max) }
-        for (i in 0..<max) {
-            res[i][i] = 1
-            res[i][0] = res[i][i]
-            for (j in 1..<i) {
-                res[i][j] = (res[i - 1][j - 1] + res[i - 1][j]) % mod
-            }
-        }
-        return res
-    }
+    companion object {
+        private const val MOD = 1000000007
+        private val C: Array<IntArray> = precomputeBinom(31)
+        private val P: IntArray = precomputePop(31)
 
-    private fun precomputePop(max: Int): IntArray {
-        val res = IntArray(max)
-        for (i in 1..<max) {
-            res[i] = res[i shr 1] + (i and 1)
+        private fun precomputeBinom(max: Int): Array<IntArray> {
+            val res = Array<IntArray>(max) { IntArray(max) }
+            for (i in 0..<max) {
+                res[i][i] = 1
+                res[i][0] = res[i][i]
+                for (j in 1..<i) {
+                    res[i][j] = (res[i - 1][j - 1] + res[i - 1][j]) % MOD
+                }
+            }
+            return res
         }
-        return res
+
+        private fun precomputePop(max: Int): IntArray {
+            val res = IntArray(max)
+            for (i in 1..<max) {
+                res[i] = res[i shr 1] + (i and 1)
+            }
+            return res
+        }
     }
 }
