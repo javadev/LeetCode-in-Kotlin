@@ -11,7 +11,7 @@ class Solution {
         stack.push(0)
         var res = 0
         for (a in nums) {
-            while (!stack.isEmpty() && stack.peek()!! > a) {
+            while (stack.isNotEmpty() && stack.peek()!! > a) {
                 stack.pop()
             }
             if (stack.isEmpty() || stack.peek()!! < a) {

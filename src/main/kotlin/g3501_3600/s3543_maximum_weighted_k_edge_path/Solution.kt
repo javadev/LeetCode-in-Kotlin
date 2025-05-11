@@ -24,7 +24,7 @@ class Solution {
             adj.add(ArrayList<Pair>())
         }
         for (edge in edges) {
-            adj.get(edge[0]).add(Pair(edge[1], edge[2]))
+            adj[edge[0]].add(Pair(edge[1], edge[2]))
         }
         var ans = -1
         for (start in 0..<n) {
@@ -46,7 +46,7 @@ class Solution {
             return memo
         }
         var best = -1
-        for (p in adj.get(u)) {
+        for (p in adj[u]) {
             val res = dfs(adj, p.node, stepsRemaining - 1, t, currentSum + p.wt)
             best = max(best, res)
         }

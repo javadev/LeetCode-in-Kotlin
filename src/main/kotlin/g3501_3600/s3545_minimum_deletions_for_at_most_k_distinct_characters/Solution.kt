@@ -8,7 +8,7 @@ class Solution {
         var count = 0
         val carr = IntArray(26)
         for (i in 0..<n) {
-            val ch = s.get(i)
+            val ch = s[i]
             carr[ch.code - 'a'.code]++
         }
         var dischar = 0

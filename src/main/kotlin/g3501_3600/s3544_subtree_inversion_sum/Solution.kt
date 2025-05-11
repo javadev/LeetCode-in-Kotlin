@@ -70,8 +70,8 @@ class Solution {
             nei.add(ArrayList<Int>())
         }
         for (e in edges) {
-            nei.get(e[0]).add(e[1])
-            nei.get(e[1]).add(e[0])
+            nei[e[0]].add(e[1])
+            nei[e[1]].add(e[0])
         }
         getTotalSum(-1, 0)
         val res = getMaxInc(-1, 0)
