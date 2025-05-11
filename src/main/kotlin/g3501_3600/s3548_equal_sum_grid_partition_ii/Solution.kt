@@ -23,7 +23,10 @@ class Solution {
         var s: Long = 0
         for (i in 0..<r.size - 1) {
             s += r[i].toLong()
-            if (s * 2 == total || s * 2 - grid[i][n - 1] == total || s * 2 - grid[i][0] == total || s * 2 - grid[0][0] == total || s * 2 - grid[0][n - 1] == total) {
+            if (s * 2 == total || s * 2 - grid[i][n - 1] == total ||
+                s * 2 - grid[i][0] == total || s * 2 - grid[0][0] == total ||
+                s * 2 - grid[0][n - 1] == total
+            ) {
                 return true
             }
             if (s * 2 > total) {
@@ -33,7 +36,10 @@ class Solution {
         s = 0
         for (i in m - 1 downTo 0) {
             s += r[i].toLong()
-            if (s * 2 == total || s * 2 - grid[i][n - 1] == total || s * 2 - grid[i][0] == total || s * 2 - grid[m - 1][n - 1] == total || s * 2 - grid[m - 1][0] == total) {
+            if (s * 2 == total || s * 2 - grid[i][n - 1] == total ||
+                s * 2 - grid[i][0] == total || s * 2 - grid[m - 1][n - 1] == total ||
+                s * 2 - grid[m - 1][0] == total
+            ) {
                 return true
             }
             if (s * 2 > total) {
@@ -45,7 +51,9 @@ class Solution {
             for (ints in grid) {
                 s += ints[i].toLong()
             }
-            if (s * 2 == total || s * 2 - grid[0][0] == total || s * 2 - grid[m - 1][0] == total || s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total) {
+            if (s * 2 == total || s * 2 - grid[0][0] == total || s * 2 - grid[m - 1][0] == total ||
+                s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total
+            ) {
                 return true
             }
             if (s * 2 > total) {
@@ -57,7 +65,9 @@ class Solution {
             for (j in m - 1 downTo 0) {
                 s += grid[j][i].toLong()
             }
-            if (s * 2 == total || s * 2 - grid[m - 1][n - 1] == total || s * 2 - grid[0][n - 1] == total || s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total) {
+            if (s * 2 == total || s * 2 - grid[m - 1][n - 1] == total || s * 2 - grid[0][n - 1] == total ||
+                s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total
+            ) {
                 return true
             }
             if (s * 2 > total) {
