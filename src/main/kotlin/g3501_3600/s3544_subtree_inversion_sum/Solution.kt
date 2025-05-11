@@ -52,11 +52,11 @@ class Solution {
         res[0][0] = totalSum[cur]
         res[1][0] = min(
             min(maxCandWithoutInv, maxCandWithInv),
-            min(minCandWithoutInv, minCandWithInv)
+            min(minCandWithoutInv, minCandWithInv),
         )
         res[2][0] = max(
             max(maxCandWithoutInv, maxCandWithInv),
-            max(minCandWithoutInv, minCandWithInv)
+            max(minCandWithoutInv, minCandWithInv),
         )
         return res
     }

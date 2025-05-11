@@ -11,9 +11,10 @@ internal class SolutionTest {
             Solution().canPartitionGrid(
                 arrayOf<IntArray>(
                     intArrayOf(1, 4),
-                    intArrayOf(2, 3)
-                )
-            ), equalTo<Boolean>(true)
+                    intArrayOf(2, 3),
+                ),
+            ),
+            equalTo<Boolean>(true),
         )
     }
 
@@ -23,9 +24,10 @@ internal class SolutionTest {
             Solution().canPartitionGrid(
                 arrayOf<IntArray>(
                     intArrayOf(1, 3),
-                    intArrayOf(2, 4)
-                )
-            ), equalTo<Boolean>(false)
+                    intArrayOf(2, 4),
+                ),
+            ),
+            equalTo<Boolean>(false),
         )
     }
 
@@ -33,7 +35,7 @@ internal class SolutionTest {
     fun canPartitionGrid3() {
         assertThat<Boolean>(
             Solution().canPartitionGrid(arrayOf<IntArray>(intArrayOf(1))),
-            equalTo<Boolean>(false)
+            equalTo<Boolean>(false),
         )
     }
 }

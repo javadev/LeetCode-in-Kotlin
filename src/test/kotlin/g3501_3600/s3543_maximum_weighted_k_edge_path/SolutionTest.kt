@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxWeight() {
         assertThat<Int>(
             Solution().maxWeight(3, arrayOf<IntArray>(intArrayOf(0, 1, 1), intArrayOf(1, 2, 2)), 2, 4),
-            equalTo<Int>(3)
+            equalTo<Int>(3),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxWeight2() {
         assertThat<Int>(
             Solution().maxWeight(3, arrayOf<IntArray>(intArrayOf(0, 1, 2), intArrayOf(0, 2, 3)), 1, 3),
-            equalTo<Int>(2)
+            equalTo<Int>(2),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxWeight3() {
         assertThat<Int>(
             Solution().maxWeight(3, arrayOf<IntArray>(intArrayOf(0, 1, 6), intArrayOf(1, 2, 8)), 1, 6),
-            equalTo<Int>(-1)
+            equalTo<Int>(-1),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
     fun maxWeight4() {
         assertThat<Int>(
             Solution().maxWeight(3, arrayOf<IntArray>(intArrayOf(0, 1, 6), intArrayOf(1, 2, 8)), 0, 6),
-            equalTo<Int>(0)
+            equalTo<Int>(0),
         )
     }
 }

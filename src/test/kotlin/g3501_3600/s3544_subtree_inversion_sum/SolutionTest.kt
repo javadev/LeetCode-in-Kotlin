@@ -16,12 +16,12 @@ internal class SolutionTest {
                         intArrayOf(1, 3),
                         intArrayOf(1, 4),
                         intArrayOf(2, 5),
-                        intArrayOf(2, 6)
+                        intArrayOf(2, 6),
                     ),
                     intArrayOf(4, -8, -6, 3, 7, -2, 5),
-                    2
+                    2,
                 ),
-            equalTo<Long>(27L)
+            equalTo<Long>(27L),
         )
     }
 
@@ -32,9 +32,9 @@ internal class SolutionTest {
                 .subtreeInversionSum(
                     arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(1, 2), intArrayOf(2, 3), intArrayOf(3, 4)),
                     intArrayOf(-1, 3, -2, 4, -5),
-                    2
+                    2,
                 ),
-            equalTo<Long>(9L)
+            equalTo<Long>(9L),
         )
     }
 
@@ -43,9 +43,11 @@ internal class SolutionTest {
         assertThat<Long>(
             Solution()
                 .subtreeInversionSum(
-                    arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2)), intArrayOf(0, -1, -2), 3
+                    arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2)),
+                    intArrayOf(0, -1, -2),
+                    3,
                 ),
-            equalTo<Long>(3L)
+            equalTo<Long>(3L),
         )
     }
 }
