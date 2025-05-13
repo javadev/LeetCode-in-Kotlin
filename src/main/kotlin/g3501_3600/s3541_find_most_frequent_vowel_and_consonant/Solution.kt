@@ -1,6 +1,6 @@
 package g3501_3600.s3541_find_most_frequent_vowel_and_consonant
 
-// #Easy #2025_05_11_Time_8_ms_(100.00%)_Space_43.92_MB_(100.00%)
+// #Easy #String #Hash_Table #Counting #2025_05_11_Time_8_ms_(100.00%)_Space_43.92_MB_(100.00%)
 
 import kotlin.math.max
 

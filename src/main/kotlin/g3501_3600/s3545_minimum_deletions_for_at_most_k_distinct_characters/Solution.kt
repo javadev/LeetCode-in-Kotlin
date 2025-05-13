@@ -1,6 +1,7 @@
 package g3501_3600.s3545_minimum_deletions_for_at_most_k_distinct_characters
 
-// #Easy #2025_05_11_Time_3_ms_(100.00%)_Space_42.14_MB_(100.00%)
+// #Easy #String #Hash_Table #Sorting #Greedy #Counting
+// #2025_05_11_Time_3_ms_(100.00%)_Space_42.14_MB_(100.00%)
 
 class Solution {
     fun minDeletion(s: String, k: Int): Int {

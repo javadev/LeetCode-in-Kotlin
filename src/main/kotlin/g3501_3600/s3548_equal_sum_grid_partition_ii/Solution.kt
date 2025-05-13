@@ -1,79 +1,123 @@
 package g3501_3600.s3548_equal_sum_grid_partition_ii
 
-// #Hard #2025_05_11_Time_8_ms_(100.00%)_Space_94.22_MB_(100.00%)
+// #Hard #Array #Hash_Table #Matrix #Prefix_Sum #Enumeration
+// #2025_05_13_Time_61_ms_(100.00%)_Space_98.01_MB_(100.00%)
 
 class Solution {
-    fun canPartitionGrid(grid: Array<IntArray>): Boolean {
-        if (grid.size == 1 && grid[0].size == 1) {
-            return false
-        }
-        var total: Long = 0
-        var k = 0
-        val r = IntArray(grid.size)
-        for (i in grid) {
-            var t = 0
-            for (j in i) {
-                t += j
+    private fun calculateSum(grid: Array<IntArray>, count: IntArray): Long {
+        var sum: Long = 0
+        for (line in grid) {
+            for (num in line) {
+                sum += num.toLong()
+                count[num]++
             }
-            total += t.toLong()
-            r[k++] = t
         }
+        return sum
+    }
+
+    private fun checkHorizontalPartition(grid: Array<IntArray>, sum: Long, count: IntArray): Boolean {
+        val half = IntArray(MAX_SIZE)
+        var now: Long = 0
         val m = grid.size
         val n = grid[0].size
-        var s: Long = 0
-        for (i in 0..<r.size - 1) {
-            s += r[i].toLong()
-            if (s * 2 == total || s * 2 - grid[i][n - 1] == total ||
-                s * 2 - grid[i][0] == total || s * 2 - grid[0][0] == total ||
-                s * 2 - grid[0][n - 1] == total
-            ) {
+        for (i in 0..<m - 1) {
+            for (j in 0..<n) {
+                now += grid[i][j].toLong()
+                count[grid[i][j]]--
+                half[grid[i][j]]++
+            }
+            if (now * 2 == sum) {
                 return true
             }
-            if (s * 2 > total) {
-                break
-            }
-        }
-        s = 0
-        for (i in m - 1 downTo 0) {
-            s += r[i].toLong()
-            if (s * 2 == total || s * 2 - grid[i][n - 1] == total ||
-                s * 2 - grid[i][0] == total || s * 2 - grid[m - 1][n - 1] == total ||
-                s * 2 - grid[m - 1][0] == total
-            ) {
-                return true
-            }
-            if (s * 2 > total) {
-                break
-            }
-        }
-        s = 0
-        for (i in 0..<grid[0].size - 1) {
-            for (ints in grid) {
-                s += ints[i].toLong()
-            }
-            if (s * 2 == total || s * 2 - grid[0][0] == total || s * 2 - grid[m - 1][0] == total ||
-                s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total
-            ) {
-                return true
-            }
-            if (s * 2 > total) {
-                break
-            }
-        }
-        s = 0
-        for (i in n - 1 downTo 0) {
-            for (j in m - 1 downTo 0) {
-                s += grid[j][i].toLong()
-            }
-            if (s * 2 == total || s * 2 - grid[m - 1][n - 1] == total || s * 2 - grid[0][n - 1] == total ||
-                s * 2 - grid[0][i] == total || s * 2 - grid[m - 1][i] == total
-            ) {
-                return true
-            }
-            if (s * 2 > total) {
-                break
+            if (now * 2 > sum) {
+                val diff = now * 2 - sum
+                if (diff <= MAX_SIZE - 1 && half[diff.toInt()] > 0) {
+                    if (n > 1) {
+                        if (i > 0 || grid[0][0].toLong() == diff || grid[0][n - 1].toLong() == diff) {
+                            return true
+                        }
+                    } else {
+                        if (i > 0 && (grid[0][0].toLong() == diff || grid[i][0].toLong() == diff)) {
+                            return true
+                        }
+                    }
+                }
+            } else {
+                val diff = sum - now * 2
+                if (diff <= MAX_SIZE - 1 && count[diff.toInt()] > 0) {
+                    if (n > 1) {
+                        if (i < m - 2 || grid[m - 1][0].toLong() == diff || grid[m - 1][n - 1].toLong() == diff) {
+                            return true
+                        }
+                    } else {
+                        if (i > 0 && (grid[m - 1][0].toLong() == diff || grid[i + 1][0].toLong() == diff)) {
+                            return true
+                        }
+                    }
+                }
             }
         }
         return false
+    }
+
+    private fun checkVerticalPartition(grid: Array<IntArray>, sum: Long): Boolean {
+        val count = IntArray(MAX_SIZE)
+        val half = IntArray(MAX_SIZE)
+        for (line in grid) {
+            for (num in line) {
+                count[num]++
+            }
+        }
+        var now: Long = 0
+        val m = grid.size
+        val n = grid[0].size
+        for (i in 0..<n - 1) {
+            for (ints in grid) {
+                now += ints[i].toLong()
+                count[ints[i]]--
+                half[ints[i]]++
+            }
+            if (now * 2 == sum) {
+                return true
+            }
+            if (now * 2 > sum) {
+                val diff = now * 2 - sum
+                if (diff <= MAX_SIZE - 1 && half[diff.toInt()] > 0) {
+                    if (m > 1) {
+                        if (i > 0 || grid[0][0].toLong() == diff || grid[m - 1][0].toLong() == diff) {
+                            return true
+                        }
+                    } else {
+                        if (i > 0 && (grid[0][0].toLong() == diff || grid[0][i].toLong() == diff)) {
+                            return true
+                        }
+                    }
+                }
+            } else {
+                val diff = sum - now * 2
+                if (diff <= MAX_SIZE - 1 && count[diff.toInt()] > 0) {
+                    if (m > 1) {
+                        if (i < n - 2 || grid[0][n - 1].toLong() == diff || grid[m - 1][n - 1].toLong() == diff) {
+                            return true
+                        }
+                    } else {
+                        if (i > 0 && (grid[0][n - 1].toLong() == diff || grid[0][i + 1].toLong() == diff)) {
+                            return true
+                        }
+                    }
+                }
+            }
+        }
+        return false
+    }
+
+    fun canPartitionGrid(grid: Array<IntArray>): Boolean {
+        val count = IntArray(MAX_SIZE)
+        val sum = calculateSum(grid, count)
+        return checkHorizontalPartition(grid, sum, count) || checkVerticalPartition(grid, sum)
+    }
+
+    companion object {
+        private const val MAX_SIZE = 100001
     }
 }

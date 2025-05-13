@@ -1,6 +1,7 @@
 package g3501_3600.s3547_maximum_sum_of_edge_values_in_a_graph
 
-// #Hard #2025_05_11_Time_61_ms_(100.00%)_Space_86.35_MB_(100.00%)
+// #Hard #Sorting #Depth_First_Search #Greedy #Graph
+// #2025_05_11_Time_61_ms_(100.00%)_Space_86.35_MB_(100.00%)
 
 class Solution {
     private lateinit var p: IntArray

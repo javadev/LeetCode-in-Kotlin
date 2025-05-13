@@ -1,6 +1,7 @@
 package g3501_3600.s3544_subtree_inversion_sum
 
-// #Hard #2025_05_11_Time_114_ms_(100.00%)_Space_195.14_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree
+// #2025_05_11_Time_114_ms_(100.00%)_Space_195.14_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

@@ -1,46 +1,40 @@
 package g3501_3600.s3546_equal_sum_grid_partition_i
 
-// #Medium #2025_05_11_Time_5_ms_(100.00%)_Space_90.42_MB_(15.00%)
+// #Medium #Array #Matrix #Prefix_Sum #Enumeration
+// #2025_05_13_Time_7_ms_(82.61%)_Space_90.22_MB_(17.39%)
 
 class Solution {
     fun canPartitionGrid(grid: Array<IntArray>): Boolean {
-        if (grid.size == 1 && grid[0].size == 1) {
-            return false
-        }
-        var total: Long = 0
-        var k = 0
-        val r = IntArray(grid.size)
-        for (i in grid) {
-            var t = 0
-            for (j in i) {
-                t += j
+        val n = grid.size
+        val m = grid[0].size
+        var totalRowSum = 0L
+        val prefixRowWise = LongArray(n)
+        val prefixColWise = LongArray(m)
+        for (i in 0..<n) {
+            for (j in 0..<m) {
+                val v = grid[i][j]
+                prefixRowWise[i] += v.toLong()
+                prefixColWise[j] += v.toLong()
             }
-            total += t.toLong()
-            r[k++] = t
         }
-        if (total % 2 != 0L) {
-            return false
+        for (r in prefixRowWise) {
+            totalRowSum += r
         }
-        var s: Long = 0
-        for (i in 0..<r.size - 1) {
-            s += r[i].toLong()
-            if (s * 2 == total) {
+        val totalColSum: Long = totalRowSum
+        var currentRowUpperSum = 0L
+        for (i in 0..<n - 1) {
+            currentRowUpperSum += prefixRowWise[i]
+            val lowerSegmentSum = totalRowSum - currentRowUpperSum
+            if (currentRowUpperSum == lowerSegmentSum) {
                 return true
             }
-            if (s * 2 > total) {
-                break
-            }
         }
-        s = 0
-        for (i in 0..<grid[0].size - 1) {
-            for (ints in grid) {
-                s += ints[i].toLong()
-            }
-            if (s * 2 == total) {
+        var currentColLeftSum = 0L
+        for (j in 0..<m - 1) {
+            currentColLeftSum += prefixColWise[j]
+            val rightSegmentSum = totalColSum - currentColLeftSum
+            if (currentColLeftSum == rightSegmentSum) {
                 return true
-            }
-            if (s * 2 > total) {
-                break
             }
         }
         return false
