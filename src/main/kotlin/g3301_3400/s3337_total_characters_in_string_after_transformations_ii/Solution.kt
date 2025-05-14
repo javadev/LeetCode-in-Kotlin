@@ -1,90 +1,74 @@
 package g3301_3400.s3337_total_characters_in_string_after_transformations_ii
 
 // #Hard #String #Hash_Table #Dynamic_Programming #Math #Counting
-// #2024_10_29_Time_320_ms_(100.00%)_Space_44_MB_(33.33%)
+// #2025_05_14_Time_302_ms_(100.00%)_Space_54.72_MB_(100.00%)
 
 class Solution {
-    fun lengthAfterTransformations(s: String, t: Int, nums: List<Int>): Int {
-        val m = Array<IntArray>(26) { IntArray(26) }
-        for (i in 0..25) {
-            for (j in 1..nums[i]) {
-                m[(i + j) % 26][i] = m[(i + j) % 26][i] + 1
-            }
-        }
-        var v = IntArray(26)
+    fun lengthAfterTransformations(s: String, t: Int, numsList: MutableList<Int>): Int {
+        val localT = buildTransformationMatrix(numsList)
+        val tPower = matrixPower(localT, t)
+        val freq = IntArray(26)
         for (c in s.toCharArray()) {
-            v[c.code - 'a'.code]++
+            freq[c.code - 'a'.code]++
         }
-        v = pow(m, v, t.toLong())
-        var ans: Long = 0
-        for (x in v) {
-            ans += x.toLong()
-        }
-        return (ans % MOD).toInt()
-    }
-
-    // A^e*v
-    private fun pow(a: Array<IntArray>, v: IntArray, e: Long): IntArray {
-        var v = v
-        var e = e
-        for (i in v.indices) {
-            if (v[i] >= MOD) {
-                v[i] %= MOD
-            }
-        }
-        var mul = a
-        while (e > 0) {
-            if ((e and 1L) == 1L) {
-                v = mul(mul, v)
-            }
-            mul = p2(mul)
-            e = e ushr 1
-        }
-        return v
-    }
-
-    // int matrix*int vector
-    private fun mul(a: Array<IntArray>, v: IntArray): IntArray {
-        val m = a.size
-        val n = v.size
-        val w = IntArray(m)
-        for (i in 0 until m) {
+        var result: Long = 0
+        for (i in 0..25) {
             var sum: Long = 0
-            for (k in 0 until n) {
-                sum += a[i][k].toLong() * v[k]
-                if (sum >= BIG) {
-                    sum -= BIG
-                }
+            for (j in 0..25) {
+                sum = (sum + freq[j].toLong() * tPower[j][i]) % MOD
             }
-            w[i] = (sum % MOD).toInt()
+            result = (result + sum) % MOD
         }
-        return w
+
+        return result.toInt()
     }
 
-    // int matrix^2 (be careful about negative value)
-    private fun p2(a: Array<IntArray>): Array<IntArray> {
-        val n = a.size
-        val c = Array<IntArray>(n) { IntArray(n) }
-        for (i in 0 until n) {
-            val sum = LongArray(n)
-            for (k in 0 until n) {
-                for (j in 0 until n) {
-                    sum[j] += a[i][k].toLong() * a[k][j]
-                    if (sum[j] >= BIG) {
-                        sum[j] -= BIG
-                    }
-                }
-            }
-            for (j in 0 until n) {
-                c[i][j] = (sum[j] % MOD).toInt()
+    private fun buildTransformationMatrix(numsList: MutableList<Int>): Array<IntArray> {
+        val localT = Array(26) { IntArray(26) }
+        for (i in 0..25) {
+            val steps: Int = numsList[i]
+            for (j in 1..steps) {
+                localT[i][(i + j) % 26] = localT[i][(i + j) % 26] + 1
             }
         }
-        return c
+        return localT
+    }
+
+    private fun matrixPower(matrix: Array<IntArray>, power: Int): Array<IntArray> {
+        var matrix = matrix
+        var power = power
+        val size = matrix.size
+        var result = Array(size) { IntArray(size) }
+        for (i in 0..<size) {
+            result[i][i] = 1
+        }
+        while (power > 0) {
+            if ((power and 1) == 1) {
+                result = multiplyMatrices(result, matrix)
+            }
+            matrix = multiplyMatrices(matrix, matrix)
+            power = power shr 1
+        }
+        return result
+    }
+
+    private fun multiplyMatrices(a: Array<IntArray>, b: Array<IntArray>): Array<IntArray> {
+        val size = a.size
+        val result = Array(size) { IntArray(size) }
+        for (i in 0..<size) {
+            for (k in 0..<size) {
+                if (a[i][k] == 0) {
+                    continue
+                }
+                for (j in 0..<size) {
+                    result[i][j] = ((result[i][j] + a[i][k].toLong() * b[k][j]) % MOD).toInt()
+                }
+            }
+        }
+        return result
     }
 
     companion object {
-        const val MOD: Int = 1000000007
-        const val M2: Long = MOD.toLong() * MOD
-        const val BIG: Long = 8L * M2
+        private const val MOD = 1000000007
     }
 }
