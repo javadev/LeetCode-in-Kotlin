@@ -19,7 +19,6 @@ class Solution {
             }
             result = (result + sum) % MOD
         }
-
         return result.toInt()
     }
 
