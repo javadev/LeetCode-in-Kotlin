@@ -4,8 +4,8 @@ package g3301_3400.s3337_total_characters_in_string_after_transformations_ii
 // #2025_05_14_Time_302_ms_(100.00%)_Space_54.72_MB_(100.00%)
 
 class Solution {
-    fun lengthAfterTransformations(s: String, t: Int, numsList: MutableList<Int>): Int {
-        val localT = buildTransformationMatrix(numsList)
+    fun lengthAfterTransformations(s: String, t: Int, nums: List<Int>): Int {
+        val localT = buildTransformationMatrix(nums)
         val tPower = matrixPower(localT, t)
         val freq = IntArray(26)
         for (c in s.toCharArray()) {
@@ -23,7 +23,7 @@ class Solution {
         return result.toInt()
     }
 
-    private fun buildTransformationMatrix(numsList: MutableList<Int>): Array<IntArray> {
+    private fun buildTransformationMatrix(numsList: List<Int>): Array<IntArray> {
         val localT = Array(26) { IntArray(26) }
         for (i in 0..25) {
             val steps: Int = numsList[i]
