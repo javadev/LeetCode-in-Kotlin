@@ -5,11 +5,11 @@ package g3501_3600.s3553_minimum_weighted_subgraph_with_the_required_paths_ii
 import kotlin.math.max
 
 class Solution {
-    private lateinit var graph: Array<MutableList<IntArray>?>
+    private lateinit var graph: Array<MutableList<IntArray>>
     private lateinit var euler: IntArray
     private lateinit var depth: IntArray
     private lateinit var firstcome: IntArray
-    private lateinit var sparseT: Array<IntArray?>
+    private lateinit var sparseT: Array<IntArray>
     private var times = 0
     private lateinit var dists: LongArray
 
@@ -24,8 +24,8 @@ class Solution {
             val u = e[0]
             val v = e[1]
             val w = e[2]
-            graph[u]!!.add(intArrayOf(v, w))
-            graph[v]!!.add(intArrayOf(u, w))
+            graph[u].add(intArrayOf(v, w))
+            graph[v].add(intArrayOf(u, w))
         }
         val m = 2 * p - 1
         euler = IntArray(m)
@@ -57,7 +57,7 @@ class Solution {
         }
         times++
         dists[node] = distSoFar
-        for (edge in graph[node]!!) {
+        for (edge in graph[node]) {
             val nxt = edge[0]
             val w = edge[1]
             if (nxt == parent) {
@@ -77,14 +77,14 @@ class Solution {
         }
         sparseT = Array(log) { IntArray(length) }
         for (i in 0..<length) {
-            sparseT[0]!![i] = i
+            sparseT[0][i] = i
         }
         for (k in 1..<log) {
             var i = 0
             while (i + (1 shl k) <= length) {
-                val left = sparseT[k - 1]!![i]
-                val right = sparseT[k - 1]!![i + (1 shl (k - 1))]
-                sparseT[k]!![i] = if (depth[left] < depth[right]) left else right
+                val left = sparseT[k - 1][i]
+                val right = sparseT[k - 1][i + (1 shl (k - 1))]
+                sparseT[k][i] = if (depth[left] < depth[right]) left else right
                 i++
             }
         }
@@ -100,8 +100,8 @@ class Solution {
         }
         val length = r - l + 1
         val k = 31 - Integer.numberOfLeadingZeros(length)
-        val left = sparseT[k]!![l]
-        val right = sparseT[k]!![r - (1 shl k) + 1]
+        val left = sparseT[k][l]
+        val right = sparseT[k][r - (1 shl k) + 1]
         return if (depth[left] < depth[right]) left else right
     }
 

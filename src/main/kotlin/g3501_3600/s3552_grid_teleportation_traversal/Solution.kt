@@ -25,7 +25,7 @@ class Solution {
 
     private fun initializeQueue(
         queue: Queue<IntArray>,
-        visited: Array<BooleanArray?>,
+        visited: Array<BooleanArray>,
         matrix: Array<String>,
         portalsToPositions: Array<MutableList<IntArray>>,
     ) {
@@ -33,12 +33,12 @@ class Solution {
             val idx = matrix[0][0].code - 'A'.code
             for (pos in portalsToPositions[idx]) {
                 queue.offer(pos)
-                visited[pos[0]]!![pos[1]] = true
+                visited[pos[0]][pos[1]] = true
             }
         } else {
             queue.offer(intArrayOf(0, 0))
         }
-        visited[0]!![0] = true
+        visited[0][0] = true
     }
 
     private fun isValidMove(
@@ -46,10 +46,10 @@ class Solution {
         c: Int,
         m: Int,
         n: Int,
-        visited: Array<BooleanArray?>,
+        visited: Array<BooleanArray>,
         matrix: Array<String>,
     ): Boolean {
-        return !(r < 0 || r == m || c < 0 || c == n || visited[r]!![c] || matrix[r][c] == '#')
+        return !(r < 0 || r == m || c < 0 || c == n || visited[r][c] || matrix[r][c] == '#')
     }
 
     private fun processPortal(
@@ -58,7 +58,7 @@ class Solution {
         m: Int,
         n: Int,
         queue: Queue<IntArray>,
-        visited: Array<BooleanArray?>,
+        visited: Array<BooleanArray>,
         matrix: Array<String>,
         portalsToPositions: Array<MutableList<IntArray>>,
     ): Boolean {
@@ -68,7 +68,7 @@ class Solution {
                 return true
             }
             queue.offer(pos)
-            visited[pos[0]]!![pos[1]] = true
+            visited[pos[0]][pos[1]] = true
         }
         return false
     }
@@ -85,7 +85,7 @@ class Solution {
             return 0
         }
         val portalsToPositions = initializePortals(m, n, matrix)
-        val visited = Array<BooleanArray?>(m) { BooleanArray(n) }
+        val visited = Array<BooleanArray>(m) { BooleanArray(n) }
         val queue: Queue<IntArray> = LinkedList()
         initializeQueue(queue, visited, matrix, portalsToPositions)
         var moves = 0
@@ -108,7 +108,7 @@ class Solution {
                             return moves + 1
                         }
                         queue.offer(intArrayOf(r, c))
-                        visited[r]!![c] = true
+                        visited[r][c] = true
                     }
                 }
             }
