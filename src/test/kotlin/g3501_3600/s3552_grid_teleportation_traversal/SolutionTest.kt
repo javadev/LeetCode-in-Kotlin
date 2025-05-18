@@ -38,6 +38,6 @@ internal class SolutionTest {
 
     @Test
     fun minMoves6() {
-        assertThat<Int>(Solution().minMoves(arrayOf<String>(".", "#")), equalTo<Int>(0))
+        assertThat<Int>(Solution().minMoves(arrayOf<String>(".", "#")), equalTo<Int>(-1))
     }
 }
