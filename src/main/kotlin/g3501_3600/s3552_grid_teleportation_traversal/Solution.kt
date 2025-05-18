@@ -5,6 +5,7 @@ package g3501_3600.s3552_grid_teleportation_traversal
 import java.util.LinkedList
 import java.util.Queue
 
+@Suppress("kotlin:S107")
 class Solution {
     private fun initializePortals(m: Int, n: Int, matrix: Array<String>): Array<MutableList<IntArray>> {
         val portalsToPositions: Array<MutableList<IntArray>> = Array(26) { ArrayList() }
@@ -83,14 +84,12 @@ class Solution {
         ) {
             return 0
         }
-
         val portalsToPositions = initializePortals(m, n, matrix)
         val visited = Array<BooleanArray?>(m) { BooleanArray(n) }
         val queue: Queue<IntArray> = LinkedList()
         initializeQueue(queue, visited, matrix, portalsToPositions)
-
         var moves = 0
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             var sz = queue.size
             while (sz-- > 0) {
                 val curr = queue.poll()
