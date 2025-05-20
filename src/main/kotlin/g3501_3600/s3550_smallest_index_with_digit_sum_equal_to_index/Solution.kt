@@ -1,6 +1,6 @@
 package g3501_3600.s3550_smallest_index_with_digit_sum_equal_to_index
 
-// #Easy #2025_05_18_Time_1_ms_(100.00%)_Space_44.87_MB_(100.00%)
+// #Easy #Array #Math #2025_05_18_Time_1_ms_(100.00%)_Space_44.87_MB_(100.00%)
 
 class Solution {
     private fun sum(num: Int): Int {

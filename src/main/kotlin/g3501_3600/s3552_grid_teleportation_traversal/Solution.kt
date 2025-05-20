@@ -1,6 +1,7 @@
 package g3501_3600.s3552_grid_teleportation_traversal
 
-// #Medium #2025_05_18_Time_147_ms_(100.00%)_Space_87.53_MB_(100.00%)
+// #Medium #Array #Hash_Table #Breadth_First_Search #Matrix
+// #2025_05_18_Time_147_ms_(100.00%)_Space_87.53_MB_(100.00%)
 
 import java.util.LinkedList
 import java.util.Queue

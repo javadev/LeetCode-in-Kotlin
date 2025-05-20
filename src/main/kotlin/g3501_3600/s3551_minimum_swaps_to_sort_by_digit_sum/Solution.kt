@@ -1,6 +1,6 @@
 package g3501_3600.s3551_minimum_swaps_to_sort_by_digit_sum
 
-// #Medium #2025_05_18_Time_481_ms_(83.33%)_Space_78.86_MB_(94.44%)
+// #Medium #Array #Hash_Table #Sorting #2025_05_18_Time_481_ms_(83.33%)_Space_78.86_MB_(94.44%)
 
 class Solution {
     private class Pair(var sum: Int, var value: Int, var index: Int)

@@ -1,6 +1,7 @@
 package g3501_3600.s3553_minimum_weighted_subgraph_with_the_required_paths_ii
 
-// #Hard #2025_05_18_Time_142_ms_(100.00%)_Space_131.32_MB_(100.00%)
+// #Hard #Array #Depth_First_Search #Tree
+// #2025_05_18_Time_142_ms_(100.00%)_Space_131.32_MB_(100.00%)
 
 import kotlin.math.max
 
