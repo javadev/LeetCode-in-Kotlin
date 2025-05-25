@@ -6,16 +6,16 @@ import kotlin.math.ceil
 import kotlin.math.ln
 
 class Solution {
-    private var adj: MutableList<MutableList<Int?>?>? = null
+    private lateinit var adj: MutableList<MutableList<Int>>
     private lateinit var level: IntArray
     private lateinit var jumps: Array<IntArray?>
 
     private fun mark(node: Int, par: Int) {
-        for (neigh in adj!!.get(node)!!) {
+        for (neigh in adj[node]) {
             if (neigh == par) {
                 continue
             }
-            level[neigh!!] = level[node] + 1
+            level[neigh] = level[node] + 1
             jumps[neigh]!![0] = node
             mark(neigh, node)
         }
@@ -60,14 +60,14 @@ class Solution {
 
     fun assignEdgeWeights(edges: Array<IntArray>, queries: Array<IntArray>): IntArray {
         val n = edges.size + 1
-        adj = ArrayList<MutableList<Int?>?>()
+        adj = ArrayList<MutableList<Int>>()
         level = IntArray(n)
         for (i in 0..<n) {
-            adj!!.add(ArrayList<Int?>())
+            adj.add(ArrayList<Int>())
         }
         for (i in edges) {
-            adj!!.get(i[0] - 1)!!.add(i[1] - 1)
-            adj!!.get(i[1] - 1)!!.add(i[0] - 1)
+            adj[i[0] - 1].add(i[1] - 1)
+            adj[i[1] - 1].add(i[0] - 1)
         }
         val m = (ceil(ln(n - 1.0) / ln(2.0))).toInt() + 1
         jumps = Array<IntArray?>(n) { IntArray(m) }

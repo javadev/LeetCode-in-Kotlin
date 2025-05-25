@@ -22,7 +22,7 @@ class Solution {
         val q: Queue<IntArray> = LinkedList<IntArray>()
         q.offer(intArrayOf(1, 0))
         l[1] = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val curr = q.peek()!![0]
             val level = q.peek()!![1]
             if (l[max] < l[curr]) {
