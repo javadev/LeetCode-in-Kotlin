@@ -1,9 +1,9 @@
 package g3501_3600.s3557_find_maximum_number_of_non_intersecting_substrings
 
+// #Medium #2025_05_25_Time_57_ms_(100.00%)_Space_55.58_MB_(100.00%)
+
 import java.util.LinkedList
 import kotlin.math.max
-
-// #Medium #2025_05_25_Time_103_ms_(100.00%)_Space_54.87_MB_(100.00%)
 
 class Solution {
     fun maxSubstrings(s: String): Int {

@@ -1,6 +1,6 @@
 package g3501_3600.s3556_sum_of_largest_prime_substrings
 
-// #Medium #2025_05_25_Time_21_ms_(100.00%)_Space_42.82_MB_(100.00%)
+// #Medium #2025_05_25_Time_25_ms_(100.00%)_Space_43.67_MB_(100.00%)
 
 class Solution {
     fun sumOfLargestPrimes(s: String): Long {

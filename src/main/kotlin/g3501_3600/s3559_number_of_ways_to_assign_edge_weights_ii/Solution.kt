@@ -1,9 +1,9 @@
 package g3501_3600.s3559_number_of_ways_to_assign_edge_weights_ii
 
+// #Hard #2025_05_25_Time_197_ms_(100.00%)_Space_158.27_MB_(100.00%)
+
 import kotlin.math.ceil
 import kotlin.math.ln
-
-// #Hard #2025_05_25_Time_135_ms_(100.00%)_Space_119.27_MB_(100.00%)
 
 class Solution {
     private var adj: MutableList<MutableList<Int?>?>? = null

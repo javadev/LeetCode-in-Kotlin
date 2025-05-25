@@ -1,8 +1,8 @@
 package g3501_3600.s3563_lexicographically_smallest_string_after_adjacent_removals
 
-import kotlin.math.abs
+// #Hard #2025_05_25_Time_186_ms_(100.00%)_Space_49.04_MB_(100.00%)
 
-// #Hard #2025_05_25_Time_146_ms_(98.77%)_Space_45.52_MB_(90.12%)
+import kotlin.math.abs
 
 class Solution {
     private fun checkPair(char1: Char, char2: Char): Boolean {
