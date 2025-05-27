@@ -10,32 +10,32 @@ class Solution {
         return diffVal == 1 || (char1 == 'a' && char2 == 'z') || (char1 == 'z' && char2 == 'a')
     }
 
-    fun lexicographicallySmallestString(sIn: String): String? {
+    fun lexicographicallySmallestString(sIn: String): String {
         val nVal = sIn.length
         if (nVal == 0) {
             return ""
         }
-        val remTable = Array<BooleanArray?>(nVal) { BooleanArray(nVal) }
+        val remTable = Array<BooleanArray>(nVal) { BooleanArray(nVal) }
         var len = 2
         while (len <= nVal) {
             for (idx in 0..nVal - len) {
                 val j = idx + len - 1
                 if (checkPair(sIn[idx], sIn[j])) {
                     if (len == 2) {
-                        remTable[idx]!![j] = true
+                        remTable[idx][j] = true
                     } else {
-                        if (remTable[idx + 1]!![j - 1]) {
-                            remTable[idx]!![j] = true
+                        if (remTable[idx + 1][j - 1]) {
+                            remTable[idx][j] = true
                         }
                     }
                 }
-                if (remTable[idx]!![j]) {
+                if (remTable[idx][j]) {
                     continue
                 }
                 var pSplit = idx + 1
                 while (pSplit < j) {
-                    if (remTable[idx]!![pSplit] && remTable[pSplit + 1]!![j]) {
-                        remTable[idx]!![j] = true
+                    if (remTable[idx][pSplit] && remTable[pSplit + 1][j]) {
+                        remTable[idx][j] = true
                         break
                     }
                     pSplit += 2
@@ -52,7 +52,7 @@ class Solution {
                     val middleVanishes: Boolean = if (kMatch - 1 < idx + 1) {
                         true
                     } else {
-                        remTable[idx + 1]!![kMatch - 1]
+                        remTable[idx + 1][kMatch - 1]
                     }
                     if (middleVanishes) {
                         val candidate = dpArr[kMatch + 1]
