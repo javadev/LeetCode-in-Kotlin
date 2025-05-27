@@ -64,7 +64,7 @@ internal class MysqlTest {
                     )
                         .lines()
                         .collect(Collectors.joining("\n"))
-                        .replace("#.*\\r\\n".toRegex(), ""),
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
                     MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
                     MatcherAssert.assertThat<String>(resultSet.getNString(1), CoreMatchers.equalTo<String>("Fall"))
