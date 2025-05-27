@@ -1,6 +1,7 @@
 package g3501_3600.s3562_maximum_profit_from_trading_stocks_with_discounts
 
-// #Hard #2025_05_25_Time_40_ms_(100.00%)_Space_49.77_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree
+// #2025_05_25_Time_40_ms_(100.00%)_Space_49.77_MB_(100.00%)
 
 import kotlin.math.max
 

@@ -1,6 +1,6 @@
 package g3501_3600.s3561_resulting_string_after_adjacent_removals
 
-// #Medium #2025_05_25_Time_43_ms_(100.00%)_Space_50.83_MB_(68.75%)
+// #Medium #String #Stack #Simulation #2025_05_25_Time_43_ms_(100.00%)_Space_50.83_MB_(68.75%)
 
 class Solution {
     fun resultingString(s: String): String {

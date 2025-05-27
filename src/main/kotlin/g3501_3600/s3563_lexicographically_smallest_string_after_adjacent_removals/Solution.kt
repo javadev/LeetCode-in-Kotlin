@@ -1,6 +1,6 @@
 package g3501_3600.s3563_lexicographically_smallest_string_after_adjacent_removals
 
-// #Hard #2025_05_25_Time_186_ms_(100.00%)_Space_49.04_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #2025_05_25_Time_186_ms_(100.00%)_Space_49.04_MB_(100.00%)
 
 import kotlin.math.abs
 

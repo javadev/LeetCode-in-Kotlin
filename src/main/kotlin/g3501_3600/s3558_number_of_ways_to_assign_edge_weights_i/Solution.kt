@@ -1,6 +1,6 @@
 package g3501_3600.s3558_number_of_ways_to_assign_edge_weights_i
 
-// #Medium #2025_05_25_Time_160_ms_(100.00%)_Space_149.66_MB_(100.00%)
+// #Medium #Math #Depth_First_Search #Tree #2025_05_27_Time_21_ms_(100.00%)_Space_135.14_MB_(45.45%)
 
 class Solution {
     fun assignEdgeWeights(edges: Array<IntArray>): Int {
