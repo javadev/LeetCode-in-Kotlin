@@ -2,65 +2,51 @@ package g3501_3600.s3558_number_of_ways_to_assign_edge_weights_i
 
 // #Medium #2025_05_25_Time_160_ms_(100.00%)_Space_149.66_MB_(100.00%)
 
-import java.util.LinkedList
-import java.util.Queue
-
 class Solution {
     fun assignEdgeWeights(edges: Array<IntArray>): Int {
+        if (pow2[0] == 0L) {
+            pow2[0] = 1
+            for (i in 1..<pow2.size) {
+                pow2[i] = (pow2[i - 1] shl 1) % mod
+            }
+        }
         val n = edges.size + 1
-        val adj: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()
-        for (i in 0..n) {
-            adj.add(ArrayList<Int>())
+        val adj = IntArray(n + 1)
+        val degrees = IntArray(n + 1)
+        for (edge in edges) {
+            val u = edge[0]
+            val v = edge[1]
+            adj[u] += v
+            adj[v] += u
+            degrees[u]++
+            degrees[v]++
         }
-        for (i in edges) {
-            adj[i[0]].add(i[1])
-            adj[i[1]].add(i[0])
-        }
-        val l = IntArray(n + 1)
-        var max = 0
-        l.fill(-1)
-        val q: Queue<IntArray> = LinkedList<IntArray>()
-        q.offer(intArrayOf(1, 0))
-        l[1] = 0
-        while (q.isNotEmpty()) {
-            val curr = q.peek()!![0]
-            val level = q.peek()!![1]
-            if (l[max] < l[curr]) {
-                max = curr
+        val que = IntArray(n)
+        var write = 0
+        var read = 0
+        for (i in 2..n) {
+            if (degrees[i] == 1) {
+                que[write++] = i
             }
-            q.remove()
-            for (next in adj[curr]) {
-                if (l[next] != -1) {
-                    continue
+        }
+        var distance = 0
+        while (read < write) {
+            distance++
+            var size = write - read
+            while (size-- > 0) {
+                val v = que[read++]
+                val u = adj[v]
+                adj[u] -= v
+                if (--degrees[u] == 1 && u != 1) {
+                    que[write++] = u
                 }
-                q.offer(intArrayOf(next, level + 1))
-                l[next] = level + 1
             }
         }
-        val dp: Array<IntArray> = Array<IntArray>(l[max]) { IntArray(2) }
-        for (i in dp) {
-            i.fill(-1)
-        }
-        return solve(0, 0, dp)
-    }
-
-    private fun solve(ind: Int, odd: Int, dp: Array<IntArray>): Int {
-        if (ind == dp.size) {
-            return if (odd == 1) {
-                1
-            } else {
-                0
-            }
-        }
-        if (dp[ind][odd] != -1) {
-            return dp[ind][odd]
-        }
-        dp[ind][odd] =
-            (solve(ind + 1, odd, dp) % MOD + solve(ind + 1, (odd + 1) % 2, dp) % MOD) % MOD
-        return dp[ind][odd]
+        return pow2[distance - 1].toInt()
     }
 
     companion object {
-        private const val MOD = 1e9.toInt() + 7
+        private const val mod = 1e9.toInt() + 7
+        private val pow2 = LongArray(100001)
     }
 }
