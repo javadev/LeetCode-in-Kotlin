@@ -1,28 +1,22 @@
 package g3501_3600.s3557_find_maximum_number_of_non_intersecting_substrings
 
-// #Medium #2025_05_25_Time_57_ms_(100.00%)_Space_55.58_MB_(100.00%)
-
-import java.util.LinkedList
-import kotlin.math.max
+// #Medium #String #Hash_Table #Dynamic_Programming #Greedy
+// #2025_05_27_Time_28_ms_(70.59%)_Space_49.63_MB_(70.59%)
 
 class Solution {
     fun maxSubstrings(s: String): Int {
-        val last: Array<LinkedList<Int>> = Array(26) { LinkedList() }
-        val n = s.length
-        val dp = IntArray(n + 1)
-        for (i in 0..<n) {
-            val c = s[i].code - 'a'.code
-            dp[i + 1] = dp[i]
-            for (j in last[c]) {
-                if (i - j + 1 >= 4) {
-                    dp[i + 1] = max(dp[i + 1], dp[j] + 1)
-                }
-            }
-            last[c].addLast(i)
-            if (last[c].size > 4) {
-                last[c].removeFirst()
+        val prev = IntArray(26)
+        var r = 0
+        prev.fill(-1)
+        for (i in 0..<s.length) {
+            val j = s[i].code - 'a'.code
+            if (prev[j] != -1 && i - prev[j] + 1 >= 4) {
+                ++r
+                prev.fill(-1)
+            } else if (prev[j] == -1) {
+                prev[j] = i
             }
         }
-        return dp[n]
+        return r
     }
 }
