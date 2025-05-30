@@ -17,7 +17,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20")
     testImplementation("org.junit.jupiter:junit-jupiter:[5.12.2,)")
     testImplementation("org.hamcrest:hamcrest-core:[3.0,)")
-    testImplementation("org.zapodot:embedded-db-junit-jupiter:2.2.0")
+    testImplementation("org.zapodot:embedded-db-junit-jupiter:2.2.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.12.2,)")
 }
 
