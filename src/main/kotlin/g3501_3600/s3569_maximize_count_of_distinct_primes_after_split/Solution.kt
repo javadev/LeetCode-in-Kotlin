@@ -77,7 +77,7 @@ class Solution {
         val primeIndices: MutableMap<Int, TreeSet<Int>> = HashMap()
         for (i in 0..<n) {
             if (isPrime[nums[i]]) {
-                primeIndices.computeIfAbsent(nums[i]) { k: Int? -> TreeSet<Int>() }.add(i)
+                primeIndices.computeIfAbsent(nums[i]) { _: Int -> TreeSet<Int>() }.add(i)
             }
         }
         val segmentTree = SegmentTree(n)
@@ -115,7 +115,7 @@ class Solution {
             nums[idx] = `val`
             if (isPrime[`val`]) {
                 val wasNewPrime = !primeIndices.containsKey(`val`)
-                val indices = primeIndices.computeIfAbsent(`val`) { k: Int? -> TreeSet<Int>() }
+                val indices = primeIndices.computeIfAbsent(`val`) { _: Int -> TreeSet<Int>() }
                 val oldFirst: Int = (if (indices.isEmpty()) -1 else indices.first())!!
                 val oldLast: Int = (if (indices.isEmpty()) -1 else indices.last())!!
                 indices.add(idx)
