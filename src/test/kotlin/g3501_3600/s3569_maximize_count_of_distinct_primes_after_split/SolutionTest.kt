@@ -26,7 +26,7 @@ internal class SolutionTest {
     fun maximumCount3() {
         assertThat<IntArray>(
             Solution().maximumCount(intArrayOf(2, 34), arrayOf<IntArray>(intArrayOf(1, 2), intArrayOf(1, 3))),
-            equalTo<IntArray>(intArrayOf(2, 3)),
+            equalTo<IntArray>(intArrayOf(2, 2)),
         )
     }
 
