@@ -1,6 +1,6 @@
 package g3501_3600.s3567_minimum_absolute_difference_in_sliding_submatrix
 
-// #Medium #2025_06_01_Time_18_ms_(100.00%)_Space_53.66_MB_(25.00%)
+// #Medium #Array #Sorting #Matrix #2025_06_01_Time_18_ms_(100.00%)_Space_53.66_MB_(25.00%)
 
 import kotlin.math.min
 

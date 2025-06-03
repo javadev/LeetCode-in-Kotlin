@@ -1,6 +1,7 @@
 package g3501_3600.s3568_minimum_moves_to_clean_the_classroom
 
-// #Medium #2025_06_01_Time_149_ms_(100.00%)_Space_64.20_MB_(100.00%)
+// #Medium #Array #Hash_Table #Breadth_First_Search #Matrix #Bit_Manipulation
+// #2025_06_01_Time_149_ms_(100.00%)_Space_64.20_MB_(100.00%)
 
 import java.util.ArrayDeque
 import java.util.Queue

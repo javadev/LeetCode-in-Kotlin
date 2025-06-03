@@ -1,6 +1,7 @@
 package g3501_3600.s3569_maximize_count_of_distinct_primes_after_split
 
-// #Hard #2025_06_01_Time_441_ms_(100.00%)_Space_98.42_MB_(100.00%)
+// #Hard #Array #Math #Segment_Tree #Number_Theory
+// #2025_06_01_Time_441_ms_(100.00%)_Space_98.42_MB_(100.00%)
 
 import java.util.TreeSet
 import kotlin.math.max
