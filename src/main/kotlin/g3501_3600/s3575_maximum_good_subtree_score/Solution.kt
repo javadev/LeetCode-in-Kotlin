@@ -38,7 +38,6 @@ class Solution {
             isOk[i] = valid
         }
         tree = Array(n) { initialCapacity: Int -> ArrayList(initialCapacity) }
-        Arrays.setAll<MutableList<out Any?>?>(tree, IntFunction { initialCapacity: Int -> ArrayList(initialCapacity) })
         val root = 0
         for (i in 1..<n) {
             tree[par[i]].add(i)
@@ -49,7 +48,7 @@ class Solution {
 
     private fun dfs(u: Int): LongArray {
         var dp = LongArray(full)
-        Arrays.fill(dp, neg)
+        dp.fill(neg)
         dp[0] = 0
         if (isOk[u]) {
             dp[mask[u]] = `val`[u].toLong()
