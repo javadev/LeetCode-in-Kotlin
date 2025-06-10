@@ -12,7 +12,7 @@ class Solution {
             mx = max(mx, x)
         }
         val width = 32 - Integer.numberOfLeadingZeros(mx)
-        val lowBitPos: Array<MutableList<Int>> = Array<MutableList<Int>>(width) { i: Int -> ArrayList<Int>() }
+        val lowBitPos: Array<MutableList<Int>> = Array<MutableList<Int>>(width) { _ -> ArrayList<Int>() }
         val intervals = Array<IntArray>(width + 1) { IntArray(3) }
         var size = 0
         var ans: Long = 0
