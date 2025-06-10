@@ -1,6 +1,7 @@
 package g3501_3600.s3579_minimum_steps_to_convert_string_with_operations
 
-// #Hard #2025_06_08_Time_74_ms_(100.00%)_Space_48.31_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #Greedy
+// #2025_06_10_Time_107_ms_(100.00%)_Space_48.36_MB_(100.00%)
 
 import kotlin.math.min
 

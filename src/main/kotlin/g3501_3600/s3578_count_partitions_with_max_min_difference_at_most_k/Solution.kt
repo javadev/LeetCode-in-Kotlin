@@ -1,6 +1,7 @@
 package g3501_3600.s3578_count_partitions_with_max_min_difference_at_most_k
 
-// #Medium #2025_06_08_Time_25_ms_(100.00%)_Space_65.21_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Prefix_Sum #Sliding_Window #Queue #Monotonic_Queue
+// #2025_06_10_Time_33_ms_(100.00%)_Space_74.03_MB_(66.67%)
 
 class Solution {
     fun countPartitions(nums: IntArray, k: Int): Int {

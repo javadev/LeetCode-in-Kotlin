@@ -1,6 +1,6 @@
 package g3501_3600.s3576_transform_array_to_all_equal_elements
 
-// #Medium #2025_06_08_Time_10_ms_(91.67%)_Space_82.55_MB_(58.33%)
+// #Medium #Array #Greedy #2025_06_10_Time_11_ms_(92.31%)_Space_84.38_MB_(15.38%)
 
 class Solution {
     fun canMakeEqual(nums: IntArray, k: Int): Boolean {

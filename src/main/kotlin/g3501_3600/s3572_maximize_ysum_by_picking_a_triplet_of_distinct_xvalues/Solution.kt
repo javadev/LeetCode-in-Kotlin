@@ -1,28 +1,45 @@
 package g3501_3600.s3572_maximize_ysum_by_picking_a_triplet_of_distinct_xvalues
 
-// #Medium #2025_06_08_Time_72_ms_(100.00%)_Space_77.69_MB_(100.00%)
-
-import java.util.Collections
-import java.util.PriorityQueue
-import kotlin.math.max
+// #Medium #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue
+// #2025_06_10_Time_5_ms_(100.00%)_Space_82.11_MB_(56.00%)
 
 class Solution {
     fun maxSumDistinctTriplet(x: IntArray, y: IntArray): Int {
-        val map: MutableMap<Int, Int> = HashMap<Int, Int>()
-        for (i in x.indices) {
-            map.put(x[i], max(map.getOrDefault(x[i], 0), y[i]))
+        var index = -1
+        var max = -1
+        var sum = 0
+        for (i in y.indices) {
+            if (y[i] > max) {
+                max = y[i]
+                index = i
+            }
         }
-        val maxHeap = PriorityQueue<Int>(Collections.reverseOrder<Int>())
-        for (`val` in map.values) {
-            maxHeap.add(`val`)
-        }
-        if (maxHeap.size < 3) {
+        sum += max
+        if (max == -1) {
             return -1
         }
-        var sum = 0
-        for (i in 0..2) {
-            sum += maxHeap.poll()!!
+        var index2 = -1
+        max = -1
+        for (i in y.indices) {
+            if (y[i] > max && x[i] != x[index]) {
+                max = y[i]
+                index2 = i
+            }
         }
+        sum += max
+        if (max == -1) {
+            return -1
+        }
+        max = -1
+        for (i in y.indices) {
+            if (y[i] > max && x[i] != x[index] && x[i] != x[index2]) {
+                max = y[i]
+            }
+        }
+        if (max == -1) {
+            return -1
+        }
+        sum += max
         return sum
     }
 }

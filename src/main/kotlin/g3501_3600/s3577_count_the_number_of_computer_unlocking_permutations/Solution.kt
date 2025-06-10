@@ -1,6 +1,7 @@
 package g3501_3600.s3577_count_the_number_of_computer_unlocking_permutations
 
-// #Medium #2025_06_08_Time_2_ms_(100.00%)_Space_70.32_MB_(14.29%)
+// #Medium #Array #Math #Combinatorics #Brainteaser
+// #2025_06_10_Time_2_ms_(100.00%)_Space_70.49_MB_(30.00%)
 
 class Solution {
     fun countPermutations(complexity: IntArray): Int {

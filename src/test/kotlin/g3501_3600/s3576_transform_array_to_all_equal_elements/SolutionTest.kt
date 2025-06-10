@@ -20,4 +20,12 @@ internal class SolutionTest {
             equalTo<Boolean>(false),
         )
     }
+
+    @Test
+    fun canMakeEqual3() {
+        assertThat<Boolean>(
+            Solution().canMakeEqual(intArrayOf(1), 3),
+            equalTo<Boolean>(true),
+        )
+    }
 }
