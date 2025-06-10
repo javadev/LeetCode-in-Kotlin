@@ -1,7 +1,7 @@
 package g3501_3600.s3575_maximum_good_subtree_score
 
 // #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Bit_Manipulation #Bitmask
-// #2025_06_10_Time_86_ms_(100.00%)_Space_67.73_MB_(33.33%)
+// #2025_06_10_Time_71_ms_(100.00%)_Space_78.07_MB_(0.00%)
 
 import kotlin.math.max
 

@@ -1,7 +1,7 @@
 package g3501_3600.s3574_maximize_subarray_gcd_score
 
 // #Hard #Array #Math #Enumeration #Number_Theory
-// #2025_06_10_Time_27_ms_(100.00%)_Space_48.98_MB_(100.00%)
+// #2025_06_10_Time_19_ms_(100.00%)_Space_50.12_MB_(100.00%)
 
 import kotlin.math.max
 
