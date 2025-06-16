@@ -1,6 +1,6 @@
 package g3501_3600.s3582_generate_tag_for_video_caption
 
-// #Easy #2025_06_16_Time_12_ms_(100.00%)_Space_45.47_MB_(100.00%)
+// #Easy #2025_06_16_Time_40_ms_(100.00%)_Space_46.98_MB_(55.56%)
 
 import java.util.Locale
 
