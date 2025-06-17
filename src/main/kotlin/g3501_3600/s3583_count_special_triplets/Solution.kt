@@ -1,6 +1,6 @@
 package g3501_3600.s3583_count_special_triplets
 
-// #Medium #2025_06_16_Time_263_ms_(100.00%)_Space_99.88_MB_(42.86%)
+// #Medium #Array #Hash_Table #Counting #2025_06_17_Time_238_ms_(55.56%)_Space_83.48_MB_(77.78%)
 
 class Solution {
     fun specialTriplets(nums: IntArray): Int {

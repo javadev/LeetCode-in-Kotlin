@@ -1,38 +1,39 @@
 package g3501_3600.s3582_generate_tag_for_video_caption
 
-// #Easy #2025_06_16_Time_40_ms_(100.00%)_Space_46.98_MB_(55.56%)
-
-import java.util.Locale
+// #Easy #String #Simulation #2025_06_17_Time_3_ms_(100.00%)_Space_45.13_MB_(85.00%)
 
 class Solution {
     fun generateTag(caption: String): String? {
-        if (caption.trim { it <= ' ' }.isEmpty()) {
-            return "#"
-        }
-        val arr = caption.trim { it <= ' ' }.split("\\s+".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-        val res = StringBuilder("#")
-        var firstWord = arr[0]
-        firstWord =
-            (
-                firstWord.substring(0, 1).lowercase(Locale.getDefault()) +
-                    (if (firstWord.length > 1) firstWord.substring(1).lowercase(Locale.getDefault()) else "")
-                )
-        res.append(firstWord)
-        for (i in 1..<arr.size) {
-            var w = arr[i]
-            if (w.isEmpty()) {
-                continue
+        var caption = caption
+        val sb = StringBuilder()
+        sb.append('#')
+        var space = false
+        caption = caption.trim { it <= ' ' }
+        for (i in 0..<caption.length) {
+            val c = caption[i]
+            if (c == ' ') {
+                space = true
             }
-            w =
-                (
-                    w.substring(0, 1).uppercase(Locale.getDefault()) +
-                        (if (w.length > 1) w.substring(1).lowercase(Locale.getDefault()) else "")
-                    )
-            res.append(w)
-            if (res.length >= 100) {
-                break
+            if (c >= 'A' && c <= 'Z') {
+                if (space) {
+                    space = !space
+                    sb.append(c)
+                } else {
+                    sb.append(c.lowercaseChar())
+                }
+            }
+            if (c >= 'a' && c <= 'z') {
+                if (space) {
+                    space = !space
+                    sb.append(c.uppercaseChar())
+                } else {
+                    sb.append(c)
+                }
             }
         }
-        return if (res.length > 100) res.substring(0, 100) else res.toString()
+        if (sb.length > 100) {
+            return sb.substring(0, 100)
+        }
+        return sb.toString()
     }
 }
