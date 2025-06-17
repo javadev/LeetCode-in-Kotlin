@@ -131,7 +131,9 @@ class Solution {
             var curr = v
             for (p in longMax - 1 downTo 0) {
                 val nextNode = parent[p][curr]
-                if (nextNode != -1 && depth[nextNode] >= depth[lca] && (dist[nextNode] - dist[lca]) >= remainingWeightFromLCA) {
+                if (nextNode != -1 && depth[nextNode] >= depth[lca] &&
+                    (dist[nextNode] - dist[lca]) >= remainingWeightFromLCA
+                ) {
                     curr = nextNode
                 }
             }
