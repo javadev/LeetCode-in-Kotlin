@@ -21,9 +21,9 @@ class Solution {
         } else {
             longMax = 1
         }
-        adj = ArrayList<MutableList<IntArray>>()
+        adj = ArrayList()
         for (i in 0..<n) {
-            adj.add(ArrayList<IntArray>())
+            adj.add(ArrayList())
         }
         for (edge in edges) {
             val u = edge[0]
@@ -34,7 +34,7 @@ class Solution {
         }
         depth = IntArray(n)
         dist = LongArray(n)
-        parent = Array<IntArray>(longMax) { IntArray(n) }
+        parent = Array(longMax) { IntArray(n) }
         for (i in 0..<longMax) {
             parent[i].fill(-1)
         }
@@ -117,7 +117,7 @@ class Solution {
         val lca = getLCA(u, v)
         val totalPathWeight = dist[u] + dist[v] - 2 * dist[lca]
         val halfWeight = (totalPathWeight + 1) / 2L
-        if (dist[u] - dist[lca] >= halfWeight) {
+        return if (dist[u] - dist[lca] >= halfWeight) {
             var curr = u
             for (p in longMax - 1 downTo 0) {
                 val nextNode = parent[p][curr]
@@ -125,7 +125,7 @@ class Solution {
                     curr = nextNode
                 }
             }
-            return parent[0][curr]
+            parent[0][curr]
         } else {
             val remainingWeightFromLCA = halfWeight - (dist[u] - dist[lca])
             var curr = v
@@ -137,7 +137,7 @@ class Solution {
                     curr = nextNode
                 }
             }
-            return curr
+            curr
         }
     }
 }
