@@ -16,8 +16,8 @@ class Solution {
         for (coord in coords) {
             val x = coord[0]
             val y = coord[1]
-            xMap.computeIfAbsent(x) { k: Int -> TreeSet<Int>() }.add(y)
-            yMap.computeIfAbsent(y) { k: Int -> TreeSet<Int>() }.add(x)
+            xMap.computeIfAbsent(x) { _: Int -> TreeSet<Int>() }.add(y)
+            yMap.computeIfAbsent(y) { _: Int -> TreeSet<Int>() }.add(x)
             allX.add(x)
             allY.add(y)
         }

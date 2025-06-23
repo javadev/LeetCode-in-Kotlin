@@ -41,15 +41,15 @@ class Solution {
                 ms.put(nums[r], ms.getOrDefault(nums[r], 0) + 1)
                 primeIndices.add(r)
             }
-            while (!ms.isEmpty() && ms.lastKey()!! - ms.firstKey()!! > k) {
+            while (ms.isNotEmpty() && ms.lastKey()!! - ms.firstKey()!! > k) {
                 if (nums[l] < MAXN && isPrime[nums[l]]) {
-                    val count: Int = ms.get(nums[l])!!
+                    val count: Int = ms[nums[l]]!!
                     if (count == 1) {
                         ms.remove(nums[l])
                     } else {
                         ms.put(nums[l], count - 1)
                     }
-                    if (!primeIndices.isEmpty() && primeIndices[0] == l) {
+                    if (primeIndices.isNotEmpty() && primeIndices[0] == l) {
                         primeIndices.removeAt(0)
                     }
                 }

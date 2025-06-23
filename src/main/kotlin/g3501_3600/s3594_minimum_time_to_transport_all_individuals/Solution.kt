@@ -32,7 +32,7 @@ class Solution {
             )
         dis[0][0][0] = 0.0
         pq.add(doubleArrayOf(0.0, 0.0, 0.0, 0.0))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val cur = pq.poll()
             val far = cur[0]
             val ma = cur[1].toInt()
