@@ -31,13 +31,11 @@ class Solution {
         return ans
     }
 
-    companion object {
-        private fun helper(indices: MutableList<Int>): Int {
-            var swaps = 0
-            for (i in indices.indices) {
-                swaps += abs(indices[i] - 2 * i)
-            }
-            return swaps
+    private fun helper(indices: MutableList<Int>): Int {
+        var swaps = 0
+        for (i in indices.indices) {
+            swaps += abs(indices[i] - 2 * i)
         }
+        return swaps
     }
 }
