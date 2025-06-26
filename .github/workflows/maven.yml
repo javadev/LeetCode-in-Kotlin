@@ -1,4 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
 name: Kotlin CI
@@ -23,7 +23,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        distribution: 'temurin'
+        distribution: 'corretto'
         java-version: '17'
         cache: 'gradle'
     - name: Cache SonarCloud packages
@@ -50,7 +50,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        distribution: 'temurin'
+        distribution: 'corretto'
         java-version: '17'
         cache: 'gradle'
     - name: Build with Gradle
@@ -68,9 +68,8 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        distribution: 'temurin'
+        distribution: 'corretto'
         java-version: '17'
         cache: 'gradle'
     - name: Build with Gradle
       run: chmod +x gradlew && ./gradlew test --no-daemon
-
