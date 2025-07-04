@@ -7,18 +7,8 @@ class Node {
     var next: Node? = null
     var random: Node? = null
 
-    constructor() {
-        `val` = 0
-    }
-
     constructor(`val`: Int) {
         this.`val` = `val`
-    }
-
-    constructor(`val`: Int, next: Node?, random: Node?) {
-        this.`val` = `val`
-        this.next = next
-        this.random = random
     }
 
     override fun toString(): String {
