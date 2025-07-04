@@ -23,7 +23,10 @@ internal class SolutionTest {
         node11.random = node1
         node10.random = node11
         node1.random = node7
-        assertThat(Solution().copyRandomList(node7).toString(), equalTo("[[7,null],[13,0],[11,4],[10,2],[1,0]]"))
+        assertThat(
+            Solution().copyRandomList(node7).toString(),
+            equalTo("[[7,null],[13,0],[11,4],[10,2],[1,0]]"),
+        )
     }
 
     @Test
@@ -34,7 +37,10 @@ internal class SolutionTest {
         node1.random = node1
         node2.next = null
         node2.random = node2
-        assertThat(Solution().copyRandomList(node1).toString(), equalTo("[[1,1],[2,1]]"))
+        assertThat(
+            Solution().copyRandomList(node1).toString(),
+            equalTo("[[1,1],[2,1]]"),
+        )
     }
 
     @Test
@@ -48,6 +54,9 @@ internal class SolutionTest {
         node32.random = node31
         node33.next = null
         node33.random = null
-        assertThat(Solution().copyRandomList(node31).toString(), equalTo("[[3,null],[3,0],[3,null]]"))
+        assertThat(
+            Solution().copyRandomList(node31).toString(),
+            equalTo("[[3,null],[3,0],[3,null]]"),
+        )
     }
 }
