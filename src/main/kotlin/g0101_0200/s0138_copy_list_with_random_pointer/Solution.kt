@@ -26,7 +26,7 @@ class Solution {
         }
         cur = head
         while (cur != null) {
-            val copy: Node = hashMap.get(cur)!!
+            val copy: Node = hashMap[cur]!!
             copy.next = hashMap[cur.next]
             copy.random = hashMap[cur.random]
             cur = cur.next
