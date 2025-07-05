@@ -1,7 +1,7 @@
 package g0001_0100.s0013_roman_to_integer
 
 // #Easy #Top_Interview_Questions #String #Hash_Table #Math #Top_Interview_150_Array/String
-// #2023_07_03_Time_211_ms_(83.47%)_Space_36.9_MB_(91.66%)
+// #Big_O_Time_O(n)_Space_O(1) #2023_07_03_Time_211_ms_(83.47%)_Space_36.9_MB_(91.66%)
 
 class Solution {
     fun romanToInt(s: String): Int {
