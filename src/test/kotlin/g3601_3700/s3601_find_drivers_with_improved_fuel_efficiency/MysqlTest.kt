@@ -65,18 +65,12 @@ internal class MysqlTest {
                 ).use { resultSet ->
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
                     assertThat<String>(resultSet.getNString(1), equalTo<String>("2"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("Bob Smith"),
-                    )
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("Bob Smith"))
                     assertThat<String>(resultSet.getNString(3), equalTo<String>("11.24"))
                     assertThat<String>(resultSet.getNString(4), equalTo<String>("13.33"))
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
                     assertThat<String>(resultSet.getNString(1), equalTo<String>("1"))
-                    assertThat<String>(
-                        resultSet.getNString(2),
-                        equalTo<String>("Alice Johnson"),
-                    )
+                    assertThat<String>(resultSet.getNString(2), equalTo<String>("Alice Johnson"))
                     assertThat<String>(resultSet.getNString(3), equalTo<String>("11.97"))
                     assertThat<String>(resultSet.getNString(4), equalTo<String>("14.02"))
                     assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
