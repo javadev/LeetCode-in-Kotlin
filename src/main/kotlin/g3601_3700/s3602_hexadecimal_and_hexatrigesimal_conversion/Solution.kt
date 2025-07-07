@@ -18,7 +18,7 @@ class Solution {
             }
         }
         for (i in tmp.length - 1 downTo 0) {
-            st.append(tmp.get(i))
+            st.append(tmp[i])
         }
         tmp = StringBuilder()
         t = n * n * n
@@ -32,7 +32,7 @@ class Solution {
             }
         }
         for (i in tmp.length - 1 downTo 0) {
-            st.append(tmp.get(i))
+            st.append(tmp[i])
         }
         return st.toString()
     }
