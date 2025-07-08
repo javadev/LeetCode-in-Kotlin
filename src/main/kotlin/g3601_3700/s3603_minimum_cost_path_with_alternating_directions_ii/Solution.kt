@@ -1,6 +1,7 @@
 package g3601_3700.s3603_minimum_cost_path_with_alternating_directions_ii
 
-// #Medium #2025_07_07_Time_12_ms_(100.00%)_Space_84.57_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Matrix
+// #2025_07_07_Time_12_ms_(100.00%)_Space_84.57_MB_(100.00%)
 
 import kotlin.math.min
 

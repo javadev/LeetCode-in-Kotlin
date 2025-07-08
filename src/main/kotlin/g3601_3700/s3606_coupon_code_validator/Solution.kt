@@ -1,6 +1,7 @@
 package g3601_3700.s3606_coupon_code_validator
 
-// #Easy #2025_07_07_Time_32_ms_(100.00%)_Space_60.79_MB_(100.00%)
+// #Easy #Array #String #Hash_Table #Sorting
+// #2025_07_07_Time_32_ms_(100.00%)_Space_60.79_MB_(100.00%)
 
 class Solution {
     fun validateCoupons(code: Array<String>, businessLine: Array<String>, isActive: BooleanArray): List<String> {

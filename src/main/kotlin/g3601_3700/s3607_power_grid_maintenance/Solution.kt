@@ -1,6 +1,7 @@
 package g3601_3700.s3607_power_grid_maintenance
 
-// #Medium #2025_07_07_Time_91_ms_(100.00%)_Space_165.69_MB_(93.75%)
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Heap_Priority_Queue #Graph
+// #Union_Find #Ordered_Set #2025_07_07_Time_91_ms_(100.00%)_Space_165.69_MB_(93.75%)
 
 import java.util.PriorityQueue
 

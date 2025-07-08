@@ -1,6 +1,7 @@
 package g3601_3700.s3605_minimum_stability_factor_of_array
 
-// #Hard #2025_07_07_Time_95_ms_(100.00%)_Space_77.89_MB_(100.00%)
+// #Hard #Array #Math #Greedy #Binary_Search #Segment_Tree #Number_Theory
+// #2025_07_07_Time_95_ms_(100.00%)_Space_77.89_MB_(100.00%)
 
 class Solution {
     fun minStable(nums: IntArray, maxC: Int): Int {

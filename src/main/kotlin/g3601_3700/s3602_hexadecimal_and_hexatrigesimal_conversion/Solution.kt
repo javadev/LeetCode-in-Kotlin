@@ -1,6 +1,6 @@
 package g3601_3700.s3602_hexadecimal_and_hexatrigesimal_conversion
 
-// #Easy #2025_07_07_Time_2_ms_(100.00%)_Space_41.91_MB_(100.00%)
+// #Easy #String #Math #2025_07_07_Time_2_ms_(100.00%)_Space_41.91_MB_(100.00%)
 
 class Solution {
     fun concatHex36(n: Int): String {

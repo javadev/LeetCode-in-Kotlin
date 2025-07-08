@@ -1,6 +1,7 @@
 package g3601_3700.s3604_minimum_time_to_reach_destination_in_directed_graph
 
-// #Medium #2025_07_07_Time_18_ms_(100.00%)_Space_132.61_MB_(100.00%)
+// #Medium #Heap_Priority_Queue #Graph #Shortest_Path
+// #2025_07_07_Time_18_ms_(100.00%)_Space_132.61_MB_(100.00%)
 
 import kotlin.math.max
 

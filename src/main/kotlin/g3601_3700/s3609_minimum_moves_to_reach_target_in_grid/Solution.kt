@@ -1,6 +1,6 @@
 package g3601_3700.s3609_minimum_moves_to_reach_target_in_grid
 
-// #Hard #2025_07_07_Time_1_ms_(100.00%)_Space_40.67_MB_(100.00%)
+// #Hard #Math #2025_07_07_Time_1_ms_(100.00%)_Space_40.67_MB_(100.00%)
 
 class Solution {
     fun minMoves(sx: Int, sy: Int, tx: Int, ty: Int): Int {

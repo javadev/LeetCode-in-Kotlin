@@ -1,6 +1,7 @@
 package g3601_3700.s3608_minimum_time_for_k_connected_components
 
-// #Medium #2025_07_07_Time_31_ms_(100.00%)_Space_114.78_MB_(100.00%)
+// #Medium #Sorting #Binary_Search #Graph #Union_Find
+// #2025_07_07_Time_31_ms_(100.00%)_Space_114.78_MB_(100.00%)
 
 class Solution {
     fun minTime(n: Int, edges: Array<IntArray>, k: Int): Int {
