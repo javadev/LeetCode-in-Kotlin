@@ -32,4 +32,12 @@ internal class SolutionTest {
             equalTo<Int>(0),
         )
     }
+
+    @Test
+    fun minTime4() {
+        assertThat(
+            Solution().minTime(3, arrayOf<IntArray>(intArrayOf(2, 1, 1469), intArrayOf(1, 0, 5701)), 2),
+            equalTo(1469),
+        )
+    }
 }

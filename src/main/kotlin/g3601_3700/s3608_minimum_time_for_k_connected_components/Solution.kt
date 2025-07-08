@@ -28,24 +28,16 @@ class Solution {
 
     private fun countComponents(n: Int, edges: Array<IntArray>, t: Int): Int {
         val parent = IntArray(n)
-        val size = IntArray(n)
         for (i in 0..<n) {
             parent[i] = i
-            size[i] = 1
         }
         var comps = n
         for (e in edges) {
             if (e[2] > t) {
-                var u = find(parent, e[0])
-                var v = find(parent, e[1])
+                val u = find(parent, e[0])
+                val v = find(parent, e[1])
                 if (u != v) {
-                    if (size[u] < size[v]) {
-                        val tmp = u
-                        u = v
-                        v = tmp
-                    }
                     parent[v] = u
-                    size[u] += size[v]
                     comps--
                 }
             }
