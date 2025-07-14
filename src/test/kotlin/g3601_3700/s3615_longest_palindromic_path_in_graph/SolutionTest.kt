@@ -36,4 +36,9 @@ internal class SolutionTest {
             equalTo<Int>(3),
         )
     }
+
+    @Test
+    fun maxLen4() {
+        assertThat(Solution().maxLen(3, arrayOf<IntArray>(intArrayOf(2, 0), intArrayOf(2, 1)), "mll"), equalTo(2))
+    }
 }
