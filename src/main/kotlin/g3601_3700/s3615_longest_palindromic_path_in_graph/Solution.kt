@@ -1,6 +1,7 @@
 package g3601_3700.s3615_longest_palindromic_path_in_graph
 
-// #Hard #2025_07_14_Time_635_ms_(100.00%)_Space_96.67_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #Bit_Manipulation #Graph
+// #2025_07_14_Time_635_ms_(100.00%)_Space_96.67_MB_(100.00%)
 
 import kotlin.math.max
 

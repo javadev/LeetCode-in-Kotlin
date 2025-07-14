@@ -1,6 +1,7 @@
 package g3601_3700.s3613_minimize_maximum_component_cost
 
-// #Medium #2025_07_14_Time_34_ms_(100.00%)_Space_134.64_MB_(44.44%)
+// #Medium #Binary_Search #Graph #Union_Find #Sort
+// #2025_07_14_Time_34_ms_(100.00%)_Space_134.64_MB_(44.44%)
 
 import kotlin.math.max
 

@@ -1,6 +1,6 @@
 package g3601_3700.s3614_process_string_with_special_operations_ii
 
-// #Hard #2025_07_14_Time_37_ms_(100.00%)_Space_50.21_MB_(100.00%)
+// #Hard #String #Simulation #2025_07_14_Time_37_ms_(100.00%)_Space_50.21_MB_(100.00%)
 
 class Solution {
     fun processStr(s: String, k: Long): Char {
