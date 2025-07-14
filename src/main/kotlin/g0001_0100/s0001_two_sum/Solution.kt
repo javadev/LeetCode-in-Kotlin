@@ -11,7 +11,7 @@ class Solution {
         for (i in numbers.indices) {
             val requiredNum = target - numbers[i]
             if (indexMap.containsKey(requiredNum)) {
-                return intArrayOf(indexMap[requiredNum]!!, i)
+                return intArrayOf(indexMap.getValue(requiredNum), i)
             }
             indexMap[numbers[i]] = i
         }
