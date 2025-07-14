@@ -13,7 +13,7 @@ class Solution {
             } else if (c == '%') {
                 res.reverse()
             } else {
-                if (!res.isEmpty()) {
+                if (res.isNotEmpty()) {
                     res.deleteCharAt(res.length - 1)
                 }
             }
