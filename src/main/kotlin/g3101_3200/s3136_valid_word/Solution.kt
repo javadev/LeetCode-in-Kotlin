@@ -1,35 +1,26 @@
 package g3101_3200.s3136_valid_word
 
-// #Easy #String #2024_05_07_Time_160_ms_(92.50%)_Space_35.5_MB_(90.00%)
+// #Easy #String #2025_07_15_Time_2_ms_(100.00%)_Space_41.87_MB_(100.00%)
 
 class Solution {
     fun isValid(word: String): Boolean {
         if (word.length < 3) {
             return false
         }
-        if (word.contains("@") || word.contains("#") || word.contains("$")) {
-            return false
-        }
-        val vowels = charArrayOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
-        val consonants = charArrayOf(
-            'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v',
-            'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q',
-            'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z',
-        )
-        var flag1 = false
-        var flag2 = false
-        for (c in vowels) {
-            if (word.indexOf(c) != -1) {
-                flag1 = true
-                break
+        var hasVowel = false
+        var hasConsonant = false
+        for (c in word.toCharArray()) {
+            if (Character.isLetter(c)) {
+                val ch = c.lowercaseChar()
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                    hasVowel = true
+                } else {
+                    hasConsonant = true
+                }
+            } else if (!Character.isDigit(c)) {
+                return false
             }
         }
-        for (c in consonants) {
-            if (word.indexOf(c) != -1) {
-                flag2 = true
-                break
-            }
-        }
-        return flag1 && flag2
+        return hasVowel && hasConsonant
     }
 }
