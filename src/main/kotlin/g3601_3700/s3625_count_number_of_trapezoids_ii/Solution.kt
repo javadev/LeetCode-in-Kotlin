@@ -63,13 +63,13 @@ class Solution {
                 val lineId = nx.toLong() * x1 + ny.toLong() * y1
                 val slopeKey = Slope(dx, dy)
                 slopeLines
-                    .computeIfAbsent(slopeKey) { k: Slope -> HashMap() }
+                    .computeIfAbsent(slopeKey) { _: Slope -> HashMap() }
                     .merge(lineId, 1) { a: Int, b: Int -> Integer.sum(a, b) }
                 val mx = x1 + x2
                 val my = y1 + y2
                 val mid = Pair(mx, my)
                 midpointSlopes
-                    .computeIfAbsent(mid) { k: Pair -> HashMap() }
+                    .computeIfAbsent(mid) { _: Pair -> HashMap() }
                     .merge(slopeKey, 1) { a: Int, b: Int -> Integer.sum(a, b) }
             }
         }
