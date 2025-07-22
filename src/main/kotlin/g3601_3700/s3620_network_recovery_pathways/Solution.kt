@@ -2,10 +2,12 @@ package g3601_3700.s3620_network_recovery_pathways
 
 // #Hard #Biweekly_Contest_161 #2025_07_22_Time_212_ms_(66.67%)_Space_150.09_MB_(13.33%)
 
+import java.util.LinkedList
+import java.util.Queue
 import kotlin.math.max
 
 class Solution {
-    private fun topologicalSort(n: Int, g: List<List<Int>>): List<Int> {
+    private fun topologicalSort(n: Int, g: Array<ArrayList<Int>>): List<Int> {
         val indeg = IntArray(n)
         for (i in 0 until n) {
             for (adjNode in g[i]) {
@@ -35,13 +37,13 @@ class Solution {
     private fun check(
         x: Int,
         n: Int,
-        adj: List<List<IntArray>>,
+        adj: Array<ArrayList<IntArray>>,
         ts: List<Int>,
         online: BooleanArray,
         k: Long,
     ): Boolean {
         val d = LongArray(n)
-        Arrays.fill(d, Long.MAX_VALUE)
+        d.fill(Long.MAX_VALUE)
         d[0] = 0
         for (u in ts) {
             if (d[u] != Long.MAX_VALUE) {
@@ -63,14 +65,8 @@ class Solution {
     fun findMaxPathScore(edges: Array<IntArray>, online: BooleanArray, k: Long): Int {
         val n = online.size
         // Adjacency list for graph with edge weights
-        val adj = ArrayList<ArrayList<IntArray>>()
-        for (i in 0 until n) {
-            adj.add(ArrayList())
-        }
-        val g = ArrayList<ArrayList<Int>>()
-        for (i in 0 until n) {
-            g.add(ArrayList())
-        }
+        val adj = Array<ArrayList<IntArray>>(n) { ArrayList() }
+        val g = Array<ArrayList<Int>>(n) { ArrayList() }
         for (e in edges) {
             val u = e[0]
             val v = e[1]
