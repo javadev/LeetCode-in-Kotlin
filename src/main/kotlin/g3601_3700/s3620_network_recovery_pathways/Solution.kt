@@ -1,48 +1,100 @@
 package g3601_3700.s3620_network_recovery_pathways
 
-// #Hard #2025_07_20_Time_18_ms_(100.00%)_Space_120.24_MB_(100.00%)
+// #Hard #Biweekly_Contest_161 #2025_07_22_Time_212_ms_(66.67%)_Space_150.09_MB_(13.33%)
 
 import kotlin.math.max
-import kotlin.math.min
 
 class Solution {
-    private var ans = -1
-    private var d = 0
-    private var k: Long = 0
+    private fun topologicalSort(n: Int, g: List<List<Int>>): List<Int> {
+        val indeg = IntArray(n)
+        for (i in 0 until n) {
+            for (adjNode in g[i]) {
+                indeg[adjNode]++
+            }
+        }
+        val q: Queue<Int> = LinkedList()
+        val ts = ArrayList<Int>()
+        for (i in 0 until n) {
+            if (indeg[i] == 0) {
+                q.offer(i)
+            }
+        }
+        while (!q.isEmpty()) {
+            val u = q.poll()
+            ts.add(u)
+            for (v in g[u]) {
+                indeg[v]--
+                if (indeg[v] == 0) {
+                    q.offer(v)
+                }
+            }
+        }
+        return ts
+    }
+
+    private fun check(
+        x: Int,
+        n: Int,
+        adj: List<List<IntArray>>,
+        ts: List<Int>,
+        online: BooleanArray,
+        k: Long,
+    ): Boolean {
+        val d = LongArray(n)
+        Arrays.fill(d, Long.MAX_VALUE)
+        d[0] = 0
+        for (u in ts) {
+            if (d[u] != Long.MAX_VALUE) {
+                for (p in adj[u]) {
+                    val v = p[0]
+                    val c = p[1]
+                    if (c < x || !online[v]) {
+                        continue
+                    }
+                    if (d[u] + c < d[v]) {
+                        d[v] = d[u] + c
+                    }
+                }
+            }
+        }
+        return d[n - 1] <= k
+    }
 
     fun findMaxPathScore(edges: Array<IntArray>, online: BooleanArray, k: Long): Int {
         val n = online.size
-        this.k = k
-        this.d = n - 1
-        val g: Array<ArrayList<P>> = Array(n) { ArrayList() }
-        for (i in edges) {
-            if (online[i[0]] && online[i[1]]) {
-                g[i[0]].add(P(i[1], i[2]))
-            }
+        // Adjacency list for graph with edge weights
+        val adj = ArrayList<ArrayList<IntArray>>()
+        for (i in 0 until n) {
+            adj.add(ArrayList())
         }
-        dfs(g, 0, 0L, Int.Companion.MAX_VALUE)
-        return ans
-    }
-
-    private fun dfs(g: Array<ArrayList<P>>, s: Int, tc: Long, max: Int) {
-        if (s == d) {
-            if (ans == -1) {
-                ans = max
+        val g = ArrayList<ArrayList<Int>>()
+        for (i in 0 until n) {
+            g.add(ArrayList())
+        }
+        for (e in edges) {
+            val u = e[0]
+            val v = e[1]
+            val c = e[2]
+            adj[u].add(intArrayOf(v, c))
+            g[u].add(v)
+        }
+        val ts = topologicalSort(n, g)
+        if (!check(0, n, adj, ts, online, k)) {
+            return -1
+        }
+        var l = 0
+        var h = 0
+        for (e in edges) {
+            h = max(h, e[2])
+        }
+        while (l < h) {
+            val md = l + (h - l + 1) / 2
+            if (check(md, n, adj, ts, online, k)) {
+                l = md
             } else {
-                ans = max(ans, max)
-            }
-            return
-        }
-        for (i in g[s]) {
-            val cost = tc + i.c
-            if (ans != -1 && ans >= max) {
-                return
-            }
-            if (cost <= k) {
-                dfs(g, i.d, cost, min(max, i.c))
+                h = md - 1
             }
         }
+        return l
     }
-
-    private class P(var d: Int, var c: Int)
 }

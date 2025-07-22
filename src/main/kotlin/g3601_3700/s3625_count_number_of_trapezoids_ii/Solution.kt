@@ -1,6 +1,6 @@
 package g3601_3700.s3625_count_number_of_trapezoids_ii
 
-// #Hard #2025_07_21_Time_354_ms_(100.00%)_Space_131.52_MB_(52.31%)
+// #Hard #Weekly_Contest_459 #2025_07_22_Time_377_ms_(100.00%)_Space_162.04_MB_(37.50%)
 
 import kotlin.math.abs
 
