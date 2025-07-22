@@ -1,9 +1,9 @@
 package g3601_3700.s3620_network_recovery_pathways
 
+// #Hard #2025_07_20_Time_18_ms_(100.00%)_Space_120.24_MB_(100.00%)
+
 import kotlin.math.max
 import kotlin.math.min
-
-// #Hard #2025_07_20_Time_18_ms_(100.00%)_Space_120.24_MB_(100.00%)
 
 class Solution {
     private var ans = -1

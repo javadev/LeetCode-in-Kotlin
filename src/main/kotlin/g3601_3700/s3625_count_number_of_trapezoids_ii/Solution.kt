@@ -1,8 +1,8 @@
 package g3601_3700.s3625_count_number_of_trapezoids_ii
 
-import kotlin.math.abs
-
 // #Hard #2025_07_21_Time_354_ms_(100.00%)_Space_131.52_MB_(52.31%)
+
+import kotlin.math.abs
 
 class Solution {
     private class Slope(var dx: Int, var dy: Int) {
