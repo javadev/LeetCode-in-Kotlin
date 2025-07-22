@@ -1,6 +1,7 @@
 package g3601_3700.s3621_number_of_integers_with_popcount_depth_equal_to_k_i
 
-// #Hard #Biweekly_Contest_161 #2025_07_22_Time_2_ms_(100.00%)_Space_41.19_MB_(100.00%)
+// #Hard #Dynamic_Programming #Math #Combinatorics #Biweekly_Contest_161
+// #2025_07_22_Time_2_ms_(100.00%)_Space_41.19_MB_(100.00%)
 
 class Solution {
     companion object {

@@ -1,6 +1,7 @@
 package g3601_3700.s3623_count_number_of_trapezoids_i
 
-// #Medium #Weekly_Contest_459 #2025_07_22_Time_58_ms_(68.00%)_Space_139.38_MB_(8.00%)
+// #Medium #Array #Hash_Table #Math #Geometry #Weekly_Contest_459
+// #2025_07_22_Time_58_ms_(68.00%)_Space_139.38_MB_(8.00%)
 
 class Solution {
     fun countTrapezoids(points: Array<IntArray>): Int {

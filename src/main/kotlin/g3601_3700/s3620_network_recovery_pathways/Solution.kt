@@ -1,6 +1,7 @@
 package g3601_3700.s3620_network_recovery_pathways
 
-// #Hard #Biweekly_Contest_161 #2025_07_22_Time_212_ms_(66.67%)_Space_150.09_MB_(13.33%)
+// #Hard #Array #Dynamic_Programming #Binary_Search #Heap_Priority_Queue #Graph #Topological_Sort
+// #Shortest_Path #Biweekly_Contest_161 #2025_07_22_Time_212_ms_(66.67%)_Space_150.09_MB_(13.33%)
 
 import java.util.LinkedList
 import java.util.Queue

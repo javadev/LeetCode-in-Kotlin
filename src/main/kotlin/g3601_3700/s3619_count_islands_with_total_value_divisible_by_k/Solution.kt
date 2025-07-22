@@ -1,6 +1,7 @@
 package g3601_3700.s3619_count_islands_with_total_value_divisible_by_k
 
-// #Medium #Biweekly_Contest_161 #2025_07_22_Time_14_ms_(100.00%)_Space_86.20_MB_(47.83%)
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
+// #Biweekly_Contest_161 #2025_07_22_Time_14_ms_(100.00%)_Space_86.20_MB_(47.83%)
 
 class Solution {
     private var m = 0

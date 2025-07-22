@@ -1,6 +1,7 @@
 package g3601_3700.s3618_split_array_by_prime_indices
 
-// #Medium #Biweekly_Contest_161 #2025_07_22_Time_6_ms_(100.00%)_Space_78.20_MB_(81.48%)
+// #Medium #Array #Math #Number_Theory #Biweekly_Contest_161
+// #2025_07_22_Time_6_ms_(100.00%)_Space_78.20_MB_(81.48%)
 
 import kotlin.math.abs
 

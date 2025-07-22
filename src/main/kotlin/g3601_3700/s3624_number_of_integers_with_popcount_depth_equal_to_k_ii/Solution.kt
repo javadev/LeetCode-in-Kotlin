@@ -1,6 +1,7 @@
 package g3601_3700.s3624_number_of_integers_with_popcount_depth_equal_to_k_ii
 
-// #Hard #Weekly_Contest_459 #2025_07_22_Time_38_ms_(100.00%)_Space_134.15_MB_(100.00%)
+// #Hard #Array #Segment_Tree #Weekly_Contest_459
+// #2025_07_22_Time_38_ms_(100.00%)_Space_134.15_MB_(100.00%)
 
 class Solution {
     private fun computeDepth(number: Long): Int {
