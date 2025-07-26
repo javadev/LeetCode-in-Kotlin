@@ -28,7 +28,7 @@ internal class RouterTest {
         // Packet is added. Return True.
         assertThat<Boolean>(router.addPacket(5, 2, 110), equalTo<Boolean>(true))
         // The only packet with destination 5 and timestamp in the inclusive range
-        assertThat<Int?>(router.getCount(5, 100, 110), equalTo<Int?>(1))
+        assertThat<Int>(router.getCount(5, 100, 110), equalTo<Int>(1))
     }
 
     @Test
