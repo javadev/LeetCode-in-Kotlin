@@ -27,7 +27,7 @@ class Solution {
         val q = ArrayDeque<Int>()
         q.add(0)
         dist[0] = 0
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val i: Int = q.poll()!!
             val d = dist[i]
             if (i == n - 1) {
