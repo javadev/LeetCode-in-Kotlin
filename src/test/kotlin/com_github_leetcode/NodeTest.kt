@@ -6,13 +6,6 @@ import org.junit.jupiter.api.Test
 
 internal class NodeTest {
     @Test
-    fun constructor() {
-        val node = Node()
-        assertThat(node.`val`, equalTo(0))
-        assertThat(node.toString(), equalTo("[]"))
-    }
-
-    @Test
     fun constructor2() {
         val node = Node(1)
         assertThat(node.`val`, equalTo(1))

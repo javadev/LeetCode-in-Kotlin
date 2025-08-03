@@ -1,6 +1,6 @@
 package g0101_0200.s0133_clone_graph
 
-import com_github_leetcode.neighbors.Node
+import com_github_leetcode.Node
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
