@@ -16,7 +16,6 @@ internal class Solution {
         }
     }
 
-    // A helper class to store a query's range and its original index.
     private class Query(var l: Int, var r: Int, var originalIndex: Int)
 
     private lateinit var nums: IntArray
@@ -70,13 +69,12 @@ internal class Solution {
             if (blockA != blockB) {
                 return@sortWith blockA.compareTo(blockB)
             }
-            if ((blockA % 2) == 1) {
-                return@sortWith b.r.compareTo(a.r)
+            return@sortWith if ((blockA % 2) == 1) {
+                b.r.compareTo(a.r)
             } else {
-                return@sortWith a.r.compareTo(b.r)
+                a.r.compareTo(b.r)
             }
         }
-
         val ans = IntArray(qLen)
         var currentL = 0
         var currentR = -1
