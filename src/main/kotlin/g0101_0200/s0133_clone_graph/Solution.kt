@@ -16,16 +16,14 @@ class Solution {
         return cloneGraph(node, HashMap())
     }
 
-    private fun cloneGraph(node: Node?, processedNodes: MutableMap<Node?, Node?>): Node? {
+    private fun cloneGraph(node: Node?, processedNodes: MutableMap<Node, Node?>): Node? {
         if (node == null) {
             return null
         } else if (processedNodes[node] != null) {
             return processedNodes[node]
         }
-        val newNode = Node(0)
+        val newNode = Node(node.`val`)
         processedNodes.put(node, newNode)
-        newNode.`val` = node.`val`
-        newNode.neighbors = ArrayList()
         for (neighbor in node.neighbors) {
             val clonedNeighbor = cloneGraph(neighbor, processedNodes)
             if (clonedNeighbor != null) {
