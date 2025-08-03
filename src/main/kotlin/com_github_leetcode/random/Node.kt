@@ -1,7 +1,5 @@
 package com_github_leetcode.random
 
-import java.util.StringJoiner
-
 class Node {
     var `val`: Int
     var next: Node? = null
@@ -12,33 +10,38 @@ class Node {
     }
 
     override fun toString(): String {
-        val result = StringJoiner(",", "[", "]")
-        val result2 = StringJoiner(",", "[", "]")
-        result2.add(`val`.toString())
+        val result = StringBuilder()
+        result.append("[")
+        result.append("[")
+        result.append(`val`)
+        result.append(",")
         if (random == null) {
-            result2.add("null")
+            result.append("null")
         } else {
-            result2.add(random!!.`val`.toString())
+            result.append(random!!.`val`)
         }
-        result.add(result2.toString())
+        result.append("]")
         var curr = next
         while (curr != null) {
-            val result3 = StringJoiner(",", "[", "]")
-            result3.add(curr.`val`.toString())
+            result.append(",")
+            result.append("[")
+            result.append(curr.`val`)
+            result.append(",")
             if (curr.random == null) {
-                result3.add("null")
+                result.append("null")
             } else {
                 var randomIndex = 0
-                var curr2: Node? = this
-                while (curr2!!.next != null && curr2 !== curr.random) {
-                    randomIndex += 1
-                    curr2 = curr2.next
+                var indexFinder: Node? = this
+                while (indexFinder!!.next != null && indexFinder !== curr.random) {
+                    randomIndex++
+                    indexFinder = indexFinder.next
                 }
-                result3.add(randomIndex.toString())
+                result.append(randomIndex)
             }
-            result.add(result3.toString())
+            result.append("]")
             curr = curr.next
         }
+        result.append("]")
         return result.toString()
     }
 }

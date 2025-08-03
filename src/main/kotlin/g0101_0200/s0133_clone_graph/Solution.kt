@@ -1,9 +1,9 @@
 package g0101_0200.s0133_clone_graph
 
 // #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Graph #Udemy_Graph
-// #Top_Interview_150_Graph_General #2022_10_09_Time_351_ms_(60.91%)_Space_37.1_MB_(70.56%)
+// #Top_Interview_150_Graph_General #2025_08_03_Time_133_ms_(88.96%)_Space_43.11_MB_(67.94%)
 
-import com_github_leetcode.neighbors.Node
+import com_github_leetcode.Node
 
 /*
  * Definition for a Node.
@@ -24,11 +24,10 @@ class Solution {
         }
         val newNode = Node(node.`val`)
         processedNodes[node] = newNode
-        newNode.neighbors = ArrayList()
         for (neighbor in node.neighbors) {
-            val clonedNeighbor: Node? = cloneGraph(neighbor, processedNodes)
+            val clonedNeighbor = cloneGraph(neighbor, processedNodes)
             if (clonedNeighbor != null) {
-                newNode.neighbors.add(clonedNeighbor)
+                (newNode.neighbors as ArrayList).add(clonedNeighbor)
             }
         }
         return newNode
