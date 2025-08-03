@@ -1,6 +1,7 @@
 package g3601_3700.s3630_partition_array_for_maximum_xor_and_and
 
-// #Hard #Weekly_Contest_460 #2025_07_27_Time_72_ms_(100.00%)_Space_52.17_MB_(100.00%)
+// #Hard #Array #Math #Greedy #Enumeration #Weekly_Contest_460
+// #2025_08_03_Time_57_ms_(100.00%)_Space_51.81_MB_(100.00%)
 
 class Solution {
     fun maximizeXorAndXor(nums: IntArray): Long {
