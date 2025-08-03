@@ -23,7 +23,7 @@ class Solution {
             return processedNodes[node]
         }
         val newNode = Node(node.`val`)
-        processedNodes.put(node, newNode)
+        processedNodes[node] = newNode
         for (neighbor in node.neighbors) {
             val clonedNeighbor = cloneGraph(neighbor, processedNodes)
             if (clonedNeighbor != null) {
