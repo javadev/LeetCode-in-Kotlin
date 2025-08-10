@@ -65,7 +65,7 @@ class Solution {
             }
             val right = StringBuilder(left).reverse().toString()
             val s = left.toString() + mid + right
-            if (!s.isEmpty()) {
+            if (s.isNotEmpty()) {
                 val x = s.toLong()
                 v.add(x)
             }
