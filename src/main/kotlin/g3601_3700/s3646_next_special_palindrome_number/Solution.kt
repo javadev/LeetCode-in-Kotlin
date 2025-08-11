@@ -1,6 +1,6 @@
 package g3601_3700.s3646_next_special_palindrome_number
 
-// #Hard #Weekly_Contest_462 #2025_08_10_Time_20_ms_(77.60%)_Space_45.50_MB_(18.75%)
+// #Hard #Weekly_Contest_462 #2025_08_11_Time_1758_ms_(100.00%)_Space_70.14_MB_(100.00%)
 
 import java.util.Collections
 

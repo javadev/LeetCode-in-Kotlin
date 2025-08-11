@@ -1,6 +1,6 @@
 package g3601_3700.s3645_maximum_total_from_optimal_activation_order
 
-// #Medium #Weekly_Contest_462 #2025_08_10_Time_32_ms_(99.42%)_Space_63.82_MB_(35.84%)
+// #Medium #Weekly_Contest_462 #2025_08_11_Time_77_ms_(100.00%)_Space_88.24_MB_(100.00%)
 
 import java.util.Collections
 import kotlin.math.min
