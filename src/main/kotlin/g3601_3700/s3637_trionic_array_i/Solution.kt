@@ -1,6 +1,6 @@
 package g3601_3700.s3637_trionic_array_i
 
-// #Easy #Weekly_Contest_461 #2025_08_03_Time_1_ms_(100.00%)_Space_43.69_MB_(100.00%)
+// #Easy #Array #Weekly_Contest_461 #2025_08_03_Time_1_ms_(100.00%)_Space_43.69_MB_(100.00%)
 
 class Solution {
     fun isTrionic(nums: IntArray): Boolean {
