@@ -20,4 +20,9 @@ internal class SolutionTest {
             equalTo<Boolean>(false),
         )
     }
+
+    @Test
+    fun isTrionic3() {
+        assertThat<Boolean>(Solution().isTrionic(intArrayOf(3, 7, 1)), equalTo<Boolean>(false))
+    }
 }

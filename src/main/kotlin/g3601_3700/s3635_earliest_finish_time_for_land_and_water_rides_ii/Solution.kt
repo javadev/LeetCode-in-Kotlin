@@ -1,6 +1,7 @@
 package g3601_3700.s3635_earliest_finish_time_for_land_and_water_rides_ii
 
-// #Medium #Biweekly_Contest_162 #2025_08_03_Time_5_ms_(100.00%)_Space_73.02_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #Binary_Search #Two_Pointers #Biweekly_Contest_162
+// #2025_08_03_Time_5_ms_(100.00%)_Space_73.02_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

@@ -1,6 +1,7 @@
 package g3601_3700.s3634_minimum_removals_to_balance_array
 
-// #Medium #Biweekly_Contest_162 #2025_08_03_Time_43_ms_(100.00%)_Space_66.87_MB_(100.00%)
+// #Medium #Array #Sorting #Sliding_Window #Biweekly_Contest_162
+// #2025_08_03_Time_43_ms_(100.00%)_Space_66.87_MB_(100.00%)
 
 import kotlin.math.max
 

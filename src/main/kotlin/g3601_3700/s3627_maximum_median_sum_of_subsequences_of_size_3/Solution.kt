@@ -1,6 +1,7 @@
 package g3601_3700.s3627_maximum_median_sum_of_subsequences_of_size_3
 
-// #Medium #Weekly_Contest_460 #2025_07_27_Time_46_ms_(91.67%)_Space_133.87_MB_(16.67%)
+// #Medium #Array #Math #Sorting #Greedy #Game_Theory #Weekly_Contest_460
+// #2025_07_27_Time_46_ms_(91.67%)_Space_133.87_MB_(16.67%)
 
 class Solution {
     fun maximumMedianSum(nums: IntArray): Long {
