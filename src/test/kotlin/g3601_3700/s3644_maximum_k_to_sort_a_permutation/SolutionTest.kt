@@ -28,4 +28,9 @@ internal class SolutionTest {
             equalTo<Int>(0),
         )
     }
+
+    @Test
+    fun sortPermutation4() {
+        assertThat<Int>(Solution().sortPermutation(intArrayOf(0, 1)), equalTo<Int>(0))
+    }
 }
