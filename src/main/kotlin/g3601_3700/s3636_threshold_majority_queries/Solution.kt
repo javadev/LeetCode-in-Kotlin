@@ -1,6 +1,7 @@
 package g3601_3700.s3636_threshold_majority_queries
 
-// #Hard #Biweekly_Contest_162 #2025_08_03_Time_848_ms_(100.00%)_Space_99.90_MB_(100.00%)
+// #Hard #Array #Hash_Table #Binary_Search #Prefix_Sum #Counting #Divide_and_Conquer
+// #Biweekly_Contest_162 #2025_08_03_Time_848_ms_(100.00%)_Space_99.90_MB_(100.00%)
 
 import java.util.TreeSet
 import kotlin.math.max

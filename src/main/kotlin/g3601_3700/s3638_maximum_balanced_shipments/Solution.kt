@@ -1,6 +1,7 @@
 package g3601_3700.s3638_maximum_balanced_shipments
 
-// #Medium #Weekly_Contest_461 #2025_08_03_Time_5_ms_(100.00%)_Space_78.25_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Greedy #Stack #Monotonic_Stack #Weekly_Contest_461
+// #2025_08_03_Time_5_ms_(100.00%)_Space_78.25_MB_(100.00%)
 
 import kotlin.math.max
 

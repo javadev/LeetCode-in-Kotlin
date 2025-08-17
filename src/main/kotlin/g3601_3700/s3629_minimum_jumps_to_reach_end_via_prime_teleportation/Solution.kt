@@ -1,6 +1,7 @@
 package g3601_3700.s3629_minimum_jumps_to_reach_end_via_prime_teleportation
 
-// #Medium #Weekly_Contest_460 #2025_07_27_Time_406_ms_(100.00%)_Space_153.64_MB_(100.00%)
+// #Medium #Array #Hash_Table #Math #Breadth_First_Search #Number_Theory #Weekly_Contest_460
+// #2025_07_27_Time_406_ms_(100.00%)_Space_153.64_MB_(100.00%)
 
 import java.util.ArrayDeque
 import kotlin.math.max

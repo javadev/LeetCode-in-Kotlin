@@ -1,6 +1,7 @@
 package g3601_3700.s3640_trionic_array_ii
 
-// #Hard #Weekly_Contest_461 #2025_08_03_Time_7_ms_(100.00%)_Space_79.14_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Weekly_Contest_461
+// #2025_08_03_Time_7_ms_(100.00%)_Space_79.14_MB_(100.00%)
 
 import kotlin.math.max
 

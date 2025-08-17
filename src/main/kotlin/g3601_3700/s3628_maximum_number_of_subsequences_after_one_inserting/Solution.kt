@@ -1,6 +1,7 @@
 package g3601_3700.s3628_maximum_number_of_subsequences_after_one_inserting
 
-// #Medium #Weekly_Contest_460 #2025_07_27_Time_13_ms_(100.00%)_Space_48.00_MB_(75.00%)
+// #Medium #String #Dynamic_Programming #Greedy #Prefix_Sum #Weekly_Contest_460
+// #2025_07_27_Time_13_ms_(100.00%)_Space_48.00_MB_(75.00%)
 
 class Solution {
     fun numOfSubsequences(s: String): Long {
