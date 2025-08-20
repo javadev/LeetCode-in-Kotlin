@@ -1,8 +1,8 @@
 package g3601_3700.s3654_minimum_sum_after_divisible_sum_deletions
 
-import kotlin.math.min
-
 // #Medium #Weekly_Contest_463 #2025_08_17_Time_17_ms_(98.16%)_Space_60.80_MB_(48.62%)
+
+import kotlin.math.min
 
 class Solution {
     fun minArraySum(nums: IntArray, k: Int): Long {

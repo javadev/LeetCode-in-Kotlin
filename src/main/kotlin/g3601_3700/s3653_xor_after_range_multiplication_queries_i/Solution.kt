@@ -1,6 +1,7 @@
 package g3601_3700.s3653_xor_after_range_multiplication_queries_i
 
-// #Medium #Weekly_Contest_463 #2025_08_17_Time_18_ms_(100.00%)_Space_45.66_MB_(56.67%)
+// #Medium #Array #Simulation #Divide_and_Conquer #Weekly_Contest_463
+// #2025_08_20_Time_26_ms_(100.00%)_Space_72.10_MB_(44.44%)
 
 class Solution {
     private fun modPow(a0: Long, e0: Long): Long {

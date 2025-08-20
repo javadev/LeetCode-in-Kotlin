@@ -1,10 +1,9 @@
 package g3601_3700.s3655_xor_after_range_multiplication_queries_ii
 
-// #Hard #Weekly_Contest_463 #2025_08_17_Time_14_ms_(100.00%)_Space_131.67_MB_(10.65%)
+// #Hard #Array #Divide_and_Conquer #Weekly_Contest_463
+// #2025_08_20_Time_26_ms_(100.00%)_Space_137.89_MB_(50.00%)
 
 class Solution {
-    private val MOD = 1_000_000_007L
-
     private fun inv(a: Int): Int {
         var b = a.toLong()
         var r = 1L
@@ -24,7 +23,6 @@ class Solution {
         val b = kotlin.math.sqrt(n.toDouble()).toInt() + 1
         val byK = arrayOfNulls<Array<ArrayList<IntArray>?>>(b + 1)
         val big = ArrayList<IntArray>()
-
         for (q in queries) {
             val l = q[0]
             val r = q[1]
@@ -44,7 +42,6 @@ class Solution {
                 big.add(intArrayOf(l, r, k, v))
             }
         }
-
         for (k in 1..b) {
             val arr = byK[k] ?: continue
             for (res in 0 until k) {
@@ -88,5 +85,9 @@ class Solution {
             ans = ans xor x
         }
         return ans
+    }
+
+    companion object {
+        private const val MOD = 1_000_000_007L
     }
 }
