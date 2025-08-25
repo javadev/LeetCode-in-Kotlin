@@ -15,7 +15,7 @@ class Solution {
             if (st.isNotEmpty()) {
                 prev = st.peek()!!
             }
-            while (!st.isEmpty() && nums[i] < nums[st.peek()!!]) {
+            while (st.isNotEmpty() && nums[i] < nums[st.peek()!!]) {
                 uf.union(st.pop(), i)
             }
             if (nums[i] > nums[prev]) {
@@ -27,10 +27,10 @@ class Solution {
         st.clear()
         for (i in n - 1 downTo 0) {
             var prev = i
-            if (!st.isEmpty()) {
+            if (st.isNotEmpty()) {
                 prev = st.peek()!!
             }
-            while (!st.isEmpty() && nums[i] > nums[st.peek()!!]) {
+            while (st.isNotEmpty() && nums[i] > nums[st.peek()!!]) {
                 uf.union(st.pop(), i)
             }
             if (nums[i] < nums[prev]) {
@@ -39,14 +39,14 @@ class Solution {
                 st.push(prev)
             }
         }
-        val map = HashMap<Int?, Int?>()
+        val map = HashMap<Int, Int>()
         for (i in 0..<n) {
             val root = uf.find(i)
-            map.put(root, max(map.getOrDefault(root, Int.Companion.MIN_VALUE)!!, nums[i]))
+            map.put(root, max(map.getOrDefault(root, Int.Companion.MIN_VALUE), nums[i]))
         }
         val ans = IntArray(n)
         for (i in 0..<n) {
-            ans[i] = map.get(uf.find(i))!!
+            ans[i] = map[uf.find(i)]!!
         }
         return ans
     }
