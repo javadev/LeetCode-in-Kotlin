@@ -1,89 +1,25 @@
 package g3601_3700.s3660_jump_game_ix
 
-// #Medium #Weekly_Contest_464 #2025_08_25_Time_205_ms_(100.00%)_Space_89.04_MB_(100.00%)
+// #Medium #Weekly_Contest_464 #2025_08_29_Time_5_ms_(100.00%)_Space_83.83_MB_(92.31%)
 
-import java.util.ArrayDeque
 import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun maxValue(nums: IntArray): IntArray {
-        val n = nums.size
-        val st = ArrayDeque<Int>()
-        val uf = UnionFind(n)
-        for (i in 0..<n) {
-            var prev = i
-            if (st.isNotEmpty()) {
-                prev = st.peek()!!
-            }
-            while (st.isNotEmpty() && nums[i] < nums[st.peek()!!]) {
-                uf.union(st.pop(), i)
-            }
-            if (nums[i] > nums[prev]) {
-                st.push(i)
-            } else {
-                st.push(prev)
-            }
+        val f = IntArray(nums.size)
+        var cur = 0
+        for (i in nums.indices) {
+            cur = max(cur, nums[i])
+            f[i] = cur
         }
-        st.clear()
-        for (i in n - 1 downTo 0) {
-            var prev = i
-            if (st.isNotEmpty()) {
-                prev = st.peek()!!
+        var min = nums[nums.size - 1]
+        for (i in nums.size - 2 downTo 0) {
+            if (f[i] > min) {
+                f[i] = max(f[i], f[i + 1])
             }
-            while (st.isNotEmpty() && nums[i] > nums[st.peek()!!]) {
-                uf.union(st.pop(), i)
-            }
-            if (nums[i] < nums[prev]) {
-                st.push(i)
-            } else {
-                st.push(prev)
-            }
+            min = min(min, nums[i])
         }
-        val map = HashMap<Int, Int>()
-        for (i in 0..<n) {
-            val root = uf.find(i)
-            map.put(root, max(map.getOrDefault(root, Int.Companion.MIN_VALUE), nums[i]))
-        }
-        val ans = IntArray(n)
-        for (i in 0..<n) {
-            ans[i] = map[uf.find(i)]!!
-        }
-        return ans
-    }
-
-    private class UnionFind(n: Int) {
-        var par: IntArray = IntArray(n)
-        var rank: IntArray = IntArray(n)
-
-        init {
-            for (i in 0..<n) {
-                par[i] = i
-            }
-        }
-
-        fun find(x: Int): Int {
-            if (par[x] != x) {
-                par[x] = find(par[x])
-            }
-            return par[x]
-        }
-
-        fun union(x: Int, y: Int) {
-            var x = x
-            var y = y
-            x = find(x)
-            y = find(y)
-            if (x == y) {
-                return
-            }
-            if (rank[x] < rank[y]) {
-                par[x] = y
-            } else if (rank[x] > rank[y]) {
-                par[y] = x
-            } else {
-                par[y] = x
-                rank[x]++
-            }
-        }
+        return f
     }
 }
