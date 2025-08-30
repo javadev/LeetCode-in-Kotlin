@@ -7,11 +7,26 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun gcdOfOddEvenSums() {
-        assertThat<Int>(Solution().gcdOfOddEvenSums(4), equalTo<Int>(4))
+        assertThat(Solution().gcdOfOddEvenSums(4), equalTo(4))
     }
 
     @Test
     fun gcdOfOddEvenSums2() {
-        assertThat<Int>(Solution().gcdOfOddEvenSums(5), equalTo<Int>(5))
+        assertThat(Solution().gcdOfOddEvenSums(5), equalTo(5))
+    }
+
+    @Test
+    fun gcdOfOddEvenSums3() {
+        assertThat(Solution().gcdOfOddEvenSums(42), equalTo(42))
+    }
+
+    @Test
+    fun gcdOfOddEvenSums4() {
+        assertThat(Solution().gcdOfOddEvenSums(-42), equalTo(42))
+    }
+
+    @Test
+    fun gcdOfOddEvenSums5() {
+        assertThat(Solution().gcdOfOddEvenSums(0), equalTo(0))
     }
 }

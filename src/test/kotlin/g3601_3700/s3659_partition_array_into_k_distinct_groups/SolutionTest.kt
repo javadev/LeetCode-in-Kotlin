@@ -7,25 +7,46 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun partitionArray() {
-        assertThat<Boolean>(
-            Solution().partitionArray(intArrayOf(1, 2, 3, 4), 2),
-            equalTo<Boolean>(true),
-        )
+        assertThat(Solution().partitionArray(intArrayOf(1, 2, 3, 4), 2), equalTo(true))
     }
 
     @Test
     fun partitionArray2() {
-        assertThat<Boolean>(
-            Solution().partitionArray(intArrayOf(3, 5, 2, 2), 2),
-            equalTo<Boolean>(true),
-        )
+        assertThat(Solution().partitionArray(intArrayOf(3, 5, 2, 2), 2), equalTo(true))
     }
 
     @Test
     fun partitionArray3() {
-        assertThat<Boolean>(
-            Solution().partitionArray(intArrayOf(1, 5, 2, 3), 3),
-            equalTo<Boolean>(false),
-        )
+        assertThat(Solution().partitionArray(intArrayOf(1, 5, 2, 3), 3), equalTo(false))
+    }
+
+    @Test
+    fun partitionArray4() {
+        val nums = intArrayOf(1, 2, 3, 4, 5)
+        assertThat(Solution().partitionArray(nums, 2), equalTo(false))
+    }
+
+    @Test
+    fun partitionArray5() {
+        val nums = intArrayOf(1, 2, 1, 2)
+        assertThat(Solution().partitionArray(nums, 2), equalTo(true))
+    }
+
+    @Test
+    fun partitionArray6() {
+        val nums = intArrayOf(1, 1, 1, 2)
+        assertThat(Solution().partitionArray(nums, 2), equalTo(false))
+    }
+
+    @Test
+    fun partitionArray7() {
+        val nums = intArrayOf(7)
+        assertThat(Solution().partitionArray(nums, 1), equalTo(true))
+    }
+
+    @Test
+    fun partitionArray8() {
+        val nums = intArrayOf(5, 5, 5, 5, 5, 5)
+        assertThat(Solution().partitionArray(nums, 3), equalTo(false))
     }
 }
