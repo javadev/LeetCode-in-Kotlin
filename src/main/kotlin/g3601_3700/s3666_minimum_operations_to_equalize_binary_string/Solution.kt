@@ -23,7 +23,7 @@ class Solution {
         bounds[zeros and 1][0] = bounds[zeros and 1][1]
         bounds[1 - (zeros and 1)][0] = Int.Companion.MAX_VALUE
         bounds[1 - (zeros and 1)][1] = Int.Companion.MIN_VALUE
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             // find min number of zeros and max number of zeros in this round
             var minv = Int.Companion.MAX_VALUE
             var maxv = Int.Companion.MIN_VALUE

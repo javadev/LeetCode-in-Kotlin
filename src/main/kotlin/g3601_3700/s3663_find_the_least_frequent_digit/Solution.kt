@@ -10,7 +10,7 @@ class Solution {
         val k = s.length
         val freq: MutableMap<Int, Int> = HashMap<Int, Int>()
         for (i in 0..<k) {
-            val digit = s.get(i).code - '0'.code
+            val digit = s[i].code - '0'.code
             freq.put(digit, freq.getOrDefault(digit, 0) + 1)
         }
         var minfreq = Int.Companion.MAX_VALUE
