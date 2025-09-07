@@ -1,6 +1,6 @@
 package g3601_3700.s3668_restore_finishing_order
 
-// #Easy #Weekly_Contest_465 #2025_08_31_Time_2_ms_(100.00%)_Space_49.00_MB_(93.75%)
+// #Easy #Weekly_Contest_465 #2025_09_07_Time_2_ms_(94.29%)_Space_49.08_MB_(72.86%)
 
 class Solution {
     fun recoverOrder(order: IntArray, friends: IntArray): IntArray {

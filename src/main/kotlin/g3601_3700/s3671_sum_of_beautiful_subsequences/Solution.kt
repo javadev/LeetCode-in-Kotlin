@@ -1,6 +1,6 @@
 package g3601_3700.s3671_sum_of_beautiful_subsequences
 
-// #Hard #Weekly_Contest_465 #2025_08_31_Time_270_ms_(100.00%)_Space_79.84_MB_(100.00%)
+// #Hard #Weekly_Contest_465 #2025_09_07_Time_225_ms_(100.00%)_Space_75.96_MB_(100.00%)
 
 import kotlin.math.sqrt
 

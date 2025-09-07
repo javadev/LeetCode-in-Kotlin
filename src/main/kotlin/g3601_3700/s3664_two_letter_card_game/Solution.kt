@@ -1,6 +1,6 @@
 package g3601_3700.s3664_two_letter_card_game
 
-// #Medium #Biweekly_Contest_164 #2025_08_31_Time_11_ms_(100.00%)_Space_82.34_MB_(_%)
+// #Medium #Biweekly_Contest_164 #2025_09_07_Time_11_ms_(100.00%)_Space_69.41_MB_(100.00%)
 
 import kotlin.math.min
 
@@ -12,8 +12,8 @@ class Solution {
         val right = IntArray(10)
         var xx = 0
         for (c in cards) {
-            val a = c[0]
-            val b = c[1]
+            val a = c.get(0)
+            val b = c.get(1)
             if (a == x && b == x) {
                 xx++
             } else if (a == x) {

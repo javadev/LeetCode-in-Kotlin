@@ -1,46 +1,37 @@
 package g3601_3700.s3665_twisted_mirror_path_count
 
-// #Medium #Biweekly_Contest_164 #2025_08_31_Time_114_ms_(100.00%)_Space_120.02_MB_(100.00%)
+// #Medium #Biweekly_Contest_164 #2025_09_07_Time_33_ms_(100.00%)_Space_113.52_MB_(72.73%)
 
 class Solution {
     fun uniquePaths(grid: Array<IntArray>): Int {
+        // 0 right, 1 down
         val n = grid.size
         val m = grid[0].size
-        val dp = Array<Array<IntArray>>(n) { Array<IntArray>(m) { IntArray(2) } }
-        for (i in 0..<n) {
-            for (j in 0..<m) {
-                dp[i][j].fill(-1)
+        val mod = 1000000007
+        var dp = IntArray(m)
+        dp[0] = 1
+        for (j in 1..<m) {
+            if (grid[0][j - 1] == 0) {
+                dp[j] = dp[j - 1]
             }
         }
-        return f(0, 0, 0, grid, n, m, dp)
-    }
-
-    private fun f(i: Int, j: Int, dir: Int, grid: Array<IntArray>, n: Int, m: Int, dp: Array<Array<IntArray>>): Int {
-        if (i == n - 1 && j == m - 1) {
-            return 1
-        }
-        if (i >= n || j >= m) {
-            return 0
-        }
-        if (dp[i][j][dir] != -1) {
-            return dp[i][j][dir]
-        }
-        var ways: Long = 0
-        if (grid[i][j] == 1) {
-            ways = if (dir == 0) {
-                f(i + 1, j, 1, grid, n, m, dp).toLong()
-            } else {
-                f(i, j + 1, 0, grid, n, m, dp).toLong()
+        for (i in 1..<n) {
+            val next = IntArray(m)
+            if (grid[i - 1][0] == 0 && grid[i][0] == 0) {
+                next[0] = dp[0]
             }
-        } else {
-            ways += f(i + 1, j, 1, grid, n, m, dp).toLong()
-            ways += f(i, j + 1, 0, grid, n, m, dp).toLong()
+            for (j in 1..<m) {
+                if (grid[i][j] == 0) {
+                    next[j] = (next[j] + dp[j]) % mod
+                }
+                if (grid[i][j - 1] == 0) {
+                    next[j] = (next[j] + next[j - 1]) % mod
+                } else {
+                    next[j] = (next[j] + dp[j - 1]) % mod
+                }
+            }
+            dp = next
         }
-        dp[i][j][dir] = ways.toInt() % MOD
-        return dp[i][j][dir]
-    }
-
-    companion object {
-        private const val MOD = 1000000007
+        return dp[m - 1]
     }
 }

@@ -1,6 +1,6 @@
 package g3601_3700.s3670_maximum_product_of_two_integers_with_no_common_bits
 
-// #Medium #Weekly_Contest_465 #2025_08_31_Time_103_ms_(100.00%)_Space_82.76_MB_(33.33%)
+// #Medium #Weekly_Contest_465 #2025_09_07_Time_113_ms_(88.89%)_Space_78.00_MB_(100.00%)
 
 class Solution {
     fun maxProduct(nums: IntArray): Long {

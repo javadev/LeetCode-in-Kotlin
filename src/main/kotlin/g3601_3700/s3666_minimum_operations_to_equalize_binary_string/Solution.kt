@@ -1,66 +1,46 @@
 package g3601_3700.s3666_minimum_operations_to_equalize_binary_string
 
-// #Hard #Biweekly_Contest_164 #2025_08_31_Time_29_ms_(100.00%)_Space_48.47_MB_(100.00%)
+// #Hard #Biweekly_Contest_164 #2025_09_07_Time_8_ms_(100.00%)_Space_46.70_MB_(100.00%)
 
-import java.util.ArrayDeque
-import java.util.Queue
 import kotlin.math.max
-import kotlin.math.min
 
 class Solution {
     fun minOperations(s: String, k: Int): Int {
-        val zeros = s.chars().map { x: Int -> if (x == '0'.code) 1 else 0 }.sum()
-        if ((zeros % k) == 0) {
-            return zeros / k
-        }
         val n = s.length
-        val q: Queue<Int> = ArrayDeque<Int>()
-        q.add(zeros)
-        var res = 1
-        // use bounds for optimization
-        val bounds = Array<IntArray>(2) { IntArray(2) }
-        bounds[zeros and 1][1] = zeros
-        bounds[zeros and 1][0] = bounds[zeros and 1][1]
-        bounds[1 - (zeros and 1)][0] = Int.Companion.MAX_VALUE
-        bounds[1 - (zeros and 1)][1] = Int.Companion.MIN_VALUE
-        while (q.isNotEmpty()) {
-            // find min number of zeros and max number of zeros in this round
-            var minv = Int.Companion.MAX_VALUE
-            var maxv = Int.Companion.MIN_VALUE
-            for (len in q.size downTo 1) {
-                val h: Int = q.poll()
-                val t = n - h
-                var x = min(h, k)
-                if (t >= k - x) {
-                    val fst = h - x + (k - x)
-                    minv = min(minv, fst)
-                    maxv = max(maxv, fst)
-                }
-                x = min(t, k)
-                if (h >= k - x) {
-                    val snd = h - (k - x) + x
-                    minv = min(minv, snd)
-                    maxv = max(maxv, snd)
-                }
+        var cnt0 = 0
+        for (c in s.toCharArray()) {
+            if (c == '0') {
+                cnt0++
             }
-            // possible children are sequence of equal difference 2
-            val ind = minv and 1
-            var temp = minv
-            while (temp <= maxv) {
-                if ((temp % k) == 0) {
-                    return res + temp / k
-                }
-                if (temp < bounds[ind][0] || temp > bounds[ind][1]) {
-                    q.add(temp)
-                    temp += 2
-                } else {
-                    temp = bounds[ind][1] + 2
-                }
-            }
-            bounds[ind][0] = min(bounds[ind][0], minv)
-            bounds[ind][1] = max(bounds[ind][1], maxv)
-            res++
         }
-        return -1
+        if (cnt0 == 0) {
+            return 0
+        }
+        if (k == n) {
+            return if (cnt0 == n) 1 else -1
+        }
+        val kP = k and 1
+        val needP = cnt0 and 1
+        var best = Long.Companion.MAX_VALUE
+        for (p in 0..1) {
+            if ((p * kP) % 2 != needP) {
+                continue
+            }
+            val mismatch = (if (p == 0) cnt0 else (n - cnt0)).toLong()
+            val b1 = (cnt0 + k - 1L) / k
+            val b2: Long
+            b2 = (mismatch + (n - k) - 1L) / (n - k)
+            var lb = max(b1, b2)
+            if (lb < 1) {
+                lb = 1
+            }
+            if ((lb and 1L) != p.toLong()) {
+                lb++
+            }
+            if (lb < best) {
+                best = lb
+            }
+        }
+        return if (best == Long.Companion.MAX_VALUE) -1 else best.toInt()
     }
 }

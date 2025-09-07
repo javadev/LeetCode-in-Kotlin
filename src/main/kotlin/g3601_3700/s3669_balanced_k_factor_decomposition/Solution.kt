@@ -1,6 +1,6 @@
 package g3601_3700.s3669_balanced_k_factor_decomposition
 
-// #Medium #Weekly_Contest_465 #2025_08_31_Time_33_ms_(100.00%)_Space_58.00_MB_(40.00%)
+// #Medium #Weekly_Contest_465 #2025_09_07_Time_30_ms_(85.71%)_Space_56.41_MB_(28.57%)
 
 import kotlin.math.max
 import kotlin.math.min

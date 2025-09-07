@@ -19,4 +19,64 @@ internal class SolutionTest {
     fun minOperations3() {
         assertThat<Int>(Solution().minOperations("101", 2), equalTo<Int>(-1))
     }
+
+    @Test
+    fun minOperations4() {
+        val k = 3
+        assertThat<Int>(Solution().minOperations("111111", k), equalTo<Int>(0))
+    }
+
+    @Test
+    fun minOperations5() {
+        val k = 6
+        assertThat<Int>(Solution().minOperations("000000", k), equalTo<Int>(1))
+    }
+
+    @Test
+    fun minOperations6() {
+        val k = 6
+        assertThat<Int>(Solution().minOperations("000111", k), equalTo<Int>(-1))
+    }
+
+    @Test
+    fun minOperations7() {
+        val k = 3
+        assertThat<Int>(Solution().minOperations("0011", k), equalTo<Int>(2))
+    }
+
+    @Test
+    fun minOperations8() {
+        val k = 4
+        assertThat<Int>(Solution().minOperations("000011", k), equalTo<Int>(1))
+    }
+
+    @Test
+    fun minOperations9() {
+        val k = 2
+        assertThat<Int>(Solution().minOperations("000111", k), equalTo<Int>(-1))
+    }
+
+    @Test
+    fun minOperations10() {
+        val k = 4
+        assertThat<Int>(Solution().minOperations("001100", k), equalTo<Int>(1))
+    }
+
+    @Test
+    fun minOperations11() {
+        val k = 3
+        assertThat<Int>(Solution().minOperations("000100", k), equalTo<Int>(3))
+    }
+
+    @Test
+    fun minOperations12() {
+        val k = 4
+        assertThat<Int>(Solution().minOperations("111111", k), equalTo<Int>(0))
+    }
+
+    @Test
+    fun minOperations13() {
+        val k = 4
+        assertThat<Int>(Solution().minOperations("001001", k), equalTo<Int>(1))
+    }
 }
