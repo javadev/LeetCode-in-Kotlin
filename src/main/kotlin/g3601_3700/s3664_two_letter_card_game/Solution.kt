@@ -12,8 +12,8 @@ class Solution {
         val right = IntArray(10)
         var xx = 0
         for (c in cards) {
-            val a = c.get(0)
-            val b = c.get(1)
+            val a = c[0]
+            val b = c[1]
             if (a == x && b == x) {
                 xx++
             } else if (a == x) {
