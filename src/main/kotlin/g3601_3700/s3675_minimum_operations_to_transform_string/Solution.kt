@@ -7,7 +7,7 @@ class Solution {
         val n = s.length
         var ans = 0
         for (i in 0..<n) {
-            val c = s.get(i)
+            val c = s[i]
             if (c != 'a') {
                 val ops = 'z'.code - c.code + 1
                 if (ops > ans) {
