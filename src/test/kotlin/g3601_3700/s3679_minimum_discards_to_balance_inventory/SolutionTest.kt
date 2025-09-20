@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun minArrivalsToDiscard() {
         assertThat<Int>(
-            Solution().minArrivalsToDiscard(intArrayOf(1, 2, 1, 3, 1), 4, 2), equalTo<Int>(0)
+            Solution().minArrivalsToDiscard(intArrayOf(1, 2, 1, 3, 1), 4, 2),
+            equalTo<Int>(0),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun minArrivalsToDiscard2() {
         assertThat<Int>(
             Solution().minArrivalsToDiscard(intArrayOf(1, 2, 3, 3, 3, 4), 3, 2),
-            equalTo<Int>(1)
+            equalTo<Int>(1),
         )
     }
 }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxKDistinct() {
         assertThat<IntArray>(
             Solution().maxKDistinct(intArrayOf(84, 93, 100, 77, 90), 3),
-            equalTo<IntArray>(intArrayOf(100, 93, 90))
+            equalTo<IntArray>(intArrayOf(100, 93, 90)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun maxKDistinct2() {
         assertThat<IntArray>(
             Solution().maxKDistinct(intArrayOf(84, 93, 100, 77, 93), 3),
-            equalTo<IntArray>(intArrayOf(100, 93, 84))
+            equalTo<IntArray>(intArrayOf(100, 93, 84)),
         )
     }
 
@@ -25,7 +25,7 @@ internal class SolutionTest {
     fun maxKDistinct3() {
         assertThat<IntArray>(
             Solution().maxKDistinct(intArrayOf(1, 1, 1, 2, 2, 2), 6),
-            equalTo<IntArray>(intArrayOf(2, 1))
+            equalTo<IntArray>(intArrayOf(2, 1)),
         )
     }
 }

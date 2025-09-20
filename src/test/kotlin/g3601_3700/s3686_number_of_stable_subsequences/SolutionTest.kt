@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun countStableSubsequences() {
         assertThat<Int>(
             Solution().countStableSubsequences(intArrayOf(1, 3, 5)),
-            equalTo<Int>(6)
+            equalTo<Int>(6),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun countStableSubsequences2() {
         assertThat<Int>(
             Solution().countStableSubsequences(intArrayOf(2, 3, 4, 2)),
-            equalTo<Int>(14)
+            equalTo<Int>(14),
         )
     }
 }

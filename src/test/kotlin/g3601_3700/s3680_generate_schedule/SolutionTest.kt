@@ -35,9 +35,9 @@ internal class SolutionTest {
                     intArrayOf(3, 4),
                     intArrayOf(2, 1),
                     intArrayOf(4, 0),
-                    intArrayOf(3, 2)
-                )
-            )
+                    intArrayOf(3, 2),
+                ),
+            ),
         )
     }
 }

@@ -5,9 +5,9 @@ package g3601_3700.s3680_generate_schedule
 class Solution {
     fun generateSchedule(n: Int): Array<IntArray> {
         if (n < 5) {
-            return Array<IntArray>(0) { IntArray(0)}
+            return Array<IntArray>(0) { IntArray(0) }
         }
-        val res = Array<IntArray>(n * (n - 1)) { IntArray(2)}
+        val res = Array<IntArray>(n * (n - 1)) { IntArray(2) }
         var idx = 0
         for (i in 2..<n - 1) {
             for (j in 0..<n) {

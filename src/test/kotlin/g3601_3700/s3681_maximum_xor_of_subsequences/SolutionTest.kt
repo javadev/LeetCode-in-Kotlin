@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun maxXorSubsequences() {
         assertThat<Int>(
             Solution().maxXorSubsequences(intArrayOf(1, 2, 3)),
-            equalTo<Int>(3)
+            equalTo<Int>(3),
         )
     }
 

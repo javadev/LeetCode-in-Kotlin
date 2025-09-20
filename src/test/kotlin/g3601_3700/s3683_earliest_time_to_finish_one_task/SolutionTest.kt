@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun earliestTime() {
         assertThat<Int>(
             Solution().earliestTime(arrayOf<IntArray>(intArrayOf(1, 6), intArrayOf(2, 3))),
-            equalTo<Int>(5)
+            equalTo<Int>(5),
         )
     }
 
@@ -20,10 +20,10 @@ internal class SolutionTest {
                 arrayOf<IntArray>(
                     intArrayOf(100, 100),
                     intArrayOf(100, 100),
-                    intArrayOf(100, 100)
-                )
+                    intArrayOf(100, 100),
+                ),
             ),
-            equalTo<Int>(200)
+            equalTo<Int>(200),
         )
     }
 
@@ -31,7 +31,7 @@ internal class SolutionTest {
     fun earliestTime3() {
         assertThat<Int>(
             Solution().earliestTime(arrayOf<IntArray>(intArrayOf(1, 6))),
-            equalTo<Int>(7)
+            equalTo<Int>(7),
         )
     }
 }

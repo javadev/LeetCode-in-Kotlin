@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun subsequenceSumAfterCapping() {
         assertThat<BooleanArray>(
             Solution().subsequenceSumAfterCapping(intArrayOf(4, 3, 2, 4), 5),
-            equalTo<BooleanArray>(booleanArrayOf(false, false, true, true))
+            equalTo<BooleanArray>(booleanArrayOf(false, false, true, true)),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun subsequenceSumAfterCapping2() {
         assertThat<BooleanArray>(
             Solution().subsequenceSumAfterCapping(intArrayOf(1, 2, 3, 4, 5), 3),
-            equalTo<BooleanArray>(booleanArrayOf(true, true, true, true, true))
+            equalTo<BooleanArray>(booleanArrayOf(true, true, true, true, true)),
         )
     }
 }
