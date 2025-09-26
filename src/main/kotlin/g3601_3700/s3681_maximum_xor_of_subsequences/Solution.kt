@@ -1,6 +1,7 @@
 package g3601_3700.s3681_maximum_xor_of_subsequences
 
-// #Hard #Biweekly_Contest_165 #2025_09_20_Time_26_ms_(100.00%)_Space_76.00_MB_(77.78%)
+// #Hard #Array #Math #Greedy #Bit_Manipulation #Biweekly_Contest_165
+// #2025_09_20_Time_26_ms_(100.00%)_Space_76.00_MB_(77.78%)
 
 import kotlin.math.max
 import kotlin.math.min

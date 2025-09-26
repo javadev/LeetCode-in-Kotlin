@@ -1,6 +1,7 @@
 package g3601_3700.s3685_subsequence_sum_after_capping_elements
 
-// #Medium #Weekly_Contest_467 #2025_09_20_Time_33_ms_(100.00%)_Space_50.14_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Sorting #Two_Pointers #Weekly_Contest_467
+// #2025_09_20_Time_33_ms_(100.00%)_Space_50.14_MB_(100.00%)
 
 import kotlin.math.min
 

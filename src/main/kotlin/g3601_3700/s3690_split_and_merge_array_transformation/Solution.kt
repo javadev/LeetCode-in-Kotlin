@@ -1,6 +1,6 @@
 package g3601_3700.s3690_split_and_merge_array_transformation
 
-// #Medium #Array #Hash_Table #Weekly_Contest_468 #Breadth_First_Search
+// #Medium #Array #Hash_Table #Breadth_First_Search #Weekly_Contest_468
 // #2025_09_26_Time_12_ms_(100.00%)_Space_49.52_MB_(92.31%)
 
 import java.util.Deque

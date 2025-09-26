@@ -1,6 +1,7 @@
 package g3601_3700.s3663_find_the_least_frequent_digit
 
-// #Easy #Biweekly_Contest_164 #2025_09_07_Time_1_ms_(96.30%)_Space_40.60_MB_(100.00%)
+// #Easy #Array #Hash_Table #Math #Counting #Biweekly_Contest_164
+// #2025_09_07_Time_1_ms_(96.30%)_Space_40.60_MB_(100.00%)
 
 class Solution {
     fun getLeastFrequentDigit(n: Int): Int {

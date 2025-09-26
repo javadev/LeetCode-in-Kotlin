@@ -1,6 +1,7 @@
 package g3601_3700.s3666_minimum_operations_to_equalize_binary_string
 
-// #Hard #Biweekly_Contest_164 #2025_09_07_Time_8_ms_(100.00%)_Space_46.70_MB_(100.00%)
+// #Hard #String #Hash_Table #Math #Breadth_First_Search #Biweekly_Contest_164
+// #2025_09_07_Time_8_ms_(100.00%)_Space_46.70_MB_(100.00%)
 
 import kotlin.math.max
 

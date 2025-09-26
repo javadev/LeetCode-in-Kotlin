@@ -1,6 +1,6 @@
 package g3601_3700.s3683_earliest_time_to_finish_one_task
 
-// #Easy #Weekly_Contest_467 #2025_09_20_Time_1_ms_(100.00%)_Space_52.19_MB_(60.38%)
+// #Easy #Array #Weekly_Contest_467 #2025_09_20_Time_1_ms_(100.00%)_Space_52.19_MB_(60.38%)
 
 import kotlin.math.min
 

@@ -1,6 +1,7 @@
 package g3601_3700.s3678_smallest_absent_positive_greater_than_average
 
-// #Easy #Biweekly_Contest_165 #2025_09_20_Time_3_ms_(100.00%)_Space_47.84_MB_(100.00%)
+// #Easy #Array #Hash_Table #Biweekly_Contest_165
+// #2025_09_20_Time_3_ms_(100.00%)_Space_47.84_MB_(100.00%)
 
 class Solution {
     fun smallestAbsent(nums: IntArray): Int {

@@ -1,6 +1,7 @@
 package g3601_3700.s3676_count_bowl_subarrays
 
-// #Medium #Weekly_Contest_466 #2025_09_14_Time_3_ms_(100.00%)_Space_79.40_MB_(50.00%)
+// #Medium #Array #Stack #Monotonic_Stack #Weekly_Contest_466
+// #2025_09_14_Time_3_ms_(100.00%)_Space_79.40_MB_(50.00%)
 
 class Solution {
     fun bowlSubarrays(nums: IntArray): Long {

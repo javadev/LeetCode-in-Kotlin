@@ -1,6 +1,7 @@
 package g3601_3700.s3665_twisted_mirror_path_count
 
-// #Medium #Biweekly_Contest_164 #2025_09_07_Time_33_ms_(100.00%)_Space_113.52_MB_(72.73%)
+// #Medium #Array #Dynamic_Programming #Matrix #Biweekly_Contest_164
+// #2025_09_07_Time_33_ms_(100.00%)_Space_113.52_MB_(72.73%)
 
 class Solution {
     fun uniquePaths(grid: Array<IntArray>): Int {

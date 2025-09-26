@@ -1,6 +1,7 @@
 package g3601_3700.s3664_two_letter_card_game
 
-// #Medium #Biweekly_Contest_164 #2025_09_07_Time_11_ms_(100.00%)_Space_69.41_MB_(100.00%)
+// #Medium #Array #String #Hash_Table #Counting #Enumeration #Biweekly_Contest_164
+// #2025_09_07_Time_11_ms_(100.00%)_Space_69.41_MB_(100.00%)
 
 import kotlin.math.min
 
