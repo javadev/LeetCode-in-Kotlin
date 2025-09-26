@@ -1,6 +1,7 @@
 package g3601_3700.s3686_number_of_stable_subsequences
 
-// #Hard #Weekly_Contest_467 #2025_09_20_Time_11_ms_(100.00%)_Space_70.56_MB_(55.00%)
+// #Hard #Array #Dynamic_Programming #Weekly_Contest_467
+// #2025_09_20_Time_11_ms_(100.00%)_Space_70.56_MB_(55.00%)
 
 class Solution {
     fun countStableSubsequences(nums: IntArray): Int {

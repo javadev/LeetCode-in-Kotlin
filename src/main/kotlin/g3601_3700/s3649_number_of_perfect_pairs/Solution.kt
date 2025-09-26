@@ -1,6 +1,7 @@
 package g3601_3700.s3649_number_of_perfect_pairs
 
-// #Medium #Biweekly_Contest_163 #2025_08_17_Time_46_ms_(100.00%)_Space_60.00_MB_(100.00%)
+// #Medium #Array #Math #Sorting #Two_Pointers #Biweekly_Contest_163
+// #2025_08_17_Time_46_ms_(100.00%)_Space_60.00_MB_(100.00%)
 
 import kotlin.math.abs
 

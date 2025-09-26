@@ -1,6 +1,7 @@
 package g3601_3700.s3659_partition_array_into_k_distinct_groups
 
-// #Medium #Weekly_Contest_464 #2025_08_29_Time_6_ms_(100.00%)_Space_80.65_MB_(71.43%)
+// #Medium #Array #Hash_Table #Counting #Weekly_Contest_464
+// #2025_08_29_Time_6_ms_(100.00%)_Space_80.65_MB_(71.43%)
 
 import kotlin.math.max
 

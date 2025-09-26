@@ -1,6 +1,7 @@
 package g3601_3700.s3684_maximize_sum_of_at_most_k_distinct_elements
 
-// #Easy #Weekly_Contest_467 #2025_09_20_Time_12_ms_(92.59%)_Space_50.11_MB_(90.74%)
+// #Easy #Array #Hash_Table #Sorting #Greedy #Weekly_Contest_467
+// #2025_09_20_Time_12_ms_(92.59%)_Space_50.11_MB_(90.74%)
 
 class Solution {
     fun maxKDistinct(nums: IntArray, k: Int): IntArray {

@@ -1,6 +1,7 @@
 package g3601_3700.s3650_minimum_cost_path_with_edge_reversals
 
-// #Medium #Biweekly_Contest_163 #2025_08_17_Time_51_ms_(99.85%)_Space_110.03_MB_(49.54%)
+// #Medium #Heap_Priority_Queue #Graph #Shortest_Path #Biweekly_Contest_163
+// #2025_08_17_Time_51_ms_(99.85%)_Space_110.03_MB_(49.54%)
 
 import java.util.PriorityQueue
 

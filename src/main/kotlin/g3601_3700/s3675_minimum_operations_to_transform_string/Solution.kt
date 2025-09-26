@@ -1,6 +1,7 @@
 package g3601_3700.s3675_minimum_operations_to_transform_string
 
-// #Medium #Weekly_Contest_466 #2025_09_14_Time_6_ms_(97.92%)_Space_57.75_MB_(43.75%)
+// #Medium #String #Greedy #Weekly_Contest_466
+// #2025_09_14_Time_6_ms_(97.92%)_Space_57.75_MB_(43.75%)
 
 class Solution {
     fun minOperations(s: String): Int {

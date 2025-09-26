@@ -1,6 +1,7 @@
 package g3601_3700.s3680_generate_schedule
 
-// #Medium #Biweekly_Contest_165 #2025_09_20_Time_3_ms_(100.00%)_Space_48.94_MB_(100.00%)
+// #Medium #Array #Math #Greedy #Biweekly_Contest_165
+// #2025_09_20_Time_3_ms_(100.00%)_Space_48.94_MB_(100.00%)
 
 class Solution {
     fun generateSchedule(n: Int): Array<IntArray> {

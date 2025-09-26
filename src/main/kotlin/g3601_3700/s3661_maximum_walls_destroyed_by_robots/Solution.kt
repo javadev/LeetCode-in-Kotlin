@@ -1,6 +1,7 @@
 package g3601_3700.s3661_maximum_walls_destroyed_by_robots
 
-// #Hard #Weekly_Contest_464 #2025_08_30_Time_147_ms_(100.00%)_Space_71.82_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Sorting #Binary_Search #Weekly_Contest_464
+// #2025_08_30_Time_147_ms_(100.00%)_Space_71.82_MB_(100.00%)
 
 import kotlin.math.max
 import kotlin.math.min

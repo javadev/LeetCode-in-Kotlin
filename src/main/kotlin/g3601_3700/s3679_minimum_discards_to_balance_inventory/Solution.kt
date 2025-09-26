@@ -1,6 +1,7 @@
 package g3601_3700.s3679_minimum_discards_to_balance_inventory
 
-// #Medium #Biweekly_Contest_165 #2025_09_20_Time_6_ms_(100.00%)_Space_68.59_MB_(76.92%)
+// #Medium #Array #Hash_Table #Simulation #Counting #Sliding_Window #Biweekly_Contest_165
+// #2025_09_20_Time_6_ms_(100.00%)_Space_68.59_MB_(76.92%)
 
 import kotlin.math.max
 

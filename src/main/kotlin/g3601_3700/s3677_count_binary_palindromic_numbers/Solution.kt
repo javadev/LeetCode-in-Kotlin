@@ -1,6 +1,7 @@
 package g3601_3700.s3677_count_binary_palindromic_numbers
 
-// #Hard #Weekly_Contest_466 #2025_09_07_Time_1_ms_(100.00%)_Space_41.19_MB_(100.00%)
+// #Hard #Math #Bit_Manipulation #Weekly_Contest_466
+// #2025_09_07_Time_1_ms_(100.00%)_Space_41.19_MB_(100.00%)
 
 class Solution {
     private fun makePalin(left: Long, odd: Boolean): Long {
