@@ -56,7 +56,7 @@ class Solution {
             pq.add(longArrayOf(st.getMax(i, n - 1) - st.getMin(i, n - 1), i.toLong(), (n - 1).toLong()))
         }
         var ans: Long = 0
-        while (k-- > 0 && !pq.isEmpty()) {
+        while (k-- > 0 && pq.isNotEmpty()) {
             val cur = pq.poll()
             ans += cur[0]
             val l = cur[1].toInt()

@@ -32,7 +32,7 @@ class Solution {
         que.add(source)
         val distances = IntArray(6.0.pow(n.toDouble()).toInt())
         distances[source] = 1
-        while (!que.isEmpty()) {
+        while (que.isNotEmpty()) {
             val x: Int = que.poll()!!
             val cur = rev(x, n)
             for (i in 0..<n) {
