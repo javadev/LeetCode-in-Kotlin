@@ -1,6 +1,7 @@
 package g3601_3700.s3644_maximum_k_to_sort_a_permutation
 
-// #Medium #Weekly_Contest_462 #2025_08_11_Time_4_ms_(100.00%)_Space_83.96_MB_(100.00%)
+// #Medium #Array #Bit_Manipulation #Weekly_Contest_462
+// #2025_09_27_Time_2_ms_(100.00%)_Space_68.51_MB_(79.31%)
 
 class Solution {
     fun sortPermutation(nums: IntArray): Int {
