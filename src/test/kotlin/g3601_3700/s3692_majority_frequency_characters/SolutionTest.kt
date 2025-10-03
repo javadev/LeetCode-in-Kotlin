@@ -1,23 +1,31 @@
-package g3601_3700.s3692_majority_frequency_characters;
+package g3601_3700.s3692_majority_frequency_characters
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
+import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Test;
-
-class SolutionTest {
+internal class SolutionTest {
     @Test
-    void majorityFrequencyGroup() {
-        assertThat(new Solution().majorityFrequencyGroup("aaabbbccdddde"), equalTo("ab"));
+    fun majorityFrequencyGroup() {
+        assertThat<String>(
+            Solution().majorityFrequencyGroup("aaabbbccdddde"),
+            equalTo<String>("ab"),
+        )
     }
 
     @Test
-    void majorityFrequencyGroup2() {
-        assertThat(new Solution().majorityFrequencyGroup("abcd"), equalTo("abcd"));
+    fun majorityFrequencyGroup2() {
+        assertThat<String>(
+            Solution().majorityFrequencyGroup("abcd"),
+            equalTo<String>("abcd"),
+        )
     }
 
     @Test
-    void majorityFrequencyGroup3() {
-        assertThat(new Solution().majorityFrequencyGroup("pfpfgi"), equalTo("fp"));
+    fun majorityFrequencyGroup3() {
+        assertThat<String>(
+            Solution().majorityFrequencyGroup("pfpfgi"),
+            equalTo<String>("fp"),
+        )
     }
 }
