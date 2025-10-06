@@ -15,13 +15,13 @@ class Solution {
                     val len = sb.length
                     var b = true
                     for (i in len - 2 * k..<len - k) {
-                        if (sb.get(i) != '(') {
+                        if (sb[i] != '(') {
                             b = false
                             break
                         }
                     }
                     for (i in len - k..<len) {
-                        if (sb.get(i) != ')') {
+                        if (sb[i] != ')') {
                             b = false
                             break
                         }
