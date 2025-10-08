@@ -1,6 +1,7 @@
 package g3601_3700.s3692_majority_frequency_characters
 
-// #Easy #Biweekly_Contest_166 #2025_10_03_Time_2_ms_(100.00%)_Space_43.05_MB_(100.00%)
+// #Easy #String #Hash_Table #Counting #Biweekly_Contest_166
+// #2025_10_03_Time_2_ms_(100.00%)_Space_43.05_MB_(100.00%)
 
 class Solution {
     fun majorityFrequencyGroup(s: String): String {

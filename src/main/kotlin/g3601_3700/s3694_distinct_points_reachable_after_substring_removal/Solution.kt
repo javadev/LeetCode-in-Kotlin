@@ -1,6 +1,7 @@
 package g3601_3700.s3694_distinct_points_reachable_after_substring_removal
 
-// #Medium #Biweekly_Contest_166 #2025_10_03_Time_46_ms_(100.00%)_Space_48.62_MB_(100.00%)
+// #Medium #String #Hash_Table #Prefix_Sum #Sliding_Window #Biweekly_Contest_166
+// #2025_10_03_Time_46_ms_(100.00%)_Space_48.62_MB_(100.00%)
 
 class Solution {
     fun distinctPoints(s: String, k: Int): Int {
