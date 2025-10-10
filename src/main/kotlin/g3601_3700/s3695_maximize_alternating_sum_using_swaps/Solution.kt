@@ -1,6 +1,7 @@
 package g3601_3700.s3695_maximize_alternating_sum_using_swaps
 
-// #Hard #Biweekly_Contest_166 #2025_10_03_Time_61_ms_(100.00%)_Space_105.29_MB_(100.00%)
+// #Hard #Array #Sorting #Greedy #Union_Find #Biweekly_Contest_166
+// #2025_10_03_Time_61_ms_(100.00%)_Space_105.29_MB_(100.00%)
 
 class Solution {
     private lateinit var root: IntArray

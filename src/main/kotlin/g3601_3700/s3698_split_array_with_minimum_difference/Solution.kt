@@ -1,6 +1,7 @@
 package g3601_3700.s3698_split_array_with_minimum_difference
 
-// #Medium #Weekly_Contest_469 #2025_10_03_Time_3_ms_(100.00%)_Space_69.93_MB_(52.17%)
+// #Medium #Array #Prefix_Sum #Weekly_Contest_469
+// #2025_10_03_Time_3_ms_(100.00%)_Space_69.93_MB_(52.17%)
 
 import kotlin.math.abs
 import kotlin.math.min

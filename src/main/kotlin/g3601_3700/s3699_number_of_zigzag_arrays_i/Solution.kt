@@ -1,6 +1,7 @@
 package g3601_3700.s3699_number_of_zigzag_arrays_i
 
-// #Hard #Weekly_Contest_469 #2025_10_03_Time_227_ms_(78.57%)_Space_47.61_MB_(42.86%)
+// #Hard #Dynamic_Programming #Prefix_Sum #Weekly_Contest_469
+// #2025_10_03_Time_227_ms_(78.57%)_Space_47.61_MB_(42.86%)
 
 class Solution {
     fun zigZagArrays(n: Int, l: Int, r: Int): Int {

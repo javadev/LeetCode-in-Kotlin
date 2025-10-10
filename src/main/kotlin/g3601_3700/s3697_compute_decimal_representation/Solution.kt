@@ -1,6 +1,6 @@
 package g3601_3700.s3697_compute_decimal_representation
 
-// #Easy #Weekly_Contest_469 #2025_10_03_Time_1_ms_(100.00%)_Space_42.64_MB_(100.00%)
+// #Easy #Array #Math #Weekly_Contest_469 #2025_10_03_Time_1_ms_(100.00%)_Space_42.64_MB_(100.00%)
 
 class Solution {
     fun decimalRepresentation(n: Int): IntArray {
