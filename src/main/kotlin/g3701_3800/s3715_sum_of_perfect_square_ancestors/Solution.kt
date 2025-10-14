@@ -23,7 +23,11 @@ class Solution {
     }
 
     private fun dfs(
-        node: Int, parent: Int, adj: MutableList<MutableList<Int>>, nums: IntArray, freq: MutableMap<Int, Int>
+        node: Int,
+        parent: Int,
+        adj: MutableList<MutableList<Int>>,
+        nums: IntArray,
+        freq: MutableMap<Int, Int>,
     ): Long {
         // kernel <= nums[node] <= 1e5 fits int
         val key = getKernel(nums[node]).toInt()

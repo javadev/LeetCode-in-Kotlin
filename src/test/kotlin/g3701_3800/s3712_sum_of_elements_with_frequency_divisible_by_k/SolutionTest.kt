@@ -8,7 +8,8 @@ internal class SolutionTest {
     @Test
     fun sumDivisibleByK() {
         assertThat<Int>(
-            Solution().sumDivisibleByK(intArrayOf(1, 2, 2, 3, 3, 3, 3, 4), 2), equalTo<Int>(16)
+            Solution().sumDivisibleByK(intArrayOf(1, 2, 2, 3, 3, 3, 3, 4), 2),
+            equalTo<Int>(16),
         )
     }
 
@@ -16,7 +17,7 @@ internal class SolutionTest {
     fun sumDivisibleByK2() {
         assertThat<Int>(
             Solution().sumDivisibleByK(intArrayOf(1, 2, 3, 4, 5), 2),
-            equalTo<Int>(0)
+            equalTo<Int>(0),
         )
     }
 
@@ -24,7 +25,7 @@ internal class SolutionTest {
     fun sumDivisibleByK3() {
         assertThat<Int>(
             Solution().sumDivisibleByK(intArrayOf(4, 4, 4, 1, 2, 3), 3),
-            equalTo<Int>(12)
+            equalTo<Int>(12),
         )
     }
 }

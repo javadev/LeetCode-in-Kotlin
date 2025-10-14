@@ -38,14 +38,17 @@ class Solution {
             val excludedChar: Char = CHARS[(p + 2) % CHARS.size]
             maxLength = max(
                 maxLength,
-                findBalancedInSegments(s, firstChar, secondChar, excludedChar)
+                findBalancedInSegments(s, firstChar, secondChar, excludedChar),
             )
         }
         return maxLength
     }
 
     private fun findBalancedInSegments(
-        s: String, firstChar: Char, secondChar: Char, excludedChar: Char
+        s: String,
+        firstChar: Char,
+        secondChar: Char,
+        excludedChar: Char,
     ): Int {
         var maxLength = 0
         var index = 0
@@ -63,8 +66,8 @@ class Solution {
                 maxLength = max(
                     maxLength,
                     findBalancedInRange(
-                        s, segmentStart, segmentEnd, firstChar, secondChar
-                    )
+                        s, segmentStart, segmentEnd, firstChar, secondChar,
+                    ),
                 )
             }
         }

@@ -9,7 +9,7 @@ internal class SolutionTest {
     fun sumOfAncestors() {
         assertThat<Long>(
             Solution().sumOfAncestors(3, arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(1, 2)), intArrayOf(2, 8, 2)),
-            equalTo<Long>(3L)
+            equalTo<Long>(3L),
         )
     }
 
@@ -17,7 +17,7 @@ internal class SolutionTest {
     fun sumOfAncestors2() {
         assertThat<Long>(
             Solution().sumOfAncestors(3, arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2)), intArrayOf(1, 2, 4)),
-            equalTo<Long>(1L)
+            equalTo<Long>(1L),
         )
     }
 
@@ -26,9 +26,11 @@ internal class SolutionTest {
         assertThat<Long>(
             Solution()
                 .sumOfAncestors(
-                    4, arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 3)), intArrayOf(1, 2, 9, 4)
+                    4,
+                    arrayOf<IntArray>(intArrayOf(0, 1), intArrayOf(0, 2), intArrayOf(1, 3)),
+                    intArrayOf(1, 2, 9, 4),
                 ),
-            equalTo<Long>(2L)
+            equalTo<Long>(2L),
         )
     }
 }

@@ -13,10 +13,10 @@ internal class SolutionTest {
                     intArrayOf(0, 0),
                     intArrayOf(0, 2),
                     intArrayOf(2, 0),
-                    intArrayOf(2, 2)
-                )
+                    intArrayOf(2, 2),
+                ),
             ),
-            equalTo<Int>(4)
+            equalTo<Int>(4),
         )
     }
 
@@ -24,7 +24,7 @@ internal class SolutionTest {
     fun maxPartitionFactor2() {
         assertThat<Int>(
             Solution().maxPartitionFactor(arrayOf<IntArray>(intArrayOf(0, 0), intArrayOf(0, 1), intArrayOf(10, 0))),
-            equalTo<Int>(11)
+            equalTo<Int>(11),
         )
     }
 }
