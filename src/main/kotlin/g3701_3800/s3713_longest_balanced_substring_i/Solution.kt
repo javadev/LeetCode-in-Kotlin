@@ -14,7 +14,7 @@ class Solution {
             var k = 0
             var m = 0
             for (j in i..<n) {
-                val x = s.get(j).code - 'a'.code
+                val x = s[j].code - 'a'.code
                 if (++f[x] == 1) {
                     ++k
                 }

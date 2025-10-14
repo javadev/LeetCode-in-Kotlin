@@ -77,21 +77,16 @@ class Solution {
     private fun findBalancedInRange(s: String, start: Int, end: Int, firstChar: Char, secondChar: Char): Int {
         val differenceMap: MutableMap<Int, Int> = HashMap<Int, Int>()
         differenceMap[0] = 0
-
         var difference = 0
         var maxLength = 0
-
         for (i in start..<end) {
             val currentChar = s[i]
-
             if (currentChar == firstChar) {
                 difference++
             } else if (currentChar == secondChar) {
                 difference--
             }
-
             val position = i - start + 1
-
             if (differenceMap.containsKey(difference)) {
                 maxLength = max(maxLength, position - differenceMap[difference]!!)
             } else {
@@ -109,27 +104,21 @@ class Solution {
         var maxLength = 0
         for (i in 0..<s.length) {
             val currentChar = s[i]
-
             when (currentChar) {
                 'a' -> {
                     diff1++
                     diff2++
                 }
-
                 'b' -> diff1--
                 'c' -> diff2--
-                else -> {}
             }
-
             val stateKey = encodeState(diff1, diff2)
-
             if (stateMap.containsKey(stateKey)) {
                 maxLength = max(maxLength, (i + 1) - stateMap[stateKey]!!)
             } else {
                 stateMap[stateKey] = i + 1
             }
         }
-
         return maxLength
     }
 
