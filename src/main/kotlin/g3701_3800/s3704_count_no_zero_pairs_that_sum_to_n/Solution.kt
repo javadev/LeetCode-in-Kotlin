@@ -1,6 +1,7 @@
 package g3701_3800.s3704_count_no_zero_pairs_that_sum_to_n
 
-// #Hard #Weekly_Contest_470 #2025_10_06_Time_11_ms_(100.00%)_Space_42.73_MB_(100.00%)
+// #Hard #Dynamic_Programming #Math #Weekly_Contest_470
+// #2025_10_06_Time_11_ms_(100.00%)_Space_42.73_MB_(100.00%)
 
 class Solution {
     fun countNoZeroPairs(n: Long): Long {
