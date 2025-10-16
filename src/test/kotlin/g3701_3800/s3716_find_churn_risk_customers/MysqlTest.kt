@@ -1,7 +1,7 @@
 package g3701_3800.s3716_find_churn_risk_customers
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -67,19 +67,19 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("501"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("basic"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("9.99"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("29.99"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(5), CoreMatchers.equalTo<String>("79"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("502"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("basic"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("9.99"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("29.99"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(5), CoreMatchers.equalTo<String>("70"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(resultSet.getString(1), equalTo<String>("501"))
+                    assertThat<String>(resultSet.getString(2), equalTo<String>("basic"))
+                    assertThat<String>(resultSet.getString(3), equalTo<String>("9.99"))
+                    assertThat<String>(resultSet.getString(4), equalTo<String>("29.99"))
+                    assertThat<String>(resultSet.getString(5), equalTo<String>("79"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(resultSet.getString(1), equalTo<String>("502"))
+                    assertThat<String>(resultSet.getString(2), equalTo<String>("basic"))
+                    assertThat<String>(resultSet.getString(3), equalTo<String>("9.99"))
+                    assertThat<String>(resultSet.getString(4), equalTo<String>("29.99"))
+                    assertThat<String>(resultSet.getString(5), equalTo<String>("70"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
