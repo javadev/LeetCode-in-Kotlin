@@ -1,0 +1,87 @@
+package g3701_3800.s3716_find_churn_risk_customers
+
+import org.hamcrest.CoreMatchers
+import org.hamcrest.MatcherAssert
+import org.junit.jupiter.api.Test
+import org.zapodot.junit.db.annotations.EmbeddedDatabase
+import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
+import org.zapodot.junit.db.common.CompatibilityMode
+import java.io.BufferedReader
+import java.io.FileNotFoundException
+import java.io.FileReader
+import java.sql.SQLException
+import java.util.stream.Collectors
+import javax.sql.DataSource
+
+@EmbeddedDatabaseTest(
+    compatibilityMode = CompatibilityMode.MySQL,
+    initialSqls = [
+        (
+            "CREATE TABLE subscription_events (" +
+                "    event_id INTEGER PRIMARY KEY," +
+                "    user_id INTEGER NOT NULL," +
+                "    event_date DATE NOT NULL," +
+                "    event_type VARCHAR(20) NOT NULL," +
+                "    plan_name VARCHAR(20)," +
+                "    monthly_amount DECIMAL(10,2) NOT NULL" +
+                ");" +
+                "INSERT INTO subscription_events (event_id, user_id, event_date, " +
+                "event_type, plan_name, monthly_amount) VALUES" +
+                "(1, 501, '2024-01-01', 'start',     'premium', 29.99)," +
+                "(2, 501, '2024-02-15', 'downgrade', 'standard', 19.99)," +
+                "(3, 501, '2024-03-20', 'downgrade', 'basic', 9.99)," +
+                "(4, 502, '2024-01-05', 'start',     'standard', 19.99)," +
+                "(5, 502, '2024-02-10', 'upgrade',   'premium', 29.99)," +
+                "(6, 502, '2024-03-15', 'downgrade', 'basic', 9.99)," +
+                "(7, 503, '2024-01-10', 'start',     'basic', 9.99)," +
+                "(8, 503, '2024-02-20', 'upgrade',   'standard', 19.99)," +
+                "(9, 503, '2024-03-25', 'upgrade',   'premium', 29.99)," +
+                "(10, 504, '2024-01-15', 'start',    'premium', 29.99)," +
+                "(11, 504, '2024-03-01', 'downgrade','standard', 19.99)," +
+                "(12, 504, '2024-03-30', 'cancel',   NULL, 0.00)," +
+                "(13, 505, '2024-02-01', 'start',    'basic', 9.99)," +
+                "(14, 505, '2024-02-28', 'upgrade',  'standard', 19.99)," +
+                "(15, 506, '2024-01-20', 'start',    'premium', 29.99)," +
+                "(16, 506, '2024-03-10', 'downgrade','basic', 9.99);" +
+                ""
+            ),
+    ],
+)
+internal class MysqlTest {
+    @Test
+    @Throws(SQLException::class, FileNotFoundException::class)
+    fun testScript(@EmbeddedDatabase dataSource: DataSource) {
+        dataSource.connection.use { connection ->
+            connection.createStatement().use { statement ->
+                statement.executeQuery(
+                    BufferedReader(
+                        FileReader(
+                            (
+                                "src/main/kotlin/g3701_3800/" +
+                                    "s3716_find_churn_risk_customers/" +
+                                    "script.sql"
+                                ),
+                        ),
+                    )
+                        .lines()
+                        .collect(Collectors.joining("\n"))
+                        .replace("#.*?\\r?\\n".toRegex(), ""),
+                ).use { resultSet ->
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
+                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("501"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("basic"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("9.99"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("29.99"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(5), CoreMatchers.equalTo<String>("79"))
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
+                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("502"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("basic"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("9.99"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("29.99"))
+                    MatcherAssert.assertThat<String>(resultSet.getString(5), CoreMatchers.equalTo<String>("70"))
+                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                }
+            }
+        }
+    }
+}
