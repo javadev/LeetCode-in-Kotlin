@@ -1,7 +1,7 @@
 package g3501_3600.s3521_find_product_recommendation_pairs
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -78,7 +78,7 @@ internal class MysqlTest {
                     checkRow(resultSet, arrayOf<String>("101", "102", "Electronics", "Books", "3"))
                     checkRow(resultSet, arrayOf<String>("101", "103", "Electronics", "Clothing", "3"))
                     checkRow(resultSet, arrayOf<String>("102", "104", "Books", "Clothing", "3"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
@@ -86,9 +86,9 @@ internal class MysqlTest {
 
     @Throws(SQLException::class)
     private fun checkRow(resultSet: ResultSet, values: Array<String>) {
-        MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-        MatcherAssert.assertThat<String>(resultSet.getNString(1), CoreMatchers.equalTo<String>(values[0]))
-        MatcherAssert.assertThat<String>(resultSet.getNString(2), CoreMatchers.equalTo<String>(values[1]))
-        MatcherAssert.assertThat<String>(resultSet.getNString(3), CoreMatchers.equalTo<String>(values[2]))
+        assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+        assertThat<String>(resultSet.getNString(1), equalTo<String>(values[0]))
+        assertThat<String>(resultSet.getNString(2), equalTo<String>(values[1]))
+        assertThat<String>(resultSet.getNString(3), equalTo<String>(values[2]))
     }
 }

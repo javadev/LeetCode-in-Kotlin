@@ -1,20 +1,20 @@
 package g3601_3700.s3680_generate_schedule
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
     @Test
     fun generateSchedule() {
-        MatcherAssert.assertThat<Array<IntArray>>(Solution().generateSchedule(3), CoreMatchers.equalTo(intArrayOf()))
+        assertThat<Array<IntArray>>(Solution().generateSchedule(3), equalTo(intArrayOf()))
     }
 
     @Test
     fun generateSchedule2() {
-        MatcherAssert.assertThat<Array<IntArray>>(
+        assertThat<Array<IntArray>>(
             Solution().generateSchedule(5),
-            CoreMatchers.equalTo<Array<IntArray>>(
+            equalTo<Array<IntArray>>(
                 arrayOf<IntArray>(
                     intArrayOf(0, 2),
                     intArrayOf(1, 3),
