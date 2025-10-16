@@ -1,6 +1,6 @@
 package g3301_3400.s3380_maximum_area_rectangle_with_point_constraints_i
 
-import org.hamcrest.CoreMatchers
+import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 
@@ -16,7 +16,7 @@ internal class SolutionTest {
                     intArrayOf(3, 3),
                 ),
             ),
-            CoreMatchers.equalTo<Int>(4),
+            equalTo<Int>(4),
         )
     }
 
@@ -33,7 +33,7 @@ internal class SolutionTest {
                         intArrayOf(2, 2),
                     ),
                 ),
-            CoreMatchers.equalTo<Int>(-1),
+            equalTo<Int>(-1),
         )
     }
 
@@ -51,7 +51,7 @@ internal class SolutionTest {
                         intArrayOf(3, 2),
                     ),
                 ),
-            CoreMatchers.equalTo<Int>(2),
+            equalTo<Int>(2),
         )
     }
 }
