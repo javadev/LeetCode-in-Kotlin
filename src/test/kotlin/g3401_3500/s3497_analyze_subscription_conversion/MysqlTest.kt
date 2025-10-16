@@ -1,7 +1,7 @@
 package g3401_3500.s3497_analyze_subscription_conversion
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -72,7 +72,7 @@ internal class MysqlTest {
                     checkRow(resultSet, arrayOf<String>("1", "45.0", "76.67"))
                     checkRow(resultSet, arrayOf<String>("3", "70.0", "63.33"))
                     checkRow(resultSet, arrayOf<String>("4", "37.5", "45.0"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
@@ -80,9 +80,9 @@ internal class MysqlTest {
 
     @Throws(SQLException::class)
     private fun checkRow(resultSet: ResultSet, values: Array<String>) {
-        MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-        MatcherAssert.assertThat<String>(resultSet.getNString(1), CoreMatchers.equalTo<String>(values[0]))
-        MatcherAssert.assertThat<String>(resultSet.getNString(2), CoreMatchers.equalTo<String>(values[1]))
-        MatcherAssert.assertThat<String>(resultSet.getNString(3), CoreMatchers.equalTo<String>(values[2]))
+        assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+        assertThat<String>(resultSet.getNString(1), equalTo<String>(values[0]))
+        assertThat<String>(resultSet.getNString(2), equalTo<String>(values[1]))
+        assertThat<String>(resultSet.getNString(3), equalTo<String>(values[2]))
     }
 }

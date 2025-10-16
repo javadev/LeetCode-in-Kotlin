@@ -65,7 +65,7 @@ class Solution {
         while (i < n) {
             num[i] = arr[i++].code - '0'.code
         }
-        val temp: MutableList<Int?> = ArrayList<Int?>()
+        val temp: MutableList<Int> = ArrayList<Int>()
         var len = n
         while (len > 0) {
             var rem = 0
@@ -90,7 +90,7 @@ class Solution {
         var k = 0
         val size = temp.size
         while (k < size) {
-            res[k] = temp[size - 1 - k]!!
+            res[k] = temp[size - 1 - k]
             k++
         }
         return res

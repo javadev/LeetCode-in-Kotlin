@@ -1,7 +1,7 @@
 package g3401_3500.s3436_find_valid_emails
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -48,19 +48,19 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<Int>(resultSet.getInt(1), CoreMatchers.equalTo<Int>(1))
-                    MatcherAssert.assertThat<String>(
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<Int>(resultSet.getInt(1), equalTo<Int>(1))
+                    assertThat<String>(
                         resultSet.getNString(2),
-                        CoreMatchers.equalTo<String>("alice@example.com"),
+                        equalTo<String>("alice@example.com"),
                     )
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<Int>(resultSet.getInt(1), CoreMatchers.equalTo<Int>(4))
-                    MatcherAssert.assertThat<String>(
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<Int>(resultSet.getInt(1), equalTo<Int>(4))
+                    assertThat<String>(
                         resultSet.getNString(2),
-                        CoreMatchers.equalTo<String>("david@domain.com"),
+                        equalTo<String>("david@domain.com"),
                     )
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }

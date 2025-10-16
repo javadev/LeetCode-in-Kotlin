@@ -1,7 +1,7 @@
 package g3701_3800.s3705_find_golden_hour_customers
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -66,22 +66,22 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("103"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("3"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("100"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("4.67"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("101"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("4"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("100"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("4.67"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(true))
-                    MatcherAssert.assertThat<String>(resultSet.getString(1), CoreMatchers.equalTo<String>("105"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(2), CoreMatchers.equalTo<String>("3"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(3), CoreMatchers.equalTo<String>("100"))
-                    MatcherAssert.assertThat<String>(resultSet.getString(4), CoreMatchers.equalTo<String>("4.33"))
-                    MatcherAssert.assertThat<Boolean>(resultSet.next(), CoreMatchers.equalTo<Boolean>(false))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(resultSet.getString(1), equalTo<String>("103"))
+                    assertThat<String>(resultSet.getString(2), equalTo<String>("3"))
+                    assertThat<String>(resultSet.getString(3), equalTo<String>("100"))
+                    assertThat<String>(resultSet.getString(4), equalTo<String>("4.67"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(resultSet.getString(1), equalTo<String>("101"))
+                    assertThat<String>(resultSet.getString(2), equalTo<String>("4"))
+                    assertThat<String>(resultSet.getString(3), equalTo<String>("100"))
+                    assertThat<String>(resultSet.getString(4), equalTo<String>("4.67"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(true))
+                    assertThat<String>(resultSet.getString(1), equalTo<String>("105"))
+                    assertThat<String>(resultSet.getString(2), equalTo<String>("3"))
+                    assertThat<String>(resultSet.getString(3), equalTo<String>("100"))
+                    assertThat<String>(resultSet.getString(4), equalTo<String>("4.33"))
+                    assertThat<Boolean>(resultSet.next(), equalTo<Boolean>(false))
                 }
             }
         }
