@@ -1,4 +1,4 @@
-// #Easy #2023_08_03_Time_43_ms_(99.15%)_Space_43.4_MB_(9.15%)
+// #Easy #2023_09_19_Time_39_ms_(99.67%)_Space_42.1_MB_(95.49%)
 
 class Calculator {
     init: number
@@ -23,7 +23,7 @@ class Calculator {
     }
 
     divide(value: number): Calculator { //NOSONAR
-        if (value === 0) throw Error('Division by zero is not allowed')
+        if (value === 0) throw new Error('Division by zero is not allowed')
         this.init /= value
         return this
     }
