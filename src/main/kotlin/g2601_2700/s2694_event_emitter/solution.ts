@@ -1,4 +1,4 @@
-// #Medium #2023_07_29_Time_45_ms_(99.58%)_Space_44.6_MB_(72.08%)
+// #Medium #2023_09_13_Time_50_ms_(90.72%)_Space_45.2_MB_(5.06%)
 
 type Callback = (...args: any[]) => any
 type Subscription = {
@@ -6,18 +6,34 @@ type Subscription = {
 }
 
 class EventEmitter {
-    subs: Record<string, Callback[]> = {}
+    eventMap: Map<string, Set<Callback>>
+
+    constructor() {
+        this.eventMap = new Map()
+    }
 
     subscribe(eventName: string, callback: Callback): Subscription {
-        if (!this.subs[eventName]) this.subs[eventName] = []
-        const idx = this.subs[eventName].push(callback) - 1
+        if (this.eventMap.has(eventName)) {
+            const set = this.eventMap.get(eventName)!
+            set.add(callback)
+            this.eventMap.set(eventName, set)
+        } else {
+            const set = new Set<Callback>()
+            set.add(callback)
+            this.eventMap.set(eventName, set)
+        }
+
         return {
-            unsubscribe: () => this.subs[eventName].splice(idx, 1),
+            unsubscribe: () => {
+                this.eventMap.get(eventName).delete(callback)
+            },
         }
     }
 
     emit(eventName: string, args: any[] = []): any[] {
-        return this.subs[eventName]?.map((callback) => callback(...args)) || []
+        const res = []
+        this.eventMap.get(eventName)?.forEach((cb) => res.push(cb(...args))) //NOSONAR
+        return res
     }
 }
 

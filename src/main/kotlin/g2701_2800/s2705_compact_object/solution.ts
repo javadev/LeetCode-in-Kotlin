@@ -1,11 +1,11 @@
-// #Medium #2023_07_29_Time_78_ms_(99.38%)_Space_53.4_MB_(71.88%)
+// #Medium #2023_09_14_Time_80_ms_(88.30%)_Space_53.2_MB_(70.41%)
 
 type Obj = Record<any, any>
 
 function compactObject(obj: Obj): Obj {
     if (Array.isArray(obj)) {
         let retArr = []
-        obj.forEach((e, idx) => {
+        obj.forEach((e, idx) => { //NOSONAR
             if (e) {
                 retArr.push(compactObject(e))
             }
