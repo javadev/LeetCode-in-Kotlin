@@ -1,6 +1,7 @@
 package g3701_3800.s3725_count_ways_to_choose_coprime_integers_from_rows
 
-// #Hard #Biweekly_Contest_168 #2025_10_28_Time_29_ms_(100.00%)_Space_51.80_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Math #Matrix #Number_Theory #Combinatorics
+// #Biweekly_Contest_168 #2025_10_28_Time_29_ms_(100.00%)_Space_51.80_MB_(100.00%)
 
 import kotlin.math.max
 

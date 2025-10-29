@@ -1,6 +1,7 @@
 package g3701_3800.s3726_remove_zeros_in_decimal_representation
 
-// #Easy #Weekly_Contest_473 #2025_10_28_Time_2_ms_(73.91%)_Space_41.33_MB_(78.26%)
+// #Easy #Math #Simulation #Weekly_Contest_473
+// #2025_10_28_Time_2_ms_(73.91%)_Space_41.33_MB_(78.26%)
 
 class Solution {
     fun removeZeros(n: Long): Long {

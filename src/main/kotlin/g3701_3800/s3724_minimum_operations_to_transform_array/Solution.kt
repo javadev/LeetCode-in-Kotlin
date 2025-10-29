@@ -1,6 +1,7 @@
 package g3701_3800.s3724_minimum_operations_to_transform_array
 
-// #Medium #Biweekly_Contest_168 #2025_10_28_Time_10_ms_(83.33%)_Space_66.99_MB_(100.00%)
+// #Medium #Array #Greedy #Biweekly_Contest_168
+// #2025_10_28_Time_10_ms_(83.33%)_Space_66.99_MB_(100.00%)
 
 import kotlin.math.abs
 import kotlin.math.max

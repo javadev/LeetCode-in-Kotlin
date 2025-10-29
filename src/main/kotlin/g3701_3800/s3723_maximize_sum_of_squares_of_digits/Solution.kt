@@ -1,6 +1,7 @@
 package g3701_3800.s3723_maximize_sum_of_squares_of_digits
 
-// #Medium #Biweekly_Contest_168 #2025_10_28_Time_16_ms_(94.44%)_Space_47.62_MB_(61.11%)
+// #Medium #Math #Greedy #Biweekly_Contest_168
+// #2025_10_28_Time_16_ms_(94.44%)_Space_47.62_MB_(61.11%)
 
 class Solution {
     fun maxSumOfSquares(places: Int, sum: Int): String {

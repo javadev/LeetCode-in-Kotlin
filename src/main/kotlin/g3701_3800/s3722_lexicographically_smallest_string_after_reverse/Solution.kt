@@ -1,6 +1,7 @@
 package g3701_3800.s3722_lexicographically_smallest_string_after_reverse
 
-// #Medium #Biweekly_Contest_168 #2025_10_28_Time_8_ms_(100.00%)_Space_45.74_MB_(100.00%)
+// #Medium #Binary_Search #Two_Pointers #Enumeration #Biweekly_Contest_168
+// #2025_10_28_Time_8_ms_(100.00%)_Space_45.74_MB_(100.00%)
 
 class Solution {
     fun lexSmallest(s: String): String {

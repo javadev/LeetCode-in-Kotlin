@@ -1,33 +1,28 @@
 package g3701_3800.s3729_count_distinct_subarrays_divisible_by_k_in_sorted_array
 
-// #Hard #Weekly_Contest_473 #2025_10_28_Time_76_ms_(100.00%)_Space_80.47_MB_(100.00%)
+// #Hard #Array #Hash_Table #Prefix_Sum #Weekly_Contest_473
+// #2025_10_29_Time_61_ms_(100.00%)_Space_80.76_MB_(100.00%)
 
 class Solution {
     fun numGoodSubarrays(nums: IntArray, k: Int): Long {
-        val cnt: MutableMap<Int, Long> = HashMap()
-        cnt[0] = 1L
-        var pre = 0
-        val n = nums.size
-        var res: Long = 0
-        for (a in nums) {
-            pre = (pre + a) % k
-            res += cnt.getOrDefault(pre, 0L)
-            cnt[pre] = cnt.getOrDefault(pre, 0L) + 1L
-        }
-        var i = 0
-        while (i < n) {
-            var j = i
-            while (j < n && nums[j] == nums[i]) {
-                ++j
-            }
-            val l = j - i
-            for (ll in 1..<l) {
-                if (ll.toLong() * nums[i] % k == 0L) {
-                    res -= (l - ll).toLong()
+        val cnt: MutableMap<Int, Int> = HashMap(nums.size, 1f)
+        cnt[0] = 1
+        var sum: Long = 0
+        var lastStart = 0
+        var ans: Long = 0
+        for (i in nums.indices) {
+            val x = nums[i]
+            if (i > 0 && x != nums[i - 1]) {
+                var s = sum
+                for (t in i - lastStart downTo 1) {
+                    cnt.merge((s % k).toInt(), 1) { a: Int?, b: Int? -> Integer.sum(a!!, b!!) }
+                    s -= nums[i - 1].toLong()
                 }
+                lastStart = i
             }
-            i = j
+            sum += x.toLong()
+            ans += cnt.getOrDefault((sum % k).toInt(), 0).toLong()
         }
-        return res
+        return ans
     }
 }

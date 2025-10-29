@@ -1,28 +1,31 @@
 package g3701_3800.s3728_stable_subarrays_with_equal_boundary_and_interior_sum
 
-// #Medium #Weekly_Contest_473 #2025_10_28_Time_146_ms_(60.00%)_Space_89.72_MB_(80.00%)
+// #Medium #Array #Hash_Table #Prefix_Sum #Weekly_Contest_473
+// #2025_10_29_Time_109_ms_(100.00%)_Space_82.32_MB_(88.89%)
 
 class Solution {
     fun countStableSubarrays(capacity: IntArray): Long {
-        val n = capacity.size
-        var res: Long = 0
-        var pre: Long = 0
-        val mpp: MutableMap<Long, MutableMap<Long, Long>> = HashMap()
-        for (i in 0..<n) {
-            if (mpp.containsKey(capacity[i].toLong())) {
-                val t: MutableMap<Long, Long> = mpp[capacity[i].toLong()]!!
-                val cnt = t[pre - capacity[i]]
-                if (cnt != null) {
-                    res += cnt
+        var sum: Long = 0
+        val map: MutableMap<Int, MutableMap<Long, Int>> = HashMap()
+        var index = 0
+        var ans: Long = 0
+        for (c in capacity) {
+            sum += c.toLong()
+            var elementMap = map[c]
+            if (elementMap == null) {
+                elementMap = HashMap()
+                map[c] = elementMap
+                elementMap[sum] = 1
+            } else {
+                var orDefault = elementMap.getOrDefault(sum - 2 * c, 0)
+                elementMap[sum] = elementMap.getOrDefault(sum, 0) + 1
+                if (c == 0 && capacity[index - 1] == 0) {
+                    orDefault--
                 }
+                ans += orDefault.toLong()
             }
-            pre += capacity[i].toLong()
-            val t = mpp.computeIfAbsent(capacity[i].toLong()) { _: Long -> HashMap() }
-            t[pre] = t.getOrDefault(pre, 0L) + 1L
-            if (i > 0 && capacity[i] == 0 && capacity[i - 1] == 0) {
-                res--
-            }
+            index++
         }
-        return res
+        return ans
     }
 }

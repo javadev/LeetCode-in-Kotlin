@@ -1,6 +1,7 @@
 package g3701_3800.s3727_maximum_alternating_sum_of_squares
 
-// #Medium #Weekly_Contest_473 #2025_10_28_Time_9_ms_(100.00%)_Space_90.79_MB_(13.04%)
+// #Medium #Array #Sorting #Greedy #Weekly_Contest_473
+// #2025_10_28_Time_9_ms_(100.00%)_Space_90.79_MB_(13.04%)
 
 import kotlin.math.abs
 import kotlin.math.min
