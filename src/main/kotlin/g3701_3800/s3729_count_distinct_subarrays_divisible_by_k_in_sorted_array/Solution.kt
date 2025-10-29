@@ -15,7 +15,7 @@ class Solution {
             if (i > 0 && x != nums[i - 1]) {
                 var s = sum
                 for (t in i - lastStart downTo 1) {
-                    cnt.merge((s % k).toInt(), 1) { a: Int?, b: Int? -> Integer.sum(a!!, b!!) }
+                    cnt.merge((s % k).toInt(), 1) { a: Int, b: Int -> Integer.sum(a, b) }
                     s -= nums[i - 1].toLong()
                 }
                 lastStart = i
