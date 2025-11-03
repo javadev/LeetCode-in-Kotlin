@@ -39,9 +39,9 @@ class Solution {
             }
             return false
         }
-        val curr = target.get(i)
+        val curr = target[i]
         var next = '1'
-        for (k in target.get(i).code - 'a'.code + 1..25) {
+        for (k in target[i].code - 'a'.code + 1..25) {
             if (freq[k] > 1) {
                 next = (k + 'a'.code).toChar()
                 break
@@ -73,7 +73,7 @@ class Solution {
     fun lexPalindromicPermutation(s: String, target: String): String {
         val freq = IntArray(26)
         for (i in 0..<s.length) {
-            freq[s.get(i).code - 'a'.code]++
+            freq[s[i].code - 'a'.code]++
         }
         var oddc = 0
         for (i in 0..25) {
