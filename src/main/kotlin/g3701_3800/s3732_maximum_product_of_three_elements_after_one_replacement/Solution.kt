@@ -1,6 +1,7 @@
 package g3701_3800.s3732_maximum_product_of_three_elements_after_one_replacement
 
-// #Medium #Weekly_Contest_474 #2025_11_03_Time_6_ms_(100.00%)_Space_75.20_MB_(76.92%)
+// #Medium #Array #Math #Sorting #Greedy #Weekly_Contest_474
+// #2025_11_05_Time_6_ms_(88.00%)_Space_74.51_MB_(84.00%)
 
 import kotlin.math.abs
 
