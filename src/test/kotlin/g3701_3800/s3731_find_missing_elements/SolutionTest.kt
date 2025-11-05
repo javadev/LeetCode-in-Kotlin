@@ -7,25 +7,25 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun findMissingElements() {
-        assertThat<MutableList<Int>>(
+        assertThat<List<Int>>(
             Solution().findMissingElements(intArrayOf(1, 4, 2, 5)),
-            equalTo<MutableList<Int>>(mutableListOf<Int>(3)),
+            equalTo<List<Int>>(mutableListOf<Int>(3)),
         )
     }
 
     @Test
     fun findMissingElements2() {
-        assertThat<MutableList<Int>>(
+        assertThat<List<Int>>(
             Solution().findMissingElements(intArrayOf(7, 8, 6, 9)),
-            equalTo<MutableList<out Any>>(mutableListOf<Any>()),
+            equalTo<List<Int>>(mutableListOf<Int>()),
         )
     }
 
     @Test
     fun findMissingElements3() {
-        assertThat<MutableList<Int>>(
+        assertThat<List<Int>>(
             Solution().findMissingElements(intArrayOf(5, 1)),
-            equalTo<MutableList<Int>>(mutableListOf<Int>(2, 3, 4)),
+            equalTo<List<Int>>(mutableListOf<Int>(2, 3, 4)),
         )
     }
 }
