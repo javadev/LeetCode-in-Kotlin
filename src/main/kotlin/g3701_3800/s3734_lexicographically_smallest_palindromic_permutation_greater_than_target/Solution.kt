@@ -4,7 +4,7 @@ package g3701_3800.s3734_lexicographically_smallest_palindromic_permutation_grea
 // #2025_11_05_Time_4_ms_(100.00%)_Space_46.12_MB_(77.78%)
 
 class Solution {
-    private fun func(i: Int, target: String, ans: CharArray, l: Int, r: Int, freq: IntArray, end: Boolean): Boolean {
+    internal fun func(i: Int, target: String, ans: CharArray, l: Int, r: Int, freq: IntArray, end: Boolean): Boolean {
         if (l > r) {
             return String(ans).compareTo(target) > 0
         }
