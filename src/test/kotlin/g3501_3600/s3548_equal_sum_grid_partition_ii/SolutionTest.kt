@@ -131,4 +131,65 @@ internal class SolutionTest {
             equalTo(true),
         )
     }
+
+    @Test
+    fun canPartitionGrid12() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(2, 1),
+            intArrayOf(1, 1),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid13() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(1),
+            intArrayOf(2),
+            intArrayOf(1),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid14() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(1, 2),
+            intArrayOf(1, 1),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid15() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(1, 1, 2),
+            intArrayOf(1, 1, 1),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid16() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(1, 1),
+            intArrayOf(1, 1),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid17() {
+        val solution = Solution()
+        val grid = arrayOf(
+            intArrayOf(1, 2),
+            intArrayOf(3, 4),
+        )
+        assertThat(solution.canPartitionGrid(grid), equalTo(true))
+    }
 }
