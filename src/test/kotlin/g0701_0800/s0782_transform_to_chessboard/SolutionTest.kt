@@ -92,4 +92,58 @@ internal class SolutionTest {
             equalTo(1),
         )
     }
+
+    @Test
+    fun movesToChessboard8() {
+        val grid = arrayOf(
+            intArrayOf(0, 0),
+            intArrayOf(0, 1),
+        )
+        assertThat(Solution().movesToChessboard(grid), equalTo(-1))
+    }
+
+    @Test
+    fun movesToChessboard9() {
+        val grid = arrayOf(
+            intArrayOf(1, 1),
+            intArrayOf(1, 1),
+        )
+        assertThat(Solution().movesToChessboard(grid), equalTo(-1))
+    }
+
+    @Test
+    fun movesToChessboard10() {
+        val grid = arrayOf(
+            intArrayOf(1, 0),
+            intArrayOf(1, 0),
+        )
+        assertThat(Solution().movesToChessboard(grid), equalTo(-1))
+    }
+
+    @Test
+    fun movesToChessboard11() {
+        val grid = arrayOf(
+            intArrayOf(1, 0, 1),
+            intArrayOf(0, 1, 0),
+            intArrayOf(1, 0, 1),
+        )
+        assertThat(Solution().movesToChessboard(grid), equalTo(0))
+    }
+
+    @Test
+    fun movesToChessboard12() {
+        val grid = arrayOf(
+            intArrayOf(1, 0, 0, 1),
+            intArrayOf(0, 1, 1, 0),
+            intArrayOf(1, 0, 0, 1),
+            intArrayOf(0, 1, 1, 0),
+        )
+        assertThat(Solution().movesToChessboard(grid), equalTo(1))
+    }
+
+    @Test
+    fun movesToChessboard13() {
+        val grid = arrayOf(intArrayOf(0))
+        assertThat(Solution().movesToChessboard(grid), equalTo(0))
+    }
 }

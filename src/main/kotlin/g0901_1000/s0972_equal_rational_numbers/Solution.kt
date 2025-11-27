@@ -2,21 +2,41 @@ package g0901_1000.s0972_equal_rational_numbers
 
 // #Hard #String #Math #2023_05_06_Time_130_ms_(100.00%)_Space_35.4_MB_(50.00%)
 
-import kotlin.math.abs
-import kotlin.math.pow
-
 class Solution {
-    fun isRationalEqual(s: String, t: String): Boolean {
-        return abs(valueOf(s) - valueOf(t)) < 1e-9
+    private fun repeat(a: String): String {
+        return a.repeat(100)
     }
-    private val ratios = doubleArrayOf(1.0, 1.0 / 9, 1.0 / 99, 1.0 / 999, 1.0 / 9999)
-    private fun valueOf(s: String): Double {
-        if (!s.contains("(")) return java.lang.Double.valueOf(s)
-        val integerNonRepeating = java.lang.Double.valueOf(s.substring(0, s.indexOf('(')))
-        val nonRepeatingLength = s.indexOf('(') - s.indexOf('.') - 1
-        val repeating = s.substring(s.indexOf('(') + 1, s.indexOf(')')).toInt()
-        val repeatingLength = s.indexOf(')') - s.indexOf('(') - 1
-        return integerNonRepeating +
-            repeating * 0.1.pow(nonRepeatingLength.toDouble()) * ratios[repeatingLength]
+
+    fun isRationalEqual(s: String, t: String): Boolean {
+        val sLeftIndex = s.indexOf("(")
+        val tLeftIndex = t.indexOf("(")
+
+        if (sLeftIndex < 0 && tLeftIndex < 0) {
+            return s.toDouble() == t.toDouble()
+        }
+
+        var sModified = s
+        val sDouble: Double
+        if (sLeftIndex >= 0) {
+            val repeatingPart = s.substring(sLeftIndex + 1, s.length - 1)
+            sModified = s.substring(0, sLeftIndex) + repeat(repeatingPart)
+
+            sDouble = sModified.substring(0, minOf(sModified.length, 100)).toDouble()
+        } else {
+            sDouble = sModified.toDouble()
+        }
+
+        var tModified = t
+        val tDouble: Double
+        if (tLeftIndex >= 0) {
+            val repeatingPart = t.substring(tLeftIndex + 1, t.length - 1)
+            tModified = t.substring(0, tLeftIndex) + repeat(repeatingPart)
+
+            tDouble = tModified.substring(0, minOf(tModified.length, 100)).toDouble()
+        } else {
+            tDouble = tModified.toDouble()
+        }
+
+        return sDouble == tDouble
     }
 }
