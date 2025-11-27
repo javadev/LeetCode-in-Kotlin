@@ -32,7 +32,7 @@ internal class SolutionTest {
 
     @Test
     fun isRationalEqual6() {
-        assertThat(Solution().isRationalEqual("0.(3)", "0.3333333333"), equalTo(true))
+        assertThat(Solution().isRationalEqual("0.(3)", "0.3333333333"), equalTo(false))
     }
 
     @Test
