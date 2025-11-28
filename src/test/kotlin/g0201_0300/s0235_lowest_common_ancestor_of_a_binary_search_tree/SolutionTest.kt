@@ -57,4 +57,32 @@ internal class SolutionTest {
             equalTo(4),
         )
     }
+
+    @Test
+    fun lowestCommonAncestor5() {
+        val root = TreeNode(1)
+        val result = Solution().lowestCommonAncestor(root, TreeNode(1), TreeNode(1))
+        assertThat(result!!.`val`, equalTo(1))
+    }
+
+    @Test
+    fun lowestCommonAncestor6() {
+        val root = TreeNode(3, TreeNode(1), TreeNode(4))
+        val result = Solution().lowestCommonAncestor(root, TreeNode(1), TreeNode(1))
+        assertThat(result!!.`val`, equalTo(1))
+    }
+
+    @Test
+    fun lowestCommonAncestor7() {
+        val root = TreeNode(3, TreeNode(1), TreeNode(4))
+        val result = Solution().lowestCommonAncestor(root, TreeNode(4), TreeNode(4))
+        assertThat(result!!.`val`, equalTo(4))
+    }
+
+    @Test
+    fun lowestCommonAncestor8() {
+        val root = TreeNode(5, TreeNode(3), TreeNode(8))
+        val result = Solution().lowestCommonAncestor(root, TreeNode(3), TreeNode(8))
+        assertThat(result!!.`val`, equalTo(5))
+    }
 }
