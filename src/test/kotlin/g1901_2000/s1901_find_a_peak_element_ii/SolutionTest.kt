@@ -2,6 +2,7 @@ package g1901_2000.s1901_find_a_peak_element_ii
 
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 internal class SolutionTest {
@@ -67,7 +68,7 @@ internal class SolutionTest {
 
         val peak = Solution().findPeakGrid(mat)
 
-        assertTrue(peak[0] >= 0 && peak[1] >= 0)
+        Assertions.assertTrue(peak[0] >= 0 && peak[1] >= 0)
 
         val value = mat[peak[0]][peak[1]]
         val up = if (peak[0] > 0) mat[peak[0] - 1][peak[1]] else -1
@@ -75,7 +76,7 @@ internal class SolutionTest {
         val left = if (peak[1] > 0) mat[peak[0]][peak[1] - 1] else -1
         val right = if (peak[1] < mat[0].size - 1) mat[peak[0]][peak[1] + 1] else -1
 
-        assertTrue(value > up && value > down && value > left && value > right)
+        Assertions.assertTrue(value > up && value > down && value > left && value > right)
     }
 
     @Test
