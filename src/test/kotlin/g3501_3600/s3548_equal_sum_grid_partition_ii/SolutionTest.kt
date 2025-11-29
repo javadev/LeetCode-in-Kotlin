@@ -192,4 +192,113 @@ internal class SolutionTest {
         )
         assertThat(solution.canPartitionGrid(grid), equalTo(true))
     }
+
+    @Test
+    fun canPartitionGrid18() {
+        val grid = arrayOf(
+            intArrayOf(3, 3, 1),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(false))
+    }
+
+    @Test
+    fun canPartitionGrid19() {
+        val grid = arrayOf(
+            intArrayOf(100_000, 100_000),
+            intArrayOf(100_000, 100_000),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid20() {
+        val grid = arrayOf(
+            intArrayOf(1, 2),
+            intArrayOf(4, 6),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(false))
+    }
+
+    @Test
+    fun canPartitionGrid21() {
+        val grid = arrayOf(
+            intArrayOf(1, 2),
+            intArrayOf(4, 5),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid22() {
+        val grid = arrayOf(
+            intArrayOf(9, 1, 8),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid23() {
+        val grid = arrayOf(
+            intArrayOf(2, 2),
+            intArrayOf(2, 2),
+            intArrayOf(1, 1),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid24() {
+        val grid = arrayOf(
+            intArrayOf(1, 5),
+            intArrayOf(2, 4),
+            intArrayOf(3, 3),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(false))
+    }
+
+    @Test
+    fun canPartitionGrid25() {
+        val grid = arrayOf(
+            intArrayOf(1, 1),
+            intArrayOf(2, 0),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid26() {
+        val grid = arrayOf(
+            intArrayOf(5, 2),
+            intArrayOf(1, 1),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid27() {
+        val grid = arrayOf(
+            intArrayOf(4),
+            intArrayOf(1),
+            intArrayOf(3),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid28() {
+        val grid = arrayOf(
+            intArrayOf(5),
+            intArrayOf(3),
+            intArrayOf(2),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
+
+    @Test
+    fun canPartitionGrid29() {
+        val grid = arrayOf(
+            intArrayOf(2, 2, 4),
+        )
+        assertThat(Solution().canPartitionGrid(grid), equalTo(true))
+    }
 }

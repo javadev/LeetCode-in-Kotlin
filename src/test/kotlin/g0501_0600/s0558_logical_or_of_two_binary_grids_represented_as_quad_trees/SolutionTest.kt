@@ -26,4 +26,52 @@ internal class SolutionTest {
             equalTo("[0,0][1,1][1,1][1,1][1,0]"),
         )
     }
+
+    @Test
+    fun intersect2() {
+        val n1 = Node(true, true)
+        val n2 = Node(true, true)
+        assertThat(Solution().intersect(n1, n2), equalTo(n1))
+    }
+
+    @Test
+    fun intersect3() {
+        val n1 = Node(true, true)
+        val n2 = Node(false, false)
+        assertThat(Solution().intersect(n1, n2), equalTo(n1))
+    }
+
+    @Test
+    fun intersect4() {
+        val n1 = Node(false, false)
+        val n2 = Node(true, true)
+        assertThat(Solution().intersect(n1, n2), equalTo(n2))
+    }
+
+    @Test
+    fun intersect5() {
+        val n1 = Node(true, false)
+        val n2 = Node(true, true)
+        assertThat(Solution().intersect(n1, n2), equalTo(n2))
+    }
+
+    @Test
+    fun intersect6() {
+        val a = Node(true, true)
+        val n1 = Node(false, false)
+        n1.topLeft = a
+        n1.topRight = a
+        n1.bottomLeft = a
+        n1.bottomRight = a
+
+        val n2 = Node(false, false)
+        n2.topLeft = Node(true, true)
+        n2.topRight = Node(true, true)
+        n2.bottomLeft = Node(true, true)
+        n2.bottomRight = Node(true, true)
+
+        val result = Solution().intersect(n1, n2)
+        assertThat(result?.isLeaf, equalTo(true))
+        assertThat(result?.`val`, equalTo(true))
+    }
 }
