@@ -19,4 +19,24 @@ internal class SolutionTest {
     fun isStrictlyPalindromic3() {
         assertThat(Solution().isStrictlyPalindromic(9779), equalTo(false))
     }
+
+    @Test
+    fun isStrictlyPalindromic4() {
+        assertThat(Solution().isStrictlyPalindromic(3), equalTo(true))
+    }
+
+    @Test
+    fun isStrictlyPalindromic5() {
+        assertThat(Solution().isStrictlyPalindromic(2), equalTo(true))
+    }
+
+    @Test
+    fun isStrictlyPalindromic6() {
+        assertThat(Solution().isStrictlyPalindromic(1), equalTo(true))
+    }
+
+    @Test
+    fun isStrictlyPalindromic7() {
+        assertThat(Solution().isStrictlyPalindromic(10000), equalTo(false))
+    }
 }
