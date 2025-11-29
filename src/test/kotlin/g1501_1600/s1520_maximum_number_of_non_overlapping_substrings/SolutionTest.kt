@@ -20,4 +20,52 @@ internal class SolutionTest {
             equalTo(mutableListOf("bb", "cc", "d")),
         )
     }
+
+    @Test
+    fun maxNumOfSubstrings3() {
+        val result = Solution().maxNumOfSubstrings("a")
+        assertThat(result, equalTo(listOf("a")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings4() {
+        val result = Solution().maxNumOfSubstrings("abc")
+        assertThat(result, equalTo(listOf("a", "b", "c")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings5() {
+        val result = Solution().maxNumOfSubstrings("abac")
+        assertThat(result, equalTo(listOf("b", "c")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings6() {
+        val result = Solution().maxNumOfSubstrings("bba")
+        assertThat(result, equalTo(listOf("bb", "a")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings7() {
+        val result = Solution().maxNumOfSubstrings("abcabc")
+        assertThat(result, equalTo(listOf("abcabc")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings8() {
+        val result = Solution().maxNumOfSubstrings("aaaa")
+        assertThat(result, equalTo(listOf("aaaa")))
+    }
+
+    @Test
+    fun maxNumOfSubstrings9() {
+        val result = Solution().maxNumOfSubstrings("")
+        assertThat(result, equalTo(emptyList<String>()))
+    }
+
+    @Test
+    fun maxNumOfSubstrings10() {
+        val result = Solution().maxNumOfSubstrings("cabcccbaa")
+        assertThat(result, equalTo(listOf("cabcccbaa")))
+    }
 }
