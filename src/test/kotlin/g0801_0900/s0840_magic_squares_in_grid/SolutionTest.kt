@@ -130,4 +130,71 @@ internal class SolutionTest {
         )
         assertThat(Solution().numMagicSquaresInside(grid), equalTo(1))
     }
+
+    @Test
+    fun numMagicSquaresInside14() {
+        assertThat(
+            Solution().numMagicSquaresInside(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))),
+            equalTo(0),
+        )
+    }
+
+    @Test
+    fun numMagicSquaresInside15() {
+        assertThat(
+            Solution().numMagicSquaresInside(
+                arrayOf(
+                    intArrayOf(4, 3, 8, 4, 3),
+                    intArrayOf(9, 5, 1, 9, 5),
+                    intArrayOf(2, 7, 6, 2, 7),
+                    intArrayOf(4, 3, 8, 4, 3),
+                    intArrayOf(9, 5, 1, 9, 5),
+                ),
+            ),
+            equalTo(1),
+        )
+    }
+
+    @Test
+    fun numMagicSquaresInside16() {
+        assertThat(
+            Solution().numMagicSquaresInside(
+                arrayOf(
+                    intArrayOf(10, 3, 8),
+                    intArrayOf(9, 5, 1),
+                    intArrayOf(2, 7, 6),
+                ),
+            ),
+            equalTo(0),
+        )
+    }
+
+    @Test
+    fun numMagicSquaresInside17() {
+        assertThat(
+            Solution().numMagicSquaresInside(
+                arrayOf(
+                    intArrayOf(4, 3, 8, 4),
+                    intArrayOf(9, 5, 1, 9),
+                    intArrayOf(2, 7, 6, 2),
+                    intArrayOf(4, 3, 8, 4),
+                ),
+            ),
+            equalTo(1),
+        )
+    }
+
+    @Test
+    fun numMagicSquaresInside18() {
+        assertThat(
+            Solution().numMagicSquaresInside(
+                arrayOf(
+                    intArrayOf(2, 2, 2),
+                    intArrayOf(2, 2, 2),
+                    intArrayOf(2, 2, 2),
+                ),
+            ),
+            equalTo(0),
+        )
+    }
 }
