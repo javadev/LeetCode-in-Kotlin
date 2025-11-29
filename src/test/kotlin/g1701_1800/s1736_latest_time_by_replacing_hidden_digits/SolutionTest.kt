@@ -19,4 +19,39 @@ internal class SolutionTest {
     fun maximumTime3() {
         assertThat(Solution().maximumTime("1?:22"), equalTo("19:22"))
     }
+
+    @Test
+    fun maximumTime4() {
+        assertThat(Solution().maximumTime("?4:00"), equalTo("14:00"))
+    }
+
+    @Test
+    fun maximumTime5() {
+        assertThat(Solution().maximumTime("??:??"), equalTo("23:59"))
+    }
+
+    @Test
+    fun maximumTime6() {
+        assertThat(Solution().maximumTime("?3:15"), equalTo("23:15"))
+    }
+
+    @Test
+    fun maximumTime7() {
+        assertThat(Solution().maximumTime("2?:45"), equalTo("23:45"))
+    }
+
+    @Test
+    fun maximumTime8() {
+        assertThat(Solution().maximumTime("1?:??"), equalTo("19:59"))
+    }
+
+    @Test
+    fun maximumTime9() {
+        assertThat(Solution().maximumTime("10:?7"), equalTo("10:57"))
+    }
+
+    @Test
+    fun maximumTime10() {
+        assertThat(Solution().maximumTime("22:4?"), equalTo("22:49"))
+    }
 }

@@ -20,4 +20,19 @@ internal class SolutionTest {
             equalTo(2),
         )
     }
+
+    @Test
+    fun distinctIntegers3() {
+        assertThat(Solution().distinctIntegers(1), equalTo(1))
+    }
+
+    @Test
+    fun distinctIntegers4() {
+        assertThat(Solution().distinctIntegers(2), equalTo(1))
+    }
+
+    @Test
+    fun distinctIntegers5() {
+        assertThat(Solution().distinctIntegers(1000), equalTo(999))
+    }
 }
