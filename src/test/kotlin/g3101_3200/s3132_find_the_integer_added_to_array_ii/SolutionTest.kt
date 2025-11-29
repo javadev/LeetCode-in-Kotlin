@@ -29,4 +29,47 @@ internal class SolutionTest {
             equalTo(-2),
         )
     }
+
+    @Test
+    fun minimumAddedInteger4() {
+        assertThat(
+            Solution().minimumAddedInteger(intArrayOf(2, 5, 7, 8), intArrayOf(9, 10)),
+            equalTo(2),
+        )
+    }
+
+    @Test
+    fun minimumAddedInteger5() {
+        assertThat(
+            Solution().minimumAddedInteger(intArrayOf(2, 2, 2, 4, 4), intArrayOf(6, 6, 8)),
+            equalTo(4),
+        )
+    }
+
+    @Test
+    fun minimumAddedInteger6() {
+        assertThat(
+            Solution().minimumAddedInteger(intArrayOf(5, 5, 5, 5), intArrayOf(5, 5)),
+            equalTo(0),
+        )
+    }
+
+    @Test
+    fun minimumAddedInteger7() {
+        assertThat(
+            Solution().minimumAddedInteger(
+                intArrayOf(1_000_000, 2_000_000, 3_000_000, 4_000_000),
+                intArrayOf(3_000_002, 4_000_002),
+            ),
+            equalTo(2),
+        )
+    }
+
+    @Test
+    fun minimumAddedInteger8() {
+        assertThat(
+            Solution().minimumAddedInteger(intArrayOf(10, 20, 30, 40), intArrayOf(35, 45)),
+            equalTo(5),
+        )
+    }
 }
