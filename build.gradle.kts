@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.2.21"
+    kotlin("jvm") version "2.4.10"
     jacoco
     id("org.sonarqube") version "6.2.0.5505"
     id("com.diffplug.spotless") version "7.0.4"
@@ -14,11 +14,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.21")
-    testImplementation("org.junit.jupiter:junit-jupiter:[5.13.3,)")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.4.10")
+    testImplementation("org.junit.jupiter:junit-jupiter:[5.14.4,)")
     testImplementation("org.hamcrest:hamcrest-core:[3.0,)")
     testImplementation("org.zapodot:embedded-db-junit-jupiter:[2.2.3,)")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.13.3,)")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:[1.14.4,)")
 }
 
 tasks.test {
