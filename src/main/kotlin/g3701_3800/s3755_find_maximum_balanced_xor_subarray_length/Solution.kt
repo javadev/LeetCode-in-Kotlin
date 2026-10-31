@@ -12,16 +12,16 @@ class Solution {
         var xor = 0
         var diff = n
         val pos: MutableMap<Long?, Int?> = HashMap<Long?, Int?>(n + 1, 1f)
-        pos.put(xor.toLong() shl 20 or diff.toLong(), -1)
+        pos[xor.toLong() shl 20 or diff.toLong()] = -1
         for (i in 0..<n) {
             xor = xor xor nums[i]
             diff += if (nums[i] % 2 != 0) 1 else -1
             val key = xor.toLong() shl 20 or diff.toLong()
-            val j = pos.get(key)
+            val j = pos[key]
             if (j != null) {
                 ans = max(ans, i - j)
             } else {
-                pos.put(key, i)
+                pos[key] = i
             }
         }
         return ans

@@ -17,7 +17,7 @@ class Solution {
             total += power9[length]
         }
         for (idx in 0..<m) {
-            val d = digits.get(idx).code - '0'.code
+            val d = digits[idx].code - '0'.code
             if (d == 0) {
                 return total
             }

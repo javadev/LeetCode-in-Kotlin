@@ -11,14 +11,11 @@ class Solution {
         val n = s.size
         for (a in 0..<n) {
             for (b in 0..<n) {
-                if (a != b && s[a].get(0) == s[b].get(0)) {
+                if (a != b && s[a][0] == s[b][0]) {
                     for (c in 0..<n) {
-                        if (c != a && c != b && s[a].get(3) == s[c].get(0)) {
+                        if (c != a && c != b && s[a][3] == s[c][0]) {
                             for (d in 0..<n) {
-                                if (d != a && d != b && d != c && s[d][0] == s[b][3] && s[d].get(3) == s[c].get(
-                                        3,
-                                    )
-                                ) {
+                                if (d != a && d != b && d != c && s[d][0] == s[b][3] && s[d][3] == s[c][3]) {
                                     result.add(mutableListOf(s[a], s[b], s[c], s[d]))
                                 }
                             }

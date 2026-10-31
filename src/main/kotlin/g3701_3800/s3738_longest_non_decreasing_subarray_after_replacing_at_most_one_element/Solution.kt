@@ -13,7 +13,7 @@ class Solution {
             return n
         }
         var i = 0
-        var len1 = 0
+        var len1: Int
         var len2 = 0
         var ans = 2
         while (i < n) {

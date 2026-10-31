@@ -15,8 +15,8 @@ class Solution {
             adj.add(ArrayList<Int>())
         }
         for (edge in edges) {
-            adj.get(edge[0]).add(edge[1])
-            adj.get(edge[1]).add(edge[0])
+            adj[edge[0]].add(edge[1])
+            adj[edge[1]].add(edge[0])
         }
         totalInGroup = IntArray(21)
         for (g in group) {
@@ -29,7 +29,7 @@ class Solution {
 
     private fun dfs(u: Int, p: Int, group: IntArray) {
         counts[u][group[u]] = 1
-        for (v in adj.get(u)) {
+        for (v in adj[u]) {
             if (v == p) {
                 continue
             }

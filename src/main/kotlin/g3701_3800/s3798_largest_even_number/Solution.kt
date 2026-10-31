@@ -5,7 +5,7 @@ class Solution {
     fun largestEven(s: String): String {
         var i: Int = s.length - 1
         while (i >= 0) {
-            if (s.get(i) == '2') {
+            if (s[i] == '2') {
                 break
             }
             i--

@@ -21,16 +21,16 @@ class Solution {
             return 1
         }
         val hm: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
-        hm.put(nums[0], 1)
+        hm[nums[0]] = 1
         while (i < nums.size && j < nums.size) {
-            hm.put(nums[j], hm.getOrDefault(nums[j], 0)!! + 1)
-            if (hm.get(nums[j]) == 1) {
+            hm[nums[j]] = hm.getOrDefault(nums[j], 0)!! + 1
+            if (hm[nums[j]] == 1) {
                 sum += nums[j]
             }
             while (sum >= k) {
                 ans = min(ans, j - i + 1)
-                hm[nums[i]] = hm.get(nums[i])!! - 1
-                if (hm.get(nums[i]) == 0) {
+                hm[nums[i]] = hm[nums[i]]!! - 1
+                if (hm[nums[i]] == 0) {
                     sum -= nums[i]
                 }
                 i++

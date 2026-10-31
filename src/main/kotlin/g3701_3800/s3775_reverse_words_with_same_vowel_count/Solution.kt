@@ -8,9 +8,9 @@ class Solution {
         val wrd = s.toCharArray()
         val vowels = "aeiou"
         var left = 0
-        var right = 0
+        var right: Int
         var firstWrd = 0
-        var anotherWrd = 0
+        var anotherWrd: Int
         while (left < wrd.size) {
             right = left
             anotherWrd = 0

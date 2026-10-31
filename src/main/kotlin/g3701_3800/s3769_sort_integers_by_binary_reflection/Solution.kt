@@ -21,7 +21,7 @@ class Solution {
             minHeap.offer(intArrayOf(num, reverseBinary(num)))
         }
         var idx = 0
-        while (!minHeap.isEmpty()) {
+        while (minHeap.isNotEmpty()) {
             sortedByReflection[idx++] = minHeap.poll()!![0]
         }
         return sortedByReflection

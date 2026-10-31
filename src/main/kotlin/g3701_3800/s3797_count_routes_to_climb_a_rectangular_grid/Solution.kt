@@ -49,7 +49,7 @@ class Solution {
             dp2[j] = window
         }
         for (j in 0..<m) {
-            dp2[j] = if (r.get(j) == '#') 0 else dp2[j] % mod
+            dp2[j] = if (r[j] == '#') 0 else dp2[j] % mod
         }
         return dp2
     }

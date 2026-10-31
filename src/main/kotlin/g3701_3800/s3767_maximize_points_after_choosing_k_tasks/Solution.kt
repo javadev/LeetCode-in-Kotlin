@@ -9,7 +9,7 @@ class Solution {
     fun maxPoints(technique1: IntArray, technique2: IntArray, k: Int): Long {
         val n = technique1.size
         val use2 = n - k
-        val min = PriorityQueue<Int?>()
+        val min = PriorityQueue<Int>()
         var ans: Long = 0
         for (i in 0..<n) {
             val diff = technique2[i] - technique1[i]
@@ -17,7 +17,7 @@ class Solution {
                 if (min.size < use2) {
                     min.offer(diff)
                     ans += diff.toLong()
-                } else if (!min.isEmpty() && min.peek()!! < diff) {
+                } else if (min.isNotEmpty() && min.peek()!! < diff) {
                     ans -= min.poll()!!.toLong()
                     min.offer(diff)
                     ans += diff.toLong()
