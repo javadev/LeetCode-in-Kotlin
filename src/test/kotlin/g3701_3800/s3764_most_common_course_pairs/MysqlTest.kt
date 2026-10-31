@@ -1,7 +1,7 @@
 package g3701_3800.s3764_most_common_course_pairs
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -91,9 +91,9 @@ internal class MysqlTest {
                         "Python Basics|SQL Fundamentals|1",
                         "SQL Fundamentals|JavaScript|1",
                     )
-                    MatcherAssert.assertThat<MutableList<String>>(
+                    assertThat<MutableList<String>>(
                         actualRows,
-                        CoreMatchers.equalTo<MutableList<String>>(expectedRows),
+                        equalTo<MutableList<String>>(expectedRows),
                     )
                 }
             }

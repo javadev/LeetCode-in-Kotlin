@@ -1,7 +1,7 @@
 package g3701_3800.s3793_find_users_with_high_token_usage
 
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.zapodot.junit.db.annotations.EmbeddedDatabase
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest
@@ -56,7 +56,7 @@ internal class MysqlTest {
                         .collect(Collectors.joining("\n"))
                         .replace("#.*?\\r?\\n".toRegex(), ""),
                 ).use { resultSet ->
-                    val actualRows: MutableList<String?> = ArrayList<String?>()
+                    val actualRows: MutableList<String> = ArrayList<String>()
                     while (resultSet.next()) {
                         actualRows.add(
                             (
@@ -69,10 +69,10 @@ internal class MysqlTest {
                         )
                     }
 
-                    val expectedRows = mutableListOf<String?>("3|4|237.5", "1|3|133.33")
-                    MatcherAssert.assertThat<MutableList<String?>?>(
+                    val expectedRows = mutableListOf<String>("3|4|237.5", "1|3|133.33")
+                    assertThat<MutableList<String>>(
                         actualRows,
-                        CoreMatchers.equalTo<MutableList<String?>?>(expectedRows),
+                        equalTo<MutableList<String>>(expectedRows),
                     )
                 }
             }
