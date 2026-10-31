@@ -18,9 +18,7 @@ class Solution {
             return idx == data.idx && arrHash == data.arrHash
         }
 
-        override fun hashCode(): Int {
-            return Objects.hash(idx, arrHash)
-        }
+        override fun hashCode(): Int = Objects.hash(idx, arrHash)
     }
 
     private var dp: HashMap<Data, Int> = HashMap()

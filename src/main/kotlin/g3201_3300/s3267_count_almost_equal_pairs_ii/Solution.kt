@@ -17,21 +17,18 @@ class Solution {
                 val digit1 = num / unit1 % 10
                 var unit2 = unit1 * 10
                 var remain2 = remain1 / 10
-                while (remain2 > 0
-                ) {
+                while (remain2 > 0) {
                     val digit2 = num / unit2 % 10
                     val newNum1 =
                         num - digit1 * unit1 - digit2 * unit2 + digit2 * unit1 + digit1 * unit2
                     newNums.add(newNum1)
                     var unit3 = unit1 * 10
                     var remain3 = remain1 / 10
-                    while (remain3 > 0
-                    ) {
+                    while (remain3 > 0) {
                         val digit3 = newNum1 / unit3 % 10
                         var unit4 = unit3 * 10
                         var remain4 = remain3 / 10
-                        while (remain4 > 0
-                        ) {
+                        while (remain4 > 0) {
                             val digit4 = newNum1 / unit4 % 10
                             val newNum2 =
                                 newNum1 - digit3 * unit3 - digit4 * unit4 + digit4 * unit3 + digit3 * unit4

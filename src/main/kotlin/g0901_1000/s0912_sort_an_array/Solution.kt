@@ -5,9 +5,7 @@ package g0901_1000.s0912_sort_an_array
 // #2023_04_16_Time_606_ms_(98.48%)_Space_47.6_MB_(57.11%)
 
 class Solution {
-    fun sortArray(nums: IntArray): IntArray {
-        return mergeSort(nums, 0, nums.size - 1)
-    }
+    fun sortArray(nums: IntArray): IntArray = mergeSort(nums, 0, nums.size - 1)
 
     private fun mergeSort(arr: IntArray, lo: Int, hi: Int): IntArray {
         if (lo == hi) {

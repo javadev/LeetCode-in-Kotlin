@@ -78,16 +78,12 @@ class Solution {
         index++
     }
 
-    private fun peek(): Char {
-        return source!![index]
-    }
+    private fun peek(): Char = source!![index]
 
-    private fun match(ch: Char): Boolean {
-        return if (isAtEnd) {
-            false
-        } else {
-            peek() == ch
-        }
+    private fun match(ch: Char): Boolean = if (isAtEnd) {
+        false
+    } else {
+        peek() == ch
     }
 
     private fun consume(ch: Char) {

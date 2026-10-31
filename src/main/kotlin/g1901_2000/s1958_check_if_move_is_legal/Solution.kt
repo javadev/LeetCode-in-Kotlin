@@ -4,7 +4,13 @@ package g1901_2000.s1958_check_if_move_is_legal
 
 class Solution {
     fun checkMove(board: Array<CharArray>, rMove: Int, cMove: Int, color: Char): Boolean {
-        val opposite = if (color == 'W') 'B' else if (color == 'B') 'W' else ' '
+        val opposite = if (color == 'W') {
+            'B'
+        } else if (color == 'B') {
+            'W'
+        } else {
+            ' '
+        }
         if (opposite == ' ' || !find(board, rMove, cMove, '.')) {
             return false
         }
@@ -26,9 +32,8 @@ class Solution {
         return false
     }
 
-    private fun find(board: Array<CharArray>, r: Int, c: Int, target: Char): Boolean {
-        return r >= 0 && r < board.size && c >= 0 && c < board[r].size && board[r][c] == target
-    }
+    private fun find(board: Array<CharArray>, r: Int, c: Int, target: Char): Boolean =
+        r >= 0 && r < board.size && c >= 0 && c < board[r].size && board[r][c] == target
 
     companion object {
         private val DIRS = arrayOf(

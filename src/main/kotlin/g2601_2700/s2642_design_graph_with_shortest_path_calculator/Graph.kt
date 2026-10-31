@@ -7,8 +7,9 @@ import java.util.PriorityQueue
 
 class Graph(n: Int, edges: Array<IntArray>) {
     private val adj = HashMap<Int, ArrayList<Pair<Int, Int>>>().apply {
-        for (i in 0 until n)
+        for (i in 0 until n) {
             this[i] = ArrayList<Pair<Int, Int>>()
+        }
 
         for ((u, v, cost) in edges) {
             this[u] = getOrDefault(u, ArrayList<Pair<Int, Int>>()).apply { this.add(v to cost) }

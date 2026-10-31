@@ -44,13 +44,11 @@ class Solution {
         return result
     }
 
-    private fun isValidNum(sc: CharArray, startIdx: Int, lastIdx: Int): Boolean {
-        return sc[startIdx] != '0' || lastIdx - startIdx == 0
-    }
+    private fun isValidNum(sc: CharArray, startIdx: Int, lastIdx: Int): Boolean =
+        sc[startIdx] != '0' || lastIdx - startIdx == 0
 
-    private fun isValidDPNum(sc: CharArray, startIdx: Int, lastIdx: Int, dpIdx: Int): Boolean {
-        return (sc[startIdx] != '0' || dpIdx - startIdx == 1) && sc[lastIdx] != '0'
-    }
+    private fun isValidDPNum(sc: CharArray, startIdx: Int, lastIdx: Int, dpIdx: Int): Boolean =
+        (sc[startIdx] != '0' || dpIdx - startIdx == 1) && sc[lastIdx] != '0'
 
     private fun buildNumbs(
         result: MutableList<String>,

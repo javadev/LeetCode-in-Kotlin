@@ -52,7 +52,5 @@ class Solution {
         return dp[k - 1][0]
     }
 
-    private fun prime(c: Char): Boolean {
-        return '2' == c || '3' == c || '5' == c || '7' == c
-    }
+    private fun prime(c: Char): Boolean = '2' == c || '3' == c || '5' == c || '7' == c
 }

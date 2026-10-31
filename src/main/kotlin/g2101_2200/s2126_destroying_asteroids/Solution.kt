@@ -4,9 +4,7 @@ package g2101_2200.s2126_destroying_asteroids
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun asteroidsDestroyed(mass: Int, asteroids: IntArray): Boolean {
-        return helper(mass.toLong(), 0, asteroids)
-    }
+    fun asteroidsDestroyed(mass: Int, asteroids: IntArray): Boolean = helper(mass.toLong(), 0, asteroids)
 
     private fun helper(mass: Long, startIndex: Int, asteroids: IntArray): Boolean {
         var mass = mass

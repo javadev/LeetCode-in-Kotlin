@@ -3,12 +3,10 @@ package g0501_0600.s0539_minimum_time_difference
 // #Medium #Array #String #Math #Sorting #2023_01_16_Time_183_ms_(100.00%)_Space_36_MB_(96.23%)
 
 class Solution {
-    fun findMinDifference(timePoints: List<String>): Int {
-        return if (timePoints.size < 300) {
-            smallInputSize(timePoints)
-        } else {
-            largeInputSize(timePoints)
-        }
+    fun findMinDifference(timePoints: List<String>): Int = if (timePoints.size < 300) {
+        smallInputSize(timePoints)
+    } else {
+        largeInputSize(timePoints)
     }
 
     private fun largeInputSize(timePoints: List<String>): Int {

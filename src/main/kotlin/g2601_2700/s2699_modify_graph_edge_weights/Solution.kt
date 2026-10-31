@@ -70,9 +70,7 @@ class Solution {
     }
 
     private inner class Pair(var s: Int, var cost: Int) : Comparable<Pair?> {
-        override operator fun compareTo(other: Pair?): Int {
-            return cost - other!!.cost
-        }
+        override operator fun compareTo(other: Pair?): Int = cost - other!!.cost
     }
 
     private fun shortestPath(s: Int, d: Int): Int {

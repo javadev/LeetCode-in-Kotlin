@@ -6,9 +6,7 @@ class Solution {
     private var matched: HashSet<String>? = null
     private var capitalizations: HashMap<String, String>? = null
     private var vowelErrors: HashMap<String, String>? = null
-    private fun isVowel(w: Char): Boolean {
-        return w == 'a' || w == 'e' || w == 'i' || w == 'o' || w == 'u'
-    }
+    private fun isVowel(w: Char): Boolean = w == 'a' || w == 'e' || w == 'i' || w == 'o' || w == 'u'
 
     private fun removeVowels(word: String): String {
         val s = StringBuilder()

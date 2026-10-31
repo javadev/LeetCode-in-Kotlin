@@ -5,9 +5,7 @@ package g3001_3100.s3020_find_the_maximum_number_of_elements_in_subset
 import kotlin.math.max
 
 class Solution {
-    fun maximumLength(nums: IntArray): Int {
-        return withHashMap(nums)
-    }
+    fun maximumLength(nums: IntArray): Int = withHashMap(nums)
 
     private fun withHashMap(nums: IntArray): Int {
         val map: MutableMap<Int, Int> = HashMap()

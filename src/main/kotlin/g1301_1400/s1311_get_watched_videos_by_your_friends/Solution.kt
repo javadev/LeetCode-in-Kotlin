@@ -9,9 +9,7 @@ import java.util.Queue
 
 class Solution {
     internal class VideoCount(var v: String, var count: Int) {
-        override fun toString(): String {
-            return "$v $count"
-        }
+        override fun toString(): String = "$v $count"
     }
 
     fun watchedVideosByFriends(
@@ -51,8 +49,7 @@ class Solution {
                 map[video]!!.count++
             }
         }
-        val pq = PriorityQueue { v1: VideoCount, v2: VideoCount,
-            ->
+        val pq = PriorityQueue { v1: VideoCount, v2: VideoCount ->
             if (v1.count == v2.count) v1.v.compareTo(v2.v) else v1.count - v2.count
         }
         for ((_, value) in map) {

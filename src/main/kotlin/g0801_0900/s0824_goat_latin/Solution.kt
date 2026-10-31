@@ -21,8 +21,6 @@ class Solution {
         return sb.toString().trim { it <= ' ' }
     }
 
-    private fun isVowel(c: Char): Boolean {
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
-            c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'
-    }
+    private fun isVowel(c: Char): Boolean = c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+        c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'
 }

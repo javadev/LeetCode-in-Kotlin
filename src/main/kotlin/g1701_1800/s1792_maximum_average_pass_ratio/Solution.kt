@@ -31,7 +31,5 @@ class Solution {
     }
 
     // O(1)
-    private fun profit(a: Double, b: Double): Double {
-        return (a + 1) / (b + 1) - a / b
-    }
+    private fun profit(a: Double, b: Double): Double = (a + 1) / (b + 1) - a / b
 }

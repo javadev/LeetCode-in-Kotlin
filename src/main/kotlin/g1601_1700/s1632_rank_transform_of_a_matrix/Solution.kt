@@ -72,12 +72,10 @@ class Solution {
         }
     }
 
-    private fun getIdx(ufind: IntArray, idx: Int): Int {
-        return if (ufind[idx] < 0) {
-            idx
-        } else {
-            ufind[idx] = getIdx(ufind, ufind[idx])
-            ufind[idx]
-        }
+    private fun getIdx(ufind: IntArray, idx: Int): Int = if (ufind[idx] < 0) {
+        idx
+    } else {
+        ufind[idx] = getIdx(ufind, ufind[idx])
+        ufind[idx]
     }
 }

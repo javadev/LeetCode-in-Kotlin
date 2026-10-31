@@ -9,9 +9,7 @@ import java.util.Queue
 class Solution {
     private lateinit var visited: MutableSet<Int>
 
-    private fun isValid(x: Int, y: Int, r: Int, c: Int): Boolean {
-        return x >= 0 && y >= 0 && x < r && y < c
-    }
+    private fun isValid(x: Int, y: Int, r: Int, c: Int): Boolean = x >= 0 && y >= 0 && x < r && y < c
 
     private fun next(n: Int, r: Int, c: Int): List<Int> {
         val ans: MutableList<Int> = ArrayList()

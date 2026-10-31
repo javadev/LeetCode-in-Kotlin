@@ -15,9 +15,7 @@ class Solution {
         }
     }
 
-    private fun matches(bitMap: Int): Boolean {
-        return set.contains(bitMap)
-    }
+    private fun matches(bitMap: Int): Boolean = set.contains(bitMap)
 
     private fun getBitMap(word: String): Int {
         var result = 0

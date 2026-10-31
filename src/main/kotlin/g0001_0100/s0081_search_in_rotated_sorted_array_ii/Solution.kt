@@ -4,9 +4,7 @@ package g0001_0100.s0081_search_in_rotated_sorted_array_ii
 // #2023_07_10_Time_170_ms_(96.30%)_Space_36.5_MB_(96.30%)
 
 class Solution {
-    fun search(nums: IntArray, target: Int): Boolean {
-        return binary(nums, 0, nums.size - 1, target)
-    }
+    fun search(nums: IntArray, target: Int): Boolean = binary(nums, 0, nums.size - 1, target)
 
     private fun binary(a: IntArray, i: Int, j: Int, t: Int): Boolean {
         if (i > j) {

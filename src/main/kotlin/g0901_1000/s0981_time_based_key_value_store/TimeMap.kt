@@ -12,9 +12,7 @@ class TimeMap {
         map.getOrPut(key, ::TreeMap)[timestamp] = value
     }
 
-    fun get(key: String, timestamp: Int): String {
-        return map[key]?.floorEntry(timestamp)?.value ?: ""
-    }
+    fun get(key: String, timestamp: Int): String = map[key]?.floorEntry(timestamp)?.value ?: ""
 }
 
 /*

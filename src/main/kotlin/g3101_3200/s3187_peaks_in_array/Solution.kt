@@ -46,13 +46,12 @@ class Solution {
         return result
     }
 
-    private fun computeRangeSum(binaryIndexedTree: IntArray, beginIndex: Int, endIndex: Int): Int {
-        return if (beginIndex <= endIndex) {
+    private fun computeRangeSum(binaryIndexedTree: IntArray, beginIndex: Int, endIndex: Int): Int =
+        if (beginIndex <= endIndex) {
             query(binaryIndexedTree, endIndex) - query(binaryIndexedTree, beginIndex - 1)
         } else {
             0
         }
-    }
 
     private fun query(binaryIndexedTree: IntArray, index: Int): Int {
         var index = index

@@ -19,14 +19,12 @@ class Node {
         this.neighbors = neighbors
     }
 
-    override fun toString(): String {
-        return neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { node ->
-            if (node.neighbors.isEmpty()) {
-                node.`val`.toString()
-            } else {
-                node.neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { nodeItem ->
-                    nodeItem.`val`.toString()
-                }
+    override fun toString(): String = neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { node ->
+        if (node.neighbors.isEmpty()) {
+            node.`val`.toString()
+        } else {
+            node.neighbors.joinToString(separator = ",", prefix = "[", postfix = "]") { nodeItem ->
+                nodeItem.`val`.toString()
             }
         }
     }

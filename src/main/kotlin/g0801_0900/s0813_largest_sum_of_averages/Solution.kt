@@ -3,9 +3,8 @@ package g0801_0900.s0813_largest_sum_of_averages
 // #Medium #Array #Dynamic_Programming #2023_03_17_Time_160_ms_(100.00%)_Space_35.3_MB_(100.00%)
 
 class Solution {
-    fun largestSumOfAverages(nums: IntArray, k: Int): Double {
-        return helper(nums, k, 0, Array(k + 1) { arrayOfNulls(nums.size) })
-    }
+    fun largestSumOfAverages(nums: IntArray, k: Int): Double =
+        helper(nums, k, 0, Array(k + 1) { arrayOfNulls(nums.size) })
 
     private fun helper(nums: IntArray, k: Int, idx: Int, memo: Array<Array<Double?>>): Double {
         if (memo[k][idx] != null) {

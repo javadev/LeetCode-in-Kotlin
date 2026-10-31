@@ -5,12 +5,7 @@ package g2401_2500.s2409_count_days_spent_together
 class Solution {
     private val dates = intArrayOf(0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 
-    fun countDaysTogether(
-        arriveAlice: String,
-        leaveAlice: String,
-        arriveBob: String,
-        leaveBob: String,
-    ): Int {
+    fun countDaysTogether(arriveAlice: String, leaveAlice: String, arriveBob: String, leaveBob: String): Int {
         if (leaveAlice < arriveBob || leaveBob < arriveAlice) {
             return 0
         }

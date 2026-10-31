@@ -25,35 +25,43 @@ class Solution {
                 sb.append(cOne)
                 sb.append(cTen)
             }
+
             8 -> {
                 sb.append(cFive)
                 sb.append(cOne)
                 sb.append(cOne)
                 sb.append(cOne)
             }
+
             7 -> {
                 sb.append(cFive)
                 sb.append(cOne)
                 sb.append(cOne)
             }
+
             6 -> {
                 sb.append(cFive)
                 sb.append(cOne)
             }
+
             5 -> sb.append(cFive)
+
             4 -> {
                 sb.append(cOne)
                 sb.append(cFive)
             }
+
             3 -> {
                 sb.append(cOne)
                 sb.append(cOne)
                 sb.append(cOne)
             }
+
             2 -> {
                 sb.append(cOne)
                 sb.append(cOne)
             }
+
             1 -> sb.append(cOne)
         }
         return num - div * one

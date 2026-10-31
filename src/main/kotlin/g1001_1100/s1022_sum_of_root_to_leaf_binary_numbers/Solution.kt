@@ -16,9 +16,7 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun sumRootToLeaf(root: TreeNode?): Int {
-        return sumRootToLeaf(root, 0)
-    }
+    fun sumRootToLeaf(root: TreeNode?): Int = sumRootToLeaf(root, 0)
 
     private fun sumRootToLeaf(root: TreeNode?, sum: Int): Int {
         var sum = sum

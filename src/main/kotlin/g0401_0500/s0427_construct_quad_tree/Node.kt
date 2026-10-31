@@ -13,17 +13,14 @@ class Node(var `val`: Boolean, var isLeaf: Boolean) {
         bottomRight = null
     }
 
-    override fun toString(): String {
-        return (
-            getNode(this) +
-                getNode(topLeft) +
-                getNode(topRight) +
-                getNode(bottomLeft) +
-                getNode(bottomRight)
-            )
-    }
+    override fun toString(): String = (
+        getNode(this) +
+            getNode(topLeft) +
+            getNode(topRight) +
+            getNode(bottomLeft) +
+            getNode(bottomRight)
+        )
 
-    private fun getNode(node: Node?): String {
-        return "[" + (if (node!!.isLeaf) "1" else "0") + "," + (if (node.`val`) "1" else "0") + "]"
-    }
+    private fun getNode(node: Node?): String =
+        "[" + (if (node!!.isLeaf) "1" else "0") + "," + (if (node.`val`) "1" else "0") + "]"
 }

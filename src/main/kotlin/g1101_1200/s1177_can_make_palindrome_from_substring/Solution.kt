@@ -4,9 +4,7 @@ package g1101_1200.s1177_can_make_palindrome_from_substring
 // #2023_05_25_Time_937_ms_(100.00%)_Space_149.7_MB_(100.00%)
 
 class Solution {
-    fun canMakePaliQueries(s: String, queries: Array<IntArray>): List<Boolean> {
-        return canMakeP(s, queries)
-    }
+    fun canMakePaliQueries(s: String, queries: Array<IntArray>): List<Boolean> = canMakeP(s, queries)
 
     private fun canMakeP(s: String, qs: Array<IntArray>): List<Boolean> {
         val n = s.length

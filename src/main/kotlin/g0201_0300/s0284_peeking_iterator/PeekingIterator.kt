@@ -5,22 +5,20 @@ package g0201_0300.s0284_peeking_iterator
 class PeekingIterator(private val iterator: Iterator<Int>) : Iterator<Int> {
     var peekedValue: Int? = null
 
-    fun peek(): Int =
-        if (peekedValue == null) {
-            peekedValue = iterator.next()
-            peekedValue!!
-        } else {
-            peekedValue!!
-        }
+    fun peek(): Int = if (peekedValue == null) {
+        peekedValue = iterator.next()
+        peekedValue!!
+    } else {
+        peekedValue!!
+    }
 
-    override fun next(): Int =
-        if (peekedValue == null) {
-            iterator.next()
-        } else {
-            val ret = peekedValue!!
-            peekedValue = null
-            ret
-        }
+    override fun next(): Int = if (peekedValue == null) {
+        iterator.next()
+    } else {
+        val ret = peekedValue!!
+        peekedValue = null
+        ret
+    }
 
     override fun hasNext(): Boolean = peekedValue != null || iterator.hasNext()
 }

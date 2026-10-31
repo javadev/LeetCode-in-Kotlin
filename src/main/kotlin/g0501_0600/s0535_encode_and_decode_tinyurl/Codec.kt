@@ -17,9 +17,7 @@ class Codec {
     }
 
     // Decodes a shortened URL to its original URL.
-    fun decode(shortUrl: String): String? {
-        return map[shortUrl]
-    }
+    fun decode(shortUrl: String): String? = map[shortUrl]
 }
 
 /*

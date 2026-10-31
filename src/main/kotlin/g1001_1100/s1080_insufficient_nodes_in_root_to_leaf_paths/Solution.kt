@@ -16,9 +16,8 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun sufficientSubset(root: TreeNode?, limit: Int): TreeNode? {
-        return if (sufficientSubset(root, limit, 0, root!!.left == null && root.right == null) < limit) null else root
-    }
+    fun sufficientSubset(root: TreeNode?, limit: Int): TreeNode? =
+        if (sufficientSubset(root, limit, 0, root!!.left == null && root.right == null) < limit) null else root
 
     fun sufficientSubset(root: TreeNode?, limit: Int, sum: Int, isLeaf: Boolean): Int {
         if (root != null) {

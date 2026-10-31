@@ -9,11 +9,7 @@ class Solution {
     private var root: MutableMap<String?, String?>? = null
     private var rate: MutableMap<String?, Double>? = null
 
-    fun calcEquation(
-        equations: List<List<String?>>,
-        values: DoubleArray,
-        queries: List<List<String?>>,
-    ): DoubleArray {
+    fun calcEquation(equations: List<List<String?>>, values: DoubleArray, queries: List<List<String?>>): DoubleArray {
         root = HashMap()
         rate = HashMap()
         val n = equations.size

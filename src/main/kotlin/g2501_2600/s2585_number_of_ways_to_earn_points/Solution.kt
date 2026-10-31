@@ -10,9 +10,13 @@ class Solution {
         for (i in 1..types.size) {
             val count = types[i - 1][0]
             val mark = types[i - 1][1]
-            for (j in 0..target) for (solved in 0..count) if (j - solved * mark >= 0) {
-                dp[i][j] += dp[i - 1][j - solved * mark]
-                dp[i][j] %= kMod
+            for (j in 0..target) {
+                for (solved in 0..count) {
+                    if (j - solved * mark >= 0) {
+                        dp[i][j] += dp[i - 1][j - solved * mark]
+                        dp[i][j] %= kMod
+                    }
+                }
             }
         }
         return dp[types.size][target]

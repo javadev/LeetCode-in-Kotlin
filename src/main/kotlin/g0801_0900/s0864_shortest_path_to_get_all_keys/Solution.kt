@@ -92,7 +92,5 @@ class Solution {
         return -1
     }
 
-    private fun inBounds(x: Int, y: Int): Boolean {
-        return x in 0 until m && y >= 0 && y < n
-    }
+    private fun inBounds(x: Int, y: Int): Boolean = x in 0 until m && y >= 0 && y < n
 }

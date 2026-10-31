@@ -43,7 +43,5 @@ class Solution {
         return false
     }
 
-    private fun isValidMove(r: Int, c: Int, n: Int, m: Int): Boolean {
-        return r >= 0 && c >= 0 && r < n && c < m
-    }
+    private fun isValidMove(r: Int, c: Int, n: Int, m: Int): Boolean = r >= 0 && c >= 0 && r < n && c < m
 }

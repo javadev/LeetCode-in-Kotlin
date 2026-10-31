@@ -50,9 +50,9 @@ class Solution {
         }
     }
 
-    private fun copy(n: TreeNode?): TreeNode? {
-        return if (n == null) {
-            null
-        } else { TreeNode(n.`val`, copy(n.left), copy(n.right)) }
+    private fun copy(n: TreeNode?): TreeNode? = if (n == null) {
+        null
+    } else {
+        TreeNode(n.`val`, copy(n.left), copy(n.right))
     }
 }

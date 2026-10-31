@@ -4,9 +4,7 @@ package g0201_0300.s0241_different_ways_to_add_parentheses
 // #2022_10_27_Time_294_ms_(73.47%)_Space_35.1_MB_(91.84%)
 
 class Solution {
-    fun diffWaysToCompute(expression: String): List<Int> {
-        return diffWayToCompute(expression, hashMapOf())
-    }
+    fun diffWaysToCompute(expression: String): List<Int> = diffWayToCompute(expression, hashMapOf())
 
     private fun diffWayToCompute(expression: String, hashMap: HashMap<String, List<Int>>): List<Int> {
         if (hashMap.containsKey(expression)) {

@@ -65,31 +65,29 @@ class Router(private val size: Int) {
         return temp
     }
 
-    fun getCount(destination: Int, startTime: Int, endTime: Int): Int {
-        return if (map.containsKey(destination)) {
-            val list: ArrayList<IntArray> = map[destination]!!
-            var lower = -1
-            var higher = -1
-            for (i in list.indices) {
-                if (list[i][1] >= startTime) {
-                    lower = i
-                    break
-                }
+    fun getCount(destination: Int, startTime: Int, endTime: Int): Int = if (map.containsKey(destination)) {
+        val list: ArrayList<IntArray> = map[destination]!!
+        var lower = -1
+        var higher = -1
+        for (i in list.indices) {
+            if (list[i][1] >= startTime) {
+                lower = i
+                break
             }
-            for (i in list.indices.reversed()) {
-                if (list[i][1] <= endTime) {
-                    higher = i
-                    break
-                }
-            }
-            if (lower == -1 || higher == -1) {
-                0
-            } else {
-                max(0, higher - lower + 1)
-            }
-        } else {
-            0
         }
+        for (i in list.indices.reversed()) {
+            if (list[i][1] <= endTime) {
+                higher = i
+                break
+            }
+        }
+        if (lower == -1 || higher == -1) {
+            0
+        } else {
+            max(0, higher - lower + 1)
+        }
+    } else {
+        0
     }
 }
 

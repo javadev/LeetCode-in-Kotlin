@@ -21,8 +21,7 @@ class Solution {
         val sx = if ((start - sn) % factor == 0L) (start - sn) / factor else (start - sn) / factor + 1
         val lx = (finish - sn) / factor
 
-        return if (sx == 0L
-        ) {
+        return if (sx == 0L) {
             indexOfLimitIntSmallerThanOrEqual(lx, limit) + 1
         } else {
             (

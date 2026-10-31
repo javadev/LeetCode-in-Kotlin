@@ -24,9 +24,7 @@ class Solution {
             return start == other.start && end == other.end && sum == other.sum
         }
 
-        override fun hashCode(): Int {
-            return Objects.hash(start, end, sum)
-        }
+        override fun hashCode(): Int = Objects.hash(start, end, sum)
     }
 
     fun maxOperations(nums: IntArray): Int {

@@ -49,11 +49,9 @@ class Solution {
         populateResult(root.right, result, row + 1, totalRows, (i + j) / 2 + 1, j)
     }
 
-    private fun getHeight(root: TreeNode?): Int {
-        return if (root == null) {
-            0
-        } else {
-            1 + getHeight(root.left).coerceAtLeast(getHeight(root.right))
-        }
+    private fun getHeight(root: TreeNode?): Int = if (root == null) {
+        0
+    } else {
+        1 + getHeight(root.left).coerceAtLeast(getHeight(root.right))
     }
 }

@@ -31,14 +31,16 @@ class Solution {
         val right: TreeInfo
         left = if (root!!.left != null) {
             calcPerms(
-                root.left, fact,
+                root.left,
+                fact,
             )
         } else {
             TreeInfo(0, 1)
         }
         right = if (root.right != null) {
             calcPerms(
-                root.right, fact,
+                root.right,
+                fact,
             )
         } else {
             TreeInfo(0, 1)

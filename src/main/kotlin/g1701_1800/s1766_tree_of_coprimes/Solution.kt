@@ -39,9 +39,7 @@ class Solution {
         v2d[v] = v2DOld
     }
 
-    private fun gcd(x: Int, y: Int): Int {
-        return if (x == 0) y else gcd(y % x, x)
-    }
+    private fun gcd(x: Int, y: Int): Int = if (x == 0) y else gcd(y % x, x)
 
     fun getCoprimes(nums: IntArray, edges: Array<IntArray>): IntArray {
         val n = nums.size

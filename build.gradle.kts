@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "2.4.10"
     jacoco
     id("org.sonarqube") version "6.2.0.5505"
-    id("com.diffplug.spotless") version "7.0.4"
+    id("com.diffplug.spotless") version "7.2.1"
     `maven-publish`
 }
 
@@ -52,12 +52,13 @@ spotless {
     kotlin {
         encoding("UTF-8")
         target("**/src/**/*.kt")
-        ktlint("0.50.0").editorConfigOverride(
+        ktlint("1.8.0").editorConfigOverride(
             mapOf(
                 "max_line_length" to "120",
                 "indent_size" to "4",
                 "ktlint_standard_package-name" to "disabled",
-                "ktlint_standard_comment-wrapping" to "disabled"
+                "ktlint_standard_comment-wrapping" to "disabled",
+                "ktlint_standard_mixed-condition-operators" to "disabled"
             )
         )
         toggleOffOn()

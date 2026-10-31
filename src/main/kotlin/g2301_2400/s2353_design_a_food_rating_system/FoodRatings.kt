@@ -31,17 +31,13 @@ class FoodRatings(foods: Array<String>, cuisines: Array<String>, ratings: IntArr
         pq.add(dish)
     }
 
-    fun highestRated(cuisine: String): String {
-        return cus[cuisine]!!.first()!!.foodItem
-    }
+    fun highestRated(cuisine: String): String = cus[cuisine]!!.first()!!.foodItem
 
     private class Comp : Comparator<Food> {
-        override fun compare(f1: Food, f2: Food): Int {
-            return if (f1.rating == f2.rating) {
-                f1.foodItem.compareTo(f2.foodItem)
-            } else {
-                Integer.compare(f2.rating, f1.rating)
-            }
+        override fun compare(f1: Food, f2: Food): Int = if (f1.rating == f2.rating) {
+            f1.foodItem.compareTo(f2.foodItem)
+        } else {
+            Integer.compare(f2.rating, f1.rating)
         }
     }
 

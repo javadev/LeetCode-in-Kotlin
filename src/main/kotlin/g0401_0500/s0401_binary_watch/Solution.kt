@@ -16,12 +16,7 @@ class Solution {
         return times
     }
 
-    private fun readBinaryWatchHelper(
-        turnedOn: Int,
-        selectedTimes: MutableList<String>,
-        hour: Int,
-        minutes: Int,
-    ) {
+    private fun readBinaryWatchHelper(turnedOn: Int, selectedTimes: MutableList<String>, hour: Int, minutes: Int) {
         if (isValidTime(turnedOn, hour, minutes)) {
             selectedTimes.add(getTimeString(hour, minutes))
         }

@@ -57,7 +57,5 @@ class Solution {
         }
     }
 
-    private fun valid(m: Int, n: Int, r: Int, c: Int): Boolean {
-        return 0 <= r && r < m && 0 <= c && c < n
-    }
+    private fun valid(m: Int, n: Int, r: Int, c: Int): Boolean = 0 <= r && r < m && 0 <= c && c < n
 }

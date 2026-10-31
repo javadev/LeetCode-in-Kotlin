@@ -30,19 +30,15 @@ class Solution {
         }
     }
 
-    private fun leftHeight(root: TreeNode?): Int {
-        return if (root == null) {
-            0
-        } else {
-            1 + leftHeight(root.left)
-        }
+    private fun leftHeight(root: TreeNode?): Int = if (root == null) {
+        0
+    } else {
+        1 + leftHeight(root.left)
     }
 
-    private fun rightHeight(root: TreeNode?): Int {
-        return if (root == null) {
-            0
-        } else {
-            1 + rightHeight(root.right)
-        }
+    private fun rightHeight(root: TreeNode?): Int = if (root == null) {
+        0
+    } else {
+        1 + rightHeight(root.right)
     }
 }

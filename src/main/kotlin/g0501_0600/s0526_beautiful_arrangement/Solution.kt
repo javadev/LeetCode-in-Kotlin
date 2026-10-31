@@ -4,9 +4,7 @@ package g0501_0600.s0526_beautiful_arrangement
 // #2023_01_15_Time_107_ms_(100.00%)_Space_33.5_MB_(75.00%)
 
 class Solution {
-    fun countArrangement(n: Int): Int {
-        return backtrack(n, n, arrayOfNulls(1 shl n + 1), 0)
-    }
+    fun countArrangement(n: Int): Int = backtrack(n, n, arrayOfNulls(1 shl n + 1), 0)
 
     private fun backtrack(n: Int, index: Int, cache: Array<Int?>, cacheindex: Int): Int {
         if (index == 0) {

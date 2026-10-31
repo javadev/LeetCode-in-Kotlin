@@ -57,7 +57,7 @@ class Solution {
                     res[i] = num
                     k = k % trailCombs
                 } else {
-                    val trailCombs = fac[evenNum - 1] * fac[oddNum ]
+                    val trailCombs = fac[evenNum - 1] * fac[oddNum]
                     val leadIdx = (k / trailCombs).toInt()
                     val num = evens.removeAt(leadIdx)
                     res[i] = num

@@ -53,13 +53,15 @@ class Solution {
                 }
             }
         }
-        for (tree in trees) if (count[tree.`val`] == 1) {
-            return if (isValidBST(tree, null, null, valToNode) &&
-                valToNode.size <= 1
-            ) {
-                tree
-            } else {
-                null
+        for (tree in trees) {
+            if (count[tree.`val`] == 1) {
+                return if (isValidBST(tree, null, null, valToNode) &&
+                    valToNode.size <= 1
+                ) {
+                    tree
+                } else {
+                    null
+                }
             }
         }
         return null

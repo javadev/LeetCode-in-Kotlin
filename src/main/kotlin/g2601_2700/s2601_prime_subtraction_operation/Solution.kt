@@ -37,7 +37,13 @@ class Solution {
         for (n in nums) {
             val pos = primes.binarySearch(n - prev - 1)
             if (pos == -1 && n <= prev) return false
-            prev = n - if (pos == -1) 0 else if (pos < 0) primes[-pos - 2] else primes[pos]
+            prev = n - if (pos == -1) {
+                0
+            } else if (pos < 0) {
+                primes[-pos - 2]
+            } else {
+                primes[pos]
+            }
         }
         return true
     }

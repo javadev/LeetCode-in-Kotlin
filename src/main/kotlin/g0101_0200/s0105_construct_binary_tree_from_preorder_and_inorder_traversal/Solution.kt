@@ -20,9 +20,7 @@ class Solution {
     private var j = 0
     private val map: MutableMap<Int, Int> = HashMap()
 
-    fun get(key: Int): Int {
-        return map.getValue(key)
-    }
+    fun get(key: Int): Int = map.getValue(key)
 
     private fun answer(preorder: IntArray, inorder: IntArray, start: Int, end: Int): TreeNode? {
         if (start > end || j > preorder.size) {

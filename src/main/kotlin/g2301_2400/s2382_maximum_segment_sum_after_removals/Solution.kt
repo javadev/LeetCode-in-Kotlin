@@ -44,9 +44,7 @@ class Solution {
             sum[ry] += sum[rx]
         }
 
-        fun has(x: Int): Boolean {
-            return root[x] != -1 || sum[x] != 0L
-        }
+        fun has(x: Int): Boolean = root[x] != -1 || sum[x] != 0L
     }
 
     fun maximumSegmentSum(nums: IntArray, removeQueries: IntArray): LongArray {

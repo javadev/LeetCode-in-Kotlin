@@ -66,8 +66,6 @@ class Solution {
             return i == s.i && j == s.j && mask == s.mask
         }
 
-        override fun hashCode(): Int {
-            return (i * 31 + j) * 31 + mask
-        }
+        override fun hashCode(): Int = (i * 31 + j) * 31 + mask
     }
 }

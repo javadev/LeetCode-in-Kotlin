@@ -37,29 +37,21 @@ class MyCircularQueue(private val maxSize: Int) {
         return true
     }
 
-    fun Rear(): Int {
-        return if (size == 0) {
-            -1
-        } else {
-            dumyHead.right!!.`val`
-        }
+    fun rear(): Int = if (size == 0) {
+        -1
+    } else {
+        dumyHead.right!!.`val`
     }
 
-    fun Front(): Int {
-        return if (size == 0) {
-            -1
-        } else {
-            dumyHead.left!!.`val`
-        }
+    fun front(): Int = if (size == 0) {
+        -1
+    } else {
+        dumyHead.left!!.`val`
     }
 
-    fun isEmpty(): Boolean {
-        return size == 0
-    }
+    fun isEmpty(): Boolean = size == 0
 
-    fun isFull(): Boolean {
-        return size == maxSize
-    }
+    fun isFull(): Boolean = size == maxSize
 
     internal class DoubleLinkedNode(val `val`: Int) {
         var left: DoubleLinkedNode? = null

@@ -12,11 +12,11 @@ internal class MyCircularQueueTest {
         assertThat(myCircularQueue.enQueue(2), equalTo(true))
         assertThat(myCircularQueue.enQueue(3), equalTo(true))
         assertThat(myCircularQueue.enQueue(4), equalTo(false))
-        assertThat(myCircularQueue.Rear(), equalTo(3))
+        assertThat(myCircularQueue.rear(), equalTo(3))
         assertThat(myCircularQueue.isFull(), equalTo(true))
         assertThat(myCircularQueue.deQueue(), equalTo(true))
         assertThat(myCircularQueue.enQueue(4), equalTo(true))
-        assertThat(myCircularQueue.Rear(), equalTo(4))
+        assertThat(myCircularQueue.rear(), equalTo(4))
     }
 
     @Test
@@ -26,18 +26,18 @@ internal class MyCircularQueueTest {
         assertThat(q.enQueue(2), equalTo(true))
         assertThat(q.enQueue(3), equalTo(true))
         assertThat(q.enQueue(4), equalTo(false))
-        assertThat(q.Rear(), equalTo(3))
+        assertThat(q.rear(), equalTo(3))
         assertThat(q.isFull(), equalTo(true))
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.enQueue(4), equalTo(true))
-        assertThat(q.Rear(), equalTo(4))
+        assertThat(q.rear(), equalTo(4))
     }
 
     @Test
     fun myCircularQueue3() {
         val q = MyCircularQueue(2)
-        assertThat(q.Front(), equalTo(-1))
-        assertThat(q.Rear(), equalTo(-1))
+        assertThat(q.front(), equalTo(-1))
+        assertThat(q.rear(), equalTo(-1))
         assertThat(q.deQueue(), equalTo(false))
         assertThat(q.isEmpty(), equalTo(true))
     }
@@ -47,12 +47,12 @@ internal class MyCircularQueueTest {
         val q = MyCircularQueue(1)
         assertThat(q.enQueue(10), equalTo(true))
         assertThat(q.isFull(), equalTo(true))
-        assertThat(q.Front(), equalTo(10))
-        assertThat(q.Rear(), equalTo(10))
+        assertThat(q.front(), equalTo(10))
+        assertThat(q.rear(), equalTo(10))
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.isEmpty(), equalTo(true))
-        assertThat(q.Front(), equalTo(-1))
-        assertThat(q.Rear(), equalTo(-1))
+        assertThat(q.front(), equalTo(-1))
+        assertThat(q.rear(), equalTo(-1))
     }
 
     @Test
@@ -64,8 +64,8 @@ internal class MyCircularQueueTest {
         assertThat(q.isFull(), equalTo(true))
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.enQueue(4), equalTo(true))
-        assertThat(q.Front(), equalTo(2))
-        assertThat(q.Rear(), equalTo(4))
+        assertThat(q.front(), equalTo(2))
+        assertThat(q.rear(), equalTo(4))
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.deQueue(), equalTo(true))
@@ -82,7 +82,7 @@ internal class MyCircularQueueTest {
         assertThat(q.deQueue(), equalTo(true))
         assertThat(q.isEmpty(), equalTo(true))
         assertThat(q.enQueue(7), equalTo(true))
-        assertThat(q.Front(), equalTo(7))
-        assertThat(q.Rear(), equalTo(7))
+        assertThat(q.front(), equalTo(7))
+        assertThat(q.rear(), equalTo(7))
     }
 }

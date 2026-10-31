@@ -32,8 +32,7 @@ class Solution {
         }
     }
 
-    private operator fun Array<IntArray>.contains(pair: Pair<Int, Int>): Boolean {
-        return (0 <= pair.first && pair.first < this.size) &&
+    private operator fun Array<IntArray>.contains(pair: Pair<Int, Int>): Boolean =
+        (0 <= pair.first && pair.first < this.size) &&
             (0 <= pair.second && pair.second < this[0].size)
-    }
 }

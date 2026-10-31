@@ -26,13 +26,7 @@ class Solution {
         return res
     }
 
-    private fun recur(
-        res: MutableList<List<Int>>,
-        al: ArrayList<Int>,
-        sum: Int,
-        targetSum: Int,
-        root: TreeNode?,
-    ) {
+    private fun recur(res: MutableList<List<Int>>, al: ArrayList<Int>, sum: Int, targetSum: Int, root: TreeNode?) {
         var sum = sum
         if (root == null) {
             return

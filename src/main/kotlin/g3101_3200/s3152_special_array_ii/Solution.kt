@@ -18,7 +18,5 @@ class Solution {
         return res
     }
 
-    private fun calc(arr: IntArray, st: Int, end: Int): Int {
-        return arr[end] - arr[st]
-    }
+    private fun calc(arr: IntArray, st: Int, end: Int): Int = arr[end] - arr[st]
 }

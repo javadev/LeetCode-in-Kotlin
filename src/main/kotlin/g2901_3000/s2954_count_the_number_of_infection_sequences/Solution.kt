@@ -18,12 +18,10 @@ class Solution {
         return if (y % 2 == 1) (p * x % mod).toInt() else p.toInt()
     }
 
-    private fun binomCoeff(n: Int, k: Int): Long {
-        return max(
-            1.0,
-            (fact[n] * invFact[k] % MOD * invFact[n - k] % MOD).toDouble(),
-        ).toLong()
-    }
+    private fun binomCoeff(n: Int, k: Int): Long = max(
+        1.0,
+        (fact[n] * invFact[k] % MOD * invFact[n - k] % MOD).toDouble(),
+    ).toLong()
 
     fun numberOfSequence(n: Int, sick: IntArray): Int {
         if (init == 0L) {

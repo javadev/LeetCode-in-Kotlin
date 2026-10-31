@@ -4,9 +4,8 @@ package g0201_0300.s0201_bitwise_and_of_numbers_range
 // #Top_Interview_150_Bit_Manipulation #2022_10_19_Time_368_ms_(80.00%)_Space_37.1_MB_(76.67%)
 
 class Solution {
-    fun rangeBitwiseAnd(left: Int, right: Int): Int {
-        return if (left == right) left else right and MASKS[Integer.numberOfLeadingZeros(left xor right)]
-    }
+    fun rangeBitwiseAnd(left: Int, right: Int): Int =
+        if (left == right) left else right and MASKS[Integer.numberOfLeadingZeros(left xor right)]
 
     companion object {
         private val MASKS = intArrayOf(

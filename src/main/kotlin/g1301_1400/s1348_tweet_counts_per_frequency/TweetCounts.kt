@@ -20,12 +20,7 @@ class TweetCounts {
         mstore.computeIfAbsent(m) { _: Int? -> ArrayList() }.add(time)
     }
 
-    fun getTweetCountsPerFrequency(
-        freq: String,
-        tweetName: String,
-        startTime: Int,
-        endTime: Int,
-    ): List<Int> {
+    fun getTweetCountsPerFrequency(freq: String, tweetName: String, startTime: Int, endTime: Int): List<Int> {
         val sfreq = convFreqToSecond(freq)
         val dstore: Map<Int, MutableMap<Int, MutableMap<Int, MutableList<Int>>>> = store[tweetName]!!
         val chunks = IntArray((endTime - startTime) / sfreq + 1)
@@ -72,13 +67,11 @@ class TweetCounts {
         return ans
     }
 
-    private fun convFreqToSecond(freq: String): Int {
-        return when (freq) {
-            "minute" -> MINUTE
-            "hour" -> HOUR
-            "day" -> DAY
-            else -> 0
-        }
+    private fun convFreqToSecond(freq: String): Int = when (freq) {
+        "minute" -> MINUTE
+        "hour" -> HOUR
+        "day" -> DAY
+        else -> 0
     }
 
     companion object {

@@ -4,11 +4,7 @@ package g0601_0700.s0638_shopping_offers
 // #2023_02_10_Time_195_ms_(100.00%)_Space_35.1_MB_(100.00%)
 
 class Solution {
-    fun shoppingOffers(
-        price: List<Int>,
-        special: List<List<Int>>,
-        needs: List<Int>,
-    ): Int {
+    fun shoppingOffers(price: List<Int>, special: List<List<Int>>, needs: List<Int>): Int {
         val map: MutableMap<List<Int>, Int> = HashMap()
         shoppingOffersUtil(price, special, needs, map)
         return map[needs]!!

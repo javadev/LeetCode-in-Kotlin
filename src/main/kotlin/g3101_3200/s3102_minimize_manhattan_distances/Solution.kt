@@ -7,13 +7,11 @@ import kotlin.math.max
 import kotlin.math.min
 
 class Solution {
-    private fun manhattan(points: Array<IntArray>, i: Int, j: Int): Int {
-        return (
-            abs(points[i][0] - points[j][0]) + abs(
-                points[i][1] - points[j][1],
-            )
-            )
-    }
+    private fun manhattan(points: Array<IntArray>, i: Int, j: Int): Int = (
+        abs(points[i][0] - points[j][0]) + abs(
+            points[i][1] - points[j][1],
+        )
+        )
 
     private fun maxManhattanDistance(points: Array<IntArray>, remove: Int): IntArray {
         val n = points.size
@@ -47,8 +45,7 @@ class Solution {
                 }
             }
         }
-        return if (max(maxSum - minSum, maxDiff - minDiff) == maxSum - minSum
-        ) {
+        return if (max(maxSum - minSum, maxDiff - minDiff) == maxSum - minSum) {
             intArrayOf(maxSumIndex, minSumIndex)
         } else {
             intArrayOf(maxDiffIndex, minDiffIndex)

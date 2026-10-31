@@ -17,13 +17,9 @@ class Tree {
         return children!![i]
     }
 
-    fun getChild(c: Char): Tree? {
-        return if (children == null) null else children!![c.code - 'a'.code]
-    }
+    fun getChild(c: Char): Tree? = if (children == null) null else children!![c.code - 'a'.code]
 
-    fun len(): Int {
-        return length
-    }
+    fun len(): Int = length
 
     companion object {
         fun addWord(root: Tree?, word: String) {

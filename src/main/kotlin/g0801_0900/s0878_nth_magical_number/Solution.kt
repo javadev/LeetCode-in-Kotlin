@@ -22,9 +22,7 @@ class Solution {
         return (ans % MOD).toInt()
     }
 
-    private fun lcm(a: Long, b: Long): Long {
-        return a * b / gcd(a, b)
-    }
+    private fun lcm(a: Long, b: Long): Long = a * b / gcd(a, b)
 
     private fun gcd(a: Long, b: Long): Long {
         var a = a

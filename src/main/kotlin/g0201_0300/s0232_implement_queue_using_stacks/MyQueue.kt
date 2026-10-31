@@ -7,7 +7,7 @@ package g0201_0300.s0232_implement_queue_using_stacks
 import java.util.Deque
 import java.util.LinkedList
 
-class MyQueue() {
+class MyQueue {
     private val deque: Deque<Int> = LinkedList()
 
     fun push(x: Int) {

@@ -5,7 +5,7 @@ package g0101_0200.s0155_min_stack
 // #Udemy_Design #Top_Interview_150_Stack #Big_O_Time_O(1)_Space_O(N)
 // #2022_09_06_Time_331_ms_(84.88%)_Space_54.3_MB_(46.34%)
 
-class MinStack() {
+class MinStack {
     private val stack: ArrayDeque<Pair<Int, Int>> = ArrayDeque()
 
     fun push(x: Int) {
@@ -21,17 +21,13 @@ class MinStack() {
         stack.removeLast()
     }
 
-    fun top(): Int {
-        return stack
-            .last()
-            .first
-    }
+    fun top(): Int = stack
+        .last()
+        .first
 
-    fun getMin(): Int {
-        return stack
-            .last()
-            .second
-    }
+    fun getMin(): Int = stack
+        .last()
+        .second
 }
 
 /*

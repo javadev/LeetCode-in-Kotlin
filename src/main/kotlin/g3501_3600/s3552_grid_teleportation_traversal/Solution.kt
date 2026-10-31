@@ -49,9 +49,7 @@ class Solution {
         n: Int,
         visited: Array<BooleanArray>,
         matrix: Array<String>,
-    ): Boolean {
-        return !(r < 0 || r == m || c < 0 || c == n || visited[r][c] || matrix[r][c] == '#')
-    }
+    ): Boolean = !(r < 0 || r == m || c < 0 || c == n || visited[r][c] || matrix[r][c] == '#')
 
     private fun processPortal(
         r: Int,

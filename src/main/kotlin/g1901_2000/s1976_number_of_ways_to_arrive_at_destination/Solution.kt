@@ -45,7 +45,5 @@ class Solution {
         return ways[n - 1].toInt()
     }
 
-    fun countPaths(n: Int, roads: Array<IntArray>): Int {
-        return dijkstra(roads, n)
-    }
+    fun countPaths(n: Int, roads: Array<IntArray>): Int = dijkstra(roads, n)
 }

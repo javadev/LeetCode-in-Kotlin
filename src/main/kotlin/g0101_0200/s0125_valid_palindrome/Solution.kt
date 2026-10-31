@@ -43,13 +43,10 @@ class Solution {
         return res
     }
 
-    private fun isNotAlphaNumeric(c: Char): Boolean {
-        return (c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')
-    }
+    private fun isNotAlphaNumeric(c: Char): Boolean =
+        (c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')
 
-    private fun isUpper(c: Char): Boolean {
-        return c >= 'A' && c <= 'Z'
-    }
+    private fun isUpper(c: Char): Boolean = c >= 'A' && c <= 'Z'
 
     private fun upperToLower(c: Char): Char {
         var c = c

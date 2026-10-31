@@ -32,9 +32,7 @@ class FindElements(root: TreeNode?) {
         helper(root.right, 2 * x + 2)
     }
 
-    fun find(target: Int): Boolean {
-        return map.containsKey(target)
-    }
+    fun find(target: Int): Boolean = map.containsKey(target)
 }
 /*
  * Your FindElements object will be instantiated and called as such:

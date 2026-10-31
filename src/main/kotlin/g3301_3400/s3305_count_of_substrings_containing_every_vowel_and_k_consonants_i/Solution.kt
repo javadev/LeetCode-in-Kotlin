@@ -52,7 +52,5 @@ class Solution {
         return ans
     }
 
-    private fun isVowel(ch: Char): Boolean {
-        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
-    }
+    private fun isVowel(ch: Char): Boolean = ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
 }

@@ -26,11 +26,9 @@ class Solution {
         return ans
     }
 
-    private fun find(x: Int): Int {
-        return if (par[x] == x) {
-            x
-        } else {
-            find(par[x])
-        }
+    private fun find(x: Int): Int = if (par[x] == x) {
+        x
+    } else {
+        find(par[x])
     }
 }

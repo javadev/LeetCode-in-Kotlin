@@ -17,10 +17,7 @@ class Solution {
         return res
     }
 
-    private fun getAdList(
-        pairs: Array<IntArray>,
-        inOutEdge: HashMap<Int, IntArray>,
-    ): HashMap<Int, Queue<Int>> {
+    private fun getAdList(pairs: Array<IntArray>, inOutEdge: HashMap<Int, IntArray>): HashMap<Int, Queue<Int>> {
         val adList = HashMap<Int, Queue<Int>>()
         for (pair in pairs) {
             val s = pair[0]

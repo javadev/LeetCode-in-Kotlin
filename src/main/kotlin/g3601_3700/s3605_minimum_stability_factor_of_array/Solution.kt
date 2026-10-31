@@ -89,7 +89,5 @@ class Solution {
         return gcd(table[k][left], table[k][right - (1 shl k) + 1])
     }
 
-    private fun gcd(a: Int, b: Int): Int {
-        return if (b == 0) a else gcd(b, a % b)
-    }
+    private fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 }

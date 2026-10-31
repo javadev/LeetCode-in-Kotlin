@@ -29,11 +29,7 @@ class Solution {
         return 2 * (selfPalindrome + pairPalindrome)
     }
 
-    private fun isPalindrome(word: String): Boolean {
-        return word[1] == word[0]
-    }
+    private fun isPalindrome(word: String): Boolean = word[1] == word[0]
 
-    private fun palindrome(word: String): String {
-        return java.lang.String.valueOf(charArrayOf(word[1], word[0]))
-    }
+    private fun palindrome(word: String): String = java.lang.String.valueOf(charArrayOf(word[1], word[0]))
 }

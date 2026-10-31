@@ -80,7 +80,5 @@ class Solution {
         return best
     }
 
-    private fun forbiddenCount(x: Int, n: Int): Long {
-        return (if (x <= n) (n - x + 1) else 0).toLong()
-    }
+    private fun forbiddenCount(x: Int, n: Int): Long = (if (x <= n) (n - x + 1) else 0).toLong()
 }

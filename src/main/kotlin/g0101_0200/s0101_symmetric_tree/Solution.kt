@@ -18,12 +18,10 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun isSymmetric(root: TreeNode?): Boolean {
-        return if (root == null) {
-            true
-        } else {
-            helper(root.left, root.right)
-        }
+    fun isSymmetric(root: TreeNode?): Boolean = if (root == null) {
+        true
+    } else {
+        helper(root.left, root.right)
     }
 
     private fun helper(leftNode: TreeNode?, rightNode: TreeNode?): Boolean {

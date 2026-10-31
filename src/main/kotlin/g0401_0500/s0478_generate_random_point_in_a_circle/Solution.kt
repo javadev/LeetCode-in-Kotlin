@@ -18,13 +18,10 @@ class Solution(private val radius: Double, private val xCenter: Double, private 
         return doubleArrayOf(x, y)
     }
 
-    private fun getDistance(x: Double, y: Double): Double {
-        return (xCenter - x) * (xCenter - x) + (yCenter - y) * (yCenter - y)
-    }
+    private fun getDistance(x: Double, y: Double): Double =
+        (xCenter - x) * (xCenter - x) + (yCenter - y) * (yCenter - y)
 
-    private fun getCoordinate(center: Double): Double {
-        return center - radius + random.nextDouble() * 2 * radius
-    }
+    private fun getCoordinate(center: Double): Double = center - radius + random.nextDouble() * 2 * radius
 }
 
 /*

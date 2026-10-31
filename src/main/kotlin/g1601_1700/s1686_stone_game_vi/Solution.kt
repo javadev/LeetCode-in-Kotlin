@@ -13,9 +13,7 @@ class Solution {
             sum = a + b
         }
 
-        override fun compareTo(other: Pair): Int {
-            return other.sum - sum
-        }
+        override fun compareTo(other: Pair): Int = other.sum - sum
     }
 
     fun stoneGameVI(aliceValues: IntArray, bobValues: IntArray): Int {

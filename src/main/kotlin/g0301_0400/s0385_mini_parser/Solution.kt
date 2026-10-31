@@ -35,34 +35,30 @@ import com_github_leetcode.NestedInteger
  */
 class Solution {
     private var i = 0
-    fun deserialize(s: String): NestedInteger {
-        return getAns(s)
-    }
+    fun deserialize(s: String): NestedInteger = getAns(s)
 
-    private fun getAns(s: String): NestedInteger {
-        return if (s[i] == '[') {
-            val ni = NestedInteger()
-            i++
-            while (i < s.length && s[i] != ']') {
-                ni.add(getAns(s))
-            }
-            i++
-            ni
-        } else if (s[i] == ',') {
-            i++
-            getAns(s)
-        } else {
-            var x = 0
-            var m = 1
-            if (s[i] == '-') {
-                i++
-                m = -1
-            }
-            while (i < s.length && Character.isDigit(s[i])) {
-                x = x * 10 + s[i++].code - '0'.code
-            }
-            x *= m
-            NestedInteger(x)
+    private fun getAns(s: String): NestedInteger = if (s[i] == '[') {
+        val ni = NestedInteger()
+        i++
+        while (i < s.length && s[i] != ']') {
+            ni.add(getAns(s))
         }
+        i++
+        ni
+    } else if (s[i] == ',') {
+        i++
+        getAns(s)
+    } else {
+        var x = 0
+        var m = 1
+        if (s[i] == '-') {
+            i++
+            m = -1
+        }
+        while (i < s.length && Character.isDigit(s[i])) {
+            x = x * 10 + s[i++].code - '0'.code
+        }
+        x *= m
+        NestedInteger(x)
     }
 }

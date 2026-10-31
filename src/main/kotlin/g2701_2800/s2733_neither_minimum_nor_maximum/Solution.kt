@@ -11,7 +11,7 @@ class Solution {
             mx = kotlin.math.max(it, mx)
         }
         nums.forEach {
-            if (it != mn && it != mx)return it
+            if (it != mn && it != mx) return it
         }
         return -1
     }

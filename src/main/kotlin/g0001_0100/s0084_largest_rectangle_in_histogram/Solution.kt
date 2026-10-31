@@ -6,9 +6,7 @@ package g0001_0100.s0084_largest_rectangle_in_histogram
 import kotlin.math.max
 
 class Solution {
-    fun largestRectangleArea(heights: IntArray): Int {
-        return largestArea(heights, 0, heights.size)
-    }
+    fun largestRectangleArea(heights: IntArray): Int = largestArea(heights, 0, heights.size)
 
     private fun largestArea(a: IntArray, start: Int, limit: Int): Int {
         if (a.isEmpty()) {
@@ -64,7 +62,5 @@ class Solution {
         return true
     }
 
-    private fun maxOfThreeNums(a: Int, b: Int, c: Int): Int {
-        return max(max(a, b), c)
-    }
+    private fun maxOfThreeNums(a: Int, b: Int, c: Int): Int = max(max(a, b), c)
 }

@@ -50,13 +50,9 @@ class Solution {
     private class Trie(var index: Int) {
         var ch: Array<Trie?> = arrayOfNulls(26)
 
-        fun get(ch: Char): Trie? {
-            return this.ch[ch.code - 'a'.code]
-        }
+        fun get(ch: Char): Trie? = this.ch[ch.code - 'a'.code]
 
-        fun has(ch: Char): Boolean {
-            return this.ch[ch.code - 'a'.code] != null
-        }
+        fun has(ch: Char): Boolean = this.ch[ch.code - 'a'.code] != null
 
         fun put(ch: Char, index: Int) {
             this.ch[ch.code - 'a'.code] = Trie(index)

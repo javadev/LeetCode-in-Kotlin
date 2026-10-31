@@ -4,9 +4,7 @@ package g0801_0900.s0844_backspace_string_compare
 // #Level_1_Day_14_Stack #2023_03_29_Time_126_ms_(98.31%)_Space_33.5_MB_(93.22%)
 
 class Solution {
-    fun backspaceCompare(s: String, t: String): Boolean {
-        return cmprStr(s) == cmprStr(t)
-    }
+    fun backspaceCompare(s: String, t: String): Boolean = cmprStr(s) == cmprStr(t)
 
     private fun cmprStr(str: String): String {
         val res = StringBuilder()

@@ -3,12 +3,7 @@ package g2901_3000.s2975_maximum_square_area_by_removing_fences_from_a_field
 // #Medium #Array #Hash_Table #Enumeration #2024_01_19_Time_1283_ms_(96.77%)_Space_68.6_MB_(93.55%)
 
 class Solution {
-    fun maximizeSquareArea(
-        m: Int,
-        n: Int,
-        hFences: IntArray,
-        vFences: IntArray,
-    ): Int {
+    fun maximizeSquareArea(m: Int, n: Int, hFences: IntArray, vFences: IntArray): Int {
         val hFencesWithBorder = IntArray(hFences.size + 2)
         System.arraycopy(hFences, 0, hFencesWithBorder, 0, hFences.size)
         hFencesWithBorder[hFences.size] = 1

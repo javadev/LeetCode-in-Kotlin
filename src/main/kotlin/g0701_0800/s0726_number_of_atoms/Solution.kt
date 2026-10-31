@@ -4,14 +4,8 @@ package g0701_0800.s0726_number_of_atoms
 // #2023_03_01_Time_149_ms_(100.00%)_Space_35.5_MB_(100.00%)
 
 class Solution {
-    data class Item(
-        var title: String = "",
-        var total: String = "",
-        var count: Int = 0,
-    ) {
-        fun getT(): String {
-            return if (total == "") "1" else total
-        }
+    data class Item(var title: String = "", var total: String = "", var count: Int = 0) {
+        fun getT(): String = if (total == "") "1" else total
     }
 
     fun countOfAtoms(formula: String): String {
@@ -45,16 +39,20 @@ class Solution {
                     current.count = open
                     multiply = false
                 }
+
                 in 'a'..'z' -> {
                     current.title += it.toString()
                 }
+
                 '(' -> {
                     open++
                 }
+
                 ')' -> {
                     multiply = true
                     open--
                 }
+
                 in '0'..'9' -> {
                     if (multiply) {
                         multiplier += it.toString()

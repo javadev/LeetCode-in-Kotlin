@@ -26,9 +26,7 @@ class Solution {
             return sum
         }
 
-        private fun lsb(n: Int): Int {
-            return n and (-n)
-        }
+        private fun lsb(n: Int): Int = n and (-n)
     }
 
     fun resultArray(source: IntArray): IntArray {

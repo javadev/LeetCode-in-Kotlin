@@ -17,13 +17,17 @@ class Solution {
         var r1: Int
         do {
             var r2: Int
-            do { r2 = rand7() } while (r2 == 7)
-            if (r2 in 1..3) { r1 = rand7() } else { r1 = 7 + rand7() }
+            do {
+                r2 = rand7()
+            } while (r2 == 7)
+            if (r2 in 1..3) {
+                r1 = rand7()
+            } else {
+                r1 = 7 + rand7()
+            }
         } while (r1 > 10)
         return r1
     }
 
-    private fun rand7(): Int {
-        return random.nextInt(7) + 1
-    }
+    private fun rand7(): Int = random.nextInt(7) + 1
 }

@@ -7,9 +7,7 @@ import java.util.PriorityQueue
 
 class Solution {
     private class Pair(var v: Int, var cwt: Int) : Comparable<Pair> {
-        override fun compareTo(other: Pair): Int {
-            return cwt - other.cwt
-        }
+        override fun compareTo(other: Pair): Int = cwt - other.cwt
     }
 
     private class Edge(var v: Int, var wt: Int)

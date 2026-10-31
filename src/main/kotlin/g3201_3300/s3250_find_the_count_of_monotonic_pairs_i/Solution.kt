@@ -34,8 +34,7 @@ class Solution {
             currCases[0] = 1
             for (j in 1 until currCases.size) {
                 val prevCases =
-                    if (j < cases[i - 1]!!.size
-                    ) {
+                    if (j < cases[i - 1]!!.size) {
                         cases[i - 1]!![j]
                     } else {
                         cases[i - 1]!![cases[i - 1]!!.size - 1]

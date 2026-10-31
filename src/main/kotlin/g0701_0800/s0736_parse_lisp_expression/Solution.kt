@@ -16,25 +16,23 @@ class Solution {
             parent = from
         }
 
-        fun evaluate(vars: Map<String?, Int>): Int {
-            return if (op.equals("add", ignoreCase = true)) {
-                exps.pop().evaluate(vars) + exps.pop().evaluate(vars)
-            } else if (op.equals("mult", ignoreCase = true)) {
-                exps.pop().evaluate(vars) * exps.pop().evaluate(vars)
-            } else if (op.equals("let", ignoreCase = true)) {
-                val nextVars: MutableMap<String?, Int> = HashMap(vars)
-                while (exps.size > 1) {
-                    val varName = exps.pop().op
-                    val `val` = exps.pop().evaluate(nextVars)
-                    nextVars[varName] = `val`
-                }
-                exps.pop().evaluate(nextVars)
+        fun evaluate(vars: Map<String?, Int>): Int = if (op.equals("add", ignoreCase = true)) {
+            exps.pop().evaluate(vars) + exps.pop().evaluate(vars)
+        } else if (op.equals("mult", ignoreCase = true)) {
+            exps.pop().evaluate(vars) * exps.pop().evaluate(vars)
+        } else if (op.equals("let", ignoreCase = true)) {
+            val nextVars: MutableMap<String?, Int> = HashMap(vars)
+            while (exps.size > 1) {
+                val varName = exps.pop().op
+                val `val` = exps.pop().evaluate(nextVars)
+                nextVars[varName] = `val`
+            }
+            exps.pop().evaluate(nextVars)
+        } else {
+            if (Character.isLetter(op!![0])) {
+                vars[op]!!
             } else {
-                if (Character.isLetter(op!![0])) {
-                    vars[op]!!
-                } else {
-                    op!!.toInt()
-                }
+                op!!.toInt()
             }
         }
     }
@@ -67,7 +65,5 @@ class Solution {
         return root.exps.pop()
     }
 
-    fun evaluate(exp: String): Int {
-        return buildTree(exp).evaluate(HashMap())
-    }
+    fun evaluate(exp: String): Int = buildTree(exp).evaluate(HashMap())
 }

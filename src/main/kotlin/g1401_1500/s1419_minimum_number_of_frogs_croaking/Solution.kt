@@ -19,10 +19,8 @@ class Solution {
         return if (isEmpty(f)) ans else -1
     }
 
-    private fun checkEnough(f: IntArray): Boolean {
-        return f['c'.code - 'a'.code] > 0 && f['r'.code - 'a'.code] > 0 &&
-            f['o'.code - 'a'.code] > 0 && f[0] > 0 && f['k'.code - 'a'.code] > 0
-    }
+    private fun checkEnough(f: IntArray): Boolean = f['c'.code - 'a'.code] > 0 && f['r'.code - 'a'.code] > 0 &&
+        f['o'.code - 'a'.code] > 0 && f[0] > 0 && f['k'.code - 'a'.code] > 0
 
     fun reduce(f: IntArray) {
         f['c'.code - 'a'.code]--

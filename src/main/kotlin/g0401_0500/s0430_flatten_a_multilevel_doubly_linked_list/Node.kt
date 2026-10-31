@@ -5,7 +5,5 @@ class Node(var `val`: Int) {
     var next: Node? = null
     var child: Node? = null
 
-    override fun toString(): String {
-        return "Node{val=$`val`,next=${this.next}}"
-    }
+    override fun toString(): String = "Node{val=$`val`,next=${this.next}}"
 }

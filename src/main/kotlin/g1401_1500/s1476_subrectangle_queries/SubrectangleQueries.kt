@@ -7,9 +7,7 @@ class SubrectangleQueries(var grid: Array<IntArray>) {
         dfs(grid, row1, col1, row2, col2, newValue)
     }
 
-    fun getValue(row: Int, col: Int): Int {
-        return grid[row][col]
-    }
+    fun getValue(row: Int, col: Int): Int = grid[row][col]
 
     private fun dfs(rectangle: Array<IntArray>, row1: Int, col1: Int, row2: Int, col2: Int, value: Int) {
         for (i in row1..row2) {

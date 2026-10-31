@@ -41,7 +41,6 @@ class Solution {
         return sum
     }
 
-    private fun lessGap(sum: Int, temp: Int, target: Int): Int {
-        return if (Math.abs(sum - target) < Math.abs(temp - target)) sum else temp
-    }
+    private fun lessGap(sum: Int, temp: Int, target: Int): Int =
+        if (Math.abs(sum - target) < Math.abs(temp - target)) sum else temp
 }

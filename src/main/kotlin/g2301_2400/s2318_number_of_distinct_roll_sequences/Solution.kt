@@ -15,9 +15,7 @@ class Solution {
         intArrayOf(1, 5),
     )
 
-    fun distinctSequences(n: Int): Int {
-        return dp(n, 0, 0)
-    }
+    fun distinctSequences(n: Int): Int = dp(n, 0, 0)
 
     private fun dp(n: Int, prev: Int, pprev: Int): Int {
         if (n == 0) {

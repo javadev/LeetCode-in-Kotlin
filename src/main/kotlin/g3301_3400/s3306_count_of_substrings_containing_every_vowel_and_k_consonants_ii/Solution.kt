@@ -7,12 +7,10 @@ import java.util.HashMap
 import java.util.HashSet
 
 class Solution {
-    fun countOfSubstrings(word: String, k: Int): Long {
-        return (
-            countOfSubstringHavingAtleastXConsonants(word, k) -
-                countOfSubstringHavingAtleastXConsonants(word, k + 1)
-            )
-    }
+    fun countOfSubstrings(word: String, k: Int): Long = (
+        countOfSubstringHavingAtleastXConsonants(word, k) -
+            countOfSubstringHavingAtleastXConsonants(word, k + 1)
+        )
 
     private fun countOfSubstringHavingAtleastXConsonants(word: String, k: Int): Long {
         var start = 0

@@ -5,12 +5,10 @@ package g2501_2600.s2513_minimize_the_maximum_of_two_arrays
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    private fun gcd(a: Int, b: Int): Int {
-        return if (b == 0) {
-            a
-        } else {
-            gcd(b, a % b)
-        }
+    private fun gcd(a: Int, b: Int): Int = if (b == 0) {
+        a
+    } else {
+        gcd(b, a % b)
     }
 
     fun minimizeSet(divisor1: Int, divisor2: Int, uniqueCnt1: Int, uniqueCnt2: Int): Int {

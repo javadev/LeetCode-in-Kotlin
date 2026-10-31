@@ -8,7 +8,5 @@ class Solution {
      * Time: O(logn)
      * Space: O(1)
      */
-    fun kthGrammar(n: Int, k: Int): Int {
-        return Integer.bitCount(k - 1) % 2 + n - n
-    }
+    fun kthGrammar(n: Int, k: Int): Int = Integer.bitCount(k - 1) % 2 + n - n
 }

@@ -14,12 +14,7 @@ class CombinationIterator(characters: String, private val combinationLength: Int
         buildAllCombinations(characters, 0, StringBuilder(), visited)
     }
 
-    private fun buildAllCombinations(
-        characters: String,
-        start: Int,
-        sb: StringBuilder,
-        visited: BooleanArray,
-    ) {
+    private fun buildAllCombinations(characters: String, start: Int, sb: StringBuilder, visited: BooleanArray) {
         if (sb.length == combinationLength) {
             list.add(sb.toString())
         } else {
@@ -38,13 +33,9 @@ class CombinationIterator(characters: String, private val combinationLength: Int
         }
     }
 
-    operator fun next(): String {
-        return list[index++]
-    }
+    operator fun next(): String = list[index++]
 
-    operator fun hasNext(): Boolean {
-        return index < list.size
-    }
+    operator fun hasNext(): Boolean = index < list.size
 }
 /*
  * Your CombinationIterator object will be instantiated and called as such:

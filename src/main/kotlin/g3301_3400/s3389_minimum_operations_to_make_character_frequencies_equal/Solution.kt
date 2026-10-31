@@ -14,11 +14,12 @@ class Solution {
         for (c in s) cnt[c - 'a']++
         var mn = n
         var mx = 0
-        for (c in cnt)
+        for (c in cnt) {
             if (c != 0) {
                 mn = min(mn, c)
                 mx = max(mx, c)
             }
+        }
         if (mn == mx) return 0
         var dp0: Int
         var dp1: Int

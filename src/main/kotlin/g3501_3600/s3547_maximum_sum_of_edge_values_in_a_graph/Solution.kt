@@ -67,9 +67,7 @@ class Solution {
         return ret
     }
 
-    private fun getTotalCircleSize(circles: MutableList<Int>): Int {
-        return circles.stream().mapToInt { obj: Int -> obj }.sum()
-    }
+    private fun getTotalCircleSize(circles: MutableList<Int>): Int = circles.stream().mapToInt { obj: Int -> obj }.sum()
 
     private fun processCircles(circles: MutableList<Int>, start: Int): Long {
         var start = start

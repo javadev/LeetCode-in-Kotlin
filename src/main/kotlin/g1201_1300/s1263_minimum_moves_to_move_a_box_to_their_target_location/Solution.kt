@@ -76,13 +76,10 @@ class Solution {
         return false
     }
 
-    private fun isOutOfBounds(player: IntArray, box: IntArray): Boolean {
-        return isOutOfBounds(player[0], player[1]) || isOutOfBounds(box[0], box[1])
-    }
+    private fun isOutOfBounds(player: IntArray, box: IntArray): Boolean =
+        isOutOfBounds(player[0], player[1]) || isOutOfBounds(box[0], box[1])
 
-    private fun isOutOfBounds(x: Int, y: Int): Boolean {
-        return x < 0 || y < 0 || x == n || y == m || grid[x][y] == '#'
-    }
+    private fun isOutOfBounds(x: Int, y: Int): Boolean = x < 0 || y < 0 || x == n || y == m || grid[x][y] == '#'
 
     private fun findLocations(box: IntArray, target: IntArray, player: IntArray) {
         var p = false

@@ -12,9 +12,7 @@ import com_github_leetcode.Node
  * }
  */
 class Solution {
-    fun cloneGraph(node: Node?): Node? {
-        return cloneGraph(node, HashMap())
-    }
+    fun cloneGraph(node: Node?): Node? = cloneGraph(node, HashMap())
 
     private fun cloneGraph(node: Node?, processedNodes: MutableMap<Node, Node?>): Node? {
         if (node == null) {

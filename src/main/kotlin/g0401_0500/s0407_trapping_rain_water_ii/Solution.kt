@@ -7,9 +7,7 @@ import java.util.PriorityQueue
 
 class Solution {
     private class Cell(val row: Int, val col: Int, val value: Int) : Comparable<Cell?> {
-        override operator fun compareTo(other: Cell?): Int {
-            return value - other!!.value
-        }
+        override operator fun compareTo(other: Cell?): Int = value - other!!.value
     }
 
     private var water = 0

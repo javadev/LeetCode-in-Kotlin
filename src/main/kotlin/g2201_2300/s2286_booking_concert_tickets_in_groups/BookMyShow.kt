@@ -145,12 +145,10 @@ class BookMyShow(n: Int, private val m: Int) {
     }
 
     companion object {
-        private fun nextPow2(n: Int): Int {
-            return if (n and n - 1 == 0) {
-                n
-            } else {
-                Integer.highestOneBit(n) shl 1
-            }
+        private fun nextPow2(n: Int): Int = if (n and n - 1 == 0) {
+            n
+        } else {
+            Integer.highestOneBit(n) shl 1
         }
     }
 }

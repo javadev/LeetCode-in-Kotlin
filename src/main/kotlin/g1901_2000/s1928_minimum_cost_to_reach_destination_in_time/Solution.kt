@@ -41,9 +41,7 @@ class Solution {
             edges.computeIfAbsent(dst) { _: Int? -> ArrayList() }.add(Edge(src, weight))
         }
 
-        fun getEdges(node: Int): List<Edge> {
-            return edges.getOrDefault(node, ArrayList())
-        }
+        fun getEdges(node: Int): List<Edge> = edges.getOrDefault(node, ArrayList())
     }
 
     private class Edge(val dst: Int, val weight: Int)

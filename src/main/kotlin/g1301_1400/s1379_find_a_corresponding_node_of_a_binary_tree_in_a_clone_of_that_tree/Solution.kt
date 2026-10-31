@@ -15,11 +15,7 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun getTargetCopy(
-        original: TreeNode?,
-        cloned: TreeNode?,
-        target: TreeNode,
-    ): TreeNode? {
+    fun getTargetCopy(original: TreeNode?, cloned: TreeNode?, target: TreeNode): TreeNode? {
         if (original == null) {
             return null
         }

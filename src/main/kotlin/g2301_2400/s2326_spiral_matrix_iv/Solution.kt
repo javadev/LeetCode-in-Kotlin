@@ -17,7 +17,10 @@ import com_github_leetcode.ListNode
 @Suppress("NAME_SHADOWING")
 class Solution {
     private enum class Direction {
-        RIGHT, DOWN, LEFT, UP
+        RIGHT,
+        DOWN,
+        LEFT,
+        UP,
     }
 
     fun spiralMatrix(m: Int, n: Int, head: ListNode?): Array<IntArray> {

@@ -46,12 +46,10 @@ class Solution {
         return res
     }
 
-    private fun count(i: Int, max: Int): Int {
-        return if (i == 0) {
-            max
-        } else {
-            (max - i) * count(i - 1, max)
-        }
+    private fun count(i: Int, max: Int): Int = if (i == 0) {
+        max
+    } else {
+        (max - i) * count(i - 1, max)
     }
 
     private fun countUnbounded(len: Int): Int {

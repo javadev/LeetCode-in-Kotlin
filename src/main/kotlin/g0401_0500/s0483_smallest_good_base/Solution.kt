@@ -3,9 +3,7 @@ package g0401_0500.s0483_smallest_good_base
 // #Hard #Math #Binary_Search #2023_01_02_Time_164_ms_(100.00%)_Space_33.9_MB_(100.00%)
 
 class Solution {
-    fun smallestGoodBase(n: String): String {
-        return sol1(n)
-    }
+    fun smallestGoodBase(n: String): String = sol1(n)
 
     private fun sol1(n: String): String {
         val x = n.toLong()

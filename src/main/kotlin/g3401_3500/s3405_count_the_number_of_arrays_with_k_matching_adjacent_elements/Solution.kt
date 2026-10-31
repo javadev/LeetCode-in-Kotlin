@@ -30,13 +30,9 @@ class Solution {
         return ans
     }
 
-    private fun comb(n: Int, r: Int, f: LongArray): Long {
-        return f[n] * ff(f[r]) % MOD * ff(f[n - r]) % MOD
-    }
+    private fun comb(n: Int, r: Int, f: LongArray): Long = f[n] * ff(f[r]) % MOD * ff(f[n - r]) % MOD
 
-    private fun ff(x: Long): Long {
-        return ex(x, MOD - 2L)
-    }
+    private fun ff(x: Long): Long = ex(x, MOD - 2L)
 
     companion object {
         private val MOD = (1e9 + 7).toInt()

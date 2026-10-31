@@ -4,10 +4,9 @@ package g0301_0400.s0345_reverse_vowels_of_a_string
 // #2022_11_18_Time_349_ms_(80.63%)_Space_42.2_MB_(76.91%)
 
 class Solution {
-    private fun isVowel(c: Char): Boolean {
-        return c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' ||
+    private fun isVowel(c: Char): Boolean =
+        c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' ||
             c == 'u' || c == 'U'
-    }
 
     fun reverseVowels(str: String): String {
         var i = 0

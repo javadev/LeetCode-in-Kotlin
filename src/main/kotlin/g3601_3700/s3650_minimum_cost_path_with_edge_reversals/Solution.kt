@@ -13,9 +13,7 @@ class Solution {
     private lateinit var weight: IntArray
 
     private class Dist(var u: Int, var d: Int) : Comparable<Dist> {
-        override fun compareTo(other: Dist): Int {
-            return d.toLong().compareTo(other.d.toLong())
-        }
+        override fun compareTo(other: Dist): Int = d.toLong().compareTo(other.d.toLong())
     }
 
     private fun init(n: Int, m: Int) {

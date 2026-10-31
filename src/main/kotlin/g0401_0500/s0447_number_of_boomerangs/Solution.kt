@@ -23,7 +23,6 @@ class Solution {
         return ans
     }
 
-    private fun dist(d1: IntArray, d2: IntArray): Int {
-        return (d1[0] - d2[0]) * (d1[0] - d2[0]) + (d1[1] - d2[1]) * (d1[1] - d2[1])
-    }
+    private fun dist(d1: IntArray, d2: IntArray): Int =
+        (d1[0] - d2[0]) * (d1[0] - d2[0]) + (d1[1] - d2[1]) * (d1[1] - d2[1])
 }

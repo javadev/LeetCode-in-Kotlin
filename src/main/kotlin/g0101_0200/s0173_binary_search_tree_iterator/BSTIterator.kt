@@ -44,9 +44,7 @@ class BSTIterator(root: TreeNode?) {
         return res
     }
 
-    operator fun hasNext(): Boolean {
-        return node != null
-    }
+    operator fun hasNext(): Boolean = node != null
 }
 
 /*

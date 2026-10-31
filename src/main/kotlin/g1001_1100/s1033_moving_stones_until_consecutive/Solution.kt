@@ -14,9 +14,7 @@ class Solution {
         }
     }
 
-    private fun maxMoves(x: Int, z: Int): Int {
-        return z - x - 2
-    }
+    private fun maxMoves(x: Int, z: Int): Int = z - x - 2
 
     fun numMovesStones(a: Int, b: Int, c: Int): IntArray {
         val t = intArrayOf(a, b, c)
