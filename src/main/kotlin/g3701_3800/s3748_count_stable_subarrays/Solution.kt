@@ -33,8 +33,8 @@ class Solution {
         }
         val ans = LongArray(queries.size)
         for (l in queries.indices) {
-            val i = queries[l]!![0]
-            val j = queries[l]!![1]
+            val i = queries[l][0]
+            val j = queries[l][1]
             var res = preSum[j + 1] - preSum[i]
             val endIdx = min(end[i], j)
             res -= (endIdx - i + 1).toLong() * idx[i]

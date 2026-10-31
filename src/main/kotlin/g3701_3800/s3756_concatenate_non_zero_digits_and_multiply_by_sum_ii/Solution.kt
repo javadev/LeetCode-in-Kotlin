@@ -12,7 +12,7 @@ class Solution {
         val pow10 = LongArray(m + 1)
         pow10[0] = 1
         for (i in 0..<m) {
-            val d = s.get(i).code - '0'.code
+            val d = s[i].code - '0'.code
             if (d != 0) {
                 p[i + 1] = (p[i] * 10 + d) % MOD
             } else {
@@ -24,8 +24,8 @@ class Solution {
         }
         val ans = IntArray(queries.size)
         for (i in queries.indices) {
-            val l = queries[i]!![0]
-            val r = queries[i]!![1]
+            val l = queries[i][0]
+            val r = queries[i][1]
             val k = cnt[r + 1] - cnt[l]
             val x: Long = (p[r + 1] - p[l] * pow10[k] % MOD + MOD) % MOD
             val digitSum = sum[r + 1] - sum[l]

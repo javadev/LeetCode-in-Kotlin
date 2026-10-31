@@ -9,35 +9,35 @@ import kotlin.math.min
 class Solution {
     fun maxPathScore(grid: Array<IntArray>, k: Int): Int {
         val n = grid.size
-        val m = grid[0]!!.size
+        val m = grid[0].size
         val mxc = min(k + 1, n + m + 5)
         val dp = Array<Array<IntArray>>(n) { Array<IntArray>(m) { IntArray(mxc) } }
         for (i in 0..<n) {
             for (j in 0..<m) {
                 for (c in 0..<mxc) {
-                    dp[i]!![j]!![c] = -1
+                    dp[i][j][c] = -1
                 }
             }
         }
-        dp[0]!![0]!![0] = 0
+        dp[0][0][0] = 0
         for (i in 0..<n) {
             for (j in 0..<m) {
                 for (c in 0..<mxc) {
-                    if (dp[i]!![j]!![c] == -1) {
+                    if (dp[i][j][c] == -1) {
                         continue
                     }
                     // move right
                     if (j + 1 < m) {
-                        val cost = c + (if (grid[i]!![j + 1] > 0) 1 else 0)
+                        val cost = c + (if (grid[i][j + 1] > 0) 1 else 0)
                         if (cost < mxc) {
-                            dp[i]!![j + 1]!![cost] = max(dp[i]!![j + 1]!![cost], dp[i]!![j]!![c] + grid[i]!![j + 1])
+                            dp[i][j + 1][cost] = max(dp[i][j + 1][cost], dp[i][j][c] + grid[i][j + 1])
                         }
                     }
                     // move down
                     if (i + 1 < n) {
-                        val cost = c + (if (grid[i + 1]!![j] > 0) 1 else 0)
+                        val cost = c + (if (grid[i + 1][j] > 0) 1 else 0)
                         if (cost < mxc) {
-                            dp[i + 1]!![j]!![cost] = max(dp[i + 1]!![j]!![cost], dp[i]!![j]!![c] + grid[i + 1]!![j])
+                            dp[i + 1][j][cost] = max(dp[i + 1][j][cost], dp[i][j][c] + grid[i + 1][j])
                         }
                     }
                 }
@@ -45,7 +45,7 @@ class Solution {
         }
         var ans = -1
         for (c in 0..<mxc) {
-            ans = max(ans, dp[n - 1]!![m - 1]!![c])
+            ans = max(ans, dp[n - 1][m - 1][c])
         }
         return ans
     }
