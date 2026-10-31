@@ -1,12 +1,12 @@
 package g3801_3900.s3824_minimum_k_to_reduce_array_within_limit
 
+// #Medium #Array #Binary_Search #Staff #Biweekly_Contest_175
+// #2026_06_09_Time_16_ms_(100.00%)_Space_130.89_MB_(86.74%)
+
 import kotlin.math.cbrt
 import kotlin.math.ceil
 import kotlin.math.max
 import kotlin.math.sqrt
-
-// #Medium #Array #Binary_Search #Staff #Biweekly_Contest_175
-// #2026_06_09_Time_16_ms_(100.00%)_Space_130.89_MB_(86.74%)
 
 class Solution {
     fun minimumK(nums: IntArray): Int {

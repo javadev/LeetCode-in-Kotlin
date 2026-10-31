@@ -1,7 +1,5 @@
 package g3801_3900.s3869_count_fancy_numbers_in_a_range
 
-import java.util.*
-
 // #Hard #Dynamic_Programming #Math #Senior_Staff #Biweekly_Contest_178
 // #2026_07_28_Time_86_ms_(96.00%)_Space_47.18_MB_(90.00%)
 
@@ -49,7 +47,7 @@ class Solution {
         for (a in dp) {
             for (b in a) {
                 for (c in b!!) {
-                    Arrays.fill(c, -1)
+                    c.fill(-1)
                 }
             }
         }

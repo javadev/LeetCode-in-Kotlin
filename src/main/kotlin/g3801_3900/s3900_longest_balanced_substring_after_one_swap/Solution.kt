@@ -1,10 +1,9 @@
 package g3801_3900.s3900_longest_balanced_substring_after_one_swap
 
-import java.util.*
-import kotlin.math.min
-
 // #Medium #String #Hash_Table #Prefix_Sum #Staff #Weekly_Contest_497
 // #2026_09_17_Time_15_ms_(100.00%)_Space_48.30_MB_(97.14%)
+
+import kotlin.math.min
 
 class Solution {
     fun longestBalanced(s: String): Int {
@@ -14,7 +13,7 @@ class Solution {
         var ans = 0
         val nextIndex = IntArray(n)
         val balIndex = IntArray(2 * n + 3)
-        Arrays.fill(balIndex, n + 1)
+        balIndex.fill(n + 1)
         for (i in n - 1 downTo 0) {
             bal += (('0'.code xor arr[i].code) shl 1) - 1
             nextIndex[i] = balIndex[bal]

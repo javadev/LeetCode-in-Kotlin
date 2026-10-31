@@ -1,10 +1,10 @@
 package g3801_3900.s3863_minimum_operations_to_sort_a_string
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Medium #String #Staff #Weekly_Contest_492
 // #2026_07_27_Time_15_ms_(74.44%)_Space_47.98_MB_(56.67%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun minOperations(s: String): Int {

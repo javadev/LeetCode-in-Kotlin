@@ -1,9 +1,9 @@
 package g3801_3900.s3876_construct_uniform_parity_array_ii
 
-import kotlin.math.min
-
 // #Medium #Array #Math #Senior #Weekly_Contest_494
 // #2026_08_13_Time_2_ms_(100.00%)_Space_121.98_MB_(11.30%)
+
+import kotlin.math.min
 
 class Solution {
     fun uniformArray(nums1: IntArray): Boolean {

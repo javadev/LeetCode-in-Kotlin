@@ -1,9 +1,9 @@
 package g3801_3900.s3899_angles_of_a_triangle
 
-import kotlin.math.acos
-
 // #Medium #Array #Math #Geometry #Senior #Weekly_Contest_497
 // #2026_09_17_Time_1_ms_(100.00%)_Space_49.33_MB_(42.62%)
+
+import kotlin.math.acos
 
 class Solution {
     fun internalAngles(sides: IntArray): DoubleArray? {

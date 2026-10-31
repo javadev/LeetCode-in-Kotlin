@@ -1,9 +1,9 @@
 package g3801_3900.s3840_house_robber_v
 
-import kotlin.math.max
-
 // #Medium #Array #Dynamic_Programming #Staff #Biweekly_Contest_176
 // #2026_07_21_Time_2_ms_(100.00%)_Space_153.66_MB_(42.76%)
+
+import kotlin.math.max
 
 class Solution {
     fun rob(nums: IntArray, colors: IntArray): Long {

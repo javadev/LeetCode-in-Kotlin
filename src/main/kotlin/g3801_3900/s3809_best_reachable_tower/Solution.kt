@@ -1,9 +1,9 @@
 package g3801_3900.s3809_best_reachable_tower
 
-import kotlin.math.abs
-
 // #Medium #Array #Senior #Biweekly_Contest_174
 // #2026_06_09_Time_3_ms_(70.30%)_Space_219.56_MB_(26.73%)
+
+import kotlin.math.abs
 
 class Solution {
     fun bestTower(towers: Array<IntArray>, center: IntArray, radius: Int): IntArray? {

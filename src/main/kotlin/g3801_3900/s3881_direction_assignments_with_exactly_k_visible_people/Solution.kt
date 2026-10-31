@@ -1,8 +1,9 @@
 package g3801_3900.s3881_direction_assignments_with_exactly_k_visible_people
 
-import kotlin.math.min // #Medium #Math #Combinatorics #Staff #Biweekly_Contest_179
-
+// #Medium #Math #Combinatorics #Staff #Biweekly_Contest_179
 // #2026_08_13_Time_4_ms_(100.00%)_Space_42.91_MB_(67.27%)
+
+import kotlin.math.min
 
 class Solution {
     fun countVisiblePeople(n: Int, pos: Int, k: Int): Int {

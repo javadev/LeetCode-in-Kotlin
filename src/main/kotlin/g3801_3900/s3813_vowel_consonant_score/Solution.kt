@@ -1,4 +1,6 @@
-package g3801_3900.s3813_vowel_consonant_score // #Easy #String #Simulation #Mid_Level #Weekly_Contest_485
+package g3801_3900.s3813_vowel_consonant_score
+
+// #Easy #String #Simulation #Mid_Level #Weekly_Contest_485
 // #2026_06_09_Time_1_ms_(100.00%)_Space_43.49_MB_(68.40%)
 
 class Solution {

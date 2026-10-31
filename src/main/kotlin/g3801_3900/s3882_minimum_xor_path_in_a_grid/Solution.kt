@@ -11,21 +11,21 @@ class Solution {
 
     fun minCost(grid: Array<IntArray>): Int {
         ans = Int.MAX_VALUE
-        memo = Array<Array<BooleanArray>>(grid.size) { Array<BooleanArray>(grid[0]!!.size) { BooleanArray(1024) } }
-        dfs(grid, 0, 0, 0, grid.size, grid[0]!!.size)
+        memo = Array<Array<BooleanArray>>(grid.size) { Array<BooleanArray>(grid[0].size) { BooleanArray(1024) } }
+        dfs(grid, 0, 0, 0, grid.size, grid[0].size)
         return ans
     }
 
     private fun dfs(grid: Array<IntArray>, i: Int, j: Int, xor: Int, m: Int, n: Int) {
         var xor = xor
-        xor = xor xor grid[i]!![j]
+        xor = xor xor grid[i][j]
         if (ans == 0) {
             return
         }
-        if (memo[i]!![j]!![xor]) {
+        if (memo[i][j][xor]) {
             return
         }
-        memo[i]!![j]!![xor] = true
+        memo[i][j][xor] = true
         if (i == m - 1 && j == n - 1) {
             ans = min(ans, xor)
             return

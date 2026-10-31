@@ -1,9 +1,9 @@
 package g3801_3900.s3885_design_event_manager
 
-import java.util.*
-
 // #Medium #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set #Senior #Weekly_Contest_495
 // #2026_08_13_Time_185_ms_(98.91%)_Space_215.60_MB_(98.91%)
+
+import java.util.PriorityQueue
 
 class EventManager(events: Array<IntArray>) {
     private val map: HashMap<Int?, Int?>

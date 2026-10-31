@@ -1,4 +1,6 @@
-package g3801_3900.s3819_rotate_non_negative_elements // #Medium #Array #Simulation #Senior #Weekly_Contest_486
+package g3801_3900.s3819_rotate_non_negative_elements
+
+// #Medium #Array #Simulation #Senior #Weekly_Contest_486
 // #2026_06_09_Time_11_ms_(100.00%)_Space_265.42_MB_(74.38%)
 
 class Solution {

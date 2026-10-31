@@ -8,7 +8,6 @@ class Solution {
     private lateinit var head: IntArray
     private lateinit var to: IntArray
     private lateinit var next: IntArray
-
     private lateinit var lift: Array<IntArray>
     private lateinit var first: IntArray
     private lateinit var last: IntArray

@@ -1,10 +1,10 @@
 package g3801_3900.s3854_minimum_operations_to_make_array_parity_alternating
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Medium #Array #Greedy #Staff #Biweekly_Contest_177
 // #2026_07_27_Time_9_ms_(100.00%)_Space_146.36_MB_(88.24%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun makeParityAlternating(nums: IntArray): IntArray? {

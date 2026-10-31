@@ -1,9 +1,9 @@
 package g3801_3900.s3889_mirror_frequency_distance
 
-import kotlin.math.abs
-
 // #Medium #String #Hash_Table #Counting #Senior #Weekly_Contest_496
 // #2026_08_13_Time_18_ms_(99.69%)_Space_56.73_MB_(92.00%)
+
+import kotlin.math.abs
 
 class Solution {
     fun mirrorFrequency(s: String): Int {

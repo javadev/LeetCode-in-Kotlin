@@ -1,9 +1,9 @@
 package g3801_3900.s3872_longest_arithmetic_sequence_after_changing_at_most_one_element
 
-import kotlin.math.max
-
 // #Medium #Array #Enumeration #Staff #Weekly_Contest_493
 // #2026_07_28_Time_11_ms_(100.00%)_Space_145.68_MB_(86.52%)
+
+import kotlin.math.max
 
 class Solution {
     fun longestArithmetic(nums: IntArray): Int {

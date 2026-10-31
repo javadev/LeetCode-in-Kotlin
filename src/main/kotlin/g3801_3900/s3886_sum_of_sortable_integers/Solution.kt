@@ -1,10 +1,10 @@
 package g3801_3900.s3886_sum_of_sortable_integers
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Hard #Array #Math #Sorting #Enumeration #Senior_Staff #Weekly_Contest_495
 // #2026_08_13_Time_8_ms_(98.86%)_Space_67.62_MB_(98.86%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     // Changed method name from sumOfSortableIntegers to sortableIntegers

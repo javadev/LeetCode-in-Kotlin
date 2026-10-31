@@ -1,10 +1,10 @@
 package g3801_3900.s3891_minimum_increase_to_maximize_special_indices
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Medium #Array #Dynamic_Programming #Greedy #Prefix_Sum #Staff #Weekly_Contest_496
 // #2026_08_13_Time_2_ms_(100.00%)_Space_97.78_MB_(97.44%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun minIncrease(nums: IntArray): Long {

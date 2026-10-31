@@ -1,10 +1,10 @@
 package g3801_3900.s3814_maximum_capacity_within_budget
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Medium #Array #Sorting #Binary_Search #Two_Pointers #Senior #Weekly_Contest_485
 // #2026_06_09_Time_8_ms_(100.00%)_Space_162.19_MB_(100.00%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun maxCapacity(costs: IntArray, capacity: IntArray, budget: Int): Int {

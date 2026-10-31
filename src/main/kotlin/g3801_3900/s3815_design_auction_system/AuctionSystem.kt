@@ -1,22 +1,17 @@
 package g3801_3900.s3815_design_auction_system
 
-import java.util.PriorityQueue
-
 // #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set #Staff #Weekly_Contest_485
 // #2026_06_09_Time_96_ms_(93.30%)_Space_203.51_MB_(92.27%)
 
-class AuctionSystem {
-    private val bidMap: MutableMap<Long?, IntArray?>
-    private val itemMap: MutableMap<Int?, PriorityQueue<IntArray>?>
+import java.util.PriorityQueue
 
-    init {
-        bidMap = HashMap<Long?, IntArray?>()
-        itemMap = HashMap<Int?, PriorityQueue<IntArray>?>()
-    }
+class AuctionSystem {
+    private val bidMap: MutableMap<Long?, IntArray?> = HashMap<Long?, IntArray?>()
+    private val itemMap: MutableMap<Int?, PriorityQueue<IntArray>?> = HashMap<Int?, PriorityQueue<IntArray>?>()
 
     fun addBid(userId: Int, itemId: Int, bidAmount: Int) {
         val bid = intArrayOf(userId, itemId, bidAmount)
-        bidMap.put(userId.toLong() shl 32 or itemId.toLong(), bid)
+        bidMap[userId.toLong() shl 32 or itemId.toLong()] = bid
         itemMap.computeIfAbsent(
             itemId,
         ) { item: kotlin.Int? ->

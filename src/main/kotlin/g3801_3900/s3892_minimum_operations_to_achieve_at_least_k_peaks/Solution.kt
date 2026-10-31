@@ -1,9 +1,10 @@
 package g3801_3900.s3892_minimum_operations_to_achieve_at_least_k_peaks
 
+// #Hard #Array #Dynamic_Programming #Senior_Staff #Weekly_Contest_496
+// #2026_08_13_Time_92_ms_(93.75%)_Space_47.26_MB_(78.13%)
+
 import kotlin.math.max
 import kotlin.math.min
-
-// #2026_08_13_Time_92_ms_(93.75%)_Space_47.26_MB_(78.13%)
 
 class Solution {
     fun minOperations(nums: IntArray, k: Int): Int {

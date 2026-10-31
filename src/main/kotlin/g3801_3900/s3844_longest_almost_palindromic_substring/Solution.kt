@@ -1,9 +1,9 @@
 package g3801_3900.s3844_longest_almost_palindromic_substring
 
-import kotlin.math.max
-
 // #Medium #String #Dynamic_Programming #Two_Pointers #Staff #Weekly_Contest_489
 // #2026_07_22_Time_10_ms_(99.05%)_Space_44.41_MB_(61.90%)
+
+import kotlin.math.max
 
 class Solution {
     private var n = 0

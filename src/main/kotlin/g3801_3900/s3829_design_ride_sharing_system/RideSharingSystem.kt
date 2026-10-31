@@ -1,13 +1,14 @@
 package g3801_3900.s3829_design_ride_sharing_system
 
-import java.util.*
+import java.util.LinkedList
+import java.util.Queue
 
 // #Medium #Hash_Table #Design #Queue #Data_Stream #Staff #Weekly_Contest_487
 // #2026_07_20_Time_42_ms_(100.00%)_Space_48.36_MB_(31.76%)
 
 class RideSharingSystem {
-    var rider: Queue<Int?> = LinkedList<Int?>()
-    var driver: Queue<Int?> = LinkedList<Int?>()
+    var rider: Queue<Int> = LinkedList<Int>()
+    var driver: Queue<Int> = LinkedList<Int>()
     var cancel: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
 
     fun addRider(riderId: Int) {
@@ -37,7 +38,9 @@ class RideSharingSystem {
     fun cancelRider(riderId: Int) {
         cancel.put(riderId, 1)
     }
-} /*
+}
+
+/*
  * Your RideSharingSystem object will be instantiated and called as such:
  * RideSharingSystem obj = new RideSharingSystem();
  * obj.addRider(riderId);

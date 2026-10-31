@@ -1,9 +1,9 @@
 package g3801_3900.s3864_minimum_cost_to_partition_a_binary_string
 
-import kotlin.math.min
-
 // #Hard #String #Prefix_Sum #Divide_and_Conquer #Senior_Staff #Weekly_Contest_492
 // #2026_07_28_Time_28_ms_(100.00%)_Space_47.92_MB_(60.00%)
+
+import kotlin.math.min
 
 class Solution {
     private var encCost = 0

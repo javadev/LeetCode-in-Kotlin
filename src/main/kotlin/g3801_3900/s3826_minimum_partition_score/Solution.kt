@@ -1,8 +1,10 @@
 package g3801_3900.s3826_minimum_partition_score
 
-import java.util.*
-
+// #Hard #Array #Dynamic_Programming #Prefix_Sum #Divide_and_Conquer #Queue #Monotonic_Queue
 // #Principal #Biweekly_Contest_175 #2026_06_09_Time_70_ms_(96.97%)_Space_47.29_MB_(57.58%)
+
+import java.util.ArrayDeque
+import java.util.Deque
 
 class Solution {
     private lateinit var prefix: LongArray

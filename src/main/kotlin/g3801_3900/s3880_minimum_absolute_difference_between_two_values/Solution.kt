@@ -1,9 +1,9 @@
 package g3801_3900.s3880_minimum_absolute_difference_between_two_values
 
-import kotlin.math.min
-
 // #Easy #Array #Enumeration #Mid_Level #Biweekly_Contest_179
 // #2026_08_13_Time_1_ms_(99.36%)_Space_46.20_MB_(85.90%)
+
+import kotlin.math.min
 
 class Solution {
     fun minAbsoluteDifference(nums: IntArray): Int {
