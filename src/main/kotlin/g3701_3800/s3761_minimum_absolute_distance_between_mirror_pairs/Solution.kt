@@ -14,7 +14,7 @@ class Solution {
             var n = n
             var r: Int
             if (seen.containsKey(n)) {
-                res = min(res, i - seen.get(n)!!)
+                res = min(res, i - seen[n]!!)
             }
             r = 0
             while (n > 0) {

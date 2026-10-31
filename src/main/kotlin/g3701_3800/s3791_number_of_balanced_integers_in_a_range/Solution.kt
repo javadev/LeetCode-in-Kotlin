@@ -12,7 +12,7 @@ class Solution {
             return dp[idx][diff + dp[0].size / 2][tight]
         }
         var ans: Long = 0
-        val ub = if (tight == 1) number.get(idx).code - '0'.code else 9
+        val ub = if (tight == 1) number[idx].code - '0'.code else 9
         for (i in 0..ub) {
             val newTight = if (tight == 1 && i == ub) 1 else 0
             if (idx % 2 == 0) {
