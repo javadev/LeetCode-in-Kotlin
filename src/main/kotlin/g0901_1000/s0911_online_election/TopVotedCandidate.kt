@@ -44,7 +44,7 @@ class TopVotedCandidate(persons: IntArray, private val times: IntArray) {
     }
 }
 
-/**
+/*
  * Your TopVotedCandidate object will be instantiated and called as such:
  * var obj = TopVotedCandidate(persons, times)
  * var param_1 = obj.q(t)

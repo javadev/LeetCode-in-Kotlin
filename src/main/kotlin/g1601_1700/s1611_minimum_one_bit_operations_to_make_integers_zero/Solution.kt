@@ -7,9 +7,7 @@ import java.util.LinkedList
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun minimumOneBitOperations(n: Int): Int {
-        return calc(calculateOneIndex(n))
-    }
+    fun minimumOneBitOperations(n: Int): Int = calc(calculateOneIndex(n))
 
     private fun calc(indices: LinkedList<Int>): Int {
         if (indices.isEmpty()) {

@@ -28,11 +28,9 @@ class Solution {
         return head
     }
 
-    private fun greatestCommonDivisor(val1: Int, val2: Int): Int {
-        return if (val2 == 0) {
-            val1
-        } else {
-            greatestCommonDivisor(val2, val1 % val2)
-        }
+    private fun greatestCommonDivisor(val1: Int, val2: Int): Int = if (val2 == 0) {
+        val1
+    } else {
+        greatestCommonDivisor(val2, val1 % val2)
     }
 }

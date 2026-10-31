@@ -41,14 +41,7 @@ class Solution {
             update(1, 1, n - 1, queryStart, queryEnd, delta)
         }
 
-        fun update(
-            nodeIdx: Int,
-            start: Int,
-            end: Int,
-            queryStart: Int,
-            queryEnd: Int,
-            delta: Int,
-        ) {
+        fun update(nodeIdx: Int, start: Int, end: Int, queryStart: Int, queryEnd: Int, delta: Int) {
             if (start > end || start > queryEnd || end < queryStart) {
                 return
             }

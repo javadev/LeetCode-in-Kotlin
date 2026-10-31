@@ -34,13 +34,9 @@ class MagicDictionary {
         return numDifferentLetters == 1
     }
 
-    private fun isDifferentLengths(word: String, searchWord: String): Boolean {
-        return word.length != searchWord.length
-    }
+    private fun isDifferentLengths(word: String, searchWord: String): Boolean = word.length != searchWord.length
 
-    private fun isNotTheSameLetter(c1: Char, c2: Char): Boolean {
-        return c1 != c2
-    }
+    private fun isNotTheSameLetter(c1: Char, c2: Char): Boolean = c1 != c2
 }
 
 /*

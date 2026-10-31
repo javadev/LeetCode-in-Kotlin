@@ -18,9 +18,8 @@ class NumMatrix(matrix: Array<IntArray>) {
         }
     }
 
-    fun sumRegion(row1: Int, col1: Int, row2: Int, col2: Int): Int {
-        return array[row2 + 1][col2 + 1] - array[row2 + 1][col1] - array[row1][col2 + 1] + array[row1][col1]
-    }
+    fun sumRegion(row1: Int, col1: Int, row2: Int, col2: Int): Int =
+        array[row2 + 1][col2 + 1] - array[row2 + 1][col1] - array[row1][col2 + 1] + array[row1][col1]
 }
 
 /*

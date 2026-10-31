@@ -16,9 +16,7 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun constructMaximumBinaryTree(nums: IntArray): TreeNode? {
-        return mbt(nums, 0, nums.size - 1)
-    }
+    fun constructMaximumBinaryTree(nums: IntArray): TreeNode? = mbt(nums, 0, nums.size - 1)
 
     private fun mbt(nums: IntArray, l: Int, r: Int): TreeNode? {
         if (l > r || l >= nums.size || r < 0) {

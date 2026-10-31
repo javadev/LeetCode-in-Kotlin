@@ -5,9 +5,7 @@ package g1701_1800.s1707_maximum_xor_with_an_element_from_array
 @Suppress("NAME_SHADOWING")
 class Solution {
     internal class QueryComparator : Comparator<IntArray> {
-        override fun compare(a: IntArray, b: IntArray): Int {
-            return a[1].compareTo(b[1])
-        }
+        override fun compare(a: IntArray, b: IntArray): Int = a[1].compareTo(b[1])
     }
 
     internal class Node {

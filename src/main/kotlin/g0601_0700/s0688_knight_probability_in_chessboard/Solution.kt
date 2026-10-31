@@ -25,24 +25,20 @@ class Solution {
         return probability(row, column, k, n)
     }
 
-    private fun probability(row: Int, column: Int, k: Int, n: Int): Double {
-        return if (k == 0) {
-            1.0
-        } else if (probabilityGiven[row][column][k] != 0.0) {
-            probabilityGiven[row][column][k]
-        } else {
-            var p = 0.0
-            for (dir in directions) {
-                if (isValid(row + dir[0], column + dir[1], n)) {
-                    p += probability(row + dir[0], column + dir[1], k - 1, n)
-                }
+    private fun probability(row: Int, column: Int, k: Int, n: Int): Double = if (k == 0) {
+        1.0
+    } else if (probabilityGiven[row][column][k] != 0.0) {
+        probabilityGiven[row][column][k]
+    } else {
+        var p = 0.0
+        for (dir in directions) {
+            if (isValid(row + dir[0], column + dir[1], n)) {
+                p += probability(row + dir[0], column + dir[1], k - 1, n)
             }
-            probabilityGiven[row][column][k] = p / 8.0
-            probabilityGiven[row][column][k]
         }
+        probabilityGiven[row][column][k] = p / 8.0
+        probabilityGiven[row][column][k]
     }
 
-    private fun isValid(row: Int, column: Int, n: Int): Boolean {
-        return row in 0 until n && column >= 0 && column < n
-    }
+    private fun isValid(row: Int, column: Int, n: Int): Boolean = row in 0 until n && column >= 0 && column < n
 }

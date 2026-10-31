@@ -8,9 +8,7 @@ import kotlin.random.Random
 @Suppress("kotlin:S2245")
 class Solution(private val nums: IntArray) {
     // Resets the array to its original configuration and return it.
-    fun reset(): IntArray {
-        return nums
-    }
+    fun reset(): IntArray = nums
 
     // Returns a random shuffling of the array.
     fun shuffle(): IntArray {

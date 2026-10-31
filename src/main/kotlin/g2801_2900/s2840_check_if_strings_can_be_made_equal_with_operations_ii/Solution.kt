@@ -3,9 +3,7 @@ package g2801_2900.s2840_check_if_strings_can_be_made_equal_with_operations_ii
 // #Medium #String #Hash_Table #Sorting #2023_12_18_Time_225_ms_(100.00%)_Space_39.7_MB_(50.00%)
 
 class Solution {
-    fun checkStrings(s1: String, s2: String): Boolean {
-        return check(0, s1, s2) && check(1, s1, s2)
-    }
+    fun checkStrings(s1: String, s2: String): Boolean = check(0, s1, s2) && check(1, s1, s2)
 
     fun check(start: Int, s1: String, s2: String): Boolean {
         val step = 2

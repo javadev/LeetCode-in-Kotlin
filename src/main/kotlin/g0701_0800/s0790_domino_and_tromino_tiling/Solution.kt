@@ -7,10 +7,15 @@ class Solution {
     fun numTilings(n: Int): Int {
         val result = when (n) {
             1 -> 1
+
             2 -> 2
+
             3 -> 5
+
             4 -> 11
+
             5 -> 24
+
             else -> {
                 val dp = LongArray(n + 1)
                 dp[0] = 0

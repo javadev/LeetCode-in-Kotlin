@@ -42,11 +42,9 @@ class Solution {
         return countFreq
     }
 
-    private fun getMinFrequency(countFreq: Map<Int, Int>): Int {
-        return countFreq.keys.stream()
-            .min { obj: Int, anotherInteger: Int? -> obj.compareTo(anotherInteger!!) }
-            .orElseThrow { IllegalStateException("Count frequency map is empty") }
-    }
+    private fun getMinFrequency(countFreq: Map<Int, Int>): Int = countFreq.keys.stream()
+        .min { obj: Int, anotherInteger: Int? -> obj.compareTo(anotherInteger!!) }
+        .orElseThrow { IllegalStateException("Count frequency map is empty") }
 
     private fun calculateGroups(countFreq: Map<Int, Int>, size: Int): Int {
         var group = 0

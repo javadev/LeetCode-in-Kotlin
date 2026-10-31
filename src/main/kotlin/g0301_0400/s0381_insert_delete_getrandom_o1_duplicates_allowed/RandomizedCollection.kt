@@ -4,10 +4,10 @@ package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed
 // #2022_11_24_Time_1313_ms_(50.00%)_Space_148_MB_(25.00%)
 
 @Suppress("kotlin:S2245")
-class RandomizedCollection() {
+class RandomizedCollection {
     val m2a = HashMap<Int, HashSet<Int>>()
     val a2m = ArrayList<Int>()
-    /** Initialize your data structure here. */
+    /* Initialize your data structure here. */
 
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     fun insert(x: Int): Boolean {

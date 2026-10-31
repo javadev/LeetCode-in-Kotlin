@@ -18,9 +18,7 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun isValidBST(root: TreeNode?): Boolean {
-        return solve(root, Long.MIN_VALUE, Long.MAX_VALUE)
-    }
+    fun isValidBST(root: TreeNode?): Boolean = solve(root, Long.MIN_VALUE, Long.MAX_VALUE)
 
     // we will send a valid range and check whether the root lies in the range
     // and update the range for the subtrees

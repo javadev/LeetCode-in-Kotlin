@@ -27,14 +27,10 @@ class Solution {
             }
         }
 
-        fun size(): Int {
-            return set.size
-        }
+        fun size(): Int = set.size
 
         // Returns the k-th smallest element (0-based)
-        fun findByOrder(k: Int): Int {
-            return list[k]
-        }
+        fun findByOrder(k: Int): Int = list[k]
     }
 
     private lateinit var adj: MutableList<MutableList<Int>>

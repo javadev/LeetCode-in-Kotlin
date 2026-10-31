@@ -18,21 +18,19 @@ class TreeNode {
         this.right = right
     }
 
-    override fun toString(): String {
-        return if (left == null && right == null) {
-            "" + `val`
-        } else {
-            val root = "" + `val`
-            var leftValue = "null"
-            var rightValue = "null"
-            if (left != null) {
-                leftValue = left.toString()
-            }
-            if (right != null) {
-                rightValue = right.toString()
-            }
-            "$root,$leftValue,$rightValue"
+    override fun toString(): String = if (left == null && right == null) {
+        "" + `val`
+    } else {
+        val root = "" + `val`
+        var leftValue = "null"
+        var rightValue = "null"
+        if (left != null) {
+            leftValue = left.toString()
         }
+        if (right != null) {
+            rightValue = right.toString()
+        }
+        "$root,$leftValue,$rightValue"
     }
 
     companion object {

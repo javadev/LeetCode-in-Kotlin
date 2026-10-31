@@ -52,7 +52,6 @@ class Solution {
         return grid
     }
 
-    private fun cellExists(r: Int, c: Int, grid: Array<IntArray>): Boolean {
-        return r >= 0 && r < grid.size && c >= 0 && c < grid[0].size
-    }
+    private fun cellExists(r: Int, c: Int, grid: Array<IntArray>): Boolean =
+        r >= 0 && r < grid.size && c >= 0 && c < grid[0].size
 }

@@ -52,9 +52,7 @@ class Solution {
         return solved
     }
 
-    private fun canPlace(ci: Int, d: Int): Boolean {
-        return !usedDigit[d] && map[ci] == -1 || map[ci] == d
-    }
+    private fun canPlace(ci: Int, d: Int): Boolean = !usedDigit[d] && map[ci] == -1 || map[ci] == d
 
     private fun placeNum(ci: Int, d: Int) {
         usedDigit[d] = true

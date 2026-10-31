@@ -42,9 +42,7 @@ class Solution {
     }
 
     private class Building(val xCoor: Int, val height: Int, val isStart: Boolean) : Comparable<Building> {
-        override fun compareTo(other: Building): Int {
-            return COMPARATOR.compare(this, other)
-        }
+        override fun compareTo(other: Building): Int = COMPARATOR.compare(this, other)
 
         private companion object {
             private val COMPARATOR = Comparator<Building> { a, b ->

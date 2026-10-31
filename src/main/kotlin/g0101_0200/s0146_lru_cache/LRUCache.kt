@@ -16,14 +16,12 @@ class LRUCache(capacity: Int) {
         cacheCapacity = capacity
     }
 
-    fun get(key: Int): Int {
-        return if (!nodeMap.containsKey(key)) {
-            -1
-        } else {
-            val requiredNode = nodeMap.getValue(key)
-            update(requiredNode)
-            requiredNode.value
-        }
+    fun get(key: Int): Int = if (!nodeMap.containsKey(key)) {
+        -1
+    } else {
+        val requiredNode = nodeMap.getValue(key)
+        update(requiredNode)
+        requiredNode.value
     }
 
     fun put(key: Int, value: Int) {

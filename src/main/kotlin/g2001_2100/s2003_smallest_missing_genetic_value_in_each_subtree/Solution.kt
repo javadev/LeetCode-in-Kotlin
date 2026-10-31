@@ -72,8 +72,6 @@ class Solution {
             }
         }
 
-        fun isConnected(x: Int, y: Int): Boolean {
-            return find(x) == find(y)
-        }
+        fun isConnected(x: Int, y: Int): Boolean = find(x) == find(y)
     }
 }

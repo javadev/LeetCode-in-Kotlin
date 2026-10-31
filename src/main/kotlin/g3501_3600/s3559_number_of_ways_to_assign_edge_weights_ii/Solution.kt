@@ -55,9 +55,7 @@ class Solution {
         return jumps[u]!![0]
     }
 
-    private fun findDist(a: Int, b: Int): Int {
-        return level[a] + level[b] - 2 * level[findLca(a, b)]
-    }
+    private fun findDist(a: Int, b: Int): Int = level[a] + level[b] - 2 * level[findLca(a, b)]
 
     fun assignEdgeWeights(edges: Array<IntArray>, queries: Array<IntArray>): IntArray {
         val n = edges.size + 1

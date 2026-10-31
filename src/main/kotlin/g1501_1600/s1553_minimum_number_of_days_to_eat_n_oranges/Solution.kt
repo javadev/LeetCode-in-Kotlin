@@ -3,9 +3,7 @@ package g1501_1600.s1553_minimum_number_of_days_to_eat_n_oranges
 // #Hard #Dynamic_Programming #Memoization #2023_06_14_Time_153_ms_(100.00%)_Space_35.2_MB_(100.00%)
 
 class Solution {
-    fun minDays(n: Int): Int {
-        return eat(n, HashMap())
-    }
+    fun minDays(n: Int): Int = eat(n, HashMap())
 
     private fun eat(n: Int, cache: MutableMap<Int, Int>): Int {
         if (n <= 1) {

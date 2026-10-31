@@ -16,13 +16,12 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun constructFromPrePost(preorder: IntArray, postorder: IntArray): TreeNode? {
-        return if (preorder.isEmpty() || preorder.size != postorder.size) {
+    fun constructFromPrePost(preorder: IntArray, postorder: IntArray): TreeNode? =
+        if (preorder.isEmpty() || preorder.size != postorder.size) {
             null
         } else {
             buildTree(preorder, 0, preorder.size - 1, postorder, 0, postorder.size - 1)
         }
-    }
 
     private fun buildTree(
         preorder: IntArray,

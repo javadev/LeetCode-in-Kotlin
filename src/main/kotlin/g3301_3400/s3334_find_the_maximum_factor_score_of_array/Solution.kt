@@ -34,13 +34,11 @@ class Solution {
         return max(max, (rToL[0][0] * rToL[0][1]))
     }
 
-    private fun getaLong(i: Int, n: Int, lToR: Array<LongArray>, rToL: Array<LongArray>): Long {
-        return if (i == n - 1) lToR[i - 1][1] else lcm(rToL[i + 1][1], lToR[i - 1][1])
-    }
+    private fun getaLong(i: Int, n: Int, lToR: Array<LongArray>, rToL: Array<LongArray>): Long =
+        if (i == n - 1) lToR[i - 1][1] else lcm(rToL[i + 1][1], lToR[i - 1][1])
 
-    private fun getLong(i: Int, n: Int, lToR: Array<LongArray>, rToL: Array<LongArray>): Long {
-        return if (i == n - 1) lToR[i - 1][0] else gcd(rToL[i + 1][0], lToR[i - 1][0])
-    }
+    private fun getLong(i: Int, n: Int, lToR: Array<LongArray>, rToL: Array<LongArray>): Long =
+        if (i == n - 1) lToR[i - 1][0] else gcd(rToL[i + 1][0], lToR[i - 1][0])
 
     private fun gcd(a: Long, b: Long): Long {
         if (b == 0L) {
@@ -49,7 +47,5 @@ class Solution {
         return gcd(b, a % b)
     }
 
-    private fun lcm(a: Long, b: Long): Long {
-        return a * b / gcd(a, b)
-    }
+    private fun lcm(a: Long, b: Long): Long = a * b / gcd(a, b)
 }

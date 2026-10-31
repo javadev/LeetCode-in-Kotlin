@@ -17,9 +17,7 @@ import com_github_leetcode.TreeNode
  */
 class Solution {
     private var i = 0
-    fun bstFromPreorder(preorder: IntArray): TreeNode? {
-        return bstFromPreorder(preorder, Int.MAX_VALUE)
-    }
+    fun bstFromPreorder(preorder: IntArray): TreeNode? = bstFromPreorder(preorder, Int.MAX_VALUE)
 
     private fun bstFromPreorder(preorder: IntArray, bound: Int): TreeNode? {
         if (i == preorder.size || preorder[i] > bound) {

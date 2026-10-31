@@ -22,11 +22,13 @@ class Solution {
             val rVal = q[0]
             val lVal = q[0] - x
             val i = q[1]
-            while (r < logs.size && logs[r][1] <= rVal) servCount.merge(logs[r++][0], 1) { a: Int, b: Int ->
-                Integer.sum(
-                    a,
-                    b,
-                )
+            while (r < logs.size && logs[r][1] <= rVal) {
+                servCount.merge(logs[r++][0], 1) { a: Int, b: Int ->
+                    Integer.sum(
+                        a,
+                        b,
+                    )
+                }
             }
             while (l < r && logs[l][1] < lVal) {
                 servCount.compute(logs[l][0]) { _, v -> v!! - 1 }

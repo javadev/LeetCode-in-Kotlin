@@ -39,8 +39,7 @@ class Solution {
         if (left < 0) {
             val pq =
                 PriorityQueue { p: LongArray, q: LongArray ->
-                    if (p[0] != q[0]
-                    ) {
+                    if (p[0] != q[0]) {
                         java.lang.Long.compare(p[0], q[0])
                     } else {
                         java.lang.Long.compare(p[1], q[1])

@@ -3,9 +3,7 @@ package g0901_1000.s0972_equal_rational_numbers
 // #Hard #String #Math #2023_05_06_Time_130_ms_(100.00%)_Space_35.4_MB_(50.00%)
 
 class Solution {
-    private fun repeat(a: String): String {
-        return a.repeat(100)
-    }
+    private fun repeat(a: String): String = a.repeat(100)
 
     fun isRationalEqual(s: String, t: String): Boolean {
         val sLeftIndex = s.indexOf("(")

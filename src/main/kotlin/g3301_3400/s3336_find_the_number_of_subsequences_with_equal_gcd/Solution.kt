@@ -35,9 +35,7 @@ class Solution {
         return dp[index][gcd1][gcd2]
     }
 
-    private fun gcd(a: Int, b: Int): Int {
-        return if ((b == 0)) a else gcd(b, a % b)
-    }
+    private fun gcd(a: Int, b: Int): Int = if ((b == 0)) a else gcd(b, a % b)
 
     companion object {
         private const val MOD = 1000000007

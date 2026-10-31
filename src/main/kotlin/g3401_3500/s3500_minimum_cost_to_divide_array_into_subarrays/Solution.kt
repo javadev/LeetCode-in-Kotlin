@@ -16,10 +16,12 @@ class Solution {
         val dp = LongArray(n + 1) {
             Long.MAX_VALUE / 2
         }.also { it[0] = 0L }
-        for (r in 1..n) for (l in 0..r - 1) {
-            val sumNums = preNums[r] * (preCost[r] - preCost[l])
-            val sumCost = k * (preCost[n] - preCost[l])
-            dp[r] = minOf(dp[r], dp[l] + sumNums + sumCost)
+        for (r in 1..n) {
+            for (l in 0..r - 1) {
+                val sumNums = preNums[r] * (preCost[r] - preCost[l])
+                val sumCost = k * (preCost[n] - preCost[l])
+                dp[r] = minOf(dp[r], dp[l] + sumNums + sumCost)
+            }
         }
         return dp[n]
     }

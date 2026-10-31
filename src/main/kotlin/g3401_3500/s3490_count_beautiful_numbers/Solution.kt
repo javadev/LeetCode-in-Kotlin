@@ -3,9 +3,7 @@ package g3401_3500.s3490_count_beautiful_numbers
 // #Hard #Dynamic_Programming #2025_03_16_Time_246_ms_(100.00%)_Space_61.00_MB_(100.00%)
 
 class Solution {
-    fun beautifulNumbers(l: Int, r: Int): Int {
-        return countBeautiful(r) - countBeautiful(l - 1)
-    }
+    fun beautifulNumbers(l: Int, r: Int): Int = countBeautiful(r) - countBeautiful(l - 1)
 
     private fun countBeautiful(x: Int): Int {
         val digits = getCharArray(x)
@@ -18,14 +16,7 @@ class Solution {
         return str.toCharArray()
     }
 
-    private fun solve(
-        i: Int,
-        tight: Int,
-        sum: Int,
-        prod: Int,
-        digits: CharArray,
-        dp: HashMap<String, Int>,
-    ): Int {
+    private fun solve(i: Int, tight: Int, sum: Int, prod: Int, digits: CharArray, dp: HashMap<String, Int>): Int {
         if (i == digits.size) {
             return if (sum > 0 && prod % sum == 0) {
                 1

@@ -3,12 +3,7 @@ package g2301_2400.s2383_minimum_hours_of_training_to_win_a_competition
 // #Easy #Array #Greedy #2023_07_02_Time_156_ms_(100.00%)_Space_34.7_MB_(100.00%)
 
 class Solution {
-    fun minNumberOfHours(
-        initialEnergy: Int,
-        initialExperience: Int,
-        energy: IntArray,
-        experience: IntArray,
-    ): Int {
+    fun minNumberOfHours(initialEnergy: Int, initialExperience: Int, energy: IntArray, experience: IntArray): Int {
         var totalEnergy = 0
         for (e in energy) {
             totalEnergy += e

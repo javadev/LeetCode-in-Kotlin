@@ -63,14 +63,10 @@ class AllOne {
     }
 
     /* Returns one of the keys with maximal value. */
-    fun getMaxKey(): String {
-        return if (tail.pre === head) "" else tail.pre!!.keySet.iterator().next()
-    }
+    fun getMaxKey(): String = if (tail.pre === head) "" else tail.pre!!.keySet.iterator().next()
 
     /* Returns one of the keys with Minimal value. */
-    fun getMinKey(): String {
-        return if (head.next === tail) "" else head.next!!.keySet.iterator().next()
-    }
+    fun getMinKey(): String = if (head.next === tail) "" else head.next!!.keySet.iterator().next()
 
     // helper function to make change on given key according to offset
     private fun changeKey(key: String, offset: Int) {

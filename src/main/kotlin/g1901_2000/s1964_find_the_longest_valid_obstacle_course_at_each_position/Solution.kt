@@ -5,9 +5,7 @@ package g1901_2000.s1964_find_the_longest_valid_obstacle_course_at_each_position
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun longestObstacleCourseAtEachPosition(obstacles: IntArray): IntArray {
-        return longestIncreasingSubsequence(obstacles)
-    }
+    fun longestObstacleCourseAtEachPosition(obstacles: IntArray): IntArray = longestIncreasingSubsequence(obstacles)
 
     private fun longestIncreasingSubsequence(obstacles: IntArray): IntArray {
         var len = 1

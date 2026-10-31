@@ -27,12 +27,10 @@ class Fancy {
         rMult = rMult * inverses[m] % MOD
     }
 
-    fun getIndex(idx: Int): Int {
-        return if (idx >= size) {
-            -1
-        } else {
-            ((mult * values[idx] + add) % MOD).toInt()
-        }
+    fun getIndex(idx: Int): Int = if (idx >= size) {
+        -1
+    } else {
+        ((mult * values[idx] + add) % MOD).toInt()
     }
 
     private fun multiplicativeInverse(x: Int): Int {

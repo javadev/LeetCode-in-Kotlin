@@ -16,13 +16,9 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun isCousins(root: TreeNode?, x: Int, y: Int): Boolean {
-        return !isSiblings(root, x, y) && isSameLevels(root, x, y)
-    }
+    fun isCousins(root: TreeNode?, x: Int, y: Int): Boolean = !isSiblings(root, x, y) && isSameLevels(root, x, y)
 
-    private fun isSameLevels(root: TreeNode?, x: Int, y: Int): Boolean {
-        return findLevel(root, x, 0) == findLevel(root, y, 0)
-    }
+    private fun isSameLevels(root: TreeNode?, x: Int, y: Int): Boolean = findLevel(root, x, 0) == findLevel(root, y, 0)
 
     private fun findLevel(root: TreeNode?, x: Int, level: Int): Int {
         if (root == null) {

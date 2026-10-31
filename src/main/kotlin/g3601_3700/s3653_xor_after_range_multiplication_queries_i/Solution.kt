@@ -18,9 +18,7 @@ class Solution {
         return res
     }
 
-    private fun modInv(a: Long): Long {
-        return modPow(a, MOD - 2L)
-    }
+    private fun modInv(a: Long): Long = modPow(a, MOD - 2L)
 
     fun xorAfterQueries(nums: IntArray, queries: Array<IntArray>): Int {
         val n = nums.size

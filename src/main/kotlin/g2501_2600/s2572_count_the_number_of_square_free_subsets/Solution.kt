@@ -8,9 +8,7 @@ class Solution {
     private val badNums = (1..30).filter { primes.any { p -> it % (p * p) == 0 } }.toSet()
     private val nonPrimes = (2..30).filter { it !in primes }.filter { it !in badNums }.toList()
 
-    private fun gcd(a: Int, b: Int): Int {
-        return if (b == 0) a else gcd(b, a % b)
-    }
+    private fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
     fun squareFreeSubsets(nums: IntArray): Int {
         val mod: Long = 1_000_000_007
@@ -22,10 +20,11 @@ class Solution {
             val howmany = freqMap[v]!!
             val prev = HashMap(dp)
             dp[v] = (dp[v] ?: 0) + howmany
-            for ((product, quantity) in prev)
+            for ((product, quantity) in prev) {
                 if (gcd(product, v) == 1) {
                     dp[product * v] = ((dp[product * v] ?: 0L) + quantity * howmany.toLong()) % mod
                 }
+            }
         }
         for (v in primes) {
             if (v !in freqMap) continue
@@ -33,8 +32,9 @@ class Solution {
             val prev = dp
             dp = mutableMapOf<Int, Long>()
             dp[v] = howmany
-            for ((product, quantity) in prev)
+            for ((product, quantity) in prev) {
                 dp[product] = if (product % v != 0) quantity * (1 + howmany) else quantity
+            }
         }
         // Getting all possible subsets without `1`
         var res = dp.values.sum() % mod

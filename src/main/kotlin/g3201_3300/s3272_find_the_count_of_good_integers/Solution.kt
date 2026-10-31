@@ -44,15 +44,7 @@ class Solution {
         return totalPermutations
     }
 
-    private fun generatePalindromes(
-        f: Int,
-        r: Int,
-        k: Int,
-        lb: Int,
-        sum: Int,
-        ans: StringBuilder,
-        rem: IntArray,
-    ) {
+    private fun generatePalindromes(f: Int, r: Int, k: Int, lb: Int, sum: Int, ans: StringBuilder, rem: IntArray) {
         if (f > r) {
             if (sum == 0) {
                 palindromes.add(ans.toString())

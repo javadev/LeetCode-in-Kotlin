@@ -37,10 +37,8 @@ class Solution {
         return false
     }
 
-    private fun isValidCycle(start: Int, curr: Int, arr: IntArray): Boolean {
-        return (
-            (arr[start] <= 0 || arr[curr] >= 0) &&
-                (arr[start] >= 0 || arr[curr] <= 0) && arr[curr] % arr.size != 0
-            )
-    }
+    private fun isValidCycle(start: Int, curr: Int, arr: IntArray): Boolean = (
+        (arr[start] <= 0 || arr[curr] >= 0) &&
+            (arr[start] >= 0 || arr[curr] <= 0) && arr[curr] % arr.size != 0
+        )
 }

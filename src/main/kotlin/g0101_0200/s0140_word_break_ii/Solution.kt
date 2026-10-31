@@ -13,13 +13,7 @@ class Solution {
         return result
     }
 
-    private fun dfs(
-        s: String,
-        wordSet: Set<String>,
-        index: Int,
-        sb: StringBuilder,
-        result: MutableList<String>,
-    ) {
+    private fun dfs(s: String, wordSet: Set<String>, index: Int, sb: StringBuilder, result: MutableList<String>) {
         if (index == s.length) {
             if (sb[sb.length - 1] == ' ') {
                 sb.setLength(sb.length - 1)

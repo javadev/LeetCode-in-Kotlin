@@ -66,13 +66,9 @@ class Solution {
         return length + maxExtraLength
     }
 
-    private fun get(b: Int, i: Int): Boolean {
-        return (b and (1 shl i)) != 0
-    }
+    private fun get(b: Int, i: Int): Boolean = (b and (1 shl i)) != 0
 
-    private fun set(b: Int, i: Int): Int {
-        return b or (1 shl i)
-    }
+    private fun set(b: Int, i: Int): Int = b or (1 shl i)
 
     private fun adj(n: Int, edges: Array<IntArray>): Array<IntArray> {
         val adjList: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>()

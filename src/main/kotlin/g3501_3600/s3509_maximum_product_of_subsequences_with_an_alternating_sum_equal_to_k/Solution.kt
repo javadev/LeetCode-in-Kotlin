@@ -8,9 +8,7 @@ import kotlin.math.max
 
 class Solution {
     internal class StateKey(var prod: Int, var parity: Int) {
-        override fun hashCode(): Int {
-            return prod * 31 + parity
-        }
+        override fun hashCode(): Int = prod * 31 + parity
 
         override fun equals(other: Any?): Boolean {
             if (other !is StateKey) {

@@ -26,17 +26,12 @@ class Solution {
         }
     }
 
-    private fun maskSerializeTime(serializeTime: Int, mask: Int): Int {
-        return (serializeTime + mask) / ROUND_INTERVAL * ROUND_INTERVAL
-    }
+    private fun maskSerializeTime(serializeTime: Int, mask: Int): Int =
+        (serializeTime + mask) / ROUND_INTERVAL * ROUND_INTERVAL
 
-    private fun serializeTime(time: String): Int {
-        return time.substring(0, 2).toInt() * 60 + time.substring(3, 5).toInt()
-    }
+    private fun serializeTime(time: String): Int = time.substring(0, 2).toInt() * 60 + time.substring(3, 5).toInt()
 
-    private fun calculateFullRounds(login: Int, logout: Int): Int {
-        return (logout - login) / ROUND_INTERVAL
-    }
+    private fun calculateFullRounds(login: Int, logout: Int): Int = (logout - login) / ROUND_INTERVAL
 
     companion object {
         private const val MID_NIGHT_END = 1440

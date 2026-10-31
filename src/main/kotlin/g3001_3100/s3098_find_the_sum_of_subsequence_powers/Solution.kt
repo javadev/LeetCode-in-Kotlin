@@ -19,7 +19,11 @@ class Solution {
         for (i in lastIdx + 1..len - k) {
             res = (
                 res + dfs(
-                    i, k - 1, min(minDiff, (nums[i] - nums[lastIdx])), dp, nums,
+                    i,
+                    k - 1,
+                    min(minDiff, (nums[i] - nums[lastIdx])),
+                    dp,
+                    nums,
                 )
                 ) % MOD
         }

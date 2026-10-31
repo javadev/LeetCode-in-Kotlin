@@ -16,7 +16,11 @@ class Solution {
             var c = 0
             for (j in i until n) {
                 count[nums[j]] += 1
-                if (count[nums[j]] == 2) c += 2 else if (count[nums[j]] > 2) c += 1
+                if (count[nums[j]] == 2) {
+                    c += 2
+                } else if (count[nums[j]] > 2) {
+                    c += 1
+                }
                 len[i][j] = c
             }
         }

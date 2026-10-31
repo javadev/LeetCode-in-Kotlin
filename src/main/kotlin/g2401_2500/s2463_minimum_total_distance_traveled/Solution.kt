@@ -8,7 +8,15 @@ class Solution {
         // sort factories :
         // 1. move all factories with 0-capacity to the end
         // 2. sort everything else by x-position in asc order
-        f.sortWith { a: IntArray, b: IntArray -> if (a[1] == 0) 1 else if (b[1] == 0) -1 else a[0] - b[0] }
+        f.sortWith { a: IntArray, b: IntArray ->
+            if (a[1] == 0) {
+                1
+            } else if (b[1] == 0) {
+                -1
+            } else {
+                a[0] - b[0]
+            }
+        }
         // Sort robots by x-position in asc order
         // As we don't know the implementation of the List that is passed, it is better to map it to
         // an array explicitly

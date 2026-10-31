@@ -7,7 +7,7 @@ class Solution {
         if (pow2[0] == 0L) {
             pow2[0] = 1
             for (i in 1..<pow2.size) {
-                pow2[i] = (pow2[i - 1] shl 1) % mod
+                pow2[i] = (pow2[i - 1] shl 1) % MOD
             }
         }
         val n = edges.size + 1
@@ -46,7 +46,7 @@ class Solution {
     }
 
     companion object {
-        private const val mod = 1e9.toInt() + 7
+        private const val MOD = 1e9.toInt() + 7
         private val pow2 = LongArray(100001)
     }
 }

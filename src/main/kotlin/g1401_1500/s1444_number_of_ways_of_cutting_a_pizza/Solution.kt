@@ -74,12 +74,10 @@ class Solution {
         return dp[m][n][k]
     }
 
-    private fun hasApple(prefix: Array<IntArray>, x1: Int, y1: Int, x2: Int, y2: Int): Boolean {
-        return (
-            prefix[x2 + 1][y2 + 1] - prefix[x1][y2 + 1] - prefix[x2 + 1][y1] + prefix[x1][y1]
-                > 0
-            )
-    }
+    private fun hasApple(prefix: Array<IntArray>, x1: Int, y1: Int, x2: Int, y2: Int): Boolean = (
+        prefix[x2 + 1][y2 + 1] - prefix[x1][y2 + 1] - prefix[x2 + 1][y1] + prefix[x1][y1]
+            > 0
+        )
 
     companion object {
         private const val K_MOD = (1e9 + 7).toInt()

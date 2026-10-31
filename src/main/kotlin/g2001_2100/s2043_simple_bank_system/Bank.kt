@@ -4,9 +4,8 @@ package g2001_2100.s2043_simple_bank_system
 // #2023_06_23_Time_968_ms_(100.00%)_Space_113.3_MB_(85.71%)
 
 class Bank(private val accounts: LongArray) {
-    private fun validate(account: Int, money: Long, withdraw: Boolean): Boolean {
-        return account < accounts.size && (!withdraw || accounts[account] >= money)
-    }
+    private fun validate(account: Int, money: Long, withdraw: Boolean): Boolean =
+        account < accounts.size && (!withdraw || accounts[account] >= money)
 
     fun transfer(account1: Int, account2: Int, money: Long): Boolean {
         if (validate(account1 - 1, money, true) && validate(account2 - 1, 0, false)) {

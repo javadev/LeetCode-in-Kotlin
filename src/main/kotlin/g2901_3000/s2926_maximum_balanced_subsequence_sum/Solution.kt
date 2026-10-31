@@ -52,9 +52,7 @@ class Solution {
     private class BIT(var n: Int) {
         var tree: LongArray = LongArray(n + 1)
 
-        fun lowbit(index: Int): Int {
-            return index and (-index)
-        }
+        fun lowbit(index: Int): Int = index and (-index)
 
         fun update(index: Int, v: Long) {
             var index = index

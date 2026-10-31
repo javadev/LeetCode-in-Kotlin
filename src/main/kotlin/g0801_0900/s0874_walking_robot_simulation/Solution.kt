@@ -11,54 +11,34 @@ class Solution {
             return other.row == row && other.column == column
         }
 
-        override fun hashCode(): Int {
-            return row * column * 31
-        }
+        override fun hashCode(): Int = row * column * 31
     }
 
     internal enum class Direction(val x: Int, val y: Int) {
         NORTH(0, 1) {
-            override fun turnLeft(): Direction {
-                return WEST
-            }
+            override fun turnLeft(): Direction = WEST
 
-            override fun turnRight(): Direction {
-                return EAST
-            }
+            override fun turnRight(): Direction = EAST
         },
         EAST(1, 0) {
-            override fun turnLeft(): Direction {
-                return NORTH
-            }
+            override fun turnLeft(): Direction = NORTH
 
-            override fun turnRight(): Direction {
-                return SOUTH
-            }
+            override fun turnRight(): Direction = SOUTH
         },
         SOUTH(0, -1) {
-            override fun turnLeft(): Direction {
-                return EAST
-            }
+            override fun turnLeft(): Direction = EAST
 
-            override fun turnRight(): Direction {
-                return WEST
-            }
+            override fun turnRight(): Direction = WEST
         },
         WEST(-1, 0) {
-            override fun turnLeft(): Direction {
-                return SOUTH
-            }
+            override fun turnLeft(): Direction = SOUTH
 
-            override fun turnRight(): Direction {
-                return NORTH
-            }
+            override fun turnRight(): Direction = NORTH
         }, ;
 
         abstract fun turnLeft(): Direction
         abstract fun turnRight(): Direction
-        fun next(p: Point): Point {
-            return Point(p.row + x, p.column + y)
-        }
+        fun next(p: Point): Point = Point(p.row + x, p.column + y)
     }
 
     fun robotSim(commands: IntArray, obstacles: Array<IntArray>): Int {

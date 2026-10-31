@@ -31,9 +31,7 @@ class CountIntervals {
         count += right - left + 1
     }
 
-    fun count(): Int {
-        return count
-    }
+    fun count(): Int = count
 }
 /*
  * Your CountIntervals object will be instantiated and called as such:

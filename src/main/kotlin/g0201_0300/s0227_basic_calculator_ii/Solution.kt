@@ -20,11 +20,14 @@ class Solution {
                         sum += tempSum
                         tempSum = num
                     }
+
                     '-' -> {
                         sum += tempSum
                         tempSum = -num
                     }
+
                     '*' -> tempSum *= num
+
                     '/' -> if (num != 0) {
                         tempSum /= num
                     }

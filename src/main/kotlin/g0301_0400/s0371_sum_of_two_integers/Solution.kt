@@ -41,7 +41,5 @@ class Solution {
         return count
     }
 
-    private fun plusOne(`val`: Int): Int {
-        return -`val`.inv()
-    }
+    private fun plusOne(`val`: Int): Int = -`val`.inv()
 }

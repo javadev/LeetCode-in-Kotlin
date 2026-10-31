@@ -56,7 +56,5 @@ class Solution {
         return false
     }
 
-    private fun hasBit(x: Int, k: Int): Boolean {
-        return x shr k and 1 == 1
-    }
+    private fun hasBit(x: Int, k: Int): Boolean = x shr k and 1 == 1
 }

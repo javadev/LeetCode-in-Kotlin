@@ -4,9 +4,7 @@ package g0301_0400.s0395_longest_substring_with_at_least_k_repeating_characters
 // #2022_11_28_Time_274_ms_(66.67%)_Space_34_MB_(100.00%)
 
 class Solution {
-    fun longestSubstring(s: String, k: Int): Int {
-        return helper(s, k, 0, s.length)
-    }
+    fun longestSubstring(s: String, k: Int): Int = helper(s, k, 0, s.length)
 
     private fun helper(s: String, k: Int, start: Int, end: Int): Int {
         if (end - start < k) {

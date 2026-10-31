@@ -41,9 +41,7 @@ class Solution {
             }
             this.numComponents--
         }
-        fun size(): Int {
-            return size
-        }
+        fun size(): Int = size
     }
 
     fun accountsMerge(accounts: List<List<String>>): List<List<String>> {

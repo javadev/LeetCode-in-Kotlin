@@ -17,7 +17,5 @@ class Solution {
         return max(ans, count)
     }
 
-    private fun max(n1: Int, n2: Int): Int {
-        return Math.max(n1, n2)
-    }
+    private fun max(n1: Int, n2: Int): Int = Math.max(n1, n2)
 }

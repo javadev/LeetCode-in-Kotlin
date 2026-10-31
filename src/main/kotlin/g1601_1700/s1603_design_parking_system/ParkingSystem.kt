@@ -12,28 +12,26 @@ class ParkingSystem(big: Int, medium: Int, small: Int) {
         slots[2] = small
     }
 
-    fun addCar(carType: Int): Boolean {
-        return if (carType == 1) {
-            if (slots[0] > 0) {
-                slots[0]--
-                true
-            } else {
-                false
-            }
-        } else if (carType == 2) {
-            if (slots[1] > 0) {
-                slots[1]--
-                true
-            } else {
-                false
-            }
+    fun addCar(carType: Int): Boolean = if (carType == 1) {
+        if (slots[0] > 0) {
+            slots[0]--
+            true
         } else {
-            if (slots[2] > 0) {
-                slots[2]--
-                true
-            } else {
-                false
-            }
+            false
+        }
+    } else if (carType == 2) {
+        if (slots[1] > 0) {
+            slots[1]--
+            true
+        } else {
+            false
+        }
+    } else {
+        if (slots[2] > 0) {
+            slots[2]--
+            true
+        } else {
+            false
         }
     }
 }

@@ -6,13 +6,9 @@ package g3401_3500.s3411_maximum_subarray_with_equal_products
 import kotlin.math.max
 
 class Solution {
-    private fun gcd(a: Int, b: Int): Int {
-        return if (b == 0) a else gcd(b, a % b)
-    }
+    private fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
-    private fun lcm(a: Int, b: Int): Int {
-        return (a / gcd(a, b)) * b
-    }
+    private fun lcm(a: Int, b: Int): Int = (a / gcd(a, b)) * b
 
     fun maxLength(nums: IntArray): Int {
         val n = nums.size

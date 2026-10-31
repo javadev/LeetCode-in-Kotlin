@@ -52,8 +52,6 @@ class Solution {
             adj[w]!!.add(v)
         }
 
-        fun adj(v: Int): List<Int> {
-            return adj[v]!!
-        }
+        fun adj(v: Int): List<Int> = adj[v]!!
     }
 }

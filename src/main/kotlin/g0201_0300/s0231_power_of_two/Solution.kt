@@ -4,7 +4,5 @@ package g0201_0300.s0231_power_of_two
 // #2022_10_26_Time_161_ms_(86.81%)_Space_33.6_MB_(88.19%)
 
 class Solution {
-    fun isPowerOfTwo(n: Int): Boolean {
-        return n > 0 && Integer.bitCount(n) == 1
-    }
+    fun isPowerOfTwo(n: Int): Boolean = n > 0 && Integer.bitCount(n) == 1
 }

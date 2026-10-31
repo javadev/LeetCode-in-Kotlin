@@ -8,9 +8,7 @@ class Solution {
     private var map: MutableMap<Int, Int>? = null
     private lateinit var set: IntArray
 
-    private fun findParent(u: Int): Int {
-        return if (u == set[u]) u else findParent(set[u]).also { set[u] = it }
-    }
+    private fun findParent(u: Int): Int = if (u == set[u]) u else findParent(set[u]).also { set[u] = it }
 
     private fun union(a: Int, b: Int) {
         val p1 = findParent(a)

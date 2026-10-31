@@ -23,10 +23,12 @@ class Solution {
                     nums[i] = nums[i + 1]
                     isModified = true
                 }
+
                 i == n - 2 || nums[i] <= nums[i + 2] -> {
                     nums[i + 1] = nums[i]
                     isModified = true
                 }
+
                 else -> {
                     return false
                 }

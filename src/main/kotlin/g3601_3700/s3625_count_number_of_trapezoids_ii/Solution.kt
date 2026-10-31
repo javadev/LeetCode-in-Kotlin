@@ -18,9 +18,7 @@ class Solution {
             return dx == s.dx && dy == s.dy
         }
 
-        override fun hashCode(): Int {
-            return dx * 1000003 xor dy
-        }
+        override fun hashCode(): Int = dx * 1000003 xor dy
     }
 
     private class Pair(var a: Int, var b: Int) {
@@ -35,9 +33,7 @@ class Solution {
             return a == p.a && b == p.b
         }
 
-        override fun hashCode(): Int {
-            return a * 1000003 xor b
-        }
+        override fun hashCode(): Int = a * 1000003 xor b
     }
 
     fun countTrapezoids(points: Array<IntArray>): Int {

@@ -19,17 +19,13 @@ class Solution {
         var links = arrayOfNulls<Node>(26)
         var isWordCompleted = false
 
-        fun containsKey(ch: Char): Boolean {
-            return links[ch.code - 'a'.code] != null
-        }
+        fun containsKey(ch: Char): Boolean = links[ch.code - 'a'.code] != null
 
         fun put(ch: Char, node: Node?) {
             links[ch.code - 'a'.code] = node
         }
 
-        operator fun get(ch: Char): Node? {
-            return links[ch.code - 'a'.code]
-        }
+        operator fun get(ch: Char): Node? = links[ch.code - 'a'.code]
     }
 
     internal class Trie {

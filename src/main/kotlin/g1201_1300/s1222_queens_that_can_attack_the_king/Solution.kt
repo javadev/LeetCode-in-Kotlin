@@ -22,13 +22,7 @@ class Solution {
         return result
     }
 
-    fun dfs(
-        queens: Map<Int, MutableSet<Int>>,
-        x: Int,
-        y: Int,
-        result: MutableList<List<Int>>,
-        direction: String?,
-    ) {
+    fun dfs(queens: Map<Int, MutableSet<Int>>, x: Int, y: Int, result: MutableList<List<Int>>, direction: String?) {
         if (x < 0 || x >= 8 || y < 0 || y >= 8) {
             return
         }

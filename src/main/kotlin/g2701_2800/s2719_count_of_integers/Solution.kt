@@ -17,8 +17,11 @@ class Solution {
             count = (
                 count % MOD + countStrings(
                     i + 1,
-                    tight1 and (idx == lo), tight2 and (idx == hi),
-                    sum - idx, num1, num2,
+                    tight1 and (idx == lo),
+                    tight2 and (idx == hi),
+                    sum - idx,
+                    num1,
+                    num2,
                 ) % MOD
                 ) % MOD
         }

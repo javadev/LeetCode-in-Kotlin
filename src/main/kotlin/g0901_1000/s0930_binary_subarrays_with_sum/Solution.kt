@@ -4,9 +4,7 @@ package g0901_1000.s0930_binary_subarrays_with_sum
 // #2023_04_26_Time_250_ms_(93.75%)_Space_39.6_MB_(87.50%)
 
 class Solution {
-    fun numSubarraysWithSum(nums: IntArray, goal: Int): Int {
-        return atmostK(nums, goal) - atmostK(nums, goal - 1)
-    }
+    fun numSubarraysWithSum(nums: IntArray, goal: Int): Int = atmostK(nums, goal) - atmostK(nums, goal - 1)
 
     fun atmostK(arr: IntArray, k: Int): Int {
         var cnt = 0

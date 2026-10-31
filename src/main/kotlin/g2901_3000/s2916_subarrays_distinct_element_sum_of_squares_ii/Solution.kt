@@ -34,9 +34,7 @@ class Solution {
         return (ans % MOD).toInt()
     }
 
-    private fun lowbit(index: Int): Int {
-        return index and (-index)
-    }
+    private fun lowbit(index: Int): Int = index and (-index)
 
     private fun update(index: Int, x: Int) {
         var index = index

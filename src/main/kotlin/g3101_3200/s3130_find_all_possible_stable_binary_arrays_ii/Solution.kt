@@ -60,9 +60,7 @@ class Solution {
         return s
     }
 
-    fun comb(n: Int, k: Int): Long {
-        return (factorial!![n] * reverse[k] % MOD) * reverse[n - k] % MOD
-    }
+    fun comb(n: Int, k: Int): Long = (factorial!![n] * reverse[k] % MOD) * reverse[n - k] % MOD
 
     fun getInverse(n: Long, mod: Long): Long {
         var n = n

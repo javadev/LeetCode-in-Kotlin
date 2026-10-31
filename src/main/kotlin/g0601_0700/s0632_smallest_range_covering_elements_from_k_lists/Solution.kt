@@ -8,9 +8,7 @@ import java.util.PriorityQueue
 
 class Solution {
     internal class Triplet(var value: Int, var row: Int, var idx: Int) : Comparable<Triplet?> {
-        override operator fun compareTo(other: Triplet?): Int {
-            return value - other!!.value
-        }
+        override operator fun compareTo(other: Triplet?): Int = value - other!!.value
     }
 
     fun smallestRange(nums: List<List<Int>>): IntArray {

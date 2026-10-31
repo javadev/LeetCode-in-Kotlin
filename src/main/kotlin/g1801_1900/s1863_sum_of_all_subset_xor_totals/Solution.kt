@@ -4,12 +4,10 @@ package g1801_1900.s1863_sum_of_all_subset_xor_totals
 // #2023_06_22_Time_128_ms_(80.00%)_Space_33.4_MB_(100.00%)
 
 class Solution {
-    fun subsetXORSum(nums: IntArray): Int {
-        return if (nums.isEmpty()) {
-            0
-        } else {
-            subsetXORSum(nums, 0, 0)
-        }
+    fun subsetXORSum(nums: IntArray): Int = if (nums.isEmpty()) {
+        0
+    } else {
+        subsetXORSum(nums, 0, 0)
     }
 
     private fun subsetXORSum(nums: IntArray, currIndex: Int, res: Int): Int {

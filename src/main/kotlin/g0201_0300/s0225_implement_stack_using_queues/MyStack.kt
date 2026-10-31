@@ -5,7 +5,7 @@ package g0201_0300.s0225_implement_stack_using_queues
 import java.util.LinkedList
 import java.util.Queue
 
-class MyStack() {
+class MyStack {
     private val queue1: Queue<Int> = LinkedList()
     private val queue2: Queue<Int> = LinkedList()
 
@@ -36,9 +36,7 @@ class MyStack() {
         return top
     }
 
-    fun empty(): Boolean {
-        return queue1.isEmpty()
-    }
+    fun empty(): Boolean = queue1.isEmpty()
 }
 
 /*

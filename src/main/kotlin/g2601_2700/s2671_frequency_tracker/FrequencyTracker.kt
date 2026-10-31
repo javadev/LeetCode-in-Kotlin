@@ -2,7 +2,7 @@ package g2601_2700.s2671_frequency_tracker
 
 // #Medium #Hash_Table #Design #2023_07_26_Time_1109_ms_(80.00%)_Space_134.7_MB_(60.00%)
 
-class FrequencyTracker() {
+class FrequencyTracker {
     private val count = IntArray(100001)
     private val freq = IntArray(100001)
 

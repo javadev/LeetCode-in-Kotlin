@@ -5,12 +5,10 @@ package g0301_0400.s0365_water_and_jug_problem
 // #2022_11_19_Time_130_ms_(100.00%)_Space_32.5_MB_(100.00%)
 
 class Solution {
-    private fun gcd(n1: Int, n2: Int): Int {
-        return if (n2 == 0) {
-            n1
-        } else {
-            gcd(n2, n1 % n2)
-        }
+    private fun gcd(n1: Int, n2: Int): Int = if (n2 == 0) {
+        n1
+    } else {
+        gcd(n2, n1 % n2)
     }
 
     fun canMeasureWater(jug1Capacity: Int, jug2Capacity: Int, targetCapacity: Int): Boolean {

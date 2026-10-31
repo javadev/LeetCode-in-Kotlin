@@ -36,17 +36,11 @@ class Bitset(private val sz: Int) {
         cnt = sz - cnt
     }
 
-    fun all(): Boolean {
-        return cnt == sz
-    }
+    fun all(): Boolean = cnt == sz
 
-    fun one(): Boolean {
-        return cnt > 0
-    }
+    fun one(): Boolean = cnt > 0
 
-    fun count(): Int {
-        return cnt
-    }
+    fun count(): Int = cnt
 
     override fun toString(): String {
         val sb = StringBuilder()

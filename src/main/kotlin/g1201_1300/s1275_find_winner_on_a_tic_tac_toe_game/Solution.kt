@@ -49,11 +49,9 @@ class Solution {
         }
     }
 
-    private fun getWinner(str: String?): String {
-        return if (str == "X") {
-            "A"
-        } else {
-            "B"
-        }
+    private fun getWinner(str: String?): String = if (str == "X") {
+        "A"
+    } else {
+        "B"
     }
 }

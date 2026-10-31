@@ -27,6 +27,7 @@ class Solution {
                 prevOccurTime++
                 when {
                     prevOccurTime == maxOccurTimes -> ans.add(currValue)
+
                     prevOccurTime > maxOccurTimes -> {
                         maxOccurTimes = prevOccurTime
                         ans.clear()

@@ -16,7 +16,9 @@ class Solution {
             }
             return when (mem[i][j]) {
                 1 -> true
+
                 2 -> false
+
                 else -> {
                     val res = s[i] == s[j] && isPalindrome(i + 1, j - 1)
                     mem[i][j] = if (res) 1 else 2

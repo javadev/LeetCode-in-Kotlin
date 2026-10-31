@@ -31,15 +31,13 @@ class Node {
         bottomRight = null
     }
 
-    override fun toString(): String {
-        return (
-            getNode(this) +
-                getNode(topLeft) +
-                getNode(topRight) +
-                getNode(bottomLeft) +
-                getNode(bottomRight)
-            )
-    }
+    override fun toString(): String = (
+        getNode(this) +
+            getNode(topLeft) +
+            getNode(topRight) +
+            getNode(bottomLeft) +
+            getNode(bottomRight)
+        )
 
     private fun getNode(node: Node?): String {
         val isLeafLocal = if (node!!.isLeaf) "1" else "0"

@@ -22,9 +22,7 @@ class Solution {
     }
 
     // Check if an hour glass can be formed from the current position
-    private fun isHourGlass(r: Int, c: Int, m: Int, n: Int): Boolean {
-        return r + 2 < m && c + 2 < n
-    }
+    private fun isHourGlass(r: Int, c: Int, m: Int, n: Int): Boolean = r + 2 < m && c + 2 < n
 
     // Once we know an hourglass can be formed, just traverse the value
     private fun calculate(r: Int, c: Int, grid: Array<IntArray>): Int {

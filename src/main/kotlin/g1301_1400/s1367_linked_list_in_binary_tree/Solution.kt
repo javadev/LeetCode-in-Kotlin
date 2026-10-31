@@ -26,16 +26,14 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun isSubPath(head: ListNode?, root: TreeNode?): Boolean {
-        return if (root == null) {
-            false
-        } else {
-            (
-                doesRootHaveList(head, root) ||
-                    isSubPath(head, root.left) ||
-                    isSubPath(head, root.right)
-                )
-        }
+    fun isSubPath(head: ListNode?, root: TreeNode?): Boolean = if (root == null) {
+        false
+    } else {
+        (
+            doesRootHaveList(head, root) ||
+                isSubPath(head, root.left) ||
+                isSubPath(head, root.right)
+            )
     }
 
     private fun doesRootHaveList(head: ListNode?, root: TreeNode?): Boolean {

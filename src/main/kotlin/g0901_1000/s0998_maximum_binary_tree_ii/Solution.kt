@@ -15,9 +15,7 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun insertIntoMaxTree(root: TreeNode?, `val`: Int): TreeNode? {
-        return insertIntoMaxTree2(root, `val`)
-    }
+    fun insertIntoMaxTree(root: TreeNode?, `val`: Int): TreeNode? = insertIntoMaxTree2(root, `val`)
 
     private fun insertIntoMaxTree2(root: TreeNode?, `val`: Int): TreeNode {
         if (root == null) {

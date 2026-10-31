@@ -23,13 +23,7 @@ class Solution {
         return jump(stones, 0, 1, 0, rocks)
     }
 
-    private fun jump(
-        stones: IntArray,
-        index: Int,
-        jumpLength: Int,
-        expectedVal: Int,
-        rocks: Map<Int, Int>,
-    ): Boolean {
+    private fun jump(stones: IntArray, index: Int, jumpLength: Int, expectedVal: Int, rocks: Map<Int, Int>): Boolean {
         // overshoot and going backwards not allowed
         if (index >= stones.size || jumpLength <= 0) {
             return false

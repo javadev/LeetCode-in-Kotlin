@@ -7,17 +7,11 @@ import kotlin.math.max
 import kotlin.math.min
 
 class Solution {
-    private fun add(x: Int, y: Int): Int {
-        return (x + y) % MODULUS
-    }
+    private fun add(x: Int, y: Int): Int = (x + y) % MODULUS
 
-    private fun subtract(x: Int, y: Int): Int {
-        return (x + MODULUS - y) % MODULUS
-    }
+    private fun subtract(x: Int, y: Int): Int = (x + MODULUS - y) % MODULUS
 
-    private fun multiply(x: Int, y: Int): Int {
-        return (x.toLong() * y % MODULUS).toInt()
-    }
+    private fun multiply(x: Int, y: Int): Int = (x.toLong() * y % MODULUS).toInt()
 
     fun numberOfStableArrays(zero: Int, one: Int, limit: Int): Int {
         if (limit == 1) {

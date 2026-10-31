@@ -7,11 +7,7 @@ import java.util.LinkedList
 import java.util.Queue
 
 class Solution {
-    fun checkIfPrerequisite(
-        numCourses: Int,
-        prerequisites: Array<IntArray>,
-        queries: Array<IntArray>,
-    ): List<Boolean> {
+    fun checkIfPrerequisite(numCourses: Int, prerequisites: Array<IntArray>, queries: Array<IntArray>): List<Boolean> {
         val m: MutableMap<Int, MutableList<Int>> = HashMap()
         val ind = IntArray(numCourses)
         for (p in prerequisites) {

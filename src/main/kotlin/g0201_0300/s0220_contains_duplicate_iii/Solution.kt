@@ -4,9 +4,7 @@ package g0201_0300.s0220_contains_duplicate_iii
 // #2022_10_25_Time_921_ms_(72.22%)_Space_77.4_MB_(41.67%)
 
 class Solution {
-    private fun getId(i: Long, w: Long): Long {
-        return if (i < 0) (i + 1) / w - 1 else i / w
-    }
+    private fun getId(i: Long, w: Long): Long = if (i < 0) (i + 1) / w - 1 else i / w
 
     fun containsNearbyAlmostDuplicate(nums: IntArray, k: Int, t: Int): Boolean {
         if (t < 0) {

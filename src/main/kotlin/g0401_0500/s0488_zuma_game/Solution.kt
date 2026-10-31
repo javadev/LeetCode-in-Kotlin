@@ -4,13 +4,9 @@ package g0401_0500.s0488_zuma_game
 // #2023_01_03_Time_1727_ms_(100.00%)_Space_131.5_MB_(100.00%)
 
 class Solution {
-    fun findMinStep(board: String, hand: String): Int {
-        return dfs(board, hand)
-    }
+    fun findMinStep(board: String, hand: String): Int = dfs(board, hand)
 
-    private fun dfs(board: String, hand: String): Int {
-        return findMinStepDp(board, hand, HashMap())
-    }
+    private fun dfs(board: String, hand: String): Int = findMinStepDp(board, hand, HashMap())
 
     private fun findMinStepDp(board: String, hand: String, dp: MutableMap<String, MutableMap<String, Int?>?>): Int {
         if (board.isEmpty()) {

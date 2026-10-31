@@ -6,15 +6,13 @@ package g2301_2400.s2331_evaluate_boolean_binary_tree
 import com_github_leetcode.TreeNode
 
 class Solution {
-    fun evaluateTree(root: TreeNode?): Boolean {
-        return if (root!!.left == null) {
-            root.`val` == 1
+    fun evaluateTree(root: TreeNode?): Boolean = if (root!!.left == null) {
+        root.`val` == 1
+    } else {
+        if (root.`val` == 2) {
+            evaluateTree(root.left) || evaluateTree(root.right)
         } else {
-            if (root.`val` == 2) {
-                evaluateTree(root.left) || evaluateTree(root.right)
-            } else {
-                evaluateTree(root.left) && evaluateTree(root.right)
-            }
+            evaluateTree(root.left) && evaluateTree(root.right)
         }
     }
 }

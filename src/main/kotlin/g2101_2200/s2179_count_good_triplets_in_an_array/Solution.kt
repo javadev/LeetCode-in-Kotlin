@@ -33,9 +33,7 @@ class Solution {
             array = IntArray(n + 1)
         }
 
-        fun lowbit(x: Int): Int {
-            return x and -x
-        }
+        fun lowbit(x: Int): Int = x and -x
 
         fun update(i: Int, delta: Int) {
             var i = i

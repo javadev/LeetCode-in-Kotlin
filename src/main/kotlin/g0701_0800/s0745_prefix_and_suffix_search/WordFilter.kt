@@ -31,9 +31,7 @@ class WordFilter(words: Array<String>) {
         }
     }
 
-    fun f(prefix: String, suffix: String): Int {
-        return startsWith("$suffix{$prefix")
-    }
+    fun f(prefix: String, suffix: String): Int = startsWith("$suffix{$prefix")
 
     private fun startsWith(pref: String): Int {
         var node: TrieNode? = root

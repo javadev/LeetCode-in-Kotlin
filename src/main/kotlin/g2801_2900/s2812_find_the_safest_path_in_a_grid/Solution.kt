@@ -84,7 +84,5 @@ class Solution {
         }
     }
 
-    private fun isValid(i: Int, j: Int, n: Int): Boolean {
-        return i >= 0 && j >= 0 && i < n && j < n
-    }
+    private fun isValid(i: Int, j: Int, n: Int): Boolean = i >= 0 && j >= 0 && i < n && j < n
 }

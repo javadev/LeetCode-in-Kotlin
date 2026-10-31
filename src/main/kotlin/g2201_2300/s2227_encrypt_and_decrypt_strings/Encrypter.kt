@@ -29,9 +29,7 @@ class Encrypter(keys: CharArray, values: Array<String>, dictionary: Array<String
         return sb.toString()
     }
 
-    fun decrypt(word2: String): Int {
-        return dMap.getOrDefault(word2, 0)
-    }
+    fun decrypt(word2: String): Int = dMap.getOrDefault(word2, 0)
 }
 /*
  * Your Encrypter object will be instantiated and called as such:

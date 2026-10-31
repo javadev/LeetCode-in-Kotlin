@@ -32,15 +32,11 @@ class Solution {
         }
     }
 
-    private fun isLeapYear(year: Int): Boolean {
-        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0
-    }
+    private fun isLeapYear(year: Int): Boolean = year % 4 == 0 && year % 100 != 0 || year % 400 == 0
 
-    private fun dayOfMonth(month: Int): Int {
-        return when (month) {
-            1, 3, 5, 7, 8, 10, 12 -> 31
-            4, 6, 9, 11 -> 30
-            else -> 28
-        }
+    private fun dayOfMonth(month: Int): Int = when (month) {
+        1, 3, 5, 7, 8, 10, 12 -> 31
+        4, 6, 9, 11 -> 30
+        else -> 28
     }
 }

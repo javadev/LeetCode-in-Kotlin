@@ -20,9 +20,7 @@ import kotlin.math.max
  * }
  */
 class Solution {
-    fun maxDepth(root: TreeNode?): Int {
-        return findDepth(root, 0)
-    }
+    fun maxDepth(root: TreeNode?): Int = findDepth(root, 0)
 
     private fun findDepth(node: TreeNode?, currentDepth: Int): Int {
         var localCurrentDepth = currentDepth

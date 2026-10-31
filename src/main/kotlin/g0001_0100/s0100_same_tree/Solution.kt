@@ -17,16 +17,14 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    private fun trav(n: TreeNode?, m: TreeNode?): Boolean {
-        return if (n != null && m != null) {
-            if (n.`val` != m.`val`) {
-                false
-            } else {
-                trav(n.left, m.left) && trav(n.right, m.right)
-            }
+    private fun trav(n: TreeNode?, m: TreeNode?): Boolean = if (n != null && m != null) {
+        if (n.`val` != m.`val`) {
+            false
         } else {
-            n == null && m == null
+            trav(n.left, m.left) && trav(n.right, m.right)
         }
+    } else {
+        n == null && m == null
     }
 
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {

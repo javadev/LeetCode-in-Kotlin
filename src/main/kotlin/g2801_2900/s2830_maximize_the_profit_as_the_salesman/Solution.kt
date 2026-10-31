@@ -27,8 +27,7 @@ class Solution {
             dp[i] = if ((i != 0)) max(dp[i], dp[i - 1]) else dp[i]
             for (l in temp) {
                 dp[l[1]] =
-                    if ((i != 0)
-                    ) {
+                    if ((i != 0)) {
                         max(dp[l[1]], (dp[i - 1] + l[2]))
                     } else {
                         max(

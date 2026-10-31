@@ -75,7 +75,9 @@ class Solution {
                 if (prev[j][i] <= mins[0][i]) {
                     mins[1][i] = mins[0][i]
                     mins[0][i] = prev[j][i]
-                } else if (prev[j][i] <= mins[1][i]) mins[1][i] = prev[j][i]
+                } else if (prev[j][i] <= mins[1][i]) {
+                    mins[1][i] = prev[j][i]
+                }
             }
         }
     }

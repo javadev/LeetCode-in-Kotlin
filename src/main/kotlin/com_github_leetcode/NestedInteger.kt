@@ -17,17 +17,11 @@ class NestedInteger {
         this.integer = integer
     }
 
-    fun isInteger(): Boolean {
-        return integer != null
-    }
+    fun isInteger(): Boolean = integer != null
 
-    fun getInteger(): Int? {
-        return integer
-    }
+    fun getInteger(): Int? = integer
 
-    fun getList(): List<NestedInteger>? {
-        return list
-    }
+    fun getList(): List<NestedInteger>? = list
 
     fun add(nestedInteger: NestedInteger) {
         list!!.add(nestedInteger)

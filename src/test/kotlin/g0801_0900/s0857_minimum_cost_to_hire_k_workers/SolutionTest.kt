@@ -23,7 +23,8 @@ internal class SolutionTest {
             (
                 Solution()
                     .mincostToHireWorkers(
-                        intArrayOf(3, 1, 10, 10, 1), intArrayOf(4, 8, 2, 2, 7),
+                        intArrayOf(3, 1, 10, 10, 1),
+                        intArrayOf(4, 8, 2, 2, 7),
                         3,
                     ) *
                     n

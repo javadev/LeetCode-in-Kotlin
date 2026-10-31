@@ -102,13 +102,7 @@ class Solution {
         return res
     }
 
-    private fun getInts2(
-        n: Int,
-        st: Int,
-        row2: Int,
-        seen: BooleanArray,
-        als: Array<ArrayList<Int>>,
-    ): Array<IntArray> {
+    private fun getInts2(n: Int, st: Int, row2: Int, seen: BooleanArray, als: Array<ArrayList<Int>>): Array<IntArray> {
         var res: Array<IntArray> = Array<IntArray>(2) { IntArray(n / 2) }
         res[0][0] = st
         res[1][0] = row2

@@ -11,9 +11,8 @@ class Solution {
     private var width = 0
 
     // r0, c0 incl., r1, c1 excl.
-    private fun unitsInRectangle(r0: Int, c0: Int, r1: Int, c1: Int): Int {
-        return ruc[r1][c1] - ruc[r0][c1] - ruc[r1][c0] + ruc[r0][c0]
-    }
+    private fun unitsInRectangle(r0: Int, c0: Int, r1: Int, c1: Int): Int =
+        ruc[r1][c1] - ruc[r0][c1] - ruc[r1][c0] + ruc[r0][c0]
 
     private fun minArea(r0: Int, c0: Int, r1: Int, c1: Int): Int {
         if (unitsInRectangle(r0, c0, r1, c1) == 0) {
@@ -66,11 +65,7 @@ class Solution {
         return min
     }
 
-    private fun minSum3(
-        firstSplitVertical: Boolean,
-        takeLower: Boolean,
-        secondSplitVertical: Boolean,
-    ): Int {
+    private fun minSum3(firstSplitVertical: Boolean, takeLower: Boolean, secondSplitVertical: Boolean): Int {
         var min = Int.MAX_VALUE
         if (firstSplitVertical) {
             for (c in 1 until width) {

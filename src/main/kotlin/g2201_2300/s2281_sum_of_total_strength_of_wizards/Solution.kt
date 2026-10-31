@@ -40,8 +40,14 @@ class Solution {
                     (
                         res +
                             getSum(
-                                nums, forward, prefix, backward, suffix,
-                                prev, cur, i,
+                                nums,
+                                forward,
+                                prefix,
+                                backward,
+                                suffix,
+                                prev,
+                                cur,
+                                i,
                             ) *
                             nums[cur]
                         ) %

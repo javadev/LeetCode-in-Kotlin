@@ -24,8 +24,12 @@ class Solution {
         return ans
     }
 
-    private fun find(parent: IntArray, x: Int): Int {
-        return if (x == parent[x]) x else find(parent, parent[x]).also { parent[x] = it }
+    private fun find(parent: IntArray, x: Int): Int = if (x == parent[x]) {
+        x
+    } else {
+        find(parent, parent[x]).also {
+            parent[x] = it
+        }
     }
 
     private fun union(parent: IntArray, rank: IntArray, u: Int, v: Int, w: Int) {

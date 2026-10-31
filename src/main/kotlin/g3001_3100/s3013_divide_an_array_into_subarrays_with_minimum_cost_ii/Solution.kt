@@ -12,8 +12,7 @@ class Solution {
         var k = k
         val comparator =
             Comparator { i: Int?, j: Int? ->
-                if (nums[i!!] == nums[j!!]
-                ) {
+                if (nums[i!!] == nums[j!!]) {
                     Integer.compare(i, j)
                 } else {
                     nums[i].compareTo(nums[j])
@@ -37,8 +36,7 @@ class Solution {
         answer = min(sum, answer)
         var currentWindow = dist + 2
         var prevWindow = 1
-        while (currentWindow < n
-        ) {
+        while (currentWindow < n) {
             unused.add(currentWindow)
             if (used.contains(prevWindow)) {
                 sum -= nums[prevWindow].toLong()

@@ -11,7 +11,5 @@ class Node(var `val`: Int) {
     var right: Node? = null
     var next: Node? = null
 
-    override fun toString(): String {
-        return "Node{val=$`val`,left=$left,right=$right,next=$next}"
-    }
+    override fun toString(): String = "Node{val=$`val`,left=$left,right=$right,next=$next}"
 }

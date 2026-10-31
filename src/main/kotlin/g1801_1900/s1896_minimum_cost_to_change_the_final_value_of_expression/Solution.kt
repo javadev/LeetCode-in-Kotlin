@@ -37,45 +37,39 @@ class Solution {
         return number(s)
     }
 
-    private fun number(s: String): Result {
-        return if (s[cur] == '1') {
-            cur++
-            Result(1, 1)
-        } else {
-            cur++
-            Result(0, 1)
-        }
+    private fun number(s: String): Result = if (s[cur] == '1') {
+        cur++
+        Result(1, 1)
+    } else {
+        cur++
+        Result(0, 1)
     }
 
-    private fun or(res1: Result, res2: Result): Result {
-        return if (res1.`val` + res2.`val` == 0) {
-            Result(
-                0,
-                Math.min(res1.minFlips, res2.minFlips),
-            )
-        } else if (res1.`val` + res2.`val` == 2) {
-            Result(
-                1,
-                1 + Math.min(res1.minFlips, res2.minFlips),
-            )
-        } else {
-            Result(1, 1)
-        }
+    private fun or(res1: Result, res2: Result): Result = if (res1.`val` + res2.`val` == 0) {
+        Result(
+            0,
+            Math.min(res1.minFlips, res2.minFlips),
+        )
+    } else if (res1.`val` + res2.`val` == 2) {
+        Result(
+            1,
+            1 + Math.min(res1.minFlips, res2.minFlips),
+        )
+    } else {
+        Result(1, 1)
     }
 
-    private fun and(res1: Result, res2: Result): Result {
-        return if (res1.`val` + res2.`val` == 0) {
-            Result(
-                0,
-                1 + Math.min(res1.minFlips, res2.minFlips),
-            )
-        } else if (res1.`val` + res2.`val` == 2) {
-            Result(
-                1,
-                Math.min(res1.minFlips, res2.minFlips),
-            )
-        } else {
-            Result(0, 1)
-        }
+    private fun and(res1: Result, res2: Result): Result = if (res1.`val` + res2.`val` == 0) {
+        Result(
+            0,
+            1 + Math.min(res1.minFlips, res2.minFlips),
+        )
+    } else if (res1.`val` + res2.`val` == 2) {
+        Result(
+            1,
+            Math.min(res1.minFlips, res2.minFlips),
+        )
+    } else {
+        Result(0, 1)
     }
 }

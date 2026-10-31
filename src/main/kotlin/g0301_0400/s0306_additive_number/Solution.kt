@@ -8,9 +8,7 @@ class Solution {
             return false
         }
 
-        fun isInvalid(s: String): Boolean {
-            return s[0] == '0' && s.length > 1
-        }
+        fun isInvalid(s: String): Boolean = s[0] == '0' && s.length > 1
 
         fun backtrack(first: Long, second: Long, startIndex: Int): Boolean {
             val third = (first + second).toString()

@@ -6,8 +6,7 @@ package g0301_0400.s0354_russian_doll_envelopes
 class Solution {
     fun maxEnvelopes(envelopes: Array<IntArray>): Int {
         envelopes.sortWith { a: IntArray, b: IntArray ->
-            if (a[0] != b[0]
-            ) {
+            if (a[0] != b[0]) {
                 a[0] - b[0]
             } else {
                 b[1] - a[1]

@@ -36,8 +36,7 @@ class Solution {
         if (nextObstacle == 2 && nextNextObstacle == 3 || nextObstacle == 3 && nextNextObstacle == 2) {
             return 1
         }
-        return if (nextObstacle == 1 && nextNextObstacle == 3 || nextObstacle == 3 && nextNextObstacle == 1
-        ) {
+        return if (nextObstacle == 1 && nextNextObstacle == 3 || nextObstacle == 3 && nextNextObstacle == 1) {
             2
         } else {
             3

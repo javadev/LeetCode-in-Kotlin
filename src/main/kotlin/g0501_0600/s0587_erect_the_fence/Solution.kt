@@ -8,9 +8,8 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class Solution {
-    private fun dist(p1: Pair<Int, Int>, p2: Pair<Int, Int>): Double {
-        return sqrt((p2.second - p1.second).toDouble().pow(2.0) + Math.pow((p2.first - p1.first).toDouble(), 2.0))
-    }
+    private fun dist(p1: Pair<Int, Int>, p2: Pair<Int, Int>): Double =
+        sqrt((p2.second - p1.second).toDouble().pow(2.0) + Math.pow((p2.first - p1.first).toDouble(), 2.0))
 
     private fun angle(p1: Pair<Int, Int>, p2: Pair<Int, Int>): Double {
         return atan2((p2.second - p1.second).toDouble(), (p2.first - p1.first).toDouble()).let {

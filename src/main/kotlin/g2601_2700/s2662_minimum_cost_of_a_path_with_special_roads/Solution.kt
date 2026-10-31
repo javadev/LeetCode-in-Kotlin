@@ -50,9 +50,7 @@ class Solution {
         return -1
     }
 
-    fun dist(sp: Point, tp: Point): Int {
-        return kotlin.math.abs(sp.x - tp.x) + kotlin.math.abs(sp.y - tp.y)
-    }
+    fun dist(sp: Point, tp: Point): Int = kotlin.math.abs(sp.x - tp.x) + kotlin.math.abs(sp.y - tp.y)
 }
 
 data class Point(val x: Int, val y: Int)

@@ -32,9 +32,7 @@ class Allocator(n: Int) {
         }
     }
 
-    fun free(mID: Int): Int {
-        return collapse(root, mID)
-    }
+    fun free(mID: Int): Int = collapse(root, mID)
 
     fun collapse(cur: Node?, id: Int): Int {
         // base case

@@ -77,9 +77,7 @@ class Solution {
             return p
         }
 
-        fun connected(p: Int, q: Int): Boolean {
-            return find(p) == find(q)
-        }
+        fun connected(p: Int, q: Int): Boolean = find(p) == find(q)
 
         fun reset(p: Int) {
             parent[p] = p

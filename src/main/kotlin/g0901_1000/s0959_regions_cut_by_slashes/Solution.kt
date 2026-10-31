@@ -21,11 +21,14 @@ class Solution {
                         union(index, index + 3)
                         union(index + 1, index + 2)
                     }
+
                     ' ' -> {
                         union(index, index + 1)
                         union(index + 1, index + 2)
                         union(index + 2, index + 3)
-                    } else -> {
+                    }
+
+                    else -> {
                         union(index, index + 1)
                         union(index + 2, index + 3)
                     }
@@ -62,9 +65,7 @@ class Solution {
         }
     }
 
-    private fun connected(p: Int, q: Int): Boolean {
-        return root(p) == root(q)
-    }
+    private fun connected(p: Int, q: Int): Boolean = root(p) == root(q)
 
     private fun root(index: Int): Int {
         var index = index

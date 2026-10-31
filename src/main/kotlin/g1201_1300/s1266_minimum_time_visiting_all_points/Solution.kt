@@ -11,7 +11,6 @@ class Solution {
         return minTime
     }
 
-    private fun chebyshevDistance(pointA: IntArray, pointB: IntArray): Int {
-        return Math.max(Math.abs(pointA[0] - pointB[0]), Math.abs(pointA[1] - pointB[1]))
-    }
+    private fun chebyshevDistance(pointA: IntArray, pointB: IntArray): Int =
+        Math.max(Math.abs(pointA[0] - pointB[0]), Math.abs(pointA[1] - pointB[1]))
 }

@@ -5,9 +5,7 @@ package g0801_0900.s0808_soup_servings
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun soupServings(n: Int): Double {
-        return solve(n)
-    }
+    fun soupServings(n: Int): Double = solve(n)
 
     private fun solve(n: Int): Double {
         var n = n

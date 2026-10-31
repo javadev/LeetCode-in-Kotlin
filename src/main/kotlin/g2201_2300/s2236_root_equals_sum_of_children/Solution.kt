@@ -15,7 +15,5 @@ import com_github_leetcode.TreeNode
  * }
  */
 class Solution {
-    fun checkTree(root: TreeNode): Boolean {
-        return root.left!!.`val` + root.right!!.`val` == root.`val`
-    }
+    fun checkTree(root: TreeNode): Boolean = root.left!!.`val` + root.right!!.`val` == root.`val`
 }

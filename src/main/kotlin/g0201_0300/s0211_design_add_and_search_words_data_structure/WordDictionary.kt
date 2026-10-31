@@ -4,7 +4,7 @@ package g0201_0300.s0211_design_add_and_search_words_data_structure
 // #2022_10_24_Time_2256_ms_(87.04%)_Space_237.4_MB_(83.33%)
 
 class WordDictionary {
-    class TrieNode() {
+    class TrieNode {
         val children = Array<TrieNode?>(26) { null }
         var isWord = false
     }

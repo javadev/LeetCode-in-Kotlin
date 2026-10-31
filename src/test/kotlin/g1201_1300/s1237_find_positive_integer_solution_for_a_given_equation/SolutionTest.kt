@@ -9,9 +9,7 @@ internal class SolutionTest {
     fun findSolution() {
         val customFunction: Solution.CustomFunction = object : Solution.CustomFunction {
             var index = 0
-            override fun f(x: Int, y: Int): Int {
-                return index++
-            }
+            override fun f(x: Int, y: Int): Int = index++
         }
         assertThat(
             Solution().findSolution(customFunction, 1),

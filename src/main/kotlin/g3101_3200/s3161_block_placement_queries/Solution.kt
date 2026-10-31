@@ -27,14 +27,7 @@ class Solution {
         return listOf<Boolean>(*getBooleans(queries, m, size, left, right, bit))
     }
 
-    private fun initializePositions(
-        size: Int,
-        pos: IntArray,
-        bit: BIT,
-        left: UnionFind,
-        right: UnionFind,
-        max: Int,
-    ) {
+    private fun initializePositions(size: Int, pos: IntArray, bit: BIT, left: UnionFind, right: UnionFind, max: Int) {
         for (i in 1..<size) {
             val pre = pos[i - 1]
             val cur = pos[i]

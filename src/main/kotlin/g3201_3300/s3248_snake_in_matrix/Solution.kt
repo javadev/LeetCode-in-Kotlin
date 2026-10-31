@@ -11,12 +11,15 @@ class Solution {
                 "UP" -> if (x > 0) {
                     x--
                 }
+
                 "DOWN" -> if (x < n - 1) {
                     x++
                 }
+
                 "LEFT" -> if (y > 0) {
                     y--
                 }
+
                 "RIGHT" -> if (y < n - 1) {
                     y++
                 }

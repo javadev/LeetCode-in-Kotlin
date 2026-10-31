@@ -7,9 +7,7 @@ import java.util.TreeSet
 
 class MyCalendar {
     internal class Meeting(val start: Int, val end: Int) : Comparable<Meeting?> {
-        override operator fun compareTo(other: Meeting?): Int {
-            return start - other!!.start
-        }
+        override operator fun compareTo(other: Meeting?): Int = start - other!!.start
     }
 
     private val meetings: TreeSet<Meeting> = TreeSet()

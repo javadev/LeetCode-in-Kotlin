@@ -20,12 +20,10 @@ class NumberContainers {
         indices.computeIfAbsent(number) { _: Int? -> TreeSet() }.add(index)
     }
 
-    fun find(number: Int): Int {
-        return if (indices.containsKey(number)) {
-            indices[number]!!.first()
-        } else {
-            -1
-        }
+    fun find(number: Int): Int = if (indices.containsKey(number)) {
+        indices[number]!!.first()
+    } else {
+        -1
     }
 }
 /*

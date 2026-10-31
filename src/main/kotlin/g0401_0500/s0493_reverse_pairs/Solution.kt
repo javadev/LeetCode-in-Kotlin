@@ -4,9 +4,7 @@ package g0401_0500.s0493_reverse_pairs
 // #Merge_Sort #2023_01_04_Time_887_ms_(66.67%)_Space_73.9_MB_(66.67%)
 
 class Solution {
-    fun reversePairs(nums: IntArray): Int {
-        return mergeSort(nums, 0, nums.size - 1)
-    }
+    fun reversePairs(nums: IntArray): Int = mergeSort(nums, 0, nums.size - 1)
 
     private fun mergeSort(nums: IntArray, start: Int, end: Int): Int {
         if (start >= end) {

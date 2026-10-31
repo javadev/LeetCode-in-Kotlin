@@ -31,13 +31,9 @@ class Solution {
         return a
     }
 
-    private fun tetrahedral(a: Int): Int {
-        return ratio(product(a.toLong(), (a + 1).toLong(), (a + 2).toLong()), 6).toInt()
-    }
+    private fun tetrahedral(a: Int): Int = ratio(product(a.toLong(), (a + 1).toLong(), (a + 2).toLong()), 6).toInt()
 
-    private fun triangular(a: Int): Int {
-        return ratio(product(a.toLong(), (a + 1).toLong()), 2).toInt()
-    }
+    private fun triangular(a: Int): Int = ratio(product(a.toLong(), (a + 1).toLong()), 2).toInt()
 
     private fun product(vararg vals: Long): Long {
         var product = 1L
@@ -47,9 +43,7 @@ class Solution {
         return product
     }
 
-    private fun ratio(a: Long, b: Long): Long {
-        return (a / b)
-    }
+    private fun ratio(a: Long, b: Long): Long = (a / b)
 
     companion object {
         val ONE_THIRD: Double = 1.0 / 3.0

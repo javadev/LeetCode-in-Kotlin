@@ -6,9 +6,7 @@ class Solution {
     private var n = 0
 
     // get associated index in the other half
-    private fun opp(i: Int): Int {
-        return n - 1 - i
-    }
+    private fun opp(i: Int): Int = n - 1 - i
 
     fun canMakePalindromeQueries(s: String, queries: Array<IntArray>): BooleanArray {
         val fq = IntArray(26)

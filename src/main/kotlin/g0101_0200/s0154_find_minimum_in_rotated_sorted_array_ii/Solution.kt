@@ -4,12 +4,10 @@ package g0101_0200.s0154_find_minimum_in_rotated_sorted_array_ii
 // #2022_10_11_Time_275_ms_(84.00%)_Space_39_MB_(56.00%)
 
 class Solution {
-    fun findMin(nums: IntArray): Int {
-        return if (nums.isEmpty()) {
-            0
-        } else {
-            find(0, nums.size - 1, nums)
-        }
+    fun findMin(nums: IntArray): Int = if (nums.isEmpty()) {
+        0
+    } else {
+        find(0, nums.size - 1, nums)
     }
 
     private fun find(left: Int, right: Int, nums: IntArray): Int {

@@ -4,9 +4,7 @@ package g1601_1700.s1616_split_two_strings_to_make_palindrome
 
 @Suppress("NAME_SHADOWING")
 class Solution {
-    fun checkPalindromeFormation(a: String, b: String): Boolean {
-        return check(a, b) || check(b, a)
-    }
+    fun checkPalindromeFormation(a: String, b: String): Boolean = check(a, b) || check(b, a)
 
     private fun check(a: String, b: String): Boolean {
         var i = 0

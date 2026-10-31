@@ -8,9 +8,7 @@ import kotlin.math.abs
 
 class Solution {
     private class Pair internal constructor(var row: Int, var col: Int, var diff: Int) : Comparable<Pair> {
-        override fun compareTo(other: Pair): Int {
-            return diff - other.diff
-        }
+        override fun compareTo(other: Pair): Int = diff - other.diff
     }
 
     fun minimumEffortPath(heights: Array<IntArray>): Int {

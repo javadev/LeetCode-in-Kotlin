@@ -58,9 +58,7 @@ class Solution {
         return ans
     }
 
-    private fun getSubstrHash(l: Int, r: Int): Long {
-        return (hsh[r] - hsh[l] * pw[r - l] % MOD + MOD) % MOD
-    }
+    private fun getSubstrHash(l: Int, r: Int): Long = (hsh[r] - hsh[l] * pw[r - l] % MOD + MOD) % MOD
 
     companion object {
         private const val MOD = 1e9.toInt() + 7
