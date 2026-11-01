@@ -19,7 +19,7 @@ class Solution {
 
     private fun dfs(index: Int, cost: Int, path: CharArray) {
         if (index == n) {
-            result!!.add(String(path))
+            result.add(String(path))
             return
         }
         path[index] = '0'

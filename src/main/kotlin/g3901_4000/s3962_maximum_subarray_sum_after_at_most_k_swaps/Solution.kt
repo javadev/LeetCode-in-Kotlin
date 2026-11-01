@@ -182,14 +182,14 @@ class Solution {
     }
 
     internal class SwapContext(val values: IntArray, val included: IntArray, val totalCounts: IntArray) {
-        override fun equals(obj: Any?): Boolean {
-            if (this === obj) {
+        override fun equals(other: Any?): Boolean {
+            if (this === other) {
                 return true
             }
-            if (obj !is SwapContext) {
+            if (other !is SwapContext) {
                 return false
             }
-            val other = obj
+            val other = other
             return values.contentEquals(other.values) && included.contentEquals(other.included) &&
                 totalCounts.contentEquals(
                     other.totalCounts,
