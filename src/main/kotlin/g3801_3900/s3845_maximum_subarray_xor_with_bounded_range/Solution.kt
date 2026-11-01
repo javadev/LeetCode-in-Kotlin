@@ -86,7 +86,7 @@ class Solution {
 
             // shrink window if max - min > k
             while (maxDeque.isNotEmpty() &&
-                !minDeque.isEmpty() &&
+                minDeque.isNotEmpty() &&
                 nums[maxDeque.peekFirst()] - nums[minDeque.peekFirst()] > k
             ) {
                 remove(root, prefix[l])
