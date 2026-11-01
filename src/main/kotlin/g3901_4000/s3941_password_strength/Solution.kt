@@ -8,7 +8,7 @@ class Solution {
         var strength = 0
         val present = BooleanArray(256)
         for (i in 0..<password.length) {
-            present[password.get(i).code] = true
+            present[password[i].code] = true
         }
         for (i in 97..122) {
             if (present[i]) {

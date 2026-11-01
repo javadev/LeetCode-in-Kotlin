@@ -13,7 +13,7 @@ class Solution {
         for (i in n - 1 downTo 0) {
             res += nums[i].toLong()
             mn = min(mn, nums[i])
-            if (s.get(i) == '0') {
+            if (s[i] == '0') {
                 res -= mn.toLong()
                 mn = 100000
             }

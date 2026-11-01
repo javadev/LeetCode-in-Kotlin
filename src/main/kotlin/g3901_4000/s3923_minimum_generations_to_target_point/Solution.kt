@@ -14,7 +14,7 @@ class Solution {
             return 0
         }
         var generation = 0
-        while (!frontier.isEmpty()) {
+        while (frontier.isNotEmpty()) {
             generation++
             val nextFrontier = generateNextFrontier(frontier, allPoints, visited)
             if (nextFrontier.contains(targetCode)) {

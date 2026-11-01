@@ -26,10 +26,10 @@ class Solution {
         // Option 4: "10...01" (1 at position 0 and position n-1)
         if (n >= 2 && count1 >= 2) {
             var cost4 = count1
-            if (s.get(0) == '1') {
+            if (s[0] == '1') {
                 cost4--
             }
-            if (s.get(n - 1) == '1') {
+            if (s[n - 1] == '1') {
                 cost4--
             }
             ans = min(ans, cost4)

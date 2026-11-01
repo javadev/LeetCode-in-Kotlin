@@ -35,7 +35,7 @@ class Solution {
         dist[src] = 0L
         val pq = PriorityQueue<Distance>()
         pq.offer(Distance(src, dist[src]))
-        while (!pq.isEmpty() && pq.peek().dist <= maxPrice) {
+        while (pq.isNotEmpty() && pq.peek().dist <= maxPrice) {
             val distance = pq.poll()
             if (distance.dist > dist[distance.node]) {
                 continue

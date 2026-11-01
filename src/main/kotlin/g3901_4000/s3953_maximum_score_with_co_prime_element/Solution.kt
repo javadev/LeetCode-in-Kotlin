@@ -98,7 +98,7 @@ class Solution {
                 continue
             }
             bits++
-            product *= primeFactors.get(k)!!
+            product *= primeFactors[k]!!
         }
         val contribution = groupCnt[product]
         return if (bits % 2 == 1) contribution else -contribution

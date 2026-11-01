@@ -75,7 +75,7 @@ class Solution {
         dist[source] = 0
         val queue = java.util.ArrayDeque<Int>(n)
         queue.add(source)
-        while (!queue.isEmpty()) {
+        while (queue.isNotEmpty()) {
             val current: Int = queue.poll()!!
             if (current == target) {
                 return true
