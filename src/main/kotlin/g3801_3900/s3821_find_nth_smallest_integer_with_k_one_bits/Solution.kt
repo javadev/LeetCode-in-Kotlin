@@ -9,7 +9,7 @@ class Solution {
         var k = k
         var ans: Long = 0
         for (i in 50 downTo 0) {
-            val count: Long = C[i]!![k]
+            val count: Long = C[i][k]
             if (n > count) {
                 n -= count
                 ans = ans or (1L shl i)
@@ -24,13 +24,13 @@ class Solution {
 
     companion object {
         private const val MX = 60
-        private val C = Array<LongArray?>(MX) { LongArray(MX + 1) }
+        private val C = Array<LongArray>(MX) { LongArray(MX + 1) }
 
         init {
             for (i in 0..<MX) {
-                C[i]!![0] = 1
+                C[i][0] = 1
                 for (j in 1..i) {
-                    C[i]!![j] = C[i - 1]!![j - 1] + C[i - 1]!![j]
+                    C[i][j] = C[i - 1][j - 1] + C[i - 1][j]
                 }
             }
         }

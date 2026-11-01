@@ -6,7 +6,7 @@ package g3801_3900.s3899_angles_of_a_triangle
 import kotlin.math.acos
 
 class Solution {
-    fun internalAngles(sides: IntArray): DoubleArray? {
+    fun internalAngles(sides: IntArray): DoubleArray {
         if (sides[0] + sides[1] <= sides[2] || sides[1] + sides[2] <= sides[0] || sides[0] + sides[2] <= sides[1]) {
             return DoubleArray(0)
         }

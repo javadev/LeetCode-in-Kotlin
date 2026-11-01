@@ -21,7 +21,6 @@ class Solution {
         val n = nums0.size
         val indices = ArrayList<Int>()
         var count = 0
-
         for (i in 0 until n) {
             if (nums0[i] == 0) {
                 count += nums1[i]
@@ -29,13 +28,11 @@ class Solution {
                 indices.add(i)
             }
         }
-
         indices.sortWith(
             Comparator { i, j ->
                 if (nums1[i] == nums1[j]) nums0[i] - nums0[j] else nums1[j] - nums1[i]
             },
         )
-
         var ans = (pow(2, count) - 1 + MOD) % MOD
         for (index in indices) {
             val count1 = nums1[index]

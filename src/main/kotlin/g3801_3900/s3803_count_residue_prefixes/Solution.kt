@@ -1,4 +1,6 @@
-package g3801_3900.s3803_count_residue_prefixes // #Easy #String #Hash_Table #Mid_Level #Weekly_Contest_484
+package g3801_3900.s3803_count_residue_prefixes
+
+// #Easy #String #Hash_Table #Mid_Level #Weekly_Contest_484
 // #2026_05_22_Time_1_ms_(100.00%)_Space_43.67_MB_(91.69%)
 
 class Solution {

@@ -9,7 +9,6 @@ class Solution {
         for (c in t.toCharArray()) {
             cnt[c.code - '0'.code]++
         }
-
         val ans = CharArray(s.length)
         for (i in 0..<s.length) {
             val x = s[i].code - '0'.code
@@ -21,7 +20,6 @@ class Solution {
                 ans[i] = '0'
             }
         }
-
         return String(ans)
     }
 }

@@ -70,20 +70,17 @@ class Solution {
         var maxXor = 0
         var l = 0
         insert(root, 0)
-
         for (r in 0 until n) {
             // maintain max deque
             while (maxDeque.isNotEmpty() && nums[r] > nums[maxDeque.peekLast()]) {
                 maxDeque.pollLast()
             }
             maxDeque.offerLast(r)
-
             // maintain min deque
             while (minDeque.isNotEmpty() && nums[r] < nums[minDeque.peekLast()]) {
                 minDeque.pollLast()
             }
             minDeque.offerLast(r)
-
             // shrink window if max - min > k
             while (maxDeque.isNotEmpty() &&
                 minDeque.isNotEmpty() &&

@@ -29,7 +29,6 @@ class Solution {
         var r1 = currR
         var l2 = currL
         var r2 = currR + 1
-
         while (l1 >= 0 && r1 < n && s[l1] == s[r1]) {
             l1--
             r1++
