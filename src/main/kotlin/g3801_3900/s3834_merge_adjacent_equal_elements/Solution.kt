@@ -8,7 +8,7 @@ class Solution {
         val ans: MutableList<Long> = ArrayList<Long>()
         for (num in nums) {
             var curr: Long = num.toLong()
-            while (ans.isNotEmpty() && ans.get(ans.size - 1) == curr) {
+            while (ans.isNotEmpty() && ans[ans.size - 1] == curr) {
                 ans.removeAt(ans.size - 1)
                 curr *= 2
             }

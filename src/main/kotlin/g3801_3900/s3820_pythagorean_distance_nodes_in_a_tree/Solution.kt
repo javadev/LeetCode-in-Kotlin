@@ -10,7 +10,7 @@ class Solution {
         dist[start] = 0
         val q = java.util.ArrayDeque<Int>()
         q.add(start)
-        while (!q.isEmpty()) {
+        while (q.isNotEmpty()) {
             val u: Int = q.poll()!!
             for (v in adj[u]) {
                 // Check if this neighbour was not visited yet

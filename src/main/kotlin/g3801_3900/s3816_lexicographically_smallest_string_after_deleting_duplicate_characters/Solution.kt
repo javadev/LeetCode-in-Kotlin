@@ -14,8 +14,8 @@ class Solution {
         val sb = StringBuilder()
         for (c in a) {
             rem[c.code - 'a'.code]--
-            while (!sb.isEmpty()) {
-                val t = sb.get(sb.length - 1)
+            while (sb.isNotEmpty()) {
+                val t = sb[sb.length - 1]
                 if (t > c && (rem[t.code - 'a'.code] > 0 || cnt[t.code - 'a'.code] > 1)) {
                     cnt[t.code - 'a'.code]--
                     sb.setLength(sb.length - 1)
@@ -26,9 +26,9 @@ class Solution {
             sb.append(c)
             cnt[c.code - 'a'.code]++
         }
-        while (!sb.isEmpty()) {
+        while (sb.isNotEmpty()) {
             val i = sb.length - 1
-            val c = sb.get(i)
+            val c = sb[i]
             if (cnt[c.code - 'a'.code] > 1) {
                 cnt[c.code - 'a'.code]--
                 sb.setLength(i)

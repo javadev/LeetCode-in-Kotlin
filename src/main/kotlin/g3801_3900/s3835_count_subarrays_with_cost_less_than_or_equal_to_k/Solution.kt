@@ -31,7 +31,7 @@ class Solution {
     }
 
     private fun pushMin(minq: ArrayDeque<Int>, nums: IntArray, r: Int) {
-        while (!minq.isEmpty() && nums[minq.peekLast()!!] >= nums[r]) {
+        while (minq.isNotEmpty() && nums[minq.peekLast()!!] >= nums[r]) {
             minq.pollLast()
         }
         minq.addLast(r)
@@ -50,10 +50,10 @@ class Solution {
     }
 
     private fun shrinkWindow(maxq: ArrayDeque<Int>, minq: ArrayDeque<Int>, l: Int): Int {
-        if (!maxq.isEmpty() && maxq.peekFirst() == l) {
+        if (maxq.isNotEmpty() && maxq.peekFirst() == l) {
             maxq.pollFirst()
         }
-        if (!minq.isEmpty() && minq.peekFirst() == l) {
+        if (minq.isNotEmpty() && minq.peekFirst() == l) {
             minq.pollFirst()
         }
         return l + 1

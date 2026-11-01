@@ -13,7 +13,7 @@ class Solution {
     fun minCost(s: String, encCost: Int, flatCost: Int): Long {
         pre = IntArray(s.length + 1)
         for (i in 1..<pre.size) {
-            pre[i] = pre[i - 1] + (s.get(i - 1).code - '0'.code)
+            pre[i] = pre[i - 1] + (s[i - 1].code - '0'.code)
         }
         this.encCost = encCost
         this.flatCost = flatCost

@@ -14,7 +14,7 @@ class AuctionSystem {
         bidMap[userId.toLong() shl 32 or itemId.toLong()] = bid
         itemMap.computeIfAbsent(
             itemId,
-        ) { item: kotlin.Int? ->
+        ) {
             java.util.PriorityQueue<kotlin.IntArray>(
                 java.util.Comparator { a: kotlin.IntArray, b: kotlin.IntArray ->
                     if (a[2] ==
@@ -39,13 +39,13 @@ class AuctionSystem {
     }
 
     fun getHighestBidder(itemId: Int): Int {
-        val pq = itemMap.get(itemId)
-        if (pq == null || pq.isEmpty()) {
+        val pq = itemMap[itemId]
+        if (pq.isNullOrEmpty()) {
             return -1
         }
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val top = pq.peek()
-            val cur = bidMap.get(top[0].toLong() shl 32 or itemId.toLong())
+            val cur = bidMap[top[0].toLong() shl 32 or itemId.toLong()]
             if (top.contentEquals(cur)) {
                 return top[0]
             }

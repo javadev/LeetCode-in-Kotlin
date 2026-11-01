@@ -12,7 +12,7 @@ class Solution {
 
         val ans = CharArray(s.length)
         for (i in 0..<s.length) {
-            val x = s.get(i).code - '0'.code
+            val x = s[i].code - '0'.code
             if (cnt[x xor 1] > 0) {
                 cnt[x xor 1]--
                 ans[i] = '1'

@@ -46,7 +46,7 @@ class Solution {
         }
         for (a in dp) {
             for (b in a) {
-                for (c in b!!) {
+                for (c in b) {
                     c.fill(-1)
                 }
             }
@@ -94,8 +94,8 @@ class Solution {
         if (pos == high.size) {
             return (if (good[sum]) 1 else 0).toLong()
         }
-        if (dp[pos][sum]!![tl]!![tr] != -1L) {
-            return dp[pos][sum]!![tl]!![tr]
+        if (dp[pos][sum][tl][tr] != -1L) {
+            return dp[pos][sum][tl][tr]
         }
         val lo = if (tl == 1) low[pos].code - '0'.code else 0
         val hi = if (tr == 1) high[pos].code - '0'.code else 9
@@ -103,7 +103,7 @@ class Solution {
         for (d in lo..hi) {
             res += dfs(pos + 1, sum + d, nextTight(tl, d, lo), nextTight(tr, d, hi))
         }
-        dp[pos][sum]!![tl]!![tr] = res
+        dp[pos][sum][tl][tr] = res
         return res
     }
 

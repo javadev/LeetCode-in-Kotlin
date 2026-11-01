@@ -7,7 +7,7 @@ class Solution {
     fun toggleLightBulbs(bulbs: MutableList<Int>): MutableList<Int> {
         val on = BooleanArray(101)
         for (b in bulbs) {
-            on[b!!] = !on[b]
+            on[b] = !on[b]
         }
         val ans: MutableList<Int> = ArrayList<Int>()
         for (i in 1..100) {

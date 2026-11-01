@@ -10,7 +10,7 @@ class Solution {
         val freq = IntArray(257)
         val n = s.length
         for (i in 0..<n) {
-            val curr = s.get(i)
+            val curr = s[i]
             freq[curr.code]++
         }
         var ans = 0
@@ -18,7 +18,7 @@ class Solution {
             var i = 'a'.code
             while (i <= 'z'.code) {
                 if (freq[i] > 0) {
-                    ans = ans + abs(freq[i] - freq['z'.code - (i - 'a'.code)])
+                    ans += abs(freq[i] - freq['z'.code - (i - 'a'.code)])
                     freq[i] = 0
                     freq['z'.code - (i - 'a'.code)] = 0
                 }
@@ -28,7 +28,7 @@ class Solution {
         var i = '0'.code
         while (i <= '9'.code) {
             if (freq[i] > 0) {
-                ans = ans + abs(freq[i] - freq['9'.code - (i - '0'.code)])
+                ans += abs(freq[i] - freq['9'.code - (i - '0'.code)])
                 freq[i] = 0
                 freq['9'.code - (i - '0'.code)] = 0
             }

@@ -9,7 +9,7 @@ class Solution {
         for (s in words) {
             var cnt = 0
             for (i in 0..<s.length) {
-                cnt += weights[s.get(i).code - 'a'.code]
+                cnt += weights[s[i].code - 'a'.code]
             }
             ans.append(('a'.code + (25 - (cnt % 26))).toChar())
         }

@@ -6,8 +6,8 @@ class Solution {
         val n = s.length
         var count = 0
         var p = 0
-        val c1 = s.get(p)
-        while (p < n && c1 == s.get(p)) {
+        val c1 = s[p]
+        while (p < n && c1 == s[p]) {
             if (++p % 3 == 1) {
                 count++
             }
@@ -15,8 +15,8 @@ class Solution {
         if (p >= n) {
             return count
         }
-        val c2 = s.get(p)
-        while (p < n && (c1 == s.get(p) || c2 == s.get(p))) {
+        val c2 = s[p]
+        while (p < n && (c1 == s[p] || c2 == s[p])) {
             if (++p % 3 == 2) {
                 count++
             }

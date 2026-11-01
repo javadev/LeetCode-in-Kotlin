@@ -73,19 +73,19 @@ class Solution {
 
         for (r in 0 until n) {
             // maintain max deque
-            while (!maxDeque.isEmpty() && nums[r] > nums[maxDeque.peekLast()]) {
+            while (maxDeque.isNotEmpty() && nums[r] > nums[maxDeque.peekLast()]) {
                 maxDeque.pollLast()
             }
             maxDeque.offerLast(r)
 
             // maintain min deque
-            while (!minDeque.isEmpty() && nums[r] < nums[minDeque.peekLast()]) {
+            while (minDeque.isNotEmpty() && nums[r] < nums[minDeque.peekLast()]) {
                 minDeque.pollLast()
             }
             minDeque.offerLast(r)
 
             // shrink window if max - min > k
-            while (!maxDeque.isEmpty() &&
+            while (maxDeque.isNotEmpty() &&
                 !minDeque.isEmpty() &&
                 nums[maxDeque.peekFirst()] - nums[minDeque.peekFirst()] > k
             ) {

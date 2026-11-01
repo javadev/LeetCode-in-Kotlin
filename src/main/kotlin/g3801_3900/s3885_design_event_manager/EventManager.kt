@@ -15,9 +15,9 @@ class EventManager(events: Array<IntArray>) {
             PriorityQueue<Pair>(
                 Comparator { a: Pair, b: Pair ->
                     if (a.priority != b.priority) {
-                        return@Comparator Integer.compare(b.priority, a.priority)
+                        return@Comparator b.priority.compareTo(a.priority)
                     }
-                    Integer.compare(a.id, b.id)
+                    a.id.compareTo(b.id)
                 },
             )
         for (event in events) {
@@ -26,7 +26,7 @@ class EventManager(events: Array<IntArray>) {
     }
 
     fun updatePriority(eventId: Int, newPriority: Int) {
-        map.put(eventId, newPriority)
+        map[eventId] = newPriority
         pq.add(Pair(eventId, newPriority))
     }
 
@@ -42,8 +42,8 @@ class EventManager(events: Array<IntArray>) {
             val id = p.id
             val pri = p.priority
             if (map.containsKey(id)) {
-                if (map.get(id) == pri) {
-                    map.put(id, Int.MAX_VALUE)
+                if (map[id] == pri) {
+                    map[id] = Int.MAX_VALUE
                     return id
                 }
             } else {
@@ -53,7 +53,9 @@ class EventManager(events: Array<IntArray>) {
     }
 
     class Pair internal constructor(var id: Int, var priority: Int)
-} /*
+}
+
+/*
  * Your EventManager object will be instantiated and called as such:
  * EventManager obj = new EventManager(events);
  * obj.updatePriority(eventId,newPriority);

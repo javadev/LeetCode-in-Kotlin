@@ -11,8 +11,8 @@ class Solution {
         val map = HashMap<Int?, Int?>()
         var valid = 0
         for (`val` in nums) {
-            map.put(`val`, map.getOrDefault(`val`, 0)!! + 1)
-            if (map.get(`val`) == m) {
+            map[`val`] = map.getOrDefault(`val`, 0)!! + 1
+            if (map[`val`] == m) {
                 valid++
             }
             val state = shrinkDistinct(nums, left, p, k, m, map, valid)
@@ -43,11 +43,11 @@ class Solution {
         var valid = valid
         while (map.size > k) {
             val lv = nums[left]
-            if (map.get(lv) == m) {
+            if (map[lv] == m) {
                 valid--
             }
-            map.put(lv, map.get(lv)!! - 1)
-            if (map.get(lv) == 0) {
+            map[lv] = map[lv]!! - 1
+            if (map[lv] == 0) {
                 map.remove(lv)
             }
             left++
@@ -59,9 +59,9 @@ class Solution {
     private fun trimDuplicates(nums: IntArray, left: Int, p: Int, m: Int, map: MutableMap<Int?, Int?>): WindowState {
         var left = left
         var p = p
-        while (!map.isEmpty() && map.get(nums[left])!! > m) {
+        while (map.isNotEmpty() && map[nums[left]]!! > m) {
             val lv = nums[left]
-            map.put(lv, map.get(lv)!! - 1)
+            map[lv] = map[lv]!! - 1
             left++
             p++
         }

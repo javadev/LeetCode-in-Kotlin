@@ -13,12 +13,12 @@ class Solution {
             return 0
         }
         if (n == 2) {
-            return if (s.get(0) > s.get(1)) -1 else 0
+            return if (s[0] > s[1]) -1 else 0
         }
         var min = 'z'
         var max = 'a'
-        val first = s.get(0)
-        val last = s.get(n - 1)
+        val first = s[0]
+        val last = s[n - 1]
         var prev = 'a'
         val cnt = IntArray(26)
         var sorted = true

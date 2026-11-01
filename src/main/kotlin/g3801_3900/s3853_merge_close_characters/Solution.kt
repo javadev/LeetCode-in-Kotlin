@@ -9,7 +9,7 @@ class Solution {
         result.ensureCapacity(s.length)
         val cnt = IntArray(26)
         for (t in 0..<s.length) {
-            val c = s.get(t)
+            val c = s[t]
             val idx = c.code - 'a'.code
             if (cnt[idx] > 0) {
                 continue
@@ -17,7 +17,7 @@ class Solution {
             result.append(c)
             cnt[idx]++
             if (result.length > k) {
-                val drop = result.get(result.length - k - 1)
+                val drop = result[result.length - k - 1]
                 cnt[drop.code - 'a'.code]--
             }
         }

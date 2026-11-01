@@ -1,10 +1,10 @@
 package g3801_3900.s3829_design_ride_sharing_system
 
-import java.util.LinkedList
-import java.util.Queue
-
 // #Medium #Hash_Table #Design #Queue #Data_Stream #Staff #Weekly_Contest_487
 // #2026_07_20_Time_42_ms_(100.00%)_Space_48.36_MB_(31.76%)
+
+import java.util.LinkedList
+import java.util.Queue
 
 class RideSharingSystem {
     var rider: Queue<Int> = LinkedList<Int>()
@@ -23,10 +23,10 @@ class RideSharingSystem {
     }
 
     fun matchDriverWithRider(): IntArray? {
-        while (!rider.isEmpty() && cancel.containsKey(rider.peek())) {
+        while (rider.isNotEmpty() && cancel.containsKey(rider.peek())) {
             rider.poll()
         }
-        if (!rider.isEmpty() && !driver.isEmpty()) {
+        if (rider.isNotEmpty() && driver.isNotEmpty()) {
             val ans = intArrayOf(driver.peek()!!, rider.peek()!!)
             rider.poll()
             driver.poll()
@@ -36,7 +36,7 @@ class RideSharingSystem {
     }
 
     fun cancelRider(riderId: Int) {
-        cancel.put(riderId, 1)
+        cancel[riderId] = 1
     }
 }
 

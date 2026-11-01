@@ -8,7 +8,7 @@ class Solution {
         var l = 0
         var h = s.length - 1
         while (l <= h) {
-            if (s.get(l) == s.get(h)) {
+            if (s[l] == s[h]) {
                 return l
             }
             l++

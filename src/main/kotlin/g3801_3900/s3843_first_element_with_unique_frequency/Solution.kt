@@ -7,14 +7,14 @@ class Solution {
     fun firstUniqueFreq(nums: IntArray): Int {
         val c1: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
         for (a in nums) {
-            c1.put(a, c1.getOrDefault(a, 0)!! + 1)
+            c1[a] = c1.getOrDefault(a, 0)!! + 1
         }
         val c2: MutableMap<Int?, Int?> = HashMap<Int?, Int?>()
         for (f in c1.values) {
-            c2.put(f, c2.getOrDefault(f, 0)!! + 1)
+            c2[f] = c2.getOrDefault(f, 0)!! + 1
         }
         for (a in nums) {
-            if (c2.get(c1.get(a)) == 1) {
+            if (c2[c1[a]] == 1) {
                 return a
             }
         }
