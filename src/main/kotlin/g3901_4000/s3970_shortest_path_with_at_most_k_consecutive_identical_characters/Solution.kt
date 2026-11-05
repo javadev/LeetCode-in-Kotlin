@@ -21,7 +21,7 @@ class Solution {
         }
         val pq = PriorityQueue<Node>(Comparator { a: Node, b: Node -> a.w.compareTo(b.w) })
         pq.add(Node(0, 0, 1))
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val nd = pq.poll()
             if (nd.ch >= chars[nd.city]) {
                 continue
@@ -42,7 +42,7 @@ class Solution {
         k: Int,
         pq: PriorityQueue<Node>,
     ) {
-        for (nbr in adj.get(nd.city)!!) {
+        for (nbr in adj[nd.city]!!) {
             val nextCity = nbr[0]
             val totalCh = getNextCharCount(nd.ch, labels[nd.city], labels[nextCity])
             if (nd.city != nextCity && totalCh <= k) {

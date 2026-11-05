@@ -13,7 +13,7 @@ class Solution {
         var eSec = 0
         var colon = 2
         for (i in 0..7) {
-            if (startTime.get(i) == ':') {
+            if (startTime[i] == ':') {
                 startSec = (startSec + sSec * 60.0.pow(colon.toDouble())).toInt()
                 endSec = (endSec + eSec * 60.0.pow(colon.toDouble())).toInt()
                 colon--
@@ -21,8 +21,8 @@ class Solution {
                 eSec = 0
                 continue
             }
-            sSec = sSec * 10 + (startTime.get(i).code - '0'.code)
-            eSec = eSec * 10 + (endTime.get(i).code - '0'.code)
+            sSec = sSec * 10 + (startTime[i].code - '0'.code)
+            eSec = eSec * 10 + (endTime[i].code - '0'.code)
         }
         startSec = (startSec + sSec * 60.0.pow(colon.toDouble())).toInt()
         endSec = (endSec + eSec * 60.0.pow(colon.toDouble())).toInt()

@@ -10,7 +10,7 @@ class Solution {
         var pairs = 0
         var isCovered = false
         for (i in 0..<n) {
-            val diff = s1.get(i).code - s2.get(i).code
+            val diff = s1[i].code - s2[i].code
             sumDiff += diff
             if (diff == 1 && !isCovered) {
                 if (i + 1 < n) {
