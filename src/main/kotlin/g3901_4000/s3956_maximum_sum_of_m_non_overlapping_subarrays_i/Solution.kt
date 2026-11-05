@@ -1,10 +1,10 @@
 package g3901_4000.s3956_maximum_sum_of_m_non_overlapping_subarrays_i
 
-import kotlin.math.max
-
 // #Hard #Array #Dynamic_Programming #Binary_Search #Prefix_Sum #Sliding_Window #Queue
 // #Monotonic_Queue #Senior_Staff #Weekly_Contest_505
 // #2026_10_20_Time_61_ms_(91.07%)_Space_46.56_MB_(83.93%)
+
+import kotlin.math.max
 
 class Solution {
     fun maximumSum(nums: IntArray, m: Int, l: Int, r: Int): Long {
