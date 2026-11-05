@@ -1,9 +1,9 @@
 package g3901_4000.s3922_minimum_flips_to_make_binary_string_coherent
 
-import kotlin.math.min
-
 // #Medium #String #Senior #Biweekly_Contest_182
 // #2026_09_29_Time_4_ms_(100.00%)_Space_47.56_MB_(76.92%)
+
+import kotlin.math.min
 
 class Solution {
     fun minFlips(s: String): Int {

@@ -1,9 +1,9 @@
 package g3901_4000.s3971_maximum_total_value
 
-import kotlin.math.max
-
 // #Hard #Array #Math #Greedy #Binary_Search #Senior_Staff #Weekly_Contest_507
 // #2026_11_03_Time_19_ms_(100.00%)_Space_106.00_MB_(7.14%)
+
+import kotlin.math.max
 
 class Solution {
     fun maxTotalValue(value: IntArray, decay: IntArray, m: Int): Int {
