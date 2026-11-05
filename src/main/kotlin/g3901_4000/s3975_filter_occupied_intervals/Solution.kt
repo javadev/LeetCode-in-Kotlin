@@ -1,10 +1,10 @@
 package g3901_4000.s3975_filter_occupied_intervals
 
-import java.util.function.ToIntFunction
-import kotlin.math.max
-
 // #Medium #Array #Sorting #Senior #Weekly_Contest_508
 // #2026_11_03_Time_63_ms_(99.08%)_Space_149.43_MB_(90.83%)
+
+import java.util.function.ToIntFunction
+import kotlin.math.max
 
 class Solution {
     fun filterOccupiedIntervals(

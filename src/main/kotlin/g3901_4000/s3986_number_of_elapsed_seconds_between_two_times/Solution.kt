@@ -1,9 +1,9 @@
 package g3901_4000.s3986_number_of_elapsed_seconds_between_two_times
 
-import kotlin.math.pow
-
 // #Easy #String #Math #Mid_Level #Weekly_Contest_510
 // #2026_11_03_Time_2_ms_(72.94%)_Space_43.63_MB_(98.57%)
+
+import kotlin.math.pow
 
 class Solution {
     fun secondsBetweenTimes(startTime: String, endTime: String): Int {

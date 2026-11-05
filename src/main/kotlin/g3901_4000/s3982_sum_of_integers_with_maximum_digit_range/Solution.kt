@@ -1,10 +1,10 @@
 package g3901_4000.s3982_sum_of_integers_with_maximum_digit_range
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Easy #Array #Math #Mid_Level #Weekly_Contest_509
 // #2026_11_03_Time_2_ms_(57.34%)_Space_44.91_MB_(80.07%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun maxDigitRange(nums: IntArray): Int {

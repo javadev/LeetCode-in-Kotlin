@@ -1,10 +1,10 @@
 package g3901_4000.s3989_maximum_consistent_columns_in_a_grid
 
-import kotlin.math.abs
-import kotlin.math.max
-
 // #Hard #Array #Dynamic_Programming #Matrix #Senior_Staff #Weekly_Contest_510
 // #2026_11_03_Time_10_ms_(94.64%)_Space_61.08_MB_(87.50%)
+
+import kotlin.math.abs
+import kotlin.math.max
 
 class Solution {
     fun maxConsistentColumns(grid: Array<IntArray>, limit: Int): Int {

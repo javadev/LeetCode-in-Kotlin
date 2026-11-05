@@ -1,10 +1,10 @@
 package g3901_4000.s3985_palindromic_subarray_sum
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Hard #Array #Binary_Search #Prefix_Sum #Hash_Function #Senior_Staff #Weekly_Contest_509
 // #2026_11_03_Time_13_ms_(100.00%)_Space_141.97_MB_(58.82%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun getSum(nums: IntArray): Long {

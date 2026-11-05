@@ -1,7 +1,5 @@
 package g3901_4000.s3981_count_distinct_ways_to_form_target_from_two_strings
 
-import java.util.*
-
 // #Hard #String #Dynamic_Programming #Prefix_Sum #Senior_Staff #Biweekly_Contest_186
 // #2026_11_03_Time_28_ms_(100.00%)_Space_45.96_MB_(95.35%)
 
@@ -11,13 +9,13 @@ class Solution {
         val wl2 = word2.length
         val tl = target.length
         var dp = initializeDP(wl1, wl2)
-        var nextDp = Array<IntArray?>(wl1 + 1) { IntArray(wl2 + 1) }
+        var nextDp = Array<IntArray>(wl1 + 1) { IntArray(wl2 + 1) }
         val s1: Array<IntArray> = Array<IntArray>(wl1 + 1) { IntArray(wl2 + 1) }
-        val s2 = Array<IntArray?>(wl1 + 1) { IntArray(wl2 + 1) }
+        val s2 = Array<IntArray>(wl1 + 1) { IntArray(wl2 + 1) }
         val m1 = BooleanArray(wl1)
         val m2 = BooleanArray(wl2)
         for (i in tl - 1 downTo 0) {
-            val tc = target.get(i)
+            val tc = target[i]
             updateMatches(word1, m1, tc)
             updateMatches(word2, m2, tc)
             calculateS1(s1, dp, m1, wl1, wl2)
@@ -28,31 +26,31 @@ class Solution {
         }
         val dp1 = helper(word1, target, tl, wl1)
         val dp2 = helper(word2, target, tl, wl2)
-        val ans: Long = (dp[0]!![0] - dp1[0] - dp2[0]) % MOD
+        val ans: Long = (dp[0][0] - dp1[0] - dp2[0]) % MOD
         return ((ans + MOD) % MOD).toInt()
     }
 
-    private fun initializeDP(wl1: Int, wl2: Int): Array<IntArray?> {
-        val dp = Array<IntArray?>(wl1 + 1) { IntArray(wl2 + 1) }
+    private fun initializeDP(wl1: Int, wl2: Int): Array<IntArray> {
+        val dp = Array<IntArray>(wl1 + 1) { IntArray(wl2 + 1) }
         for (i in 0..wl1) {
-            Arrays.fill(dp[i], 1)
+            dp[i].fill(1)
         }
         return dp
     }
 
     private fun updateMatches(word: String, matches: BooleanArray, targetChar: Char) {
         for (i in 0..<word.length) {
-            matches[i] = word.get(i) == targetChar
+            matches[i] = word[i] == targetChar
         }
     }
 
-    private fun calculateS1(s1: Array<IntArray>, dp: Array<IntArray?>, m1: BooleanArray, wl1: Int, wl2: Int) {
-        Arrays.fill(s1[wl1], 0)
+    private fun calculateS1(s1: Array<IntArray>, dp: Array<IntArray>, m1: BooleanArray, wl1: Int, wl2: Int) {
+        s1[wl1].fill(0)
         for (j in wl1 - 1 downTo 0) {
             val current = s1[j]
             val next = s1[j + 1]
             if (m1[j]) {
-                calculateS1Row(current, next, dp[j + 1]!!, wl2)
+                calculateS1Row(current, next, dp[j + 1], wl2)
             } else {
                 System.arraycopy(next, 0, current, 0, wl2 + 1)
             }
@@ -66,16 +64,16 @@ class Solution {
     }
 
     private fun calculateS2(
-        s2: Array<IntArray?>,
+        s2: Array<IntArray>,
         s1: Array<IntArray>,
-        nextDp: Array<IntArray?>,
-        dp: Array<IntArray?>,
+        nextDp: Array<IntArray>,
+        dp: Array<IntArray>,
         m2: BooleanArray,
         wl1: Int,
         wl2: Int,
     ) {
         for (j in 0..wl1) {
-            calculateS2Row(s2[j]!!, s1[j], nextDp[j]!!, dp[j]!!, m2, wl2)
+            calculateS2Row(s2[j], s1[j], nextDp[j], dp[j], m2, wl2)
         }
     }
 
@@ -101,9 +99,9 @@ class Solution {
 
     private fun helper(word1: String, target: String, tl: Int, wl1: Int): LongArray {
         var ans = LongArray(wl1 + 1)
-        Arrays.fill(ans, 1)
+        ans.fill(1)
         for (i in tl - 1 downTo 0) {
-            ans = calculateHelperRow(word1, target.get(i), ans, wl1)
+            ans = calculateHelperRow(word1, target[i], ans, wl1)
         }
         return ans
     }
@@ -112,7 +110,7 @@ class Solution {
         val next = LongArray(length + 1)
         var sum: Long = 0
         for (j in length - 1 downTo 0) {
-            if (word.get(j) == targetChar) {
+            if (word[j] == targetChar) {
                 sum = (sum + ans[j + 1]) % MOD
             }
             next[j] = sum

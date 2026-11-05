@@ -1,9 +1,9 @@
 package g3901_4000.s3983_subsequence_after_one_replacement
 
-import kotlin.math.max
-
 // #Medium #String #Two_Pointers #Staff #Weekly_Contest_509
 // #2026_11_03_Time_11_ms_(98.90%)_Space_47.84_MB_(67.03%)
+
+import kotlin.math.max
 
 class Solution {
     fun canMakeSubsequence(t: String, s: String): Boolean {

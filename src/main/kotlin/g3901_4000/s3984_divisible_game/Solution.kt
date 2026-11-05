@@ -1,10 +1,10 @@
 package g3901_4000.s3984_divisible_game
 
-import kotlin.math.max
-import kotlin.math.min
-
 // #Medium #Array #Dynamic_Programming #Math #Enumeration #Number_Theory #Staff #Weekly_Contest_509
 // #2026_11_03_Time_22_ms_(93.00%)_Space_46.30_MB_(94.00%)
+
+import kotlin.math.max
+import kotlin.math.min
 
 class Solution {
     fun divisibleGame(nums: IntArray): Int {

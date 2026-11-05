@@ -1,7 +1,5 @@
 package g3901_4000.s3988_create_grid_with_exactly_k_paths_i
 
-import java.util.*
-
 // #Medium #Array #Math #Matrix #Combinatorics #Staff #Weekly_Contest_510
 // #2026_11_03_Time_1_ms_(100.00%)_Space_43.92_MB_(68.14%)
 
@@ -57,7 +55,7 @@ class Solution {
     private fun initializeGrid(m: Int, n: Int): Array<CharArray> {
         val grid: Array<CharArray> = Array<CharArray>(m) { CharArray(n) }
         for (row in grid) {
-            Arrays.fill(row, '#')
+            row.fill('#')
         }
         return grid
     }
