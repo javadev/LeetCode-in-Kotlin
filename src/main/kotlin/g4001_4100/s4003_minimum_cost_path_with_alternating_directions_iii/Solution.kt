@@ -32,7 +32,7 @@ class Solution {
             }
             val np = parity xor 1
             // wait
-            val wait = top[0] + penalty[i]!![j]
+            val wait = top[0] + penalty[i][j]
             val ws = (cell shl 1) or np
             if (wait < dist[ws]) {
                 dist[ws] = wait
@@ -48,7 +48,7 @@ class Solution {
                 val forward = d < 2
                 // parity 0: next action is odd-numbered
                 val follows = (parity == 0) == forward
-                val c = top[0] + (x + 1).toLong() * (y + 1) + (if (follows) 0 else penalty[i]!![j])
+                val c = top[0] + (x + 1).toLong() * (y + 1) + (if (follows) 0 else penalty[i][j])
                 val ns = ((x * n + y) shl 1) or np
                 if (c < dist[ns]) {
                     dist[ns] = c
