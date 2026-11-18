@@ -4,7 +4,7 @@ package g4001_4100.s4001_aggregate_two_time_series
 // #2026_11_17_Time_9_ms_(100.00%)_Space_167.92_MB_(85.71%)
 
 class Solution {
-    fun aggregateTimeSeries(left: Array<IntArray>, right: Array<IntArray>): MutableList<MutableList<Int>> {
+    fun aggregateTimeSeries(left: Array<IntArray>, right: Array<IntArray>): List<List<Int>> {
         val n = left.size
         val m = right.size
         val result: MutableList<MutableList<Int>> = ArrayList<MutableList<Int>>(left.size + m)
@@ -13,7 +13,7 @@ class Solution {
         while (i < n && j < m) {
             val lp = left[i]
             val rp = right[j]
-            val cmp = Integer.compare(lp[0], rp[0])
+            val cmp = lp[0].compareTo(rp[0])
             val value = lp[1] + rp[1]
             if (cmp < 0) {
                 result.add(mutableListOf<Int>(lp[0], value))

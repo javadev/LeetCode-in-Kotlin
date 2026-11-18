@@ -8,13 +8,13 @@ import org.junit.jupiter.api.Test
 internal class SolutionTest {
     @Test
     fun aggregateTimeSeries() {
-        assertThat<MutableList<MutableList<Int>>>(
+        assertThat<List<List<Int>>>(
             Solution()
                 .aggregateTimeSeries(
                     arrayOf<IntArray>(intArrayOf(1, 3), intArrayOf(4, 1)),
                     arrayOf<IntArray>(intArrayOf(2, 2), intArrayOf(5, 2)),
                 ),
-            equalTo<MutableList<MutableList<Int>>>(
+            equalTo<List<List<Int>>>(
                 ArrayUtils.getLists(
                     arrayOf<IntArray>(
                         intArrayOf(1, 5),
@@ -29,13 +29,13 @@ internal class SolutionTest {
 
     @Test
     fun aggregateTimeSeries2() {
-        assertThat<MutableList<MutableList<Int>>>(
+        assertThat<List<List<Int>>>(
             Solution()
                 .aggregateTimeSeries(
                     arrayOf<IntArray>(intArrayOf(1, 5), intArrayOf(3, 1)),
                     arrayOf<IntArray>(intArrayOf(2, 2)),
                 ),
-            equalTo<MutableList<MutableList<Int>>>(
+            equalTo<List<List<Int>>>(
                 ArrayUtils.getLists(
                     arrayOf<IntArray>(
                         intArrayOf(1, 7),
@@ -49,13 +49,13 @@ internal class SolutionTest {
 
     @Test
     fun aggregateTimeSeries3() {
-        assertThat<MutableList<MutableList<Int>>>(
+        assertThat<List<List<Int>>>(
             Solution()
                 .aggregateTimeSeries(
                     arrayOf<IntArray>(intArrayOf(1, 5)),
                     arrayOf<IntArray>(intArrayOf(1000000000, 2)),
                 ),
-            equalTo<MutableList<MutableList<Int>>>(
+            equalTo<List<List<Int>>>(
                 ArrayUtils.getLists(
                     arrayOf<IntArray>(
                         intArrayOf(1, 7),
