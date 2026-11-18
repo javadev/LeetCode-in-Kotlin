@@ -18,9 +18,9 @@ class Solution {
             var oi = 0
             for (i in 0..<n) {
                 if ((i and 1) == 0) {
-                    even[ei++] = w.get(i)
+                    even[ei++] = w[i]
                 } else {
-                    odd[oi++] = w.get(i)
+                    odd[oi++] = w[i]
                 }
             }
             val eStart = booth(even)

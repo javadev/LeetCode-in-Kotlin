@@ -24,7 +24,7 @@ class Solution {
             return 0
         }
         val key = (index shl 22) or (fuel0 shl 16) or (fuel1 shl 10) or (busy0 shl 5) or busy1
-        val cached = memo.get(key)
+        val cached = memo[key]
         if (cached != null) {
             return cached
         }
@@ -63,7 +63,7 @@ class Solution {
                 best = candidate
             }
         }
-        memo.put(key, best)
+        memo[key] = best
         return best
     }
 }

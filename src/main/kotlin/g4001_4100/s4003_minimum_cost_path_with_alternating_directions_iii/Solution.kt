@@ -17,7 +17,7 @@ class Solution {
         pq.add(longArrayOf(1, 0))
         val dx = intArrayOf(1, 0, -1, 0)
         val dy = intArrayOf(0, 1, 0, -1)
-        while (!pq.isEmpty()) {
+        while (pq.isNotEmpty()) {
             val top: LongArray = pq.poll()!!
             val state = top[1].toInt()
             if (top[0] > dist[state]) {
