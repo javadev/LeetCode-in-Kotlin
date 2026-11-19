@@ -77,12 +77,12 @@ class Solution {
     private fun build(node: Int, tl: Int, tr: Int, nums: IntArray) {
         if (tl == tr) {
             if (isPeak(nums, tl)) {
-                cnt!![node] = 1
-                first!![node] = tl
-                last!![node] = tl
+                cnt[node] = 1
+                first[node] = tl
+                last[node] = tl
             } else {
-                first!![node] = -1
-                last!![node] = -1
+                first[node] = -1
+                last[node] = -1
             }
             return
         }
@@ -95,15 +95,15 @@ class Solution {
     private fun update(node: Int, tl: Int, tr: Int, pos: Int, peak: Boolean) {
         if (tl == tr) {
             if (peak) {
-                cnt!![node] = 1
-                first!![node] = tl
-                last!![node] = tl
+                cnt[node] = 1
+                first[node] = tl
+                last[node] = tl
             } else {
-                cnt!![node] = 0
-                first!![node] = -1
-                last!![node] = -1
+                cnt[node] = 0
+                first[node] = -1
+                last[node] = -1
             }
-            inner!![node] = 0L
+            inner[node] = 0L
             return
         }
         val mid = (tl + tr) ushr 1
@@ -118,40 +118,40 @@ class Solution {
     private fun pull(node: Int) {
         val lc = node shl 1
         val rc = node shl 1 or 1
-        if (cnt!![lc] == 0) {
-            cnt!![node] = cnt!![rc]
-            first!![node] = first!![rc]
-            last!![node] = last!![rc]
-            inner!![node] = inner!![rc]
-        } else if (cnt!![rc] == 0) {
-            cnt!![node] = cnt!![lc]
-            first!![node] = first!![lc]
-            last!![node] = last!![lc]
-            inner!![node] = inner!![lc]
+        if (cnt[lc] == 0) {
+            cnt[node] = cnt[rc]
+            first[node] = first[rc]
+            last[node] = last[rc]
+            inner[node] = inner[rc]
+        } else if (cnt[rc] == 0) {
+            cnt[node] = cnt[lc]
+            first[node] = first[lc]
+            last[node] = last[lc]
+            inner[node] = inner[lc]
         } else {
-            cnt!![node] = cnt!![lc] + cnt!![rc]
-            first!![node] = first!![lc]
-            last!![node] = last!![rc]
-            val gap = first!![rc].toLong() - last!![lc] + 1L
-            inner!![node] = inner!![lc] + inner!![rc] + tri(gap) - 1L
+            cnt[node] = cnt[lc] + cnt[rc]
+            first[node] = first[lc]
+            last[node] = last[rc]
+            val gap = first[rc].toLong() - last[lc] + 1L
+            inner[node] = inner[lc] + inner[rc] + tri(gap) - 1L
         }
     }
 
     private fun query(node: Int, tl: Int, tr: Int, ql: Int, qr: Int) {
         if (ql <= tl && tr <= qr) {
-            if (cnt!![node] == 0) {
+            if (cnt[node] == 0) {
                 return
             }
             if (qCnt == 0) {
-                qCnt = cnt!![node]
-                qFirst = first!![node]
-                qLast = last!![node]
-                qInner = inner!![node]
+                qCnt = cnt[node]
+                qFirst = first[node]
+                qLast = last[node]
+                qInner = inner[node]
             } else {
-                val gap = first!![node].toLong() - qLast + 1L
-                qInner += inner!![node] + tri(gap) - 1L
-                qCnt += cnt!![node]
-                qLast = last!![node]
+                val gap = first[node].toLong() - qLast + 1L
+                qInner += inner[node] + tri(gap) - 1L
+                qCnt += cnt[node]
+                qLast = last[node]
             }
             return
         }
