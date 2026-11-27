@@ -8,7 +8,7 @@ class Solution {
         val n = s.length
         var same = 0
         for (i in 0..<n) {
-            if (s.get(i) == s.get((i + 1) % n)) {
+            if (s[i] == s[(i + 1) % n]) {
                 same++
             }
         }

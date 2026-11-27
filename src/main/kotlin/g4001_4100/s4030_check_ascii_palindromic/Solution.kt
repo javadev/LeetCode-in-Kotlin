@@ -7,8 +7,8 @@ class Solution {
     fun isPalindromic(s: String): Boolean {
         val n = s.length
         for (i in 0..n / 2) {
-            val lptr = s.get(i).code
-            val rptr = s.get(n - i - 1).code
+            val lptr = s[i].code
+            val rptr = s[n - i - 1].code
             for (j in 0..7) {
                 val left = (lptr shr j) and 1
                 val right = (rptr shr (7 - j)) and 1

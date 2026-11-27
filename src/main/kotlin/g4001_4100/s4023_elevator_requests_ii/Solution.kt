@@ -27,10 +27,10 @@ class Solution {
         val x = LongArray(a + 1)
         val y = LongArray(b + 1)
         for (i in 1..a) {
-            x[i] = l.get(i - 1).toLong()
+            x[i] = l[i - 1].toLong()
         }
         for (j in 1..b) {
-            y[j] = r.get(j - 1).toLong()
+            y[j] = r[j - 1].toLong()
         }
         val inf = Long.MAX_VALUE / 4
         val dl = Array<LongArray>(a + 1) { LongArray(b + 1) }

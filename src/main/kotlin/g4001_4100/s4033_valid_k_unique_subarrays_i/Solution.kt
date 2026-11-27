@@ -30,8 +30,8 @@ class Solution {
         countDistinct = 0
         val counts = IntArray(maxNum + 1)
         for (i in 0..<queriesCount) {
-            val query: IntArray? = sortedQueries[i]
-            while (currentLeft > query!![0]) {
+            val query: IntArray = sortedQueries[i]
+            while (currentLeft > query[0]) {
                 this.add(counts, nums, --currentLeft)
             }
             while (currentRight < query[1]) {
@@ -67,10 +67,10 @@ class Solution {
         }
         sortedQueries.sortWith(
             { o1: IntArray?, o2: IntArray? ->
-                if (o1!![3] == o2!![3]) {
-                    return@sortWith if (o1[3] % 2 == 0) o1[1] - o2[1] else o2[1] - o1[1]
+                return@sortWith if (o1!![3] == o2!![3]) {
+                    if (o1[3] % 2 == 0) o1[1] - o2[1] else o2[1] - o1[1]
                 } else {
-                    return@sortWith Integer.compare(o1[3], o2[3])
+                    o1[3].compareTo(o2[3])
                 }
             },
             0,
